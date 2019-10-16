@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <add-resource type="string" name="onesong"/>
+    <string name="onesong">"1 lagu"</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <add-resource type="plurals" name="Nsongs"/>
+    <plurals name="Nsongs">
+        <item quantity="one">"<xliff:g id="COUNT_0">%d</xliff:g> lagu"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> lagu"</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <add-resource type="plurals" name="Nsongscomp"/>
+    <plurals name="Nsongscomp">
+        <item quantity="one">"<xliff:g id="COUNT_FOR_ARTIST_0">%2$d</xliff:g> dari <xliff:g id="TOTAL_COUNT_1">%1$d</xliff:g> lagu"</item>
+        <item quantity="other">"<xliff:g id="COUNT_FOR_ARTIST">%2$d</xliff:g> dari <xliff:g id="TOTAL_COUNT">%1$d</xliff:g> lagu"</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <add-resource type="plurals" name="Nalbums"/>
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">"1 album"</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> album"</item>
+    </plurals>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <add-resource type="string" name="goto_start"/>
+    <string name="goto_start">"Pustaka"</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <add-resource type="string" name="party_shuffle"/>
+    <string name="party_shuffle">"Acak semua"</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <add-resource type="string" name="party_shuffle_off"/>
+    <string name="party_shuffle_off">"Acak semua mati"</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <add-resource type="string" name="delete_item"/>
+    <string name="delete_item">"Hapus"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in shuffle mode -->
+    <add-resource type="string" name="shuffle_all"/>
+    <string name="shuffle_all">"Acak semua"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <add-resource type="string" name="play_all"/>
+    <string name="play_all">"Mainkan semua"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <add-resource type="string" name="delete_artist_desc"/>
+    <string name="delete_artist_desc">"Hapus semua lagu oleh <xliff:g id="ARTIST">%s</xliff:g> secara permanen dari kartu SD?"</string>
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <add-resource type="string" name="delete_artist_desc_nosdcard"/>
+    <string name="delete_artist_desc_nosdcard">"Hapus semua lagu oleh <xliff:g id="ARTIST">%s</xliff:g> secara permanen dari penyimpanan USB?"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <add-resource type="string" name="delete_album_desc"/>
+    <string name="delete_album_desc">"Menghapus seluruh album \"<xliff:g id="ALBUM">%s</xliff:g>\" secara permanen dari kartu SD?"</string>
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <add-resource type="string" name="delete_album_desc_nosdcard"/>
+    <string name="delete_album_desc_nosdcard">"Hapus seluruh album \"<xliff:g id="ALBUM">%s</xliff:g>\" secara permanen dari penyimpanan USB?"</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <add-resource type="string" name="delete_song_desc"/>
+    <string name="delete_song_desc">"Hapus \"<xliff:g id="SONG">%s</xliff:g>\" secara permanen dari kartu SD?"</string>
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <add-resource type="string" name="delete_song_desc_nosdcard"/>
+    <string name="delete_song_desc_nosdcard">"Hapus \"<xliff:g id="SONG">%s</xliff:g>\" secara permanen dari penyimpanan USB?"</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <add-resource type="string" name="delete_confirm_button_text"/>
+    <string name="delete_confirm_button_text">"OKE"</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <add-resource type="plurals" name="NNNtracksdeleted"/>
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">"1 lagu telah dihapus."</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">"<xliff:g id="SONGS_TO_DELETE">%d</xliff:g> lagu berhasil dihapus."</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning"/>
+    <string name="scanning">"Memindai kartu SD..."</string>
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning_nosdcard"/>
+    <string name="scanning_nosdcard">"Memindai penyimpanan USB..."</string>
+
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <add-resource type="string" name="nowplaying_title"/>
+    <string name="nowplaying_title">"Sedang diputar"</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <add-resource type="string" name="partyshuffle_title"/>
+    <string name="partyshuffle_title">"Acak semua"</string>
+    <!-- Artist screen title -->
+    <add-resource type="string" name="artists_title"/>
+    <string name="artists_title">"Artis"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="albums_menu"/>
+    <string name="albums_menu">"Album"</string>
+    <!-- Albums screen title -->
+    <add-resource type="string" name="albums_title"/>
+    <string name="albums_title">"Album"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="tracks_menu"/>
+    <string name="tracks_menu">"Lagu"</string>
+    <!-- Songs screen title -->
+    <add-resource type="string" name="tracks_title"/>
+    <string name="tracks_title">"Lagu"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="playlists_menu"/>
+    <string name="playlists_menu">"Daftar putar"</string>
+    <!-- Playlists screen title -->
+    <add-resource type="string" name="playlists_title"/>
+    <string name="playlists_title">"Daftar putar"</string>
+    <!-- Videos screen title -->
+    <add-resource type="string" name="videos_title"/>
+    <string name="videos_title">"Video"</string>
+    <!-- All media screen title -->
+    <add-resource type="string" name="all_title"/>
+    <string name="all_title">"Semua media"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="browse_menu"/>
+    <string name="browse_menu">"Artis"</string>
+    <!-- Library screen, menu item -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"Telusuri"</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <add-resource type="string" name="no_tracks_title"/>
+    <string name="no_tracks_title">"Tidak ada lagu"</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <add-resource type="string" name="no_videos_title"/>
+    <string name="no_videos_title">"Tidak ada video"</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <add-resource type="string" name="no_playlists_title"/>
+    <string name="no_playlists_title">"Tidak ada daftar putar"</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <add-resource type="string" name="delete_playlist_menu"/>
+    <string name="delete_playlist_menu">"Hapus"</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <add-resource type="string" name="edit_playlist_menu"/>
+    <string name="edit_playlist_menu">"Edit"</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <add-resource type="string" name="rename_playlist_menu"/>
+    <string name="rename_playlist_menu">"Ganti nama"</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <add-resource type="string" name="playlist_deleted_message"/>
+    <string name="playlist_deleted_message">"Daftar putar dihapus."</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <add-resource type="string" name="playlist_renamed_message"/>
+    <string name="playlist_renamed_message">"Nama daftar putar diubah."</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <add-resource type="string" name="recentlyadded"/>
+    <string name="recentlyadded">"Baru-baru ini ditambahkan"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <add-resource type="string" name="recentlyadded_title"/>
+    <string name="recentlyadded_title">"Baru-baru ini ditambahkan"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <add-resource type="string" name="podcasts_listitem"/>
+    <string name="podcasts_listitem">"Podcast"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <add-resource type="string" name="podcasts_title"/>
+    <string name="podcasts_title">"Podcast"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title"/>
+    <string name="sdcard_missing_title">"Tidak ada kartu SD"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title_nosdcard"/>
+    <string name="sdcard_missing_title_nosdcard">"Tidak ada penyimpanan USB"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message"/>
+    <string name="sdcard_missing_message">"Tidak ada kartu SD yang dimasukkan ke dalam ponsel Anda."</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message_nosdcard"/>
+    <string name="sdcard_missing_message_nosdcard">"Tidak ada penyimpanan USB pada ponsel Anda."</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title"/>
+    <string name="sdcard_busy_title">"Kartu SD tidak tersedia"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title_nosdcard"/>
+    <string name="sdcard_busy_title_nosdcard">"Penyimpanan USB tidak tersedia"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message"/>
+    <string name="sdcard_busy_message">"Kartu SD Anda sibuk."</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message_nosdcard"/>
+    <string name="sdcard_busy_message_nosdcard">"Penyimpanan USB Anda sibuk."</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title"/>
+    <string name="sdcard_error_title">"Kartu SD kesalahan"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title_nosdcard"/>
+    <string name="sdcard_error_title_nosdcard">"Kesalahan penyimpanan USB"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message"/>
+    <string name="sdcard_error_message">"Telah terjadi kesalahan pada kartu SD Anda."</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message_nosdcard"/>
+    <string name="sdcard_error_message_nosdcard">"Terjadi kesalahan pada penyimpanan USB Anda."</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_artist_name"/>
+    <string name="unknown_artist_name">"Artis tidak dikenal"</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_album_name"/>
+    <string name="unknown_album_name">"Album tidak dikenal"</string>
+    <!-- Toast after turning shuffle on -->
+    <add-resource type="string" name="shuffle_on_notif"/>
+    <string name="shuffle_on_notif">"Acak aktif."</string>
+    <!-- Toast after turning shuffle off -->
+    <add-resource type="string" name="shuffle_off_notif"/>
+    <string name="shuffle_off_notif">"Acak mati."</string>
+    <!-- Toast after turning repeat off -->
+    <add-resource type="string" name="repeat_off_notif"/>
+    <string name="repeat_off_notif">"Ulangi mati."</string>
+    <!-- Toast after turning single repeat on -->
+    <add-resource type="string" name="repeat_current_notif"/>
+    <string name="repeat_current_notif">"Mengulangi lagu ini."</string>
+    <!-- Toast after turning repeat all on -->
+    <add-resource type="string" name="repeat_all_notif"/>
+    <string name="repeat_all_notif">"Mengulangi semua lagu."</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu"/>
+    <string name="ringtone_menu">"Gunakan sebagai nada dering ponsel."</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short"/>
+    <string name="ringtone_menu_short">"Gunakan sebagai nada dering"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set"/>
+    <string name="ringtone_set">"\"<xliff:g id="NAME">%s</xliff:g>\" disetel sebagai nada dering ponsel."</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="play_selection"/>
+    <string name="play_selection">"Putar"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="add_to_playlist"/>
+    <string name="add_to_playlist">"Tambahkan ke daftar putar"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="queue"/>
+    <string name="queue">"Daftar putar saat ini"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="new_playlist"/>
+    <string name="new_playlist">"Baru"</string>
+    <!-- Template for newly created playlist name -->
+    <add-resource type="string" name="new_playlist_name_template"/>
+    <string name="new_playlist_name_template">"Daftar putar baru <xliff:g id="NUMBER">%d</xliff:g>"</string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <add-resource type="plurals" name="NNNtrackstoplaylist"/>
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">"1 lagu yang ditambahkan ke daftar putar."</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">"<xliff:g id="NUMBER">%d</xliff:g> lagu yang ditambahkan ke daftar putar."</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <add-resource type="string" name="emptyplaylist"/>
+    <string name="emptyplaylist">"Daftar putar yang dipilih kosong."</string>
+    <!-- Button name when saving a playlist -->
+    <add-resource type="string" name="create_playlist_create_text"/>
+    <string name="create_playlist_create_text">"Simpan"</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <add-resource type="string" name="create_playlist_overwrite_text"/>
+    <string name="create_playlist_overwrite_text">"Timpa"</string>
+    <!-- Dialog box title -->
+    <add-resource type="string" name="service_start_error_title"/>
+    <string name="service_start_error_title">"Masalah pemutaran ulang"</string>
+    <!-- Dialog box message -->
+    <add-resource type="string" name="service_start_error_msg"/>
+    <string name="service_start_error_msg">"Lagu tidak dapat diputar."</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="service_start_error_button"/>
+    <string name="service_start_error_button">"OKE"</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <add-resource type="array" name="weeklist"/>
+    <string-array name="weeklist">
+        <item>"1 minggu"</item>
+        <item>"2 minggu"</item>
+        <item>"3 minggu"</item>
+        <item>"4 minggu"</item>
+        <item>"5 minggu"</item>
+        <item>"6 minggu"</item>
+        <item>"7 minggu"</item>
+        <item>"8 minggu"</item>
+        <item>"9 minggu"</item>
+        <item>"10 minggu"</item>
+        <item>"11 minggu"</item>
+        <item>"12 minggu"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <add-resource type="string" name="weekpicker_set"/>
+    <string name="weekpicker_set">"Selesai"</string>
+    <!-- Title of time span picker -->
+    <add-resource type="string" name="weekpicker_title"/>
+    <string name="weekpicker_title">"Setel waktu"</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <add-resource type="color" name="dragndrop_background"/>
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <add-resource type="color" name="expanding_child_background"/>
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <add-resource type="string" name="save_as_playlist"/>
+    <string name="save_as_playlist">"Simpan sebagai daftar putar"</string>
+    <!-- menu item to clear the current playlist -->
+    <add-resource type="string" name="clear_playlist"/>
+    <string name="clear_playlist">"Hapus daftar putar"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicbrowserlabel"/>
+    <string name="musicbrowserlabel">"Musik"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicshortcutlabel"/>
+    <string name="musicshortcutlabel">"Daftar putar musik"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediaplaybacklabel"/>
+    <string name="mediaplaybacklabel">"Musik"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="videobrowserlabel"/>
+    <string name="videobrowserlabel">"Video"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediapickerlabel"/>
+    <string name="mediapickerlabel">"Musik"</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <add-resource type="string" name="playback_failed"/>
+    <string name="playback_failed">"Pemutar tidak mendukung jenis file audio ini."</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Batal"</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <add-resource type="string" name="remove_from_playlist"/>
+    <string name="remove_from_playlist">"Hapus dari daftar putar"</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <add-resource type="string" name="streamloadingtext"/>
+    <string name="streamloadingtext">"Menyambung ke <xliff:g id="HOST">%s</xliff:g>..."</string>
+
+    <!-- title of contextual music search menu -->
+    <add-resource type="string" name="mediasearch"/>
+    <string name="mediasearch">"Telusuri <xliff:g id="TERM">%s</xliff:g> menggunakan:"</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <add-resource type="string" name="working_artists"/>
+    <string name="working_artists">"Artis..."</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <add-resource type="string" name="working_albums"/>
+    <string name="working_albums">"Album..."</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <add-resource type="string" name="working_songs"/>
+    <string name="working_songs">"Lagu..."</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <add-resource type="string" name="working_playlists"/>
+    <string name="working_playlists">"Daftar putar..."</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"Memuat..."</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <add-resource type="string" name="sort_by_track"/>
+    <string name="sort_by_track">"Trek"</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <add-resource type="string" name="sort_by_album"/>
+    <string name="sort_by_album">"Album"</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <add-resource type="string" name="sort_by_artist"/>
+    <string name="sort_by_artist">"Artis"</string>
+    <!--  Title of the music picker activity. -->
+    <add-resource type="string" name="music_picker_title"/>
+    <string name="music_picker_title">"Pilih trek musik"</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <add-resource type="string" name="search_settings_description"/>
+    <string name="search_settings_description">"Artis, album, dan trek"</string>
+
+    <!-- Shown in the search box as a hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"Telusuri Musik"</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <add-resource type="string" name="fast_scroll_alphabet"/>
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <add-resource type="string" name="widget_initial_text"/>
+    <string name="widget_initial_text">"Sentuh untuk memilih musik."</string>
+
+    <!-- Menu text for the item controlling the audio effects panel [CHAR LIMIT=15] -->
+    <add-resource type="string" name="effectspanel"/>
+    <string name="effectspanel">"Efek suara"</string></resources>

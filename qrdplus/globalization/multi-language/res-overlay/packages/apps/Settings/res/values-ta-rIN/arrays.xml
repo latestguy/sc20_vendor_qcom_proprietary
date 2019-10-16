@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"அமெரிக்கா"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"ஐரோப்பா"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"ஆஃப்ரிக்கா"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"ஆசியா"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"ஆஸ்திரேலியா"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"பசிபிக்"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"எல்லாம்"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 வினாடிகள்"</item>
+        <item>"30 வினாடிகள்"</item>
+        <item>"1 நிமிடம்"</item>
+        <item>"2 நிமிடங்கள்"</item>
+        <item>"5 நிமிடங்கள்"</item>
+        <item>"10 நிமிடங்கள்"</item>
+        <item>"30 நிமிடங்கள்"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"ஒருபோதும் வேண்டாம்"</item>
+        <item>"15 வினாடிகள்"</item>
+        <item>"30 வினாடிகள்"</item>
+        <item>"1 நிமிடம்"</item>
+        <item>"2 நிமிடங்கள்"</item>
+        <item>"5 நிமிடங்கள்"</item>
+        <item>"10 நிமிடங்கள்"</item>
+        <item>"30 நிமிடங்கள்"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"உடனடியாக"</item>
+        <item>"5 வினாடிகள்"</item>
+        <item>"15 வினாடிகள்"</item>
+        <item>"30 வினாடிகள்"</item>
+        <item>"1 நிமிடம்"</item>
+        <item>"2 நிமிடங்கள்"</item>
+        <item>"5 நிமிடங்கள்"</item>
+        <item>"10 நிமிடங்கள்"</item>
+        <item>"30 நிமிடங்கள்"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"சிறியது"</item>
+        <item msgid="3579015730662088893">"இயல்பு"</item>
+        <item msgid="1678068858001018666">"பெரியது"</item>
+        <item msgid="490158884605093126">"மிகப் பெரியது"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ஸ்கேன் செய்கிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"இணைக்கிறது..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"அங்கீகரிக்கிறது..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP முகவரியைப் பெறுகிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"இணைக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"இடைநீக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"துண்டிக்கிறது..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"தொடர்பு துண்டிக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"தோல்வி"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"தடுக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"வேகம் குறைந்த இணைப்பைத் தற்காலிகமாகத் தவிர்க்கிறது"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ஸ்கேன் செய்கிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> இல் இணைக்கிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> உடன் அங்கீகரிக்கிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> இலிருந்து IP முகவரியைப் பெறுகிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> உடன் இணைக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"இடைநீக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> இலிருந்து தொடர்பு துண்டிக்கப்படுகிறது\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"தொடர்பு துண்டிக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"தோல்வி"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"தடுக்கப்பட்டது"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"வேகம் குறைந்த இணைப்பைத் தற்காலிகமாகத் தவிர்க்கிறது"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"புஷ் பொத்தான்"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"பியர் சாதனத்திலிருந்து பின்"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"இந்தச் சாதனத்தில் உள்ள பின்"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"இணைக்கப்பட்டது"</item>
+        <item>"அழைக்கப்பட்டது"</item>
+        <item>"தோல்வி"</item>
+        <item>"உள்ளது"</item>
+        <item>"எல்லைக்கு வெளியே உள்ளது"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 நிமிடங்கள்"</item>
+        <item>"5 நிமிடங்கள்"</item>
+        <item>"1 மணிநேரம்"</item>
+        <item>"காலநேரம் முடிய வேண்டாம்"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"மோசம்"</item>
+        <item>"சுமார்"</item>
+        <item>"நன்று"</item>
+        <item>"பிரமாதம்"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"எப்போதும்"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"செருகப்பட்டிருக்கும்போது மட்டும்"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"எப்போதும் வேண்டாம்"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"எப்போதும்"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"செருகப்பட்டிருக்கும்போது மட்டும்"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"ஒருபோதும் வேண்டாம்"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"கடந்த 30 நாட்கள்"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"பயன்பாட்டு சுழற்சியை அமை..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"பயன்படுத்திய நேரம்"</item>
+        <item>"கடைசியாகப் பயன்படுத்தியது"</item>
+        <item>"பயன்பாட்டின் பெயர்"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"ஏதும."</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"ஏதும."</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"நிலையான"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ஏதும."</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"கைமுறை"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ப்ராக்ஸி தானியங்கு-உள்ளமைவு"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"ஏதும."</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP அல்லது CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"குறிப்பிடப்படாதது"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"ஏதுமில்லை"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"சாதன அகச் சேமிப்பு"</item>
+        <item>"அகற்றப்படக்கூடிய SD கார்டு"</item>
+        <item>"அமைப்பு தீர்மானிக்கட்டும்"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"இருப்பிடம்"</item>
+        <item>"தனிப்பட்டவை"</item>
+        <item>"மெசேஜிங்"</item>
+        <item>"ஊடகம்"</item>
+        <item>"சாதனம்"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"சீரற்ற இருப்பிடம்"</item>
+        <item>"சிறந்த இருப்பிடம்"</item>
+        <item>GPS</item>
+        <item>"அதிர்வு"</item>
+        <item>"தொடர்புகளைப் படி"</item>
+        <item>"தொடர்புகளை மாற்று"</item>
+        <item>"அழைப்புப் பதிவைப் படி"</item>
+        <item>"அழைப்புப் பதிவை மாற்று"</item>
+        <item>"கேலெண்டரைப் படி"</item>
+        <item>"கேலெண்டரை மாற்று"</item>
+        <item>"வைஃபை ஸ்கேன்"</item>
+        <item>"அறிவிப்பு"</item>
+        <item>"கைபேசியை ஸ்கேன் செய்"</item>
+        <item>"தொலைபேசியை அழை"</item>
+        <item>"SMS படி"</item>
+        <item>"SMS எழுது"</item>
+        <item>"SMS பெறு"</item>
+        <item>"அவசரநிலை SMS ஐப் பெறு"</item>
+        <item>"MMS பெறு"</item>
+        <item>"WAP அறிவிப்பைப் பெறு"</item>
+        <item>"SMS அனுப்பு"</item>
+        <item>"ICC SMS ஐப் படி"</item>
+        <item>"ICC SMS எழுது"</item>
+        <item>"அமைப்புகளை மாற்று"</item>
+        <item>"மேலே வரை"</item>
+        <item>"அறிவிப்புகளை அணுகு"</item>
+        <item>"கேமரா"</item>
+        <item>"ஆடியோவைப் பதிவுசெய்"</item>
+        <item>"ஆடியோவை இயக்கு"</item>
+        <item>"கிளிப்போர்டைப் படி"</item>
+        <item>"கிளிப்போர்ட்டை மாற்று"</item>
+        <item>"மீடியா பொத்தான்கள்"</item>
+        <item>"ஆடியோவை மையப்படுத்து"</item>
+        <item>"முதன்மை ஒலியளவு"</item>
+        <item>"குரல் ஒலியளவு"</item>
+        <item>"அழைப்பு - ஒலியளவு"</item>
+        <item>"மீடியாவின் ஒலியளவு"</item>
+        <item>"அலாரத்தின் ஒலியளவு"</item>
+        <item>"அறிவிப்பின் ஒலியளவு"</item>
+        <item>"புளூடூத் ஒலியளவு"</item>
+        <item>"செயலில்"</item>
+        <item>"இருப்பிடத்தைக் கண்காணி"</item>
+        <item>"அதிக ஆற்றல் இடத்தைக் கண்காணி"</item>
+        <item>"பயன்பாட்டு புள்ளிவிவரத்தைப் பெறுக"</item>
+        <item>"மைக்ரோஃபோனை முடக்கு/இயக்கு"</item>
+        <item>"டோஸ்ட்டைக் காட்டு"</item>
+        <item>"மீடியாவை புராஜக்ட் செய்"</item>
+        <item>"VPNஐ இயக்கு"</item>
+        <item>"வால்பேப்பரை எழுது"</item>
+        <item>"கட்டமைப்புக்கு உதவு"</item>
+        <item>"ஸ்கிரீன்ஷாட்டுக்கு உதவு"</item>
+        <item>"ஃபோன் நிலையைப் படி"</item>
+        <item>"குரலஞ்சலைச் சேர்"</item>
+        <item>"sipஐப் பயன்படுத்து"</item>
+        <item>"வெளிச்செல்லும் அழைப்பைச் செயலாக்கு"</item>
+        <item>"கைரேகை"</item>
+        <item>"உடல் உணர்விகள்"</item>
+        <item>"செல் பிராட்காஸ்ட்களைப் படி"</item>
+        <item>"போலியான இருப்பிடம்"</item>
+        <item>"சேமிப்பகத்தைப் படி"</item>
+        <item>"சேமிப்பகத்தில் எழுது"</item>
+        <item>"திரையை இயக்கு"</item>
+        <item>"கணக்குகளைப் பெறு"</item>
+        <item>"பின்புலத்தில் இயங்கு"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"இருப்பிடம்"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"அதிர்வு"</item>
+        <item>"தொடர்புகளைப் படி"</item>
+        <item>"தொடர்புகளை மாற்று"</item>
+        <item>"அழைப்புப் பதிவைப் படி"</item>
+        <item>"அழைப்புப் பதிவை மாற்று"</item>
+        <item>"கேலெண்டரைப் படி"</item>
+        <item>"கேலெண்டரை மாற்று"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"அறிவிப்பை இடுகையிடு"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"தொலைபேசியில் அழை"</item>
+        <item>"SMS/MMS ஐப் படி"</item>
+        <item>"SMS/MMS எழுது"</item>
+        <item>"SMS/MMS பெறு"</item>
+        <item>"SMS/MMS பெறு"</item>
+        <item>"SMS/MMS பெறு"</item>
+        <item>"SMS/MMS பெறு"</item>
+        <item>"SMS/MMS அனுப்பு"</item>
+        <item>"SMS/MMS ஐப் படி"</item>
+        <item>"SMS/MMS எழுது"</item>
+        <item>"அமைப்புகளை மாற்று"</item>
+        <item>"மேலே வரை"</item>
+        <item>"அறிவிப்புகளை அணுகு"</item>
+        <item>"கேமரா"</item>
+        <item>"ஆடியோவைப் பதிவுசெய்"</item>
+        <item>"ஆடியோவை இயக்கு"</item>
+        <item>"கிளிப்போர்டைப் படி"</item>
+        <item>"கிளிப்போர்ட்டை மாற்று"</item>
+        <item>"மீடியா பொத்தான்கள்"</item>
+        <item>"ஆடியோவை மையப்படுத்து"</item>
+        <item>"முதன்மை ஒலியளவு"</item>
+        <item>"குரல் ஒலியளவு"</item>
+        <item>"அழைப்பு - ஒலியளவு"</item>
+        <item>"மீடியாவின் ஒலியளவு"</item>
+        <item>"அலாரத்தின் ஒலியளவு"</item>
+        <item>"அறிவிப்பின் ஒலியளவு"</item>
+        <item>"புளூடூத் ஒலியளவு"</item>
+        <item>"விழிப்பில்"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"இருப்பிடம்"</item>
+        <item>"பயன்பாட்டு புள்ளிவிவரத்தைப் பெறுக"</item>
+        <item>"மைக்ரோஃபோனை முடக்கு/இயக்கு"</item>
+        <item>"டோஸ்ட்டைக் காட்டு"</item>
+        <item>"மீடியாவை புராஜக்ட் செய்"</item>
+        <item>"VPNஐ இயக்கு"</item>
+        <item>"வால்பேப்பரை எழுது"</item>
+        <item>"கட்டமைப்புக்கு உதவு"</item>
+        <item>"ஸ்கிரீன்ஷாட்டுக்கு உதவு"</item>
+        <item>"ஃபோன் நிலையைப் படி"</item>
+        <item>"குரலஞ்சலைச் சேர்"</item>
+        <item>"sipஐப் பயன்படுத்து"</item>
+        <item>"வெளிச்செல்லும் அழைப்பைச் செயலாக்கு"</item>
+        <item>"கைரேகை"</item>
+        <item>"உடல் உணர்விகள்"</item>
+        <item>"செல் பிராட்காஸ்ட்களைப் படி"</item>
+        <item>"போலியான இருப்பிடம்"</item>
+        <item>"சேமிப்பகத்தைப் படி"</item>
+        <item>"சேமிப்பகத்தை எழுது"</item>
+        <item>"திரையை இயக்கு"</item>
+        <item>"கணக்குகளைப் பெறு"</item>
+        <item>"பின்புலத்தில் இயங்கு"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"குறுகியது"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"நடுத்தரம்"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"நீளமானது"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"இயல்புநிலை"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"கேஷ்வல்"</item>
+        <item>"இணைவெழுத்து முறை"</item>
+        <item>"சிறிய எழுத்துகள்"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"மிகச் சிறிய"</item>
+        <item>"சிறிய"</item>
+        <item>"இயல்பு"</item>
+        <item>"பெரிய"</item>
+        <item>"மிகப் பெரிய"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"இயல்புநிலை"</item>
+        <item>"ஏதும."</item>
+        <item>"வெளிக்கோடு"</item>
+        <item>"நிழலிடு"</item>
+        <item>"மேலெழும்பியது"</item>
+        <item>"அழுத்தப்பட்டது"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"பயன்பாட்டின் இயல்புகளை பயன்படுத்து"</item>
+        <item>"கருப்பில் வெண்மை"</item>
+        <item>"வெண்மையில் கருப்பு"</item>
+        <item>"கருப்பில் மஞ்சள்"</item>
+        <item>"நீலத்தில் மஞ்சள்"</item>
+        <item>"தனிப்பயன்"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"பாதுகாப்பு விசைகளுடன் கூடிய L2TP/IPSec VPN"</item>
+        <item>"சான்றிதழ்களுடன் கூடிய L2TP/IPSec VPN"</item>
+        <item>"பாதுகாப்பு விசைகள் மற்றும் Xauth அங்கீகாரத்துடனான IPSec VPN"</item>
+        <item>"சான்றிதழ்கள் மற்றும் Xauth அங்கீகாரத்துடனான IPSec VPN"</item>
+        <item>"சான்றிதழ்கள் மற்றும் கலப்பு அங்கீகாரத்துடனான IPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"துண்டிக்கப்பட்டது"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"தொடங்குகிறது..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"இணைக்கிறது..."</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"இணைக்கப்பட்டது"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"நேரம் முடிந்தது"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"தோல்வி"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"கேள்"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"ஒருபோதும் அனுமதிக்காதே"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"எப்போதும் அனுமதி"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"இயல்பு"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"நடுத்தரம்"</item>
+        <!-- Memory is running low. -->
+        <item>"குறைவு"</item>
+        <!-- Memory is critical. -->
+        <item>"மிகவும் குறைவு"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"இயல்பு"</item>
+        <item>"நடுத்தரம்"</item>
+        <item>"குறைவு"</item>
+        <item>"நெருக்கடி"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"தொடர்நிலை"</item>
+        <item>"அதிக செயல்பாடு"</item>
+        <item>"முக்கியம் (முன்புலம்)"</item>
+        <item>"முக்கியம் (பின்புலம்)"</item>
+        <item>"காப்புப்பிரதி"</item>
+        <item>"அதீத பயன்பாடு"</item>
+        <item>"சேவை (இயக்கத்தில்)"</item>
+        <item>"சேவை (மறுதொடக்கத்தில்)"</item>
+        <item>"ரிசீவர்"</item>
+        <item>"முகப்பு"</item>
+        <item>"குறைந்த செயல்பாடு"</item>
+        <item>"தற்காலிகச் சேமிப்பு (செயல்பாடு)"</item>
+        <item>"தற்காலிகச் சேமிப்பு (செயல்பாட்டு கிளையன்ட்)"</item>
+        <item>"தற்காலிகச் சேமிப்பு (காலி)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"டீல்"</item>
+        <item>"நீலம்"</item>
+        <item>"இண்டிகோ"</item>
+        <item>"ஊதா"</item>
+        <item>"இளஞ்சிவப்பு"</item>
+        <item>"சிவப்பு"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"தானாக இணை"</item>
+        <item>"கைமுறையாக இணை"</item>
+        <item>"எப்பொழுதும் கேள்"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"30 நாட்களுக்கு மேல்"</item>
+        <item>"60 நாட்களுக்கு மேல்"</item>
+        <item>"90 நாட்களுக்கு மேல்"</item>
+    </string-array></resources>

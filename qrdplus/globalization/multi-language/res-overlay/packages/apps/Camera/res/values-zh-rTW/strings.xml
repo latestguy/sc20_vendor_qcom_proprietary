@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="camera_error_title"/>
+    <string name="camera_error_title">"相機發生錯誤"</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="cannot_connect_camera"/>
+    <string name="cannot_connect_camera">"無法連接相機。"</string>
+
+    <!-- message for the dialog showing the camera is disabled because of security policies. Camera cannot be used. -->
+    <add-resource type="string" name="camera_disabled"/>
+    <string name="camera_disabled">"由於安全性政策規定，相機已遭停用。"</string>
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+    <add-resource type="string" name="camera_label"/>
+    <string name="camera_label">"相機"</string>
+
+    <!-- label for the 'video recording application shown in the top level 'all applications' -->
+    <add-resource type="string" name="video_camera_label"/>
+    <string name="video_camera_label">"攝錄影機"</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <add-resource type="string" name="wait"/>
+    <string name="wait">"請稍候\u2026"</string>
+
+    <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_storage"/>
+    <string name="no_storage" product="nosdcard">"使用相機前，請先插入 USB 儲存裝置。"</string>
+    <!-- alert to the user that an SD card must be installed before using the camera -->
+    <add-resource type="string" name="no_storage"/>
+    <string name="no_storage" product="default">"使用相機前，請先插入 SD 卡。"</string>
+
+    <!-- alert to the user that the USB storage is being disk-checked [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preparing_sd"/>
+    <string name="preparing_sd" product="nosdcard">"正在準備 USB 儲存裝置\u2026"</string>
+    <!-- alert to the user that the SD card is being disk-checked -->
+    <add-resource type="string" name="preparing_sd"/>
+    <string name="preparing_sd" product="default">"正在準備 SD 卡\u2026"</string>
+
+    <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="access_sd_fail"/>
+    <string name="access_sd_fail" product="nosdcard">"無法存取 USB 儲存裝置。"</string>
+    <!-- alert to the user that the camera fails to read or write the SD card. -->
+    <add-resource type="string" name="access_sd_fail"/>
+    <string name="access_sd_fail" product="default">"無法存取 SD 卡。"</string>
+
+    <!-- button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT=10] -->
+    <add-resource type="string" name="review_cancel"/>
+    <string name="review_cancel">"取消"</string>
+
+    <!-- button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT=10] -->
+    <add-resource type="string" name="review_ok"/>
+    <string name="review_ok">"完成"</string>
+
+    <!-- A label that overlays on top of the preview frame to indicate the camcorder is in time lapse mode [CHAR LIMIT=35] -->
+    <add-resource type="string" name="time_lapse_title"/>
+    <string name="time_lapse_title">"縮時攝影錄製"</string>
+
+    <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_id_title"/>
+    <string name="pref_camera_id_title">"選擇相機"</string>
+
+    <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_back"/>
+    <string name="pref_camera_id_entry_back">"返回"</string>
+    <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_front"/>
+    <string name="pref_camera_id_entry_front">"前置鏡頭"</string>
+
+    <!-- Settings screen, setting title text -->
+    <add-resource type="string" name="pref_camera_recordlocation_title"/>
+    <string name="pref_camera_recordlocation_title">"儲存位置"</string>
+
+    <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
+    <add-resource type="string" name="pref_camera_timer_title"/>
+    <string name="pref_camera_timer_title">"倒數計時器"</string>
+    <!-- Entry for countdown timer setting. e.g. 1 second, 10 seconds, etc. [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="pref_camera_timer_entry"/>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">"1 秒"</item>
+        <item quantity="other">"%d 秒"</item>
+    </plurals>
+    <add-resource type="string" name="pref_camera_timer_sound_default"/>
+    <string name="pref_camera_timer_sound_default">@string/setting_on_value</string>
+    <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
+    <add-resource type="string" name="pref_camera_timer_sound_title"/>
+    <string name="pref_camera_timer_sound_title">"倒數時發出提示音"</string>
+
+    <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_off"/>
+    <string name="setting_off">"關閉"</string>
+    <!-- Entry of a on/off setting. The setting is turned on. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_on"/>
+    <string name="setting_on">"開啟"</string>
+
+    <!-- The Video quality settings in preference [CHAR LIMIT=21] -->
+    <add-resource type="string" name="pref_video_quality_title"/>
+    <string name="pref_video_quality_title">"影片品質"</string>
+    <!-- Video quality setting entry. Videos will be recorded in the highest quality available on the device. [CHAR LIMIT=24] -->
+    <add-resource type="string" name="pref_video_quality_entry_high"/>
+    <string name="pref_video_quality_entry_high">"高"</string>
+    <!-- Video quality setting entry. Videos will be recorded in the lowest quality available on the device. [CHAR LIMIT=24] -->
+    <add-resource type="string" name="pref_video_quality_entry_low"/>
+    <string name="pref_video_quality_entry_low">"低"</string>
+
+    <!-- Describes the preference dialog for choosing interval between frame capture for
+    time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_title"/>
+    <string name="pref_video_time_lapse_frame_interval_title">"縮時攝影"</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <add-resource type="string" name="pref_camera_settings_category"/>
+    <string name="pref_camera_settings_category">"相機設定"</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <add-resource type="string" name="pref_camcorder_settings_category"/>
+    <string name="pref_camcorder_settings_category">"攝錄影機設定"</string>
+
+    <!-- Settings screen, Picture size title -->
+    <add-resource type="string" name="pref_camera_picturesize_title"/>
+    <string name="pref_camera_picturesize_title">"相片大小"</string>
+
+    <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_8mp"/>
+    <string name="pref_camera_picturesize_entry_8mp">"800 萬像素"</string>
+    <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_5mp"/>
+    <string name="pref_camera_picturesize_entry_5mp">"500 萬像素"</string>
+    <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_3mp"/>
+    <string name="pref_camera_picturesize_entry_3mp">"300 萬像素"</string>
+    <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_2mp"/>
+    <string name="pref_camera_picturesize_entry_2mp">"200 萬像素"</string>
+    <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1_3mp"/>
+    <string name="pref_camera_picturesize_entry_1_3mp">"130 萬像素"</string>
+    <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1mp"/>
+    <string name="pref_camera_picturesize_entry_1mp">"100 萬像素"</string>
+    <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_vga"/>
+    <string name="pref_camera_picturesize_entry_vga">VGA</string>
+    <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_qvga"/>
+    <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
+
+    <!-- Settings screen, Focus mode title -->
+    <add-resource type="string" name="pref_camera_focusmode_title"/>
+    <string name="pref_camera_focusmode_title">"對焦模式"</string>
+
+    <!-- Settings screen, Focus mode dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_focusmode_entry_auto"/>
+    <string name="pref_camera_focusmode_entry_auto">"自動"</string>
+    <add-resource type="string" name="pref_camera_focusmode_entry_infinity"/>
+    <string name="pref_camera_focusmode_entry_infinity">"無限遠"</string>
+    <add-resource type="string" name="pref_camera_focusmode_entry_macro"/>
+    <string name="pref_camera_focusmode_entry_macro">"微距"</string>
+
+    <!-- Settings screen, Flash mode title -->
+    <add-resource type="string" name="pref_camera_flashmode_title"/>
+    <string name="pref_camera_flashmode_title">"閃光模式"</string>
+
+    <!-- Settings screen, Flash mode dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_flashmode_entry_auto"/>
+    <string name="pref_camera_flashmode_entry_auto">"自動"</string>
+    <add-resource type="string" name="pref_camera_flashmode_entry_on"/>
+    <string name="pref_camera_flashmode_entry_on">"開啟"</string>
+    <add-resource type="string" name="pref_camera_flashmode_entry_off"/>
+    <string name="pref_camera_flashmode_entry_off">"關閉"</string>
+
+    <!-- Settings screen, white balance title -->
+    <add-resource type="string" name="pref_camera_whitebalance_title"/>
+    <string name="pref_camera_whitebalance_title">"白平衡"</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_whitebalance_entry_auto"/>
+    <string name="pref_camera_whitebalance_entry_auto">"自動"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_incandescent"/>
+    <string name="pref_camera_whitebalance_entry_incandescent">"鎢絲燈"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_daylight"/>
+    <string name="pref_camera_whitebalance_entry_daylight">"日光"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_fluorescent"/>
+    <string name="pref_camera_whitebalance_entry_fluorescent">"螢光燈"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_cloudy"/>
+    <string name="pref_camera_whitebalance_entry_cloudy">"陰天"</string>
+
+    <!-- Settings screen, Select Scene mode -->
+    <add-resource type="string" name="pref_camera_scenemode_title"/>
+    <string name="pref_camera_scenemode_title">"場景模式"</string>
+
+    <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_auto"/>
+    <string name="pref_camera_scenemode_entry_auto">"自動"</string>
+    <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_hdr"/>
+    <string name="pref_camera_scenemode_entry_hdr">HDR</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_action"/>
+    <string name="pref_camera_scenemode_entry_action">"動作"</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_night"/>
+    <string name="pref_camera_scenemode_entry_night">"夜晚"</string>
+    <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_sunset"/>
+    <string name="pref_camera_scenemode_entry_sunset">"傍晚"</string>
+    <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_party"/>
+    <string name="pref_camera_scenemode_entry_party">"派對"</string>
+
+    <!-- Toast after trying to select a setting that is not allowed to change in scene mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="not_selectable_in_scene_mode"/>
+    <string name="not_selectable_in_scene_mode">"在場景模式中無法選取。"</string>
+
+    <!-- Exposure settings in preference -->
+    <add-resource type="string" name="pref_exposure_title"/>
+    <string name="pref_exposure_title">"曝光"</string>
+
+    <!-- Default HDR entry value -->
+    <add-resource type="string" name="pref_camera_hdr_default"/>
+    <string name="pref_camera_hdr_default">@string/setting_off_value</string>
+
+    <!-- Dialog "OK" button. Dismisses dialog. -->
+    <add-resource type="string" name="dialog_ok"/>
+    <string name="dialog_ok">"確定"</string>
+
+    <!-- Low-memory dialog message [CHAR LIMT=NONE] -->
+    <add-resource type="string" name="spaceIsLow_content"/>
+    <string name="spaceIsLow_content" product="nosdcard">"您的 USB 儲存裝置的空間即將用盡，請變更圖片的品質設定，或是刪除部分圖片或其他檔案。"</string>
+    <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="spaceIsLow_content"/>
+    <string name="spaceIsLow_content" product="default">"您 SD 卡的空間即將不足，請變更圖片的品質設定，或是刪除部分圖片或其他檔案。"</string>
+
+    <!-- The message shown when video record reaches size limit. -->
+    <add-resource type="string" name="video_reach_size_limit"/>
+    <string name="video_reach_size_limit">"已達大小上限。"</string>
+
+    <!-- The text shown when the panorama panning speed is to fast [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pano_too_fast_prompt"/>
+    <string name="pano_too_fast_prompt">"速度過快"</string>
+
+    <!-- The text shown in the progress dialog when panorama preview is generating in the background [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pano_dialog_prepare_preview"/>
+    <string name="pano_dialog_prepare_preview">"正在準備全景預覽"</string>
+
+    <!-- The text shown in the dialog when panorama saving failed [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_panorama_failed"/>
+    <string name="pano_dialog_panorama_failed">"無法儲存全景。"</string>
+
+    <!-- The text shown on the dialog title in the dialogs for Panorama [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pano_dialog_title"/>
+    <string name="pano_dialog_title">"全景"</string>
+
+    <!-- The text shown on the top-left corner of the screen to indicate the capturing is on going [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_capture_indication"/>
+    <string name="pano_capture_indication">"全景拍攝中"</string>
+
+    <!-- The text shown in the progress dialog when waiting for previous panorama finishing [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_waiting_previous"/>
+    <string name="pano_dialog_waiting_previous">"正在等待先前的全景處理完成"</string>
+
+    <!-- The text shown on the bottom-left corner of the screen to indicate that the saving is in process [CHAR LIMIT=13] -->
+    <add-resource type="string" name="pano_review_saving_indication_str"/>
+    <string name="pano_review_saving_indication_str">"儲存中\u2026"</string>
+
+    <!-- The text shown on the screen to indicate that the panorama is rendering [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_review_rendering"/>
+    <string name="pano_review_rendering">"正在進行全景成像作業"</string>
+
+    <!-- Toast telling users tapping on the viewfinder will trigger autofocus [CHAR LIMIT=28] -->
+    <add-resource type="string" name="tap_to_focus"/>
+    <string name="tap_to_focus">"輕觸即可對焦。"</string>
+
+    <!-- Title of video effect setting popup window -->
+    <add-resource type="string" name="pref_video_effect_title"/>
+    <string name="pref_video_effect_title">"效果"</string>
+
+    <!-- Effect setting item that clear the effect. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_none"/>
+    <string name="effect_none">"無"</string>
+    <!-- Effect setting item that squeezes the face. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_squeeze"/>
+    <string name="effect_goofy_face_squeeze">"擠眉弄眼"</string>
+    <!-- Effect setting item that makes eyes big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_eyes"/>
+    <string name="effect_goofy_face_big_eyes">"大眼睛"</string>
+    <!-- Effect setting item that makes mouth big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_mouth"/>
+    <string name="effect_goofy_face_big_mouth">"大嘴巴"</string>
+    <!-- Effect setting item that makes mouth small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_mouth"/>
+    <string name="effect_goofy_face_small_mouth">"小嘴巴"</string>
+    <!-- Effect setting item that makes nose big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_nose"/>
+    <string name="effect_goofy_face_big_nose">"大鼻子"</string>
+    <!-- Effect setting item that makes eyes small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_eyes"/>
+    <string name="effect_goofy_face_small_eyes">"小眼睛"</string>
+    <!-- Effect setting item that replaces background with Android in Space. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_space"/>
+    <string name="effect_backdropper_space">"太空"</string>
+    <!-- Effect setting item that replaces background with a sunset. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_sunset"/>
+    <string name="effect_backdropper_sunset">"傍晚"</string>
+    <!-- Effect setting item that replaces background with video from gallery. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_gallery"/>
+    <string name="effect_backdropper_gallery">"您的影片"</string>
+
+    <!-- Message displayed in overlay during background replacement training [CHAR LIMIT=180]-->
+    <add-resource type="string" name="bg_replacement_message"/>
+    <string name="bg_replacement_message">"放下您的裝置\n暫時離開畫面。"</string>
+
+
+    <!-- Toast telling users tapping on the viewfinder will take a picture [CHAR LIMIT=54] -->
+    <add-resource type="string" name="video_snapshot_hint"/>
+    <string name="video_snapshot_hint">"輕觸即可在錄製期間拍照。"</string>
+
+    <!-- Announcement telling users video recording has just started [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_started"/>
+    <string name="video_recording_started">"錄影程序已啟動。"</string>
+    <!-- Announcement telling users video recording has just stopped [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_stopped"/>
+    <string name="video_recording_stopped">"錄影程序已暫停。"</string>
+
+    <!-- Toast telling users video snapshot is disabled when the effects are on and a user tries to tap on the viewfinder [CHAR LIMIT=65] -->
+    <add-resource type="string" name="disable_video_snapshot_hint"/>
+    <string name="disable_video_snapshot_hint">"特殊效果啟用時無法使用影片快照。"</string>
+
+    <!-- A button in effect setting popup to clear the effect. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="clear_effects"/>
+    <string name="clear_effects">"清除效果"</string>
+
+    <!-- Title of category for silly face effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_silly_faces"/>
+    <string name="effect_silly_faces">"耍笨臉"</string>
+
+    <!-- Title of category for background replacement effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_background"/>
+    <string name="effect_background">"背景"</string>
+
+    <!-- The shutter button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_shutter_button"/>
+    <string name="accessibility_shutter_button">"[快門] 按鈕"</string>
+    <!-- The menu button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_menu_button"/>
+    <string name="accessibility_menu_button">"選單按鈕"</string>
+    <!-- The button to review the thumbnail. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_thumbnail"/>
+    <string name="accessibility_review_thumbnail">"最近的相片"</string>
+    <!-- The front/back camera switch. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_camera_picker"/>
+    <string name="accessibility_camera_picker">"前置和後置鏡頭開關"</string>
+    <!-- The mode picker to switch between camera, video and panorama. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_mode_picker"/>
+    <string name="accessibility_mode_picker">"相機、影片或全景選取工具"</string>
+    <!-- The button to switch to the second-level indicators of the camera settings. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_second_level_indicators"/>
+    <string name="accessibility_second_level_indicators">"更多設定控制"</string>
+    <!-- The button to back to the first-level indicators of the camera settings. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_back_to_first_level"/>
+    <string name="accessibility_back_to_first_level">"關閉設定控制"</string>
+    <!-- The zoom control button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_zoom_control"/>
+    <string name="accessibility_zoom_control">"縮放控制"</string>
+    <!-- The decrement button in camera preference such as exposure, picture size. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_decrement"/>
+    <string name="accessibility_decrement">"縮小 %1$s"</string>
+    <!-- The increment button in camera preference such as exposure, picture size. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_increment"/>
+    <string name="accessibility_increment">"放大 %1$s"</string>
+    <!-- The check box in camera settings, such as store location. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_check_box"/>
+    <string name="accessibility_check_box">"%1$s 核取方塊"</string>
+    <!-- The button to switch to Camera mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_camera"/>
+    <string name="accessibility_switch_to_camera">"切換至相片模式"</string>
+    <!-- The button to switch to Video mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_video"/>
+    <string name="accessibility_switch_to_video">"切換至影片模式"</string>
+    <!-- The button to switch to Panorama mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_panorama"/>
+    <string name="accessibility_switch_to_panorama">"切換至全景模式"</string>
+    <!-- The button to switch to new Panorama mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_new_panorama"/>
+    <string name="accessibility_switch_to_new_panorama">"切換為新全景"</string>
+    <!-- The button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_cancel"/>
+    <string name="accessibility_review_cancel">"檢閱取消"</string>
+    <!-- The button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_ok"/>
+    <string name="accessibility_review_ok">"檢閱完成"</string>
+    <!-- button in review mode indicate the user want to retake another photo/video for attachment [
+CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_retake"/>
+    <string name="accessibility_review_retake">"檢查重拍"</string>
+
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_on"/>
+    <string name="capital_on">"開啟"</string>
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_off"/>
+    <string name="capital_off">"關閉"</string>
+
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_off"/>
+    <string name="pref_video_time_lapse_frame_interval_off">"關閉"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_500"/>
+    <string name="pref_video_time_lapse_frame_interval_500">"0.5 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1000"/>
+    <string name="pref_video_time_lapse_frame_interval_1000">"1 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1500"/>
+    <string name="pref_video_time_lapse_frame_interval_1500">"1.5 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2000"/>
+    <string name="pref_video_time_lapse_frame_interval_2000">"2 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2500"/>
+    <string name="pref_video_time_lapse_frame_interval_2500">"2.5 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3000"/>
+    <string name="pref_video_time_lapse_frame_interval_3000">"3 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_4000"/>
+    <string name="pref_video_time_lapse_frame_interval_4000">"4 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5000"/>
+    <string name="pref_video_time_lapse_frame_interval_5000">"5 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_6000"/>
+    <string name="pref_video_time_lapse_frame_interval_6000">"6 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10000"/>
+    <string name="pref_video_time_lapse_frame_interval_10000">"10 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_12000"/>
+    <string name="pref_video_time_lapse_frame_interval_12000">"12 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_15000"/>
+    <string name="pref_video_time_lapse_frame_interval_15000">"15 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_24000"/>
+    <string name="pref_video_time_lapse_frame_interval_24000">"24 秒"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_30000"/>
+    <string name="pref_video_time_lapse_frame_interval_30000">"0.5 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_60000"/>
+    <string name="pref_video_time_lapse_frame_interval_60000">"1 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_90000"/>
+    <string name="pref_video_time_lapse_frame_interval_90000">"1.5 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_120000"/>
+    <string name="pref_video_time_lapse_frame_interval_120000">"2 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_150000"/>
+    <string name="pref_video_time_lapse_frame_interval_150000">"2.5 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_180000"/>
+    <string name="pref_video_time_lapse_frame_interval_180000">"3 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_240000"/>
+    <string name="pref_video_time_lapse_frame_interval_240000">"4 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_300000"/>
+    <string name="pref_video_time_lapse_frame_interval_300000">"5 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_360000"/>
+    <string name="pref_video_time_lapse_frame_interval_360000">"6 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_600000"/>
+    <string name="pref_video_time_lapse_frame_interval_600000">"10 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_720000"/>
+    <string name="pref_video_time_lapse_frame_interval_720000">"12 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_900000"/>
+    <string name="pref_video_time_lapse_frame_interval_900000">"15 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1440000"/>
+    <string name="pref_video_time_lapse_frame_interval_1440000">"24 分鐘"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1800000"/>
+    <string name="pref_video_time_lapse_frame_interval_1800000">"0.5 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3600000"/>
+    <string name="pref_video_time_lapse_frame_interval_3600000">"1 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5400000"/>
+    <string name="pref_video_time_lapse_frame_interval_5400000">"1.5 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_7200000"/>
+    <string name="pref_video_time_lapse_frame_interval_7200000">"2 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_9000000"/>
+    <string name="pref_video_time_lapse_frame_interval_9000000">"2.5 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10800000"/>
+    <string name="pref_video_time_lapse_frame_interval_10800000">"3 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_14400000"/>
+    <string name="pref_video_time_lapse_frame_interval_14400000">"4 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_18000000"/>
+    <string name="pref_video_time_lapse_frame_interval_18000000">"5 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_21600000"/>
+    <string name="pref_video_time_lapse_frame_interval_21600000">"6 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_36000000"/>
+    <string name="pref_video_time_lapse_frame_interval_36000000">"10 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_43200000"/>
+    <string name="pref_video_time_lapse_frame_interval_43200000">"12 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_54000000"/>
+    <string name="pref_video_time_lapse_frame_interval_54000000">"15 小時"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_86400000"/>
+    <string name="pref_video_time_lapse_frame_interval_86400000">"24 小時"</string>
+
+    <!-- Seconds: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_seconds"/>
+    <string name="time_lapse_seconds">"秒鐘"</string>
+    <!-- Minutes: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_minutes"/>
+    <string name="time_lapse_minutes">"分鐘"</string>
+    <!-- Hours: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_hours"/>
+    <string name="time_lapse_hours">"小時"</string>
+
+    <!-- The button to confirm time-lapse setting changes. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_interval_set"/>
+    <string name="time_lapse_interval_set">"完成"</string>
+    <!-- Title in time interval picker for setting time interval. [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="set_time_interval"/>
+    <string name="set_time_interval">"設定時間間隔"</string>
+    <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
+    <add-resource type="string" name="set_time_interval_help"/>
+    <string name="set_time_interval_help">"縮時攝影功能已關閉，請開啟以設定時間間格。"</string>
+    <!-- Help text that is shown when the countdown timer is turned off. [CHAR LIMIT = 180]-->
+    <add-resource type="string" name="set_timer_help"/>
+    <string name="set_timer_help">"倒數計時器目前為關閉狀態，開啟即可在拍照前倒數計時。"</string>
+    <!-- Title in timer setting for setting the duration for the countdown timer. [CHAR LIMIT = 50]-->
+    <add-resource type="string" name="set_duration"/>
+    <string name="set_duration">"設定倒數時間 (以秒為單位)"</string>
+    <!-- On-screen hint during timer countdown for taking a photo. [CHAR LIMIT = 60]-->
+    <add-resource type="string" name="count_down_title_text"/>
+    <string name="count_down_title_text">"拍照倒數計時中"</string>
+
+    <!-- Title for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 50] -->
+    <add-resource type="string" name="remember_location_title"/>
+    <string name="remember_location_title">"記錄拍攝地點？"</string>
+    <!-- Message for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = None] -->
+    <add-resource type="string" name="remember_location_prompt"/>
+    <string name="remember_location_prompt">"為您的相片和影片標記拍攝地點。\n\n其他應用程式可存取這項資訊及您所儲存的相片。"</string>
+    <!-- Negative answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_no"/>
+    <string name="remember_location_no">"不用了，謝謝"</string>
+    <!-- Positive answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_yes"/>
+    <string name="remember_location_yes">"是"</string></resources>

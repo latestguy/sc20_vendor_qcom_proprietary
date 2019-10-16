@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2016 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<providers_product>
+    <provider id="Yahoo" label="Yahoo" domain="yahoo.it">
+        <incoming uri="imap+ssl+993://tim.imap.mail.yahoo.com" username="$email" />
+        <outgoing uri="smtp+ssl+465://tim.smtp.mail.yahoo.com" username="$user" />
+    </provider>
+
+    <provider id="Gmail" label="Gmail" domain="gmail.com">
+        <incoming uri="pop3+ssl+995://pop.gmail.com" username="$email" />
+        <outgoing uri="smtp+tls+587://smtp.gmail.com" username="$user" />
+    </provider>
+
+    <provider id="Outlook" label="Outlook" domain="live.it">
+        <incoming uri="pop3+ssl+995://pop3.live.com" username="$email" />
+        <outgoing uri="smtp+tls+587://smtp.live.com" username="$user" />
+    </provider>
+
+    <provider id="Outlook" label="Outlook" domain="hotmail.com">
+        <incoming uri="pop3+ssl+995://pop3.live.com" username="$email" />
+        <outgoing uri="smtp+tls+587://smtp.live.com" username="$user" />
+    </provider>
+
+    <provider id="Alice" label="Alice" domain="alice.it">
+        <incoming uri="imap+143://in.alice.it" username="$email" />
+        <outgoing uri="smtp+587://out.alice.it" username="$user" />
+    </provider>
+</providers_product>

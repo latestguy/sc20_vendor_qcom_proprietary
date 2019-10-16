@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ابیجان"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اکرا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ادیس ابابا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الجائرز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلینٹائر"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برازاویلے"</item>
+        <item>"ق<xliff:g id="SEPARATOR">=</xliff:g>قاہرہ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کاسا بلانکا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کونیکری"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈاکار"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دارالسلام"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جبوتی"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فری ٹاؤن"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گیبورون"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہرارے"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جوہانسبرگ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کمپالا"</item>
+        <item>"خ<xliff:g id="SEPARATOR">=</xliff:g>خرطوم"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیگالی"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کنشاسا"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاگوس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مسیرو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>موگادیشو"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیروبی"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساؤٹوم"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹمبکٹو"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹرائی پولی"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تیونس"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انکوریج"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مینڈوزا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اروبا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اسنسیؤن"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بارباڈوس"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیلیز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوگوٹا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیونس آئرس"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کینکون"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کراکس"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیمان"</item>
+        <item>"ش<xliff:g id="SEPARATOR">=</xliff:g>شکاگو"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کوسٹا ریکا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیورا کاؤ"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈاسن کریک"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈینور"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈیٹروئٹ"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈومینیکا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایڈمونٹن"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایلسلواڈور"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فورٹالیزا"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گرینڈ ٹرک"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غرناطہ"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گوئٹے مالا شہر"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گیانا"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہیلیفیکس"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہوانا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انڈیانا پولس"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>ناکس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میرنگو"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پیٹرزبرگ"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹیل سٹی"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ویوے"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ونسن"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وینامیک"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کنگسٹن"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوئیسترا سینورا ڈی لا پاز"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لیما"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاس اینجلس"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لوئی ویلے"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماناگوآ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مارٹینک"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مینڈوزا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میٹلاکاٹلا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میکسیکوسٹی"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونٹررے"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونٹے ویڈو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونٹریال"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نساؤ"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیویارک"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیولاہ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سنٹر"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیوسیلم"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پاناما"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فینکس"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پورٹ آف سپین"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پورٹ او پرنس"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پوئیرٹوریکو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانٹو ڈومنگو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساؤ پالو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ جونز"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ کٹس"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ لوسیا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ تھامس"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تیجوآنا"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹورنٹو"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وینکوور"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ونّیپگ"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جنوبی قطب<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لانگ ائیر بین"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الماٹی"</item>
+        <item>"ع<xliff:g id="SEPARATOR">=</xliff:g>عمان"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انادیر"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اکتاؤ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بغداد"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بحرین"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>باکو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بنکاک"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیروت"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کلکتّہ"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دمشق"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈھاکہ"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دبئی"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غزّہ"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الخلیل"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہو چی منہ"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہانگ کانگ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>استنبول"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جکارتہ"</item>
+        <item>"ی<xliff:g id="SEPARATOR">=</xliff:g>یروشلم"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کابل"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کراچی"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کھٹمنڈو"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کوالالمپور"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کویت"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مکاؤ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>منیلا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مسقط"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پنوم پن"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پیونگ یانگ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ق<xliff:g id="SEPARATOR">=</xliff:g>قطر"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>رنگون"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ریاض"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سائگون"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سیول"</item>
+        <item>"ش<xliff:g id="SEPARATOR">=</xliff:g>شنگھائی<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سنگاپور"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تائی پے<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تہران"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تل اویو"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹوکیو<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اولانباتار"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برمودا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کینیری"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیپ ورڈی"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ریکجاوک"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سٹینلے"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایڈیلیڈ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برسبین"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کینبرا"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈارون"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میلبورن"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیو ساؤتھ ویلز"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پرتھ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کوئینزلینڈ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سڈنی"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وکٹوریا"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیو فاؤنڈ لینڈ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساسکچیوان"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایسٹرجزیرہ"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایمسٹرڈیم"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انڈوررا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ایتھنز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیلفاسٹ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیل گریڈ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برلن"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>براٹس لاوا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برسلز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوکاریسٹ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوداپیسٹ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیشیناؤ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کوپن ہیگن"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈبلن"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جبرالٹر"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہیلنسکی"</item>
+        <item>"آ<xliff:g id="SEPARATOR">=</xliff:g>آئل آف مین"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>استنبول"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیو"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لسبن"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لندن"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لکسمبرگ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میڈرڈ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مالٹا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>منسک"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>موناکو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماسکو"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اوسلو"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پیرس"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پراگ"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ریگا"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>روم"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان مارینو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساراجیوو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سمفیروپول"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سکوپجی"</item>
+        <item>"ص<xliff:g id="SEPARATOR">=</xliff:g>صوفیا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سٹاک ہوم"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تالن"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ویٹیکن"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ویانا"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ویلنیس"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وارسا"</item>
+        <item>"ز<xliff:g id="SEPARATOR">=</xliff:g>زیگریب"</item>
+        <item>"ز<xliff:g id="SEPARATOR">=</xliff:g>زیورخ"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انتاناناریوو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مالدیپ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماریشس"</item>
+        <item>"آ<xliff:g id="SEPARATOR">=</xliff:g>آکلینڈ"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فجی"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گوآم"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہونولولو"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کریٹیماٹی"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نومیا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساموا"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تاہیٹی"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اینٹی گوا"</item>
+        <item>"آ<xliff:g id="SEPARATOR">=</xliff:g>آسٹن"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوسٹن"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیلگری"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کولمبس"</item>
+        <item>"ڈ<xliff:g id="SEPARATOR">=</xliff:g>ڈلاس"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوکس ولے"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میمفس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میامی"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مینی پولس"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اوٹاوا"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فلاڈیلفیا"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پورٹ لینڈ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان ڈیاگو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان فرانسسکو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سالٹ لیک سٹی"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان جوزے"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان سلواڈور"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سیاٹل"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ لوئس"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>واشنگٹن ڈی سی"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہیوسٹن"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان انٹونیو"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جیکسن ولے"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بالٹی مور"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیش ولّے"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ملواکی"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اوکلاہوما سٹی"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاس ویگاس"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>البرکرکی"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹکسن"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساکرےمینٹو"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اٹلانٹا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کلیولینڈ"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نیو اورلینز"</item>
+        <item>"ٹ<xliff:g id="SEPARATOR">=</xliff:g>ٹیمپا"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پٹسبرگ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سنسناٹی"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماؤنٹین ویو"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>رینو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلیک راک سٹی"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دوحہ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیجنگ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ممبئی"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دہلی"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>اوساکا<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاہور"</item>
+        <item>"ص<xliff:g id="SEPARATOR">=</xliff:g>صنعا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بارسلونا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میونخ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میلان"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فرینکفرٹ"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہنوئی"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>انقرہ"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بنگلور"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>براسیلیا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیپ ٹاؤن"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اسلام آباد"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ریو ڈی جنیرو"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>این آربر"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بولڈر"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیمبرج"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کرک لینڈ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>میڈیسن"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گوانگزو<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ح<xliff:g id="SEPARATOR">=</xliff:g>حیدرآباد"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ریسٹن"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بیلو ہوریزونٹے"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان ٹیاگو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونروویا"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کولمبو"</item>
+        <item>"چ<xliff:g id="SEPARATOR">=</xliff:g>چیہوآہوآ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سلواڈور"</item>
+        <item>"گ<xliff:g id="SEPARATOR">=</xliff:g>گڑگاؤں"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مانچسٹر"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سینٹ پیٹرزبرگ"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کراکاؤ"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>راکلا"</item>
+        <item>"ہ<xliff:g id="SEPARATOR">=</xliff:g>ہیمبرگ"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اولو"</item>
+        <item>"ح<xliff:g id="SEPARATOR">=</xliff:g>حیفا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان جوآن"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تیگوسیگالپا"</item>
+        <item>"پ<xliff:g id="SEPARATOR">=</xliff:g>پیراماریبو"</item>
+        <item>"ک<xliff:g id="SEPARATOR">=</xliff:g>کیٹو"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لوبی یانا"</item>
+    </string-array></resources>

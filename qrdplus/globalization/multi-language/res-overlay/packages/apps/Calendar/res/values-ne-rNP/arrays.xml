@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Choices for the "Reminder method" spinner.
+         These must be kept in sync with the reminder_methods_values array.
+         [CHAR LIMIT=10]
+    -->
+    <add-resource type="array" name="reminder_methods_labels"/>
+    <string-array name="reminder_methods_labels">
+        <item>"सूचना"</item>
+        <item>"इमेल"</item>
+        <item>"SMS"</item>
+        <item>"अलार्म"</item>
+    </string-array>
+
+    <!-- Choices for the "Reminder minutes" spinner.
+         These must be kept in sync with the reminder_minutes_values array.
+         For consistency, the format should match what
+         EventViewUtils.constructReminderLabel() generates.  (TODO: eliminate
+         this and just generate the list from reminder_minutes_values?)
+         [CHAR LIMIT=15]
+    -->
+    <add-resource type="array" name="reminder_minutes_labels"/>
+    <string-array name="reminder_minutes_labels">
+        <item>"० मिनेट"</item>
+        <item>"१ मिनेट"</item>
+        <item>"५ मिनेट"</item>
+        <item>"१० मिनेट"</item>
+        <item>"१५ मिनेट"</item>
+        <item>"२० मिनेट"</item>
+        <item>"२५ मिनेट"</item>
+        <item>"३० मिनेट"</item>
+        <item>"४५ मिनेट"</item>
+        <item>"१ घन्टा"</item>
+        <item>"२ घन्टा"</item>
+        <item>"३ घन्टा"</item>
+        <item>"१२ घन्टा"</item>
+        <item>"२४ घन्टा"</item>
+        <item>"२ दिन"</item>
+        <item>"१ हप्ता"</item>
+    </string-array>
+
+  <!-- Choices for the "Reminder minutes" spinner in the settings.
+         These must be kept in sync with the preferences_default_reminder_values array.
+         [CHAR LIMIT=12]
+    -->
+       <add-resource type="array" name="preferences_default_reminder_labels"/>
+    <string-array name="preferences_default_reminder_labels">
+        <item>"कुनै पनि होइन"</item>
+        <item>"० मिनेट"</item>
+        <item>"१ मिनेट"</item>
+        <item>"५ मिनेट"</item>
+        <item>"१० मिनेट"</item>
+        <item>"१५ मिनेट"</item>
+        <item>"२० मिनेट"</item>
+        <item>"२५ मिनेट"</item>
+        <item>"३० मिनेट"</item>
+        <item>"४५ मिनेट"</item>
+        <item>"१ घन्टा"</item>
+        <item>"२ घन्टा"</item>
+        <item>"३ घन्टा"</item>
+        <item>"१२ घन्टा"</item>
+        <item>"२४ घन्टा"</item>
+        <item>"२ दिन"</item>
+        <item>"१ हप्ता"</item>
+    </string-array>
+
+    <add-resource type="array" name="preferences_week_start_day_labels"/>
+    <string-array name="preferences_week_start_day_labels">
+        <item>"पूर्वनिर्धारित लोकेल"</item>
+        <item>"शनिबार"</item>
+        <item>"आइतबार"</item>
+        <item>"सोमबार"</item>
+    </string-array>
+
+
+
+    <add-resource type="array" name="availability"/>
+    <string-array name="availability">
+        <item>"व्यस्त"</item>
+        <item>"उपलब्ध"</item>
+        <item>"अनुमानित"</item>
+    </string-array>
+
+    <add-resource type="array" name="visibility"/>
+    <string-array name="visibility">
+        <item>"पूर्वनिर्धारित"</item>
+        <item>"निजी"</item>
+        <item>"सार्वजनिक"</item>
+    </string-array>
+
+    <add-resource type="array" name="ordinal_labels"/>
+    <string-array name="ordinal_labels">
+        <item>"पहिलो"</item>
+        <item>"दोस्रो"</item>
+        <item>"तेस्रो"</item>
+        <item>"चौंथो"</item>
+        <item>"अन्तिम"</item>
+    </string-array>
+
+    <!-- Invitation responses -->
+    <add-resource type="array" name="response_labels1"/>
+    <string-array name="response_labels1">
+        <item>"जवाफ छैन"</item>
+        <item>"हो"</item>
+        <item>"हुनसक्छ"</item>
+        <item>"होइन"</item>
+    </string-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is a list of choices displayed when the user deletes an event.
+         It only is shown when deleting a recurring event.
+    -->
+
+    <add-resource type="array" name="delete_repeating_labels"/>
+    <string-array name="delete_repeating_labels">
+        <item>"यो घटना मात्र"</item>
+        <item>"यो र भविष्यका घटनाहरू"</item>
+        <item>"सम्पूर्ण घटनाहरू"</item>
+    </string-array>
+
+    <!-- DO NOT TRANSLATE These values need to correspond to the indices
+         defined in DeleteEventHelper.java-->
+    <add-resource type="array" name="delete_repeating_values"/>
+    <integer-array name="delete_repeating_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is the same array as above (the "delete_repeating_labels" array,
+         except that the first element "Only this event" is removed.  This
+         array exists to work-around a bug in the CalendarProvider and sync
+         code where you can't delete one instance of a repeating event that
+         was created on the phone until that event has been synced to the server.
+     -->
+
+    <add-resource type="array" name="delete_repeating_labels_no_selected"/>
+    <string-array name="delete_repeating_labels_no_selected">
+        <item>"यो र भविष्यका घटनाहरू"</item>
+        <item>"सम्पूर्ण घटनाहरू"</item>
+    </string-array>
+
+    <!-- The corresponding array indices are defined in EventInfoActivity.java -->
+
+    <!-- The list of choices displayed in a dialog box when the user wants to
+    respond to an invitation that repeats. -->
+    <add-resource type="array" name="change_response_labels"/>
+    <string-array name="change_response_labels">
+        <!-- The choice for responding to only one instance of a repeating event -->
+        <item>"यो घटना मात्र"</item>
+        <!-- The choice for responding to all instances of a repeating event -->
+        <item>"पङ्तिमा रहेका सबै घटनाहरू"</item>
+    </string-array>
+
+    <!-- Strings for buttons in drop down menu -->
+    <add-resource type="array" name="buttons_list"/>
+    <string-array name="buttons_list">
+        <item>"दिन"</item>
+        <item>"हप्ता"</item>
+        <item>"महिना"</item>
+        <item>"एजेन्डा"</item>
+    </string-array>
+
+    <!-- Experimental options for skipping reminders. [CHAR LIMIT = 37] -->
+    <add-resource type="array" name="preferences_skip_reminders_labels"/>
+    <string-array name="preferences_skip_reminders_labels">
+        <!-- Default choice -->
+        <item>"अस्वीकृत भएमा मात्र"</item>
+        <!-- Second option, for skipping reminders to events not yet responded to. -->
+        <item>"अस्वीकृत वा जवाफ प्राप्त नभएमा मात्र"</item>
+    </string-array>
+
+    <!-- Recurrence picker: How events are to be repeated.  [CHAR LIMIT = 20] -->
+    <add-resource type="array" name="recurrence_freq"/>
+    <string-array name="recurrence_freq">
+        <item>"दैनिक दोहोर्याउनुहोस्"</item>
+        <item>"हप्तै पिच्छे दोहोर्याउनुहोस्"</item>
+        <item>"मासिक रूपमा दोहोर्याउनुहोस्"</item>
+        <item>"वर्षै पिच्छे दोहोर्याउनुहोस्"</item>
+    </string-array>
+
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+         on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+         the last Sunday. These are set up like this to resolve any gender-matching issues
+         that were present in some languages.
+     -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sun"/>
+    <string-array name="repeat_by_nth_sun">
+        <item>"प्रत्येक पहिलो आइतबारमा"</item>
+        <item>"प्रत्येक दोस्रो आइतबारमा"</item>
+        <item>"प्रत्येक तेस्रो आइतबारमा"</item>
+        <item>"प्रत्येक चौंथो आइतबारमा"</item>
+        <item>"प्रत्येक अन्तिम आइतबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_mon"/>
+    <string-array name="repeat_by_nth_mon">
+        <item>"प्रत्येक पहिलो सोमबारमा"</item>
+        <item>"प्रत्येक दोस्रो सोमबारमा"</item>
+        <item>"प्रत्येक तेस्रो सोमबारमा"</item>
+        <item>"प्रत्येक चौंथो सोमबारमा"</item>
+        <item>"प्रत्येक अन्तिम सोमबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_tues"/>
+    <string-array name="repeat_by_nth_tues">
+        <item>"प्रत्येक पहिलो मङ्गलबारमा"</item>
+        <item>"प्रत्येक दोस्रो मङ्गलबारमा"</item>
+        <item>"प्रत्येक तेस्रो मङ्गलबारमा"</item>
+        <item>"प्रत्येक चौंथो मङ्गलबारमा"</item>
+        <item>"प्रत्येक अन्तिम मङ्गलबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_wed"/>
+    <string-array name="repeat_by_nth_wed">
+        <item>"प्रत्येक पहिलो बुधबारमा"</item>
+        <item>"प्रत्येक दोस्रो बुधबारमा"</item>
+        <item>"प्रत्येक तेस्रो बुधबारमा"</item>
+        <item>"प्रत्येक चौंथो बुधबारमा"</item>
+        <item>"प्रत्येक अन्तिम बुधबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_thurs"/>
+    <string-array name="repeat_by_nth_thurs">
+        <item>"प्रत्येक पहिलो बिहिबारमा"</item>
+        <item>"प्रत्येक दोस्रो बिहिबारमा"</item>
+        <item>"प्रत्येक तेस्रो बिहिबारमा"</item>
+        <item>"प्रत्येक चौंथो बिहिबारमा"</item>
+        <item>"प्रत्येक अन्तिम बिहिबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_fri"/>
+    <string-array name="repeat_by_nth_fri">
+        <item>"प्रत्येक पहिलो शुक्रबारमा"</item>
+        <item>"प्रत्येक दोस्रो शुक्रबारमा"</item>
+        <item>"प्रत्येक तेस्रो शुक्रबारमा"</item>
+        <item>"प्रत्येक चौंथो शुक्रबारमा"</item>
+        <item>"प्रत्येक अन्तिम शुक्रबारमा"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sat"/>
+    <string-array name="repeat_by_nth_sat">
+        <item>"प्रत्येक पहिलो सोमबारमा"</item>
+        <item>"प्रत्येक दोस्रो शनिबारमा"</item>
+        <item>"प्रत्येक तेस्रो शनिबारमा"</item>
+        <item>"प्रत्येक चौंथो शनिबारमा"</item>
+        <item>"प्रत्येक अन्तिम शनिबारमा"</item>
+    </string-array></resources>

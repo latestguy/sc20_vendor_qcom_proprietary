@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"美國"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"歐洲"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"非洲"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"亞洲"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"澳大利亞"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"太平洋"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"全部"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 秒"</item>
+        <item>"30 秒"</item>
+        <item>"1 分鐘"</item>
+        <item>"2 分鐘"</item>
+        <item>"5 分鐘"</item>
+        <item>"10 分鐘"</item>
+        <item>"30 分鐘"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"永不"</item>
+        <item>"15 秒"</item>
+        <item>"30 秒"</item>
+        <item>"1 分鐘"</item>
+        <item>"2 分鐘"</item>
+        <item>"5 分鐘"</item>
+        <item>"10 分鐘"</item>
+        <item>"30 分鐘"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"立即"</item>
+        <item>"5 秒"</item>
+        <item>"15 秒"</item>
+        <item>"30 秒"</item>
+        <item>"1 分鐘"</item>
+        <item>"2 分鐘"</item>
+        <item>"5 分鐘"</item>
+        <item>"10 分鐘"</item>
+        <item>"30 分鐘"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"小"</item>
+        <item msgid="3579015730662088893">"預設"</item>
+        <item msgid="1678068858001018666">"大"</item>
+        <item msgid="490158884605093126">"最大"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"掃描中\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"連線中\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"驗證中\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"正在取得 IP 位址\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"已連線"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暫停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"中斷連線中\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已中斷連線"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失敗"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已封鎖"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"目前正暫時避開品質不佳的連線"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"掃描中\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"正在連線到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"正在取得 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的授權\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"正在由 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 取得 IP 位址\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"已連線到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暫停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"正在中斷 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 連線\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已中斷連線"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失敗"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已封鎖"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"目前正暫時避開品質不佳的連線"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"按鈕"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"來自對端裝置的 PIN"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"從這個裝置產生 PIN"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"已連線"</item>
+        <item>"已邀請"</item>
+        <item>"失敗"</item>
+        <item>"可用"</item>
+        <item>"超出範圍"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 分鐘"</item>
+        <item>"5 分鐘"</item>
+        <item>"1 小時"</item>
+        <item>"無時限"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"差"</item>
+        <item>"可"</item>
+        <item>"良好"</item>
+        <item>"優"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"一律啟用"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"僅限充電時"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"永不"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"一律啟用"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"僅限充電時"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"永不採用"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"最近 30 天"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"設定用量週期..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"使用時間"</item>
+        <item>"上次使用時間"</item>
+        <item>"應用程式名稱"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"無"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"無"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"靜態"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"無"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"手動"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Proxy 自動設定"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"無"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP 或 CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"未指定"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"無"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"內部裝置儲存空間"</item>
+        <item>"卸除式 SD 卡"</item>
+        <item>"讓系統決定"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"位置"</item>
+        <item>"個人"</item>
+        <item>"簡訊"</item>
+        <item>"媒體"</item>
+        <item>"裝置"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"約略位置"</item>
+        <item>"精確位置"</item>
+        <item>GPS</item>
+        <item>"震動"</item>
+        <item>"讀取聯絡人資料"</item>
+        <item>"修改聯絡人資料"</item>
+        <item>"讀取通話記錄"</item>
+        <item>"修改通話記錄"</item>
+        <item>"讀取日曆"</item>
+        <item>"修改日曆"</item>
+        <item>"Wi-Fi 掃描"</item>
+        <item>"通知"</item>
+        <item>"手機掃描"</item>
+        <item>"撥打電話"</item>
+        <item>"讀取 SMS"</item>
+        <item>"撰寫 SMS"</item>
+        <item>"接收 SMS"</item>
+        <item>"接收緊急 SMS"</item>
+        <item>"接收 MMS"</item>
+        <item>"接收 WAP PUSH 簡訊"</item>
+        <item>"傳送 SMS"</item>
+        <item>"讀取 ICC SMS"</item>
+        <item>"撰寫 ICC SMS"</item>
+        <item>"修改設定"</item>
+        <item>"在最上層繪圖"</item>
+        <item>"存取通知"</item>
+        <item>"相機"</item>
+        <item>"錄音"</item>
+        <item>"播放音訊"</item>
+        <item>"讀取剪貼簿"</item>
+        <item>"修改剪貼簿"</item>
+        <item>"媒體按鈕"</item>
+        <item>"音訊焦點"</item>
+        <item>"主音量"</item>
+        <item>"語音音量"</item>
+        <item>"鈴聲音量"</item>
+        <item>"媒體音量"</item>
+        <item>"鬧鐘音量"</item>
+        <item>"通知音量"</item>
+        <item>"藍牙音量"</item>
+        <item>"停用休眠"</item>
+        <item>"監控位置"</item>
+        <item>"監控高耗電定位功能"</item>
+        <item>"取得使用統計資料"</item>
+        <item>"關閉/開啟麥克風"</item>
+        <item>"顯示浮動式訊息"</item>
+        <item>"投影媒體"</item>
+        <item>"啟用 VPN"</item>
+        <item>"寫入桌布"</item>
+        <item>"輔助結構"</item>
+        <item>"輔助螢幕擷取畫面"</item>
+        <item>"讀取手機狀態"</item>
+        <item>"新增語音留言"</item>
+        <item>"使用 SIP"</item>
+        <item>"處理撥出電話"</item>
+        <item>"指紋"</item>
+        <item>"人體感測器"</item>
+        <item>"讀取區域廣播"</item>
+        <item>"模擬位置"</item>
+        <item>"讀取儲存空間"</item>
+        <item>"寫入儲存空間"</item>
+        <item>"開啟螢幕"</item>
+        <item>"取得帳戶"</item>
+        <item>"在背景執行"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"位置"</item>
+        <item>"位置"</item>
+        <item>"位置"</item>
+        <item>"震動"</item>
+        <item>"讀取聯絡人資料"</item>
+        <item>"修改聯絡人資料"</item>
+        <item>"讀取通話記錄"</item>
+        <item>"修改通話記錄"</item>
+        <item>"讀取日曆"</item>
+        <item>"修改日曆"</item>
+        <item>"位置"</item>
+        <item>"發佈通知"</item>
+        <item>"位置"</item>
+        <item>"撥打電話"</item>
+        <item>"讀取簡訊/MMS"</item>
+        <item>"寫入簡訊/MMS"</item>
+        <item>"接收 SMS/MMS"</item>
+        <item>"接收 SMS/MMS"</item>
+        <item>"接收 SMS/MMS"</item>
+        <item>"接收 SMS/MMS"</item>
+        <item>"傳送文字/多媒體訊息"</item>
+        <item>"讀取簡訊/MMS"</item>
+        <item>"寫入簡訊/MMS"</item>
+        <item>"修改設定"</item>
+        <item>"在最上層繪圖"</item>
+        <item>"存取通知"</item>
+        <item>"相機"</item>
+        <item>"錄音"</item>
+        <item>"播放音訊"</item>
+        <item>"讀取剪貼簿"</item>
+        <item>"修改剪貼簿"</item>
+        <item>"媒體按鈕"</item>
+        <item>"音訊焦點"</item>
+        <item>"主音量"</item>
+        <item>"語音音量"</item>
+        <item>"鈴聲音量"</item>
+        <item>"媒體音量"</item>
+        <item>"鬧鐘音量"</item>
+        <item>"通知音量"</item>
+        <item>"藍牙音量"</item>
+        <item>"停用休眠"</item>
+        <item>"位置"</item>
+        <item>"位置"</item>
+        <item>"取得使用統計資料"</item>
+        <item>"關閉/開啟麥克風"</item>
+        <item>"顯示浮動式訊息"</item>
+        <item>"投影媒體"</item>
+        <item>"啟用 VPN"</item>
+        <item>"寫入桌布"</item>
+        <item>"輔助結構"</item>
+        <item>"輔助螢幕擷取畫面"</item>
+        <item>"讀取手機狀態"</item>
+        <item>"新增語音留言"</item>
+        <item>"使用 SIP"</item>
+        <item>"處理撥出電話"</item>
+        <item>"指紋"</item>
+        <item>"人體感測器"</item>
+        <item>"讀取區域廣播"</item>
+        <item>"模擬位置"</item>
+        <item>"讀取儲存空間"</item>
+        <item>"寫入儲存空間"</item>
+        <item>"開啟螢幕"</item>
+        <item>"取得帳戶"</item>
+        <item>"在背景執行"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"短"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"中"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"長"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"預設"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"隨性"</item>
+        <item>"草寫"</item>
+        <item>"小型大寫字母"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"非常小"</item>
+        <item>"小"</item>
+        <item>"正常"</item>
+        <item>"大"</item>
+        <item>"非常大"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"預設"</item>
+        <item>"無"</item>
+        <item>"外框"</item>
+        <item>"陰影"</item>
+        <item>"外凸"</item>
+        <item>"內凹"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"使用應用程式預設值"</item>
+        <item>"黑底白字"</item>
+        <item>"白底黑字"</item>
+        <item>"黑底黃字"</item>
+        <item>"藍底黃字"</item>
+        <item>"自訂"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN (預先共用金鑰)"</item>
+        <item>"L2TP/IPSec VPN (憑證)"</item>
+        <item>"IPSec VPN (預先共用金鑰和 Xauth 驗證)"</item>
+        <item>"IPSec VPN (憑證和 Xauth 驗證)"</item>
+        <item>"IPSec VPN (憑證和混合驗證)"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"已中斷連線"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"初始中\u2026"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"連線中\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"已連線"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"逾時"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"失敗"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"詢問"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"一律不允許"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"一律允許"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"正常"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"略為偏低"</item>
+        <!-- Memory is running low. -->
+        <item>"低"</item>
+        <!-- Memory is critical. -->
+        <item>"嚴重偏低"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"正常"</item>
+        <item>"中"</item>
+        <item>"低"</item>
+        <item>"嚴重不足"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"持續"</item>
+        <item>"重大活動"</item>
+        <item>"重要 (前景)"</item>
+        <item>"重要 (背景)"</item>
+        <item>"備份"</item>
+        <item>"高負載"</item>
+        <item>"服務 (執行中)"</item>
+        <item>"服務 (重新啟動中)"</item>
+        <item>"接收器"</item>
+        <item>"主螢幕"</item>
+        <item>"最近活動"</item>
+        <item>"快取 (活動)"</item>
+        <item>"快取 (活動用戶端)"</item>
+        <item>"快取 (清空)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"藍綠色"</item>
+        <item>"藍色"</item>
+        <item>"靛藍色"</item>
+        <item>"紫色"</item>
+        <item>"粉紅色"</item>
+        <item>"紅色"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"自動連線"</item>
+        <item>"手動連線"</item>
+        <item>"一律詢問"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"超過 30 天"</item>
+        <item>"超過 60 天"</item>
+        <item>"超過 90 天"</item>
+    </string-array></resources>

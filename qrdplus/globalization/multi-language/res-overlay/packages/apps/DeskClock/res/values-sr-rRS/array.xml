@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Абиџан"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Акра"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Адис Абеба"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Алжир"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Блантајер"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бразавил"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Каиро"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Казабланка"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Конакри"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дакар"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дар ес Салам"</item>
+        <item>"Џ<xliff:g id="SEPARATOR">=</xliff:g>Џибути"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Фритаун"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Габороне"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хараре"</item>
+        <item>"Ј<xliff:g id="SEPARATOR">=</xliff:g>Јоханесбург"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кампала"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Картум"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кигали"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Киншаса"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лагос"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Масеру"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Могадишу"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Најроби"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сао Томе"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тимбукту"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Триполи"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тунис"</item>
+        <item>"Е<xliff:g id="SEPARATOR">=</xliff:g>Енкориџ"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мендоза"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Аруба"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Асунсион"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Барбадос"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Белизе"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Богота"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Буенос Ајрес"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Канкун"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Каракас"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кајманска острва"</item>
+        <item>"Ч<xliff:g id="SEPARATOR">=</xliff:g>Чикаго"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Костарика"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Курасао"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Досон Крик"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Денвер"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Детроит"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Доминика"</item>
+        <item>"Е<xliff:g id="SEPARATOR">=</xliff:g>Едмонтон"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Салвадор"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Форталеза"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гранд Турк"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гренада"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Гватемала"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гвајана"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Халифакс"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хавана"</item>
+        <item>"И<xliff:g id="SEPARATOR">=</xliff:g>Индијанаполис"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Нокс"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Маренго"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Питерсбург"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тел Сити"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Вевеј"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Венсен"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Винамак"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кингстон"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Ла Паз"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лима"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лос Анђелес"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Луивил"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Манагва"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мартиник"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мендоза"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Метлакатла"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мексико Сити"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Монтереј"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Монтевидео"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Монтреал"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Насау"</item>
+        <item>"Њ<xliff:g id="SEPARATOR">=</xliff:g>Њујорк"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бјула"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сентер"</item>
+        <item>"Њ<xliff:g id="SEPARATOR">=</xliff:g>Њу Сејлем"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Панама"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Феникс"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Порт ов Спејн"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Порт о Пренс"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Порторико"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Санто Доминго"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сао Пауло"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сент Џонс"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сент Китс"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Света Луција"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сент Томас"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тихуана"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Торонто"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Ванкувер"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Винипег"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Јужни пол<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лонгјербјен"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Алмати"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Аман"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Анадир"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Актау"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Багдад"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бахреин"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Баку"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бангкок"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бејрут"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Калкута"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дамаск"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дака"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дубаи"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Газа"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хеброн"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хо Ши Мин"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Хонгконг<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"И<xliff:g id="SEPARATOR">=</xliff:g>Истанбул"</item>
+        <item>"Џ<xliff:g id="SEPARATOR">=</xliff:g>Џакарта"</item>
+        <item>"Ј<xliff:g id="SEPARATOR">=</xliff:g>Јерусалим"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кабул"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Карачи"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Катманду"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Куала Лумпур"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кувајт"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Макао"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Манила"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мускат"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Пном Пен"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Пјонгјанг<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Катар"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рангун"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Ријад"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сајгон"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сеул"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Шангај<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сингапур"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Тајпеј<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Техеран"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тел Авив"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Токио<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"У<xliff:g id="SEPARATOR">=</xliff:g>Улан Батор"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бермуди"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Канари"</item>
+        <item>"З<xliff:g id="SEPARATOR">=</xliff:g>Зеленортска Острва"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рејкјавик"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Стенли"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Аделејд"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бризбејн"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Канбера"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Дарвин"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мелбурн"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Нови Јужни Велс"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Перт"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Квинсленд"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сиднеј"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Викторија"</item>
+        <item>"Њ<xliff:g id="SEPARATOR">=</xliff:g>Њуфаундленд"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Саскачеван"</item>
+        <item>"У<xliff:g id="SEPARATOR">=</xliff:g>Ускршње острво"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Амстердам"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Андора"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Атина"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Белфаст"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Београд"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Берлин"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Братислава"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Брисел"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Букурешт"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Будимпешта"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кишињев"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Копенхаген"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Даблин"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гибралтар"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хелсинки"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Острво Ман"</item>
+        <item>"И<xliff:g id="SEPARATOR">=</xliff:g>Истанбул"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кијев"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лисабон"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лондон"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Луксембург"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мадрид"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Малта"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Минск"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Монако"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Москва"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Осло"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Париз"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Праг"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рига"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рим"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Марино"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сарајево"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Симферопољ"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Скопље"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Софија"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Стокхолм"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Талин"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Ватикан"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Беч"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Вилнијус"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Варшава"</item>
+        <item>"З<xliff:g id="SEPARATOR">=</xliff:g>Загреб"</item>
+        <item>"Ц<xliff:g id="SEPARATOR">=</xliff:g>Цирих"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Антананариво"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Малдиви"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Маурицијус"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Окланд"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Фиџи"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гуам"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хонолулу"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Киритимати"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Нумеа"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Самоа"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тахити"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Антигва"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Остин"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бостон"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Калгари"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Коламбус"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Далас"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Ноксвил"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мемфис"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мајами"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Минеаполис"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Отава"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Филаделфија"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Портланд"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Дијего"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Франциско"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Солт Лејк Сити"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Хозе"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Салвадор"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сијетл"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сент Луис"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Вашингтон"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хјустон"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Антонио"</item>
+        <item>"Џ<xliff:g id="SEPARATOR">=</xliff:g>Џексонвил"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Балтимор"</item>
+        <item>"Н<xliff:g id="SEPARATOR">=</xliff:g>Нешвил"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Милвоки"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Оклахома Сити"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лас Вегас"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Албукерки"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тусон"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сакраменто"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Атланта"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кливленд"</item>
+        <item>"Њ<xliff:g id="SEPARATOR">=</xliff:g>Њу Орлеанс"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тампа"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Питсбург"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Синсинати"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Маунтин Вју"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рино"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Блек Рок Сити"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Доха"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Пекинг<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Мумбај"</item>
+        <item>"Д<xliff:g id="SEPARATOR">=</xliff:g>Делхи"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Осака<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Л<xliff:g id="SEPARATOR">=</xliff:g>Лахор"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сана"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Барселона"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Минхен"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Милано"</item>
+        <item>"Ф<xliff:g id="SEPARATOR">=</xliff:g>Франкфурт"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Ханој"</item>
+        <item>"А<xliff:g id="SEPARATOR">=</xliff:g>Анкара"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бангалор"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бразилија"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кејптаун"</item>
+        <item>"И<xliff:g id="SEPARATOR">=</xliff:g>Исламабад"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рио де Жанеиро"</item>
+        <item>"Е<xliff:g id="SEPARATOR">=</xliff:g>Ен Арбор"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Болдер"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кембриџ"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Киркланд"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Медисон"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>Гуангџоу<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хајдерабад"</item>
+        <item>"Р<xliff:g id="SEPARATOR">=</xliff:g>Рестон"</item>
+        <item>"Б<xliff:g id="SEPARATOR">=</xliff:g>Бело Хоризонте"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сантјаго"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Монровија"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Коломбо"</item>
+        <item>"Ч<xliff:g id="SEPARATOR">=</xliff:g>Чивава"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Салвадор"</item>
+        <item>"Г<xliff:g id="SEPARATOR">=</xliff:g>Гургаон"</item>
+        <item>"М<xliff:g id="SEPARATOR">=</xliff:g>Манчестер"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кијев"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Санкт Петербург"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Краков"</item>
+        <item>"В<xliff:g id="SEPARATOR">=</xliff:g>Вроцлав"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хамбург"</item>
+        <item>"О<xliff:g id="SEPARATOR">=</xliff:g>Оулу"</item>
+        <item>"Х<xliff:g id="SEPARATOR">=</xliff:g>Хаифа"</item>
+        <item>"С<xliff:g id="SEPARATOR">=</xliff:g>Сан Хуан"</item>
+        <item>"Т<xliff:g id="SEPARATOR">=</xliff:g>Тегусигалпа"</item>
+        <item>"П<xliff:g id="SEPARATOR">=</xliff:g>Парамарибо"</item>
+        <item>"К<xliff:g id="SEPARATOR">=</xliff:g>Кито"</item>
+        <item>"Љ<xliff:g id="SEPARATOR">=</xliff:g>Љубљана"</item>
+    </string-array></resources>

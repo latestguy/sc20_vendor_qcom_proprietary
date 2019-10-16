@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The name of the Cell Broadcast Receiver app. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"小区广播"</string>
+
+    <!-- Label for settings screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="sms_cb_settings"/>
+    <string name="sms_cb_settings">"小区广播设置"</string>
+
+    <!-- Error message for users that aren't allowed to modify Cell broadcast settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="cell_broadcast_settings_not_available"/>
+    <string name="cell_broadcast_settings_not_available">"此用户无权修改小区广播设置"</string>
+
+    <!-- Text for dismiss button in broadcast message view dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_dismiss"/>
+    <string name="button_dismiss">"确定"</string>
+
+    <!-- Text for list view when empty (no broadcasts). [CHAR LIMIT=200] -->
+    <add-resource type="string" name="no_cell_broadcasts"/>
+    <string name="no_cell_broadcasts">"您所在的区域没有任何活动的警报。您可以使用“设置”菜单选项更改警报设置。"</string>
+
+    <!-- Menu item for accessing application settings. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"设置"</string>
+    <!-- Menu item for deleting all broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"删除广播"</string>
+
+    <!-- Header for context menu on an individual broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"短信选项"</string>
+    <!-- Context menu item for viewing broadcast details such as time and date. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_view_details"/>
+    <string name="menu_view_details">"查看详情"</string>
+    <!-- Context menu item to delete a previously received broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"删除广播"</string>
+
+    <!-- Title of "View details" dialog -->
+    <add-resource type="string" name="view_details_title"/>
+    <string name="view_details_title">"警报详情"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete broadcast confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_broadcast"/>
+    <string name="confirm_delete_broadcast">"要删除这条广播吗？"</string>
+    <!-- Delete all broadcasts confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_all_broadcasts"/>
+    <string name="confirm_delete_all_broadcasts">"要删除收到的所有广播消息吗？"</string>
+    <!-- Delete button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_delete"/>
+    <string name="button_delete">"删除"</string>
+    <!-- Cancel button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_cancel"/>
+    <string name="button_cancel">"取消"</string>
+
+    <!-- ETWS dialog title for Earthquake Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_warning"/>
+    <string name="etws_earthquake_warning">"地震警报"</string>
+    <!-- ETWS dialog title for Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_tsunami_warning"/>
+    <string name="etws_tsunami_warning">"海啸警报"</string>
+    <!-- ETWS dialog title for Earthquake and Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_and_tsunami_warning"/>
+    <string name="etws_earthquake_and_tsunami_warning">"地震海啸警报"</string>
+    <!-- ETWS dialog title for test message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_test_message"/>
+    <string name="etws_test_message">"地震海啸警报系统测试消息"</string>
+    <!-- ETWS dialog title for other emergency type. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_other_emergency_type"/>
+    <string name="etws_other_emergency_type">"紧急警报"</string>
+    <!-- CMAS dialog title for presidential level alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_presidential_level_alert"/>
+    <string name="cmas_presidential_level_alert">"国家级警报"</string>
+    <!-- CMAS dialog title for extreme alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_extreme_alert"/>
+    <string name="cmas_extreme_alert">"紧急警报：极严重"</string>
+    <!-- CMAS dialog title for severe alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_severe_alert"/>
+    <string name="cmas_severe_alert">"紧急警报：严重"</string>
+    <!-- CMAS dialog title for child abduction emergency (Amber Alert). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_amber_alert"/>
+    <string name="cmas_amber_alert">"儿童绑架/拐骗（安珀警报）"</string>
+    <!-- CMAS dialog title for required monthly test. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_required_monthly_test"/>
+    <string name="cmas_required_monthly_test">"紧急警报每月测试"</string>
+    <!-- CMAS dialog title for CMAS Exercise. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_exercise_alert"/>
+    <string name="cmas_exercise_alert">"紧急警报（演习）"</string>
+    <!-- CMAS dialog title for operator defined use. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_operator_defined_alert"/>
+    <string name="cmas_operator_defined_alert">"紧急警报（操作人员）"</string>
+    <!-- Dialog title for all other message identifiers in the PWS range. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pws_other_message_identifiers"/>
+    <string name="pws_other_message_identifiers">"紧急警报"</string>
+    <!-- Dialog title for all non-emergency cell broadcasts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cb_other_message_identifiers"/>
+    <string name="cb_other_message_identifiers">"小区广播"</string>
+
+    <!-- Preference category title for emergency alert settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="emergency_alert_settings_title"/>
+    <string name="emergency_alert_settings_title">"紧急警报设置"</string>
+    <!-- Preference title for enable emergency alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_emergency_alerts_title"/>
+    <string name="enable_emergency_alerts_title">"开启通知"</string>
+    <!-- Preference summary for enable notifications checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_emergency_alerts_summary"/>
+    <string name="enable_emergency_alerts_summary">"显示紧急警报广播"</string>
+    <!-- Preference title for alert reminder interval list. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="alert_reminder_interval_title"/>
+    <string name="alert_reminder_interval_title">"警报提醒"</string>
+    <!-- Do not translate. Empty summary for alert reminder (set by CellBroadcastSettings). -->
+    <add-resource type="string" name="alert_reminder_interval_summary"/>
+    <string name="alert_reminder_interval_summary"></string>
+    <!-- Preference title for enable text-to-speech checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_speech_title"/>
+    <string name="enable_alert_speech_title">"读出警报消息"</string>
+    <!-- Preference summary for enable text-to-speech checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_alert_speech_summary"/>
+    <string name="enable_alert_speech_summary">"使用文字转语音功能读出紧急警报消息"</string>
+
+    <!-- Preference category title for ETWS settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_etws_settings_title"/>
+    <string name="category_etws_settings_title">"地震海啸警报系统设置"</string>
+    <!-- Preference title for enable ETWS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_etws_test_alerts_title"/>
+    <string name="enable_etws_test_alerts_title">"显示地震海啸警报系统测试广播"</string>
+    <!-- Preference summary for enable ETWS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_etws_test_alerts_summary"/>
+    <string name="enable_etws_test_alerts_summary">"显示地震海啸警报系统的测试广播"</string>
+
+    <!-- Preference title for presidential Alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_title"/>
+    <string name="enable_cmas_presidential_alerts_title">"显示总统警报"</string>
+    <!-- Preference summary for presidential Alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_summary"/>
+    <string name="enable_cmas_presidential_alerts_summary">"始终显示总统警报"</string>
+    <!-- Preference title for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_title"/>
+    <string name="enable_cmas_extreme_threat_alerts_title">"显示极端威胁"</string>
+    <!-- Preference summary for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_summary"/>
+    <string name="enable_cmas_extreme_threat_alerts_summary">"针对生命和财产遭到极端威胁的情况显示警报"</string>
+    <!-- Preference title for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_title"/>
+    <string name="enable_cmas_severe_threat_alerts_title">"显示严重威胁"</string>
+    <!-- Preference summary for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_summary"/>
+    <string name="enable_cmas_severe_threat_alerts_summary">"针对生命和财产遭到严重威胁的情况显示警报"</string>
+    <!-- Preference title for enable CMAS amber alerts checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_title"/>
+    <string name="enable_cmas_amber_alerts_title">"显示安珀警报"</string>
+    <!-- Preference summary for enable CMAS amber alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_summary"/>
+    <string name="enable_cmas_amber_alerts_summary">"显示儿童绑架/拐骗紧急公告（安珀警报）"</string>
+
+    <!-- Preference title for enable CMAS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_title"/>
+    <string name="enable_cmas_test_alerts_title">"显示CMAS测试广播"</string>
+    <!-- Preference summary for enable CMAS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_summary"/>
+    <string name="enable_cmas_test_alerts_summary">"显示商业移动警报系统的测试广播"</string>
+
+    <!-- Preference title for CMAS vibration on/off. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_vibrate_title"/>
+    <string name="enable_alert_vibrate_title">"振动"</string>
+    <!-- Preference summary for CMAS vibration on/off. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="enable_alert_vibrate_summary"/>
+    <string name="enable_alert_vibrate_summary">"收到警报时振动"</string>
+    <add-resource type="string" name="enable_alert_tone_title"/>
+    <string name="enable_alert_tone_title">"警报音调"</string>
+    <add-resource type="string" name="enable_alert_tone_summary"/>
+    <string name="enable_alert_tone_summary">"开启警报音调"</string>
+
+    <!-- Preference category title for Brazil settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_brazil_settings_title"/>
+    <string name="category_brazil_settings_title">"针对巴西的设置"</string>
+    <!-- Preference category title for India settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_india_settings_title"/>
+    <string name="category_india_settings_title">"针对印度的设置"</string>
+    <!-- Preference title for enable channel 50 alerts (Brazil only). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_50_alerts_title"/>
+    <string name="enable_channel_50_alerts_title">"显示 50 频道的广播"</string>
+    <!-- Preference summary for enable channel 50 alerts (Brazil only). [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_50_alerts_summary"/>
+    <string name="enable_channel_50_alerts_summary">"巴西使用频道 50 来广播区域动态信息"</string>
+    <!-- Preference title for enable channel 60 alerts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_60_alerts_title"/>
+    <string name="enable_channel_60_alerts_title">"显示 60 频道的广播"</string>
+    <!-- Preference summary for enable channel 60 alerts. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_60_alerts_summary"/>
+    <string name="enable_channel_60_alerts_summary">"印度使用频道 60 来广播运营商具体信息"</string>
+
+    <!-- Preference category title for developer settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_dev_settings_title"/>
+    <string name="category_dev_settings_title">"开发者选项"</string>
+
+    <!-- CMAS alert category heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_category_heading"/>
+    <string name="cmas_category_heading">"警报类别："</string>
+    <!-- CMAS category for geophysical alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_geo"/>
+    <string name="cmas_category_geo">"地球物理"</string>
+    <!-- CMAS category for meteorological alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_met"/>
+    <string name="cmas_category_met">"气象"</string>
+    <!-- CMAS category for general emergency and public safety alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_safety"/>
+    <string name="cmas_category_safety">"紧急事故和公共安全"</string>
+    <!-- CMAS category for security alerts (law enforcement, military, etc.). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_security"/>
+    <string name="cmas_category_security">"安全保卫"</string>
+    <!-- CMAS category for rescue and recovery alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_rescue"/>
+    <string name="cmas_category_rescue">"救援和恢复"</string>
+    <!-- CMAS category for fire suppression and rescue alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_fire"/>
+    <string name="cmas_category_fire">"火灾"</string>
+    <!-- CMAS category for medical and public health alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_health"/>
+    <string name="cmas_category_health">"医疗和公共卫生"</string>
+    <!-- CMAS category for pollution and other environmental alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_env"/>
+    <string name="cmas_category_env">"环境"</string>
+    <!-- CMAS category for transportation alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_transport"/>
+    <string name="cmas_category_transport">"交通运输"</string>
+    <!-- CMAS category for utility, telecommunication, and other infrastructure alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_infra"/>
+    <string name="cmas_category_infra">"基础设施"</string>
+    <!-- CMAS category for chemical, biological, radiological, nuclear alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_cbrne"/>
+    <string name="cmas_category_cbrne">"化学/生物/核能/爆炸"</string>
+    <!-- CMAS category for other alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_other"/>
+    <string name="cmas_category_other">"其他"</string>
+
+    <!-- CMAS response type heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_response_heading"/>
+    <string name="cmas_response_heading">"响应类型："</string>
+    <!-- CMAS response type: take shelter in place. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_shelter"/>
+    <string name="cmas_response_shelter">"就地避难"</string>
+    <!-- CMAS response type: evacuate (relocate). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_evacuate"/>
+    <string name="cmas_response_evacuate">"疏散"</string>
+    <!-- CMAS response type: make preparations. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_prepare"/>
+    <string name="cmas_response_prepare">"准备"</string>
+    <!-- CMAS response type: execute a pre-planned activity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_execute"/>
+    <string name="cmas_response_execute">"执行"</string>
+    <!-- CMAS response type: monitor information sources. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_monitor"/>
+    <string name="cmas_response_monitor">"监控"</string>
+    <!-- CMAS response type: avoid hazard. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_avoid"/>
+    <string name="cmas_response_avoid">"躲避"</string>
+    <!-- CMAS response type: evaluate the information in this message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_assess"/>
+    <string name="cmas_response_assess">"评估"</string>
+    <!-- CMAS response type: no action recommended. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_none"/>
+    <string name="cmas_response_none">"无"</string>
+
+    <!-- CMAS severity heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_heading"/>
+    <string name="cmas_severity_heading">"严重性："</string>
+    <!-- CMAS severity type: extreme. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_extreme"/>
+    <string name="cmas_severity_extreme">"极端情况"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_severe"/>
+    <string name="cmas_severity_severe">"严重"</string>
+
+    <!-- CMAS urgency heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_heading"/>
+    <string name="cmas_urgency_heading">"紧急："</string>
+    <!-- CMAS urgency type: take responsive action immediately. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_immediate"/>
+    <string name="cmas_urgency_immediate">"立即"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_expected"/>
+    <string name="cmas_urgency_expected">"符合预计"</string>
+
+    <!-- CMAS certainty heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_heading"/>
+    <string name="cmas_certainty_heading">"确定性："</string>
+    <!-- CMAS certainty type: observed. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_observed"/>
+    <string name="cmas_certainty_observed">"已观察到"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_likely"/>
+    <string name="cmas_certainty_likely">"很可能"</string>
+
+    <!-- Message delivery time (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="delivery_time_heading"/>
+    <string name="delivery_time_heading">"接收时间："</string>
+
+    <!-- Non-emergency broadcast notification description for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"<xliff:g id="COUNT">%s</xliff:g> 条未读警报。"</string>
+    <!-- Non-emergency broadcast notification title for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"新警报"</string>
+
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="show_cmas_opt_out_summary"/>
+    <string name="show_cmas_opt_out_summary">"在显示第一条 CMAS 警报后，显示是否停收警报的对话框，国家级警报除外。"</string>
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_cmas_opt_out_title"/>
+    <string name="show_cmas_opt_out_title">"显示警报停收对话框"</string>
+
+    <!-- CMAS opt-out dialog message. [CHAR LIMIT=160] -->
+    <add-resource type="string" name="cmas_opt_out_dialog_text"/>
+    <string name="cmas_opt_out_dialog_text">"当前设置是接收紧急警报。是否要继续接收紧急警报？"</string>
+    <!-- Text for positive button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_yes"/>
+    <string name="cmas_opt_out_button_yes">"是"</string>
+    <!-- Text for negative button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_no"/>
+    <string name="cmas_opt_out_button_no">"否"</string>
+
+    <!-- Entries in the ListPreference for alert reminder intervals. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="alert_reminder_interval_entries"/>
+    <string-array name="alert_reminder_interval_entries">
+      <item>"1 次"</item>
+      <item>"每 2 分钟"</item>
+      <item>"每 5 分钟"</item>
+      <item>"每 15 分钟"</item>
+      <item>"关闭"</item>
+    </string-array>
+
+    <!-- Do not translate. Values that are retrieved from the ListPreference.
+         These must match the alert_reminder_interval_entries list above. -->
+    <add-resource type="array" name="alert_reminder_interval_values"/>
+    <string-array name="alert_reminder_interval_values">
+      <item>1</item>
+      <item>2</item>
+      <item>5</item>
+      <item>15</item>
+      <item>0</item>
+    </string-array>
+
+    <!-- set cellbroadcast enable or disable, default value is true-->
+    <add-resource type="bool" name="def_custome_cell_broadcast_layout"/>
+    <bool name="def_custome_cell_broadcast_layout">false</bool>
+    <add-resource type="string" name="add_channel"/>
+    <string name="add_channel">"添加频道"</string>
+    <add-resource type="string" name="channel_list"/>
+    <string name="channel_list">"频道列表"</string>
+    <add-resource type="string" name="receive_broad_cast"/>
+    <string name="receive_broad_cast">"接收小区广播短信"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_name"/>
+    <string name="cb_channel_dialog_channel_name">"频道名称（0-10 个字符）"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_number"/>
+    <string name="cb_channel_dialog_channel_number">"频道编号 (0-65534)"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_state"/>
+    <string name="cb_channel_dialog_channel_state">"启用频道"</string>
+    <add-resource type="string" name="cb_error_channel_num"/>
+    <string name="cb_error_channel_num">"请输入频道编号 (0-65534)。"</string>
+    <add-resource type="string" name="cb_error_channel_name"/>
+    <string name="cb_error_channel_name">"频道名称的长度不正确（1-10 个字符）。"</string>
+    <add-resource type="string" name="cb_menu_tile"/>
+    <string name="cb_menu_tile">"频道操作"</string>
+    <add-resource type="string" name="cb_menu_add_channel"/>
+    <string name="cb_menu_add_channel">"添加频道"</string>
+    <add-resource type="string" name="cb_menu_channel_list"/>
+    <string name="cb_menu_channel_list">"频道列表"</string>
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"启用"</string>
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"停用"</string>
+    <add-resource type="string" name="cb_error_channel_id_exist"/>
+    <string name="cb_error_channel_id_exist">"频道 ID 已存在。"</string>
+    <add-resource type="string" name="cb_channel_dialog_edit_channel"/>
+    <string name="cb_channel_dialog_edit_channel">"编辑频道"</string>
+    <add-resource type="string" name="cb_default_new_channel_name"/>
+    <string name="cb_default_new_channel_name">"新建频道"</string>
+    <add-resource type="string" name="cb_menu_edit"/>
+    <string name="cb_menu_edit">"编辑"</string>
+    <add-resource type="string" name="cb_menu_delete"/>
+    <string name="cb_menu_delete">"删除广播"</string>
+    <add-resource type="string" name="cell_broadcast_setting"/>
+    <string name="cell_broadcast_setting">"小区广播设置"</string>
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"通话设置出错"</string>
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"正在读取设置"</string>
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"正在更新设置"</string>
+    <add-resource type="string" name="error_finish_dialog_title"/>
+    <string name="error_finish_dialog_title">"网络或 SIM 卡出错。"</string>
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"确定"</string>
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"通话设置"</string>
+    <add-resource type="string" name="done_text"/>
+    <string name="done_text">"完成"</string>
+
+    <!-- CellBroadcast channel 50 enabled or not,default value is true -->
+    <add-resource type="bool" name="def_channel_50_enabled"/>
+    <bool name="def_channel_50_enabled">true</bool>
+    <!-- Customize 50 into filter list -->
+    <add-resource type="string" name="cb_channel_50_name"/>
+    <string name="cb_channel_50_name">"频道 50"</string></resources>

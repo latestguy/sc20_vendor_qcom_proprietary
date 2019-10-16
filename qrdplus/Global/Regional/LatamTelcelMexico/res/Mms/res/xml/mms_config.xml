@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+-->
+
+<mms_config version="4" >
+
+    <int name="maxMessageSize" >1048576</int>
+
+    <!-- UAProf URL -->
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+
+    <!-- Configuration message  -->
+    <bool name="enableOMACP">true</bool>
+
+    <bool name="enableCreationMode">true</bool>
+
+    <!-- If enableMultipartSMS is true and smsToMmsTextThreshold > 1, then multi-part SMS messages
+    will be converted into a single mms message. For example, if the mms_config.xml file
+    specifies <int name="smsToMmsTextThreshold">7</int>, then on the 8th sms segment, the
+    message will be converted to an mms. -->
+    <int name="smsToMmsTextThreshold">10</int>
+
+</mms_config>

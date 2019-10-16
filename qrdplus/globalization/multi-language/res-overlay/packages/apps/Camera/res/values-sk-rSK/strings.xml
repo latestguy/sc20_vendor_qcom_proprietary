@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="camera_error_title"/>
+    <string name="camera_error_title">"Chyba fotoaparátu"</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="cannot_connect_camera"/>
+    <string name="cannot_connect_camera">"Nedá sa pripojiť k fotoaparátu."</string>
+
+    <!-- message for the dialog showing the camera is disabled because of security policies. Camera cannot be used. -->
+    <add-resource type="string" name="camera_disabled"/>
+    <string name="camera_disabled">"Fotoaparát je zakázaný z dôvodu bezpečnostných pravidiel."</string>
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+    <add-resource type="string" name="camera_label"/>
+    <string name="camera_label">"Fotoaparát"</string>
+
+    <!-- label for the 'video recording application shown in the top level 'all applications' -->
+    <add-resource type="string" name="video_camera_label"/>
+    <string name="video_camera_label">"Videokamera"</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <add-resource type="string" name="wait"/>
+    <string name="wait">"Čakajte, prosím..."</string>
+
+    <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_storage"/>
+    <string name="no_storage" product="nosdcard">"Pred použitím fotoaparátu pripojte zdieľané úložisko USB."</string>
+    <!-- alert to the user that an SD card must be installed before using the camera -->
+    <add-resource type="string" name="no_storage"/>
+    <string name="no_storage" product="default">"Pred použitím fotoaparátu vložte kartu SD."</string>
+
+    <!-- alert to the user that the USB storage is being disk-checked [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preparing_sd"/>
+    <string name="preparing_sd" product="nosdcard">"Príprava uklad. priestoru USB\u2026"</string>
+    <!-- alert to the user that the SD card is being disk-checked -->
+    <add-resource type="string" name="preparing_sd"/>
+    <string name="preparing_sd" product="default">"Príprava karty SD..."</string>
+
+    <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="access_sd_fail"/>
+    <string name="access_sd_fail" product="nosdcard">"Nepodarilo sa získať prístup k ukladaciemu priestoru USB."</string>
+    <!-- alert to the user that the camera fails to read or write the SD card. -->
+    <add-resource type="string" name="access_sd_fail"/>
+    <string name="access_sd_fail" product="default">"Nepodarilo sa získať prístup ku karte SD."</string>
+
+    <!-- button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT=10] -->
+    <add-resource type="string" name="review_cancel"/>
+    <string name="review_cancel">"ZRUŠIŤ"</string>
+
+    <!-- button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT=10] -->
+    <add-resource type="string" name="review_ok"/>
+    <string name="review_ok">"HOTOVO"</string>
+
+    <!-- A label that overlays on top of the preview frame to indicate the camcorder is in time lapse mode [CHAR LIMIT=35] -->
+    <add-resource type="string" name="time_lapse_title"/>
+    <string name="time_lapse_title">"Časozberný záznam"</string>
+
+    <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_id_title"/>
+    <string name="pref_camera_id_title">"Vybrať fotoaparát"</string>
+
+    <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_back"/>
+    <string name="pref_camera_id_entry_back">"Zozadu"</string>
+    <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_front"/>
+    <string name="pref_camera_id_entry_front">"Spredu"</string>
+
+    <!-- Settings screen, setting title text -->
+    <add-resource type="string" name="pref_camera_recordlocation_title"/>
+    <string name="pref_camera_recordlocation_title">"Úložné miesto"</string>
+
+    <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
+    <add-resource type="string" name="pref_camera_timer_title"/>
+    <string name="pref_camera_timer_title">"Časovač odpočítavania"</string>
+    <!-- Entry for countdown timer setting. e.g. 1 second, 10 seconds, etc. [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="pref_camera_timer_entry"/>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">"1 s"</item>
+        <item quantity="other">"%d s"</item>
+    </plurals>
+    <add-resource type="string" name="pref_camera_timer_sound_default"/>
+    <string name="pref_camera_timer_sound_default">@string/setting_on_value</string>
+    <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 16]-->
+    <add-resource type="string" name="pref_camera_timer_sound_title"/>
+    <string name="pref_camera_timer_sound_title">"Zvuk pri odpočítavaní"</string>
+
+    <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_off"/>
+    <string name="setting_off">"Vypnuté"</string>
+    <!-- Entry of a on/off setting. The setting is turned on. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_on"/>
+    <string name="setting_on">"Zapnuté"</string>
+
+    <!-- The Video quality settings in preference [CHAR LIMIT=21] -->
+    <add-resource type="string" name="pref_video_quality_title"/>
+    <string name="pref_video_quality_title">"Kvalita videa"</string>
+    <!-- Video quality setting entry. Videos will be recorded in the highest quality available on the device. [CHAR LIMIT=24] -->
+    <add-resource type="string" name="pref_video_quality_entry_high"/>
+    <string name="pref_video_quality_entry_high">"Vysoká"</string>
+    <!-- Video quality setting entry. Videos will be recorded in the lowest quality available on the device. [CHAR LIMIT=24] -->
+    <add-resource type="string" name="pref_video_quality_entry_low"/>
+    <string name="pref_video_quality_entry_low">"Nízka"</string>
+
+    <!-- Describes the preference dialog for choosing interval between frame capture for
+    time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_title"/>
+    <string name="pref_video_time_lapse_frame_interval_title">"Časozberné video"</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <add-resource type="string" name="pref_camera_settings_category"/>
+    <string name="pref_camera_settings_category">"Nastavenia fotoaparátu"</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <add-resource type="string" name="pref_camcorder_settings_category"/>
+    <string name="pref_camcorder_settings_category">"Nastavenie videokamery"</string>
+
+    <!-- Settings screen, Picture size title -->
+    <add-resource type="string" name="pref_camera_picturesize_title"/>
+    <string name="pref_camera_picturesize_title">"Veľkosť fotografie"</string>
+
+    <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_8mp"/>
+    <string name="pref_camera_picturesize_entry_8mp">"8 Mpx"</string>
+    <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_5mp"/>
+    <string name="pref_camera_picturesize_entry_5mp">"5 megapixlov"</string>
+    <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_3mp"/>
+    <string name="pref_camera_picturesize_entry_3mp">"3 megapixle"</string>
+    <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_2mp"/>
+    <string name="pref_camera_picturesize_entry_2mp">"2 megapixle"</string>
+    <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1_3mp"/>
+    <string name="pref_camera_picturesize_entry_1_3mp">"1,3 megapixlov"</string>
+    <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1mp"/>
+    <string name="pref_camera_picturesize_entry_1mp">"1 megapixel"</string>
+    <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_vga"/>
+    <string name="pref_camera_picturesize_entry_vga">VGA</string>
+    <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=15] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_qvga"/>
+    <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
+
+    <!-- Settings screen, Focus mode title -->
+    <add-resource type="string" name="pref_camera_focusmode_title"/>
+    <string name="pref_camera_focusmode_title">"Režim zaostrenia"</string>
+
+    <!-- Settings screen, Focus mode dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_focusmode_entry_auto"/>
+    <string name="pref_camera_focusmode_entry_auto">"Auto"</string>
+    <add-resource type="string" name="pref_camera_focusmode_entry_infinity"/>
+    <string name="pref_camera_focusmode_entry_infinity">"Nekonečno"</string>
+    <add-resource type="string" name="pref_camera_focusmode_entry_macro"/>
+    <string name="pref_camera_focusmode_entry_macro">"Makro"</string>
+
+    <!-- Settings screen, Flash mode title -->
+    <add-resource type="string" name="pref_camera_flashmode_title"/>
+    <string name="pref_camera_flashmode_title">"Režim blesku"</string>
+
+    <!-- Settings screen, Flash mode dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_flashmode_entry_auto"/>
+    <string name="pref_camera_flashmode_entry_auto">"Auto"</string>
+    <add-resource type="string" name="pref_camera_flashmode_entry_on"/>
+    <string name="pref_camera_flashmode_entry_on">"Zapnuté"</string>
+    <add-resource type="string" name="pref_camera_flashmode_entry_off"/>
+    <string name="pref_camera_flashmode_entry_off">"Vypnuté"</string>
+
+    <!-- Settings screen, white balance title -->
+    <add-resource type="string" name="pref_camera_whitebalance_title"/>
+    <string name="pref_camera_whitebalance_title">"Vyváženie bielej"</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_whitebalance_entry_auto"/>
+    <string name="pref_camera_whitebalance_entry_auto">"Auto"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_incandescent"/>
+    <string name="pref_camera_whitebalance_entry_incandescent">"Žiariace"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_daylight"/>
+    <string name="pref_camera_whitebalance_entry_daylight">"Denné svetlo"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_fluorescent"/>
+    <string name="pref_camera_whitebalance_entry_fluorescent">"Svetielkujúce"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_cloudy"/>
+    <string name="pref_camera_whitebalance_entry_cloudy">"Zamračené"</string>
+
+    <!-- Settings screen, Select Scene mode -->
+    <add-resource type="string" name="pref_camera_scenemode_title"/>
+    <string name="pref_camera_scenemode_title">"Scénický režim"</string>
+
+    <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_auto"/>
+    <string name="pref_camera_scenemode_entry_auto">"Auto"</string>
+    <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_hdr"/>
+    <string name="pref_camera_scenemode_entry_hdr">HDR</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_action"/>
+    <string name="pref_camera_scenemode_entry_action">"Akcia"</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_night"/>
+    <string name="pref_camera_scenemode_entry_night">"Noc"</string>
+    <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_sunset"/>
+    <string name="pref_camera_scenemode_entry_sunset">"Západ slnka"</string>
+    <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_party"/>
+    <string name="pref_camera_scenemode_entry_party">"Strana"</string>
+
+    <!-- Toast after trying to select a setting that is not allowed to change in scene mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="not_selectable_in_scene_mode"/>
+    <string name="not_selectable_in_scene_mode">"Nie je možné vybrať v scénickom režime."</string>
+
+    <!-- Exposure settings in preference -->
+    <add-resource type="string" name="pref_exposure_title"/>
+    <string name="pref_exposure_title">"Expozícia"</string>
+
+    <!-- Default HDR entry value -->
+    <add-resource type="string" name="pref_camera_hdr_default"/>
+    <string name="pref_camera_hdr_default">@string/setting_off_value</string>
+
+    <!-- Dialog "OK" button. Dismisses dialog. -->
+    <add-resource type="string" name="dialog_ok"/>
+    <string name="dialog_ok">"OK"</string>
+
+    <!-- Low-memory dialog message [CHAR LIMT=NONE] -->
+    <add-resource type="string" name="spaceIsLow_content"/>
+    <string name="spaceIsLow_content" product="nosdcard">"V ukladacom priestore USB je málo miesta. Zmeňte nastavenie kvality alebo odstráňte niektoré obrázky či iné súbory."</string>
+    <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="spaceIsLow_content"/>
+    <string name="spaceIsLow_content" product="default">"Na karte SD je málo miesta. Zmeňte nastavenie kvality alebo odstráňte niektoré obrázky či iné súbory."</string>
+
+    <!-- The message shown when video record reaches size limit. -->
+    <add-resource type="string" name="video_reach_size_limit"/>
+    <string name="video_reach_size_limit">"Bolo dosiahnuté obmedzenie veľkosti."</string>
+
+    <!-- The text shown when the panorama panning speed is to fast [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pano_too_fast_prompt"/>
+    <string name="pano_too_fast_prompt">"Veľmi rýchlo"</string>
+
+    <!-- The text shown in the progress dialog when panorama preview is generating in the background [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pano_dialog_prepare_preview"/>
+    <string name="pano_dialog_prepare_preview">"Príprava panorámy"</string>
+
+    <!-- The text shown in the dialog when panorama saving failed [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_panorama_failed"/>
+    <string name="pano_dialog_panorama_failed">"Panorámu sa nepodarilo uložiť."</string>
+
+    <!-- The text shown on the dialog title in the dialogs for Panorama [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pano_dialog_title"/>
+    <string name="pano_dialog_title">"Panoráma"</string>
+
+    <!-- The text shown on the top-left corner of the screen to indicate the capturing is on going [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_capture_indication"/>
+    <string name="pano_capture_indication">"Snímanie panorámy"</string>
+
+    <!-- The text shown in the progress dialog when waiting for previous panorama finishing [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_waiting_previous"/>
+    <string name="pano_dialog_waiting_previous">"Čaká sa na predchádzajúcu panorámu"</string>
+
+    <!-- The text shown on the bottom-left corner of the screen to indicate that the saving is in process [CHAR LIMIT=13] -->
+    <add-resource type="string" name="pano_review_saving_indication_str"/>
+    <string name="pano_review_saving_indication_str">"Ukladá sa..."</string>
+
+    <!-- The text shown on the screen to indicate that the panorama is rendering [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_review_rendering"/>
+    <string name="pano_review_rendering">"Vykresľovanie panorámy"</string>
+
+    <!-- Toast telling users tapping on the viewfinder will trigger autofocus [CHAR LIMIT=28] -->
+    <add-resource type="string" name="tap_to_focus"/>
+    <string name="tap_to_focus">"Dotykom zaostríte."</string>
+
+    <!-- Title of video effect setting popup window -->
+    <add-resource type="string" name="pref_video_effect_title"/>
+    <string name="pref_video_effect_title">"Efekty"</string>
+
+    <!-- Effect setting item that clear the effect. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_none"/>
+    <string name="effect_none">"Žiadne"</string>
+    <!-- Effect setting item that squeezes the face. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_squeeze"/>
+    <string name="effect_goofy_face_squeeze">"Stlačiť"</string>
+    <!-- Effect setting item that makes eyes big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_eyes"/>
+    <string name="effect_goofy_face_big_eyes">"Veľké oči"</string>
+    <!-- Effect setting item that makes mouth big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_mouth"/>
+    <string name="effect_goofy_face_big_mouth">"Veľké ústa"</string>
+    <!-- Effect setting item that makes mouth small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_mouth"/>
+    <string name="effect_goofy_face_small_mouth">"Malé ústa"</string>
+    <!-- Effect setting item that makes nose big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_nose"/>
+    <string name="effect_goofy_face_big_nose">"Veľký nos"</string>
+    <!-- Effect setting item that makes eyes small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_eyes"/>
+    <string name="effect_goofy_face_small_eyes">"Malé oči"</string>
+    <!-- Effect setting item that replaces background with Android in Space. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_space"/>
+    <string name="effect_backdropper_space">"Vo vesmíre"</string>
+    <!-- Effect setting item that replaces background with a sunset. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_sunset"/>
+    <string name="effect_backdropper_sunset">"Západ slnka"</string>
+    <!-- Effect setting item that replaces background with video from gallery. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_gallery"/>
+    <string name="effect_backdropper_gallery">"Vaše video"</string>
+
+    <!-- Message displayed in overlay during background replacement training [CHAR LIMIT=180]-->
+    <add-resource type="string" name="bg_replacement_message"/>
+    <string name="bg_replacement_message">"Položte svoje zariadenie.\nVyjdite na chvíľu zo zorného poľa."</string>
+
+
+    <!-- Toast telling users tapping on the viewfinder will take a picture [CHAR LIMIT=54] -->
+    <add-resource type="string" name="video_snapshot_hint"/>
+    <string name="video_snapshot_hint">"Dotykom môžete počas záznamu fotiť."</string>
+
+    <!-- Announcement telling users video recording has just started [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_started"/>
+    <string name="video_recording_started">"Záznam videa bol spustený."</string>
+    <!-- Announcement telling users video recording has just stopped [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_stopped"/>
+    <string name="video_recording_stopped">"Záznam videa bol zastavený."</string>
+
+    <!-- Toast telling users video snapshot is disabled when the effects are on and a user tries to tap on the viewfinder [CHAR LIMIT=65] -->
+    <add-resource type="string" name="disable_video_snapshot_hint"/>
+    <string name="disable_video_snapshot_hint">"Pri zapnutých špeciálnych efektoch je vytváranie snímok zakázané."</string>
+
+    <!-- A button in effect setting popup to clear the effect. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="clear_effects"/>
+    <string name="clear_effects">"Vymazať efekty"</string>
+
+    <!-- Title of category for silly face effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_silly_faces"/>
+    <string name="effect_silly_faces">"BLÁZNIVÉ TVÁRE"</string>
+
+    <!-- Title of category for background replacement effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_background"/>
+    <string name="effect_background">"POZADIE"</string>
+
+    <!-- The shutter button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_shutter_button"/>
+    <string name="accessibility_shutter_button">"Tlačidlo uzávierky"</string>
+    <!-- The menu button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_menu_button"/>
+    <string name="accessibility_menu_button">"Tlačidlo Menu"</string>
+    <!-- The button to review the thumbnail. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_thumbnail"/>
+    <string name="accessibility_review_thumbnail">"Posledná fotografia"</string>
+    <!-- The front/back camera switch. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_camera_picker"/>
+    <string name="accessibility_camera_picker">"Prepínač medzi prednou a zadnou kamerou"</string>
+    <!-- The mode picker to switch between camera, video and panorama. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_mode_picker"/>
+    <string name="accessibility_mode_picker">"Prepínač medzi panoramatickým režimom a režimami fotoaparátu a videokamery"</string>
+    <!-- The button to switch to the second-level indicators of the camera settings. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_second_level_indicators"/>
+    <string name="accessibility_second_level_indicators">"Ďalšie ovládacie prvky nastavenia"</string>
+    <!-- The button to back to the first-level indicators of the camera settings. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_back_to_first_level"/>
+    <string name="accessibility_back_to_first_level">"Zavrieť ovládacie prvky nastavenia"</string>
+    <!-- The zoom control button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_zoom_control"/>
+    <string name="accessibility_zoom_control">"Ovládanie priblíženia/oddialenia"</string>
+    <!-- The decrement button in camera preference such as exposure, picture size. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_decrement"/>
+    <string name="accessibility_decrement">"Znížiť %1$s"</string>
+    <!-- The increment button in camera preference such as exposure, picture size. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_increment"/>
+    <string name="accessibility_increment">"Zvýšiť %1$s"</string>
+    <!-- The check box in camera settings, such as store location. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_check_box"/>
+    <string name="accessibility_check_box">"Začiarkavacie políčko %1$s"</string>
+    <!-- The button to switch to Camera mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_camera"/>
+    <string name="accessibility_switch_to_camera">"Prepnúť na fotoaparát"</string>
+    <!-- The button to switch to Video mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_video"/>
+    <string name="accessibility_switch_to_video">"Prepnúť do režimu videa"</string>
+    <!-- The button to switch to Panorama mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_panorama"/>
+    <string name="accessibility_switch_to_panorama">"Prepnúť na panorámu"</string>
+    <!-- The button to switch to new Panorama mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_new_panorama"/>
+    <string name="accessibility_switch_to_new_panorama">"Prepnúť na novú panorámu"</string>
+    <!-- The button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_cancel"/>
+    <string name="accessibility_review_cancel">"Zrušiť"</string>
+    <!-- The button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_ok"/>
+    <string name="accessibility_review_ok">"Hotovo"</string>
+    <!-- button in review mode indicate the user want to retake another photo/video for attachment [
+CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_retake"/>
+    <string name="accessibility_review_retake">"Nasnímať znova"</string>
+
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_on"/>
+    <string name="capital_on">"ZAPNUTÉ"</string>
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_off"/>
+    <string name="capital_off">"VYPNUTÉ"</string>
+
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_off"/>
+    <string name="pref_video_time_lapse_frame_interval_off">"Vypnuté"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_500"/>
+    <string name="pref_video_time_lapse_frame_interval_500">"0,5 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1000"/>
+    <string name="pref_video_time_lapse_frame_interval_1000">"1 sekunda"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1500"/>
+    <string name="pref_video_time_lapse_frame_interval_1500">"1,5 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2000"/>
+    <string name="pref_video_time_lapse_frame_interval_2000">"2 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2500"/>
+    <string name="pref_video_time_lapse_frame_interval_2500">"2,5 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3000"/>
+    <string name="pref_video_time_lapse_frame_interval_3000">"3 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_4000"/>
+    <string name="pref_video_time_lapse_frame_interval_4000">"4 sekundy"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5000"/>
+    <string name="pref_video_time_lapse_frame_interval_5000">"5 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_6000"/>
+    <string name="pref_video_time_lapse_frame_interval_6000">"6 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10000"/>
+    <string name="pref_video_time_lapse_frame_interval_10000">"10 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_12000"/>
+    <string name="pref_video_time_lapse_frame_interval_12000">"12 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_15000"/>
+    <string name="pref_video_time_lapse_frame_interval_15000">"15 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_24000"/>
+    <string name="pref_video_time_lapse_frame_interval_24000">"24 sekúnd"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_30000"/>
+    <string name="pref_video_time_lapse_frame_interval_30000">"0,5 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_60000"/>
+    <string name="pref_video_time_lapse_frame_interval_60000">"1 minúta"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_90000"/>
+    <string name="pref_video_time_lapse_frame_interval_90000">"1,5 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_120000"/>
+    <string name="pref_video_time_lapse_frame_interval_120000">"2 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_150000"/>
+    <string name="pref_video_time_lapse_frame_interval_150000">"2,5 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_180000"/>
+    <string name="pref_video_time_lapse_frame_interval_180000">"3 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_240000"/>
+    <string name="pref_video_time_lapse_frame_interval_240000">"4 minúty"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_300000"/>
+    <string name="pref_video_time_lapse_frame_interval_300000">"5 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_360000"/>
+    <string name="pref_video_time_lapse_frame_interval_360000">"6 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_600000"/>
+    <string name="pref_video_time_lapse_frame_interval_600000">"10 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_720000"/>
+    <string name="pref_video_time_lapse_frame_interval_720000">"12 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_900000"/>
+    <string name="pref_video_time_lapse_frame_interval_900000">"15 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1440000"/>
+    <string name="pref_video_time_lapse_frame_interval_1440000">"24 minút"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1800000"/>
+    <string name="pref_video_time_lapse_frame_interval_1800000">"0,5 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3600000"/>
+    <string name="pref_video_time_lapse_frame_interval_3600000">"1 hodina"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5400000"/>
+    <string name="pref_video_time_lapse_frame_interval_5400000">"1,5 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_7200000"/>
+    <string name="pref_video_time_lapse_frame_interval_7200000">"2 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_9000000"/>
+    <string name="pref_video_time_lapse_frame_interval_9000000">"2,5 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10800000"/>
+    <string name="pref_video_time_lapse_frame_interval_10800000">"3 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_14400000"/>
+    <string name="pref_video_time_lapse_frame_interval_14400000">"4 hodiny"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_18000000"/>
+    <string name="pref_video_time_lapse_frame_interval_18000000">"5 hodín"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_21600000"/>
+    <string name="pref_video_time_lapse_frame_interval_21600000">"6 hodín"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_36000000"/>
+    <string name="pref_video_time_lapse_frame_interval_36000000">"10 hodín"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_43200000"/>
+    <string name="pref_video_time_lapse_frame_interval_43200000">"12 hodín"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_54000000"/>
+    <string name="pref_video_time_lapse_frame_interval_54000000">"15 hodín"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_86400000"/>
+    <string name="pref_video_time_lapse_frame_interval_86400000">"24 hodín"</string>
+
+    <!-- Seconds: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_seconds"/>
+    <string name="time_lapse_seconds">"sekundy"</string>
+    <!-- Minutes: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_minutes"/>
+    <string name="time_lapse_minutes">"minúty"</string>
+    <!-- Hours: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_hours"/>
+    <string name="time_lapse_hours">"hodiny"</string>
+
+    <!-- The button to confirm time-lapse setting changes. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_interval_set"/>
+    <string name="time_lapse_interval_set">"Hotovo"</string>
+    <!-- Title in time interval picker for setting time interval. [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="set_time_interval"/>
+    <string name="set_time_interval">"Nastaviť časový interval"</string>
+    <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
+    <add-resource type="string" name="set_time_interval_help"/>
+    <string name="set_time_interval_help">"Funkcia časozberného videa je vypnutá. Zapnite ju a a nastavte časový interval."</string>
+    <!-- Help text that is shown when the countdown timer is turned off. [CHAR LIMIT = 180]-->
+    <add-resource type="string" name="set_timer_help"/>
+    <string name="set_timer_help">"Časovač odpočítavania je vypnutý. Ak chcete odpočítavať pred aktivovaním spúšte fotoaparátu, zapnite ho."</string>
+    <!-- Title in timer setting for setting the duration for the countdown timer. [CHAR LIMIT = 50]-->
+    <add-resource type="string" name="set_duration"/>
+    <string name="set_duration">"Nastavte dobu trvania v sekundách"</string>
+    <!-- On-screen hint during timer countdown for taking a photo. [CHAR LIMIT = 60]-->
+    <add-resource type="string" name="count_down_title_text"/>
+    <string name="count_down_title_text">"Odpočítavanie spúšte fotoaparátu"</string>
+
+    <!-- Title for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 50] -->
+    <add-resource type="string" name="remember_location_title"/>
+    <string name="remember_location_title">"Zapamätať si, kde boli fotky vytvorené?"</string>
+    <!-- Message for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = None] -->
+    <add-resource type="string" name="remember_location_prompt"/>
+    <string name="remember_location_prompt">"Pridajte k fotkám a videám polohy, kde boli zaznamenané.\n\nOstatné aplikácie môžu pristupovať k týmto informáciám spolu s prístupom k vašim uloženým snímkam."</string>
+    <!-- Negative answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_no"/>
+    <string name="remember_location_no">"Nie, ďakujem"</string>
+    <!-- Positive answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_yes"/>
+    <string name="remember_location_yes">"Áno"</string></resources>

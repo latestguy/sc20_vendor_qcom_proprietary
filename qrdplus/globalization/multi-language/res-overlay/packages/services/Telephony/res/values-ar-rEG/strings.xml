@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs.  This is the version of the label for
+         tablet devices, where the phone app handles mobile data but not
+         actual phone calls. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="tablet">"بيانات شبكة الجوّال"</string>
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="default">"خدمات الهاتف"</string>
+
+    <!-- Screen title for Emergency Dialer UI -->
+    <add-resource type="string" name="emergencyDialerIconLabel"/>
+    <string name="emergencyDialerIconLabel">"طالب الطوارئ"</string>
+    <!-- Activity label for the in-call UI -->
+    <add-resource type="string" name="phoneIconLabel"/>
+    <string name="phoneIconLabel">"الهاتف"</string>
+    <!-- Title of FDN list screen -->
+    <add-resource type="string" name="fdnListLabel"/>
+    <string name="fdnListLabel">"‏قائمة FDN"</string>
+
+    <!-- Call status -->
+    <!-- Incoming call screen, name of "unknown" caller -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"غير معروف"</string>
+    <!-- Incoming call screen, string when number hidden -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"رقم خاص"</string>
+    <!-- Incoming call screen, string when called from a pay phone -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"هاتف يعمل بالعملة"</string>
+    <!-- In-call screen: status label for a call that's on hold -->
+    <add-resource type="string" name="onHold"/>
+    <string name="onHold">"معلقة"</string>
+    <!-- Possible error messages with outgoing calls -->
+    <add-resource type="string" name="mmiStarted"/>
+    <string name="mmiStarted">"‏بدأ رمز MMI"</string>
+    <!-- Dialog label when a USSD code starts running -->
+    <add-resource type="string" name="ussdRunning"/>
+    <string name="ussdRunning">"‏جارٍ تشغيل رمز USSD..."</string>
+    <!-- Dialog label when an MMI code is canceled -->
+    <add-resource type="string" name="mmiCancelled"/>
+    <string name="mmiCancelled">"‏تم إلغاء كود MMI"</string>
+    <!-- Label for "cancel" button on the MMI dialog -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"إلغاء"</string>
+    <!-- Toast string displayed to user if the input in MMI dialog is < 1 or > 160 -->
+    <add-resource type="string" name="enter_input"/>
+    <string name="enter_input">"‏يجب أن تتراوح حروف رسالة USSD بين <xliff:g id="MIN_LEN">%d</xliff:g> و<xliff:g id="MAX_LEN">%d</xliff:g>. الرجاء إعادة المحاولة."</string>
+
+    <!-- Label for "Manage conference call" panel [CHAR LIMIT=40] -->
+    <add-resource type="string" name="manageConferenceLabel"/>
+    <string name="manageConferenceLabel">"إدارة مكالمة جماعية"</string>
+
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"موافق"</string>
+
+    <!-- "Audio mode" popup menu: Item label to select the speakerphone [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_speaker"/>
+    <string name="audio_mode_speaker">"السماعة"</string>
+    <!-- "Audio mode" popup menu: Item label to select the handset earpiece [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_earpiece"/>
+    <string name="audio_mode_earpiece">"سماعة الأذن للهاتف"</string>
+    <!-- "Audio mode" popup menu: Item label to select the wired headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_wired_headset"/>
+    <string name="audio_mode_wired_headset">"سماعة رأس سلكية"</string>
+    <!-- "Audio mode" popup menu: Item label to select the bluetooth headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_bluetooth"/>
+    <string name="audio_mode_bluetooth">"Bluetooth"</string>
+
+    <!-- post dial -->
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "wait" character in a phone number to be dialed; this dialog asks the
+         user if it's OK to send the numbers following the "wait". -->
+    <add-resource type="string" name="wait_prompt_str"/>
+    <string name="wait_prompt_str">"هل تريد إرسال النغمات التالية؟\n"</string>
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "PAUSE" character in a phone number to be dialed; this dialog gives
+         informative message to the user to show the sending numbers following the "Pause". -->
+    <add-resource type="string" name="pause_prompt_str"/>
+    <string name="pause_prompt_str">"إرسال النغمات\n"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog -->
+    <add-resource type="string" name="send_button"/>
+    <string name="send_button">"إرسال"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_yes"/>
+    <string name="pause_prompt_yes">"نعم"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_no"/>
+    <string name="pause_prompt_no">"لا"</string>
+    <!-- In-call screen: on the "wild" character dialog, this is the label
+         for a text widget that lets the user enter the digits that should
+         replace the "wild" character. -->
+    <add-resource type="string" name="wild_prompt_str"/>
+    <string name="wild_prompt_str">"استبدال حرف البدل بـ"</string>
+
+    <!-- missing voicemail number -->
+    <!-- Title of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number"/>
+    <string name="no_vm_number">"رقم البريد الصوتي مفقود"</string>
+    <!-- Body text of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number_msg"/>
+    <string name="no_vm_number_msg">"‏لم يتم تخزين رقم بريد صوتي على بطاقة SIM."</string>
+    <!-- Button label on the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="add_vm_number_str"/>
+    <string name="add_vm_number_str">"إضافة رقم"</string>
+    <!--Toast in Call settings when asked to launch voicemail for a guest user -->
+    <add-resource type="string" name="voice_number_setting_primary_user_only"/>
+    <string name="voice_number_setting_primary_user_only">"يحق للمستخدم الرئيسي فقط تغيير إعدادات البريد الصوتي للمكالمات."</string>
+
+    <!-- Status message displayed on SIM PIN unlock panel -->
+    <add-resource type="string" name="puk_unlocked"/>
+    <string name="puk_unlocked">"‏تم إلغاء حظر بطاقة SIM. جارٍ إلغاء تأمين الهاتف..."</string>
+    <!-- network depersonalization -->
+    <!-- Label text for PIN entry widget on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ENTRY"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ENTRY">"‏رمز PIN لإلغاء قفل شبكة SIM"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_unlock_text"/>
+    <string name="sim_ndp_unlock_text">"إلغاء تأمين"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_dismiss_text"/>
+    <string name="sim_ndp_dismiss_text">"استبعاد"</string>
+    <!-- Status message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS">"جارٍ طلب إلغاء قفل الشبكة..."</string>
+    <!-- Error message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ERROR"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ERROR">"لم ينجح طلب إلغاء قفل الشبكة."</string>
+    <!-- Success message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS">"نجح إلغاء قفل الشبكة."</string>
+
+    <!-- settings strings -->
+
+    <!-- Error message for users that aren't allowed to modify Mobile Network settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mobile_network_settings_not_available"/>
+    <string name="mobile_network_settings_not_available">"لا تتوفّر إعدادات شبكة الجوّال لهذا المستخدم"</string>
+    <!-- GSM Call settings screen, setting option name. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGSMMore"/>
+    <string name="labelGSMMore">"‏إعدادات اتصال نظام GSM"</string>
+    <!-- GSM Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGsmMore_with_label"/>
+    <string name="labelGsmMore_with_label">"‏إعدادات اتصال GSM (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <add-resource type="string" name="labelCFType"/>
+    <string name="labelCFType">"إعداد إعادة توجيه المكالمة"</string>
+    <add-resource type="string" name="labelCFVoice"/>
+    <string name="labelCFVoice">"الصوت"</string>
+    <add-resource type="string" name="labelCFVideo"/>
+    <string name="labelCFVideo">"فيديو"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCDMAMore"/>
+    <string name="labelCDMAMore">"‏إعدادات اتصال CDMA"</string>
+    <!-- CDMA Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelCdmaMore_with_label"/>
+    <string name="labelCdmaMore_with_label">"‏إعدادات اتصال CDMA (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="apn_settings"/>
+    <string name="apn_settings">"أسماء نقاط الوصول"</string>
+    <!-- Label for the "Network settings" screen in the Settings UI -->
+    <add-resource type="string" name="settings_label"/>
+    <string name="settings_label">"إعدادات الشبكة"</string>
+
+    <!-- Label for settings screen for phone accounts. -->
+    <add-resource type="string" name="phone_accounts"/>
+    <string name="phone_accounts">"حسابات الاتصالات"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account -->
+    <add-resource type="string" name="phone_accounts_make_calls_with"/>
+    <string name="phone_accounts_make_calls_with">"إجراء مكالمات باستخدام"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account for SIP calls. -->
+    <add-resource type="string" name="phone_accounts_make_sip_calls_with"/>
+    <string name="phone_accounts_make_sip_calls_with">"إجراء مكالمات SIP مع"</string>
+    <!-- Entry in dialog to "ask first" for accounts when making a call -->
+    <add-resource type="string" name="phone_accounts_ask_every_time"/>
+    <string name="phone_accounts_ask_every_time">"السؤال أولاً"</string>
+    <!-- Account label for when a SIM account has no service (i.e. airplane mode) -->
+    <add-resource type="string" name="phone_accounts_default_account_label"/>
+    <string name="phone_accounts_default_account_label">"لا تتوفر أي شبكة"</string>
+
+    <!-- Label for heading of the per-account settings section in the phone accounts settings
+         screen. -->
+    <add-resource type="string" name="phone_accounts_settings_header"/>
+    <string name="phone_accounts_settings_header">"الإعدادات"</string>
+    <!-- Label for invoking phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_choose_accounts"/>
+    <string name="phone_accounts_choose_accounts">"اختيار حسابات"</string>
+    <!-- Label for heading in the phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_selection_header"/>
+    <string name="phone_accounts_selection_header">"حسابات الهاتف"</string>
+    <!-- Title for the button to add a new sip account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_accounts_add_sip_account"/>
+    <string name="phone_accounts_add_sip_account">"إضافة حساب SIP"</string>
+    <!-- Description label for icon to configure a phone account's settings. -->
+    <add-resource type="string" name="phone_accounts_configure_account_settings"/>
+    <string name="phone_accounts_configure_account_settings">"تكوين إعدادات الحساب"</string>
+    <!-- Label for heading that takes user to the list of calling accounts where they can enable
+         and disable all accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts"/>
+    <string name="phone_accounts_all_calling_accounts">"كل حسابات الاتصال"</string>
+    <!-- Summary for all-calling-account setting indicating that is where the user goes to enable
+         and disable phone accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts_summary"/>
+    <string name="phone_accounts_all_calling_accounts_summary">"حدد الحسابات التي يمكنها إجراء مكالمات"</string>
+
+    <!-- Title for setting to select Wi-Fi call manager account -->
+    <add-resource type="string" name="wifi_calling"/>
+    <string name="wifi_calling">"‏الاتصال عبر Wi-Fi"</string>
+    <!-- Built-in label for the default connection service setting. -->
+    <add-resource type="string" name="connection_service_default_label"/>
+    <string name="connection_service_default_label">"خدمة اتصال مدمجة"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"البريد الصوتي"</string>
+    <!-- Title of the "Voicemail" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="voicemail_settings_with_label"/>
+    <string name="voicemail_settings_with_label">"البريد الصوتي (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call forwarding dialog box, voicemail number prefix -->
+    <add-resource type="string" name="voicemail_abbreviated"/>
+    <string name="voicemail_abbreviated">"VM:"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="networks"/>
+    <string name="networks">"مشغلو الشبكة"</string>
+    <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"بث الطوارئ"</string>
+    <!-- Call settings screen title -->
+    <add-resource type="string" name="call_settings"/>
+    <string name="call_settings">"إعدادات الاتصال"</string>
+    <!-- GSM Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_gsm_call_settings"/>
+    <string name="additional_gsm_call_settings">"إعدادات إضافية"</string>
+    <!-- GSM Call settings screen, setting option name, with label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="additional_gsm_call_settings_with_label"/>
+    <string name="additional_gsm_call_settings_with_label">"إعدادات إضافية (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- GSM-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_gsm_call_settings"/>
+    <string name="sum_gsm_call_settings">"‏إعدادات اتصال GSM الإضافية فقط"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_cdma_call_settings"/>
+    <string name="additional_cdma_call_settings">"‏إعدادات اتصال CDMA الإضافية"</string>
+    <!-- CDMA-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_cdma_call_settings"/>
+    <string name="sum_cdma_call_settings">"‏إعدادات اتصال CDMA الإضافية فقط"</string>
+    <!-- Call setting screen, nework service setting name -->
+    <add-resource type="string" name="labelNwService"/>
+    <string name="labelNwService">"إعدادات خدمة الشبكة"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCallerId"/>
+    <string name="labelCallerId">"معرف المتصل"</string>
+    <!-- Additional call settings screen, setting summary text when the setting is being loaded [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sum_loading_settings"/>
+    <string name="sum_loading_settings">"جارٍ تحميل الإعدادات\u2026"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is hidden -->
+    <add-resource type="string" name="sum_hide_caller_id"/>
+    <string name="sum_hide_caller_id">"الرقم مخفي في المكالمات الصادرة"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is shown -->
+    <add-resource type="string" name="sum_show_caller_id"/>
+    <string name="sum_show_caller_id">"الرقم المعروض في المكالمات الصادرة"</string>
+    <!-- Additional call settings screen, setting summary text for default Caller ID value -->
+    <add-resource type="string" name="sum_default_caller_id"/>
+    <string name="sum_default_caller_id">"استخدام إعدادات المشغل الافتراضية لعرض رقمي في المكالمات الصادرة"</string>
+    <!-- Additional call settings screen, setting check box name -->
+    <add-resource type="string" name="labelCW"/>
+    <string name="labelCW">"انتظار المكالمة"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is selected -->
+    <add-resource type="string" name="sum_cw_enabled"/>
+    <string name="sum_cw_enabled">"تنبيهي بالمكالمات الواردة أثناء المكالمة"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is clear -->
+    <add-resource type="string" name="sum_cw_disabled"/>
+    <string name="sum_cw_disabled">"تنبيهي بالمكالمات الواردة أثناء المكالمة"</string>
+    <!-- Call forwarding settings screen, section heading -->
+    <add-resource type="string" name="call_forwarding_settings"/>
+    <string name="call_forwarding_settings">"إعدادات اعادة توجيه المكالمة"</string>
+    <!-- Call forwarding settings screen, section heading, with a label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="call_forwarding_settings_with_label"/>
+    <string name="call_forwarding_settings_with_label">"إعدادات إعادة توجيه المكالمات (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCF"/>
+    <string name="labelCF">"اعادة توجيه المكالمة"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFU"/>
+    <string name="labelCFU">"إعادة التوجيه دومًا"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFU"/>
+    <string name="messageCFU">"استخدام هذا الرقم دائمًا"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
+    <add-resource type="string" name="sum_cfu_enabled_indicator"/>
+    <string name="sum_cfu_enabled_indicator">"إعادة التوجيه كل المكالمات"</string>
+    <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
+    <add-resource type="string" name="sum_cfu_enabled"/>
+    <string name="sum_cfu_enabled">"إعادة توجيه كل المكالمات إلى <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
+    <add-resource type="string" name="sum_cfu_enabled_no_number"/>
+    <string name="sum_cfu_enabled_no_number">"الرقم غير متاح"</string>
+    <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
+    <add-resource type="string" name="sum_cfu_disabled"/>
+    <string name="sum_cfu_disabled">"معطّل"</string>
+
+    <!-- Call forwarding settings screen, setting timer info for cfut case -->
+    <add-resource type="string" name="set_time_period"/>
+    <string name="set_time_period">"تعيين الفترة الزمنية"</string>
+    <add-resource type="string" name="all_day"/>
+    <string name="all_day">"\u0020طول اليوم\u0020"</string>
+    <add-resource type="string" name="time_interval_char"/>
+    <string name="time_interval_char">: </string>
+    <add-resource type="string" name="time_start"/>
+    <string name="time_start">"\u0020من\u0020"</string>
+    <add-resource type="string" name="time_start_hour"/>
+    <string name="time_start_hour">"ساعة بدء الوقت"</string>
+    <add-resource type="string" name="time_start_minute"/>
+    <string name="time_start_minute">"دقيقة بدء الوقت"</string>
+    <add-resource type="string" name="time_end"/>
+    <string name="time_end">"\u0020إلى\u0020"</string>
+    <add-resource type="string" name="time_next_day"/>
+    <string name="time_next_day">"\u0020اليوم التالي\u0020"</string>
+    <add-resource type="string" name="time_end_hour"/>
+    <string name="time_end_hour">"ساعة انتهاء الوقت"</string>
+    <add-resource type="string" name="time_end_minute"/>
+    <string name="time_end_minute">"دقيقة انتهاء الوقت"</string>
+    <add-resource type="string" name="time_formate_am"/>
+    <string name="time_formate_am">"صباحًا"</string>
+    <add-resource type="string" name="time_formate_pm"/>
+    <string name="time_formate_pm">"مساءً"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_alert"/>
+    <string name="cf_setting_mobile_data_alert">"يُرجى تشغيل بيانات المحمول والتأكد من إيقاف تشغيل WLAN"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_roaming_alert"/>
+    <string name="cf_setting_mobile_data_roaming_alert">"يرجى تشغيل تجوال البيانات"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFB"/>
+    <string name="labelCFB">"عند الانشغال"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFB"/>
+    <string name="messageCFB">"الرقم عندما يكون مشغولاً"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
+    <add-resource type="string" name="sum_cfb_enabled"/>
+    <string name="sum_cfb_enabled">"إعادة التوجيه إلى <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
+    <add-resource type="string" name="sum_cfb_disabled"/>
+    <string name="sum_cfb_disabled">"تم الإيقاف"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
+    <add-resource type="string" name="disable_cfb_forbidden"/>
+    <string name="disable_cfb_forbidden">"لا يتيح مشغل شبكة الجوال تعطيل اعادة توجيه المكالمة عندما يكون هاتفك مشغولاً."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRy"/>
+    <string name="labelCFNRy">"عند عدم الرد"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRy"/>
+    <string name="messageCFNRy">"الرقم عندما لا يتم الرد"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
+    <add-resource type="string" name="sum_cfnry_enabled"/>
+    <string name="sum_cfnry_enabled">"إعادة التوجيه إلى <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
+    <add-resource type="string" name="sum_cfnry_disabled"/>
+    <string name="sum_cfnry_disabled">"تم الإيقاف"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
+    <add-resource type="string" name="disable_cfnry_forbidden"/>
+    <string name="disable_cfnry_forbidden">"لا يتيح مشغل شبكة الجوال تعطيل اعادة توجيه المكالمة عند عدم رد هاتفك."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRc"/>
+    <string name="labelCFNRc">"عند عدم الوصول"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRc"/>
+    <string name="messageCFNRc">"الرقم عندما لا يمكن الوصول"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
+    <add-resource type="string" name="sum_cfnrc_enabled"/>
+    <string name="sum_cfnrc_enabled">"إعادة التوجيه إلى <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
+    <add-resource type="string" name="sum_cfnrc_disabled"/>
+    <string name="sum_cfnrc_disabled">"معطّل"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
+    <add-resource type="string" name="disable_cfnrc_forbidden"/>
+    <string name="disable_cfnrc_forbidden">"لا يتيح مشغل شبكة الجوال تعطيل اعادة توجيه المكالمة عند عدم التمكن من الوصول إلى هاتفك."</string>
+
+    <!-- Title of the progress dialog displayed while updating Call settings -->
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"إعدادات الاتصال"</string>
+    <!-- Toast in Call settings when asked to launch settings for a secondary user -->
+    <add-resource type="string" name="call_settings_admin_user_only"/>
+    <string name="call_settings_admin_user_only">"لا يمكن تغيير إعدادات المكالمات إلا بواسطة المستخدم الإداري."</string>
+    <!-- Title of the "Call settings" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="call_settings_with_label"/>
+    <string name="call_settings_with_label">"الإعدادات (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Title of the alert dialog displayed if an error occurs while updating Call settings -->
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"خطأ في إعدادات الاتصال"</string>
+    <!-- Toast in Call settings dialog while settings are being read -->
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"جارٍ قراءة الإعدادات..."</string>
+    <!-- Toast in Call settings dialog while settings are being saved -->
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"جارٍ تحديث الإعدادات..."</string>
+    <!-- Toast in Call settings dialog while settings are being reverted -->
+    <add-resource type="string" name="reverting_settings"/>
+    <string name="reverting_settings">"جارٍ إعادة الإعدادات..."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="response_error"/>
+    <string name="response_error">"رد غير متوقع من الشبكة."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="exception_error"/>
+    <string name="exception_error">"‏خطأ في الشبكة أو في بطاقة SIM"</string>
+    <!-- Status message displayed in the "Call settings error" dialog when
+         current SS request is modified to a different request by STK CC -->
+    <add-resource type="string" name="stk_cc_ss_to_dial_error"/>
+    <string name="stk_cc_ss_to_dial_error">"تم تعديل طلب SS إلى طلب DIAL."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ussd_error"/>
+    <string name="stk_cc_ss_to_ussd_error">"تم تعديل طلب SS إلى طلب USSD."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ss_error"/>
+    <string name="stk_cc_ss_to_ss_error">"تم تعديل طلب SS إلى طلب SS جديد."</string>
+
+    <!-- Status message displayed in the "Call settings error" dialog when operation fails due to FDN
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"تم تشغيل إعداد أرقام الاتصال الثابتة بالتطبيق المثبت على هاتفك. ونتيجة لذلك، لن تعمل بعض الميزات المرتبطة بالمكالمات."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="radio_off_error"/>
+    <string name="radio_off_error">"شغّل اللاسلكي قبل عرض هذه الإعدادات."</string>
+    <!-- Button label used to dismiss the "Call settings error" dialog -->
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"موافق"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"تشغيل"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"إيقاف"</string>
+    <!-- Button label which indicates the user wants to update a stored
+         phone number; used in several settings-related dialogs -->
+    <add-resource type="string" name="change_num"/>
+    <string name="change_num">"تحديث"</string>
+    <!-- Phone settings: Caller ID preference values -->
+    <add-resource type="array" name="clir_display_values"/>
+    <string-array name="clir_display_values">
+        <!-- Phone settings "Caller ID" preference option: use the default value -->
+        <item>"الشبكة الافتراضية"</item>
+        <!-- Phone settings "Caller ID" preference option: hide outgoing Caller ID info -->
+        <item>"إخفاء الرقم"</item>
+        <!-- Phone settings "Caller ID" preference option: show outgoing Caller ID info -->
+        <item>"إظهار الرقم"</item>
+    </string-array>
+
+    <!-- voicemail setting strings -->
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_changed"/>
+    <string name="vm_changed">"تم تغيير رقم البريد الصوتي."</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_change_failed"/>
+    <string name="vm_change_failed">"تعذر تغيير رقم البريد الصوتي.\nيمكنك الاتصال بمشغل شبكة الجوال إذا استمرت هذه المشكلة في الظهور."</string>
+    <!-- Call settings screen, displayed when vm provider supplied forwarding number change fails-->
+    <add-resource type="string" name="fw_change_failed"/>
+    <string name="fw_change_failed">"تعذر تغيير رقم إعادة التوجيه.\nاتصل بمشغل شبكة الجوّال إذا استمرت هذه المشكلة في الظهور."</string>
+    <!-- Call settings screen, displayed when forwarding number read fails-->
+    <add-resource type="string" name="fw_get_in_vm_failed"/>
+    <string name="fw_get_in_vm_failed">"تتعذر عملية استعادة إعدادات إعادة توجيه الأرقام الحالية وحفظها.\nهل تريد الانتقال إلى الموزع الجديد على أي حال؟"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="no_change"/>
+    <string name="no_change">"لم يتم إجراء أية تغييرات."</string>
+    <!-- Call settings screen, "Voicemail" provider setting summary text when no provider is selected -->
+    <add-resource type="string" name="sum_voicemail_choose_provider"/>
+    <string name="sum_voicemail_choose_provider">"اختيار خدمة البريد الصوتي"</string>
+    <!-- Call settings screen, "Voicemail" screen, default option - Your Carrier -->
+    <add-resource type="string" name="voicemail_default"/>
+    <string name="voicemail_default">"مشغل شبكة الجوال"</string>
+
+    <!-- Hint for the old PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_old_pin"/>
+    <string name="vm_change_pin_old_pin">"رقم التعريف الشخصي القديم"</string>
+    <!-- Hint for the new PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_new_pin"/>
+    <string name="vm_change_pin_new_pin">"رقم التعريف الشخصي الجديد"</string>
+
+    <!-- Message on the dialog when PIN changing is in progress -->
+    <add-resource type="string" name="vm_change_pin_progress_message"/>
+    <string name="vm_change_pin_progress_message">"الرجاء الانتظار."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too short -->
+    <add-resource type="string" name="vm_change_pin_error_too_short"/>
+    <string name="vm_change_pin_error_too_short">"رقم التعريف الشخصي الجديد قصير جدًا."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too long -->
+    <add-resource type="string" name="vm_change_pin_error_too_long"/>
+    <string name="vm_change_pin_error_too_long">"رقم التعريف الشخصي الجديد طويل جدًا."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too weak -->
+    <add-resource type="string" name="vm_change_pin_error_too_weak"/>
+    <string name="vm_change_pin_error_too_weak">"رقم التعريف الشخصي الجديد ضعيف جدًا. لا ينبغي أن تكون كلمة المرور القوية عبارة عن تسلسل متتالٍ أو أرقام متكررة."</string>
+    <!-- Error message for the voicemail PIN change if the old PIN entered doesn't match  -->
+    <add-resource type="string" name="vm_change_pin_error_mismatch"/>
+    <string name="vm_change_pin_error_mismatch">"رقم التعريف الشخصي القديم غير مُطابِق."</string>
+    <!-- Error message for the voicemail PIN change if the new PIN contains invalid character -->
+    <add-resource type="string" name="vm_change_pin_error_invalid"/>
+    <string name="vm_change_pin_error_invalid">"رقم التعريف الشخصي الجديد يحتوي على أحرف غير صالحة."</string>
+    <!-- Error message for the voicemail PIN change if operation has failed -->
+    <add-resource type="string" name="vm_change_pin_error_system_error"/>
+    <string name="vm_change_pin_error_system_error">"غير قادر على تغيير رقم التعريف الشخصي"</string>
+    <!-- Message to replace the transcription if a visual voicemail message is not supported-->
+    <add-resource type="string" name="vvm_unsupported_message_format"/>
+    <string name="vvm_unsupported_message_format">"نوع الرسالة غير معتمد، اتصل على <xliff:g id="NUMBER">%s</xliff:g> لسماعها."</string>
+
+    <!-- networks setting strings -->
+    <!-- Mobile network settings screen title -->
+    <add-resource type="string" name="mobile_networks"/>
+    <string name="mobile_networks">"إعدادات شبكة الجوّال"</string>
+    <!-- Available networks screen title/heading -->
+    <add-resource type="string" name="label_available"/>
+    <string name="label_available">"الشبكات المتاحة"</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <add-resource type="string" name="load_networks_progress"/>
+    <string name="load_networks_progress">"جارِ البحث\u2026"</string>
+    <!-- Available networks screen, text when no networks are found -->
+    <add-resource type="string" name="empty_networks_list"/>
+    <string name="empty_networks_list">"لم يتم العثور على شبكات."</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="search_networks"/>
+    <string name="search_networks">"بحث في الشبكات"</string>
+    <!-- Available networks screen, toast when an error is encountered when searching for networks -->
+    <add-resource type="string" name="network_query_error"/>
+    <string name="network_query_error">"حدث خطأ أثناء البحث عن شبكات."</string>
+    <!-- Available networks screen, toast when registering on a specific network -->
+    <add-resource type="string" name="register_on_network"/>
+    <string name="register_on_network">"جارٍ التسجيل على <xliff:g id="NETWORK">%s</xliff:g>..."</string>
+    <!-- Available networks screen, toast when SIM card isn't allowed on a network -->
+    <add-resource type="string" name="not_allowed"/>
+    <string name="not_allowed">"‏لا تسمح بطاقة SIM بالاتصال بهذه الشبكة."</string>
+    <!-- Available networks screen, toast when unable to connect to a network temporarily -->
+    <add-resource type="string" name="connect_later"/>
+    <string name="connect_later">"يتعذر الاتصال بهذه الشبكة في الوقت الحالي. حاول مرة أخرى لاحقًا."</string>
+    <!-- Available networks screen, toast when registered on a specific network -->
+    <add-resource type="string" name="registration_done"/>
+    <string name="registration_done">"مسجل على الشبكة."</string>
+    <!-- Mobile network settings screen setting option summary text -->
+    <add-resource type="string" name="sum_carrier_select"/>
+    <string name="sum_carrier_select">"اختر مشغل شبكة جوال"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_search_networks"/>
+    <string name="sum_search_networks">"البحث عن كل الشبكات المتاحة"</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="select_automatically"/>
+    <string name="select_automatically">"اختيار تلقائي"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_select_automatically"/>
+    <string name="sum_select_automatically">"اختيار الشبكة المفضلة تلقائيًا"</string>
+    <add-resource type="string" name="register_automatically"/>
+    <string name="register_automatically">"التسجيل التلقائي..."</string>
+    <add-resource type="string" name="preferred_network_mode_title"/>
+    <string name="preferred_network_mode_title">"نوع الشبكة المفضل"</string>
+    <add-resource type="string" name="preferred_network_mode_summary"/>
+    <string name="preferred_network_mode_summary">"تغيير وضع تشغيل الشبكة"</string>
+    <add-resource type="string" name="preferred_network_mode_dialogtitle"/>
+    <string name="preferred_network_mode_dialogtitle">"نوع الشبكة المفضل"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA preferred[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_perf_summary"/>
+    <string name="preferred_network_mode_wcdma_perf_summary">"‏وضع الشبكة المفضل: تم تفضيل WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_only_summary"/>
+    <string name="preferred_network_mode_gsm_only_summary">"‏وضع الشبكة المفضل: GSM فقط"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_only_summary"/>
+    <string name="preferred_network_mode_wcdma_only_summary">"‏وضع الشبكة المفضل: WCDMA فقط"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM / UMTS [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_gsm_wcdma_summary">"‏وضع الشبكة المفضل: GSM / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_summary"/>
+    <string name="preferred_network_mode_cdma_summary">"‏وضع الشبكة المفضل: CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA / EvDo [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_summary">"‏وضع الشبكة المفضل: CDMA / EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_only_summary"/>
+    <string name="preferred_network_mode_cdma_only_summary">"‏وضع الشبكة المفضل: CDMA فقط"</string>
+    <!-- Mobile network settings, summary for preferred network mode EvDo only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_evdo_only_summary"/>
+    <string name="preferred_network_mode_evdo_only_summary">"‏وضع الشبكة المفضل: EvDo فقط"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">"‏وضع الشبكة المفضل: CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_summary"/>
+    <string name="preferred_network_mode_lte_summary">"‏وضع الشبكة المفضل: LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM/WCDMA/LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary">"‏وضع الشبكة المفضل: GSM/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA+LTE/EVDO[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">"‏وضع الشبكة المفضل: CDMA+LTE/EVDO"</string>
+    <!-- Mobile network settings, summary for preferred network mode Global[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_global_summary"/>
+    <string name="preferred_network_mode_global_summary">"وضع الشبكة المفضل: عام"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_wcdma_summary">"‏وضع الشبكة المفضل: LTE / WCDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / GSM / UMTS [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_gsm_umts_summary"/>
+    <string name="preferred_network_mode_lte_gsm_umts_summary">"‏وضع الشبكة المفضل: LTE / GSM / UMTS"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / CDMA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_cdma_summary"/>
+    <string name="preferred_network_mode_lte_cdma_summary">"‏وضع الشبكة المفضل: LTE / CDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode TDSCDMTA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_tdscdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_summary">"‏وضع الشبكة المفضَّل: TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_wcdma_summary">"وضع الشبكة المفضل: TDSCDMA / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_summary">"وضع الشبكة المفضل: LTE / TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_summary">"وضع الشبكة المفضل: TDSCDMA / GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / GSM / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_summary">"وضع الشبكة المفضل: LTE/GSM/TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_wcdma_summary">"وضع الشبكة المفضل: TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_wcdma_summary">"وضع الشبكة المفضل: LTE/TDSCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary">"وضع الشبكة المفضل: LTE/TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary">"وضع الشبكة المفضل: TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary">"وضع الشبكة المفضل: LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- In-call screen: call failure reason (call denied because call barring
+            is ON on MT side ) -->
+    <add-resource type="string" name="callFailed_incoming_cb_enabled"/>
+    <string name="callFailed_incoming_cb_enabled">"لقد تشارك الطرف كافة المكالمات الواردة."</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <add-resource type="string" name="callUnanswered_forwarded"/>
+    <string name="callUnanswered_forwarded">"لم يتم الرد علي المكالمة وتم إعادة توجيهها"</string>
+
+    <add-resource type="array" name="preferred_network_mode_choices"/>
+    <string-array name="preferred_network_mode_choices">
+        <item>"LTE/TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"LTE/TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/GSM"</item>
+        <item>"TDSCDMA/GSM"</item>
+        <item>"LTE/TDSCDMA"</item>
+        <item>"TDSCDMA/WCDMA"</item>
+        <item>"‏TDSCDMA فقط"</item>
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>"عام"</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>"‏EvDo فقط"</item>
+        <item>CDMA w/o EvDo</item>
+        <item>"‏CDMA/EvDo تلقائي"</item>
+        <item>"‏GSM/WCDMA تلقائي"</item>
+        <item>"‏WCDMA فقط"</item>
+        <item>"‏GSM فقط"</item>
+        <item>"تم تفضيل GSM/WCDMA"</item>
+    </string-array>
+    <!-- Cellular network 4G title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title"/>
+    <string name="enhanced_4g_lte_mode_title">"وضع 4G LTE معزز"</string>
+    <!-- Carrier variant of Enhaced 4G LTE Mode title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title_variant"/>
+    <string name="enhanced_4g_lte_mode_title_variant">"اتصال متقدم"</string>
+    <!-- Cellular network 4G summary [CHAR LIMIT=80] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_summary"/>
+    <string name="enhanced_4g_lte_mode_summary">"استخدم خدمات LTE لتحسين الاتصالات الصوتية وغيرها (موصى بها)"</string>
+
+    <!-- Mobile network settings screen, data enabling checkbox name -->
+    <add-resource type="string" name="data_enabled"/>
+    <string name="data_enabled">"تم تمكين البيانات"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) [CHAR LIMITS=40] -->
+    <add-resource type="string" name="data_enable_summary"/>
+    <string name="data_enable_summary">"السماح باستخدام البيانات"</string>
+    <!-- Mobile network settings screen, title for alert dialog -->
+    <add-resource type="string" name="dialog_alert_title"/>
+    <string name="dialog_alert_title">"تنبيه"</string>
+    <!-- Mobile network settings screen, setting check box name -->
+    <add-resource type="string" name="roaming"/>
+    <string name="roaming">"تجوال البيانات"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is selected -->
+    <add-resource type="string" name="roaming_enable"/>
+    <string name="roaming_enable">"اتصال بخدمات البيانات عند التجوال"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is clear -->
+    <add-resource type="string" name="roaming_disable"/>
+    <string name="roaming_disable">"اتصال بخدمات البيانات عند التجوال"</string>
+    <!-- Mobile network settings UI: notification message shown when you
+         lose data connectivity because you're roaming and you have the
+         "data roaming" feature turned off. -->
+    <add-resource type="string" name="roaming_reenable_message"/>
+    <string name="roaming_reenable_message">"لقد فقدت اتصال البيانات نظرًا لأنك أوقفت تشغيل تجوال البيانات بشبكتك الرئيسية."</string>
+    <!-- Mobile network settings screen, dialog message when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_warning"/>
+    <string name="roaming_warning">"قد يكلف ذلك رسومًا مرتفعة."</string>
+    <!-- Mobile network settings screen, dialog message title when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_alert_title"/>
+    <string name="roaming_alert_title">"السماح بتجوال البيانات؟"</string>
+    <add-resource type="string" name=" hide_error_from_network_text"/>
+    <string name=" hide_error_from_network_text">"تتعذر معالجة الطلب"</string>
+
+    <add-resource type="string" name="gsm_umts_options"/>
+    <string name="gsm_umts_options">"‏خيارات نظام GSM/النظام العالمي لاتصالات الجوال عن بعد (UMTS)"</string>
+    <add-resource type="string" name="call_forward_option"/>
+    <string name="call_forward_option">"خيارات إعادة توجيه المكالمة"</string>
+    <add-resource type="string" name="cdma_options"/>
+    <string name="cdma_options">"‏خيارات CDMA"</string>
+
+    <!-- Screen option on the mobile network settings to go into data usage settings -->
+    <add-resource type="string" name="throttle_data_usage"/>
+    <string name="throttle_data_usage">"استخدام البيانات"</string>
+    <!-- Data usage settings screen option for checking the current usage -->
+    <add-resource type="string" name="throttle_current_usage"/>
+    <string name="throttle_current_usage">"البيانات المستخدمة في المدة الحالية"</string>
+    <!-- Data usage settings screen option for time frame-->
+    <add-resource type="string" name="throttle_time_frame"/>
+    <string name="throttle_time_frame">"مدة استخدام البيانات"</string>
+    <!-- Data usage settings screen option for throttling rate-->
+    <add-resource type="string" name="throttle_rate"/>
+    <string name="throttle_rate">"سياسية معدل البيانات"</string>
+    <!-- Data usage settings screen option for accessing the carrier website-->
+    <add-resource type="string" name="throttle_help"/>
+    <string name="throttle_help">"مزيد من المعلومات"</string>
+
+    <add-resource type="string" name="throttle_status_subtext"/>
+    <string name="throttle_status_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) من <xliff:g id="USED_2">%3$s</xliff:g> الحد الأقصى للمدة\nتبدأ المدة التالية خلال <xliff:g id="USED_3">%4$d</xliff:g> يوم (<xliff:g id="USED_4">%5$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_data_usage_subtext"/>
+    <string name="throttle_data_usage_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) من <xliff:g id="USED_2">%3$s</xliff:g> الحد الأقصى للمدة"</string>
+
+    <add-resource type="string" name="throttle_data_rate_reduced_subtext"/>
+    <string name="throttle_data_rate_reduced_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> تم تعدي الحد الأقصى\nتم تخفيض معدل البيانات إلى <xliff:g id="USED_1">%2$d</xliff:g> كيلوبايت/ثانية"</string>
+
+    <add-resource type="string" name="throttle_time_frame_subtext"/>
+    <string name="throttle_time_frame_subtext">"انقضت نسبة <xliff:g id="USED_0">%1$d</xliff:g>\u066A من الدورة\nتبدأ الفترة التالية خلال <xliff:g id="USED_1">%2$d</xliff:g> يوم (<xliff:g id="USED_2">%3$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_rate_subtext"/>
+    <string name="throttle_rate_subtext">"تخفيض معدل البيانات إلى <xliff:g id="USED">%1$d</xliff:g> كيلوبايت/ثانية إذا تم تعدي حد البيانات"</string>
+
+    <add-resource type="string" name="throttle_help_subtext"/>
+    <string name="throttle_help_subtext">"مزيد من المعلومات حول سياسة استخدام بيانات الشبكة لمشغل شبكة الجوّال"</string>
+
+    <add-resource type="string" name="cell_broadcast_sms"/>
+    <string name="cell_broadcast_sms">"‏الرسائل القصيرة SMS لبث الخلية"</string>
+
+    <add-resource type="string" name="enable_disable_cell_bc_sms"/>
+    <string name="enable_disable_cell_bc_sms">"‏الرسائل القصيرة SMS لبث الخلية"</string>
+    <add-resource type="string" name="cell_bc_sms_enable"/>
+    <string name="cell_bc_sms_enable">"‏تم تمكين الرسائل القصيرة SMS لبث الخلية"</string>
+    <add-resource type="string" name="cell_bc_sms_disable"/>
+    <string name="cell_bc_sms_disable">"‏تم تعطيل الرسائل القصيرة SMS لبث الخلية"</string>
+
+    <add-resource type="string" name="cb_sms_settings"/>
+    <string name="cb_sms_settings">"‏إعدادات الرسائل القصيرة SMS لبث الخلية"</string>
+
+    <add-resource type="string" name="enable_disable_emergency_broadcast"/>
+    <string name="enable_disable_emergency_broadcast">"بث الطوارئ"</string>
+    <add-resource type="string" name="emergency_broadcast_enable"/>
+    <string name="emergency_broadcast_enable">"تم تمكين بث الطوارئ"</string>
+    <add-resource type="string" name="emergency_broadcast_disable"/>
+    <string name="emergency_broadcast_disable">"تم تعطيل بث الطوارئ"</string>
+
+    <add-resource type="string" name="enable_disable_administrative"/>
+    <string name="enable_disable_administrative">"إداري"</string>
+    <add-resource type="string" name="administrative_enable"/>
+    <string name="administrative_enable">"تم تمكين الإداري"</string>
+    <add-resource type="string" name="administrative_disable"/>
+    <string name="administrative_disable">"تم تعطيل الإداري"</string>
+
+    <add-resource type="string" name="enable_disable_maintenance"/>
+    <string name="enable_disable_maintenance">"الصيانة"</string>
+    <add-resource type="string" name="maintenance_enable"/>
+    <string name="maintenance_enable">"تم تمكين الصيانة"</string>
+    <add-resource type="string" name="maintenance_disable"/>
+    <string name="maintenance_disable">"تم تعطيل الصيانة"</string>
+
+    <add-resource type="string" name="general_news_settings"/>
+    <string name="general_news_settings">"أخبار عامة"</string>
+    <add-resource type="string" name="bf_news_settings"/>
+    <string name="bf_news_settings">"أخبار الأعمال والأخبار المالية"</string>
+    <add-resource type="string" name="sports_news_settings"/>
+    <string name="sports_news_settings">"أخبار رياضية"</string>
+    <add-resource type="string" name="entertainment_news_settings"/>
+    <string name="entertainment_news_settings">"أخبار ترفيهية"</string>
+
+    <add-resource type="string" name="enable_disable_local"/>
+    <string name="enable_disable_local">"محلي"</string>
+    <add-resource type="string" name="local_enable"/>
+    <string name="local_enable">"تم تمكين الأخبار المحلية"</string>
+    <add-resource type="string" name="local_disable"/>
+    <string name="local_disable">"تم تعطيل الأخبار المحلية"</string>
+
+    <add-resource type="string" name="enable_disable_regional"/>
+    <string name="enable_disable_regional">"إقليمي"</string>
+    <add-resource type="string" name="regional_enable"/>
+    <string name="regional_enable">"تم تمكين الأخبار الإقليمية"</string>
+    <add-resource type="string" name="regional_disable"/>
+    <string name="regional_disable">"تم تعطيل الأخبار الإقليمية"</string>
+
+    <add-resource type="string" name="enable_disable_national"/>
+    <string name="enable_disable_national">"إقليمي"</string>
+    <add-resource type="string" name="national_enable"/>
+    <string name="national_enable">"تم تمكين الأخبار الإقليمية"</string>
+    <add-resource type="string" name="national_disable"/>
+    <string name="national_disable">"تم تعطيل الأخبار القومية"</string>
+
+    <add-resource type="string" name="enable_disable_international"/>
+    <string name="enable_disable_international">"دولي"</string>
+    <add-resource type="string" name="international_enable"/>
+    <string name="international_enable">"تم تمكين الأخبار الدولية"</string>
+    <add-resource type="string" name="international_disable"/>
+    <string name="international_disable">"تم تعطيل الأخبار الدولية"</string>
+
+    <add-resource type="string" name="list_language_title"/>
+    <string name="list_language_title">"اللغة"</string>
+    <add-resource type="string" name="list_language_summary"/>
+    <string name="list_language_summary">"حدد لغة الأخبار"</string>
+    <add-resource type="array" name="list_language_entries"/>
+    <string-array name="list_language_entries">
+        <item>"الإنجليزية"</item>
+        <item>"الفرنسية"</item>
+        <item>"الإسبانية"</item>
+        <item>"اليابانية"</item>
+        <item>"الكورية"</item>
+        <item>"الصينية"</item>
+        <item>"العبرية"</item>
+    </string-array>
+    <add-resource type="array" name="list_language_values"/>
+    <string-array name="list_language_values">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+    </string-array>
+    <add-resource type="string" name="list_language_dtitle"/>
+    <string name="list_language_dtitle">"اللغات"</string>
+
+    <add-resource type="string" name="enable_disable_local_weather"/>
+    <string name="enable_disable_local_weather">"الطقس المحلي"</string>
+    <add-resource type="string" name="local_weather_enable"/>
+    <string name="local_weather_enable">"تم تمكين الطقس المحلي"</string>
+    <add-resource type="string" name="local_weather_disable"/>
+    <string name="local_weather_disable">"تم تعطيل الطقس المحلي"</string>
+
+    <add-resource type="string" name="enable_disable_atr"/>
+    <string name="enable_disable_atr">"تقارير حركة المرور بالمنطقة"</string>
+    <add-resource type="string" name="atr_enable"/>
+    <string name="atr_enable">"تم تمكين تقارير حركة المرور بالمنطقة"</string>
+    <add-resource type="string" name="atr_disable"/>
+    <string name="atr_disable">"تم تعطيل تقارير حركة المرور بالمنطقة"</string>
+
+    <add-resource type="string" name="enable_disable_lafs"/>
+    <string name="enable_disable_lafs">"جداول مواعيد رحلات الطائرات المحلية"</string>
+    <add-resource type="string" name="lafs_enable"/>
+    <string name="lafs_enable">"تم تمكين جداول مواعيد رحلات الطائرات المحلية"</string>
+    <add-resource type="string" name="lafs_disable"/>
+    <string name="lafs_disable">"تم تعطيل جداول مواعيد رحلات الطائرات المحلية"</string>
+
+    <add-resource type="string" name="enable_disable_restaurants"/>
+    <string name="enable_disable_restaurants">"مطاعم"</string>
+    <add-resource type="string" name="restaurants_enable"/>
+    <string name="restaurants_enable">"تم تمكين المطاعم"</string>
+    <add-resource type="string" name="restaurants_disable"/>
+    <string name="restaurants_disable">"تم تعطيل المطاعم"</string>
+
+    <add-resource type="string" name="enable_disable_lodgings"/>
+    <string name="enable_disable_lodgings">"السكن"</string>
+    <add-resource type="string" name="lodgings_enable"/>
+    <string name="lodgings_enable">"تم تمكين السكن"</string>
+    <add-resource type="string" name="lodgings_disable"/>
+    <string name="lodgings_disable">"تم تعطيل السكن"</string>
+
+    <add-resource type="string" name="enable_disable_retail_directory"/>
+    <string name="enable_disable_retail_directory">"دليل البيع بالتجزئة"</string>
+    <add-resource type="string" name="retail_directory_enable"/>
+    <string name="retail_directory_enable">"تم تمكين دليل البيع بالتجزئة"</string>
+    <add-resource type="string" name="retail_directory_disable"/>
+    <string name="retail_directory_disable">"تم تعطيل دليل البيع بالتجزئة"</string>
+
+    <add-resource type="string" name="enable_disable_advertisements"/>
+    <string name="enable_disable_advertisements">"الإعلانات"</string>
+    <add-resource type="string" name="advertisements_enable"/>
+    <string name="advertisements_enable">"تم تمكين الإعلانات"</string>
+    <add-resource type="string" name="advertisements_disable"/>
+    <string name="advertisements_disable">"تم تعطيل الإعلانات"</string>
+
+    <add-resource type="string" name="enable_disable_stock_quotes"/>
+    <string name="enable_disable_stock_quotes">"أسعار الأسهم"</string>
+    <add-resource type="string" name="stock_quotes_enable"/>
+    <string name="stock_quotes_enable">"تم تمكين أسعار الأسهم"</string>
+    <add-resource type="string" name="stock_quotes_disable"/>
+    <string name="stock_quotes_disable">"تم تعطيل أسعار الأسهم"</string>
+
+    <add-resource type="string" name="enable_disable_eo"/>
+    <string name="enable_disable_eo">"فرص وظائف"</string>
+    <add-resource type="string" name="eo_enable"/>
+    <string name="eo_enable">"تم تمكين فرص الوظائف"</string>
+    <add-resource type="string" name="eo_disable"/>
+    <string name="eo_disable">"تم تعطيل فرص الوظائف"</string>
+
+    <add-resource type="string" name="enable_disable_mhh"/>
+    <string name="enable_disable_mhh">"طبي والصحة والمستشفى"</string>
+    <add-resource type="string" name="mhh_enable"/>
+    <string name="mhh_enable">"تم تمكين الطبي والصحة والمستشفى"</string>
+    <add-resource type="string" name="mhh_disable"/>
+    <string name="mhh_disable">"تم تعطيل الطبي والصحة والمستشفى"</string>
+
+    <add-resource type="string" name="enable_disable_technology_news"/>
+    <string name="enable_disable_technology_news">"أخبار التكنولوجيا"</string>
+    <add-resource type="string" name="technology_news_enable"/>
+    <string name="technology_news_enable">"تم تمكين أخبار التكنولوجيا"</string>
+    <add-resource type="string" name="technology_news_disable"/>
+    <string name="technology_news_disable">"تم تعطيل أخبار التكنولوجيا"</string>
+
+    <add-resource type="string" name="enable_disable_multi_category"/>
+    <string name="enable_disable_multi_category">"متعددة الفئات"</string>
+    <add-resource type="string" name="multi_category_enable"/>
+    <string name="multi_category_enable">"تم تمكين المتعددة الفئات"</string>
+    <add-resource type="string" name="multi_category_disable"/>
+    <string name="multi_category_disable">"تم تعطيل متعددة الفئات"</string>
+
+    <add-resource type="string" name="network_lte"/>
+    <string name="network_lte">"‏LTE (مستحسن)"</string>
+    <add-resource type="string" name="network_4G"/>
+    <string name="network_4G">"الجيل الرابع (مستحسن)"</string>
+    <add-resource type="string" name="network_global"/>
+    <string name="network_global">"عام"</string>
+
+    <!-- CDMA System select strings -->
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="cdma_system_select_title"/>
+    <string name="cdma_system_select_title">"تحديد النظام"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <add-resource type="string" name="cdma_system_select_summary"/>
+    <string name="cdma_system_select_summary">"‏تغيير وضع التجوال عبر CDMA"</string>
+    <!-- System select settings screen title -->
+    <add-resource type="string" name="cdma_system_select_dialogtitle"/>
+    <string name="cdma_system_select_dialogtitle">"تحديد النظام"</string>
+    <add-resource type="array" name="cdma_system_select_choices"/>
+    <string-array name="cdma_system_select_choices">
+        <!-- System select dialog screen, setting option name -->
+        <item>"الرئيسية فقط"</item>
+        <!-- Remove the following option "Affiliated Networks" from the option list -->
+        <!-- <item>Affiliated Networks</item> -->
+        <!-- System select dialog screen, setting option name -->
+        <item>"تلقائي"</item>
+    </string-array>
+
+    <add-resource type="string" name="cdma_subscription_title"/>
+    <string name="cdma_subscription_title">"‏اشتراك CDMA"</string>
+    <add-resource type="string" name="cdma_subscription_summary"/>
+    <string name="cdma_subscription_summary">"‏تغيير بين RUIM/SIM وNV"</string>
+    <add-resource type="string" name="cdma_subscription_dialogtitle"/>
+    <string name="cdma_subscription_dialogtitle">"الاشتراك"</string>
+    <add-resource type="array" name="cdma_subscription_choices"/>
+    <string-array name="cdma_subscription_choices">
+        <item>"‏بطاقة RUIM/SIM"</item>
+        <item>NV</item>
+    </string-array>
+    <add-resource type="array" name="cdma_subscription_values"/>
+    <string-array name="cdma_subscription_values">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+    <!-- Preference title with which users can activate CDMA network [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_activate_device"/>
+    <string name="cdma_activate_device">"تنشيط الجهاز"</string>
+    <!-- Preference title for launching an account manager page for prepaid LTE [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_lte_data_service"/>
+    <string name="cdma_lte_data_service">"إعداد خدمة البيانات"</string>
+
+    <!-- A menu item in "Mobile network settings" that allows the user to update the phone
+         with mobile operator specific settings. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="carrier_settings_title"/>
+    <string name="carrier_settings_title">"إعدادات مشغل شبكة الجوّال"</string>
+
+    <!-- FDN settings strings -->
+    <!-- Label for "Fixed Dialing Number" settings in call settings. -->
+    <add-resource type="string" name="fdn"/>
+    <string name="fdn">"أرقام الاتصال الثابتة"</string>
+    <!-- Title for "Fixed Dialing Number" settings, with a label to identify the SIM the settings
+        apply to. -->
+    <add-resource type="string" name="fdn_with_label"/>
+    <string name="fdn_with_label">"أرقام الاتصال الثابت (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+
+    <!-- Call settings screen, button label that takes you to the Fixed Dialing Number management screen -->
+    <add-resource type="string" name="manage_fdn_list"/>
+    <string name="manage_fdn_list">"‏قائمة FDN"</string>
+    <!-- Title for settings screen to manage Fixed Dialing Number contacts, with a label to identify
+         the SIM the settings apply to. -->
+    <add-resource type="string" name="fdn_list_with_label"/>
+    <string name="fdn_list_with_label">"قائمة أرقام الاتصال الثابت (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, preference item label -->
+    <add-resource type="string" name="fdn_activation"/>
+    <string name="fdn_activation">"‏تنشيط FDN"</string>
+    <!-- Call settings setting option name when FDN is enabled -->
+    <add-resource type="string" name="fdn_enabled"/>
+    <string name="fdn_enabled">"تم تمكين أرقام الاتصال الثابتة"</string>
+    <!-- Call settings setting option name  when FDN is disabled-->
+    <add-resource type="string" name="fdn_disabled"/>
+    <string name="fdn_disabled">"تم تعطيل أرقام الاتصال الثابتة"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="enable_fdn"/>
+    <string name="enable_fdn">"‏تمكين FDN"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="disable_fdn"/>
+    <string name="disable_fdn">"‏تعطيل FDN"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="change_pin2"/>
+    <string name="change_pin2">"‏تغيير رمز PIN PIN2"</string>
+    <!-- Call settings screen, setting option name when FDN is enabled -->
+    <add-resource type="string" name="enable_fdn_ok"/>
+    <string name="enable_fdn_ok">"‏تعطيل FDN"</string>
+    <!-- Call settings screen, setting option name when FDN is disabled -->
+    <add-resource type="string" name="disable_fdn_ok"/>
+    <string name="disable_fdn_ok">"‏تمكين FDN"</string>
+    <!-- Call settings screen, setting summary text -->
+    <add-resource type="string" name="sum_fdn"/>
+    <string name="sum_fdn">"إدارة أرقام الاتصال الثابتة"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_change_pin"/>
+    <string name="sum_fdn_change_pin">"‏تغيير رمز PIN للدخول إلى FDN"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_manage_list"/>
+    <string name="sum_fdn_manage_list">"إدارة قائمة أرقام الهاتف"</string>
+    <!-- Voice privacy on CDMA is an added layer of voice encryption. Theoretically, it would be harder to break in to a phone call with this feature enabled. -->
+    <add-resource type="string" name="voice_privacy"/>
+    <string name="voice_privacy">"خصوصية الصوت"</string>
+    <add-resource type="string" name="voice_privacy_summary"/>
+    <string name="voice_privacy_summary">"تمكين وضع الخصوصية المحسن"</string>
+    <add-resource type="string" name="tty_mode_option_title"/>
+    <string name="tty_mode_option_title">"‏وضع TTY"</string>
+    <add-resource type="string" name="tty_mode_option_summary"/>
+    <string name="tty_mode_option_summary">"‏تعيين وضع TTY"</string>
+    <add-resource type="string" name="auto_retry_mode_title"/>
+    <string name="auto_retry_mode_title">"إعادة المحاولة تلقائيًا"</string>
+    <add-resource type="string" name="auto_retry_mode_summary"/>
+    <string name="auto_retry_mode_summary">"تمكين وضع إعادة المحاولة التلقائي"</string>
+    <!-- TTY Mode change is NOT allowed during a video call -->
+    <add-resource type="string" name="tty_mode_not_allowed_video_call"/>
+    <string name="tty_mode_not_allowed_video_call">"‏لا يُسمح بتغيير وضع TTY أثناء مكالمة فيديو"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_add"/>
+    <string name="menu_add">"إضافة جهة اتصال"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"تعديل جهة الاتصال"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"حذف جهة الاتصال"</string>
+
+    <!-- FDN related strings -->
+    <!-- Label for PIN2 entry screen -->
+    <add-resource type="string" name="get_pin2"/>
+    <string name="get_pin2">"‏اكتب رقم تعريف شخصي PIN2"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "name" text field -->
+    <add-resource type="string" name="name"/>
+    <string name="name">"الاسم"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "number" text field -->
+    <add-resource type="string" name="number"/>
+    <string name="number">"الرقم"</string>
+    <!-- "Edit FDN Contact" screen: Button label for "save" action -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"حفظ"</string>
+    <!-- Title of "Edit FDN Contact" screen for a new contact -->
+    <add-resource type="string" name="add_fdn_contact"/>
+    <string name="add_fdn_contact">"إضافة رقم اتصال ثابت"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="adding_fdn_contact"/>
+    <string name="adding_fdn_contact">"جارٍ إضافة رقم الاتصال الثابت..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_added"/>
+    <string name="fdn_contact_added">"تمت إضافة رقم الاتصال الثابت."</string>
+    <!-- Title of "Edit FDN Contact" screen when editing an already-existing contact -->
+    <add-resource type="string" name="edit_fdn_contact"/>
+    <string name="edit_fdn_contact">"تعديل رقم الاتصال الثابت"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="updating_fdn_contact"/>
+    <string name="updating_fdn_contact">"جارٍ تحديث رقم الاتصال الثابت..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_updated"/>
+    <string name="fdn_contact_updated">"تم تحديث رقم الاتصال الثابت."</string>
+    <!-- Title of "Delete FDN Contact" screen -->
+    <add-resource type="string" name="delete_fdn_contact"/>
+    <string name="delete_fdn_contact">"حذف رقم الاتصال الثابت"</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="deleting_fdn_contact"/>
+    <string name="deleting_fdn_contact">"جارٍ حذف رقم الاتصال الثابت..."</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_deleted"/>
+    <string name="fdn_contact_deleted">"تم حذف رقم الاتصال الثابت."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_invalid"/>
+    <string name="pin2_invalid">"‏لم يتم تحديث FDN لأنك كتبت رقم تعريف شخصي غير صحيح."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_invalid_number"/>
+    <string name="fdn_invalid_number">"لم يتم تحديث FDN لأن الرقم فارغ أو يتجاوز 20 رقمًا."</string>
+    <!-- FDN settings: error message displayed in a popup (toast), when the entered
+         FDN number was inappropriate, OR, PIN2 the user entered was incorrect.
+         Because of API restriction, there's no way to determine which is the exact
+         cause of the failure.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_or_fdn_invalid"/>
+    <string name="pin2_or_fdn_invalid">"‏لم يتم تحديث FDN. رقم PIN2 غير صحيح، أو تم رفض رقم الهاتف."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_failed"/>
+    <string name="fdn_failed">"‏أخفقت عملية FDN!"</string>
+
+    <!-- ADN related strings -->
+    <!-- Placeholder text displayed while loading the list of SIM contacts -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"‏جارٍ القراءة من بطاقة SIM..."</string>
+    <!-- Call settings, string that appears on FDN contact list when there are no contacts on the SIM. -->
+    <add-resource type="string" name="simContacts_empty"/>
+    <string name="simContacts_empty">"‏ليس هناك جهات اتصال على بطاقة SIM."</string>
+    <!-- Call settings: title of the dialog that lets you select contacts from the SIM. -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"حدد جهات اتصال لاستيرادها"</string>
+    <!-- Appears when user tries to import contacts in SIM during airplane mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="simContacts_airplaneMode"/>
+    <string name="simContacts_airplaneMode">"‏عليك إيقاف وضع الطائرة لاستيراد جهات الاتصال من شريحة SIM."</string>
+
+    <!-- SIM PIN strings -->
+    <!-- Title of "Enable/disable SIM PIN" screen -->
+    <add-resource type="string" name="enable_pin"/>
+    <string name="enable_pin">"‏تمكين/تعطيل رمز PIN لبطاقة SIM"</string>
+    <!-- Title of "Change SIM PIN" screen -->
+    <add-resource type="string" name="change_pin"/>
+    <string name="change_pin">"‏تغيير رمز PIN لبطاقة SIM"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin_text"/>
+    <string name="enter_pin_text">"‏رمز PIN لبطاقة SIM:"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPinLabel"/>
+    <string name="oldPinLabel">"‏رمز PIN القديم"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPinLabel"/>
+    <string name="newPinLabel">"‏رمز PIN الجديد"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPinLabel"/>
+    <string name="confirmPinLabel">"‏تأكيد رمز PIN الجديد"</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="badPin"/>
+    <string name="badPin">"‏رمز PIN القديم الذي كتبته غير صحيح. حاول مرة أخرى."</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="mismatchPin"/>
+    <string name="mismatchPin">"‏أرقام التعريف الشخصي PIN2 التي كتبتها غير متطابقة. حاول مرة أخرى."</string>
+    <!-- SIM PIN screen: error message when PIN is too short or too long -->
+    <add-resource type="string" name="invalidPin"/>
+    <string name="invalidPin">"‏اكتب رمز PIN المكون من 4 إلى 8 أرقام."</string>
+    <!-- Title of "Disable SIM PIN" screen -->
+    <add-resource type="string" name="disable_sim_pin"/>
+    <string name="disable_sim_pin">"‏محو رقم التعريف الشخصي لبطاقة SIM"</string>
+    <!-- Title of "Enable SIM PIN" screen -->
+    <add-resource type="string" name="enable_sim_pin"/>
+    <string name="enable_sim_pin">"‏تعيين رقم التعريف الشخصي لبطاقة SIM"</string>
+    <!-- SIM PIN screen: progress message displayed while enabling -->
+    <add-resource type="string" name="enable_in_progress"/>
+    <string name="enable_in_progress">"جارٍ تعيين رقم التعريف الشخصي\u2026"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="enable_pin_ok"/>
+    <string name="enable_pin_ok">"تم تعيين رقم التعريف الشخصي"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="disable_pin_ok"/>
+    <string name="disable_pin_ok">"تم محو رقم التعريف الشخصي"</string>
+    <!-- SIM PIN screen: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_failed"/>
+    <string name="pin_failed">"رقم التعريف الشخصي غير صحيح"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_changed"/>
+    <string name="pin_changed">"تم تحديث رقم التعريف الشخصي"</string>
+    <!-- SIM PIN screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk_requested"/>
+    <string name="puk_requested">"‏كلمة المرور غير صحيحة. تم قفل رقم التعريف الشخصي الآن. رمز PUK مطلوب."</string>
+
+    <!-- SIM PIN2 strings -->
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin2_text"/>
+    <string name="enter_pin2_text">"PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPin2Label"/>
+    <string name="oldPin2Label">"‏رمز PIN PIN2 القديم"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPin2Label"/>
+    <string name="newPin2Label">"‏رقم تعريف شخصي PIN2 جديد"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPin2Label"/>
+    <string name="confirmPin2Label">"‏تأكيد رمز PIN PIN2 الجديد"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPuk2"/>
+    <string name="badPuk2">"‏رمز PUK2 غير صحيح. أعد المحاولة."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPin2"/>
+    <string name="badPin2">"‏رمز PIN2 القديم غير صحيح. أعد المحاولة."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="mismatchPin2"/>
+    <string name="mismatchPin2">"‏رمزا PIN2 غير متطابقين. أعد المحاولة."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPin2"/>
+    <string name="invalidPin2">"‏أدخل رمز PIN2 المكوّن من 4 إلى 8 أرقام."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPuk2"/>
+    <string name="invalidPuk2">"‏أدخل رمز PUK2 المكوّن من 8 أرقام."</string>
+    <!-- SIM PIN2 screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_changed"/>
+    <string name="pin2_changed">"‏تم تحديث رمز PIN2"</string>
+    <!-- SIM PIN2 screen: label for PUK2 entry widget -->
+    <add-resource type="string" name="label_puk2_code"/>
+    <string name="label_puk2_code">"‏أدخل رمز PUK2"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="fdn_enable_puk2_requested"/>
+    <string name="fdn_enable_puk2_requested">"‏كلمة المرور غير صحيحة. أصبح PIN2 محظور الآن. لإعادة المحاولة، عليك تغيير PIN2."</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk2_requested"/>
+    <string name="puk2_requested">"‏كلمة المرور غير صحيحة. تم قفل شريحة SIM الآن. أدخل رمز PUK2."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="puk2_blocked"/>
+    <string name="puk2_blocked">"‏تم حظر PUK2 بشكل دائم."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="pin2_attempts"/>
+    <string name="pin2_attempts">"\nيتبقى لديك <xliff:g id="NUMBER">%d</xliff:g> من المحاولات."</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_unblocked"/>
+    <string name="pin2_unblocked">"‏لم يعد رمز PIN2 محظورًا"</string>
+    <!-- SIM PIN screen: error message shown in dialog when there is a network or sim error.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_error_exception"/>
+    <string name="pin2_error_exception">"‏حدث خطأ في الشبكة أو ببطاقة SIM"</string>
+
+    <!-- SIM PIN screen: button label -->
+    <add-resource type="string" name="doneButton"/>
+    <string name="doneButton">"تم"</string>
+
+    <!-- Call settings screen, Set voicemail dialog title -->
+    <add-resource type="string" name="voicemail_settings_number_label"/>
+    <string name="voicemail_settings_number_label">"رقم البريد الصوتي"</string>
+
+    <!-- Card titles -->
+    <!-- In-call screen: status label for a call in the "dialing" state -->
+    <add-resource type="string" name="card_title_dialing"/>
+    <string name="card_title_dialing">"طلب"</string>
+    <!-- In-call screen: status label for a re-dialing call -->
+    <add-resource type="string" name="card_title_redialing"/>
+    <string name="card_title_redialing">"جارٍ إعادة الطلب"</string>
+    <!-- In-call screen: status label for a conference call -->
+    <add-resource type="string" name="card_title_conf_call"/>
+    <string name="card_title_conf_call">"مكالمة جماعية"</string>
+    <!-- In-call screen: status label for an incoming call -->
+    <add-resource type="string" name="card_title_incoming_call"/>
+    <string name="card_title_incoming_call">"مكالمة واردة"</string>
+    <!-- In-call screen: status label displayed briefly after a call ends -->
+    <add-resource type="string" name="card_title_call_ended"/>
+    <string name="card_title_call_ended">"تم إنهاء الاتصال"</string>
+    <!-- In-call screen: status label for call that's on hold -->
+    <add-resource type="string" name="card_title_on_hold"/>
+    <string name="card_title_on_hold">"معلقة"</string>
+    <!-- In-call screen: status label for a call that's in the process of hanging up -->
+    <add-resource type="string" name="card_title_hanging_up"/>
+    <string name="card_title_hanging_up">"إنهاء المكالمة"</string>
+    <!-- In-call screen: status label for a call that's in CDMA flash mode -->
+    <add-resource type="string" name="card_title_in_call"/>
+    <string name="card_title_in_call">"قيد الاتصال"</string>
+    <!-- In-call screen: status label for Unconditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_unconditionalCF"/>
+    <string name="card_title_unconditionalCF">"تم تمكين ميزة إعادة توجيه المكالمة غير المشروطة"</string>
+    <!-- In-call screen: status label for Conditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_conditionalCF"/>
+    <string name="card_title_conditionalCF">"تم تمكين ميزة إعادة توجيه المكالمة المشروطة"</string>
+    <!-- In-call screen: status label for a forwarded MO call  -->
+    <add-resource type="string" name="card_title_MOcall_forwarding"/>
+    <string name="card_title_MOcall_forwarding">"مكالمة صادرة مُعاد توجيهها"</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <add-resource type="string" name="card_title_calliswaiting"/>
+    <string name="card_title_calliswaiting">"مكالمة قيد الانتظار"</string>
+    <!-- In-call screen: status label for MO call, when the caller & callee both
+            belng to a CUG group -->
+    <add-resource type="string" name="card_title_cugcall"/>
+    <string name="card_title_cugcall">"مكالمة مجموعة مستخدمين مغلقة"</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <add-resource type="string" name="card_title_outgoing_barred"/>
+    <string name="card_title_outgoing_barred">"تم حظر المكالمات الصادرة"</string>
+    <!-- In-call screen: status label for MO calls, when incoming calls are barred
+            at remote party -->
+    <add-resource type="string" name="card_title_incoming_barred"/>
+    <string name="card_title_incoming_barred">"تم حظر المكالمات الواردة"</string>
+    <!-- In-call screen: status label for MO calls when CLIR Suppression is rejected -->
+    <add-resource type="string" name="card_title_clir_suppression_rejected"/>
+    <string name="card_title_clir_suppression_rejected">"تم رفض منع تقييد تعريف خط الاتصال"</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <add-resource type="string" name="card_title_call_deflected"/>
+    <string name="card_title_call_deflected">"تم تحويل الاتصال"</string>
+    <!-- In-call screen: status label for incoming call being forwarded to other remote party  -->
+    <add-resource type="string" name="card_title_MTcall_forwarding"/>
+    <string name="card_title_MTcall_forwarding">"تمت إعادة توجيه المكالمة الواردة"</string>
+    <!-- In-call screen: status label for incoming call forwarded from other remote party -->
+    <add-resource type="string" name="card_title_forwarded_MTcall"/>
+    <string name="card_title_forwarded_MTcall">"مكالمة واردة مُعاد توجيهها"</string>
+    <!-- In-call screen: status label for incoming call which is answered & then put on hold  -->
+    <add-resource type="string" name="card_title_callonhold"/>
+    <string name="card_title_callonhold">"تم التعليق"</string>
+    <!-- In-call screen: status label for incoming call put on hold & then retreived back -->
+    <add-resource type="string" name="card_title_callretrieved"/>
+    <string name="card_title_callretrieved">"تم استرداد المكالمة"</string>
+    <!-- In-call screen: status label for incoming call which is part of MultiParty Call -->
+    <add-resource type="string" name="card_title_multipartycall"/>
+    <string name="card_title_multipartycall">"مكالمة متعددة الأطراف"</string>
+    <!-- In-call screen: status label for incoming call which is answered,
+            put on hold & then released -->
+    <add-resource type="string" name="card_title_callonhold_released"/>
+    <string name="card_title_callonhold_released">"تم تحرير المكالمة"</string>
+    <!-- In-call screen: status label for incoming call forward check received -->
+    <add-resource type="string" name="card_title_forwardcheckreceived"/>
+    <string name="card_title_forwardcheckreceived">"التحقق من المكالمات المُستلمة المُعاد توجيهها"</string>
+    <!-- In-call screen: status label for incoming call connecting through ECT -->
+    <add-resource type="string" name="card_title_callconnectingect"/>
+    <string name="card_title_callconnectingect">"يتم توصيل المكالمة بخدمة ECT"</string>
+    <!-- In-call screen: status label for incoming call connected through ECT -->
+    <add-resource type="string" name="card_title_callconnectedect"/>
+    <string name="card_title_callconnectedect">"تم توصيل المكالمة بخدمة ECT"</string>
+    <!-- In-call screen: status label for incoming call is a deflected call -->
+    <add-resource type="string" name="card_title_deflectedcall"/>
+    <string name="card_title_deflectedcall">"المكالمة المحولة"</string>
+
+    <!-- Notification strings -->
+    <!-- Label for the "Voicemail" notification item, when expanded. -->
+    <add-resource type="string" name="notification_voicemail_title"/>
+    <string name="notification_voicemail_title">"بريد صوتي جديد"</string>
+    <!-- Label for the expanded "Voicemail" notification item,
+         including a count of messages. -->
+    <add-resource type="string" name="notification_voicemail_title_count"/>
+    <string name="notification_voicemail_title_count">"بريد صوتي جديد (<xliff:g id="COUNT">%d</xliff:g>)"</string>
+    <!-- Message displayed in the "Voicemail" notification item, allowing the user
+         to dial the indicated number. -->
+    <add-resource type="string" name="notification_voicemail_text_format"/>
+    <string name="notification_voicemail_text_format">"طلب <xliff:g id="VOICEMAIL_NUMBER">%s</xliff:g>"</string>
+    <!-- Message displayed in the "Voicemail" notification item,
+         indicating that there's no voicemail number available -->
+    <add-resource type="string" name="notification_voicemail_no_vm_number"/>
+    <string name="notification_voicemail_no_vm_number">"رقم البريد الصوتي غير معروف"</string>
+    <!-- Label for the "No service" notification item, when expanded. -->
+    <add-resource type="string" name="notification_network_selection_title"/>
+    <string name="notification_network_selection_title">"لا خدمة"</string>
+    <!-- Label for the expanded "No service" notification item, including the
+         operator name set by user -->
+    <add-resource type="string" name="notification_network_selection_text"/>
+    <string name="notification_network_selection_text">"الشبكة المحددة (<xliff:g id="OPERATOR_NAME">%s</xliff:g>) غير متاحة"</string>
+
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="watch">"عليك إيقاف وضع الطائرة أو وضع موفر البطارية لإجراء مكالمة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="default">"عليك إيقاف وضع الطائرة لإجراء مكالمة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when in airplane mode, WFC is enabled, not wifi-only, and not connected to wireless networks. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off_wfc"/>
+    <string name="incall_error_power_off_wfc">"عليك إيقاف وضع الطائرة أو الاتصال بشبكة لاسلكية لإجراء مكالمة."</string>
+    <!-- In-call screen: call failure message displayed when the user attempts to make a non-emergency call while the phone is in emergency callback mode. -->
+    <add-resource type="string" name="incall_error_ecm_emergency_only"/>
+    <string name="incall_error_ecm_emergency_only">"ينبغي الخروج من وضع معاودة الاتصال بالطوارئ لإجراء مكالمة غير طارئة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog.
+         This string is currently unused (see comments in InCallScreen.java.) -->
+    <add-resource type="string" name="incall_error_emergency_only"/>
+    <string name="incall_error_emergency_only">"غير مسجل على الشبكة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service"/>
+    <string name="incall_error_out_of_service">"شبكة الجوّال غير متاحة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service_wfc"/>
+    <string name="incall_error_out_of_service_wfc">"شبكة الجوّال ليست متوفرة. اتصل بشبكة لاسلكية لإجراء مكالمة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_no_phone_number_supplied"/>
+    <string name="incall_error_no_phone_number_supplied">"لإجراء مكالمة، أدخل رقمًا صالحًا."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_call_failed"/>
+    <string name="incall_error_call_failed">"أخفقت المكالمة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_cannot_add_call"/>
+    <string name="incall_error_cannot_add_call">"لا يمكن إضافة مكالمة في الوقت الحالي."</string>
+    <!-- In-call screen: status message displayed in a dialog when starting an MMI -->
+    <add-resource type="string" name="incall_status_dialed_mmi"/>
+    <string name="incall_status_dialed_mmi">"‏جارٍ بدء تسلسل MMI..."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_unknown"/>
+    <string name="incall_error_supp_service_unknown">"الخدمة ليست متوفرة"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_switch"/>
+    <string name="incall_error_supp_service_switch">"يتعذر تبديل المكالمات."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_separate"/>
+    <string name="incall_error_supp_service_separate">"يتعذر فصل المكالمة."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_transfer"/>
+    <string name="incall_error_supp_service_transfer">"يتعذر النقل."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_conference"/>
+    <string name="incall_error_supp_service_conference">"يتعذر إجراء مكالمات جماعية."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_reject"/>
+    <string name="incall_error_supp_service_reject">"يتعذر رفض المكالمة."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hangup"/>
+    <string name="incall_error_supp_service_hangup">"يتعذر تحرير المكالمات."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hold"/>
+    <string name="incall_error_supp_service_hold">"يتعذر وضع المكالمات قيد الانتظار."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when WFC is enabled, is wifi-only, and not connected to a wireless network. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_wfc_only_no_wireless_network"/>
+    <string name="incall_error_wfc_only_no_wireless_network">"اتصل بشبكة لاسلكية لإجراء مكالمة."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when the user is connected to a wireless network, but wifi calling is turned off. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_promote_wfc"/>
+    <string name="incall_error_promote_wfc">"‏يمكنك تمكين اتصال Wi-Fi لإجراء مكالمة."</string>
+
+    <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_title"/>
+    <string name="emergency_enable_radio_dialog_title">"مكالمة الطوارئ"</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_message"/>
+    <string name="emergency_enable_radio_dialog_message">"جارٍ تشغيل اللاسلكي..."</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_retry"/>
+    <string name="emergency_enable_radio_dialog_retry">"لا تتوفر خدمة. جارٍ إعادة المحاولة\u2026"</string>
+    <!-- Toast message shown when user tries to turn on airplane mode while in an emergency call -->
+    <add-resource type="string" name="radio_off_during_emergency_call"/>
+    <string name="radio_off_during_emergency_call">"لا يمكن دخول وضع الطائرة أثناء إجراء مكالمة طوارئ."</string>
+
+    <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_error"/>
+    <string name="dial_emergency_error">"يتعذر الاتصال. لا يعد <xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g> رقم طوارئ."</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_empty_error"/>
+    <string name="dial_emergency_empty_error">"يتعذر الاتصال. يمكنك طلب رقم طوارئ."</string>
+
+    <!-- Displayed in the text entry box in the dialer when in landscape mode to guide the user
+         to dial using the physical keyboard -->
+    <add-resource type="string" name="dialerKeyboardHintText"/>
+    <string name="dialerKeyboardHintText">"استخدام لوحة المفاتيح للطلب"</string>
+
+    <!-- Text for the onscreen "Hold" button -->
+    <add-resource type="string" name="onscreenHoldText"/>
+    <string name="onscreenHoldText">"تعليق"</string>
+    <!-- Text for the onscreen "End call" button -->
+    <add-resource type="string" name="onscreenEndCallText"/>
+    <string name="onscreenEndCallText">"الانتهاء"</string>
+    <!-- Text for the onscreen "Show Dialpad" button -->
+    <add-resource type="string" name="onscreenShowDialpadText"/>
+    <string name="onscreenShowDialpadText">"لوحة الاتصال"</string>
+    <!-- Text for the onscreen "Mute" button -->
+    <add-resource type="string" name="onscreenMuteText"/>
+    <string name="onscreenMuteText">"كتم الصوت"</string>
+    <!-- Text for the onscreen "Add call" button -->
+    <add-resource type="string" name="onscreenAddCallText"/>
+    <string name="onscreenAddCallText">"إضافة مكالمة"</string>
+    <!-- Text for the onscreen "Merge calls" button -->
+    <add-resource type="string" name="onscreenMergeCallsText"/>
+    <string name="onscreenMergeCallsText">"دمج المكالمات"</string>
+    <!-- Text for the onscreen "Swap calls" button -->
+    <add-resource type="string" name="onscreenSwapCallsText"/>
+    <string name="onscreenSwapCallsText">"تبديل"</string>
+    <!-- Text for the onscreen "Manage calls" button -->
+    <add-resource type="string" name="onscreenManageCallsText"/>
+    <string name="onscreenManageCallsText">"إدارة المكالمات"</string>
+    <!-- Text for the onscreen "Manage conference" button [CHAR LIMIT=20] -->
+    <add-resource type="string" name="onscreenManageConferenceText"/>
+    <string name="onscreenManageConferenceText">"إدارة المؤتمر"</string>
+    <!-- Text for the onscreen "Audio" button that lets you switch
+         between speaker / bluetooth / earpiece [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenAudioText"/>
+    <string name="onscreenAudioText">"صوت"</string>
+    <!-- Text for the onscreen "Video call" button used to change a voice call
+         to a video call. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenVideoCallText"/>
+    <string name="onscreenVideoCallText">"مكالمة فيديو"</string>
+
+    <!-- Menu item label in SIM Contacts: Import a single contact entry from the SIM card -->
+    <add-resource type="string" name="importSimEntry"/>
+    <string name="importSimEntry">"استيراد"</string>
+    <!-- Menu item label in SIM Contacts: Import all contact entries from the SIM card -->
+    <add-resource type="string" name="importAllSimEntries"/>
+    <string name="importAllSimEntries">"استيراد الكل"</string>
+    <!-- SIM Contacts: status message displayed while importing card -->
+    <add-resource type="string" name="importingSimContacts"/>
+    <string name="importingSimContacts">"‏استيراد جهات اتصال بطاقة SIM"</string>
+    <!-- Import a single contact entry from contacts to the SIM card -->
+    <add-resource type="string" name="importToFDNfromContacts"/>
+    <string name="importToFDNfromContacts">"استيراد من جهات الاتصال"</string>
+
+    <!-- Message shown when a single contact is imported from SIM card -->
+    <add-resource type="string" name="singleContactImportedMsg"/>
+    <string name="singleContactImportedMsg">"تم استيراد جهة اتصال"</string>
+    <!-- Message shown when a single contact could not be imported from SIM card -->
+    <add-resource type="string" name="failedToImportSingleContactMsg"/>
+    <string name="failedToImportSingleContactMsg">"أخفق استيراد جهة اتصال"</string>
+
+    <!-- Hearing aid settings -->
+    <add-resource type="string" name="hac_mode_title"/>
+    <string name="hac_mode_title">"أدوات السمع المساعدة"</string>
+    <add-resource type="string" name="hac_mode_summary"/>
+    <string name="hac_mode_summary">"تشغيل التوافق مع أداة السمع"</string>
+
+    <!-- Service option entries.  -->
+    <add-resource type="array" name="tty_mode_entries"/>
+    <string-array name="tty_mode_entries">
+        <item>"‏إيقاف تشغيل TTY"</item>
+        <item>"‏TTY مكتمل"</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+
+    <!-- Dtmf tones settings -->
+    <!-- Title for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_title"/>
+    <string name="dtmf_tones_title">"‏نغمات DTMF"</string>
+    <!-- Summary for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_summary"/>
+    <string name="dtmf_tones_summary">"‏تعيين طول نغمات DTMF"</string>
+    <!-- Options displayed as part of DTMF Tones in Call Settings -->
+    <add-resource type="array" name="dtmf_tone_entries"/>
+    <string-array name="dtmf_tone_entries">
+      <item>"عادي"</item>
+      <item>"طويلة"</item>
+    </string-array>
+
+    <!-- Title for the dialog used to display CDMA DisplayInfo -->
+    <add-resource type="string" name="network_info_message"/>
+    <string name="network_info_message">"رسالة الشبكة"</string>
+    <!-- Title for the dialog used to display a network error message to the user -->
+    <add-resource type="string" name="network_error_message"/>
+    <string name="network_error_message">"رسالة خطأ"</string>
+
+    <!-- OTA-specific strings -->
+    <!-- Title shown on OTA screen -->
+    <add-resource type="string" name="ota_title_activate"/>
+    <string name="ota_title_activate">"تنشيط الهاتف"</string>
+    <!-- Message displayed on the OTA activation screen. -->
+    <add-resource type="string" name="ota_touch_activate"/>
+    <string name="ota_touch_activate">"يلزم إجراء اتصال خاص لتنشيط خدمة الهاتف. \n\nبعد الضغط على \"تنشيط\"، استمع إلى الإرشادات المقدمة لتنشيط هاتفك."</string>
+    <!-- Title shown during Hands Free Activation -->
+    <add-resource type="string" name="ota_hfa_activation_title"/>
+    <string name="ota_hfa_activation_title">"جارٍ التنشيط..."</string>
+    <!-- Message shown during the hands free activation screen of the setup wizard. -->
+    <add-resource type="string" name="ota_hfa_activation_dialog_message"/>
+    <string name="ota_hfa_activation_dialog_message">"يُجري الهاتف تنشيطًا لخدمة بيانات الجوّال.\n\nقد يستغرق هذا الأمر ما يصل إلى 5 دقائق."</string>
+    <!-- Title of skip activation dialog -->
+    <add-resource type="string" name="ota_skip_activation_dialog_title"/>
+    <string name="ota_skip_activation_dialog_title">"هل تريد تخطي التنشيط؟"</string>
+    <!-- Message displayed in skip activation dialog  -->
+    <add-resource type="string" name="ota_skip_activation_dialog_message"/>
+    <string name="ota_skip_activation_dialog_message">"‏إذا تخطيت التنشيط، فلن تتمكن من إجراء مكالمات أو الاتصال بشبكات بيانات الجوال (ومع ذلك، يمكنك الاتصال بشبكات Wi-Fi). إلى أن تنشط هاتفك، ستتم مطالبتك بتنشيطه في كل مرة تشغله فيها."</string>
+    <!-- Label shown on dialog button that allows the user to skip activation -->
+    <add-resource type="string" name="ota_skip_activation_dialog_skip_label"/>
+    <string name="ota_skip_activation_dialog_skip_label">"تخطٍ"</string>
+
+    <!-- Button label within the OTA activation screen -->
+    <add-resource type="string" name="ota_activate"/>
+    <string name="ota_activate">"تنشيط"</string>
+    <!-- Title text shown when phone activation is successful -->
+    <add-resource type="string" name="ota_title_activate_success"/>
+    <string name="ota_title_activate_success">"تم تنشيط الهاتف."</string>
+    <!-- Title text shown on screen where activation fails -->
+    <add-resource type="string" name="ota_title_problem_with_activation"/>
+    <string name="ota_title_problem_with_activation">"مشكلة في التنشيط"</string>
+    <!-- Message displayed on the OTA "listening" screen. This message
+         needs to be kept at 2 lines or less to be sure that there's
+         enough room for the dialpad. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="ota_listen"/>
+    <string name="ota_listen">"اتبع الإرشادات المنطوقة حتى تسمع ما يفيد بانتهاء التنشيط."</string>
+
+    <!-- Button label within the OTA listen screen -->
+    <add-resource type="string" name="ota_speaker"/>
+    <string name="ota_speaker">"مكبر الصوت"</string>
+    <!-- String to be displayed on OTA listen screen once user has selected the
+         correct option to begin provisioning -->
+    <add-resource type="string" name="ota_progress"/>
+    <string name="ota_progress">"جارٍ برمجة هاتفك\u2026"</string>
+    <!-- String to display within the OTA Fail Notice dialog -->
+    <add-resource type="string" name="ota_failure"/>
+    <string name="ota_failure">"تتعذر برمجة هاتفك"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon successful provisioning -->
+    <add-resource type="string" name="ota_successful"/>
+    <string name="ota_successful">"تم تنشيط هاتفك الآن. قد يستغرق بدء الخدمة ما يصل إلى 15 دقيقة."</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon unsuccessful provisioning -->
+    <add-resource type="string" name="ota_unsuccessful"/>
+    <string name="ota_unsuccessful">"لم يتم تنشيط الهاتف. \nربما يلزمك البحث عن منطقة بها تغطية أفضل (بجانب نافذة أو بالخارج). \n\nحاول مرة أخرى أو اتصل بخدمة العملاء للحصول على مزيد من الخيارات."</string>
+    <!-- String to display within the OTA SPC Fail Notice dialog -->
+    <add-resource type="string" name="ota_spc_failure"/>
+    <string name="ota_spc_failure">"إخفاقات في المواصفات الزائدة"</string>
+    <!-- Button label in OTA listen screen that cancels activation and goes to the previous screen -->
+    <add-resource type="string" name="ota_call_end"/>
+    <string name="ota_call_end">"رجوع"</string>
+    <!-- Button label shown on OTA error screen to allow the user to try again -->
+    <add-resource type="string" name="ota_try_again"/>
+    <string name="ota_try_again">"حاول مرة أخرى"</string>
+    <!-- Button label shown on OTA screens that have a next screen -->
+    <add-resource type="string" name="ota_next"/>
+    <string name="ota_next">"التالي"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
+    <add-resource type="string" name="ecm_exit_dialog"/>
+    <string name="ecm_exit_dialog">EcmExitDialog</string>
+    <!-- ECM: Status bar notification message -->
+    <add-resource type="string" name="phone_entered_ecm_text"/>
+    <string name="phone_entered_ecm_text">"تم الدخول إلى وضع هاتف معاودة الاتصال بالطوارئ"</string>
+    <!-- ECM: Notification title -->
+    <add-resource type="string" name="phone_in_ecm_notification_title"/>
+    <string name="phone_in_ecm_notification_title">"وضع هاتف معاودة الاتصال بالطوارئ"</string>
+    <!-- ECM: Notification body -->
+    <add-resource type="string" name="phone_in_ecm_call_notification_text"/>
+    <string name="phone_in_ecm_call_notification_text">"تم تعطيل اتصال البيانات"</string>
+    <add-resource type="plurals" name="phone_in_ecm_notification_time"/>
+    <plurals name="phone_in_ecm_notification_time">
+        <!-- number of minutes is one -->
+        <item quantity="one">"لا اتصال بيانات لمدة <xliff:g id="COUNT">%s</xliff:g> دقيقة"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"لا اتصال بيانات لمدة <xliff:g id="COUNT">%s</xliff:g> دقيقة"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from the notifications screen -->
+    <add-resource type="plurals" name="alert_dialog_exit_ecm"/>
+    <plurals name="alert_dialog_exit_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"سيكون الهاتف في وضع معاودة الاتصال بالطوارئ لمدة <xliff:g id="COUNT">%s</xliff:g> دقائق. لا يمكن استخدام تطبيقات أثناء استخدام هذا الوضع. هل تريد الخروج الآن؟"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"سيكون الهاتف في وضع معاودة الاتصال بالطوارئ لمدة <xliff:g id="COUNT">%s</xliff:g> دقائق. لا يمكن استخدام تطبيقات تستخدم اتصال البيانات أثناء استخدام هذا الوضع. هل تريد الخروج الآن؟"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from any other app -->
+    <add-resource type="plurals" name="alert_dialog_not_avaialble_in_ecm"/>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"الإجراء المحدد ليس متاحًا أثناء استخدام وضع معاودة الاتصال بالطوارئ. سيظل الهاتف في هذا الوضع لمدة <xliff:g id="COUNT">%s</xliff:g> دقائق. هل تريد الخروج الآن؟"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"الإجراء المحدد ليس متاحًا أثناء استخدام وضع معاودة الاتصال بالطوارئ. سيظل الهاتف في هذا الوضع لمدة <xliff:g id="COUNT">%s</xliff:g> دقائق. هل تريد الخروج الآن؟"</item>
+    </plurals>
+    <!-- ECM: Dialog box message while in emergency call -->
+    <add-resource type="string" name="alert_dialog_in_ecm_call"/>
+    <string name="alert_dialog_in_ecm_call">"الإجراء المحدد ليس متاحًا أثناء إجراء اتصال بالطوارئ."</string>
+    <!-- ECM: Progress text -->
+    <add-resource type="string" name="progress_dialog_exiting_ecm"/>
+    <string name="progress_dialog_exiting_ecm">"الخروج من وضع معاودة الاتصال بالطوارئ"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_yes"/>
+    <string name="alert_dialog_yes">"نعم"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_no"/>
+    <string name="alert_dialog_no">"لا"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_dismiss"/>
+    <string name="alert_dialog_dismiss">"استبعاد"</string>
+
+    <!-- Preference for Voicemail service provider under "Voicemail" settings.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_provider"/>
+    <string name="voicemail_provider">"الخدمة"</string>
+
+    <!-- Preference for Voicemail setting of each provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_settings"/>
+    <string name="voicemail_settings">"الإعداد"</string>
+
+    <!-- String to display in voicemail number summary when no voicemail num is set -->
+    <add-resource type="string" name="voicemail_number_not_set"/>
+    <string name="voicemail_number_not_set">"‏&lt;لم يتم التعيين&gt;"</string>
+
+    <!-- Title displayed above settings coming after voicemail in the call features screen -->
+    <add-resource type="string" name="other_settings"/>
+    <string name="other_settings">"اعدادات المكالمات الاخرى"</string>
+
+    <!-- Title displayed in the overlay when a call is placed using a 3rd party provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="calling_via_template"/>
+    <string name="calling_via_template">"الاتصال عبر <xliff:g id="PROVIDER_NAME">%s</xliff:g>"</string>
+
+    <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="contactPhoto"/>
+    <string name="contactPhoto">"صورة جهة الاتصال"</string>
+    <!-- Use this to describe the separate conference call button; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="goPrivate"/>
+    <string name="goPrivate">"انتقال إلى مكالمة خاصة"</string>
+    <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="selectContact"/>
+    <string name="selectContact">"تحديد جهة اتصال"</string>
+
+    <!-- Dialog title to notify user that Voice calling is not supported
+         on this device. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="not_voice_capable"/>
+    <string name="not_voice_capable">"الاتصال الصوتي غير معتمد"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"طلب"</string>
+
+    <!-- Title for the vibration settings for voicemail notifications [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_notification_vibrate_when_title"/>
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">"الاهتزاز"</string>
+    <!-- Dialog title for the vibration settings for voice mail notifications [CHAR LIMIT=40]-->
+    <add-resource type="string" name="voicemail_notification_vibarte_when_dialog_title"/>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">"الاهتزاز"</string>
+
+    <!-- Visual voicemail on/off title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_visual_voicemail_switch_title"/>
+    <string name="voicemail_visual_voicemail_switch_title">"بريد صوتي مرئي"</string>
+
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_set_pin_dialog_title"/>
+    <string name="voicemail_set_pin_dialog_title">"تعيين رقم التعريف الشخصي"</string>
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_change_pin_dialog_title"/>
+    <string name="voicemail_change_pin_dialog_title">"تغيير رقم التعريف الشخصي"</string>
+
+    <!-- Voicemail ringtone title. The user clicks on this preference to select
+         which sound to play when a voicemail notification is received.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="voicemail_notification_ringtone_title"/>
+    <string name="voicemail_notification_ringtone_title">"الصوت"</string>
+
+    <!-- Title for the category "ringtone", which is shown above ringtone and vibration
+         related settings.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preference_category_ringtone"/>
+    <string name="preference_category_ringtone">"نغمة الرنين والاهتزاز"</string>
+
+    <!-- String resource for the font-family to use for the call setting activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_settings_title_font_family"/>
+    <string name="call_settings_title_font_family">sans-serif-light</string>
+
+    <!-- Label for PSTN connection service. -->
+    <add-resource type="string" name="pstn_connection_service_label"/>
+    <string name="pstn_connection_service_label">"‏بطاقات SIM مدمجة"</string>
+
+    <!-- Label for enabling video calling. -->
+    <add-resource type="string" name="enable_video_calling_title"/>
+    <string name="enable_video_calling_title">"تشغيل مكالمات الفيديو"</string>
+
+    <!-- Message for dialog shown when the user tries to turn on video calling but enhanced 4G LTE
+         is disabled. They have to turn on Enhanced 4G LTE capability in network settings first. -->
+    <add-resource type="string" name="enable_video_calling_dialog_msg"/>
+    <string name="enable_video_calling_dialog_msg">"‏لتشغيل مكالمات الفيديو، يجب عليك تمكين وضع 4G LTE المحسّن في إعدادات الشبكة."</string>
+
+    <!-- Label for action button in dialog which opens mobile network settings, for video calling
+         setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_settings"/>
+    <string name="enable_video_calling_dialog_settings">"إعدادات الشبكة"</string>
+
+    <!-- Label for close button in dialog, for video calling setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_close"/>
+    <string name="enable_video_calling_dialog_close">"إغلاق"</string>
+
+    <!-- Strings used in Settings->Sim cards for each installed Sim. -->
+    <add-resource type="string" name="sim_label_emergency_calls"/>
+    <string name="sim_label_emergency_calls">"مكالمات الطوارئ"</string>
+    <add-resource type="string" name="sim_description_emergency_calls"/>
+    <string name="sim_description_emergency_calls">"إجراء مكالمات الطوارئ فقط"</string>
+    <add-resource type="string" name="sim_description_default"/>
+    <string name="sim_description_default">"فتحة بطاقة SIM‏: <xliff:g id="slot_id">%s</xliff:g>"</string>
+
+    <!-- Title for activity to control accessibility settings such as TTY mode and hearing aid
+         compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_activity_title"/>
+    <string name="accessibility_settings_activity_title">"إمكانية الوصول"</string>
+
+    <!-- Status hint label for an incoming call over a wifi network which has not been accepted yet.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_incoming_wifi_call"/>
+    <string name="status_hint_label_incoming_wifi_call">"‏مكالمة Wi-Fi من"</string>
+    <!-- Status hint label for a call being made over a wifi network. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_wifi_call"/>
+    <string name="status_hint_label_wifi_call">"‏مكالمة عبر Wi-Fi"</string>
+
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_ringtone_key"/>
+    <string name="voicemail_notification_ringtone_key">voicemail_notification_ringtone_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_vibrate_key"/>
+    <string name="voicemail_notification_vibrate_key">voicemail_notification_vibrate_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a visual voicemail preference. -->
+    <add-resource type="string" name="voicemail_visual_voicemail_key"/>
+    <string name="voicemail_visual_voicemail_key">voicemail_visual_voicemail_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail change pin preference. -->
+    <add-resource type="string" name="voicemail_change_pin_key"/>
+    <string name="voicemail_change_pin_key">voicemail_change_pin_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for tty mode preference. -->
+    <add-resource type="string" name="tty_mode_key"/>
+    <string name="tty_mode_key">button_tty_mode_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="wifi_calling_settings_key"/>
+    <string name="wifi_calling_settings_key">button_wifi_calling_settings_key</string>
+
+    <!-- Hint appearing below a selected action on the emergency dialer telling user to tap again to execute the action [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="emergency_action_launch_hint"/>
+    <string name="emergency_action_launch_hint">"انقر مرة أخرى للفتح."</string>
+
+    <!-- Strings for IMAP -->
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+       data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"حدث خطأ أثناء فك ترميز الرسالة."</string>
+
+    <!-- Call failure reason: SIM card and roaming capabilities have already been activated. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="callFailed_cdma_activation"/>
+    <string name="callFailed_cdma_activation">"‏نشطت شريحة SIM خدمتك وحدّثت إمكانات التجوال لهاتفك."</string>
+
+    <!-- Call failure reason: Cannot add a call because there are already too many active calls. -->
+    <add-resource type="string" name="callFailed_cdma_call_limit"/>
+    <string name="callFailed_cdma_call_limit">"هناك الكثير من المكالمات النشطة. يرجى إنهاء أو دمج المكالمات الموجودة قبل إجراء مكالمة جديدة."</string>
+     <!-- Summary for the Smart Divert Feature displayed in Call Settings -->
+     <add-resource type="string" name="smart_divert_summary"/>
+    <string name="smart_divert_summary">"إعدادات CFNRc"</string>
+     <add-resource type="string" name="no_mobile_data"/>
+    <string name="no_mobile_data">"بيانات المحمول غير متوفرة"</string>
+
+    <!-- The title for the change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_title"/>
+    <string name="change_pin_title">"تغيير رقم التعريف الشخصي للبريد الصوتي"</string>
+    <!-- The label for the continue button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_continue_label"/>
+    <string name="change_pin_continue_label">"متابعة"</string>
+    <!-- The label for the cancel button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_cancel_label"/>
+    <string name="change_pin_cancel_label">"إلغاء"</string>
+    <!-- The label for the ok button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_ok_label"/>
+    <string name="change_pin_ok_label">"موافق"</string>
+    <!-- The title for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_header"/>
+    <string name="change_pin_enter_old_pin_header">"تأكيد رقم التعريف الشخصي القديم"</string>
+    <!-- The hint for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_hint"/>
+    <string name="change_pin_enter_old_pin_hint">"أدخل رقم التعريف الشخصي لبريدك الصوتي للمتابعة."</string>
+    <!-- The title for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_header"/>
+    <string name="change_pin_enter_new_pin_header">"تعيين رقم تعريف شخصي جديد"</string>
+    <!-- The hint for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_hint"/>
+    <string name="change_pin_enter_new_pin_hint">"ينبغي لرقم التعريف الشخصي أن يتكون من <xliff:g id="MIN">%1$d</xliff:g>-<xliff:g id="MAX">%2$d</xliff:g> أرقام."</string>
+    <!-- The title for the confirm new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_confirm_pin_header"/>
+    <string name="change_pin_confirm_pin_header">"تأكيد رقم التعريف الشخصي"</string>
+    <!-- The error message for th confirm new pin step in change voicemail PIN activity, if the pin doen't match the one previously entered -->
+    <add-resource type="string" name="change_pin_confirm_pins_dont_match"/>
+    <string name="change_pin_confirm_pins_dont_match">"أرقام التعريف الشخصي غير متطابقة"</string>
+    <!-- The toast to show after the voicemail PIN has been successfully changed -->
+    <add-resource type="string" name="change_pin_succeeded"/>
+    <string name="change_pin_succeeded">"تمّ تحديث رقم التعريف الشخصي للبريد الصوتي"</string>
+    <!-- The error message to show if the server reported an error while attempting to change the voicemail PIN -->
+    <add-resource type="string" name="change_pin_system_error"/>
+    <string name="change_pin_system_error">"يتعذر تعيين رقم التعريف الشخصي"</string></resources>

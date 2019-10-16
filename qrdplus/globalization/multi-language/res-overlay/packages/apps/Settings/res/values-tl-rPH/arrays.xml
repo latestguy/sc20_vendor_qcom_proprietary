@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"America"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Europe"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Africa"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Asia"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Australia"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Pacific"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Lahat"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 segundo"</item>
+        <item>"30 segundo"</item>
+        <item>"1 minuto"</item>
+        <item>"2 minuto"</item>
+        <item>"5 minuto"</item>
+        <item>"10 minuto"</item>
+        <item>"30 minuto"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Hindi Kailanman"</item>
+        <item>"15 segundo"</item>
+        <item>"30 segundo"</item>
+        <item>"1 minuto"</item>
+        <item>"2 minuto"</item>
+        <item>"5 minuto"</item>
+        <item>"10 minuto"</item>
+        <item>"30 minuto"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Kaagad"</item>
+        <item>"5 segundo"</item>
+        <item>"15 segundo"</item>
+        <item>"30 segundo"</item>
+        <item>"1 minuto"</item>
+        <item>"2 minuto"</item>
+        <item>"5 minuto"</item>
+        <item>"10 minuto"</item>
+        <item>"30 minuto"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Maliit"</item>
+        <item msgid="3579015730662088893">"Default"</item>
+        <item msgid="1678068858001018666">"Malaki"</item>
+        <item msgid="490158884605093126">"Pinakamalaki"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Nag-i-scan\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Kumukonekta\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Pinapatunayan\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Kumukuha ng IP address\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Konektado"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Suspendido"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Nadidiskonekta\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Hindi nakakonekta"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Hindi tagumpay"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Naka-block"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Pansamantalang iniiwasan ang mabagal na koneksyon"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Nag-ii-scan\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Kumukonekta sa <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Nagpapatotoo sa <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Pagkuha ng IP address mula sa <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Nakakonekta sa <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Suspendido"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Inaalis sa pagkakakonekta mula sa <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Hindi nakakonekta"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Hindi tagumpay"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Naka-block"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Pansamantalang iniiwasan ang mabagal na koneksyon"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"button na Push"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"PIN mula sa device ng kaibigan"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"PIN mula sa device"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Nakakonekta"</item>
+        <item>"Inimbitahan"</item>
+        <item>"Hindi matagumpay"</item>
+        <item>"Available"</item>
+        <item>"Wala-sa-sakop"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 minuto"</item>
+        <item>"5 minuto"</item>
+        <item>"1 oras"</item>
+        <item>"Huwag kailanman mag-time out"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Mahina"</item>
+        <item>"Katamtaman"</item>
+        <item>"Mahusay"</item>
+        <item>"Napakahusay"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Palagi"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Kapag naka-plug in lamang"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Hindi Kailanman"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Palagi"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Kapag naka-plug in lamang"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Hindi Kailanman"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"Nakalipas na 30 araw"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Itakda ang usage cycle..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Oras ng paggamit"</item>
+        <item>"Huling oras na ginamit"</item>
+        <item>"Pangalan ng app"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Wala"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Wala"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Static"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Wala"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Manual"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Auto-Config ng Proxy"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Wala"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP o CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Hindi tinukoy"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Wala"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Imbakan ng panloob na device"</item>
+        <item>"Naaalis na SD card"</item>
+        <item>"Hayaang magpasya ang system"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Lokasyon"</item>
+        <item>"Personal"</item>
+        <item>"Pagmemensahe"</item>
+        <item>"Media"</item>
+        <item>"Device"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"tinatayang lokasyon"</item>
+        <item>"eksaktong lokasyon"</item>
+        <item>GPS</item>
+        <item>"mag-vibrate"</item>
+        <item>"magbasa ng mga contact"</item>
+        <item>"baguhin ang mga contact"</item>
+        <item>"basahin ang log ng tawag"</item>
+        <item>"baguhin ang log ng tawag"</item>
+        <item>"magbasa ng kalendaryo"</item>
+        <item>"baguhin ang kalendaryo"</item>
+        <item>"pag-scan ng wi-fi"</item>
+        <item>"notification"</item>
+        <item>"pag-scan ng cell"</item>
+        <item>"tumawag sa telepono"</item>
+        <item>"magbasa ng SMS"</item>
+        <item>"sumulat ng SMS"</item>
+        <item>"tumanggap ng SMS"</item>
+        <item>"tumanggap ng pang-emergency na SMS"</item>
+        <item>"tumanggap ng MMS"</item>
+        <item>"tumanggap ng WAP push"</item>
+        <item>"magpadala ng SMS"</item>
+        <item>"magbasa ng ICC SMS"</item>
+        <item>"sumulat ng ICC SMS"</item>
+        <item>"baguhin ang mga setting"</item>
+        <item>"gumuhit sa tuktok"</item>
+        <item>"i-access ang mga notification"</item>
+        <item>"camera"</item>
+        <item>"i-record ang audio"</item>
+        <item>"i-play ang audio"</item>
+        <item>"basahin ang clipboard"</item>
+        <item>"baguhin ang clipboard"</item>
+        <item>"mga button ng media"</item>
+        <item>"focus ng audio"</item>
+        <item>"master na volume"</item>
+        <item>"volume ng boses"</item>
+        <item>"volume ng ring"</item>
+        <item>"volume ng media"</item>
+        <item>"volume ng alarma"</item>
+        <item>"volume ng notification"</item>
+        <item>"volume ng bluetooth"</item>
+        <item>"panatilihing bukas"</item>
+        <item>"subaybayan ang lokasyon"</item>
+        <item>"subaybayan ang lokasyon na gumagamit ng maraming power"</item>
+        <item>"kumuha ng stats sa paggamit"</item>
+        <item>"i-mute/i-unmute ang mikropono"</item>
+        <item>"ipakita ang toast"</item>
+        <item>"i-project ang media"</item>
+        <item>"i-activate ang VPN"</item>
+        <item>"write wallpaper"</item>
+        <item>"assist structure"</item>
+        <item>"assist screenshot"</item>
+        <item>"basahin ang katayuan ng telepono"</item>
+        <item>"magdagdag ng voicemail"</item>
+        <item>"gamitin ang sip"</item>
+        <item>"iproseso ang papalabas na tawag"</item>
+        <item>"fingerprint"</item>
+        <item>"mga sensor ng katawan"</item>
+        <item>"basahin ang mga cell broadcast"</item>
+        <item>"kunwaring lokasyon"</item>
+        <item>"basahin ang storage"</item>
+        <item>"i-write ang storage"</item>
+        <item>"i-on ang screen"</item>
+        <item>"kunin ang mga account"</item>
+        <item>"patakbuhin sa background"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Lokasyon"</item>
+        <item>"Lokasyon"</item>
+        <item>"Lokasyon"</item>
+        <item>"Mag-vibrate"</item>
+        <item>"Magbasa ng mga contact"</item>
+        <item>"Baguhin ang mga contact"</item>
+        <item>"Basahin ang log ng tawag"</item>
+        <item>"Baguhin ang log ng tawag"</item>
+        <item>"Magbasa ng kalendaryo"</item>
+        <item>"Baguhin ang kalendaryo"</item>
+        <item>"Lokasyon"</item>
+        <item>"Mag-post ng notification"</item>
+        <item>"Lokasyon"</item>
+        <item>"Tumawag sa telepono"</item>
+        <item>"Magbasa ng SMS/MMS"</item>
+        <item>"Magsulat ng SMS/MMS"</item>
+        <item>"Tumanggap ng SMS/MMS"</item>
+        <item>"Tumanggap ng SMS/MMS"</item>
+        <item>"Tumanggap ng SMS/MMS"</item>
+        <item>"Tumanggap ng SMS/MMS"</item>
+        <item>"Magpadala ng SMS/MMS"</item>
+        <item>"Magbasa ng SMS/MMS"</item>
+        <item>"Magsulat ng SMS/MMS"</item>
+        <item>"Baguhin ang mga setting"</item>
+        <item>"Gumuhit sa tuktok"</item>
+        <item>"I-access ang mga notification"</item>
+        <item>"Camera"</item>
+        <item>"I-record ang audio"</item>
+        <item>"I-play ang audio"</item>
+        <item>"Basahin ang clipboard"</item>
+        <item>"Baguhin ang clipboard"</item>
+        <item>"Mga media button"</item>
+        <item>"Focus ng audio"</item>
+        <item>"Master volume"</item>
+        <item>"Volume ng boses"</item>
+        <item>"Volume ng pag-ring"</item>
+        <item>"Volume ng media"</item>
+        <item>"Volume ng alarm"</item>
+        <item>"Volume ng notification"</item>
+        <item>"Volume ng Bluetooth"</item>
+        <item>"Panatilihing bukas"</item>
+        <item>"Lokasyon"</item>
+        <item>"Lokasyon"</item>
+        <item>"Kumuha ng stats sa paggamit"</item>
+        <item>"I-mute/i-unmute ang mikropono"</item>
+        <item>"Ipakita ang toast"</item>
+        <item>"I-project ang media"</item>
+        <item>"I-activate ang VPN"</item>
+        <item>"Write wallpaper"</item>
+        <item>"Assist structure"</item>
+        <item>"Assist screenshot"</item>
+        <item>"Basahin ang katayuan ng telepono"</item>
+        <item>"Magdagdag ng voicemail"</item>
+        <item>"Gamitin ang sip"</item>
+        <item>"Iproseso ang papalabas na tawag"</item>
+        <item>"Fingerprint"</item>
+        <item>"Mga sensor ng katawan"</item>
+        <item>"Basahin ang mga cell broadcast"</item>
+        <item>"Kunwaring lokasyon"</item>
+        <item>"Basahin ang storage"</item>
+        <item>"I-write ang storage"</item>
+        <item>"I-on ang screen"</item>
+        <item>"Kunin ang mga account"</item>
+        <item>"Patakbuhin sa background"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Maikli"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"Katamtaman"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Mahaba"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"Default"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Casual"</item>
+        <item>"Cursive"</item>
+        <item>"Maliliit na capital"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Napakaliit"</item>
+        <item>"Maliit"</item>
+        <item>"Normal"</item>
+        <item>"Malaki"</item>
+        <item>"Napakalaki"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"Default"</item>
+        <item>"Wala"</item>
+        <item>"Outline"</item>
+        <item>"Drop shadow"</item>
+        <item>"Raised"</item>
+        <item>"Depressed"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"Gamitin ang app default"</item>
+        <item>"Puti sa itim"</item>
+        <item>"Itim sa puti"</item>
+        <item>"Dilaw sa itim"</item>
+        <item>"Dilaw sa asul"</item>
+        <item>"Custom"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN na may mga paunang nabahaging key"</item>
+        <item>"L2TP/IPSec VPN na may mga certificate"</item>
+        <item>"IPSec VPN na may mga paunang nabahaging keys at pagpapatotoo ng Xauth"</item>
+        <item>"IPSec VPN na may mga certificate at pagpapatotoo ng Xauth"</item>
+        <item>"IPSec VPN na may mga certificate at hybrid na pagpapatotoo"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Hindi na nakakonekta"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Sinisimulan\u2026"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Kumokonekta\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Nakakonekta"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Timeout"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Hindi matagumpay"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Magtanong"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Huwag kailanman payagan"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Palaging payagan"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Normal"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Katamtaman"</item>
+        <!-- Memory is running low. -->
+        <item>"Mababa"</item>
+        <!-- Memory is critical. -->
+        <item>"Kritikal"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Normal"</item>
+        <item>"Katamtaman"</item>
+        <item>"Mababa"</item>
+        <item>"Kritikal"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Tuluy-tuloy"</item>
+        <item>"Nangungunang gawain"</item>
+        <item>"Mahalaga (foreground)"</item>
+        <item>"Mahalaga (background)"</item>
+        <item>"Backup"</item>
+        <item>"Mabigat na timbang"</item>
+        <item>"Serbisyo (gumagana)"</item>
+        <item>"Serbisyo (nagre-restart)"</item>
+        <item>"Receiver"</item>
+        <item>"Home"</item>
+        <item>"Huling gawain"</item>
+        <item>"Naka-cache (gawain)"</item>
+        <item>"Naka-cache (client ng gawain)"</item>
+        <item>"Naka-cache (walang laman)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Teal"</item>
+        <item>"Asul"</item>
+        <item>"Indigo"</item>
+        <item>"Lila"</item>
+        <item>"Pink"</item>
+        <item>"Pula"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Awtomatikong kumonekta"</item>
+        <item>"Manu-manong kumonekta"</item>
+        <item>"Itanong palagi"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"Nakaraang 30 araw"</item>
+        <item>"Nakaraang 60 araw"</item>
+        <item>"Nakaraang 90 araw"</item>
+    </string-array></resources>

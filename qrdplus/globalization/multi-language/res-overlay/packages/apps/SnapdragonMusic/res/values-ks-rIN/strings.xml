@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <add-resource type="string" name="onesong"/>
+    <string name="onesong">"گیوُن"</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <add-resource type="plurals" name="Nsongs"/>
+    <plurals name="Nsongs">
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> گیوُن"</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <add-resource type="plurals" name="Nsongscomp"/>
+    <plurals name="Nsongscomp">
+        <item quantity="other">"<xliff:g id="count_for_artist">%2$d</xliff:g> یمُک <xliff:g id="total_count">%1$d</xliff:g> گیوُن"</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <add-resource type="plurals" name="Nalbums"/>
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">"1 ایلبم"</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> ایلبم"</item>
+    </plurals>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <add-resource type="string" name="goto_start"/>
+    <string name="goto_start">"لائبراری"</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <add-resource type="string" name="party_shuffle"/>
+    <string name="party_shuffle">"پارٹی شفل"</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <add-resource type="string" name="party_shuffle_off"/>
+    <string name="party_shuffle_off">"پارٹی شفل چھِ بند"</string>
+    <!-- Menu item that clear all playlists mode -->
+    <add-resource type="string" name="clear_all_playlists"/>
+    <string name="clear_all_playlists">"صاف کر سٲری پلے لیسٹ"</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <add-resource type="string" name="delete_item"/>
+    <string name="delete_item">"خٲرج"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <add-resource type="string" name="play_all"/>
+    <string name="play_all">"چلاو سٲری"</string>
+    <!-- Menu item to play song in music -->
+    <add-resource type="string" name="open_in_music"/>
+    <string name="open_in_music">"کھول موسیقی منز"</string>
+    <!-- Menu item to share audio or video -->
+    <add-resource type="string" name="share"/>
+    <string name="share">"بٲنٹیو"</string>
+     <!-- Menu item to details audio or video -->
+    <add-resource type="string" name="details"/>
+    <string name="details">"تفصیل"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <add-resource type="string" name="delete_artist_desc"/>
+    <string name="delete_artist_desc">"ہمیشی خٲطر کر صاف تمام گیوُن <xliff:g id="artist">%s</xliff:g>؟"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <add-resource type="string" name="delete_album_desc"/>
+    <string name="delete_album_desc">"ہمیشہ خٲطر کر خٲرج سوری ایلبم \"<xliff:g id="album">%s</xliff:g>\"؟"</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <add-resource type="string" name="delete_song_desc"/>
+    <string name="delete_song_desc">"ہمیشہ خٲطر خٲرج \"<xliff:g id="song">%s</xliff:g>\"؟"</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <add-resource type="string" name="delete_confirm_button_text"/>
+    <string name="delete_confirm_button_text">"ٹھیک"</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <add-resource type="plurals" name="NNNtracksdeleted"/>
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">"1 گیوُن خٲرج"</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">"<xliff:g id="songs_to_delete">%d</xliff:g> گیوُن آے خٲرج کرنِہ."</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning"/>
+    <string name="scanning">"سکین کران SD کاڑ"</string>
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning_nosdcard"/>
+    <string name="scanning_nosdcard">"سکین کران USB کاڑ"</string>
+
+    <add-resource type="array" name="title_array_folder"/>
+    <string-array name="title_array_folder">
+        <item>"کلاکار"</item>
+        <item>"ایلبم"</item>
+        <item>"گیوُن"</item>
+        <item>"فولڈر"</item>
+        <item>"پلے لیسٹ"</item>
+    </string-array>
+    <add-resource type="array" name="title_array_songs"/>
+    <string-array name="title_array_songs">
+        <item>"کلاکار"</item>
+        <item>"ایلبم"</item>
+        <item>"گیوُن"</item>
+        <item>"پلے لیسٹ"</item>
+    </string-array>
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <add-resource type="string" name="nowplaying_title"/>
+    <string name="nowplaying_title">"وین چلاوان"</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <add-resource type="string" name="partyshuffle_title"/>
+    <string name="partyshuffle_title">"پارٹی شفل"</string>
+    <!-- Artist screen title -->
+    <add-resource type="string" name="artists_title"/>
+    <string name="artists_title">"کلاکار"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="albums_menu"/>
+    <string name="albums_menu">"ایلبم"</string>
+    <!-- Albums screen title -->
+    <add-resource type="string" name="albums_title"/>
+    <string name="albums_title">"ایلبم"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="tracks_menu"/>
+    <string name="tracks_menu">"گیوُن"</string>
+    <!-- Songs screen title -->
+    <add-resource type="string" name="tracks_title"/>
+    <string name="tracks_title">"گیوُن"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="folder_menu"/>
+    <string name="folder_menu">"فولڈر"</string>
+    <!-- Folder screen title -->
+    <add-resource type="string" name="folders_title"/>
+    <string name="folders_title">"فولڈر"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="playlists_menu"/>
+    <string name="playlists_menu">"پلے لیسٹ"</string>
+    <!-- Playlists screen title -->
+    <add-resource type="string" name="playlists_title"/>
+    <string name="playlists_title">"پلے لیسٹ"</string>
+    <!-- Videos screen title -->
+    <add-resource type="string" name="videos_title"/>
+    <string name="videos_title">"ووڈیوس"</string>
+    <!-- All media screen title -->
+    <add-resource type="string" name="all_title"/>
+    <string name="all_title">"تمام میڈیا"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="browse_menu"/>
+    <string name="browse_menu">"کلاکار"</string>
+    <!-- Library screen, menu item -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"ژھار"</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <add-resource type="string" name="no_tracks_title"/>
+    <string name="no_tracks_title">"کاہ گیوُن نِہ"</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <add-resource type="string" name="no_videos_title"/>
+    <string name="no_videos_title">"کاہ ویڈیو نِہ"</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <add-resource type="string" name="no_playlists_title"/>
+    <string name="no_playlists_title">"کاہ پلے لیسٹ نِہ"</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <add-resource type="string" name="delete_playlist_menu"/>
+    <string name="delete_playlist_menu">"خٲرج"</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <add-resource type="string" name="edit_playlist_menu"/>
+    <string name="edit_playlist_menu">"درست کر"</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <add-resource type="string" name="rename_playlist_menu"/>
+    <string name="rename_playlist_menu">"نو ناو"</string>
+    <!-- Dialog box message shown when clearing all playlists-->
+    <add-resource type="string" name="clear_all_playlists_message"/>
+    <string name="clear_all_playlists_message">"توہ چھوا یژھان تمام پلے لیسٹ صاف کرِن؟"</string>
+    <!-- Dialog box message shown when deleting a playlist-->
+    <add-resource type="string" name="delete_playlist_message"/>
+    <string name="delete_playlist_message">"توہ چھُوا یژھان خٲرج کرُن \"<xliff:g id="name">%s</xliff:g>\"?"</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="delete_playlist_button_ok"/>
+    <string name="delete_playlist_button_ok">"ٹھیک"</string>
+    <add-resource type="string" name="delete_playlist_button_cancel"/>
+    <string name="delete_playlist_button_cancel">"رد"</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <add-resource type="string" name="playlist_deleted_message"/>
+    <string name="playlist_deleted_message">"پلے لیسٹ سپِد خٲرج"</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <add-resource type="string" name="playlist_renamed_message"/>
+    <string name="playlist_renamed_message">"پلے لیسٹ ناو بدلو"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <add-resource type="string" name="recentlyadded"/>
+    <string name="recentlyadded">"تازہ شٲمل"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <add-resource type="string" name="recentlyadded_title"/>
+    <string name="recentlyadded_title">"تازہ شٲمل"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <add-resource type="string" name="podcasts_listitem"/>
+    <string name="podcasts_listitem">"پوڈکاسٹ"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <add-resource type="string" name="podcasts_title"/>
+    <string name="podcasts_title">"پوڈکاسٹ"</string>
+    <!-- all recordings will show up in the media database in a playlist with thiis name -->
+    <add-resource type="string" name="audio_db_playlist_name"/>
+    <string name="audio_db_playlist_name">"مین رکاڑِنگ"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title"/>
+    <string name="sdcard_missing_title">"کاہ SD کاڑ نِہ"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title_nosdcard"/>
+    <string name="sdcard_missing_title_nosdcard">"کاہ USB سٹوریج نِہ"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message"/>
+    <string name="sdcard_missing_message">"تِہندِس فونس چھِ نِہ کاہ تِہ ایس ڈی کاڑ لٲگِتھ۔"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message_nosdcard"/>
+    <string name="sdcard_missing_message_nosdcard">"تِہندِس فونس چھِ نِہ یو ایس بی سٹوریج۔"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title"/>
+    <string name="sdcard_busy_title">"SD کاڑ چھِ نِہ موجود"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title_nosdcard"/>
+    <string name="sdcard_busy_title_nosdcard">"USB سٹوریج چھِ نِہ موجود"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message"/>
+    <string name="sdcard_busy_message">"تُہند ایس ڈی کاڑ چھِ آوُر۔"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message_nosdcard"/>
+    <string name="sdcard_busy_message_nosdcard">"تُہند یو ایس بی سٹوریج چھِ آوُر۔"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title"/>
+    <string name="sdcard_error_title">"SD کاڑ نُکس"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title_nosdcard"/>
+    <string name="sdcard_error_title_nosdcard">"USB سٹوریج نُکس"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message"/>
+    <string name="sdcard_error_message">"اکھ نُکس آو لبنہ تِہندِس ایس ڈی کاڑس منز۔"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message_nosdcard"/>
+    <string name="sdcard_error_message_nosdcard">"اکھ نُکس آو لبنہ تِہندِس یو ایس بی سٹوریجس منز۔"</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_artist_name"/>
+    <string name="unknown_artist_name">"انجان کلاکار"</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_album_name"/>
+    <string name="unknown_album_name">"انجان ایلبم"</string>
+    <!-- Default name of folder that doesn't have a path in the metadata -->
+    <add-resource type="string" name="unknown_folder_name"/>
+    <string name="unknown_folder_name">"انجان وتھ"</string>
+    <!-- Default name of folder that doesn't have a count in the metadata -->
+    <add-resource type="string" name="unknown_folder_count"/>
+    <string name="unknown_folder_count">"انجان کاونٹ"</string>
+    <!-- Toast after turning shuffle on -->
+    <add-resource type="string" name="shuffle_on_notif"/>
+    <string name="shuffle_on_notif">"شفل چھِ آن"</string>
+    <!-- Toast after turning shuffle off -->
+    <add-resource type="string" name="shuffle_off_notif"/>
+    <string name="shuffle_off_notif">"شفل چھِ آف"</string>
+    <!-- Toast after turning repeat off -->
+    <add-resource type="string" name="repeat_off_notif"/>
+    <string name="repeat_off_notif">"رِپیٹ چھِ آف"</string>
+    <!-- Toast after turning single repeat on -->
+    <add-resource type="string" name="repeat_current_notif"/>
+    <string name="repeat_current_notif">"رِپیٹ کر حالُک گیوُن"</string>
+    <!-- Toast after turning repeat all on -->
+    <add-resource type="string" name="repeat_all_notif"/>
+    <string name="repeat_all_notif">"دُہراو سٲری گیوُن"</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu"/>
+    <string name="ringtone_menu">"فون رِنگ ٹون آۅ تھاۅنِہ۔"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short"/>
+    <string name="ringtone_menu_short">"استعمال از رینگ ٹون"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set"/>
+    <string name="ringtone_set">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" تھاو از فون رینگ ٹون."</string>
+    <!-- Toast after setting a song as phone ringtone fail-->
+    <add-resource type="string" name="ringtone_set_fail"/>
+    <string name="ringtone_set_fail">"فون رینگ ٹون تھاون سپُد ناکام"</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu_1"/>
+    <string name="ringtone_menu_1">"تھاو از سلاٹ 1 رینگ ٹون"</string>
+    <add-resource type="string" name="ringtone_menu_2"/>
+    <string name="ringtone_menu_2">"تھاو از سلاٹ 2 رینگ ٹون"</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_1"/>
+    <string name="ringtone_menu_sim_name_1">"تھاو از سلاٹ 1 \"<xliff:g id="NAME">%s</xliff:g>\" رینگ ٹون"</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_2"/>
+    <string name="ringtone_menu_sim_name_2">"تھاو از سلاٹ 2 \"<xliff:g id="NAME">%s</xliff:g>\" رینگ ٹون"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short_1"/>
+    <string name="ringtone_menu_short_1">"تھاو از رینگ ٹون 1"</string>
+    <add-resource type="string" name="ringtone_menu_short_2"/>
+    <string name="ringtone_menu_short_2">"تھاو از رینگ ٹون 2"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_1"/>
+    <string name="ringtone_set_1">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" تھاو از سلاٹ 1 رینگ ٹون."</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_2"/>
+    <string name="ringtone_set_2">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" تھاو از سلاٹ 2 رینگ ٹون."</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="play_selection"/>
+    <string name="play_selection">"چلاو"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="add_to_playlist"/>
+    <string name="add_to_playlist">"شٲمل کر پلے لیسٹ منز"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="queue"/>
+    <string name="queue">"حالُک پلے لیسٹ"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="new_playlist"/>
+    <string name="new_playlist">"نو"</string>
+    <!-- Template for newly created playlist name -->
+    <add-resource type="string" name="new_playlist_name_template"/>
+    <string name="new_playlist_name_template">"نو پلے لیسٹ <xliff:g id="number">%d</xliff:g>"</string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <add-resource type="plurals" name="NNNtrackstoplaylist"/>
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">"1 نغمہ گو جمہ پلے لِسٹس منز۔"</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">"<xliff:g id="number" example="27">%d</xliff:g> گیوُن آو پلے لیسٹ منز شٲمل کرنِہ."</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <add-resource type="string" name="emptyplaylist"/>
+    <string name="emptyplaylist">"چونِہ آمُت پلے لِسٹ چھِ ژھور۔"</string>
+    <!-- Button name when saving a playlist -->
+    <add-resource type="string" name="create_playlist_create_text"/>
+    <string name="create_playlist_create_text">"موجود"</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <add-resource type="string" name="create_playlist_overwrite_text"/>
+    <string name="create_playlist_overwrite_text">"پیٹھ لیکھ"</string>
+    <!-- Dialog box title -->
+    <add-resource type="string" name="service_start_error_title"/>
+    <string name="service_start_error_title">"پلے بیک مشکلات"</string>
+    <!-- Dialog box message -->
+    <add-resource type="string" name="service_start_error_msg"/>
+    <string name="service_start_error_msg">"یِہ نمہ ھیکِہ نِہ چیلِتھ کیہ۔"</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="service_start_error_button"/>
+    <string name="service_start_error_button">"ٹھیک"</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <add-resource type="array" name="weeklist"/>
+    <string-array name="weeklist">
+        <item>"1 ھفتہ  "</item>
+        <item>"2 ھفتہ"</item>
+        <item>"3 ھفتہ"</item>
+        <item>"4 ھفتہ"</item>
+        <item>"5 ھفتہ"</item>
+        <item>"6 ھفتہ"</item>
+        <item>"7 ھفتہ"</item>
+        <item>"8 ھفتہ"</item>
+        <item>"9 ھفتہ"</item>
+        <item>"10 ھفتہ"</item>
+        <item>"11 ھفتہ"</item>
+        <item>"12 ھفتہ"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <add-resource type="string" name="weekpicker_set"/>
+    <string name="weekpicker_set">"مکمل"</string>
+    <!-- Title of time span picker -->
+    <add-resource type="string" name="weekpicker_title"/>
+    <string name="weekpicker_title">"تھاو وقت"</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <add-resource type="color" name="dragndrop_background"/>
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <add-resource type="color" name="expanding_child_background"/>
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <add-resource type="string" name="save_as_playlist"/>
+    <string name="save_as_playlist">"محفوظ کر از پلے لیسٹ"</string>
+    <!-- menu item to clear the current playlist -->
+    <add-resource type="string" name="clear_playlist"/>
+    <string name="clear_playlist">"صاف کر پلے لیسٹ"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicbrowserlabel"/>
+    <string name="musicbrowserlabel">"موسیقی"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicshortcutlabel"/>
+    <string name="musicshortcutlabel">"موسیقی پلے لیسٹ"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediaplaybacklabel"/>
+    <string name="mediaplaybacklabel">"موسیقی"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="videobrowserlabel"/>
+    <string name="videobrowserlabel">"ووڈیوس"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediapickerlabel"/>
+    <string name="mediapickerlabel">"موسیقی"</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <add-resource type="string" name="playback_failed"/>
+    <string name="playback_failed">"پلیر چھِہ نِہ مددگار یِتھ قسم آواز فائل۔"</string>
+    <!-- Shown as a transient message whenever a file fails to open -->
+    <add-resource type="string" name="open_failed"/>
+    <string name="open_failed">"معاف کریو، ھیکِہ نِہ فائل کھولیتھ"</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"رد"</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <add-resource type="string" name="remove_from_playlist"/>
+    <string name="remove_from_playlist">"معزول کر پلے لیسٹ منز"</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <add-resource type="string" name="streamloadingtext"/>
+    <string name="streamloadingtext">"جوڑان یتھ سیتھ <xliff:g id="host">%s</xliff:g>\u2026"</string>
+
+    <!-- title of contextual music search menu -->
+    <add-resource type="string" name="mediasearch"/>
+    <string name="mediasearch">"سیرچ یتھ خٲطر <xliff:g id="term" example="Beethoven">%s</xliff:g> استعمال:"</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <add-resource type="string" name="working_artists"/>
+    <string name="working_artists">"کلاکار۔ ۔ ۔"</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <add-resource type="string" name="working_albums"/>
+    <string name="working_albums">"ایلبم۔ ۔ ۔"</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <add-resource type="string" name="working_songs"/>
+    <string name="working_songs">"گیوُن۔ ۔ ۔"</string>
+    <!-- Shown in the title bar while the list of folders is being retrieved in the background -->
+    <add-resource type="string" name="working_folders"/>
+    <string name="working_folders">"فولڈر۔ ۔ ۔"</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <add-resource type="string" name="working_playlists"/>
+    <string name="working_playlists">"پلے لیسٹ۔ ۔ ۔"</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"لوڈِنگ"</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <add-resource type="string" name="sort_by_track"/>
+    <string name="sort_by_track">"ٹریک"</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <add-resource type="string" name="sort_by_album"/>
+    <string name="sort_by_album">"ایلبم"</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <add-resource type="string" name="sort_by_artist"/>
+    <string name="sort_by_artist">"کلاکار"</string>
+    <!--  Title of the music picker activity. -->
+    <add-resource type="string" name="music_picker_title"/>
+    <string name="music_picker_title">"چُن موسیقی ٹریک"</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <add-resource type="string" name="search_settings_description"/>
+    <string name="search_settings_description">"آرٹیسٹِ، ایلبم تِہ ٹریک۔"</string>
+
+    <!-- Shown in the search box as a hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"ژھار موسیقی"</string>
+    <add-resource type="string" name="search_hint_video"/>
+    <string name="search_hint_video">"ژھار ویڈیو"</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <add-resource type="string" name="fast_scroll_alphabet"/>
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <add-resource type="string" name="widget_initial_text"/>
+    <string name="widget_initial_text">"ساز کہ چُناو خٲطر دیُو زیر۔"</string>
+
+    <!-- Menu text for the item controlling the audio effects panel [CHAR LIMIT=15] -->
+    <add-resource type="string" name="effectspanel"/>
+    <string name="effectspanel">"ایقوالائزر"</string>
+
+    <add-resource type="string" name="duplicate_playlist_name_alert"/>
+    <string name="duplicate_playlist_name_alert">"یتِہ چھِ گوڑاے پلے لیسٹ ناو تھٲویتھ \"<xliff:g id="name">%s</xliff:g>\". مہربٲنی کٛریتھ دیُو مختلف ناۅ ۔"</string>
+    <add-resource type="string" name="same_playlist_name_alert"/>
+    <string name="same_playlist_name_alert">"پلے لیسٹ\"<xliff:g id="name">%s</xliff:g>\" ناو آو نِہ بدلاو نِہ. مہربٲنی کٛریتھ دیُو مختلف ناۅ ۔"</string>
+    <add-resource type="string" name="button_ok"/>
+    <string name="button_ok">"ٹھیک"</string>
+    <add-resource type="string" name="list_empty"/>
+    <string name="list_empty">"کاہ موسیقی چھِ نِہ پلے لیسٹ منز"</string>
+
+    <!-- Shown when video is played after disable Gallery app from Settings -->
+    <add-resource type="string" name="enable_gallery_app"/>
+    <string name="enable_gallery_app">"ویڈیو ھیکِہ نِہ چلیتھ، مہربٲنی کریتھ ترٲیو گیلری ایپ سیٹِنگ منز یلِہ۔"</string>
+    <add-resource type="string" name="close_music"/>
+    <string name="close_music">"ختم"</string>
+    <add-resource type="string" name="delete_video_item_message"/>
+    <string name="delete_video_item_message">"توہ چھُوا یژھان خٲرج کرُن \"<xliff:g id="name">%s</xliff:g>\"?"</string>
+    <add-resource type="string" name="video_deleted_message"/>
+    <string name="video_deleted_message">"ویڈیو فائل خٲرج"</string>
+
+    <!-- Menu item that takes the user link to net to see more music -->
+    <add-resource type="string" name="more_music"/>
+    <string name="more_music">"مزید موسیقی"</string>
+    <!-- Menu item that takes the user link to net to see more video -->
+    <add-resource type="string" name="more_video"/>
+    <string name="more_video">"مزید ویڈیو"</string>
+    <!--gesture control playback status-->
+    <add-resource type="string" name="music_gesture_play"/>
+    <string name="music_gesture_play">"چلاو/رُک آواز"</string>
+    <add-resource type="string" name="music_gesture_prev"/>
+    <string name="music_gesture_prev">"چلاو پرون ٹریک"</string>
+    <add-resource type="string" name="music_gesture_next"/>
+    <string name="music_gesture_next">"چلاو نو ٹریک"</string>
+
+    <!-- DRM Related Strings -->
+    <add-resource type="string" name="no_permission_for_drm"/>
+    <string name="no_permission_for_drm">"معاف کٛریو، ڈی آر ایم فائل ھیکِہ نِہ بانٹنِہ یِیتھ کیہ۔"</string>
+    <add-resource type="string" name="drm_license_info"/>
+    <string name="drm_license_info">"Drm لاسن اِنفو"</string>
+    <add-resource type="string" name="drm_ringtone_error"/>
+    <string name="drm_ringtone_error">"ھیکِہ نِہ CD/SD فائل تھٲویتھ از  رینگ ٹون"</string>
+    <add-resource type="string" name="drm_right_expired"/>
+    <string name="drm_right_expired">"DRM حقوق ختم"</string>
+
+    <add-resource type="string" name="action_consumes_rights"/>
+    <string name="action_consumes_rights">"حقوق یِن استعمال کرنِہ یِہ میڈیا چلاونِہ خٲطر"</string>
+    <add-resource type="string" name="rights_expired"/>
+    <string name="rights_expired">"حقوق سپِد ختم یتھ گیونس"</string>
+    <add-resource type="string" name="ring_tone_size_exceed"/>
+    <string name="ring_tone_size_exceed">"Drm رینگ ٹون معیاد گژھ نِہ 300kb زیادِ آسُن۔"</string>
+    <add-resource type="string" name="cant_set_ringtone_with_count_perm"/>
+    <string name="cant_set_ringtone_with_count_perm">"ھیکِہ نِہ تھٲویتھ DRM فائل کاونٹ پیرمیشن ھیتھ از رینگ ٹون۔"</string>
+
+    <add-resource type="string" name="navigation_drawer_title"/>
+    <string name="navigation_drawer_title">"موسیقی"</string>
+    <add-resource type="string" name="action_settings"/>
+    <string name="action_settings">"سیٹنگزس"</string>
+    <add-resource type="string" name="equalizer_button_text"/>
+    <string name="equalizer_button_text">"سنیپ ڈریگن آواز+"</string>
+    <add-resource type="string" name="exit_button_text"/>
+    <string name="exit_button_text">"بند"</string>
+    <add-resource type="string" name="action_settings1"/>
+    <string name="action_settings1">"سیٹِنگ 1"</string>
+    <add-resource type="string" name="action_settings2"/>
+    <string name="action_settings2">"سیٹِنگ 2"</string>
+    <add-resource type="string" name="action_one"/>
+    <string name="action_one">"اکھ"</string>
+    <add-resource type="string" name="action_two"/>
+    <string name="action_two">"زِ"</string>
+    <add-resource type="string" name="action_three"/>
+    <string name="action_three">"ترے"</string>
+    <add-resource type="string" name="shuffle_all"/>
+    <string name="shuffle_all">"شفل تمام"</string>
+
+    <add-resource type="string" name="no_music_found"/>
+    <string name="no_music_found">"کاہ موسیقی آے نِہ لبنِہ"</string>
+
+    <!--  Adding new string here for file delete error message -->
+    <add-resource type="string" name="song_deleted_error_message"/>
+    <string name="song_deleted_error_message">"ھیکِہ نِہ چلٲیتھ ٹریک یوس توہ عرض کرو"</string>
+    <add-resource type="string" name="song_title"/>
+    <string name="song_title">"گیوُن ناو:"</string>
+    <add-resource type="string" name="album_title"/>
+    <string name="album_title">"ایلبم ناو:"</string>
+    <add-resource type="string" name="artist_title"/>
+    <string name="artist_title">"کلاکار ناو:"</string>
+    <add-resource type="string" name="duration_title"/>
+    <string name="duration_title">"مدت:"</string>
+    <add-resource type="string" name="path_title"/>
+    <string name="path_title">"وتھ:"</string>
+    <add-resource type="string" name="size_title"/>
+    <string name="size_title">"معیاد:"</string>
+    <add-resource type="string" name="duration_unit"/>
+    <string name="duration_unit">" منٹ"</string>
+
+    <!-- Human readable sizes -->
+    <add-resource type="string" name="size_bytes"/>
+    <string name="size_bytes">"B"</string>
+    <add-resource type="string" name="size_kilobytes"/>
+    <string name="size_kilobytes">"kB"</string>
+    <add-resource type="string" name="size_megabytes"/>
+    <string name="size_megabytes">"MB"</string>
+    <add-resource type="string" name="size_gigabytes"/>
+    <string name="size_gigabytes">"GB"</string>
+
+    <add-resource type="string" name="favorite"/>
+    <string name="favorite">"پسند"</string>
+    <add-resource type="string" name="no_favorite"/>
+    <string name="no_favorite">"کاہ پسند نِہ"</string>
+    <add-resource type="string" name="favorite_playlist"/>
+    <string name="favorite_playlist">"میون پسند"</string>
+    <add-resource type="string" name="can_not_create_my_favorite"/>
+    <string name="can_not_create_my_favorite">"ھیکِہ نِہ بنٲویتھ یا پیٹھ لیکھتھ میون پسند پلے لیسٹس"</string>
+
+    <!-- add by filemanager -->
+    <add-resource type="string" name="add_by_filemanager"/>
+    <string name="add_by_filemanager">"شٲمل کر فائل منیجر پیٹھ"</string>
+    <add-resource type="string" name="add_file_failed"/>
+    <string name="add_file_failed">"ناکام سُد یِہ فائل شٲمل کرنس یُٕک فارمیٹ چھِ نِہ پرداشت کران یا چھ، نِہ میڈیا لائراری منز موجود۔"</string>
+
+    <!-- permission request -->
+    <add-resource type="string" name="dialog_title_help"/>
+    <string name="dialog_title_help">"مدد"</string>
+    <add-resource type="string" name="dialog_content"/>
+    <string name="dialog_content">"ایپلکیشن ھیکِہ نِہ چلیتھ اجازت بغیر۔ مہربٲنی کریتھ دِیو سیٹِنگ منز اجازت۔"</string>
+    <add-resource type="string" name="dialog_button_quit"/>
+    <string name="dialog_button_quit">"یلِہ تراو"</string>
+    <add-resource type="string" name="dialog_button_settings"/>
+    <string name="dialog_button_settings">"سیٹنگزس"</string>
+
+    <add-resource type="string" name="audio_preview_fail_security"/>
+    <string name="audio_preview_fail_security">"ناکام گو سکورٹی مصلِہ واجن فائل کھولنس۔"</string>
+    <add-resource type="string" name="audio_preview_fail_io"/>
+    <string name="audio_preview_fail_io">"ھیکِہ نِہ فائل کھولیتھ"</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_state"/>
+    <string name="audio_preview_fail_illegal_state">"غیر قونونی حالت، ناکام گو فائل کھولنس۔"</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_argument"/>
+    <string name="audio_preview_fail_illegal_argument">"غیر قونونی منظر، ناکام گو فائل کھولنس۔"</string></resources>

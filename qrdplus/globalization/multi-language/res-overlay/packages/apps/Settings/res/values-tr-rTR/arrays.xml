@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"Amerika"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Avrupa"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Afrika"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Asya"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Avustralya"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Pasifik"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Tümü"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 saniye"</item>
+        <item>"30 saniye"</item>
+        <item>"1 dakika"</item>
+        <item>"2 dakika"</item>
+        <item>"5 dakika"</item>
+        <item>"10 dakika"</item>
+        <item>"30 dakika"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Hiçbir zaman"</item>
+        <item>"15 saniye"</item>
+        <item>"30 saniye"</item>
+        <item>"1 dakika"</item>
+        <item>"2 dakika"</item>
+        <item>"5 dakika"</item>
+        <item>"10 dakika"</item>
+        <item>"30 dakika"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Hemen"</item>
+        <item>"5 saniye"</item>
+        <item>"15 saniye"</item>
+        <item>"30 saniye"</item>
+        <item>"1 dakika"</item>
+        <item>"2 dakika"</item>
+        <item>"5 dakika"</item>
+        <item>"10 dakika"</item>
+        <item>"30 dakika"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Küçük"</item>
+        <item msgid="3579015730662088893">"Varsayılan"</item>
+        <item msgid="1678068858001018666">"Büyük"</item>
+        <item msgid="490158884605093126">"En büyük"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Taranıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Bağlanıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Kimlik doğrulanıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP adresi alınıyor..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Bağlandı"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Askıya alındı"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Bağlantı kesiliyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Bağlantı kesildi"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Başarısız"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Engellendi"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Kötü bağlantıdan geçici olarak kaçınılıyor"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Taranıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ağına bağlanılıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> üzerinde kimlik doğrulanıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ağından IP adresi alınıyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ağına bağlandı"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Askıya alındı"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> bağlantısı kesiliyor\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Bağlantı kesildi"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Başarısız"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Engellendi"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Kötü bağlantıdan geçici olarak kaçınılıyor"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"Düğme"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"Eş cihazın PIN\'i"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"Bu cihazın PIN\'i"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Bağlı"</item>
+        <item>"Davet edildi"</item>
+        <item>"Başarısız"</item>
+        <item>"Müsait"</item>
+        <item>"Kapsama alanı dışında"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 dakika"</item>
+        <item>"5 dakika"</item>
+        <item>"1 saat"</item>
+        <item>"Asla zaman aşımı olmasın"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Yetersiz"</item>
+        <item>"Yeterli"</item>
+        <item>"İyi"</item>
+        <item>"Mükemmel"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Her zaman"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Yalnızca prize takıldığında"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Hiçbir zaman"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Her zaman"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Yalnızca prize takıldığında"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Hiçbir zaman"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"Son 30 gün"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Kullanım döngüsünü ayarla..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Kullanım süresi"</item>
+        <item>"Son kullanıldığı tarih"</item>
+        <item>"Uygulama adı"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Yok"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Yok"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Statik"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Yok"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"El ile"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Proxy Otomatik Yapılandırması"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Yok"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP veya CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Belirtilmedi"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Yok"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Dahili cihaz depolaması"</item>
+        <item>"Çıkarılabilir SD kart"</item>
+        <item>"Sistem karar versin"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Konum"</item>
+        <item>"Kişisel"</item>
+        <item>"Mesajlaşma"</item>
+        <item>"Medya"</item>
+        <item>"Cihaz"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"yaklaşık konum"</item>
+        <item>"hassas konum"</item>
+        <item>GPS</item>
+        <item>"titreşim"</item>
+        <item>"kişileri oku"</item>
+        <item>"kişileri değiştir"</item>
+        <item>"çağrı günlüğünü oku"</item>
+        <item>"çağrı günlüğünü değiştir"</item>
+        <item>"takvimi oku"</item>
+        <item>"takvimi değiştir"</item>
+        <item>"kablosuz tarama"</item>
+        <item>"bildirim"</item>
+        <item>"hücre tarama"</item>
+        <item>"telefon et"</item>
+        <item>"SMS oku"</item>
+        <item>"SMS yaz"</item>
+        <item>"SMS al"</item>
+        <item>"acil SMS al"</item>
+        <item>"MMS al"</item>
+        <item>"WAP push al"</item>
+        <item>"SMS gönder"</item>
+        <item>"ICC SMS oku"</item>
+        <item>"ICC SMS yaz"</item>
+        <item>"ayarları değiştir"</item>
+        <item>"üste çiz"</item>
+        <item>"bildirimlere eriş"</item>
+        <item>"kamera"</item>
+        <item>"ses kaydet"</item>
+        <item>"sesi çal"</item>
+        <item>"panoyu oku"</item>
+        <item>"panoyu değiştir"</item>
+        <item>"medya düğmeleri"</item>
+        <item>"ses odağı"</item>
+        <item>"ana ses düzeyi"</item>
+        <item>"konuşma sesi düzeyi"</item>
+        <item>"çalma sesi düzeyi"</item>
+        <item>"medya sesi düzeyi"</item>
+        <item>"alarm sesi düzeyi"</item>
+        <item>"bildirim sesi düzeyi"</item>
+        <item>"Bluetooth sesi düzeyi"</item>
+        <item>"uyanık tut"</item>
+        <item>"konumu izle"</item>
+        <item>"yüksek güç tüketen konum hizmetlerini izle"</item>
+        <item>"kullanım istatistiklerini al"</item>
+        <item>"mikrofonu kapat/aç"</item>
+        <item>"kısa ileti göster"</item>
+        <item>"proje medyası"</item>
+        <item>"VPN\'yi etkinleştir"</item>
+        <item>"yazı duvar kağıdı"</item>
+        <item>"yardım yapısı"</item>
+        <item>"yardım ekran görüntüsü"</item>
+        <item>"telefon durumunu oku"</item>
+        <item>"sesli mesaj ekle"</item>
+        <item>"SIP kullan"</item>
+        <item>"giden çağrıyı işle"</item>
+        <item>"parmak izi"</item>
+        <item>"vücut sensörleri"</item>
+        <item>"hücre yayınlarını oku"</item>
+        <item>"sahte konum"</item>
+        <item>"depolama alanını oku"</item>
+        <item>"depolama alanına yaz"</item>
+        <item>"ekranı aç"</item>
+        <item>"hesapları al"</item>
+        <item>"arka planda çalıştır"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Konum"</item>
+        <item>"Konum"</item>
+        <item>"Konum"</item>
+        <item>"Titreşim"</item>
+        <item>"Kişileri oku"</item>
+        <item>"Kişileri değiştir"</item>
+        <item>"Çağrı günlüğünü oku"</item>
+        <item>"Çağrı günlüğünü değiştir"</item>
+        <item>"Takvimi oku"</item>
+        <item>"Takvimi değiştir"</item>
+        <item>"Konum"</item>
+        <item>"Bildirim yayınla"</item>
+        <item>"Konum"</item>
+        <item>"Telefon et"</item>
+        <item>"SMS/MMS oku"</item>
+        <item>"SMS/MMS yaz"</item>
+        <item>"SMS/MMS al"</item>
+        <item>"SMS/MMS al"</item>
+        <item>"SMS/MMS al"</item>
+        <item>"SMS/MMS al"</item>
+        <item>"SMS/MMS gönder"</item>
+        <item>"SMS/MMS oku"</item>
+        <item>"SMS/MMS yaz"</item>
+        <item>"Ayarları değiştir"</item>
+        <item>"Üste çiz"</item>
+        <item>"Bildirimlere eriş"</item>
+        <item>"Kamera"</item>
+        <item>"Ses kaydet"</item>
+        <item>"Sesi çal"</item>
+        <item>"Panoyu oku"</item>
+        <item>"Panoyu değiştir"</item>
+        <item>"Medya düğmeleri"</item>
+        <item>"Ses odağı"</item>
+        <item>"Ana ses düzeyi"</item>
+        <item>"Konuşma sesi düzeyi"</item>
+        <item>"Zil sesi düzeyi"</item>
+        <item>"Medya sesi düzeyi"</item>
+        <item>"Alarm sesi düzeyi"</item>
+        <item>"Bildirim sesi düzeyi"</item>
+        <item>"Bluetooth ses düzeyi"</item>
+        <item>"Uyanık tut"</item>
+        <item>"Konum"</item>
+        <item>"Konum"</item>
+        <item>"Kullanım istatistiklerini al"</item>
+        <item>"Mikrofonu kapat/aç"</item>
+        <item>"Kısa ileti göster"</item>
+        <item>"Proje medyası"</item>
+        <item>"VPN\'yi etkinleştir"</item>
+        <item>"Yazı duvar kağıdı"</item>
+        <item>"Yardım yapısı"</item>
+        <item>"Yardım ekran görüntüsü"</item>
+        <item>"Telefon durumunu oku"</item>
+        <item>"Sesli mesaj ekle"</item>
+        <item>"SIP kullan"</item>
+        <item>"Giden çağrıyı işle"</item>
+        <item>"Parmak izi"</item>
+        <item>"Vücut sensörleri"</item>
+        <item>"Hücre yayınlarını oku"</item>
+        <item>"Sahte konum"</item>
+        <item>"Depolama alanını oku"</item>
+        <item>"Depolama alanına yaz"</item>
+        <item>"Ekranı aç"</item>
+        <item>"Hesapları al"</item>
+        <item>"Arka planda çalıştır"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Kısa"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"Orta"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Uzun"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"Varsayılan"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Klasik"</item>
+        <item>"Bitişik el yazısı"</item>
+        <item>"Küçük boyutlu büyük harfler"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Çok küçük"</item>
+        <item>"Küçük"</item>
+        <item>"Normal"</item>
+        <item>"Büyük"</item>
+        <item>"Çok büyük"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"Varsayılan"</item>
+        <item>"Yok"</item>
+        <item>"Dış çizgi"</item>
+        <item>"Gölge"</item>
+        <item>"Yükseltilmiş"</item>
+        <item>"Bastırılmış"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"Uygulama varsayılanlarını kullan"</item>
+        <item>"Siyah üzerine beyaz"</item>
+        <item>"Beyaz üzerine siyah"</item>
+        <item>"Siyah üzerine sarı"</item>
+        <item>"Mavi üzerine sarı"</item>
+        <item>"Özel"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"Önceden paylaşılan anahtara sahip L2TP/IPSec VPN"</item>
+        <item>"Sertifikalara sahip L2TP/IPSec VPN"</item>
+        <item>"Önceden paylaşılan anahtarlara ve Xauth kimlik doğrulamaya sahip IPSec VPN"</item>
+        <item>"Sertifikalara ve Xauth kimlik doğrulamaya sahip IPSec VPN"</item>
+        <item>"Sertifikalara ve karma kimlik doğrulamaya sahip IPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Bağlı değil"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Başlatılıyor..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Bağlanıyor\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Bağlı"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Zaman aşımı"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Başarısız"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Sor"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Asla izin verme"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Her zaman izin ver"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Normal"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Orta"</item>
+        <!-- Memory is running low. -->
+        <item>"Düşük"</item>
+        <!-- Memory is critical. -->
+        <item>"Kritik düzeyde"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Normal"</item>
+        <item>"Orta"</item>
+        <item>"Düşük"</item>
+        <item>"Kritik düzeyde"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Kalıcı"</item>
+        <item>"En üstteki etkinlik"</item>
+        <item>"Önemli (ön plan)"</item>
+        <item>"Önemli (arka plan)"</item>
+        <item>"Yedek"</item>
+        <item>"Ağır"</item>
+        <item>"Hizmet (çalışıyor)"</item>
+        <item>"Hizmet (yeniden başlatılıyor)"</item>
+        <item>"Alıcı"</item>
+        <item>"Ana ekran"</item>
+        <item>"En sondaki etkinlik"</item>
+        <item>"Önbelleğe alındı (etkinlik)"</item>
+        <item>"Önbelleğe alındı (etkinlik istemcisi)"</item>
+        <item>"Önbelleğe alındı (boş)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Çamur ördeği"</item>
+        <item>"Mavi"</item>
+        <item>"Çivit mavisi"</item>
+        <item>"Mor"</item>
+        <item>"Pembe"</item>
+        <item>"Kırmızı"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Otomatik bağlan"</item>
+        <item>"El ile bağlan"</item>
+        <item>"Her zaman sor"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"30 günden eski"</item>
+        <item>"60 günden eski"</item>
+        <item>"90 günden eski"</item>
+    </string-array></resources>

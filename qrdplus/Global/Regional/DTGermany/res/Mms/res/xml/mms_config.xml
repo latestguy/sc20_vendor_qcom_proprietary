@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2016 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<!-- Version History
+        version 1 - initial version.
+        version 2 - added recipientLimit.
+        version 3 - added min/max recycler values.
+        version 4 - added sms to mms text threshold.
+-->
+<mms_config version="4">
+
+    <!-- Maximum message size in bytes for a MMS message,its unit is B, default value is 300k(307200B),you can set it to 500k(512000) -->
+    <int name="maxMessageSize">307200</int>
+    <!-- Maximum number of MMS message to save per thread before auto-delete kicks in.
+         This is the default value. default value is 50, or you can set a integer, such as 60,100 -->
+    <int name="defaultMMSMessagesPerThread">1000</int>
+
+    <!-- UAProf URL -->
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
+</mms_config>

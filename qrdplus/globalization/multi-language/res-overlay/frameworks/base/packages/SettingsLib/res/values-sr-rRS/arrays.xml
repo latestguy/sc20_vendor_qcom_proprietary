@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Скенирање..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Повезивање\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Потврђује се аутентичност..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Преузимање IP адресе..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Повезано"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Обустављено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Прекидање везе..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Веза је прекинута"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Неуспешно"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Блокирано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Привремено избегавање лоше везе"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Скенирање..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Повезивање са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Проверавање идентитета мреже <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Добијање IP адресе од мреже <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Повезано са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Обустављено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Прекидање везе са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Веза је прекинута"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Неуспешно"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Блокирано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Привремено избегавање лоше везе"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"Никад не проверавај"</item>
+        <item>"Потражи само DRM садржај"</item>
+        <item>"Увек проверавај"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"Никада не користи HDCP проверу"</item>
+        <item>"Користи HDCP проверу само за DRM садржај"</item>
+        <item>"Увек користи HDCP проверу"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"Искључено"</item>
+        <item>"64 kB"</item>
+        <item>"256 kB"</item>
+        <item>"1 MB"</item>
+        <item>"4 MB"</item>
+        <item>"16 MB"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"Искључено"</item>
+        <item>"64 kB"</item>
+        <item>"256 kB"</item>
+        <item>"1 MB"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"Искључено"</item>
+        <item>"64 kB по међумеморији евиденције"</item>
+        <item>"256 kB по међумеморији евиденције"</item>
+        <item>"1 MB по међумеморији евиденције"</item>
+        <item>"4 MB по међумеморији евиденције"</item>
+        <item>"16 MB по међумеморији евиденције"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"Искључено"</item>
+        <item>"Све"</item>
+        <item>"Све сeм радија"</item>
+        <item>"Само језгро"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"Искључено"</item>
+        <item>"Све међумеморије евиденција"</item>
+        <item>"Све осим међумеморија евиденција за радио"</item>
+        <item>"Само међумеморија евиденције језгра"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"Анимација је искључена"</item>
+        <item>"Размера анимације 0,5x"</item>
+        <item>"Размера анимације 1x"</item>
+        <item>"Размера анимације 1,5x"</item>
+        <item>"Размера анимације 2x"</item>
+        <item>"Размера анимације 5x"</item>
+        <item>"Размера анимације 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"Анимација је искључена"</item>
+        <item>"Размера анимације 0,5x"</item>
+        <item>"Размера анимације 1x"</item>
+        <item>"Размера анимације 1,5x"</item>
+        <item>"Размера анимације 2x"</item>
+        <item>"Размера анимације 5x"</item>
+        <item>"Размера анимације 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"Анимација је искључена"</item>
+        <item>"Размера анимације 0,5x"</item>
+        <item>"Размера анимације 1x"</item>
+        <item>"Размера анимације 1,5x"</item>
+        <item>"Размера анимације 2x"</item>
+        <item>"Размера анимације 5x"</item>
+        <item>"Размера анимације 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"Ниједно"</item>
+        <item>"480 пиксела"</item>
+        <item>"480 пиксела (безбедно)"</item>
+        <item>720p</item>
+        <item>"720 пиксела (безбедно)"</item>
+        <item>"1080 пиксела"</item>
+        <item>"1080 пиксела (безбедно)"</item>
+        <item>4K</item>
+        <item>"4K (безбедно)"</item>
+        <item>"4K (увећана резолуција)"</item>
+        <item>"4K (увећана резолуција, безбедно)"</item>
+        <item>"720 пиксела, 1080 пикс. (2 екрана)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"Ниједан"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace (графика)"</item>
+        <item>"Групно позивање функције glGetError"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"Искључено"</item>
+        <item>"Нацртај област за исецање која није правоугаоног облика плавом бојом"</item>
+        <item>"Истакни зеленом тест. команде за цртање"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"Искључено"</item>
+        <item>"На екрану у виду трака"</item>
+        <item>"У adb shell dumpsys gfxinfo"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"Искључи"</item>
+        <item>"Прикажи области преклапања"</item>
+        <item>"Приказ области за деутераномалију"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"Стандардно ограничење"</item>
+        <item>"Без позадинских процеса"</item>
+        <item>"Највише један процес"</item>
+        <item>"Највише два процеса"</item>
+        <item>"Највише три процеса"</item>
+        <item>"Највише четири процеса"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"Пуњење"</item>
+        <item>"MTP (Протокол за пренос медија)"</item>
+        <item>"PTP (Протокол за пренос слика)"</item>
+        <item>"RNDIS (USB Етернет)"</item>
+        <item>"Извор звука"</item>
+        <item>MIDI</item>
+    </string-array></resources>

@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Names of packages and authorities that are common to all apps
+    and read from resources -->
+
+    <!-- Permissions label for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_label"/>
+    <string name="permission_read_attachment_label">"အီးမေးလ် ပူးတွဲမှုများကို ဖတ်ရန်"</string>
+    <!-- Permissions description for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_desc"/>
+    <string name="permission_read_attachment_desc">"appအား သင့် အီးမေးလ် ပူးတွဲမှုများကို ဖတ်ရှုခွင့် ပြုသည်။"</string>
+    <!-- Permissions label for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_label"/>
+    <string name="permission_access_provider_label">"အီးမေးလ် စီမံပေးသူ ဒေတာကို ရယူပါ"</string>
+    <!-- Permissions description for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_desc"/>
+    <string name="permission_access_provider_desc">"appအား သင့်အီးမေးလ် ဒေတာဘေ့စ်ကို၊ ရရှိပြီး စာများ၊ ပို့ပြီး စာများ၊ သုံးစွဲသူ အမည်များ နှင့် စကားဝှက်များ အပါအ၀င်ကို အသုံးချခွင့် ပြုသည်။"</string>
+
+    <!-- Name of application on Home screen -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"အီးမေးလ်"</string>
+
+    <!-- Actions will be used as buttons and in menu items -->
+
+
+    <!--  Menu item used to create a new quick response [CHAR_LIMIT=16] -->
+    <add-resource type="string" name="create_action"/>
+    <string name="create_action">"အသစ် ဖန်တီးရန်"</string>
+
+    <!-- Message informing user when a list that would contain quick responses
+            is empty [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="quick_responses_empty_view"/>
+    <string name="quick_responses_empty_view">"အမြန် တုံ့ပြန်မှုများ မရှိ"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="account_settings_action"/>
+    <string name="account_settings_action">"အကောင့် ဆက်တင်များ"</string>
+    <!-- The next set of strings are used in local display and may be localized. -->
+    <!-- In the UI, the inbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_inbox"/>
+    <string name="mailbox_name_display_inbox">"ဝင်စာ"</string>
+    <!-- In the UI, the outbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_outbox"/>
+    <string name="mailbox_name_display_outbox">"ထွက်စာ"</string>
+    <!-- In the UI, the drafts will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_drafts"/>
+    <string name="mailbox_name_display_drafts">"မူကြမ်းများ"</string>
+    <!-- In the UI, the trash will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_trash"/>
+    <string name="mailbox_name_display_trash">"အမှိုက်ပုံး"</string>
+    <!-- In the UI, the sent will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_sent"/>
+    <string name="mailbox_name_display_sent">"ပို့ပြီး"</string>
+    <!-- In the UI, the junk will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_junk"/>
+    <string name="mailbox_name_display_junk">"အမှိုက်"</string>
+    <!-- In the UI, the starred will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_starred"/>
+    <string name="mailbox_name_display_starred">"စတားပါ"</string>
+    <!-- In the UI, the unread will be displayed with this name [CHAR LIMIT=15] -->
+    <add-resource type="string" name="mailbox_name_display_unread"/>
+    <string name="mailbox_name_display_unread">"မဖတ်ရသေး"</string>
+
+    <!-- Title of debug screen -->
+    <add-resource type="string" name="debug_title"/>
+    <string name="debug_title">"ဒီဘာဂ်"</string>
+
+
+    <!-- Label shown in the account selector to select "Combined view", which contains
+         Combined Inbox, Combined Outbox, etc. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mailbox_list_account_selector_combined_view"/>
+    <string name="mailbox_list_account_selector_combined_view">"ပေါင်းစပ် မြင်ကွင်း"</string>
+
+    <!-- Header for forwarded original messages -->
+    <add-resource type="string" name="message_compose_fwd_header_fmt"/>
+    <string name="message_compose_fwd_header_fmt">"\n\n-------- မူရင်း စာ --------\nအကြောင်းအရာ- <xliff:g id="SUBJECT">%1$s</xliff:g>\nမှ -<xliff:g id="SENDER">%2$s</xliff:g>\nသို့-<xliff:g id="TO">%3$s</xliff:g>\nCC: <xliff:g id="CC_0">%4$s</xliff:g>\n\n"</string>
+    <!-- Title for dialog containing list of quick responses that user may insert
+            into message body. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_list_title"/>
+    <string name="message_compose_insert_quick_response_list_title">"အမြန် တုံ့ပြန်ချက် ထည့်သွင်း"</string>
+    <!-- Menu item for inserting quick responses into email compose activity. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_menu_title"/>
+    <string name="message_compose_insert_quick_response_menu_title">"အမြန် တုံ့ပြန်ချက် ထည့်သွင်း"</string>
+    <!-- Toast upon using "send" when one or more attachments will need to be background loaded
+      [CHAR LIMIT=none]-->
+    <add-resource type="string" name="message_view_attachment_background_load"/>
+    <string name="message_view_attachment_background_load">"မပို့မီ သင်၏ ထပ်ဆင့်ပို့စာ ထဲက နောက် ပူးတွဲမှု တစ်ခု သို့မဟုတ် ပိုများသည်ကို ဒေါင်းလုဒ် လုပ်မည်။"</string>
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+         data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"စာကို ကုဒ်ဖွင့်နေစဉ် အမှားရှိခဲ့သည်။"</string>
+
+    <!-- Notification ticker when a forwarded attachment couldn't be sent [CHAR LIMIT=none] -->
+    <add-resource type="string" name="forward_download_failed_ticker"/>
+    <string name="forward_download_failed_ticker">"ပူးတွဲမှု တစ်ခု သို့မဟုတ် ပိုများပြီး တစ်ဆင့် ပို့မပေးနိုင်ခဲ့ပါ။"</string>
+    <!-- Notification title when a forwarded attachment couldn't be sent [CHAR LIMIT=30]-->
+    <add-resource type="string" name="forward_download_failed_title"/>
+    <string name="forward_download_failed_title">"ပူးတွဲမှုကို တစ်ဆင့် မပို့ခဲ့"</string>
+
+    <!-- Notification ticker when email account authentication fails [CHAR LIMIT=none] -->
+    <add-resource type="string" name="login_failed_ticker"/>
+    <string name="login_failed_ticker">"<xliff:g id="ACCOUNT_NAME">%s</xliff:g> လက်မှတ်ထိုး၀င်မှု မအောင်မြင်"</string>
+    <!-- Notification title when email account authentication fails [CHAR LIMIT=30]-->
+    <add-resource type="string" name="login_failed_title"/>
+    <string name="login_failed_title">"လက်မှတ်ထိုး မ၀င်နိုင်ခဲ့ပါ"</string>
+
+    <!-- Title of screen when setting up new email account [CHAR LIMIT=45] -->
+    <add-resource type="string" name="account_setup_basics_title"/>
+    <string name="account_setup_basics_title">"အကောင့် စဖွင့်သတ်မှတ်မှု"</string>
+    <!-- Title of screen when trying to get oauth authentication -->
+    <add-resource type="string" name="oauth_authentication_title"/>
+    <string name="oauth_authentication_title">"ခွင့်ပြုချက် တောင်းဆိုနေ"</string>
+    <!-- Title of screen to choose with authentication to use -->
+    <add-resource type="string" name="sign_in_title"/>
+    <string name="sign_in_title">"လက်မှတ်ထိုး ၀င်ရန်"</string>
+
+    <!-- Warning if there is a problem authenticating with oauth -->
+    <add-resource type="string" name="oauth_error_description"/>
+    <string name="oauth_error_description">"အထောက်အထား မစိစစ်နိုင်"</string>
+    <!-- Warning label displayed when the email address or password are incorrect -->
+    <add-resource type="string" name="password_warning_label"/>
+    <string name="password_warning_label">"အီးမေးလ် လိပ်စာ သို့မဟုတ် စကားဝှက် မမှန်ပါ"</string>
+    <!-- Label displayed to confirm what email address we are trying to validate -->
+    <add-resource type="string" name="email_confirmation_label"/>
+    <string name="email_confirmation_label">"အီးမေးလ် လိပ်စာ:"</string>
+    <!-- Headline of screen when setting up new email account (large text over divider)
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_basics_headline"/>
+    <string name="account_setup_basics_headline">"အီးမေးလ် အကောင့်"</string>
+    <!-- On "Set up email" screen, enthusiastic welcome message. -->
+    <add-resource type="string" name="accounts_welcome"/>
+    <string name="accounts_welcome">"သင်သည် သင်၏ အကောင့်ကို အဆင့်အနည်းငယ်မျှဖြင့် စသတ်မှတ်နိုင်သည်။"</string>
+    <!-- On "Set up email" screen, hint for account email address text field -->
+    <add-resource type="string" name="account_setup_basics_email_label"/>
+    <string name="account_setup_basics_email_label">"အီးမေး လိပ်စာ"</string>
+
+    <!-- Label between OAuth and password authentication, indicating the user must do one or the other [CHAR LIMIT=40] -->
+    <add-resource type="string" name="or_label"/>
+    <string name="or_label">"သို့မဟုတ်"</string>
+    <!-- Label for signing in with Google using OAuth -->
+    <add-resource type="string" name="sign_in_with_google"/>
+    <string name="sign_in_with_google">"Google ဖြင့် လက်မှတ် ထိုးဝင်ပါ"</string>
+    <!-- On "Set up email" screen, hint for account email password text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_basics_password_label"/>
+    <string name="account_setup_basics_password_label">"စကားဝှက်"</string>
+    <!-- hint for account email password text field -->
+    <add-resource type="string" name="password_hint"/>
+    <string name="password_hint">"စကားဝှက်"</string>
+    <!--  On the "Setup up email" screen, label indicating what service we are signed in with [CHAR LIMIT=40] -->
+    <add-resource type="string" name="signed_in_with_service_label"/>
+    <string name="signed_in_with_service_label">"%s ဖြင့် လက်မှတ်ထိုး ၀င်ခဲ့"</string>
+    <!-- Label for the authentication section, should be uppercase where applicable [CHAR LIMIT=20] -->
+    <add-resource type="string" name="authentication_label"/>
+    <string name="authentication_label">"အထောက်အထားစိစစ်မှု"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_authentication_label"/>
+    <string name="add_authentication_label">"အထောက်အထား စိစစ်မှုကို ထည့်ရန်"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="clear_authentication_label"/>
+    <string name="clear_authentication_label">"အထောက်အထားစိစစ်မှုကို ရှင်းရန်"</string>
+    <!-- Button name on "Set up email" screen, with action underlined using html [CHAR LIMIT=20] -->
+    <add-resource type="string" name="account_setup_basics_manual_setup_action"/>
+    <string name="account_setup_basics_manual_setup_action">"လက်ဖြင့် သတ်မှတ်ရန်"</string>
+    <!-- Toast when we can't build a URI from the given email & password -->
+    <!-- Note, the error message in the toast is purposefully vague, because I *don't* know
+        exactly what's wrong. -->
+    <add-resource type="string" name="account_setup_username_password_toast"/>
+    <string name="account_setup_username_password_toast">"မှန်သော အီးမေးလ် လိပ်စာ နှင့် စကားဝှက်ကို ရိုက်ထည့်ပါ။"</string>
+    <!-- Title of dialog shown when a duplicate account is created -->
+    <add-resource type="string" name="account_duplicate_dlg_title"/>
+    <string name="account_duplicate_dlg_title">"အကောင့်ကို ပွားယူရန်"</string>
+    <!-- Message of dialog shown when a duplicate account is created.  The display name of
+         the duplicate account is displayed. -->
+    <add-resource type="string" name="account_duplicate_dlg_message_fmt"/>
+    <string name="account_duplicate_dlg_message_fmt">"သင်သည် \"<xliff:g id="DUPLICATE">%s</xliff:g>\" အကောင့်အတွက် ဤ သုံးစွဲသူအမည်ကို အသုံးပြုနေပြီ ဖြစ်သည်။"</string>
+
+    <!-- On check-settings screen, this is the initially-displayed message. -->
+    <add-resource type="string" name="account_setup_check_settings_retr_info_msg"/>
+    <string name="account_setup_check_settings_retr_info_msg">"အကောင့် အချက်အလက်များကို ထုတ်ယူနေသည်\u2026"</string>
+    <!-- Appears on screen while system is checking incoming server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_incoming_msg"/>
+    <string name="account_setup_check_settings_check_incoming_msg">"ဆာဗာ ဆက်တင်များ၏ မှန်ကန်မှုကို စိစစ်နေ\u2026"</string>
+    <!-- Appears on screen while system is checking outgoing server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_outgoing_msg"/>
+    <string name="account_setup_check_settings_check_outgoing_msg">"smtp ဆက်တင်များကို စိစစ်နေ\u2026"</string>
+        <!-- Appears on screen while system is creating the account -->
+    <add-resource type="string" name="account_setup_creating_account_msg"/>
+    <string name="account_setup_creating_account_msg">"အကောင့် ဖန်တီးနေ\u2026"</string>
+
+    <!-- Headline text that appears on "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_headline"/>
+    <string name="account_setup_ab_headline">"အကောင့် ပုံစံကို အတည်ပြုရန်"</string>
+    <!-- Explanatory text that appears on the "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_instructions_format"/>
+    <string name="account_setup_ab_instructions_format">"သင်သည် <xliff:g id="EMAIL">%1$s</xliff:g> က <xliff:g id="USERPROTOCOL">%2$s</xliff:g> ကို သုံးသည့်ဟု ညွှန်ပြခဲ့သည်၊ သို့သော် အကောင့်သည် <xliff:g id="PROVIDERPROTOCOL">%3$s</xliff:g>ကို သုံးနိုင်သည်"</string>
+
+    <!-- Text that appears on "Set up email" screen after successfully setting up an account
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_names_headline"/>
+    <string name="account_setup_names_headline">"သင့်အကောင့်ကို စသတ်မှတ်မှု ပြီးသွားလို့ အီးမေးလ် လာနေပြီ!"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_account_name_label"/>
+    <string name="account_setup_names_account_name_label">"ဤအကောင့်ကို အမည်ပေးပါ (လိုချင်မှ လုပ်ရန်)"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_user_name_label"/>
+    <string name="account_setup_names_user_name_label">"သင်၏ အမည် (ထွက်စာ အပေါ်မှာ ပြပေးသည်)"</string>
+
+    <!-- Headline for the the account type selector (IMAP or POP3 or EAS) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_account_type_headline"/>
+    <string name="account_setup_account_type_headline">"အကောင့် ပုံစံ"</string>
+    <!-- "Add new email account" screen, text that appears on screen -->
+    <add-resource type="string" name="account_setup_account_type_instructions"/>
+    <string name="account_setup_account_type_instructions">"ဒါက ဘယ်လို အကောင့် အမျိုးအစားလဲ?"</string>
+
+    <!-- "Incoming server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_incoming_headline"/>
+    <string name="account_setup_incoming_headline">"အဝင် ဆာဗာ ဆက်တင်များ"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_username_label"/>
+    <string name="account_setup_incoming_username_label">"သုံးစွဲသူအမည်"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_password_label"/>
+    <string name="account_setup_incoming_password_label">"စကားဝှက်"</string>
+    <!-- "Incoming server settings" screen, label for text field -->
+    <add-resource type="string" name="account_setup_password_subheading"/>
+    <string name="account_setup_password_subheading">"စကားဝှက်"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_server_label"/>
+    <string name="account_setup_incoming_server_label">"ဆာဗာ"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_port_label"/>
+    <string name="account_setup_incoming_port_label">"ပို့တ်"</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_security_label"/>
+    <string name="account_setup_incoming_security_label">"လုံခြုံမှု ပုံစံ"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an unencrypted session -->
+    <add-resource type="string" name="account_setup_incoming_security_none_label"/>
+    <string name="account_setup_incoming_security_none_label">"နတ္တိ"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_ssl_trust_certificates_label">"SSL/TLS (လက်မှတ်များ အားလုံး လက်ခံ)"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, including SSL certificate
+        checks -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_label"/>
+    <string name="account_setup_incoming_security_ssl_label">SSL/TLS</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session using the selected
+        port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_tls_trust_certificates_label">"STARTTLS (လက်မှတ်များ အားလုံး လက်ခံ)"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session on the selected
+        port, including SSL certificate checks -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_label"/>
+    <string name="account_setup_incoming_security_tls_label">STARTTLS</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_label"/>
+    <string name="account_setup_incoming_delete_policy_label">"အီးမေးလ်ကို ဆာဗာမှ ဖျက်ရန်"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_never_label"/>
+    <string name="account_setup_incoming_delete_policy_never_label">"မည်သည့်အခါမှ"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_delete_label"/>
+    <string name="account_setup_incoming_delete_policy_delete_label">"ကျွန်ုပ်က ဝင်စာမှ ဖျက်လျှင်"</string>
+    <!-- "Incoming server settings" screen, label for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_label"/>
+    <string name="account_setup_incoming_imap_path_prefix_label">"IMAPလမ်းကြောင်း၏ ရှေ့ဆက်ပုဒ်"</string>
+    <!-- "Incoming server settings" screen, hint for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_hint"/>
+    <string name="account_setup_incoming_imap_path_prefix_hint">"&amp;lt;လိုချင်မှ ရွေးရန်&amp;gt;"</string>
+
+    <!-- "Outgoing server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_outgoing_headline"/>
+    <string name="account_setup_outgoing_headline">"အထွက် ဆာဗာ ဆက်တင်များ"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_smtp_server_label"/>
+    <string name="account_setup_outgoing_smtp_server_label">"SMTP ဆာဗာ"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_port_label"/>
+    <string name="account_setup_outgoing_port_label">"ပို့တ်"</string>
+    <!-- On "Outgoing server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_security_label"/>
+    <string name="account_setup_outgoing_security_label">"လုံခြုံမှု ပုံစံ"</string>
+    <!-- On "Outgoing server settings" screen, label for check box, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_require_login_label"/>
+    <string name="account_setup_outgoing_require_login_label">"လက်မှတ်ထိုး၀င်ရန် လိုအပ်"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable-->
+    <add-resource type="string" name="account_setup_outgoing_username_label"/>
+    <string name="account_setup_outgoing_username_label">"သုံးစွဲသူအမည်"</string>
+
+    <!-- On "Exchange" setup screen, a heading title for the current client certificate, should be uppercase where applicable [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_certificate_title"/>
+    <string name="account_setup_exchange_certificate_title">"သုံးစွဲသူ လက်မှတ်"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_select_certificate"/>
+    <string name="account_setup_exchange_select_certificate">"ရွေးရန်"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_use_certificate"/>
+    <string name="account_setup_exchange_use_certificate">"သုံးစွဲသူ လက်မှတ်ကို အသုံးပြုပါ"</string>
+    <!-- On "Exchange" setup screen, a button label to remove the currently used client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_remove_certificate"/>
+    <string name="account_setup_exchange_remove_certificate">"ဖယ်ရှားရန်"</string>
+    <!-- On "Exchange" setup screen, placeholder text to indicate no client
+         certificate is used [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_no_certificate"/>
+    <string name="account_setup_exchange_no_certificate">"နတ္တိ"</string>
+    <!-- On "Exchange" setup screen, the exchange device-id label, should be uppercase where applicable [CHAR LIMIT=30] -->
+    <add-resource type="string" name="account_setup_exchange_device_id_label"/>
+    <string name="account_setup_exchange_device_id_label">"မိုဘိုင်း ကိရိယာ ID"</string>
+
+    <!-- In Account setup options screen, Activity headline [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_headline"/>
+    <string name="account_setup_options_headline">"အကောင့်ဆိုင်ရာ ရွေးစရာများ"</string>
+    <!-- In Account setup options screen, label for email check frequency selector -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_label"/>
+    <string name="account_setup_options_mail_check_frequency_label">"စင့်က် ကြိမ်နှုန်း:"</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_never"/>
+    <string name="account_setup_options_mail_check_frequency_never">"မည်သည့်အခါမှ"</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_push"/>
+    <string name="account_setup_options_mail_check_frequency_push">"အလိုအလျောက် (တွန်းပါ)"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_5min"/>
+    <string name="account_setup_options_mail_check_frequency_5min">"၅ မိနစ် တိုင်း"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_10min"/>
+    <string name="account_setup_options_mail_check_frequency_10min">"၁၀ မိနစ်တိုင်း"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_15min"/>
+    <string name="account_setup_options_mail_check_frequency_15min">"၁၅ မိနစ်တိုင်း"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_30min"/>
+    <string name="account_setup_options_mail_check_frequency_30min">"၃၀ မိနစ်တိုင်း"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_1hour"/>
+    <string name="account_setup_options_mail_check_frequency_1hour">"နာရီ တိုင်း"</string>
+    <!-- In Account setup options & Account Settings screens, check box for new-mail notification -->
+    <add-resource type="string" name="account_setup_options_notify_label"/>
+    <string name="account_setup_options_notify_label">"အီးမေးလ် ရောက်လျှင် ကျွန်ုပ်ကို အသိပေးပါ"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_contacts_label"/>
+    <string name="account_setup_options_sync_contacts_label">"ဤအကောင့်မှ အဆက်အသွယ်များကို စင့်က်လုပ်ရန်"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_calendar_label"/>
+    <string name="account_setup_options_sync_calendar_label">"ဤအကောင့်မှ ပြက္ခဒိန်ကို စင့်က် လုပ်ရန်"</string>
+    <!-- In Account setup options screen, check box to sync email -->
+    <add-resource type="string" name="account_setup_options_sync_email_label"/>
+    <string name="account_setup_options_sync_email_label">"ဤ အကောင့်မှ အီးမေးလ်ကို စင့်က် လုပ်ပါ"</string>
+    <!-- In Account setup options screen, check box to auto-download attachments  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_background_attachments_label"/>
+    <string name="account_setup_options_background_attachments_label">"ကြိုးမဲ့သို့ ချိတ်ဆက်သောအခါ ပူးတွဲမှုများကို အလိုအလျောက် ဒေါင်းလုဒ် လုပ်ရန်"</string>
+    <!-- Dialog title when "setup" could not finish -->
+    <add-resource type="string" name="account_setup_failed_dlg_title"/>
+    <string name="account_setup_failed_dlg_title">"မပြီးဆုံးနိုင်ခဲ့ပါ"</string>
+    <!-- In Account setup options screen, label for email lookback selector -->
+    <add-resource type="string" name="account_setup_options_mail_window_label"/>
+    <string name="account_setup_options_mail_window_label">"...ထံမှ အီးမေးလ်ကို စင့်က် လုပ်"</string>
+    <!-- In account setup options & account settings screens (exchange), sync window length; this
+        implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
+    <add-resource type="string" name="account_setup_options_mail_window_auto"/>
+    <string name="account_setup_options_mail_window_auto">"အလိုအလျောက်"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1day"/>
+    <string name="account_setup_options_mail_window_1day">"နောက်ဆုံးနေ့"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_3days"/>
+    <string name="account_setup_options_mail_window_3days">"လွန်ခဲ့သော သုံးရက်"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1week"/>
+    <string name="account_setup_options_mail_window_1week">"ပြီးခဲ့သော အပတ်"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_2weeks"/>
+    <string name="account_setup_options_mail_window_2weeks">"လွန်ခဲ့သော နှစ်ပတ်"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1month"/>
+    <string name="account_setup_options_mail_window_1month">"ပြီးခဲ့သော လ"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_all"/>
+    <string name="account_setup_options_mail_window_all">"အားလုံး"</string>
+    <!-- Per-mailbox sync window setting.  This means "use the account's sync window setting" [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_options_mail_window_default"/>
+    <string name="account_setup_options_mail_window_default">"ပုံသေ အကောင့်ကို သုံးရန်"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Username or password incorrect -->
+    <add-resource type="string" name="account_setup_failed_dlg_auth_message"/>
+    <string name="account_setup_failed_dlg_auth_message">"သုံးစွဲသူအမည် သို့မဟုတ် စကားဝှက်က မမှန်ပါ။"</string>
+
+    <!-- Account setup autodiscover auth failure dialog title. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_title"/>
+    <string name="account_setup_autodiscover_dlg_authfail_title">"အကောင့် စသတ်မှတ်မှုထဲ ပြဿနာရှိနေ"</string>
+    <!-- Account setup autodiscover auth failure dialog message. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_message"/>
+    <string name="account_setup_autodiscover_dlg_authfail_message">"သုံးစွဲသူအမည်၊ စကားဝှက် နှင့် အကောင့် ဆက်တင်များ မှန်ကန်ကြောင်း အတည်ပြုပါ။"</string>
+
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message"/>
+    <string name="account_setup_failed_dlg_certificate_message">"ဆာဗာသို့ လုံခြုံစွာ မချိတ်ဆက်နိုင်ပါ။"</string>
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message_fmt"/>
+    <string name="account_setup_failed_dlg_certificate_message_fmt">"ဆာဗာသို့ လုံခြုံစွာ မချိတ်ဆက်နိုင်ပါ။ \n<xliff:g id="ERROR">%s</xliff:g>"</string>
+    <!-- An error message presented to the user when the server requires a
+         client certificate to connect [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_required"/>
+    <string name="account_setup_failed_certificate_required">"သုံးစွဲသူသည် လက်မှတ် လိုအပ်သည်။ သင်သည် သုံးစွဲသူသည် လက်မှတ်ဖြင့် ဆာဗာနှင့် ချိတ်ဆက် လိုပါသလား?"</string>
+    <!-- An error message presented to the user when the certificate they
+         specified for connecting to a server is inaccessible [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_inaccessible"/>
+    <string name="account_setup_failed_certificate_inaccessible">"လက်မှတ် တရားမ၀င် သို့မဟုတ် လက်လှမ်းမမှီပါ။"</string>
+
+    <!-- Dialog text for ambiguous setup failure; server error/bad credentials [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_check_credentials_message"/>
+    <string name="account_setup_failed_check_credentials_message">"ဆာဗာက အမှားတစ်ခုဖြင့် တုံ့ပြန်ခဲ့သည်။ သင့် သုံးစွဲသူအမည် နှင့် စကားဝှက်ကို စစ်ဆေးပြီး နောက်မှာ ထပ်ကြိုးစားပါ။"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message"/>
+    <string name="account_setup_failed_dlg_server_message">"ဆာဗာသို့ မချိတ်ဆက်နိုင်ပါ။"</string>
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server\n(Connection timed out) -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message_fmt"/>
+    <string name="account_setup_failed_dlg_server_message_fmt">"ဆာဗာနှင့် မချိတ်ဆက်နိုင်ပါ။ \n(<xliff:g id="ERROR">%s</xliff:g>)"</string>
+
+    <!-- Additional diagnostic text when TLS was required but the server doesn't support it -->
+    <add-resource type="string" name="account_setup_failed_tls_required"/>
+    <string name="account_setup_failed_tls_required">"TLS လိုအပ်သော်လည်း ဆာဗာက ပံ့ပိုးမပေးပါ။"</string>
+    <!-- Additional diagnostic text when server does not support any of our authentication methods -->
+    <add-resource type="string" name="account_setup_failed_auth_required"/>
+    <string name="account_setup_failed_auth_required">"အထောက်အထား စိစစ်ရေး နည်းလမ်းများကို ဆာဗာမှ မပံ့ပိုးပါ။"</string>
+    <!-- Additional diagnostic text when server connection failed due to security error -->
+    <add-resource type="string" name="account_setup_failed_security"/>
+    <string name="account_setup_failed_security">"လုံခြုံရေး အမှားကြောင့် ဆာဗာသို့ ချိတ်ဆက်မှုကို မဖွင့်နိုင်ခဲ့ပါ။"</string>
+    <!-- Additional diagnostic text when server connection failed due to io error (connection) -->
+    <add-resource type="string" name="account_setup_failed_ioerror"/>
+    <string name="account_setup_failed_ioerror">"ဆာဗာသို့ ချိတ်ဆက်မှုကို မဖွင့်နိုင်ခဲ့ပါ။"</string>
+    <!-- Additional diagnostic text when server connection failed due to our inability to support a
+         required EAS protocol version [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_protocol_unsupported"/>
+    <string name="account_setup_failed_protocol_unsupported">"သင်က မမှန်သည့် ဆာဗာ လိပ်စာ ရိုက်သွင်းခဲ့သည် သို့မဟုတ် ဆာဗာ လိုအပ်သည့် ပရိုတိုကော ဗားရှင်းကို အီးမေးလ်မှ ပံ့ပိုးမပေးပါ။"</string>
+    <!-- Additional diagnostic text when server access was denied; the user should contact the
+         administrator of the server for more information [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_access_denied"/>
+    <string name="account_setup_failed_access_denied">"ဤဆာဗာနှင့် စင့်က်လုပ်ရန် ခွင့်ပြုချက် သင့်ထံတွင် မရှိပါ။ ပိုပြီး သိရှိရန် သင့်ဆာဗာ၏ အုပ်ချုပ်ရေးမှူးကို ဆက်သွယ်ပါ။"</string>
+
+    <!-- Dialog title when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing -->
+    <add-resource type="string" name="account_setup_security_required_title"/>
+    <string name="account_setup_security_required_title">"အဝေးမှ လုံခြုံရေး အုပ်ချုပ်မှု"</string>
+    <!-- Additional diagnostic text when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing.
+         [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_security_policies_required_fmt"/>
+    <string name="account_setup_security_policies_required_fmt">"ဆာဗာ <xliff:g id="SERVER">%s</xliff:g> က သင့် အန်ဒရွိုက် ကိရိယာ၏ အချို့သော လုံခြုံရေး အင်္ဂါရပ်များကို ပြင်ပမှ ထိန်းချုပ်မှာကို သင့် အနေနှင့် ခွင့်ပြုရန် လိုအပ်သည်။ ဤအကောင့် ဆက်တင်ကို ပြီးအောင် သင် လုပ်လိုပါသလား?"</string>
+    <!-- Additional diagnostic text when validation failed due to required provisioning not
+         being supported [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_security_policies_unsupported"/>
+    <string name="account_setup_failed_security_policies_unsupported">"ဤ ဆာဗာက သင့် အန်ဒရွိုက်ကိရိယာမှ ပံ့ပိုးမပေးသည့် <xliff:g id="ERROR">%s</xliff:g> အပါအဝင် လုံခြုံရေး အင်္ဂါရပ်များ လိုအပ်သည်။"</string>
+    <!-- Warning given to users when they request disabling device administration (i.e. that their
+         administered accounts will be deleted) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_admin_warning"/>
+    <string name="disable_admin_warning">"သတိပေးချက်: အီးမေးလ် အက်ပ်၏ သင့်ကိရိယာအား စီမံအုပ်ချုပ် ပိုင်ခွင့် သုံးနေခြင်းကို ပြန်ပိတ်လိုက်ခြင်းက လုပ်ပိုင်ခွင့်ကို လိုအပ်ကြသည့် အီးမေးလ် အကောင့်အားလုံးကို၊ ယင်းတိုထဲက အီးမေးလ်၊ အဆက်အသွယ်များ၊ ပြက္ခဒိန် ဖြစ်ရပ်များ နှင့် အခြားဒေတာများကိုပါ ဖျက်ပစ်မည်။"</string>
+
+    <!-- Dialog shown when the account requires some amount of device security provisioning,
+         just before jumping into system settings such as Device Policy grant, PIN/password,
+         or encryption setup.  [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="account_security_dialog_title"/>
+    <string name="account_security_dialog_title">"လုံခြုံရေး မွမ်းမံခြင်း"</string>
+    <!-- Additional diagnostic text when the account requires some amount of device security
+         provisioning, just before jumping into system settings such as Device Policy grant,
+         PIN/password, or encryption setup.  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_dialog_content_fmt"/>
+    <string name="account_security_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g> အတွက် သင်၏လုံခြုံရေး ဆက်တင်များကို မွမ်းမံရန် လိုအပ်သည်။"</string>
+
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_unsupported_ticker_fmt"/>
+    <string name="security_unsupported_ticker_fmt">"လုံခြုံရေးလိုအပ်ချက်များကြောင့် အကောင့် \"<xliff:g id="ACCOUNT">%s</xliff:g>\" ကို စင့်က် လုပ် မရနိုင်။"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_needed_ticker_fmt"/>
+    <string name="security_needed_ticker_fmt">"အကောင့် \"<xliff:g id="ACCOUNT">%s</xliff:g>\" အတွက် လုံခြုံရေး ဆက်တင်များကို မွမ်းမံပေးရန် လိုအပ်သည်။"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_changed_ticker_fmt"/>
+    <string name="security_changed_ticker_fmt">"အကောင့် \"<xliff:g id="ACCOUNT">%s</xliff:g>\" သည် ၎င်း၏ လုံခြုံရေး ဆက်တင်များကို ပြောင်းခဲ့သည်၊ သုံးစွဲသူဖက်မှ ဘာမှ လုပ်ရန် မလိုအပ်ပါ။"</string>
+    <!-- Notification content title when device security required [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_update_title"/>
+    <string name="security_notification_content_update_title">"လုံခြုံရေး မွမ်းမံရန် လိုအပ်"</string>
+    <!-- Notification content title when device security policies have changed [CHAR_LIMIT=36] -->
+    <add-resource type="string" name="security_notification_content_change_title"/>
+    <string name="security_notification_content_change_title">"လုံခြုံရေး မူဝါဒများ ပြောင်းလဲခဲ့သည်"</string>
+    <!-- Notification content title when device security policies cannot be met [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_unsupported_title"/>
+    <string name="security_notification_content_unsupported_title">"လုံခြုံရေး မူဝါဒများကို မပြည့်မီနိုင်ပါ"</string>
+    <!-- Title of the activity that dispatches changes to device security.  Not normally seen. -->
+    <add-resource type="string" name="account_security_title"/>
+    <string name="account_security_title">"ကိရိယာ လုံခြုံရေး"</string>
+    <!-- Additional diagnostic text when the email app asserts control of the phone.
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_policy_explanation_fmt"/>
+    <string name="account_security_policy_explanation_fmt">"ဆာဗာ <xliff:g id="SERVER">%s</xliff:g> ကို သင့်အန်ဒရွိုက် ကိရိယာ၏ လုံခြုံရေး အင်္ဂါရပ် အချို့ကို အဝေးမှ ထိန်းချုပ်ခွင့် ပြုရန် လိုအပ်သည်။"</string>
+
+    <!-- "Setup could not finish" dialog action button -->
+    <add-resource type="string" name="account_setup_failed_dlg_edit_details_action"/>
+    <string name="account_setup_failed_dlg_edit_details_action">"အသေးစိတ်များကို တည်းဖြတ်ရန်"</string>
+
+    <!-- Notification ticker when device password is getting ready to expire [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expire_warning_ticker_fmt"/>
+    <string name="password_expire_warning_ticker_fmt">"\"<xliff:g id="ACCOUNT">%s</xliff:g>\" အတွက် သင့်မျက်နှာပြင် သော့ချ PIN သို့မဟုတ် စကားဝှက်ကို ပြောင်းလဲရန် လိုသည်။"</string>
+    <!-- Notification content title when device password is getting ready to expire
+            [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="password_expire_warning_content_title"/>
+    <string name="password_expire_warning_content_title">"စခရင် သော့စကားဝှက် ကုန်ဆုံး"</string>
+
+    <!-- Notification ticker when device password has expired [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expired_ticker"/>
+    <string name="password_expired_ticker">"သင်၏ မျက်နှာပြင် သော့ချမှု PIN သို့မဟုတ် စကားဝှက် သက်တမ်း ကုန်သွားပြီ။"</string>
+    <!-- Notification content title when device password has expired [CHAR_LIMIT=28] -->
+    <add-resource type="string" name="password_expired_content_title"/>
+    <string name="password_expired_content_title">"စခရင်သော့စကားဝှက်သက်တမ်းကုန်"</string>
+
+    <!-- Dialog title if device pin/password is going to expire soon. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expire_warning_dialog_title"/>
+    <string name="password_expire_warning_dialog_title">"မျက်နှာပြင် သော့ချ စကားဝှက် ကုန်ဆုံးမည်"</string>
+    <!-- Dialog content device pin/password is going to expire soon. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expire_warning_dialog_content_fmt"/>
+    <string name="password_expire_warning_dialog_content_fmt">"သင်သည် သင်၏ မျက်နှာပြင် သော့ချမှု PIN သို့မဟုတ် စကားှဝှက်ကို မကြာမီ ပြောင်းရန် လိုသည်၊ သို့မဟုတ်ပါက <xliff:g id="ACCOUNT">%s</xliff:g> အတွက် ဒေတာ ဖျက်ခံရမည်။ ယခု ၎င်းကို ပြောင်းမလား?"</string>
+
+    <!-- Dialog title if device pin/password has already expired. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expired_dialog_title"/>
+    <string name="password_expired_dialog_title">"မျက်နှာပြင် သော့စကားဝှက် သက်တမ်း ကုန်ပြီ"</string>
+    <!-- Dialog content device pin/password has already expired. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expired_dialog_content_fmt"/>
+    <string name="password_expired_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g> အတွက် ဒေတာကို သင့်ကိရိယာထဲမှ ဖျက်နေသည်။ သင်သည် သင်၏ မျက်နှာပြင် သော့ချမှု PIN သို့မဟုတ် စကားဝှက်ကို ပြောင်းလဲခြင်းဖြင့် ၎င်းကို ပြန်ဖေါ်ထုတ်နိုင်သည်။ သင်သည် ၎င်းကို ယခု ပြောင်းလဲ လိုပါသလား?"</string>
+
+    <!-- On AccountSettingsXL, dialog text if you try to exit in/out/eas fragment (server settings)
+         without checking/saving [CHAR LIMIT=none]-->
+    <add-resource type="string" name="account_settings_exit_server_settings"/>
+    <string name="account_settings_exit_server_settings">"မသိမ်းဆည်းခဲ့သည့် အပြောင်းအလဲများကို စွန့်ပစ်မလား?"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <!-- Title of account preference for downloading attachments in background [CHAR LIMIT=32] -->
+    <add-resource type="string" name="account_settings_background_attachments_label"/>
+    <string name="account_settings_background_attachments_label">"ပူးတွဲမှုများ ဒေါင်းလုဒ် လုပ်ရန်"</string>
+    <!-- Summary of account preference for downloading attachments in background [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_background_attachments_summary"/>
+    <string name="account_settings_background_attachments_summary">"မကြာမီ စာများ၏ ပူးတွဲမှုများကို ကြိုးမဲ့မှ အော်တိုဒေါင်းလုဒ်ရန်"</string>
+    <add-resource type="string" name="account_settings_notify_label"/>
+    <string name="account_settings_notify_label">"အီးမေးလ် အကြောင်းကြားချက်များ"</string>
+    <!-- On Settings screen, summary line when called via AccountManager for Exchange accounts
+        [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_summary"/>
+    <string name="account_settings_summary">"စင့်က် ကြိမ်နှုန်း၊ အကြောင်းကြားချက်များ၊ စသဖြင့်။"</string>
+    <!-- On Settings screen, setting summary text -->
+    <add-resource type="string" name="account_settings_notify_summary"/>
+    <string name="account_settings_notify_summary">"အီးမေးလ် ရောက်ရှိလျှင် အကြောင်းကြားချက် ပို့ရန်"</string>
+    <!-- On Settings screen, setting option name and title of dialog box that opens -->
+    <add-resource type="string" name="account_settings_mail_check_frequency_label"/>
+    <string name="account_settings_mail_check_frequency_label">"စင့်က် ကြိမ်နှုန်း"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_incoming_label"/>
+    <string name="account_settings_incoming_label">"ဝင်စာ ဆက်တင်များ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_incoming_summary"/>
+    <string name="account_settings_incoming_summary">"သုံးစွဲသူအမည်၊ စကားဝှက်၊ နှင့် အခြား ၀င်စာ ဆာဗာ ဆက်တင်များ"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_outgoing_label"/>
+    <string name="account_settings_outgoing_label">"ထွက်စာ ဆက်တင်များ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_outgoing_summary"/>
+    <string name="account_settings_outgoing_summary">"သုံးစွဲသူအမည်၊ စကားဝှက်၊ နှင့် အခြား ထွက်စာ ဆာဗာ ဆက်တင်များ"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_enforced_label"/>
+    <string name="account_settings_enforced_label">"မူဝါဒများ ပြဌာန်းထား"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_enforced_summary"/>
+    <string name="account_settings_enforced_summary">"နတ္တိ"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_unsupported_label"/>
+    <string name="account_settings_unsupported_label">"ပံ့ပိုးမပေးသည့် မူဝါဒများ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_unsupported_summary"/>
+    <string name="account_settings_unsupported_summary">"နတ္တိ"</string>
+    <!-- On Settings screen, label for button that attempts to sync the account -->
+    <add-resource type="string" name="account_settings_retry_label"/>
+    <string name="account_settings_retry_label">"စင့်က် လုပ်ရန် ကြိုးပမ်းမှု"</string>
+    <!-- On Settings screen, summmary for button that attempts to sync an account [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_retry_summary"/>
+    <string name="account_settings_retry_summary">"ဤ အကောင့်ကို စင့်က်လုပ်ရန် ဒီမှာ ထိပါ"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_description_label"/>
+    <string name="account_settings_description_label">"အကောင့် အမည်"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_name_label"/>
+    <string name="account_settings_name_label">"သင်၏ အမည်"</string>
+    <!-- On Settings screen, setting option name. Allows user to modify saved quick responses
+        for insertion in message body. [CHAR_LIMIT=24]-->
+    <add-resource type="string" name="account_settings_edit_quick_responses_label"/>
+    <string name="account_settings_edit_quick_responses_label">"အမြန် တုံ့ပြန်ချက်များ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_edit_quick_responses_summary"/>
+    <string name="account_settings_edit_quick_responses_summary">"အီးမေးလ် ရေးဖွဲ့ရာမှာ သင် မကြာခဏ ထည့်သွင်းသော စာသားကို တည်းဖြတ်"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_notifications"/>
+    <string name="account_settings_notifications">"အကြောင်းကြားချက် ဆက်တင်များ"</string>
+    <!-- On Settings screen, section heading for data usage [CHAR LIMIT=70] -->
+    <add-resource type="string" name="account_settings_data_usage"/>
+    <string name="account_settings_data_usage">"ဒေတာ သုံးစွဲမှု"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_policies"/>
+    <string name="account_settings_policies">"လုံခြုံရေး မူဝါဒများ"</string>
+
+    <add-resource type="string" name="system_folders_title"/>
+    <string name="system_folders_title">"စနစ် ဖိုလ်ဒါများ"</string>
+    <add-resource type="string" name="system_folders_trash_title"/>
+    <string name="system_folders_trash_title">"အမှိုက် ဖိုလ်ဒါ"</string>
+    <add-resource type="string" name="system_folders_trash_summary"/>
+    <string name="system_folders_trash_summary">"သင့်ဆာဗာ၏ အမှိုက်ပုံး ဖိုလ်ဒါကို ရွေးရန်"</string>
+    <add-resource type="string" name="system_folders_trash_dlg"/>
+    <string name="system_folders_trash_dlg">"သင့်ဆာဗာ၏ အမှိုက်ပုံး ဖိုလ်ဒါကို ရွေးရန်"</string>
+    <add-resource type="string" name="system_folders_sent_title"/>
+    <string name="system_folders_sent_title">"ပို့ပြီး အရာများ ဖိုလ်ဒါ"</string>
+    <add-resource type="string" name="system_folders_sent_summary"/>
+    <string name="system_folders_sent_summary">"သင့်ဆာဗာ၏ ပို့ပြီး အရာများ ဖိုလ်ဒါကို ရွေးရန်"</string>
+    <add-resource type="string" name="system_folders_sent_dlg"/>
+    <string name="system_folders_sent_dlg">"သင့်ဆာဗာ၏ ပို့ပြီး အရာများ ဖိုလ်ဒါကို ရွေးရန်"</string>
+
+    <!-- On settings screen, dialog heading informing user to create or edit a quick response -->
+    <add-resource type="string" name="edit_quick_response_dialog"/>
+    <string name="edit_quick_response_dialog">"အမြန် တုံ့ပြန်ချက်"</string>
+    <!-- On settings screen, edit quick response dialog's "save" button -->
+    <add-resource type="string" name="save_action"/>
+    <string name="save_action">"သိမ်းဆည်းရန်"</string>
+
+    <!-- On settings screen, sync contacts check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_contacts_enable"/>
+    <string name="account_settings_sync_contacts_enable">"ဆက်သွယ်များ စင့်က်"</string>
+    <!-- On settings screen, sync contacts summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_contacts_summary"/>
+    <string name="account_settings_sync_contacts_summary">"ဤအကောင့် အဆက်အသွယ်များ စင့်က်လုပ်"</string>
+    <!-- On settings screen, sync calendar check box label [CHAR LIMIT=20]-->
+        <add-resource type="string" name="account_settings_sync_calendar_enable"/>
+    <string name="account_settings_sync_calendar_enable">"ပြက္ခဒိန် စင့်က်လုပ်"</string>
+    <!-- On settings screen, sync calendar summary text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_sync_calendar_summary"/>
+    <string name="account_settings_sync_calendar_summary">"ဤ အကောင့်အတွက် ပြက္ခဒိန် ဖြစ်ရပ်ကို စင့်က်လုပ်ရန်"</string>
+    <!-- On settings screen, sync email check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_email_enable"/>
+    <string name="account_settings_sync_email_enable">"အီးမေးလ် စင့်က်လုပ်"</string>
+    <!-- On settings screen, sync email summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_email_summary"/>
+    <string name="account_settings_sync_email_summary">"ဒီအကောင့် အီးမေးလ်ကို စင့်က်လုပ်ရန်"</string>
+
+    <!-- On Settings screen, vibrate pop-up menu label -->
+    <add-resource type="string" name="label_notification_vibrate_title"/>
+    <string name="label_notification_vibrate_title">"တုန်ခါမှု"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_ringtone"/>
+    <string name="account_settings_ringtone">"သံစဉ်ကို ရွေးချယ်ရန်"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_servers"/>
+    <string name="account_settings_servers">"ဆာဗာ ဆက်တင်များ"</string>
+
+    <!-- Mailbox settings activity title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title"/>
+    <string name="mailbox_settings_activity_title">"စင့်က် ရွေးစရာများ"</string>
+    <!-- Mailbox settings activity title, with the target folder name [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title_with_mailbox"/>
+    <string name="mailbox_settings_activity_title_with_mailbox">"စင့်က် ရွေးစရာများ (<xliff:g id="MAILBOXX_NAME">%s</xliff:g>)"</string>
+    <!-- On mailbox settings screen: Whether to sync this mailbox when the account syncs. -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_label"/>
+    <string name="mailbox_settings_sync_enabled_label">"ဤ ဖိုလ်ဒါကို စင့်က် လုပ်ရန်"</string>
+    <!-- On mailbox settings screen: Explanatory text for what it means to "sync this folder". -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_summary"/>
+    <string name="mailbox_settings_sync_enabled_summary">"ချိတိ်ဆက်ချိန်မှာ စာများကို ဒေါင်းလုဒ် လုပ်မည်"</string>
+    <!-- On mailbox settings screen: Mailbox sync window (the number of days to synchronize email for) setting label [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_mailbox_sync_window_label"/>
+    <string name="mailbox_settings_mailbox_sync_window_label">"နေ့ကြာ စာကို စင့်က် လုပ်ရန်"</string>
+
+    <!-- Message that appears when adding a T-Online account -->
+    <add-resource type="string" name="provider_note_t_online"/>
+    <string name="provider_note_t_online">"ယခု အီးမေးလ် အကောင့်ကို စမသတ်မှတ်မီ T-အွန်လိုင်း ၀က်ဘ် ဆိုဒ်ကို ဝင်ကာ POP3 အီးမေးလ်ကို ရယူရန် စကားဝှက်ကို ဖန်တီးပါ။"</string>
+    <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
+    <add-resource type="string" name="exchange_name_alternate"/>
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+
+    <!-- Message that appears if the AccountManager cannot create the system Account -->
+    <add-resource type="string" name="system_account_create_failed"/>
+    <string name="system_account_create_failed">"အကောင့်ကို မဖန်တီးနိုင်ခဲ့ပါ။ ထပ်စမ်းပါ။"</string>
+
+    <!-- Strings that support the DeviceAdmin / DevicePolicyManager API -->
+    <!-- Name of the DeviceAdmin (seen in settings & in user confirmation screen) -->
+    <add-resource type="string" name="device_admin_label"/>
+    <string name="device_admin_label">"အီးမေးလ်"</string>
+    <!-- Long-form description of the DeviceAdmin (2nd line in settings & in user conf. screen) -->
+    <add-resource type="string" name="device_admin_description"/>
+    <string name="device_admin_description">"ဆာဗာမှ သတ်မှတ်ခဲ့သည့် လုံခြုံရေး မူဝါဒများကို ဖွင့်ပေးသည်"</string>
+
+    <!-- A policy disallowing the user of the device's camera [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_dont_allow_camera"/>
+    <string name="policy_dont_allow_camera">"ကိရိယာ၏ ကင်မရာကို အသုံးပြုမှု ခွင့်မပြု"</string>
+    <!-- A policy requiring a device lock screen password [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_require_password"/>
+    <string name="policy_require_password">"ကိရိယာ၏ စကားဝှက် လိုအပ်"</string>
+    <!-- A policy disallowing the reuse of recent passwords [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_history"/>
+    <string name="policy_password_history">"မကြာခင်က စကားဝှက်များ ပြန်သုံးမှုကို ကန့်သတ်ရန်"</string>
+    <!-- A policy that forces a password to expire after a set period of time [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_expiration"/>
+    <string name="policy_password_expiration">"စကားဝှက် သက်တမ်း ကုန်သွားမှာကို လိုအပ်သည်"</string>
+    <!-- A policy requiring a maximum amount of time the device can sit idle before the lock screen
+        is activated [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_screen_timeout"/>
+    <string name="policy_screen_timeout">"မျက်နှာပြင် သော့ချရန် မလှုပ်ရှားသည့် ကိရိယာ လိုအပ်"</string>
+    <!-- A policy limiting the number of old calendar events synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_calendar_age"/>
+    <string name="policy_calendar_age">"စင့်က် လုပ်ထား ပြက္ခဒိန် ဖြစ်ရပ် အရေအတွက် ကန့်သတ်"</string>
+    <!-- A policy limiting the number of emails synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_email_age"/>
+    <string name="policy_email_age">"စင့်က်လုပ်ပြီး အီးမေးလ် အရေအတွက်ကို ကန့်သတ်ရန်"</string>
+
+    <!-- The four strings below represent "quick responses" which the user can insert into a
+        message being composed with just a couple of taps.  These four responses MUST be defined,
+        but need not include a string (i.e. they are optional).  Further, the responses can be
+        customized as necessary by the translator, in case one or more of these is inappropriate in
+        a particular locale or if there are better options available. -->
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_1"/>
+    <string name="quick_1">"ကျေးဇူးပဲ!"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_2"/>
+    <string name="quick_2">"ကြားရတာ ကျွန်ုပ် အတွက် ကောင်းပါသည်!"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_3"/>
+    <string name="quick_3">"ဤစာကို ကျွနု်ပ် ဖတ်ပြီးနောက် သင့်ထံသို့ ပြန်ကြားမည်။"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_4"/>
+    <string name="quick_4">"ဒါကို ဆွေးနွေးရန် အစည်းအဝေး တစ်ခု စီစဉ်ကြရအောင်။"</string>
+
+    <!-- This is shown when a user responds to a meeting invitation [CHAR LIMIT=none]-->
+    <add-resource type="string" name="confirm_response"/>
+    <string name="confirm_response">"တုံ့ပြန်ချက် ပို့နေ\u2026"</string>
+
+    <!-- Used by AccountManager -->
+    <!-- Account type name as used by AccountManager UI (IMAP is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="imap_name"/>
+    <string name="imap_name">"ကိုယ်ရေး (IMAP)"</string>
+    <!-- Account type name as used by AccountManager UI (POP3 is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pop3_name"/>
+    <string name="pop3_name">"ကိုယ်ရေး (POP3)"</string>
+
+    <!-- Displayed when the user must pick his server's trash folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="trash_folder_selection_title"/>
+    <string name="trash_folder_selection_title">"<xliff:g id="ACCOUNT">%s</xliff:g>တွက် ဆာဗာ အမှိုက် ဖိုလ်ဒါ ရွေး"</string>
+    <!-- Displayed when the user must pick his server's sent items folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="sent_folder_selection_title"/>
+    <string name="sent_folder_selection_title">"<xliff:g id="ACCOUNT">%s</xliff:g>အတွက် ဆာဗာမှ ပို့ချက်များ ဖိုလ်ဒါရွေး"</string>
+    <add-resource type="string" name="account_waiting_for_folders_msg"/>
+    <string name="account_waiting_for_folders_msg">"ဖိုလ်ဒါ စာရင်းကို တင်နေ\u2026"</string>
+
+    <!-- This message indicates no quick responses exist to choose from -->
+    <add-resource type="string" name="no_quick_responses"/>
+    <string name="no_quick_responses">"တစ်ခုမှ မရှိ"</string>
+
+    <!-- Gmail name for redirecting during account setup -->
+    <add-resource type="string" name="gmail_name"/>
+    <string name="gmail_name">Gmail</string>
+
+    <!-- Name for preference entry which leads to the per-folder sync settings activity -->
+    <add-resource type="string" name="folder_sync_settings_pref_title"/>
+    <string name="folder_sync_settings_pref_title">"ဖိုလ်ဒါ စင့်က် ဆက်တင်များ"</string>
+
+    <!-- In Account setup options & Account Settings screens, Email sync size option. -->
+    <add-resource type="string" name="account_settings_sync_size_enable"/>
+    <string name="account_settings_sync_size_enable">"အီးမေးလ် တစ်ခုစီအတွက် ဆင့်ခ် အရွယ်အစားကို သီးခြားသတ်မှတ်ပါ"</string>
+    <add-resource type="string" name="account_settings_sync_size_enable_summary"/>
+    <string name="account_settings_sync_size_enable_summary">"ဒေတာ သိမ်းဆည်းရန်၊ အကောင့်၏ အီးမေးလ် တစ်ခုစီအတွက် ဆင့်ခ် အရွယ်အစားကို သင် သီးခြား သတ်မှတ်နိုင်သည်"</string>
+    <add-resource type="string" name="account_settings_sync_size_label"/>
+    <string name="account_settings_sync_size_label">"ဆင့်ခ် အရွယ်အစားကို ရွေးပါ"</string>
+    <add-resource type="string" name="account_settings_sync_size_category_label"/>
+    <string name="account_settings_sync_size_category_label">"ဆင့်ခ် အရွယ်အစား ဆက်တင်များ"</string>
+
+    <add-resource type="string" name="account_setup_options_mail_sync_size_all"/>
+    <string name="account_setup_options_mail_sync_size_all">"တခုလုံး"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_20k"/>
+    <string name="account_setup_options_mail_sync_size_20k">"20KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_100k"/>
+    <string name="account_setup_options_mail_sync_size_100k">"100KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_200k"/>
+    <string name="account_setup_options_mail_sync_size_200k">"200KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_500k"/>
+    <string name="account_setup_options_mail_sync_size_500k">"500KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_1M"/>
+    <string name="account_setup_options_mail_sync_size_1M">"1MB"</string>
+
+    <!--Delete email account -->
+    <add-resource type="string" name="remove_email_account"/>
+    <string name="remove_email_account">"အကောင့်ကို ဖယ်ရှားပါ"</string>
+    <add-resource type="string" name="remove_email_account_continue"/>
+    <string name="remove_email_account_continue">"ဆက်လုပ်ရန်"</string>
+    <add-resource type="string" name="remove_email_account_message"/>
+    <string name="remove_email_account_message">"အကောင့်များကို ဖယ်ရှားနိုင်သည့် ဆက်တင် အက်ပ်သို့ သင်သွားတော့မည်"</string>
+    <add-resource type="string" name="default_domain"/>
+    <string name="default_domain"></string>
+    <!-- Customize Email account's signature -->
+    <add-resource type="string" name="default_email_signature"/>
+    <string name="default_email_signature"></string>
+    <add-resource type="string" name="default_email_signature_with_brand"/>
+    <string name="default_email_signature_with_brand"></string>
+    <add-resource type="string" name="missing_required_permission"/>
+    <string name="missing_required_permission">"လိုအပ်သည့် ခွင့်ပြုချက်ကို သင်ပိတ်လိုက်သည်။."</string></resources>

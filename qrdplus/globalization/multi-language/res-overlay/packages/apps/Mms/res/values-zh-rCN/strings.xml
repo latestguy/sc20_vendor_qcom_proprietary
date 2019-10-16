@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the SMS/MMS app as it appears to the user in the Home screen, task switcher, etc. -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"短信"</string>
+
+    <!-- Command name to open a Compose screen; displays in conversation list.
+         Also used as accessibility text for widget's new message button -->
+    <add-resource type="string" name="new_message"/>
+    <string name="new_message">"新信息"</string>
+    <!-- Context menu item on an individual message for dialing the sender's phone number -->
+    <add-resource type="string" name="menu_call_back"/>
+    <string name="menu_call_back">"呼叫<xliff:g id="NAME">%s</xliff:g>"</string>
+    <!-- Context menu item on an individual message for emailing the sender -->
+    <add-resource type="string" name="menu_send_email"/>
+    <string name="menu_send_email">"发送电子邮件至<xliff:g id="NAME">%s</xliff:g>"</string>
+
+    <!-- Menu item for starting a new conversation -->
+    <add-resource type="string" name="menu_compose_new"/>
+    <string name="menu_compose_new">"撰写"</string>
+    <!-- Menu item for accessing application settings -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"设置"</string>
+    <!-- Menu shown in the context menu when long pressing on a message when the message contains
+         one or more phone numbers and/or email addresses and the number or email is new to
+         contacts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="menu_add_address_to_contacts"/>
+    <string name="menu_add_address_to_contacts">"将 <xliff:g id="CONTACTEMAILORNUMBER">%s</xliff:g> 添加到通讯录"</string>
+    <add-resource type="string" name="menu_copy_url"/>
+    <string name="menu_copy_url">"复制网址 <xliff:g id="extractedurl">%s</xliff:g>"</string>
+    <!-- Menu item to call the recipient of the conversation on the phone (imperative verb) -->
+    <add-resource type="string" name="menu_call"/>
+    <string name="menu_call">"呼叫"</string>
+    <!-- Menu item for search -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"搜索"</string>
+    <!-- Menu item for mark as read -->
+    <add-resource type="string" name="menu_mark_as_read"/>
+    <string name="menu_mark_as_read">"标记为已读"</string>
+    <!-- Menu item for deleting all conversations -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"删除所有会话"</string>
+    <!-- Context menu item on an individual conversation for deleting that conversation -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"删除会话"</string>
+    <!-- Context menu item on an individual conversation for viewing that conversation -->
+    <add-resource type="string" name="menu_view"/>
+    <string name="menu_view">"查看会话"</string>
+    <!-- Menu item for debugging - do not localize -->
+    <add-resource type="string" name="menu_debug_dump"/>
+    <string name="menu_debug_dump">"DEBUG DUMP"</string>
+    <!-- Message that appears on screen while SIM card messages are retrieved -->
+    <add-resource type="string" name="refreshing"/>
+    <string name="refreshing">"正在刷新..."</string>
+    <add-resource type="string" name="deleting_threads"/>
+    <string name="deleting_threads">"正在删除会话..."</string>
+
+    <!-- Menu item to show received cell broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_cell_broadcasts"/>
+    <string name="menu_cell_broadcasts">"小区广播"</string>
+
+    <!-- Tag appearing on conversations in the conversation list that contain a draft message -->
+    <add-resource type="string" name="has_draft"/>
+    <string name="has_draft">"草稿"</string>
+
+    <!-- Subject to display in the conversation list if there is no subject -->
+    <add-resource type="string" name="no_subject_view"/>
+    <string name="no_subject_view">"（无主题）"</string>
+
+    <!-- Address to display when message is a cell broadcast on channel 50 or 60  -->
+    <add-resource type="string" name="cell_broadcast_sender"/>
+    <string name="cell_broadcast_sender">"小区广播频道"</string>
+
+    <!-- Name of the local user when displaying sender of an outgoing message (personal pronoun) -->
+    <add-resource type="string" name="messagelist_sender_self"/>
+    <string name="messagelist_sender_self">"我"</string>
+    <!-- Context menu item on an individual message for viewing an attached slideshow -->
+    <add-resource type="string" name="view_slideshow"/>
+    <string name="view_slideshow">"观看幻灯片演示"</string>
+    <!-- Context menu item on an individual message for viewing message details such as time and date -->
+    <add-resource type="string" name="view_message_details"/>
+    <string name="view_message_details">"查看详情"</string>
+    <!-- Context menu item on an individual message for viewing a delivery report -->
+    <add-resource type="string" name="view_delivery_report"/>
+    <string name="view_delivery_report">"查看报告"</string>
+    <!-- Context menu item on an individual message for deleting only that message -->
+    <add-resource type="string" name="delete_message"/>
+    <string name="delete_message">"删除"</string>
+    <!-- Time and date a message was sent -->
+    <add-resource type="string" name="sent_on"/>
+    <string name="sent_on">"<xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Time and date a message is due to expire -->
+    <add-resource type="string" name="expire_on"/>
+    <string name="expire_on">"过期时间： <xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Abbreviation for "kilobyte" -->
+    <add-resource type="string" name="kilobyte"/>
+    <string name="kilobyte">"KB"</string>
+
+    <!-- Dialog box title brought up when warning the user that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_msg_dialog_title"/>
+    <string name="undelivered_msg_dialog_title">"信息未传送出去"</string>
+    <!-- Dialog box message indicating that a message could not be delivered, including the time of last attempt -->
+    <add-resource type="string" name="undelivered_msg_dialog_body"/>
+    <string name="undelivered_msg_dialog_body">"无法发送此短信。\n尝试发送时间：<xliff:g id="MESSAGE">%s</xliff:g>。"</string>
+    <!-- Dialog box message indicating that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_sms_dialog_body"/>
+    <string name="undelivered_sms_dialog_body">"无法发送此短信。"</string>
+    <!-- Menu item for deleting the entire conversation currently being viewed -->
+    <add-resource type="string" name="delete_thread"/>
+    <string name="delete_thread">"删除会话"</string>
+    <!-- Context menu item on an individual message for forwarding it to another recipient -->
+    <add-resource type="string" name="menu_forward"/>
+    <string name="menu_forward">"转发"</string>
+    <add-resource type="string" name="menu_forward_conversation"/>
+    <string name="menu_forward_conversation">"转发短信会话"</string>
+    <!-- Context menu item on an failed message for resending -->
+    <add-resource type="string" name="menu_resend"/>
+    <string name="menu_resend">"重新发送"</string>
+    <!-- Text of a button appearing for MMS messages that have not yet been downloaded, causing the message
+         to be downloaded (imperative verb) -->
+    <add-resource type="string" name="download"/>
+    <string name="download">"下载"</string>
+    <!-- Message displayed in place of the "download message" button once it has been pressed,
+         indicating that the download is in progress -->
+    <add-resource type="string" name="downloading"/>
+    <string name="downloading">"正在下载..."</string>
+    <!-- Dispaly downloading when download Mms -->
+    <add-resource type="string" name="new_message_download"/>
+    <string name="new_message_download">"待下载的新信息"</string>
+    <add-resource type="string" name="new_mms_download"/>
+    <string name="new_mms_download">"下载新彩信"</string>
+    <!-- Dispaly New message to download  when income Mms  -->
+    <add-resource type="string" name="touch_to_download"/>
+    <string name="touch_to_download">"触摸即可下载"</string>
+    <!-- Inform user can Touch to download Mms   -->
+    <add-resource type="string" name="touch_to_try_again"/>
+    <string name="touch_to_try_again">"触摸即可重试"</string>
+    <!-- Dispaly Touch to try again when download failed -->
+    <add-resource type="string" name="could_not_downloading"/>
+    <string name="could_not_downloading">"无法下载..."</string>
+    <add-resource type="string" name="could_not_download"/>
+    <string name="could_not_download">"没能成功下载"</string>
+    <!-- Display Couldn't download...if download failed -->
+    <add-resource type="string" name="new_mms_message"/>
+    <string name="new_mms_message">"新彩信"</string>
+    <!-- Dispaly New MMS message when downloading -->
+    <add-resource type="string" name="cancel_downloading"/>
+    <string name="cancel_downloading">"取消下载"</string>
+    <add-resource type="string" name="confirm_cancel_downloading"/>
+    <string name="confirm_cancel_downloading">"确定取消彩信下载？"</string>
+    <!-- Formatting for subject displayed inline, prepended to MMS message text -->
+    <add-resource type="string" name="inline_subject"/>
+    <string name="inline_subject">"&lt;主题: <xliff:g id="SUBJECT">%s</xliff:g>&gt;"</string>
+    <!-- Text to display when the actual text is inaccessible due to DRM protection -->
+    <add-resource type="string" name="drm_protected_text"/>
+    <string name="drm_protected_text">"* 受 DRM 保护的文本 *"</string>
+    <!-- Error message to display when DRM rights are insufficient to access some data -->
+    <add-resource type="string" name="insufficient_drm_rights"/>
+    <string name="insufficient_drm_rights">"检测到 DRM 权限不足。"</string>
+    <!-- Individual message context menu item -->
+    <add-resource type="string" name="copy_message_text"/>
+    <string name="copy_message_text">"复制文字"</string>
+    <!-- Header for context menu on an individual message -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"信息选项"</string>
+    <!-- Header for context menu on an individual slideshow -->
+    <add-resource type="string" name="slideshow_options"/>
+    <string name="slideshow_options">"幻灯片选项"</string>
+
+    <!-- Button text on edit slide screen indicating the user wants to finish editing that slide -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"完成"</string>
+
+    <!-- Menu item in slideshow edit screen for moving the selected slide up in the order -->
+    <add-resource type="string" name="move_up"/>
+    <string name="move_up">"上移"</string>
+    <!-- Menu item in slideshow edit screen for moving the selected slide down in the order -->
+    <add-resource type="string" name="move_down"/>
+    <string name="move_down">"下移"</string>
+    <!-- Menu item in slideshow edit screen for removing the selected slide from the slideshow -->
+    <add-resource type="string" name="remove_slide"/>
+    <string name="remove_slide">"删除幻灯片"</string>
+    <!-- Menu item in slideshow edit screen for adding a new slide to the slideshow -->
+    <add-resource type="string" name="add_slide"/>
+    <string name="add_slide">"添加幻灯片"</string>
+    <!-- Text displayed below "Add slide" item in slideshow edit screen -->
+    <add-resource type="string" name="add_slide_hint"/>
+    <string name="add_slide_hint">"触摸可创建新幻灯片。"</string>
+    <!-- Menu item in slideshow edit screen for discarding the entire slideshow -->
+    <add-resource type="string" name="discard_slideshow"/>
+    <string name="discard_slideshow">"舍弃幻灯片"</string>
+    <!-- Header of slideshow showing which slide is being displayed -->
+    <add-resource type="string" name="slide_show_part"/>
+    <string name="slide_show_part">"第 <xliff:g id="PART">%1$s</xliff:g> 部分，共 <xliff:g id="TOTAL">%2$s</xliff:g> 部分"</string>
+
+
+    <!-- Menu item in slide edit screen for removing the text from the slide being edited -->
+    <add-resource type="string" name="remove_text"/>
+    <string name="remove_text">"删除文本"</string>
+    <!-- Menu item in slide edit screen for adding a picture to the slide being edited -->
+    <add-resource type="string" name="add_picture"/>
+    <string name="add_picture">"添加图片"</string>
+    <!-- Menu item in slide edit screen for removing the picture from the slide being edited -->
+    <add-resource type="string" name="remove_picture"/>
+    <string name="remove_picture">"删除图片"</string>
+    <!-- Menu item in slide edit screen for adding music to the slide being edited -->
+    <add-resource type="string" name="add_music"/>
+    <string name="add_music">"添加音乐"</string>
+    <!-- Menu item in slide edit screen for removing the music from the slide being edited -->
+    <add-resource type="string" name="remove_music"/>
+    <string name="remove_music">"删除音乐"</string>
+    <!-- Menu item in slide edit screen for adding a video to the slide being edited -->
+    <add-resource type="string" name="add_video"/>
+    <string name="add_video">"添加视频"</string>
+    <!-- Menu item in slide edit screen for removing the video from the slide being edited -->
+    <add-resource type="string" name="remove_video"/>
+    <string name="remove_video">"删除视频"</string>
+
+    <!-- Hint displayed in message recipient text box when starting a new conversation -->
+    <add-resource type="string" name="to_hint"/>
+    <string name="to_hint">"接收者"</string>
+    <!-- Hint displayed in subject edit text box when adding a subject -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"主题"</string>
+
+    <!-- Menu item in conversation screen for attaching something to the message being composed -->
+    <add-resource type="string" name="add_attachment"/>
+    <string name="add_attachment">"附件"</string>
+    <!-- Menu item in conversation screen for adding a subject to the message being composed -->
+    <add-resource type="string" name="add_subject"/>
+    <string name="add_subject">"添加主题"</string>
+    <!-- Menu item in conversation screen for discarding the message currently being composed -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"舍弃"</string>
+
+    <!-- Toast message for informing user currently will add another attachment or replace current one -->
+    <add-resource type="string" name="add_another_attachment"/>
+    <string name="add_another_attachment">"添加另一附件"</string>
+    <add-resource type="string" name="replace_current_attachment"/>
+    <string name="replace_current_attachment">"替换当前附件"</string>
+
+    <!-- Button next to an attachment during message composition to view the attachment (imperative verb) -->
+    <add-resource type="string" name="view"/>
+    <string name="view">"查看"</string>
+    <!-- Button next to an attachment during message composition to replace the attachment (imperative verb) -->
+    <add-resource type="string" name="replace"/>
+    <string name="replace">"替换"</string>
+    <!-- Button next to an attachment during message composition to remove the attachment (imperative verb) -->
+    <add-resource type="string" name="remove"/>
+    <string name="remove">"删除"</string>
+
+    <!-- Button in conversation screen for sending the SMS message currently being composed (imperative verb) -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"发送"</string>
+    <add-resource type="string" name="send_by_slot1"/>
+    <string name="send_by_slot1">"通过卡槽1发送"</string>
+    <add-resource type="string" name="send_by_slot2"/>
+    <string name="send_by_slot2">"通过卡槽2发送"</string>
+    <!-- Text to appear directly below the "Send" text on the SMS/MMS send button. The "MMS" text is on a second line in a smaller font. This is similar to saying "Send (mms)". -->
+    <add-resource type="string" name="mms"/>
+    <string name="mms">"彩信"</string>
+    <!-- Content description for the send button when sending an mms (imperative verb) -->
+    <add-resource type="string" name="send_mms"/>
+    <string name="send_mms">"发送彩信"</string>
+
+    <!-- Menu item in conversation screen for returning to the conversation list -->
+    <add-resource type="string" name="all_threads"/>
+    <string name="all_threads">"所有会话"</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <add-resource type="string" name="type_to_compose_text_enter_to_send"/>
+    <string name="type_to_compose_text_enter_to_send">"发送消息"</string>
+    <!-- Hint text in message body field when keyboard is hidden -->
+    <add-resource type="string" name="open_keyboard_to_compose_message"/>
+    <string name="open_keyboard_to_compose_message">"打开键盘键入信息"</string>
+    <!-- Hint text when we are not the default SMS app -->
+    <add-resource type="string" name="sending_disabled_not_default_app"/>
+    <string name="sending_disabled_not_default_app">"发送功能已停用"</string>
+    <!-- Toast text when user tries to compose while we are not the default SMS app -->
+    <add-resource type="string" name="compose_disabled_toast"/>
+    <string name="compose_disabled_toast">"无法写短信，因为此应用不是默认的短信应用。"</string>
+
+    <!-- Toast message while an image is being resized -->
+    <add-resource type="string" name="compressing"/>
+    <string name="compressing">"图片过大。正在压缩\u2026"</string>
+
+    <!-- Error message indicating the format for the specified media type (e.g. "picture") is unsupported -->
+    <add-resource type="string" name="unsupported_media_format"/>
+    <string name="unsupported_media_format">"不支持<xliff:g id="NAME">%1$s</xliff:g>格式。"</string>
+    <!-- Error message indicating the format is unsupported -->
+    <add-resource type="string" name="unsupported_format"/>
+    <string name="unsupported_format">"不支持的格式."</string>
+    <!-- Message prompting the user to select a different item; item string as type-appropriate (e.g. "picture") -->
+    <add-resource type="string" name="select_different_media"/>
+    <string name="select_different_media">"选择其他<xliff:g id="NAME">%1$s</xliff:g>。"</string>
+    <!-- Message indicating that the message size limit has been reached -->
+    <add-resource type="string" name="exceed_message_size_limitation"/>
+    <string name="exceed_message_size_limitation">"已达到信息大小上限。"</string>
+    <!-- Message indicating that the message is too big and there is no space to attach a video -->
+    <add-resource type="string" name="message_too_big_for_video"/>
+    <string name="message_too_big_for_video">"该短信太大，无法附加视频。"</string>
+    <!-- Error message indicating that the item trying to be attached could not be added -->
+    <add-resource type="string" name="failed_to_add_media"/>
+    <string name="failed_to_add_media">"您无法将此<xliff:g id="NAME">%1$s</xliff:g>添加到信息中。"</string>
+    <add-resource type="string" name="media_size_limit"/>
+    <string name="media_size_limit">"已达到信息大小上限，无法发送。"</string>
+    <!-- Error message indicating that the picture being attached and resized could not be resized -->
+    <add-resource type="string" name="failed_to_resize_image"/>
+    <string name="failed_to_resize_image">"未调整图片大小。"</string>
+    <!-- Error message indicating that the message size or the increase size is negative -->
+    <add-resource type="string" name="illegal_message_or_increase_size"/>
+    <string name="illegal_message_or_increase_size">"信息或附件大小为负。"</string>
+    <!-- Error message indicating that an image being attached is still too large to send even after resize -->
+    <add-resource type="string" name="resize_image_error_information"/>
+    <string name="resize_image_error_information">"重新调整大小后，此照片仍然过大，因此无法发送。"</string>
+    <!-- String prepended to forwarded messages to indicate they were forwarded -->
+    <add-resource type="string" name="forward_prefix"/>
+    <string name="forward_prefix">"转发： "</string>
+    <!-- Dialog box title that appears when a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message"/>
+    <string name="discard_message">"舍弃"</string>
+    <add-resource type="string" name="discard_message_reason_all_invalid"/>
+    <string name="discard_message_reason_all_invalid">"所有的接收者均无效，您的信息将被舍弃。"</string>
+    <add-resource type="string" name="discard_message_reason_some_invalid"/>
+    <string name="discard_message_reason_some_invalid">"您的信息有部分无效的接收者，将被舍弃。"</string>
+    <!-- Dialog message text explaining that a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message_reason"/>
+    <string name="discard_message_reason">"您的信息没有有效的接收者，将被舍弃。"</string>
+    <!-- Dialog box title indicating which recipients are invalid when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="has_invalid_recipient"/>
+    <string name="has_invalid_recipient">"无效接收者：&lt;<xliff:g id="NAME">%1$s</xliff:g>&gt;"</string>
+    <!-- While sending a message, if it has invalid recipient, display this message. -->
+    <add-resource type="string" name="invalid_destination"/>
+    <string name="invalid_destination">"目标地址无效。"</string>
+    <!-- While sending a message, this error is expected to be generated when user does not have
+         MMS enabled on his account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_not_activated"/>
+    <string name="service_not_activated">"该服务尚未在网络上激活。"</string>
+    <!-- If a message has expired and is no longer available on MMSC, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_message_not_found"/>
+    <string name="service_message_not_found">"信息已过期或无法查看。"</string>
+    <!-- If a message can't be sent because of a MMSC network problem, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_network_problem"/>
+    <string name="service_network_problem">"遇到网络问题，发送失败。"</string>
+    <!-- Dialog message text when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="invalid_recipient_message"/>
+    <string name="invalid_recipient_message">"请更正收件人，否则他们无法收到该短信。"</string>
+    <!-- Dialog box title indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message"/>
+    <string name="cannot_send_message">"无法发送短信"</string>
+    <!-- Dialog message text indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message_reason"/>
+    <string name="cannot_send_message_reason">"您的信息没有有效的接收者。"</string>
+    <!-- Error message displayed when the user attempts to forward a message with DRM-locked contents -->
+    <add-resource type="string" name="cannot_forward_drm_obj"/>
+    <string name="cannot_forward_drm_obj">"无法转发该短信中包含的 DRM 对象。"</string>
+    <add-resource type="string" name="cannot_send_attach_reason"/>
+    <string name="cannot_send_attach_reason">"信息附件无法访问，无法发送。"</string>
+
+    <!-- Brief message that appears when converting a message from SMS to MMS. -->
+    <add-resource type="string" name="converting_to_picture_message"/>
+    <string name="converting_to_picture_message">"正在转换为彩信\u2026"</string>
+    <add-resource type="string" name="converting_to_text_message"/>
+    <string name="converting_to_text_message">"正在转换为短信\u2026"</string>
+    <!-- Brief message that appears when the maximum size of slides has been reached -->
+    <add-resource type="string" name="cannot_add_text_anymore"/>
+    <string name="cannot_add_text_anymore">"无法再添加文字。"</string>
+    <!-- Brief message that appears when the maximum number of slides has been reached -->
+    <add-resource type="string" name="cannot_add_slide_anymore"/>
+    <string name="cannot_add_slide_anymore">"无法再添加幻灯片。"</string>
+    <!-- Brief message that appears when user tries to add picture to a slide which already has a video. -->
+    <add-resource type="string" name="cannot_add_picture_and_video"/>
+    <string name="cannot_add_picture_and_video">"无法将视频和图片添加到同一张幻灯片。"</string>
+    <!-- Brief message that appears when the message cannot be saved -->
+    <add-resource type="string" name="cannot_save_message"/>
+    <string name="cannot_save_message">"无法保存短信。"</string>
+    <!-- Brief message that appears when a message has automatically been saved as a draft -->
+    <add-resource type="string" name="message_saved_as_draft"/>
+    <string name="message_saved_as_draft">"信息已存为草稿。"</string>
+    <!-- Brief message that appears when too many recipients have been added -->
+    <add-resource type="string" name="too_many_recipients"/>
+    <string name="too_many_recipients">"短信收件人过多（<xliff:g id="CURRENTCOUNT">%1$s</xliff:g> 人）。收件人数的上限为 <xliff:g id="MAXLIMIT">%2$s</xliff:g> 人。"</string>
+    <!-- Brief message that appears when too many videos/pictures are imported -->
+    <add-resource type="string" name="too_many_attachments"/>
+    <string name="too_many_attachments">"附件数量上限为 <xliff:g id="MAXLIMIT">%1$s</xliff:g> 个。只会添加前 <xliff:g id="CURRENTCOUNT">%2$s</xliff:g> 个。"</string>
+    <!-- Alert dialog title when adding attachments is taking a while  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="adding_attachments_title"/>
+    <string name="adding_attachments_title">"正在添加附件"</string>
+    <!-- Alert dialog when adding attachments is taking a while -->
+    <add-resource type="string" name="adding_attachments"/>
+    <string name="adding_attachments">"正在向幻灯片添加项，请稍候。"</string>
+    <!-- Alert dialog title when creating a slideshow [CHAR LIMIT=none] -->
+    <add-resource type="string" name="building_slideshow_title"/>
+    <string name="building_slideshow_title">"正在创建幻灯片"</string>
+
+    <!-- Error message indicating that an audio attachment cannot be played -->
+    <add-resource type="string" name="cannot_play_audio"/>
+    <string name="cannot_play_audio">"无法播放音频。"</string>
+
+    <!-- Button in the slide editor screen used to preview the slide (imperative verb) -->
+    <add-resource type="string" name="preview"/>
+    <string name="preview">"预览"</string>
+    <!-- Menu item in the slide editor screen used to preview the entire slideshow (imperative verb) -->
+    <add-resource type="string" name="preview_slideshow"/>
+    <string name="preview_slideshow">"预览"</string>
+    <!-- Button in the slide editor screen used to replace the attached picture -->
+    <add-resource type="string" name="replace_image"/>
+    <string name="replace_image">"替换图片"</string>
+    <!-- String for slide duration in seconds -->
+    <add-resource type="string" name="duration_sec"/>
+    <string name="duration_sec">"持续时间（<xliff:g id="DURATION">%s</xliff:g>秒）"</string>
+    <!-- Dialog box title for duration selector -->
+    <add-resource type="string" name="duration_selector_title"/>
+    <string name="duration_selector_title">"幻灯片持续时间 "</string>
+    <!-- Dialog box title for slide layout selector -->
+    <add-resource type="string" name="layout_selector_title"/>
+    <string name="layout_selector_title">"幻灯片布局 "</string>
+    <!-- Slide layout option for layout at the top -->
+    <add-resource type="string" name="layout_top"/>
+    <string name="layout_top">"布局（顶部）"</string>
+    <!-- Slide layout option for layout at the bottom -->
+    <add-resource type="string" name="layout_bottom"/>
+    <string name="layout_bottom">"布局（底部）"</string>
+    <!-- Hint in slide text field before text is typed -->
+    <add-resource type="string" name="type_to_compose_text_or_leave_blank"/>
+    <string name="type_to_compose_text_or_leave_blank">"键入信息或留空"</string>
+    <!-- Toast when the user enters a non-numeric value for the duration of a slide -->
+    <add-resource type="string" name="duration_not_a_number"/>
+    <string name="duration_not_a_number">"时长必须为数字。"</string>
+    <!-- Toast when the user enters a zero value for the duration of a slide -->
+    <add-resource type="string" name="duration_zero"/>
+    <string name="duration_zero">"时长必须大于 0 秒。"</string>
+    <!-- Dialog box title for display the current mms size  -->
+    <add-resource type="string" name="title_send_message"/>
+    <string name="title_send_message">"发送消息"</string>
+    <!-- Toast when the subject is full -->
+    <add-resource type="string" name="subject_full"/>
+    <string name="subject_full">"主题已满"</string>
+
+    <!-- In duration selection dialog box, short version of "seconds" -->
+    <add-resource type="string" name="secs"/>
+    <string name="secs">"秒"</string>
+    <!-- Options for slide duration in duration selection dialog box -->
+    <add-resource type="array" name="select_dialog_items"/>
+    <string-array name="select_dialog_items">
+         <item>"1 秒"</item>
+         <item>"2 秒"</item>
+         <item>"3 秒"</item>
+         <item>"4 秒"</item>
+         <item>"5 秒"</item>
+         <item>"6 秒"</item>
+         <item>"7 秒"</item>
+         <item>"8 秒"</item>
+         <item>"9 秒"</item>
+         <item>"10 秒"</item>
+         <item>"其他"</item>
+    </string-array>
+
+    <!-- Context menu item on a message recipient for viewing their contact info -->
+    <add-resource type="string" name="menu_view_contact"/>
+    <string name="menu_view_contact">"查看联系人"</string>
+    <!-- Context menu item on a message recipient for adding them to the user's
+         contacts (used if the recipient is not already in the address book) -->
+    <add-resource type="string" name="menu_add_to_contacts"/>
+    <string name="menu_add_to_contacts">"添加到通讯录"</string>
+
+    <!-- Sender to be used if the sender address has been hidden -->
+    <add-resource type="string" name="hidden_sender_address"/>
+    <string name="hidden_sender_address">"隐藏的发送者地址"</string>
+
+    <!-- Text to be used for affirmative response button in dialog boxes -->
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"确定"</string>
+    <!-- Text to be used for negative response button in dialog boxes -->
+    <add-resource type="string" name="no"/>
+    <string name="no">"取消"</string>
+    <!-- Text to be used for affirmative response button in setting SMS limits dialog box -->
+    <add-resource type="string" name="set"/>
+    <string name="set">"设置"</string>
+
+    <!-- Button text used for playing an attachment or slideshow (imperative verb) -->
+    <add-resource type="string" name="play"/>
+    <string name="play">"播放"</string>
+    <!-- Button text used for editing a slideshow (imperative verb) -->
+    <add-resource type="string" name="edit"/>
+    <string name="edit">"编辑"</string>
+    <!-- Button used for trying to send a message that has some valid recipients and some
+         invalid recipients, in spite of the warning presented to the user -->
+    <add-resource type="string" name="try_to_send"/>
+    <string name="try_to_send">"尝试发送"</string>
+
+    <!-- Title of Settings screen -->
+    <add-resource type="string" name="preferences_title"/>
+    <string name="preferences_title">"设置"</string>
+    <!-- Settings screen menu item for restoring all settings to default -->
+    <add-resource type="string" name="restore_default"/>
+    <string name="restore_default">"还原默认设置"</string>
+
+    <!-- Settings SIM1 -->
+    <add-resource type="string" name="settings_pre_sim1"/>
+    <string name="settings_pre_sim1">"SIM1"</string>
+    <!-- Settings SIM2 -->
+    <add-resource type="string" name="settings_pre_sim2"/>
+    <string name="settings_pre_sim2">"SIM2"</string>
+
+    <!-- Settings screen, section heading for notifications -->
+    <add-resource type="string" name="pref_notification_settings_title"/>
+    <string name="pref_notification_settings_title">"通知"</string>
+    <!-- Settings screen, section heading for MMS-specific settings -->
+    <add-resource type="string" name="pref_mms_settings_title"/>
+    <string name="pref_mms_settings_title">"彩信 (MMS) 设置"</string>
+    <!-- Settings screen, section heading for SMS-specific settings -->
+    <add-resource type="string" name="pref_sms_settings_title"/>
+    <string name="pref_sms_settings_title">"短信 (SMS) 设置"</string>
+    <!-- Settings screen, section heading for storage-specific settings -->
+    <add-resource type="string" name="pref_sms_storage_title"/>
+    <string name="pref_sms_storage_title">"存储"</string>
+
+    <!-- Title for SMS Disabled -->
+    <add-resource type="string" name="pref_title_sms_disabled"/>
+    <string name="pref_title_sms_disabled">"短信功能已关闭"</string>
+    <!-- Title for Default message app-->
+    <add-resource type="string" name="pref_title_default_app"/>
+    <string name="pref_title_default_app">"默认信息应用"</string>
+    <!-- Summary for SMS Disabled -->
+    <add-resource type="string" name="pref_summary_sms_disabled"/>
+    <string name="pref_summary_sms_disabled">"触摸即可将“短信”设为您的默认短信应用"</string>
+    <!-- Title for SMS Enabled -->
+    <add-resource type="string" name="pref_title_sms_enabled"/>
+    <string name="pref_title_sms_enabled">"短信功能已开启"</string>
+    <!-- Summary for SMS Enabled -->
+    <add-resource type="string" name="pref_summary_sms_enabled"/>
+    <string name="pref_summary_sms_enabled">"触摸即可更改您的默认短信应用"</string>
+
+    <!-- Title for PreferenceScreen  -->
+    <add-resource type="string" name="pref_title_display"/>
+    <string name="pref_title_display">"显示"</string>
+    <!-- Settings item description for entering SIM card message screen -->
+    <add-resource type="string" name="pref_summary_manage_sim_messages"/>
+    <string name="pref_summary_manage_sim_messages">"管理SIM卡中存储的信息"</string>
+    <add-resource type="string" name="pref_summary_manage_sim_messages_slot"/>
+    <string name="pref_summary_manage_sim_messages_slot">"管理SIM<xliff:g id="NUMBER">%s</xliff:g>卡中存储的信息"</string>
+    <!-- Settings item description for boolean MMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_mms_delivery_reports"/>
+    <string name="pref_summary_mms_delivery_reports">"要求每次发送消息后都返回发送报告"</string>
+    <!-- Settings item description for boolean MMS read report setting -->
+    <add-resource type="string" name="pref_summary_mms_read_reports"/>
+    <string name="pref_summary_mms_read_reports">"要求每次发送消息后都返回已读回执"</string>
+    <!-- Settings item description for boolean SMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_sms_delivery_reports"/>
+    <string name="pref_summary_sms_delivery_reports">"要求每次发送消息后都返回发送报告"</string>
+    <!-- Settings item description for boolean auto-delete messages setting -->
+    <add-resource type="string" name="pref_summary_auto_delete"/>
+    <string name="pref_summary_auto_delete">"达到数量上限时删除旧信息"</string>
+    <!-- Settings item description for enable gesture setting -->
+    <add-resource type="string" name="pref_summary_enable_gesture"/>
+    <string name="pref_summary_enable_gesture">"允许用户通过双指张开或合拢对信息字体进行调节"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_summary_group_notification"/>
+    <string name="pref_summary_group_notification">"自动将通知合并到一个组中"</string>
+    <!-- Settings item description for integer auto-delete sms message limit -->
+    <add-resource type="string" name="pref_summary_delete_limit"/>
+    <string name="pref_summary_delete_limit">"每个会话限存储 <xliff:g id="COUNT">%1$s</xliff:g> 条信息"</string>
+    <!-- Settings item description for boolean MMS enable group MMS setting -->
+    <add-resource type="string" name="pref_summary_mms_group_mms"/>
+    <string name="pref_summary_mms_group_mms">"使用彩信将单条信息发送给多个收件人"</string>
+    <!-- Settings item for entering SIM card message screen -->
+    <add-resource type="string" name="pref_title_manage_sim_messages"/>
+    <string name="pref_title_manage_sim_messages">"管理SIM卡中的信息"</string>
+    <add-resource type="string" name="pref_title_center_number"/>
+    <string name="pref_title_center_number">"信息中心号码"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot1"/>
+    <string name="pref_title_manage_sim_messages_slot1">"管理SIM1卡中的信息"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot2"/>
+    <string name="pref_title_manage_sim_messages_slot2">"管理SIM2卡中的信息"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_title_group_notification"/>
+    <string name="pref_title_group_notification">"组通知信息"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports -->
+    <add-resource type="string" name="pref_title_mms_delivery_reports"/>
+    <string name="pref_title_mms_delivery_reports">"发送报告"</string>
+    <!-- Settings item for enable gesture -->
+    <add-resource type="string" name="pref_title_enable_gesture"/>
+    <string name="pref_title_enable_gesture">"启用手势"</string>
+    <!-- Settings item for advanced settings -->
+    <add-resource type="string" name="pref_title_advanced_settings"/>
+    <string name="pref_title_advanced_settings">"高级设置"</string>
+    <!-- Settings item for other settings -->
+    <add-resource type="string" name="pref_title_other_settings"/>
+    <string name="pref_title_other_settings">"其他设置"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim1-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot1"/>
+    <string name="pref_title_mms_delivery_reports_slot1">"卡1发送报告"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim2-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot2"/>
+    <string name="pref_title_mms_delivery_reports_slot2">"卡2发送报告"</string>
+    <!-- Settings item for boolean option to enable/disable MMS group messages -->
+    <add-resource type="string" name="pref_title_mms_group_mms"/>
+    <string name="pref_title_mms_group_mms">"群发信息"</string>
+    <!-- Settings item for manage sim card message  -->
+    <add-resource type="string" name="pref_title_sms_manage_sim"/>
+    <string name="pref_title_sms_manage_sim">"管理 SIM 卡消息"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports -->
+    <add-resource type="string" name="pref_title_mms_read_reports"/>
+    <string name="pref_title_mms_read_reports">"已读报告"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM1 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot1"/>
+    <string name="pref_title_mms_read_reports_slot1">"SIM1 已读回执"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM2 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot2"/>
+    <string name="pref_title_mms_read_reports_slot2">"SIM2 已读回执"</string>
+    <!-- Settings item for boolean option to enable/disable SMS delivery reports -->
+    <add-resource type="string" name="pref_title_sms_delivery_reports"/>
+    <string name="pref_title_sms_delivery_reports">"发送报告"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot1"/>
+    <string name="pref_title_sms_delivery_reports_slot1">"卡1发送报告"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot2"/>
+    <string name="pref_title_sms_delivery_reports_slot2">"卡2发送报告"</string>
+    <!-- Settings item for boolean option to enable/disable auto-deletion of messages -->
+    <add-resource type="string" name="pref_title_auto_delete"/>
+    <string name="pref_title_auto_delete">"删除旧短信"</string>
+    <!-- Settings item for integer option to set SMS delete limit -->
+    <add-resource type="string" name="pref_title_sms_delete"/>
+    <string name="pref_title_sms_delete">"短信限制"</string>
+    <!-- Settings item for integer option to set MMS delete limit -->
+    <add-resource type="string" name="pref_title_mms_delete"/>
+    <string name="pref_title_mms_delete">"彩信限制"</string>
+    <!-- Settings item for boolean option to display message notifications -->
+    <add-resource type="string" name="pref_title_notification_enabled"/>
+    <string name="pref_title_notification_enabled">"通知"</string>
+    <!-- Settings item for boolean option to vibrate during message notification -->
+    <add-resource type="string" name="pref_title_notification_vibrateWhen"/>
+    <string name="pref_title_notification_vibrateWhen">"振动"</string>
+    <!-- Settings item for entering ringtone selection screen -->
+    <add-resource type="string" name="pref_title_notification_ringtone"/>
+    <string name="pref_title_notification_ringtone">"提示音"</string>
+    <!-- Settings item for setting the number of message to save for each conversation -->
+    <add-resource type="string" name="pref_messages_to_save"/>
+    <string name="pref_messages_to_save">"设置要保存的信息数量"</string>
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"静音"</string>
+
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages -->
+    <add-resource type="string" name="pref_title_mms_auto_retrieval"/>
+    <string name="pref_title_mms_auto_retrieval">"自动检索"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve option -->
+    <add-resource type="string" name="pref_summary_mms_auto_retrieval"/>
+    <string name="pref_summary_mms_auto_retrieval">"自动检索信息"</string>
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages while roaming -->
+    <add-resource type="string" name="pref_title_mms_retrieval_during_roaming"/>
+    <string name="pref_title_mms_retrieval_during_roaming">"漫游时自动检索"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve while roaming option -->
+    <add-resource type="string" name="pref_summary_mms_retrieval_during_roaming"/>
+    <string name="pref_summary_mms_retrieval_during_roaming">"漫游时自动检索信息"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete confirmation dialog title -->
+    <add-resource type="string" name="confirm_dialog_title"/>
+    <string name="confirm_dialog_title">"要删除吗？"</string>
+    <!-- Delete confirmation dialog title for locked messages -->
+    <add-resource type="string" name="confirm_dialog_locked_title"/>
+    <string name="confirm_dialog_locked_title">"是否删除锁定的讯息？"</string>
+    <!-- This message is displayed in a confirmation dialog when the user selects one or more
+         conversations and then taps the "Delete" button. -->
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"系统将删除 1 个会话。"</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"系统将删除 <xliff:g id="NUMBER">%1$s</xliff:g> 个会话。"</item>
+    </plurals>
+    <add-resource type="string" name="confirm_delete_conversation"/>
+    <string name="confirm_delete_conversation">"将会删除整个会话。"</string>
+    <!-- Delete all threads confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_all_conversations"/>
+    <string name="confirm_delete_all_conversations">"将会删除所有会话。"</string>
+    <!-- Delete message confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_message"/>
+    <string name="confirm_delete_message">"将会删除此信息。"</string>
+    <!-- Delete message confirmation dialog message for a locked message -->
+    <add-resource type="string" name="confirm_delete_locked_message"/>
+    <string name="confirm_delete_locked_message">"要删除锁定的短信吗？"</string>
+    <!-- Delete all the messages on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_all_SIM_messages"/>
+    <string name="confirm_delete_all_SIM_messages">"系统会删除SIM卡上的所有短信。"</string>
+    <!-- Delete the selected message on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_SIM_message"/>
+    <string name="confirm_delete_SIM_message">"系统会删除SIM卡上的这条短信。"</string>
+    <!-- Delete unlocked checkbox title -->
+    <add-resource type="string" name="delete_unlocked"/>
+    <string name="delete_unlocked">"删除锁定信息"</string>
+    <!-- Delete button title -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"删除"</string>
+    <!-- Action bar mode title when multi-selecting conversations -->
+    <add-resource type="string" name="select_conversations"/>
+    <string name="select_conversations">"选择会话"</string>
+    <!-- Show this in the middle of the main activity when there are no conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="no_conversations"/>
+    <string name="no_conversations">"无会话。"</string>
+    <!-- Show this in the middle of the main activity when loading conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"正在加载会话。"</string>
+
+    <!-- When the user tries to view message details and some error occurs while
+         retrieving those details, this message will be shown. -->
+    <add-resource type="string" name="cannot_get_details"/>
+    <string name="cannot_get_details">"无法获取详细信息。"</string>
+    <!-- Title of "Message details" dialog -->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"信息详情"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_type_label"/>
+    <string name="message_type_label">"类型: "</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="text_message"/>
+    <string name="text_message">"短信"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_message"/>
+    <string name="multimedia_message">"彩信"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_notification"/>
+    <string name="multimedia_notification">"彩信通知"</string>
+    <!-- Label in "Message details" dialog showing who sent the message. -->
+    <add-resource type="string" name="from_label"/>
+    <string name="from_label">"发送者： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="to_address_label"/>
+    <string name="to_address_label">"接收者： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="bcc_label"/>
+    <string name="bcc_label">"密送： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="sent_label"/>
+    <string name="sent_label">"发送时间： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="received_label"/>
+    <string name="received_label">"接收时间： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="saved_label"/>
+    <string name="saved_label">"保存时间： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="subject_label"/>
+    <string name="subject_label">"主题： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_size_label"/>
+    <string name="message_size_label">"信息大小： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="mms_size_label"/>
+    <string name="mms_size_label">"大小: \u0020"</string>
+    <add-resource type="string" name="priority_label"/>
+    <string name="priority_label">"优先级： "</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_high"/>
+    <string name="priority_high">"高"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_normal"/>
+    <string name="priority_normal">"正常"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_low"/>
+    <string name="priority_low">"低"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_class_label"/>
+    <string name="message_class_label">"信息类别： "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="error_code_label"/>
+    <string name="error_code_label">"错误代码： "</string>
+
+   <!-- Menu title for editing a message -->
+   <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"编辑"</string>
+   <!-- Menu title for deleting undelivered messages or messages on
+        the SIM card. -->
+   <add-resource type="string" name="menu_delete_messages"/>
+    <string name="menu_delete_messages">"删除信息"</string>
+   <!-- Menu title for locking a message -->
+   <add-resource type="string" name="menu_lock"/>
+    <string name="menu_lock">"锁定"</string>
+   <!-- Menu title for unlocking a message -->
+   <add-resource type="string" name="menu_unlock"/>
+    <string name="menu_unlock">"解锁"</string>
+
+    <!-- Manage SIM Messages -->
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="tablet">"复制到平板电脑内存"</string>
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="default">"复制到手机内存"</string>
+    <!-- Menu title to delete a selected messaged from the SIM card. -->
+    <add-resource type="string" name="sim_delete"/>
+    <string name="sim_delete">"删除"</string>
+    <!-- Title of screen displaying messages on SIM card -->
+    <add-resource type="string" name="sim_manage_messages_title"/>
+    <string name="sim_manage_messages_title">"SIM卡上的短信"</string>
+    <!-- Context menu item but currently commented out in 1.0. -->
+    <add-resource type="string" name="sim_view"/>
+    <string name="sim_view">"查看"</string>
+    <!-- Message that appears on the "SMS messges on SIM card" screen when there are no messages on the SIM card -->
+    <add-resource type="string" name="sim_empty"/>
+    <string name="sim_empty">"SIM卡中无短信。"</string>
+
+    <!-- Delivery Header View -->
+    <!-- Title of "Report" window -->
+    <add-resource type="string" name="delivery_header_title"/>
+    <string name="delivery_header_title">"报告"</string>
+
+    <!-- Delivery Report Activity -->
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_none"/>
+    <string name="status_none">"(无)"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_pending"/>
+    <string name="status_pending">"待发送"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_read"/>
+    <string name="status_read">"阅读"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_received"/>
+    <string name="status_received">"已收到"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_failed"/>
+    <string name="status_failed">"失败"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_unread"/>
+    <string name="status_unread">"未读"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_deleted_unread"/>
+    <string name="status_deleted_unread">"未读已删除"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_rejected"/>
+    <string name="status_rejected">"已拒绝"</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="recipient_label"/>
+    <string name="recipient_label">"接收者： "</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="status_label"/>
+    <string name="status_label">"状态： "</string>
+    <!-- Label in "Report" window [CHAR LIMIT=50]-->
+    <add-resource type="string" name="delivered_label"/>
+    <string name="delivered_label">"已发送： "</string>
+    <add-resource type="string" name="delivery_report"/>
+    <string name="delivery_report">"发送报告:\u0020"</string>
+    <add-resource type="string" name="read_report"/>
+    <string name="read_report">"已读报告:\u0020"</string>
+
+
+    <add-resource type="string" name="attach_subject"/>
+    <string name="attach_subject">"主题"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_image"/>
+    <string name="attach_image">"照片"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_take_photo"/>
+    <string name="attach_take_photo">"拍摄照片"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_video"/>
+    <string name="attach_video">"视频"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_video"/>
+    <string name="attach_record_video">"拍摄视频"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_sound"/>
+    <string name="attach_sound">"音频"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_sound"/>
+    <string name="attach_record_sound">"录音"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_slideshow"/>
+    <string name="attach_slideshow">"幻灯片"</string>
+
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_bottom_text"/>
+    <string name="select_bottom_text">"底部文本"</string>
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_top_text"/>
+    <string name="select_top_text">"顶部文本"</string>
+
+    <!-- Delivery Report Toast dialog content -->
+    <add-resource type="string" name="delivery_toast_body"/>
+    <string name="delivery_toast_body">"%s收到了短信。"</string>
+
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"<xliff:g id="COUNT">%s</xliff:g> 条未读信息。"</string>
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"新信息"</string>
+
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple"/>
+    <string name="notification_failed_multiple">"<xliff:g id="COUNT">%s</xliff:g> 条短信无法发送"</string>
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple_title"/>
+    <string name="notification_failed_multiple_title">"短信未发送"</string>
+
+    <!-- Sim Full Notification dialog title. -->
+    <add-resource type="string" name="sim_full_title"/>
+    <string name="sim_full_title">"SIM卡已满"</string>
+    <!-- Sim Full Notification dialog text. -->
+    <add-resource type="string" name="sim_full_body"/>
+    <string name="sim_full_body">"删除部分信息以腾出更多空间。"</string>
+
+    <!-- Device Full Notification dialog title. -->
+    <add-resource type="string" name="sms_full_title"/>
+    <string name="sms_full_title">"短信内存已满"</string>
+    <!-- Device Full Notification dialog text. -->
+    <add-resource type="string" name="sms_full_body"/>
+    <string name="sms_full_body">"存储空间已满，无法发送和接收短信，请删除部分旧短信。"</string>
+    <!-- Device Low Notification dialog title. -->
+    <add-resource type="string" name="memory_low_title"/>
+    <string name="memory_low_title">"存储空间低"</string>
+    <!-- Device Low Notification dialog text. -->
+    <add-resource type="string" name="memory_low_body"/>
+    <string name="memory_low_body">"存储空间快要满了，请删除一些旧数据以确保能接收到新信息。"</string>
+    <!-- Disk Storage Full Error Notification dialog text. -->
+    <add-resource type="string" name="disk_storage_full_error"/>
+    <string name="disk_storage_full_error">"错误：存储卡满了"</string>
+
+    <!-- Mobile data is turned off dialog text. -->
+    <add-resource type="string" name="mobile_data_disable"/>
+    <string name="mobile_data_disable">"移动数据已关闭，是否坚持发送彩信？若继续将会产生数据流量。"</string>
+
+    <add-resource type="string" name="inform_data_off"/>
+    <string name="inform_data_off">"移动数据已关闭，请检查您的设置。"</string>
+    <!-- Mms size is too large dialog text. -->
+    <add-resource type="string" name="mms_too_large"/>
+    <string name="mms_too_large">"彩信过大，无法下载。"</string>
+
+    <!-- Sms's Being Rejected Notification dialog title. -->
+    <add-resource type="string" name="sms_rejected_title"/>
+    <string name="sms_rejected_title">"短信遭拒"</string>
+    <!-- Sms's Being Rejected Notification dialog text. -->
+    <add-resource type="string" name="sms_rejected_body"/>
+    <string name="sms_rejected_body">"由于未知原因导致收不到短信。"</string>
+
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this audio to your message. -->
+    <add-resource type="string" name="type_audio"/>
+    <string name="type_audio">"音频"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this picture to your message. -->
+    <add-resource type="string" name="type_picture"/>
+    <string name="type_picture">"图片"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this video to your message. -->
+    <add-resource type="string" name="type_video"/>
+    <string name="type_video">"视频"</string>
+
+    <!-- Dialog title for the Read Report dialog. -->
+    <add-resource type="string" name="confirm"/>
+    <string name="confirm">"确认"</string>
+    <!-- Dialog text for the Read Report dialog. -->
+    <add-resource type="string" name="message_send_read_report"/>
+    <string name="message_send_read_report">"将会发送已读报告。"</string>
+
+    <!-- This is the text of a toast message briefly displayed when a problem occurs
+         while sending. -->
+    <add-resource type="string" name="message_queued"/>
+    <string name="message_queued">"目前无法发送短信，系统会在服务恢复后发送。"</string>
+
+    <!-- dialog error message when only is FDN is allowed. -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"您只能向固定拨号号码发送消息。"</string>
+
+    <!-- Download Manager -->
+    <!-- When an error occurs downloading a new message and a subject isn't available, substitute
+         this default subject. -->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"（无主题）"</string>
+    <!-- When an error occurs downloading a new message and the sender is unknown, substitute
+         this default text. -->
+    <add-resource type="string" name="unknown_sender"/>
+    <string name="unknown_sender">"未知发送者"</string>
+    <!-- When an error occurs downloading a new message, display this message.
+         An example: Download of message Wanna get pizza from dorkman was unsuccessful. -->
+    <add-resource type="string" name="dl_failure_notification"/>
+    <string name="dl_failure_notification">"无法下载来自<xliff:g id="FROM">%2$s</xliff:g>的信息“<xliff:g id="SUBJECT">%1$s</xliff:g>”。"</string>
+
+    <!-- This is the confirm rate limit alert dialog title. -->
+    <add-resource type="string" name="rate_limit_surpassed"/>
+    <string name="rate_limit_surpassed">"确认"</string>
+    <!-- This is the confirm rate limit alert dialog text. -->
+    <add-resource type="string" name="confirm_rate_limit"/>
+    <string name="confirm_rate_limit">"即将发送多条彩信。确定要这样做吗？"</string>
+
+    <!-- Message Failed Notification -->
+    <!-- Dialog box title when receiving a message failed. -->
+    <add-resource type="string" name="message_download_failed_title"/>
+    <string name="message_download_failed_title">"信息未下载"</string>
+    <!-- Dialog box title when sending a message failed. -->
+    <add-resource type="string" name="message_send_failed_title"/>
+    <string name="message_send_failed_title">"信息未发送"</string>
+    <!-- Dialog box message text when failure occurs sending a message. -->
+    <add-resource type="string" name="message_failed_body"/>
+    <string name="message_failed_body">"触摸可查看短信并重试。"</string>
+    <!-- Dialog box message when there's a problem retrieving messages. -->
+    <add-resource type="string" name="download_later"/>
+    <string name="download_later">"目前无法下载。请稍后再试。"</string>
+    <add-resource type="string" name="send_failed_retry"/>
+    <string name="send_failed_retry">"发送失败，稍后自动重新发送。"</string>
+    <add-resource type="string" name="download_failed_retry"/>
+    <string name="download_failed_retry">"下载失败，稍后自动重新下载。"</string>
+    <add-resource type="string" name="no_network_send_failed_retry"/>
+    <string name="no_network_send_failed_retry">"无网络，发送失败，稍后自动重新发送。"</string>
+    <add-resource type="string" name="no_network_download_failed_retry"/>
+    <string name="no_network_download_failed_retry">"无网络，下载失败，稍后自动重新下载。"</string>
+    <!-- Dialog box message when there's no APN specified on the device. -->
+    <add-resource type="string" name="no_apn"/>
+    <string name="no_apn">"设备上未指定任何 APN。"</string>
+
+    <!-- Title for audio file picker -->
+    <add-resource type="string" name="select_audio"/>
+    <string name="select_audio">"选择音频"</string>
+    <add-resource type="string" name="system_audio_item"/>
+    <string name="system_audio_item">"系统音频"</string>
+    <add-resource type="string" name="external_audio_item"/>
+    <string name="external_audio_item">"外部存储的音频"</string>
+    <!-- Menu title to copy an attachment to the shared storage [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copy_to_sdcard"/>
+    <string name="copy_to_sdcard">"保存附件"</string>
+    <!-- Toast message on successful copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_success"/>
+    <string name="copy_to_sdcard_success">"已保存附件。"</string>
+    <!-- Toast message on failed copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_fail"/>
+    <string name="copy_to_sdcard_fail">"无法保存附件。"</string>
+    <!-- Menu title to save a sound as a ringtone -->
+    <add-resource type="string" name="save_ringtone"/>
+    <string name="save_ringtone">"另存为铃声"</string>
+    <!-- Toast message on successful copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone"/>
+    <string name="saved_ringtone">"已保存铃声。"</string>
+    <!-- Toast message on failed copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone_fail"/>
+    <string name="saved_ringtone_fail">"无法保存铃声。"</string>
+    <!-- Menu item -->
+    <!-- Menu item  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="menu_group_participants"/>
+    <string name="menu_group_participants">"群组参与者"</string>
+
+    <!-- This is the dialog title for the "Select link" dialog, shown when the user clicks on a
+    chat in the chat history view if there are links in the chat message. The dialog displays the
+    links if there are any -->
+    <add-resource type="string" name="select_link_title"/>
+    <string name="select_link_title">"选择操作"</string>
+
+    <!-- Name of the Nth slide, shown in the list in the slideshow editor. -->
+    <add-resource type="string" name="slide_number"/>
+    <string name="slide_number">"幻灯片 <xliff:g id="NUMBER">%s</xliff:g>"</string>
+    <!-- Duration of the slide, shown in the list in the slideshow editor -->
+    <add-resource type="plurals" name="slide_duration"/>
+    <plurals name="slide_duration">
+        <!-- Case of 1-second duration. -->
+        <item quantity="one">"<xliff:g id="NUMBER">%s</xliff:g>秒"</item>
+        <!-- Case of "few" (small number of) seconds of duration. -->
+        <item quantity="few">"<xliff:g id="NUMBER">%s</xliff:g>秒"</item>
+        <!-- Case of multiple-second duration. -->
+        <item quantity="other">"<xliff:g id="NUMBER">%s</xliff:g>秒"</item>
+    </plurals>
+
+    <!-- Title of the delivery report activity. -->
+    <add-resource type="string" name="delivery_report_activity"/>
+    <string name="delivery_report_activity">"发送报告"</string>
+
+    <!-- Title of the activity that tells the user about storage limits. -->
+    <add-resource type="string" name="storage_limits_activity"/>
+    <string name="storage_limits_activity">"存储限制"</string>
+
+    <!-- Title of the slide duration editor activity. -->
+    <add-resource type="string" name="change_duration_activity"/>
+    <string name="change_duration_activity">"更改持续时间"</string>
+
+    <!-- Title of the slideshow editor activity. -->
+    <add-resource type="string" name="edit_slideshow_activity"/>
+    <string name="edit_slideshow_activity">"编辑幻灯片"</string>
+
+    <!-- Title of the recipient list activity. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recipient_list_activity"/>
+    <string name="recipient_list_activity">"群组参与者"</string>
+
+    <!-- Title of the slide editor activity. -->
+    <add-resource type="string" name="edit_slide_activity"/>
+    <string name="edit_slide_activity">"编辑幻灯片"</string>
+
+    <!-- Title of the slideshow activity. -->
+    <add-resource type="string" name="slideshow_activity"/>
+    <string name="slideshow_activity">"播放幻灯片"</string>
+
+    <!-- Title of the class-0 message activity. -->
+    <add-resource type="string" name="class_0_message_activity"/>
+    <string name="class_0_message_activity">"0 类短信"</string>
+
+    <!-- Application name shown when searching -->
+    <add-resource type="string" name="search_label"/>
+    <string name="search_label">"短信"</string>
+
+    <!-- Search hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"搜索短信"</string>
+
+    <!-- Search activity name -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"短信"</string>
+    <!-- Search setting description -->
+    <add-resource type="string" name="search_setting_description"/>
+    <string name="search_setting_description">"消息中的文字"</string>
+
+    <!--  Search empty results -->
+    <add-resource type="string" name="search_empty"/>
+    <string name="search_empty">"没有匹配项。"</string>
+
+    <!--  Search results title -->
+    <add-resource type="plurals" name="search_results_title"/>
+    <plurals name="search_results_title">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"<xliff:g id="NUMBER">%1$s</xliff:g> 条符合“<xliff:g id="SEARCH">%2$s</xliff:g>”的搜索结果"</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"<xliff:g id="NUMBER">%1$s</xliff:g> 条符合“<xliff:g id="SEARCH">%2$s</xliff:g>”的搜索结果"</item>
+    </plurals>
+
+    <!--- String saved in history searches. -->
+    <add-resource type="string" name="search_history"/>
+    <string name="search_history">"<xliff:g id="COUNT">%1$s</xliff:g> 项符合“<xliff:g id="SEARCH">%2$s</xliff:g>”的搜索结果"</string>
+
+    <!-- Button title in Messaging preferences. -->
+    <add-resource type="string" name="confirm_clear_search_title"/>
+    <string name="confirm_clear_search_title">"清除"</string>
+    <!-- Text for the preferences button. -->
+    <add-resource type="string" name="confirm_clear_search_text"/>
+    <string name="confirm_clear_search_text">"搜索记录将被清除。"</string>
+    <!--- Button title in preferences to clear the search history. It's a verb action that takes place
+          immediately when clicked. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_title"/>
+    <string name="pref_mms_clear_search_history_title">"清除搜索记录"</string>
+    <!--- Button description in preferences to clear the search history. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_summary"/>
+    <string name="pref_mms_clear_search_history_summary">"清除以前的短信搜索记录，使其不再出现在“搜索”框中"</string>
+
+    <!-- Dialog text for display mode save dialog. -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"保存"</string>
+
+    <!-- Dialog title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_title"/>
+    <string name="storage_limits_title">"限制短信数"</string>
+
+    <!-- Dialog message for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_message"/>
+    <string name="storage_limits_message">"要限制每个会话可存储的短信数量吗？"</string>
+
+    <!-- Button title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting"/>
+    <string name="storage_limits_setting">"设置限制"</string>
+
+    <!-- Button title to dismiss dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting_dismiss"/>
+    <string name="storage_limits_setting_dismiss">"无限制"</string>
+
+    <!-- Toast message when a user tries to send a Mms message when there are already too many
+         outstanding unsent message. -->
+    <add-resource type="string" name="too_many_unsent_mms"/>
+    <string name="too_many_unsent_mms">"目前无法发送彩信。未发送的彩信过多。"</string>
+
+    <!-- Brief small label shown to right of message when it is being sent. -->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"正在发送..."</string>
+
+    <!-- Title of progress dialog for picker -->
+    <add-resource type="string" name="pick_too_many_recipients"/>
+    <string name="pick_too_many_recipients">"收件人过多"</string>
+
+    <!-- Message of progress dialog for picker -->
+    <add-resource type="string" name="adding_recipients"/>
+    <string name="adding_recipients">"正在添加收件人..."</string>
+
+    <!-- In conversation list items, this is the separator between a contact's name
+         and the draft stamp [CHAR LIMIT=5] -->
+    <add-resource type="string" name="draft_separator"/>
+    <string name="draft_separator">,\u0020</string>
+
+    <!-- In conversation list items, this comes after the receipient's name and contains
+         the number of messages in the thread [CHAR LIMIT=5] -->
+    <add-resource type="string" name="message_count_format"/>
+    <string name="message_count_format">"\u00a0<xliff:g id="number" example="1">%1$s</xliff:g>"</string>
+
+    <!-- When showing a multi-message notification, this is the title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_count_notification"/>
+    <string name="message_count_notification">"<xliff:g id="NUMBER">%1$s</xliff:g> 条新短信"</string>
+    <!-- In digest notifications when we show N messages, but there are N+M outstanding messages,
+         this text is displayed at the bottom of the notification. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="message_count_notification_overflow"/>
+    <plurals name="message_count_notification_overflow">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"+<xliff:g id="NUMBER">%1$s</xliff:g> 条其他短信"</item>
+        <!-- Case of 2 or more results. -->
+        <item quantity="other">"+<xliff:g id="NUMBER">%1$s</xliff:g> 条其他短信"</item>
+    </plurals>
+
+    <!-- For debugging: Dialog box title indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state"/>
+    <string name="error_state">"状态不一致"</string>
+    <!-- For debugging: Dialog box text indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state_text"/>
+    <string name="error_state_text">"会话和收件人的状态不一致。请为错误截图，并通过 http://go/droidanizer 向我们报告这一问题"</string>
+
+    <!-- In the title of the compose message activity, when there are multiple recipients, we show
+         the number of recipients in the subtitle of the action bar. There's never a case of one. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="recipient_count"/>
+    <plurals name="recipient_count">
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"<xliff:g id="NUMBER">%1$s</xliff:g> 个人"</item>
+    </plurals>
+
+    <!-- Message of the dialog used to disable messaging notifications [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_notifications_dialog_message"/>
+    <string name="disable_notifications_dialog_message">"要停止从默认“短信”应用接收重复的短信通知吗？"</string>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default conversation list. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"查看更多会话"</string>
+
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"音频"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_slideshow"/>
+    <string name="attachment_slideshow">"幻灯片"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"视频"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_picture"/>
+    <string name="attachment_picture">"图片"</string>
+
+    <!-- Separator between parts of a notification in each line of an inboxStyle notification. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="notification_separator"/>
+    <string name="notification_separator">\u0020\u0020</string>
+
+    <!-- An enumeration comma for separating multiple names in notifications. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- In message list items, this string builds the timestamp line when the message is in a group [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="message_timestamp_format"/>
+    <string name="message_timestamp_format">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+
+    <add-resource type="string" name="mail_to"/>
+    <string name="mail_to">"发送邮件至:"</string>
+    <!-- Menu item to connect the extract url in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_connect_url"/>
+    <string name="menu_connect_url">"连接"</string>
+    <!-- Menu item to add the extract url to boomark in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_add_to_label"/>
+    <string name="menu_add_to_label">"保存到书签"</string>
+    <add-resource type="string" name="loadurlinfo_str"/>
+    <string name="loadurlinfo_str">"是否加载该 URL?"</string>
+    <!-- Message Template -->
+    <add-resource type="string" name="pref_summary_message_template"/>
+    <string name="pref_summary_message_template">"编辑短信模板"</string>
+    <add-resource type="string" name="pref_title_message_template"/>
+    <string name="pref_title_message_template">"短信模板"</string>
+    <add-resource type="string" name="title_new_message_template"/>
+    <string name="title_new_message_template">"新建模板"</string>
+    <add-resource type="string" name="summary_new_message_template"/>
+    <string name="summary_new_message_template">"编写新的短信模板"</string>
+    <add-resource type="string" name="message_template_title"/>
+    <string name="message_template_title">"短信模板"</string>
+    <add-resource type="string" name="dialog_editSMSTemplate_title"/>
+    <string name="dialog_editSMSTemplate_title">"编辑"</string>
+    <add-resource type="string" name="dialog_createSMSTemplate_title"/>
+    <string name="dialog_createSMSTemplate_title">"新建"</string>
+    <add-resource type="string" name="message_template"/>
+    <string name="message_template">"短信模板"</string>
+    <add-resource type="string" name="import_message_template"/>
+    <string name="import_message_template">"导入模板"</string>
+    <add-resource type="string" name="delete_template_message"/>
+    <string name="delete_template_message">"删除"</string>
+    <add-resource type="string" name="template_full"/>
+    <string name="template_full">"已达到模板字数上限。"</string>
+    <add-resource type="string" name="pref_sms_signature_title"/>
+    <string name="pref_sms_signature_title">"短信签名"</string>
+    <add-resource type="string" name="pref_title_enable_signature"/>
+    <string name="pref_title_enable_signature">"短信签名"</string>
+    <add-resource type="string" name="pref_summary_enable_signature"/>
+    <string name="pref_summary_enable_signature">"短信签名已启用"</string>
+    <add-resource type="string" name="pref_summary_disable_signature"/>
+    <string name="pref_summary_disable_signature">"短信签名已禁用"</string>
+    <add-resource type="string" name="pref_title_edit_signature"/>
+    <string name="pref_title_edit_signature">"编辑短信签名"</string>
+    <add-resource type="string" name="signature_full_toast"/>
+    <string name="signature_full_toast">"签名已达最大长度。"</string>
+
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="menu_copy_to"/>
+    <string name="menu_copy_to">"复制"</string>
+    <add-resource type="string" name="operation_to_card_memory"/>
+    <string name="operation_to_card_memory">"复制到SIM卡"</string>
+
+    <!-- SMSC -->
+    <add-resource type="string" name="pref_smsc_title"/>
+    <string name="pref_smsc_title">"短消息中心设置"</string>
+    <add-resource type="string" name="pref_one_smcs"/>
+    <string name="pref_one_smcs">"设置短消息中心号码"</string>
+    <add-resource type="string" name="pref_more_smcs"/>
+    <string name="pref_more_smcs">"信息中心号码"</string>
+    <add-resource type="string" name="pref_more_message_smcs"/>
+    <string name="pref_more_message_smcs">"SIM<xliff:g id="slot_number">%d</xliff:g>"</string>
+    <add-resource type="string" name="set_smsc_error"/>
+    <string name="set_smsc_error">"设置短消息中心号码失败"</string>
+    <add-resource type="string" name="set_smsc_success"/>
+    <string name="set_smsc_success">"设置短消息中心号码成功"</string>
+    <add-resource type="string" name="set_smsc_confirm_message"/>
+    <string name="set_smsc_confirm_message">"修改短消息中心号码可能导致短信发送失败，确认修改吗？"</string>
+
+    <add-resource type="string" name="storage_warning_title"/>
+    <string name="storage_warning_title">"您手机的存储空间已满"</string>
+    <add-resource type="string" name="storage_warning_content"/>
+    <string name="storage_warning_content">"您将无法收到新的短信/彩信"</string>
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="copy_to_sim"/>
+    <string name="copy_to_sim">"复制到SIM卡"</string>
+    <add-resource type="string" name="copy_to_sim_success"/>
+    <string name="copy_to_sim_success">"复制短信到 SIM 卡，总数: %1$d，成功: %2$d"</string>
+    <add-resource type="string" name="copy_to_sim_fail"/>
+    <string name="copy_to_sim_fail">"信息保存失败"</string>
+    <add-resource type="string" name="copy_to_phone_success"/>
+    <string name="copy_to_phone_success">"信息已保存"</string>
+    <add-resource type="string" name="copy_to_phone_fail"/>
+    <string name="copy_to_phone_fail">"信息保存失败"</string>
+    <add-resource type="string" name="cannot_copy_to_sim_reason"/>
+    <string name="cannot_copy_to_sim_reason">"信息中包含无效收件人。"</string>
+
+    <add-resource type="string" name="audio_picker_app_not_found"/>
+    <string name="audio_picker_app_not_found">"找不到选择音频的应用"</string>
+    <add-resource type="string" name="bookmark_save_app_not_found"/>
+    <string name="bookmark_save_app_not_found">"找不到保存书签的应用"</string>
+    <add-resource type="string" name="contact_app_not_found"/>
+    <string name="contact_app_not_found">"找不到联系人应用"</string>
+    <!-- Gray hint displayed in the search field in Contacts when empty -->
+    <add-resource type="string" name="search_bar_hint"/>
+    <string name="search_bar_hint">"搜索联系人"</string>
+    <add-resource type="string" name="select_all"/>
+    <string name="select_all">"全选"</string>
+
+    <!-- Add for share contact feature -->
+    <add-resource type="string" name="type_vcard"/>
+    <string name="type_vcard">"电子名片"</string>
+    <add-resource type="string" name="import_vcard"/>
+    <string name="import_vcard">"导入"</string>
+    <add-resource type="string" name="attach_add_contact_as_text"/>
+    <string name="attach_add_contact_as_text">"联系人信息"</string>
+    <add-resource type="string" name="attach_add_contact_as_vcard"/>
+    <string name="attach_add_contact_as_vcard">"电子名片"</string>
+
+    <add-resource type="string" name="contact_info_text_as_name"/>
+    <string name="contact_info_text_as_name">"姓名:"</string>
+    <add-resource type="string" name="contact_info_text_as_phone"/>
+    <string name="contact_info_text_as_phone">"电话:"</string>
+    <add-resource type="string" name="contact_info_text_as_email"/>
+    <string name="contact_info_text_as_email">"邮件:"</string>
+
+    <!--  Strings used forh MMS push of messages in outbox -->
+    <add-resource type="string" name="label_mms_send_outbox_msg"/>
+    <string name="label_mms_send_outbox_msg">"彩信激活"</string>
+    <add-resource type="string" name="desc_mms_send_outbox_msg"/>
+    <string name="desc_mms_send_outbox_msg">"将发件箱内的所有彩信发送至网络"</string>
+
+    <add-resource type="string" name="pref_wap_push_title"/>
+    <string name="pref_wap_push_title">"自动推送服务开关"</string>
+    <add-resource type="string" name="pref_title_wap_push_enabled"/>
+    <string name="pref_title_wap_push_enabled">"数据服务开关"</string>
+    <add-resource type="string" name="pref_summary_wap_push_enabled"/>
+    <string name="pref_summary_wap_push_enabled">"允许接收服务信息"</string>
+
+    <!-- Banner in conversation list for making Messaging the default SMS app -->
+    <add-resource type="string" name="banner_sms_promo_title_initial"/>
+    <string name="banner_sms_promo_title_initial">"“短信”不是您的短信应用"</string>
+    <add-resource type="string" name="banner_sms_promo_title_application"/>
+    <string name="banner_sms_promo_title_application">"“<xliff:g id="APPNAME">%s</xliff:g>”是您的短信应用"</string>
+    <!-- select contact group -->
+    <add-resource type="string" name="no_contact_group"/>
+    <string name="no_contact_group">"没有任何群组"</string>
+    <add-resource type="string" name="banner_sms_promo_message"/>
+    <string name="banner_sms_promo_message">"您可以在“设置”中更改此设置。"</string>
+
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="sim_card"/>
+    <string name="sim_card">"SIM卡"</string>
+
+    <!-- String used in MemoryStatusActivity.java -->
+    <add-resource type="string" name="memory_status_title"/>
+    <string name="memory_status_title">"存储状态"</string>
+    <add-resource type="string" name="sms_phone_used"/>
+    <string name="sms_phone_used">"已用短信:"</string>
+    <add-resource type="string" name="sms_phone_capacity"/>
+    <string name="sms_phone_capacity">"短信容量:"</string>
+    <add-resource type="string" name="mms_phone_used"/>
+    <string name="mms_phone_used">"已用彩信:"</string>
+    <add-resource type="string" name="mms_phone_capacity"/>
+    <string name="mms_phone_capacity">"彩信容量:"</string>
+    <add-resource type="string" name="total_memory_used"/>
+    <string name="total_memory_used">"已使用容量:"</string>
+    <add-resource type="string" name="sub"/>
+    <string name="sub">"卡"</string>
+
+    <!-- Settings item description for SMS Validity period -->
+    <add-resource type="string" name="pref_title_sms_validity_period"/>
+    <string name="pref_title_sms_validity_period">"短信有效期"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot1"/>
+    <string name="pref_title_sms_validity_period_slot1">"卡1短信有效期"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot2"/>
+    <string name="pref_title_sms_validity_period_slot2">"卡2短信有效期"</string>
+    <add-resource type="string" name="sms_validity_period_not_set"/>
+    <string name="sms_validity_period_not_set">"不设置"</string>
+    <add-resource type="string" name="sms_validity_period_one_hour"/>
+    <string name="sms_validity_period_one_hour">"1小时"</string>
+    <add-resource type="string" name="sms_validity_period_six_hours"/>
+    <string name="sms_validity_period_six_hours">"6小时"</string>
+    <add-resource type="string" name="sms_validity_period_twelve_hours"/>
+    <string name="sms_validity_period_twelve_hours">"12小时"</string>
+    <add-resource type="string" name="sms_validity_period_one_day"/>
+    <string name="sms_validity_period_one_day">"1天"</string>
+    <add-resource type="string" name="sms_validity_period_maximum"/>
+    <string name="sms_validity_period_maximum">"最长"</string>
+
+    <add-resource type="string" name="operate_success"/>
+    <string name="operate_success">"操作成功！"</string>
+    <add-resource type="string" name="operate_failure"/>
+    <string name="operate_failure">"操作失败！"</string>
+    <add-resource type="string" name="menu_reply"/>
+    <string name="menu_reply">"回复"</string>
+
+    <add-resource type="string" name="slot1"/>
+    <string name="slot1">"卡1"</string>
+    <add-resource type="string" name="slot2"/>
+    <string name="slot2">"卡2"</string>
+
+    <add-resource type="string" name="normal_show"/>
+    <string name="normal_show">"普通模式查看"</string>
+    <add-resource type="string" name="cannot_play"/>
+    <string name="cannot_play">"无法播放该幻灯片"</string>
+
+    <add-resource type="string" name="confirm_delete_selected_messages"/>
+    <string name="confirm_delete_selected_messages">"选中的信息将被删除"</string>
+    <!-- menu item of mailboxmessagecontent -->
+    <add-resource type="string" name="menu_load_push"/>
+    <string name="menu_load_push">"载入"</string>
+    <add-resource type="string" name="menu_delete_msg"/>
+    <string name="menu_delete_msg">"删除"</string>
+    <!-- toast for send result -->
+    <add-resource type="string" name="send_failure"/>
+    <string name="send_failure">"发送失败！"</string>
+    <add-resource type="string" name="send_success"/>
+    <string name="send_success">"发送成功！"</string>
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="message_detail"/>
+    <string name="message_detail">"信息详情"</string>
+    <add-resource type="string" name="select_messages"/>
+    <string name="select_messages">"选择信息"</string>
+    <add-resource type="string" name="no_message"/>
+    <string name="no_message">"无信息"</string>
+    <add-resource type="string" name="change_to_folder_mode"/>
+    <string name="change_to_folder_mode">"切换到文件夹模式"</string>
+    <add-resource type="string" name="change_to_conversation_mode"/>
+    <string name="change_to_conversation_mode">"切换到会话模式"</string>
+    <!-- Spinner item of box type in mailbox-mode -->
+    <add-resource type="string" name="box_type_select"/>
+    <string name="box_type_select">"选择信箱"</string>
+    <add-resource type="string" name="type_inbox"/>
+    <string name="type_inbox">"收件箱"</string>
+    <add-resource type="string" name="type_sent"/>
+    <string name="type_sent">"已发信息"</string>
+    <add-resource type="string" name="type_outbox"/>
+    <string name="type_outbox">"发件箱"</string>
+    <add-resource type="string" name="type_draft"/>
+    <string name="type_draft">"草稿"</string>
+    <!-- Spinner item of slot type in mailbox-mode -->
+    <add-resource type="string" name="slot_type_select"/>
+    <string name="slot_type_select">"选择卡槽"</string>
+    <add-resource type="string" name="type_all"/>
+    <string name="type_all">"全部"</string>
+    <add-resource type="string" name="type_slot1"/>
+    <string name="type_slot1">"卡 1"</string>
+    <add-resource type="string" name="type_slot2"/>
+    <string name="type_slot2">"卡 2"</string>
+    <!-- String used in SearchActivityExtend.java -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"信息查找"</string>
+    <add-resource type="string" name="search_key"/>
+    <string name="search_key">"查找关键字"</string>
+    <add-resource type="string" name="search_mode"/>
+    <string name="search_mode">"查找方式"</string>
+    <add-resource type="string" name="search_as_name"/>
+    <string name="search_as_name">"姓名"</string>
+    <add-resource type="string" name="search_as_number"/>
+    <string name="search_as_number">"号码"</string>
+    <add-resource type="string" name="search_as_content"/>
+    <string name="search_as_content">"内容"</string>
+    <add-resource type="string" name="search_as_subject"/>
+    <string name="search_as_subject">"主题"</string>
+    <add-resource type="string" name="invalid_name_toast"/>
+    <string name="invalid_name_toast">"请输入有效的姓名！"</string>
+
+    <add-resource type="string" name="sim_capacity_title"/>
+    <string name="sim_capacity_title">"SIM卡容量"</string>
+    <add-resource type="string" name="sim_capacity_used"/>
+    <string name="sim_capacity_used">"已使用:"</string>
+    <add-resource type="string" name="sim_capacity"/>
+    <string name="sim_capacity">"总容量:"</string>
+    <add-resource type="string" name="mms_recipient_Limit"/>
+    <string name="mms_recipient_Limit"></string>
+    <add-resource type="string" name="no_network_notification_when_send_message"/>
+    <string name="no_network_notification_when_send_message">"连接到 Wi-Fi 以发送信息"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_message_text"/>
+    <string name="alert_user_connect_to_wifi_for_message_text">"点按此处查看可用网络"</string>
+    <add-resource type="string" name="no_network_alert_when_send_message"/>
+    <string name="no_network_alert_when_send_message">"移动网络不可用。请连接到可用的 WLAN 以发送消息。"</string>
+
+    <!-- Settings item description for Mms Validity period -->
+    <add-resource type="string" name="pref_title_mms_save_time"/>
+    <string name="pref_title_mms_save_time">"彩信有效期"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot1"/>
+    <string name="pref_title_mms_save_time_slot1">"卡1彩信有效期"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot2"/>
+    <string name="pref_title_mms_save_time_slot2">"卡2彩信有效期"</string>
+    <add-resource type="string" name="mms_one_week"/>
+    <string name="mms_one_week">"一周"</string>
+    <add-resource type="string" name="mms_two_days"/>
+    <string name="mms_two_days">"两天"</string>
+    <add-resource type="string" name="mms_max"/>
+    <string name="mms_max">"最长"</string>
+    <add-resource type="string" name="save_description"/>
+    <string name="save_description">"在服务器保存时间"</string>
+    <add-resource type="string" name="status_expired"/>
+    <string name="status_expired">"已过期"</string>
+
+    <add-resource type="string" name="pref_sim_card_full_save_to_phone"/>
+    <string name="pref_sim_card_full_save_to_phone">"SIM卡短信存储已满，自动保存到手机内存。"</string>
+
+    <!-- batch delete message in ConversationList and MailBoxMessageList -->
+    <add-resource type="string" name="selected_all"/>
+    <string name="selected_all">"全选"</string>
+    <add-resource type="string" name="deselected_all"/>
+    <string name="deselected_all">"取消全选"</string>
+    <add-resource type="string" name="selected_count"/>
+    <string name="selected_count">"已选择 <xliff:g id="COUNT">%d</xliff:g> 项"</string>
+    <!--add for toast when deleting -->
+    <add-resource type="string" name="deleting_title"/>
+    <string name="deleting_title">"删除"</string>
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"请稍等..."</string>
+    <add-resource type="string" name="done_delete"/>
+    <string name="done_delete">"完成"</string>
+    <!--add for toast when merging sms -->
+    <add-resource type="string" name="merging_sms_title"/>
+    <string name="merging_sms_title">"合并短信"</string>
+    <add-resource type="string" name="cdma_priority_normal"/>
+    <string name="cdma_priority_normal">"一般"</string>
+    <add-resource type="string" name="cdma_priority_interactive"/>
+    <string name="cdma_priority_interactive">"交互"</string>
+    <add-resource type="string" name="cdma_priority_urgent"/>
+    <string name="cdma_priority_urgent">"急"</string>
+    <add-resource type="string" name="cdma_priority_emergency"/>
+    <string name="cdma_priority_emergency">"紧急"</string>
+    <add-resource type="string" name="pref_title_cdma_priority"/>
+    <string name="pref_title_cdma_priority">"短信优先级"</string>
+    <add-resource type="string" name="pref_summary_cdma_priority"/>
+    <string name="pref_summary_cdma_priority">"CDMA短信优先级设置"</string>
+    <add-resource type="string" name="prefDialogTitle_cdma_priority"/>
+    <string name="prefDialogTitle_cdma_priority">"优先级"</string>
+    <add-resource type="string" name="download_dialog_title"/>
+    <string name="download_dialog_title">"确认下载此彩信?"</string>
+    <add-resource type="string" name="menu_email"/>
+    <string name="menu_email">"发送邮件"</string>
+
+    <!-- Settings item description for Preferred storage -->
+    <add-resource type="string" name="pref_title_sms_store"/>
+    <string name="pref_title_sms_store">"优先存储器"</string>
+    <add-resource type="string" name="pref_title_sms_store_card1"/>
+    <string name="pref_title_sms_store_card1">"卡1优先存储器"</string>
+    <add-resource type="string" name="pref_title_sms_store_card2"/>
+    <string name="pref_title_sms_store_card2">"卡2优先存储器"</string>
+    <add-resource type="string" name="pref_sms_store_phone"/>
+    <string name="pref_sms_store_phone">"手机"</string>
+    <add-resource type="string" name="pref_sms_store_card"/>
+    <string name="pref_sms_store_card">"SIM卡"</string>
+    <add-resource type="string" name="pref_sms_store_sim1"/>
+    <string name="pref_sms_store_sim1">SIM1</string>
+    <add-resource type="string" name="pref_sms_store_sim2"/>
+    <string name="pref_sms_store_sim2">SIM2</string>
+    <add-resource type="string" name="pref_sms_store_card_unknown_fail"/>
+    <string name="pref_sms_store_card_unknown_fail">"新短信接收失败，无法正确读取SIM卡"</string>
+    <add-resource type="string" name="mms_size_indicator"/>
+    <string name="mms_size_indicator">"<xliff:g id="mms_size">%1$s</xliff:g>K/<xliff:g id="all_size">%2$s</xliff:g>K"</string>
+    <add-resource type="string" name="forward_size_over"/>
+    <string name="forward_size_over">"禁止转发，新消息大小超过 300K。"</string>
+    <add-resource type="string" name="pref_title_notification_creation_mode"/>
+    <string name="pref_title_notification_creation_mode">"创建模式"</string>
+
+    <add-resource type="string" name="pref_dialog_title_creation_mode"/>
+    <string name="pref_dialog_title_creation_mode">"选择创建模式"</string>
+    <add-resource type="string" name="pref_summary_creation_mode"/>
+    <string name="pref_summary_creation_mode">"编写短信的 MMS 创建模式"</string>
+    <add-resource type="string" name="restricted_format"/>
+    <string name="restricted_format">"受限格式"</string>
+    <add-resource type="string" name="attach_anyway"/>
+    <string name="attach_anyway">"仍然附加吗？"</string>
+
+    <add-resource type="string" name="plugger"/>
+    <string name="plugger">"播音员"</string>
+    <add-resource type="string" name="file_not_found"/>
+    <string name="file_not_found">"未找到文件"</string>
+    <add-resource type="string" name="type_attachment"/>
+    <string name="type_attachment">"附件"</string>
+    <add-resource type="string" name="bad_file"/>
+    <string name="bad_file">"该文件已损坏，无法插入！"</string>
+    <add-resource type="string" name="indication_send_message_successfully"/>
+    <string name="indication_send_message_successfully">"短信已发出。"</string>
+    <add-resource type="string" name="indication_send_message_failed"/>
+    <string name="indication_send_message_failed">"无法发送短信。"</string>
+
+    <!-- ConfigurationClient -->
+    <add-resource type="string" name="omacp_configuration"/>
+    <string name="omacp_configuration">"OMACP配置"</string>
+    <add-resource type="string" name="configuration_message_key"/>
+    <string name="configuration_message_key">"配置短信"</string>
+    <add-resource type="string" name="configuration_message_key_activity"/>
+    <string name="configuration_message_key_activity">"触摸即可配置您的OMACP短信"</string>
+    <!-- General settings -->
+    <add-resource type="string" name="pref_title_general_settings"/>
+    <string name="pref_title_general_settings">"标准"</string>
+    <add-resource type="string" name="pref_title_notification_settings"/>
+    <string name="pref_title_notification_settings">"通知"</string>
+    <!-- Cell broadcast settings -->
+    <add-resource type="string" name="cell_broadcast"/>
+    <string name="cell_broadcast">"小区广播"</string>
+    <add-resource type="string" name="cell_broadcast_title"/>
+    <string name="cell_broadcast_title">"小区广播设置"</string>
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"SIM 卡小区广播设置"</string>
+    <!-- Chat wallpaper -->
+    <add-resource type="string" name="pref_chat_wallpaper"/>
+    <string name="pref_chat_wallpaper">"聊天壁纸"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_gallery"/>
+    <string name="dialog_wallpaper_chooser_option_gallery">"图库"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_camera"/>
+    <string name="dialog_wallpaper_chooser_option_camera">"拍照"</string>
+    <add-resource type="string" name="dialog_wallpaper_title"/>
+    <string name="dialog_wallpaper_title">"选择壁纸"</string>
+    <add-resource type="string" name="intent_chooser_dialog_title"/>
+    <string name="intent_chooser_dialog_title">"使用以下应用完成操作："</string>
+    <add-resource type="string" name="gallery_packagename"/>
+    <string name="gallery_packagename">com.android.gallery3d</string>
+    <add-resource type="string" name="camera_packagename"/>
+    <string name="camera_packagename">com.android.camera2</string>
+    <add-resource type="string" name="pref_title_size_limit"/>
+    <string name="pref_title_size_limit">"大小限制"</string>
+    <!-- Font settings -->
+    <add-resource type="string" name="pref_title_message_font_size"/>
+    <string name="pref_title_message_font_size">"短信字体大小"</string>
+    <add-resource type="string" name="message_font_size_dialog_title"/>
+    <string name="message_font_size_dialog_title">"短信字体大小"</string>
+    <add-resource type="string" name="font_follow_system_font"/>
+    <string name="font_follow_system_font">"使用系统字体大小"</string>
+    <add-resource type="string" name="font_small"/>
+    <string name="font_small">"小"</string>
+    <add-resource type="string" name="font_medium"/>
+    <string name="font_medium">"中"</string>
+    <add-resource type="string" name="font_large"/>
+    <string name="font_large">"大"</string>
+    <add-resource type="string" name="font_extra_large"/>
+    <string name="font_extra_large">"超大"</string>
+    <add-resource type="string" name="plugger_priority"/>
+    <string name="plugger_priority">999</string>
+
+    <add-resource type="string" name="default_sms_validity_period"/>
+    <string name="default_sms_validity_period">-1</string>
+    <add-resource type="string" name="default_mms_validity_period"/>
+    <string name="default_mms_validity_period">0</string>
+
+    <add-resource type="string" name="menu_more"/>
+    <string name="menu_more">"更多"</string>
+    <add-resource type="string" name="letter_tile_letter_font_family"/>
+    <string name="letter_tile_letter_font_family">"sans-serif-light"</string>
+    <add-resource type="string" name="contact_list_send_to_text"/>
+    <string name="contact_list_send_to_text">"发送到<xliff:g id="DESTINATION">%s</xliff:g>"</string>
+    <!-- The label of all Notification messages -->
+    <add-resource type="string" name="notification_message_label"/>
+    <string name="notification_message_label">"通知短信"</string>
+    <add-resource type="string" name="unread_notification_message_label"/>
+    <string name="unread_notification_message_label">"通知短信 (<xliff:g id="count">%s</xliff:g>)"</string>
+    <add-resource type="string" name="mms_attachment_type_audio"/>
+    <string name="mms_attachment_type_audio">"音频"</string>
+    <add-resource type="string" name="mms_attachment_type_video"/>
+    <string name="mms_attachment_type_video">"视频"</string>
+    <add-resource type="string" name="mms_attachment_type_picture"/>
+    <string name="mms_attachment_type_picture">"图片"</string>
+    <add-resource type="string" name="mms_attachment_type_vcard"/>
+    <string name="mms_attachment_type_vcard">"名片"</string>
+    <add-resource type="string" name="mms_attachment_type_slideshow"/>
+    <string name="mms_attachment_type_slideshow">"幻灯片"</string>
+    <add-resource type="string" name="group_numbers"/>
+    <string name="group_numbers">"<xliff:g id="number">%s</xliff:g>成员"</string>
+    <add-resource type="string" name="mms_save_title"/>
+    <string name="mms_save_title">"保存"</string>
+    <add-resource type="string" name="mms_share_title"/>
+    <string name="mms_share_title">"分享"</string>
+    <add-resource type="string" name="mms_photo_attachment_saved_title"/>
+    <string name="mms_photo_attachment_saved_title">"图片保存到\"<xliff:g id="albumName">%s</xliff:g>\"相册"</string>
+    <add-resource type="string" name="mms_video_attachment_saved_title"/>
+    <string name="mms_video_attachment_saved_title">"视频保存到\"<xliff:g id="albumName">%s</xliff:g>\"相册"</string>
+    <add-resource type="string" name="mms_attachment_saved_fail_title"/>
+    <string name="mms_attachment_saved_fail_title">"保存失败"</string>
+    <add-resource type="string" name="notification_mark_as_read"/>
+    <string name="notification_mark_as_read">"已读"</string>
+    <add-resource type="string" name="notification_download"/>
+    <string name="notification_download">"下载"</string>
+    <add-resource type="string" name="notification_reply"/>
+    <string name="notification_reply">"回复"</string>
+    <add-resource type="string" name="notification_reply_to"/>
+    <string name="notification_reply_to">"回复<xliff:g id="name">%s</xliff:g>"</string>
+    <add-resource type="string" name="notification_view_message_text"/>
+    <string name="notification_view_message_text">"查看消息"</string>
+
+    <add-resource type="string" name="conversation_list_send_fail_text"/>
+    <string name="conversation_list_send_fail_text">"发送失败，点击即可重发。"</string>
+    <add-resource type="string" name="conversation_transaction_fail"/>
+    <string name="conversation_transaction_fail">"事务失败，触摸以重试"</string>
+
+    <!-- Abbreviated message to express that something occurred some number of minutes in the past (e.g., 5 minutes ago). -->
+    <add-resource type="plurals" name="num_minutes_ago"/>
+    <plurals name="num_minutes_ago">
+        <item quantity="one">"<xliff:g id="count">%d</xliff:g> 分钟前"</item>
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> 分钟前"</item>
+    </plurals>
+    <add-resource type="string" name="posted_now"/>
+    <string name="posted_now">"刚刚"</string>
+    <add-resource type="string" name="basic_permission_required"/>
+    <string name="basic_permission_required">"短信应用需要获取 短信, 电话,联系人和手机USB存储权限."</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"下一步 &gt;"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"设置 &gt;"</string>
+    <add-resource type="string" name="exit"/>
+    <string name="exit">"退出"</string>
+    <add-resource type="string" name="enable_permission_settings"/>
+    <string name="enable_permission_settings">"您可以在 设置 &gt; 应用 &gt; 短信 &gt; 权限 中更改权限."</string>
+    <add-resource type="string" name="no_permission_save_attachment_to_storage"/>
+    <string name="no_permission_save_attachment_to_storage">"没有权限保存附件到手机USB存储。"</string>
+    <add-resource type="string" name="grant_permission_fail"/>
+    <string name="grant_permission_fail">"获取权限失败，请重试！"</string>
+    <add-resource type="string" name="you"/>
+    <string name="you">"你:"</string>
+    <add-resource type="string" name="email_app_not_found"/>
+    <string name="email_app_not_found">"找不到邮件应用"</string>
+    <add-resource type="string" name="notification_type_message"/>
+    <string name="notification_type_message">"键入信息"</string>
+    <add-resource type="string" name="notification_sim_info"/>
+    <string name="notification_sim_info">SIM</string>
+    <add-resource type="string" name="deleting_sim_sms"/>
+    <string name="deleting_sim_sms">"正在删除SIM卡短信..."</string>
+    <add-resource type="string" name="send_via_invalid_sub"/>
+    <string name="send_via_invalid_sub">"当前卡槽没有有效的SIM卡，无法发送消息。"</string></resources>

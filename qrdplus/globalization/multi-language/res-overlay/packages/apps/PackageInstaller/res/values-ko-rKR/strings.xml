@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"패키지 설치 프로그램"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"다음"</string>
+    <add-resource type="string" name="install"/>
+    <string name="install">"설치"</string>
+    <add-resource type="string" name="done"/>
+    <string name="done">"완료"</string>
+    <!-- TODO REMOVE LATER -->
+    <add-resource type="string" name="security_settings_desc"/>
+    <string name="security_settings_desc">"앱에 허용할 작업:"</string>
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"취소"</string>
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"알 수 없음"</string>
+    <add-resource type="string" name="installing"/>
+    <string name="installing">"설치 중..."</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"앱이 설치되었습니다."</string>
+    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question"/>
+    <string name="install_confirm_question">"이 애플리케이션을 설치하시겠습니까? 애플리케이션이 다음에 액세스할 수 있습니다."</string>
+    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_no_perms"/>
+    <string name="install_confirm_question_no_perms">"이 애플리케이션을 설치하시겠습니까? 특별한 액세스 권한이 필요하지 않습니다."</string>
+    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update"/>
+    <string name="install_confirm_question_update">"기존 애플리케이션에 업데이트를 설치하시겠습니까? 기존 데이터는 손실되지 않습니다. 업데이트된 애플리케이션이 다음에 액세스할 수 있습니다."</string>
+    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system"/>
+    <string name="install_confirm_question_update_system">"내장 애플리케이션에 업데이트를 설치하시겠습니까? 기존 데이터는 손실되지 않습니다. 업데이트된 애플리케이션이 다음에 액세스할 수 있습니다."</string>
+    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_no_perms"/>
+    <string name="install_confirm_question_update_no_perms">"기존의 애플리케이션 업데이트를 설치하시겠습니까? 기존의 데이터는 손실되지 않으며 특별한 액세스 권한이 필요하지 않습니다."</string>
+    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system_no_perms"/>
+    <string name="install_confirm_question_update_system_no_perms">"내장 애플리케이션 업데이트를 설치하시겠습니까? 기존의 데이터는 손실되지 않으며 특별한 액세스 권한이 필요하지 않습니다."</string>
+    <add-resource type="string" name="install_failed"/>
+    <string name="install_failed">"앱이 설치되지 않았습니다."</string>
+    <!-- Reason displayed when installation fails because the package was blocked
+        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_blocked"/>
+    <string name="install_failed_blocked">"패키지 설치가 차단되었습니다."</string>
+    <!-- Reason displayed when installation fails because the package conflicts with
+        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_conflict"/>
+    <string name="install_failed_conflict">"패키지가 이름이 같은 기존 패키지와 충돌합니다."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tablet">"앱이 사용 중인 태블릿과 호환되지 않습니다."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tv">"앱이 사용 중인 TV와 호환되지 않습니다."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="default">"앱이 사용 중인 스마트폰과 호환되지 않습니다."</string>
+    <!-- Reason displayed when installation fails because the installation package itself is invalid
+        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_invalid_apk"/>
+    <string name="install_failed_invalid_apk">"패키지가 손상된 것 같습니다."</string>
+    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tablet">"태블릿에 <xliff:g id="APP_NAME">%1$s</xliff:g> 앱을 설치할 수 없습니다."</string>
+    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tv">"<xliff:g id="APP_NAME">%1$s</xliff:g>을(를) TV에 설치할 수 없습니다."</string>
+    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="default">"휴대전화에 <xliff:g id="APP_NAME">%1$s</xliff:g> 앱을 설치할 수 없습니다."</string>
+    <add-resource type="string" name="launch"/>
+    <string name="launch">"열기"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tablet">"보안을 위해 알 수 없는 출처에서 구매한 앱은 태블릿에 설치되지 않도록 설정되어 있습니다."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tv">"보안상의 이유로 TV가 출처를 알 수 없는 앱 설치를 차단하도록 설정되어 있습니다."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="default">"보안을 위해 알 수 없는 출처에서 구매한 앱은 휴대전화에 설치되지 않도록 설정되어 있습니다."</string>
+    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="unknown_apps_admin_dlg_text"/>
+    <string name="unknown_apps_admin_dlg_text">"관리자가 알 수 없는 출처의 앱 설치를 허용하지 않습니다."</string>
+
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"확인"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"설정"</string>
+    <add-resource type="string" name="manage_applications"/>
+    <string name="manage_applications">"앱 관리"</string>
+    <add-resource type="string" name="dlg_app_replacement_title"/>
+    <string name="dlg_app_replacement_title">"앱을 바꾸시겠습니까?"</string>
+    <add-resource type="string" name="dlg_app_replacement_statement"/>
+    <string name="dlg_app_replacement_statement">"설치 중인 앱이 다른 앱을 대체합니다.\n\n이전의 사용자 데이터는 모두 저장됩니다."</string>
+    <!-- Dialog attributes when replacing system app -->
+    <add-resource type="string" name="dlg_sys_app_replacement_statement"/>
+    <string name="dlg_sys_app_replacement_statement">"시스템 앱입니다.\n\n이전의 사용자 데이터는 모두 저장됩니다."</string>
+    <add-resource type="string" name="out_of_space_dlg_title"/>
+    <string name="out_of_space_dlg_title">"여유 공간이 없음"</string>
+    <add-resource type="string" name="out_of_space_dlg_text"/>
+    <string name="out_of_space_dlg_text">"<xliff:g id="APP_NAME">%1$s</xliff:g> 앱을 설치할 수 없습니다. 여유 공간을 늘린 후에 다시 시도하세요."</string>
+    <!-- strings related to uninstall activity -->
+    <add-resource type="string" name="dlg_ok"/>
+    <string name="dlg_ok">"확인"</string>
+    <add-resource type="string" name="app_not_found_dlg_title"/>
+    <string name="app_not_found_dlg_title">"앱을 찾을 수 없음"</string>
+    <add-resource type="string" name="app_not_found_dlg_text"/>
+    <string name="app_not_found_dlg_text">"설치된 앱 목록에 앱이 없습니다."</string>
+    <add-resource type="string" name="uninstall_application_title"/>
+    <string name="uninstall_application_title">"앱 제거"</string>
+    <add-resource type="string" name="uninstall_update_title"/>
+    <string name="uninstall_update_title">"업데이트 제거"</string>
+    <add-resource type="string" name="uninstall_activity_text"/>
+    <string name="uninstall_activity_text">"<xliff:g id="ACTIVITY_NAME">%1$s</xliff:g>은(는) 다음 앱의 일부입니다."</string>
+    <add-resource type="string" name="uninstall_application_text"/>
+    <string name="uninstall_application_text">"이 앱을 제거하시겠습니까?"</string>
+    <add-resource type="string" name="uninstall_application_text_all_users"/>
+    <string name="uninstall_application_text_all_users"><b>"모든"</b>" 사용자에 대해 이 앱을 제거하시겠습니까? 기기를 사용하는 "<b>"모든"</b>" 사용자에 대해 애플리케이션 및 데이터가 삭제됩니다."</string>
+    <add-resource type="string" name="uninstall_application_text_user"/>
+    <string name="uninstall_application_text_user">"<xliff:g id="USERNAME">%1$s</xliff:g>님의 기기에 설치된 앱을 제거하시겠습니까?"</string>
+    <add-resource type="string" name="uninstall_update_text"/>
+    <string name="uninstall_update_text">"이 앱을 초기 버전으로 바꾸시겠습니까? 모든 데이터가 삭제됩니다."</string>
+    <add-resource type="string" name="uninstall_update_text_multiuser"/>
+    <string name="uninstall_update_text_multiuser">"이 앱을 초기 버전으로 바꾸시겠습니까? 모든 데이터가 삭제되며 직장 프로필 사용자를 포함해 이 기기의 모든 사용자에게 영향을 미칩니다."</string>
+    <add-resource type="string" name="uninstalling"/>
+    <string name="uninstalling">"제거 중..."</string>
+    <add-resource type="string" name="uninstall_done"/>
+    <string name="uninstall_done">"제거를 완료했습니다."</string>
+    <add-resource type="string" name="uninstall_failed"/>
+    <string name="uninstall_failed">"제거하지 못했습니다."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager"/>
+    <string name="uninstall_failed_device_policy_manager">"이 패키지는 사용 중인 기기 관리자이기 때문에 제거할 수 없습니다."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator for some user [CHAR LIMIT=100] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager_of_user"/>
+    <string name="uninstall_failed_device_policy_manager_of_user">"이 패키지는 <xliff:g id="USERNAME">%1$s</xliff:g>님이 사용 중인 기기 관리자이기 때문에 제거할 수 없습니다."</string>
+    <!-- String presented to the admin user when uninstalling a package for all users failed
+    because a profile owner has marked the target package as not able to be uninstalled
+    [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_all_blocked_profile_owner"/>
+    <string name="uninstall_all_blocked_profile_owner">"이 앱은 일부 사용자 또는 프로필에 필요하며 다른 사용자에 대해서는 제거되었습니다."</string>
+    <!-- String presented to the user when uninstalling a package failed because a profile owner
+         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_blocked_profile_owner"/>
+    <string name="uninstall_blocked_profile_owner">"이 앱은 프로필에 필요하므로 삭제할 수 없습니다."</string>
+    <!-- String presented to the user when uninstalling a package failed because a device owner
+         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_blocked_device_owner"/>
+    <string name="uninstall_blocked_device_owner">"이 앱은 기기 관리자에게 필요하므로 제거할 수 없습니다."</string>
+    <!-- String on a button that leads to the "device administrator" configuration setting where a
+        user will be able to disable the device administrator in order to uninstall
+        it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_device_administrators"/>
+    <string name="manage_device_administrators">"기기 관리자 관리"</string>
+    <!-- String on a button that leads to the "Users" page in Settings where a
+        user will be able to remove the secondary user(s) in order to uninstall
+        the app. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_users"/>
+    <string name="manage_users">"사용자 관리"</string>
+    <add-resource type="string" name="uninstall_failed_msg"/>
+    <string name="uninstall_failed_msg">"<xliff:g id="APP_NAME">%1$s</xliff:g> 앱을 제거할 수 없습니다."</string>
+
+    <!-- Dialog attributes to indicate parse errors -->
+    <add-resource type="string" name="Parse_error_dlg_text"/>
+    <string name="Parse_error_dlg_text">"패키지를 파싱하는 중 문제가 발생했습니다."</string>
+
+    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
+    <add-resource type="string" name="newPerms"/>
+    <string name="newPerms">"새 권한"</string>
+    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
+    <add-resource type="string" name="allPerms"/>
+    <string name="allPerms">"전체"</string>
+    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
+    <add-resource type="string" name="privacyPerms"/>
+    <string name="privacyPerms">"개인정보 보호"</string>
+    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
+    <add-resource type="string" name="devicePerms"/>
+    <string name="devicePerms">"기기 액세스"</string>
+
+    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_new_perms"/>
+    <string name="no_new_perms">"이 업데이트에는 새로운 권한이 필요하지 않습니다."</string>
+
+    <add-resource type="string" name="grant_confirm_question"/>
+    <string name="grant_confirm_question">"다음 권한을 부여하시겠습니까? 권한이 부여되면 다음에 액세스할 수 있습니다."</string>
+
+    <!-- Title for the dialog button to deny a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_deny"/>
+    <string name="grant_dialog_button_deny">"거부"</string>
+
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+    <add-resource type="string" name="grant_dialog_button_deny_anyway"/>
+    <string name="grant_dialog_button_deny_anyway">"거부"</string>
+
+    <!-- Template for the current permission from the total number of permissions. -->
+    <add-resource type="string" name="current_permission_template"/>
+    <string name="current_permission_template">"<xliff:g id="CURRENT_PERMISSION_INDEX">%1$s</xliff:g>/<xliff:g id="PERMISSION_COUNT">%2$s</xliff:g>"</string>
+
+    <!-- Template for the warning message when an app requests a permission. -->
+    <add-resource type="string" name="permission_warning_template"/>
+    <string name="permission_warning_template">"&lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt;이(가) <xliff:g id="ACTION">%2$s</xliff:g>을(를) 할 수 있도록 허용하시겠습니까?"</string>
+
+    <!-- Permissions -->
+
+    <!-- Title for the dialog button to allow a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_allow"/>
+    <string name="grant_dialog_button_allow">"허용"</string>
+
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+    <add-resource type="string" name="app_permissions_breadcrumb"/>
+    <string name="app_permissions_breadcrumb">"앱"</string>
+
+    <!-- Title for page of managing application permissions -->
+    <add-resource type="string" name="app_permissions"/>
+    <string name="app_permissions">"앱 권한"</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again -->
+    <add-resource type="string" name="never_ask_again"/>
+    <string name="never_ask_again">"다시 묻지 않음"</string>
+
+    <!-- Label when app requests no permissions -->
+    <add-resource type="string" name="no_permissions"/>
+    <string name="no_permissions">"권한이 없음"</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <add-resource type="string" name="additional_permissions"/>
+    <string name="additional_permissions">"추가 권한"</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="additional_permissions_more"/>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">"<xliff:g id="COUNT_0">%1$d</xliff:g>개 더보기"</item>
+        <item quantity="other">"<xliff:g id="COUNT_1">%1$d</xliff:g>개 더보기"</item>
+    </plurals>
+
+    <!-- Warning for turning off permissions on older apps -->
+    <add-resource type="string" name="old_sdk_deny_warning"/>
+    <string name="old_sdk_deny_warning">"이 앱은 Android 이전 버전에 맞게 설계되었습니다. 권한이 거부되면 정상적으로 작동하지 않을 수 있습니다."</string>
+
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="default_permission_description"/>
+    <string name="default_permission_description">"알 수 없는 작업 수행"</string>
+
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
+   <add-resource type="string" name="app_permissions_group_summary"/>
+    <string name="app_permissions_group_summary">"<xliff:g id="COUNT_0">%1$d</xliff:g>/<xliff:g id="COUNT_1">%2$d</xliff:g>개 앱 허용됨"</string>
+
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
+   <add-resource type="string" name="menu_show_system"/>
+    <string name="menu_show_system">"시스템 표시"</string>
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
+   <add-resource type="string" name="menu_hide_system"/>
+    <string name="menu_hide_system">"시스템 숨기기"</string>
+
+   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
+   <add-resource type="string" name="permission_title"/>
+    <string name="permission_title">"<xliff:g id="PERMISSION">%1$s</xliff:g> 권한"</string>
+
+   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
+   <add-resource type="string" name="no_apps"/>
+    <string name="no_apps">"앱 없음"</string>
+
+   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+   <add-resource type="string" name="location_settings"/>
+    <string name="location_settings">"위치 설정"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
+   <add-resource type="string" name="location_warning"/>
+    <string name="location_warning">"이 기기의 위치 서비스 제공업체는 <xliff:g id="APP_NAME">%1$s</xliff:g>입니다. 위치 정보 액세스는 위치 설정에서 수정할 수 있습니다."</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
+   <add-resource type="string" name="system_warning"/>
+    <string name="system_warning">"이 권한을 거부하는 경우 기기의 기본 기능이 제대로 작동하지 않을 수 있습니다."</string>
+
+   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
+   <add-resource type="string" name="permission_summary_enforced_by_policy"/>
+    <string name="permission_summary_enforced_by_policy">"정책에 의해 시행됨"</string>
+
+   <!-- Text displayed until loading is done -->
+   <add-resource type="string" name="loading"/>
+    <string name="loading">"로드 중..."</string>
+
+   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+   <add-resource type="string" name="all_permissions"/>
+    <string name="all_permissions">"모든 권한"</string>
+   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
+   <add-resource type="string" name="other_permissions"/>
+    <string name="other_permissions">"다른 앱 기능"</string>
+
+   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
+   <add-resource type="string" name="permission_request_title"/>
+    <string name="permission_request_title">"권한 요청"</string>
+
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_title"/>
+    <string name="screen_overlay_title">"화면 오버레이 감지됨"</string>
+
+   <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_message"/>
+    <string name="screen_overlay_message">"이 권한 설정을 변경하려면 먼저 설정 &gt; 앱에서 화면 오버레이를 사용하지 않도록 설정해야 합니다."</string>
+
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="screen_overlay_button"/>
+    <string name="screen_overlay_button">"설정 열기"</string>
+
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_title"/>
+    <string name="wear_not_allowed_dlg_title">"Android Wear"</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_text"/>
+    <string name="wear_not_allowed_dlg_text">"Wear에서 지원하지 않는 설치/제거 작업입니다."</string>
+
+    <!-- Review of runtime permissions for legacy apps -->
+
+    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+    <add-resource type="string" name="permission_review_warning_title_template_update"/>
+    <string name="permission_review_warning_title_template_update">"<xliff:g id="APP_NAME_0">%1$s</xliff:g>이(가) 업데이트되었습니다. <xliff:g id="APP_NAME_1">%1$s</xliff:g>이(가) 다음에 액세스하도록 허용하시겠습니까?"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <add-resource type="string" name="permission_review_title_template_install"/>
+    <string name="permission_review_title_template_install">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 액세스하도록 허용할 항목을 선택하세요."</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <add-resource type="string" name="permission_review_title_template_update"/>
+    <string name="permission_review_title_template_update">"<xliff:g id="APP_NAME">%1$s</xliff:g>이(가) 업데이트되었습니다. 이 앱에서 액세스하도록 허용할 항목을 선택하세요."</string>
+
+    <!-- Title for the dialog button to cancel the detailed permission review. -->
+    <add-resource type="string" name="review_button_cancel"/>
+    <string name="review_button_cancel">"취소"</string>
+
+    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+    <add-resource type="string" name="review_button_continue"/>
+    <string name="review_button_continue">"계속"</string>
+
+    <!-- Title for the category listing the new permissions used by an app. -->
+    <add-resource type="string" name="new_permissions_category"/>
+    <string name="new_permissions_category">"새로운 권한"</string>
+
+    <!-- Title for the category listing the current permissions used by an app. -->
+    <add-resource type="string" name="current_permissions_category"/>
+    <string name="current_permissions_category">"기존 권한"</string>
+
+    <!-- Message that the app to be installed is being staged -->
+    <add-resource type="string" name="message_staging"/>
+    <string name="message_staging">"앱 준비 중\u2026"</string>
+
+    <!-- Placeholder for an app name when it is unknown -->
+    <add-resource type="string" name="app_name_unknown"/>
+    <string name="app_name_unknown">"알 수 없음"</string></resources>

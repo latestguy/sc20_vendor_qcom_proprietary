@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"กำลังสแกน..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"กำลังเชื่อมต่อ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"กำลังตรวจสอบความถูกต้อง\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"กำลังรับที่อยู่ IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"เชื่อมต่อแล้ว"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ระงับไว้"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"กำลังตัดการเชื่อมต่อ..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ตัดการเชื่อมต่อ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ไม่สำเร็จ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ถูกบล็อก"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"หลีกเลี่ยงการเชื่อมต่อกับสัญญาณที่ไม่แรงพอชั่วคราว"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"กำลังสแกน..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"กำลังเชื่อมต่อไปยัง <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"กำลังตรวจสอบสิทธิ์กับ<xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"กำลังรับที่อยู่ IP จาก <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"เชื่อมต่อกับ <xliff:g id="NETWORK_NAME">%1$s</xliff:g> แล้ว"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ระงับไว้"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"กำลังตัดการเชื่อมต่อจาก <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ตัดการเชื่อมต่อ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ไม่สำเร็จ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ถูกบล็อก"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"หลีกเลี่ยงการเชื่อมต่อกับสัญญาณที่ไม่แรงพอชั่วคราว"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"ไม่ต้องตรวจสอบ"</item>
+        <item>"ตรวจสอบเนื้อหา DRM เท่านั้น"</item>
+        <item>"ตรวจสอบทุกครั้ง"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"ห้ามใช้การตรวจสอบ HDCP"</item>
+        <item>"ใช้การตรวจสอบ HDCP สำหรับเนื้อหา DRM เท่านั้น"</item>
+        <item>"ใช้การตรวจสอบ HDCP เสมอ"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"ปิด"</item>
+        <item>"64 K"</item>
+        <item>"256 K"</item>
+        <item>"1 M"</item>
+        <item>"4 M"</item>
+        <item>"16 M"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"ปิด"</item>
+        <item>"64 K"</item>
+        <item>"256 K"</item>
+        <item>"1 M"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"ปิด"</item>
+        <item>"64 K ต่อบัฟเฟอร์ไฟล์บันทึก"</item>
+        <item>"256 K ต่อบัฟเฟอร์ไฟล์บันทึก"</item>
+        <item>"1 M ต่อบัฟเฟอร์ไฟล์บันทึก"</item>
+        <item>"4 M ต่อบัฟเฟอร์ไฟล์บันทึก"</item>
+        <item>"16 M ต่อบัฟเฟอร์ไฟล์บันทึก"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"ปิด"</item>
+        <item>"ทั้งหมด"</item>
+        <item>"ทั้งหมดเว้นวิทยุ"</item>
+        <item>"เฉพาะเคอร์เนล"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"ปิด"</item>
+        <item>"บัฟเฟอร์บันทึกทั้งหมด"</item>
+        <item>"ทั้งหมดยกเว้นบัฟเฟอร์บันทึกวิทยุ"</item>
+        <item>"เฉพาะบัฟเฟอร์ไฟล์บันทึกเคอร์เนล"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"ปิดภาพเคลื่อนไหว"</item>
+        <item>"ภาพเคลื่อนไหวขนาด .5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 1 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 1.5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 2 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 10 เท่า"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"ปิดภาพเคลื่อนไหว"</item>
+        <item>"ภาพเคลื่อนไหวขนาด .5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 1 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 1.5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 2 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 5 เท่า"</item>
+        <item>"ภาพเคลื่อนไหวขนาด 10 เท่า"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"ปิดภาพเคลื่อนไหว"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว .5 เท่า"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว 1 เท่า"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว 1.5 เท่า"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว 2 เท่า"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว 5 เท่า"</item>
+        <item>"ความเร็วภาพเคลื่อนไหว 10 เท่า"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"ไม่มี"</item>
+        <item>"480p"</item>
+        <item>"480p (ปลอดภัย)"</item>
+        <item>720p</item>
+        <item>"720p (ปลอดภัย)"</item>
+        <item>"1080p"</item>
+        <item>"1080p (ปลอดภัย)"</item>
+        <item>4K</item>
+        <item>"4K (ปลอดภัย)"</item>
+        <item>"4K (เพิ่มความละเอียด)"</item>
+        <item>"4K (เพิ่มความละเอียด ปลอดภัย)"</item>
+        <item>"720p, 1080p (หน้าจอคู่)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"ไม่มี"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace (กราฟิก)"</item>
+        <item>"ชุดรายการเรียกใน glGetError"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"ปิด"</item>
+        <item>"วาดคลิปที่ไม่ใช่สี่เหลี่ยมด้วยสีฟ้า"</item>
+        <item>"ไฮไลต์คำสั่งวาดที่ทดสอบด้วยสีเขียว"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"ปิด"</item>
+        <item>"เป็นแถบบนหน้าจอ"</item>
+        <item>"ใน adb shell dumpsys gfxinfo"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"ปิด"</item>
+        <item>"แสดงพื้นที่การวาดทับ"</item>
+        <item>"แสดงพื้นที่สำหรับคนตาบอดสีเขียว"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"ขีดจำกัดมาตรฐาน"</item>
+        <item>"ไม่มีกระบวนการพื้นหลัง"</item>
+        <item>"มากที่สุด 1 กระบวนการ"</item>
+        <item>"มากที่สุด 2 กระบวนการ"</item>
+        <item>"มากที่สุด 3 กระบวนการ"</item>
+        <item>"มากที่สุด 4 กระบวนการ"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"การชาร์จ"</item>
+        <item>"MTP (Media Transfer Protocol)"</item>
+        <item>"PTP (Picture Transfer Protocol)"</item>
+        <item>"RNDIS (อีเทอร์เน็ต USB)"</item>
+        <item>"แหล่งเสียง"</item>
+        <item>MIDI</item>
+    </string-array></resources>

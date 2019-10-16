@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"स्क्यान गरिँदै..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"जडान हुँदै..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"प्रमाणित गर्दै ..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP ठेगाना पत्ता लगाउँदै ..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"जडान गरिएको"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"निलम्बित"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"विच्छेदन गर्दै..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"विच्छेदन भएको"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"असफल"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"रोक्का गरियो"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"अस्थायी रूपमा कमजोर जडान बेवास्ता गर्दै"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"स्क्यान गर्दै..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>सँग जडान हुँदै..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>को साथ प्रमाणित गर्दै\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>बाट IP ठेगाना प्राप्त गर्दै\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>सँग जडित"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"निलम्बित"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>बाट विच्छेदन गर्दै..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"विच्छेदन भएको"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"असफल"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"रोकियो"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"अस्थायी रूपमा कमजोर जडान हटाइँदै"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"कहिल्यै जाँच नगर्नुहोस्"</item>
+        <item>"DRM सामग्रीको मात्र जाँच गर्नुहोस्"</item>
+        <item>"सधैँ जाँच गर्नुहोस्"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"HDCP परीक्षण कहिल्यै प्रयोग नगर्नुहोस्"</item>
+        <item>"DRM सामग्रीको लागि मात्र HDCP जाँचको प्रयोग गर्नुहोस्"</item>
+        <item>"सधैँ HDCP जाँच प्रयोग गर्नुहोस्"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"निष्क्रिय गर्नुहोस्"</item>
+        <item>"६४के"</item>
+        <item>"२५६के"</item>
+        <item>"१एम"</item>
+        <item>"४एम"</item>
+        <item>"१६एम"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"निष्क्रिय गर्नुहोस्"</item>
+        <item>"६४के"</item>
+        <item>"२५६के"</item>
+        <item>"१एम"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"निष्क्रिय गर्नुहोस्"</item>
+        <item>"६४के प्रति लग बफर"</item>
+        <item>"२५६के प्रति लग बफर"</item>
+        <item>"१एम प्रति लग बफर"</item>
+        <item>"४एम प्रति लग बफर"</item>
+        <item>"१६एम प्रति लग बफर"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"निष्क्रिय"</item>
+        <item>"सबै"</item>
+        <item>"रेडियो बाहेक सबै"</item>
+        <item>"कर्नेल मात्र"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"निष्क्रिय"</item>
+        <item>"सबै लग सम्बन्धी बफरहरू"</item>
+        <item>"रेडियो सम्बन्धी लगका बफरहरू बाहेक सबै"</item>
+        <item>"कर्नेलको लग सम्बन्धी बफर मात्र"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"सजीविकरण बन्द"</item>
+        <item>"सजीविकरण मापन .5x"</item>
+        <item>"सजीविकरण मापन 1x"</item>
+        <item>"सजीविकरण मापन 1.5x"</item>
+        <item>"एनिमेसन मापन 2x"</item>
+        <item>"एनिमेसन मापन 5x"</item>
+        <item>"सजीविकरण मापन 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"एनिमेसन बन्द छ"</item>
+        <item>"सजीविकरण मापन .5x"</item>
+        <item>"सजीविकरण मापन 1x"</item>
+        <item>"सजीविकरण मापन 1.5x"</item>
+        <item>"सजीविकरण मापन 2x"</item>
+        <item>"एनिमेसन मापन 5x"</item>
+        <item>"10x सजीविकरण स्केल"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"सजीविकरण बन्द"</item>
+        <item>"सजीविकरण मापन .5x"</item>
+        <item>"सजीविकरण स्केल १x"</item>
+        <item>"सजीविकरण मापन 1.5x"</item>
+        <item>"सजीविकरण मापन 2x"</item>
+        <item>"सजीविकरण मापन 5x"</item>
+        <item>"सजीविकरण मापन 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"कुनै पनि होइन"</item>
+        <item>"४८० पिक्सेल"</item>
+        <item>"४८० पिक्सेल (सुरक्षित)"</item>
+        <item>720p</item>
+        <item>"७२० पिक्सेल (सुरक्षित)"</item>
+        <item>"१०८० पिक्सेल"</item>
+        <item>"१०८० पिक्सेल (सुरक्षित)"</item>
+        <item>4K</item>
+        <item>"४ हजार (सुरक्षित)"</item>
+        <item>"४ हजार (upscaled)"</item>
+        <item>"४ हजार (upscaled, सुरक्षित)"</item>
+        <item>"७२० पिक्सेल, १०८० पिक्सेल (दोहरो स्क्रिन)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"कुनै पनि होइन"</item>
+        <item>"लगक्याट"</item>
+        <item>"सिस्ट्रेस (ग्राफिक्स)"</item>
+        <item>"glGetError मा स्ट्याक कल गर्नुहोस्"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"बन्द"</item>
+        <item>"गैर आयातकार क्षेत्र नीलो रङमा कोर्नुहोस्"</item>
+        <item>"हाइलाइट परीक्षण चित्र कोर्ने आदेशहरू हरियोमा"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"बन्द"</item>
+        <item>"स्क्रिनमा बारको रूपमा"</item>
+        <item>"adb shell dumpsys gfxinfo मा"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"बन्द"</item>
+        <item>"overdraw क्षेत्रहरू देखाउनुहोस्"</item>
+        <item>"Deuteranomaly का लागि क्षेत्रहरू देखाउनुहोस्"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"मानक सीमा"</item>
+        <item>"कुनै पृष्ठभूमि प्रक्रियाहरू छैनन्"</item>
+        <item>"बढीमा १ प्रक्रिया"</item>
+        <item>"बढीमा २ प्रक्रियाहरू"</item>
+        <item>"बढीमा ३ प्रक्रियाहरू"</item>
+        <item>"बढीमा ४ प्रक्रियाहरू"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"चार्ज हुँदै"</item>
+        <item>"MTP (मिडिया स्थानान्तरण प्रोटोकल)"</item>
+        <item>"PTP (चित्र स्थानान्तरण प्रोटोकल)"</item>
+        <item>"RNDIS (USB इथरनेट)"</item>
+        <item>"अडियो स्रोत"</item>
+        <item>MIDI</item>
+    </string-array></resources>

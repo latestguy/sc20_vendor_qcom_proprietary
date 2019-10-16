@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016 Qualcomm Technologies, Inc.
+ All Rights Reserved.
+ Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qualcomm.qti.rcs"
+    android:versionCode="1"
+    android:versionName="1.0"
+    coreApp="true"
+    android:sharedUserId="android.uid.phone">
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="23" />
+
+    <permission
+        android:name="com.qualcomm.qti.internal.permission.ACCESS_ENRICHED_CALL"
+        android:label="@string/enrich_call_permission"
+        android:protectionLevel="signatureOrSystem" />
+
+    <!-- INTERNET permission is required to access static google maps images -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- UPDATE_APP_OPS_STATS, SET_PREFERRED_APPLICATIONS and WRITE_SECURE_SETTINGS permission is
+        required to get/set default messaging application -->
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <application
+        android:label="@string/app_name">
+        <uses-library android:name="org.codeaurora.rcscommon" android:required="false" />
+
+        <service android:name=".RcsService"
+            android:exported="true"
+            android:persistent="true" >
+            <intent-filter>
+                <action android:name="com.qualcomm.qti.action.RCS_SERVICE_AVAILABLE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".DefaultSmsControllerReceiver"
+             android:label="DefaultSmsControllerReceiver">
+             <intent-filter>
+                 <action
+                    android:name=
+                    "android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"/>
+             </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

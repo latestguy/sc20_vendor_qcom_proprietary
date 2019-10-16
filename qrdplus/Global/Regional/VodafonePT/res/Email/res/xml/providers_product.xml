@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2016 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<providers_product>
+
+    <provider id="vodafone mail" label="Vodafone Mail" domain="vodafone.pt">
+        <incoming uri="pop3://pop.vodafone.pt" username="$email"/>
+        <outgoing uri="smtp://smtp.vodafone.pt:25" username="$email" />
+    </provider>
+
+    <provider id="gmail" label="Gmail" domain="gmail.com">
+        <incoming uri="imap+ssl+://imap.gmail.com" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+    </provider>
+
+    <provider id="Hotmail" label="Hotmail.com" domain="hotmail.com">
+        <incoming uri="pop3+ssl+://pop3.live.com" username="$email"/>
+        <outgoing uri="smtp+tls+://smtp.live.com" username="$email" />
+    </provider>
+
+    <provider id="Sapo" label="Sapo" domain="sapo.pt">
+        <incoming uri="imap://imap.sapo.pt" username="$email"/>
+        <outgoing uri="smtp://smtp.sapo.pt:25" username="$email" />
+    </provider>
+
+     <provider id="Netcabo" label="Netcabo" domain="netcabo.pt">
+        <incoming uri="pop3+ssl+://pop.netcabo.pt" username="$email"/>
+        <outgoing uri="smtp://smtpa.netcabo.pt:25" username="$email" />
+    </provider>
+
+  <!--
+            imap        143     pop3        110     smtp        587
+            imap+tls+   143     pop3+tls+   110     smtp+tls+   587
+            imap+ssl+   993     pop3+ssl+   995     smtp+ssl+   465
+    -->
+    <provider id="Yahoo" label="Yahoo" domain="yahoo.com">
+        <incoming uri="imap+ssl+://imap.mail.yahoo.com" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.mail.yahoo.com" username="$email" />
+    </provider>
+
+     <provider id="Clix" label="Clix" domain="clix.pt">
+        <incoming uri="pop3://pop.clix.pt" username="$email"/>
+        <outgoing uri="smtp://mail.clix.pt:25" username="$email" />
+    </provider>
+
+
+</providers_product>
+

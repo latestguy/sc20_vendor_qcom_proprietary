@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Names of packages and authorities that are common to all apps
+    and read from resources -->
+
+    <!-- Permissions label for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_label"/>
+    <string name="permission_read_attachment_label">"读取电子邮件附件"</string>
+    <!-- Permissions description for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_desc"/>
+    <string name="permission_read_attachment_desc">"允许此应用读取您的电子邮件附件。"</string>
+    <!-- Permissions label for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_label"/>
+    <string name="permission_access_provider_label">"访问电子邮件服务提供商数据"</string>
+    <!-- Permissions description for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_desc"/>
+    <string name="permission_access_provider_desc">"允许此应用访问您的电子邮件数据库，包括已收邮件、已发邮件、用户名和密码。"</string>
+
+    <!-- Name of application on Home screen -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"电子邮件"</string>
+
+    <!-- Actions will be used as buttons and in menu items -->
+
+
+    <!--  Menu item used to create a new quick response [CHAR_LIMIT=16] -->
+    <add-resource type="string" name="create_action"/>
+    <string name="create_action">"新建"</string>
+
+    <!-- Message informing user when a list that would contain quick responses
+            is empty [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="quick_responses_empty_view"/>
+    <string name="quick_responses_empty_view">"没有快速回复。"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="account_settings_action"/>
+    <string name="account_settings_action">"帐户设置"</string>
+    <!-- The next set of strings are used in local display and may be localized. -->
+    <!-- In the UI, the inbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_inbox"/>
+    <string name="mailbox_name_display_inbox">"收件箱"</string>
+    <!-- In the UI, the outbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_outbox"/>
+    <string name="mailbox_name_display_outbox">"发件箱"</string>
+    <!-- In the UI, the drafts will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_drafts"/>
+    <string name="mailbox_name_display_drafts">"草稿"</string>
+    <!-- In the UI, the trash will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_trash"/>
+    <string name="mailbox_name_display_trash">"已删除邮件"</string>
+    <!-- In the UI, the sent will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_sent"/>
+    <string name="mailbox_name_display_sent">"已发送邮件"</string>
+    <!-- In the UI, the junk will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_junk"/>
+    <string name="mailbox_name_display_junk">"垃圾邮件"</string>
+    <!-- In the UI, the starred will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_starred"/>
+    <string name="mailbox_name_display_starred">"已加星标"</string>
+    <!-- In the UI, the unread will be displayed with this name [CHAR LIMIT=15] -->
+    <add-resource type="string" name="mailbox_name_display_unread"/>
+    <string name="mailbox_name_display_unread">"未读邮件"</string>
+
+    <!-- Title of debug screen -->
+    <add-resource type="string" name="debug_title"/>
+    <string name="debug_title">"调试"</string>
+
+
+    <!-- Label shown in the account selector to select "Combined view", which contains
+         Combined Inbox, Combined Outbox, etc. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mailbox_list_account_selector_combined_view"/>
+    <string name="mailbox_list_account_selector_combined_view">"合并视图"</string>
+
+    <!-- Header for forwarded original messages -->
+    <add-resource type="string" name="message_compose_fwd_header_fmt"/>
+    <string name="message_compose_fwd_header_fmt">"\n\n-------- 原始邮件 --------\n主题：<xliff:g id="SUBJECT">%1$s</xliff:g>\n发件人：<xliff:g id="SENDER">%2$s</xliff:g>\n收件人：<xliff:g id="TO">%3$s</xliff:g>\n抄送：<xliff:g id="CC_0">%4$s</xliff:g>\n\n"</string>
+    <!-- Title for dialog containing list of quick responses that user may insert
+            into message body. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_list_title"/>
+    <string name="message_compose_insert_quick_response_list_title">"插入快速回复"</string>
+    <!-- Menu item for inserting quick responses into email compose activity. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_menu_title"/>
+    <string name="message_compose_insert_quick_response_menu_title">"插入快速回复"</string>
+    <!-- Toast upon using "send" when one or more attachments will need to be background loaded
+      [CHAR LIMIT=none]-->
+    <add-resource type="string" name="message_view_attachment_background_load"/>
+    <string name="message_view_attachment_background_load">"您转发的邮件中有一个或多个附件需要先下载，然后才能发送。"</string>
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+         data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"解码邮件时出错。"</string>
+
+    <!-- Notification ticker when a forwarded attachment couldn't be sent [CHAR LIMIT=none] -->
+    <add-resource type="string" name="forward_download_failed_ticker"/>
+    <string name="forward_download_failed_ticker">"一个或多个附件无法转发。"</string>
+    <!-- Notification title when a forwarded attachment couldn't be sent [CHAR LIMIT=30]-->
+    <add-resource type="string" name="forward_download_failed_title"/>
+    <string name="forward_download_failed_title">"无法转发附件"</string>
+
+    <!-- Notification ticker when email account authentication fails [CHAR LIMIT=none] -->
+    <add-resource type="string" name="login_failed_ticker"/>
+    <string name="login_failed_ticker">"<xliff:g id="ACCOUNT_NAME">%s</xliff:g> 登录失败。"</string>
+    <!-- Notification title when email account authentication fails [CHAR LIMIT=30]-->
+    <add-resource type="string" name="login_failed_title"/>
+    <string name="login_failed_title">"无法登录"</string>
+
+    <!-- Title of screen when setting up new email account [CHAR LIMIT=45] -->
+    <add-resource type="string" name="account_setup_basics_title"/>
+    <string name="account_setup_basics_title">"帐户设置"</string>
+    <!-- Title of screen when trying to get oauth authentication -->
+    <add-resource type="string" name="oauth_authentication_title"/>
+    <string name="oauth_authentication_title">"正在请求授权"</string>
+    <!-- Title of screen to choose with authentication to use -->
+    <add-resource type="string" name="sign_in_title"/>
+    <string name="sign_in_title">"登录"</string>
+
+    <!-- Warning if there is a problem authenticating with oauth -->
+    <add-resource type="string" name="oauth_error_description"/>
+    <string name="oauth_error_description">"无法进行身份验证"</string>
+    <!-- Warning label displayed when the email address or password are incorrect -->
+    <add-resource type="string" name="password_warning_label"/>
+    <string name="password_warning_label">"电子邮件地址或密码不正确"</string>
+    <!-- Label displayed to confirm what email address we are trying to validate -->
+    <add-resource type="string" name="email_confirmation_label"/>
+    <string name="email_confirmation_label">"电子邮件地址："</string>
+    <!-- Headline of screen when setting up new email account (large text over divider)
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_basics_headline"/>
+    <string name="account_setup_basics_headline">"电子邮件帐户"</string>
+    <!-- On "Set up email" screen, enthusiastic welcome message. -->
+    <add-resource type="string" name="accounts_welcome"/>
+    <string name="accounts_welcome">"只需几步操作，即可设置好您的帐户。"</string>
+    <!-- On "Set up email" screen, hint for account email address text field -->
+    <add-resource type="string" name="account_setup_basics_email_label"/>
+    <string name="account_setup_basics_email_label">"电子邮件地址"</string>
+
+    <!-- Label between OAuth and password authentication, indicating the user must do one or the other [CHAR LIMIT=40] -->
+    <add-resource type="string" name="or_label"/>
+    <string name="or_label">"或"</string>
+    <!-- Label for signing in with Google using OAuth -->
+    <add-resource type="string" name="sign_in_with_google"/>
+    <string name="sign_in_with_google">"使用Google帐户登录"</string>
+    <!-- On "Set up email" screen, hint for account email password text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_basics_password_label"/>
+    <string name="account_setup_basics_password_label">"密码"</string>
+    <!-- hint for account email password text field -->
+    <add-resource type="string" name="password_hint"/>
+    <string name="password_hint">"密码"</string>
+    <!--  On the "Setup up email" screen, label indicating what service we are signed in with [CHAR LIMIT=40] -->
+    <add-resource type="string" name="signed_in_with_service_label"/>
+    <string name="signed_in_with_service_label">"已登录%s"</string>
+    <!-- Label for the authentication section, should be uppercase where applicable [CHAR LIMIT=20] -->
+    <add-resource type="string" name="authentication_label"/>
+    <string name="authentication_label">"身份验证"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_authentication_label"/>
+    <string name="add_authentication_label">"添加身份验证"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="clear_authentication_label"/>
+    <string name="clear_authentication_label">"清除身份验证"</string>
+    <!-- Button name on "Set up email" screen, with action underlined using html [CHAR LIMIT=20] -->
+    <add-resource type="string" name="account_setup_basics_manual_setup_action"/>
+    <string name="account_setup_basics_manual_setup_action">"手动设置"</string>
+    <!-- Toast when we can't build a URI from the given email & password -->
+    <!-- Note, the error message in the toast is purposefully vague, because I *don't* know
+        exactly what's wrong. -->
+    <add-resource type="string" name="account_setup_username_password_toast"/>
+    <string name="account_setup_username_password_toast">"请键入有效的电子邮件地址和密码。"</string>
+    <!-- Title of dialog shown when a duplicate account is created -->
+    <add-resource type="string" name="account_duplicate_dlg_title"/>
+    <string name="account_duplicate_dlg_title">"帐户重复"</string>
+    <!-- Message of dialog shown when a duplicate account is created.  The display name of
+         the duplicate account is displayed. -->
+    <add-resource type="string" name="account_duplicate_dlg_message_fmt"/>
+    <string name="account_duplicate_dlg_message_fmt">"帐户“<xliff:g id="DUPLICATE">%s</xliff:g>”已经使用了此用户名。"</string>
+
+    <!-- On check-settings screen, this is the initially-displayed message. -->
+    <add-resource type="string" name="account_setup_check_settings_retr_info_msg"/>
+    <string name="account_setup_check_settings_retr_info_msg">"正在检索帐户信息..."</string>
+    <!-- Appears on screen while system is checking incoming server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_incoming_msg"/>
+    <string name="account_setup_check_settings_check_incoming_msg">"正在验证服务器设置\u2026"</string>
+    <!-- Appears on screen while system is checking outgoing server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_outgoing_msg"/>
+    <string name="account_setup_check_settings_check_outgoing_msg">"正在验证SMTP设置\u2026"</string>
+        <!-- Appears on screen while system is creating the account -->
+    <add-resource type="string" name="account_setup_creating_account_msg"/>
+    <string name="account_setup_creating_account_msg">"正在创建帐户\u2026"</string>
+
+    <!-- Headline text that appears on "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_headline"/>
+    <string name="account_setup_ab_headline">"确认帐户类型"</string>
+    <!-- Explanatory text that appears on the "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_instructions_format"/>
+    <string name="account_setup_ab_instructions_format">"您已指明<xliff:g id="EMAIL">%1$s</xliff:g>使用<xliff:g id="USERPROTOCOL">%2$s</xliff:g>，但该帐户使用的可能是<xliff:g id="PROVIDERPROTOCOL">%3$s</xliff:g>"</string>
+
+    <!-- Text that appears on "Set up email" screen after successfully setting up an account
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_names_headline"/>
+    <string name="account_setup_names_headline">"您的帐户已设置完毕，可以收发电子邮件了！"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_account_name_label"/>
+    <string name="account_setup_names_account_name_label">"为此帐户起个名称（可选）"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_user_name_label"/>
+    <string name="account_setup_names_user_name_label">"您的姓名（显示在外发邮件中）"</string>
+
+    <!-- Headline for the the account type selector (IMAP or POP3 or EAS) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_account_type_headline"/>
+    <string name="account_setup_account_type_headline">"帐户类型"</string>
+    <!-- "Add new email account" screen, text that appears on screen -->
+    <add-resource type="string" name="account_setup_account_type_instructions"/>
+    <string name="account_setup_account_type_instructions">"这是什么类型的帐户？"</string>
+
+    <!-- "Incoming server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_incoming_headline"/>
+    <string name="account_setup_incoming_headline">"接收服务器设置"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_username_label"/>
+    <string name="account_setup_incoming_username_label">"用户名"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_password_label"/>
+    <string name="account_setup_incoming_password_label">"密码"</string>
+    <!-- "Incoming server settings" screen, label for text field -->
+    <add-resource type="string" name="account_setup_password_subheading"/>
+    <string name="account_setup_password_subheading">"密码"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_server_label"/>
+    <string name="account_setup_incoming_server_label">"服务器"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_port_label"/>
+    <string name="account_setup_incoming_port_label">"端口"</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_security_label"/>
+    <string name="account_setup_incoming_security_label">"安全类型"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an unencrypted session -->
+    <add-resource type="string" name="account_setup_incoming_security_none_label"/>
+    <string name="account_setup_incoming_security_none_label">"无"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_ssl_trust_certificates_label">"SSL/TLS（接受所有证书）"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, including SSL certificate
+        checks -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_label"/>
+    <string name="account_setup_incoming_security_ssl_label">SSL/TLS</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session using the selected
+        port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_tls_trust_certificates_label">"STARTTLS（接受所有证书）"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session on the selected
+        port, including SSL certificate checks -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_label"/>
+    <string name="account_setup_incoming_security_tls_label">STARTTLS</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_label"/>
+    <string name="account_setup_incoming_delete_policy_label">"从服务器中删除电子邮件"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_never_label"/>
+    <string name="account_setup_incoming_delete_policy_never_label">"永不"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_delete_label"/>
+    <string name="account_setup_incoming_delete_policy_delete_label">"当我从收件箱中删除时"</string>
+    <!-- "Incoming server settings" screen, label for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_label"/>
+    <string name="account_setup_incoming_imap_path_prefix_label">"IMAP路径前缀"</string>
+    <!-- "Incoming server settings" screen, hint for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_hint"/>
+    <string name="account_setup_incoming_imap_path_prefix_hint">"可选"</string>
+
+    <!-- "Outgoing server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_outgoing_headline"/>
+    <string name="account_setup_outgoing_headline">"外发服务器设置"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_smtp_server_label"/>
+    <string name="account_setup_outgoing_smtp_server_label">"SMTP服务器"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_port_label"/>
+    <string name="account_setup_outgoing_port_label">"端口"</string>
+    <!-- On "Outgoing server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_security_label"/>
+    <string name="account_setup_outgoing_security_label">"安全类型"</string>
+    <!-- On "Outgoing server settings" screen, label for check box, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_require_login_label"/>
+    <string name="account_setup_outgoing_require_login_label">"要求登录"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable-->
+    <add-resource type="string" name="account_setup_outgoing_username_label"/>
+    <string name="account_setup_outgoing_username_label">"用户名"</string>
+
+    <!-- On "Exchange" setup screen, a heading title for the current client certificate, should be uppercase where applicable [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_certificate_title"/>
+    <string name="account_setup_exchange_certificate_title">"客户端证书"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_select_certificate"/>
+    <string name="account_setup_exchange_select_certificate">"选择"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_use_certificate"/>
+    <string name="account_setup_exchange_use_certificate">"使用客户端证书"</string>
+    <!-- On "Exchange" setup screen, a button label to remove the currently used client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_remove_certificate"/>
+    <string name="account_setup_exchange_remove_certificate">"移除"</string>
+    <!-- On "Exchange" setup screen, placeholder text to indicate no client
+         certificate is used [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_no_certificate"/>
+    <string name="account_setup_exchange_no_certificate">"无"</string>
+    <!-- On "Exchange" setup screen, the exchange device-id label, should be uppercase where applicable [CHAR LIMIT=30] -->
+    <add-resource type="string" name="account_setup_exchange_device_id_label"/>
+    <string name="account_setup_exchange_device_id_label">"移动设备ID"</string>
+
+    <!-- In Account setup options screen, Activity headline [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_headline"/>
+    <string name="account_setup_options_headline">"帐户选项"</string>
+    <!-- In Account setup options screen, label for email check frequency selector -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_label"/>
+    <string name="account_setup_options_mail_check_frequency_label">"同步频率："</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_never"/>
+    <string name="account_setup_options_mail_check_frequency_never">"永不"</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_push"/>
+    <string name="account_setup_options_mail_check_frequency_push">"自动（推送）"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_5min"/>
+    <string name="account_setup_options_mail_check_frequency_5min">"每隔5分钟"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_10min"/>
+    <string name="account_setup_options_mail_check_frequency_10min">"每隔10分钟"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_15min"/>
+    <string name="account_setup_options_mail_check_frequency_15min">"每隔15分钟"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_30min"/>
+    <string name="account_setup_options_mail_check_frequency_30min">"每隔30分钟"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_1hour"/>
+    <string name="account_setup_options_mail_check_frequency_1hour">"每小时"</string>
+    <!-- In Account setup options & Account Settings screens, check box for new-mail notification -->
+    <add-resource type="string" name="account_setup_options_notify_label"/>
+    <string name="account_setup_options_notify_label">"收到电子邮件时通知我"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_contacts_label"/>
+    <string name="account_setup_options_sync_contacts_label">"同步此帐户中的联系人"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_calendar_label"/>
+    <string name="account_setup_options_sync_calendar_label">"同步此帐户中的日历"</string>
+    <!-- In Account setup options screen, check box to sync email -->
+    <add-resource type="string" name="account_setup_options_sync_email_label"/>
+    <string name="account_setup_options_sync_email_label">"同步此帐户中的电子邮件"</string>
+    <!-- In Account setup options screen, check box to auto-download attachments  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_background_attachments_label"/>
+    <string name="account_setup_options_background_attachments_label">"连接到WLAN后自动下载附件"</string>
+    <!-- Dialog title when "setup" could not finish -->
+    <add-resource type="string" name="account_setup_failed_dlg_title"/>
+    <string name="account_setup_failed_dlg_title">"无法完成"</string>
+    <!-- In Account setup options screen, label for email lookback selector -->
+    <add-resource type="string" name="account_setup_options_mail_window_label"/>
+    <string name="account_setup_options_mail_window_label">"同步最近多少天的邮件："</string>
+    <!-- In account setup options & account settings screens (exchange), sync window length; this
+        implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
+    <add-resource type="string" name="account_setup_options_mail_window_auto"/>
+    <string name="account_setup_options_mail_window_auto">"自动"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1day"/>
+    <string name="account_setup_options_mail_window_1day">"最近一天"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_3days"/>
+    <string name="account_setup_options_mail_window_3days">"最近三天"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1week"/>
+    <string name="account_setup_options_mail_window_1week">"最近一周"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_2weeks"/>
+    <string name="account_setup_options_mail_window_2weeks">"最近两周"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1month"/>
+    <string name="account_setup_options_mail_window_1month">"最近一个月"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_all"/>
+    <string name="account_setup_options_mail_window_all">"全部"</string>
+    <!-- Per-mailbox sync window setting.  This means "use the account's sync window setting" [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_options_mail_window_default"/>
+    <string name="account_setup_options_mail_window_default">"使用帐户的默认设置"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Username or password incorrect -->
+    <add-resource type="string" name="account_setup_failed_dlg_auth_message"/>
+    <string name="account_setup_failed_dlg_auth_message">"用户名或密码不正确。"</string>
+
+    <!-- Account setup autodiscover auth failure dialog title. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_title"/>
+    <string name="account_setup_autodiscover_dlg_authfail_title">"设置帐户时出现问题"</string>
+    <!-- Account setup autodiscover auth failure dialog message. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_message"/>
+    <string name="account_setup_autodiscover_dlg_authfail_message">"请确认用户名、密码和帐户设置均正确无误。"</string>
+
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message"/>
+    <string name="account_setup_failed_dlg_certificate_message">"无法安全地连接到服务器。"</string>
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message_fmt"/>
+    <string name="account_setup_failed_dlg_certificate_message_fmt">"无法安全地连接到服务器。\n（<xliff:g id="ERROR">%s</xliff:g>）"</string>
+    <!-- An error message presented to the user when the server requires a
+         client certificate to connect [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_required"/>
+    <string name="account_setup_failed_certificate_required">"需要客户端证书。要通过客户端证书连接到服务器吗？"</string>
+    <!-- An error message presented to the user when the certificate they
+         specified for connecting to a server is inaccessible [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_inaccessible"/>
+    <string name="account_setup_failed_certificate_inaccessible">"证书无效或无法使用。"</string>
+
+    <!-- Dialog text for ambiguous setup failure; server error/bad credentials [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_check_credentials_message"/>
+    <string name="account_setup_failed_check_credentials_message">"该服务器返回了包含错误讯息的响应。请检查您的用户名和密码，然后重试。"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message"/>
+    <string name="account_setup_failed_dlg_server_message">"无法连接到服务器。"</string>
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server\n(Connection timed out) -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message_fmt"/>
+    <string name="account_setup_failed_dlg_server_message_fmt">"无法连接到服务器。\n（<xliff:g id="ERROR">%s</xliff:g>）"</string>
+
+    <!-- Additional diagnostic text when TLS was required but the server doesn't support it -->
+    <add-resource type="string" name="account_setup_failed_tls_required"/>
+    <string name="account_setup_failed_tls_required">"需要 TLS，但服务器不支持 TLS。"</string>
+    <!-- Additional diagnostic text when server does not support any of our authentication methods -->
+    <add-resource type="string" name="account_setup_failed_auth_required"/>
+    <string name="account_setup_failed_auth_required">"服务器不支持身份验证方法。"</string>
+    <!-- Additional diagnostic text when server connection failed due to security error -->
+    <add-resource type="string" name="account_setup_failed_security"/>
+    <string name="account_setup_failed_security">"由于安全错误，无法连接到服务器。"</string>
+    <!-- Additional diagnostic text when server connection failed due to io error (connection) -->
+    <add-resource type="string" name="account_setup_failed_ioerror"/>
+    <string name="account_setup_failed_ioerror">"无法连接到服务器。"</string>
+    <!-- Additional diagnostic text when server connection failed due to our inability to support a
+         required EAS protocol version [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_protocol_unsupported"/>
+    <string name="account_setup_failed_protocol_unsupported">"您键入的服务器地址不正确，或电子邮件服务不支持该服务器需要的协议版本。"</string>
+    <!-- Additional diagnostic text when server access was denied; the user should contact the
+         administrator of the server for more information [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_access_denied"/>
+    <string name="account_setup_failed_access_denied">"您没有与此服务器同步的权限。要了解详情，请与您服务器的管理员联系。"</string>
+
+    <!-- Dialog title when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing -->
+    <add-resource type="string" name="account_setup_security_required_title"/>
+    <string name="account_setup_security_required_title">"远程安全管理"</string>
+    <!-- Additional diagnostic text when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing.
+         [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_security_policies_required_fmt"/>
+    <string name="account_setup_security_policies_required_fmt">"<xliff:g id="SERVER">%s</xliff:g>服务器要求您允许其远程控制您Android设备的某些安全功能。您想要完成此帐户设置吗？"</string>
+    <!-- Additional diagnostic text when validation failed due to required provisioning not
+         being supported [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_security_policies_unsupported"/>
+    <string name="account_setup_failed_security_policies_unsupported">"您的Android设备不支持此服务器要求使用的安全功能，其中包括：<xliff:g id="ERROR">%s</xliff:g>"</string>
+    <!-- Warning given to users when they request disabling device administration (i.e. that their
+         administered accounts will be deleted) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_admin_warning"/>
+    <string name="disable_admin_warning">"警告：撤消“电子邮件”应用管理您设备的权限会删除所有需要此权限的电子邮件帐户，以及这些帐户中的电子邮件、联系人、日历活动和其他数据。"</string>
+
+    <!-- Dialog shown when the account requires some amount of device security provisioning,
+         just before jumping into system settings such as Device Policy grant, PIN/password,
+         or encryption setup.  [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="account_security_dialog_title"/>
+    <string name="account_security_dialog_title">"安全更新"</string>
+    <!-- Additional diagnostic text when the account requires some amount of device security
+         provisioning, just before jumping into system settings such as Device Policy grant,
+         PIN/password, or encryption setup.  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_dialog_content_fmt"/>
+    <string name="account_security_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g> 要求更新您的安全设置。"</string>
+
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_unsupported_ticker_fmt"/>
+    <string name="security_unsupported_ticker_fmt">"帐户“<xliff:g id="ACCOUNT">%s</xliff:g>”由于安全要求而无法同步。"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_needed_ticker_fmt"/>
+    <string name="security_needed_ticker_fmt">"帐户“<xliff:g id="ACCOUNT">%s</xliff:g>”需要更新安全设置。"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_changed_ticker_fmt"/>
+    <string name="security_changed_ticker_fmt">"帐户“<xliff:g id="ACCOUNT">%s</xliff:g>”已更改其安全设置，用户无需进行任何操作。"</string>
+    <!-- Notification content title when device security required [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_update_title"/>
+    <string name="security_notification_content_update_title">"需要进行安全更新"</string>
+    <!-- Notification content title when device security policies have changed [CHAR_LIMIT=36] -->
+    <add-resource type="string" name="security_notification_content_change_title"/>
+    <string name="security_notification_content_change_title">"安全策略已更改"</string>
+    <!-- Notification content title when device security policies cannot be met [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_unsupported_title"/>
+    <string name="security_notification_content_unsupported_title">"无法满足安全策略的要求"</string>
+    <!-- Title of the activity that dispatches changes to device security.  Not normally seen. -->
+    <add-resource type="string" name="account_security_title"/>
+    <string name="account_security_title">"设备安全性"</string>
+    <!-- Additional diagnostic text when the email app asserts control of the phone.
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_policy_explanation_fmt"/>
+    <string name="account_security_policy_explanation_fmt">"<xliff:g id="SERVER">%s</xliff:g>服务器要求您允许其远程控制您Android设备的某些安全功能。"</string>
+
+    <!-- "Setup could not finish" dialog action button -->
+    <add-resource type="string" name="account_setup_failed_dlg_edit_details_action"/>
+    <string name="account_setup_failed_dlg_edit_details_action">"修改详细信息"</string>
+
+    <!-- Notification ticker when device password is getting ready to expire [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expire_warning_ticker_fmt"/>
+    <string name="password_expire_warning_ticker_fmt">"“<xliff:g id="ACCOUNT">%s</xliff:g>”要求更改锁定屏幕 PIN 或密码。"</string>
+    <!-- Notification content title when device password is getting ready to expire
+            [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="password_expire_warning_content_title"/>
+    <string name="password_expire_warning_content_title">"锁定屏幕密码即将过期"</string>
+
+    <!-- Notification ticker when device password has expired [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expired_ticker"/>
+    <string name="password_expired_ticker">"您的锁定屏幕 PIN 或密码已过期。"</string>
+    <!-- Notification content title when device password has expired [CHAR_LIMIT=28] -->
+    <add-resource type="string" name="password_expired_content_title"/>
+    <string name="password_expired_content_title">"锁定屏幕密码已过期"</string>
+
+    <!-- Dialog title if device pin/password is going to expire soon. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expire_warning_dialog_title"/>
+    <string name="password_expire_warning_dialog_title">"锁定屏幕密码即将过期"</string>
+    <!-- Dialog content device pin/password is going to expire soon. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expire_warning_dialog_content_fmt"/>
+    <string name="password_expire_warning_dialog_content_fmt">"您需要尽快更改锁定屏幕 PIN 或密码，否则系统将会清除 <xliff:g id="ACCOUNT">%s</xliff:g> 的数据。要立即更改吗？"</string>
+
+    <!-- Dialog title if device pin/password has already expired. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expired_dialog_title"/>
+    <string name="password_expired_dialog_title">"锁定屏幕密码已过期"</string>
+    <!-- Dialog content device pin/password has already expired. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expired_dialog_content_fmt"/>
+    <string name="password_expired_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g> 的数据已从设备中清除。您可以通过更改锁定屏幕 PIN 或密码来还原这些数据。要立即更改吗？"</string>
+
+    <!-- On AccountSettingsXL, dialog text if you try to exit in/out/eas fragment (server settings)
+         without checking/saving [CHAR LIMIT=none]-->
+    <add-resource type="string" name="account_settings_exit_server_settings"/>
+    <string name="account_settings_exit_server_settings">"要舍弃未保存的更改？"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <!-- Title of account preference for downloading attachments in background [CHAR LIMIT=32] -->
+    <add-resource type="string" name="account_settings_background_attachments_label"/>
+    <string name="account_settings_background_attachments_label">"下载附件"</string>
+    <!-- Summary of account preference for downloading attachments in background [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_background_attachments_summary"/>
+    <string name="account_settings_background_attachments_summary">"通过WLAN自动下载近期邮件的附件"</string>
+    <add-resource type="string" name="account_settings_notify_label"/>
+    <string name="account_settings_notify_label">"电子邮件通知"</string>
+    <!-- On Settings screen, summary line when called via AccountManager for Exchange accounts
+        [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_summary"/>
+    <string name="account_settings_summary">"同步频率、通知等。"</string>
+    <!-- On Settings screen, setting summary text -->
+    <add-resource type="string" name="account_settings_notify_summary"/>
+    <string name="account_settings_notify_summary">"收到电子邮件时发送通知"</string>
+    <!-- On Settings screen, setting option name and title of dialog box that opens -->
+    <add-resource type="string" name="account_settings_mail_check_frequency_label"/>
+    <string name="account_settings_mail_check_frequency_label">"同步频率"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_incoming_label"/>
+    <string name="account_settings_incoming_label">"接收设置"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_incoming_summary"/>
+    <string name="account_settings_incoming_summary">"用户名、密码和其他接收服务器设置"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_outgoing_label"/>
+    <string name="account_settings_outgoing_label">"外发设置"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_outgoing_summary"/>
+    <string name="account_settings_outgoing_summary">"用户名、密码和其他外发服务器设置"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_enforced_label"/>
+    <string name="account_settings_enforced_label">"已执行策略"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_enforced_summary"/>
+    <string name="account_settings_enforced_summary">"无"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_unsupported_label"/>
+    <string name="account_settings_unsupported_label">"不支持的策略"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_unsupported_summary"/>
+    <string name="account_settings_unsupported_summary">"无"</string>
+    <!-- On Settings screen, label for button that attempts to sync the account -->
+    <add-resource type="string" name="account_settings_retry_label"/>
+    <string name="account_settings_retry_label">"尝试同步"</string>
+    <!-- On Settings screen, summmary for button that attempts to sync an account [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_retry_summary"/>
+    <string name="account_settings_retry_summary">"触摸此处以同步此帐户"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_description_label"/>
+    <string name="account_settings_description_label">"帐户名称"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_name_label"/>
+    <string name="account_settings_name_label">"您的姓名"</string>
+    <!-- On Settings screen, setting option name. Allows user to modify saved quick responses
+        for insertion in message body. [CHAR_LIMIT=24]-->
+    <add-resource type="string" name="account_settings_edit_quick_responses_label"/>
+    <string name="account_settings_edit_quick_responses_label">"快速回复"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_edit_quick_responses_summary"/>
+    <string name="account_settings_edit_quick_responses_summary">"编辑您在写电子邮件时经常插入的文本"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_notifications"/>
+    <string name="account_settings_notifications">"通知设置"</string>
+    <!-- On Settings screen, section heading for data usage [CHAR LIMIT=70] -->
+    <add-resource type="string" name="account_settings_data_usage"/>
+    <string name="account_settings_data_usage">"数据流量"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_policies"/>
+    <string name="account_settings_policies">"安全策略"</string>
+
+    <add-resource type="string" name="system_folders_title"/>
+    <string name="system_folders_title">"系统文件夹"</string>
+    <add-resource type="string" name="system_folders_trash_title"/>
+    <string name="system_folders_trash_title">"已删除邮件文件夹"</string>
+    <add-resource type="string" name="system_folders_trash_summary"/>
+    <string name="system_folders_trash_summary">"选择您在服务器上的已删除邮件文件夹"</string>
+    <add-resource type="string" name="system_folders_trash_dlg"/>
+    <string name="system_folders_trash_dlg">"选择您在服务器上的已删除邮件文件夹"</string>
+    <add-resource type="string" name="system_folders_sent_title"/>
+    <string name="system_folders_sent_title">"已发邮件文件夹"</string>
+    <add-resource type="string" name="system_folders_sent_summary"/>
+    <string name="system_folders_sent_summary">"选择您在服务器上的已发邮件文件夹"</string>
+    <add-resource type="string" name="system_folders_sent_dlg"/>
+    <string name="system_folders_sent_dlg">"选择您在服务器上的已发邮件文件夹"</string>
+
+    <!-- On settings screen, dialog heading informing user to create or edit a quick response -->
+    <add-resource type="string" name="edit_quick_response_dialog"/>
+    <string name="edit_quick_response_dialog">"快速回复"</string>
+    <!-- On settings screen, edit quick response dialog's "save" button -->
+    <add-resource type="string" name="save_action"/>
+    <string name="save_action">"保存"</string>
+
+    <!-- On settings screen, sync contacts check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_contacts_enable"/>
+    <string name="account_settings_sync_contacts_enable">"同步联系人"</string>
+    <!-- On settings screen, sync contacts summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_contacts_summary"/>
+    <string name="account_settings_sync_contacts_summary">"同步此帐户中的联系人"</string>
+    <!-- On settings screen, sync calendar check box label [CHAR LIMIT=20]-->
+        <add-resource type="string" name="account_settings_sync_calendar_enable"/>
+    <string name="account_settings_sync_calendar_enable">"同步日历"</string>
+    <!-- On settings screen, sync calendar summary text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_sync_calendar_summary"/>
+    <string name="account_settings_sync_calendar_summary">"同步此帐户中的日历活动"</string>
+    <!-- On settings screen, sync email check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_email_enable"/>
+    <string name="account_settings_sync_email_enable">"同步电子邮件"</string>
+    <!-- On settings screen, sync email summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_email_summary"/>
+    <string name="account_settings_sync_email_summary">"同步此帐户中的电子邮件"</string>
+
+    <!-- On Settings screen, vibrate pop-up menu label -->
+    <add-resource type="string" name="label_notification_vibrate_title"/>
+    <string name="label_notification_vibrate_title">"振动"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_ringtone"/>
+    <string name="account_settings_ringtone">"选择铃声"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_servers"/>
+    <string name="account_settings_servers">"服务器设置"</string>
+
+    <!-- Mailbox settings activity title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title"/>
+    <string name="mailbox_settings_activity_title">"同步选项"</string>
+    <!-- Mailbox settings activity title, with the target folder name [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title_with_mailbox"/>
+    <string name="mailbox_settings_activity_title_with_mailbox">"同步选项（<xliff:g id="MAILBOXX_NAME">%s</xliff:g>）"</string>
+    <!-- On mailbox settings screen: Whether to sync this mailbox when the account syncs. -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_label"/>
+    <string name="mailbox_settings_sync_enabled_label">"同步此文件夹"</string>
+    <!-- On mailbox settings screen: Explanatory text for what it means to "sync this folder". -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_summary"/>
+    <string name="mailbox_settings_sync_enabled_summary">"连接到网络后下载邮件"</string>
+    <!-- On mailbox settings screen: Mailbox sync window (the number of days to synchronize email for) setting label [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_mailbox_sync_window_label"/>
+    <string name="mailbox_settings_mailbox_sync_window_label">"同步最近多少天的邮件"</string>
+
+    <!-- Message that appears when adding a T-Online account -->
+    <add-resource type="string" name="provider_note_t_online"/>
+    <string name="provider_note_t_online">"在设置该电子邮件帐户之前，请访问T-Online网站创建密码，以便使用POP3电子邮件功能。"</string>
+    <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
+    <add-resource type="string" name="exchange_name_alternate"/>
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+
+    <!-- Message that appears if the AccountManager cannot create the system Account -->
+    <add-resource type="string" name="system_account_create_failed"/>
+    <string name="system_account_create_failed">"无法创建帐户，请重试。"</string>
+
+    <!-- Strings that support the DeviceAdmin / DevicePolicyManager API -->
+    <!-- Name of the DeviceAdmin (seen in settings & in user confirmation screen) -->
+    <add-resource type="string" name="device_admin_label"/>
+    <string name="device_admin_label">"电子邮件"</string>
+    <!-- Long-form description of the DeviceAdmin (2nd line in settings & in user conf. screen) -->
+    <add-resource type="string" name="device_admin_description"/>
+    <string name="device_admin_description">"启用服务器专有的安全策略"</string>
+
+    <!-- A policy disallowing the user of the device's camera [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_dont_allow_camera"/>
+    <string name="policy_dont_allow_camera">"不允许使用设备的相机"</string>
+    <!-- A policy requiring a device lock screen password [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_require_password"/>
+    <string name="policy_require_password">"需要设备密码"</string>
+    <!-- A policy disallowing the reuse of recent passwords [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_history"/>
+    <string name="policy_password_history">"限制重复使用近期所用密码"</string>
+    <!-- A policy that forces a password to expire after a set period of time [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_expiration"/>
+    <string name="policy_password_expiration">"强制密码在一段时间后过期"</string>
+    <!-- A policy requiring a maximum amount of time the device can sit idle before the lock screen
+        is activated [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_screen_timeout"/>
+    <string name="policy_screen_timeout">"要求闲置设备锁定其屏幕"</string>
+    <!-- A policy limiting the number of old calendar events synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_calendar_age"/>
+    <string name="policy_calendar_age">"限制同步的日历活动数"</string>
+    <!-- A policy limiting the number of emails synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_email_age"/>
+    <string name="policy_email_age">"限制同步的电子邮件数"</string>
+
+    <!-- The four strings below represent "quick responses" which the user can insert into a
+        message being composed with just a couple of taps.  These four responses MUST be defined,
+        but need not include a string (i.e. they are optional).  Further, the responses can be
+        customized as necessary by the translator, in case one or more of these is inappropriate in
+        a particular locale or if there are better options available. -->
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_1"/>
+    <string name="quick_1">"非常感谢！"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_2"/>
+    <string name="quick_2">"我觉得不错！"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_3"/>
+    <string name="quick_3">"稍后我会阅读此邮件并给您回复。"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_4"/>
+    <string name="quick_4">"我们可以安排一个会议，讨论一下这个问题。"</string>
+
+    <!-- This is shown when a user responds to a meeting invitation [CHAR LIMIT=none]-->
+    <add-resource type="string" name="confirm_response"/>
+    <string name="confirm_response">"正在发送回复\u2026"</string>
+
+    <!-- Used by AccountManager -->
+    <!-- Account type name as used by AccountManager UI (IMAP is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="imap_name"/>
+    <string name="imap_name">"个人(IMAP)"</string>
+    <!-- Account type name as used by AccountManager UI (POP3 is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pop3_name"/>
+    <string name="pop3_name">"个人(POP3)"</string>
+
+    <!-- Displayed when the user must pick his server's trash folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="trash_folder_selection_title"/>
+    <string name="trash_folder_selection_title">"选择 <xliff:g id="ACCOUNT">%s</xliff:g> 在服务器上的已删除邮件文件夹"</string>
+    <!-- Displayed when the user must pick his server's sent items folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="sent_folder_selection_title"/>
+    <string name="sent_folder_selection_title">"选择 <xliff:g id="ACCOUNT">%s</xliff:g> 在服务器上的已发邮件文件夹"</string>
+    <add-resource type="string" name="account_waiting_for_folders_msg"/>
+    <string name="account_waiting_for_folders_msg">"正在加载文件夹列表\u2026"</string>
+
+    <!-- This message indicates no quick responses exist to choose from -->
+    <add-resource type="string" name="no_quick_responses"/>
+    <string name="no_quick_responses">"没有可供选择的快速回复"</string>
+
+    <!-- Gmail name for redirecting during account setup -->
+    <add-resource type="string" name="gmail_name"/>
+    <string name="gmail_name">Gmail</string>
+
+    <!-- Name for preference entry which leads to the per-folder sync settings activity -->
+    <add-resource type="string" name="folder_sync_settings_pref_title"/>
+    <string name="folder_sync_settings_pref_title">"文件夹同步设置"</string>
+
+    <!-- In Account setup options & Account Settings screens, Email sync size option. -->
+    <add-resource type="string" name="account_settings_sync_size_enable"/>
+    <string name="account_settings_sync_size_enable">"配置邮件的同步缓存大小"</string>
+    <add-resource type="string" name="account_settings_sync_size_enable_summary"/>
+    <string name="account_settings_sync_size_enable_summary">"您可以自定义该账户中的邮件的同步缓存大小，从而节约数据流量"</string>
+    <add-resource type="string" name="account_settings_sync_size_label"/>
+    <string name="account_settings_sync_size_label">"选择同步缓存大小"</string>
+    <add-resource type="string" name="account_settings_sync_size_category_label"/>
+    <string name="account_settings_sync_size_category_label">"同步缓存大小配置"</string>
+
+    <add-resource type="string" name="account_setup_options_mail_sync_size_all"/>
+    <string name="account_setup_options_mail_sync_size_all">"全部"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_20k"/>
+    <string name="account_setup_options_mail_sync_size_20k">"20KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_100k"/>
+    <string name="account_setup_options_mail_sync_size_100k">"100KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_200k"/>
+    <string name="account_setup_options_mail_sync_size_200k">"200KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_500k"/>
+    <string name="account_setup_options_mail_sync_size_500k">"500KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_1M"/>
+    <string name="account_setup_options_mail_sync_size_1M">"1MB"</string>
+
+    <!--Delete email account -->
+    <add-resource type="string" name="remove_email_account"/>
+    <string name="remove_email_account">"移除帐户"</string>
+    <add-resource type="string" name="remove_email_account_continue"/>
+    <string name="remove_email_account_continue">"继续"</string>
+    <add-resource type="string" name="remove_email_account_message"/>
+    <string name="remove_email_account_message">"您即将转到可移除帐户的“设置”应用。"</string>
+    <add-resource type="string" name="default_domain"/>
+    <string name="default_domain"></string>
+    <!-- Customize Email account's signature -->
+    <add-resource type="string" name="default_email_signature"/>
+    <string name="default_email_signature"></string>
+    <add-resource type="string" name="default_email_signature_with_brand"/>
+    <string name="default_email_signature_with_brand"></string>
+    <add-resource type="string" name="missing_required_permission"/>
+    <string name="missing_required_permission">"您已禁用某项必需权限。"</string></resources>

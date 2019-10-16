@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Gestionnaire d\'espace de stockage"</string>
+
+    <!-- Button label for generic cancel action [CHAR LIMIT=20] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Annuler"</string>
+    <!-- Storage setting. Menu option for using the deletion helper. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="storage_menu_free"/>
+    <string name="storage_menu_free">"Libérer de l\'espace"</string>
+    <!-- Activity title for deletion helper. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="deletion_helper_title"/>
+    <string name="deletion_helper_title">"Choisir contenus à suppr."</string>
+    <!-- Summary of how much storage an app is using and the number of days since last use. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary"/>
+    <string name="deletion_helper_app_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 Il y a <xliff:g id="DAYS">%2$d</xliff:g> jours"</string>
+    <!-- Summary of how much storage an app is using when it has not been used in the last year. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary_never_used"/>
+    <string name="deletion_helper_app_summary_never_used">"<xliff:g id="used" example="1.2GB">%1$s</xliff:g> \u2022 Non utilisé au cours de l\'année dernière"</string>
+    <!-- Summary of how much storage an app is using when its last use is unknown. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary_unknown_used"/>
+    <string name="deletion_helper_app_summary_unknown_used">"<xliff:g id="USED">%1$s</xliff:g> \u2022 Date de la dernière utilisation inconnue"</string>
+    <!-- Button which clears out storage in the deletion helper. [CHAR LIMIT=60]-->
+    <add-resource type="string" name="deletion_helper_free_button"/>
+    <string name="deletion_helper_free_button">"Libérer <xliff:g id="FREEABLE">%1$s</xliff:g>"</string>
+
+    <!-- Preference group title for the photos and videos deletion service. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_photos_title"/>
+    <string name="deletion_helper_photos_title">"Photos et vidéos (<xliff:g id="NUM_ITEMS">%1$d</xliff:g>)"</string>
+
+    <!-- Summary of how much backed up storage that photos and videos service can clear from the local device. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_photos_summary"/>
+    <string name="deletion_helper_photos_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 Datant de plus de <xliff:g id="DAYS">%2$d</xliff:g> jours"</string>
+
+    <!-- Preference title for the downloads deletion service. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_downloads_title"/>
+    <string name="deletion_helper_downloads_title">"Téléchargements (<xliff:g id="NUMITEMS">%1$d</xliff:g>)"</string>
+
+    <!-- Summary of how much stale data can be cleared from the local download folder. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_category_summary"/>
+    <string name="deletion_helper_downloads_category_summary"><xliff:g id="used" example="1.2GB">%1$s</xliff:g></string>
+
+    <!-- Summary of how much stale data can be cleared from a downloads file. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_file_summary"/>
+    <string name="deletion_helper_downloads_file_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 <xliff:g id="DAYS">%2$s</xliff:g>"</string>
+
+    <!-- Summary for when when there is nothing in the downloads folder to clear. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_summary_empty"/>
+    <string name="deletion_helper_downloads_summary_empty"><xliff:g id="used" example="1.2GB">%1$s</xliff:g></string>
+
+    <!-- Message to warn the user before clearing space in the deletion helper. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_message"/>
+    <string name="deletion_helper_clear_dialog_message">"<xliff:g id="CLEARABLE_BYTES">%1$s</xliff:g> seront supprimés de votre appareil."</string>
+
+    <!-- Button label for the dialog prompt for clearing data in deletion helper. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_remove"/>
+    <string name="deletion_helper_clear_dialog_remove">"Supprimer"</string>
+
+    <!-- Title for the dialog to up sell the storage manager. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_upsell_title"/>
+    <string name="deletion_helper_upsell_title">"Gérer l\'espace de stockage automatiquement ?"</string>
+    <!-- Summary for the dialog to up sell the storage manager. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_upsell_summary"/>
+    <string name="deletion_helper_upsell_summary">"Vous venez de libérer <xliff:g id="USED">%1$s</xliff:g>. Souhaitez-vous autoriser le gestionnaire d\'espace de stockage à libérer automatiquement de l\'espace en supprimant le contenu sauvegardé sur votre appareil ?"</string>
+    <!-- Button to delay turning on the storage manager on the storage manager upsell. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="deletion_helper_upsell_cancel"/>
+    <string name="deletion_helper_upsell_cancel">"Non, merci"</string>
+    <!-- Button to activate the storage manager on the storage manager upsell. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="deletion_helper_upsell_activate"/>
+    <string name="deletion_helper_upsell_activate">"Activer"</string>
+
+    <!-- Title for the apps category in the deletion helper, showing how many apps to delete. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_apps_group_title"/>
+    <string name="deletion_helper_apps_group_title">"Applications (<xliff:g id="NUM_ITEMS">%1$d</xliff:g>)"</string>
+
+    <!-- Summary for the apps category in the deletion helper, showing how many space to clear. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_apps_group_summary"/>
+    <string name="deletion_helper_apps_group_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 Dernière utilisation il y a <xliff:g id="DAYS">%2$d</xliff:g> jours"</string>
+
+    <!-- Category title for the automatic settings in the storage manager settings. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_automatic_title"/>
+    <string name="deletion_helper_automatic_title">"Automatique"</string>
+
+    <!-- Category title for the manual settings in the storage manager settings. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_manual_title"/>
+    <string name="deletion_helper_manual_title">"Mode manuel"</string>
+
+    <!-- Preference menu title for accessing the deletion helper from the storage manager settings. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="deletion_helper_preference_title"/>
+    <string name="deletion_helper_preference_title">"Libérer de l\'espace"</string>
+
+    <!-- Automatic storage management service label. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_service_label"/>
+    <string name="automatic_storage_manager_service_label">"Gestion auto de l\'espace de stockage"</string>
+
+    <!-- Notification title for the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_notification_title"/>
+    <string name="automatic_storage_manager_notification_title">"Votre téléphone est à court d\'espace"</string>
+    <!-- Notification body for the low storage notification. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="automatic_storage_manager_notification_summary"/>
+    <string name="automatic_storage_manager_notification_summary">"Autorisez le gestionnaire d\'espace de stockage à libérer de l\'espace en supprimant automatiquement les photos et vidéos les plus anciennes, lorsque votre téléphone commence à être de nouveau saturé."</string>
+    <!-- Action to dismiss the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_cancel_button"/>
+    <string name="automatic_storage_manager_cancel_button">"Non, merci"</string>
+    <!-- Action to turn on ASM in the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_activate_button"/>
+    <string name="automatic_storage_manager_activate_button">"Activer"</string>
+
+    <add-resource type="string" name="deletion_helper_photos_loading_title"/>
+    <string name="deletion_helper_photos_loading_title">"Photos et vidéos"</string>
+    <add-resource type="string" name="deletion_helper_photos_loading_summary"/>
+    <string name="deletion_helper_photos_loading_summary">"Recherche de contenus\u2026"</string>
+
+    <!-- Message to warn the user before clearing space in the deletion helper for the first time. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_message_first_time"/>
+    <string name="deletion_helper_clear_dialog_message_first_time">"<xliff:g id="CLEARABLE_BYTES">%1$s</xliff:g> seront supprimés de votre appareil."</string>
+
+    <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="automatic_storage_manager_activation_warning"/>
+    <string name="automatic_storage_manager_activation_warning">"Votre espace de stockage est désormais géré par le gestionnaire d\'espace de stockage."</string></resources>

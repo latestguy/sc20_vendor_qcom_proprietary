@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs.  This is the version of the label for
+         tablet devices, where the phone app handles mobile data but not
+         actual phone calls. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="tablet">"सेलुलर डेटा"</string>
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="default">"फोन सेवाहरू"</string>
+
+    <!-- Screen title for Emergency Dialer UI -->
+    <add-resource type="string" name="emergencyDialerIconLabel"/>
+    <string name="emergencyDialerIconLabel">"आपतकालीन डायल गर्ने"</string>
+    <!-- Activity label for the in-call UI -->
+    <add-resource type="string" name="phoneIconLabel"/>
+    <string name="phoneIconLabel">"फोन"</string>
+    <!-- Title of FDN list screen -->
+    <add-resource type="string" name="fdnListLabel"/>
+    <string name="fdnListLabel">"FDN सूची"</string>
+
+    <!-- Call status -->
+    <!-- Incoming call screen, name of "unknown" caller -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"अज्ञात"</string>
+    <!-- Incoming call screen, string when number hidden -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"निजी नम्बर"</string>
+    <!-- Incoming call screen, string when called from a pay phone -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"पेफोन"</string>
+    <!-- In-call screen: status label for a call that's on hold -->
+    <add-resource type="string" name="onHold"/>
+    <string name="onHold">"होल्डमा"</string>
+    <!-- Possible error messages with outgoing calls -->
+    <add-resource type="string" name="mmiStarted"/>
+    <string name="mmiStarted">"MMI कोड सुरु भयो"</string>
+    <!-- Dialog label when a USSD code starts running -->
+    <add-resource type="string" name="ussdRunning"/>
+    <string name="ussdRunning">"USSD कोड चल्दै..."</string>
+    <!-- Dialog label when an MMI code is canceled -->
+    <add-resource type="string" name="mmiCancelled"/>
+    <string name="mmiCancelled">"MMI कोड रद्द गरियो।"</string>
+    <!-- Label for "cancel" button on the MMI dialog -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"रद्द गर्नुहोस्"</string>
+    <!-- Toast string displayed to user if the input in MMI dialog is < 1 or > 160 -->
+    <add-resource type="string" name="enter_input"/>
+    <string name="enter_input">"USSD सन्देश  <xliff:g id="MIN_LEN">%d</xliff:g> र <xliff:g id="MAX_LEN">%d</xliff:g> अक्षरहरूका बिच हुनै पर्दछ। कृपया पुनःप्रयास गर्नुहोस्।"</string>
+
+    <!-- Label for "Manage conference call" panel [CHAR LIMIT=40] -->
+    <add-resource type="string" name="manageConferenceLabel"/>
+    <string name="manageConferenceLabel">"सम्मेलन कल प्रबन्ध गर्नुहोस्"</string>
+
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"ठीक छ"</string>
+
+    <!-- "Audio mode" popup menu: Item label to select the speakerphone [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_speaker"/>
+    <string name="audio_mode_speaker">"स्पिकर"</string>
+    <!-- "Audio mode" popup menu: Item label to select the handset earpiece [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_earpiece"/>
+    <string name="audio_mode_earpiece">"ह्यान्डसेट इयरपिस"</string>
+    <!-- "Audio mode" popup menu: Item label to select the wired headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_wired_headset"/>
+    <string name="audio_mode_wired_headset">"तारसहितको हेडसेट"</string>
+    <!-- "Audio mode" popup menu: Item label to select the bluetooth headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_bluetooth"/>
+    <string name="audio_mode_bluetooth">"ब्लुटूथ"</string>
+
+    <!-- post dial -->
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "wait" character in a phone number to be dialed; this dialog asks the
+         user if it's OK to send the numbers following the "wait". -->
+    <add-resource type="string" name="wait_prompt_str"/>
+    <string name="wait_prompt_str">"निम्न टोनहरू पठाउने? \n"</string>
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "PAUSE" character in a phone number to be dialed; this dialog gives
+         informative message to the user to show the sending numbers following the "Pause". -->
+    <add-resource type="string" name="pause_prompt_str"/>
+    <string name="pause_prompt_str">"टोनहरू \n पठाउँदै"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog -->
+    <add-resource type="string" name="send_button"/>
+    <string name="send_button">"पठाउनुहोस्"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_yes"/>
+    <string name="pause_prompt_yes">"हो"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_no"/>
+    <string name="pause_prompt_no">"होइन"</string>
+    <!-- In-call screen: on the "wild" character dialog, this is the label
+         for a text widget that lets the user enter the digits that should
+         replace the "wild" character. -->
+    <add-resource type="string" name="wild_prompt_str"/>
+    <string name="wild_prompt_str">"यससँग वाइल्ड अक्षर बदल्नुहोस्"</string>
+
+    <!-- missing voicemail number -->
+    <!-- Title of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number"/>
+    <string name="no_vm_number">"भ्वाइसमेल नम्बर हराइरहेको छ"</string>
+    <!-- Body text of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number_msg"/>
+    <string name="no_vm_number_msg">"SIM कार्डमा कुनै पनि भ्वाइसमेल नम्बर भण्डारण भएको छैन।"</string>
+    <!-- Button label on the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="add_vm_number_str"/>
+    <string name="add_vm_number_str">"नम्बर थप्नुहोस्"</string>
+    <!--Toast in Call settings when asked to launch voicemail for a guest user -->
+    <add-resource type="string" name="voice_number_setting_primary_user_only"/>
+    <string name="voice_number_setting_primary_user_only">"प्रथम प्रयोगकर्ताको लागि मात्र कल सेटिङ्कहरूको लागि भ्वाइस मेल परिवर्तन हुन सक्छ।"</string>
+
+    <!-- Status message displayed on SIM PIN unlock panel -->
+    <add-resource type="string" name="puk_unlocked"/>
+    <string name="puk_unlocked">"तपाईँको SIM कार्ड अनब्लक गरिएको छ। तपाईँको फोन अनलक हुँदैछ ..."</string>
+    <!-- network depersonalization -->
+    <!-- Label text for PIN entry widget on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ENTRY"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ENTRY">"SIM नेटवर्क अनलक PIN"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_unlock_text"/>
+    <string name="sim_ndp_unlock_text">"अनलोक गर्नुहोस्"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_dismiss_text"/>
+    <string name="sim_ndp_dismiss_text">"खारेज गर्नुहोस्"</string>
+    <!-- Status message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS">"SIM नेटवर्क अनलकको अनुरोध गर्दै..."</string>
+    <!-- Error message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ERROR"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ERROR">"SIM नेटवर्क अनलकको अनुरोध असफल भयो।"</string>
+    <!-- Success message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS">"SIM नेटवर्क अनलक सफल भयो।"</string>
+
+    <!-- settings strings -->
+
+    <!-- Error message for users that aren't allowed to modify Mobile Network settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mobile_network_settings_not_available"/>
+    <string name="mobile_network_settings_not_available">"सेलुलर सञ्जाल सेटिङहरू यस प्रयोगकर्ताको लागि उपलब्ध छैनन्"</string>
+    <!-- GSM Call settings screen, setting option name. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGSMMore"/>
+    <string name="labelGSMMore">"GSM कल सेटिङहरू"</string>
+    <!-- GSM Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGsmMore_with_label"/>
+    <string name="labelGsmMore_with_label">"GSM कल सेटिङहरू (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <add-resource type="string" name="labelCFType"/>
+    <string name="labelCFType">"कल फरवार्ड सेटिङ"</string>
+    <add-resource type="string" name="labelCFVoice"/>
+    <string name="labelCFVoice">"आवाज"</string>
+    <add-resource type="string" name="labelCFVideo"/>
+    <string name="labelCFVideo">"भिडियो"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCDMAMore"/>
+    <string name="labelCDMAMore">"CDMA कल सेटिङहरू"</string>
+    <!-- CDMA Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelCdmaMore_with_label"/>
+    <string name="labelCdmaMore_with_label">"CDMA कल सेटिङहरू (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="apn_settings"/>
+    <string name="apn_settings">"एक्सेस प्वाइन्ट नामहरू"</string>
+    <!-- Label for the "Network settings" screen in the Settings UI -->
+    <add-resource type="string" name="settings_label"/>
+    <string name="settings_label">"नेटवर्क सेटिङहरू"</string>
+
+    <!-- Label for settings screen for phone accounts. -->
+    <add-resource type="string" name="phone_accounts"/>
+    <string name="phone_accounts">"कल खाता"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account -->
+    <add-resource type="string" name="phone_accounts_make_calls_with"/>
+    <string name="phone_accounts_make_calls_with">"मार्फत कल गर्नुहोस्"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account for SIP calls. -->
+    <add-resource type="string" name="phone_accounts_make_sip_calls_with"/>
+    <string name="phone_accounts_make_sip_calls_with">"मार्फत SIP कलहरू गर्नुहोस्"</string>
+    <!-- Entry in dialog to "ask first" for accounts when making a call -->
+    <add-resource type="string" name="phone_accounts_ask_every_time"/>
+    <string name="phone_accounts_ask_every_time">"पहिले सोध्नुहोस्"</string>
+    <!-- Account label for when a SIM account has no service (i.e. airplane mode) -->
+    <add-resource type="string" name="phone_accounts_default_account_label"/>
+    <string name="phone_accounts_default_account_label">"कुनै नेटवर्क उपलब्ध छैन"</string>
+
+    <!-- Label for heading of the per-account settings section in the phone accounts settings
+         screen. -->
+    <add-resource type="string" name="phone_accounts_settings_header"/>
+    <string name="phone_accounts_settings_header">"सेटिङ्हरू"</string>
+    <!-- Label for invoking phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_choose_accounts"/>
+    <string name="phone_accounts_choose_accounts">"खाता छान्नुहोस्"</string>
+    <!-- Label for heading in the phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_selection_header"/>
+    <string name="phone_accounts_selection_header">"फोन खाता"</string>
+    <!-- Title for the button to add a new sip account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_accounts_add_sip_account"/>
+    <string name="phone_accounts_add_sip_account">"SIP खाता थप्नुहोस्"</string>
+    <!-- Description label for icon to configure a phone account's settings. -->
+    <add-resource type="string" name="phone_accounts_configure_account_settings"/>
+    <string name="phone_accounts_configure_account_settings">"खाता सेटिङ कन्फिगर गर्नुहोस्"</string>
+    <!-- Label for heading that takes user to the list of calling accounts where they can enable
+         and disable all accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts"/>
+    <string name="phone_accounts_all_calling_accounts">"सबै कलिङ खाताहरू"</string>
+    <!-- Summary for all-calling-account setting indicating that is where the user goes to enable
+         and disable phone accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts_summary"/>
+    <string name="phone_accounts_all_calling_accounts_summary">"कुन खाताहरूले कल गर्न सक्छन् चयन गर्नुहोस्"</string>
+
+    <!-- Title for setting to select Wi-Fi call manager account -->
+    <add-resource type="string" name="wifi_calling"/>
+    <string name="wifi_calling">"वाइ-फाइ कलिङ"</string>
+    <!-- Built-in label for the default connection service setting. -->
+    <add-resource type="string" name="connection_service_default_label"/>
+    <string name="connection_service_default_label">"निर्मित जडान सेवा"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"भ्वाइसमेल"</string>
+    <!-- Title of the "Voicemail" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="voicemail_settings_with_label"/>
+    <string name="voicemail_settings_with_label">"भ्वाइस मेल (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call forwarding dialog box, voicemail number prefix -->
+    <add-resource type="string" name="voicemail_abbreviated"/>
+    <string name="voicemail_abbreviated">"VM:"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="networks"/>
+    <string name="networks">"नेटवर्क संचालकहरू"</string>
+    <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"आपतकालीन प्रसारणहरू"</string>
+    <!-- Call settings screen title -->
+    <add-resource type="string" name="call_settings"/>
+    <string name="call_settings">"कल सेटिङहरू"</string>
+    <!-- GSM Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_gsm_call_settings"/>
+    <string name="additional_gsm_call_settings">"अतिरिक्त सेटिङहरू"</string>
+    <!-- GSM Call settings screen, setting option name, with label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="additional_gsm_call_settings_with_label"/>
+    <string name="additional_gsm_call_settings_with_label">"अतिरिक्त सेटिङ ( <xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g> )"</string>
+    <!-- GSM-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_gsm_call_settings"/>
+    <string name="sum_gsm_call_settings">"अतिरिक्त GSM का मात्र कल सेटिङहरू"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_cdma_call_settings"/>
+    <string name="additional_cdma_call_settings">"अतिरिक्त CDMA कल सेटिङहरू"</string>
+    <!-- CDMA-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_cdma_call_settings"/>
+    <string name="sum_cdma_call_settings">"अतिरिक्त CDMA कल सेटिङहरू मात्र"</string>
+    <!-- Call setting screen, nework service setting name -->
+    <add-resource type="string" name="labelNwService"/>
+    <string name="labelNwService">"नेटवर्क सेवा सेटिङहरू"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCallerId"/>
+    <string name="labelCallerId">"कलर ID"</string>
+    <!-- Additional call settings screen, setting summary text when the setting is being loaded [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sum_loading_settings"/>
+    <string name="sum_loading_settings">"सेटिङहरू लोड हुँदै..."</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is hidden -->
+    <add-resource type="string" name="sum_hide_caller_id"/>
+    <string name="sum_hide_caller_id">"बहिर्गमन कलहरूमा नम्बर लुकाइएको"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is shown -->
+    <add-resource type="string" name="sum_show_caller_id"/>
+    <string name="sum_show_caller_id">"बहिर्गमन कलहरूमा प्रदर्शित नम्बर"</string>
+    <!-- Additional call settings screen, setting summary text for default Caller ID value -->
+    <add-resource type="string" name="sum_default_caller_id"/>
+    <string name="sum_default_caller_id">"बहिर्गमन कलमा मेरो नम्बर देखाउन पूर्वनिर्धारित अपरेटर सेटिङहरू प्रयोग गर्नुहोस्"</string>
+    <!-- Additional call settings screen, setting check box name -->
+    <add-resource type="string" name="labelCW"/>
+    <string name="labelCW">"कल प्रतीक्षा गर्दै"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is selected -->
+    <add-resource type="string" name="sum_cw_enabled"/>
+    <string name="sum_cw_enabled">"कल गरेको बखत मलाई आगमन कलको जानकारी गराउनुहोस्"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is clear -->
+    <add-resource type="string" name="sum_cw_disabled"/>
+    <string name="sum_cw_disabled">"कल गरेको बेलामा आगमन कलहरूको बारेमा मलाई जानकारी गराउनुहोस्"</string>
+    <!-- Call forwarding settings screen, section heading -->
+    <add-resource type="string" name="call_forwarding_settings"/>
+    <string name="call_forwarding_settings">"कल फर्वार्डिङ सेटिङहरू"</string>
+    <!-- Call forwarding settings screen, section heading, with a label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="call_forwarding_settings_with_label"/>
+    <string name="call_forwarding_settings_with_label">"(कल फर्वार्ड सेटिङहरू <xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g> )"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCF"/>
+    <string name="labelCF">"कल फर्वार्ड गर्दै"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFU"/>
+    <string name="labelCFU">"सधैँ फर्वार्ड गर्नुहोस्"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFU"/>
+    <string name="messageCFU">"सधैँ यो नम्बर प्रयोग गर्नुहोस्"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
+    <add-resource type="string" name="sum_cfu_enabled_indicator"/>
+    <string name="sum_cfu_enabled_indicator">"सबै कलहरू फर्वाड गर्दै"</string>
+    <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
+    <add-resource type="string" name="sum_cfu_enabled"/>
+    <string name="sum_cfu_enabled">"सम्पूर्ण कलहरू <xliff:g id="PHONENUMBER">{0}</xliff:g>मा फर्वार्ड गरिदै"</string>
+    <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
+    <add-resource type="string" name="sum_cfu_enabled_no_number"/>
+    <string name="sum_cfu_enabled_no_number">"नम्बर उपलब्ध छैन"</string>
+    <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
+    <add-resource type="string" name="sum_cfu_disabled"/>
+    <string name="sum_cfu_disabled">"निस्कृय"</string>
+
+    <!-- Call forwarding settings screen, setting timer info for cfut case -->
+    <add-resource type="string" name="set_time_period"/>
+    <string name="set_time_period">"समय अवधि सेट गर्नुहोस्"</string>
+    <add-resource type="string" name="all_day"/>
+    <string name="all_day">"\u0020सबै दिन\u0020"</string>
+    <add-resource type="string" name="time_interval_char"/>
+    <string name="time_interval_char">: </string>
+    <add-resource type="string" name="time_start"/>
+    <string name="time_start">"\u0020बाट\u0020"</string>
+    <add-resource type="string" name="time_start_hour"/>
+    <string name="time_start_hour">"समय सुरु घण्टा"</string>
+    <add-resource type="string" name="time_start_minute"/>
+    <string name="time_start_minute">"सुरु हुने मिनेट"</string>
+    <add-resource type="string" name="time_end"/>
+    <string name="time_end">"\u0020लाई\u0020"</string>
+    <add-resource type="string" name="time_next_day"/>
+    <string name="time_next_day">"\u0020अर्को दिन\u0020"</string>
+    <add-resource type="string" name="time_end_hour"/>
+    <string name="time_end_hour">"समय समाप्त घण्टा"</string>
+    <add-resource type="string" name="time_end_minute"/>
+    <string name="time_end_minute">"समय समाप्त मिनेट"</string>
+    <add-resource type="string" name="time_formate_am"/>
+    <string name="time_formate_am">"बिहान"</string>
+    <add-resource type="string" name="time_formate_pm"/>
+    <string name="time_formate_pm">"अपरान्ह"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_alert"/>
+    <string name="cf_setting_mobile_data_alert">"कृपया मोबाइल डेटा अन गर्नुहोस् र WLAN अफ छ भनी सुनिश्चित गर्नुहोस्"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_roaming_alert"/>
+    <string name="cf_setting_mobile_data_roaming_alert">"कृपया डेटा रोमिङ अन गर्नुहोस्"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFB"/>
+    <string name="labelCFB">"व्यस्त हुँदा"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFB"/>
+    <string name="messageCFB">"व्यस्त हुँदा नम्बर"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
+    <add-resource type="string" name="sum_cfb_enabled"/>
+    <string name="sum_cfb_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g> मा फर्वाड गर्दै"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
+    <add-resource type="string" name="sum_cfb_disabled"/>
+    <string name="sum_cfb_disabled">"निस्कृय"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
+    <add-resource type="string" name="disable_cfb_forbidden"/>
+    <string name="disable_cfb_forbidden">"तपाईंको फोन व्यस्त रहँदा तपाईंको अपरेटरले कल-फर्वार्डिङ असक्षम बनाउँदा समर्थन गर्दैन।"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRy"/>
+    <string name="labelCFNRy">"उत्तर नआउँदा"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRy"/>
+    <string name="messageCFNRy">"अनुत्तरित हुँदाको नम्बर"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
+    <add-resource type="string" name="sum_cfnry_enabled"/>
+    <string name="sum_cfnry_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g> मा फर्वाड गर्दै"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
+    <add-resource type="string" name="sum_cfnry_disabled"/>
+    <string name="sum_cfnry_disabled">"निस्कृय"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
+    <add-resource type="string" name="disable_cfnry_forbidden"/>
+    <string name="disable_cfnry_forbidden">"तपाईंको फोनले जवाफ नदिँदा तपाईंको अपरेटरले कल-फर्वार्डिङ असक्षम बनाउँदा समर्थन गर्दैन।"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRc"/>
+    <string name="labelCFNRc">"पहुँचयोग्य नहुँदा"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRc"/>
+    <string name="messageCFNRc">"पहुँचयोग्य हुँदाको नम्बर"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
+    <add-resource type="string" name="sum_cfnrc_enabled"/>
+    <string name="sum_cfnrc_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g> मा फर्वाड गर्दै"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
+    <add-resource type="string" name="sum_cfnrc_disabled"/>
+    <string name="sum_cfnrc_disabled">"असक्षम पारियो"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
+    <add-resource type="string" name="disable_cfnrc_forbidden"/>
+    <string name="disable_cfnrc_forbidden">"तपाईंको फोन पहुँचयोग्य नहुँदा तपाईंको केरियरले कल-फर्वार्डिङ असक्षम बनाउँदा समर्थन गर्दैन।"</string>
+
+    <!-- Title of the progress dialog displayed while updating Call settings -->
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"कल सेटिङहरू"</string>
+    <!-- Toast in Call settings when asked to launch settings for a secondary user -->
+    <add-resource type="string" name="call_settings_admin_user_only"/>
+    <string name="call_settings_admin_user_only">"कल सेटिङहरू केवल प्रशासकीय प्रयोगकर्ताद्वारा परिवर्तन गर्न सकिन्छ।"</string>
+    <!-- Title of the "Call settings" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="call_settings_with_label"/>
+    <string name="call_settings_with_label">"सेटिङहरू (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Title of the alert dialog displayed if an error occurs while updating Call settings -->
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"कल सेटिङमा त्रुटि"</string>
+    <!-- Toast in Call settings dialog while settings are being read -->
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"सेटिङहरू पढ्दै..."</string>
+    <!-- Toast in Call settings dialog while settings are being saved -->
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"सेटिङहरू अद्यावधिक गर्दै..."</string>
+    <!-- Toast in Call settings dialog while settings are being reverted -->
+    <add-resource type="string" name="reverting_settings"/>
+    <string name="reverting_settings">"सेटिङहरू उल्टाउँदै..."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="response_error"/>
+    <string name="response_error">"नेटवर्कबाट अप्रत्याशित प्रतिक्रिया।"</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="exception_error"/>
+    <string name="exception_error">"नेटवर्क वा SIM कार्ड त्रुटि।"</string>
+    <!-- Status message displayed in the "Call settings error" dialog when
+         current SS request is modified to a different request by STK CC -->
+    <add-resource type="string" name="stk_cc_ss_to_dial_error"/>
+    <string name="stk_cc_ss_to_dial_error">"SS अनुरोध DIAL अनुरोधमा परिमार्जन गरियो।"</string>
+    <add-resource type="string" name="stk_cc_ss_to_ussd_error"/>
+    <string name="stk_cc_ss_to_ussd_error">"SS अनुरोध USSD अनुरोधमा परिमार्जन गरियो।"</string>
+    <add-resource type="string" name="stk_cc_ss_to_ss_error"/>
+    <string name="stk_cc_ss_to_ss_error">"SS अनुरोध नयाँ SS अनुरोधमा परिमार्जन गरियो।"</string>
+
+    <!-- Status message displayed in the "Call settings error" dialog when operation fails due to FDN
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"तपाईंको फोन अनुप्रयोग स्थिर डायल गर्ने नम्बर सेटिङहरू खोलिएको छ। केही कल-सम्बन्धित विशेषताहरूले कार्य गरिरहेका छैनन्।"</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="radio_off_error"/>
+    <string name="radio_off_error">"यी सेटिङहरू हेर्नु पहिले रेडियो खोल्नुहोस्।"</string>
+    <!-- Button label used to dismiss the "Call settings error" dialog -->
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"ठीक छ"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"सकृय पार्नुहोस्"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"निस्कृय पार्नुहोस्"</string>
+    <!-- Button label which indicates the user wants to update a stored
+         phone number; used in several settings-related dialogs -->
+    <add-resource type="string" name="change_num"/>
+    <string name="change_num">"अपडेट गर्नुहोस्"</string>
+    <!-- Phone settings: Caller ID preference values -->
+    <add-resource type="array" name="clir_display_values"/>
+    <string-array name="clir_display_values">
+        <!-- Phone settings "Caller ID" preference option: use the default value -->
+        <item>"नेटवर्क पूर्वनिर्धारित"</item>
+        <!-- Phone settings "Caller ID" preference option: hide outgoing Caller ID info -->
+        <item>"सङ्ख्या लुकाउनुहोस्"</item>
+        <!-- Phone settings "Caller ID" preference option: show outgoing Caller ID info -->
+        <item>"सङ्ख्या देखाउनुहोस्"</item>
+    </string-array>
+
+    <!-- voicemail setting strings -->
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_changed"/>
+    <string name="vm_changed">"भ्वाइसमेल नम्बर परिवर्तन भयो।"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_change_failed"/>
+    <string name="vm_change_failed">"भ्वाइसमेल नम्बर परिवर्तन हुन सकेन। \n यदि यो समस्या आइरहन्छ भने तपाईँको केरियरसँग सम्पर्क गर्नुहोस्।"</string>
+    <!-- Call settings screen, displayed when vm provider supplied forwarding number change fails-->
+    <add-resource type="string" name="fw_change_failed"/>
+    <string name="fw_change_failed">"फर्वार्डिङ नम्बर परिवर्तन हुन सकेन । \n यदि यो समस्या रहिरहन्छ भने तपाईंको केरियरसँग सम्पर्क गर्नुहोस्।"</string>
+    <!-- Call settings screen, displayed when forwarding number read fails-->
+    <add-resource type="string" name="fw_get_in_vm_failed"/>
+    <string name="fw_get_in_vm_failed">"हालका फर्वार्ड गर्ने संख्या सेटिङहरू पुनःप्राप्त र बचत गर्न सकिंदैन। \n नयाँ प्रदायकमा स्विच गर्न चाहनु हुन्छ?"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="no_change"/>
+    <string name="no_change">"केही पनि फेरबदल गरिएन।"</string>
+    <!-- Call settings screen, "Voicemail" provider setting summary text when no provider is selected -->
+    <add-resource type="string" name="sum_voicemail_choose_provider"/>
+    <string name="sum_voicemail_choose_provider">"भ्वाइसमेल सेवा छान्नुहोस्"</string>
+    <!-- Call settings screen, "Voicemail" screen, default option - Your Carrier -->
+    <add-resource type="string" name="voicemail_default"/>
+    <string name="voicemail_default">"तपाईंको वाहक"</string>
+
+    <!-- Hint for the old PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_old_pin"/>
+    <string name="vm_change_pin_old_pin">"पुरानो PIN"</string>
+    <!-- Hint for the new PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_new_pin"/>
+    <string name="vm_change_pin_new_pin">"नयाँ PIN"</string>
+
+    <!-- Message on the dialog when PIN changing is in progress -->
+    <add-resource type="string" name="vm_change_pin_progress_message"/>
+    <string name="vm_change_pin_progress_message">"कृपया प्रतीक्षा गर्नुहोस्।"</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too short -->
+    <add-resource type="string" name="vm_change_pin_error_too_short"/>
+    <string name="vm_change_pin_error_too_short">"नयाँ PIN अत्यन्त छोटो छ।"</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too long -->
+    <add-resource type="string" name="vm_change_pin_error_too_long"/>
+    <string name="vm_change_pin_error_too_long">"नयाँ PIN अत्यन्त लामो छ।"</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too weak -->
+    <add-resource type="string" name="vm_change_pin_error_too_weak"/>
+    <string name="vm_change_pin_error_too_weak">"नयाँ PIN अत्यन्त कमजोर छ। बलियो पासवर्डमा लगातारको अनुक्रम वा दोहोरिएका अङ्कहरू हुनु हुँदैन।"</string>
+    <!-- Error message for the voicemail PIN change if the old PIN entered doesn't match  -->
+    <add-resource type="string" name="vm_change_pin_error_mismatch"/>
+    <string name="vm_change_pin_error_mismatch">"पुरानो PIN मेल खाँदैन।"</string>
+    <!-- Error message for the voicemail PIN change if the new PIN contains invalid character -->
+    <add-resource type="string" name="vm_change_pin_error_invalid"/>
+    <string name="vm_change_pin_error_invalid">"नयाँ PIN मा अमान्य वर्णहरू छन्।"</string>
+    <!-- Error message for the voicemail PIN change if operation has failed -->
+    <add-resource type="string" name="vm_change_pin_error_system_error"/>
+    <string name="vm_change_pin_error_system_error">"PIN परिवर्तन गर्न सकिएन"</string>
+    <!-- Message to replace the transcription if a visual voicemail message is not supported-->
+    <add-resource type="string" name="vvm_unsupported_message_format"/>
+    <string name="vvm_unsupported_message_format">"सन्देशको असमर्थित प्रकार, सुन्नका लागि <xliff:g id="NUMBER">%s</xliff:g> मा कल गर्नुहोस्।"</string>
+
+    <!-- networks setting strings -->
+    <!-- Mobile network settings screen title -->
+    <add-resource type="string" name="mobile_networks"/>
+    <string name="mobile_networks">"सेलुलर सञ्जाल सेटिङहरू"</string>
+    <!-- Available networks screen title/heading -->
+    <add-resource type="string" name="label_available"/>
+    <string name="label_available">"उपलब्ध नेटवर्कहरू"</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <add-resource type="string" name="load_networks_progress"/>
+    <string name="load_networks_progress">"खोजी गर्दै..."</string>
+    <!-- Available networks screen, text when no networks are found -->
+    <add-resource type="string" name="empty_networks_list"/>
+    <string name="empty_networks_list">"कुनै नेटवर्कहरू भेटिएनन्।"</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="search_networks"/>
+    <string name="search_networks">"नेटवर्कहरू खोज्नुहोस्"</string>
+    <!-- Available networks screen, toast when an error is encountered when searching for networks -->
+    <add-resource type="string" name="network_query_error"/>
+    <string name="network_query_error">"नेटवर्कको लागि खोजी कार्य गर्दा त्रुटि"</string>
+    <!-- Available networks screen, toast when registering on a specific network -->
+    <add-resource type="string" name="register_on_network"/>
+    <string name="register_on_network">"<xliff:g id="NETWORK">%s</xliff:g> मा दर्ता गर्दै..."</string>
+    <!-- Available networks screen, toast when SIM card isn't allowed on a network -->
+    <add-resource type="string" name="not_allowed"/>
+    <string name="not_allowed">"तपाईंको SIM कार्डले यो नेटवर्कको लागि जडान अनुमति दिँदैन।"</string>
+    <!-- Available networks screen, toast when unable to connect to a network temporarily -->
+    <add-resource type="string" name="connect_later"/>
+    <string name="connect_later">"यो नेटवर्कमा अहिले जडान हुन सक्दैन। पछि प्रयास गर्नुहोस्।"</string>
+    <!-- Available networks screen, toast when registered on a specific network -->
+    <add-resource type="string" name="registration_done"/>
+    <string name="registration_done">"नेटवर्कमा दर्ता भयो।"</string>
+    <!-- Mobile network settings screen setting option summary text -->
+    <add-resource type="string" name="sum_carrier_select"/>
+    <string name="sum_carrier_select">"नेटवर्क संचालक रोज्नुहोस्"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_search_networks"/>
+    <string name="sum_search_networks">"सम्पूर्ण उपलब्ध नेटवर्कहरूको खोजी कार्य गर्नुहोस्"</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="select_automatically"/>
+    <string name="select_automatically">"स्वतः छनौट गर्नुहोस्"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_select_automatically"/>
+    <string name="sum_select_automatically">"स्वचालित रूपले रुचाइएका नेटवर्क छान्नुहोस्"</string>
+    <add-resource type="string" name="register_automatically"/>
+    <string name="register_automatically">"स्वतः दर्ता..."</string>
+    <add-resource type="string" name="preferred_network_mode_title"/>
+    <string name="preferred_network_mode_title">"रुचाइएको सञ्जाल प्रकार"</string>
+    <add-resource type="string" name="preferred_network_mode_summary"/>
+    <string name="preferred_network_mode_summary">"नेटवर्क संचालन मोड परिवर्तन गर्नुहोस्"</string>
+    <add-resource type="string" name="preferred_network_mode_dialogtitle"/>
+    <string name="preferred_network_mode_dialogtitle">"रुचाइएको सञ्जाल प्रकार"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA preferred[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_perf_summary"/>
+    <string name="preferred_network_mode_wcdma_perf_summary">"रुचाइएको नेटवर्क मोड: WCDMA रुचाइएको"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_only_summary"/>
+    <string name="preferred_network_mode_gsm_only_summary">"रुचाइएको नेटवर्क मोड: GSM मात्र"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_only_summary"/>
+    <string name="preferred_network_mode_wcdma_only_summary">"रुचाइएको नेटवर्क मोड: WCDMA मात्र"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM / UMTS [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_gsm_wcdma_summary">"चाहनु भएको नेटवर्क मोड: GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_summary"/>
+    <string name="preferred_network_mode_cdma_summary">"रुचाइएको नेटवर्क मोड: CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA / EvDo [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_summary">"रुचाइएको नेटवर्क मोड: CDMA/EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_only_summary"/>
+    <string name="preferred_network_mode_cdma_only_summary">"रुचाइएको नेटवर्क मोड: CDMA मात्र"</string>
+    <!-- Mobile network settings, summary for preferred network mode EvDo only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_evdo_only_summary"/>
+    <string name="preferred_network_mode_evdo_only_summary">"चाहनु भएको नेटवर्क मोड: EvDo मात्र"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">"रुचाइएको नेटवर्क मोड: CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_summary"/>
+    <string name="preferred_network_mode_lte_summary">"रुचाइएको नेटवर्क मोड: LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM/WCDMA/LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary">"रुचाइएको नेटवर्क मोड: GSM/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA+LTE/EVDO[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">"रुचाइएको नेटवर्क मोड: CDMA+LTE/EVDO"</string>
+    <!-- Mobile network settings, summary for preferred network mode Global[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_global_summary"/>
+    <string name="preferred_network_mode_global_summary">"रुचाइएको नेटवर्क मोड: विश्वव्यापी"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_wcdma_summary">"रुचाइएको नेटवर्क मोड: LTE/WCDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / GSM / UMTS [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_gsm_umts_summary"/>
+    <string name="preferred_network_mode_lte_gsm_umts_summary">"रुचाइएको सञ्जाल मोड: LTE /GSM / UMTS"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / CDMA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_cdma_summary"/>
+    <string name="preferred_network_mode_lte_cdma_summary">"रुचाइएको नेटवर्क मोड: LTE/CDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode TDSCDMTA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_tdscdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_summary">"रुचाइएको नेटवर्क मोड: TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: TDSCDMA / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: LTE / TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: TDSCDMA / GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / GSM / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: LTE/GSM/TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: LTE/TDSCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: LTE/TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary">"प्राथमिकताप्राप्त नेटवर्क मोड: LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- In-call screen: call failure reason (call denied because call barring
+            is ON on MT side ) -->
+    <add-resource type="string" name="callFailed_incoming_cb_enabled"/>
+    <string name="callFailed_incoming_cb_enabled">"पक्षले सबै आगमन कलहरूलाई बन्द गरेको छ।"</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <add-resource type="string" name="callUnanswered_forwarded"/>
+    <string name="callUnanswered_forwarded">"कलको जवाफ आएन र फर्वाड गरियो"</string>
+
+    <add-resource type="array" name="preferred_network_mode_choices"/>
+    <string-array name="preferred_network_mode_choices">
+        <item>"LTE/TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"LTE/TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/GSM"</item>
+        <item>"TDSCDMA/GSM"</item>
+        <item>"LTE/TDSCDMA"</item>
+        <item>"TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA  मात्र"</item>
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>"विश्वव्यापी"</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>"EvDo मात्र"</item>
+        <item>CDMA w/o EvDo</item>
+        <item>"CDMA/EvDo स्वत:"</item>
+        <item>"GSM/WCDMA स्वत:"</item>
+        <item>"WCDMA मात्र"</item>
+        <item>"GSM मात्र"</item>
+        <item>"GSM/WCDMA प्राथमिकताप्राप्त"</item>
+    </string-array>
+    <!-- Cellular network 4G title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title"/>
+    <string name="enhanced_4g_lte_mode_title">"Enhanced 4G LTE Mode"</string>
+    <!-- Carrier variant of Enhaced 4G LTE Mode title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title_variant"/>
+    <string name="enhanced_4g_lte_mode_title_variant">"उन्नत कल गरिँदै"</string>
+    <!-- Cellular network 4G summary [CHAR LIMIT=80] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_summary"/>
+    <string name="enhanced_4g_lte_mode_summary">"आवाज र अन्य सञ्चार सुधार गर्न LTE सेवाहरूको प्रयोग गर्नुहोस् (सिफारिस गरिएको)"</string>
+
+    <!-- Mobile network settings screen, data enabling checkbox name -->
+    <add-resource type="string" name="data_enabled"/>
+    <string name="data_enabled">"डेटा सक्षम भयो"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) [CHAR LIMITS=40] -->
+    <add-resource type="string" name="data_enable_summary"/>
+    <string name="data_enable_summary">"डेटा उपयोगलाई अनुमति दिनुहोस्"</string>
+    <!-- Mobile network settings screen, title for alert dialog -->
+    <add-resource type="string" name="dialog_alert_title"/>
+    <string name="dialog_alert_title">"ध्यानाकर्षण"</string>
+    <!-- Mobile network settings screen, setting check box name -->
+    <add-resource type="string" name="roaming"/>
+    <string name="roaming">"डेटा रोमिङ"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is selected -->
+    <add-resource type="string" name="roaming_enable"/>
+    <string name="roaming_enable">"रोमिङको समयमा डेटा सेवामा जडान गर्नुहोस्"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is clear -->
+    <add-resource type="string" name="roaming_disable"/>
+    <string name="roaming_disable">"रोमिङको समयमा डेटा सेवा जडान गर्नुहोस्"</string>
+    <!-- Mobile network settings UI: notification message shown when you
+         lose data connectivity because you're roaming and you have the
+         "data roaming" feature turned off. -->
+    <add-resource type="string" name="roaming_reenable_message"/>
+    <string name="roaming_reenable_message">"तपाईँले डेटा गुमाउनु भएको छ किनभने तपाईँले डेटासहितको घर नेटवर्क रोमिङ बन्द गरेर छोड्नुभएको छ।"</string>
+    <!-- Mobile network settings screen, dialog message when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_warning"/>
+    <string name="roaming_warning">"तपाईंलाई महत्त्वपूर्ण शुल्क लाग्न सक्छ।"</string>
+    <!-- Mobile network settings screen, dialog message title when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_alert_title"/>
+    <string name="roaming_alert_title">"डेटा रोमिङको अनुमति दिने हो?"</string>
+    <add-resource type="string" name=" hide_error_from_network_text"/>
+    <string name=" hide_error_from_network_text">"अनुरोधको प्रक्रिया गर्न असक्षम"</string>
+
+    <add-resource type="string" name="gsm_umts_options"/>
+    <string name="gsm_umts_options">"GSM/UMTS  विकल्पहरू"</string>
+    <add-resource type="string" name="call_forward_option"/>
+    <string name="call_forward_option">"कल फर्वाड विकल्पहरू"</string>
+    <add-resource type="string" name="cdma_options"/>
+    <string name="cdma_options">"CDMA विकल्पहरू"</string>
+
+    <!-- Screen option on the mobile network settings to go into data usage settings -->
+    <add-resource type="string" name="throttle_data_usage"/>
+    <string name="throttle_data_usage">"डेटा उपयोग"</string>
+    <!-- Data usage settings screen option for checking the current usage -->
+    <add-resource type="string" name="throttle_current_usage"/>
+    <string name="throttle_current_usage">"हालको अवधिमा प्रयोग भएको डेटा"</string>
+    <!-- Data usage settings screen option for time frame-->
+    <add-resource type="string" name="throttle_time_frame"/>
+    <string name="throttle_time_frame">"डेटाको प्रयोग अवधि"</string>
+    <!-- Data usage settings screen option for throttling rate-->
+    <add-resource type="string" name="throttle_rate"/>
+    <string name="throttle_rate">"डेटा दर नीति"</string>
+    <!-- Data usage settings screen option for accessing the carrier website-->
+    <add-resource type="string" name="throttle_help"/>
+    <string name="throttle_help">"बढी सिक्नुहोस्"</string>
+
+    <add-resource type="string" name="throttle_status_subtext"/>
+    <string name="throttle_status_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) को <xliff:g id="USED_2">%3$s</xliff:g> अवधि अधिकतम\nअर्को अवधिले <xliff:g id="USED_3">%4$d</xliff:g> दिनमा सुरु गर्दछ (<xliff:g id="USED_4">%5$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_data_usage_subtext"/>
+    <string name="throttle_data_usage_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪) को <xliff:g id="USED_2">%3$s</xliff:g> अवधि अधिकतम"</string>
+
+    <add-resource type="string" name="throttle_data_rate_reduced_subtext"/>
+    <string name="throttle_data_rate_reduced_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> अधिकतम बढीमा \n डेटा दरमा कम <xliff:g id="USED_1">%2$d</xliff:g> KB /s"</string>
+
+    <add-resource type="string" name="throttle_time_frame_subtext"/>
+    <string name="throttle_time_frame_subtext">"<xliff:g id="USED_0">%1$d</xliff:g>٪ को चक्र बितेको \nअर्को समय <xliff:g id="USED_1">%2$d</xliff:g> दिनमा सुरु हुन्छ (<xliff:g id="USED_2">%3$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_rate_subtext"/>
+    <string name="throttle_rate_subtext">"यदि डेटाको प्रयोग गर्न सिमित पार भएको छ भने  <xliff:g id="USED">%1$d</xliff:g> Kb/s मा डेटा दर घटेको छ"</string>
+
+    <add-resource type="string" name="throttle_help_subtext"/>
+    <string name="throttle_help_subtext">"तपाईँको केरियरक मोबाइल सञ्जाल डेटाको प्रयोग नीतिको बारेमा थप जानकारी"</string>
+
+    <add-resource type="string" name="cell_broadcast_sms"/>
+    <string name="cell_broadcast_sms">"सेल प्रसारण SMS"</string>
+
+    <add-resource type="string" name="enable_disable_cell_bc_sms"/>
+    <string name="enable_disable_cell_bc_sms">"सेल प्रसारण SMS"</string>
+    <add-resource type="string" name="cell_bc_sms_enable"/>
+    <string name="cell_bc_sms_enable">"सेल प्रसारण SMS सक्षम"</string>
+    <add-resource type="string" name="cell_bc_sms_disable"/>
+    <string name="cell_bc_sms_disable">"सेल प्रसारण SMS अक्षम"</string>
+
+    <add-resource type="string" name="cb_sms_settings"/>
+    <string name="cb_sms_settings">"सेल प्रसारण SMS सेटिङहरू"</string>
+
+    <add-resource type="string" name="enable_disable_emergency_broadcast"/>
+    <string name="enable_disable_emergency_broadcast">"आपतकालीन प्रसारण"</string>
+    <add-resource type="string" name="emergency_broadcast_enable"/>
+    <string name="emergency_broadcast_enable">"आपतकालीन प्रसारण सक्षम भयो"</string>
+    <add-resource type="string" name="emergency_broadcast_disable"/>
+    <string name="emergency_broadcast_disable">"आपतकालीन प्रसारण अक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_administrative"/>
+    <string name="enable_disable_administrative">"प्रशासकीय"</string>
+    <add-resource type="string" name="administrative_enable"/>
+    <string name="administrative_enable">"प्रशासनिक सक्षम"</string>
+    <add-resource type="string" name="administrative_disable"/>
+    <string name="administrative_disable">"प्रशासनिक असक्षम"</string>
+
+    <add-resource type="string" name="enable_disable_maintenance"/>
+    <string name="enable_disable_maintenance">"मर्मतसम्भार"</string>
+    <add-resource type="string" name="maintenance_enable"/>
+    <string name="maintenance_enable">"मर्मत सक्षम भयो"</string>
+    <add-resource type="string" name="maintenance_disable"/>
+    <string name="maintenance_disable">"मर्मत अक्षम भयो"</string>
+
+    <add-resource type="string" name="general_news_settings"/>
+    <string name="general_news_settings">"सामान्य समाचार"</string>
+    <add-resource type="string" name="bf_news_settings"/>
+    <string name="bf_news_settings">"व्यापार र वित्तीय समाचार"</string>
+    <add-resource type="string" name="sports_news_settings"/>
+    <string name="sports_news_settings">"खेलकुद समाचार"</string>
+    <add-resource type="string" name="entertainment_news_settings"/>
+    <string name="entertainment_news_settings">"मनोरन्जन समाचार"</string>
+
+    <add-resource type="string" name="enable_disable_local"/>
+    <string name="enable_disable_local">"स्थानीय"</string>
+    <add-resource type="string" name="local_enable"/>
+    <string name="local_enable">"स्थानीय समाचार सक्षम भयो"</string>
+    <add-resource type="string" name="local_disable"/>
+    <string name="local_disable">"स्थानीय समाचार अक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_regional"/>
+    <string name="enable_disable_regional">"क्षेत्रीय"</string>
+    <add-resource type="string" name="regional_enable"/>
+    <string name="regional_enable">"क्षेत्रीय समाचार सक्षम भयो"</string>
+    <add-resource type="string" name="regional_disable"/>
+    <string name="regional_disable">"क्षेत्रीय समाचार अक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_national"/>
+    <string name="enable_disable_national">"राष्ट्रिय"</string>
+    <add-resource type="string" name="national_enable"/>
+    <string name="national_enable">"राष्ट्रिय समाचार सक्षम भयो"</string>
+    <add-resource type="string" name="national_disable"/>
+    <string name="national_disable">"राष्ट्रिय समाचार असक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_international"/>
+    <string name="enable_disable_international">"अन्तर्राष्ट्रिय"</string>
+    <add-resource type="string" name="international_enable"/>
+    <string name="international_enable">"अन्तर्राष्ट्रिय समाचार सक्षम भयो"</string>
+    <add-resource type="string" name="international_disable"/>
+    <string name="international_disable">"अन्तर्राष्ट्रिय समाचार अक्षम भयो"</string>
+
+    <add-resource type="string" name="list_language_title"/>
+    <string name="list_language_title">"भाषा"</string>
+    <add-resource type="string" name="list_language_summary"/>
+    <string name="list_language_summary">"खबर भाषा चयन  गर्नुहोस्"</string>
+    <add-resource type="array" name="list_language_entries"/>
+    <string-array name="list_language_entries">
+        <item>"अंग्रेजी"</item>
+        <item>"फ्रान्सेली"</item>
+        <item>"स्पेनिस"</item>
+        <item>"जापानी"</item>
+        <item>"कोरियाली"</item>
+        <item>"चिनियाँ"</item>
+        <item>"हेब्रु"</item>
+    </string-array>
+    <add-resource type="array" name="list_language_values"/>
+    <string-array name="list_language_values">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+    </string-array>
+    <add-resource type="string" name="list_language_dtitle"/>
+    <string name="list_language_dtitle">"भाषाहरू"</string>
+
+    <add-resource type="string" name="enable_disable_local_weather"/>
+    <string name="enable_disable_local_weather">"स्थानीय मौसम"</string>
+    <add-resource type="string" name="local_weather_enable"/>
+    <string name="local_weather_enable">"स्थानीय मौसम सक्षम भयो"</string>
+    <add-resource type="string" name="local_weather_disable"/>
+    <string name="local_weather_disable">"स्थानीय मौसम अक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_atr"/>
+    <string name="enable_disable_atr">"क्षेत्र ट्राफिक रिपोर्टहरू"</string>
+    <add-resource type="string" name="atr_enable"/>
+    <string name="atr_enable">"क्षेत्र ट्राफिक रिपोर्टहरू सक्षम भए"</string>
+    <add-resource type="string" name="atr_disable"/>
+    <string name="atr_disable">"क्षेत्र ट्राफिक रिपोर्टहरू अक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_lafs"/>
+    <string name="enable_disable_lafs">"स्थानीय विमानास्थल उडान तालिकाहरू"</string>
+    <add-resource type="string" name="lafs_enable"/>
+    <string name="lafs_enable">"स्थानीय विमानास्थल उडान समय तालिका सक्षम भयो"</string>
+    <add-resource type="string" name="lafs_disable"/>
+    <string name="lafs_disable">"स्थानीय विमानस्थल उडान समय तालिका अक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_restaurants"/>
+    <string name="enable_disable_restaurants">"रेस्टुरेन्टहरू"</string>
+    <add-resource type="string" name="restaurants_enable"/>
+    <string name="restaurants_enable">"रेस्टुरेन्टहरू सक्षम भए"</string>
+    <add-resource type="string" name="restaurants_disable"/>
+    <string name="restaurants_disable">"रेस्टुरेन्टहरू अक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_lodgings"/>
+    <string name="enable_disable_lodgings">"लजिङहरू"</string>
+    <add-resource type="string" name="lodgings_enable"/>
+    <string name="lodgings_enable">"लजिङहरू सक्षम भए"</string>
+    <add-resource type="string" name="lodgings_disable"/>
+    <string name="lodgings_disable">"लजिङहरू अक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_retail_directory"/>
+    <string name="enable_disable_retail_directory">"खुद्रा निर्देशिका"</string>
+    <add-resource type="string" name="retail_directory_enable"/>
+    <string name="retail_directory_enable">"खुद्रा निर्देशिका सक्षम भयो"</string>
+    <add-resource type="string" name="retail_directory_disable"/>
+    <string name="retail_directory_disable">"खुद्रा निर्देशिका असक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_advertisements"/>
+    <string name="enable_disable_advertisements">"विज्ञापनहरू"</string>
+    <add-resource type="string" name="advertisements_enable"/>
+    <string name="advertisements_enable">"विज्ञापनहरू सक्षम भए"</string>
+    <add-resource type="string" name="advertisements_disable"/>
+    <string name="advertisements_disable">"विज्ञापनहरू अक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_stock_quotes"/>
+    <string name="enable_disable_stock_quotes">"थोक उद्धरण"</string>
+    <add-resource type="string" name="stock_quotes_enable"/>
+    <string name="stock_quotes_enable">"स्टक भाव सक्षम भयो"</string>
+    <add-resource type="string" name="stock_quotes_disable"/>
+    <string name="stock_quotes_disable">"स्टक उद्धरण असक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_eo"/>
+    <string name="enable_disable_eo">"रोजगारका अवसरहरू"</string>
+    <add-resource type="string" name="eo_enable"/>
+    <string name="eo_enable">"रोजगारका अवसरहरू सक्षम भए"</string>
+    <add-resource type="string" name="eo_disable"/>
+    <string name="eo_disable">"रोजगारका अवसर अक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_mhh"/>
+    <string name="enable_disable_mhh">"चिकित्सा, स्वास्थ्य, र अस्पताल"</string>
+    <add-resource type="string" name="mhh_enable"/>
+    <string name="mhh_enable">"चिकित्सा, स्वास्थ्य, र अस्पताल सक्षम भए"</string>
+    <add-resource type="string" name="mhh_disable"/>
+    <string name="mhh_disable">"चिकित्सा, स्वास्थ्य, र अस्पताल असक्षम भए"</string>
+
+    <add-resource type="string" name="enable_disable_technology_news"/>
+    <string name="enable_disable_technology_news">"प्रविधि समाचार"</string>
+    <add-resource type="string" name="technology_news_enable"/>
+    <string name="technology_news_enable">"प्राविधिक समाचार सक्षम भयो"</string>
+    <add-resource type="string" name="technology_news_disable"/>
+    <string name="technology_news_disable">"प्राविधिक समाचार असक्षम भयो"</string>
+
+    <add-resource type="string" name="enable_disable_multi_category"/>
+    <string name="enable_disable_multi_category">"बहु-श्रेणी"</string>
+    <add-resource type="string" name="multi_category_enable"/>
+    <string name="multi_category_enable">"बहुप्रकार सक्षम भयो"</string>
+    <add-resource type="string" name="multi_category_disable"/>
+    <string name="multi_category_disable">"बहु-कोटी अक्षम भयो"</string>
+
+    <add-resource type="string" name="network_lte"/>
+    <string name="network_lte">"LTE (सिफारिस गरिएको)"</string>
+    <add-resource type="string" name="network_4G"/>
+    <string name="network_4G">"4G (सिफारिस गरिएको)"</string>
+    <add-resource type="string" name="network_global"/>
+    <string name="network_global">"विश्वव्यापी"</string>
+
+    <!-- CDMA System select strings -->
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="cdma_system_select_title"/>
+    <string name="cdma_system_select_title">"प्रणाली चयन गर्नुहोस्"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <add-resource type="string" name="cdma_system_select_summary"/>
+    <string name="cdma_system_select_summary">"CDMA रोमिङ मोडलाई परिवर्तन गर्नुहोस्"</string>
+    <!-- System select settings screen title -->
+    <add-resource type="string" name="cdma_system_select_dialogtitle"/>
+    <string name="cdma_system_select_dialogtitle">"प्रणाली चयन गर्नुहोस्"</string>
+    <add-resource type="array" name="cdma_system_select_choices"/>
+    <string-array name="cdma_system_select_choices">
+        <!-- System select dialog screen, setting option name -->
+        <item>"घर मात्र"</item>
+        <!-- Remove the following option "Affiliated Networks" from the option list -->
+        <!-- <item>Affiliated Networks</item> -->
+        <!-- System select dialog screen, setting option name -->
+        <item>"स्वतः"</item>
+    </string-array>
+
+    <add-resource type="string" name="cdma_subscription_title"/>
+    <string name="cdma_subscription_title">"CDMA सदस्यता"</string>
+    <add-resource type="string" name="cdma_subscription_summary"/>
+    <string name="cdma_subscription_summary">"RUIM/SIM र NV का बिच परिवर्तन गर्नुहोस्"</string>
+    <add-resource type="string" name="cdma_subscription_dialogtitle"/>
+    <string name="cdma_subscription_dialogtitle">"सदस्यता"</string>
+    <add-resource type="array" name="cdma_subscription_choices"/>
+    <string-array name="cdma_subscription_choices">
+        <item>"RUIM/SIM"</item>
+        <item>NV</item>
+    </string-array>
+    <add-resource type="array" name="cdma_subscription_values"/>
+    <string-array name="cdma_subscription_values">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+    <!-- Preference title with which users can activate CDMA network [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_activate_device"/>
+    <string name="cdma_activate_device">"उपकरण सक्रिय बनाउनुहोस्"</string>
+    <!-- Preference title for launching an account manager page for prepaid LTE [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_lte_data_service"/>
+    <string name="cdma_lte_data_service">"सेटअप डेटा सेवा"</string>
+
+    <!-- A menu item in "Mobile network settings" that allows the user to update the phone
+         with mobile operator specific settings. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="carrier_settings_title"/>
+    <string name="carrier_settings_title">"वाहक सेटिङ्हरू"</string>
+
+    <!-- FDN settings strings -->
+    <!-- Label for "Fixed Dialing Number" settings in call settings. -->
+    <add-resource type="string" name="fdn"/>
+    <string name="fdn">"स्थिर डायल गर्ने नम्बर"</string>
+    <!-- Title for "Fixed Dialing Number" settings, with a label to identify the SIM the settings
+        apply to. -->
+    <add-resource type="string" name="fdn_with_label"/>
+    <string name="fdn_with_label">"स्थिर डायल नम्बरहरू ( <xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g> )"</string>
+
+    <!-- Call settings screen, button label that takes you to the Fixed Dialing Number management screen -->
+    <add-resource type="string" name="manage_fdn_list"/>
+    <string name="manage_fdn_list">"FDN सूची"</string>
+    <!-- Title for settings screen to manage Fixed Dialing Number contacts, with a label to identify
+         the SIM the settings apply to. -->
+    <add-resource type="string" name="fdn_list_with_label"/>
+    <string name="fdn_list_with_label">"FDN सूची ( <xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g> )"</string>
+    <!-- Call settings screen, preference item label -->
+    <add-resource type="string" name="fdn_activation"/>
+    <string name="fdn_activation">"FDN सक्रियता"</string>
+    <!-- Call settings setting option name when FDN is enabled -->
+    <add-resource type="string" name="fdn_enabled"/>
+    <string name="fdn_enabled">"स्थिर डायल गर्ने नम्बर सक्षम छन्"</string>
+    <!-- Call settings setting option name  when FDN is disabled-->
+    <add-resource type="string" name="fdn_disabled"/>
+    <string name="fdn_disabled">"स्थिर डायल गर्ने नम्बरहरू असक्षम छन्"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="enable_fdn"/>
+    <string name="enable_fdn">"FDN सक्षम गर्नुहोस्"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="disable_fdn"/>
+    <string name="disable_fdn">"FDN अक्षम बनाउनुहोस्"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="change_pin2"/>
+    <string name="change_pin2">"PIN2 परिवर्तन गर्नुहोस्"</string>
+    <!-- Call settings screen, setting option name when FDN is enabled -->
+    <add-resource type="string" name="enable_fdn_ok"/>
+    <string name="enable_fdn_ok">"FDN अक्षम गर्नुहोस्"</string>
+    <!-- Call settings screen, setting option name when FDN is disabled -->
+    <add-resource type="string" name="disable_fdn_ok"/>
+    <string name="disable_fdn_ok">"FDN सक्षम बनाउनुहोस्"</string>
+    <!-- Call settings screen, setting summary text -->
+    <add-resource type="string" name="sum_fdn"/>
+    <string name="sum_fdn">"स्थिर डायल गर्ने नम्बरहरू प्रबन्ध गर्नुहोस्"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_change_pin"/>
+    <string name="sum_fdn_change_pin">"FDN पहुँचको लागि PIN परिवर्तन गर्नुहोस्"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_manage_list"/>
+    <string name="sum_fdn_manage_list">"फोन नम्बर सूची प्रबन्ध गर्नुहोस्"</string>
+    <!-- Voice privacy on CDMA is an added layer of voice encryption. Theoretically, it would be harder to break in to a phone call with this feature enabled. -->
+    <add-resource type="string" name="voice_privacy"/>
+    <string name="voice_privacy">"भ्वाइस गोपनीयता"</string>
+    <add-resource type="string" name="voice_privacy_summary"/>
+    <string name="voice_privacy_summary">"परिस्कृत प्राइभेसी मोड सक्षम पार्नुहोस्"</string>
+    <add-resource type="string" name="tty_mode_option_title"/>
+    <string name="tty_mode_option_title">"TTY मोड"</string>
+    <add-resource type="string" name="tty_mode_option_summary"/>
+    <string name="tty_mode_option_summary">"TTY मोड सेट गर्नुहोस्"</string>
+    <add-resource type="string" name="auto_retry_mode_title"/>
+    <string name="auto_retry_mode_title">"स्वतः पुनः प्रयास गर्नुहोस्"</string>
+    <add-resource type="string" name="auto_retry_mode_summary"/>
+    <string name="auto_retry_mode_summary">"स्वतः-पुनः प्रयास मोड सक्षम गर्नुहोस्"</string>
+    <!-- TTY Mode change is NOT allowed during a video call -->
+    <add-resource type="string" name="tty_mode_not_allowed_video_call"/>
+    <string name="tty_mode_not_allowed_video_call">"भिडियो कल गर्ने क्रममा TTY मोड परिवर्तन गर्न अनुमति छैन"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_add"/>
+    <string name="menu_add">"सम्पर्क थप्नुहोस्"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"सम्पर्क सम्पादन गर्नुहोस्"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"सम्पर्क मेटाउनुहोस्"</string>
+
+    <!-- FDN related strings -->
+    <!-- Label for PIN2 entry screen -->
+    <add-resource type="string" name="get_pin2"/>
+    <string name="get_pin2">"PIN2 प्रकार"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "name" text field -->
+    <add-resource type="string" name="name"/>
+    <string name="name">"नाम"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "number" text field -->
+    <add-resource type="string" name="number"/>
+    <string name="number">"नम्बर"</string>
+    <!-- "Edit FDN Contact" screen: Button label for "save" action -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"बचत गर्नुहोस्"</string>
+    <!-- Title of "Edit FDN Contact" screen for a new contact -->
+    <add-resource type="string" name="add_fdn_contact"/>
+    <string name="add_fdn_contact">"स्थिर डायलिङ नम्बर थप्नुहोस्"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="adding_fdn_contact"/>
+    <string name="adding_fdn_contact">"स्थिर डायलिङ सम्पर्क थप्दै..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_added"/>
+    <string name="fdn_contact_added">"स्थिर डायल गर्ने नम्बर थपियो।"</string>
+    <!-- Title of "Edit FDN Contact" screen when editing an already-existing contact -->
+    <add-resource type="string" name="edit_fdn_contact"/>
+    <string name="edit_fdn_contact">"स्थिर डायल गर्ने नम्बर सम्पादन गर्नुहोस्"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="updating_fdn_contact"/>
+    <string name="updating_fdn_contact">"स्थिर डायलिङ नम्बर अद्यावधिक गर्दै ..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_updated"/>
+    <string name="fdn_contact_updated">"स्थिर डायल गर्ने नम्बर अद्यावधिक गरियो।"</string>
+    <!-- Title of "Delete FDN Contact" screen -->
+    <add-resource type="string" name="delete_fdn_contact"/>
+    <string name="delete_fdn_contact">"स्थिर डायल गर्ने नम्बर मेट्नुहोस्"</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="deleting_fdn_contact"/>
+    <string name="deleting_fdn_contact">"स्थिर डायल गर्ने नम्बर मेट्दै..."</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_deleted"/>
+    <string name="fdn_contact_deleted">"स्थिर डायल गर्ने नम्बर मेटियो।"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_invalid"/>
+    <string name="pin2_invalid">"FDN अद्यावधिक भएको थिएन किनकि तपाईंले गलत PIN टाइप गर्नुभयो।"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_invalid_number"/>
+    <string name="fdn_invalid_number">"FDN अद्यावधिक गरिएन किनकि नम्बर २० अङ्कभन्दा माथि हुन सक्दैन।"</string>
+    <!-- FDN settings: error message displayed in a popup (toast), when the entered
+         FDN number was inappropriate, OR, PIN2 the user entered was incorrect.
+         Because of API restriction, there's no way to determine which is the exact
+         cause of the failure.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_or_fdn_invalid"/>
+    <string name="pin2_or_fdn_invalid">"FDN अद्यावधिक भएको थिएन। PIN2 गलत थियो वा फोन नम्बर अस्वीकार भएको थियो।"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_failed"/>
+    <string name="fdn_failed">"FDN कार्य बिफल भयो।"</string>
+
+    <!-- ADN related strings -->
+    <!-- Placeholder text displayed while loading the list of SIM contacts -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"SIM कार्ड पढ्दै..."</string>
+    <!-- Call settings, string that appears on FDN contact list when there are no contacts on the SIM. -->
+    <add-resource type="string" name="simContacts_empty"/>
+    <string name="simContacts_empty">"तपाईँको SIM कार्डमा कुनै पनि सम्पर्क छैन।"</string>
+    <!-- Call settings: title of the dialog that lets you select contacts from the SIM. -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"सम्पर्कहरू आयात गर्न चयन गर्नुहोस्"</string>
+    <!-- Appears when user tries to import contacts in SIM during airplane mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="simContacts_airplaneMode"/>
+    <string name="simContacts_airplaneMode">"SIM कार्डबाट सम्पर्कहरू आयात गर्न हवाइजहाज मोड बन्द गर्नुहोस्।"</string>
+
+    <!-- SIM PIN strings -->
+    <!-- Title of "Enable/disable SIM PIN" screen -->
+    <add-resource type="string" name="enable_pin"/>
+    <string name="enable_pin">"SIM PIN सक्षम/अक्षम गर्नुहोस्"</string>
+    <!-- Title of "Change SIM PIN" screen -->
+    <add-resource type="string" name="change_pin"/>
+    <string name="change_pin">"SIM PIN परिवर्तन गर्नुहोस्"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin_text"/>
+    <string name="enter_pin_text">"SIM PIN:"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPinLabel"/>
+    <string name="oldPinLabel">"पुरानो PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPinLabel"/>
+    <string name="newPinLabel">"नयाँ PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPinLabel"/>
+    <string name="confirmPinLabel">"नयाँ PIN निश्चित गर्नुहोस्"</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="badPin"/>
+    <string name="badPin">"तपाईंले टाइप गर्नुभएको पुरानो PIN सही छैन। पुनः प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="mismatchPin"/>
+    <string name="mismatchPin">"तपाईंले टाइप गर्नुभएको PINs मेल खाएनन्। फेरि प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN screen: error message when PIN is too short or too long -->
+    <add-resource type="string" name="invalidPin"/>
+    <string name="invalidPin">"४ देखि ८ अङ्कको PIN टाइप गर्नुहोस्।"</string>
+    <!-- Title of "Disable SIM PIN" screen -->
+    <add-resource type="string" name="disable_sim_pin"/>
+    <string name="disable_sim_pin">"स्पष्ट SIM PIN"</string>
+    <!-- Title of "Enable SIM PIN" screen -->
+    <add-resource type="string" name="enable_sim_pin"/>
+    <string name="enable_sim_pin">"SIM PIN स्थापना गर्नुहोस्"</string>
+    <!-- SIM PIN screen: progress message displayed while enabling -->
+    <add-resource type="string" name="enable_in_progress"/>
+    <string name="enable_in_progress">"PIN स्थापना गर्दै..."</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="enable_pin_ok"/>
+    <string name="enable_pin_ok">"PIN स्थापित भयो"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="disable_pin_ok"/>
+    <string name="disable_pin_ok">"PIN खाली गरियो"</string>
+    <!-- SIM PIN screen: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_failed"/>
+    <string name="pin_failed">"PIN गलत"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_changed"/>
+    <string name="pin_changed">"PIN अद्यावधिक गरियो"</string>
+    <!-- SIM PIN screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk_requested"/>
+    <string name="puk_requested">"पासवर्ड गलत छ। PIN अब ब्लक गरिएको छ। PUK अनुरोध गरिएको छ।"</string>
+
+    <!-- SIM PIN2 strings -->
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin2_text"/>
+    <string name="enter_pin2_text">"PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPin2Label"/>
+    <string name="oldPin2Label">"पुरानो PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPin2Label"/>
+    <string name="newPin2Label">"नयाँ PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPin2Label"/>
+    <string name="confirmPin2Label">"नयाँ PIN2 निश्चित गर्नुहोस्"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPuk2"/>
+    <string name="badPuk2">"PUK2 गलत। फेरि प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPin2"/>
+    <string name="badPin2">"पुरानो PIN2 गलत। फेरि प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="mismatchPin2"/>
+    <string name="mismatchPin2">"PIN2हरू मेल खाएनन्। फेरि प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPin2"/>
+    <string name="invalidPin2">"4 देखि 8 नम्बरको एक PIN2 प्रविष्ट गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPuk2"/>
+    <string name="invalidPuk2">"8 नम्बरको एक PUK2 प्रविष्ट गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_changed"/>
+    <string name="pin2_changed">"PIN2 अद्यावधिक गरियो"</string>
+    <!-- SIM PIN2 screen: label for PUK2 entry widget -->
+    <add-resource type="string" name="label_puk2_code"/>
+    <string name="label_puk2_code">"PUK2 कोड प्रविष्ट गर्नुहोस्"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="fdn_enable_puk2_requested"/>
+    <string name="fdn_enable_puk2_requested">"पासवर्ड गलत छ। PIN2 अहिले ब्लक गरिएको छ। पिन 2 परिवर्तन, फेरि प्रयास गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk2_requested"/>
+    <string name="puk2_requested">"पासवर्ड गलत छ। सिम अब ब्लक गरिएको छ। PUK2 प्रविष्ट गर्नुहोस्।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="puk2_blocked"/>
+    <string name="puk2_blocked">"PUK2 स्थायी रूपमा रोक्का गरियो।"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="pin2_attempts"/>
+    <string name="pin2_attempts">"\n तपाईंसँग <xliff:g id="NUMBER">%d</xliff:g> प्रयास बाँकी छन्।"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_unblocked"/>
+    <string name="pin2_unblocked">"PIN2 अब ब्लक गरिएको छैन"</string>
+    <!-- SIM PIN screen: error message shown in dialog when there is a network or sim error.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_error_exception"/>
+    <string name="pin2_error_exception">"नेटवर्क वा SIM कार्ड त्रुटि।"</string>
+
+    <!-- SIM PIN screen: button label -->
+    <add-resource type="string" name="doneButton"/>
+    <string name="doneButton">"सम्पन्न भयो"</string>
+
+    <!-- Call settings screen, Set voicemail dialog title -->
+    <add-resource type="string" name="voicemail_settings_number_label"/>
+    <string name="voicemail_settings_number_label">"भ्वाइसमेल नम्बर"</string>
+
+    <!-- Card titles -->
+    <!-- In-call screen: status label for a call in the "dialing" state -->
+    <add-resource type="string" name="card_title_dialing"/>
+    <string name="card_title_dialing">"डायल गर्दै"</string>
+    <!-- In-call screen: status label for a re-dialing call -->
+    <add-resource type="string" name="card_title_redialing"/>
+    <string name="card_title_redialing">"पुन: डायल गर्दै"</string>
+    <!-- In-call screen: status label for a conference call -->
+    <add-resource type="string" name="card_title_conf_call"/>
+    <string name="card_title_conf_call">"सम्मेलन कल"</string>
+    <!-- In-call screen: status label for an incoming call -->
+    <add-resource type="string" name="card_title_incoming_call"/>
+    <string name="card_title_incoming_call">"आगमन कल"</string>
+    <!-- In-call screen: status label displayed briefly after a call ends -->
+    <add-resource type="string" name="card_title_call_ended"/>
+    <string name="card_title_call_ended">"कल अन्त्य भयो"</string>
+    <!-- In-call screen: status label for call that's on hold -->
+    <add-resource type="string" name="card_title_on_hold"/>
+    <string name="card_title_on_hold">"होल्डमा"</string>
+    <!-- In-call screen: status label for a call that's in the process of hanging up -->
+    <add-resource type="string" name="card_title_hanging_up"/>
+    <string name="card_title_hanging_up">"फोन काट्दै"</string>
+    <!-- In-call screen: status label for a call that's in CDMA flash mode -->
+    <add-resource type="string" name="card_title_in_call"/>
+    <string name="card_title_in_call">"कलमा"</string>
+    <!-- In-call screen: status label for Unconditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_unconditionalCF"/>
+    <string name="card_title_unconditionalCF">"कल फर्वाड अनियमित सक्षम गरिएको गरिएको छ"</string>
+    <!-- In-call screen: status label for Conditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_conditionalCF"/>
+    <string name="card_title_conditionalCF">"कल फर्वाड नियमित सक्षम गरिएको गरिएको छ"</string>
+    <!-- In-call screen: status label for a forwarded MO call  -->
+    <add-resource type="string" name="card_title_MOcall_forwarding"/>
+    <string name="card_title_MOcall_forwarding">"बहिर्गमन फर्वाड गरिएको कल"</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <add-resource type="string" name="card_title_calliswaiting"/>
+    <string name="card_title_calliswaiting">"कल प्रतिक्षा"</string>
+    <!-- In-call screen: status label for MO call, when the caller & callee both
+            belng to a CUG group -->
+    <add-resource type="string" name="card_title_cugcall"/>
+    <string name="card_title_cugcall">"CUG कल"</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <add-resource type="string" name="card_title_outgoing_barred"/>
+    <string name="card_title_outgoing_barred">"बहिर्गमन कलहरू बन्द भयो"</string>
+    <!-- In-call screen: status label for MO calls, when incoming calls are barred
+            at remote party -->
+    <add-resource type="string" name="card_title_incoming_barred"/>
+    <string name="card_title_incoming_barred">"आगमन कलहरू बन्द भयो"</string>
+    <!-- In-call screen: status label for MO calls when CLIR Suppression is rejected -->
+    <add-resource type="string" name="card_title_clir_suppression_rejected"/>
+    <string name="card_title_clir_suppression_rejected">"CLIR प्रतिबन्धन अस्वीकृत गरियो"</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <add-resource type="string" name="card_title_call_deflected"/>
+    <string name="card_title_call_deflected">"कल हटाइयो"</string>
+    <!-- In-call screen: status label for incoming call being forwarded to other remote party  -->
+    <add-resource type="string" name="card_title_MTcall_forwarding"/>
+    <string name="card_title_MTcall_forwarding">"आगमन कल फर्वाड गरिएको छ"</string>
+    <!-- In-call screen: status label for incoming call forwarded from other remote party -->
+    <add-resource type="string" name="card_title_forwarded_MTcall"/>
+    <string name="card_title_forwarded_MTcall">"आगमन कल फर्वाड भयो"</string>
+    <!-- In-call screen: status label for incoming call which is answered & then put on hold  -->
+    <add-resource type="string" name="card_title_callonhold"/>
+    <string name="card_title_callonhold">"होल्डमा राख्नुहोस्"</string>
+    <!-- In-call screen: status label for incoming call put on hold & then retreived back -->
+    <add-resource type="string" name="card_title_callretrieved"/>
+    <string name="card_title_callretrieved">"कल रिट्राइभ भयो"</string>
+    <!-- In-call screen: status label for incoming call which is part of MultiParty Call -->
+    <add-resource type="string" name="card_title_multipartycall"/>
+    <string name="card_title_multipartycall">"बहुपक्षयी कल"</string>
+    <!-- In-call screen: status label for incoming call which is answered,
+            put on hold & then released -->
+    <add-resource type="string" name="card_title_callonhold_released"/>
+    <string name="card_title_callonhold_released">"कल खुलासा गरियो"</string>
+    <!-- In-call screen: status label for incoming call forward check received -->
+    <add-resource type="string" name="card_title_forwardcheckreceived"/>
+    <string name="card_title_forwardcheckreceived">"फर्वाड जाँच प्राप्त भयो"</string>
+    <!-- In-call screen: status label for incoming call connecting through ECT -->
+    <add-resource type="string" name="card_title_callconnectingect"/>
+    <string name="card_title_callconnectingect">"कल ECT मार्फत जडान गर्दै"</string>
+    <!-- In-call screen: status label for incoming call connected through ECT -->
+    <add-resource type="string" name="card_title_callconnectedect"/>
+    <string name="card_title_callconnectedect">"कल ECT मार्फत जडान गरियो"</string>
+    <!-- In-call screen: status label for incoming call is a deflected call -->
+    <add-resource type="string" name="card_title_deflectedcall"/>
+    <string name="card_title_deflectedcall">"हटाइएको कल "</string>
+
+    <!-- Notification strings -->
+    <!-- Label for the "Voicemail" notification item, when expanded. -->
+    <add-resource type="string" name="notification_voicemail_title"/>
+    <string name="notification_voicemail_title">"नयाँ भ्वाइस मेल"</string>
+    <!-- Label for the expanded "Voicemail" notification item,
+         including a count of messages. -->
+    <add-resource type="string" name="notification_voicemail_title_count"/>
+    <string name="notification_voicemail_title_count">"नयाँ भ्वाइसमेल ( <xliff:g id="COUNT">%d</xliff:g> )"</string>
+    <!-- Message displayed in the "Voicemail" notification item, allowing the user
+         to dial the indicated number. -->
+    <add-resource type="string" name="notification_voicemail_text_format"/>
+    <string name="notification_voicemail_text_format">"<xliff:g id="VOICEMAIL_NUMBER">%s</xliff:g>मा डायल गर्नुहोस्"</string>
+    <!-- Message displayed in the "Voicemail" notification item,
+         indicating that there's no voicemail number available -->
+    <add-resource type="string" name="notification_voicemail_no_vm_number"/>
+    <string name="notification_voicemail_no_vm_number">"अज्ञात भवाइसमेल नम्बर"</string>
+    <!-- Label for the "No service" notification item, when expanded. -->
+    <add-resource type="string" name="notification_network_selection_title"/>
+    <string name="notification_network_selection_title">"सेवा छैन"</string>
+    <!-- Label for the expanded "No service" notification item, including the
+         operator name set by user -->
+    <add-resource type="string" name="notification_network_selection_text"/>
+    <string name="notification_network_selection_text">"चयन गरिएको नेटवर्क ( <xliff:g id="OPERATOR_NAME">%s</xliff:g> ) अनुपलब्ध"</string>
+
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="watch">"कल गर्नको लागि विमान मोड वा ब्याट्री सेभर मोड अफ गर्नुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="default">"कल गर्नको लगि विमान मोड अफ गर्नुहोस्"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when in airplane mode, WFC is enabled, not wifi-only, and not connected to wireless networks. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off_wfc"/>
+    <string name="incall_error_power_off_wfc">"एक कल गर्न हवाइजहाज मोड बन्द गर्नुहोस् वा एक ताररहितको सञ्जालमा जडान गर्नुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed when the user attempts to make a non-emergency call while the phone is in emergency callback mode. -->
+    <add-resource type="string" name="incall_error_ecm_emergency_only"/>
+    <string name="incall_error_ecm_emergency_only">"गैर-आपतकालीन कल गर्न आपतकालीन कलब्याक मोडबाट निस्कनुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog.
+         This string is currently unused (see comments in InCallScreen.java.) -->
+    <add-resource type="string" name="incall_error_emergency_only"/>
+    <string name="incall_error_emergency_only">"नेटवर्कमा दर्ता भएको छैन।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service"/>
+    <string name="incall_error_out_of_service">"सेलुलर सञ्जाल उपलब्ध छैन।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service_wfc"/>
+    <string name="incall_error_out_of_service_wfc">"सेलुलर सञ्जाल उपलब्ध छैन। एक कल गर्न ताररहितको सञ्जालमा जडान गर्नुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_no_phone_number_supplied"/>
+    <string name="incall_error_no_phone_number_supplied">"एक कल गर्नको लागि, एक वैध नम्बर प्रविष्ट गर्नुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_call_failed"/>
+    <string name="incall_error_call_failed">"कल विफल भयो।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_cannot_add_call"/>
+    <string name="incall_error_cannot_add_call">"यतिबेला कल थप गर्न सकिँदैन।"</string>
+    <!-- In-call screen: status message displayed in a dialog when starting an MMI -->
+    <add-resource type="string" name="incall_status_dialed_mmi"/>
+    <string name="incall_status_dialed_mmi">"MMI अनुक्रम सुरु गर्दै..."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_unknown"/>
+    <string name="incall_error_supp_service_unknown">"सेवा समर्थित छैन"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_switch"/>
+    <string name="incall_error_supp_service_switch">"कल स्विच गर्न सक्दैन।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_separate"/>
+    <string name="incall_error_supp_service_separate">"कल अलग गर्न सक्दैन।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_transfer"/>
+    <string name="incall_error_supp_service_transfer">"हस्तान्तरण गर्न सक्दैन।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_conference"/>
+    <string name="incall_error_supp_service_conference">"सम्मेलन कलहरू गर्न असमर्थ।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_reject"/>
+    <string name="incall_error_supp_service_reject">"कल अस्वीकार गर्न सक्दैन।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hangup"/>
+    <string name="incall_error_supp_service_hangup">"कल (हरू) जारी गर्न सकिँदैन ।"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hold"/>
+    <string name="incall_error_supp_service_hold">"कल सञ्चालन गर्न सकिँदैन।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when WFC is enabled, is wifi-only, and not connected to a wireless network. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_wfc_only_no_wireless_network"/>
+    <string name="incall_error_wfc_only_no_wireless_network">"एक कल गर्न एक ताररहितको सञ्जालमा जडान गर्नुहोस्।"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when the user is connected to a wireless network, but wifi calling is turned off. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_promote_wfc"/>
+    <string name="incall_error_promote_wfc">"कल गर्नका लागि Wi-Fi कलिङ सक्षम गर्नुहोस्।"</string>
+
+    <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_title"/>
+    <string name="emergency_enable_radio_dialog_title">"आपतकालीन कल"</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_message"/>
+    <string name="emergency_enable_radio_dialog_message">"रेडियो खोल्दै..."</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_retry"/>
+    <string name="emergency_enable_radio_dialog_retry">"कुनै सेवा छैन। फेरि प्रयास गर्दै ..."</string>
+    <!-- Toast message shown when user tries to turn on airplane mode while in an emergency call -->
+    <add-resource type="string" name="radio_off_during_emergency_call"/>
+    <string name="radio_off_during_emergency_call">"आपतकालीन कलको समयमा हवाइजहाज मोडमा प्रविष्ट गर्न सक्दैन।"</string>
+
+    <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_error"/>
+    <string name="dial_emergency_error">"कल गर्न सकिँदैन। <xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g> आपतकालीन नम्बर होइन।"</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_empty_error"/>
+    <string name="dial_emergency_empty_error">"कल गर्न सकिँदैन। आपतकालीन नम्बर डायल गर्नुहोस्।"</string>
+
+    <!-- Displayed in the text entry box in the dialer when in landscape mode to guide the user
+         to dial using the physical keyboard -->
+    <add-resource type="string" name="dialerKeyboardHintText"/>
+    <string name="dialerKeyboardHintText">"डायल गर्न किबोर्ड प्रयोग गर्नुहोस्"</string>
+
+    <!-- Text for the onscreen "Hold" button -->
+    <add-resource type="string" name="onscreenHoldText"/>
+    <string name="onscreenHoldText">"होल्ड गर्नुहोस्"</string>
+    <!-- Text for the onscreen "End call" button -->
+    <add-resource type="string" name="onscreenEndCallText"/>
+    <string name="onscreenEndCallText">"अन्त्य​ गर्नुहोस्"</string>
+    <!-- Text for the onscreen "Show Dialpad" button -->
+    <add-resource type="string" name="onscreenShowDialpadText"/>
+    <string name="onscreenShowDialpadText">"डायलप्याड"</string>
+    <!-- Text for the onscreen "Mute" button -->
+    <add-resource type="string" name="onscreenMuteText"/>
+    <string name="onscreenMuteText">"म्युट"</string>
+    <!-- Text for the onscreen "Add call" button -->
+    <add-resource type="string" name="onscreenAddCallText"/>
+    <string name="onscreenAddCallText">"कल थप्नुहोस्"</string>
+    <!-- Text for the onscreen "Merge calls" button -->
+    <add-resource type="string" name="onscreenMergeCallsText"/>
+    <string name="onscreenMergeCallsText">"कलहरू समायोजन  गर्नुहोस्"</string>
+    <!-- Text for the onscreen "Swap calls" button -->
+    <add-resource type="string" name="onscreenSwapCallsText"/>
+    <string name="onscreenSwapCallsText">"स्वाप"</string>
+    <!-- Text for the onscreen "Manage calls" button -->
+    <add-resource type="string" name="onscreenManageCallsText"/>
+    <string name="onscreenManageCallsText">"कलहरू प्रबन्ध गर्नुहोस्"</string>
+    <!-- Text for the onscreen "Manage conference" button [CHAR LIMIT=20] -->
+    <add-resource type="string" name="onscreenManageConferenceText"/>
+    <string name="onscreenManageConferenceText">"सम्मेलन प्रबन्ध गर्नुहोस्"</string>
+    <!-- Text for the onscreen "Audio" button that lets you switch
+         between speaker / bluetooth / earpiece [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenAudioText"/>
+    <string name="onscreenAudioText">"अडियो"</string>
+    <!-- Text for the onscreen "Video call" button used to change a voice call
+         to a video call. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenVideoCallText"/>
+    <string name="onscreenVideoCallText">"भिडियो कल"</string>
+
+    <!-- Menu item label in SIM Contacts: Import a single contact entry from the SIM card -->
+    <add-resource type="string" name="importSimEntry"/>
+    <string name="importSimEntry">"आयात गर्नुहोस्"</string>
+    <!-- Menu item label in SIM Contacts: Import all contact entries from the SIM card -->
+    <add-resource type="string" name="importAllSimEntries"/>
+    <string name="importAllSimEntries">"सबै आयात गर्नुहोस्"</string>
+    <!-- SIM Contacts: status message displayed while importing card -->
+    <add-resource type="string" name="importingSimContacts"/>
+    <string name="importingSimContacts">"SIM सम्पर्कहरू आयात गर्दै"</string>
+    <!-- Import a single contact entry from contacts to the SIM card -->
+    <add-resource type="string" name="importToFDNfromContacts"/>
+    <string name="importToFDNfromContacts">"सम्पर्कहरूबाट आयात गर्नुहोस्"</string>
+
+    <!-- Message shown when a single contact is imported from SIM card -->
+    <add-resource type="string" name="singleContactImportedMsg"/>
+    <string name="singleContactImportedMsg">"आयातित सम्पर्क"</string>
+    <!-- Message shown when a single contact could not be imported from SIM card -->
+    <add-resource type="string" name="failedToImportSingleContactMsg"/>
+    <string name="failedToImportSingleContactMsg">"सम्पर्क आयात गर्न असफल"</string>
+
+    <!-- Hearing aid settings -->
+    <add-resource type="string" name="hac_mode_title"/>
+    <string name="hac_mode_title">"श्रवणका लागि सहयोगी यन्त्रहरू"</string>
+    <add-resource type="string" name="hac_mode_summary"/>
+    <string name="hac_mode_summary">"श्रवण सहायता अनुकूलता खोल्नुहोस्"</string>
+
+    <!-- Service option entries.  -->
+    <add-resource type="array" name="tty_mode_entries"/>
+    <string-array name="tty_mode_entries">
+        <item>"TTY बन्द"</item>
+        <item>"TTY भरी"</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+
+    <!-- Dtmf tones settings -->
+    <!-- Title for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_title"/>
+    <string name="dtmf_tones_title">"DTMF टोनहरू"</string>
+    <!-- Summary for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_summary"/>
+    <string name="dtmf_tones_summary">"DTMF टोनहरूको लम्बाइ निर्धारण गर्नुहोस्"</string>
+    <!-- Options displayed as part of DTMF Tones in Call Settings -->
+    <add-resource type="array" name="dtmf_tone_entries"/>
+    <string-array name="dtmf_tone_entries">
+      <item>"साधारण"</item>
+      <item>"लामो"</item>
+    </string-array>
+
+    <!-- Title for the dialog used to display CDMA DisplayInfo -->
+    <add-resource type="string" name="network_info_message"/>
+    <string name="network_info_message">"सञ्जाल सन्देश"</string>
+    <!-- Title for the dialog used to display a network error message to the user -->
+    <add-resource type="string" name="network_error_message"/>
+    <string name="network_error_message">"त्रुटि सन्देश"</string>
+
+    <!-- OTA-specific strings -->
+    <!-- Title shown on OTA screen -->
+    <add-resource type="string" name="ota_title_activate"/>
+    <string name="ota_title_activate">"तपाईंको फोन सक्रिय गर्नुहोस्"</string>
+    <!-- Message displayed on the OTA activation screen. -->
+    <add-resource type="string" name="ota_touch_activate"/>
+    <string name="ota_touch_activate">"विशेष कललाई तपाईंको फोन सेवा सक्रिय गर्न जरुरी हुन्छ। \n \n \"सक्रिय\" थिचेर तपाईंको फोन  सक्रिय गर्न दिएका निर्देशनहरू सुन्नुहोस्।"</string>
+    <!-- Title shown during Hands Free Activation -->
+    <add-resource type="string" name="ota_hfa_activation_title"/>
+    <string name="ota_hfa_activation_title">"सक्रिय गर्दै\u2026"</string>
+    <!-- Message shown during the hands free activation screen of the setup wizard. -->
+    <add-resource type="string" name="ota_hfa_activation_dialog_message"/>
+    <string name="ota_hfa_activation_dialog_message">"फोनले तपाईँको मोबाइल डेटा सेवा सक्रिय पार्दै छ। \n\nयसले ५ मिनेटसम्म समय लिन सक्छ।"</string>
+    <!-- Title of skip activation dialog -->
+    <add-resource type="string" name="ota_skip_activation_dialog_title"/>
+    <string name="ota_skip_activation_dialog_title">"सक्रिया गर्ने काम छोड्ने हो?"</string>
+    <!-- Message displayed in skip activation dialog  -->
+    <add-resource type="string" name="ota_skip_activation_dialog_message"/>
+    <string name="ota_skip_activation_dialog_message">"यदि तपाईँ सक्रियता छोड्नुहुन्छ भने तपाईँ कल वा मोबाइल डेटा नेटवर्क (तपाईँ Wi-Fi नेटवर्क जडान गर्न सक्नु हुन्छ) बाट जडान गर्न सक्नु हुन्छ। तपाईँले आफ्नो फोनलाई सक्रिय गर्ने बेलासम्म तपाईँ यसलाई हरेक पटक खोल्ने गर्नुहोस्।"</string>
+    <!-- Label shown on dialog button that allows the user to skip activation -->
+    <add-resource type="string" name="ota_skip_activation_dialog_skip_label"/>
+    <string name="ota_skip_activation_dialog_skip_label">"छोड्नुहोस्"</string>
+
+    <!-- Button label within the OTA activation screen -->
+    <add-resource type="string" name="ota_activate"/>
+    <string name="ota_activate">"सक्रिय बनाउनुहोस्"</string>
+    <!-- Title text shown when phone activation is successful -->
+    <add-resource type="string" name="ota_title_activate_success"/>
+    <string name="ota_title_activate_success">"फोन सक्रिय भएको छ।"</string>
+    <!-- Title text shown on screen where activation fails -->
+    <add-resource type="string" name="ota_title_problem_with_activation"/>
+    <string name="ota_title_problem_with_activation">"सक्रिय पार्दा समस्या"</string>
+    <!-- Message displayed on the OTA "listening" screen. This message
+         needs to be kept at 2 lines or less to be sure that there's
+         enough room for the dialpad. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="ota_listen"/>
+    <string name="ota_listen">"तपाईंलाई सक्रियता पुरा भएको सुन्नुभयो भने बोलिएका निर्देशनहरूको पालना गर्नुहोस्।"</string>
+
+    <!-- Button label within the OTA listen screen -->
+    <add-resource type="string" name="ota_speaker"/>
+    <string name="ota_speaker">"स्पिकर"</string>
+    <!-- String to be displayed on OTA listen screen once user has selected the
+         correct option to begin provisioning -->
+    <add-resource type="string" name="ota_progress"/>
+    <string name="ota_progress">"तपाईँको फोन प्रोग्राम गर्दै ..."</string>
+    <!-- String to display within the OTA Fail Notice dialog -->
+    <add-resource type="string" name="ota_failure"/>
+    <string name="ota_failure">"तपाईँको फोन प्रोग्राम गर्न सकिएन"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon successful provisioning -->
+    <add-resource type="string" name="ota_successful"/>
+    <string name="ota_successful">"तपाईंको फोन अहिले सक्रिय गरिएको छ। यसलाई सेवा सुरु गर्नको लागि १५ मिनटसम्म लाग्न सक्दछ।"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon unsuccessful provisioning -->
+    <add-resource type="string" name="ota_unsuccessful"/>
+    <string name="ota_unsuccessful">"तपाईंको फोन सक्रिय गरिएको छैन। \n तपाईंले राम्रो प्रसारणक्षेत्र (झ्यालको नजिक वा बाहिर पट्टि) का साथ  क्षेत्र खोजी गर्न आवश्यकता हुन सक्दछ। \n \n पुनःप्रयास गर्नुहोस् वा अधिक विकल्पहरूका लागि ग्राहक सेवामा कल गर्नुहोस्।"</string>
+    <!-- String to display within the OTA SPC Fail Notice dialog -->
+    <add-resource type="string" name="ota_spc_failure"/>
+    <string name="ota_spc_failure">"अति विशेष सुविधाहरू"</string>
+    <!-- Button label in OTA listen screen that cancels activation and goes to the previous screen -->
+    <add-resource type="string" name="ota_call_end"/>
+    <string name="ota_call_end">"पछाडि जानुहोस्"</string>
+    <!-- Button label shown on OTA error screen to allow the user to try again -->
+    <add-resource type="string" name="ota_try_again"/>
+    <string name="ota_try_again">"फेरि प्रयास गर्नुहोस्"</string>
+    <!-- Button label shown on OTA screens that have a next screen -->
+    <add-resource type="string" name="ota_next"/>
+    <string name="ota_next">"अर्को"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
+    <add-resource type="string" name="ecm_exit_dialog"/>
+    <string name="ecm_exit_dialog">EcmExitDialog</string>
+    <!-- ECM: Status bar notification message -->
+    <add-resource type="string" name="phone_entered_ecm_text"/>
+    <string name="phone_entered_ecm_text">"आपतकालीन कलब्याक मोड प्रविष्टि गरियो"</string>
+    <!-- ECM: Notification title -->
+    <add-resource type="string" name="phone_in_ecm_notification_title"/>
+    <string name="phone_in_ecm_notification_title">"आपतकालीन कलब्याक मोड"</string>
+    <!-- ECM: Notification body -->
+    <add-resource type="string" name="phone_in_ecm_call_notification_text"/>
+    <string name="phone_in_ecm_call_notification_text">"डेटा जडान अक्षम भयो"</string>
+    <add-resource type="plurals" name="phone_in_ecm_notification_time"/>
+    <plurals name="phone_in_ecm_notification_time">
+        <!-- number of minutes is one -->
+        <item quantity="one">" <xliff:g id="COUNT_0">%s</xliff:g> मिनेटको लागि कुनै डेटा जडान छैन"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">" <xliff:g id="COUNT_1">%s</xliff:g> मिनेटको लागि कुनै डेटा जडान छैन"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from the notifications screen -->
+    <add-resource type="plurals" name="alert_dialog_exit_ecm"/>
+    <plurals name="alert_dialog_exit_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">" फोन आपतकालीन कलब्याक मोडमा <xliff:g id="COUNT_0">%s</xliff:g> मिनेटको लागि हुनेछ। यस मोडको समयमा एक डेटा जडान प्रयोग गरेर कुनै पनि अनुप्रयोगहरू प्रयोग गर्न सकिँदैन। के तपाईँ अहिले निस्कन चाहनुहुन्छ?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">" फोन आपतकालीन कलब्याक मोडमा <xliff:g id="COUNT_1">%s</xliff:g> मिनेटको लागि हुनेछ। यस मोडको अवस्थामा एक डेटा जडान प्रयोग गरेर कुनै पनि अनुप्रयोगहरू प्रयोग गर्न सकिँदैन। के तपाईँ अहिले निस्कन चाहनुहुन्छ?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from any other app -->
+    <add-resource type="plurals" name="alert_dialog_not_avaialble_in_ecm"/>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">" आपतकालीन कलब्याक मोडको समयमा चयनित कार्य उपलब्ध छैन। फोन यस मोडमा <xliff:g id="COUNT_0">%s</xliff:g> मिनेटको लागि हुनेछ। के तपाईँ अहिले निस्कन चाहनुहुन्छ?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">" आपतकालीन कलब्याक मोडको समयमा चयनित कार्य उपलब्ध छैन। फोन यस मोडमा <xliff:g id="COUNT_1">%s</xliff:g> मिनेटको लागि हुनेछ। के तपाईँ अहिले निस्कन चाहनुहुन्छ?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message while in emergency call -->
+    <add-resource type="string" name="alert_dialog_in_ecm_call"/>
+    <string name="alert_dialog_in_ecm_call">"आपतकालीन कल हुँदा चयन भएको कार्य उपलब्ध हुँदैन।"</string>
+    <!-- ECM: Progress text -->
+    <add-resource type="string" name="progress_dialog_exiting_ecm"/>
+    <string name="progress_dialog_exiting_ecm">"आपतकालीन कलब्याक मोडबाट निस्कदै"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_yes"/>
+    <string name="alert_dialog_yes">"हो"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_no"/>
+    <string name="alert_dialog_no">"होइन"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_dismiss"/>
+    <string name="alert_dialog_dismiss">"खारेज गर्नुहोस्"</string>
+
+    <!-- Preference for Voicemail service provider under "Voicemail" settings.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_provider"/>
+    <string name="voicemail_provider">"सेवा"</string>
+
+    <!-- Preference for Voicemail setting of each provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_settings"/>
+    <string name="voicemail_settings">"सेटअप"</string>
+
+    <!-- String to display in voicemail number summary when no voicemail num is set -->
+    <add-resource type="string" name="voicemail_number_not_set"/>
+    <string name="voicemail_number_not_set">"सेट गरेको छैन"</string>
+
+    <!-- Title displayed above settings coming after voicemail in the call features screen -->
+    <add-resource type="string" name="other_settings"/>
+    <string name="other_settings">"अन्य कल सेटिङहरू"</string>
+
+    <!-- Title displayed in the overlay when a call is placed using a 3rd party provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="calling_via_template"/>
+    <string name="calling_via_template">"<xliff:g id="PROVIDER_NAME">%s</xliff:g> को मार्फत कल गर्दै"</string>
+
+    <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="contactPhoto"/>
+    <string name="contactPhoto">"सम्पर्क तस्बिर"</string>
+    <!-- Use this to describe the separate conference call button; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="goPrivate"/>
+    <string name="goPrivate">"निजी जानुहोस्"</string>
+    <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="selectContact"/>
+    <string name="selectContact">"सम्पर्क चयन गर्नुहोस्"</string>
+
+    <!-- Dialog title to notify user that Voice calling is not supported
+         on this device. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="not_voice_capable"/>
+    <string name="not_voice_capable">"भ्वाइस कल गर्ने समर्थित छैन"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"डायल"</string>
+
+    <!-- Title for the vibration settings for voicemail notifications [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_notification_vibrate_when_title"/>
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">"भाइब्रेट"</string>
+    <!-- Dialog title for the vibration settings for voice mail notifications [CHAR LIMIT=40]-->
+    <add-resource type="string" name="voicemail_notification_vibarte_when_dialog_title"/>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">"भाइब्रेट"</string>
+
+    <!-- Visual voicemail on/off title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_visual_voicemail_switch_title"/>
+    <string name="voicemail_visual_voicemail_switch_title">"भिजुअल भ्वाइस मेल"</string>
+
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_set_pin_dialog_title"/>
+    <string name="voicemail_set_pin_dialog_title">"PIN सेट गर्नुहोस्"</string>
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_change_pin_dialog_title"/>
+    <string name="voicemail_change_pin_dialog_title">"PIN परिवर्तन गर्नुहोस्"</string>
+
+    <!-- Voicemail ringtone title. The user clicks on this preference to select
+         which sound to play when a voicemail notification is received.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="voicemail_notification_ringtone_title"/>
+    <string name="voicemail_notification_ringtone_title">"आवाज:"</string>
+
+    <!-- Title for the category "ringtone", which is shown above ringtone and vibration
+         related settings.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preference_category_ringtone"/>
+    <string name="preference_category_ringtone">"रिङ्गटोन र भाइब्रेट"</string>
+
+    <!-- String resource for the font-family to use for the call setting activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_settings_title_font_family"/>
+    <string name="call_settings_title_font_family">sans-serif-light</string>
+
+    <!-- Label for PSTN connection service. -->
+    <add-resource type="string" name="pstn_connection_service_label"/>
+    <string name="pstn_connection_service_label">"निर्मित SIM कार्डहरू"</string>
+
+    <!-- Label for enabling video calling. -->
+    <add-resource type="string" name="enable_video_calling_title"/>
+    <string name="enable_video_calling_title">"भिडियो कल खोल्नुहोस्"</string>
+
+    <!-- Message for dialog shown when the user tries to turn on video calling but enhanced 4G LTE
+         is disabled. They have to turn on Enhanced 4G LTE capability in network settings first. -->
+    <add-resource type="string" name="enable_video_calling_dialog_msg"/>
+    <string name="enable_video_calling_dialog_msg">"भिडियो कल सकृय पार्न, तपाईंले सञ्जाल सेटिङमा Enhanced 4G LTE Mode सक्षम गर्न आवश्यक छ।"</string>
+
+    <!-- Label for action button in dialog which opens mobile network settings, for video calling
+         setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_settings"/>
+    <string name="enable_video_calling_dialog_settings">"सञ्जाल सेटिङहरू"</string>
+
+    <!-- Label for close button in dialog, for video calling setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_close"/>
+    <string name="enable_video_calling_dialog_close">"बन्द गर्नुहोस्"</string>
+
+    <!-- Strings used in Settings->Sim cards for each installed Sim. -->
+    <add-resource type="string" name="sim_label_emergency_calls"/>
+    <string name="sim_label_emergency_calls">"आपताकालीन कल"</string>
+    <add-resource type="string" name="sim_description_emergency_calls"/>
+    <string name="sim_description_emergency_calls">"आपातकालीन कल मात्र"</string>
+    <add-resource type="string" name="sim_description_default"/>
+    <string name="sim_description_default">"SIM कार्ड, स्लट: <xliff:g id="SLOT_ID">%s</xliff:g>"</string>
+
+    <!-- Title for activity to control accessibility settings such as TTY mode and hearing aid
+         compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_activity_title"/>
+    <string name="accessibility_settings_activity_title">"पहुँचता"</string>
+
+    <!-- Status hint label for an incoming call over a wifi network which has not been accepted yet.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_incoming_wifi_call"/>
+    <string name="status_hint_label_incoming_wifi_call">"बाट Wi-Fi मार्फत आएको कल"</string>
+    <!-- Status hint label for a call being made over a wifi network. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_wifi_call"/>
+    <string name="status_hint_label_wifi_call">"Wi-Fi कल"</string>
+
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_ringtone_key"/>
+    <string name="voicemail_notification_ringtone_key">voicemail_notification_ringtone_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_vibrate_key"/>
+    <string name="voicemail_notification_vibrate_key">voicemail_notification_vibrate_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a visual voicemail preference. -->
+    <add-resource type="string" name="voicemail_visual_voicemail_key"/>
+    <string name="voicemail_visual_voicemail_key">voicemail_visual_voicemail_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail change pin preference. -->
+    <add-resource type="string" name="voicemail_change_pin_key"/>
+    <string name="voicemail_change_pin_key">voicemail_change_pin_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for tty mode preference. -->
+    <add-resource type="string" name="tty_mode_key"/>
+    <string name="tty_mode_key">button_tty_mode_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="wifi_calling_settings_key"/>
+    <string name="wifi_calling_settings_key">button_wifi_calling_settings_key</string>
+
+    <!-- Hint appearing below a selected action on the emergency dialer telling user to tap again to execute the action [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="emergency_action_launch_hint"/>
+    <string name="emergency_action_launch_hint">"खोल्न पुनः ट्याप गर्नुहोस्"</string>
+
+    <!-- Strings for IMAP -->
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+       data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"सन्देश डिकोड गर्दा एउटा समस्या भयो।"</string>
+
+    <!-- Call failure reason: SIM card and roaming capabilities have already been activated. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="callFailed_cdma_activation"/>
+    <string name="callFailed_cdma_activation">"SIM कार्डले तपाईँको सेवा सक्रिय गर्नुका तथा फोनको रोमिङ क्षमताहरू पनि अद्यावधिक गरिदिएको छ।"</string>
+
+    <!-- Call failure reason: Cannot add a call because there are already too many active calls. -->
+    <add-resource type="string" name="callFailed_cdma_call_limit"/>
+    <string name="callFailed_cdma_call_limit">"धेरै सक्रिय कलहरू छन्। कृपया कुनै नयाँ राख्नु अघि विद्यमान कलहरूलाई अन्त्य वा मर्ज गर्नुहोस्।"</string>
+     <!-- Summary for the Smart Divert Feature displayed in Call Settings -->
+     <add-resource type="string" name="smart_divert_summary"/>
+    <string name="smart_divert_summary">"CFNRc सेटिङ्कहरू"</string>
+     <add-resource type="string" name="no_mobile_data"/>
+    <string name="no_mobile_data">"मोबाइल डेटा उपलब्ध छैन"</string>
+
+    <!-- The title for the change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_title"/>
+    <string name="change_pin_title">"भ्वाइस मेलको PIN परिवर्तन गर्नुहोस्"</string>
+    <!-- The label for the continue button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_continue_label"/>
+    <string name="change_pin_continue_label">"जारी राख्नुहोस्"</string>
+    <!-- The label for the cancel button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_cancel_label"/>
+    <string name="change_pin_cancel_label">"रद्द गर्नुहोस्"</string>
+    <!-- The label for the ok button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_ok_label"/>
+    <string name="change_pin_ok_label">"ठीक छ"</string>
+    <!-- The title for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_header"/>
+    <string name="change_pin_enter_old_pin_header">"आफ्नो पुरानो PIN को पुष्टि गर्नुहोस्"</string>
+    <!-- The hint for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_hint"/>
+    <string name="change_pin_enter_old_pin_hint">"जारी राख्नका लागि आफ्नो भ्वाइस मेलको PIN प्रविष्ट गर्नुहोस्।"</string>
+    <!-- The title for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_header"/>
+    <string name="change_pin_enter_new_pin_header">"एउटा नयाँ PIN सेट गर्नुहोस्"</string>
+    <!-- The hint for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_hint"/>
+    <string name="change_pin_enter_new_pin_hint">"PIN <xliff:g id="MIN">%1$d</xliff:g>-<xliff:g id="MAX">%2$d</xliff:g> अङ्कको हुनुपर्छ।"</string>
+    <!-- The title for the confirm new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_confirm_pin_header"/>
+    <string name="change_pin_confirm_pin_header">"तपाईँको PIN को पुष्टि गर्नुहोस्"</string>
+    <!-- The error message for th confirm new pin step in change voicemail PIN activity, if the pin doen't match the one previously entered -->
+    <add-resource type="string" name="change_pin_confirm_pins_dont_match"/>
+    <string name="change_pin_confirm_pins_dont_match">"PIN हरू मेल खाँदैनन्"</string>
+    <!-- The toast to show after the voicemail PIN has been successfully changed -->
+    <add-resource type="string" name="change_pin_succeeded"/>
+    <string name="change_pin_succeeded">"भ्वाइस मेल PIN अद्यावधिक गरियो"</string>
+    <!-- The error message to show if the server reported an error while attempting to change the voicemail PIN -->
+    <add-resource type="string" name="change_pin_system_error"/>
+    <string name="change_pin_system_error">"PIN सेट गर्न असमर्थ भयो"</string></resources>

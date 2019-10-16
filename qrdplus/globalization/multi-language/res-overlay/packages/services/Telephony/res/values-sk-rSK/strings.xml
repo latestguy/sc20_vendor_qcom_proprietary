@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs.  This is the version of the label for
+         tablet devices, where the phone app handles mobile data but not
+         actual phone calls. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="tablet">"Mobilné dáta"</string>
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="default">"Telefónne služby"</string>
+
+    <!-- Screen title for Emergency Dialer UI -->
+    <add-resource type="string" name="emergencyDialerIconLabel"/>
+    <string name="emergencyDialerIconLabel">"Tiesňové vytáčanie"</string>
+    <!-- Activity label for the in-call UI -->
+    <add-resource type="string" name="phoneIconLabel"/>
+    <string name="phoneIconLabel">"Telefón"</string>
+    <!-- Title of FDN list screen -->
+    <add-resource type="string" name="fdnListLabel"/>
+    <string name="fdnListLabel">"Zoznam pevne určených čísiel (FDN)"</string>
+
+    <!-- Call status -->
+    <!-- Incoming call screen, name of "unknown" caller -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"Neznáme"</string>
+    <!-- Incoming call screen, string when number hidden -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"Súkromné číslo"</string>
+    <!-- Incoming call screen, string when called from a pay phone -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"Telefónny automat"</string>
+    <!-- In-call screen: status label for a call that's on hold -->
+    <add-resource type="string" name="onHold"/>
+    <string name="onHold">"Podržaný hovor"</string>
+    <!-- Possible error messages with outgoing calls -->
+    <add-resource type="string" name="mmiStarted"/>
+    <string name="mmiStarted">"Kód MMI bol spustený"</string>
+    <!-- Dialog label when a USSD code starts running -->
+    <add-resource type="string" name="ussdRunning"/>
+    <string name="ussdRunning">"Kód USSD je spustený..."</string>
+    <!-- Dialog label when an MMI code is canceled -->
+    <add-resource type="string" name="mmiCancelled"/>
+    <string name="mmiCancelled">"Kód MMI bol zrušený"</string>
+    <!-- Label for "cancel" button on the MMI dialog -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Zrušiť"</string>
+    <!-- Toast string displayed to user if the input in MMI dialog is < 1 or > 160 -->
+    <add-resource type="string" name="enter_input"/>
+    <string name="enter_input">"Správa USSD musí mať od <xliff:g id="MIN_LEN">%d</xliff:g> do <xliff:g id="MAX_LEN">%d</xliff:g> znakov. Skúste to znova."</string>
+
+    <!-- Label for "Manage conference call" panel [CHAR LIMIT=40] -->
+    <add-resource type="string" name="manageConferenceLabel"/>
+    <string name="manageConferenceLabel">"Spravovať konferenčný hovor"</string>
+
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"OK"</string>
+
+    <!-- "Audio mode" popup menu: Item label to select the speakerphone [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_speaker"/>
+    <string name="audio_mode_speaker">"Reproduktor"</string>
+    <!-- "Audio mode" popup menu: Item label to select the handset earpiece [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_earpiece"/>
+    <string name="audio_mode_earpiece">"Slúchadlo"</string>
+    <!-- "Audio mode" popup menu: Item label to select the wired headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_wired_headset"/>
+    <string name="audio_mode_wired_headset">"Náhlavná súprava s káblom"</string>
+    <!-- "Audio mode" popup menu: Item label to select the bluetooth headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_bluetooth"/>
+    <string name="audio_mode_bluetooth">"Bluetooth"</string>
+
+    <!-- post dial -->
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "wait" character in a phone number to be dialed; this dialog asks the
+         user if it's OK to send the numbers following the "wait". -->
+    <add-resource type="string" name="wait_prompt_str"/>
+    <string name="wait_prompt_str">"Odoslať nasledujúce tóny?\n"</string>
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "PAUSE" character in a phone number to be dialed; this dialog gives
+         informative message to the user to show the sending numbers following the "Pause". -->
+    <add-resource type="string" name="pause_prompt_str"/>
+    <string name="pause_prompt_str">"Odosielanie tónov\n"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog -->
+    <add-resource type="string" name="send_button"/>
+    <string name="send_button">"Odoslať"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_yes"/>
+    <string name="pause_prompt_yes">"Áno"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_no"/>
+    <string name="pause_prompt_no">"Nie"</string>
+    <!-- In-call screen: on the "wild" character dialog, this is the label
+         for a text widget that lets the user enter the digits that should
+         replace the "wild" character. -->
+    <add-resource type="string" name="wild_prompt_str"/>
+    <string name="wild_prompt_str">"Nahradiť zástupný znak znakom"</string>
+
+    <!-- missing voicemail number -->
+    <!-- Title of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number"/>
+    <string name="no_vm_number">"Chýba číslo hlasovej schránky"</string>
+    <!-- Body text of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number_msg"/>
+    <string name="no_vm_number_msg">"Na karte SIM nie je uložené žiadne číslo hlasovej schránky."</string>
+    <!-- Button label on the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="add_vm_number_str"/>
+    <string name="add_vm_number_str">"Pridať číslo"</string>
+    <!--Toast in Call settings when asked to launch voicemail for a guest user -->
+    <add-resource type="string" name="voice_number_setting_primary_user_only"/>
+    <string name="voice_number_setting_primary_user_only">"Nastavenia hlasovej schránky pre hovory môže zmeniť iba hlavný používateľ."</string>
+
+    <!-- Status message displayed on SIM PIN unlock panel -->
+    <add-resource type="string" name="puk_unlocked"/>
+    <string name="puk_unlocked">"Karta SIM bola odblokovaná. Prebieha odomykanie telefónu..."</string>
+    <!-- network depersonalization -->
+    <!-- Label text for PIN entry widget on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ENTRY"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ENTRY">"Kód PIN odomknutia siete karty SIM"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_unlock_text"/>
+    <string name="sim_ndp_unlock_text">"Odomknúť"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_dismiss_text"/>
+    <string name="sim_ndp_dismiss_text">"Zatvoriť"</string>
+    <!-- Status message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS">"Žiadosť o odomknutie siete karty SIM..."</string>
+    <!-- Error message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ERROR"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ERROR">"Žiadosť o odomknutie siete karty SIM nebola úspešná."</string>
+    <!-- Success message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS">"Odomknutie siete karty SIM bolo úspešné."</string>
+
+    <!-- settings strings -->
+
+    <!-- Error message for users that aren't allowed to modify Mobile Network settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mobile_network_settings_not_available"/>
+    <string name="mobile_network_settings_not_available">"Nastavenia mobilnej siete nie sú pre tohto používateľa dostupné"</string>
+    <!-- GSM Call settings screen, setting option name. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGSMMore"/>
+    <string name="labelGSMMore">"Nastavenia hovorov GSM"</string>
+    <!-- GSM Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGsmMore_with_label"/>
+    <string name="labelGsmMore_with_label">"Nastavenia hovorov v sieti GSM (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <add-resource type="string" name="labelCFType"/>
+    <string name="labelCFType">"Nastavenie presmerovania hovorov"</string>
+    <add-resource type="string" name="labelCFVoice"/>
+    <string name="labelCFVoice">"Voice"</string>
+    <add-resource type="string" name="labelCFVideo"/>
+    <string name="labelCFVideo">"Video"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCDMAMore"/>
+    <string name="labelCDMAMore">"Nastavenia hovorov CDMA"</string>
+    <!-- CDMA Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelCdmaMore_with_label"/>
+    <string name="labelCdmaMore_with_label">"Nastavenia hovorov v sieti CDMA (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="apn_settings"/>
+    <string name="apn_settings">"Názvy prístupových bodov"</string>
+    <!-- Label for the "Network settings" screen in the Settings UI -->
+    <add-resource type="string" name="settings_label"/>
+    <string name="settings_label">"Nastavenia siete"</string>
+
+    <!-- Label for settings screen for phone accounts. -->
+    <add-resource type="string" name="phone_accounts"/>
+    <string name="phone_accounts">"Nastavenia telefónneho účtu"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account -->
+    <add-resource type="string" name="phone_accounts_make_calls_with"/>
+    <string name="phone_accounts_make_calls_with">"Uskutočňovať hovory s"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account for SIP calls. -->
+    <add-resource type="string" name="phone_accounts_make_sip_calls_with"/>
+    <string name="phone_accounts_make_sip_calls_with">"Uskutočňovať hovory SIP s"</string>
+    <!-- Entry in dialog to "ask first" for accounts when making a call -->
+    <add-resource type="string" name="phone_accounts_ask_every_time"/>
+    <string name="phone_accounts_ask_every_time">"Najskôr požiadať"</string>
+    <!-- Account label for when a SIM account has no service (i.e. airplane mode) -->
+    <add-resource type="string" name="phone_accounts_default_account_label"/>
+    <string name="phone_accounts_default_account_label">"K dispozícii nie je žiadna sieť"</string>
+
+    <!-- Label for heading of the per-account settings section in the phone accounts settings
+         screen. -->
+    <add-resource type="string" name="phone_accounts_settings_header"/>
+    <string name="phone_accounts_settings_header">"Nastavenia"</string>
+    <!-- Label for invoking phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_choose_accounts"/>
+    <string name="phone_accounts_choose_accounts">"Choose accounts"</string>
+    <!-- Label for heading in the phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_selection_header"/>
+    <string name="phone_accounts_selection_header">"Telefonické účty"</string>
+    <!-- Title for the button to add a new sip account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_accounts_add_sip_account"/>
+    <string name="phone_accounts_add_sip_account">"Pridať účet SIP"</string>
+    <!-- Description label for icon to configure a phone account's settings. -->
+    <add-resource type="string" name="phone_accounts_configure_account_settings"/>
+    <string name="phone_accounts_configure_account_settings">"Nakonfigurovať nastavenia účtu"</string>
+    <!-- Label for heading that takes user to the list of calling accounts where they can enable
+         and disable all accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts"/>
+    <string name="phone_accounts_all_calling_accounts">"Všetky telefónne účty"</string>
+    <!-- Summary for all-calling-account setting indicating that is where the user goes to enable
+         and disable phone accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts_summary"/>
+    <string name="phone_accounts_all_calling_accounts_summary">"Výber účtov, pomocou ktorých bude možné telefonovať"</string>
+
+    <!-- Title for setting to select Wi-Fi call manager account -->
+    <add-resource type="string" name="wifi_calling"/>
+    <string name="wifi_calling">"Volanie cez Wi-Fi"</string>
+    <!-- Built-in label for the default connection service setting. -->
+    <add-resource type="string" name="connection_service_default_label"/>
+    <string name="connection_service_default_label">"Vstavaná služba pripojenia"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"Hlasová schránka"</string>
+    <!-- Title of the "Voicemail" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="voicemail_settings_with_label"/>
+    <string name="voicemail_settings_with_label">"Hlasová schránka (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call forwarding dialog box, voicemail number prefix -->
+    <add-resource type="string" name="voicemail_abbreviated"/>
+    <string name="voicemail_abbreviated">"HS:"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="networks"/>
+    <string name="networks">"Sieťoví operátori"</string>
+    <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"Núdzové vysielania"</string>
+    <!-- Call settings screen title -->
+    <add-resource type="string" name="call_settings"/>
+    <string name="call_settings">"Nastavenia hovorov"</string>
+    <!-- GSM Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_gsm_call_settings"/>
+    <string name="additional_gsm_call_settings">"Ďalšie nastavenia"</string>
+    <!-- GSM Call settings screen, setting option name, with label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="additional_gsm_call_settings_with_label"/>
+    <string name="additional_gsm_call_settings_with_label">"Ďalšie nastavenia (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- GSM-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_gsm_call_settings"/>
+    <string name="sum_gsm_call_settings">"Ďalšie nastavenia hovorov, iba GSM"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_cdma_call_settings"/>
+    <string name="additional_cdma_call_settings">"Ďalšie nastavenia hovorov CDMA"</string>
+    <!-- CDMA-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_cdma_call_settings"/>
+    <string name="sum_cdma_call_settings">"Ďalšie nastavenia hovorov, iba CDMA"</string>
+    <!-- Call setting screen, nework service setting name -->
+    <add-resource type="string" name="labelNwService"/>
+    <string name="labelNwService">"Nastavenia sieťovej služby"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCallerId"/>
+    <string name="labelCallerId">"Identifikácia volajúceho"</string>
+    <!-- Additional call settings screen, setting summary text when the setting is being loaded [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sum_loading_settings"/>
+    <string name="sum_loading_settings">"Načítavajú sa nastavenia..."</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is hidden -->
+    <add-resource type="string" name="sum_hide_caller_id"/>
+    <string name="sum_hide_caller_id">"Číslo je v odchádzajúcich hovoroch skryté"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is shown -->
+    <add-resource type="string" name="sum_show_caller_id"/>
+    <string name="sum_show_caller_id">"Číslo je zobrazené v odchádzajúcich hovoroch"</string>
+    <!-- Additional call settings screen, setting summary text for default Caller ID value -->
+    <add-resource type="string" name="sum_default_caller_id"/>
+    <string name="sum_default_caller_id">"Zobrazenie čísla v odchádzajúcich hovoroch sa bude riadiť predvolenými nastaveniami operátora"</string>
+    <!-- Additional call settings screen, setting check box name -->
+    <add-resource type="string" name="labelCW"/>
+    <string name="labelCW">"Čakajúci hovor"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is selected -->
+    <add-resource type="string" name="sum_cw_enabled"/>
+    <string name="sum_cw_enabled">"Oznamuje prichádzajúce hovory aj pri prebiehajúcom hovore"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is clear -->
+    <add-resource type="string" name="sum_cw_disabled"/>
+    <string name="sum_cw_disabled">"Oznamuje prichádzajúce hovory aj pri prebiehajúcom hovore"</string>
+    <!-- Call forwarding settings screen, section heading -->
+    <add-resource type="string" name="call_forwarding_settings"/>
+    <string name="call_forwarding_settings">"Nastavenia presmerovania hovorov"</string>
+    <!-- Call forwarding settings screen, section heading, with a label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="call_forwarding_settings_with_label"/>
+    <string name="call_forwarding_settings_with_label">"Presmerovanie hovorov (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCF"/>
+    <string name="labelCF">"Presmerovanie hovorov"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFU"/>
+    <string name="labelCFU">"Trvalé presmerovanie"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFU"/>
+    <string name="messageCFU">"Vždy používať toto číslo"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
+    <add-resource type="string" name="sum_cfu_enabled_indicator"/>
+    <string name="sum_cfu_enabled_indicator">"Všetky hovory budú presmerované"</string>
+    <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
+    <add-resource type="string" name="sum_cfu_enabled"/>
+    <string name="sum_cfu_enabled">"Presmerovanie všetkých hovorov na <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
+    <add-resource type="string" name="sum_cfu_enabled_no_number"/>
+    <string name="sum_cfu_enabled_no_number">"Číslo nie je k dispozícii"</string>
+    <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
+    <add-resource type="string" name="sum_cfu_disabled"/>
+    <string name="sum_cfu_disabled">"Vypnuté"</string>
+
+    <!-- Call forwarding settings screen, setting timer info for cfut case -->
+    <add-resource type="string" name="set_time_period"/>
+    <string name="set_time_period">"Nastavte časový interval"</string>
+    <add-resource type="string" name="all_day"/>
+    <string name="all_day">"\u0020Celý deň\u0020"</string>
+    <add-resource type="string" name="time_interval_char"/>
+    <string name="time_interval_char">: </string>
+    <add-resource type="string" name="time_start"/>
+    <string name="time_start">"\u0020Od\u0020"</string>
+    <add-resource type="string" name="time_start_hour"/>
+    <string name="time_start_hour">"hodina začiatku"</string>
+    <add-resource type="string" name="time_start_minute"/>
+    <string name="time_start_minute">"minúta začiatku"</string>
+    <add-resource type="string" name="time_end"/>
+    <string name="time_end">"\u0020Do\u0020"</string>
+    <add-resource type="string" name="time_next_day"/>
+    <string name="time_next_day">"\u0020nasl. deň\u0020"</string>
+    <add-resource type="string" name="time_end_hour"/>
+    <string name="time_end_hour">"hodina ukončenia"</string>
+    <add-resource type="string" name="time_end_minute"/>
+    <string name="time_end_minute">"minúta ukončenia"</string>
+    <add-resource type="string" name="time_formate_am"/>
+    <string name="time_formate_am">"AM"</string>
+    <add-resource type="string" name="time_formate_pm"/>
+    <string name="time_formate_pm">"PM"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_alert"/>
+    <string name="cf_setting_mobile_data_alert">"Zapnite mobilné dáta a uistite sa, že je pripojenie WLAN vypnuté"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_roaming_alert"/>
+    <string name="cf_setting_mobile_data_roaming_alert">"Zapnite dátový roaming"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFB"/>
+    <string name="labelCFB">"Keď mám obsadené"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFB"/>
+    <string name="messageCFB">"Číslo pri obsadenej linke"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
+    <add-resource type="string" name="sum_cfb_enabled"/>
+    <string name="sum_cfb_enabled">"Presmerovanie na <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
+    <add-resource type="string" name="sum_cfb_disabled"/>
+    <string name="sum_cfb_disabled">"Vypnuté"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
+    <add-resource type="string" name="disable_cfb_forbidden"/>
+    <string name="disable_cfb_forbidden">"Váš operátor neumožňuje zakázanie presmerovaní, keď je telefón nedostupný."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRy"/>
+    <string name="labelCFNRy">"Keď neprijímam"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRy"/>
+    <string name="messageCFNRy">"Číslo pri neprijatí hovoru"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
+    <add-resource type="string" name="sum_cfnry_enabled"/>
+    <string name="sum_cfnry_enabled">"Presmerovanie na <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
+    <add-resource type="string" name="sum_cfnry_disabled"/>
+    <string name="sum_cfnry_disabled">"Vypnuté"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
+    <add-resource type="string" name="disable_cfnry_forbidden"/>
+    <string name="disable_cfnry_forbidden">"Váš operátor neumožňuje zakázanie presmerovaní hovorov, keď telefón neodpovedá."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRc"/>
+    <string name="labelCFNRc">"Pri nedostupnosti"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRc"/>
+    <string name="messageCFNRc">"Číslo pri nedostupnosti"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
+    <add-resource type="string" name="sum_cfnrc_enabled"/>
+    <string name="sum_cfnrc_enabled">"Presmerovanie na <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
+    <add-resource type="string" name="sum_cfnrc_disabled"/>
+    <string name="sum_cfnrc_disabled">"Vypnuté"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
+    <add-resource type="string" name="disable_cfnrc_forbidden"/>
+    <string name="disable_cfnrc_forbidden">"Váš operátor neumožňuje zakázanie presmerovaní, keď je telefón nedostupný."</string>
+
+    <!-- Title of the progress dialog displayed while updating Call settings -->
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"Nastavenia hovorov"</string>
+    <!-- Toast in Call settings when asked to launch settings for a secondary user -->
+    <add-resource type="string" name="call_settings_admin_user_only"/>
+    <string name="call_settings_admin_user_only">"Nastavenia hovorov môže zmeniť iba používateľ s povoleniami správcu."</string>
+    <!-- Title of the "Call settings" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="call_settings_with_label"/>
+    <string name="call_settings_with_label">"Nastavenia (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Title of the alert dialog displayed if an error occurs while updating Call settings -->
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"Chyba nastavení hovorov"</string>
+    <!-- Toast in Call settings dialog while settings are being read -->
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"Prebieha načítavanie nastavení..."</string>
+    <!-- Toast in Call settings dialog while settings are being saved -->
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"Prebieha aktualizácia nastavení..."</string>
+    <!-- Toast in Call settings dialog while settings are being reverted -->
+    <add-resource type="string" name="reverting_settings"/>
+    <string name="reverting_settings">"Prebieha vrátenie predchádzajúcich nastavení\u2026"</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="response_error"/>
+    <string name="response_error">"Neočakávaná odpoveď siete."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="exception_error"/>
+    <string name="exception_error">"Došlo k chybe siete alebo karty SIM."</string>
+    <!-- Status message displayed in the "Call settings error" dialog when
+         current SS request is modified to a different request by STK CC -->
+    <add-resource type="string" name="stk_cc_ss_to_dial_error"/>
+    <string name="stk_cc_ss_to_dial_error">"Žiadosť SS bola upravená na žiadosť DIAL."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ussd_error"/>
+    <string name="stk_cc_ss_to_ussd_error">"Žiadosť SS bola upravená na žiadosť USSD."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ss_error"/>
+    <string name="stk_cc_ss_to_ss_error">"Žiadosť SS bola upravená na novú žiadosť SS."</string>
+
+    <!-- Status message displayed in the "Call settings error" dialog when operation fails due to FDN
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"Nastavenie Pevne určené čísla v aplikácii Telefón je povolené. Z toho dôvodu nefungujú niektoré funkcie volania."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="radio_off_error"/>
+    <string name="radio_off_error">"Pred zobrazením nastavení zapnite rádio."</string>
+    <!-- Button label used to dismiss the "Call settings error" dialog -->
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"OK"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"Zapnúť"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"Vypnúť"</string>
+    <!-- Button label which indicates the user wants to update a stored
+         phone number; used in several settings-related dialogs -->
+    <add-resource type="string" name="change_num"/>
+    <string name="change_num">"Aktualizovať"</string>
+    <!-- Phone settings: Caller ID preference values -->
+    <add-resource type="array" name="clir_display_values"/>
+    <string-array name="clir_display_values">
+        <!-- Phone settings "Caller ID" preference option: use the default value -->
+        <item>"Predvolené nastavenie siete"</item>
+        <!-- Phone settings "Caller ID" preference option: hide outgoing Caller ID info -->
+        <item>"Skryť číslo"</item>
+        <!-- Phone settings "Caller ID" preference option: show outgoing Caller ID info -->
+        <item>"Zobraziť číslo"</item>
+    </string-array>
+
+    <!-- voicemail setting strings -->
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_changed"/>
+    <string name="vm_changed">"Číslo hlasovej schránky bolo zmenené."</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_change_failed"/>
+    <string name="vm_change_failed">"Číslo hlasovej schránky sa nepodarilo zmeniť.\nAk bude problém pretrvávať, kontaktujte operátora."</string>
+    <!-- Call settings screen, displayed when vm provider supplied forwarding number change fails-->
+    <add-resource type="string" name="fw_change_failed"/>
+    <string name="fw_change_failed">"Číslo presmerovania hovorov sa nepodarilo zmeniť.\nAk bude problém pretrvávať, kontaktujte operátora."</string>
+    <!-- Call settings screen, displayed when forwarding number read fails-->
+    <add-resource type="string" name="fw_get_in_vm_failed"/>
+    <string name="fw_get_in_vm_failed">"Načítanie a uloženie aktuálnych nastavení čísla presmerovania zlyhalo.\nChcete aj napriek tomu prepnúť na nového poskytovateľa?"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="no_change"/>
+    <string name="no_change">"Neuskutočnili sa žiadne zmeny."</string>
+    <!-- Call settings screen, "Voicemail" provider setting summary text when no provider is selected -->
+    <add-resource type="string" name="sum_voicemail_choose_provider"/>
+    <string name="sum_voicemail_choose_provider">"Zvoliť službu hlasovej schránky"</string>
+    <!-- Call settings screen, "Voicemail" screen, default option - Your Carrier -->
+    <add-resource type="string" name="voicemail_default"/>
+    <string name="voicemail_default">"Môj operátor"</string>
+
+    <!-- Hint for the old PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_old_pin"/>
+    <string name="vm_change_pin_old_pin">"Starý PIN"</string>
+    <!-- Hint for the new PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_new_pin"/>
+    <string name="vm_change_pin_new_pin">"Nový PIN"</string>
+
+    <!-- Message on the dialog when PIN changing is in progress -->
+    <add-resource type="string" name="vm_change_pin_progress_message"/>
+    <string name="vm_change_pin_progress_message">"Čakajte, prosím."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too short -->
+    <add-resource type="string" name="vm_change_pin_error_too_short"/>
+    <string name="vm_change_pin_error_too_short">"Nový PIN je príliš krátky."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too long -->
+    <add-resource type="string" name="vm_change_pin_error_too_long"/>
+    <string name="vm_change_pin_error_too_long">"Nový PIN je príliš dlhý."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too weak -->
+    <add-resource type="string" name="vm_change_pin_error_too_weak"/>
+    <string name="vm_change_pin_error_too_weak">"Nový PIN je príliš slabý. Silné heslo by nemalo obsahovať postupnosť ani opakujúce sa číslice."</string>
+    <!-- Error message for the voicemail PIN change if the old PIN entered doesn't match  -->
+    <add-resource type="string" name="vm_change_pin_error_mismatch"/>
+    <string name="vm_change_pin_error_mismatch">"Starý PIN sa nezhoduje."</string>
+    <!-- Error message for the voicemail PIN change if the new PIN contains invalid character -->
+    <add-resource type="string" name="vm_change_pin_error_invalid"/>
+    <string name="vm_change_pin_error_invalid">"Nový PIN obsahuje neplatné znaky."</string>
+    <!-- Error message for the voicemail PIN change if operation has failed -->
+    <add-resource type="string" name="vm_change_pin_error_system_error"/>
+    <string name="vm_change_pin_error_system_error">"PIN nie je možné zmeniť"</string>
+    <!-- Message to replace the transcription if a visual voicemail message is not supported-->
+    <add-resource type="string" name="vvm_unsupported_message_format"/>
+    <string name="vvm_unsupported_message_format">"Nepodporovaný typ správy, zavolajte na číslo <xliff:g id="NUMBER">%s</xliff:g> a vypočujte si správu."</string>
+
+    <!-- networks setting strings -->
+    <!-- Mobile network settings screen title -->
+    <add-resource type="string" name="mobile_networks"/>
+    <string name="mobile_networks">"Nastavenia mobilnej siete"</string>
+    <!-- Available networks screen title/heading -->
+    <add-resource type="string" name="label_available"/>
+    <string name="label_available">"Dostupné siete"</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <add-resource type="string" name="load_networks_progress"/>
+    <string name="load_networks_progress">"Prebieha vyhľadávanie\u2026"</string>
+    <!-- Available networks screen, text when no networks are found -->
+    <add-resource type="string" name="empty_networks_list"/>
+    <string name="empty_networks_list">"Nebola nájdená žiadna sieť."</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="search_networks"/>
+    <string name="search_networks">"Vyhľadávanie sietí"</string>
+    <!-- Available networks screen, toast when an error is encountered when searching for networks -->
+    <add-resource type="string" name="network_query_error"/>
+    <string name="network_query_error">"Pri vyhľadávaní sietí došlo k chybe."</string>
+    <!-- Available networks screen, toast when registering on a specific network -->
+    <add-resource type="string" name="register_on_network"/>
+    <string name="register_on_network">"Prebieha registrácia v sieti <xliff:g id="NETWORK">%s</xliff:g>..."</string>
+    <!-- Available networks screen, toast when SIM card isn't allowed on a network -->
+    <add-resource type="string" name="not_allowed"/>
+    <string name="not_allowed">"Vaša karta SIM nepovoľuje pripojenie k tejto sieti."</string>
+    <!-- Available networks screen, toast when unable to connect to a network temporarily -->
+    <add-resource type="string" name="connect_later"/>
+    <string name="connect_later">"V tejto chvíli sa nedá pripojiť k sieti. Skúste to znova neskôr."</string>
+    <!-- Available networks screen, toast when registered on a specific network -->
+    <add-resource type="string" name="registration_done"/>
+    <string name="registration_done">"Prihlásenie k sieti prebehlo úspešne."</string>
+    <!-- Mobile network settings screen setting option summary text -->
+    <add-resource type="string" name="sum_carrier_select"/>
+    <string name="sum_carrier_select">"Zvoliť sieťového operátora"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_search_networks"/>
+    <string name="sum_search_networks">"Hľadať všetky dostupné siete"</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="select_automatically"/>
+    <string name="select_automatically">"Vybrať automaticky"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_select_automatically"/>
+    <string name="sum_select_automatically">"Automaticky vybrať preferovanú sieť"</string>
+    <add-resource type="string" name="register_automatically"/>
+    <string name="register_automatically">"Automatická registrácia..."</string>
+    <add-resource type="string" name="preferred_network_mode_title"/>
+    <string name="preferred_network_mode_title">"Preferovaný typ siete"</string>
+    <add-resource type="string" name="preferred_network_mode_summary"/>
+    <string name="preferred_network_mode_summary">"Zmeniť prevádzkový režim siete"</string>
+    <add-resource type="string" name="preferred_network_mode_dialogtitle"/>
+    <string name="preferred_network_mode_dialogtitle">"Preferovaný typ siete"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA preferred[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_perf_summary"/>
+    <string name="preferred_network_mode_wcdma_perf_summary">"Preferovaný režim siete: preferované WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_only_summary"/>
+    <string name="preferred_network_mode_gsm_only_summary">"Preferovaný režim siete: iba GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_only_summary"/>
+    <string name="preferred_network_mode_wcdma_only_summary">"Preferovaný režim siete: iba WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM / UMTS [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_gsm_wcdma_summary">"Preferovaný režim siete: GSM / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_summary"/>
+    <string name="preferred_network_mode_cdma_summary">"Preferovaný režim siete: CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA / EvDo [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_summary">"Preferovaný režim siete: CDMA / EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_only_summary"/>
+    <string name="preferred_network_mode_cdma_only_summary">"Preferovaný režim siete: iba CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode EvDo only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_evdo_only_summary"/>
+    <string name="preferred_network_mode_evdo_only_summary">"Preferovaný režim siete: iba EVDO"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">"Preferovaný režim siete: CDMA / EvDo / GSM / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_summary"/>
+    <string name="preferred_network_mode_lte_summary">"Preferovaný režim siete: LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM/WCDMA/LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary">"Preferovaný režim siete: GSM / WCDMA / LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA+LTE/EVDO[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">"Preferovaný režim siete: CDMA + LTE / EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode Global[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_global_summary"/>
+    <string name="preferred_network_mode_global_summary">"Preferovaný režim siete: Globálny"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_wcdma_summary">"Preferovaný režim siete: LTE / WCDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / GSM / UMTS [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_gsm_umts_summary"/>
+    <string name="preferred_network_mode_lte_gsm_umts_summary">"Uprednostňovaný režim siete: LTE / GSM / UMTS"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / CDMA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_cdma_summary"/>
+    <string name="preferred_network_mode_lte_cdma_summary">"Preferovaný režim siete: LTE / CDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode TDSCDMTA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_tdscdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_summary">"Preferovaný režim siete: TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_wcdma_summary">"Preferovaný režim siete: TDSCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_summary">"Preferovaný režim siete: LTE/TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_summary">"Preferovaný režim siete: TDSCDMA/GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / GSM / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_summary">"Preferovaný režim siete: LTE/GSM/TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_wcdma_summary">"Preferovaný režim siete: TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_wcdma_summary">"Preferovaný režim siete: LTE/TDSCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary">"Preferovaný režim siete: LTE/TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary">"Preferovaný režim siete: TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary">"Preferovaný režim siete: LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- In-call screen: call failure reason (call denied because call barring
+            is ON on MT side ) -->
+    <add-resource type="string" name="callFailed_incoming_cb_enabled"/>
+    <string name="callFailed_incoming_cb_enabled">"Účastník zablokoval všetky prichádzajúce hovory."</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <add-resource type="string" name="callUnanswered_forwarded"/>
+    <string name="callUnanswered_forwarded">"Hovor nebol prijatý a bol presmerovaný"</string>
+
+    <add-resource type="array" name="preferred_network_mode_choices"/>
+    <string-array name="preferred_network_mode_choices">
+        <item>"LTE/TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"LTE/TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/GSM"</item>
+        <item>"TDSCDMA/GSM"</item>
+        <item>"LTE/TDSCDMA"</item>
+        <item>"TDSCDMA/WCDMA"</item>
+        <item>"Iba TDSCDMA"</item>
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>"Globálny"</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>"Iba EvDo"</item>
+        <item>CDMA w/o EvDo</item>
+        <item>"CDMA / EvDo – automaticky"</item>
+        <item>"GSM / WCDMA – automaticky"</item>
+        <item>"Iba WCDMA"</item>
+        <item>"Iba GSM"</item>
+        <item>"Preferované GSM/WCDMA"</item>
+    </string-array>
+    <!-- Cellular network 4G title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title"/>
+    <string name="enhanced_4g_lte_mode_title">"Zlepšený režim 4G LTE"</string>
+    <!-- Carrier variant of Enhaced 4G LTE Mode title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title_variant"/>
+    <string name="enhanced_4g_lte_mode_title_variant">"Rozšírené volanie"</string>
+    <!-- Cellular network 4G summary [CHAR LIMIT=80] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_summary"/>
+    <string name="enhanced_4g_lte_mode_summary">"Služby LTE použite na zlepšenie hlasovej a inej komunikácie (odporúča sa)"</string>
+
+    <!-- Mobile network settings screen, data enabling checkbox name -->
+    <add-resource type="string" name="data_enabled"/>
+    <string name="data_enabled">"Povoliť dát. prenosy"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) [CHAR LIMITS=40] -->
+    <add-resource type="string" name="data_enable_summary"/>
+    <string name="data_enable_summary">"Povoliť využívanie dát"</string>
+    <!-- Mobile network settings screen, title for alert dialog -->
+    <add-resource type="string" name="dialog_alert_title"/>
+    <string name="dialog_alert_title">"Pozor"</string>
+    <!-- Mobile network settings screen, setting check box name -->
+    <add-resource type="string" name="roaming"/>
+    <string name="roaming">"Dátový roaming"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is selected -->
+    <add-resource type="string" name="roaming_enable"/>
+    <string name="roaming_enable">"Pripájať sa k dátovým službám pri roamingu"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is clear -->
+    <add-resource type="string" name="roaming_disable"/>
+    <string name="roaming_disable">"Pripájať sa k dátovým službám pri roamingu"</string>
+    <!-- Mobile network settings UI: notification message shown when you
+         lose data connectivity because you're roaming and you have the
+         "data roaming" feature turned off. -->
+    <add-resource type="string" name="roaming_reenable_message"/>
+    <string name="roaming_reenable_message">"Dátové pripojenie bolo prerušené, pretože ste opustili domovskú sieť a máte vypnutý dátový roaming."</string>
+    <!-- Mobile network settings screen, dialog message when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_warning"/>
+    <string name="roaming_warning">"Môžu sa vám účtovať vysoké poplatky."</string>
+    <!-- Mobile network settings screen, dialog message title when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_alert_title"/>
+    <string name="roaming_alert_title">"Povoliť dátový roaming?"</string>
+    <add-resource type="string" name=" hide_error_from_network_text"/>
+    <string name=" hide_error_from_network_text">"Požiadavku nie je možné spracovať"</string>
+
+    <add-resource type="string" name="gsm_umts_options"/>
+    <string name="gsm_umts_options">"Možnosti GSM/UMTS"</string>
+    <add-resource type="string" name="call_forward_option"/>
+    <string name="call_forward_option">"Možnosti presmerovania hovorov"</string>
+    <add-resource type="string" name="cdma_options"/>
+    <string name="cdma_options">"Možnosti CDMA"</string>
+
+    <!-- Screen option on the mobile network settings to go into data usage settings -->
+    <add-resource type="string" name="throttle_data_usage"/>
+    <string name="throttle_data_usage">"Využitie dát"</string>
+    <!-- Data usage settings screen option for checking the current usage -->
+    <add-resource type="string" name="throttle_current_usage"/>
+    <string name="throttle_current_usage">"Dáta využité v aktuálnom období"</string>
+    <!-- Data usage settings screen option for time frame-->
+    <add-resource type="string" name="throttle_time_frame"/>
+    <string name="throttle_time_frame">"Obdobie využitia dát"</string>
+    <!-- Data usage settings screen option for throttling rate-->
+    <add-resource type="string" name="throttle_rate"/>
+    <string name="throttle_rate">"Pravidlá pre prenosovú rýchlosť"</string>
+    <!-- Data usage settings screen option for accessing the carrier website-->
+    <add-resource type="string" name="throttle_help"/>
+    <string name="throttle_help">"Viac informácií"</string>
+
+    <add-resource type="string" name="throttle_status_subtext"/>
+    <string name="throttle_status_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g> ٪) z limitu <xliff:g id="USED_2">%3$s</xliff:g> pre obdobie\nPočet dní do začiatku ďalšieho obdobia: <xliff:g id="USED_3">%4$d</xliff:g> (<xliff:g id="USED_4">%5$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_data_usage_subtext"/>
+    <string name="throttle_data_usage_subtext">"<xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g> ٪) z limitu <xliff:g id="USED_2">%3$s</xliff:g> pre obdobie"</string>
+
+    <add-resource type="string" name="throttle_data_rate_reduced_subtext"/>
+    <string name="throttle_data_rate_reduced_subtext">"Bol prekročený limit <xliff:g id="USED_0">%1$s</xliff:g>\nPrenosová rýchlosť bola znížená na <xliff:g id="USED_1">%2$d</xliff:g> kB/s"</string>
+
+    <add-resource type="string" name="throttle_time_frame_subtext"/>
+    <string name="throttle_time_frame_subtext">"Uplynulo <xliff:g id="USED_0">%1$d</xliff:g>\u066A cyklu\nPočet dní do začiatku ďalšieho obdobia: <xliff:g id="USED_1">%2$d</xliff:g> (<xliff:g id="USED_2">%3$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_rate_subtext"/>
+    <string name="throttle_rate_subtext">"V prípade prekročenia limitu využitia dát sa prenosová rýchlosť zníži na <xliff:g id="USED">%1$d</xliff:g> kB/s"</string>
+
+    <add-resource type="string" name="throttle_help_subtext"/>
+    <string name="throttle_help_subtext">"Ďalšie informácie o pravidlách využitia dát v mobilnej sieti vášho mobilného operátora"</string>
+
+    <add-resource type="string" name="cell_broadcast_sms"/>
+    <string name="cell_broadcast_sms">"SMS Cell Broadcast"</string>
+
+    <add-resource type="string" name="enable_disable_cell_bc_sms"/>
+    <string name="enable_disable_cell_bc_sms">"SMS Cell Broadcast"</string>
+    <add-resource type="string" name="cell_bc_sms_enable"/>
+    <string name="cell_bc_sms_enable">"SMS Cell Broadcast povolené"</string>
+    <add-resource type="string" name="cell_bc_sms_disable"/>
+    <string name="cell_bc_sms_disable">"SMS Cell Broadcast zakázané"</string>
+
+    <add-resource type="string" name="cb_sms_settings"/>
+    <string name="cb_sms_settings">"Nastavenia SMS Cell Broadcast"</string>
+
+    <add-resource type="string" name="enable_disable_emergency_broadcast"/>
+    <string name="enable_disable_emergency_broadcast">"Tiesňové vysielanie"</string>
+    <add-resource type="string" name="emergency_broadcast_enable"/>
+    <string name="emergency_broadcast_enable">"Tiesňové vysielanie povolené"</string>
+    <add-resource type="string" name="emergency_broadcast_disable"/>
+    <string name="emergency_broadcast_disable">"Tiesňové vysielanie zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_administrative"/>
+    <string name="enable_disable_administrative">"Administratívne"</string>
+    <add-resource type="string" name="administrative_enable"/>
+    <string name="administrative_enable">"Administratívne povolené"</string>
+    <add-resource type="string" name="administrative_disable"/>
+    <string name="administrative_disable">"Administratívne zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_maintenance"/>
+    <string name="enable_disable_maintenance">"Údržba"</string>
+    <add-resource type="string" name="maintenance_enable"/>
+    <string name="maintenance_enable">"Údržba povolená"</string>
+    <add-resource type="string" name="maintenance_disable"/>
+    <string name="maintenance_disable">"Údržba zakázaná"</string>
+
+    <add-resource type="string" name="general_news_settings"/>
+    <string name="general_news_settings">"Všeobecné správy"</string>
+    <add-resource type="string" name="bf_news_settings"/>
+    <string name="bf_news_settings">"Obchodné a finančné správy"</string>
+    <add-resource type="string" name="sports_news_settings"/>
+    <string name="sports_news_settings">"Športové správy"</string>
+    <add-resource type="string" name="entertainment_news_settings"/>
+    <string name="entertainment_news_settings">"Správy z oblasti zábavy"</string>
+
+    <add-resource type="string" name="enable_disable_local"/>
+    <string name="enable_disable_local">"Miestne"</string>
+    <add-resource type="string" name="local_enable"/>
+    <string name="local_enable">"Miestne správy povolené"</string>
+    <add-resource type="string" name="local_disable"/>
+    <string name="local_disable">"Miestne správy zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_regional"/>
+    <string name="enable_disable_regional">"Regionálny"</string>
+    <add-resource type="string" name="regional_enable"/>
+    <string name="regional_enable">"Regionálne správy povolené"</string>
+    <add-resource type="string" name="regional_disable"/>
+    <string name="regional_disable">"Regionálne správy zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_national"/>
+    <string name="enable_disable_national">"Národné"</string>
+    <add-resource type="string" name="national_enable"/>
+    <string name="national_enable">"Národné správy povolené"</string>
+    <add-resource type="string" name="national_disable"/>
+    <string name="national_disable">"Národné správy zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_international"/>
+    <string name="enable_disable_international">"Medzinárodné"</string>
+    <add-resource type="string" name="international_enable"/>
+    <string name="international_enable">"Medzinárodné správy povolené"</string>
+    <add-resource type="string" name="international_disable"/>
+    <string name="international_disable">"Medzinárodné správy zakázané"</string>
+
+    <add-resource type="string" name="list_language_title"/>
+    <string name="list_language_title">"Jazyk"</string>
+    <add-resource type="string" name="list_language_summary"/>
+    <string name="list_language_summary">"Vyberte jazyk správ"</string>
+    <add-resource type="array" name="list_language_entries"/>
+    <string-array name="list_language_entries">
+        <item>"Angličtina"</item>
+        <item>"Francúzština"</item>
+        <item>"Španielčina"</item>
+        <item>"Japončina"</item>
+        <item>"Kórejčina"</item>
+        <item>"čínština"</item>
+        <item>"Hebrejčina"</item>
+    </string-array>
+    <add-resource type="array" name="list_language_values"/>
+    <string-array name="list_language_values">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+    </string-array>
+    <add-resource type="string" name="list_language_dtitle"/>
+    <string name="list_language_dtitle">"Jazyky"</string>
+
+    <add-resource type="string" name="enable_disable_local_weather"/>
+    <string name="enable_disable_local_weather">"Miestne počasie"</string>
+    <add-resource type="string" name="local_weather_enable"/>
+    <string name="local_weather_enable">"Miestne počasie povolené"</string>
+    <add-resource type="string" name="local_weather_disable"/>
+    <string name="local_weather_disable">"Miestne počasie zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_atr"/>
+    <string name="enable_disable_atr">"Oblastné prehľady premávky"</string>
+    <add-resource type="string" name="atr_enable"/>
+    <string name="atr_enable">"Oblastné prehľady premávky povolené"</string>
+    <add-resource type="string" name="atr_disable"/>
+    <string name="atr_disable">"Oblastné prehľady premávky zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_lafs"/>
+    <string name="enable_disable_lafs">"Miestne prílety a odlety"</string>
+    <add-resource type="string" name="lafs_enable"/>
+    <string name="lafs_enable">"Miestne prílety a odlety povolené"</string>
+    <add-resource type="string" name="lafs_disable"/>
+    <string name="lafs_disable">"Miestne prílety a odlety zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_restaurants"/>
+    <string name="enable_disable_restaurants">"Reštaurácie"</string>
+    <add-resource type="string" name="restaurants_enable"/>
+    <string name="restaurants_enable">"Reštaurácie povolené"</string>
+    <add-resource type="string" name="restaurants_disable"/>
+    <string name="restaurants_disable">"Reštaurácie zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_lodgings"/>
+    <string name="enable_disable_lodgings">"Ubytovanie"</string>
+    <add-resource type="string" name="lodgings_enable"/>
+    <string name="lodgings_enable">"Ubytovania povolené"</string>
+    <add-resource type="string" name="lodgings_disable"/>
+    <string name="lodgings_disable">"Ubytovanie zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_retail_directory"/>
+    <string name="enable_disable_retail_directory">"Adresár predajcov"</string>
+    <add-resource type="string" name="retail_directory_enable"/>
+    <string name="retail_directory_enable">"Adresár predajcov povolený"</string>
+    <add-resource type="string" name="retail_directory_disable"/>
+    <string name="retail_directory_disable">"Adresár predajcov zakázaný"</string>
+
+    <add-resource type="string" name="enable_disable_advertisements"/>
+    <string name="enable_disable_advertisements">"Reklamy"</string>
+    <add-resource type="string" name="advertisements_enable"/>
+    <string name="advertisements_enable">"Reklamy povolené"</string>
+    <add-resource type="string" name="advertisements_disable"/>
+    <string name="advertisements_disable">"Reklamy zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_stock_quotes"/>
+    <string name="enable_disable_stock_quotes">"Správy z akciových trhov"</string>
+    <add-resource type="string" name="stock_quotes_enable"/>
+    <string name="stock_quotes_enable">"Správy z akciových trhov zakázané"</string>
+    <add-resource type="string" name="stock_quotes_disable"/>
+    <string name="stock_quotes_disable">"Správy z akciových trhov zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_eo"/>
+    <string name="enable_disable_eo">"Pracovné príležitosti"</string>
+    <add-resource type="string" name="eo_enable"/>
+    <string name="eo_enable">"Pracovné príležitosti povolené"</string>
+    <add-resource type="string" name="eo_disable"/>
+    <string name="eo_disable">"Pracovné príležitosti zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_mhh"/>
+    <string name="enable_disable_mhh">"Lekárstvo, zdravie a nemocnica"</string>
+    <add-resource type="string" name="mhh_enable"/>
+    <string name="mhh_enable">"Lekárstvo, zdravie a nemocnica povolené"</string>
+    <add-resource type="string" name="mhh_disable"/>
+    <string name="mhh_disable">"Lekárstvo, zdravie a nemocnica zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_technology_news"/>
+    <string name="enable_disable_technology_news">"Technologické správy"</string>
+    <add-resource type="string" name="technology_news_enable"/>
+    <string name="technology_news_enable">"Technologické správy povolené"</string>
+    <add-resource type="string" name="technology_news_disable"/>
+    <string name="technology_news_disable">"Technologické správy zakázané"</string>
+
+    <add-resource type="string" name="enable_disable_multi_category"/>
+    <string name="enable_disable_multi_category">"Viac kategórií"</string>
+    <add-resource type="string" name="multi_category_enable"/>
+    <string name="multi_category_enable">"Viac kategórií povolených"</string>
+    <add-resource type="string" name="multi_category_disable"/>
+    <string name="multi_category_disable">"Viacero kategórií zakázané"</string>
+
+    <add-resource type="string" name="network_lte"/>
+    <string name="network_lte">"LTE (odporúčané)"</string>
+    <add-resource type="string" name="network_4G"/>
+    <string name="network_4G">"4G (odporúčané)"</string>
+    <add-resource type="string" name="network_global"/>
+    <string name="network_global">"Globálne"</string>
+
+    <!-- CDMA System select strings -->
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="cdma_system_select_title"/>
+    <string name="cdma_system_select_title">"Výber systému"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <add-resource type="string" name="cdma_system_select_summary"/>
+    <string name="cdma_system_select_summary">"Zmeniť režim roamingu CDMA"</string>
+    <!-- System select settings screen title -->
+    <add-resource type="string" name="cdma_system_select_dialogtitle"/>
+    <string name="cdma_system_select_dialogtitle">"Výber systému"</string>
+    <add-resource type="array" name="cdma_system_select_choices"/>
+    <string-array name="cdma_system_select_choices">
+        <!-- System select dialog screen, setting option name -->
+        <item>"Iba plocha"</item>
+        <!-- Remove the following option "Affiliated Networks" from the option list -->
+        <!-- <item>Affiliated Networks</item> -->
+        <!-- System select dialog screen, setting option name -->
+        <item>"Automaticky"</item>
+    </string-array>
+
+    <add-resource type="string" name="cdma_subscription_title"/>
+    <string name="cdma_subscription_title">"Odber CDMA"</string>
+    <add-resource type="string" name="cdma_subscription_summary"/>
+    <string name="cdma_subscription_summary">"Prepnúť medzi RUIM/SIM a NV"</string>
+    <add-resource type="string" name="cdma_subscription_dialogtitle"/>
+    <string name="cdma_subscription_dialogtitle">"odber"</string>
+    <add-resource type="array" name="cdma_subscription_choices"/>
+    <string-array name="cdma_subscription_choices">
+        <item>"RUIM/SIM"</item>
+        <item>NV</item>
+    </string-array>
+    <add-resource type="array" name="cdma_subscription_values"/>
+    <string-array name="cdma_subscription_values">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+    <!-- Preference title with which users can activate CDMA network [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_activate_device"/>
+    <string name="cdma_activate_device">"Aktivovať zariadenie"</string>
+    <!-- Preference title for launching an account manager page for prepaid LTE [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_lte_data_service"/>
+    <string name="cdma_lte_data_service">"Nastaviť dátovú službu"</string>
+
+    <!-- A menu item in "Mobile network settings" that allows the user to update the phone
+         with mobile operator specific settings. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="carrier_settings_title"/>
+    <string name="carrier_settings_title">"Nastavenia operátora"</string>
+
+    <!-- FDN settings strings -->
+    <!-- Label for "Fixed Dialing Number" settings in call settings. -->
+    <add-resource type="string" name="fdn"/>
+    <string name="fdn">"Pevne určené čísla"</string>
+    <!-- Title for "Fixed Dialing Number" settings, with a label to identify the SIM the settings
+        apply to. -->
+    <add-resource type="string" name="fdn_with_label"/>
+    <string name="fdn_with_label">"Povolené čísla (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+
+    <!-- Call settings screen, button label that takes you to the Fixed Dialing Number management screen -->
+    <add-resource type="string" name="manage_fdn_list"/>
+    <string name="manage_fdn_list">"Zoznam pevne určených čísiel (FDN)"</string>
+    <!-- Title for settings screen to manage Fixed Dialing Number contacts, with a label to identify
+         the SIM the settings apply to. -->
+    <add-resource type="string" name="fdn_list_with_label"/>
+    <string name="fdn_list_with_label">"Zoznam povolených čísel (<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, preference item label -->
+    <add-resource type="string" name="fdn_activation"/>
+    <string name="fdn_activation">"Aktivácia pevne určených čísiel (FDN)"</string>
+    <!-- Call settings setting option name when FDN is enabled -->
+    <add-resource type="string" name="fdn_enabled"/>
+    <string name="fdn_enabled">"Režim Pevne určené čísla je povolený"</string>
+    <!-- Call settings setting option name  when FDN is disabled-->
+    <add-resource type="string" name="fdn_disabled"/>
+    <string name="fdn_disabled">"Režim Pevne určené čísla je zakázaný"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="enable_fdn"/>
+    <string name="enable_fdn">"Zapnúť pevne určené čísla (FDN)"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="disable_fdn"/>
+    <string name="disable_fdn">"Zakázať režim pevne určené čísla (FDN)"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="change_pin2"/>
+    <string name="change_pin2">"Zmena kódu PIN2"</string>
+    <!-- Call settings screen, setting option name when FDN is enabled -->
+    <add-resource type="string" name="enable_fdn_ok"/>
+    <string name="enable_fdn_ok">"Zakázať režim pevne určené čísla (FDN)"</string>
+    <!-- Call settings screen, setting option name when FDN is disabled -->
+    <add-resource type="string" name="disable_fdn_ok"/>
+    <string name="disable_fdn_ok">"Zapnúť pevne určené čísla (FDN)"</string>
+    <!-- Call settings screen, setting summary text -->
+    <add-resource type="string" name="sum_fdn"/>
+    <string name="sum_fdn">"Umožňuje spravovať Pevne určené čísla"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_change_pin"/>
+    <string name="sum_fdn_change_pin">"Umožňuje zmeniť kód PIN pre prístup k pevne určeným číslam (FDN)"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_manage_list"/>
+    <string name="sum_fdn_manage_list">"Správa telefónneho zoznamu"</string>
+    <!-- Voice privacy on CDMA is an added layer of voice encryption. Theoretically, it would be harder to break in to a phone call with this feature enabled. -->
+    <add-resource type="string" name="voice_privacy"/>
+    <string name="voice_privacy">"Ochrana osobných údajov hlasovej pošty"</string>
+    <add-resource type="string" name="voice_privacy_summary"/>
+    <string name="voice_privacy_summary">"Povoliť režim vylepšenej ochrany osobných údajov"</string>
+    <add-resource type="string" name="tty_mode_option_title"/>
+    <string name="tty_mode_option_title">"Režim textového telefónu"</string>
+    <add-resource type="string" name="tty_mode_option_summary"/>
+    <string name="tty_mode_option_summary">"Nastaviť režim TTY"</string>
+    <add-resource type="string" name="auto_retry_mode_title"/>
+    <string name="auto_retry_mode_title">"Automaticky skúsiť znova"</string>
+    <add-resource type="string" name="auto_retry_mode_summary"/>
+    <string name="auto_retry_mode_summary">"Povoliť režim Automaticky skúsiť znova."</string>
+    <!-- TTY Mode change is NOT allowed during a video call -->
+    <add-resource type="string" name="tty_mode_not_allowed_video_call"/>
+    <string name="tty_mode_not_allowed_video_call">"Zmena režimu TTY nie je povolená počas videohovoru"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_add"/>
+    <string name="menu_add">"Pridať kontakt"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"Upraviť kontakt"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"Odstrániť kontakt"</string>
+
+    <!-- FDN related strings -->
+    <!-- Label for PIN2 entry screen -->
+    <add-resource type="string" name="get_pin2"/>
+    <string name="get_pin2">"Zadajte kód PIN2"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "name" text field -->
+    <add-resource type="string" name="name"/>
+    <string name="name">"Meno"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "number" text field -->
+    <add-resource type="string" name="number"/>
+    <string name="number">"Číslo"</string>
+    <!-- "Edit FDN Contact" screen: Button label for "save" action -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"Uložiť"</string>
+    <!-- Title of "Edit FDN Contact" screen for a new contact -->
+    <add-resource type="string" name="add_fdn_contact"/>
+    <string name="add_fdn_contact">"Pridať pevne určené čísla"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="adding_fdn_contact"/>
+    <string name="adding_fdn_contact">"Prebieha pridávanie pevne určených čísiel..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_added"/>
+    <string name="fdn_contact_added">"Pevne určené číslo bolo pridané."</string>
+    <!-- Title of "Edit FDN Contact" screen when editing an already-existing contact -->
+    <add-resource type="string" name="edit_fdn_contact"/>
+    <string name="edit_fdn_contact">"Upraviť pevne určené číslo"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="updating_fdn_contact"/>
+    <string name="updating_fdn_contact">"Prebieha aktualizácia pevne určeného čísla..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_updated"/>
+    <string name="fdn_contact_updated">"Pevne určené číslo bolo aktualizované."</string>
+    <!-- Title of "Delete FDN Contact" screen -->
+    <add-resource type="string" name="delete_fdn_contact"/>
+    <string name="delete_fdn_contact">"Odstrániť pevne určené čísla"</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="deleting_fdn_contact"/>
+    <string name="deleting_fdn_contact">"Prebieha odstraňovanie pevne určených čísiel..."</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_deleted"/>
+    <string name="fdn_contact_deleted">"Pevne určené čísla boli odstránené."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_invalid"/>
+    <string name="pin2_invalid">"Pevne určené čísla (FDN) neboli aktualizované, pretože ste zadali nesprávny kód PIN."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_invalid_number"/>
+    <string name="fdn_invalid_number">"Pevne určené čísla (FDN) neboli aktualizované, pretože číslo nesmie presiahnuť 20 číslic."</string>
+    <!-- FDN settings: error message displayed in a popup (toast), when the entered
+         FDN number was inappropriate, OR, PIN2 the user entered was incorrect.
+         Because of API restriction, there's no way to determine which is the exact
+         cause of the failure.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_or_fdn_invalid"/>
+    <string name="pin2_or_fdn_invalid">"Pevne určené čísla (FDN) neboli aktualizované. Kód PIN2 bol nesprávny alebo bolo telefónne číslo odmietnuté."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_failed"/>
+    <string name="fdn_failed">"Operácia FDN zlyhala."</string>
+
+    <!-- ADN related strings -->
+    <!-- Placeholder text displayed while loading the list of SIM contacts -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"Prebieha čítanie z karty SIM..."</string>
+    <!-- Call settings, string that appears on FDN contact list when there are no contacts on the SIM. -->
+    <add-resource type="string" name="simContacts_empty"/>
+    <string name="simContacts_empty">"Na karte SIM nie sú žiadne kontakty."</string>
+    <!-- Call settings: title of the dialog that lets you select contacts from the SIM. -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"Vybrať kontakty na import"</string>
+    <!-- Appears when user tries to import contacts in SIM during airplane mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="simContacts_airplaneMode"/>
+    <string name="simContacts_airplaneMode">"Ak chcete importovať kontakty zo SIM karty, vypnite režim v lietadle."</string>
+
+    <!-- SIM PIN strings -->
+    <!-- Title of "Enable/disable SIM PIN" screen -->
+    <add-resource type="string" name="enable_pin"/>
+    <string name="enable_pin">"Povoliť alebo zakázať kód PIN karty SIM"</string>
+    <!-- Title of "Change SIM PIN" screen -->
+    <add-resource type="string" name="change_pin"/>
+    <string name="change_pin">"Zmeniť PIN karty SIM"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin_text"/>
+    <string name="enter_pin_text">"Kód PIN karty SIM:"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPinLabel"/>
+    <string name="oldPinLabel">"Pôvodný kód PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPinLabel"/>
+    <string name="newPinLabel">"Nový kód PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPinLabel"/>
+    <string name="confirmPinLabel">"Potvrďte nový kód PIN"</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="badPin"/>
+    <string name="badPin">"Pôvodný kód PIN bol zadaný nesprávne. Skúste to znova."</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="mismatchPin"/>
+    <string name="mismatchPin">"Zadané kódy PIN sa nezhodujú. Skúste to znova."</string>
+    <!-- SIM PIN screen: error message when PIN is too short or too long -->
+    <add-resource type="string" name="invalidPin"/>
+    <string name="invalidPin">"Zadajte kód PIN s dĺžkou 4 až 8 číslic."</string>
+    <!-- Title of "Disable SIM PIN" screen -->
+    <add-resource type="string" name="disable_sim_pin"/>
+    <string name="disable_sim_pin">"Vymazanie kódu PIN pre SIM kartu"</string>
+    <!-- Title of "Enable SIM PIN" screen -->
+    <add-resource type="string" name="enable_sim_pin"/>
+    <string name="enable_sim_pin">"Nastavenie kódu PIN pre SIM kartu"</string>
+    <!-- SIM PIN screen: progress message displayed while enabling -->
+    <add-resource type="string" name="enable_in_progress"/>
+    <string name="enable_in_progress">"Nastavuje sa kód PIN\u2026"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="enable_pin_ok"/>
+    <string name="enable_pin_ok">"Kód PIN je nastavený"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="disable_pin_ok"/>
+    <string name="disable_pin_ok">"Kód PIN bol vymazaný"</string>
+    <!-- SIM PIN screen: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_failed"/>
+    <string name="pin_failed">"Kód PIN je nesprávny"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_changed"/>
+    <string name="pin_changed">"Kód PIN bola aktualizovaný"</string>
+    <!-- SIM PIN screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk_requested"/>
+    <string name="puk_requested">"Heslo je nesprávne. Kód PIN je teraz blokovaný. Požaduje sa kód PUK."</string>
+
+    <!-- SIM PIN2 strings -->
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin2_text"/>
+    <string name="enter_pin2_text">"PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPin2Label"/>
+    <string name="oldPin2Label">"Pôvodný kód PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPin2Label"/>
+    <string name="newPin2Label">"Nový kód PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPin2Label"/>
+    <string name="confirmPin2Label">"Potvrdiť nový kód PIN2"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPuk2"/>
+    <string name="badPuk2">"Kód PUK2 je nesprávny. Skúste to znova."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPin2"/>
+    <string name="badPin2">"Starý kód PIN2 je nesprávny. Skúste to znova."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="mismatchPin2"/>
+    <string name="mismatchPin2">"Kódy PIN2 sa nezhodujú. Skúste to znova."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPin2"/>
+    <string name="invalidPin2">"Zadajte kód PIN2, ktorý má 4 až 8 čísel"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPuk2"/>
+    <string name="invalidPuk2">"Zadajte kód PUK2, ktorý má 8 čísel"</string>
+    <!-- SIM PIN2 screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_changed"/>
+    <string name="pin2_changed">"Kód PIN2 bol aktualizovaný"</string>
+    <!-- SIM PIN2 screen: label for PUK2 entry widget -->
+    <add-resource type="string" name="label_puk2_code"/>
+    <string name="label_puk2_code">"Zadajte kód PUK2"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="fdn_enable_puk2_requested"/>
+    <string name="fdn_enable_puk2_requested">"Heslo je nesprávne. Kód PIN2 bol zablokovaný. Ak to chcete skúsiť znova, zmeňte kód PIN 2."</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk2_requested"/>
+    <string name="puk2_requested">"Heslo je nesprávne. SIM karta bola uzamknutá. Zadajte kód PUK2."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="puk2_blocked"/>
+    <string name="puk2_blocked">"Kód PUK2 je natrvalo blokovaný."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="pin2_attempts"/>
+    <string name="pin2_attempts">"\nZostávajú vám pokusy (počet: <xliff:g id="NUMBER">%d</xliff:g>)"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_unblocked"/>
+    <string name="pin2_unblocked">"Kód PIN2 už nie je blokovaný"</string>
+    <!-- SIM PIN screen: error message shown in dialog when there is a network or sim error.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_error_exception"/>
+    <string name="pin2_error_exception">"Došlo k chybe siete alebo SIM karty"</string>
+
+    <!-- SIM PIN screen: button label -->
+    <add-resource type="string" name="doneButton"/>
+    <string name="doneButton">"Hotovo"</string>
+
+    <!-- Call settings screen, Set voicemail dialog title -->
+    <add-resource type="string" name="voicemail_settings_number_label"/>
+    <string name="voicemail_settings_number_label">"Číslo hlasovej schránky"</string>
+
+    <!-- Card titles -->
+    <!-- In-call screen: status label for a call in the "dialing" state -->
+    <add-resource type="string" name="card_title_dialing"/>
+    <string name="card_title_dialing">"Vytáčanie"</string>
+    <!-- In-call screen: status label for a re-dialing call -->
+    <add-resource type="string" name="card_title_redialing"/>
+    <string name="card_title_redialing">"Znova sa vytáča"</string>
+    <!-- In-call screen: status label for a conference call -->
+    <add-resource type="string" name="card_title_conf_call"/>
+    <string name="card_title_conf_call">"Konferenčný hovor"</string>
+    <!-- In-call screen: status label for an incoming call -->
+    <add-resource type="string" name="card_title_incoming_call"/>
+    <string name="card_title_incoming_call">"Prichádzajúci hovor"</string>
+    <!-- In-call screen: status label displayed briefly after a call ends -->
+    <add-resource type="string" name="card_title_call_ended"/>
+    <string name="card_title_call_ended">"Hovor bol ukončený"</string>
+    <!-- In-call screen: status label for call that's on hold -->
+    <add-resource type="string" name="card_title_on_hold"/>
+    <string name="card_title_on_hold">"Podržaný hovor"</string>
+    <!-- In-call screen: status label for a call that's in the process of hanging up -->
+    <add-resource type="string" name="card_title_hanging_up"/>
+    <string name="card_title_hanging_up">"Ukončovanie hovoru"</string>
+    <!-- In-call screen: status label for a call that's in CDMA flash mode -->
+    <add-resource type="string" name="card_title_in_call"/>
+    <string name="card_title_in_call">"Prebieha hovor"</string>
+    <!-- In-call screen: status label for Unconditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_unconditionalCF"/>
+    <string name="card_title_unconditionalCF">"Je zapnuté bezpodmienečné presmerovanie hovorov"</string>
+    <!-- In-call screen: status label for Conditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_conditionalCF"/>
+    <string name="card_title_conditionalCF">"Je zapnuté podmienečné presmerovanie hovorov"</string>
+    <!-- In-call screen: status label for a forwarded MO call  -->
+    <add-resource type="string" name="card_title_MOcall_forwarding"/>
+    <string name="card_title_MOcall_forwarding">"Odchádzajúci presmerovaný hovor"</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <add-resource type="string" name="card_title_calliswaiting"/>
+    <string name="card_title_calliswaiting">"Čakajúci hovor"</string>
+    <!-- In-call screen: status label for MO call, when the caller & callee both
+            belng to a CUG group -->
+    <add-resource type="string" name="card_title_cugcall"/>
+    <string name="card_title_cugcall">"Hovor CUG"</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <add-resource type="string" name="card_title_outgoing_barred"/>
+    <string name="card_title_outgoing_barred">"Blokované odchádzajúce hovory"</string>
+    <!-- In-call screen: status label for MO calls, when incoming calls are barred
+            at remote party -->
+    <add-resource type="string" name="card_title_incoming_barred"/>
+    <string name="card_title_incoming_barred">"Blokované prichádzajúce hovory"</string>
+    <!-- In-call screen: status label for MO calls when CLIR Suppression is rejected -->
+    <add-resource type="string" name="card_title_clir_suppression_rejected"/>
+    <string name="card_title_clir_suppression_rejected">"Potlačenie CLIR zamietnuté"</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <add-resource type="string" name="card_title_call_deflected"/>
+    <string name="card_title_call_deflected">"Hovor odklonený"</string>
+    <!-- In-call screen: status label for incoming call being forwarded to other remote party  -->
+    <add-resource type="string" name="card_title_MTcall_forwarding"/>
+    <string name="card_title_MTcall_forwarding">"Prichádzajúci hovor je presmerovaný"</string>
+    <!-- In-call screen: status label for incoming call forwarded from other remote party -->
+    <add-resource type="string" name="card_title_forwarded_MTcall"/>
+    <string name="card_title_forwarded_MTcall">"Presmerovaný prichádzajúci hovor"</string>
+    <!-- In-call screen: status label for incoming call which is answered & then put on hold  -->
+    <add-resource type="string" name="card_title_callonhold"/>
+    <string name="card_title_callonhold">"Podržať"</string>
+    <!-- In-call screen: status label for incoming call put on hold & then retreived back -->
+    <add-resource type="string" name="card_title_callretrieved"/>
+    <string name="card_title_callretrieved">"Hovor prevzatý"</string>
+    <!-- In-call screen: status label for incoming call which is part of MultiParty Call -->
+    <add-resource type="string" name="card_title_multipartycall"/>
+    <string name="card_title_multipartycall">"Konferenčný hovor"</string>
+    <!-- In-call screen: status label for incoming call which is answered,
+            put on hold & then released -->
+    <add-resource type="string" name="card_title_callonhold_released"/>
+    <string name="card_title_callonhold_released">"Hovor vyslaný"</string>
+    <!-- In-call screen: status label for incoming call forward check received -->
+    <add-resource type="string" name="card_title_forwardcheckreceived"/>
+    <string name="card_title_forwardcheckreceived">"Kontrola presmerovania prijatá"</string>
+    <!-- In-call screen: status label for incoming call connecting through ECT -->
+    <add-resource type="string" name="card_title_callconnectingect"/>
+    <string name="card_title_callconnectingect">"Prichádzajúci hovor cez ECT"</string>
+    <!-- In-call screen: status label for incoming call connected through ECT -->
+    <add-resource type="string" name="card_title_callconnectedect"/>
+    <string name="card_title_callconnectedect">"Prichádzajúci hovor cez ECT"</string>
+    <!-- In-call screen: status label for incoming call is a deflected call -->
+    <add-resource type="string" name="card_title_deflectedcall"/>
+    <string name="card_title_deflectedcall">"Odklonený hovor"</string>
+
+    <!-- Notification strings -->
+    <!-- Label for the "Voicemail" notification item, when expanded. -->
+    <add-resource type="string" name="notification_voicemail_title"/>
+    <string name="notification_voicemail_title">"Nová hlasová správa"</string>
+    <!-- Label for the expanded "Voicemail" notification item,
+         including a count of messages. -->
+    <add-resource type="string" name="notification_voicemail_title_count"/>
+    <string name="notification_voicemail_title_count">"Nová hlasová správa (<xliff:g id="COUNT">%d</xliff:g>)"</string>
+    <!-- Message displayed in the "Voicemail" notification item, allowing the user
+         to dial the indicated number. -->
+    <add-resource type="string" name="notification_voicemail_text_format"/>
+    <string name="notification_voicemail_text_format">"Zavolať hlasovú schránku <xliff:g id="VOICEMAIL_NUMBER">%s</xliff:g>"</string>
+    <!-- Message displayed in the "Voicemail" notification item,
+         indicating that there's no voicemail number available -->
+    <add-resource type="string" name="notification_voicemail_no_vm_number"/>
+    <string name="notification_voicemail_no_vm_number">"Číslo hlasovej schránky je neznáme"</string>
+    <!-- Label for the "No service" notification item, when expanded. -->
+    <add-resource type="string" name="notification_network_selection_title"/>
+    <string name="notification_network_selection_title">"Žiadny signál"</string>
+    <!-- Label for the expanded "No service" notification item, including the
+         operator name set by user -->
+    <add-resource type="string" name="notification_network_selection_text"/>
+    <string name="notification_network_selection_text">"Vybratá sieť (<xliff:g id="OPERATOR_NAME">%s</xliff:g>) nie je k dispozícii"</string>
+
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="watch">"Ak chcete volať, vypnite režim v lietadle alebo režim šetriča batérie."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="default">"Ak chcete volať, vypnite režim v lietadle"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when in airplane mode, WFC is enabled, not wifi-only, and not connected to wireless networks. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off_wfc"/>
+    <string name="incall_error_power_off_wfc">"Ak chcete volať, vypnite režim v lietadle alebo sa pripojte k bezdrôtovej sieti"</string>
+    <!-- In-call screen: call failure message displayed when the user attempts to make a non-emergency call while the phone is in emergency callback mode. -->
+    <add-resource type="string" name="incall_error_ecm_emergency_only"/>
+    <string name="incall_error_ecm_emergency_only">"Ak chcete volať štandardným spôsobom, ukončite režim tiesňového spätného volania."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog.
+         This string is currently unused (see comments in InCallScreen.java.) -->
+    <add-resource type="string" name="incall_error_emergency_only"/>
+    <string name="incall_error_emergency_only">"Prihlásenie do siete nebolo úspešné."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service"/>
+    <string name="incall_error_out_of_service">"Mobilná sieť nie je k dispozícii."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service_wfc"/>
+    <string name="incall_error_out_of_service_wfc">"Mobilná sieť nie je k dispozícii. Ak chcete volať, pripojte sa k bezdrôtovej sieti."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_no_phone_number_supplied"/>
+    <string name="incall_error_no_phone_number_supplied">"Ak chcete volať, zadajte platné číslo"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_call_failed"/>
+    <string name="incall_error_call_failed">"Hovor zlyhal."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_cannot_add_call"/>
+    <string name="incall_error_cannot_add_call">"Hovor momentálne nie je možné pridať."</string>
+    <!-- In-call screen: status message displayed in a dialog when starting an MMI -->
+    <add-resource type="string" name="incall_status_dialed_mmi"/>
+    <string name="incall_status_dialed_mmi">"Prebieha spúšťanie sekvencie MMI..."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_unknown"/>
+    <string name="incall_error_supp_service_unknown">"Služba nie je podporovaná"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_switch"/>
+    <string name="incall_error_supp_service_switch">"Nedajú sa prepínať hovory"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_separate"/>
+    <string name="incall_error_supp_service_separate">"Nedá sa rozdeliť hovor"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_transfer"/>
+    <string name="incall_error_supp_service_transfer">"Nedá sa preniesť"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_conference"/>
+    <string name="incall_error_supp_service_conference">"Hovory nie je možné spojiť do konferenčného hovoru."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_reject"/>
+    <string name="incall_error_supp_service_reject">"Nedá sa odmietnuť hovor"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hangup"/>
+    <string name="incall_error_supp_service_hangup">"Nedajú sa ukončiť hovory"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hold"/>
+    <string name="incall_error_supp_service_hold">"Hovory nie je možné podržať."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when WFC is enabled, is wifi-only, and not connected to a wireless network. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_wfc_only_no_wireless_network"/>
+    <string name="incall_error_wfc_only_no_wireless_network">"Ak chcete volať, pripojte sa k bezdrôtovej sieti"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when the user is connected to a wireless network, but wifi calling is turned off. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_promote_wfc"/>
+    <string name="incall_error_promote_wfc">"Na uskutočnenie hovoru povoľte volanie cez Wi-Fi."</string>
+
+    <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_title"/>
+    <string name="emergency_enable_radio_dialog_title">"Tiesňové volanie"</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_message"/>
+    <string name="emergency_enable_radio_dialog_message">"Prebieha zapínanie rádia..."</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_retry"/>
+    <string name="emergency_enable_radio_dialog_retry">"Žiadna služba. Prebieha opätovný pokus\u2026"</string>
+    <!-- Toast message shown when user tries to turn on airplane mode while in an emergency call -->
+    <add-resource type="string" name="radio_off_during_emergency_call"/>
+    <string name="radio_off_during_emergency_call">"Počas tiesňového volania sa nedá zapnúť režim v lietadle."</string>
+
+    <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_error"/>
+    <string name="dial_emergency_error">"Hovor nie je možné uskutočniť. <xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g> nie je číslo tiesňového volania."</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_empty_error"/>
+    <string name="dial_emergency_empty_error">"Hovor nie je možné uskutočniť. Vytočte číslo tiesňového volania."</string>
+
+    <!-- Displayed in the text entry box in the dialer when in landscape mode to guide the user
+         to dial using the physical keyboard -->
+    <add-resource type="string" name="dialerKeyboardHintText"/>
+    <string name="dialerKeyboardHintText">"Číslo vytočíte pomocou klávesnice."</string>
+
+    <!-- Text for the onscreen "Hold" button -->
+    <add-resource type="string" name="onscreenHoldText"/>
+    <string name="onscreenHoldText">"Podržať"</string>
+    <!-- Text for the onscreen "End call" button -->
+    <add-resource type="string" name="onscreenEndCallText"/>
+    <string name="onscreenEndCallText">"Koniec"</string>
+    <!-- Text for the onscreen "Show Dialpad" button -->
+    <add-resource type="string" name="onscreenShowDialpadText"/>
+    <string name="onscreenShowDialpadText">"Číselná klávesnica"</string>
+    <!-- Text for the onscreen "Mute" button -->
+    <add-resource type="string" name="onscreenMuteText"/>
+    <string name="onscreenMuteText">"Ignorovať"</string>
+    <!-- Text for the onscreen "Add call" button -->
+    <add-resource type="string" name="onscreenAddCallText"/>
+    <string name="onscreenAddCallText">"Pridať hovor"</string>
+    <!-- Text for the onscreen "Merge calls" button -->
+    <add-resource type="string" name="onscreenMergeCallsText"/>
+    <string name="onscreenMergeCallsText">"Zlúčiť hovory"</string>
+    <!-- Text for the onscreen "Swap calls" button -->
+    <add-resource type="string" name="onscreenSwapCallsText"/>
+    <string name="onscreenSwapCallsText">"Zameniť"</string>
+    <!-- Text for the onscreen "Manage calls" button -->
+    <add-resource type="string" name="onscreenManageCallsText"/>
+    <string name="onscreenManageCallsText">"Spravovať hovory"</string>
+    <!-- Text for the onscreen "Manage conference" button [CHAR LIMIT=20] -->
+    <add-resource type="string" name="onscreenManageConferenceText"/>
+    <string name="onscreenManageConferenceText">"Správa konferencie"</string>
+    <!-- Text for the onscreen "Audio" button that lets you switch
+         between speaker / bluetooth / earpiece [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenAudioText"/>
+    <string name="onscreenAudioText">"Zvuk"</string>
+    <!-- Text for the onscreen "Video call" button used to change a voice call
+         to a video call. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenVideoCallText"/>
+    <string name="onscreenVideoCallText">"Videohovor"</string>
+
+    <!-- Menu item label in SIM Contacts: Import a single contact entry from the SIM card -->
+    <add-resource type="string" name="importSimEntry"/>
+    <string name="importSimEntry">"Importovať"</string>
+    <!-- Menu item label in SIM Contacts: Import all contact entries from the SIM card -->
+    <add-resource type="string" name="importAllSimEntries"/>
+    <string name="importAllSimEntries">"Importovať všetko"</string>
+    <!-- SIM Contacts: status message displayed while importing card -->
+    <add-resource type="string" name="importingSimContacts"/>
+    <string name="importingSimContacts">"Importovanie kontaktov z karty SIM"</string>
+    <!-- Import a single contact entry from contacts to the SIM card -->
+    <add-resource type="string" name="importToFDNfromContacts"/>
+    <string name="importToFDNfromContacts">"Import z kontaktov"</string>
+
+    <!-- Message shown when a single contact is imported from SIM card -->
+    <add-resource type="string" name="singleContactImportedMsg"/>
+    <string name="singleContactImportedMsg">"Kontakt bol importovaný"</string>
+    <!-- Message shown when a single contact could not be imported from SIM card -->
+    <add-resource type="string" name="failedToImportSingleContactMsg"/>
+    <string name="failedToImportSingleContactMsg">"Kontakt sa nepodarilo importovať"</string>
+
+    <!-- Hearing aid settings -->
+    <add-resource type="string" name="hac_mode_title"/>
+    <string name="hac_mode_title">"Načúvacie pomôcky"</string>
+    <add-resource type="string" name="hac_mode_summary"/>
+    <string name="hac_mode_summary">"Zapnúť režim kompatibility s načúvacou pomôckou"</string>
+
+    <!-- Service option entries.  -->
+    <add-resource type="array" name="tty_mode_entries"/>
+    <string-array name="tty_mode_entries">
+        <item>"TTY vypnuté"</item>
+        <item>"Úplný režim TTY"</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+
+    <!-- Dtmf tones settings -->
+    <!-- Title for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_title"/>
+    <string name="dtmf_tones_title">"Tóny DTMF"</string>
+    <!-- Summary for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_summary"/>
+    <string name="dtmf_tones_summary">"Nastaviť dĺžku tónov DTMF"</string>
+    <!-- Options displayed as part of DTMF Tones in Call Settings -->
+    <add-resource type="array" name="dtmf_tone_entries"/>
+    <string-array name="dtmf_tone_entries">
+      <item>"Normálna"</item>
+      <item>"Dlhé"</item>
+    </string-array>
+
+    <!-- Title for the dialog used to display CDMA DisplayInfo -->
+    <add-resource type="string" name="network_info_message"/>
+    <string name="network_info_message">"Sieťová správa"</string>
+    <!-- Title for the dialog used to display a network error message to the user -->
+    <add-resource type="string" name="network_error_message"/>
+    <string name="network_error_message">"Chybová správa"</string>
+
+    <!-- OTA-specific strings -->
+    <!-- Title shown on OTA screen -->
+    <add-resource type="string" name="ota_title_activate"/>
+    <string name="ota_title_activate">"Aktivujte svoj telefón"</string>
+    <!-- Message displayed on the OTA activation screen. -->
+    <add-resource type="string" name="ota_touch_activate"/>
+    <string name="ota_touch_activate">"Telefónnu službu je potrebné aktivovať uskutočnením mimoriadneho hovoru. \n\nStlačte tlačidlo Aktivovať a aktivujte telefón podľa poskytnutých pokynov."</string>
+    <!-- Title shown during Hands Free Activation -->
+    <add-resource type="string" name="ota_hfa_activation_title"/>
+    <string name="ota_hfa_activation_title">"Prebieha aktivácia..."</string>
+    <!-- Message shown during the hands free activation screen of the setup wizard. -->
+    <add-resource type="string" name="ota_hfa_activation_dialog_message"/>
+    <string name="ota_hfa_activation_dialog_message">"V telefóne prebieha aktivácia mobilnej dátovej služby.\n\nMôže to trvať až 5 minút."</string>
+    <!-- Title of skip activation dialog -->
+    <add-resource type="string" name="ota_skip_activation_dialog_title"/>
+    <string name="ota_skip_activation_dialog_title">"Preskočiť aktiváciu?"</string>
+    <!-- Message displayed in skip activation dialog  -->
+    <add-resource type="string" name="ota_skip_activation_dialog_message"/>
+    <string name="ota_skip_activation_dialog_message">"Ak preskočíte aktiváciu, nemôžete volať ani sa pripájať k mobilným dátovým sieťam (môžete sa ale pripojiť k sieťam Wi-Fi). Ak svoj telefón neaktivujete, bude sa pri každom zapnutí zobrazovať výzva na aktiváciu."</string>
+    <!-- Label shown on dialog button that allows the user to skip activation -->
+    <add-resource type="string" name="ota_skip_activation_dialog_skip_label"/>
+    <string name="ota_skip_activation_dialog_skip_label">"Preskočiť"</string>
+
+    <!-- Button label within the OTA activation screen -->
+    <add-resource type="string" name="ota_activate"/>
+    <string name="ota_activate">"Aktivovať"</string>
+    <!-- Title text shown when phone activation is successful -->
+    <add-resource type="string" name="ota_title_activate_success"/>
+    <string name="ota_title_activate_success">"Telefón je aktivovaný."</string>
+    <!-- Title text shown on screen where activation fails -->
+    <add-resource type="string" name="ota_title_problem_with_activation"/>
+    <string name="ota_title_problem_with_activation">"Problém s aktiváciou"</string>
+    <!-- Message displayed on the OTA "listening" screen. This message
+         needs to be kept at 2 lines or less to be sure that there's
+         enough room for the dialpad. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="ota_listen"/>
+    <string name="ota_listen">"Postupujte podľa hlasových pokynov, až kým nebudete informovaní o dokončení aktivácie."</string>
+
+    <!-- Button label within the OTA listen screen -->
+    <add-resource type="string" name="ota_speaker"/>
+    <string name="ota_speaker">"Reproduktor"</string>
+    <!-- String to be displayed on OTA listen screen once user has selected the
+         correct option to begin provisioning -->
+    <add-resource type="string" name="ota_progress"/>
+    <string name="ota_progress">"Váš telefón sa programuje\u2026"</string>
+    <!-- String to display within the OTA Fail Notice dialog -->
+    <add-resource type="string" name="ota_failure"/>
+    <string name="ota_failure">"Váš telefón sa nepodarilo naprogramovať"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon successful provisioning -->
+    <add-resource type="string" name="ota_successful"/>
+    <string name="ota_successful">"Váš telefón je teraz aktivovaný. Spustenie služby môže trvať až 15 minút."</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon unsuccessful provisioning -->
+    <add-resource type="string" name="ota_unsuccessful"/>
+    <string name="ota_unsuccessful">"Váš telefón nebol aktivovaný. \nMožno bude treba vyhľadať oblasť s lepším pokrytím (blízko okna alebo vonku). \n\nSkúste to znova alebo kontaktujte oddelenie zákazníckych služieb, kde získate informácie o ďalších možnostiach."</string>
+    <!-- String to display within the OTA SPC Fail Notice dialog -->
+    <add-resource type="string" name="ota_spc_failure"/>
+    <string name="ota_spc_failure">"PRÍLIŠ VEĽA ZLYHANÍ CERTIFIKÁTOV SPC"</string>
+    <!-- Button label in OTA listen screen that cancels activation and goes to the previous screen -->
+    <add-resource type="string" name="ota_call_end"/>
+    <string name="ota_call_end">"Späť"</string>
+    <!-- Button label shown on OTA error screen to allow the user to try again -->
+    <add-resource type="string" name="ota_try_again"/>
+    <string name="ota_try_again">"Skúsiť znova"</string>
+    <!-- Button label shown on OTA screens that have a next screen -->
+    <add-resource type="string" name="ota_next"/>
+    <string name="ota_next">"Ďalej"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
+    <add-resource type="string" name="ecm_exit_dialog"/>
+    <string name="ecm_exit_dialog">EcmExitDialog</string>
+    <!-- ECM: Status bar notification message -->
+    <add-resource type="string" name="phone_entered_ecm_text"/>
+    <string name="phone_entered_ecm_text">"Bol aktivovaný režim tiesňového spätného volania"</string>
+    <!-- ECM: Notification title -->
+    <add-resource type="string" name="phone_in_ecm_notification_title"/>
+    <string name="phone_in_ecm_notification_title">"Režim tiesňového spätného volania"</string>
+    <!-- ECM: Notification body -->
+    <add-resource type="string" name="phone_in_ecm_call_notification_text"/>
+    <string name="phone_in_ecm_call_notification_text">"Dátové pripojenie zakázané"</string>
+    <add-resource type="plurals" name="phone_in_ecm_notification_time"/>
+    <plurals name="phone_in_ecm_notification_time">
+        <!-- number of minutes is one -->
+        <item quantity="one">"Žiadne dátové pripojenie po dobu <xliff:g id="COUNT">%s</xliff:g> min"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"Žiadne dátové pripojenie po dobu <xliff:g id="COUNT">%s</xliff:g> min"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from the notifications screen -->
+    <add-resource type="plurals" name="alert_dialog_exit_ecm"/>
+    <plurals name="alert_dialog_exit_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"Telefón bude v režime spätného núdzového volania počas <xliff:g id="COUNT">%s</xliff:g> min. V tomto režime nie je možné používať žiadne aplikácie používajúce dátové pripojenie. Chcete ho ukončiť?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"Telefón bude v režime spätného núdzového volania počas <xliff:g id="COUNT">%s</xliff:g> min. V tomto režime nie je možné používať žiadne aplikácie používajúce dátové pripojenie. Chcete ho ukončiť?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from any other app -->
+    <add-resource type="plurals" name="alert_dialog_not_avaialble_in_ecm"/>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"Vybratá akcia nie je k dispozícii v režime Tiesňového spätného volania. Telefón v ňom bude <xliff:g id="COUNT">%s</xliff:g> min. Chcete ho ukončiť?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"Vybratá akcia nie je k dispozícii v režime Tiesňového spätného volania. Telefón v ňom bude <xliff:g id="COUNT">%s</xliff:g> min. Chcete ho ukončiť?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message while in emergency call -->
+    <add-resource type="string" name="alert_dialog_in_ecm_call"/>
+    <string name="alert_dialog_in_ecm_call">"Počas tiesňového volania nie je vybratá akcia k dispozícii."</string>
+    <!-- ECM: Progress text -->
+    <add-resource type="string" name="progress_dialog_exiting_ecm"/>
+    <string name="progress_dialog_exiting_ecm">"Ukončenie režimu tiesňového spätného volania"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_yes"/>
+    <string name="alert_dialog_yes">"Áno"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_no"/>
+    <string name="alert_dialog_no">"Nie"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_dismiss"/>
+    <string name="alert_dialog_dismiss">"Zatvoriť"</string>
+
+    <!-- Preference for Voicemail service provider under "Voicemail" settings.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_provider"/>
+    <string name="voicemail_provider">"Služba"</string>
+
+    <!-- Preference for Voicemail setting of each provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_settings"/>
+    <string name="voicemail_settings">"Nastavenie"</string>
+
+    <!-- String to display in voicemail number summary when no voicemail num is set -->
+    <add-resource type="string" name="voicemail_number_not_set"/>
+    <string name="voicemail_number_not_set">"&lt;Nenastavené&gt;"</string>
+
+    <!-- Title displayed above settings coming after voicemail in the call features screen -->
+    <add-resource type="string" name="other_settings"/>
+    <string name="other_settings">"Ďalšie nastavenia hovorov"</string>
+
+    <!-- Title displayed in the overlay when a call is placed using a 3rd party provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="calling_via_template"/>
+    <string name="calling_via_template">"Voláte prostredníctvom poskytovateľa <xliff:g id="PROVIDER_NAME">%s</xliff:g>"</string>
+
+    <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="contactPhoto"/>
+    <string name="contactPhoto">"fotografia kontaktu"</string>
+    <!-- Use this to describe the separate conference call button; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="goPrivate"/>
+    <string name="goPrivate">"prepnúť na súkromné"</string>
+    <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="selectContact"/>
+    <string name="selectContact">"vybrať kontakt"</string>
+
+    <!-- Dialog title to notify user that Voice calling is not supported
+         on this device. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="not_voice_capable"/>
+    <string name="not_voice_capable">"Hlasové volanie nie je podporované"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"vytáčanie"</string>
+
+    <!-- Title for the vibration settings for voicemail notifications [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_notification_vibrate_when_title"/>
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">"Vibrovať"</string>
+    <!-- Dialog title for the vibration settings for voice mail notifications [CHAR LIMIT=40]-->
+    <add-resource type="string" name="voicemail_notification_vibarte_when_dialog_title"/>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">"Vibrovať"</string>
+
+    <!-- Visual voicemail on/off title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_visual_voicemail_switch_title"/>
+    <string name="voicemail_visual_voicemail_switch_title">"Vizuálna hlasová schránka"</string>
+
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_set_pin_dialog_title"/>
+    <string name="voicemail_set_pin_dialog_title">"Nastavenie kódu PIN"</string>
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_change_pin_dialog_title"/>
+    <string name="voicemail_change_pin_dialog_title">"Zmena kódu PIN"</string>
+
+    <!-- Voicemail ringtone title. The user clicks on this preference to select
+         which sound to play when a voicemail notification is received.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="voicemail_notification_ringtone_title"/>
+    <string name="voicemail_notification_ringtone_title">"Zvuk"</string>
+
+    <!-- Title for the category "ringtone", which is shown above ringtone and vibration
+         related settings.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preference_category_ringtone"/>
+    <string name="preference_category_ringtone">"Tón zvonenia a vibrovanie"</string>
+
+    <!-- String resource for the font-family to use for the call setting activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_settings_title_font_family"/>
+    <string name="call_settings_title_font_family">sans-serif-light</string>
+
+    <!-- Label for PSTN connection service. -->
+    <add-resource type="string" name="pstn_connection_service_label"/>
+    <string name="pstn_connection_service_label">"Vstavané SIM karty"</string>
+
+    <!-- Label for enabling video calling. -->
+    <add-resource type="string" name="enable_video_calling_title"/>
+    <string name="enable_video_calling_title">"Zapnúť videohovory"</string>
+
+    <!-- Message for dialog shown when the user tries to turn on video calling but enhanced 4G LTE
+         is disabled. They have to turn on Enhanced 4G LTE capability in network settings first. -->
+    <add-resource type="string" name="enable_video_calling_dialog_msg"/>
+    <string name="enable_video_calling_dialog_msg">"Ak chcete zapnúť videohovory, musíte povoliť v nastaveniach siete Zlepšený režim 4G LTE."</string>
+
+    <!-- Label for action button in dialog which opens mobile network settings, for video calling
+         setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_settings"/>
+    <string name="enable_video_calling_dialog_settings">"Nastavenia siete"</string>
+
+    <!-- Label for close button in dialog, for video calling setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_close"/>
+    <string name="enable_video_calling_dialog_close">"Zavrieť"</string>
+
+    <!-- Strings used in Settings->Sim cards for each installed Sim. -->
+    <add-resource type="string" name="sim_label_emergency_calls"/>
+    <string name="sim_label_emergency_calls">"Emergency calls"</string>
+    <add-resource type="string" name="sim_description_emergency_calls"/>
+    <string name="sim_description_emergency_calls">"Emergency calling only"</string>
+    <add-resource type="string" name="sim_description_default"/>
+    <string name="sim_description_default">"Karta SIM, slot: <xliff:g id="slot_id">%s</xliff:g>"</string>
+
+    <!-- Title for activity to control accessibility settings such as TTY mode and hearing aid
+         compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_activity_title"/>
+    <string name="accessibility_settings_activity_title">"Dostupnosť"</string>
+
+    <!-- Status hint label for an incoming call over a wifi network which has not been accepted yet.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_incoming_wifi_call"/>
+    <string name="status_hint_label_incoming_wifi_call">"Hovor cez Wi-Fi od:"</string>
+    <!-- Status hint label for a call being made over a wifi network. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_wifi_call"/>
+    <string name="status_hint_label_wifi_call">"Hovor cez Wi-Fi"</string>
+
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_ringtone_key"/>
+    <string name="voicemail_notification_ringtone_key">voicemail_notification_ringtone_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_vibrate_key"/>
+    <string name="voicemail_notification_vibrate_key">voicemail_notification_vibrate_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a visual voicemail preference. -->
+    <add-resource type="string" name="voicemail_visual_voicemail_key"/>
+    <string name="voicemail_visual_voicemail_key">voicemail_visual_voicemail_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail change pin preference. -->
+    <add-resource type="string" name="voicemail_change_pin_key"/>
+    <string name="voicemail_change_pin_key">voicemail_change_pin_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for tty mode preference. -->
+    <add-resource type="string" name="tty_mode_key"/>
+    <string name="tty_mode_key">button_tty_mode_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="wifi_calling_settings_key"/>
+    <string name="wifi_calling_settings_key">button_wifi_calling_settings_key</string>
+
+    <!-- Hint appearing below a selected action on the emergency dialer telling user to tap again to execute the action [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="emergency_action_launch_hint"/>
+    <string name="emergency_action_launch_hint">"Otvoríte opätovným klepnutím"</string>
+
+    <!-- Strings for IMAP -->
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+       data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"Pri dekódovaní správy sa vyskytla chyba"</string>
+
+    <!-- Call failure reason: SIM card and roaming capabilities have already been activated. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="callFailed_cdma_activation"/>
+    <string name="callFailed_cdma_activation">"SIM karta aktivovala vašu službu a aktualizovala možnosti roamingu vášho telefónu"</string>
+
+    <!-- Call failure reason: Cannot add a call because there are already too many active calls. -->
+    <add-resource type="string" name="callFailed_cdma_call_limit"/>
+    <string name="callFailed_cdma_call_limit">"Prebieha príliš veľa aktívnych hovorov. Skôr ako uskutočníte nový hovor, ukončite existujúce hovory alebo ich zlúčte."</string>
+     <!-- Summary for the Smart Divert Feature displayed in Call Settings -->
+     <add-resource type="string" name="smart_divert_summary"/>
+    <string name="smart_divert_summary">"Nastavenia CFNRc"</string>
+     <add-resource type="string" name="no_mobile_data"/>
+    <string name="no_mobile_data">"Mobilné dáta sú nedostupné"</string>
+
+    <!-- The title for the change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_title"/>
+    <string name="change_pin_title">"Zmena kódu PIN hlasovej schránky"</string>
+    <!-- The label for the continue button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_continue_label"/>
+    <string name="change_pin_continue_label">"Pokračovať"</string>
+    <!-- The label for the cancel button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_cancel_label"/>
+    <string name="change_pin_cancel_label">"Zrušiť"</string>
+    <!-- The label for the ok button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_ok_label"/>
+    <string name="change_pin_ok_label">"OK"</string>
+    <!-- The title for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_header"/>
+    <string name="change_pin_enter_old_pin_header">"Potvrďte starý kód PIN"</string>
+    <!-- The hint for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_hint"/>
+    <string name="change_pin_enter_old_pin_hint">"Ak chcete pokračovať, zadajte kód PIN hlasovej schránky."</string>
+    <!-- The title for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_header"/>
+    <string name="change_pin_enter_new_pin_header">"Nastavte nový kód PIN"</string>
+    <!-- The hint for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_hint"/>
+    <string name="change_pin_enter_new_pin_hint">"Kód PIN musí mať tento počet číslic: <xliff:g id="MIN">%1$d</xliff:g> – <xliff:g id="MAX">%2$d</xliff:g>."</string>
+    <!-- The title for the confirm new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_confirm_pin_header"/>
+    <string name="change_pin_confirm_pin_header">"Potvrďte kód PIN"</string>
+    <!-- The error message for th confirm new pin step in change voicemail PIN activity, if the pin doen't match the one previously entered -->
+    <add-resource type="string" name="change_pin_confirm_pins_dont_match"/>
+    <string name="change_pin_confirm_pins_dont_match">"Kódy PIN sa nezhodujú"</string>
+    <!-- The toast to show after the voicemail PIN has been successfully changed -->
+    <add-resource type="string" name="change_pin_succeeded"/>
+    <string name="change_pin_succeeded">"Kód PIN hlasovej schránky bol aktualizovaný"</string>
+    <!-- The error message to show if the server reported an error while attempting to change the voicemail PIN -->
+    <add-resource type="string" name="change_pin_system_error"/>
+    <string name="change_pin_system_error">"Kód PIN sa nedá nastaviť"</string></resources>

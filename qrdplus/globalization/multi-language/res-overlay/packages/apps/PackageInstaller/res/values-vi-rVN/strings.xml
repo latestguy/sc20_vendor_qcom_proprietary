@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Trình cài đặt gói"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"Tiếp theo"</string>
+    <add-resource type="string" name="install"/>
+    <string name="install">"Cài đặt"</string>
+    <add-resource type="string" name="done"/>
+    <string name="done">"Xong"</string>
+    <!-- TODO REMOVE LATER -->
+    <add-resource type="string" name="security_settings_desc"/>
+    <string name="security_settings_desc">"Cho phép ứng dụng này:"</string>
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Hủy"</string>
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"Không xác định"</string>
+    <add-resource type="string" name="installing"/>
+    <string name="installing">"Đang cài đặt\u2026"</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"Ứng dụng đã được cài đặt."</string>
+    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question"/>
+    <string name="install_confirm_question">"Bạn có muốn cài đặt ứng dụng này không? Ứng dụng sẽ có quyền truy cập vào:"</string>
+    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_no_perms"/>
+    <string name="install_confirm_question_no_perms">"Bạn có muốn cài đặt ứng dụng này không? Ứng dụng này không yêu cầu bất kỳ quyền truy cập đặc biệt nào."</string>
+    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update"/>
+    <string name="install_confirm_question_update">"Bạn có muốn cài đặt bản cập nhật cho ứng dụng hiện tại này không? Dữ liệu hiện tại của bạn sẽ không bị mất. Ứng dụng đã cập nhật sẽ có quyền truy cập vào:"</string>
+    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system"/>
+    <string name="install_confirm_question_update_system">"Bạn có muốn cài đặt bản cập nhật cho ứng dụng được cài sẵn này không? Dữ liệu hiện tại của bạn sẽ không bị mất. Ứng dụng được cập nhật sẽ có quyền truy cập vào:"</string>
+    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_no_perms"/>
+    <string name="install_confirm_question_update_no_perms">"Bạn có muốn cài đặt bản cập nhật cho ứng dụng hiện có này không? Dữ liệu hiện có của bạn sẽ không bị mất. Việc cài đặt không yêu cầu bất kỳ quyền truy cập đặc biệt nào."</string>
+    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system_no_perms"/>
+    <string name="install_confirm_question_update_system_no_perms">"Bạn có muốn cài đặt bản cập nhật cho ứng dụng cài sẵn này không? Dữ liệu hiện có của bạn sẽ không bị mất. Việc cài đặt không yêu cầu quyền truy cập đặc biệt nào."</string>
+    <add-resource type="string" name="install_failed"/>
+    <string name="install_failed">"Ứng dụng chưa được cài đặt."</string>
+    <!-- Reason displayed when installation fails because the package was blocked
+        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_blocked"/>
+    <string name="install_failed_blocked">"Đã chặn cài đặt gói."</string>
+    <!-- Reason displayed when installation fails because the package conflicts with
+        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_conflict"/>
+    <string name="install_failed_conflict">"Gói xung đột với gói hiện có do cùng tên."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tablet">"Ứng dụng này không tương thích với máy tính bảng của bạn."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tv">"Ứng dụng này không tương thích với TV của bạn."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="default">"Ứng dụng này không tương thích với điện thoại của bạn."</string>
+    <!-- Reason displayed when installation fails because the installation package itself is invalid
+        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_invalid_apk"/>
+    <string name="install_failed_invalid_apk">"Gói dường như bị hỏng."</string>
+    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tablet">"Không thể cài đặt <xliff:g id="APP_NAME">%1$s</xliff:g> trên máy tính bảng của bạn."</string>
+    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tv">"Không thể cài đặt <xliff:g id="app_name">%1$s</xliff:g> trên TV của bạn."</string>
+    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="default">"Không thể cài đặt <xliff:g id="APP_NAME">%1$s</xliff:g> trên điện thoại này."</string>
+    <add-resource type="string" name="launch"/>
+    <string name="launch">"Mở"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tablet">"Để bảo mật, máy tính bảng của bạn được đặt để chặn cài đặt ứng dụng từ nguồn không xác định."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tv">"Vì lý do bảo mật, TV của bạn được đặt để ngăn chặn việc cài đặt các ứng dụng đến từ các nguồn không xác định."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="default">"Để bảo mật, điện thoại của bạn được đặt để chặn cài đặt ứng dụng từ nguồn không xác định."</string>
+    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="unknown_apps_admin_dlg_text"/>
+    <string name="unknown_apps_admin_dlg_text">"Người quản trị của bạn không cho phép cài đặt ứng dụng đến từ các nguồn không xác định."</string>
+
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"OK"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"Cài đặt"</string>
+    <add-resource type="string" name="manage_applications"/>
+    <string name="manage_applications">"Quản lý ứng dụng"</string>
+    <add-resource type="string" name="dlg_app_replacement_title"/>
+    <string name="dlg_app_replacement_title">"Thay thế ứng dụng?"</string>
+    <add-resource type="string" name="dlg_app_replacement_statement"/>
+    <string name="dlg_app_replacement_statement">"Ứng dụng bạn đang cài đặt sẽ thay thế một ứng dụng khác.\n\nTất cả dữ liệu người dùng trước của bạn sẽ được lưu."</string>
+    <!-- Dialog attributes when replacing system app -->
+    <add-resource type="string" name="dlg_sys_app_replacement_statement"/>
+    <string name="dlg_sys_app_replacement_statement">"Đây là ứng dụng hệ thống.\n\nTất cả dữ liệu người dùng trước của bạn sẽ được lưu."</string>
+    <add-resource type="string" name="out_of_space_dlg_title"/>
+    <string name="out_of_space_dlg_title">"Hết dung lượng"</string>
+    <add-resource type="string" name="out_of_space_dlg_text"/>
+    <string name="out_of_space_dlg_text">"Không thể cài đặt <xliff:g id="APP_NAME">%1$s</xliff:g>. Hãy giải phóng dung lượng và thử lại."</string>
+    <!-- strings related to uninstall activity -->
+    <add-resource type="string" name="dlg_ok"/>
+    <string name="dlg_ok">"OK"</string>
+    <add-resource type="string" name="app_not_found_dlg_title"/>
+    <string name="app_not_found_dlg_title">"Không tìm thấy ứng dụng"</string>
+    <add-resource type="string" name="app_not_found_dlg_text"/>
+    <string name="app_not_found_dlg_text">"Không tìm thấy ứng dụng trong danh sách các ứng dụng đã cài đặt."</string>
+    <add-resource type="string" name="uninstall_application_title"/>
+    <string name="uninstall_application_title">"Gỡ cài đặt ứng dụng"</string>
+    <add-resource type="string" name="uninstall_update_title"/>
+    <string name="uninstall_update_title">"Gỡ cài đặt cập nhật"</string>
+    <add-resource type="string" name="uninstall_activity_text"/>
+    <string name="uninstall_activity_text">"<xliff:g id="ACTIVITY_NAME">%1$s</xliff:g> là một phần của ứng dụng sau:"</string>
+    <add-resource type="string" name="uninstall_application_text"/>
+    <string name="uninstall_application_text">"Bạn có muốn gỡ cài đặt ứng dụng này không?"</string>
+    <add-resource type="string" name="uninstall_application_text_all_users"/>
+    <string name="uninstall_application_text_all_users">"Bạn có muốn gỡ cài đặt ứng dụng này cho "<b>"tất cả"</b>" người dùng không? Ứng dụng và dữ liệu của ứng dụng sẽ bị xóa khỏi "<b>"tất cả"</b>" người dùng trên thiết bị."</string>
+    <add-resource type="string" name="uninstall_application_text_user"/>
+    <string name="uninstall_application_text_user">"Bạn có muốn gỡ cài đặt ứng dụng này cho người dùng <xliff:g id="USERNAME">%1$s</xliff:g>?"</string>
+    <add-resource type="string" name="uninstall_update_text"/>
+    <string name="uninstall_update_text">"Thay thế ứng dụng này bằng phiên bản gốc? Tất cả dữ liệu sẽ bị xóa."</string>
+    <add-resource type="string" name="uninstall_update_text_multiuser"/>
+    <string name="uninstall_update_text_multiuser">"Thay thế ứng dụng này bằng phiên bản gốc? Tất cả dữ liệu sẽ bị xóa. Điều này ảnh hưởng đến tất cả người dùng thiết bị này, bao gồm cả những người có hồ sơ công việc."</string>
+    <add-resource type="string" name="uninstalling"/>
+    <string name="uninstalling">"Đang gỡ cài đặt..."</string>
+    <add-resource type="string" name="uninstall_done"/>
+    <string name="uninstall_done">"Gỡ cài đặt đã hoàn tất."</string>
+    <add-resource type="string" name="uninstall_failed"/>
+    <string name="uninstall_failed">"Gỡ cài đặt không thành công."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager"/>
+    <string name="uninstall_failed_device_policy_manager">"Không thể cài đặt vì gói này là của quản trị viên thiết bị đang hoạt động."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator for some user [CHAR LIMIT=100] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager_of_user"/>
+    <string name="uninstall_failed_device_policy_manager_of_user">"Không thể gỡ cài đặt do gói này là ứng dụng quản trị thiết bị đang hoạt động dành cho người dùng <xliff:g id="USERNAME">%1$s</xliff:g>."</string>
+    <!-- String presented to the admin user when uninstalling a package for all users failed
+    because a profile owner has marked the target package as not able to be uninstalled
+    [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_all_blocked_profile_owner"/>
+    <string name="uninstall_all_blocked_profile_owner">"Ứng dụng này bắt buộc với một số người dùng hoặc hồ sơ và được gỡ cài đặt cho người khác"</string>
+    <!-- String presented to the user when uninstalling a package failed because a profile owner
+         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_blocked_profile_owner"/>
+    <string name="uninstall_blocked_profile_owner">"Ứng dụng này là cần thiết cho hồ sơ của bạn và không thể gỡ cài đặt."</string>
+    <!-- String presented to the user when uninstalling a package failed because a device owner
+         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_blocked_device_owner"/>
+    <string name="uninstall_blocked_device_owner">"Ứng dụng này được quản trị viên thiết bị của bạn yêu cầu và không thể gỡ cài đặt."</string>
+    <!-- String on a button that leads to the "device administrator" configuration setting where a
+        user will be able to disable the device administrator in order to uninstall
+        it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_device_administrators"/>
+    <string name="manage_device_administrators">"Quản lý quản trị viên điện thoại"</string>
+    <!-- String on a button that leads to the "Users" page in Settings where a
+        user will be able to remove the secondary user(s) in order to uninstall
+        the app. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_users"/>
+    <string name="manage_users">"Quản lý người dùng"</string>
+    <add-resource type="string" name="uninstall_failed_msg"/>
+    <string name="uninstall_failed_msg">"Không thể gỡ cài đặt <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Dialog attributes to indicate parse errors -->
+    <add-resource type="string" name="Parse_error_dlg_text"/>
+    <string name="Parse_error_dlg_text">"Đã xảy ra sự cố khi phân tích cú pháp gói."</string>
+
+    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
+    <add-resource type="string" name="newPerms"/>
+    <string name="newPerms">"Mới"</string>
+    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
+    <add-resource type="string" name="allPerms"/>
+    <string name="allPerms">"Tất cả"</string>
+    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
+    <add-resource type="string" name="privacyPerms"/>
+    <string name="privacyPerms">"Bảo mật"</string>
+    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
+    <add-resource type="string" name="devicePerms"/>
+    <string name="devicePerms">"Truy cập thiết bị"</string>
+
+    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_new_perms"/>
+    <string name="no_new_perms">"Bản cập nhật này không yêu cầu quyền mới."</string>
+
+    <add-resource type="string" name="grant_confirm_question"/>
+    <string name="grant_confirm_question">"Bạn có muốn cấp quyền sau không? Ứng dụng sẽ có quyền truy cập:"</string>
+
+    <!-- Title for the dialog button to deny a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_deny"/>
+    <string name="grant_dialog_button_deny">"Từ chối"</string>
+
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+    <add-resource type="string" name="grant_dialog_button_deny_anyway"/>
+    <string name="grant_dialog_button_deny_anyway">"Vẫn từ chối"</string>
+
+    <!-- Template for the current permission from the total number of permissions. -->
+    <add-resource type="string" name="current_permission_template"/>
+    <string name="current_permission_template">"<xliff:g id="CURRENT_PERMISSION_INDEX">%1$s</xliff:g> / <xliff:g id="PERMISSION_COUNT">%2$s</xliff:g>"</string>
+
+    <!-- Template for the warning message when an app requests a permission. -->
+    <add-resource type="string" name="permission_warning_template"/>
+    <string name="permission_warning_template">"Cho phép &lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt; <xliff:g id="ACTION">%2$s</xliff:g>?"</string>
+
+    <!-- Permissions -->
+
+    <!-- Title for the dialog button to allow a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_allow"/>
+    <string name="grant_dialog_button_allow">"Cho phép"</string>
+
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+    <add-resource type="string" name="app_permissions_breadcrumb"/>
+    <string name="app_permissions_breadcrumb">"Ứng dụng"</string>
+
+    <!-- Title for page of managing application permissions -->
+    <add-resource type="string" name="app_permissions"/>
+    <string name="app_permissions">"Giấy phép ứng dụng"</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again -->
+    <add-resource type="string" name="never_ask_again"/>
+    <string name="never_ask_again">"Không hỏi lại"</string>
+
+    <!-- Label when app requests no permissions -->
+    <add-resource type="string" name="no_permissions"/>
+    <string name="no_permissions">"Không có quyền"</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <add-resource type="string" name="additional_permissions"/>
+    <string name="additional_permissions">"Quyền khác"</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="additional_permissions_more"/>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> quyền khác"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> quyền khác"</item>
+    </plurals>
+
+    <!-- Warning for turning off permissions on older apps -->
+    <add-resource type="string" name="old_sdk_deny_warning"/>
+    <string name="old_sdk_deny_warning">"Ứng dụng này được thiết kế cho các phiên bản Android cũ hơn. Từ chối quyền có thể làm cho ứng dụng không còn hoạt động như mong muốn."</string>
+
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="default_permission_description"/>
+    <string name="default_permission_description">"thực hiện hành động không xác định"</string>
+
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
+   <add-resource type="string" name="app_permissions_group_summary"/>
+    <string name="app_permissions_group_summary">"Đã cho phép <xliff:g id="COUNT_0">%1$d</xliff:g> trong số <xliff:g id="COUNT_1">%2$d</xliff:g> ứng dụng"</string>
+
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
+   <add-resource type="string" name="menu_show_system"/>
+    <string name="menu_show_system">"Hiển thị hệ thống"</string>
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
+   <add-resource type="string" name="menu_hide_system"/>
+    <string name="menu_hide_system">"Ẩn hệ thống"</string>
+
+   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
+   <add-resource type="string" name="permission_title"/>
+    <string name="permission_title">"<xliff:g id="PERMISSION">%1$s</xliff:g> quyền"</string>
+
+   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
+   <add-resource type="string" name="no_apps"/>
+    <string name="no_apps">"Không có ứng dụng"</string>
+
+   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+   <add-resource type="string" name="location_settings"/>
+    <string name="location_settings">"Cài đặt vị trí"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
+   <add-resource type="string" name="location_warning"/>
+    <string name="location_warning">"<xliff:g id="APP_NAME">%1$s</xliff:g> là nhà cung cấp dịch vụ vị trí cho thiết bị này. Bạn có thể sửa đổi quyền truy cập vị trí từ cài đặt vị trí."</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
+   <add-resource type="string" name="system_warning"/>
+    <string name="system_warning">"Nếu bạn từ chối quyền này, các tính năng cơ bản trên thiết bị của bạn có thể không còn hoạt động như dự kiến."</string>
+
+   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
+   <add-resource type="string" name="permission_summary_enforced_by_policy"/>
+    <string name="permission_summary_enforced_by_policy">"Được thực thi bằng chính sách"</string>
+
+   <!-- Text displayed until loading is done -->
+   <add-resource type="string" name="loading"/>
+    <string name="loading">"Đang tải\u2026"</string>
+
+   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+   <add-resource type="string" name="all_permissions"/>
+    <string name="all_permissions">"Tất cả các quyền"</string>
+   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
+   <add-resource type="string" name="other_permissions"/>
+    <string name="other_permissions">"Các khả năng khác của ứng dụng"</string>
+
+   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
+   <add-resource type="string" name="permission_request_title"/>
+    <string name="permission_request_title">"Yêu cầu quyền"</string>
+
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_title"/>
+    <string name="screen_overlay_title">"Đã phát hiện lớp phủ màn hình"</string>
+
+   <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_message"/>
+    <string name="screen_overlay_message">"Để thay đổi cài đặt quyền này, trước tiên bạn phải tắt lớp phủ màn hình từ Cài đặt &gt; Ứng dụng"</string>
+
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="screen_overlay_button"/>
+    <string name="screen_overlay_button">"Mở cài đặt"</string>
+
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_title"/>
+    <string name="wear_not_allowed_dlg_title">"Android Wear"</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_text"/>
+    <string name="wear_not_allowed_dlg_text">"Không hỗ trợ tác vụ Cài đặt/Gỡ cài đặt trên Wear."</string>
+
+    <!-- Review of runtime permissions for legacy apps -->
+
+    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+    <add-resource type="string" name="permission_review_warning_title_template_update"/>
+    <string name="permission_review_warning_title_template_update">"Đã cập nhật <xliff:g id="APP_NAME_0">%1$s</xliff:g>. Cho phép <xliff:g id="APP_NAME_1">%1$s</xliff:g> truy cập những nội dung sau?"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <add-resource type="string" name="permission_review_title_template_install"/>
+    <string name="permission_review_title_template_install">"Chọn cho phép <xliff:g id="APP_NAME">%1$s</xliff:g> truy cập những gì"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <add-resource type="string" name="permission_review_title_template_update"/>
+    <string name="permission_review_title_template_update">"Đã cập nhật <xliff:g id="APP_NAME">%1$s</xliff:g>. Chọn cho phép ứng dụng này truy cập những gì."</string>
+
+    <!-- Title for the dialog button to cancel the detailed permission review. -->
+    <add-resource type="string" name="review_button_cancel"/>
+    <string name="review_button_cancel">"Hủy"</string>
+
+    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+    <add-resource type="string" name="review_button_continue"/>
+    <string name="review_button_continue">"Tiếp tục"</string>
+
+    <!-- Title for the category listing the new permissions used by an app. -->
+    <add-resource type="string" name="new_permissions_category"/>
+    <string name="new_permissions_category">"Các quyền mới"</string>
+
+    <!-- Title for the category listing the current permissions used by an app. -->
+    <add-resource type="string" name="current_permissions_category"/>
+    <string name="current_permissions_category">"Các quyền hiện tại"</string>
+
+    <!-- Message that the app to be installed is being staged -->
+    <add-resource type="string" name="message_staging"/>
+    <string name="message_staging">"Đang sắp xếp ứng dụng\u2026"</string>
+
+    <!-- Placeholder for an app name when it is unknown -->
+    <add-resource type="string" name="app_name_unknown"/>
+    <string name="app_name_unknown">"Không xác định"</string></resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"جارٍ الفحص..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"جارٍ الاتصال\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"جارٍ المصادقة\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"‏جارٍ الحصول على عنوان IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"متصل"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"معلق"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"جارٍ فصل الاتصال..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"غير متصل"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"غير ناجح"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"تم حظرها"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"يتم تجنب الاتصال الضعيف مؤقتًا"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"جارٍ الفحص..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"جارٍ الاتصال بجهاز <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"جارٍ المصادقة مع <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"‏جارٍ الحصول على عنوان IP من <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"متصل بـ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"معلق"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"جارٍ قطع الاتصال بـ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"غير متصل"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"غير ناجح"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"تم حظرها"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"يتم تجنب الاتصال الضعيف مؤقتًا"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"عدم التحقق مطلقًا"</item>
+        <item>"‏التحقق من محتوى DRM فقط"</item>
+        <item>"التحقق دومًا"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"‏عدم استخدام التحقق من HDCP مطلقًا"</item>
+        <item>"‏استخدام التحقق من HDCP لمحتوى DRM فقط"</item>
+        <item>"‏استخدام التحقق من HDCP دومًا"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"إيقاف"</item>
+        <item>"٦٤ كيلوبايت"</item>
+        <item>"٢٥٦ كيلوبايت"</item>
+        <item>"1 ميغابايت"</item>
+        <item>"٤ ميغابايت"</item>
+        <item>"١٦ ميغابايت"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"إيقاف"</item>
+        <item>"٦٤ كيلوبايت"</item>
+        <item>"٢٥٦ كيلوبايت"</item>
+        <item>"1 ميغابايت"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"إيقاف"</item>
+        <item>"٦٤ كيلوبايت لكل ذاكرة تخزين مؤقت للتسجيل"</item>
+        <item>"٢٥٦ كيلوبايت لكل ذاكرة تخزين مؤقت للتسجيل"</item>
+        <item>"1 ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل"</item>
+        <item>"٤ ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل"</item>
+        <item>"١٦ ميغابايت لكل ذاكرة تخزين مؤقت للتسجيل"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"إيقاف"</item>
+        <item>"الكل"</item>
+        <item>"الكل دون اللاسلكي"</item>
+        <item>"‏kernel فقط"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"إيقاف"</item>
+        <item>"كل المخازن المؤقتة للسجلات"</item>
+        <item>"كل المخازن المؤقتة باستثناء مخازن سجلات اللاسلكي"</item>
+        <item>"‏التخزين المؤقت لسجل kernel فقط"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"إيقاف الرسوم المتحركة"</item>
+        <item>"‏حجم الرسوم المتحركة 0.5x"</item>
+        <item>"‏حجم الرسوم المتحركة 1x"</item>
+        <item>"‏حجم الرسوم المتحركة 1.5x"</item>
+        <item>"‏حجم الرسوم المتحركة 2x"</item>
+        <item>"‏حجم الرسوم المتحركة 5x"</item>
+        <item>"‏حجم الرسوم المتحركة 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"إيقاف الرسوم المتحركة"</item>
+        <item>"‏حجم الرسوم المتحركة 5x."</item>
+        <item>"‏حجم الرسوم المتحركة 1x"</item>
+        <item>"‏حجم الرسوم المتحركة 1.5x"</item>
+        <item>"‏حجم الرسوم المتحركة 2x"</item>
+        <item>"‏حجم الرسوم المتحركة 5x"</item>
+        <item>"‏حجم الرسوم المتحركة 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"إيقاف الرسوم المتحركة"</item>
+        <item>"‏حجم الرسوم المتحركة ‎.5x"</item>
+        <item>"‏حجم الرسوم المتحركة 1x"</item>
+        <item>"‏حجم الرسوم المتحركة 1.5x"</item>
+        <item>"‏حجم الرسوم المتحركة 2x"</item>
+        <item>"‏حجم الرسوم المتحركة 5x"</item>
+        <item>"‏حجم الرسوم المتحركة 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"لا شيء"</item>
+        <item>"480 بكسل"</item>
+        <item>"480 بكسل (العرض آمن)"</item>
+        <item>720p</item>
+        <item>"720 بكسل (العرض آمن)"</item>
+        <item>"1080 بكسل"</item>
+        <item>"1080 بكسل (العرض آمن)"</item>
+        <item>4K</item>
+        <item>"‏4K (العرض آمن)"</item>
+        <item>"‏4K (تمت زيادة دقة العرض)"</item>
+        <item>"‏4K (تمت زيادة الدقة، والعرض آمن)"</item>
+        <item>"720 بكسل، 1080 بكسل (شاشة مزدوجة)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"لا شيء"</item>
+        <item>"Logcat"</item>
+        <item>"‏Systrace (رسومات)"</item>
+        <item>"‏تكدس الاستدعاءات في دالة glGetError"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"إيقاف"</item>
+        <item>"رسم منطقة قصاصة غير مستطيلة بالأزرق"</item>
+        <item>"إبراز أوامر رسم تم اختبارها بالأخضر"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"إيقاف"</item>
+        <item>"على الشاشة كأشرطة"</item>
+        <item>"‏باستخدام adb shell dumpsys gfxinfo"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"إيقاف"</item>
+        <item>"عرض مناطق تجاوز الحد"</item>
+        <item>"‏عرض مناطق العرض المسرحي Deuteranomaly"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"الحد القياسي"</item>
+        <item>"ليست هناك عمليات بالخلفية"</item>
+        <item>"عملية واحدة بحد أقصى"</item>
+        <item>"عمليتان بحد أقصى"</item>
+        <item>"3 عمليات بحد أقصى"</item>
+        <item>"4 عمليات بحد أقصى"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"الشحن"</item>
+        <item>"MTP (بروتوكول نقل الوسائط)"</item>
+        <item>"PTP (بروتوكول نقل الصور)"</item>
+        <item>"بروتوكول RNDIS‏ (إيثرنت USB‏)"</item>
+        <item>"مصدر الصوت"</item>
+        <item>MIDI</item>
+    </string-array></resources>

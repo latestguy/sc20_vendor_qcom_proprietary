@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <add-resource type="string" name="onesong"/>
+    <string name="onesong">"1 skladba"</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <add-resource type="plurals" name="Nsongs"/>
+    <plurals name="Nsongs">
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> skladb"</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <add-resource type="plurals" name="Nsongscomp"/>
+    <plurals name="Nsongscomp">
+        <item quantity="other">"<xliff:g id="COUNT_FOR_ARTIST">%2$d</xliff:g> od <xliff:g id="TOTAL_COUNT">%1$d</xliff:g> skladb"</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <add-resource type="plurals" name="Nalbums"/>
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">"1 album"</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> albumov"</item>
+    </plurals>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <add-resource type="string" name="goto_start"/>
+    <string name="goto_start">"Knjižnica"</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <add-resource type="string" name="party_shuffle"/>
+    <string name="party_shuffle">"Naključno predvaj. za zabavo"</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <add-resource type="string" name="party_shuffle_off"/>
+    <string name="party_shuffle_off">"Naključno predvajanje za zabavo izklopljeno"</string>
+    <!-- Menu item that clear all playlists mode -->
+    <add-resource type="string" name="clear_all_playlists"/>
+    <string name="clear_all_playlists">"Počisti vse sezname predvajanja"</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <add-resource type="string" name="delete_item"/>
+    <string name="delete_item">"Izbriši"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <add-resource type="string" name="play_all"/>
+    <string name="play_all">"Predvajaj vse"</string>
+    <!-- Menu item to play song in music -->
+    <add-resource type="string" name="open_in_music"/>
+    <string name="open_in_music">"Odpri v mapi z glasbo"</string>
+    <!-- Menu item to share audio or video -->
+    <add-resource type="string" name="share"/>
+    <string name="share">"Deli"</string>
+     <!-- Menu item to details audio or video -->
+    <add-resource type="string" name="details"/>
+    <string name="details">"Podrobnosti"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <add-resource type="string" name="delete_artist_desc"/>
+    <string name="delete_artist_desc">"Želite trajno izbrisati pesmi izvajalca <xliff:g id="artist">%s</xliff:g>?"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <add-resource type="string" name="delete_album_desc"/>
+    <string name="delete_album_desc">"Želite trajno izbrisati cel album \"<xliff:g id="album">%s</xliff:g>\"?"</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <add-resource type="string" name="delete_song_desc"/>
+    <string name="delete_song_desc">"Želite trajno izbrisati pesem \"<xliff:g id="song">%s</xliff:g>\"?"</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <add-resource type="string" name="delete_confirm_button_text"/>
+    <string name="delete_confirm_button_text">"V redu"</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <add-resource type="plurals" name="NNNtracksdeleted"/>
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">"1 skladba je bila izbrisana."</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">"<xliff:g id="SONGS_TO_DELETE">%d</xliff:g> skladb je bilo izbrisanih."</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning"/>
+    <string name="scanning">"Pregledovanje kartice SD ..."</string>
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning_nosdcard"/>
+    <string name="scanning_nosdcard">"Pregledovanje pomnilnika USB ..."</string>
+
+    <add-resource type="array" name="title_array_folder"/>
+    <string-array name="title_array_folder">
+        <item>"Izvajalci"</item>
+        <item>"Albumi"</item>
+        <item>"Skladbe"</item>
+        <item>"Mape"</item>
+        <item>"Seznami predvajanja"</item>
+    </string-array>
+    <add-resource type="array" name="title_array_songs"/>
+    <string-array name="title_array_songs">
+        <item>"Izvajalci"</item>
+        <item>"Albumi"</item>
+        <item>"Skladbe"</item>
+        <item>"Seznami predvajanja"</item>
+    </string-array>
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <add-resource type="string" name="nowplaying_title"/>
+    <string name="nowplaying_title">"Trenutno se predvaja"</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <add-resource type="string" name="partyshuffle_title"/>
+    <string name="partyshuffle_title">"Naključno predvaj. za zabavo"</string>
+    <!-- Artist screen title -->
+    <add-resource type="string" name="artists_title"/>
+    <string name="artists_title">"Izvajalci"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="albums_menu"/>
+    <string name="albums_menu">"Albumi"</string>
+    <!-- Albums screen title -->
+    <add-resource type="string" name="albums_title"/>
+    <string name="albums_title">"Albumi"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="tracks_menu"/>
+    <string name="tracks_menu">"Skladbe"</string>
+    <!-- Songs screen title -->
+    <add-resource type="string" name="tracks_title"/>
+    <string name="tracks_title">"Skladbe"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="folder_menu"/>
+    <string name="folder_menu">"Mape"</string>
+    <!-- Folder screen title -->
+    <add-resource type="string" name="folders_title"/>
+    <string name="folders_title">"Mape"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="playlists_menu"/>
+    <string name="playlists_menu">"Seznami predvajanja"</string>
+    <!-- Playlists screen title -->
+    <add-resource type="string" name="playlists_title"/>
+    <string name="playlists_title">"Seznami predvajanja"</string>
+    <!-- Videos screen title -->
+    <add-resource type="string" name="videos_title"/>
+    <string name="videos_title">"Videoposnetki"</string>
+    <!-- All media screen title -->
+    <add-resource type="string" name="all_title"/>
+    <string name="all_title">"Vsa predstavnost"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="browse_menu"/>
+    <string name="browse_menu">"Izvajalci"</string>
+    <!-- Library screen, menu item -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"Iskanje"</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <add-resource type="string" name="no_tracks_title"/>
+    <string name="no_tracks_title">"Ni skladb"</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <add-resource type="string" name="no_videos_title"/>
+    <string name="no_videos_title">"Ni videoposnetkov"</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <add-resource type="string" name="no_playlists_title"/>
+    <string name="no_playlists_title">"Ni seznamov predvajanja"</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <add-resource type="string" name="delete_playlist_menu"/>
+    <string name="delete_playlist_menu">"Izbriši"</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <add-resource type="string" name="edit_playlist_menu"/>
+    <string name="edit_playlist_menu">"Uredi"</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <add-resource type="string" name="rename_playlist_menu"/>
+    <string name="rename_playlist_menu">"Preimenuj"</string>
+    <!-- Dialog box message shown when clearing all playlists-->
+    <add-resource type="string" name="clear_all_playlists_message"/>
+    <string name="clear_all_playlists_message">"Ali želite počistiti vse sezname predvajanja?"</string>
+    <!-- Dialog box message shown when deleting a playlist-->
+    <add-resource type="string" name="delete_playlist_message"/>
+    <string name="delete_playlist_message">"Ali res želite izbrisati \"<xliff:g id="name">%s</xliff:g>\"?"</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="delete_playlist_button_ok"/>
+    <string name="delete_playlist_button_ok">"V redu"</string>
+    <add-resource type="string" name="delete_playlist_button_cancel"/>
+    <string name="delete_playlist_button_cancel">"Prekliči"</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <add-resource type="string" name="playlist_deleted_message"/>
+    <string name="playlist_deleted_message">"Seznam predvajanja izbrisan."</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <add-resource type="string" name="playlist_renamed_message"/>
+    <string name="playlist_renamed_message">"Seznam predvajanja je preimenovan."</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <add-resource type="string" name="recentlyadded"/>
+    <string name="recentlyadded">"Nedavno dodano"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <add-resource type="string" name="recentlyadded_title"/>
+    <string name="recentlyadded_title">"Nedavno dodano"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <add-resource type="string" name="podcasts_listitem"/>
+    <string name="podcasts_listitem">"Podcasti"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <add-resource type="string" name="podcasts_title"/>
+    <string name="podcasts_title">"Podcasti"</string>
+    <!-- all recordings will show up in the media database in a playlist with thiis name -->
+    <add-resource type="string" name="audio_db_playlist_name"/>
+    <string name="audio_db_playlist_name">"Moji posnetki"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title"/>
+    <string name="sdcard_missing_title">"Ni kartice SD"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title_nosdcard"/>
+    <string name="sdcard_missing_title_nosdcard">"Ni pomnilnika USB"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message"/>
+    <string name="sdcard_missing_message">"V telefonu ni kartice SD."</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message_nosdcard"/>
+    <string name="sdcard_missing_message_nosdcard">"Telefon nima pomnilnika USB."</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title"/>
+    <string name="sdcard_busy_title">"Kartica SD ni na voljo"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title_nosdcard"/>
+    <string name="sdcard_busy_title_nosdcard">"Pomnilnik USB ni na voljo"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message"/>
+    <string name="sdcard_busy_message">"Kartica SD je zasedena."</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message_nosdcard"/>
+    <string name="sdcard_busy_message_nosdcard">"Pomnilnik USB je zaseden."</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title"/>
+    <string name="sdcard_error_title">"Napaka kartice SD"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title_nosdcard"/>
+    <string name="sdcard_error_title_nosdcard">"Napaka pomnilnika USB"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message"/>
+    <string name="sdcard_error_message">"Na kartici SD je bila zaznana napaka."</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message_nosdcard"/>
+    <string name="sdcard_error_message_nosdcard">"Na disku USB je bila zaznana napaka."</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_artist_name"/>
+    <string name="unknown_artist_name">"Neznan izvajalec"</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_album_name"/>
+    <string name="unknown_album_name">"Neznan album"</string>
+    <!-- Default name of folder that doesn't have a path in the metadata -->
+    <add-resource type="string" name="unknown_folder_name"/>
+    <string name="unknown_folder_name">"Neznana pot"</string>
+    <!-- Default name of folder that doesn't have a count in the metadata -->
+    <add-resource type="string" name="unknown_folder_count"/>
+    <string name="unknown_folder_count">"Neznano število"</string>
+    <!-- Toast after turning shuffle on -->
+    <add-resource type="string" name="shuffle_on_notif"/>
+    <string name="shuffle_on_notif">"Naključno predvajanje je vklopljeno."</string>
+    <!-- Toast after turning shuffle off -->
+    <add-resource type="string" name="shuffle_off_notif"/>
+    <string name="shuffle_off_notif">"Naključno predvajanje je izklopljeno."</string>
+    <!-- Toast after turning repeat off -->
+    <add-resource type="string" name="repeat_off_notif"/>
+    <string name="repeat_off_notif">"Ponavljanje je izklopljeno."</string>
+    <!-- Toast after turning single repeat on -->
+    <add-resource type="string" name="repeat_current_notif"/>
+    <string name="repeat_current_notif">"Ponavljanje trenutne skladbe."</string>
+    <!-- Toast after turning repeat all on -->
+    <add-resource type="string" name="repeat_all_notif"/>
+    <string name="repeat_all_notif">"Ponavljanje vseh skladb."</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu"/>
+    <string name="ringtone_menu">"Uporabi kot melodijo zvonjenja telefona"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short"/>
+    <string name="ringtone_menu_short">"Uporabi kot zvonjenje"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set"/>
+    <string name="ringtone_set">"»<xliff:g id="NAME">%s</xliff:g>« je nastavljen kot melodija zvonjenja telefona."</string>
+    <!-- Toast after setting a song as phone ringtone fail-->
+    <add-resource type="string" name="ringtone_set_fail"/>
+    <string name="ringtone_set_fail">"Nastavitev melodije zvonjenja telefona ni uspela."</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu_1"/>
+    <string name="ringtone_menu_1">"Uporabi za zvon. Reže 1"</string>
+    <add-resource type="string" name="ringtone_menu_2"/>
+    <string name="ringtone_menu_2">"Uporabi za zvon. Reže 2"</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_1"/>
+    <string name="ringtone_menu_sim_name_1">"Uporabi za zvon. reže 1 \"<xliff:g id="NAME">%s</xliff:g>\""</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_2"/>
+    <string name="ringtone_menu_sim_name_2">"Uporabi za zvon. reže 2 \"<xliff:g id="NAME">%s</xliff:g>\""</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short_1"/>
+    <string name="ringtone_menu_short_1">"Uporabi kot zvonjenje 1"</string>
+    <add-resource type="string" name="ringtone_menu_short_2"/>
+    <string name="ringtone_menu_short_2">"Uporabi kot zvonjenje 2"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_1"/>
+    <string name="ringtone_set_1">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" nastavi za zvonjenje za režo 1."</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_2"/>
+    <string name="ringtone_set_2">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" nastavi za zvonjenje za režo 2."</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="play_selection"/>
+    <string name="play_selection">"Predvajaj"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="add_to_playlist"/>
+    <string name="add_to_playlist">"Dodaj na seznam"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="queue"/>
+    <string name="queue">"Trenutni seznam predvaj."</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="new_playlist"/>
+    <string name="new_playlist">"Novo"</string>
+    <!-- Template for newly created playlist name -->
+    <add-resource type="string" name="new_playlist_name_template"/>
+    <string name="new_playlist_name_template">"Nov seznam predvajanja <xliff:g id="NUMBER">%d</xliff:g>"</string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <add-resource type="plurals" name="NNNtrackstoplaylist"/>
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">"1 skladba je dodana na seznam predvajanja."</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">"<xliff:g id="NUMBER">%d</xliff:g> skladb dodanih na seznam predvajanja."</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <add-resource type="string" name="emptyplaylist"/>
+    <string name="emptyplaylist">"Izbrani seznam predvajanja je prazen."</string>
+    <!-- Button name when saving a playlist -->
+    <add-resource type="string" name="create_playlist_create_text"/>
+    <string name="create_playlist_create_text">"Shrani"</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <add-resource type="string" name="create_playlist_overwrite_text"/>
+    <string name="create_playlist_overwrite_text">"Prepiši"</string>
+    <!-- Dialog box title -->
+    <add-resource type="string" name="service_start_error_title"/>
+    <string name="service_start_error_title">"Težava pri predvajanju"</string>
+    <!-- Dialog box message -->
+    <add-resource type="string" name="service_start_error_msg"/>
+    <string name="service_start_error_msg">"Skladbe ni bilo mogoče predvajati."</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="service_start_error_button"/>
+    <string name="service_start_error_button">"V redu"</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <add-resource type="array" name="weeklist"/>
+    <string-array name="weeklist">
+        <item>"1 teden"</item>
+        <item>"2 tedna"</item>
+        <item>"3 tedne"</item>
+        <item>"4 tedne"</item>
+        <item>"5 tednov"</item>
+        <item>"6 tednov"</item>
+        <item>"7 tednov"</item>
+        <item>"8 tednov"</item>
+        <item>"9 tednov"</item>
+        <item>"10 tednov"</item>
+        <item>"11 tednov"</item>
+        <item>"12 tednov"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <add-resource type="string" name="weekpicker_set"/>
+    <string name="weekpicker_set">"Dokončano"</string>
+    <!-- Title of time span picker -->
+    <add-resource type="string" name="weekpicker_title"/>
+    <string name="weekpicker_title">"Nastavi uro"</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <add-resource type="color" name="dragndrop_background"/>
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <add-resource type="color" name="expanding_child_background"/>
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <add-resource type="string" name="save_as_playlist"/>
+    <string name="save_as_playlist">"Shrani kot seznam predvajanja"</string>
+    <!-- menu item to clear the current playlist -->
+    <add-resource type="string" name="clear_playlist"/>
+    <string name="clear_playlist">"Počisti seznam predvajanja"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicbrowserlabel"/>
+    <string name="musicbrowserlabel">"Glasba"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicshortcutlabel"/>
+    <string name="musicshortcutlabel">"Seznam predvajanja glasbe"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediaplaybacklabel"/>
+    <string name="mediaplaybacklabel">"Glasba"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="videobrowserlabel"/>
+    <string name="videobrowserlabel">"Videoposnetki"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediapickerlabel"/>
+    <string name="mediapickerlabel">"Glasba"</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <add-resource type="string" name="playback_failed"/>
+    <string name="playback_failed">"Predvajalnik ne podpira te vrste zvočne datoteke."</string>
+    <!-- Shown as a transient message whenever a file fails to open -->
+    <add-resource type="string" name="open_failed"/>
+    <string name="open_failed">"Datoteke ni mogoče odpreti."</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Prekliči"</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <add-resource type="string" name="remove_from_playlist"/>
+    <string name="remove_from_playlist">"Odstrani s seznama "</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <add-resource type="string" name="streamloadingtext"/>
+    <string name="streamloadingtext">"Vzpostavljanje povezave s <xliff:g id="HOST">%s</xliff:g> ..."</string>
+
+    <!-- title of contextual music search menu -->
+    <add-resource type="string" name="mediasearch"/>
+    <string name="mediasearch">"Najdi <xliff:g id="TERM">%s</xliff:g> z:"</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <add-resource type="string" name="working_artists"/>
+    <string name="working_artists">"Izvajalci ..."</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <add-resource type="string" name="working_albums"/>
+    <string name="working_albums">"Albumi ..."</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <add-resource type="string" name="working_songs"/>
+    <string name="working_songs">"Skladbe ..."</string>
+    <!-- Shown in the title bar while the list of folders is being retrieved in the background -->
+    <add-resource type="string" name="working_folders"/>
+    <string name="working_folders">"Mape\u2026"</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <add-resource type="string" name="working_playlists"/>
+    <string name="working_playlists">"Seznami predvajanja ..."</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"Nalaganje ..."</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <add-resource type="string" name="sort_by_track"/>
+    <string name="sort_by_track">"Skladbe"</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <add-resource type="string" name="sort_by_album"/>
+    <string name="sort_by_album">"Albumi"</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <add-resource type="string" name="sort_by_artist"/>
+    <string name="sort_by_artist">"Izvajalci"</string>
+    <!--  Title of the music picker activity. -->
+    <add-resource type="string" name="music_picker_title"/>
+    <string name="music_picker_title">"Izberite skladbo"</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <add-resource type="string" name="search_settings_description"/>
+    <string name="search_settings_description">"Izvajalci, albumi in skladbe"</string>
+
+    <!-- Shown in the search box as a hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"Iskanje po glasbi"</string>
+    <add-resource type="string" name="search_hint_video"/>
+    <string name="search_hint_video">"Poišči video"</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <add-resource type="string" name="fast_scroll_alphabet"/>
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <add-resource type="string" name="widget_initial_text"/>
+    <string name="widget_initial_text">"Dotaknite se, da izberete glasbo."</string>
+
+    <!-- Menu text for the item controlling the audio effects panel [CHAR LIMIT=15] -->
+    <add-resource type="string" name="effectspanel"/>
+    <string name="effectspanel">"Izenačevalnik"</string>
+
+    <add-resource type="string" name="duplicate_playlist_name_alert"/>
+    <string name="duplicate_playlist_name_alert">"Seznam predvajanja z imenom \"<xliff:g id="name">%s</xliff:g>\" že obstaja. Izberite drugo ime."</string>
+    <add-resource type="string" name="same_playlist_name_alert"/>
+    <string name="same_playlist_name_alert">"Ime seznama predvajanja \"<xliff:g id="name">%s</xliff:g>\" ni bilo spremenjeno. Izberite drugo ime."</string>
+    <add-resource type="string" name="button_ok"/>
+    <string name="button_ok">"V redu"</string>
+    <add-resource type="string" name="list_empty"/>
+    <string name="list_empty">"Na seznamu predvajanja ni skladb."</string>
+
+    <!-- Shown when video is played after disable Gallery app from Settings -->
+    <add-resource type="string" name="enable_gallery_app"/>
+    <string name="enable_gallery_app">"Videa ni mogoče predvajati, v nastavitvah omogočite aplikacijo Galerija."</string>
+    <add-resource type="string" name="close_music"/>
+    <string name="close_music">"Konec"</string>
+    <add-resource type="string" name="delete_video_item_message"/>
+    <string name="delete_video_item_message">"Ali res želite izbrisati \"<xliff:g id="name">%s</xliff:g>\"?"</string>
+    <add-resource type="string" name="video_deleted_message"/>
+    <string name="video_deleted_message">"Video datoteka je bila izbrisana."</string>
+
+    <!-- Menu item that takes the user link to net to see more music -->
+    <add-resource type="string" name="more_music"/>
+    <string name="more_music">"Več skladb"</string>
+    <!-- Menu item that takes the user link to net to see more video -->
+    <add-resource type="string" name="more_video"/>
+    <string name="more_video">"Več videov"</string>
+    <!--gesture control playback status-->
+    <add-resource type="string" name="music_gesture_play"/>
+    <string name="music_gesture_play">"Predvajaj/prekini predvajanje posnetka"</string>
+    <add-resource type="string" name="music_gesture_prev"/>
+    <string name="music_gesture_prev">"Predvajaj predhodni posnetek"</string>
+    <add-resource type="string" name="music_gesture_next"/>
+    <string name="music_gesture_next">"Predvajaj naslednji posnetek"</string>
+
+    <!-- DRM Related Strings -->
+    <add-resource type="string" name="no_permission_for_drm"/>
+    <string name="no_permission_for_drm">"Datoteke Drm ni mogoče deliti"</string>
+    <add-resource type="string" name="drm_license_info"/>
+    <string name="drm_license_info">"Podatki o licenci DRM"</string>
+    <add-resource type="string" name="drm_ringtone_error"/>
+    <string name="drm_ringtone_error">"Datotek CD/SD ni mogoče nastaviti kot zvonjenje"</string>
+    <add-resource type="string" name="drm_right_expired"/>
+    <string name="drm_right_expired">"Pravice DRM so potekle"</string>
+
+    <add-resource type="string" name="action_consumes_rights"/>
+    <string name="action_consumes_rights">"Za predvajanje tega medija potrebujete pravice."</string>
+    <add-resource type="string" name="rights_expired"/>
+    <string name="rights_expired">"Pravice za pesem so potekle."</string>
+    <add-resource type="string" name="ring_tone_size_exceed"/>
+    <string name="ring_tone_size_exceed">"Velikost datoteke zvonjenja Drm ne sme presegati 300 kb."</string>
+    <add-resource type="string" name="cant_set_ringtone_with_count_perm"/>
+    <string name="cant_set_ringtone_with_count_perm">"Datoteke DRM z dovoljenjem štetja ni mogoče nastaviti za zvonjenje."</string>
+
+    <add-resource type="string" name="navigation_drawer_title"/>
+    <string name="navigation_drawer_title">"Glasba"</string>
+    <add-resource type="string" name="action_settings"/>
+    <string name="action_settings">"Nastavitve"</string>
+    <add-resource type="string" name="equalizer_button_text"/>
+    <string name="equalizer_button_text">"Snapdragon Audio+"</string>
+    <add-resource type="string" name="exit_button_text"/>
+    <string name="exit_button_text">"Izhod"</string>
+    <add-resource type="string" name="action_settings1"/>
+    <string name="action_settings1">"Nastavitve 1"</string>
+    <add-resource type="string" name="action_settings2"/>
+    <string name="action_settings2">"Nastavitve 2"</string>
+    <add-resource type="string" name="action_one"/>
+    <string name="action_one">"Ena"</string>
+    <add-resource type="string" name="action_two"/>
+    <string name="action_two">"Dve"</string>
+    <add-resource type="string" name="action_three"/>
+    <string name="action_three">"Tri"</string>
+    <add-resource type="string" name="shuffle_all"/>
+    <string name="shuffle_all">"Naključno predvajaj vse"</string>
+
+    <add-resource type="string" name="no_music_found"/>
+    <string name="no_music_found">"Najdene ni nobene glasbe"</string>
+
+    <!--  Adding new string here for file delete error message -->
+    <add-resource type="string" name="song_deleted_error_message"/>
+    <string name="song_deleted_error_message">"Izbrane skladbe ni mogoče predvajati"</string>
+    <add-resource type="string" name="song_title"/>
+    <string name="song_title">"Ime skladbe:"</string>
+    <add-resource type="string" name="album_title"/>
+    <string name="album_title">"Ime albuma:"</string>
+    <add-resource type="string" name="artist_title"/>
+    <string name="artist_title">"Ime izvajalca:"</string>
+    <add-resource type="string" name="duration_title"/>
+    <string name="duration_title">"Trajanje:"</string>
+    <add-resource type="string" name="path_title"/>
+    <string name="path_title">"Pot:"</string>
+    <add-resource type="string" name="size_title"/>
+    <string name="size_title">"Velikost:"</string>
+    <add-resource type="string" name="duration_unit"/>
+    <string name="duration_unit">" Min"</string>
+
+    <!-- Human readable sizes -->
+    <add-resource type="string" name="size_bytes"/>
+    <string name="size_bytes">"B"</string>
+    <add-resource type="string" name="size_kilobytes"/>
+    <string name="size_kilobytes">"kB"</string>
+    <add-resource type="string" name="size_megabytes"/>
+    <string name="size_megabytes">"MB"</string>
+    <add-resource type="string" name="size_gigabytes"/>
+    <string name="size_gigabytes">"GB"</string>
+
+    <add-resource type="string" name="favorite"/>
+    <string name="favorite">"Priljubljeno"</string>
+    <add-resource type="string" name="no_favorite"/>
+    <string name="no_favorite">"Ni priljubljenih"</string>
+    <add-resource type="string" name="favorite_playlist"/>
+    <string name="favorite_playlist">"Moje priljubljene"</string>
+    <add-resource type="string" name="can_not_create_my_favorite"/>
+    <string name="can_not_create_my_favorite">"Seznama predvajanja »Moje priljubljene« ni mogoče ustvariti ali prepisati"</string>
+
+    <!-- add by filemanager -->
+    <add-resource type="string" name="add_by_filemanager"/>
+    <string name="add_by_filemanager">"Dodaj iz upravitelja datotek"</string>
+    <add-resource type="string" name="add_file_failed"/>
+    <string name="add_file_failed">"Te datoteke ni mogoče dodati, ker ta oblika zapisa ni podprta ali je ni v predstavnostni knjižnici"</string>
+
+    <!-- permission request -->
+    <add-resource type="string" name="dialog_title_help"/>
+    <string name="dialog_title_help">"Pomoč"</string>
+    <add-resource type="string" name="dialog_content"/>
+    <string name="dialog_content">"Ta aplikacija ne deluje brez zahtevanega dovoljenja. V nastavitvah dovolite dostop."</string>
+    <add-resource type="string" name="dialog_button_quit"/>
+    <string name="dialog_button_quit">"Zapri"</string>
+    <add-resource type="string" name="dialog_button_settings"/>
+    <string name="dialog_button_settings">"Nastavitve"</string>
+
+    <add-resource type="string" name="audio_preview_fail_security"/>
+    <string name="audio_preview_fail_security">"Odpiranje datoteke s težavami z varnostjo ni uspelo."</string>
+    <add-resource type="string" name="audio_preview_fail_io"/>
+    <string name="audio_preview_fail_io">"Datoteke ni mogoče odpreti"</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_state"/>
+    <string name="audio_preview_fail_illegal_state">"Neveljavno stanje, odpiranje datoteke ni uspelo."</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_argument"/>
+    <string name="audio_preview_fail_illegal_argument">"Neveljaven argument, odpiranje datoteke ni uspelo."</string></resources>

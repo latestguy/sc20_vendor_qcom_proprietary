@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2016 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<providers_product>
+
+
+    <provider id="gmail" label="Gmail" domain="gmail.com">
+        <incoming uri="imap+ssl+://imap.gmail.com" username="$email" />
+        <outgoing uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+    </provider>
+
+    <provider id="yahoo" label="Yahoo! Mail" domain="yahoo.com">
+        <incoming uri="imap+ssl+://imap.mail.yahoo.com" username="$email" />
+        <outgoing uri="smtp+ssl+://smtp.mail.yahoo.com" username="$email" />
+    </provider>
+
+    <!--ESP 03 -> Is secure IMAP4 required (RFC 2595)? Yes should be imap tls-->
+    <provider id="Hotmail" label="Hotmail.com" domain="hotmail.com">
+        <incoming uri="imap+ssl+://imap-mail.outlook.com" username="$email"/>
+        <outgoing uri="smtp+tls+://smtp-mail.outlook.com" username="$email" />
+    </provider>
+
+</providers_product>
+

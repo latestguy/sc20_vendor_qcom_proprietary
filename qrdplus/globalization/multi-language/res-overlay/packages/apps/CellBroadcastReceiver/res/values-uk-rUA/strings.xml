@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The name of the Cell Broadcast Receiver app. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"Стільникові трансляції"</string>
+
+    <!-- Label for settings screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="sms_cb_settings"/>
+    <string name="sms_cb_settings">"Налашт. стільн. трансляцій"</string>
+
+    <!-- Error message for users that aren't allowed to modify Cell broadcast settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="cell_broadcast_settings_not_available"/>
+    <string name="cell_broadcast_settings_not_available">"Налаштування широкомовних інформаційних повідомлень недоступні для цього користувача"</string>
+
+    <!-- Text for dismiss button in broadcast message view dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_dismiss"/>
+    <string name="button_dismiss">"OK"</string>
+
+    <!-- Text for list view when empty (no broadcasts). [CHAR LIMIT=200] -->
+    <add-resource type="string" name="no_cell_broadcasts"/>
+    <string name="no_cell_broadcasts">"Немає активних сповіщень у вашому районі. Можна змінити налаштування сповіщень за допомогою опції меню Налаштування."</string>
+
+    <!-- Menu item for accessing application settings. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"Налаштування"</string>
+    <!-- Menu item for deleting all broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"Видалити широкомовні повідомл."</string>
+
+    <!-- Header for context menu on an individual broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"Параметри повідомлення"</string>
+    <!-- Context menu item for viewing broadcast details such as time and date. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_view_details"/>
+    <string name="menu_view_details">"Переглянути деталі"</string>
+    <!-- Context menu item to delete a previously received broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"Видалити широкомовне повідомл."</string>
+
+    <!-- Title of "View details" dialog -->
+    <add-resource type="string" name="view_details_title"/>
+    <string name="view_details_title">"Деталі сповіщення"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete broadcast confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_broadcast"/>
+    <string name="confirm_delete_broadcast">"Видалити це широкомовне повідомлення?"</string>
+    <!-- Delete all broadcasts confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_all_broadcasts"/>
+    <string name="confirm_delete_all_broadcasts">"Видалити всі отримані широкомовні повідомлення?"</string>
+    <!-- Delete button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_delete"/>
+    <string name="button_delete">"Видалити"</string>
+    <!-- Cancel button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_cancel"/>
+    <string name="button_cancel">"Скасувати"</string>
+
+    <!-- ETWS dialog title for Earthquake Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_warning"/>
+    <string name="etws_earthquake_warning">"Застереження щодо землетрусу"</string>
+    <!-- ETWS dialog title for Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_tsunami_warning"/>
+    <string name="etws_tsunami_warning">"Застереження щодо цунамі"</string>
+    <!-- ETWS dialog title for Earthquake and Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_and_tsunami_warning"/>
+    <string name="etws_earthquake_and_tsunami_warning">"Застереження щодо землетрусів і цунамі"</string>
+    <!-- ETWS dialog title for test message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_test_message"/>
+    <string name="etws_test_message">"Тестове повідомлення системи ETWS"</string>
+    <!-- ETWS dialog title for other emergency type. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_other_emergency_type"/>
+    <string name="etws_other_emergency_type">"Застереження щодо надзвичайної ситуації"</string>
+    <!-- CMAS dialog title for presidential level alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_presidential_level_alert"/>
+    <string name="cmas_presidential_level_alert">"Сповіщення від Президента"</string>
+    <!-- CMAS dialog title for extreme alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_extreme_alert"/>
+    <string name="cmas_extreme_alert">"Сповіщення про надзвичайну ситуацію: екстремальна"</string>
+    <!-- CMAS dialog title for severe alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_severe_alert"/>
+    <string name="cmas_severe_alert">"Сповіщення про надзвичайну ситуацію: складна"</string>
+    <!-- CMAS dialog title for child abduction emergency (Amber Alert). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_amber_alert"/>
+    <string name="cmas_amber_alert">"Викрадення дитини (сповіщення Amber)"</string>
+    <!-- CMAS dialog title for required monthly test. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_required_monthly_test"/>
+    <string name="cmas_required_monthly_test">"Щомісячне тестування сповіщень про надзв. ситуації"</string>
+    <!-- CMAS dialog title for CMAS Exercise. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_exercise_alert"/>
+    <string name="cmas_exercise_alert">"Сповіщення про надзвичайну ситуацію (тренування)"</string>
+    <!-- CMAS dialog title for operator defined use. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_operator_defined_alert"/>
+    <string name="cmas_operator_defined_alert">"Сповіщення про надзвичайну ситуацію (оператор)"</string>
+    <!-- Dialog title for all other message identifiers in the PWS range. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pws_other_message_identifiers"/>
+    <string name="pws_other_message_identifiers">"Сповіщення про надзвичайну ситуацію"</string>
+    <!-- Dialog title for all non-emergency cell broadcasts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cb_other_message_identifiers"/>
+    <string name="cb_other_message_identifiers">"Розсилка коротких повідомлень"</string>
+
+    <!-- Preference category title for emergency alert settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="emergency_alert_settings_title"/>
+    <string name="emergency_alert_settings_title">"Налаштування сповіщень про надзвичайні ситуації"</string>
+    <!-- Preference title for enable emergency alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_emergency_alerts_title"/>
+    <string name="enable_emergency_alerts_title">"Увімкнути сповіщення"</string>
+    <!-- Preference summary for enable notifications checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_emergency_alerts_summary"/>
+    <string name="enable_emergency_alerts_summary">"Відобраз. широкомовні повідомл. про надзв.ситуації"</string>
+    <!-- Preference title for alert reminder interval list. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="alert_reminder_interval_title"/>
+    <string name="alert_reminder_interval_title">"Нагадування"</string>
+    <!-- Do not translate. Empty summary for alert reminder (set by CellBroadcastSettings). -->
+    <add-resource type="string" name="alert_reminder_interval_summary"/>
+    <string name="alert_reminder_interval_summary"></string>
+    <!-- Preference title for enable text-to-speech checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_speech_title"/>
+    <string name="enable_alert_speech_title">"Дикт.сповіщ.про надзв.ситуації"</string>
+    <!-- Preference summary for enable text-to-speech checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_alert_speech_summary"/>
+    <string name="enable_alert_speech_summary">"Використовувати синтез мовлення, щоб диктувати тексти сповіщень про надзвичайні ситуації"</string>
+
+    <!-- Preference category title for ETWS settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_etws_settings_title"/>
+    <string name="category_etws_settings_title">"Налаштування системи ETWS"</string>
+    <!-- Preference title for enable ETWS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_etws_test_alerts_title"/>
+    <string name="enable_etws_test_alerts_title">"Показув. тест. повідомл. ETWS"</string>
+    <!-- Preference summary for enable ETWS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_etws_test_alerts_summary"/>
+    <string name="enable_etws_test_alerts_summary">"Відобразити тестові широкомовні повідомлення системи застережень щодо землетрусів і цунамі (ETWS)"</string>
+
+    <!-- Preference title for presidential Alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_title"/>
+    <string name="enable_cmas_presidential_alerts_title">"Показувати презид. сповіщення"</string>
+    <!-- Preference summary for presidential Alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_summary"/>
+    <string name="enable_cmas_presidential_alerts_summary">"Завжди показувати президентські сповіщення"</string>
+    <!-- Preference title for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_title"/>
+    <string name="enable_cmas_extreme_threat_alerts_title">"Показувати надзвичайні загрози"</string>
+    <!-- Preference summary for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_summary"/>
+    <string name="enable_cmas_extreme_threat_alerts_summary">"Показувати сповіщення про загрози надзвичайного рівня для життя та майна"</string>
+    <!-- Preference title for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_title"/>
+    <string name="enable_cmas_severe_threat_alerts_title">"Показувати високі загрози"</string>
+    <!-- Preference summary for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_summary"/>
+    <string name="enable_cmas_severe_threat_alerts_summary">"Показувати сповіщення про загрози високого рівня для життя та майна"</string>
+    <!-- Preference title for enable CMAS amber alerts checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_title"/>
+    <string name="enable_cmas_amber_alerts_title">"Показувати сповіщення AMBER"</string>
+    <!-- Preference summary for enable CMAS amber alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_summary"/>
+    <string name="enable_cmas_amber_alerts_summary">"Показувати інформаційні повідомлення про викрадення дітей (сповіщення AMBER)"</string>
+
+    <!-- Preference title for enable CMAS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_title"/>
+    <string name="enable_cmas_test_alerts_title">"Показув. тест. повідомл. CMAS"</string>
+    <!-- Preference summary for enable CMAS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_summary"/>
+    <string name="enable_cmas_test_alerts_summary">"Показувати тестові широкомовні повідомлення комерційної системи мобільних сповіщень (CMAS)"</string>
+
+    <!-- Preference title for CMAS vibration on/off. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_vibrate_title"/>
+    <string name="enable_alert_vibrate_title">"Вібросигнал"</string>
+    <!-- Preference summary for CMAS vibration on/off. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="enable_alert_vibrate_summary"/>
+    <string name="enable_alert_vibrate_summary">"Вібрувати, якщо є сповіщення"</string>
+    <add-resource type="string" name="enable_alert_tone_title"/>
+    <string name="enable_alert_tone_title">"Сигнал сповіщення"</string>
+    <add-resource type="string" name="enable_alert_tone_summary"/>
+    <string name="enable_alert_tone_summary">"Сигнал сповіщення ввімкнено"</string>
+
+    <!-- Preference category title for Brazil settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_brazil_settings_title"/>
+    <string name="category_brazil_settings_title">"Налаштування для Бразилії"</string>
+    <!-- Preference category title for India settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_india_settings_title"/>
+    <string name="category_india_settings_title">"Налаштування для Індії"</string>
+    <!-- Preference title for enable channel 50 alerts (Brazil only). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_50_alerts_title"/>
+    <string name="enable_channel_50_alerts_title">"Показ. повідомлення Каналу 50"</string>
+    <!-- Preference summary for enable channel 50 alerts (Brazil only). [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_50_alerts_summary"/>
+    <string name="enable_channel_50_alerts_summary">"Канал 50 використовується в Бразилії для інформування про регіональні новини"</string>
+    <!-- Preference title for enable channel 60 alerts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_60_alerts_title"/>
+    <string name="enable_channel_60_alerts_title">"Показати мовлення каналу 60"</string>
+    <!-- Preference summary for enable channel 60 alerts. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_60_alerts_summary"/>
+    <string name="enable_channel_60_alerts_summary">"Канал 60 використовується в Індії для спеціальних повідомлень оператора"</string>
+
+    <!-- Preference category title for developer settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_dev_settings_title"/>
+    <string name="category_dev_settings_title">"Для розробників"</string>
+
+    <!-- CMAS alert category heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_category_heading"/>
+    <string name="cmas_category_heading">"Категорія сповіщення:"</string>
+    <!-- CMAS category for geophysical alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_geo"/>
+    <string name="cmas_category_geo">"Геофізична небезпека"</string>
+    <!-- CMAS category for meteorological alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_met"/>
+    <string name="cmas_category_met">"Метеорологія"</string>
+    <!-- CMAS category for general emergency and public safety alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_safety"/>
+    <string name="cmas_category_safety">"Загальна безпека"</string>
+    <!-- CMAS category for security alerts (law enforcement, military, etc.). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_security"/>
+    <string name="cmas_category_security">"Безпека держави"</string>
+    <!-- CMAS category for rescue and recovery alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_rescue"/>
+    <string name="cmas_category_rescue">"Операції порятунку"</string>
+    <!-- CMAS category for fire suppression and rescue alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_fire"/>
+    <string name="cmas_category_fire">"Пожежі"</string>
+    <!-- CMAS category for medical and public health alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_health"/>
+    <string name="cmas_category_health">"Здоров\'я"</string>
+    <!-- CMAS category for pollution and other environmental alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_env"/>
+    <string name="cmas_category_env">"Екологія"</string>
+    <!-- CMAS category for transportation alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_transport"/>
+    <string name="cmas_category_transport">"Транспорт"</string>
+    <!-- CMAS category for utility, telecommunication, and other infrastructure alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_infra"/>
+    <string name="cmas_category_infra">"Інфраструктура"</string>
+    <!-- CMAS category for chemical, biological, radiological, nuclear alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_cbrne"/>
+    <string name="cmas_category_cbrne">"Небезпека хімічна/біологічна/ядерна/вибуху"</string>
+    <!-- CMAS category for other alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_other"/>
+    <string name="cmas_category_other">"Інше"</string>
+
+    <!-- CMAS response type heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_response_heading"/>
+    <string name="cmas_response_heading">"Тип реагування:"</string>
+    <!-- CMAS response type: take shelter in place. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_shelter"/>
+    <string name="cmas_response_shelter">"Сховайтеся"</string>
+    <!-- CMAS response type: evacuate (relocate). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_evacuate"/>
+    <string name="cmas_response_evacuate">"Евакуюйтеся"</string>
+    <!-- CMAS response type: make preparations. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_prepare"/>
+    <string name="cmas_response_prepare">"Підготуйтеся"</string>
+    <!-- CMAS response type: execute a pre-planned activity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_execute"/>
+    <string name="cmas_response_execute">"Виконуйте"</string>
+    <!-- CMAS response type: monitor information sources. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_monitor"/>
+    <string name="cmas_response_monitor">"Стежте"</string>
+    <!-- CMAS response type: avoid hazard. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_avoid"/>
+    <string name="cmas_response_avoid">"Уникайте"</string>
+    <!-- CMAS response type: evaluate the information in this message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_assess"/>
+    <string name="cmas_response_assess">"Ознайомтеся"</string>
+    <!-- CMAS response type: no action recommended. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_none"/>
+    <string name="cmas_response_none">"Нічого"</string>
+
+    <!-- CMAS severity heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_heading"/>
+    <string name="cmas_severity_heading">"Рівень небезпеки:"</string>
+    <!-- CMAS severity type: extreme. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_extreme"/>
+    <string name="cmas_severity_extreme">"Надзвичайний"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_severe"/>
+    <string name="cmas_severity_severe">"Високий"</string>
+
+    <!-- CMAS urgency heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_heading"/>
+    <string name="cmas_urgency_heading">"Терміновість:"</string>
+    <!-- CMAS urgency type: take responsive action immediately. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_immediate"/>
+    <string name="cmas_urgency_immediate">"Негайно"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_expected"/>
+    <string name="cmas_urgency_expected">"Очікується"</string>
+
+    <!-- CMAS certainty heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_heading"/>
+    <string name="cmas_certainty_heading">"Достовірність:"</string>
+    <!-- CMAS certainty type: observed. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_observed"/>
+    <string name="cmas_certainty_observed">"Ведеться спостереження"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_likely"/>
+    <string name="cmas_certainty_likely">"Імовірний"</string>
+
+    <!-- Message delivery time (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="delivery_time_heading"/>
+    <string name="delivery_time_heading">"Отримано:"</string>
+
+    <!-- Non-emergency broadcast notification description for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"Непрочитаних сповіщень: <xliff:g id="COUNT">%s</xliff:g>"</string>
+    <!-- Non-emergency broadcast notification title for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"Нові сповіщення"</string>
+
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="show_cmas_opt_out_summary"/>
+    <string name="show_cmas_opt_out_summary">"Пропонувати відключити сповіщення екстрених служб після першого показу"</string>
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_cmas_opt_out_title"/>
+    <string name="show_cmas_opt_out_title">"Показувати діалогове вікно вимкнення"</string>
+
+    <!-- CMAS opt-out dialog message. [CHAR LIMIT=160] -->
+    <add-resource type="string" name="cmas_opt_out_dialog_text"/>
+    <string name="cmas_opt_out_dialog_text">"Ви отримуєте сповіщення про надзвичайні ситуації. Хочете й надалі отримувати сповіщення про надзвичайні ситуації?"</string>
+    <!-- Text for positive button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_yes"/>
+    <string name="cmas_opt_out_button_yes">"Так"</string>
+    <!-- Text for negative button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_no"/>
+    <string name="cmas_opt_out_button_no">"Ні"</string>
+
+    <!-- Entries in the ListPreference for alert reminder intervals. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="alert_reminder_interval_entries"/>
+    <string-array name="alert_reminder_interval_entries">
+      <item>"Один раз"</item>
+      <item>"Кожні 2 хвилини"</item>
+      <item>"Кожні 5 хвилин"</item>
+      <item>"Кожні 15 хвилин"</item>
+      <item>"Вимкнено"</item>
+    </string-array>
+
+    <!-- Do not translate. Values that are retrieved from the ListPreference.
+         These must match the alert_reminder_interval_entries list above. -->
+    <add-resource type="array" name="alert_reminder_interval_values"/>
+    <string-array name="alert_reminder_interval_values">
+      <item>1</item>
+      <item>2</item>
+      <item>5</item>
+      <item>15</item>
+      <item>0</item>
+    </string-array>
+
+    <!-- set cellbroadcast enable or disable, default value is true-->
+    <add-resource type="bool" name="def_custome_cell_broadcast_layout"/>
+    <bool name="def_custome_cell_broadcast_layout">false</bool>
+    <add-resource type="string" name="add_channel"/>
+    <string name="add_channel">"Додати канал"</string>
+    <add-resource type="string" name="channel_list"/>
+    <string name="channel_list">"Список каналів"</string>
+    <add-resource type="string" name="receive_broad_cast"/>
+    <string name="receive_broad_cast">"Отримувати SMS у рамках стільникової трансляції"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_name"/>
+    <string name="cb_channel_dialog_channel_name">"Ім’я каналу (0–10 символів)"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_number"/>
+    <string name="cb_channel_dialog_channel_number">"Номер каналу (0–65534)"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_state"/>
+    <string name="cb_channel_dialog_channel_state">"Увімкнути канал"</string>
+    <add-resource type="string" name="cb_error_channel_num"/>
+    <string name="cb_error_channel_num">"Введіть номер каналу (0–65534)."</string>
+    <add-resource type="string" name="cb_error_channel_name"/>
+    <string name="cb_error_channel_name">"Неправильна довжина імені каналу (1–10 символів)."</string>
+    <add-resource type="string" name="cb_menu_tile"/>
+    <string name="cb_menu_tile">"Робота каналу"</string>
+    <add-resource type="string" name="cb_menu_add_channel"/>
+    <string name="cb_menu_add_channel">"Додати канал"</string>
+    <add-resource type="string" name="cb_menu_channel_list"/>
+    <string name="cb_menu_channel_list">"Список каналів"</string>
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"Увімкнути"</string>
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"Вимкнути"</string>
+    <add-resource type="string" name="cb_error_channel_id_exist"/>
+    <string name="cb_error_channel_id_exist">"Такий ідентифікатор каналу вже існує."</string>
+    <add-resource type="string" name="cb_channel_dialog_edit_channel"/>
+    <string name="cb_channel_dialog_edit_channel">"Редагувати канал"</string>
+    <add-resource type="string" name="cb_default_new_channel_name"/>
+    <string name="cb_default_new_channel_name">"Новий канал"</string>
+    <add-resource type="string" name="cb_menu_edit"/>
+    <string name="cb_menu_edit">"Редагувати"</string>
+    <add-resource type="string" name="cb_menu_delete"/>
+    <string name="cb_menu_delete">"Видалити широкомовну трансляцію"</string>
+    <add-resource type="string" name="cell_broadcast_setting"/>
+    <string name="cell_broadcast_setting">"Налаштування стільн. трансляції"</string>
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"Помилка налаштування викликів"</string>
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"Читання налаштувань"</string>
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"Оновлення налаштувань"</string>
+    <add-resource type="string" name="error_finish_dialog_title"/>
+    <string name="error_finish_dialog_title">"Помилка мережі чи SIM-картки."</string>
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"OK"</string>
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"Налаштування викликів"</string>
+    <add-resource type="string" name="done_text"/>
+    <string name="done_text">"Готово"</string>
+
+    <!-- CellBroadcast channel 50 enabled or not,default value is true -->
+    <add-resource type="bool" name="def_channel_50_enabled"/>
+    <bool name="def_channel_50_enabled">true</bool>
+    <!-- Customize 50 into filter list -->
+    <add-resource type="string" name="cb_channel_50_name"/>
+    <string name="cb_channel_50_name">"Канал 50"</string></resources>

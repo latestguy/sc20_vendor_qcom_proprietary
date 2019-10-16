@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"อเมริกา"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"ยุโรป"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"แอฟริกา"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"เอเชีย"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"ออสเตรเลีย"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"แปซิฟิก"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"ทั้งหมด"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 วินาที"</item>
+        <item>"30 วินาที"</item>
+        <item>"1 นาที"</item>
+        <item>"2 นาที"</item>
+        <item>"5 นาที"</item>
+        <item>"10 นาที"</item>
+        <item>"30 นาที"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"ไม่เลย"</item>
+        <item>"15 วินาที"</item>
+        <item>"30 วินาที"</item>
+        <item>"1 นาที"</item>
+        <item>"2 นาที"</item>
+        <item>"5 นาที"</item>
+        <item>"10 นาที"</item>
+        <item>"30 นาที"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"ทันที"</item>
+        <item>"5 วินาที"</item>
+        <item>"15 วินาที"</item>
+        <item>"30 วินาที"</item>
+        <item>"1 นาที"</item>
+        <item>"2 นาที"</item>
+        <item>"5 นาที"</item>
+        <item>"10 นาที"</item>
+        <item>"30 นาที"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"เล็ก"</item>
+        <item msgid="3579015730662088893">"ค่าเริ่มต้น"</item>
+        <item msgid="1678068858001018666">"ใหญ่"</item>
+        <item msgid="490158884605093126">"ใหญ่ที่สุด"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"กำลังสแกน..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"กำลังเชื่อมต่อ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"กำลังตรวจสอบความถูกต้อง\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"กำลังรับที่อยู่ IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"เชื่อมต่อแล้ว"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ระงับไว้"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"กำลังตัดการเชื่อมต่อ..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ตัดการเชื่อมต่อ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ไม่สำเร็จ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ถูกบล็อก"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"หลีกเลี่ยงการเชื่อมต่อกับสัญญาณที่ไม่แรงพอชั่วคราว"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"กำลังสแกน..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"กำลังเชื่อมต่อไปยัง <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"กำลังตรวจสอบสิทธิ์กับ<xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"กำลังรับที่อยู่ IP จาก <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"เชื่อมต่อกับ <xliff:g id="NETWORK_NAME">%1$s</xliff:g> แล้ว"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ระงับไว้"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"กำลังตัดการเชื่อมต่อจาก <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ตัดการเชื่อมต่อ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ไม่สำเร็จ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ถูกบล็อก"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"หลีกเลี่ยงการเชื่อมต่อกับสัญญาณที่ไม่แรงพอชั่วคราว"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"ปุ่มกด"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"PIN จากอุปกรณ์เพียร์"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"PIN จากอุปกรณ์นี้"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"เชื่อมต่อแล้ว"</item>
+        <item>"เชิญแล้ว"</item>
+        <item>"ไม่สำเร็จ"</item>
+        <item>"พร้อมใช้งาน"</item>
+        <item>"อยู่นอกระยะสัญญาณ"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 นาที"</item>
+        <item>"5 นาที"</item>
+        <item>"1 ชั่วโมง"</item>
+        <item>"ไม่มีระยะหมดเวลา"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"แย่"</item>
+        <item>"พอใช้"</item>
+        <item>"ดี"</item>
+        <item>"ยอดเยี่ยม"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ทุกครั้ง"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"เมื่อเสียบปลั๊กเท่านั้น"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"ไม่ต้องเลย"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ทุกครั้ง"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"เมื่อเสียบปลั๊กเท่านั้น"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"ไม่เลย"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"30 วันที่ผ่านมา"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"ตั้งรอบการใช้..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"เวลาในการใช้งาน"</item>
+        <item>"ครั้งสุดท้ายที่ใช้"</item>
+        <item>"ชื่อแอปพลิเคชัน"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"ไม่มี"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"ไม่มี"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"คงที่"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ไม่มี"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ด้วยตนเอง"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"กำหนดค่าพร็อกซีอัตโนมัติ"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"ไม่มี"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP หรือ CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"ไม่ระบุ"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"ไม่มี"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"ที่จัดเก็บข้อมูลอุปกรณ์ภายใน"</item>
+        <item>"การ์ด SD แบบนำออกได้"</item>
+        <item>"ให้ระบบเลือก"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"ตำแหน่ง"</item>
+        <item>"ส่วนตัว"</item>
+        <item>"การรับส่งข้อความ"</item>
+        <item>"สื่อ"</item>
+        <item>"อุปกรณ์"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"ตำแหน่งคร่าวๆ"</item>
+        <item>"ตำแหน่งโดยละเอียด"</item>
+        <item>GPS</item>
+        <item>"สั่น"</item>
+        <item>"อ่านรายชื่อติดต่อ"</item>
+        <item>"แก้ไขรายชื่อติดต่อ"</item>
+        <item>"อ่านประวัติการโทร"</item>
+        <item>"แก้ไขประวัติการโทร"</item>
+        <item>"อ่านปฏิทิน"</item>
+        <item>"แก้ไขปฏิทิน"</item>
+        <item>"ค้นหา WiFi"</item>
+        <item>"การแจ้งเตือน"</item>
+        <item>"ค้นหาเซลล์"</item>
+        <item>"โทรเข้าโทรศัพท์"</item>
+        <item>"อ่าน SMS"</item>
+        <item>"เขียน SMS"</item>
+        <item>"รับ SMS"</item>
+        <item>"รับ SMS ฉุกเฉิน"</item>
+        <item>"รับ MMS"</item>
+        <item>"รับ WAP Push"</item>
+        <item>"ส่ง SMS"</item>
+        <item>"อ่าน ICC SMS"</item>
+        <item>"เขียน ICC SMS"</item>
+        <item>"แก้ไขการตั้งค่า"</item>
+        <item>"วาดด้านบน"</item>
+        <item>"เข้าถึงการแจ้งเตือน"</item>
+        <item>"กล้อง"</item>
+        <item>"บันทึกเสียง"</item>
+        <item>"เล่นเสียง"</item>
+        <item>"อ่านคลิปบอร์ด"</item>
+        <item>"แก้ไขคลิปบอร์ด"</item>
+        <item>"ปุ่มสื่อ"</item>
+        <item>"โฟกัสอัตโนมัติ"</item>
+        <item>"ระดับเสียงหลัก"</item>
+        <item>"ระดับเสียงสนทนา"</item>
+        <item>"ระดับเสียงเรียกเข้า"</item>
+        <item>"ระดับเสียงของสื่อ"</item>
+        <item>"ระดับเสียงปลุก"</item>
+        <item>"ระดับเสียงการแจ้งเตือน"</item>
+        <item>"ระดับเสียงบลูทูธ"</item>
+        <item>"ทำงานตลอดเวลา"</item>
+        <item>"ตำแหน่งจอภาพ"</item>
+        <item>"ติดตามตำแหน่งโดยใช้พลังงานมาก"</item>
+        <item>"ดูสถิติการใช้งาน"</item>
+        <item>"ปิด/เปิดเสียงไมโครโฟน"</item>
+        <item>"แสดงข้อความโทสต์"</item>
+        <item>"สื่อของโครงการ"</item>
+        <item>"เปิดใช้งาน VPN"</item>
+        <item>"เขียนวอลเปเปอร์"</item>
+        <item>"สนับสนุนโครงสร้าง"</item>
+        <item>"สนับสนุนภาพหน้าจอ"</item>
+        <item>"อ่านสถานะโทรศัพท์"</item>
+        <item>"เพิ่มข้อความเสียง"</item>
+        <item>"ใช้ SIP"</item>
+        <item>"โทรออก"</item>
+        <item>"ลายนิ้วมือ"</item>
+        <item>"เซ็นเซอร์ร่างกาย"</item>
+        <item>"อ่านการส่งข้อมูลเตือนภัยทางมือถือ (CB)"</item>
+        <item>"จำลองสถานที่"</item>
+        <item>"อ่านพื้นที่เก็บข้อมูล"</item>
+        <item>"เขียนพื้นที่เก็บข้อมูล"</item>
+        <item>"เปิดหน้าจอ"</item>
+        <item>"สร้างบัญชี"</item>
+        <item>"ทำงานในพื้นหลัง"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"ตำแหน่ง"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"สั่น"</item>
+        <item>"อ่านรายชื่อติดต่อ"</item>
+        <item>"แก้ไขรายชื่อติดต่อ"</item>
+        <item>"อ่านประวัติการโทร"</item>
+        <item>"แก้ไขประวัติการโทร"</item>
+        <item>"อ่านปฏิทิน"</item>
+        <item>"แก้ไขปฏิทิน"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"การแจ้งเตือนโพสต์"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"โทรเข้าโทรศัพท์"</item>
+        <item>"อ่าน SMS/MMS"</item>
+        <item>"เขียน SMS/MMS"</item>
+        <item>"รับ SMS/MMS"</item>
+        <item>"รับ SMS/MMS"</item>
+        <item>"รับ SMS/MMS"</item>
+        <item>"รับ SMS/MMS"</item>
+        <item>"ส่ง SMS/MMS"</item>
+        <item>"อ่าน SMS/MMS"</item>
+        <item>"เขียน SMS/MMS"</item>
+        <item>"แก้ไขการตั้งค่า"</item>
+        <item>"วาดด้านบน"</item>
+        <item>"เข้าถึงการแจ้งเตือน"</item>
+        <item>"กล้อง"</item>
+        <item>"บันทึกเสียง"</item>
+        <item>"เล่นเสียง"</item>
+        <item>"อ่านคลิปบอร์ด"</item>
+        <item>"แก้ไขคลิปบอร์ด"</item>
+        <item>"ปุ่มสื่อ"</item>
+        <item>"โฟกัสอัตโนมัติ"</item>
+        <item>"ระดับเสียงหลัก"</item>
+        <item>"ระดับเสียงสนทนา"</item>
+        <item>"ระดับเสียงเรียกเข้า"</item>
+        <item>"ระดับเสียงของสื่อ"</item>
+        <item>"ระดับเสียงปลุก"</item>
+        <item>"ระดับเสียงของการแจ้งเตือน"</item>
+        <item>"ระดับบลูทูธ"</item>
+        <item>"ทำงานตลอดเวลา"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"ตำแหน่ง"</item>
+        <item>"ดูสถิติการใช้งาน"</item>
+        <item>"ปิด/เปิดเสียงไมโครโฟน"</item>
+        <item>"แสดงข้อความโทสต์"</item>
+        <item>"สื่อของโครงการ"</item>
+        <item>"เปิดใช้งาน VPN"</item>
+        <item>"เขียนวอลเปเปอร์"</item>
+        <item>"สนับสนุนโครงสร้าง"</item>
+        <item>"สนับสนุนภาพหน้าจอ"</item>
+        <item>"อ่านสถานะโทรศัพท์"</item>
+        <item>"เพิ่มข้อความเสียง"</item>
+        <item>"ใช้ SIP"</item>
+        <item>"โทรออก"</item>
+        <item>"ลายนิ้วมือ"</item>
+        <item>"เซ็นเซอร์ร่างกาย"</item>
+        <item>"อ่านการส่งข้อมูลเตือนภัยทางมือถือ (CB)"</item>
+        <item>"จำลองสถานที่"</item>
+        <item>"อ่านพื้นที่เก็บข้อมูล"</item>
+        <item>"เขียนพื้นที่เก็บข้อมูล"</item>
+        <item>"เปิดหน้าจอ"</item>
+        <item>"สร้างบัญชี"</item>
+        <item>"ทำงานในพื้นหลัง"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"สั้น"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"ปานกลาง"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"ยาว"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"ค่าเริ่มต้น"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"แบบไม่เป็นทางการ"</item>
+        <item>"คัดลายมือ"</item>
+        <item>"อักษรตัวพิมพ์ใหญ่ขนาดเล็ก"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"เล็กมาก"</item>
+        <item>"เล็ก"</item>
+        <item>"ปกติ"</item>
+        <item>"ใหญ่"</item>
+        <item>"ใหญ่มาก"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"ค่าเริ่มต้น"</item>
+        <item>"ไม่มี"</item>
+        <item>"ตีกรอบ"</item>
+        <item>"เงาตกกระทบ"</item>
+        <item>"ยกขึ้น"</item>
+        <item>"ลดต่ำ"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"ใช้ค่าเริ่มต้นของแอป"</item>
+        <item>"สีขาวบนพื้นสีดำ"</item>
+        <item>"สีดำบนพื้นสีขาว"</item>
+        <item>"สีเหลืองบนพื้นสีดำ"</item>
+        <item>"สีเหลืองบนพื้นสีน้ำเงิน"</item>
+        <item>"กำหนดเอง"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN พร้อมด้วยคีย์ที่แชร์ไว้ล่วงหน้า"</item>
+        <item>"L2TP/IPSec VPN พร้อมด้วยใบรับรอง"</item>
+        <item>"IPSec VPN พร้อมด้วยคีย์ที่แชร์ไว้ล่วงหน้าและการตรวจสอบสิทธิ์ Xauth"</item>
+        <item>"IPSec VPN พร้อมด้วยใบรับรองและการตรวจสอบสิทธิ์ Xauth"</item>
+        <item>"IPSec VPN พร้อมด้วยใบรับรองและการตรวจสอบสิทธิ์แบบผสม"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"ไม่ได้เชื่อมต่อ"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"กำลังเริ่มต้น..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"กำลังเชื่อมต่อ\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"เชื่อมต่อแล้ว"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"ระยะหมดเวลา"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"ไม่สำเร็จ"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"ถาม"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"ไม่อนุญาตเลย"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"อนุญาตเสมอ"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"ปกติ"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"ปานกลาง"</item>
+        <!-- Memory is running low. -->
+        <item>"ต่ำ"</item>
+        <!-- Memory is critical. -->
+        <item>"วิกฤต"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"ปกติ"</item>
+        <item>"ปานกลาง"</item>
+        <item>"ต่ำ"</item>
+        <item>"วิกฤต"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"ต่อเนื่อง"</item>
+        <item>"กิจกรรมแรก"</item>
+        <item>"สำคัญ (พื้นหน้า)"</item>
+        <item>"สำคัญ (พื้นหลัง)"</item>
+        <item>"การสำรองข้อมูล"</item>
+        <item>"ใช้หน่วยความจำมาก"</item>
+        <item>"บริการ (กำลังทำงาน)"</item>
+        <item>"บริการ (กำลังรีสตาร์ท)"</item>
+        <item>"ผู้รับ"</item>
+        <item>"หน้าแรก"</item>
+        <item>"กิจกรรมสุดท้าย"</item>
+        <item>"แคชไว้ (กิจกรรม)"</item>
+        <item>"แคชไว้ (ไคลเอ็นต์กิจกรรม)"</item>
+        <item>"แคชไว้ (ว่างเปล่า)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"สีน้ำเงินอมเขียว"</item>
+        <item>"น้ำเงิน"</item>
+        <item>"สีคราม"</item>
+        <item>"ม่วง"</item>
+        <item>"สีชมพู"</item>
+        <item>"แดง"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"เชื่อมต่อโดยอัตโนมัติ"</item>
+        <item>"เชื่อต่อด้วยตัวเอง"</item>
+        <item>"ถามทุกครั้ง"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"อายุเกิน 30 วัน"</item>
+        <item>"อายุเกิน 60 วัน"</item>
+        <item>"อายุเกิน 90 วัน"</item>
+    </string-array></resources>

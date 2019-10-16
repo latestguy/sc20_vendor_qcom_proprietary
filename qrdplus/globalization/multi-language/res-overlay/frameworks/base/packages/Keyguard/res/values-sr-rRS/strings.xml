@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+ *
+ * Copyright (C) 2006 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- App label in the manifest  -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Заштита тастера"</string>
+    <!-- Instructions telling the user to enter their SIM PIN to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <add-resource type="string" name="keyguard_password_enter_pin_code"/>
+    <string name="keyguard_password_enter_pin_code">"Унесите PIN кôд"</string>
+
+    <!-- Instructions telling the user to enter their SIM PUK to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <add-resource type="string" name="keyguard_password_enter_puk_code"/>
+    <string name="keyguard_password_enter_puk_code">"Унесите SIM PUK кôд и нови PIN кôд"</string>
+
+    <!-- Prompt to enter SIM PUK in Edit Text Box in unlock screen -->
+    <add-resource type="string" name="keyguard_password_enter_puk_prompt"/>
+    <string name="keyguard_password_enter_puk_prompt">"SIM PUK кôд"</string>
+    <!-- Prompt to enter New SIM PIN in Edit Text Box in unlock screen -->
+    <add-resource type="string" name="keyguard_password_enter_pin_prompt"/>
+    <string name="keyguard_password_enter_pin_prompt">"Нови SIM PIN кôд"</string>
+
+    <!-- Displayed as hint in passwordEntry EditText on PasswordUnlockScreen [CHAR LIMIT=30]-->
+    <add-resource type="string" name="keyguard_password_entry_touch_hint"/>
+    <string name="keyguard_password_entry_touch_hint"><font size="17">"Додирните да бисте унели лозинку"</font></string>
+
+    <!-- Instructions telling the user to enter their text password to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <add-resource type="string" name="keyguard_password_enter_password_code"/>
+    <string name="keyguard_password_enter_password_code">"Откуцајте лозинку да бисте откључали"</string>
+
+    <!-- Instructions telling the user to enter their PIN password to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <add-resource type="string" name="keyguard_password_enter_pin_password_code"/>
+    <string name="keyguard_password_enter_pin_password_code">"Унесите PIN за откључавање"</string>
+
+    <!-- Instructions telling the user that they entered the wrong pin while trying
+         to unlock the keyguard.  Displayed in one line in a large font.  -->
+    <add-resource type="string" name="keyguard_password_wrong_pin_code"/>
+    <string name="keyguard_password_wrong_pin_code">"PIN кôд је нетачан."</string>
+
+    <!-- Shown in the lock screen when there is SIM card IO error. -->
+    <add-resource type="string" name="lockscreen_sim_error_message_short"/>
+    <string name="lockscreen_sim_error_message_short">"Неважећа картица."</string>
+
+    <!-- When the lock screen is showing, the phone is plugged in and the battery is fully
+         charged, say that it is charged. -->
+    <add-resource type="string" name="keyguard_charged"/>
+    <string name="keyguard_charged">"Напуњено"</string>
+
+    <!-- When the lock screen is showing and the phone plugged in, and the battery
+         is not fully charged, say that it's charging.  -->
+    <add-resource type="string" name="keyguard_plugged_in"/>
+    <string name="keyguard_plugged_in">"Пуњење"</string>
+
+    <!-- When the lock screen is showing and the phone plugged in, and the battery
+         is not fully charged, and it's plugged into a fast charger, say that it's charging fast.  -->
+    <add-resource type="string" name="keyguard_plugged_in_charging_fast"/>
+    <string name="keyguard_plugged_in_charging_fast">"Брзо се пуни"</string>
+
+    <!-- When the lock screen is showing and the phone plugged in, and the battery
+         is not fully charged, and it's plugged into a slow charger, say that it's charging slowly.  -->
+    <add-resource type="string" name="keyguard_plugged_in_charging_slowly"/>
+    <string name="keyguard_plugged_in_charging_slowly">"Споро се пуни"</string>
+
+    <!-- When the lock screen is showing and the battery is low, warn user to plug
+         in the phone soon. -->
+    <add-resource type="string" name="keyguard_low_battery"/>
+    <string name="keyguard_low_battery">"Повежите пуњач."</string>
+
+    <!-- On the keyguard screen, when pattern lock is disabled, only tell them to press menu to unlock.  This is shown in small font at the bottom. -->
+    <add-resource type="string" name="keyguard_instructions_when_pattern_disabled"/>
+    <string name="keyguard_instructions_when_pattern_disabled">"Притисните Мени да бисте откључали."</string>
+
+    <!-- SIM messages -->
+    <!-- When the user inserts a sim card from an unsupported network, it becomes network locked -->
+    <add-resource type="string" name="keyguard_network_locked_message"/>
+    <string name="keyguard_network_locked_message">"Мрежа је закључана"</string>
+    <!-- Shown when there is no SIM card for India RJIL. -->
+    <add-resource type="string" name="keyguard_missing_sim_message_RJIL"/>
+    <string name="keyguard_missing_sim_message_RJIL">"Нема SIM картице"</string>
+    <!-- Shown when there is no SIM card. -->
+    <add-resource type="string" name="keyguard_missing_sim_message_short"/>
+    <string name="keyguard_missing_sim_message_short">"Нема SIM картице"</string>
+    <!-- Shown when there is no SIM card. -->
+    <add-resource type="string" name="keyguard_missing_sim_message"/>
+    <string name="keyguard_missing_sim_message" product="tablet">"У таблету нема SIM картице."</string>
+    <!-- Shown when there is no SIM card. -->
+    <add-resource type="string" name="keyguard_missing_sim_message"/>
+    <string name="keyguard_missing_sim_message" product="default">"У телефону нема SIM картице."</string>
+    <!-- Shown to ask the user to insert a SIM card. -->
+    <add-resource type="string" name="keyguard_missing_sim_instructions"/>
+    <string name="keyguard_missing_sim_instructions">"Уметните SIM картицу."</string>
+    <!-- Shown to ask the user to insert a SIM card when sim is missing or not readable. -->
+    <add-resource type="string" name="keyguard_missing_sim_instructions_long"/>
+    <string name="keyguard_missing_sim_instructions_long">"SIM картица недостаје или не може да се прочита. Уметните SIM картицу."</string>
+    <!-- Shown when SIM card is permanently disabled. -->
+    <add-resource type="string" name="keyguard_permanent_disabled_sim_message_short"/>
+    <string name="keyguard_permanent_disabled_sim_message_short">"SIM картица је неупотребљива."</string>
+    <!-- Shown to inform the user to SIM card is permanently disabled. -->
+    <add-resource type="string" name="keyguard_permanent_disabled_sim_instructions"/>
+    <string name="keyguard_permanent_disabled_sim_instructions">"SIM картица је трајно онемогућена.\n Обратите се добављачу услуге бежичне мреже да бисте добили другу SIM картицу."</string>
+    <!-- Shown to tell the user that their SIM is locked and they must unlock it. -->
+    <add-resource type="string" name="keyguard_sim_locked_message"/>
+    <string name="keyguard_sim_locked_message">"SIM картица је закључана."</string>
+    <!-- When the user enters a wrong sim pin too many times, it becomes PUK locked (Pin Unlock Kode) -->
+    <add-resource type="string" name="keyguard_sim_puk_locked_message"/>
+    <string name="keyguard_sim_puk_locked_message">"SIM картица је закључана PUK кодом."</string>
+    <!-- For the unlock screen, When the user enters a sim unlock code, it takes a little while to check
+         whether it is valid, and to unlock the sim if it is valid.  we display a
+         progress dialog in the meantime.  this is the emssage. -->
+    <add-resource type="string" name="keyguard_sim_unlock_progress_dialog_message"/>
+    <string name="keyguard_sim_unlock_progress_dialog_message">"Откључавање SIM картице\u2026"</string>
+
+    <!-- Accessibility description of the PIN password view. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="keyguard_accessibility_pin_area"/>
+    <string name="keyguard_accessibility_pin_area">"Област за PIN"</string>
+    <!-- Accessibility description of the SIM PIN password view. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="keyguard_accessibility_sim_pin_area"/>
+    <string name="keyguard_accessibility_sim_pin_area">"Област за PIN за SIM"</string>
+    <!-- Accessibility description of the SIM PUK password view. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="keyguard_accessibility_sim_puk_area"/>
+    <string name="keyguard_accessibility_sim_puk_area">"Област за PUK за SIM"</string>
+
+    <!-- Accessibility description for the text view that indicates when the next alarm is set (not shown on screen). [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="keyguard_accessibility_next_alarm"/>
+    <string name="keyguard_accessibility_next_alarm">"Следећи аларм је подешен за <xliff:g id="ALARM">%1$s</xliff:g>"</string>
+
+    <!-- KeyguardPinView - accessibility support -->
+    <!-- Description of the Delete button in a KeyboardView. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keyboardview_keycode_delete"/>
+    <string name="keyboardview_keycode_delete">"Избриши"</string>
+    <!-- Description of the Enter button in a KeyboardView. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keyboardview_keycode_enter"/>
+    <string name="keyboardview_keycode_enter">"Enter"</string>
+
+    <!-- Message shown in pattern unlock after some number of unsuccessful attempts -->
+    <add-resource type="string" name="kg_forgot_pattern_button_text"/>
+    <string name="kg_forgot_pattern_button_text">"Заборављени шаблон"</string>
+    <!-- Message shown when user enters wrong pattern -->
+    <add-resource type="string" name="kg_wrong_pattern"/>
+    <string name="kg_wrong_pattern">"Погрешан шаблон"</string>
+    <!-- Message shown when user enters wrong password -->
+    <add-resource type="string" name="kg_wrong_password"/>
+    <string name="kg_wrong_password">"Погрешна лозинка"</string>
+    <!-- Message shown when user enters wrong PIN -->
+    <add-resource type="string" name="kg_wrong_pin"/>
+    <string name="kg_wrong_pin">"Погрешан PIN"</string>
+    <!-- Countdown message shown after too many failed unlock attempts -->
+    <add-resource type="string" name="kg_too_many_failed_attempts_countdown"/>
+    <string name="kg_too_many_failed_attempts_countdown">"Покушајте поново за <xliff:g id="NUMBER">%d</xliff:g> секунде(и)."</string>
+    <!-- Instructions for using the pattern unlock screen -->
+    <add-resource type="string" name="kg_pattern_instructions"/>
+    <string name="kg_pattern_instructions">"Нацртајте шаблон"</string>
+    <!-- Instructions for using the SIM PIN unlock screen -->
+    <add-resource type="string" name="kg_sim_pin_instructions"/>
+    <string name="kg_sim_pin_instructions">"Унесите PIN SIM картице"</string>
+    <!-- Instructions for using the SIM PIN unlock screen when there's more than one SIM -->
+    <add-resource type="string" name="kg_sim_pin_instructions_multi"/>
+    <string name="kg_sim_pin_instructions_multi">"Унесите PIN за SIM „<xliff:g id="CARRIER">%1$s</xliff:g>“"</string>
+    <!-- Instructions for using the PIN unlock screen -->
+    <add-resource type="string" name="kg_pin_instructions"/>
+    <string name="kg_pin_instructions">"Унесите PIN"</string>
+    <!-- Instructions for using the password unlock screen -->
+    <add-resource type="string" name="kg_password_instructions"/>
+    <string name="kg_password_instructions">"Унесите лозинку"</string>
+    <!-- Hint shown in the PUK screen that asks the user to enter the PUK code given to them by their provider -->
+    <add-resource type="string" name="kg_puk_enter_puk_hint"/>
+    <string name="kg_puk_enter_puk_hint">"SIM картица је сада онемогућена. Унесите PUK кôд да бисте наставили. За детаље контактирајте оператера."</string>
+    <!-- Hint shown when there are multiple SIMs in the device to ask the user to enter the PUK code given to them by their provider -->
+    <add-resource type="string" name="kg_puk_enter_puk_hint_multi"/>
+    <string name="kg_puk_enter_puk_hint_multi">"SIM „<xliff:g id="CARRIER">%1$s</xliff:g>“ је сада онемогућен. Унесите PUK кôд да бисте наставили. Контактирајте оператера за детаље."</string>
+    <!-- Hint shown in the PUK unlock screen PIN TextView -->
+    <add-resource type="string" name="kg_puk_enter_pin_hint"/>
+    <string name="kg_puk_enter_pin_hint">"Унесите жељени PIN кôд"</string>
+    <!-- Message shown when the user needs to confirm the PIN they just entered in the PUK screen -->
+    <add-resource type="string" name="kg_enter_confirm_pin_hint"/>
+    <string name="kg_enter_confirm_pin_hint">"Потврдите жељени PIN кôд"</string>
+    <!-- Message shown in dialog while the device is unlocking the SIM card -->
+    <add-resource type="string" name="kg_sim_unlock_progress_dialog_message"/>
+    <string name="kg_sim_unlock_progress_dialog_message">"Откључавање SIM картице\u2026"</string>
+    <!-- Message shown when the user enters an invalid SIM pin password in PUK screen -->
+    <add-resource type="string" name="kg_invalid_sim_pin_hint"/>
+    <string name="kg_invalid_sim_pin_hint">"Унесите PIN који има од 4 до 8 бројева."</string>
+    <!-- Message shown when the user enters an invalid PUK code in the PUK screen -->
+    <add-resource type="string" name="kg_invalid_sim_puk_hint"/>
+    <string name="kg_invalid_sim_puk_hint">"PUK кôд треба да има 8 или више бројева."</string>
+    <!-- Message shown when the user enters an invalid PUK code -->
+    <add-resource type="string" name="kg_invalid_puk"/>
+    <string name="kg_invalid_puk">"Поново унесите исправни PUK кôд. Поновљени покушаји ће трајно онемогућити SIM."</string>
+      <!-- String shown in PUK screen when PIN codes don't match -->
+    <add-resource type="string" name="kg_invalid_confirm_pin_hint"/>
+    <string name="kg_invalid_confirm_pin_hint" product="default">"PIN кодови се не подударају"</string>
+    <!-- Message shown when the user exceeds the maximum number of pattern attempts -->
+    <add-resource type="string" name="kg_login_too_many_attempts"/>
+    <string name="kg_login_too_many_attempts">"Превише покушаја уноса шаблона"</string>
+    <!-- Message shown in dialog when max number of attempts are reached for PIN screen of keyguard -->
+    <add-resource type="string" name="kg_too_many_failed_pin_attempts_dialog_message"/>
+    <string name="kg_too_many_failed_pin_attempts_dialog_message">"Унели сте нетачни PIN <xliff:g id="NUMBER_0">%1$d</xliff:g> пута. \n\nПокушајте поново за <xliff:g id="NUMBER_1">%2$d</xliff:g> секунде(и)."</string>
+    <!-- Message shown in dialog when max number of attempts are reached for password screen of keyguard -->
+    <add-resource type="string" name="kg_too_many_failed_password_attempts_dialog_message"/>
+    <string name="kg_too_many_failed_password_attempts_dialog_message">"Унели сте нетачну лозинку <xliff:g id="NUMBER_0">%1$d</xliff:g> пута. \n\nПокушајте поново за <xliff:g id="NUMBER_1">%2$d</xliff:g> секунде(и)."</string>
+    <add-resource type="string" name="kg_too_many_failed_pattern_attempts_dialog_message"/>
+    <string name="kg_too_many_failed_pattern_attempts_dialog_message">"Нацртали сте шаблон за откључавање нетачно <xliff:g id="NUMBER_0">%1$d</xliff:g> пута. \n\nПокушајте поново за <xliff:g id="NUMBER_1">%2$d</xliff:g> секунде(и)."</string>
+
+    <!-- Message shown when user is almost at the limit of password attempts where the device will be wiped. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_wipe"/>
+    <string name="kg_failed_attempts_almost_at_wipe" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се таблет ресетује и сви подаци са њега бришу."</string>
+    <!-- Message shown when user is almost at the limit of password attempts where the device will be wiped. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_wipe"/>
+    <string name="kg_failed_attempts_almost_at_wipe" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се телефон ресетује и сви подаци са њега бришу."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the device will now be wiped [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_wiping"/>
+    <string name="kg_failed_attempts_now_wiping" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER">%d</xliff:g> пут(а). Таблет ће бити ресетован и сви подаци са њега ће бити избрисани."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the device will now be wiped [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_wiping"/>
+    <string name="kg_failed_attempts_now_wiping" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER">%d</xliff:g> пут(а). Телефон ће бити ресетован и сви подаци са њега ће бити избрисани."</string>
+
+    <!-- Message shown when user is almost at the limit of password attempts where the user will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_erase_user"/>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се овај корисник уклања и сви подаци корисника бришу."</string>
+    <!-- Message shown when user is almost at the limit of password attempts where the user will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_erase_user"/>
+    <string name="kg_failed_attempts_almost_at_erase_user" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се овај корисник уклања и сви подаци корисника бришу."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the user will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_erasing_user"/>
+    <string name="kg_failed_attempts_now_erasing_user" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER">%d</xliff:g> пут(а). Овај корисник ће бити уклоњен и сви подаци корисника ће бити избрисани."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the user will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_erasing_user"/>
+    <string name="kg_failed_attempts_now_erasing_user" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER">%d</xliff:g> пут(а). Овај корисник ће бити уклоњен и сви подаци корисника ће бити избрисани."</string>
+
+    <!-- Message shown when user is almost at the limit of password attempts where the profile will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_erase_profile"/>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се пословни профил уклања и сви подаци са профила бришу."</string>
+    <!-- Message shown when user is almost at the limit of password attempts where the profile will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_erase_profile"/>
+    <string name="kg_failed_attempts_almost_at_erase_profile" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER_0">%1$d</xliff:g> пут(а). Имате још <xliff:g id="NUMBER_1">%2$d</xliff:g> покушај(а), након чега се пословни профил уклања и сви подаци са профила бришу."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the profile will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_erasing_profile"/>
+    <string name="kg_failed_attempts_now_erasing_profile" product="tablet">"Погрешно сте покушали да откључате таблет <xliff:g id="NUMBER">%d</xliff:g> пут(а). Пословни профил ће бити уклоњен и сви подаци са њега ће бити избрисани."</string>
+    <!-- Message shown in dialog when user has exceeded the maximum attempts and the profile will be removed. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="kg_failed_attempts_now_erasing_profile"/>
+    <string name="kg_failed_attempts_now_erasing_profile" product="default">"Погрешно сте покушали да откључате телефон <xliff:g id="NUMBER">%d</xliff:g> пут(а). Пословни профил ће бити уклоњен и сви подаци са њега ће бити избрисани."</string>
+
+    <!-- Message shown in dialog when user is almost at the limit where they will be
+    locked out and may have to enter an alternate username/password to unlock the phone -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_login"/>
+    <string name="kg_failed_attempts_almost_at_login" product="tablet">"Нацртали сте шаблон за откључавање нетачно <xliff:g id="NUMBER_0">%1$d</xliff:g> пута. После још <xliff:g id="NUMBER_1">%2$d</xliff:g> неуспешна(их) покушаја, од вас ће бити затражено да откључате таблет помоћу налога е-поште.\n\nПокушајте поново за <xliff:g id="NUMBER_2">%3$d</xliff:g> секунде(и)."</string>
+    <!-- Message shown in dialog when user is almost at the limit where they will be
+    locked out and may have to enter an alternate username/password to unlock the phone -->
+    <add-resource type="string" name="kg_failed_attempts_almost_at_login"/>
+    <string name="kg_failed_attempts_almost_at_login" product="default">"Нацртали сте шаблон за откључавање нетачно <xliff:g id="NUMBER_0">%1$d</xliff:g> пута. После још <xliff:g id="NUMBER_1">%2$d</xliff:g> неуспешна(их) покушаја, од вас ће бити затражено да откључате телефон помоћу налога е-поште.\n\nПокушајте поново за <xliff:g id="NUMBER_2">%3$d</xliff:g> секунде(и)."</string>
+
+    <!-- Instructions telling the user that they entered the wrong SIM PIN for the last time.
+         Displayed in a dialog box.  -->
+    <add-resource type="string" name="kg_password_wrong_pin_code_pukked"/>
+    <string name="kg_password_wrong_pin_code_pukked">"Нетачан SIM PIN кôд. Сада морате да контактирате мобилног оператера да бисте откључали уређај."</string>
+    <!-- Instructions telling the user that they entered the wrong SIM PIN while trying
+         to unlock the keyguard.  Displayed in a dialog box.  -->
+    <add-resource type="plurals" name="kg_password_wrong_pin_code"/>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="one">"Нетачан SIM <xliff:g id="slotid">%d</xliff:g> PIN кôд. Имате још <xliff:g id="NUMBER_1">%d</xliff:g> покушај."</item>
+        <item quantity="other">"Нетачан SIM <xliff:g id="slotid">%d</xliff:g> PIN кôд. Имате још <xliff:g id="NUMBER_1">%d</xliff:g> покушаја."</item>
+    </plurals>
+
+    <!-- Instructions telling the user that they have exhausted SIM PUK retries and the SIM is now unusable.
+         Displayed in a dialog box.  -->
+    <add-resource type="string" name="kg_password_wrong_puk_code_dead"/>
+    <string name="kg_password_wrong_puk_code_dead">"SIM картица је неупотребљива. Контактирајте мобилног оператера."</string>
+    <!-- Instructions telling the user that they entered the wrong puk while trying
+         to unlock the keyguard.  Displayed in a dialog box.  -->
+    <add-resource type="plurals" name="kg_password_wrong_puk_code"/>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="one">"Нетачан SIM PUK кôд. Имате још <xliff:g id="NUMBER">%d</xliff:g> покушај пре него што SIM картица постане трајно неупотребљива."</item>
+        <item quantity="other">"Нетачан SIM PUK кôд. Имате још <xliff:g id="NUMBER">%d</xliff:g> покушаја пре него што SIM картица постане трајно неупотребљива."</item>
+    </plurals>
+    <!-- Instructions telling the user that the operation to unlock the keyguard
+         with SIM PIN failed. Displayed in one line in a large font.  -->
+    <add-resource type="string" name="kg_password_pin_failed"/>
+    <string name="kg_password_pin_failed">"Радња са SIM PIN кодом није успела!"</string>
+    <!-- Instructions telling the user that the operation to unlock the keyguard
+         with PUK failed. Displayed in one line in a large font.  -->
+    <add-resource type="string" name="kg_password_puk_failed"/>
+    <string name="kg_password_puk_failed">"Радња са SIM PUK кодом није успела!"</string>
+    <!-- Notification telling the user that the PIN1 they entered is valid -->
+    <add-resource type="string" name="kg_pin_accepted"/>
+    <string name="kg_pin_accepted">"Кôд је прихваћен!"</string>
+
+    <!-- On the keyguard screen, it shows the carrier the phone is connected to.
+        This is displayed if the phone is not connected to a carrier.-->
+    <add-resource type="string" name="keyguard_carrier_default"/>
+    <string name="keyguard_carrier_default">"Офлајн сте."</string>
+
+    <add-resource type="string" name="kg_remaining_attempts"/>
+    <string name="kg_remaining_attempts">"Преостали покушаји: <xliff:g id="number">%d</xliff:g>"</string>
+    <add-resource type="string" name="kg_failed_pin_attempts_now_wiping"/>
+    <string name="kg_failed_pin_attempts_now_wiping">"Унели сте погрешан PIN код <xliff:g id="number">%d</xliff:g>пута, желите ли да вратите телефон на фабричка подешавања? "</string>
+    <add-resource type="string" name="kg_failed_password_attempts_now_wiping"/>
+    <string name="kg_failed_password_attempts_now_wiping">"Унели сте погрешну лозинку <xliff:g id="number">%d</xliff:g>пута,  желите ли да вратите телефон на фабричка подешавања? "</string>
+    <add-resource type="string" name="kg_failed_pattern_attempts_now_wiping"/>
+    <string name="kg_failed_pattern_attempts_now_wiping">"Унели сте погрешан шаблон <xliff:g id="number">%d</xliff:g>пута, желите ли да вратите телефон на фабричка подешавања? "</string>
+    <add-resource type="string" name="kg_failed_attempts_now_wiping_confirm"/>
+    <string name="kg_failed_attempts_now_wiping_confirm">"Тиме ћете избрисати све податке са унутрашњег складишта уређаја, а уређај ће бити враћен на фабричка подешавања.  "</string>
+
+    <!-- Content description of the switch input method button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ime_switch_button"/>
+    <string name="accessibility_ime_switch_button" msgid="5032926134740456424">"Промени метод уноса"</string>
+
+    <!-- Description of airplane mode -->
+    <add-resource type="string" name="airplane_mode"/>
+    <string name="airplane_mode">"Режим рада у авиону"</string>
+
+    <!-- An explanation text that the pattern needs to be solved since the device has just been restarted. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_restart_pattern"/>
+    <string name="kg_prompt_reason_restart_pattern">"Треба да унесете шаблон када се уређај поново покрене"</string>
+
+    <!-- An explanation text that the pin needs to be entered since the device has just been restarted. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_restart_pin"/>
+    <string name="kg_prompt_reason_restart_pin">"Треба да унесете PIN када се уређај поново покрене"</string>
+
+    <!-- An explanation text that the password needs to be entered since the device has just been restarted. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_restart_password"/>
+    <string name="kg_prompt_reason_restart_password">"Треба да унесте лозинку када се уређај поново покрене"</string>
+
+    <!-- An explanation text that the pattern needs to be solved since the user hasn't used strong authentication since quite some time. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_timeout_pattern"/>
+    <string name="kg_prompt_reason_timeout_pattern">"Треба да унесете шаблон ради додатне безбедности"</string>
+
+    <!-- An explanation text that the pin needs to be entered since the user hasn't used strong authentication since quite some time. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_timeout_pin"/>
+    <string name="kg_prompt_reason_timeout_pin">"Треба да унесете PIN ради додатне безбедности"</string>
+
+    <!-- An explanation text that the password needs to be entered since the user hasn't used strong authentication since quite some time. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_timeout_password"/>
+    <string name="kg_prompt_reason_timeout_password">"Треба да унесете лозинку ради додатне безбедности"</string>
+
+    <!-- An explanation text that the pattern needs to be solved since profiles have just been switched. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_switch_profiles_pattern"/>
+    <string name="kg_prompt_reason_switch_profiles_pattern">"Треба да унесете шаблон када прелазите са једног профила на други"</string>
+
+    <!-- An explanation text that the pin needs to be entered since profiles have just been switched. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_switch_profiles_pin"/>
+    <string name="kg_prompt_reason_switch_profiles_pin">"Треба да унесете PIN када прелазите са једног профила на други"</string>
+
+    <!-- An explanation text that the password needs to be entered since profiles have just been switched. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_switch_profiles_password"/>
+    <string name="kg_prompt_reason_switch_profiles_password">"Треба да унесете лозинку када прелазите са једног профила на други"</string>
+
+    <!-- An explanation text that the credential needs to be entered because a device admin has
+    locked the device. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_device_admin"/>
+    <string name="kg_prompt_reason_device_admin">"Администратор уређаја је закључао уређај"</string>
+
+    <!-- An explanation text that the credential needs to be entered because the user has clicked
+     the force lock button. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="kg_prompt_reason_user_request"/>
+    <string name="kg_prompt_reason_user_request">"Уређај је ручно закључан"</string>
+
+    <!-- An explanation text that the pattern needs to be solved since it hasn't been solved in a while. [CHAR LIMIT=80]-->
+    <add-resource type="plurals" name="kg_prompt_reason_time_pattern"/>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="one">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сат. Потврдите шаблон."</item>
+        <item quantity="other">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сата(и). Потврдите шаблон."</item>
+    </plurals>
+
+    <!-- An explanation text that the pin needs to be entered since it hasn't been entered in a while. [CHAR LIMIT=80]-->
+    <add-resource type="plurals" name="kg_prompt_reason_time_pin"/>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="one">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сат. Потврдите PIN."</item>
+        <item quantity="other">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сата(и). Потврдите PIN."</item>
+    </plurals>
+
+    <!-- An explanation text that the password needs to be entered since it hasn't been entered in a while. [CHAR LIMIT=80]-->
+    <add-resource type="plurals" name="kg_prompt_reason_time_password"/>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="one">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сат. Потврдите лозинку."</item>
+        <item quantity="other">"Нисте откључали уређај <xliff:g id="NUMBER">%d</xliff:g> сата(и). Потврдите лозинку."</item>
+    </plurals>
+
+    <!-- Fingerprint hint message when finger was not recognized.-->
+    <add-resource type="string" name="fingerprint_not_recognized"/>
+    <string name="fingerprint_not_recognized">"Није препознат"</string>
+
+    <!-- Instructions telling the user remaining times when enter SIM PIN view.  -->
+    <add-resource type="plurals" name="kg_password_default_pin_message"/>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="one">"Унесите PIN за SIM<xliff:g id="slotid">%d</xliff:g>, преостао вам је још <xliff:g id="number">%d</xliff:g>покушај пре него што будете морали да контактирате оператера да вам откључа уређај."</item>
+        <item quantity="other">"Унесите PIN за SIM<xliff:g id="slotid">%d</xliff:g>, преостало вам је још покушаја (<xliff:g id="number">%d</xliff:g>)."</item>
+    </plurals>
+
+    <!-- Instructions telling the user remaining times when enter SIM PUK view.  -->
+    <add-resource type="plurals" name="kg_password_default_puk_message"/>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="one">"SIM картица је сада онемогућена. Унесите PUK код да бисте наставили. Преостао вам је још <xliff:g id="&#xA;number">%d</xliff:g> покушај пре него што SIM картица постане трајно неупотребљива. Затражите детаље од оператера."</item>
+        <item quantity="other">"SIM картица је сада онемогућена. Унесите PUK код да бисте наставили. Преостало вам је још покушаја (<xliff:g id="&#xA;number">%d</xliff:g>) пре него што SIM картица постане трајно неупотребљива. Затражите детаље од оператера."</item>
+    </plurals>
+
+    <add-resource type="string" name="button_lockscreen_emergency_call"/>
+    <string name="button_lockscreen_emergency_call">"Хитни позив"</string>
+    <add-resource type="string" name="carrier_text_separator"/>
+    <string name="carrier_text_separator">"  |  "</string>
+
+    <add-resource type="string" name="kg_subsidy_title_locked"/>
+    <string name="kg_subsidy_title_locked">"Уређај је закључан"</string>
+    <add-resource type="string" name="kg_subsidy_title_unlock_progress_dialog"/>
+    <string name="kg_subsidy_title_unlock_progress_dialog">"Откључавање уређаја"</string>
+    <add-resource type="string" name="kg_subsidy_content_locked"/>
+    <string name="kg_subsidy_content_locked">"Уметните важећу SIM картицу да бисте откључали уређај.\n\nПроверите да ли је активна веза с мрежом за пренос података (мобилном или Wi-Fi), па затим додирните да бисте откључали."</string>
+    <add-resource type="string" name="kg_subsidy_content_progress_server"/>
+    <string name="kg_subsidy_content_progress_server">"Сачекајте\u2026 \n\nу току је провера са сервером."</string>
+    <add-resource type="string" name="kg_subsidy_content_pin_locked"/>
+    <string name="kg_subsidy_content_pin_locked">"Позовите корисничку подршку да бисте прибавили кôд за откључавање или уметните важећу SIM картицу."</string>
+    <add-resource type="plurals" name="kg_subsidy_wrong_pin"/>
+    <plurals name="kg_subsidy_wrong_pin">
+        <item quantity="one">"Неважећи кôд. \nПреостао је још <xliff:g id="number">%d</xliff:g> покушај."</item>
+        <item quantity="other">"Неважећи кôд. \nПреостало је још <xliff:g id="number">%d</xliff:g> покушаја."</item>
+    </plurals>
+    <add-resource type="string" name="kg_subsidy_too_many_failed_attempts_countdown"/>
+    <string name="kg_subsidy_too_many_failed_attempts_countdown">"Достигнут је максимални број покушаја. \nПокушајте поново након <xliff:g id="number">%d</xliff:g> минута."</string>
+    <add-resource type="string" name="kg_subsidy_too_many_failed_attempts_countdown_sec"/>
+    <string name="kg_subsidy_too_many_failed_attempts_countdown_sec">"Достигнут је максимални број покушаја. \nПокушајте поново након <xliff:g id="number">%d</xliff:g> секунде/секунди."</string>
+    <add-resource type="string" name="kg_button_unlock"/>
+    <string name="kg_button_unlock">"Откључај"</string>
+    <add-resource type="string" name="unlock_toast"/>
+    <string name="unlock_toast">"Уређај је откључан"</string>
+    <add-resource type="string" name="kg_pin_unlock_progress_dialog"/>
+    <string name="kg_pin_unlock_progress_dialog">"Откључавање уређаја..."</string>
+    <add-resource type="string" name="kg_subsidy_setup_wifi"/>
+    <string name="kg_subsidy_setup_wifi">"Подешавање Wi-Fi везе"</string>
+    <add-resource type="string" name="kg_dismiss_button_description"/>
+    <string name="kg_dismiss_button_description">"Одбаци закључ. екрана"</string>
+    <add-resource type="string" name="kg_subsidy_title_progress_unknown"/>
+    <string name="kg_subsidy_title_progress_unknown">"Конфигурација телефона"</string>
+    <add-resource type="string" name="kg_subsidy_content_progress_unknown"/>
+    <string name="kg_subsidy_content_progress_unknown">"Сачекајте..."</string>
+    <add-resource type="string" name="kg_subsidy_enable_data"/>
+    <string name="kg_subsidy_enable_data">"Омогући податке"</string>
+    <add-resource type="string" name="kg_subsidy_no_data_connection"/>
+    <string name="kg_subsidy_no_data_connection">"Нема везе за пренос података; да бисте омогућили податке, користите опције у наставку"</string>
+    <add-resource type="string" name="kg_button_switch_sim"/>
+    <string name="kg_button_switch_sim">"Пребаци SIM"</string>
+    <add-resource type="string" name="kg_subsidy_content_switch_sim"/>
+    <string name="kg_subsidy_content_switch_sim">"Ваша примарна SIM картица је неважећа.\n\nУметните важећу SIM картицу или се пребаците на другу SIM картицу"</string>
+    <add-resource type="string" name="kg_subsidy_title_switch_sim_progress_dialog"/>
+    <string name="kg_subsidy_title_switch_sim_progress_dialog">"Пребацивање примарне SIM картице"</string></resources>

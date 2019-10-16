@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"স্ক্যান করছি\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"সংযুক্ত করা হচ্ছে\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"প্রমাণীকরণ করছি \u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP ঠিকানা পাওয়া হচ্ছে\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"সংযুক্ত"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"বাতিল করা হয়েছে"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"সংযোগ বিচ্ছিন্ন করা হচ্ছে\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"সংযোগ বিচ্ছিন্ন হয়েছে"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"অসফল"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"অবরুদ্ধ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"দুর্বল সংযোগ সাময়িক ভাবে এড়ানো হচ্ছে"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"স্ক্যান করছি\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"সংযুক্ত করা হচ্ছে <xliff:g id="network_name">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"এর সাথে প্রমাণীকরণ হচ্ছে <xliff:g id="network_name">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"এখান থেকে IP ঠিকানা পাওয়া হচ্ছে <xliff:g id="network_name">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"এতে সংযুক্ত <xliff:g id="network_name">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"বাতিল করা হয়েছে"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"এখান থেকে বিচ্ছিন্ন করা হচ্ছে <xliff:g id="network_name">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"সংযোগ বিচ্ছিন্ন হয়েছে"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"অসফল"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"অবরুদ্ধ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"দুর্বল সংযোগ সাময়িক ভাবে এড়ানো হচ্ছে"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"কখনও যাচাই নয়"</item>
+        <item>"শুধুমাত্র DRM বিষয়বস্তুর ক্ষেত্রে যাচাই"</item>
+        <item>"সর্বদা যাচাই"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"কখনও HDCP যাচাই ব্যবহার নয়"</item>
+        <item>"শুধুমাত্র DRM বিষয়বস্তুর ক্ষেত্রে HDCP যাচাই ব্যবহার"</item>
+        <item>"সর্বদা HDCP যাচাই ব্যবহার"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"বন্ধ"</item>
+        <item>"৬৪K"</item>
+        <item>"২৫৬K"</item>
+        <item>"১M"</item>
+        <item>"৪M"</item>
+        <item>"১৬M"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"বন্ধ"</item>
+        <item>"৬৪K"</item>
+        <item>"২৫৬K"</item>
+        <item>"১M"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"বন্ধ"</item>
+        <item>"লগ বাফার প্রতি ৬৪K"</item>
+        <item>"লগ বাফার প্রতি ২৫৬K"</item>
+        <item>"লগ বাফার প্রতি ১M"</item>
+        <item>"লগ বাফার প্রতি ৪M"</item>
+        <item>"লগ বাফার প্রতি ১৬M"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"বন্ধ"</item>
+        <item>"সমস্ত"</item>
+        <item>"রেডিও ছাড়া সব"</item>
+        <item>"শুধুমাত্র কার্নেল"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"বন্ধ"</item>
+        <item>"সমস্ত লগ বাফার"</item>
+        <item>"রেডিও ছাড়া সব লগ বাফার"</item>
+        <item>"শুধুমাত্র কার্নেল লগ বাফার"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"অ্যানিমেশন বন্ধ"</item>
+        <item>"অ্যানিমেশন স্কেল .5x"</item>
+        <item>"অ্যানিমেশন স্কেল 1x"</item>
+        <item>"অ্যানিমেশন স্কেল 1.5x"</item>
+        <item>"অ্যানিমেশন স্কেল 2x"</item>
+        <item>"অ্যানিমেশন স্কেল 5x"</item>
+        <item>"অ্যানিমেশন স্কেল 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"অ্যানিমেশন বন্ধ"</item>
+        <item>"অ্যানিমেশন স্কেল .5x"</item>
+        <item>"অ্যানিমেশন স্কেল 1x"</item>
+        <item>"অ্যানিমেশন স্কেল 1.5x"</item>
+        <item>"অ্যানিমেশন স্কেল 2x"</item>
+        <item>"অ্যানিমেশন স্কেল 5x"</item>
+        <item>"অ্যানিমেশন স্কেল 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"অ্যানিমেশন বন্ধ"</item>
+        <item>"অ্যানিমেশন স্কেল .5x"</item>
+        <item>"অ্যানিমেশন স্কেল 1x"</item>
+        <item>"অ্যানিমেশন স্কেল 1.5x"</item>
+        <item>"অ্যানিমেশন স্কেল 2x"</item>
+        <item>"অ্যানিমেশন স্কেল 5x"</item>
+        <item>"অ্যানিমেশন স্কেল 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"কেউ নয়"</item>
+        <item>"480p"</item>
+        <item>"480p (সুরক্ষিত)"</item>
+        <item>720p</item>
+        <item>"720p (সুরক্ষিত)"</item>
+        <item>"1080p"</item>
+        <item>"1080p (সুরক্ষিত)"</item>
+        <item>4K</item>
+        <item>"4K (সুরক্ষিত)"</item>
+        <item>"4K (আপস্কেল করা)"</item>
+        <item>"4K (আপস্কেল করা, সুরক্ষিত)"</item>
+        <item>"720p, 1080p (ডুয়াল স্ক্রিন)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"কেউ নয়"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace (গ্র্যাফিক্স)"</item>
+        <item>"glGetError এ কল স্ট্যাক"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"বন্ধ"</item>
+        <item>"নীলে নন-আয়তাকার ক্লিপ অঞ্চল আঁকুন"</item>
+        <item>"সবুজে পরীক্ষিত অঙ্কন নির্দেশ হাইলাইট করুন"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"বন্ধ"</item>
+        <item>"দন্ড হিসাবে স্ক্রীনে"</item>
+        <item>"adb shell dumpsys gfxinfo এ"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"বন্ধ"</item>
+        <item>"অতিরিক্ত অঙ্কিত ক্ষেত্রগুলি দেখান"</item>
+        <item>"সবুজ রঙ দুর্বল থাকা ক্ষেত্রগুলি দেখান"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"স্ট্যান্ডার্ড সীমা"</item>
+        <item>"কোনো ব্যাকগ্রাউন্ড প্রক্রিয়া নেই"</item>
+        <item>"সর্বাধিক 1 প্রক্রিয়া"</item>
+        <item>"সর্বাধিক 2 প্রক্রিয়া"</item>
+        <item>"সর্বাধিক 3 প্রক্রিয়া"</item>
+        <item>"সর্বাধিক 4 প্রক্রিয়া"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"চার্জ হচ্ছে"</item>
+        <item>"MTP (মিডিয়া ট্রান্সফার প্রোটোকল)"</item>
+        <item>"PTP (পিকচার ট্রান্সফার প্রোটোকল)"</item>
+        <item>"RNDIS (USB ইথারনেট)"</item>
+        <item>"অডিও উৎস"</item>
+        <item>MIDI</item>
+    </string-array></resources>

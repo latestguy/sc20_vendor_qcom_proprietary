@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2009 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the status bar as seen in the applications info settings page. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"સિસ્ટમ UI"</string>
+
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <add-resource type="string" name="status_bar_clear_all_button"/>
+    <string name="status_bar_clear_all_button">"સાફ કરો"</string>
+
+    <!-- Title shown in recents popup for removing an application from the list -->
+    <add-resource type="string" name="status_bar_recent_remove_item_title"/>
+    <string name="status_bar_recent_remove_item_title">"યાદીમાંથી દૂર કરો"</string>
+
+    <!-- Title shown in recents popup for inspecting an application's properties -->
+    <add-resource type="string" name="status_bar_recent_inspect_item_title"/>
+    <string name="status_bar_recent_inspect_item_title">"એપ્લિકેશન માહિતી"</string>
+
+    <!-- Message shown in the middle of the screen after clicking on the recent apps button
+         when there are no recent apps to show. Also used for accessibility. [CHAR LIMIT=45]-->
+    <add-resource type="string" name="status_bar_no_recent_apps"/>
+    <string name="status_bar_no_recent_apps">"તમારી તાજેતરની સ્ક્રીન અહીં પ્રદર્શિત થશે"</string>
+
+    <!-- Content description for the button to dismiss Recent Apps (only present on large
+         devices) -->
+    <add-resource type="string" name="status_bar_accessibility_dismiss_recents"/>
+    <string name="status_bar_accessibility_dismiss_recents">"હાલની એપ્લિકેશન્સ રદ કરી"</string>
+
+    <!-- Message that is read when you enter recent apps in TalkBack -->
+    <add-resource type="plurals" name="status_bar_accessibility_recent_apps"/>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="one">"ઓવરવ્યૂમા 1 સ્ક્રીન"</item>
+        <item quantity="other">"ઓવરવ્યૂમા %d સ્ક્રીન"</item>
+    </plurals>
+
+    <!-- The label in the bar at the top of the status bar when there are no notifications
+         showing.  [CHAR LIMIT=40]-->
+    <add-resource type="string" name="status_bar_no_notifications_title"/>
+    <string name="status_bar_no_notifications_title">"કોઈ સૂચનાઓ નથી"</string>
+
+    <!-- The label for the group of notifications for ongoing events in the opened version of
+         the status bar.  An ongoing call is the prime example of this.  The MP3 music player
+         might be another example.   [CHAR LIMIT=40] -->
+    <add-resource type="string" name="status_bar_ongoing_events_title"/>
+    <string name="status_bar_ongoing_events_title">"ચાલી રહેલ"</string>
+
+    <!-- The label for the group of notifications for recent events in the opened version of
+         the status bar.  Recently received text messsages (SMS), emails, calendar alerts, etc.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="status_bar_latest_events_title"/>
+    <string name="status_bar_latest_events_title">"સૂચનાઓ"</string>
+
+    <!-- When the battery is low, this is displayed to the user in a dialog.  The title of the low battery alert.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_low_title"/>
+    <string name="battery_low_title">"બેટરી ખૂબ ઓછી"</string>
+
+    <!-- A message that appears when the battery level is getting low in a dialog.  This is
+        appened to the subtitle of the low battery alert.  "percentage" is the percentage of battery
+        remaining [CHAR LIMIT=none]-->
+    <add-resource type="string" name="battery_low_percent_format"/>
+    <string name="battery_low_percent_format">"<xliff:g id="percentage">%s</xliff:g> બાકી"</string>
+
+    <!-- Same as battery_low_percent_format, with a notice about battery saver if on. [CHAR LIMIT=none]-->
+    <add-resource type="string" name="battery_low_percent_format_saver_started"/>
+    <string name="battery_low_percent_format_saver_started">"<xliff:g id="percentage">%s</xliff:g> બાકી. બેટરી સેવર ચાલુ છે."</string>
+
+    <!-- A message that appears when a USB charger is plugged in and the device does not
+    support charging on it.  That is, a charger that fits into the USB port and goes into
+    a wall socket, not into a computer. (This happens because some devices require more
+    current than the USB spec allows.  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="invalid_charger"/>
+    <string name="invalid_charger">"USB ચાર્જિંગ સમર્થિત નથી.\nઆપેલ ચાર્જરનો ઉપયોગ કરો."</string>
+
+    <!-- First line of invalid_charger, used in the notification form.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="invalid_charger_title"/>
+    <string name="invalid_charger_title">"USB ચાર્જિંગ મોડ નથી."</string>
+
+    <!-- Second line of invalid_charger, used in the notification form.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="invalid_charger_text"/>
+    <string name="invalid_charger_text">"ફક્ત પૂરા પાડવામાં આવેલ ચાર્જરનો જ ઉપયોગ કરો."</string>
+
+    <!-- When the battery is low, this is the label of the button to go to the
+         power usage activity to find out what drained the battery.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="battery_low_why"/>
+    <string name="battery_low_why">"સેટિંગ્સ"</string>
+
+    <!-- Battery saver confirmation dialog title [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_saver_confirmation_title"/>
+    <string name="battery_saver_confirmation_title">"બેટરી સેવર ચાલુ કરીએ?"</string>
+
+    <!-- Battery saver confirmation dialog ok text [CHAR LIMIT=40]-->
+    <add-resource type="string" name="battery_saver_confirmation_ok"/>
+    <string name="battery_saver_confirmation_ok">"ચાલુ કરો"</string>
+
+    <!-- Battery saver notification action [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_saver_start_action"/>
+    <string name="battery_saver_start_action">"બેટરી સેવર ચાલુ કરો"</string>
+
+    <!-- Name of the button that links to the Settings app. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_settings_settings_button"/>
+    <string name="status_bar_settings_settings_button">"સેટિંગ્સ"</string>
+
+    <!-- Name of the button that links to the Wifi settings screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_settings_wifi_button"/>
+    <string name="status_bar_settings_wifi_button">"Wi-Fi"</string>
+
+    <!-- Label in system panel saying the device will use the orientation sensor to rotate [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_settings_auto_rotation"/>
+    <string name="status_bar_settings_auto_rotation">"સ્ક્રીનને સ્વતઃ-ફેરવો"</string>
+
+    <!-- Abbreviation / label for mute brightness mode button. Should be all caps. [CHAR LIMIT=6] -->
+    <add-resource type="string" name="status_bar_settings_mute_label"/>
+    <string name="status_bar_settings_mute_label">"મ્યૂટ કરો"</string>
+
+    <!-- Abbreviation / label for automatic brightness mode button. Should be all caps. [CHAR LIMIT=6] -->
+    <add-resource type="string" name="status_bar_settings_auto_brightness_label"/>
+    <string name="status_bar_settings_auto_brightness_label">"સ્વતઃ"</string>
+
+    <!-- Label in system panel saying the device will show notifications [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_settings_notifications"/>
+    <string name="status_bar_settings_notifications">"સૂચનાઓ"</string>
+
+    <!-- Network connection string for Bluetooth Reverse Tethering -->
+    <add-resource type="string" name="bluetooth_tethered"/>
+    <string name="bluetooth_tethered">"બ્લુટૂથ ટેથર્ડ"</string>
+    <!-- Title of a button to open the settings for input methods [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_input_method_settings_configure_input_methods"/>
+    <string name="status_bar_input_method_settings_configure_input_methods">"ઇનપુટ પદ્ધતિ સેટ કરો"</string>
+
+    <!-- Label of a toggle switch to disable use of the physical keyboard in favor of the IME. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_bar_use_physical_keyboard"/>
+    <string name="status_bar_use_physical_keyboard">"ભૌતિક કીબોર્ડ"</string>
+
+    <!-- Prompt for the USB device permission dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_device_permission_prompt"/>
+    <string name="usb_device_permission_prompt">"એપ્લિકેશનને <xliff:g id="application">%1$s</xliff:g> USB ઉપકરણને ઍક્સેસ કરવાની અનુમતિ આપીએ?"</string>
+
+    <!-- Prompt for the USB accessory permission dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_permission_prompt"/>
+    <string name="usb_accessory_permission_prompt">"એપ્લિકેશનને <xliff:g id="application">%1$s</xliff:g> USB ઍક્સેસરીઝને ઍક્સેસ કરવાની અનુમતિ આપીએ?"</string>
+
+    <!-- Prompt for the USB device confirm dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_device_confirm_prompt"/>
+    <string name="usb_device_confirm_prompt">"જ્યારે આ USB ઉપકરણ જોડાયેલ હોય ત્યારે <xliff:g id="activity">%1$s</xliff:g> ખોલો?"</string>
+
+    <!-- Prompt for the USB accessory confirm dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_confirm_prompt"/>
+    <string name="usb_accessory_confirm_prompt">"જ્યારે આ USB ઍક્સેસરીઝ જોડાયેલ હોય ત્યારે <xliff:g id="activity">%1$s</xliff:g> ખોલો?"</string>
+
+    <!-- Prompt for the USB accessory URI dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_uri_prompt"/>
+    <string name="usb_accessory_uri_prompt">"આ USB ઍક્સેસરીઝ સાથે કોઈ ઇન્સ્ટોલ કરેલી એપ્લિકેશન્સ કાર્ય કરતી નથી. <xliff:g id="url">%1$s</xliff:g> પર ઍક્સેસરીઝ વિશે વધુ જાણો."</string>
+
+    <!-- Title for USB accessory dialog.  Used when the name of the accessory cannot be determined.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="title_usb_accessory"/>
+    <string name="title_usb_accessory">"USB ઍક્સેસરીઝ"</string>
+
+    <!-- View button label for USB dialogs.  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="label_view"/>
+    <string name="label_view">"જુઓ"</string>
+
+    <!-- Checkbox label for USB device dialogs.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="always_use_device"/>
+    <string name="always_use_device">"આ USB ઉપકરણ માટે ડિફૉલ્ટ તરીકે ઉપયોગ કરો"</string>
+
+    <!-- Checkbox label for USB accessory dialogs.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="always_use_accessory"/>
+    <string name="always_use_accessory">"આ USB ઍક્સેસરીઝ માટે ડિફૉલ્ટ તરીકે ઉપયોગ કરો"</string>
+
+    <!-- Title of confirmation dialog for USB debugging -->
+    <add-resource type="string" name="usb_debugging_title"/>
+    <string name="usb_debugging_title">"USB ડિબગિંગની અનુમતિ આપીએ?"</string>
+
+    <!-- Message of confirmation dialog for USB debugging -->
+    <add-resource type="string" name="usb_debugging_message"/>
+    <string name="usb_debugging_message">"કમ્પ્યુટરની RSA કી ફિંગરપ્રિન્ટ છે:\n<xliff:g id="fingerprint">%1$s</xliff:g>"</string>
+
+    <!-- Option to always allow USB debugging from the attached computer -->
+    <add-resource type="string" name="usb_debugging_always"/>
+    <string name="usb_debugging_always">"આ કમ્પ્યુટરમાંથી હંમેશાં અનુમતિ આપો"</string>
+
+    <!-- Title of notification shown when trying to enable USB debugging but a secondary user is the current foreground user. -->
+    <add-resource type="string" name="usb_debugging_secondary_user_title"/>
+    <string name="usb_debugging_secondary_user_title">"USB ડિબગિંગની મંજૂરી નથી"</string>
+
+    <!-- Message of notification shown when trying to enable USB debugging but a secondary user is the current foreground user. -->
+    <add-resource type="string" name="usb_debugging_secondary_user_message"/>
+    <string name="usb_debugging_secondary_user_message">"આ ઉપકરણમાં હાલમાં સાઇન ઇન થયેલ વપરાશકર્તા USB ડિબગિંગ ચાલુ કરી શકતાં નથી. આ સુવિધાનો ઉપયોગ કરવા માટે, એડમિન વપરાશકર્તા પર સ્વિચ કરો."</string>
+
+    <!-- Checkbox label for application compatibility mode ON (zooming app to look like it's running
+         on a phone).  [CHAR LIMIT=25] -->
+    <add-resource type="string" name="compat_mode_on"/>
+    <string name="compat_mode_on">"સ્ક્રીન ભરવા માટે ઝૂમ કરો"</string>
+
+    <!-- Checkbox label for application compatibility mode OFF (normal mode on tablets).
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="compat_mode_off"/>
+    <string name="compat_mode_off">"સ્ક્રીન ભરવા માટે ખેંચો"</string>
+
+    <!-- Notification ticker displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="screenshot_saving_ticker"/>
+    <string name="screenshot_saving_ticker">"સ્ક્રીનશોટ સાચવી રહ્યું છે\u2026"</string>
+    <!-- Notification title displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_saving_title"/>
+    <string name="screenshot_saving_title">"સ્ક્રીનશોટ સાચવી રહ્યું છે\u2026"</string>
+    <!-- Notification text displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_saving_text"/>
+    <string name="screenshot_saving_text">"સ્ક્રીનશોટ સાચવી રહ્યું છે."</string>
+    <!-- Notification title displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_saved_title"/>
+    <string name="screenshot_saved_title">"સ્કીનશોટ કેપ્ચર કર્યો."</string>
+    <!-- Notification text displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_saved_text"/>
+    <string name="screenshot_saved_text">"તમારા સ્ક્રીનશૉટને જોવા માટે ટૅપ કરો."</string>
+    <!-- Notification title displayed when we fail to take a screenshot. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_failed_title"/>
+    <string name="screenshot_failed_title">"સ્ક્રીનશોટ કેપ્ચર કરી શકાયો નથી."</string>
+    <!-- Notification text displayed when we fail to save a screenshot for unknown reasons. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_save_unknown_text"/>
+    <string name="screenshot_failed_to_save_unknown_text">"સ્ક્રીનશૉટ સાચવવામાં સમસ્યા આવી."</string>
+    <!-- Notification text displayed when we fail to save a screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_save_text"/>
+    <string name="screenshot_failed_to_save_text">"મર્યાદિત સંગ્રહ સ્થાનને કારણે સ્ક્રીનશોટ સાચવી શકાતો નથી."</string>
+    <!-- Notification text displayed when we fail to take a screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_capture_text"/>
+    <string name="screenshot_failed_to_capture_text">"ઍપ્લિકેશન કે તમારી સંસ્થા દ્વારા સ્ક્રીનશોટ્સ લેવાની મંજૂરી નથી."</string>
+
+    <!-- Title for the USB function chooser in UsbPreferenceActivity. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="usb_preference_title"/>
+    <string name="usb_preference_title">"USB ફાઇલ ટ્રાન્સફર વિકલ્પો"</string>
+    <!-- Label for the MTP USB function in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="use_mtp_button_title"/>
+    <string name="use_mtp_button_title">"મીડિયા પ્લેયર તરીકે માઉન્ટ કરો (MTP)"</string>
+    <!-- Label for the PTP USB function in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="use_ptp_button_title"/>
+    <string name="use_ptp_button_title">"કૅમેરા તરીકે માઉન્ટ કરો (PTP)"</string>
+    <!-- Label for the installer CD image option in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="installer_cd_button_title"/>
+    <string name="installer_cd_button_title">"Mac માટે Android ફાઇલ ટ્રાન્સફર એપ્લિકેશન ઇન્સ્ટોલ કરો"</string>
+
+    <!-- Content description of the back button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_back"/>
+    <string name="accessibility_back">"પાછળ"</string>
+    <!-- Content description of the home button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_home"/>
+    <string name="accessibility_home">"ઘર"</string>
+    <!-- Content description of the menu button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_menu"/>
+    <string name="accessibility_menu">"મેનૂ"</string>
+    <!-- Content description of the recents button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_recent"/>
+    <string name="accessibility_recent">"ઓવરવ્યૂ"</string>
+    <!-- Content description of the search button for accessibility. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_search_light"/>
+    <string name="accessibility_search_light">"શોધો"</string>
+    <!-- Content description of the camera button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_camera_button"/>
+    <string name="accessibility_camera_button">"કૅમેરા"</string>
+    <!-- Content description of the phone button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_button"/>
+    <string name="accessibility_phone_button">"ફોન"</string>
+    <!-- Content description of the phone button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_voice_assist_button"/>
+    <string name="accessibility_voice_assist_button">"વૉઇસ સહાય"</string>
+    <!-- Content description of the unlock button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_button"/>
+    <string name="accessibility_unlock_button">"અનલૉક કરો"</string>
+    <!-- Content description of the unlock button when fingerpint is on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_button_fingerprint"/>
+    <string name="accessibility_unlock_button_fingerprint">"અનલૉક બટન, ફિંગરપ્રિન્ટ માટે રાહ જોઈ રહ્યાં છીએ"</string>
+    <!-- Accessibility action of the unlock button when fingerpint is on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_without_fingerprint"/>
+    <string name="accessibility_unlock_without_fingerprint">"તમારી ફિંગરપ્રિન્ટનો ઉપયોગ કર્યા વગર અનલૉક કરો"</string>
+    <!-- Click action label for accessibility for the unlock button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unlock_label"/>
+    <string name="unlock_label">"અનલૉક કરો"</string>
+    <!-- Click action label for accessibility for the phone button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_label"/>
+    <string name="phone_label">"ફોન ખોલો"</string>
+    <!-- Click action label for accessibility for the voice assist button. This is not shown on-screen and is an accessibility label for the icon which launches the voice assist from the lock screen.[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voice_assist_label"/>
+    <string name="voice_assist_label">"વૉઇસ સહાય ખોલો"</string>
+    <!-- Click action label for accessibility for the phone button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="camera_label"/>
+    <string name="camera_label">"કૅ  મરા ખોલો"</string>
+    <!-- Caption for "Recents resize" developer debug feature. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_caption_resize"/>
+    <string name="recents_caption_resize">"નવું કાર્ય લેઆઉટ પસંદ કરો"</string>
+    <!-- Button name for "Cancel". [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"રદ કરો"</string>
+
+    <!-- Content description of the compatibility zoom button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_compatibility_zoom_button"/>
+    <string name="accessibility_compatibility_zoom_button">"સુંસંગતતા ઝૂમ બટન."</string>
+
+    <!-- Content description of picture of the compatibility zoom example for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_compatibility_zoom_example"/>
+    <string name="accessibility_compatibility_zoom_example">"સ્ક્રીનને મોટી કરવા માટે ઝૂમ સ્મોલર."</string>
+
+    <!-- Content description of the bluetooth icon when connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_connected"/>
+    <string name="accessibility_bluetooth_connected">"બ્લુટૂથ જોડ્યું."</string>
+    <!-- Content description of the bluetooth icon when connecting for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_disconnected"/>
+    <string name="accessibility_bluetooth_disconnected">"બ્લ્યુટુથ જોડાણ અલગ થયેલ છે."</string>
+
+    <!-- Content description of the battery when no battery for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_battery"/>
+    <string name="accessibility_no_battery">"કોઈ બેટરી નથી."</string>
+    <!-- Content description of the battery when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_one_bar"/>
+    <string name="accessibility_battery_one_bar">"બેટરી એક પટ્ટી."</string>
+    <!-- Content description of the battery when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_two_bars"/>
+    <string name="accessibility_battery_two_bars">"બેટરી બે પટ્ટી."</string>
+     <!-- Content description of the battery when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_three_bars"/>
+    <string name="accessibility_battery_three_bars">"બેટરી ત્રણ પટ્ટી."</string>
+    <!-- Content description of the battery when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_full"/>
+    <string name="accessibility_battery_full">"બેટરી પૂર્ણ."</string>
+
+    <!-- Content description of the phone signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_phone"/>
+    <string name="accessibility_no_phone">"કોઈ ફોન નથી."</string>
+    <!-- Content description of the phone signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_one_bar"/>
+    <string name="accessibility_phone_one_bar">"ફોન એક પટ્ટી."</string>
+    <!-- Content description of the phone signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_two_bars"/>
+    <string name="accessibility_phone_two_bars">"ફોન બે પટ્ટી."</string>
+    <!-- Content description of the phone signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_three_bars"/>
+    <string name="accessibility_phone_three_bars">"ફોન ત્રણ પટ્ટી."</string>
+    <!-- Content description of the phone signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_signal_full"/>
+    <string name="accessibility_phone_signal_full">"ફોન સિગ્નલ સંપૂર્ણ છે."</string>
+
+    <!-- Content description of the data signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_data"/>
+    <string name="accessibility_no_data">"કોઈ ડેટા નથી."</string>
+    <!-- Content description of the data signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_one_bar"/>
+    <string name="accessibility_data_one_bar">"ડેટા એક પટ્ટી."</string>
+    <!-- Content description of the data signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_two_bars"/>
+    <string name="accessibility_data_two_bars">"ડેટા બે પટ્ટી."</string>
+    <!-- Content description of the data signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_three_bars"/>
+    <string name="accessibility_data_three_bars">"ડેટા ત્રણ પટ્ટી."</string>
+    <!-- Content description of the data signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_signal_full"/>
+    <string name="accessibility_data_signal_full">"ડેટા સિગ્નલ સંપૂર્ણ છે."</string>
+
+    <!-- Content description of the wifi label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wifi_name"/>
+    <string name="accessibility_wifi_name">"<xliff:g id="wifi" example="Home Network">%s</xliff:g> થી જોડાયેલ."</string>
+
+    <!-- Content description of the bluetooth label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_name"/>
+    <string name="accessibility_bluetooth_name">"<xliff:g id="bluetooth" example="Car Audio">%s</xliff:g> થી જોડાયેલ."</string>
+
+    <!-- Content description of the cast label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cast_name"/>
+    <string name="accessibility_cast_name">"<xliff:g id="CAST">%s</xliff:g> થી કનેક્ટ કરેલ."</string>
+
+
+    <!-- Content description of the WiMAX signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_wimax"/>
+    <string name="accessibility_no_wimax">"કોઈ WiMAX નથી."</string>
+    <!-- Content description of the WiMAX signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_one_bar"/>
+    <string name="accessibility_wimax_one_bar">"WiMAX એક પટ્ટી."</string>
+    <!-- Content description of the WiMAX signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_two_bars"/>
+    <string name="accessibility_wimax_two_bars">"WiMAX બે પટ્ટી."</string>
+    <!-- Content description of the WiMAX signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_three_bars"/>
+    <string name="accessibility_wimax_three_bars">"WiMAX ત્રણ પટ્ટી."</string>
+    <!-- Content description of the WiMAX signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_signal_full"/>
+    <string name="accessibility_wimax_signal_full">"WiMAX સિગ્નલ સંપૂર્ણ છે."</string>
+
+    <!-- Content description of the Ethernet connection when disconnected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ethernet_disconnected"/>
+    <string name="accessibility_ethernet_disconnected">"ઇથરનેટ ડિસ્કનેક્ટ થયું."</string>
+    <!-- Content description of the Ethernet connection when connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ethernet_connected"/>
+    <string name="accessibility_ethernet_connected">"ઇથરનેટ કનેક્ટ થયું."</string>
+
+    <!-- Content description of an item with no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_signal"/>
+    <string name="accessibility_no_signal">"કોઈ સિગ્નલ નથી"</string>
+    <!-- Content description of an item with no signal and no connection for accessibility (not shown on the screen) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_not_connected"/>
+    <string name="accessibility_not_connected">"જોડેલ નથી."</string>
+    <!-- Content description of an item with zero signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_zero_bars"/>
+    <string name="accessibility_zero_bars">"શૂન્ય પટ્ટીઓ."</string>
+    <!-- Content description of an item with one signal bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_one_bar"/>
+    <string name="accessibility_one_bar">"એક પટ્ટી."</string>
+    <!-- Content description of an item with two signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_two_bars"/>
+    <string name="accessibility_two_bars">"બે પટ્ટીઓ."</string>
+    <!-- Content description of an item with three signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_three_bars"/>
+    <string name="accessibility_three_bars">"ત્રણ પટ્ટીઓ."</string>
+    <!-- Content description of an item with full signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_signal_full"/>
+    <string name="accessibility_signal_full">"સિગ્નલ સંપૂર્ણ છે."</string>
+
+    <!-- Content description of an item that is turned on for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_on"/>
+    <string name="accessibility_desc_on">"ચાલુ."</string>
+    <!-- Content description of an item that is turned off for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_off"/>
+    <string name="accessibility_desc_off">"બંધ."</string>
+    <!-- Content description of an item that is connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_connected"/>
+    <string name="accessibility_desc_connected">"જોડાયેલ."</string>
+    <!-- Content description of an item that is connecting for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_connecting"/>
+    <string name="accessibility_desc_connecting">"જોડાઇ રહ્યું છે"</string>
+
+    <!-- Content description of the data connection type GPRS for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_gprs"/>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+
+    <!-- Content description of the data connection type 1x for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_1x"/>
+    <string name="accessibility_data_connection_1x">"1 X"</string>
+
+    <!-- Content description of the data connection type HSPA and its variants for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_hspa"/>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+
+    <!-- Content description of the data connection type 3G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3g"/>
+    <string name="accessibility_data_connection_3g">3G</string>
+
+    <!-- Content description of the data connection type 3G+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3g_plus"/>
+    <string name="accessibility_data_connection_3g_plus">3G+</string>
+
+    <!-- Content description of the data connection type 3.5G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3.5g"/>
+    <string name="accessibility_data_connection_3.5g">"3.5G"</string>
+
+    <!-- Content description of the data connection type 3.5G+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3.5g_plus"/>
+    <string name="accessibility_data_connection_3.5g_plus">3.5G+</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g"/>
+    <string name="accessibility_data_connection_4g">4G</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g_lte"/>
+    <string name="accessibility_data_connection_4g_lte">4GLTE</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g_plus"/>
+    <string name="accessibility_data_connection_4g_plus">4G+</string>
+
+    <!-- Content description of the data connection type LTE for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_lte"/>
+    <string name="accessibility_data_connection_lte">LTE</string>
+
+    <!-- Content description of the data connection type LTE+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_lte_plus"/>
+    <string name="accessibility_data_connection_lte_plus">LTE+</string>
+
+    <!-- Content description of the data connection type CDMA for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_cdma"/>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+
+    <!-- Content description of the roaming data connection type for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_roaming"/>
+    <string name="accessibility_data_connection_roaming">"રોમિંગ"</string>
+
+    <!-- Content description of the data connection type Edge for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_edge"/>
+    <string name="accessibility_data_connection_edge">"કિનારી"</string>
+
+    <!-- Content description of the data connection type WiFi for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_wifi"/>
+    <string name="accessibility_data_connection_wifi">"Wi-Fi"</string>
+
+    <!-- Content description of the data connection with no SIM for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_sim"/>
+    <string name="accessibility_no_sim">"કોઈ SIM નથી."</string>
+
+    <!-- Content description of the cell data. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data"/>
+    <string name="accessibility_cell_data">"સેલ્યુલર ડેટા"</string>
+
+    <!-- Content description of the cell data being enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data_on"/>
+    <string name="accessibility_cell_data_on">"સેલ્યુલર ડેટા ચાલુ"</string>
+
+    <!-- Content description of the cell data being disabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data_off"/>
+    <string name="accessibility_cell_data_off">"સેલ્યુલર ડેટા બંધ છે"</string>
+
+    <!-- Content description of the bluetooth tethering icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_tether"/>
+    <string name="accessibility_bluetooth_tether">"બ્લુટૂથ ટેથરિંગ."</string>
+
+    <!-- Content description of the airplane mode icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_airplane_mode"/>
+    <string name="accessibility_airplane_mode">"એરપ્લેન મોડ."</string>
+
+    <!-- Content description of the no sim icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_sims"/>
+    <string name="accessibility_no_sims">"કોઇ SIM કાર્ડ નથી."</string>
+
+    <!-- Content description of the carrier network changing icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_carrier_network_change_mode"/>
+    <string name="accessibility_carrier_network_change_mode">"કેરીઅર નેટવર્કમાં ફેરફાર થઈ રહ્યો છે."</string>
+
+    <!-- Content description of button to open battery details icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_details"/>
+    <string name="accessibility_battery_details">"બૅટરીની વિગતો ખોલો"</string>
+
+    <!-- Content description of the battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_level"/>
+    <string name="accessibility_battery_level">"બેટરી <xliff:g id="number">%d</xliff:g> ટકા."</string>
+
+    <!-- Content description of the battery level icon for accessibility while the device is charging (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_level_charging"/>
+    <string name="accessibility_battery_level_charging">"બૅટરી ચાર્જ થઈ રહી છે, <xliff:g id="BATTERY_PERCENTAGE">%d</xliff:g> ટકા."</string>
+
+    <!-- Content description of the button for showing a settings panel in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_settings_button"/>
+    <string name="accessibility_settings_button">"સિસ્ટમ સેટિંગ્સ."</string>
+
+    <!-- Content description of the button for showing a notifications panel in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_notifications_button"/>
+    <string name="accessibility_notifications_button">"સૂચનાઓ."</string>
+
+    <!-- Content description of the button for removing a notification in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_remove_notification"/>
+    <string name="accessibility_remove_notification">"સૂચનાઓ સાફ કરો."</string>
+
+    <!-- Content description of the enabled GPS icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_gps_enabled"/>
+    <string name="accessibility_gps_enabled">"GPS સક્ષમ છે."</string>
+
+    <!-- Content description of the acquiring GPS icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_gps_acquiring"/>
+    <string name="accessibility_gps_acquiring">"GPS મેળવવું."</string>
+
+    <!-- Content description of the TeleTypewriter(TTY) enabled icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_tty_enabled"/>
+    <string name="accessibility_tty_enabled">"ટેલિ ટાઇપરાઇટર સક્ષમ છે."</string>
+
+    <!-- Content description of the ringer vibrate icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ringer_vibrate"/>
+    <string name="accessibility_ringer_vibrate">"રિંગર વાઇબ્રેટ."</string>
+
+    <!-- Content description of the ringer silent icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ringer_silent"/>
+    <string name="accessibility_ringer_silent">"રિંગર સાઇલન્ટ."</string>
+
+    <!-- Content description of the cast icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_casting"/>
+    <string name="accessibility_casting">@string/quick_settings_casting</string>
+
+    <!-- Content description of the work mode icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_work_mode"/>
+    <string name="accessibility_work_mode">"કાર્ય મોડ"</string>
+
+    <!-- Content description to tell the user that this button will remove an application from recents -->
+    <add-resource type="string" name="accessibility_recents_item_will_be_dismissed"/>
+    <string name="accessibility_recents_item_will_be_dismissed">"<xliff:g id="app" example="Calendar">%s</xliff:g> કાઢી દો."</string>
+    <!-- Content description to tell the user an application has been removed from recents -->
+    <add-resource type="string" name="accessibility_recents_item_dismissed"/>
+    <string name="accessibility_recents_item_dismissed">"<xliff:g id="app" example="Calendar">%s</xliff:g> કાઢી દીધું."</string>
+    <!-- Content description to tell the user all applications has been removed from recents -->
+    <add-resource type="string" name="accessibility_recents_all_items_dismissed"/>
+    <string name="accessibility_recents_all_items_dismissed">"તમામ તાજેતરની એપ્લિકેશનો કાઢી નાખી."</string>
+    <!-- Content description to tell the user that this button will open application info for an application in recents -->
+    <add-resource type="string" name="accessibility_recents_item_open_app_info"/>
+    <string name="accessibility_recents_item_open_app_info">"<xliff:g id="APP">%s</xliff:g> ઍપ્લિકેશન માહિતી ખોલો."</string>
+    <!-- Content description to tell the user an application has been launched from recents -->
+    <add-resource type="string" name="accessibility_recents_item_launched"/>
+    <string name="accessibility_recents_item_launched">"<xliff:g id="app" example="Calendar">%s</xliff:g> પ્રારંભ થઈ રહ્યું છે."</string>
+    <!-- Content description of individual recents task. -->
+    <add-resource type="string" name="accessibility_recents_task_header"/>
+    <string name="accessibility_recents_task_header">"<xliff:g id="APP">%1$s</xliff:g> <xliff:g id="ACTIVITY_LABEL">%2$s</xliff:g>"</string>
+    <!-- Content description to tell the user a notification has been removed from the notification shade -->
+    <add-resource type="string" name="accessibility_notification_dismissed"/>
+    <string name="accessibility_notification_dismissed">"સૂચના રદ કરી."</string>
+
+    <!-- Content description for the notification shade panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_notification_shade"/>
+    <string name="accessibility_desc_notification_shade">"સૂચના શેડ."</string>
+    <!-- Content description for the quick settings panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_quick_settings"/>
+    <string name="accessibility_desc_quick_settings">"ઝડપી સેટિંગ્સ."</string>
+    <!-- Content description for the lock screen (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_lock_screen"/>
+    <string name="accessibility_desc_lock_screen">"સ્ક્રીન લોક કરો."</string>
+    <!-- Content description for the settings button in the status bar header. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_settings"/>
+    <string name="accessibility_desc_settings">"સેટિંગ્સ"</string>
+    <!-- Content description for the recent apps panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_recent_apps"/>
+    <string name="accessibility_desc_recent_apps">"ઓવરવ્યૂ."</string>
+    <!-- Content description for the close button in the zen mode panel introduction message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_close"/>
+    <string name="accessibility_desc_close">"બંધ કરો"</string>
+
+    <!-- Content description of the user tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_user"/>
+    <string name="accessibility_quick_settings_user">"ઉપયોગકર્તા <xliff:g id="user" example="John Doe">%s</xliff:g>."</string>
+    <!-- Content description of the wifi tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi"/>
+    <string name="accessibility_quick_settings_wifi">"<xliff:g id="signal" example="Three bars">%1$s</xliff:g>."</string>
+    <!-- Announcement made when the wifi is turned off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi_changed_off"/>
+    <string name="accessibility_quick_settings_wifi_changed_off">"Wifi બંધ છે."</string>
+    <!-- Announcement made when the wifi is turned on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi_changed_on"/>
+    <string name="accessibility_quick_settings_wifi_changed_on">"Wifi ચાલુ છે."</string>
+    <!-- Content description of the mobile data tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_mobile"/>
+    <string name="accessibility_quick_settings_mobile">"મોબાઇલ <xliff:g id="signal" example="Three bars">%1$s</xliff:g>. <xliff:g id="type" example="4G">%2$s</xliff:g>. <xliff:g id="network" example="T-Mobile">%3$s</xliff:g>."</string>
+    <!-- Content description of the battery tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_battery"/>
+    <string name="accessibility_quick_settings_battery">"બેટરી <xliff:g id="state" example="50% charging">%s</xliff:g>."</string>
+    <!-- Content description of the airplane mode tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_off"/>
+    <string name="accessibility_quick_settings_airplane_off">"એરપ્લેન મોડ બંધ છે."</string>
+    <!-- Content description of the airplane mode tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_on"/>
+    <string name="accessibility_quick_settings_airplane_on">"એરપ્લેન મોડ ચાલુ છે."</string>
+    <!-- Announcement made when the airplane mode changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_changed_off"/>
+    <string name="accessibility_quick_settings_airplane_changed_off">"એરપ્લેન મોડ બંધ કર્યો."</string>
+    <!-- Announcement made when the airplane mode changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_changed_on"/>
+    <string name="accessibility_quick_settings_airplane_changed_on">"એરપ્લેન મોડ ચાલુ કર્યો."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in priority (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_priority_on"/>
+    <string name="accessibility_quick_settings_dnd_priority_on">"ખલેલ પાડશો નહીં ચાલુ, ફક્ત પ્રાધાન્યતા."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in none (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_none_on"/>
+    <string name="accessibility_quick_settings_dnd_none_on">"ખલેલ પાડશો નહીં ચાલુ, સાવ શાંતિ."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in alarms only (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_alarms_on"/>
+    <string name="accessibility_quick_settings_dnd_alarms_on">"ખલેલ પાડશો નહીં ચાલુ, ફક્ત એલાર્મ્સ."</string>
+     <!-- Content description of the do not disturb tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd"/>
+    <string name="accessibility_quick_settings_dnd">"ખલેલ પાડશો નહીં."</string>
+     <!-- Content description of the do not disturb tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_off"/>
+    <string name="accessibility_quick_settings_dnd_off">"ખલેલ પાડશો નહીં બંધ."</string>
+    <!-- Announcement made when do not disturb changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_changed_off"/>
+    <string name="accessibility_quick_settings_dnd_changed_off">"ખલેલ પાડશો નહીં બંધ કર્યું."</string>
+    <!-- Announcement made when do not disturb changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_changed_on"/>
+    <string name="accessibility_quick_settings_dnd_changed_on">"ખલેલ પાડશો નહીં ચાલુ કર્યું."</string>
+    <!-- Content description of the bluetooth tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth"/>
+    <string name="accessibility_quick_settings_bluetooth">"Bluetooth."</string>
+    <!-- Content description of the bluetooth tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_off"/>
+    <string name="accessibility_quick_settings_bluetooth_off">"બ્લ્યુટુથ બંધ છે."</string>
+    <!-- Content description of the bluetooth tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_on"/>
+    <string name="accessibility_quick_settings_bluetooth_on">"બ્લ્યુટુથ ચાલુ છે."</string>
+    <!-- Content description of the bluetooth tile in quick settings when connecting (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_connecting"/>
+    <string name="accessibility_quick_settings_bluetooth_connecting">"બ્લુટૂથ જોડાય છે."</string>
+    <!-- Content description of the bluetooth tile in quick settings when connected (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_connected"/>
+    <string name="accessibility_quick_settings_bluetooth_connected">"બ્લુટૂથ જોડ્યું."</string>
+    <!-- Announcement made when the bluetooth is turned off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_changed_off"/>
+    <string name="accessibility_quick_settings_bluetooth_changed_off">"Wifi બંધ કર્યુ."</string>
+    <!-- Announcement made when the bluetooth is turned on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_changed_on"/>
+    <string name="accessibility_quick_settings_bluetooth_changed_on">"Wifi ચાલુ કર્યુ."</string>
+    <!-- Content description of the location tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_off"/>
+    <string name="accessibility_quick_settings_location_off">"સ્થાન રિપોર્ટિંગ બંધ છે."</string>
+    <!-- Content description of the location tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_on"/>
+    <string name="accessibility_quick_settings_location_on">"સ્થાન રિપોર્ટિંગ ચાલુ છે."</string>
+    <!-- Announcement made when the location tile changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_changed_off"/>
+    <string name="accessibility_quick_settings_location_changed_off">"સ્થાન રિપોર્ટિંગ બંધ કરી."</string>
+    <!-- Announcement made when the location tile changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_changed_on"/>
+    <string name="accessibility_quick_settings_location_changed_on">"સ્થાન રિપોર્ટિંગ ચાલુ કરી."</string>
+    <!-- Content description of the alarm tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_alarm"/>
+    <string name="accessibility_quick_settings_alarm">"<xliff:g id="time" example="Wed 3:30 PM">%s</xliff:g> માટે એલાર્મ સેટ કર્યુ."</string>
+    <!-- Content description of quick settings detail panel close button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_close"/>
+    <string name="accessibility_quick_settings_close">"પેનલ બંધ કરો."</string>
+    <!-- Content description of zen mode time condition plus button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_more_time"/>
+    <string name="accessibility_quick_settings_more_time">"વધુ સમય."</string>
+    <!-- Content description of zen mode time condition minus button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_less_time"/>
+    <string name="accessibility_quick_settings_less_time">"ઓછો સમય."</string>
+    <!-- Content description of the flashlight tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_off"/>
+    <string name="accessibility_quick_settings_flashlight_off">"ફ્લેશલાઇટ બંધ છે."</string>
+    <!-- Content description of the flashlight tile in quick settings when unavailable (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_unavailable"/>
+    <string name="accessibility_quick_settings_flashlight_unavailable">"ફ્લેશલાઇટ અનુપલબ્ધ."</string>
+    <!-- Content description of the flashlight tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_on"/>
+    <string name="accessibility_quick_settings_flashlight_on">"ફ્લેશલાઇટ ચાલુ છે."</string>
+    <!-- Announcement made when the flashlight state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_changed_off"/>
+    <string name="accessibility_quick_settings_flashlight_changed_off">"ફ્લેશલાઇટ બંધ કરી."</string>
+    <!-- Announcement made when the flashlight state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_changed_on"/>
+    <string name="accessibility_quick_settings_flashlight_changed_on">"ફ્લેશલાઇટ ચાલુ કરી."</string>
+    <!-- Announcement made when the color inversion state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_color_inversion_changed_off"/>
+    <string name="accessibility_quick_settings_color_inversion_changed_off">"રંગ ઇનવર્શન બંધ છે."</string>
+    <!-- Announcement made when the color inversion state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_color_inversion_changed_on"/>
+    <string name="accessibility_quick_settings_color_inversion_changed_on">"રંગ ઇનવર્શન ચાલુ થયું."</string>
+    <!-- Announcement made when the hotspot state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_hotspot_changed_off"/>
+    <string name="accessibility_quick_settings_hotspot_changed_off">"મોબાઇલ હોટસ્પોટ બંધ થયું."</string>
+    <!-- Announcement made when the hotspot state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_hotspot_changed_on"/>
+    <string name="accessibility_quick_settings_hotspot_changed_on">"મોબાઇલ હોટસ્પોટ ચાલુ થયું."</string>
+    <!-- Announcement made when the screen stopped casting (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_casting_turned_off"/>
+    <string name="accessibility_casting_turned_off">"સ્ક્રીન કાસ્ટિંગ રોક્યું."</string>
+    <!-- Content description of the work mode title in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_off"/>
+    <string name="accessibility_quick_settings_work_mode_off">"કાર્ય મોડ બંધ."</string>
+    <!-- Content description of the work mode title in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_on"/>
+    <string name="accessibility_quick_settings_work_mode_on">"કાર્ય મોડ ચાલુ."</string>
+    <!-- Announcement made when the work mode changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_changed_off"/>
+    <string name="accessibility_quick_settings_work_mode_changed_off">"કાર્ય મોડ બંધ કર્યો."</string>
+    <!-- Announcement made when the work mode changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_changed_on"/>
+    <string name="accessibility_quick_settings_work_mode_changed_on">"કાર્ય મોડ ચાલુ કર્યો."</string>
+    <!-- Announcement made when the Data Saver changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_data_saver_changed_off"/>
+    <string name="accessibility_quick_settings_data_saver_changed_off">"ડેટા સેવર બંધ કર્યું."</string>
+    <!-- Announcement made when the Data Saver changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_data_saver_changed_on"/>
+    <string name="accessibility_quick_settings_data_saver_changed_on">"ડેટા સેવર ચાલુ કર્યું."</string>
+
+    <!-- Content description of the display brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_brightness"/>
+    <string name="accessibility_brightness">"પ્રદર્શન ચળકાટ"</string>
+
+    <!-- Title of dialog shown when 2G-3G data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_3g_title"/>
+    <string name="data_usage_disabled_dialog_3g_title">"2G-3G ડેટા થોભાવ્યો છે"</string>
+    <!-- Title of dialog shown when 4G data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_4g_title"/>
+    <string name="data_usage_disabled_dialog_4g_title">"4G ડેટા થોભાવ્યો છે"</string>
+    <!-- Title of dialog shown when mobile data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_mobile_title"/>
+    <string name="data_usage_disabled_dialog_mobile_title">"સેલ્યુલર ડેટા થોભાવ્યો છે"</string>
+    <!-- Title of dialog shown when data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_title"/>
+    <string name="data_usage_disabled_dialog_title">"ડેટા થોભાવ્યો છે"</string>
+    <!-- Body of dialog shown when data usage has exceeded limit and has been disabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="data_usage_disabled_dialog"/>
+    <string name="data_usage_disabled_dialog">"તમારા દ્વારા સેટ કરેલ ડેટા મર્યાદા પર તમે પહોંચી ગયાં છો. તમે હવે સેલ્યુલર ડેટાનો ઉપયોગ કરી રહ્યાં નથી.\n\nજો તમે ફરી શરૂ કરો છો, તો ડેટા વપરાશ માટે શુલ્ક લાગુ થઈ શકે છે."</string>
+    <!-- Dialog button indicating that data connection should be re-enabled. [CHAR LIMIT=28] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_enable"/>
+    <string name="data_usage_disabled_dialog_enable">"ફરી શરૂ કરો"</string>
+
+    <!-- Text to display underneath the graphical signal strength meter when
+         no connection is available. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="status_bar_settings_signal_meter_disconnected"/>
+    <string name="status_bar_settings_signal_meter_disconnected">"કોઈ ઇન્ટરનેટ જોડાણ નથી  "</string>
+
+    <!-- Text to display underneath the graphical signal strength meter when
+         it is displaying Wi-Fi status and Wi-Fi is connected to a network
+         whose SSID is not available.
+         [CHAR LIMIT=20] -->
+    <add-resource type="string" name="status_bar_settings_signal_meter_wifi_nossid"/>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">"Wi-Fi જોડાયેલ"</string>
+
+    <!-- Notification text: when GPS is getting a fix [CHAR LIMIT=50] -->
+    <add-resource type="string" name="gps_notification_searching_text"/>
+    <string name="gps_notification_searching_text">"GPS શોધી રહ્યું છે"</string>
+
+    <!-- Notification text: when GPS has found a fix [CHAR LIMIT=50] -->
+    <add-resource type="string" name="gps_notification_found_text"/>
+    <string name="gps_notification_found_text">"GPS દ્વારા સ્થાન સેટ કરાયું"</string>
+
+    <!-- Accessibility text describing the presence of active location requests by one or more apps -->
+    <add-resource type="string" name="accessibility_location_active"/>
+    <string name="accessibility_location_active">"સ્થાન વિનંતીઓ સક્રિય"</string>
+
+    <!-- Content description of the clear button in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_clear_all"/>
+    <string name="accessibility_clear_all">"બધી સૂચનાઓ સાફ કરો."</string>
+
+    <!-- The overflow indicator shown when a group has more notification inside the group than the visible ones. An example is "+ 3" [CHAR LIMIT=5] -->
+    <add-resource type="string" name="notification_group_overflow_indicator"/>
+    <string name="notification_group_overflow_indicator">+ <xliff:g id="number" example="3">%s</xliff:g></string>
+
+    <!-- Content description describing how many more notifications are in a group [CHAR LIMIT=NONE] -->
+    <add-resource type="plurals" name="notification_group_overflow_description"/>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="one">"<xliff:g id="NUMBER_1">%s</xliff:g> વધુ સૂચના અંદર છે."</item>
+        <item quantity="other">"<xliff:g id="NUMBER_1">%s</xliff:g> વધુ સૂચના અંદર છે."</item>
+    </plurals>
+
+    <!-- Content description of button in notification inspector for system settings relating to
+         notifications from this application [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_notification_inspect_item_title"/>
+    <string name="status_bar_notification_inspect_item_title">"સૂચના સેટિંગ્સ"</string>
+
+    <!-- Content description of button in notification inspetor for application-provided settings
+         for its own notifications [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_notification_app_settings_title"/>
+    <string name="status_bar_notification_app_settings_title">"<xliff:g id="app_name" example="Calendar">%s</xliff:g> સેટિંગ્સ"</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is on. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_off"/>
+    <string name="accessibility_rotation_lock_off">"સ્ક્રીન આપમેળે ફરશે."</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is off. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_landscape"/>
+    <string name="accessibility_rotation_lock_on_landscape">"સ્ક્રીનને લેન્ડસ્કેપ ઓરિએ  ન્ટેશનમાં લૉક કરેલી છે."</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is off. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_portrait"/>
+    <string name="accessibility_rotation_lock_on_portrait">"સ્ક્રીન પોટ્રેટ ઓરિએન્ટેશનમાં લૉક કરેલી છે."</string>
+
+    <!-- Announcement made when the screen is rotating automatically again (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_off_changed"/>
+    <string name="accessibility_rotation_lock_off_changed">"સ્ક્રીન હવે આપમેળે ફરશે."</string>
+
+    <!-- Announcement made when the rotation lock state changes to landscape only (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_landscape_changed"/>
+    <string name="accessibility_rotation_lock_on_landscape_changed">"સ્ક્રીનને હવે લેન્ડસ્કેપ ઓરિઇન્ટેશનમાં લોક કરેલી છે."</string>
+
+    <!-- Announcement made when the rotation lock state changes to portrait only (not shown on the screen).  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_portrait_changed"/>
+    <string name="accessibility_rotation_lock_on_portrait_changed">"સ્ક્રીનને હવે પોટ્રેટ ઓરિએન્ટેશનમાં લૉક કરેલી છે."</string>
+
+    <!-- Name of the K-release easter egg: a display case for all our tastiest desserts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dessert_case"/>
+    <string name="dessert_case">"ડેઝર્ટ કેસ"</string>
+
+    <!-- Name of the launcher shortcut icon that allows dreams to be started immediately [CHAR LIMIT=20] -->
+    <add-resource type="string" name="start_dreams"/>
+    <string name="start_dreams">"સ્ક્રીન સેવર"</string>
+
+    <!-- Textual description of Ethernet connections -->
+    <add-resource type="string" name="ethernet_label"/>
+    <string name="ethernet_label">"ઇથરનેટ"</string>
+
+    <!-- QuickSettings: Do not disturb [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_label"/>
+    <string name="quick_settings_dnd_label">"ખલેલ પાડશો નહીં"</string>
+    <!-- QuickSettings: Do not disturb - Priority only [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_priority_label"/>
+    <string name="quick_settings_dnd_priority_label">"ફક્ત પ્રાધાન્યતા"</string>
+    <!-- QuickSettings: Do not disturb - Alarms only [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_alarms_label"/>
+    <string name="quick_settings_dnd_alarms_label">"ફક્ત એલાર્મ્સ"</string>
+    <!-- QuickSettings: Do not disturb - Total silence [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_none_label"/>
+    <string name="quick_settings_dnd_none_label">"સાવ શાંતિ"</string>
+    <!-- QuickSettings: Bluetooth [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_label"/>
+    <string name="quick_settings_bluetooth_label">"બ્લુટૂથ"</string>
+    <!-- QuickSettings: Bluetooth (Multiple) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_multiple_devices_label"/>
+    <string name="quick_settings_bluetooth_multiple_devices_label">"બ્લુટૂથ (<xliff:g id="number">%d</xliff:g> ઉપકરણો)"</string>
+    <!-- QuickSettings: Bluetooth (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_off_label"/>
+    <string name="quick_settings_bluetooth_off_label">"બ્લુટૂથ બંધ છે"</string>
+    <!-- QuickSettings: Bluetooth detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_detail_empty_text"/>
+    <string name="quick_settings_bluetooth_detail_empty_text">"કોઈ જોડી બનાવેલા ઉપકરણો ઉપલબ્ધ નથી"</string>
+    <!-- QuickSettings: Brightness [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_label"/>
+    <string name="quick_settings_brightness_label">"ચળકાટ"</string>
+    <!-- QuickSettings: Rotation Unlocked [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_unlocked_label"/>
+    <string name="quick_settings_rotation_unlocked_label">"સ્વતઃ-ફેરવો"</string>
+    <!-- Accessibility label for Auto-ratate QuickSettings tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_rotation"/>
+    <string name="accessibility_quick_settings_rotation">"સ્ક્રીનને સ્વતઃ-ફેરવો"</string>
+    <!-- Accessibility label for value of Auto-ratate QuickSettings tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_rotation_value"/>
+    <string name="accessibility_quick_settings_rotation_value">"<xliff:g id="ID_1">%s</xliff:g> પર સેટ કરો"</string>
+    <!-- QuickSettings: Rotation Locked [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_label"/>
+    <string name="quick_settings_rotation_locked_label">"ભ્રમણ લૉક કર્યુ"</string>
+    <!-- QuickSettings: Locked to Portrait [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_portrait_label"/>
+    <string name="quick_settings_rotation_locked_portrait_label">"પોટ્રેટ"</string>
+    <!-- QuickSettings: Locked to Landscape [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_landscape_label"/>
+    <string name="quick_settings_rotation_locked_landscape_label">"લેન્ડસ્કેપ"</string>
+    <!-- QuickSettings: IME [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_ime_label"/>
+    <string name="quick_settings_ime_label">"ઇનપુટ પદ્ધતિ"</string>
+    <!-- QuickSettings: Location [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_location_label"/>
+    <string name="quick_settings_location_label">"સ્થાન"</string>
+    <!-- QuickSettings: Location (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_location_off_label"/>
+    <string name="quick_settings_location_off_label">"સ્થાન બંધ છે"</string>
+    <!-- QuickSettings: Media device [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_media_device_label"/>
+    <string name="quick_settings_media_device_label">"મીડિયા ઉપકરણ"</string>
+    <!-- QuickSettings: RSSI [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rssi_label"/>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <!-- QuickSettings: RSSI (No network) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rssi_emergency_only"/>
+    <string name="quick_settings_rssi_emergency_only">"ફક્ત આપાતકાલીન કૉલ્સ"</string>
+    <!-- QuickSettings: Settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_settings_label"/>
+    <string name="quick_settings_settings_label">"સેટિંગ્સ"</string>
+    <!-- QuickSettings: Time [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_time_label"/>
+    <string name="quick_settings_time_label">"સમય"</string>
+    <!-- QuickSettings: User [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_label"/>
+    <string name="quick_settings_user_label">"મને"</string>
+    <!-- QuickSettings: Title of the user detail panel [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_title"/>
+    <string name="quick_settings_user_title">"ઉપયોગકર્તા"</string>
+    <!-- QuickSettings: Label on the item for adding a new user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_new_user"/>
+    <string name="quick_settings_user_new_user">"નવા ઉપયોગકર્તા"</string>
+    <!-- QuickSettings: Wifi [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_label"/>
+    <string name="quick_settings_wifi_label">"Wi-Fi"</string>
+    <!-- QuickSettings: Wifi (Not connected) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_not_connected"/>
+    <string name="quick_settings_wifi_not_connected">"જોડાયેલ નથી"</string>
+    <!-- QuickSettings: Wifi (No network) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_no_network"/>
+    <string name="quick_settings_wifi_no_network">"કોઈ નેટવર્ક નથી"</string>
+    <!-- QuickSettings: Wifi (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_off_label"/>
+    <string name="quick_settings_wifi_off_label">"Wi-Fi બંધ"</string>
+    <!-- QuickSettings: Wifi (On) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_on_label"/>
+    <string name="quick_settings_wifi_on_label">"Wi-Fi ચાલુ"</string>
+    <!-- QuickSettings: Wifi detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_detail_empty_text"/>
+    <string name="quick_settings_wifi_detail_empty_text">"કોઈ Wi-Fi નેટવર્ક્સ ઉપલબ્ધ નથી"</string>
+    <!-- QuickSettings: Cast title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_title"/>
+    <string name="quick_settings_cast_title">"કાસ્ટ કરો"</string>
+    <!-- QuickSettings: Cast detail panel, status text when casting [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_casting"/>
+    <string name="quick_settings_casting">"કાસ્ટ કરી રહ્યાં છે"</string>
+    <!-- QuickSettings: Cast detail panel, default device name [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_device_default_name"/>
+    <string name="quick_settings_cast_device_default_name">"અનામાંકિત ઉપકરણ"</string>
+     <!-- QuickSettings: Cast detail panel, default device description [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_device_default_description"/>
+    <string name="quick_settings_cast_device_default_description">"કાસ્ટ માટે તૈયાર"</string>
+    <!-- QuickSettings: Cast detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_detail_empty_text"/>
+    <string name="quick_settings_cast_detail_empty_text">"કોઈ ઉપલબ્ધ ઉપકરણો ઉપલબ્ધ નથી"</string>
+    <!-- QuickSettings: Brightness dialog title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_dialog_title"/>
+    <string name="quick_settings_brightness_dialog_title">"ચળકાટ"</string>
+    <!-- QuickSettings: Brightness dialog auto brightness button [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_dialog_auto_brightness_label"/>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">"સ્વતઃ"</string>
+    <!-- QuickSettings: Label for the toggle that controls whether display inversion is enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_inversion_label"/>
+    <string name="quick_settings_inversion_label">"રંગ બદલો"</string>
+    <!-- QuickSettings: Label for the toggle that controls whether display color correction is enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_color_space_label"/>
+    <string name="quick_settings_color_space_label">"રંગ સુધાર મોડ"</string>
+    <!-- QuickSettings: Control panel: Label for button that navigates to settings. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_more_settings"/>
+    <string name="quick_settings_more_settings">"વધુ સેટિંગ્સ"</string>
+    <!-- QuickSettings: Control panel: Label for button that dismisses control panel. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_done"/>
+    <string name="quick_settings_done">"પૂર્ણ થયું"</string>
+    <!-- QuickSettings: Control panel: Label for connected device. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_connected"/>
+    <string name="quick_settings_connected">"જોડેલ"</string>
+    <!-- QuickSettings: Control panel: Label for connecting device. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_connecting"/>
+    <string name="quick_settings_connecting">"જોડાઈ રહ્યું છે..."</string>
+    <!-- QuickSettings: Tethering. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_tethering_label"/>
+    <string name="quick_settings_tethering_label">"ટેથરિંગ"</string>
+    <!-- QuickSettings: Hotspot. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_hotspot_label"/>
+    <string name="quick_settings_hotspot_label">"હોટસ્પોટ"</string>
+    <!-- QuickSettings: Notifications [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_notifications_label"/>
+    <string name="quick_settings_notifications_label">"સૂચનાઓ"</string>
+    <!-- QuickSettings: Flashlight [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_flashlight_label"/>
+    <string name="quick_settings_flashlight_label">"ફ્લેશલાઇટ"</string>
+    <!-- QuickSettings: Cellular detail panel title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_title"/>
+    <string name="quick_settings_cellular_detail_title">"સેલ્યુલર ડેટા"</string>
+    <!-- QuickSettings: Cellular detail panel, data usage title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_usage"/>
+    <string name="quick_settings_cellular_detail_data_usage">"ડેટા વપરાશ"</string>
+    <!-- QuickSettings: Cellular detail panel, remaining data title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_remaining_data"/>
+    <string name="quick_settings_cellular_detail_remaining_data">"બાકી ડેટા"</string>
+    <!-- QuickSettings: Cellular detail panel, over limit title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_over_limit"/>
+    <string name="quick_settings_cellular_detail_over_limit">"સીમા સમાપ્ત"</string>
+    <!-- QuickSettings: Cellular detail panel, data used format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_used"/>
+    <string name="quick_settings_cellular_detail_data_used">"<xliff:g id="data_used" example="2.0 GB">%s</xliff:g> વપરાયેલ"</string>
+    <!-- QuickSettings: Cellular detail panel, data limit format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_limit"/>
+    <string name="quick_settings_cellular_detail_data_limit">"<xliff:g id="data_limit" example="2.0 GB">%s</xliff:g> સીમા"</string>
+    <!-- QuickSettings: Cellular detail panel, data warning format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_warning"/>
+    <string name="quick_settings_cellular_detail_data_warning">"<xliff:g id="data_limit" example="2.0 GB">%s</xliff:g> ચેતવણી"</string>
+    <!-- QuickSettings: Work mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_work_mode_label"/>
+    <string name="quick_settings_work_mode_label">"કાર્ય મોડ"</string>
+    <!-- QuickSettings: Label for the toggle to activate Night display (renamed "Night Light" with title caps). [CHAR LIMIT=20] -->
+    <add-resource type="string" name="quick_settings_night_display_label"/>
+    <string name="quick_settings_night_display_label">"રાત્રિ પ્રકાશ"</string>
+    <!-- QuickSettings: Summary for the toggle to deactivate Night display when it's on (renamed "Night Light" with title caps). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_night_display_summary_on"/>
+    <string name="quick_settings_night_display_summary_on">"રાત્રિ પ્રકાશ ચાલુ છે, બંધ કરવા માટે ટપ કરો"</string>
+    <!-- QuickSettings: Label for the toggle to activate Night display when it's off (renamed "Night Light" with title caps). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_night_display_summary_off"/>
+    <string name="quick_settings_night_display_summary_off">"રાત્રિ પ્રકાશ બંધ છે, ચાલુ કરવા માટે ટૅપ કરો"</string>
+
+    <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_empty_message"/>
+    <string name="recents_empty_message">"કોઇ તાજેતરની આઇટમ્સ નથી"</string>
+    <!-- Recents: The empty recents string after dismissing all tasks. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_empty_message_dismissed_all"/>
+    <string name="recents_empty_message_dismissed_all">"તમે બધું સાફ કર્યું"</string>
+    <!-- Recents: The info panel app info button string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_app_info_button_label"/>
+    <string name="recents_app_info_button_label">"એપ્લિકેશન માહિતી"</string>
+    <!-- Recents: The screen pinning button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_lock_to_app_button_label"/>
+    <string name="recents_lock_to_app_button_label">"સ્ક્રીન પિન કરે છે"</string>
+    <!-- Recents: Temporary string for the button in the recents search bar. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_search_bar_label"/>
+    <string name="recents_search_bar_label">"શોધો"</string>
+    <!-- Recents: Launch error string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_launch_error_message"/>
+    <string name="recents_launch_error_message">"<xliff:g id="app" example="Calendar">%s</xliff:g> પ્રારંભ કરી શકાયું નથી."</string>
+    <!-- Recents: Launch disabled string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_launch_disabled_message"/>
+    <string name="recents_launch_disabled_message">"સુરક્ષિત મોડમાં <xliff:g id="APP">%s</xliff:g> અક્ષમ કરેલ છે."</string>
+    <!-- Recents: Stack action button string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_stack_action_button_label"/>
+    <string name="recents_stack_action_button_label">"બધું સાફ કરો"</string>
+    <!-- Recents: Incompatible task message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_incompatible_app_message"/>
+    <string name="recents_incompatible_app_message">"ઍપ્લિકેશન સ્ક્રીન વિભાજનનું સમર્થન કરતી નથી"</string>
+    <!-- Recents: Hint text that shows on the drop targets to start multiwindow. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_drag_hint_message"/>
+    <string name="recents_drag_hint_message">"વિભાજિત સ્ક્રીનનો ઉપયોગ કરવા માટે અહીં ખેંચો"</string>
+
+    <!-- Recents: MultiStack add stack split horizontal radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_horizontal"/>
+    <string name="recents_multistack_add_stack_dialog_split_horizontal">"આડું વિભક્ત કરો"</string>
+    <!-- Recents: MultiStack add stack split vertical radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_vertical"/>
+    <string name="recents_multistack_add_stack_dialog_split_vertical">"ઊભું વિભક્ત કરો"</string>
+    <!-- Recents: MultiStack add stack split custom radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_custom"/>
+    <string name="recents_multistack_add_stack_dialog_split_custom">"કસ્ટમ વિભક્ત કરો"</string>
+
+    <!-- Fully qualified activity class names to be blacklisted in Recents, add package names into overlay as needed -->
+    <add-resource type="array" name="recents_blacklist_array"/>
+    <string-array name="recents_blacklist_array">
+    </string-array>
+
+    <!-- Expanded Status Bar Header: Battery Charged [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charged"/>
+    <string name="expanded_header_battery_charged">"ચાર્જ કરેલ છે"</string>
+
+    <!-- Expanded Status Bar Header: Charging, no known time [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charging"/>
+    <string name="expanded_header_battery_charging">"ચાર્જિંગ"</string>
+
+    <!-- Expanded Status Bar Header: Charging, showing time left until charged [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charging_with_time"/>
+    <string name="expanded_header_battery_charging_with_time">"પૂર્ણ થાય ત્યાં સુધીમાં <xliff:g id="charging_time" example="2 hrs 25 min">%s</xliff:g>"</string>
+
+    <!-- Expanded Status Bar Header: Not charging [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_not_charging"/>
+    <string name="expanded_header_battery_not_charging">"ચાર્જ થઈ રહ્યું નથી"</string>
+
+    <!-- Glyph to be overlaid atop the battery when the level is extremely low. Do not translate. -->
+    <add-resource type="string" name="battery_meter_very_low_overlay_symbol"/>
+    <string name="battery_meter_very_low_overlay_symbol">!</string>
+
+    <!-- Shows up when there is a user SSL CA Cert installed on the
+         device.  Indicates to the user that SSL traffic can be intercepted.
+         If the text fits on one line (~14 chars), it should start with a
+         linebreak to position it correctly.  [CHAR LIMIT=45] -->
+    <add-resource type="string" name="ssl_ca_cert_warning"/>
+    <string name="ssl_ca_cert_warning">"નેટવર્કનું નિરીક્ષણ કરવામાં\nઆવી શકે છે"</string>
+
+    <!-- Description of the unlock target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_target_search"/>
+    <string name="description_target_search">"શોધો"</string>
+    <!-- Description of the up direction in which one can to slide the handle in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_direction_up"/>
+    <string name="description_direction_up">"<xliff:g id="target_description" example="Unlock">%s</xliff:g> માટે ઉપર સ્લાઇડ કરો."</string>
+    <!-- Description of the left direction in which one can to slide the handle in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_direction_left"/>
+    <string name="description_direction_left">"<xliff:g id="target_description" example="Unlock">%s</xliff:g> માટે ડાબે સ્લાઇડ કરો."</string>
+
+    <!-- Zen mode: Priority only introduction message on first use -->
+    <add-resource type="string" name="zen_priority_introduction"/>
+    <string name="zen_priority_introduction">"તમને તમે ઉલ્લેખિત એલાર્મ્સ, સ્મૃતિપત્રો, ઇવેન્ટ્સ અને કૉલર્સ સિવાયના ધ્વનિઓ અને વાઇબ્રેશન્સથી ખલેલ પહોંચાડવામાં આવશે નહીં."</string>
+
+    <!-- Zen mode: Priority only customization button label -->
+    <add-resource type="string" name="zen_priority_customize_button"/>
+    <string name="zen_priority_customize_button">"કસ્ટમાઇઝ કરો"</string>
+
+    <!-- Zen mode: Total silence introduction message on first use (voice capable devices) -->
+    <add-resource type="string" name="zen_silence_introduction_voice"/>
+    <string name="zen_silence_introduction_voice">"આ એલાર્મ્સ, સંગીત, વિડિઓઝ અને રમતો સહિત તમામ ધ્વનિઓ અને વાઇબ્રેશન્સને અવરોધિત કરે છે.  તમે હજુ પણ ફોન કૉલ્સ કરવા માટે સમર્થ હશો."</string>
+
+    <!-- Zen mode: Total silence introduction message on first use (non-voice capable devices) -->
+    <add-resource type="string" name="zen_silence_introduction"/>
+    <string name="zen_silence_introduction">"એલાર્મ્સ, સંગીત, વિડિઓઝ અને રમતો સહિત તમામ ધ્વનિઓ અને વાઇબ્રેશન્સને આ અવરોધિત કરે છે."</string>
+
+    <!-- Text for overflow card on Keyguard when there is not enough space for all notifications on Keyguard. [CHAR LIMIT=1] -->
+    <add-resource type="string" name="keyguard_more_overflow_text"/>
+    <string name="keyguard_more_overflow_text">+<xliff:g id="number_of_notifications" example="5">%d</xliff:g></string>
+
+    <!-- An explanation for the visual speed bump in the notifications, which will appear when you click on it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="speed_bump_explanation"/>
+    <string name="speed_bump_explanation">"ઓછી જરૂરી સૂચનાઓ નીચે"</string>
+
+    <!-- Shows to explain the double tap interaction with notifications: After tapping a notification on Keyguard, this will explain users to tap again to launch a notification. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="notification_tap_again"/>
+    <string name="notification_tap_again">"ખોલવા માટે ફરીથી ટેપ કરો"</string>
+
+    <!-- Shows when people have pressed the unlock icon to explain how to unlock. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="keyguard_unlock"/>
+    <string name="keyguard_unlock">"અનલોક કરવા માટે ઉપરની તરફ સ્વાઇપ કરો"</string>
+
+    <!-- Shows when people have clicked on the phone icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="phone_hint"/>
+    <string name="phone_hint">"ફોન માટે આયકનમાંથી સ્વાઇપ કરો"</string>
+
+    <!-- Shows when people have clicked on the voice assist icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="voice_hint"/>
+    <string name="voice_hint">"વૉઇસ સહાય માટે આયકનમાંથી સ્વાઇપ કરો"</string>
+
+    <!-- Shows when people have clicked on the camera icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="camera_hint"/>
+    <string name="camera_hint">"કૅમેરા માટે આયકનમાંથી સ્વાઇપ કરો"</string>
+
+    <!-- Accessibility content description for Interruption level: None. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="interruption_level_none_with_warning"/>
+    <string name="interruption_level_none_with_warning">"સંપૂર્ણ મૌન. આ સ્ક્રીન રીડર્સને પણ મૌન કરશે."</string>
+
+    <!-- Interruption level: None. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_none"/>
+    <string name="interruption_level_none">"સાવ શાંતિ"</string>
+
+    <!-- Interruption level: Priority. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_priority"/>
+    <string name="interruption_level_priority">"ફક્ત પ્રાધાન્યતા"</string>
+
+    <!-- Interruption level: Alarms only. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_alarms"/>
+    <string name="interruption_level_alarms">"ફક્ત એલાર્મ્સ"</string>
+
+    <!-- Interruption level: None.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_none_twoline"/>
+    <string name="interruption_level_none_twoline">"સાવ\nશાંતિ"</string>
+
+    <!-- Interruption level: Priority.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_priority_twoline"/>
+    <string name="interruption_level_priority_twoline">"ફક્ત\nપ્રાધાન્યતા"</string>
+
+    <!-- Interruption level: Alarms only.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_alarms_twoline"/>
+    <string name="interruption_level_alarms_twoline">"ફક્ત\nએલાર્મ્સ"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time"/>
+    <string name="keyguard_indication_charging_time">"(પૂર્ણ થાય ત્યાં સુધીમાં <xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g>) ચાર્જ થઈ રહ્યું છે"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging rapidly. Should match keyguard_plugged_in_charging_fast [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time_fast"/>
+    <string name="keyguard_indication_charging_time_fast">"ઝડપથી ચાર્જિંગ થઇ રહી છે (પૂર્ણ થવામાં <xliff:g id="CHARGING_TIME_LEFT">%s</xliff:g> બાકી)"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging slowly. Should match keyguard_plugged_in_charging_slowly [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time_slowly"/>
+    <string name="keyguard_indication_charging_time_slowly">"ધીમેથી ચાર્જિંગ થઇ રહી છે (પૂર્ણ થવામાં <xliff:g id="CHARGING_TIME_LEFT">%s</xliff:g> બાકી)"</string>
+
+    <!-- Related to user switcher -->
+
+    <!-- Accessibility label for the button that opens the user switcher. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_switcher"/>
+    <string name="accessibility_multi_user_switch_switcher">"ઉપયોગકર્તા સ્વિચ કરો"</string>
+
+    <!-- Accessibility label for the button that opens the user switcher and announces the current user. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_switcher_with_current"/>
+    <string name="accessibility_multi_user_switch_switcher_with_current">"ઉપયોગકર્તા, વર્તમાન ઉપયોગકર્તા <xliff:g id="current_user_name" example="John Doe">%s</xliff:g> ને સ્વિચ કરો"</string>
+
+    <!-- Accessibility label for the user icon on the lock screen. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_inactive"/>
+    <string name="accessibility_multi_user_switch_inactive">"વર્તમાન વપરાશકર્તા <xliff:g id="CURRENT_USER_NAME">%s</xliff:g>"</string>
+
+    <!-- Accessibility label for the button that opens the quick contact of the user. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_quick_contact"/>
+    <string name="accessibility_multi_user_switch_quick_contact">"પ્રફાઇલ બતાવો"</string>
+
+    <!-- Label for the adding a new user in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="user_add_user"/>
+    <string name="user_add_user">"ઉપયોગકર્તા ઉમેરો"</string>
+
+    <!-- Name for a freshly added user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_new_user_name"/>
+    <string name="user_new_user_name">"નવા ઉપયોગકર્તા"</string>
+
+    <!-- Name for the guest user [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_nickname"/>
+    <string name="guest_nickname">"અતિથિ"</string>
+
+    <!-- Label for adding a new guest in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_new_guest"/>
+    <string name="guest_new_guest">"અતિથિ ઉમેરો"</string>
+
+    <!-- Label for exiting and removing the  guest session in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_exit_guest"/>
+    <string name="guest_exit_guest">"અતિથિ દૂર કરો"</string>
+
+    <!-- Title of the confirmation dialog when exiting guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_title"/>
+    <string name="guest_exit_guest_dialog_title">"અતિથિને દૂર કરીએ?"</string>
+
+    <!-- Message of the confirmation dialog when exiting guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_message"/>
+    <string name="guest_exit_guest_dialog_message">"આ સત્રમાંથી બધી એપ્લિકેશન્સ અને ડેટા કાઢી નાખવામાં આવશે."</string>
+
+    <!-- Label for button in confirmation dialog when exiting guest session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_remove"/>
+    <string name="guest_exit_guest_dialog_remove">"દૂર કરો"</string>
+
+    <!-- Title of the notification when resuming an existing guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_wipe_session_title"/>
+    <string name="guest_wipe_session_title">"ફરી પાછું સ્વાગત છે, અતિથિ!"</string>
+
+    <!-- Message of the notification when resuming an existing guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_wipe_session_message"/>
+    <string name="guest_wipe_session_message">"શું તમે તમારું સત્ર ચાલુ રાખવા માગો છો?"</string>
+
+    <!-- Notification when resuming an existing guest session: Action that starts a new session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_wipe_session_wipe"/>
+    <string name="guest_wipe_session_wipe">"પ્રારંભ કરી દો"</string>
+
+    <!-- Notification when resuming an existing guest session: Action that continues with the current session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_wipe_session_dontwipe"/>
+    <string name="guest_wipe_session_dontwipe">"હા, ચાલુ રાખો"</string>
+
+    <!-- Title of the notification shown to a new guest user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="guest_notification_title"/>
+    <string name="guest_notification_title">"અતિથિ વપરાશકર્તા"</string>
+
+    <!-- Text of the notification shown to a new guest user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="guest_notification_text"/>
+    <string name="guest_notification_text">"એપ્લિકેશનો અને ડેટા કાઢી નાખવા, અતિથિ વપરાશકર્તાને દૂર કરો"</string>
+
+    <!-- Remove action in the notification shown to a new guest user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="guest_notification_remove_action"/>
+    <string name="guest_notification_remove_action">"અતિથિ દૂર કરો"</string>
+
+    <!-- Title of the notification shown to logout the current user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="user_logout_notification_title"/>
+    <string name="user_logout_notification_title">"વપરાશકર્તાને લૉગઆઉટ કરો"</string>
+
+    <!-- Text of the notification shown to logout the current user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="user_logout_notification_text"/>
+    <string name="user_logout_notification_text">"વર્તમાન વપરાશકર્તાને લૉગઆઉટ કરો"</string>
+
+    <!-- Logout action in the notification shown to logout the current user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_logout_notification_action"/>
+    <string name="user_logout_notification_action">"વપરાશકર્તાને લૉગઆઉટ કરો"</string>
+
+    <!-- Title for add user confirmation dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_add_user_title"/>
+    <string name="user_add_user_title" msgid="2108112641783146007">"નવો ઉપયોગકર્તા ઉમેરીએ?"</string>
+
+    <!-- Message for add user confirmation dialog - short version. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="user_add_user_message_short"/>
+    <string name="user_add_user_message_short" msgid="1511354412249044381">"જ્યારે તમે એક નવો ઉપયોગકર્તા શોધો, ત્યારે તે વ્યક્તિએ તેની જગ્યા સેટ કરવાની જરૂર હોય છે.\n\nકોઈપણ ઉપયોગકર્તા બધા અન્ય ઉપયોગકર્તાઓની એપ્લિકેશન્સને અપડેટ કરી શકે છે. "</string>
+
+    <!-- Title of the confirmation dialog for deleting a user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="user_remove_user_title"/>
+    <string name="user_remove_user_title">"વપરાશકર્તાને દૂર કરીએ?"</string>
+
+    <!-- Message of the confirmation dialog for deleting a user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="user_remove_user_message"/>
+    <string name="user_remove_user_message">"આ વપરાશકર્તાની તમામ ઍપ્લિકેશનો અને ડેટા કાઢી નાખવામાં આવશે."</string>
+
+    <!-- Label for button in confirmation dialog when exiting guest session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="user_remove_user_remove"/>
+    <string name="user_remove_user_remove">"દૂર કરો"</string>
+
+    <!-- Battery saver notification title. [CHAR LIMIT=60]-->
+    <add-resource type="string" name="battery_saver_notification_title"/>
+    <string name="battery_saver_notification_title">"બેટરી સેવર ચાલુ છે"</string>
+
+    <!-- Battery saver notification text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="battery_saver_notification_text"/>
+    <string name="battery_saver_notification_text">"પ્રદર્શન અને પૃષ્ઠભૂમિ ડેટા ઘટાડે છે"</string>
+
+    <!-- Battery saver notification action text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="battery_saver_notification_action_text"/>
+    <string name="battery_saver_notification_action_text">"બેટરી સેવર બંધ કરો"</string>
+
+    <!-- Media projection permission dialog warning text. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="media_projection_dialog_text"/>
+    <string name="media_projection_dialog_text">"<xliff:g id="app_seeking_permission" example="Hangouts">%s</xliff:g> તમારી સ્ક્રીન પર પ્રદર્શિત છે તે બધું કેપ્ચર કરવાનું પ્રારંભ કરશે."</string>
+
+    <!-- Media projection permission dialog permanent grant check box. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="media_projection_remember_text"/>
+    <string name="media_projection_remember_text">"ફરીથી બતાવશો નહીં"</string>
+
+    <!-- The text to clear all notifications. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="clear_all_notifications_text"/>
+    <string name="clear_all_notifications_text">"બધું સાફ કરો"</string>
+
+    <!-- Media projection permission dialog action text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="media_projection_action_text"/>
+    <string name="media_projection_action_text">"હવે પ્રારંભ કરો"</string>
+
+    <!-- Text which is shown in the notification shade when there are no notifications. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="empty_shade_text"/>
+    <string name="empty_shade_text">"કોઈ સૂચનાઓ નથી"</string>
+
+    <!-- Footer device owned text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="device_owned_footer"/>
+    <string name="device_owned_footer">"ઉપકરણનું નિરીક્ષણ કરવામાં આવી શકે છે"</string>
+
+    <!-- Footer profile owned text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="profile_owned_footer"/>
+    <string name="profile_owned_footer">"પ્રોફાઇલનું નિરીક્ષણ કરવામાં આવી શકે છે"</string>
+
+    <!-- Footer vpn present text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="vpn_footer"/>
+    <string name="vpn_footer">"નેટવર્કનું નિરીક્ષણ કરવામાં આવી શકે છે"</string>
+
+    <!-- Footer vpn present text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="branded_vpn_footer"/>
+    <string name="branded_vpn_footer">"નેટવર્ક મૉનિટર કરવામાં આવી શકે છે"</string>
+
+    <!-- Monitoring dialog title for device owned devices [CHAR LIMIT=35] -->
+    <add-resource type="string" name="monitoring_title_device_owned"/>
+    <string name="monitoring_title_device_owned">"ઉપકરણનું નિરીક્ષન કરે છે"</string>
+
+    <!-- Monitoring dialog title for profile owned devices [CHAR LIMIT=35] -->
+    <add-resource type="string" name="monitoring_title_profile_owned"/>
+    <string name="monitoring_title_profile_owned">"પ્રોફાઇલનું નિરીક્ષણ કરવામાં આવે છે"</string>
+
+    <!-- Monitoring dialog title for normal devices  [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_title"/>
+    <string name="monitoring_title">"નેટવર્કનું નિરીક્ષણ કરે છે"</string>
+
+    <!-- Monitoring dialog subtitle for the section describing VPN [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_subtitle_vpn"/>
+    <string name="monitoring_subtitle_vpn">VPN</string>
+
+    <!-- Monitoring dialog subtitle for the section describing network logging [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_subtitle_network_logging"/>
+    <string name="monitoring_subtitle_network_logging">"નેટવર્ક લૉગિંગ"</string>
+
+    <!-- Monitoring dialog disable vpn button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="disable_vpn"/>
+    <string name="disable_vpn">"VPN અક્ષમ કરો"</string>
+
+    <!-- Monitoring dialog disconnect vpn button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="disconnect_vpn"/>
+    <string name="disconnect_vpn">"VPN નું જોડાણ અલગ કરો"</string>
+
+    <!-- Monitoring dialog device owner body text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_device_owned"/>
+    <string name="monitoring_description_device_owned">"તમારું ઉપકરણ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે.\n\nતમારા વ્યવસ્થાપક સેટિંગ્સ, કોર્પોરેટ ઍક્સેસ, એપ્લિકેશનો, તમારા ઉપકરણ સાથે સંકળાયેલ ડેટા અને તમારા ઉપકરણની સ્થાન માહિતી મોનિટર અને સંચાલિત કરી શકે છે. વધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો."</string>
+
+    <!-- Monitoring dialog: Part of text body explaining that a VPN is connected and what it can do, for devices managed by a Device Owner app [CHAR LIMIT=130] -->
+    <add-resource type="string" name="monitoring_description_do_body_vpn"/>
+    <string name="monitoring_description_do_body_vpn">"તમે <xliff:g id="vpn_app">%1$s</xliff:g> સાથે કનેક્ટ થયાં છો, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog: Space that separates the VPN body text and the "Open VPN Settings" link that follows it. [CHAR LIMIT=5] -->
+    <add-resource type="string" name="monitoring_description_vpn_settings_separator"/>
+    <string name="monitoring_description_vpn_settings_separator"> </string>
+
+    <!-- Monitoring dialog: Link to open the VPN settings page [CHAR LIMIT=60] -->
+    <add-resource type="string" name="monitoring_description_vpn_settings"/>
+    <string name="monitoring_description_vpn_settings">"VPN સેટિંગ્સ ખોલો"</string>
+
+    <!-- Monitoring dialog: Network logging text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_network_logging"/>
+    <string name="monitoring_description_network_logging">"તમારા વ્યવસ્થાપકે નેટવર્ક લૉગિંગ ચાલુ કર્યું છે, જે તમારા ઉપકરણ પર ટ્રાફિકને મૉનિટર કરે છે.\n\nવધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો."</string>
+
+
+    <!-- Monitoring dialog VPN text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn"/>
+    <string name="monitoring_description_vpn">"તમે VPN કનેક્શન સેટ કરવા માટે એપ્લિકેશન પરવાનગી આપી.\n\nઆ એપ્લિકેશન ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિત તમારા ઉપકરણ અને નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog VPN with device owner text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_device_owned"/>
+    <string name="monitoring_description_vpn_device_owned">"તમારું ઉપકરણ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે.\n\nતમારા વ્યવસ્થાપક સેટિંગ્સ, કોર્પોરેટ ઍક્સેસ, એપ્લિકેશનો, તમારા ઉપકરણ સાથે સંકળાયેલ ડેટા અને તમારા ઉપકરણની સ્થાન માહિતી મોનિટર અને સંચાલિત કરી શકે છે.\n\nતમે VPN સાથે કનેક્ટ થયેલા છો જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની, તમારી નેટવર્ક પ્રવૃત્તિ મોનિટર કરી શકે છે.\n\nવધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો."</string>
+
+    <!-- Monitoring dialog VPN with profile owner text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_profile_owned"/>
+    <string name="monitoring_description_vpn_profile_owned">"તમારી કાર્ય પ્રોફાઇલ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે.\n\nતમારા વ્યવસ્થાપક ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી નેટવર્ક પ્રવૃત્તિને મૉનિટર કરવામાં સમર્થ છે.\n\nવધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો.\n\nતમે VPN સાથે પણ કનેક્ટ છો, જે તમારી નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Name for a generic legacy VPN connection [CHAR LIMIT=20] -->
+    <add-resource type="string" name="legacy_vpn_name"/>
+    <string name="legacy_vpn_name">VPN</string>
+
+    <!-- Monitoring dialog text for single app (no profile or device owner) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app"/>
+    <string name="monitoring_description_app">"તમે <xliff:g id="APPLICATION">%1$s</xliff:g> સાથે કનેક્ટ થયાં છો, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog text for single app (inside personal profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_personal"/>
+    <string name="monitoring_description_app_personal">"તમે <xliff:g id="APPLICATION">%1$s</xliff:g> સાથે કનેક્ટ થયાં છો, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી વ્યક્તિગત નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog text for single app (inside personal profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="branded_monitoring_description_app_personal"/>
+    <string name="branded_monitoring_description_app_personal">"તમે <xliff:g id="APPLICATION">%1$s</xliff:g> સાથે કનેક્ટ થયાં છો, જે ઇમેઇલ્સ, ઍપ્લિકેશનો અને વેબસાઇટ્સ સહિત તમારી વ્યક્તિગત નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog text for single app (inside work profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_work"/>
+    <string name="monitoring_description_app_work">"તમારી કાર્ય પ્રોફાઇલ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે. તે <xliff:g id="APPLICATION">%2$s</xliff:g> સાથે કનેક્ટ થયેલ છે, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી કાર્ય નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે.\n\nવધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો."</string>
+
+    <!-- Monitoring dialog text for multiple apps (in personal and work profiles) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_personal_work"/>
+    <string name="monitoring_description_app_personal_work">"તમારી કાર્ય પ્રોફાઇલ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે. તે <xliff:g id="APPLICATION_WORK">%2$s</xliff:g> સાથે કનેક્ટ થયેલ છે, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી કાર્ય નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે.\n\nતમે <xliff:g id="APPLICATION_PERSONAL">%3$s</xliff:g> સાથે પણ કનેક્ટ થયેલ છો, જે તમારી વ્યક્તિગત નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે."</string>
+
+    <!-- Monitoring dialog text for single app (with device owner) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_app_device_owned"/>
+    <string name="monitoring_description_vpn_app_device_owned">"તમારું ઉપકરણ <xliff:g id="ORGANIZATION">%1$s</xliff:g> દ્વારા સંચાલિત થાય છે.\n\nતમારા વ્યવસ્થાપક, સેટિંગ્સ, કોર્પોરેટ ઍક્સેસ, એપ્લિકેશનો, તમારા ઉપકરણ સાથે સંકળાયેલ ડેટા અને તમારા ઉપકરણની સ્થાન માહિતીને મૉનિટર કરી અને સંચાલિત કરી શકે છે.\n\nતમે <xliff:g id="APPLICATION">%2$s</xliff:g> સાથે કનેક્ટ થયાં છો, જે ઇમેઇલ્સ, એપ્લિકેશનો અને વેબસાઇટ્સ સહિતની તમારી નેટવર્ક પ્રવૃત્તિને મૉનિટર કરી શકે છે.\n\nવધુ માહિતી માટે, તમારા વ્યવસ્થાપકનો સંપર્ક કરો."</string>
+
+    <!-- Indication on the keyguard that appears when the user disables trust agents until the next time they unlock manually. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keyguard_indication_trust_disabled"/>
+    <string name="keyguard_indication_trust_disabled">"જ્યાં સુધી તમે મેન્યુઅલી અનલૉક ન કરો ત્યાં સુધી ઉપકરણ લૉક કરેલ રહેશે"</string>
+
+    <!-- Title of notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="hidden_notifications_title"/>
+    <string name="hidden_notifications_title">"સૂચનાઓ વધુ ઝડપી મેળવો"</string>
+
+    <!-- Body of notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="hidden_notifications_text"/>
+    <string name="hidden_notifications_text">"તમે અનલૉક કરતા પહેલાં તેને જુઓ"</string>
+
+    <!-- Cancel action for notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hidden_notifications_cancel"/>
+    <string name="hidden_notifications_cancel">"નહીં, આભાર"</string>
+
+    <!-- continue action for notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hidden_notifications_setup"/>
+    <string name="hidden_notifications_setup">"સેટ કરો"</string>
+
+    <!-- Accessibility string for current zen mode and selected exit condition. A template that simply concatenates existing mode string and the current condition description. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="zen_mode_and_condition"/>
+    <string name="zen_mode_and_condition">"<xliff:g id="zen_mode" example="Priority interruptions only">%1$s</xliff:g>. <xliff:g id="exit_condition" example="For one hour">%2$s</xliff:g>"</string>
+
+    <!-- Button label for ending zen mode in the volume dialog -->
+    <add-resource type="string" name="volume_zen_end_now"/>
+    <string name="volume_zen_end_now">"હવે સમાપ્ત કરો"</string>
+
+    <!-- Content description for accessibility (not shown on the screen): volume dialog expand button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_volume_expand"/>
+    <string name="accessibility_volume_expand">"વિસ્તૃત કરો"</string>
+
+    <!-- Content description for accessibility (not shown on the screen): volume dialog collapse button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_volume_collapse"/>
+    <string name="accessibility_volume_collapse">"સંકુચિત કરો"</string>
+
+    <!-- Screen pinning dialog title. -->
+    <add-resource type="string" name="screen_pinning_title"/>
+    <string name="screen_pinning_title">"સ્ક્રીન પિન કરી"</string>
+    <!-- Screen pinning dialog description. -->
+    <add-resource type="string" name="screen_pinning_description"/>
+    <string name="screen_pinning_description">"આ તમે તેને અનપિન કરશો નહીં ત્યા સુધી દૃશ્યમાં રાખે છે. અનપિન કરવા માટે, ઓવરવ્યૂને ટચ કરો અને હોલ્ડ બૅક કરો."</string>
+    <!-- Screen pinning dialog description. -->
+    <add-resource type="string" name="screen_pinning_description_accessible"/>
+    <string name="screen_pinning_description_accessible">"આ તમે તેને અનપિન કરશો નહીં ત્યા સુધી દૃશ્યમાં રાખે છે. અનપિન કરવા માટે, ઓવરવ્યૂને ટચ કરો અને હોલ્ડ કરો."</string>
+    <!-- Screen pinning positive response. -->
+    <add-resource type="string" name="screen_pinning_positive"/>
+    <string name="screen_pinning_positive">"સમજાઈ ગયું"</string>
+    <!-- Screen pinning negative response. -->
+    <add-resource type="string" name="screen_pinning_negative"/>
+    <string name="screen_pinning_negative">"નહીં, આભાર"</string>
+
+    <!-- Hide quick settings tile confirmation title -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_title"/>
+    <string name="quick_settings_reset_confirmation_title">"<xliff:g id="tile_label" example="Hotspot">%1$s</xliff:g>ને છુપાવીએ?"</string>
+
+    <!-- Hide quick settings tile confirmation message -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_message"/>
+    <string name="quick_settings_reset_confirmation_message">"તમે આગલી વખતે જ્યારે તેને સેટિંગ્સમાં ચાલુ કરશો ત્યારે તે પુનઃપ્રદર્શિત થશે."</string>
+
+    <!-- Hide quick settings tile confirmation button -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_button"/>
+    <string name="quick_settings_reset_confirmation_button">"છુપાવો"</string>
+
+    <!-- VolumeUI activation dialog: warning message -->
+    <add-resource type="string" name="volumeui_prompt_message"/>
+    <string name="volumeui_prompt_message">"<xliff:g id="APP_NAME">%1$s</xliff:g> વૉલ્યૂમ સંવાદ બનવા માગે છે."</string>
+
+    <!-- VolumeUI activation dialog: allow button label -->
+    <add-resource type="string" name="volumeui_prompt_allow"/>
+    <string name="volumeui_prompt_allow">"મંજૂરી આપો"</string>
+
+    <!-- VolumeUI activation dialog: deny button label -->
+    <add-resource type="string" name="volumeui_prompt_deny"/>
+    <string name="volumeui_prompt_deny">"નકારો"</string>
+
+    <!-- VolumeUI restoration notification: title -->
+    <add-resource type="string" name="volumeui_notification_title"/>
+    <string name="volumeui_notification_title">"<xliff:g id="APP_NAME">%1$s</xliff:g> એ વૉલ્યૂમ સંવાદ છે"</string>
+
+    <!-- VolumeUI restoration notification: text -->
+    <add-resource type="string" name="volumeui_notification_text"/>
+    <string name="volumeui_notification_text">"મૂળને પુનઃસ્થાપિત કરવા માટે ટૅપ કરો."</string>
+
+    <!-- Toast shown when user unlocks screen and managed profile activity is in the foreground -->
+    <add-resource type="string" name="managed_profile_foreground_toast"/>
+    <string name="managed_profile_foreground_toast">"તમે તમારી કાર્ય પ્રોફાઇલનો ઉપયોગ કરી રહ્યાં છો"</string>
+
+    <add-resource type="array" name="volume_stream_titles"/>
+    <string-array name="volume_stream_titles">
+        <item>"કૉલ કરો"</item> <!-- STREAM_VOICE_CALL -->
+        <item>"સિસ્ટમ"</item> <!-- STREAM_SYSTEM -->
+        <item>"રિંગ કરો"</item> <!-- STREAM_RING -->
+        <item>"મીડિયા"</item> <!-- STREAM_MUSIC -->
+        <item>"એલાર્મ"</item> <!-- STREAM_ALARM -->
+        <item></item> <!-- STREAM_NOTIFICATION -->
+        <item>"Bluetooth"</item> <!-- STREAM_BLUETOOTH_SCO -->
+        <item></item> <!-- STREAM_SYSTEM_ENFORCED -->
+        <item></item> <!-- STREAM_DTMF -->
+        <item></item> <!-- STREAM_TTS -->
+    </string-array>
+
+    <add-resource type="string" name="volume_stream_content_description_unmute"/>
+    <string name="volume_stream_content_description_unmute">"%1$s. અનમ્યૂટ કરવા માટે ટૅપ કરો."</string>
+    <add-resource type="string" name="volume_stream_content_description_vibrate"/>
+    <string name="volume_stream_content_description_vibrate">"%1$s. વાઇબ્રેટ પર સેટ કરવા માટે ટૅપ કરો. ઍક્સેસિબિલિટી સેવાઓ મ્યૂટ કરવામાં આવી શકે છે."</string>
+    <add-resource type="string" name="volume_stream_content_description_mute"/>
+    <string name="volume_stream_content_description_mute">"%1$s. મ્યૂટ કરવા માટે ટૅપ કરો. ઍક્સેસિબિલિટી સેવાઓ મ્યૂટ કરવામાં આવી શકે છે."</string>
+
+    <add-resource type="string" name="volume_dialog_accessibility_shown_message"/>
+    <string name="volume_dialog_accessibility_shown_message">"%s વૉલ્યૂમ નિયંત્રણ બતાવ્યાં. છોડી દેવા માટે સ્વાઇપ કરો."</string>
+    <add-resource type="string" name="volume_dialog_accessibility_dismissed_message"/>
+    <string name="volume_dialog_accessibility_dismissed_message">"વૉલ્યૂમ નિયંત્રણ છુપાવ્યાં"</string>
+
+    <!-- Name of special SystemUI debug settings -->
+    <add-resource type="string" name="system_ui_tuner"/>
+    <string name="system_ui_tuner">"સિસ્ટમ UI ટ્યૂનર"</string>
+
+    <!-- Preference to show/hide embedded battery percentage [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_battery_percentage"/>
+    <string name="show_battery_percentage">"એમ્બેડ કરેલ બૅટરી ટકા બતાવો"</string>
+
+    <!-- Summary for battery percentage preference [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="show_battery_percentage_summary"/>
+    <string name="show_battery_percentage_summary">"જ્યારે ચાર્જ ન થઈ રહ્યું હોય ત્યારે સ્થિતિ બાર આયકનની અંદર બૅટરી સ્તર ટકા બતાવો"</string>
+
+    <!-- Name of quick settings -->
+    <add-resource type="string" name="quick_settings"/>
+    <string name="quick_settings">"ઝડપી સેટિંગ્સ"</string>
+
+    <!-- Name of status bar -->
+    <add-resource type="string" name="status_bar"/>
+    <string name="status_bar">"સ્થિતિ બાર"</string>
+
+    <!-- Name of overview -->
+    <add-resource type="string" name="overview"/>
+    <string name="overview">"વિહંગાવલોકન"</string>
+
+    <!-- Name of demo mode (mode with preset icons for screenshots) -->
+    <add-resource type="string" name="demo_mode"/>
+    <string name="demo_mode">"ડેમો મોડ"</string>
+
+    <!-- Enable demo mode -->
+    <add-resource type="string" name="enable_demo_mode"/>
+    <string name="enable_demo_mode">"ડેમો મોડ સક્ષમ કરો"</string>
+
+    <!-- Show demo mode icons -->
+    <add-resource type="string" name="show_demo_mode"/>
+    <string name="show_demo_mode">"ડેમો મોડ બતાવો"</string>
+
+    <!-- Name of the ethernet status bar icon. -->
+    <add-resource type="string" name="status_bar_ethernet"/>
+    <string name="status_bar_ethernet">"ઇથરનેટ"</string>
+
+    <!-- Name of the alarm status bar icon. -->
+    <add-resource type="string" name="status_bar_alarm"/>
+    <string name="status_bar_alarm">"એલાર્મ"</string>
+
+    <!-- Name of the work status bar icon. -->
+    <add-resource type="string" name="status_bar_work"/>
+    <string name="status_bar_work">"કાર્ય પ્રોફાઇલ"</string>
+
+    <!-- Name of the airplane status bar icon. -->
+    <add-resource type="string" name="status_bar_airplane"/>
+    <string name="status_bar_airplane">"એરપ્લેન મોડ"</string>
+
+    <!-- Description for adding  a quick settings tile -->
+    <add-resource type="string" name="add_tile"/>
+    <string name="add_tile">"ટાઇલ ઉમેરો"</string>
+
+    <!-- Name of a quick settings tile controlled by broadcast -->
+    <add-resource type="string" name="broadcast_tile"/>
+    <string name="broadcast_tile">"બ્રોડકાસ્ટ ટાઇલ"</string>
+
+    <!-- For preview release. DO NOT TRANSLATE -->
+    <add-resource type="string" name="regrettable_lack_of_easter_egg"/>
+    <string name="regrettable_lack_of_easter_egg">
+        ¯\\_(ツ)_/¯
+    </string>
+
+    <!-- Warning text when an alarm might be silenced by Do Not Disturb [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="zen_alarm_warning_indef"/>
+    <string name="zen_alarm_warning_indef">"તમે તમારા આગલા એલાર્મ <xliff:g id="WHEN">%1$s</xliff:g> ને ત્યાં સુધી સાંભળશો નહીં જ્યાં સુધી તમે તેની પહેલાં આને બંધ કરશો નહીં"</string>
+
+    <!-- Warning text when an alarm might be silenced by Do Not Disturb due to a time-based condition [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="zen_alarm_warning"/>
+    <string name="zen_alarm_warning">"તમે <xliff:g id="WHEN">%1$s</xliff:g> એ તમારો આગલો એલાર્મ સાંભળશો નહીં"</string>
+
+    <!-- Alarm template for near alarms [CHAR LIMIT=25] -->
+    <add-resource type="string" name="alarm_template"/>
+    <string name="alarm_template">"<xliff:g id="WHEN">%1$s</xliff:g> વાગ્યે"</string>
+
+    <!-- Alarm template for far alarms [CHAR LIMIT=25] -->
+    <add-resource type="string" name="alarm_template_far"/>
+    <string name="alarm_template_far">"<xliff:g id="WHEN">%1$s</xliff:g> એ"</string>
+
+    <!-- Accessibility label for Quick Settings detail screens [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_detail"/>
+    <string name="accessibility_quick_settings_detail">"ઝડપી સેટિંગ્સ, <xliff:g id="TITLE">%s</xliff:g>."</string>
+
+    <!-- Accessibility label for hotspot icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_hotspot"/>
+    <string name="accessibility_status_bar_hotspot">"હોટસ્પોટ"</string>
+
+    <!-- Accessibility label for managed profile icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_managed_profile"/>
+    <string name="accessibility_managed_profile">"કાર્ય પ્રોફાઇલ"</string>
+
+    <!-- Title of warning when entering System UI tuner for first time [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_warning_title"/>
+    <string name="tuner_warning_title">"કેટલાક માટે મજા પરંતુ બધા માટે નહીં"</string>
+
+    <!-- Warning for users entering the System UI tuner for the first time [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="tuner_warning"/>
+    <string name="tuner_warning">"સિસ્ટમ UI ટ્યૂનર તમને Android વપરાશકર્તા ઇન્ટરફેસને ટ્વીક અને કસ્ટમાઇઝ કરવાની વધારાની રીતો આપે છે. ભાવિ રીલિઝેસમાં આ પ્રાયોગિક સુવિધાઓ બદલાઈ, ભંગ અથવા અદૃશ્ય થઈ શકે છે. સાવધાની સાથે આગળ વધો."</string>
+
+    <!-- Warning for users entering the System UI tuner [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="tuner_persistent_warning"/>
+    <string name="tuner_persistent_warning">"ભાવિ રીલિઝેસમાં આ પ્રાયોગિક સુવિધાઓ બદલાઈ, ભંગ અથવા અદૃશ્ય થઈ શકે છે. સાવધાની સાથે આગળ વધો."</string>
+
+    <!-- Generic "got it" acceptance of dialog or cling [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="got_it"/>
+    <string name="got_it">"સમજાઈ ગયું"</string>
+
+    <!-- Toast describing tuner has been enabled [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_toast"/>
+    <string name="tuner_toast">"અભિનંદન! સિસ્ટમ UI ટ્યૂનરને સેટિંગ્સમાં ઉમેરવામાં આવ્યું છે"</string>
+
+    <!-- Option to remove the tuner from settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="remove_from_settings"/>
+    <string name="remove_from_settings">"સેટિંગ્સમાંથી દૂર કરો"</string>
+
+    <!-- Dialog asking if the tuner should really be removed from settings [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="remove_from_settings_prompt"/>
+    <string name="remove_from_settings_prompt">"સેટિંગ્સમાંથી સિસ્ટમ UI ટ્યૂનર દૂર કરી અને તેની તમામ સુવિધાઓનો ઉપયોગ કરવાનું બંધ કરીએ?"</string>
+
+    <!-- Displayed when user launches an app that was uninstalled  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="activity_not_found"/>
+    <string name="activity_not_found">"તમારા ઉપકરણ પર ઍપ્લિકેશન ઇન્સ્ટોલ થયેલ નથી"</string>
+
+    <!-- Name of setting to show clock seconds [CHAR LIMIT=40] -->
+    <add-resource type="string" name="clock_seconds"/>
+    <string name="clock_seconds">"ઘડિયાળ સેકન્ડ બતાવો"</string>
+    <!-- Description of setting to show clock seconds [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="clock_seconds_desc"/>
+    <string name="clock_seconds_desc">"ઘડિયાળ સેકન્ડ સ્થિતિ બારમાં બતાવો. બૅટરીની આવરદા પર અસર કરી શકે છે."</string>
+
+    <!-- Button that leads to page to rearrange quick settings tiles [CHAR LIMIT=60] -->
+    <add-resource type="string" name="qs_rearrange"/>
+    <string name="qs_rearrange">"ઝડપી સેટિંગ્સને ફરીથી ગોઠવો"</string>
+    <!-- Option to show brightness bar in quick settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="show_brightness"/>
+    <string name="show_brightness">"ઝડપી સેટિંગ્સમાં તેજ બતાવો"</string>
+
+    <!-- Category in the System UI Tuner settings, where new/experimental
+         settings are -->
+    <add-resource type="string" name="experimental"/>
+    <string name="experimental">"પ્રાયોગિક"</string>
+
+    <!-- Dialog title asking if Bluetooth should be enabled [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="enable_bluetooth_title"/>
+    <string name="enable_bluetooth_title">"Bluetooth ચાલુ કરવુ છે?"</string>
+
+    <!-- Dialog message explaining why Bluetooth should be enabled when a packaged keyboard is
+         conncted to the device [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="enable_bluetooth_message"/>
+    <string name="enable_bluetooth_message">"તમારા ટેબ્લેટ સાથે કીબોર્ડ કનેક્ટ કરવા માટે, તમારે પહેલાં Bluetooth ચાલુ કરવાની જરૂર પડશે."</string>
+
+    <!-- Bluetooth enablement ok text [CHAR LIMIT=40] -->
+    <add-resource type="string" name="enable_bluetooth_confirmation_ok"/>
+    <string name="enable_bluetooth_confirmation_ok">"ચાલુ કરો"</string>
+
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="show_silently"/>
+    <string name="show_silently">"સૂચનાઓ ચુપચાપ બતાવો"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="block"/>
+    <string name="block">"તમામ સૂચનાઓને અવરોધિત કરો"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="do_not_silence"/>
+    <string name="do_not_silence">"ચુપ કરશો નહીં"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="do_not_silence_block"/>
+    <string name="do_not_silence_block">"ચુપ કે અવરોધિત કરશો નહીં"</string>
+
+    <!-- [CHAR LIMIT=NONE] Importance Tuner setting title -->
+    <add-resource type="string" name="tuner_full_importance_settings"/>
+    <string name="tuner_full_importance_settings">"પાવર સૂચના નિયંત્રણો"</string>
+    <add-resource type="string" name="tuner_full_importance_settings_on"/>
+    <string name="tuner_full_importance_settings_on">"ચાલુ"</string>
+    <add-resource type="string" name="tuner_full_importance_settings_off"/>
+    <string name="tuner_full_importance_settings_off">"બંધ"</string>
+    <add-resource type="string" name="power_notification_controls_description"/>
+    <string name="power_notification_controls_description">"પાવર સૂચના નિયંત્રણો સાથે, તમે ઍપ્લિકેશનની સૂચનાઓ માટે 0 થી 5 સુધીના મહત્વના સ્તરને સેટ કરી શકો છો. \n\n"<b>"સ્તર 5"</b>" \n- સૂચના સૂચિની ટોચ પર બતાવો \n- પૂર્ણ સ્ક્રીન અવરોધની મંજૂરી આપો \n- હંમેશાં ત્વરિત દૃષ્ટિ કરો \n\n"<b>"સ્તર 4"</b>" \n- પૂર્ણ સ્ક્રીન અવરોધ અટકાવો \n- હંમેશાં ત્વરિત દૃષ્ટિ કરો \n\n"<b>"સ્તર 3"</b>" \n- પૂર્ણ સ્ક્રીન અવરોધ અટકાવો \n- ક્યારેય ત્વરિત દૃષ્ટિ કરશો નહીં \n\n"<b>"સ્તર 2"</b>" \n- પૂર્ણ સ્ક્રીન અવરોધ અટકાવો \n- ક્યારેય ત્વરિત દૃષ્ટિ કરશો નહીં \n- ક્યારેય અવાજ અને વાઇબ્રેશન કરશો નહીં \n\n"<b>"સ્તર 1"</b>" \n- પૂર્ણ સ્ક્રીન અવરોધ અટકાવો \n- ક્યારેય ત્વરિત દૃષ્ટિ કરશો નહીં \n- ક્યારેય અવાજ અથવા વાઇબ્રેટ કરશો નહીં \n- લૉક સ્ક્રીન અને સ્થિતિ બારથી છુપાવો \n- સૂચના સૂચિના તળિયા પર બતાવો \n\n"<b>"સ્તર 0"</b>" \n- ઍપ્લિકેશનની તમામ સૂચનાઓને અવરોધિત કરો"</string>
+
+    <!-- Notification importance title, user unspecified status-->
+    <add-resource type="string" name="user_unspecified_importance"/>
+    <string name="user_unspecified_importance">"મહત્વ: સ્વચલિત"</string>
+    <!-- Notification importance title, blocked status-->
+    <add-resource type="string" name="blocked_importance"/>
+    <string name="blocked_importance">"મહત્વ: સ્તર 0"</string>
+    <!-- Notification importance title, min status-->
+    <add-resource type="string" name="min_importance"/>
+    <string name="min_importance">"મહત્વ: સ્તર 1"</string>
+    <!-- Notification importance title, low status-->
+    <add-resource type="string" name="low_importance"/>
+    <string name="low_importance">"મહત્વ: સ્તર 2"</string>
+    <!-- Notification importance title, normal status-->
+    <add-resource type="string" name="default_importance"/>
+    <string name="default_importance">"મહત્વ: સ્તર 3"</string>
+    <!-- Notification importance title, high status-->
+    <add-resource type="string" name="high_importance"/>
+    <string name="high_importance">"મહત્વ: સ્તર 4"</string>
+    <!-- Notification importance title, max status-->
+    <add-resource type="string" name="max_importance"/>
+    <string name="max_importance">"મહત્વ: સ્તર 5"</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: blocked importance level description -->
+    <add-resource type="string" name="notification_importance_user_unspecified"/>
+    <string name="notification_importance_user_unspecified">"દરેક સૂચના માટે મહત્વને ઍપ્લિકેશન નિર્ધારિત કરે છે."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: blocked importance level description -->
+    <add-resource type="string" name="notification_importance_blocked"/>
+    <string name="notification_importance_blocked">"આ ઍપ્લિકેશનમાંથી ક્યારેય સૂચનાઓ બતાવશો નહીં."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: min importance level description -->
+    <add-resource type="string" name="notification_importance_min"/>
+    <string name="notification_importance_min">"કોઈ પૂર્ણ સ્ક્રીન અવરોધ, ત્વરિત દૃષ્ટિ, અવાજ અથવા વાઇબ્રેશન નહીં. લૉક સ્ક્રીન અને સ્થિતિ બારથી છુપાવો."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: low importance level description -->
+    <add-resource type="string" name="notification_importance_low"/>
+    <string name="notification_importance_low">"કોઈ પૂર્ણ સ્ક્રીન અવરોધ, ત્વરિત દૃષ્ટિ, અવાજ અથવા વાઇબ્રેશન નહીં."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: normal importance level description -->
+    <add-resource type="string" name="notification_importance_default"/>
+    <string name="notification_importance_default">"કોઈ પૂર્ણ સ્ક્રીન અવરોધ અથવા ત્વરિત દૃષ્ટિ નહીં."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: high importance level description -->
+    <add-resource type="string" name="notification_importance_high"/>
+    <string name="notification_importance_high">"હંમેશાં ત્વરિત દૃષ્ટિ કરો. કોઈ પૂર્ણ સ્ક્રીન અવરોધ નહીં."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: max importance level description -->
+    <add-resource type="string" name="notification_importance_max"/>
+    <string name="notification_importance_max">"હંમેશાં ત્વરિત દૃષ્ટિ કરો અને પૂર્ણ સ્ક્રીન અવરોધને મંજૂરી આપો."</string>
+
+    <!-- Notification: Control panel: Label for button that launches notification settings. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_more_settings"/>
+    <string name="notification_more_settings">"વધુ સેટિંગ્સ"</string>
+    <!-- Notification: Control panel: Label for button that dismisses control panel. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_done"/>
+    <string name="notification_done">"થઈ ગયું"</string>
+
+    <!-- Notification: Gear: Content description for the gear. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_gear_accessibility"/>
+    <string name="notification_gear_accessibility">"<xliff:g id="APP_NAME">%1$s</xliff:g> સૂચના નિયંત્રણો"</string>
+
+    <!-- Title of the battery settings detail panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="battery_panel_title"/>
+    <string name="battery_panel_title">"બૅટરી વપરાશ"</string>
+
+    <!-- Summary of battery saver not available [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_charging_summary"/>
+    <string name="battery_detail_charging_summary">"ચાર્જિંગ દરમિયાન બૅટરી બચતકર્તા ઉપલબ્ધ નથી"</string>
+
+    <!-- Title of switch for battery saver [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_switch_title"/>
+    <string name="battery_detail_switch_title">"બૅટરી બચતકર્તા"</string>
+
+    <!-- Summary of switch for battery saver [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_switch_summary"/>
+    <string name="battery_detail_switch_summary">"પ્રદર્શન અને પૃષ્ઠભૂમિ ડેટા ઘટાડે છે"</string>
+
+    <!-- Name used for certain Keyboard keys on gamepads, e.g. "Button L1". -->
+    <add-resource type="string" name="keyboard_key_button_template"/>
+    <string name="keyboard_key_button_template">"બટન <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Name used to refer to the "Home" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_home"/>
+    <string name="keyboard_key_home">"Home"</string>
+    <!-- Name used to refer to the "Back" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_back"/>
+    <string name="keyboard_key_back">"Back"</string>
+    <!-- Name used to refer to the "Up" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_up"/>
+    <string name="keyboard_key_dpad_up">"Up"</string>
+    <!-- Name used to refer to the "Down" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_down"/>
+    <string name="keyboard_key_dpad_down">"Down"</string>
+    <!-- Name used to refer to the "Left" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_left"/>
+    <string name="keyboard_key_dpad_left">"Left"</string>
+    <!-- Name used to refer to the "Right" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_right"/>
+    <string name="keyboard_key_dpad_right">"Right"</string>
+    <!-- Name used to refer to the "Center" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_center"/>
+    <string name="keyboard_key_dpad_center">"Center"</string>
+    <!-- Name used to refer to the "Tab" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_tab"/>
+    <string name="keyboard_key_tab">"Tab"</string>
+    <!-- Name used to refer to the "Space" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_space"/>
+    <string name="keyboard_key_space">"Space"</string>
+    <!-- Name used to refer to the "Enter" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_enter"/>
+    <string name="keyboard_key_enter">"Enter"</string>
+    <!-- Name used to refer to the "Backspace" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_backspace"/>
+    <string name="keyboard_key_backspace">"Backspace"</string>
+    <!-- Name used to refer to the "Play/Pause" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_play_pause"/>
+    <string name="keyboard_key_media_play_pause">"Play/Pause"</string>
+    <!-- Name used to refer to the "Stop" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_stop"/>
+    <string name="keyboard_key_media_stop">"Stop"</string>
+    <!-- Name used to refer to the "Next" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_next"/>
+    <string name="keyboard_key_media_next">"Next"</string>
+    <!-- Name used to refer to the "Previous" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_previous"/>
+    <string name="keyboard_key_media_previous">"Previous"</string>
+    <!-- Name used to refer to the "Rewind" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_rewind"/>
+    <string name="keyboard_key_media_rewind">"Rewind"</string>
+    <!-- Name used to refer to the "Fast Forward" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_fast_forward"/>
+    <string name="keyboard_key_media_fast_forward">"Fast Forward"</string>
+    <!-- Name used to refer to the "Page Up" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_page_up"/>
+    <string name="keyboard_key_page_up">"Page Up"</string>
+    <!-- Name used to refer to the "Page Down" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_page_down"/>
+    <string name="keyboard_key_page_down">"Page Down"</string>
+    <!-- Name used to refer to the "Delete" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_forward_del"/>
+    <string name="keyboard_key_forward_del">"Delete"</string>
+    <!-- Name used to refer to the "Home" move key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_move_home"/>
+    <string name="keyboard_key_move_home">"Home"</string>
+    <!-- Name used to refer to the "End" move key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_move_end"/>
+    <string name="keyboard_key_move_end">"End"</string>
+    <!-- Name used to refer to the "Insert" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_insert"/>
+    <string name="keyboard_key_insert">"Insert"</string>
+    <!-- Name used to refer to the "Num Lock" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_num_lock"/>
+    <string name="keyboard_key_num_lock">"Num Lock"</string>
+    <!-- Name used to refer to keys on the numeric pad of the keyboard, e.g. "Numpad 9". -->
+    <add-resource type="string" name="keyboard_key_numpad_template"/>
+    <string name="keyboard_key_numpad_template">"Numpad <xliff:g id="NAME">%1$s</xliff:g>"</string>
+
+    <!-- User visible title for the system-wide keyboard shortcuts list. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system"/>
+    <string name="keyboard_shortcut_group_system">"સિસ્ટમ"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the home screen. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_home"/>
+    <string name="keyboard_shortcut_group_system_home">"હોમ"</string>
+    <!-- User visible title for the the keyboard shortcut that takes the user to the recents screen. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_recents"/>
+    <string name="keyboard_shortcut_group_system_recents">"તાજેતરના"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the back action. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_back"/>
+    <string name="keyboard_shortcut_group_system_back">"પાછળ"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the notification shade. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_notifications"/>
+    <string name="keyboard_shortcut_group_system_notifications">"સૂચનાઓ"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the keyboard shortcuts helper. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_shortcuts_helper"/>
+    <string name="keyboard_shortcut_group_system_shortcuts_helper">"કીબોર્ડ શૉર્ટકટ્સ"</string>
+    <!-- User visible title for the the keyboard shortcut that switches input methods. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_switch_input"/>
+    <string name="keyboard_shortcut_group_system_switch_input">"ઇનપુટ પદ્ધતિ સ્વિચ કરો"</string>
+
+    <!-- User visible title for the system-wide applications keyboard shortcuts list. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications"/>
+    <string name="keyboard_shortcut_group_applications">"ઍપ્લિકેશનો"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the assist app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_assist"/>
+    <string name="keyboard_shortcut_group_applications_assist">"સહાય"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the browser app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_browser"/>
+    <string name="keyboard_shortcut_group_applications_browser">"બ્રાઉઝર"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the contacts app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_contacts"/>
+    <string name="keyboard_shortcut_group_applications_contacts">"સંપર્કો"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the email app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_email"/>
+    <string name="keyboard_shortcut_group_applications_email">"ઇમેઇલ"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the instant messaging app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_im"/>
+    <string name="keyboard_shortcut_group_applications_im">"IM"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the music app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_music"/>
+    <string name="keyboard_shortcut_group_applications_music">"સંગીત"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the YouTube app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_youtube"/>
+    <string name="keyboard_shortcut_group_applications_youtube">"YouTube"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the calendar app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_calendar"/>
+    <string name="keyboard_shortcut_group_applications_calendar">"કૅલેન્ડર"</string>
+
+    <!-- SysUI Tuner: Option to show full do not disturb panel in volume [CHAR LIMIT=60] -->
+    <add-resource type="string" name="tuner_full_zen_title"/>
+    <string name="tuner_full_zen_title">"વૉલ્યૂમ નિયંત્રણ સાથે બતાવો"</string>
+
+    <!-- SysUI Tuner: Label for screen about do not disturb settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_and_do_not_disturb"/>
+    <string name="volume_and_do_not_disturb">"ખલેલ પાડશો નહીં"</string>
+
+    <!-- SysUI Tuner: Switch to control whether volume buttons enter/exit do
+         not disturb [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_dnd_silent"/>
+    <string name="volume_dnd_silent">"વૉલ્યૂમ બટન્સ શૉર્ટકટ"</string>
+
+    <!-- SysUI Tuner: Switch to control volume up behavior [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_up_silent"/>
+    <string name="volume_up_silent">"વૉલ્યૂમ વધારવા પર ખલેલ પાડશો નહીંમાંથી બહાર નિકળો"</string>
+
+    <!-- Name of the battery icon in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="battery"/>
+    <string name="battery">"બૅટરી"</string>
+
+    <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="clock"/>
+    <string name="clock">"ઘડિયાળ"</string>
+
+    <!-- Name of the headset in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="headset"/>
+    <string name="headset">"હેડસેટ"</string>
+
+    <!-- Accessibility description of headphones icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_headphones"/>
+    <string name="accessibility_status_bar_headphones">"હેડફોન કનેક્ટ કર્યાં"</string>
+
+    <!-- Accessibility description of headset icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_headset"/>
+    <string name="accessibility_status_bar_headset">"હેડસેટ કનેક્ટ કર્યો"</string>
+
+    <!-- Label for quick settings tile for data saver [CHAR LIMIT=30] -->
+    <add-resource type="string" name="data_saver"/>
+    <string name="data_saver">"ડેટા સેવર"</string>
+
+    <!-- Accessibility description for data saver being on [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_saver_on"/>
+    <string name="accessibility_data_saver_on">"ડેટા સેવર ચાલુ છે"</string>
+
+    <!-- Accessibility description for data saver being off [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_saver_off"/>
+    <string name="accessibility_data_saver_off">"ડેટા સેવર બંધ છે"</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <add-resource type="string" name="switch_bar_on"/>
+    <string name="switch_bar_on">"ચાલુ"</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <add-resource type="string" name="switch_bar_off"/>
+    <string name="switch_bar_off">"બંધ"</string>
+
+    <!-- SysUI Tuner: Button that leads to the navigation bar customization screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="nav_bar"/>
+    <string name="nav_bar">"નેવિગેશન બાર"</string>
+
+    <!-- SysUI Tuner: Group of buttons that show on the start of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="start"/>
+    <string name="start">"પ્રારંભ કરો"</string>
+    <!-- SysUI Tuner: Group of buttons that show on the center of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="center"/>
+    <string name="center">"મધ્ય"</string>
+    <!-- SysUI Tuner: Group of buttons that show on the end of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="end"/>
+    <string name="end">"સમાપ્ત"</string>
+    <!-- SysUI Tuner: Name of space used in custom navigation bar layouts [CHAR LIMIT=30] -->
+    <add-resource type="string" name="space"/>
+    <string name="space">"સ્પેસર"</string>
+    <!-- SysUI Tuner: Name of Combination Menu / Keyboard Switcher button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_ime"/>
+    <string name="menu_ime">"મેનૂ / કીબોર્ડ સ્વિચર"</string>
+    <!-- SysUI Tuner: Title for dialog to add a button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="select_button"/>
+    <string name="select_button">"ઉમેરવા માટે બટન પસંદ કરો"</string>
+    <!-- SysUI Tuner: Button to add a button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="add_button"/>
+    <string name="add_button">"બટન ઉમેરો"</string>
+    <!-- SysUI Tuner: Save the current settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"સાચવો"</string>
+    <!-- SysUI Tuner: Reset to default settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reset"/>
+    <string name="reset">"રીસેટ કરો"</string>
+
+    <!-- SysUI Tuner: Title of no home warning dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="no_home_title"/>
+    <string name="no_home_title">"કોઈ હોમ બટન મળ્યું નથી"</string>
+    <!-- SysUI Tuner: Message of no home warning dialog [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_home_message"/>
+    <string name="no_home_message">"આ ઉપકરણને નેવિગેટ કરવા માટે હોમ બટન આવશ્યક. કૃપા કરીને સાચવતાં પહેલાં એક હોમ બટન ઉમેરો."</string>
+
+    <!-- SysUI Tuner: Adjust button width dialog title [CHAR LIMIT=60] -->
+    <add-resource type="string" name="adjust_button_width"/>
+    <string name="adjust_button_width">"બટનની પહોળાઈ સમાયોજિત કરો"</string>
+
+    <!-- SysUI Tuner: Nav bar button that holds the clipboard [CHAR LIMIT=30] -->
+    <add-resource type="string" name="clipboard"/>
+    <string name="clipboard">"ક્લિપબોર્ડ"</string>
+
+    <!-- SysUI Tuner: Description of nav bar button that holds the clipboard [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="clipboard_description"/>
+    <string name="clipboard_description">"ક્લિપબોર્ડ આઇટમ્સને સીધા જ ક્લિપબોર્ડ પર ખેંચવાની મંજૂરી આપે છે. જ્યારે હાજર હોય ત્યારે આઇટમ્સ ક્લિપબોર્ડ પરથી સીધી જ બહાર પણ ખેંચી શકાય છે."</string>
+
+    <!-- SysUI Tuner: Accessibility description for custom nav key [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_key"/>
+    <string name="accessibility_key">"કસ્ટમ નેવિગેશન બટન"</string>
+
+    <!-- SysUI Tuner: Nav bar button that emulates a keycode [CHAR LIMIT=30] -->
+    <add-resource type="string" name="keycode"/>
+    <string name="keycode">"કીકોડ"</string>
+
+    <!-- SysUI Tuner: Description of nav bar button that emulates a keycode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keycode_description"/>
+    <string name="keycode_description">"કીકોડ બટન કીબોર્ડની કીઝને નેવિગેશન બારમાં ઉમેરવાની મંજૂરી આપે છે. જ્યારે દબાવવામાં આવે ત્યારે તે પસંદ કરેલ કીબોર્ડની કીનું અનુસરણ કરે છે. બટન માટે પહેલા કીબોર્ડની કીઝને પસંદ કરવી આવશ્યક છે, તે પછી બટન પર બતાવવામાં આવેલ છબી પસંદ કરવી આવશ્યક છે."</string>
+
+    <!-- SysUI Tuner: Title of dialog to select which key to emulate [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_keycode"/>
+    <string name="select_keycode">"કીબોર્ડ બટન પસંદ કરો"</string>
+
+    <!-- SysUI Tuner: Label for preview area in navigation bar tuner [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="preview"/>
+    <string name="preview">"પૂર્વાવલોકન કરો"</string>
+
+    <!-- Label for area where tiles can be dragged out of [CHAR LIMIT=60] -->
+    <add-resource type="string" name="drag_to_add_tiles"/>
+    <string name="drag_to_add_tiles">"ટાઇલ્સ ઉમેરવા માટે ખેંચો"</string>
+
+    <!-- Label for area where tiles can be dragged in to [CHAR LIMIT=60] -->
+    <add-resource type="string" name="drag_to_remove_tiles"/>
+    <string name="drag_to_remove_tiles">"દૂર કરવા માટે અહીં ખેંચો"</string>
+
+    <!-- Button to edit the tile ordering of quick settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="qs_edit"/>
+    <string name="qs_edit">"સંપાદિત કરો"</string>
+
+    <!-- SysUI Tuner: Options for how clock is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_time"/>
+    <string name="tuner_time">"સમય"</string>
+
+    <!-- SysUI Tuner: Options for how clock is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="array" name="clock_options"/>
+    <string-array name="clock_options">
+        <item>"કલાક, મિનિટ અને સેકંડ બતાવો"</item>
+        <item>"કલાક અને મિનિટ બતાવો (ડિફોલ્ટ)"</item>
+        <item>"આ આઇકન બતાવશો નહીં"</item>
+    </string-array>
+
+    <!-- SysUI Tuner: Options for how battery is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="array" name="battery_options"/>
+    <string-array name="battery_options">
+        <item>"હંમેશાં ટકાવારી બતાવો"</item>
+        <item>"ચાર્જ થાય ત્યારે ટકાવારી બતાવો (ડિફોલ્ટ)"</item>
+        <item>"આ આઇકન બતાવશો નહીં"</item>
+    </string-array>
+
+    <!-- SysUI Tuner: Other section -->
+    <add-resource type="string" name="other"/>
+    <string name="other">"અન્ય"</string>
+
+    <!-- Accessibility label for the divider that separates the windows in split-screen mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_divider"/>
+    <string name="accessibility_divider">"સ્પ્લિટ-સ્ક્રીન વિભાજક"</string>
+
+    <!-- Accessibility action for moving docked stack divider to make the left screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_full"/>
+    <string name="accessibility_action_divider_left_full">"ડાબી પૂર્ણ સ્ક્રીન"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 70% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_70"/>
+    <string name="accessibility_action_divider_left_70">"ડાબે 70%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 50% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_50"/>
+    <string name="accessibility_action_divider_left_50">"ડાબે 50%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 30% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_30"/>
+    <string name="accessibility_action_divider_left_30">"ડાબે 30%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the right screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_right_full"/>
+    <string name="accessibility_action_divider_right_full">"જમણી સ્ક્રીન સ્ક્રીન"</string>
+
+    <!-- Accessibility action for moving docked stack divider to make the top screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_full"/>
+    <string name="accessibility_action_divider_top_full">"શીર્ષ પૂર્ણ સ્ક્રીન"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 70% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_70"/>
+    <string name="accessibility_action_divider_top_70">"શીર્ષ 70%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 50% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_50"/>
+    <string name="accessibility_action_divider_top_50">"શીર્ષ 50%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 30% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_30"/>
+    <string name="accessibility_action_divider_top_30">"શીર્ષ 30%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the bottom screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_bottom_full"/>
+    <string name="accessibility_action_divider_bottom_full">"તળિયાની પૂર્ણ સ્ક્રીન"</string>
+
+    <!-- Accessibility description of a QS tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_label"/>
+    <string name="accessibility_qs_edit_tile_label">"સ્થિતિ <xliff:g id="POSITION">%1$d</xliff:g>, <xliff:g id="TILE_NAME">%2$s</xliff:g>. સંપાદિત કરવા માટે બે વાર ટૅપ કરો."</string>
+
+    <!-- Accessibility description of a QS tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_add_tile_label"/>
+    <string name="accessibility_qs_edit_add_tile_label">"<xliff:g id="TILE_NAME">%1$s</xliff:g>. ઉમેરવા માટે બે વાર ટૅપ કરો."</string>
+
+    <!-- Accessibility description of a place to drop a tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_position_label"/>
+    <string name="accessibility_qs_edit_position_label">"સ્થિતિ <xliff:g id="POSITION">%1$d</xliff:g>. પસંદ કરવા માટે બે વાર ટૅપ કરો."</string>
+
+    <!-- Accessibility description of option to move QS tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_move_tile"/>
+    <string name="accessibility_qs_edit_move_tile">"<xliff:g id="TILE_NAME">%1$s</xliff:g> ખસેડો"</string>
+
+    <!-- Accessibility description of option to remove QS tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_remove_tile"/>
+    <string name="accessibility_qs_edit_remove_tile">"<xliff:g id="TILE_NAME">%1$s</xliff:g> દૂર કરો"</string>
+
+    <!-- Accessibility action when QS tile is added [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_added"/>
+    <string name="accessibility_qs_edit_tile_added">"<xliff:g id="POSITION">%2$d</xliff:g> સ્થિતિ પર <xliff:g id="TILE_NAME">%1$s</xliff:g> ઉમેર્યું છે"</string>
+
+    <!-- Accessibility action when QS tile is removed [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_removed"/>
+    <string name="accessibility_qs_edit_tile_removed">"<xliff:g id="TILE_NAME">%1$s</xliff:g> દૂર કરવામાં આવ્યું છે"</string>
+
+    <!-- Accessibility action when QS tile is moved [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_moved"/>
+    <string name="accessibility_qs_edit_tile_moved">"<xliff:g id="TILE_NAME">%1$s</xliff:g> ને <xliff:g id="POSITION">%2$d</xliff:g> સ્થિતિ પર ખસેડ્યું"</string>
+
+    <!-- Accessibility label for window when QS editing is happening [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_quick_settings_edit"/>
+    <string name="accessibility_desc_quick_settings_edit">"ઝડપી સેટિંગ્સ સંપાદક."</string>
+
+    <!-- Accessibility label for the notification icons in the collapsed status bar. Not shown on screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_notification_icon"/>
+    <string name="accessibility_desc_notification_icon">"<xliff:g id="ID_1">%1$s</xliff:g> સૂચના: <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+
+    <!-- Multi-Window strings -->
+    <!-- Text that gets shown on top of current activity to inform the user that the system force-resized the current activity and that things might crash/not work properly [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dock_forced_resizable"/>
+    <string name="dock_forced_resizable">"વિભાજિત-સ્ક્રીન સાથે ઍપ્લિકેશન કદાચ કામ ન કરે."</string>
+    <!-- Warning message when we try to dock a non-resizeble tasks and launch it in fullscreen instead. -->
+    <add-resource type="string" name="dock_non_resizeble_failed_to_dock_text"/>
+    <string name="dock_non_resizeble_failed_to_dock_text">"ઍપ્લિકેશન સ્ક્રીન-વિભાજનનું સમર્થન કરતી નથી."</string>
+
+    <!-- accessibility label for button to open settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_settings"/>
+    <string name="accessibility_quick_settings_settings">"સેટિંગ્સ ખોલો."</string>
+
+    <!-- accessibility label for button to expand quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_expand"/>
+    <string name="accessibility_quick_settings_expand">"ઝડપી સેટિંગ્સ ખોલો."</string>
+
+    <!-- accessibility label for button to collapse quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_collapse"/>
+    <string name="accessibility_quick_settings_collapse">"ઝડપી સેટિંગ્સ બંધ કરો."</string>
+
+    <!-- accessibility label for alarm icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_alarm_set"/>
+    <string name="accessibility_quick_settings_alarm_set">"એલાર્મ સેટ કર્યો."</string>
+
+    <!-- accessibility label for no internet [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_no_internet"/>
+    <string name="accessibility_quick_settings_no_internet">"કોઈ ઇન્ટરનેટ નથી."</string>
+
+    <!-- accessibility label for quick settings items that open a details page [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_open_details"/>
+    <string name="accessibility_quick_settings_open_details">"વિગતો ખોલો."</string>
+
+    <!-- accessibility label for quick settings items that open a details page [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_open_settings"/>
+    <string name="accessibility_quick_settings_open_settings">"<xliff:g id="ID_1">%s</xliff:g> સેટિંગ્સ ખોલો."</string>
+
+    <!-- accessibility label for button to edit quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_edit"/>
+    <string name="accessibility_quick_settings_edit">"સેટિંગ્સનો ક્રમ સંપાદિત કરો."</string>
+
+    <!-- accessibility label for paging indicator in quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_page"/>
+    <string name="accessibility_quick_settings_page">"<xliff:g id="ID_2">%2$d</xliff:g> માંથી <xliff:g id="ID_1">%1$d</xliff:g> પૃષ્ઠ"</string>
+
+    <add-resource type="string" name="sim1"/>
+    <string name="sim1">"SIM 1"</string>
+    <add-resource type="string" name="sim2"/>
+    <string name="sim2">"SIM 2"</string>
+    <!-- Battery level for expanded quick settings [CHAR LIMIT=2] -->
+    <add-resource type="string" name="battery_level_template"/>
+    <string name="battery_level_template"><xliff:g id="level" example="45">%d</xliff:g>%%</string>
+
+    <!-- Label that replaces other notification controls when the notification is from the system
+         and cannot be silenced (see @string/show_silently) or blocked (see @string/block) -->
+    <add-resource type="string" name="cant_silence_or_block"/>
+    <string name="cant_silence_or_block">"સૂચનાઓ શાંત અથવા અવરોધિત કરી શકાતી નથી"</string>
+
+    <!-- Title for notification (and dialog) that user's phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="high_temp_title"/>
+    <string name="high_temp_title">"ફોન ગરમ થઈ રહ્યો છે"</string>
+    <!-- Message body for notification that user's phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="high_temp_notif_message"/>
+    <string name="high_temp_notif_message">"ફોન ઠંડો થાય ત્યાં સુધી કેટલીક સુવિધાઓ મર્યાદિત રહે છે"</string>
+    <!-- Text body for dialog alerting user that their phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=300] -->
+    <add-resource type="string" name="high_temp_dialog_message"/>
+    <string name="high_temp_dialog_message">"તમારો ફોન આપમેળે ઠંડો થવાનો પ્રયાસ કરશે. તમે હજીપણ તમારો ફોન વાપરી શકો છો, પરંતુ તે ધીમો ચાલી શકે છે.\n\nએકવાર તમારો ફોન ઠંડો થઈ જાય, તે પછી તે સામાન્ય રીતે ચાલશે."</string></resources>

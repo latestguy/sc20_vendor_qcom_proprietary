@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"អាមេរិក"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"អឺរ៉ុប"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"អាហ្រ្វិក"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"អាស៊ី"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"អូស្ត្រាលី"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"ប៉ាស៊ីហ្វិក"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"ទាំងអស់"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"១៥ វិនាទី"</item>
+        <item>"៣០ វិនាទី"</item>
+        <item>"១ នាទី"</item>
+        <item>"២ នាទី"</item>
+        <item>"៥ នាទី"</item>
+        <item>"១០ នាទី"</item>
+        <item>"៣០ នាទី"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"មិនកំណត់"</item>
+        <item>"១៥ វិនាទី"</item>
+        <item>"៣០ វិនាទី"</item>
+        <item>"១ នាទី"</item>
+        <item>"២ នាទី"</item>
+        <item>"៥ នាទី"</item>
+        <item>"១០ នាទី"</item>
+        <item>"៣០ នាទី"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"ភ្លាម​ៗ"</item>
+        <item>"៥ វិនាទី"</item>
+        <item>"១៥ វិនាទី"</item>
+        <item>"៣០ វិនាទី"</item>
+        <item>"១ នាទី"</item>
+        <item>"២ នាទី"</item>
+        <item>"៥ នាទី"</item>
+        <item>"១០ នាទី"</item>
+        <item>"៣០ នាទី"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"តូច"</item>
+        <item msgid="3579015730662088893">"លំនាំដើម"</item>
+        <item msgid="1678068858001018666">"ធំ"</item>
+        <item msgid="490158884605093126">"ធំបំផុត"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"កំពុង​វិភាគ​រក\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"កំពុង​ត​ភ្ជាប់​\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"កំពុង​ផ្ទៀងផ្ទាត់..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"កំពុង​ទទួល​អាសយដ្ឋាន IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"បាន​តភ្ជាប់"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"បាន​ពន្យារ​ពេល"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"កំពុង​ផ្ដាច់\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"បាន​ផ្ដាច់"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"មិន​ជោគជ័យ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"បាន​ទប់​ស្កាត់"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ជៀសវាង​ការ​តភ្ជាប់​ដែល​ខ្សោយ​ជា​បណ្ដោះ​អាសន្ន"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"កំពុង​វិភាគ​រក\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"កំពុង​តភ្ជាប់​ទៅ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"កំពុង​ផ្ទៀងផ្ទាត់​ជា​មួយ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"កំពុង​យក​អាសយដ្ឋាន IP ពី <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"បាន​តភ្ជាប់​ទៅ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"បាន​ផ្អាក"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"កំពុង​ផ្ដាច់​ពីរ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"បាន​ផ្ដាច់"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"មិន​ជោគជ័យ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"បាន​ទប់ស្កាត់"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ជៀសវាង​ការ​តភ្ជាប់​​ខ្សោយ​ជា​បណ្ដោះអាសន្ន"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"ប៊ូតុង​ចុច"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"កូដ PIN ពី​ឧបករណ៍​"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"កូដ PIN ពី​ឧបករណ៍​នេះ"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"បាន​តភ្ជាប់"</item>
+        <item>"បាន​​អញ្ជើញ"</item>
+        <item>"បរាជ័យ"</item>
+        <item>"មាន"</item>
+        <item>"ក្រៅ​តំបន់"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"២ នាទី"</item>
+        <item>"៥ នាទី"</item>
+        <item>"១ ម៉ោង"</item>
+        <item>"កុំ​អស់​ពេល"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"ខ្សោយ"</item>
+        <item>"មធ្យម​"</item>
+        <item>"ល្អ"</item>
+        <item>"ល្អ​ណាស់"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ជា​និច្ច"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"តែ​ពេល​ដោតប៉ុណ្ណោះ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"មិនកំណត់"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ជា​និច្ច"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"តែ​ពេល​ដោត"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"មិនកំណត់"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"30 ថ្ងៃ​មុន"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"កំណត់រង្វង់ប្រើប្រាស់..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"ពេលវេលា​ប្រើ"</item>
+        <item>"បាន​ប្រើ​​​ចុងក្រោយ"</item>
+        <item>"ឈ្មោះ​កម្មវិធី"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"គ្មាន"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"គ្មាន"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"ថេរ"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"គ្មាន"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ដោយ​បញ្ចូល"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"រចនាសម្ព័ន្ធប្រូកស៊ីស្វ័យប្រវត្តិ"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"គ្មាន"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP ឬ CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"មិនបានបញ្ជាក់"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"គ្មាន"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"ឧបករណ៍​ផ្ទុក​ខាង​ក្នុង"</item>
+        <item>"កាត​អេសឌី​​ដែល​អាច​ដក​បាន"</item>
+        <item>"ឲ្យ​ប្រព័ន្ធ​សម្រេចចិត្ត​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"ទី​តាំង​"</item>
+        <item>"ផ្ទាល់ខ្លួន"</item>
+        <item>"ការ​ផ្ញើ​សារ"</item>
+        <item>"មេឌៀ"</item>
+        <item>"ឧបករណ៍"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"ទីតាំង​មិន​ល្អ"</item>
+        <item>"ទីតាំង​ល្អ"</item>
+        <item>GPS</item>
+        <item>"ញ័រ"</item>
+        <item>"អាន​ទំនាក់ទំនង"</item>
+        <item>"កែ​ទំនាក់ទំនង"</item>
+        <item>"អាន​​បញ្ជី​​ហៅ"</item>
+        <item>"កែ​កំណត់​ហេតុ​ហៅ"</item>
+        <item>"អាន​ប្រតិទិន"</item>
+        <item>"កែ​ប្រតិទិន"</item>
+        <item>"វិភាគ​រក វ៉ាយហ្វាយ"</item>
+        <item>"ការ​ជូនដំណឹង"</item>
+        <item>"វិភាគ​រក​ក្រុម"</item>
+        <item>"ហៅ​ទូរស័ព្ទ"</item>
+        <item>"អាន​សារ SMS"</item>
+        <item>"សរសេរ SMS"</item>
+        <item>"ទទួល SMS"</item>
+        <item>"ទទួល​សារ SMS ពេល​អាសន្ន"</item>
+        <item>"ទទួល MMS"</item>
+        <item>"ទទួល WAP push"</item>
+        <item>"ផ្ញើ​សារ SMS"</item>
+        <item>"អាន​សារ SMS ICC"</item>
+        <item>"សរសេរ ICC SMS"</item>
+        <item>"កែ​ការ​កំណត់"</item>
+        <item>"គូរ​នៅ​ផ្នែក​ខាង​លើ"</item>
+        <item>"ចូល​មើល​ការ​ជូន​ដំណឹង"</item>
+        <item>"ម៉ាស៊ីន​ថត"</item>
+        <item>"ថត​សំឡេង"</item>
+        <item>"ចាក់​អូឌីយ៉ូ"</item>
+        <item>"អាន​ក្ដារតម្បៀតខ្ទាស់"</item>
+        <item>"កែ​ក្ដារតម្បៀតខ្ទាស់"</item>
+        <item>"ប៊ូតុង​មេឌៀ"</item>
+        <item>"ការ​ផ្ដោត​សំឡេង"</item>
+        <item>"កម្រិត​សំឡេង​មេ"</item>
+        <item>"កម្រិត​សំឡេង​​"</item>
+        <item>"កម្រិត​សំឡេង​រោទ៍"</item>
+        <item>"កម្រិត​សំឡេង​មេឌៀ"</item>
+        <item>"កម្រិត​សំឡេង​រោទ៍"</item>
+        <item>"កម្រិត​សំឡេង​ការ​ជូន​ដំណឹង"</item>
+        <item>"កម្រិត​សំឡេង​ប៊្លូធូស"</item>
+        <item>"មិន​ដេក"</item>
+        <item>"តាមដាន​ទីតាំង"</item>
+        <item>"​ពិនិត្យ​ទីតាំង​ថាមពល​​ខ្ពស់"</item>
+        <item>"ទទួល​​ស្ថិតិ​​ប្រើប្រាស់"</item>
+        <item>"បិទ/បើក​សំឡេង​មីក្រូហ្វូន"</item>
+        <item>"បង្ហាញថូស"</item>
+        <item>"មេឌៀគម្រោង"</item>
+        <item>"ធ្វើឲ្យ VPN សកម្ម"</item>
+        <item>"សរសេរផ្ទាំងរូបភាព"</item>
+        <item>"រចនាសម្ព័ន្ធជំនួយ"</item>
+        <item>"រូបថតអេក្រង់ជំនួយ"</item>
+        <item>"អានស្ថានភាពទូរស័ព្ទ"</item>
+        <item>"បន្ថែមសារជាសំឡេង"</item>
+        <item>"ប្រើ sip"</item>
+        <item>"កំពុងដំណើរការហៅចេញ"</item>
+        <item>"ស្នាមម្រាមដៃ"</item>
+        <item>"ឧបករណ៍ចាប់សញ្ញារាងកាយ"</item>
+        <item>"អានការផ្សព្វផ្សាយសារចល័ត"</item>
+        <item>"ទីតាំងបញ្ឆោត"</item>
+        <item>"អានទំហំផ្ទុក"</item>
+        <item>"សរសេរទំហំផ្ទុក"</item>
+        <item>"បើកអេក្រង់"</item>
+        <item>"ទទួលគណនី"</item>
+        <item>"រត់នៅក្នុងផ្ទៃខាងក្រោយ"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"ទី​តាំង​"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ញ័រ"</item>
+        <item>"អាន​ទំនាក់ទំនង"</item>
+        <item>"កែ​ទំនាក់ទំនង"</item>
+        <item>"អាន​កំណត់ហេតុ​ហៅ"</item>
+        <item>"កែ​បញ្ជី​ហៅ"</item>
+        <item>"អាន​ប្រតិទិន"</item>
+        <item>"កែ​ប្រតិទិន"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ប្រកាស​ការ​ជូន​ដំណឹង"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ហៅ​ទូរស័ព្ទ"</item>
+        <item>"អាន​សារ SMS/MMS"</item>
+        <item>"សរសេរ​សារ SMS/MMS"</item>
+        <item>"ទទួល SMS/MMS​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​"</item>
+        <item>"ទទួល SMS/MMS"</item>
+        <item>"ទទួល SMS/MMS"</item>
+        <item>"ទទួល SMS/MMS"</item>
+        <item>"ផ្ញើ SMS/MMS"</item>
+        <item>"អាន​សារ SMS/MMS"</item>
+        <item>"សរសេរ​សារ SMS/MMS"</item>
+        <item>"កែ​ការ​កំណត់"</item>
+        <item>"គូរ​​​ខាង​លើ"</item>
+        <item>"​ជូន​ដំណឹង​ចូល​ដំណើរការ"</item>
+        <item>"ម៉ាស៊ីន​ថត"</item>
+        <item>"ថត​សំឡេង"</item>
+        <item>"ចាក់អូឌីយ៉ូ"</item>
+        <item>"អាន​ក្ដារតម្បៀតខ្ទាស់"</item>
+        <item>"កែ​ក្ដារតម្បៀតខ្ទាស់"</item>
+        <item>"ប៊ូតុង​មេឌៀ"</item>
+        <item>"ការ​ផ្ដោត​សំឡេង"</item>
+        <item>"កម្រិត​សំឡេង​មេ"</item>
+        <item>"កម្រិត​សំឡេង"</item>
+        <item>"កម្រិត​សំឡេង​រោទ៍"</item>
+        <item>"កម្រិត​សំឡេង​មេឌៀ"</item>
+        <item>"កម្រិត​សំឡេង​រោទ៍"</item>
+        <item>"កម្រិត​សំឡេង​ការ​ជូន​ដំណឹង"</item>
+        <item>"កម្រិត​សំឡេង​ប៊្លូធូស"</item>
+        <item>"មិន​ដេក"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ទី​តាំង​"</item>
+        <item>"ទទួល​​ស្ថិតិ​​ប្រើប្រាស់"</item>
+        <item>"បិទ/បើក​សំឡេង​មីក្រូហ្វូន"</item>
+        <item>"បង្ហាញថូស"</item>
+        <item>"មេឌៀគម្រោង"</item>
+        <item>"ធ្វើឲ្យ VPN សកម្ម"</item>
+        <item>"សរសេរផ្ទាំងរូបភាព"</item>
+        <item>"រចនាសម្ព័ន្ធជំនួយ"</item>
+        <item>"រូបថតអេក្រង់ជំនួយ"</item>
+        <item>"អានស្ថានភាពទូរស័ព្ទ"</item>
+        <item>"បន្ថែមសារជាសំឡេង"</item>
+        <item>"ប្រើ sip"</item>
+        <item>"កំពុងដំណើរការហៅចេញ"</item>
+        <item>"ស្នាមម្រាមដៃ"</item>
+        <item>"ឧបករណ៍ចាប់សញ្ញារាងកាយ"</item>
+        <item>"អានការផ្សព្វផ្សាយសារចល័ត"</item>
+        <item>"ទីតាំងបញ្ឆោត"</item>
+        <item>"អានទំហំផ្ទុក"</item>
+        <item>"សរសេរទំហំផ្ទុក"</item>
+        <item>"បើកអេក្រង់"</item>
+        <item>"ទទួលគណនី"</item>
+        <item>"រត់នៅក្នុងផ្ទៃខាងក្រោយ"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"ខ្លី"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"មធ្យម"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"វែង"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"លំនាំដើម"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"ធម្មតា"</item>
+        <item>"សរសេរ​ជាប់​គ្នា"</item>
+        <item>"អក្សរ​ពុម្ព​ធំ​ល្អិត"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"តូច​ណាស់"</item>
+        <item>"តូច"</item>
+        <item>"ធម្មតា"</item>
+        <item>"ធំ"</item>
+        <item>"ធំ​ណាស់"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"លំនាំដើម"</item>
+        <item>"គ្មាន"</item>
+        <item>"គ្រោង"</item>
+        <item>"ទម្លាក់​ស្រមោល"</item>
+        <item>"បង្កើន"</item>
+        <item>"បន្ថយ"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"ប្រើ​លំនាំដើម​កម្មវិធី"</item>
+        <item>"ពណ៌ស​លើ​ពណ៌​ខ្មៅ"</item>
+        <item>"ពណ៌ខ្មៅ​លើ​ពណ៌ស"</item>
+        <item>"ពណ៌លឿង​​លើ​​ពណ៌​ខ្មៅ"</item>
+        <item>"ពណ៌លឿងលើពណ៌ខៀវ"</item>
+        <item>"តាម​តម្រូវ​ការ"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN ជា​មួយ​សោ​ចែករំលែក​ជាមុន"</item>
+        <item>"L2TP/IPSec VPN ជា​មួយ​វិញ្ញាបនបត្រ"</item>
+        <item>"IPSec VPN ជា​មួយ​សោ​ចែករំលែក​ជាមុន និង​ការ​ផ្ទៀងផ្ទាត់ Xauth"</item>
+        <item>"IPSec VPN ជា​មួយ​ការ​ផ្ទៀងផ្ទាត់​វិញ្ញាបនបត្រ និង Xauth"</item>
+        <item>"IPSec VPN ជា​មួយ​វិញ្ញាបនបត្រ និង​ការ​ផ្ទៀងផ្ទាត់​ឆ្លង"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"បាន​ផ្ដាច់"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"កំពុង​​ចាប់ផ្ដើម\u2026"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"កំពុង​ត​ភ្ជាប់​\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"បាន​តភ្ជាប់"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"អស់​​ពេល​"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"មិន​ជោគជ័យ"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"សួរ"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"កុំ​អនុញ្ញាត"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"អនុញ្ញាត​ជា​និច្ច"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"ធម្មតា"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"មធ្យម"</item>
+        <!-- Memory is running low. -->
+        <item>"ទាប"</item>
+        <!-- Memory is critical. -->
+        <item>"ទាបមែនទែន"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"ធម្មតា"</item>
+        <item>"មធ្យម"</item>
+        <item>"ទាប"</item>
+        <item>"ខ្លាំង​មែនទែន"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"ជាប់​លាប់"</item>
+        <item>"សកម្មភាព​​លើ​គេ"</item>
+        <item>"សំខាន់ (ផ្ទៃ​ខាង​មុខ​)"</item>
+        <item>"សំខាន់ (ផ្ទៃ​ខាង​ក្រោយ​)"</item>
+        <item>"បម្រុងទុក"</item>
+        <item>"ប្រើ​ច្រើន"</item>
+        <item>"សេវាកម្ម (កំពុង​ដំណើរការ)"</item>
+        <item>"សេវាកម្ម (ចាប់ផ្ដើម​ឡើង​វិញ)"</item>
+        <item>"កម្មវិធី​ទទួល"</item>
+        <item>"ដើម"</item>
+        <item>"សកម្ម​ភាព​ចុង​ក្រោយ"</item>
+        <item>"ទុក​ក្នុង​ឃ្លាំង​សម្ងាត់ (សកម្មភាព​)"</item>
+        <item>"ទុក​ក្នុង​ឃ្លាំង​សម្ងាត់ (ម៉ាស៊ីន​​កូន​សកម្មភាព​)"</item>
+        <item>"ទុក​ក្នុង​ឃ្លាំង​សម្ងាត់ (ទទេ​)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"ពណ៌​កាប់ស្តាំង"</item>
+        <item>"ពណ៌ខៀវ"</item>
+        <item>"ពណ៌​ស្វាយ​ចាស់"</item>
+        <item>"ស្វាយ"</item>
+        <item>"ស៊ីជម្ពូ"</item>
+        <item>"ពណ៌ក្រហម"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"ភ្ជាប់​ដោយ​ស្វ័យប្រវត្តិ"</item>
+        <item>"​ភ្ជាប់​ដោយ​ដៃ"</item>
+        <item>"សួរ​ជានិច្ច"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"លើសពី 30 ថ្ងៃ"</item>
+        <item>"លើសពី 60 ថ្ងៃ"</item>
+        <item>"លើសពី 90 ថ្ងៃ"</item>
+    </string-array></resources>

@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 Google Inc.
+ * Licensed to The Android Open Source Project.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Compose -->
+    <!-- Shown in Compose; the sender of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from"/>
+    <string name="from">"မှ"</string>
+    <!-- Shown in Compose; the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to"/>
+    <string name="to">"သို့​"</string>
+    <!-- Shown in Compose; the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc"/>
+    <string name="cc">"Cc"</string>
+    <!-- Shown in Compose; the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc"/>
+    <string name="bcc">"Bcc"</string>
+    <!-- Shown in Compose; the subject of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"အကြောင်းအရာ"</string>
+    <!-- Shown in Compose; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="body_hint"/>
+    <string name="body_hint">"အီးမေးလ် ရေးဖွဲ့ရန်"</string>
+    <!--  Compose screen button. Add an attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_file_attachment"/>
+    <string name="add_file_attachment">"ဖိုင်ကို ပူးတွဲရန်"</string>
+    <!--  Compose screen button. Add a photo attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_photo_attachment"/>
+    <string name="add_photo_attachment">"ပုံကို ပူးတွဲရန်"</string>
+    <!-- Button name: save this message as draft [CHAR LIMIT=25]-->
+    <add-resource type="string" name="save_draft"/>
+    <string name="save_draft">"မူကြမ်းကို သိမ်းဆည်းရန်"</string>
+    <!--  Button name: discard this message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"စွန့်ပစ်ရန်"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="compose"/>
+    <string name="compose">"ရေးဖွဲ့ရန်"</string>
+    <!-- The action bar title for the default compose mode [CHAR LIMIT=10] -->
+    <add-resource type="string" name="compose_title"/>
+    <string name="compose_title">"ရေးဖွဲ့ရန်"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="array" name="compose_modes"/>
+    <string-array name="compose_modes">
+        <!-- Reply -->
+        <item>"ဖြေကြားရန်"</item>
+        <!-- Reply all -->
+        <item>"အားလုံးကို ဖြေ"</item>
+        <!-- Forward -->
+        <item>"တစ်ဆင့်ပို့"</item>
+    </string-array>
+    <!-- Compose screen, displayed at the top of a message being replied to. Please preserve the HTML entities (surrounded by & and ;).  The two %s strings will be replaced by 1) the date 2) the person who wrote the email being responded to. [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="reply_attribution"/>
+    <string name="reply_attribution">"<xliff:g id="DATE">%s</xliff:g>တွင် <xliff:g id="PERSON">%s</xliff:g> ရေးခဲ့:"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000] -->
+    <add-resource type="string" name="forward_attribution"/>
+    <string name="forward_attribution">"---------- တစ်ဆင့်ပို့လိုက်သည့် စာ----------&lt;br&gt;မှ - <xliff:g id="FROM">%1$s</xliff:g>&lt;br&gt;ရက်စွဲ: <xliff:g id="DATE">%2$s</xliff:g>&lt;br&gt;အကြောင်းအရာ: <xliff:g id="SUBJECT">%3$s</xliff:g>&lt;br&gt;သို့: <xliff:g id="TO">%4$s</xliff:g>&lt;br&gt;"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="forward_attribution_no_headers"/>
+    <string name="forward_attribution_no_headers">"တစ်ဆင့်ပို့လိုက်သည့် စာ"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded if there are any email addresses in the CC list. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="cc_attribution"/>
+    <string name="cc_attribution">"Cc: <xliff:g id="CC">%1$s</xliff:g>&lt;br&gt;"</string>
+    <!-- Dialog text: select the type of an attachment while composing [CHAR LIMIT=100]-->
+    <add-resource type="string" name="select_attachment_type"/>
+    <string name="select_attachment_type">"ပူးတွဲမှု ပုံစံကို ရွေးချယ်ရန်"</string>
+    <!-- Toast, attachment too large for single file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_single"/>
+    <string name="too_large_to_attach_single">"<xliff:g id="MAXSIZE">%1$s</xliff:g> ထက် ပိုကြီးသော ဖိုင်ကို မပူးတွဲနိုင်ပါ။"</string>
+    <!-- Toast, attachment too large for multiple files [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_multiple"/>
+    <string name="too_large_to_attach_multiple">"ဖိုင် တစ်ခု သို့မဟုတ် ပိုများတာကို မပူးတွဲခဲ့ပါ။ <xliff:g id="MAXSIZE">%1$s</xliff:g> ကန့်သတ်မှု။"</string>
+    <!-- Toast, attachment too large when existing attachments exist [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_additional"/>
+    <string name="too_large_to_attach_additional">"ဖိုင် ပူးတွဲ မပေးခဲ့ပါ။ <xliff:g id="MAXSIZE">%1$s</xliff:g> ကန့်သတ်ချက် ပြည့်သွားပြီ။"</string>
+    <!-- Toast, problem attaching file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="generic_attachment_problem"/>
+    <string name="generic_attachment_problem">"ဖိုင်ကို မပူးတွဲနိုင်ခဲ့ပါ။"</string>
+    <!-- Toast, cannot attach the provided file because the calling context doesn't have the permission [CHAR LIMIT=100] -->
+    <add-resource type="string" name="attachment_permission_denied"/>
+    <string name="attachment_permission_denied">"ပူးတွဲချက် အတွက် ခွင့်ပြုချက်ကို ငြင်းပယ်လိုက်သည်။"</string>
+    <!-- Displayed for one second after trying to send with no recipients in To field [CHAR LIMIT=200]-->
+    <add-resource type="string" name="recipient_needed"/>
+    <string name="recipient_needed">"လက်ခံသူ အနည်းဆုံး တစ်ဦးကို ထည့်ပါ။"</string>
+    <!-- Messages for send confirmation dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="confirm_send_message_with_no_subject"/>
+    <string name="confirm_send_message_with_no_subject">"စာ အကြောင်းအရာ ထဲတွင် စာသား မရှိ။"</string>
+    <add-resource type="string" name="confirm_send_message_with_no_body"/>
+    <string name="confirm_send_message_with_no_body">"စာ ကိုယ်ထည် ထဲတွင် စာသား မရှိ။"</string>
+    <add-resource type="string" name="confirm_send_message"/>
+    <string name="confirm_send_message">"ဤ စာကို ပို့မလား?"</string>
+    <!-- Displayed for one second after discarding draft message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_discarded"/>
+    <string name="message_discarded">"စာကို စွန့်ပစ်ခဲ့သည်။"</string>
+    <!-- Formatting string for the user's signaure. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="signature"/>
+    <string name="signature">"\n\n<xliff:g id="SIGNATURE">%s</xliff:g>"</string>
+    <!--  Shown in the from dropdown in front of custom from addresses. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="custom_from_account_label"/>
+    <string name="custom_from_account_label">"အဖြစ် စာပို့:"</string>
+
+    <!-- Menu item: send this message -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"ပို့ရန်"</string>
+    <!-- Menu item: mark this conversation as read -->
+    <add-resource type="string" name="mark_read"/>
+    <string name="mark_read">"ဖတ်ပြီး မှတ်သား"</string>
+    <!-- Menu item: mark this conversation as unread -->
+    <add-resource type="string" name="mark_unread"/>
+    <string name="mark_unread">"မဖတ်ရသေးဟု မှတ်သားရန်"</string>
+    <!-- Menu item: toggle read/unread for menus that contain both read and unread options -->
+    <add-resource type="string" name="toggle_read_unread"/>
+    <string name="toggle_read_unread">"ဖတ်ခဲ့ မဖတ်ခဲ့ကို ကစားကြည့်ရန်"</string>
+    <!--  Menu item: mute this conversation -->
+    <add-resource type="string" name="mute"/>
+    <string name="mute">"အသံတိတ်"</string>
+    <!-- Menu item: add a star to this conversation -->
+    <add-resource type="string" name="add_star"/>
+    <string name="add_star">"စတား ထည့်ရန်"</string>
+    <!-- Menu item: remove the star from this conversation -->
+    <add-resource type="string" name="remove_star"/>
+    <string name="remove_star">"စတားကို ဖယ်ရှားရန်"</string>
+    <!-- Remove the folder from this conversation [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="remove_folder"/>
+    <string name="remove_folder">"<xliff:g id="FOLDERNAME">%1$s</xliff:g> မှ ဖယ်ရှားရန်"</string>
+    <!-- Menu item: archive this conversation -->
+    <add-resource type="string" name="archive"/>
+    <string name="archive">"မော်ကွန်းတင်ရန်"</string>
+    <!-- Menu item: report this conversation as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_spam"/>
+    <string name="report_spam">"စပမ်ကို သတင်းပို့ရန်"</string>
+    <!-- Menu item: report this conversation not as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="mark_not_spam"/>
+    <string name="mark_not_spam">"စပမ် မဟုတ်ဟု အစီရင်ခံ"</string>
+    <!-- Menu item: report this conversation as phishing [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_phishing"/>
+    <string name="report_phishing">"မျှားယူမှုကို သတင်းပို့ရန်"</string>
+    <!-- Menu item: delete this conversation -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"ဖျက်ပစ်ရန်"</string>
+    <!-- Menu item: discard the drafts in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_drafts"/>
+    <string name="discard_drafts">"မူကြမ်းများကို စွန့်ပစ်ရန်"</string>
+    <!-- Menu item: discard the failed messages in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_failed"/>
+    <string name="discard_failed">"မအောင်မြင်သော ဖျက်သိမ်းမှု"</string>
+    <!-- Menu item: refresh the inbox -->
+    <add-resource type="string" name="refresh"/>
+    <string name="refresh">"ဆန်းသစ်ယူရန်"</string>
+    <!-- Menu item: reply to this message -->
+    <add-resource type="string" name="reply"/>
+    <string name="reply">"ဖြေကြားရန်"</string>
+    <!-- Menu item: reply to all recipients in this message [CHAR LIMIT=18] -->
+    <add-resource type="string" name="reply_all"/>
+    <string name="reply_all">"အားလုံးကို ဖြေကြား"</string>
+    <!-- Menu item: resume a draft message [CHAR LIMIT=12] -->
+    <add-resource type="string" name="resume_draft"/>
+    <string name="resume_draft">"တည်းဖြတ်ရန်"</string>
+    <!-- Menu item: forward this message -->
+    <add-resource type="string" name="forward"/>
+    <string name="forward">"တစ်ဆင့်ပို့"</string>
+    <!-- Menu item: compose a new email -->
+    <add-resource type="string" name="menu_compose"/>
+    <string name="menu_compose">"စာရေးဖွဲ့ရန်"</string>
+    <!-- Menu item: change the folders for this conversation. -->
+    <add-resource type="string" name="menu_change_folders"/>
+    <string name="menu_change_folders">"ဖိုလ်ဒါများ ပြောင်းရန်"</string>
+    <!-- Menu item: moves to folders for selected conversation(s). [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to"/>
+    <string name="menu_move_to">"ရွှေ့ရန်"</string>
+    <!-- Menu item: moves current or selected conversation(s) to Inbox. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to_inbox"/>
+    <string name="menu_move_to_inbox">"ဝင်စာသို့ ရွှေ့ရန်"</string>
+    <!-- Menu item: manages the folders for this account. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_manage_folders"/>
+    <string name="menu_manage_folders">"ဖိုလ်ဒါ ဆက်တင်များ"</string>
+    <!-- Menu item text to show the original version of an email conversation, before message manipulation [CHAR LIMIT=25] -->
+    <add-resource type="string" name="menu_show_original"/>
+    <string name="menu_show_original">"အော်တို-ဆိုက် ပြောင်းရန်"</string>
+    <!-- Menu item: launch the Settings activity -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"ဆက်တင်များ"</string>
+    <!-- Menu item: search through the Gmail inbox -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"ရှာဖွေရန်"</string>
+    <!-- Menu item: toggle drawer -->
+    <add-resource type="string" name="menu_toggle_drawer"/>
+    <string name="menu_toggle_drawer">"အံဆွဲကို ကစားကြည့်ရန်"</string>
+    <!-- Title of the drawer, indicating what it is used for, which is navigation of the app -->
+    <add-resource type="string" name="drawer_title"/>
+    <string name="drawer_title">"သွားလာရန်"</string>
+
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_important"/>
+    <string name="mark_important">"အရေးကြီးဟု မှတ်သား"</string>
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as not important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_not_important"/>
+    <string name="mark_not_important">"အရေးမကြီးတာ မှတ်သားရန်"</string>
+
+    <!-- Compose screen, menu item: add Cc/Bcc fields -->
+    <add-resource type="string" name="add_cc_label"/>
+    <string name="add_cc_label">"Cc/Bcc ကို ထည့်ရန်"</string>
+    <!-- Compose screen, menu item: add Bcc field [CHAR_LIMIT=20]-->
+    <add-resource type="string" name="add_bcc_label"/>
+    <string name="add_bcc_label">"Bcc ကို ထည့်ရန်"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="quoted_text"/>
+    <string name="quoted_text">"ကိုးကား စာသားကို ထည့်ဖေါ်ပြရန်"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message; folder for the quoted text area. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="quoted_text_label"/>
+    <string name="quoted_text_label">"ကိုးကား စာသား"</string>
+    <!--  Button for including inline responses. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="respond_inline"/>
+    <string name="respond_inline">"အင်လိုင်း တုံ့ပြန်ရန်"</string>
+
+    <!-- Attachments -->
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5]-->
+    <add-resource type="string" name="bytes"/>
+    <string name="bytes">"<xliff:g id="COUNT">%s</xliff:g> B"</string>
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5] -->
+    <add-resource type="string" name="kilobytes"/>
+    <string name="kilobytes">"<xliff:g id="COUNT">%s</xliff:g> KB"</string>
+    <!-- Size unit, displayed in a button next to an attachment  [CHAR LIMIT=5]-->
+    <add-resource type="string" name="megabytes"/>
+    <string name="megabytes">"<xliff:g id="COUNT">%s</xliff:g> MB"</string>
+    <!-- Attachment description for image files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_image"/>
+    <string name="attachment_image">"ပုံ"</string>
+    <!-- Attachment description for video files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"ဗီဒီယို"</string>
+    <!-- Attachment description for audio files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"အသံ"</string>
+    <!-- Attachment description for text files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_text"/>
+    <string name="attachment_text">"စာသား"</string>
+    <!-- Attachment description for .doc files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_msword"/>
+    <string name="attachment_application_msword">"စာတမ်း"</string>
+    <!-- Attachment description for .ppt files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_powerpoint"/>
+    <string name="attachment_application_vnd_ms_powerpoint">"မိတ်ဆက် တင်ပြမှု"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_excel"/>
+    <string name="attachment_application_vnd_ms_excel">"ဇယားစာတမ်း"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_pdf"/>
+    <string name="attachment_application_pdf">PDF</string>
+    <!-- Attachment description for unknown files [CHAR LIMIT=30]-->
+    <add-resource type="string" name="attachment_unknown"/>
+    <string name="attachment_unknown">"<xliff:g id="ATTACHMENTEXTENSION">%s</xliff:g> ဖိုင်"</string>
+    <!-- Read email screen, button name. Preview an attachment by Gview. [CHAR LIMIT=18] -->
+    <add-resource type="string" name="preview_attachment"/>
+    <string name="preview_attachment">"အစမ်းကြည့်မှု"</string>
+    <!-- Read email screen, button name. Save an attachment to sd card. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="save_attachment"/>
+    <string name="save_attachment">"သိမ်းဆည်း"</string>
+    <!-- Read email screen, button name. Redownload an attachment [CHAR LIMIT=20]-->
+    <add-resource type="string" name="download_again"/>
+    <string name="download_again">"ဒေါင်းလုဒ် ထပ်လုပ"</string>
+    <!-- Remove this attachment [CHAR LIMIT=50] -->
+    <add-resource type="string" name="remove_attachment_desc"/>
+    <string name="remove_attachment_desc">"ပူးတွဲချက် <xliff:g id="ATTACHMENTNAME">%s</xliff:g> ကို ဖယ်ရှားရန်"</string>
+    <!-- Dialog box title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="more_info_attachment"/>
+    <string name="more_info_attachment">"အင်ဖို"</string>
+    <!-- Dialog box message, displayed when we could not view an attachment. [CHAR LIMIT=200]-->
+    <add-resource type="string" name="no_application_found"/>
+    <string name="no_application_found">"မည်သည့်appကမှ ဤပူးတွဲမှုကို ကြည့်ရှုရန် မဖွင့်နိုင်။"</string>
+    <!-- Dialog box title. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="fetching_attachment"/>
+    <string name="fetching_attachment">"ပူးတွဲမှုကို သွားယူနေ"</string>
+    <!-- Dialog box message. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"ကျေးဇူးပြု၍ စောင့်ပါ\u2026"</string>
+    <!-- Displayed in the conversation view, next to a file's size and type. Status of a saved attachment. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="saved"/>
+    <string name="saved">"<xliff:g id="SIZE">%s</xliff:g> သိမ်းဆည်းပြီး"</string>
+    <!-- Displayed in the conversation view. Status of a failed attachment. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="download_failed"/>
+    <string name="download_failed">"ဒေါင်းလုဒ် မလုပ်နိုင်ခဲ့ပါ။ ထပ်စမ်းရန် ထိပါ။"</string>
+    <!-- Photo view screen, button name. Save all attachments to sd card. [CHAR LIMIT=17] -->
+    <add-resource type="string" name="menu_photo_save_all"/>
+    <string name="menu_photo_save_all">"အားလုံး သိမ်းဆည်း"</string>
+    <!-- Photo view screen, button name. Share attachment. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="menu_photo_share"/>
+    <string name="menu_photo_share">"မျှဝေရန်"</string>
+    <!-- Photo view screen, button name. Share all attachments. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_share_all"/>
+    <string name="menu_photo_share_all">"အားလုံးကို မျှဝေရန်"</string>
+    <!-- Photo view screen, button name. Print photo. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_print"/>
+    <string name="menu_photo_print">"ပရင့်ထုတ်ယူရန်"</string>
+    <!-- Displayed in the action bar as a subtitle. Save in progress. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="saving"/>
+    <string name="saving">"သိမ်းဆည်းနေ\u2026"</string>
+
+    <!-- Webview Context Menu Strings -->
+    <!-- Title of dialog for choosing which activity to share a link with. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="choosertitle_sharevia"/>
+    <string name="choosertitle_sharevia">"မှတစ်ဆင့် မျှဝေပါ"</string>
+    <!-- Menu item to open a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_openlink"/>
+    <string name="contextmenu_openlink">"ဘရောင်ဇာမှာ ဖွင့်ရန်"</string>
+    <!-- Menu item to copy the selection  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copy"/>
+    <string name="contextmenu_copy">"ကူးယူရန်"</string>
+    <!-- Menu item to copy a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copylink"/>
+    <string name="contextmenu_copylink">"လင့် URL ကူးယူရန်"</string>
+    <!-- Menu item to view an image  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_view_image"/>
+    <string name="contextmenu_view_image">"ပုံ ကြည့်ရှုရန်"</string>
+    <!-- Menu item to dial a number  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_dial_dot"/>
+    <string name="contextmenu_dial_dot">"နံပါတ်လှည့်ရန်\u2026"</string>
+    <!-- Menu item to send an SMS  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sms_dot"/>
+    <string name="contextmenu_sms_dot">"SMS\u2026"</string>
+    <!-- Menu item to add a contact  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_add_contact"/>
+    <string name="contextmenu_add_contact">"လိပ်စာ ထည့်ရန်"</string>
+    <!-- Menu item to send an email [CHAR LIMIT=50] -->
+    <add-resource type="string" name="contextmenu_send_mail"/>
+    <string name="contextmenu_send_mail">"အီးမေးလ် ပို့ရန်"</string>
+    <!-- Menu item to show a map  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_map"/>
+    <string name="contextmenu_map">"မြေပုံ"</string>
+    <!-- Menu item to share link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sharelink"/>
+    <string name="contextmenu_sharelink">"လင့်ကို မျှဝေရန်"</string>
+
+    <!-- Browse list item strings -->
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description"/>
+    <string name="content_description">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> က <xliff:g id="SUBJECT">%3$s</xliff:g>၊ <xliff:g id="SNIPPET">%4$s</xliff:g> အကြောင်း <xliff:g id="DATE">%5$s</xliff:g>၊ <xliff:g id="READSTATE">%6$s</xliff:g> မှာ"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today"/>
+    <string name="content_description_today">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> က <xliff:g id="SUBJECT">%3$s</xliff:g>၊ <xliff:g id="SNIPPET">%4$s</xliff:g> အကြောင်း<xliff:g id="TIME">%5$s</xliff:g>၊ <xliff:g id="READSTATE">%6$s</xliff:g> မှာ"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description_with_folders"/>
+    <string name="content_description_with_folders">"<xliff:g id="SUBJECT">%3$s</xliff:g> နှင့် ပတ်သတ်၍ <xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g>၊ <xliff:g id="DATE">%5$s</xliff:g> တွင် <xliff:g id="SNIPPET">%4$s</xliff:g> ၊ <xliff:g id="READSTATE">%6$s</xliff:g>၊ ခေါင်းစဉ်ခွဲများ။  ။ <xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today_with_folders"/>
+    <string name="content_description_today_with_folders">"<xliff:g id="SUBJECT">%3$s</xliff:g> နှင့် ပတ်သတ်၍ <xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g>၊ <xliff:g id="TIME">%5$s</xliff:g> ၌ <xliff:g id="SNIPPET">%4$s</xliff:g> ၊ <xliff:g id="READSTATE">%6$s</xliff:g>၊ ခေါင်းစဉ်ခွဲများ။  ။ <xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="read_string"/>
+    <string name="read_string">"စကားဝိုင်းကို ဖတ်ပြီး"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was not read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unread_string"/>
+    <string name="unread_string">"စကားဝိုင်းကို မဖတ်ရသေး"</string>
+    <!-- Formatting string. If the subject contains the tag of a mailing-list (text surrounded with
+    return the subject with that tag ellipsized, e.g. "[android-gmail-team] Hello" -> "[andr...] Hello" [CHAR LIMIT=100] -->
+    <add-resource type="string" name="filtered_tag"/>
+    <string name="filtered_tag">" [<xliff:g id="tag">%1$s</xliff:g>]<xliff:g id="subject">%2$s</xliff:g>"</string>
+    <!-- Displayed in conversation list item in the form of "badge subject" [CHAR LIMIT=7] -->
+    <add-resource type="string" name="badge_and_subject"/>
+    <string name="badge_and_subject">"<xliff:g id="ID_1">%1$s</xliff:g> <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+    <!-- Displayed in browse list item when the list item is a draft message instead of showing the subject [CHAR LIMIT=100] -->
+    <add-resource type="plurals" name="draft"/>
+    <plurals name="draft">
+        <!-- Title of the screen when there is exactly one draft -->
+        <item quantity="one">"မူကြမ်း"</item>
+        <!-- Title of the screen when there are more than one draft -->
+        <item quantity="other">"မူကြမ်းများ"</item>
+    </plurals>
+    <!-- Message displayed in a browse list item for one second when message is being sent [CHAR LIMIT=20]-->
+    <add-resource type="string" name="sending"/>
+    <string name="sending">"ပို့နေ\u2026"</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to sent and is being retried [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_retrying"/>
+    <string name="message_retrying">"ပြန်ကြိုးစားနေ..."</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to send [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_failed"/>
+    <string name="message_failed">"မအောင်မြင်ခဲ့"</string>
+    <!-- Message displayed in a browse list item for one second after a send failed [CHAR LIMIT=26]-->
+    <add-resource type="string" name="send_failed"/>
+    <string name="send_failed">"စာကို မပို့ဖြစ်ခဲ့ပါ။"</string>
+    <!-- String used to represent "me" when used as an object pronoun. This string is used when
+         showing the list of recipients of a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_object_pronoun"/>
+    <string name="me_object_pronoun">"ကျွန်ုပ်"</string>
+    <!-- String used to represent "me"/"I" when used as an subject pronoun. This string is use when
+         showing the list of senders for a conversation list item. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_subject_pronoun"/>
+    <string name="me_subject_pronoun">"ကျွန်ုပ်"</string>
+
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Dialog message to confirm deletion of one conversation -->
+        <item quantity="one">"ဒီစကားဝိုင်းကို ဖျက်မလား?"</item>
+        <!-- Dialog message to confirm deletion of several conversations -->
+        <item quantity="other">"ဤ<xliff:g id="COUNT">%1$d</xliff:g> စကားဝိုင်းများကို ဖျက်မလား?"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_archive_conversation"/>
+    <plurals name="confirm_archive_conversation">
+        <!-- Dialog message to confirm archival of one conversation -->
+        <item quantity="one">"ဤစကားဝိုင်း မော်ကွန်းတင်မလား?"</item>
+        <!-- Dialog message to confirm archival of several conversations -->
+        <item quantity="other">"ဒီစကားဝိုင်း <xliff:g id="COUNT">%1$d</xliff:g> ကို မော်ကွန်းတင်မလား?"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_discard_drafts_conversation"/>
+    <plurals name="confirm_discard_drafts_conversation">
+        <!-- Dialog message to confirm discarding a single draft message [CHAR LIMIT=50] -->
+        <item quantity="one">"ဤ စာကို စွန့်ပစ်မလား?"</item>
+        <!-- Dialog message to confirm discarding many draft messages [CHAR LIMIT=50] -->
+        <item quantity="other">"ဒီစာ <xliff:g id="COUNT">%1$d</xliff:g>ကို စွန့်ပစ်မလား?"</item>
+    </plurals>
+
+    <!-- Dialog text: confirm discard -->
+    <add-resource type="string" name="confirm_discard_text"/>
+    <string name="confirm_discard_text">"ဤ စာကို စွန့်ပစ်မလား?"</string>
+
+    <!-- Conversation list shared between the Activity and Widget -->
+    <!-- Displayed in the middle of the screen when conversations are being loaded [CHAR LIMIT 100]-->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"တင်နေ\u2026"</string>
+    <!-- Displayed in the middle of the screen when an inbox is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_inbox"/>
+    <string name="empty_inbox">"သင် အားလုံး လုပ်ပြီးသွားပြီ။ ကျေးဇူးပြုပြီး ပျော်ပျော် နေလိုက်စမ်းပါ။"</string>
+    <!-- Displayed in the middle of the screen when a search returns no results [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_search"/>
+    <string name="empty_search">"အူပ်စ်! \"<xliff:g id="SEARCH_QUERY">%1$s</xliff:g>\" အတွက် ဘာကိုမှ ကျွန်ုပ်တို့ ရှာမတွေ့ခဲ့ပါ။"</string>
+    <!-- Displayed in the middle of the screen when the spam folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_spam_folder"/>
+    <string name="empty_spam_folder">"ဟူးရေး၊ ဒီမှာ စပမ် မရှိတော့ပါ!"</string>
+    <!-- Displayed in the middle of the screen when the trash folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_trash_folder"/>
+    <string name="empty_trash_folder">"အမှိုက် မရှိတော့ပါ။ ပြန်သုံးတဲ့ အတွက် ကျေးဇူးပဲ!"</string>
+    <!-- Displayed in the middle of the screen when a folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_folder"/>
+    <string name="empty_folder">"ဤနေရာမှာ စာ မရှိပါ။"</string>
+    <!-- Displayed in the middle of the screen when a folder is loading [CHAR LIMIT 100]-->
+    <add-resource type="string" name="getting_messages"/>
+    <string name="getting_messages">"သင်၏ စာများကို ရယူနေ"</string>
+
+    <!-- Undo bar strings -->
+    <!-- Menu item: undo latest action [CHAR LIMIT=12]-->
+    <add-resource type="string" name="undo"/>
+    <string name="undo">"ပြန်ဖျက်ရန်"</string>
+
+    <add-resource type="plurals" name="conversation_unstarred"/>
+    <plurals name="conversation_unstarred">
+        <item quantity="one">"စကားဝိုင်း <xliff:g id="COUNT">%1$d</xliff:g> ခု စတားဖြုတ်နေ"</item>
+        <item quantity="other">"စကားဝိုင်း <xliff:g id="COUNT">%1$d</xliff:g> ခု စတားဖြုတ်နေ"</item>
+    </plurals>
+
+    <!-- The following are shown as a toast after the operation has completed -->
+    <add-resource type="plurals" name="conversation_muted"/>
+    <plurals name="conversation_muted">
+        <!-- Displayed while muting one conversation -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; အသံတိတ်ခဲ့"</item>
+        <!-- Displayed while muting several conversations -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; အသံတိတ်ခဲ့"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_spammed"/>
+    <plurals name="conversation_spammed">
+        <!-- Displayed while reporting one conversation as spam -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; စပမ် အဖြစ် သတင်းပို့ခဲ့"</item>
+        <!-- Displayed while reporting several conversations as spam -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; စပမ် အဖြစ် သတင်းပို့ခဲ့"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_spam"/>
+    <plurals name="conversation_not_spam">
+        <!-- Displayed while reporting one conversation as not spam -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; စပမ် မဟုတ် ဆိုပြီး သတင်းပို့ခဲ့"</item>
+        <!-- Displayed while reporting several conversations as not spam -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; စပမ် မဟုတ် ဆိုပြီး သတင်းပို့ခဲ့"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_important"/>
+    <plurals name="conversation_not_important">
+        <!-- Displayed while reporting one conversation as not important in the important folder -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; ကို အရေးမကြီးကြောင်း မှတ်သားခဲ့"</item>
+        <!-- Displayed while reporting several conversations as not important in the important folder -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; ကို အရေးမကြီးကြောင်း မှတ်သားခဲ့"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_phished"/>
+    <plurals name="conversation_phished">
+        <!-- Displayed while reporting one conversation as phishing -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; မျှားယူမှု အဖြစ် သတင်းပို့ခဲ့"</item>
+        <!-- Displayed while reporting several conversations as phishing -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; မျှားယူမှု အဖြစ် သတင်းပို့ခဲ့"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_archived"/>
+    <plurals name="conversation_archived">
+        <!-- Displayed while archiving one conversation -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; မော်ကွန်းတင်ပြီး။"</item>
+        <!-- Displayed while archiving multiple conversations -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; မော်ကွန်းတင်ပြီး။"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_deleted"/>
+    <plurals name="conversation_deleted">
+        <!-- Displayed while deleting one conversation -->
+        <item quantity="one">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; ကို ဖျက်ပြီး။"</item>
+        <!-- Displayed while deleting multiple conversations -->
+        <item quantity="other">"&lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; ကို ဖျက်ပြီး။"</item>
+    </plurals>
+    <!-- Displayed when swiping away a single conversation to delete it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="deleted"/>
+    <string name="deleted">"ဖျက်ပြီး"</string>
+    <!-- Displayed when swiping away a single conversation to archive it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="archived"/>
+    <string name="archived">"မော်ကွန်းတင်ထား"</string>
+    <!-- Displayed when swiping away a single conversation to remove the currently displayed folder [CHAR LIMIT=80] -->
+    <add-resource type="string" name="folder_removed"/>
+    <string name="folder_removed">"<xliff:g id="FOLDERNAME">%1$s</xliff:g> မှ ဖယ်ရှားခဲ့"</string>
+
+    <add-resource type="plurals" name="conversation_folder_changed"/>
+    <plurals name="conversation_folder_changed">
+        <!-- Displayed while adding and removing folders to a single conversation. [CHAR LIMIT=100] -->
+        <item quantity="one">"ပြောင်းထားသည့် ဖိုလ်ဒါ"</item>
+        <!-- Displayed while adding and removing folders to multiple conversations. [CHAR LIMIT=100] -->
+        <item quantity="other">"ပြောင်းထားသည့် ဖိုလ်ဒါများ"</item>
+    </plurals>
+
+    <!-- Displayed after moving a conversation to a different folder. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="conversation_folder_moved"/>
+    <string name="conversation_folder_moved">"<xliff:g id="FOLDERNAME">%1$s</xliff:g> သို့ ရွှေ့ရန်"</string>
+
+    <!-- Search Results: Text for header that is shown above search results [CHAR LIMIT=30] -->
+    <add-resource type="string" name="search_results_header"/>
+    <string name="search_results_header">"ရလဒ်များ"</string>
+    <!-- Toast shown when the user taps the search hard key when viewing an account that does not support search [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_unsupported"/>
+    <string name="search_unsupported">"ဤအကောင့် ထဲမှာ ရှာဖွေမှုကို ပံ့ပိုးမပေးပါ။"</string>
+    <!-- Accessibility description for the search suggestion item [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_suggestion_desc"/>
+    <string name="search_suggestion_desc">"အကြံပေးချက်: <xliff:g id="SUGGESTION">%s</xliff:g>"</string>
+
+    <!-- Conversation view -->
+    <!--  Text anchor for control to add / change labels on a conversation when
+          viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_label"/>
+    <string name="add_label">"ဖိုလ်ဒါကို ထည့်ရန်"</string>
+
+    <!-- New Message notification text that appears over conversation view on incoming messages. [CHAR LIMIT=40] -->
+    <add-resource type="plurals" name="new_incoming_messages"/>
+    <plurals name="new_incoming_messages">
+        <item quantity="one">"စာ အသစ် <xliff:g id="COUNT">%1$d</xliff:g> ခု"</item>
+        <item quantity="other">"စာ အသစ် <xliff:g id="COUNT">%1$d</xliff:g> ခု"</item>
+    </plurals>
+
+    <!-- Conversation message header strings -->
+    <!--  Text for showing the date and expanding recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="date_and_view_details"/>
+    <string name="date_and_view_details">"<xliff:g id="DATE">%1$s</xliff:g> &lt;a href=\'http://www.example.com\'&gt;သေးစိတ် ကြည့်&lt;/a&gt;"</string>
+    <!--  Text for collapsing recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="hide_details"/>
+    <string name="hide_details">"အသေးစိတ်မပြနှင့်"</string>
+    <!-- Shown to display the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_message_header"/>
+    <string name="to_message_header">"<xliff:g id="RECIPIENTS">%1$s</xliff:g> ထံသို့"</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_header_for_recipient_summary"/>
+    <string name="bcc_header_for_recipient_summary">"bcc: "</string>
+    <!--  Icon name for showing sender contact information. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string"/>
+    <string name="contact_info_string">"<xliff:g id="NAME">%1$s</xliff:g> အတွက် ဆက်သွယ်ရေး အချက်အလက်ကို ပြပါ။"</string>
+    <!--  Icon name for showing sender contact information when we cannot get sender info. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string_default"/>
+    <string name="contact_info_string_default">"ဆက်သွယ်ရေး အချက်အလက်ကို ပြရန်"</string>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target. Tapping on this touch target
+         expands these messages. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="show_messages_read"/>
+    <plurals name="show_messages_read">
+        <item quantity="other">"ပိုဟောင်းသည့် စာ <xliff:g id="COUNT">%1$d</xliff:g>ခုကို ချဲ့ရန်"</item>
+    </plurals>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target to announce that the messages
+         have been expanded. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="super_collapsed_block_accessibility_announcement"/>
+    <plurals name="super_collapsed_block_accessibility_announcement">
+        <item quantity="other">"ပိုဟောင်းသည့် စာ <xliff:g id="COUNT">%1$d</xliff:g>ခုကို ချဲ့ထား"</item>
+    </plurals>
+    <!-- Shown to display the from address of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from_heading"/>
+    <string name="from_heading">"မှ:"</string>
+    <!-- Shown to display the reply to address of the message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="replyto_heading"/>
+    <string name="replyto_heading">"သို့ ဖြေကြားရန်:"</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading"/>
+    <string name="to_heading">"သို့: "</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading_no_space"/>
+    <string name="to_heading_no_space">"သို့:"</string>
+    <!-- Shown to display the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc_heading"/>
+    <string name="cc_heading">"Cc:"</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_heading"/>
+    <string name="bcc_heading">"Bcc:"</string>
+    <!-- Shown to display the date of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="date_heading"/>
+    <string name="date_heading">"ရက်စွဲ:"</string>
+    <!-- Displayed above an HTML message to show the images in that message [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_images"/>
+    <string name="show_images">"ပုံများကို ပြရန်"</string>
+    <!-- Displayed above an HTML message to always show images in messages from that sender [CHAR LIMIT=40] -->
+    <add-resource type="string" name="always_show_images"/>
+    <string name="always_show_images">"ဤပို့သူထံမှ ဓာတ်ပုံများကို အမြဲပြ"</string>
+    <!-- Shown in a toast to acknowledge always showing images for a sender [CHAR LIMIT=100] -->
+    <add-resource type="string" name="always_show_images_toast"/>
+    <string name="always_show_images_toast">"ဤပို့သူထံမှ ပုံများကို အလိုအလျောက် ပြပေးမည်။"</string>
+    <!-- Display format of an email recipient, displayed in expanded message details [CHAR LIMIT=10] -->
+    <add-resource type="string" name="address_display_format"/>
+    <string name="address_display_format">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g>"</string>
+    <!-- Display format of an email sender if the message has a via domain set, displayed in expanded message details [CHAR LIMIT=15] -->
+    <add-resource type="string" name="address_display_format_with_via_domain"/>
+    <string name="address_display_format_with_via_domain">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g> via <xliff:g id="via_domain">%3$s</xliff:g>"</string>
+    <!-- Displayed for one second after user saves message as draft [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_saved"/>
+    <string name="message_saved">"စာကို မူကြမ်း အဖြစ် သိမ်းဆည်းပြီး"</string>
+    <!-- Displayed for one second while message is being sent [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"စာကို ပို့နေ\u2026"</string>
+    <!-- Displayed for one second after trying to send with invalid recipients [CHAR LIMIT=50]-->
+    <add-resource type="string" name="invalid_recipient"/>
+    <string name="invalid_recipient">"<xliff:g id="WRONGEMAIL">%s</xliff:g> လိပ်စာ မမှန်ပါ။"</string>
+    <!-- Shown in HTML to allow the user to see quoted text; should match Gmail web UI. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_elided"/>
+    <string name="show_elided">"ကိုးကား စာသားကို ပြရန်"</string>
+    <!-- Shown in HTML to allow the user to hide quoted text; should match Gmail web UI. 25BC is Unicode for a downward-pointing triangle. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_elided"/>
+    <string name="hide_elided">"▼ ကိုးကား စာသားကို ဝှက်ထားရန်"</string>
+    <!-- Shown as a heading in message view when a message contains a calendar invite [CHAR LIMIT=30]-->
+    <add-resource type="string" name="message_invite_title"/>
+    <string name="message_invite_title">"ပြက္ခဒိန် ဖိတ်ကြားမှု"</string>
+    <!-- Shown as a button label in message view to launch calendar to see this invite [CHAR LIMIT=40]-->
+    <add-resource type="string" name="message_invite_calendar_view"/>
+    <string name="message_invite_calendar_view">"ပြက္ခဒိန်မှာ ကြည့်ရန်"</string>
+    <!-- Shown as a text label in message view describing the choices of whether to attend an invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_label_attending"/>
+    <string name="message_invite_label_attending">"သွားမလား?"</string>
+    <!-- Shown as a button label in message view to accept a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_accept"/>
+    <string name="message_invite_accept">"လက်ခံ"</string>
+    <!-- Shown as a button label in message view to give a tentative response to a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_tentative"/>
+    <string name="message_invite_tentative">"ဖြစ်နိုင်"</string>
+    <!-- Shown as a button label in message view to decline a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_decline"/>
+    <string name="message_invite_decline">"လက်မခံ"</string>
+
+    <!-- An enumeration comma for separating items in lists. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=20]-->
+    <add-resource type="string" name="send_anyway"/>
+    <string name="send_anyway">"ဘာဘဲဖြစ်ဖြစ် ပို့ရန်"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"အိုကေ"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"လုပ်ပြီး"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"ထားတော့"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="clear"/>
+    <string name="clear">"ရှင်းရန်"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="next"/>
+    <string name="next">"ရှေ့ဆက်"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="previous"/>
+    <string name="previous">"ယခင်"</string>
+
+    <!-- Sync status errors. Please do not change the order [CHAR LIMIT=100] -->
+    <add-resource type="array" name="sync_status"/>
+    <string-array name="sync_status">
+        <item>"အောင်မြင်"</item>
+        <item>"ချိတ်ဆက်မှု မရှိ"</item>
+        <item>"လက်မှတ်ထိုး မ၀င်နိုင်ခဲ့ပါ"</item>
+        <item>"လုံခြုံရေး အမှား"</item>
+        <item>"စင့်က် မလုပ်နိုင်ခဲ့ပါ"</item>
+        <item>"အင်တာနက် အမှား"</item>
+        <item>"ဆာဗား အမှား"</item>
+    </string-array>
+
+    <!-- Widget strings -->
+    <!-- Displayed when user adds a new widget. Tapping on the widget in this
+          mode will bring user to the account selection screen [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure"/>
+    <string name="tap_to_configure">"စသတ်မှတ်ရန် တို့ထိပါ"</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder [CHAR LIMIT=60] -->
+    <add-resource type="string" name="non_synced_folder_description"/>
+    <string name="non_synced_folder_description">"စကားဝိုင်းကို ကြည့်ရန် ဤဖိုလ်ဒါကို စင့်က်လုပ်ပါ။"</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder.  This is the text of the
+         button that will allow the user to configure sync for the folder [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure_folder_sync"/>
+    <string name="tap_to_configure_folder_sync">"ဖိုလ်ဒါကို စင့်က် လုပ်ရန်"</string>
+
+    <!-- Displayed in widget when unread count > 99. [CHAR LIMIT=4] -->
+    <add-resource type="string" name="widget_large_unread_count"/>
+    <string name="widget_large_unread_count">%d+</string>
+
+    <!-- Displayed when there are >99 unseen messages, see:unseen_count [CHAR LIMIT=3] -->
+    <add-resource type="string" name="large_unseen_count"/>
+    <string name="large_unseen_count">"<xliff:g id="COUNT">%d</xliff:g>+ သစ်"</string>
+
+    <!-- Displayed when there are unseen messages [CHAR LIMIT=3] [BACKUP_MESSAGE_ID: 3377106103106345367] -->
+    <add-resource type="string" name="unseen_count"/>
+    <string name="unseen_count">"<xliff:g id="COUNT">%d</xliff:g> သစ်"</string>
+
+    <add-resource type="plurals" name="actionbar_unread_messages"/>
+    <plurals name="actionbar_unread_messages">
+        <!-- String for the actionbar subtitle when messages are unread [CHAR LIMIT=30] -->
+        <item quantity="other">"မဖတ်ရသေး <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+    </plurals>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default Inbox. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"စကားဝိုင်းများ နောက်ထပ် ကြည့်မည်"</string>
+
+    <!-- Displayed while we load a conversation. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="loading_conversation"/>
+    <string name="loading_conversation">"တင်နေ\u2026"</string>
+
+    <!-- Name of the Mailboxes activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_mailbox_selection"/>
+    <string name="activity_mailbox_selection">"အကောင့်ကို ရွေးရန်"</string>
+
+    <!-- Name of the Folders activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_folder_selection"/>
+    <string name="activity_folder_selection">"ဖိုလ်ဒါကို ရွေးရန်"</string>
+
+    <!-- Name of the Folder shortcut widget. Should use "Email" to refer to the app. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="folder_shortcut_widget_label"/>
+    <string name="folder_shortcut_widget_label">"ဖိုလ်ဒါကို အီးမေးလ် လုပ်ရန်"</string>
+
+    <!-- Folder selection dialog -->
+    <!-- Title for change folders dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="change_folders_selection_dialog_title"/>
+    <string name="change_folders_selection_dialog_title">"ဖိုလ်ဒါများ ပြောင်းရန်"</string>
+    <!-- Title for move to dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="move_to_selection_dialog_title"/>
+    <string name="move_to_selection_dialog_title">"ရွှေ့ရန်"</string>
+    <!-- Shown in light gray in the Search box when no text has been entered [CHAR LIMIT=20]-->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"ရှာဖွေရန်"</string>
+    <add-resource type="string" name="search_input_limit_number"/>
+    <string name="search_input_limit_number">"ရှာဖွေမည့် စာလုံး ထည့်သွင်းနိုင်သည့် စာလုံးရေ ကန့်သတ် 40"</string>
+    <!-- Search Results: Text for status of the search when the results are completely loaded [CHAR LIMIT=10] -->
+    <add-resource type="string" name="search_results_loaded"/>
+    <string name="search_results_loaded"><xliff:g id="searchCount">%1$d</xliff:g></string>
+    <!-- Voice search is not supported on this device [CHAR LIMIT=100] -->
+    <add-resource type="string" name="voice_search_not_supported"/>
+    <string name="voice_search_not_supported">"ဒီကိရိယာ ထဲတွင် အသံဖြင့် ရှာဖွေမှုကို ပံ့ပိုးမထားပါ။"</string>
+    <!-- Description of the back button [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_back_desc"/>
+    <string name="search_back_desc">"ရှာဖွေကို ပိတ်ရန်"</string>
+    <!-- Description of the voice icon [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_voice_desc"/>
+    <string name="search_voice_desc">"အသံဖြင့် ရှာဖွေမှု စတင်ရန်"</string>
+    <!-- Description of the clear icon (clears the current input text in the search bar) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_clear_desc"/>
+    <string name="search_clear_desc">"ရှာဖွေမှု စာသားကို ရှင်းပစ်ရန်"</string>
+
+    <!-- Shown in conversation list footer when application cannot make a connection [CHAR LIMIT=20]-->
+    <add-resource type="string" name="network_error"/>
+    <string name="network_error">"ချိတ်ဆက်မှု မရှိ"</string>
+    <!-- Button at bottom of conversation list screen if last attempt to load conversations failed [CHAR LIMIT=20]-->
+    <add-resource type="string" name="retry"/>
+    <string name="retry">"ထပ်စမ်းရန်"</string>
+    <!-- Button at bottom of conversation list screen if the folder for which contents are being shown supports loading more on demand [CHAR LIMIT=20]-->
+    <add-resource type="string" name="load_more"/>
+    <string name="load_more">"ထပ် တင်ရန်"</string>
+
+    <!-- Text for dummy attachments to load the actual attachment. This is not an ideal string, but it's too late to add a new string and get it translated -->
+    <add-resource type="string" name="load_attachment"/>
+    <string name="load_attachment">@string/load_more</string>
+
+    <!-- Shortcut strings -->
+    <!-- Title for shortcut naming dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="shortcut_name_title"/>
+    <string name="shortcut_name_title">"ဖိုလ်ဒါ ဖြတ်လမ်းကို အမည်ပေးရန်"</string>
+
+    <!-- Wait fragment strings -->
+    <!-- Displayed in title bar during the initial sync  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="wait_for_sync_title"/>
+    <string name="wait_for_sync_title">"စင့်က် လုပ်ရန် စောင့်နေ"</string>
+    <!-- Title for the screen displayed during the initial sync [CHAR LIMIT=100]  -->
+    <add-resource type="string" name="not_synced_title"/>
+    <string name="not_synced_title">"အကောင့်ကို စင့်က် မလုပ်ရသေး"</string>
+    <!-- Displayed in the middle of the screen during the initial sync [CHAR LIMIT=300]-->
+    <add-resource type="string" name="wait_for_manual_sync_body"/>
+    <string name="wait_for_manual_sync_body">"ဤအကောင့်ကို အလိုအလျောက် စင့်က်လုပ်ရန် သတ်မှတ် မထားပါ။ မေးလ်ကို တစ်ကြိမ် စင့်က်လုပ်ရန်\n "<b>" ယခု စင့်က်လုပ်"</b>" ကို ထိပါ၊ သို့မဟုတ် ဒီအကောင့်အတွက် အလိုအလျောက် မေးလ်ကို စင့်က် လုပ်ရန်ကို သတ်မှတ်ရန် "<b>" စင့်က်လုပ်မှု ဆက်တင် ပြောင်းလဲရန် "</b>" ထဲမှာ သတ်မှတ်ပေးပါ။"</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will sync users mail for the selected account. [CHAR LIMIT=12]  -->
+    <add-resource type="string" name="manual_sync"/>
+    <string name="manual_sync">"ယခု စင့်လုပ်"</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will open sync setting screen for accounts. [CHAR LIMIT=30]  -->
+    <add-resource type="string" name="change_sync_settings"/>
+    <string name="change_sync_settings">"စင့်က် ဆက်တင်များ ပြောင်းရန်"</string>
+
+    <!-- Displayed when we could not load a photo in the photo viewer. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="photo_load_failed"/>
+    <string name="photo_load_failed">"ပုံကို မတင်နိုင်ခဲ့"</string>
+
+    <!--  The move message / change labels action can't be taken because the selected messages
+        come from different accounts -->
+    <add-resource type="string" name="cant_move_or_change_labels"/>
+    <string name="cant_move_or_change_labels">"ရွေးမှုထဲမှာ အကောင့်အများ ပါနေ၍ မရွှေ့နိုင်ပါ။"</string>
+
+    <!-- Format string used when displaying a summary in a message summary in list notification that was triggered by several new conversations.
+         Extra space between sender and subject is intentional.  [CHAR LIMIT=120] -->
+    <add-resource type="string" name="multiple_new_message_notification_item"/>
+    <string name="multiple_new_message_notification_item"><b>"<xliff:g id="SENDER">%1$s</xliff:g>"</b>"<xliff:g id="SUBJECT">%2$s</xliff:g>"</string>
+
+    <!-- Format string used when displaying the big text of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_big_text"/>
+    <string name="single_new_message_notification_big_text">"<xliff:g id="SUBJECT">%1$s</xliff:g>\n<xliff:g id="SNIPPET">%2$s</xliff:g>"</string>
+
+    <!-- Displayed in a message subheading. Ignore the current spam warning. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="ignore_spam_warning"/>
+    <string name="ignore_spam_warning">"လျစ်လျူရှုပါ၊ စာကို ယုံသည်"</string>
+
+    <!-- Displayed in the message heading. Shown if the message was sent via another domain. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="via_domain"/>
+    <string name="via_domain">"<xliff:g id="VIADOMAIN">%1$s</xliff:g> မှတစ်ဆင့်"</string>
+
+    <!-- Button text for the button to click to have the user sign in again or adjust their credentials. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="signin"/>
+    <string name="signin">"လက်မှတ်ထိုး ဝင်ရန်"</string>
+    <!-- Button text for the button to click for more information. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="info"/>
+    <string name="info">"အင်ဖို"</string>
+    <!-- Button text for the button to click to report feedback. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="report"/>
+    <string name="report">"အစီရင်ခံရန်"</string>
+    <!-- Button text for the button to click to show newly received messages in the active thread. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="show"/>
+    <string name="show">"ပြသရန်"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sync_error"/>
+    <string name="sync_error">"စင့်က်လုပ် မရနိုင်ခဲ့။"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="sync_error_message"/>
+    <string name="sync_error_message">"သင်၏ ကိရိယာ ထဲတွင် စင့်က်လုပ်ရန် နေရာ မလုံလောက်ပါ။"</string>
+    <!-- Button text for the button to click to go to the manage storage settings screen. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="storage"/>
+    <string name="storage">"သိုလှောင်မှု"</string>
+
+    <!-- Token used as a divider between senders -->
+    <add-resource type="string" name="senders_split_token"/>
+    <string name="senders_split_token">,\u00A0</string>
+    <add-resource type="string" name="draft_count_format"/>
+    <string name="draft_count_format">"\u00A0(<xliff:g id="count">%1$s</xliff:g>)"</string>
+
+    <!-- String used in the FolderListFragment to mark the start of user-defined folders -->
+    <add-resource type="string" name="all_folders_heading"/>
+    <string name="all_folders_heading">"ဖိုလ်ဒါများ အားလုံး"</string>
+    <!-- String used in the FolderListFragment to mark the start of recent folders -->
+    <add-resource type="string" name="recent_folders_heading"/>
+    <string name="recent_folders_heading">"မကြာခင်က ဖိုလ်ဒါများ"</string>
+
+    <!-- Dialog title when showing message header details in a popup window. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"စာ၏အသေးစိတ်များ"</string>
+
+    <!-- General preference: Label of the setting for the direction to move to
+         when deleting the current message.
+         Options contain "newer message","older message", etc. [CHAR LIMIT=32] -->
+    <add-resource type="string" name="preference_advance_to_title"/>
+    <string name="preference_advance_to_title">"အော်တို-ရှေ့တိုး"</string>
+
+    <!-- The auto-advance modes -->
+    <add-resource type="array" name="prefEntries_autoAdvance"/>
+    <string-array name="prefEntries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"ပိုသစ်သော"</item>
+        <!-- Older conversation -->
+        <item>"ပိုဟောင်း"</item>
+        <!-- Conversation list -->
+        <item>"စကားဝိုင်း စာရင်း"</item>
+    </string-array>
+
+    <!-- Description for each auto-advance option to display after the user has picked one -->
+    <!-- The entries here must correspond to the entries in prefEntries_autoAdvance [CHAR LIMIT=60] -->
+    <add-resource type="array" name="prefSummaries_autoAdvance"/>
+    <string-array name="prefSummaries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"သင် ဖျက်ပြီး နောက်မှာ ပိုသစ်သော စကားဝိုင်းကို ပြရန်"</item>
+        <!-- Older conversation -->
+        <item>"သင် ဖျက်ပြီးနောက်မှာ ပိုဟောင်းသော စကားဝိုင်းကို ပြရန်"</item>
+        <!-- Conversation list -->
+        <item>"သင် ဖျက်ပြီး နောက်မှာ စကားဝိုင်း စာရင်းကို ပြရန်"</item>
+    </string-array>
+
+    <!-- Dialog title for the auto-advance list -->
+    <add-resource type="string" name="prefDialogTitle_autoAdvance"/>
+    <string name="prefDialogTitle_autoAdvance">"သို့ ရှေ့တိုးရန်"</string>
+
+    <!-- Settings screen, title of "Restore default for "Show pictures"" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_title"/>
+    <string name="clear_display_images_whitelist_title">"ပုံ အတည်ပြုချက်များကို ရှင်းရန်"</string>
+
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear picture approvals" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_title"/>
+    <string name="clear_display_images_whitelist_dialog_title">"ပုံ ခွင့်ပြုချက်များကို ရှင်းလင်းရမလား?"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when tapping
+    "Clear picture approvals" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_message"/>
+    <string name="clear_display_images_whitelist_dialog_message">"သင် ယခင်က ခွင့်ပြုခဲ့သော ပို့သူများထံမှ ထည့်သွင်း ပုံများ ပြသမှုကို ရပ်မည်။"</string>
+
+    <!-- Message shown in toast when the user taps "Restore default for "Show pictures"" in Gmail general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="sender_whitelist_cleared"/>
+    <string name="sender_whitelist_cleared">"ပုံများကို အလိုအလျောက် ပြမည် မဟုတ်။"</string>
+
+    <!-- Settings screen, name of the setting that lets the user choose their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_title"/>
+    <string name="preferences_signature_title">"လက်မှတ်"</string>
+    <!-- Settings screen, title of the dialog that lets the user configure their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_dialog_title"/>
+    <string name="preferences_signature_dialog_title">"လက်မှတ်"</string>
+    <!-- Settings screen, setting summary text when no signature set [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferences_signature_summary_not_set"/>
+    <string name="preferences_signature_summary_not_set">"မသတ်မှတ် ရသေး"</string>
+
+    <!-- Notification action for replying to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply"/>
+    <string name="notification_action_reply">"ဖြေကြားရန်"</string>
+    <!-- Notification action for replying-all to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply_all"/>
+    <string name="notification_action_reply_all">"အားလုံးကို ဖြေကြား"</string>
+    <!-- Notification action for archiving a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_archive"/>
+    <string name="notification_action_archive">"မော်ကွန်းတင်ရန်"</string>
+    <!-- Notification action for removing a label from a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_remove_label"/>
+    <string name="notification_action_remove_label">"တံဆပ်ကို ဖယ်ရှားရန်"</string>
+    <!-- Notification action for deleting a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_delete"/>
+    <string name="notification_action_delete">"ဖျက်ပစ်ရန်"</string>
+
+    <!-- Notification undo text after archiving a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_archive"/>
+    <string name="notification_action_undo_archive">"မော်ကွန်းတင်ပြီး"</string>
+    <!-- Notification undo text after removing a label from a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_remove_label"/>
+    <string name="notification_action_undo_remove_label">"တံဆိပ်ကို ဖယ်ရှားပြီး"</string>
+    <!-- Notification undo text after deleting a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_delete"/>
+    <string name="notification_action_undo_delete">"ဖျက်ပြီး"</string>
+
+    <!-- Regex that specifies veiled addresses. These are all empty because this is disabled currently. -->
+    <add-resource type="string" name="veiled_address"/>
+    <string name="veiled_address"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text"/>
+    <string name="veiled_alternate_text"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text_unknown_person"/>
+    <string name="veiled_alternate_text_unknown_person"></string>
+    <!-- Summary string to be shown instead of a veiled recipient. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_summary_unknown_person"/>
+    <string name="veiled_summary_unknown_person"></string>
+
+    <!-- Notification ticker text for per-label notification [CHAR LIMIT=30]-->
+    <add-resource type="string" name="label_notification_ticker"/>
+    <string name="label_notification_ticker">"<xliff:g id="label">%s</xliff:g>: <xliff:g id="notification">%s</xliff:g>"</string>
+
+    <!-- Notification message to the user upon new messages for a conversation. [CHAR LIMIT=120] -->
+    <add-resource type="plurals" name="new_messages"/>
+    <plurals name="new_messages">
+        <item quantity="one">"စာ အသစ် <xliff:g id="COUNT">%1$d</xliff:g> ခု"</item>
+        <item quantity="other">"စာ အသစ် <xliff:g id="COUNT">%1$d</xliff:g> ခု"</item>
+    </plurals>
+
+    <!-- Format string used when displaying the title of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_title"/>
+    <string name="single_new_message_notification_title"><xliff:g id="sender">%1$s</xliff:g>: <xliff:g id="subject">%2$s</xliff:g></string>
+
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"အသံတိတ်"</string>
+
+    <!-- Settings screen, preference name for archive vs. delete [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preference_removal_action_title"/>
+    <string name="preference_removal_action_title">"ပုံသေ လုပ်ဆောင်ချက်"</string>
+    <!-- Options to select from for whether to have archive or delete as the remove action [CHAR LIMIT=50] -->
+    <add-resource type="array" name="prefEntries_removal_action"/>
+    <string-array name="prefEntries_removal_action">
+        <item>"မော်ကွန်းတင်ရန်"</item>
+        <item>"ဖျက်ပစ်ရန်"</item>
+    </string-array>
+    <!-- Description of currently selected option of whether to use archive or delete as remove action [CHAR LIMIT=200] -->
+    <add-resource type="array" name="prefSummaries_removal_action_summary"/>
+    <string-array name="prefSummaries_removal_action_summary">
+        <item>"မော်ကွန်းတင်ရန်"</item>
+        <item>"ဖျက်ပစ်ရန်"</item>
+    </string-array>
+    <!-- Dialog title for the choosing whether to use archive or delete as remove action [CHAR LIMIT=150] -->
+    <add-resource type="string" name="prefDialogTitle_removal_action"/>
+    <string name="prefDialogTitle_removal_action">"ပုံသေ လုပ်ဆောင်ချက်"</string>
+
+    <!--  Settings screen, Reply to all default setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_default_reply_all_title"/>
+    <string name="preferences_default_reply_all_title">"အားလုံးကို ဖြေကြားရန်"</string>
+    <!--  Settings screen, Reply to all default setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_default_reply_all_summary_impl"/>
+    <string name="preferences_default_reply_all_summary_impl">"စာ ဖြေကြားမှုများ အတွက် ပုံသေ အဖြစ် အသုံးပြုရန်"</string>
+
+    <!-- Preference name for swipe actions preference [CHAR LIMIT=100]-->
+    <add-resource type="string" name="preference_swipe_title"/>
+    <string name="preference_swipe_title">"ပွတ်ဆွဲ လုပ်ဆောင်ချက်များ"</string>
+    <!-- Preference description swiping in conversation list option [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_swipe_description"/>
+    <string name="preference_swipe_description">"စကားဝိုင်း စာရင်း ထဲမှာ"</string>
+
+    <!-- Preference name for whether to display sender images in conversation list [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_sender_image_title"/>
+    <string name="preference_sender_image_title">"ပို့သူ ပုံ"</string>
+    <!-- Preference description for whether to display sender image option [CHAR LIMIT=200] -->
+    <add-resource type="string" name="preference_sender_image_description"/>
+    <string name="preference_sender_image_description">"စကားဝိုင်း စာရင်း ထဲမှာ အမည်၏ ဘေးမှာ ပြရန်"</string>
+
+    <!-- Conversation list screen overflow menu in trash folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_trash"/>
+    <string name="empty_trash">"အမှိုက်ပုံးကို ရှင်းပါ"</string>
+
+    <!-- Conversation list screen overflow menu in spam folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_spam"/>
+    <string name="empty_spam">"စပမ်ကို ရှင်းပစ်မည်"</string>
+
+    <!-- Dialog title for empty trash confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_trash_dialog_title"/>
+    <string name="empty_trash_dialog_title">"အမှိုက်ပုံး ရှင်းမလား?"</string>
+
+    <!-- Dialog title for empty spam confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_spam_dialog_title"/>
+    <string name="empty_spam_dialog_title">"စပမ်ကို ရှင်းပစ်ရမလား?"</string>
+
+    <!-- Dialog message for empty folder confirmation dialog [CHAR LIMIT=300] -->
+    <add-resource type="plurals" name="empty_folder_dialog_message"/>
+    <plurals name="empty_folder_dialog_message">
+        <item quantity="one">"စာ <xliff:g id="COUNT">%1$d</xliff:g> ထာဝရ ဖျက်ခံရမည်။"</item>
+        <item quantity="other">"စာ <xliff:g id="COUNT">%1$d</xliff:g> ထာဝရ ဖျက်ခံရမည်။"</item>
+    </plurals>
+
+    <!-- Strings used for accessibility for the items that toggles the drawer action  -->
+    <add-resource type="string" name="drawer_open"/>
+    <string name="drawer_open">"လမ်းကြောင်းပြ အံဆွဲကို ဖွင့်ပါ"</string>
+    <add-resource type="string" name="drawer_close"/>
+    <string name="drawer_close">"လမ်းကြောင်းပြ အံဆွဲကို ပိတ်ပါ"</string>
+
+    <add-resource type="string" name="conversation_photo_welcome_text"/>
+    <string name="conversation_photo_welcome_text">"ပို့သူ ပုံကို ထိခြင်းဖြင့် ထိုစကားဝိုင်းကို ရွေးပါ။"</string>
+
+    <add-resource type="string" name="long_press_to_select_tip"/>
+    <string name="long_press_to_select_tip">"&amp;amp ကို ထိပါ၊ ​စကားဝိုင်း တစ်ခုကို ရွေးရန် ဖိကိုင်ထားပါ၊ ပြီးနောက် ထပ်ရွေးရန် ထိပါ။"</string>
+
+    <!-- Content description for the folder icon for nested folders. -->
+    <add-resource type="string" name="folder_icon_desc"/>
+    <string name="folder_icon_desc">"ဖိုလ်ဒါ အိုင်ကွန်"</string>
+
+    <!--  Button, "Add account" in the preference screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="add_account"/>
+    <string name="add_account">"အကောင့် ထည့်ဂရန်"</string>
+
+    <!-- Content description for the "X" image icon for dismissing a tip. This is used for spoken description of the icon when touch explore is enabled. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="dismiss_tip_hover_text"/>
+    <string name="dismiss_tip_hover_text">"အကြံပေးမှုကို ပယ်ရန်"</string>
+
+    <!-- Tip for letting user know that their device auto-sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="auto_sync_off"/>
+    <string name="auto_sync_off">"အကောင့် စင့်က်ကို ပိတ်ထားသည်။ ဖွင့်ရန် ထိလိုက်ပါ။"</string>
+
+    <!-- Tip for letting user know that their account level sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. Then prompts the user to enable sync in Gmail's
+        account settings. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="account_sync_off"/>
+    <string name="account_sync_off">"အကောင့် စင့်က် ပိတ်ထားသည်။ &lt;a href=\'http://www.example.com\'&gt;Account settings.&lt;/a&gt; ထဲမှာ ဖွင့်ပေးပါ"</string>
+
+    <!-- Hint text that there are X number of unsent messages users
+    Outbox. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unsent_messages_in_outbox"/>
+    <string name="unsent_messages_in_outbox">"<xliff:g id="OUTBOX">%2$s</xliff:g> တွင် <xliff:g id="NUMBER">%1$s</xliff:g> ကို မပို့ရသေး"</string>
+
+    <!-- Title of dialog to turn auto-sync on [CHAR LIMIT=100] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_title">"အော်တို-စင့်က်ကို ဖွင့်ရမလား?"</string>
+
+    <!-- Text of dialog to turn auto-sync on [CHAR LIMIT=500] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_body">"Gmail သာမက၊ appများ နှင့် အကောင့်များ အားလုံးထဲ သင်ပြုလုပ်ခဲ့သော အပြောင်းအလဲများကို ၀က်ဘ်၊ သင်၏ ကိရိယာများ နှင့် သင်၏<xliff:g id="PHONE_OR_TABLET">%1$s</xliff:g> အကြားမှာ စင့်က်လုပ်ပေးမည်။"</string>
+
+    <!-- Phone (vs. tablet) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="phone"/>
+    <string name="phone">"ဖုန်း"</string>
+
+    <!-- Tablet (vs. phone) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="tablet"/>
+    <string name="tablet">"တက်ဘလက်"</string>
+
+    <!-- Confirm button text for dialog to turn auto-sync on [CHAR
+         LIMIT=30] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_confirm_btn"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"ဖွင့်ရန်"</string>
+
+    <!-- Button in conversation list to show more folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_n_more_folders"/>
+    <string name="show_n_more_folders">"ဖိုလ်ဒါ <xliff:g id="NUMBER">%1$s</xliff:g> ကို ပြရန်"</string>
+    <!-- Button in conversation list to hide folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_folders"/>
+    <string name="hide_folders">"ဖိုလ်ဒါများကို ဝှက်ထားရန်"</string>
+
+    <!-- Menu item text to that when clicked will allow a user to print an email message. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print"/>
+    <string name="print">"ပရင့် ထုတ်ယူရန်"</string>
+    <!-- Menu item text to that when clicked will allow a user to print an email conversation. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_all"/>
+    <string name="print_all">"အားလုံးကို ပရင့်ထုတ်ရန်"</string>
+    <!-- Number of messages in a conversation [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_messages"/>
+    <plurals name="num_messages">
+        <item quantity="one">"စာ <xliff:g id="COUNT">%1$d</xliff:g> စောင်"</item>
+        <item quantity="other">"စာ <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+    </plurals>
+    <!-- Shown to display the date of the message [CHAR LIMIT=50] -->
+    <add-resource type="string" name="date_message_received_print"/>
+    <string name="date_message_received_print">"<xliff:g id="DAY_AND_DATE">%1$s</xliff:g> <xliff:g id="TIME">%2$s</xliff:g> တွင်"</string>
+    <!-- Shown to display the to recipient(s) of the message if the message is a draft [CHAR LIMIT=20] -->
+    <add-resource type="string" name="draft_to_heading"/>
+    <string name="draft_to_heading">"သို့ မူကြမ်း:"</string>
+
+    <!-- Shown to display in the message header if the message is a draft and there are no "to" addresses in the draft [CHAR LIMIT=10] -->
+    <add-resource type="string" name="draft_heading"/>
+    <string name="draft_heading">"မူကြမ်း"</string>
+    <!-- Shown to inform the user that the quoted text for this message has been hidden. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="quoted_text_hidden_print"/>
+    <string name="quoted_text_hidden_print">"ကိုးကား စာသားကို ဝှက်ထားရန်"</string>
+    <!-- Number of attachments in a message [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_attachments"/>
+    <plurals name="num_attachments">
+        <item quantity="one">"ပူးတွဲမှု <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+        <item quantity="other">"ပူးတွဲမှုများ <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+    </plurals>
+    <!-- Title to display when an email has no subject. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"(အကြောင်းအရာ မပါ)"</string>
+
+    <!-- Action bar title for the screen to set a vacation responder (out-of-office) message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="vacation_responder"/>
+    <string name="vacation_responder">"အပန်းဖြေမှု တုံ့ပြန်သူ"</string>
+    <!-- Account preference: Title of the setting to set a vacation responder (out-of-office) message. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="preferences_vacation_responder_title"/>
+    <string name="preferences_vacation_responder_title">"အပန်းဖြေမှု တုံ့ပြန်သူ"</string>
+    <!-- Shown in vacation responder; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="vacation_responder_body_hint_text"/>
+    <string name="vacation_responder_body_hint_text">"စာ"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's contacts [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_contacts_text"/>
+    <string name="send_to_contacts_text">"ကျွန်ုပ်၏ အဆက်အသွယ်များသို့သာ ပို့ရန်"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's corporate domain [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_domain_text"/>
+    <string name="send_to_domain_text">"<xliff:g id="DOMAIN">%1$s</xliff:g> သို့သာ ပို့ရန်"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the start date of the vacation responder. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_start_date_title"/>
+    <string name="pick_start_date_title">"စတင်"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_end_date_title"/>
+    <string name="pick_end_date_title">"ပြီးဆုံး (လိုချင်မှ လုပ်ရန်)"</string>
+    <!-- Shown to display that an end date in the vacation responder has not been set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="date_not_set"/>
+    <string name="date_not_set">"မသတ်မှတ် ရသေး"</string>
+    <!-- Title text for the dialog that appears when the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=35]-->
+    <add-resource type="string" name="set_end_date_dialog_title"/>
+    <string name="set_end_date_dialog_title">"ပြီးဆုံး ရက်စွဲ (လိုချင်မှ ထည့်ရန်)"</string>
+    <!-- Shown as an option in a dialog to set a custom end date for a vacation responder message.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="custom_date"/>
+    <string name="custom_date">"စိတ်တိုင်းကျ"</string>
+    <!-- Shown as an option in a dialog to set no end date for a vacation responder message. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="date_none"/>
+    <string name="date_none">"နတ္တိ"</string>
+    <!-- Asks the user whether they wish to discard changes. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="discard_changes"/>
+    <string name="discard_changes">"ပြောင်းလဲမှုများကို စွန့်ပစ်မလား?"</string>
+    <!-- Toast, vacation responder changes were saved. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_saved"/>
+    <string name="vacation_responder_changes_saved">"အပန်းဖြေမှု တုံ့ပြန်သူ အပြောင်းအလဲများ သိမ်းဆည်းခဲ့"</string>
+    <!-- Toast, vacation responder changes were discarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_discarded"/>
+    <string name="vacation_responder_changes_discarded">"အပန်းဖြေမှု တုံ့ပြန်သူ အပြောင်းအလဲများ စွန့်ပစ်ပြီး"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is off. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_off"/>
+    <string name="vacation_responder_off">"ပိတ်ရန်"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on but does not have an end date set (only a start date). [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on"/>
+    <string name="vacation_responder_on">"<xliff:g id="DATE">%1$s</xliff:g>နေ့မှ ဖွင့်ရန်"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on and has both a start and end date set. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on_with_end_date"/>
+    <string name="vacation_responder_on_with_end_date">"<xliff:g id="START_DATE">%1$s</xliff:g> မှ <xliff:g id="END_DATE">%2$s</xliff:g> အထိ ဖွင့်ထား"</string>
+    <!-- Informs the user that both the subject and body of the vacation responder are empty
+         when they try to enable the responder. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_empty_subject_and_body_warning"/>
+    <string name="vacation_responder_empty_subject_and_body_warning">"အကြောင်းအရာ သို့မဟုတ် စာကို ထည့်ရန်"</string>
+
+    <!-- Displayed below a message that has been truncated to show the full message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="view_entire_message"/>
+    <string name="view_entire_message">"စာ တစ်စောင်လုံးကို ကြည့်ရှုရန်"</string>
+
+    <!-- Toast text for error loading an eml file -->
+    <add-resource type="string" name="eml_loader_error_toast"/>
+    <string name="eml_loader_error_toast">"ဤဖိုင်ကို မဖွင့်နိုင်"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_info"/>
+    <string name="help_and_info">"အကူအညီ"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_feedback"/>
+    <string name="help_and_feedback">"အကူအညီ &amp; တုန့်ပြန်ချက်"</string>
+
+    <!-- Solicit feedback string in about screen [CHAR LIMIT=50]-->
+    <add-resource type="string" name="feedback"/>
+    <string name="feedback">"တုံ့ပြန်ချက် ပို့ရန်"</string>
+
+    <!-- Copyright text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="copyright"/>
+    <string name="copyright">"©<xliff:g id="YEAR">%1$d</xliff:g> Google Inc."</string>
+
+    <!-- Version text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="version"/>
+    <string name="version">"<xliff:g id="APP_NAME">%1$s</xliff:g> ဗားရှင်း <xliff:g id="VERSION">%2$s</xliff:g>"</string>
+
+    <!-- Menu item: view a webpage about this application [CHAR LIMIT=50]; this MUST be overlayed -->
+    <add-resource type="string" name="view_app_page"/>
+    <string name="view_app_page"></string>
+
+    <!-- Menu item: print... [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_dialog"/>
+    <string name="print_dialog">"ပရင့် ထုတ်ရန်\u2026"</string>
+
+    <!-- Menu item: copyright information [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copyright_information"/>
+    <string name="copyright_information">"မူပိုင်ခွင့် အချက်လက်များ"</string>
+
+    <!-- Menu item: privacy policy [CHAR LIMIT=25] -->
+    <add-resource type="string" name="privacy_policy"/>
+    <string name="privacy_policy">"ကိုယ်ရေး မူဝါဒ"</string>
+
+    <!-- Menu item: open source licenses [CHAR LIMIT=25] -->
+    <add-resource type="string" name="open_source_licenses"/>
+    <string name="open_source_licenses">"အခမဲ့ ရင်းမြစ် လိုင်စင်"</string>
+
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_yes"/>
+    <string name="reply_choice_yes">"ဟုတ်"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_no"/>
+    <string name="reply_choice_no">"မဟုတ်"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_ok"/>
+    <string name="reply_choice_ok">"အိုကေ"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_hehe"/>
+    <string name="reply_choice_hehe">"ဟဲဟဲ"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_thanks"/>
+    <string name="reply_choice_thanks">"ကျေးဇူးပဲ"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_i_agree"/>
+    <string name="reply_choice_i_agree">"ကျွန်ုပ် သဘောတူသည်"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_nice"/>
+    <string name="reply_choice_nice">"ကောင်း"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_on_my_way"/>
+    <string name="reply_on_my_way">"ကျွန်ုပ်၏ လမ်းပေါ်မှာ"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_later"/>
+    <string name="reply_choice_later">"အိုကေ၊ ကျွန်ုပ် ပြန်ဖြေပါရစေ"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_smiling_face"/>
+    <string name="reply_choice_smiling_face">:)</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_frowning_face"/>
+    <string name="reply_choice_frowning_face">:(</string>
+
+    <add-resource type="array" name="reply_choices"/>
+    <array name="reply_choices">
+        <item>@string/reply_choice_yes</item>
+        <item>@string/reply_choice_no</item>
+        <item>@string/reply_choice_ok</item>
+        <item>@string/reply_choice_hehe</item>
+        <item>@string/reply_choice_thanks</item>
+        <item>@string/reply_choice_i_agree</item>
+        <item>@string/reply_choice_nice</item>
+        <item>@string/reply_on_my_way</item>
+        <item>@string/reply_choice_later</item>
+        <item>@string/reply_choice_smiling_face</item>
+        <item>@string/reply_choice_frowning_face</item>
+    </array>
+
+    <!-- Settings screen, heading for grouping action confirmation related  settings together [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_header_action_confirmations"/>
+    <string name="preference_header_action_confirmations">"လုပ်ဆောင်ချက် အတည်ပြုမှုများ"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_delete_title"/>
+    <string name="preference_confirm_before_delete_title">"မဖျက်ခင် အတည်ပြုရန်"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_archive_title"/>
+    <string name="preference_confirm_before_archive_title">"မော်ကွန်း မတင်မီ အတည်ပြုရန်"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_send_title"/>
+    <string name="preference_confirm_before_send_title">"မပို့မီ အတည်ပြုရန်"</string>
+
+    <!--  Settings screen, Conversation mode setting titile  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_conversation_mode_title"/>
+    <string name="preferences_conversation_mode_title">"အော်တို-အံကိုက် စာများ"</string>
+    <!--  Settings screen, Conversation mode setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_conversation_mode_summary"/>
+    <string name="preferences_conversation_mode_summary">"စာများကို မျက်နှာပြင်နှင့် အံကိုက်စေရန် ချုံ့ပါ"</string>
+
+    <!--  Settings screen, disable snap headers setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_disable_snap_headers_title"/>
+    <string name="preferences_disable_snap_headers_title">"စာ လုပ်ဆောင်ချက်များ"</string>
+
+    <!-- The snap header summaries -->
+    <add-resource type="array" name="prefSummaries_snapHeader"/>
+    <string-array name="prefSummaries_snapHeader">
+        <item>"စာ လုပ်ဆောင်ချက်များကို မျက်နှာပြင် ထိပ်မှာ အမြဲ ပြရန်"</item>
+        <item>"ပုံတူနှင့် ဆက်စပ်မှသာ စာ လုပ်ဆောင်ချက်များကို မျက်နှာပြင် ထိပ်မှာ အမြဲ ပြရန်"</item>
+        <item>"စာ လုပ်ဆောင်ချက်များကို စာ၏ ခေါင်းစီး အပြင်မှာ မပြပါနှင့်"</item>
+    </string-array>
+
+    <!-- The snap header modes -->
+    <add-resource type="array" name="prefEntries_snapHeader"/>
+    <string-array name="prefEntries_snapHeader">
+        <item>"အမြဲ ပြရန်"</item>
+        <item>"ပုံတူ ထဲမှာသာ ပြရန်"</item>
+        <item>"မပြပါနှင့်"</item>
+    </string-array>
+
+    <!-- Settings screen, title of "Clear search history" menu item -->
+    <add-resource type="string" name="clear_history_title"/>
+    <string name="clear_history_title">"ရှာဖွေမှု မှတ်တမ်းကို ရှင်းရန်"</string>
+    <!-- Message shown in toast when the user taps "clear search history" in general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="search_history_cleared"/>
+    <string name="search_history_cleared">"ရှာဖွေမှု မှတ်တမ်း ရှင်းပြီးပြီ။"</string>
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_history_dialog_title"/>
+    <string name="clear_history_dialog_title">"ရှာဖွေမှု မှတ်တမ်းကို ရှင်းရမလား?"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_history_dialog_message"/>
+    <string name="clear_history_dialog_message">"သင် အရင်တုန်းက လုပ်ခဲ့သည့် ရှာဖွေမှု အားလုံး ဖယ်ရှားခံရမည်၊"</string>
+
+    <!-- Settings screen, preference item to launch into Settings [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_accounts_menu_item"/>
+    <string name="manage_accounts_menu_item">"အကောင့်များကို စီမံခန့်ခွဲရန်"</string>
+
+    <!-- Settings screen, main title of the screen, big font [CHAR LIMIT=50]-->
+    <add-resource type="string" name="general_preferences_title"/>
+    <string name="general_preferences_title">"အထွေထွေ ဆက်တင်များ"</string>
+
+    <!-- Settings screen title -->
+    <!-- Name of the Settings activity -->
+    <add-resource type="string" name="activity_preferences"/>
+    <string name="activity_preferences">"ဆက်တင်များ"</string>
+
+    <!-- Content description for the action menu overflow button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="overflow_description"/>
+    <string name="overflow_description">"နောက်ထပ် ရွေးစရာများ"</string>
+
+    <!--Email search function filter text  -->
+    <add-resource type="string" name="mail_search_factor_all"/>
+    <string name="mail_search_factor_all">"အားလုံး"</string>
+    <add-resource type="string" name="mail_search_factor_subject"/>
+    <string name="mail_search_factor_subject">"အကြောင်းအရာ"</string>
+    <add-resource type="string" name="mail_search_factor_sender"/>
+    <string name="mail_search_factor_sender">"ပို့သူ"</string>
+    <add-resource type="string" name="mail_search_factor_receiver"/>
+    <string name="mail_search_factor_receiver">"လက်ခံသူ"</string>
+    <add-resource type="string" name="mail_search_factor_result"/>
+    <string name="mail_search_factor_result">"ရလာဒ်များ"</string>
+
+
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_forward_title"/>
+    <string name="preference_confirm_before_forward_title">"လက်ဆင့်ကမ်းမပို့မီ အတည်ပြုပါ"</string>
+    <!-- Confirm forward dialog message -->
+    <add-resource type="string" name="confirm_forward_message"/>
+    <string name="confirm_forward_message">"ဤမက်ဆေ့ချ်တွင် သယ်ယူမထားသည့် ပူးတွဲဖိုင် (များ) ရှိလျှင်၊ သင်ဘာလိုချင်ပါသလဲ?"</string>
+    <add-resource type="string" name="confirm_forward_normal"/>
+    <string name="confirm_forward_normal">"သယ်ယူပြီးမှ ပို့ပါ"</string>
+    <add-resource type="string" name="confirm_forward_drop_unloaded"/>
+    <string name="confirm_forward_drop_unloaded">"သယ်ယူမထားခြင်းကို လွှတ်ချပါ"</string>
+    <!-- Forward dialog message -->
+    <add-resource type="string" name="forward_dialog_message"/>
+    <string name="forward_dialog_message">"ဤမက်ဆေ့ချ်ကို လက်ဆင့်ကမ်းလိုပါသလား?"</string>
+    <!-- Text when there is a security hold on an account that needs to be accepted. The email address param takes the for "abc@xyz.com" -->
+    <add-resource type="string" name="security_hold_required_text"/>
+    <string name="security_hold_required_text">"<xliff:g id="EMAIL_ADDRESS">%1$s</xliff:g> အတွက် လုံခြုံရေးကို မွမ်းမံရန် လိုအပသည်"</string>
+
+    <!-- Text to go to the dialog to accept the security hold -->
+    <add-resource type="string" name="update_security_text"/>
+    <string name="update_security_text">"ယခု မွမ်းမံပါ"</string>
+    <!-- Shown when user submits a form. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="forms_are_disabled"/>
+    <string name="forms_are_disabled">"Gmail ထဲမှာ ပုံစံများကို ပိတ်ထား"</string>
+    <add-resource type="string" name="download_first"/>
+    <string name="download_first">"ပထမဦးစွာ ဒေါင်းလုပ်ပြုလုပ်ပါ"</string>
+    <add-resource type="string" name="save_to"/>
+    <string name="save_to">"ဖိုင်အားသိမ်းရန်-"</string></resources>

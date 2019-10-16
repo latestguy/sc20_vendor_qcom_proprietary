@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2009 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Name of the status bar as seen in the applications info settings page. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"UI система"</string>
+
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <add-resource type="string" name="status_bar_clear_all_button"/>
+    <string name="status_bar_clear_all_button">"Обриши"</string>
+
+    <!-- Title shown in recents popup for removing an application from the list -->
+    <add-resource type="string" name="status_bar_recent_remove_item_title"/>
+    <string name="status_bar_recent_remove_item_title">"Уклањање са листе"</string>
+
+    <!-- Title shown in recents popup for inspecting an application's properties -->
+    <add-resource type="string" name="status_bar_recent_inspect_item_title"/>
+    <string name="status_bar_recent_inspect_item_title">"Информације о апликацији"</string>
+
+    <!-- Message shown in the middle of the screen after clicking on the recent apps button
+         when there are no recent apps to show. Also used for accessibility. [CHAR LIMIT=45]-->
+    <add-resource type="string" name="status_bar_no_recent_apps"/>
+    <string name="status_bar_no_recent_apps">"Недавни екрани се појављују овде"</string>
+
+    <!-- Content description for the button to dismiss Recent Apps (only present on large
+         devices) -->
+    <add-resource type="string" name="status_bar_accessibility_dismiss_recents"/>
+    <string name="status_bar_accessibility_dismiss_recents">"Одбаци недавне апликације"</string>
+
+    <!-- Message that is read when you enter recent apps in TalkBack -->
+    <add-resource type="plurals" name="status_bar_accessibility_recent_apps"/>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="one">"1 екран у Прегледу"</item>
+        <item quantity="other">"%d екрана у Прегледу"</item>
+    </plurals>
+
+    <!-- The label in the bar at the top of the status bar when there are no notifications
+         showing.  [CHAR LIMIT=40]-->
+    <add-resource type="string" name="status_bar_no_notifications_title"/>
+    <string name="status_bar_no_notifications_title">"Нема обавештења"</string>
+
+    <!-- The label for the group of notifications for ongoing events in the opened version of
+         the status bar.  An ongoing call is the prime example of this.  The MP3 music player
+         might be another example.   [CHAR LIMIT=40] -->
+    <add-resource type="string" name="status_bar_ongoing_events_title"/>
+    <string name="status_bar_ongoing_events_title">"Текуће"</string>
+
+    <!-- The label for the group of notifications for recent events in the opened version of
+         the status bar.  Recently received text messsages (SMS), emails, calendar alerts, etc.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="status_bar_latest_events_title"/>
+    <string name="status_bar_latest_events_title">"Обавештења"</string>
+
+    <!-- When the battery is low, this is displayed to the user in a dialog.  The title of the low battery alert.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_low_title"/>
+    <string name="battery_low_title">"Ниво напуњености батерије је низак"</string>
+
+    <!-- A message that appears when the battery level is getting low in a dialog.  This is
+        appened to the subtitle of the low battery alert.  "percentage" is the percentage of battery
+        remaining [CHAR LIMIT=none]-->
+    <add-resource type="string" name="battery_low_percent_format"/>
+    <string name="battery_low_percent_format">"Још <xliff:g id="PERCENTAGE">%s</xliff:g>"</string>
+
+    <!-- Same as battery_low_percent_format, with a notice about battery saver if on. [CHAR LIMIT=none]-->
+    <add-resource type="string" name="battery_low_percent_format_saver_started"/>
+    <string name="battery_low_percent_format_saver_started">"Још <xliff:g id="PERCENTAGE">%s</xliff:g>. Укључена је штедња батерије."</string>
+
+    <!-- A message that appears when a USB charger is plugged in and the device does not
+    support charging on it.  That is, a charger that fits into the USB port and goes into
+    a wall socket, not into a computer. (This happens because some devices require more
+    current than the USB spec allows.  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="invalid_charger"/>
+    <string name="invalid_charger">"Пуњење преко USB-а није подржано.\nКористите само приложени пуњач."</string>
+
+    <!-- First line of invalid_charger, used in the notification form.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="invalid_charger_title"/>
+    <string name="invalid_charger_title">"Пуњење преко USB-а није подржано."</string>
+
+    <!-- Second line of invalid_charger, used in the notification form.  [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="invalid_charger_text"/>
+    <string name="invalid_charger_text">"Користите само пуњач који сте добили."</string>
+
+    <!-- When the battery is low, this is the label of the button to go to the
+         power usage activity to find out what drained the battery.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="battery_low_why"/>
+    <string name="battery_low_why">"Подешавања"</string>
+
+    <!-- Battery saver confirmation dialog title [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_saver_confirmation_title"/>
+    <string name="battery_saver_confirmation_title">"Желите ли да укључите штедњу батерије?"</string>
+
+    <!-- Battery saver confirmation dialog ok text [CHAR LIMIT=40]-->
+    <add-resource type="string" name="battery_saver_confirmation_ok"/>
+    <string name="battery_saver_confirmation_ok">"Укључи"</string>
+
+    <!-- Battery saver notification action [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="battery_saver_start_action"/>
+    <string name="battery_saver_start_action">"Укључи штедњу батерије"</string>
+
+    <!-- Name of the button that links to the Settings app. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_settings_settings_button"/>
+    <string name="status_bar_settings_settings_button">"Подешавања"</string>
+
+    <!-- Name of the button that links to the Wifi settings screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_settings_wifi_button"/>
+    <string name="status_bar_settings_wifi_button">"Wi-Fi"</string>
+
+    <!-- Label in system panel saying the device will use the orientation sensor to rotate [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_settings_auto_rotation"/>
+    <string name="status_bar_settings_auto_rotation">"Аутоматско ротирање екрана"</string>
+
+    <!-- Abbreviation / label for mute brightness mode button. Should be all caps. [CHAR LIMIT=6] -->
+    <add-resource type="string" name="status_bar_settings_mute_label"/>
+    <string name="status_bar_settings_mute_label">"УГАСИ"</string>
+
+    <!-- Abbreviation / label for automatic brightness mode button. Should be all caps. [CHAR LIMIT=6] -->
+    <add-resource type="string" name="status_bar_settings_auto_brightness_label"/>
+    <string name="status_bar_settings_auto_brightness_label">"АУТОM."</string>
+
+    <!-- Label in system panel saying the device will show notifications [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_settings_notifications"/>
+    <string name="status_bar_settings_notifications">"Обавештења"</string>
+
+    <!-- Network connection string for Bluetooth Reverse Tethering -->
+    <add-resource type="string" name="bluetooth_tethered"/>
+    <string name="bluetooth_tethered">"Веза преко Bluetooth-а"</string>
+    <!-- Title of a button to open the settings for input methods [CHAR LIMIT=30] -->
+    <add-resource type="string" name="status_bar_input_method_settings_configure_input_methods"/>
+    <string name="status_bar_input_method_settings_configure_input_methods">"Подеси методе уноса"</string>
+
+    <!-- Label of a toggle switch to disable use of the physical keyboard in favor of the IME. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_bar_use_physical_keyboard"/>
+    <string name="status_bar_use_physical_keyboard">"Физичка тастатура"</string>
+
+    <!-- Prompt for the USB device permission dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_device_permission_prompt"/>
+    <string name="usb_device_permission_prompt">"Желите ли да дозволите апликацији <xliff:g id="APPLICATION">%1$s</xliff:g> да приступа USB уређају?"</string>
+
+    <!-- Prompt for the USB accessory permission dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_permission_prompt"/>
+    <string name="usb_accessory_permission_prompt">"Желите ли да дозволите апликацији <xliff:g id="APPLICATION">%1$s</xliff:g> да приступа USB помоћном уређају?"</string>
+
+    <!-- Prompt for the USB device confirm dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_device_confirm_prompt"/>
+    <string name="usb_device_confirm_prompt">"Желите ли да се отвори <xliff:g id="ACTIVITY">%1$s</xliff:g> када се прикључи овај USB уређај?"</string>
+
+    <!-- Prompt for the USB accessory confirm dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_confirm_prompt"/>
+    <string name="usb_accessory_confirm_prompt">"Желите ли да се отвори <xliff:g id="ACTIVITY">%1$s</xliff:g> када се прикључи овај USB додатак?"</string>
+
+    <!-- Prompt for the USB accessory URI dialog [CHAR LIMIT=80] -->
+    <add-resource type="string" name="usb_accessory_uri_prompt"/>
+    <string name="usb_accessory_uri_prompt">"Инсталиране апликације не функционишу са овим USB помоћним уређајем. Сазнајте више о њему на адреси <xliff:g id="URL">%1$s</xliff:g>"</string>
+
+    <!-- Title for USB accessory dialog.  Used when the name of the accessory cannot be determined.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="title_usb_accessory"/>
+    <string name="title_usb_accessory">"USB помоћни уређај"</string>
+
+    <!-- View button label for USB dialogs.  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="label_view"/>
+    <string name="label_view">"Прикажи"</string>
+
+    <!-- Checkbox label for USB device dialogs.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="always_use_device"/>
+    <string name="always_use_device">"Користи подразумевано за овај USB уређај"</string>
+
+    <!-- Checkbox label for USB accessory dialogs.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="always_use_accessory"/>
+    <string name="always_use_accessory">"Користи подразумевано за овај USB додатак"</string>
+
+    <!-- Title of confirmation dialog for USB debugging -->
+    <add-resource type="string" name="usb_debugging_title"/>
+    <string name="usb_debugging_title">"Желите ли да дозволите отклањање USB грешака?"</string>
+
+    <!-- Message of confirmation dialog for USB debugging -->
+    <add-resource type="string" name="usb_debugging_message"/>
+    <string name="usb_debugging_message">"Дигитални отисак RSA кључа овог рачунара је:\n<xliff:g id="FINGERPRINT">%1$s</xliff:g>"</string>
+
+    <!-- Option to always allow USB debugging from the attached computer -->
+    <add-resource type="string" name="usb_debugging_always"/>
+    <string name="usb_debugging_always">"Увек дозволи са овог рачунара"</string>
+
+    <!-- Title of notification shown when trying to enable USB debugging but a secondary user is the current foreground user. -->
+    <add-resource type="string" name="usb_debugging_secondary_user_title"/>
+    <string name="usb_debugging_secondary_user_title">"Отклањање грешака на USB-у није дозвољено"</string>
+
+    <!-- Message of notification shown when trying to enable USB debugging but a secondary user is the current foreground user. -->
+    <add-resource type="string" name="usb_debugging_secondary_user_message"/>
+    <string name="usb_debugging_secondary_user_message">"Корисник који је тренутно пријављен на овај уређај не може да укључи отклањање грешака на USB-у. Да бисте користили ову функцију, пребаците на корисника са администраторским правима."</string>
+
+    <!-- Checkbox label for application compatibility mode ON (zooming app to look like it's running
+         on a phone).  [CHAR LIMIT=25] -->
+    <add-resource type="string" name="compat_mode_on"/>
+    <string name="compat_mode_on">"Зумирај на целом екрану"</string>
+
+    <!-- Checkbox label for application compatibility mode OFF (normal mode on tablets).
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="compat_mode_off"/>
+    <string name="compat_mode_off">"Развуци на цео екран"</string>
+
+    <!-- Notification ticker displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="screenshot_saving_ticker"/>
+    <string name="screenshot_saving_ticker">"Чување снимка екрана..."</string>
+    <!-- Notification title displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_saving_title"/>
+    <string name="screenshot_saving_title">"Чување снимка екрана..."</string>
+    <!-- Notification text displayed when a screenshot is being saved to the Gallery. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_saving_text"/>
+    <string name="screenshot_saving_text">"Снимак екрана се чува."</string>
+    <!-- Notification title displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_saved_title"/>
+    <string name="screenshot_saved_title">"Снимак екрана је направљен."</string>
+    <!-- Notification text displayed when a screenshot is saved to the Gallery. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_saved_text"/>
+    <string name="screenshot_saved_text">"Додирните да бисте видели снимак екрана."</string>
+    <!-- Notification title displayed when we fail to take a screenshot. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="screenshot_failed_title"/>
+    <string name="screenshot_failed_title">"Није могуће направити снимак екрана."</string>
+    <!-- Notification text displayed when we fail to save a screenshot for unknown reasons. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_save_unknown_text"/>
+    <string name="screenshot_failed_to_save_unknown_text">"Дошло је до проблема при чувању снимка екрана."</string>
+    <!-- Notification text displayed when we fail to save a screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_save_text"/>
+    <string name="screenshot_failed_to_save_text">"Чување снимка екрана није успело због ограниченог меморијског простора."</string>
+    <!-- Notification text displayed when we fail to take a screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="screenshot_failed_to_capture_text"/>
+    <string name="screenshot_failed_to_capture_text">"Апликација или организација не дозвољавају прављење снимака екрана."</string>
+
+    <!-- Title for the USB function chooser in UsbPreferenceActivity. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="usb_preference_title"/>
+    <string name="usb_preference_title">"Опције USB преноса датотека"</string>
+    <!-- Label for the MTP USB function in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="use_mtp_button_title"/>
+    <string name="use_mtp_button_title">"Прикључи као медија плејер (MTP)"</string>
+    <!-- Label for the PTP USB function in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="use_ptp_button_title"/>
+    <string name="use_ptp_button_title">"Прикључи као камеру (PTP)"</string>
+    <!-- Label for the installer CD image option in UsbPreferenceActivity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="installer_cd_button_title"/>
+    <string name="installer_cd_button_title">"Инсталирај Android пребацивање датотека за Mac"</string>
+
+    <!-- Content description of the back button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_back"/>
+    <string name="accessibility_back">"Назад"</string>
+    <!-- Content description of the home button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_home"/>
+    <string name="accessibility_home">"Почетна"</string>
+    <!-- Content description of the menu button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_menu"/>
+    <string name="accessibility_menu">"Мени"</string>
+    <!-- Content description of the recents button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_recent"/>
+    <string name="accessibility_recent">"Преглед"</string>
+    <!-- Content description of the search button for accessibility. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_search_light"/>
+    <string name="accessibility_search_light">"Претражите"</string>
+    <!-- Content description of the camera button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_camera_button"/>
+    <string name="accessibility_camera_button">"Камера"</string>
+    <!-- Content description of the phone button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_button"/>
+    <string name="accessibility_phone_button">"Телефон"</string>
+    <!-- Content description of the phone button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_voice_assist_button"/>
+    <string name="accessibility_voice_assist_button">"Гласовна помоћ"</string>
+    <!-- Content description of the unlock button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_button"/>
+    <string name="accessibility_unlock_button">"Откључајте"</string>
+    <!-- Content description of the unlock button when fingerpint is on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_button_fingerprint"/>
+    <string name="accessibility_unlock_button_fingerprint">"Дугме за откључавање, чека се на отисак прста"</string>
+    <!-- Accessibility action of the unlock button when fingerpint is on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_unlock_without_fingerprint"/>
+    <string name="accessibility_unlock_without_fingerprint">"Откључај без коришћења отиска прста"</string>
+    <!-- Click action label for accessibility for the unlock button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unlock_label"/>
+    <string name="unlock_label">"откључај"</string>
+    <!-- Click action label for accessibility for the phone button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_label"/>
+    <string name="phone_label">"отвори телефон"</string>
+    <!-- Click action label for accessibility for the voice assist button. This is not shown on-screen and is an accessibility label for the icon which launches the voice assist from the lock screen.[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voice_assist_label"/>
+    <string name="voice_assist_label">"отвори гласовну помоћ"</string>
+    <!-- Click action label for accessibility for the phone button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="camera_label"/>
+    <string name="camera_label">"отвори камеру"</string>
+    <!-- Caption for "Recents resize" developer debug feature. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_caption_resize"/>
+    <string name="recents_caption_resize">"Изабери нови распоред задатака"</string>
+    <!-- Button name for "Cancel". [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Откажи"</string>
+
+    <!-- Content description of the compatibility zoom button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_compatibility_zoom_button"/>
+    <string name="accessibility_compatibility_zoom_button">"Дугме Зум компатибилности."</string>
+
+    <!-- Content description of picture of the compatibility zoom example for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_compatibility_zoom_example"/>
+    <string name="accessibility_compatibility_zoom_example">"Зумирање са мањег на већи екран."</string>
+
+    <!-- Content description of the bluetooth icon when connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_connected"/>
+    <string name="accessibility_bluetooth_connected">"Bluetooth је прикључен."</string>
+    <!-- Content description of the bluetooth icon when connecting for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_disconnected"/>
+    <string name="accessibility_bluetooth_disconnected">"Bluetooth је искључен."</string>
+
+    <!-- Content description of the battery when no battery for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_battery"/>
+    <string name="accessibility_no_battery">"Нема батерије."</string>
+    <!-- Content description of the battery when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_one_bar"/>
+    <string name="accessibility_battery_one_bar">"Батерија од једне црте."</string>
+    <!-- Content description of the battery when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_two_bars"/>
+    <string name="accessibility_battery_two_bars">"Батерија од две црте."</string>
+     <!-- Content description of the battery when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_three_bars"/>
+    <string name="accessibility_battery_three_bars">"Батерија од три црте."</string>
+    <!-- Content description of the battery when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_full"/>
+    <string name="accessibility_battery_full">"Батерија је пуна."</string>
+
+    <!-- Content description of the phone signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_phone"/>
+    <string name="accessibility_no_phone">"Нема телефона."</string>
+    <!-- Content description of the phone signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_one_bar"/>
+    <string name="accessibility_phone_one_bar">"Сигнал телефона има једну црту."</string>
+    <!-- Content description of the phone signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_two_bars"/>
+    <string name="accessibility_phone_two_bars">"Сигнал телефона од две црте."</string>
+    <!-- Content description of the phone signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_three_bars"/>
+    <string name="accessibility_phone_three_bars">"Сигнал телефона од три црте."</string>
+    <!-- Content description of the phone signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_phone_signal_full"/>
+    <string name="accessibility_phone_signal_full">"Сигнал телефона је пун."</string>
+
+    <!-- Content description of the data signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_data"/>
+    <string name="accessibility_no_data">"Нема података."</string>
+    <!-- Content description of the data signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_one_bar"/>
+    <string name="accessibility_data_one_bar">"Сигнал за податке има једну црту."</string>
+    <!-- Content description of the data signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_two_bars"/>
+    <string name="accessibility_data_two_bars">"Сигнал за податке од две црте."</string>
+    <!-- Content description of the data signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_three_bars"/>
+    <string name="accessibility_data_three_bars">"Сигнал за податке од три црте."</string>
+    <!-- Content description of the data signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_signal_full"/>
+    <string name="accessibility_data_signal_full">"Сигнал за податке је најјачи."</string>
+
+    <!-- Content description of the wifi label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wifi_name"/>
+    <string name="accessibility_wifi_name">"Повезани сте са <xliff:g id="WIFI">%s</xliff:g>."</string>
+
+    <!-- Content description of the bluetooth label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_name"/>
+    <string name="accessibility_bluetooth_name">"Повезани сте са <xliff:g id="BLUETOOTH">%s</xliff:g>."</string>
+
+    <!-- Content description of the cast label showing what we are connected to. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cast_name"/>
+    <string name="accessibility_cast_name">"Повезани смо са уређајем <xliff:g id="CAST">%s</xliff:g>."</string>
+
+
+    <!-- Content description of the WiMAX signal when no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_wimax"/>
+    <string name="accessibility_no_wimax">"Нема WiMAX сигнала."</string>
+    <!-- Content description of the WiMAX signal when it is one bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_one_bar"/>
+    <string name="accessibility_wimax_one_bar">"WiMAX сигнал има једну црту."</string>
+    <!-- Content description of the WiMAX signal when it is two bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_two_bars"/>
+    <string name="accessibility_wimax_two_bars">"WiMAX сигнал има две црте."</string>
+    <!-- Content description of the WiMAX signal when it is three bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_three_bars"/>
+    <string name="accessibility_wimax_three_bars">"WiMAX сигнал има три црте."</string>
+    <!-- Content description of the WiMAX signal when it is full for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_wimax_signal_full"/>
+    <string name="accessibility_wimax_signal_full">"WiMAX сигнал је најјачи."</string>
+
+    <!-- Content description of the Ethernet connection when disconnected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ethernet_disconnected"/>
+    <string name="accessibility_ethernet_disconnected">"Веза са етернетом је прекинута."</string>
+    <!-- Content description of the Ethernet connection when connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ethernet_connected"/>
+    <string name="accessibility_ethernet_connected">"Етернет је повезан."</string>
+
+    <!-- Content description of an item with no signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_signal"/>
+    <string name="accessibility_no_signal">"Нема сигнала."</string>
+    <!-- Content description of an item with no signal and no connection for accessibility (not shown on the screen) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_not_connected"/>
+    <string name="accessibility_not_connected">"Није повезано."</string>
+    <!-- Content description of an item with zero signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_zero_bars"/>
+    <string name="accessibility_zero_bars">"Ниједна црта."</string>
+    <!-- Content description of an item with one signal bar for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_one_bar"/>
+    <string name="accessibility_one_bar">"Једна црта."</string>
+    <!-- Content description of an item with two signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_two_bars"/>
+    <string name="accessibility_two_bars">"Две црте."</string>
+    <!-- Content description of an item with three signal bars for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_three_bars"/>
+    <string name="accessibility_three_bars">"Три црте."</string>
+    <!-- Content description of an item with full signal for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_signal_full"/>
+    <string name="accessibility_signal_full">"Сигнал је најјачи."</string>
+
+    <!-- Content description of an item that is turned on for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_on"/>
+    <string name="accessibility_desc_on">"Укључено."</string>
+    <!-- Content description of an item that is turned off for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_off"/>
+    <string name="accessibility_desc_off">"Искључено."</string>
+    <!-- Content description of an item that is connected for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_connected"/>
+    <string name="accessibility_desc_connected">"Повезано је."</string>
+    <!-- Content description of an item that is connecting for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_connecting"/>
+    <string name="accessibility_desc_connecting">"Повезивање."</string>
+
+    <!-- Content description of the data connection type GPRS for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_gprs"/>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+
+    <!-- Content description of the data connection type 1x for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_1x"/>
+    <string name="accessibility_data_connection_1x">"1 X"</string>
+
+    <!-- Content description of the data connection type HSPA and its variants for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_hspa"/>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+
+    <!-- Content description of the data connection type 3G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3g"/>
+    <string name="accessibility_data_connection_3g">3G</string>
+
+    <!-- Content description of the data connection type 3G+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3g_plus"/>
+    <string name="accessibility_data_connection_3g_plus">3G+</string>
+
+    <!-- Content description of the data connection type 3.5G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3.5g"/>
+    <string name="accessibility_data_connection_3.5g">"3,5G"</string>
+
+    <!-- Content description of the data connection type 3.5G+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_3.5g_plus"/>
+    <string name="accessibility_data_connection_3.5g_plus">3.5G+</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g"/>
+    <string name="accessibility_data_connection_4g">4G</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g_lte"/>
+    <string name="accessibility_data_connection_4g_lte">4GLTE</string>
+
+    <!-- Content description of the data connection type 4G for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_4g_plus"/>
+    <string name="accessibility_data_connection_4g_plus">4G+</string>
+
+    <!-- Content description of the data connection type LTE for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_lte"/>
+    <string name="accessibility_data_connection_lte">LTE</string>
+
+    <!-- Content description of the data connection type LTE+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_lte_plus"/>
+    <string name="accessibility_data_connection_lte_plus">LTE+</string>
+
+    <!-- Content description of the data connection type CDMA for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_cdma"/>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+
+    <!-- Content description of the roaming data connection type for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_roaming"/>
+    <string name="accessibility_data_connection_roaming">"Роминг"</string>
+
+    <!-- Content description of the data connection type Edge for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_edge"/>
+    <string name="accessibility_data_connection_edge">"Edge"</string>
+
+    <!-- Content description of the data connection type WiFi for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_connection_wifi"/>
+    <string name="accessibility_data_connection_wifi">"Wi-Fi"</string>
+
+    <!-- Content description of the data connection with no SIM for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_sim"/>
+    <string name="accessibility_no_sim">"Нема SIM картице."</string>
+
+    <!-- Content description of the cell data. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data"/>
+    <string name="accessibility_cell_data">"Подаци за мобилне уређаје"</string>
+
+    <!-- Content description of the cell data being enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data_on"/>
+    <string name="accessibility_cell_data_on">"Подаци за мобилне уређаје су укључени"</string>
+
+    <!-- Content description of the cell data being disabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_cell_data_off"/>
+    <string name="accessibility_cell_data_off">"Подаци за мобилне уређаје су искључени"</string>
+
+    <!-- Content description of the bluetooth tethering icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_bluetooth_tether"/>
+    <string name="accessibility_bluetooth_tether">"Bluetooth привезивање."</string>
+
+    <!-- Content description of the airplane mode icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_airplane_mode"/>
+    <string name="accessibility_airplane_mode">"Режим рада у авиону."</string>
+
+    <!-- Content description of the no sim icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_no_sims"/>
+    <string name="accessibility_no_sims">"Нема SIM картице."</string>
+
+    <!-- Content description of the carrier network changing icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_carrier_network_change_mode"/>
+    <string name="accessibility_carrier_network_change_mode">"Промена мреже мобилног оператера."</string>
+
+    <!-- Content description of button to open battery details icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_details"/>
+    <string name="accessibility_battery_details">"Отвори детаље о батерији"</string>
+
+    <!-- Content description of the battery level icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_level"/>
+    <string name="accessibility_battery_level">"Батерија је на <xliff:g id="NUMBER">%d</xliff:g> посто."</string>
+
+    <!-- Content description of the battery level icon for accessibility while the device is charging (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_battery_level_charging"/>
+    <string name="accessibility_battery_level_charging">"Батерија се пуни, <xliff:g id="BATTERY_PERCENTAGE">%d</xliff:g> процената."</string>
+
+    <!-- Content description of the button for showing a settings panel in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_settings_button"/>
+    <string name="accessibility_settings_button">"Системска подешавања."</string>
+
+    <!-- Content description of the button for showing a notifications panel in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_notifications_button"/>
+    <string name="accessibility_notifications_button">"Обавештења."</string>
+
+    <!-- Content description of the button for removing a notification in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_remove_notification"/>
+    <string name="accessibility_remove_notification">"Обриши обавештење."</string>
+
+    <!-- Content description of the enabled GPS icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_gps_enabled"/>
+    <string name="accessibility_gps_enabled">"GPS је омогућен."</string>
+
+    <!-- Content description of the acquiring GPS icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_gps_acquiring"/>
+    <string name="accessibility_gps_acquiring">"Учитавање GPS-а."</string>
+
+    <!-- Content description of the TeleTypewriter(TTY) enabled icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_tty_enabled"/>
+    <string name="accessibility_tty_enabled">"TeleTypewriter је омогућен."</string>
+
+    <!-- Content description of the ringer vibrate icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ringer_vibrate"/>
+    <string name="accessibility_ringer_vibrate">"Вибрација звона."</string>
+
+    <!-- Content description of the ringer silent icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_ringer_silent"/>
+    <string name="accessibility_ringer_silent">"Нечујно звоно."</string>
+
+    <!-- Content description of the cast icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_casting"/>
+    <string name="accessibility_casting">@string/quick_settings_casting</string>
+
+    <!-- Content description of the work mode icon in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_work_mode"/>
+    <string name="accessibility_work_mode">"Режим рада"</string>
+
+    <!-- Content description to tell the user that this button will remove an application from recents -->
+    <add-resource type="string" name="accessibility_recents_item_will_be_dismissed"/>
+    <string name="accessibility_recents_item_will_be_dismissed">"Одбаците <xliff:g id="APP">%s</xliff:g>."</string>
+    <!-- Content description to tell the user an application has been removed from recents -->
+    <add-resource type="string" name="accessibility_recents_item_dismissed"/>
+    <string name="accessibility_recents_item_dismissed">"Апликација <xliff:g id="APP">%s</xliff:g> је одбачена."</string>
+    <!-- Content description to tell the user all applications has been removed from recents -->
+    <add-resource type="string" name="accessibility_recents_all_items_dismissed"/>
+    <string name="accessibility_recents_all_items_dismissed">"Све недавно коришћене апликације су одбачене."</string>
+    <!-- Content description to tell the user that this button will open application info for an application in recents -->
+    <add-resource type="string" name="accessibility_recents_item_open_app_info"/>
+    <string name="accessibility_recents_item_open_app_info">"Отворите информације о апликацији <xliff:g id="APP">%s</xliff:g>."</string>
+    <!-- Content description to tell the user an application has been launched from recents -->
+    <add-resource type="string" name="accessibility_recents_item_launched"/>
+    <string name="accessibility_recents_item_launched">"Покрећемо <xliff:g id="APP">%s</xliff:g>."</string>
+    <!-- Content description of individual recents task. -->
+    <add-resource type="string" name="accessibility_recents_task_header"/>
+    <string name="accessibility_recents_task_header">"<xliff:g id="APP">%1$s</xliff:g> <xliff:g id="ACTIVITY_LABEL">%2$s</xliff:g>"</string>
+    <!-- Content description to tell the user a notification has been removed from the notification shade -->
+    <add-resource type="string" name="accessibility_notification_dismissed"/>
+    <string name="accessibility_notification_dismissed">"Обавештење је одбачено."</string>
+
+    <!-- Content description for the notification shade panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_notification_shade"/>
+    <string name="accessibility_desc_notification_shade">"Прозор са обавештењима."</string>
+    <!-- Content description for the quick settings panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_quick_settings"/>
+    <string name="accessibility_desc_quick_settings">"Брза подешавања."</string>
+    <!-- Content description for the lock screen (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_lock_screen"/>
+    <string name="accessibility_desc_lock_screen">"Закључани екран."</string>
+    <!-- Content description for the settings button in the status bar header. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_settings"/>
+    <string name="accessibility_desc_settings">"Подешавања"</string>
+    <!-- Content description for the recent apps panel (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_recent_apps"/>
+    <string name="accessibility_desc_recent_apps">"Преглед."</string>
+    <!-- Content description for the close button in the zen mode panel introduction message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_close"/>
+    <string name="accessibility_desc_close">"Затвори"</string>
+
+    <!-- Content description of the user tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_user"/>
+    <string name="accessibility_quick_settings_user">"Корисник: <xliff:g id="USER">%s</xliff:g>."</string>
+    <!-- Content description of the wifi tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi"/>
+    <string name="accessibility_quick_settings_wifi">"<xliff:g id="signal" example="Three bars">%1$s</xliff:g>."</string>
+    <!-- Announcement made when the wifi is turned off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi_changed_off"/>
+    <string name="accessibility_quick_settings_wifi_changed_off">"Wi-Fi је искључен."</string>
+    <!-- Announcement made when the wifi is turned on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_wifi_changed_on"/>
+    <string name="accessibility_quick_settings_wifi_changed_on">"Wi-Fi је укључен."</string>
+    <!-- Content description of the mobile data tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_mobile"/>
+    <string name="accessibility_quick_settings_mobile">"Мобилна мрежа: <xliff:g id="SIGNAL">%1$s</xliff:g>. <xliff:g id="TYPE">%2$s</xliff:g>. <xliff:g id="NETWORK">%3$s</xliff:g>."</string>
+    <!-- Content description of the battery tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_battery"/>
+    <string name="accessibility_quick_settings_battery">"Батерија: <xliff:g id="STATE">%s</xliff:g>."</string>
+    <!-- Content description of the airplane mode tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_off"/>
+    <string name="accessibility_quick_settings_airplane_off">"Режим рада у авиону је искључен."</string>
+    <!-- Content description of the airplane mode tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_on"/>
+    <string name="accessibility_quick_settings_airplane_on">"Режим рада у авиону је укључен."</string>
+    <!-- Announcement made when the airplane mode changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_changed_off"/>
+    <string name="accessibility_quick_settings_airplane_changed_off">"Режим рада у авиону је искључен."</string>
+    <!-- Announcement made when the airplane mode changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_airplane_changed_on"/>
+    <string name="accessibility_quick_settings_airplane_changed_on">"Режим рада у авиону је укључен."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in priority (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_priority_on"/>
+    <string name="accessibility_quick_settings_dnd_priority_on">"Подешавање Не узнемиравај је укључено, само приоритетни прекиди."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in none (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_none_on"/>
+    <string name="accessibility_quick_settings_dnd_none_on">"Подешавање Не узнемиравај је укључено, потпуна тишина."</string>
+    <!-- Content description of the do not disturb tile in quick settings when on in alarms only (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_alarms_on"/>
+    <string name="accessibility_quick_settings_dnd_alarms_on">"Подешавање Не узнемиравај је укључено, само аларми."</string>
+     <!-- Content description of the do not disturb tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd"/>
+    <string name="accessibility_quick_settings_dnd">"Не узнемиравај."</string>
+     <!-- Content description of the do not disturb tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_off"/>
+    <string name="accessibility_quick_settings_dnd_off">"Подешавање Не узнемиравај је искључено."</string>
+    <!-- Announcement made when do not disturb changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_changed_off"/>
+    <string name="accessibility_quick_settings_dnd_changed_off">"Подешавање Не узнемиравај је искључено."</string>
+    <!-- Announcement made when do not disturb changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_dnd_changed_on"/>
+    <string name="accessibility_quick_settings_dnd_changed_on">"Подешавање Не узнемиравај је укључено."</string>
+    <!-- Content description of the bluetooth tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth"/>
+    <string name="accessibility_quick_settings_bluetooth">"Bluetooth."</string>
+    <!-- Content description of the bluetooth tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_off"/>
+    <string name="accessibility_quick_settings_bluetooth_off">"Bluetooth је искључен."</string>
+    <!-- Content description of the bluetooth tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_on"/>
+    <string name="accessibility_quick_settings_bluetooth_on">"Bluetooth је укључен."</string>
+    <!-- Content description of the bluetooth tile in quick settings when connecting (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_connecting"/>
+    <string name="accessibility_quick_settings_bluetooth_connecting">"Bluetooth се повезује."</string>
+    <!-- Content description of the bluetooth tile in quick settings when connected (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_connected"/>
+    <string name="accessibility_quick_settings_bluetooth_connected">"Bluetooth је повезан."</string>
+    <!-- Announcement made when the bluetooth is turned off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_changed_off"/>
+    <string name="accessibility_quick_settings_bluetooth_changed_off">"Bluetooth је искључен."</string>
+    <!-- Announcement made when the bluetooth is turned on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_bluetooth_changed_on"/>
+    <string name="accessibility_quick_settings_bluetooth_changed_on">"Bluetooth је укључен."</string>
+    <!-- Content description of the location tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_off"/>
+    <string name="accessibility_quick_settings_location_off">"Извештавање о локацији је искључено."</string>
+    <!-- Content description of the location tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_on"/>
+    <string name="accessibility_quick_settings_location_on">"Извештавање о локацији је укључено."</string>
+    <!-- Announcement made when the location tile changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_changed_off"/>
+    <string name="accessibility_quick_settings_location_changed_off">"Извештавање о локацији је искључено."</string>
+    <!-- Announcement made when the location tile changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_location_changed_on"/>
+    <string name="accessibility_quick_settings_location_changed_on">"Извештавање о локацији је укључено."</string>
+    <!-- Content description of the alarm tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_alarm"/>
+    <string name="accessibility_quick_settings_alarm">"Аларм је подешен за <xliff:g id="TIME">%s</xliff:g>."</string>
+    <!-- Content description of quick settings detail panel close button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_close"/>
+    <string name="accessibility_quick_settings_close">"Затворите таблу."</string>
+    <!-- Content description of zen mode time condition plus button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_more_time"/>
+    <string name="accessibility_quick_settings_more_time">"Више времена."</string>
+    <!-- Content description of zen mode time condition minus button (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_less_time"/>
+    <string name="accessibility_quick_settings_less_time">"Мање времена."</string>
+    <!-- Content description of the flashlight tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_off"/>
+    <string name="accessibility_quick_settings_flashlight_off">"Батеријска лампа је искључена."</string>
+    <!-- Content description of the flashlight tile in quick settings when unavailable (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_unavailable"/>
+    <string name="accessibility_quick_settings_flashlight_unavailable">"Лампа није доступна."</string>
+    <!-- Content description of the flashlight tile in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_on"/>
+    <string name="accessibility_quick_settings_flashlight_on">"Батеријска лампа је укључена."</string>
+    <!-- Announcement made when the flashlight state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_changed_off"/>
+    <string name="accessibility_quick_settings_flashlight_changed_off">"Батеријска лампа је искључена."</string>
+    <!-- Announcement made when the flashlight state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_flashlight_changed_on"/>
+    <string name="accessibility_quick_settings_flashlight_changed_on">"Батеријска лампа је укључена."</string>
+    <!-- Announcement made when the color inversion state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_color_inversion_changed_off"/>
+    <string name="accessibility_quick_settings_color_inversion_changed_off">"Инверзија боја је искључена."</string>
+    <!-- Announcement made when the color inversion state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_color_inversion_changed_on"/>
+    <string name="accessibility_quick_settings_color_inversion_changed_on">"Инверзија боја је укључена."</string>
+    <!-- Announcement made when the hotspot state changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_hotspot_changed_off"/>
+    <string name="accessibility_quick_settings_hotspot_changed_off">"Мобилни хотспот је искључен."</string>
+    <!-- Announcement made when the hotspot state changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_hotspot_changed_on"/>
+    <string name="accessibility_quick_settings_hotspot_changed_on">"Мобилни хотспот је укључен."</string>
+    <!-- Announcement made when the screen stopped casting (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_casting_turned_off"/>
+    <string name="accessibility_casting_turned_off">"Пребацивање екрана је заустављено."</string>
+    <!-- Content description of the work mode title in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_off"/>
+    <string name="accessibility_quick_settings_work_mode_off">"Режим рада је искључен."</string>
+    <!-- Content description of the work mode title in quick settings when on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_on"/>
+    <string name="accessibility_quick_settings_work_mode_on">"Режим рада је укључен."</string>
+    <!-- Announcement made when the work mode changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_changed_off"/>
+    <string name="accessibility_quick_settings_work_mode_changed_off">"Режим рада је искључен."</string>
+    <!-- Announcement made when the work mode changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_work_mode_changed_on"/>
+    <string name="accessibility_quick_settings_work_mode_changed_on">"Режим рада је укључен."</string>
+    <!-- Announcement made when the Data Saver changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_data_saver_changed_off"/>
+    <string name="accessibility_quick_settings_data_saver_changed_off">"Уштеда података је искључена."</string>
+    <!-- Announcement made when the Data Saver changes to on (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_data_saver_changed_on"/>
+    <string name="accessibility_quick_settings_data_saver_changed_on">"Уштеда података је укључена."</string>
+
+    <!-- Content description of the display brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_brightness"/>
+    <string name="accessibility_brightness">"Осветљеност екрана"</string>
+
+    <!-- Title of dialog shown when 2G-3G data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_3g_title"/>
+    <string name="data_usage_disabled_dialog_3g_title">"2G–3G подаци су паузирани"</string>
+    <!-- Title of dialog shown when 4G data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_4g_title"/>
+    <string name="data_usage_disabled_dialog_4g_title">"4G подаци су паузирани"</string>
+    <!-- Title of dialog shown when mobile data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_mobile_title"/>
+    <string name="data_usage_disabled_dialog_mobile_title">"Мобилни подаци су паузирани"</string>
+    <!-- Title of dialog shown when data usage has exceeded limit and has been disabled. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_title"/>
+    <string name="data_usage_disabled_dialog_title">"Подаци су паузирани"</string>
+    <!-- Body of dialog shown when data usage has exceeded limit and has been disabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="data_usage_disabled_dialog"/>
+    <string name="data_usage_disabled_dialog">"Ограничење потрошње података које сте подесили је достигнуто. Више не користите мобилне податке.\n\nАко наставите, можда ће бити наплаћени трошкови за потрошњу података."</string>
+    <!-- Dialog button indicating that data connection should be re-enabled. [CHAR LIMIT=28] -->
+    <add-resource type="string" name="data_usage_disabled_dialog_enable"/>
+    <string name="data_usage_disabled_dialog_enable">"Настави"</string>
+
+    <!-- Text to display underneath the graphical signal strength meter when
+         no connection is available. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="status_bar_settings_signal_meter_disconnected"/>
+    <string name="status_bar_settings_signal_meter_disconnected">"Нема интернет везе"</string>
+
+    <!-- Text to display underneath the graphical signal strength meter when
+         it is displaying Wi-Fi status and Wi-Fi is connected to a network
+         whose SSID is not available.
+         [CHAR LIMIT=20] -->
+    <add-resource type="string" name="status_bar_settings_signal_meter_wifi_nossid"/>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">"Wi-Fi је повезан"</string>
+
+    <!-- Notification text: when GPS is getting a fix [CHAR LIMIT=50] -->
+    <add-resource type="string" name="gps_notification_searching_text"/>
+    <string name="gps_notification_searching_text">"Тражи се GPS"</string>
+
+    <!-- Notification text: when GPS has found a fix [CHAR LIMIT=50] -->
+    <add-resource type="string" name="gps_notification_found_text"/>
+    <string name="gps_notification_found_text">"Локацију је подесио GPS"</string>
+
+    <!-- Accessibility text describing the presence of active location requests by one or more apps -->
+    <add-resource type="string" name="accessibility_location_active"/>
+    <string name="accessibility_location_active">"Има активних захтева за локацију"</string>
+
+    <!-- Content description of the clear button in the notification panel for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_clear_all"/>
+    <string name="accessibility_clear_all">"Обриши сва обавештења."</string>
+
+    <!-- The overflow indicator shown when a group has more notification inside the group than the visible ones. An example is "+ 3" [CHAR LIMIT=5] -->
+    <add-resource type="string" name="notification_group_overflow_indicator"/>
+    <string name="notification_group_overflow_indicator">+ <xliff:g id="number" example="3">%s</xliff:g></string>
+
+    <!-- Content description describing how many more notifications are in a group [CHAR LIMIT=NONE] -->
+    <add-resource type="plurals" name="notification_group_overflow_description"/>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="one">"Још <xliff:g id="NUMBER_1">%s</xliff:g> обавештење у групи."</item>
+        <item quantity="other">"Још <xliff:g id="NUMBER_1">%s</xliff:g> обавештења у групи."</item>
+    </plurals>
+
+    <!-- Content description of button in notification inspector for system settings relating to
+         notifications from this application [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_notification_inspect_item_title"/>
+    <string name="status_bar_notification_inspect_item_title">"Подешавања обавештења"</string>
+
+    <!-- Content description of button in notification inspetor for application-provided settings
+         for its own notifications [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="status_bar_notification_app_settings_title"/>
+    <string name="status_bar_notification_app_settings_title">"Подешавања за <xliff:g id="APP_NAME">%s</xliff:g>"</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is on. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_off"/>
+    <string name="accessibility_rotation_lock_off">"Екран ће се аутоматски ротирати."</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is off. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_landscape"/>
+    <string name="accessibility_rotation_lock_on_landscape">"Екран је закључан у хоризонталном положају."</string>
+
+    <!-- Description of the button in the phone-style notification panel that controls auto-rotation, when auto-rotation is off. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_portrait"/>
+    <string name="accessibility_rotation_lock_on_portrait">"Екран је закључан у вертикалном положају."</string>
+
+    <!-- Announcement made when the screen is rotating automatically again (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_off_changed"/>
+    <string name="accessibility_rotation_lock_off_changed">"Екран ће се сада аутоматски ротирати."</string>
+
+    <!-- Announcement made when the rotation lock state changes to landscape only (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_landscape_changed"/>
+    <string name="accessibility_rotation_lock_on_landscape_changed">"Екран је сада закључан у вертикалном положају."</string>
+
+    <!-- Announcement made when the rotation lock state changes to portrait only (not shown on the screen).  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_rotation_lock_on_portrait_changed"/>
+    <string name="accessibility_rotation_lock_on_portrait_changed">"Екран је сада закључан у хоризонталном положају."</string>
+
+    <!-- Name of the K-release easter egg: a display case for all our tastiest desserts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dessert_case"/>
+    <string name="dessert_case">"Витрина са посластицама"</string>
+
+    <!-- Name of the launcher shortcut icon that allows dreams to be started immediately [CHAR LIMIT=20] -->
+    <add-resource type="string" name="start_dreams"/>
+    <string name="start_dreams">"Чувар екрана"</string>
+
+    <!-- Textual description of Ethernet connections -->
+    <add-resource type="string" name="ethernet_label"/>
+    <string name="ethernet_label">"Етернет"</string>
+
+    <!-- QuickSettings: Do not disturb [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_label"/>
+    <string name="quick_settings_dnd_label">"Не узнемиравај"</string>
+    <!-- QuickSettings: Do not disturb - Priority only [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_priority_label"/>
+    <string name="quick_settings_dnd_priority_label">"Само приоритетни прекиди"</string>
+    <!-- QuickSettings: Do not disturb - Alarms only [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_alarms_label"/>
+    <string name="quick_settings_dnd_alarms_label">"Само аларми"</string>
+    <!-- QuickSettings: Do not disturb - Total silence [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_dnd_none_label"/>
+    <string name="quick_settings_dnd_none_label">"Потпуна тишина"</string>
+    <!-- QuickSettings: Bluetooth [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_label"/>
+    <string name="quick_settings_bluetooth_label">"Bluetooth"</string>
+    <!-- QuickSettings: Bluetooth (Multiple) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_multiple_devices_label"/>
+    <string name="quick_settings_bluetooth_multiple_devices_label">"Bluetooth (<xliff:g id="NUMBER">%d</xliff:g> уређаја)"</string>
+    <!-- QuickSettings: Bluetooth (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_off_label"/>
+    <string name="quick_settings_bluetooth_off_label">"Bluetooth искључен"</string>
+    <!-- QuickSettings: Bluetooth detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_bluetooth_detail_empty_text"/>
+    <string name="quick_settings_bluetooth_detail_empty_text">"Није доступан ниједан упарени уређај"</string>
+    <!-- QuickSettings: Brightness [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_label"/>
+    <string name="quick_settings_brightness_label">"Осветљеност"</string>
+    <!-- QuickSettings: Rotation Unlocked [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_unlocked_label"/>
+    <string name="quick_settings_rotation_unlocked_label">"Аутоматска ротација"</string>
+    <!-- Accessibility label for Auto-ratate QuickSettings tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_rotation"/>
+    <string name="accessibility_quick_settings_rotation">"Аутоматско ротирање екрана"</string>
+    <!-- Accessibility label for value of Auto-ratate QuickSettings tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_rotation_value"/>
+    <string name="accessibility_quick_settings_rotation_value">"Подеси на <xliff:g id="ID_1">%s</xliff:g>"</string>
+    <!-- QuickSettings: Rotation Locked [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_label"/>
+    <string name="quick_settings_rotation_locked_label">"Ротација је закључана"</string>
+    <!-- QuickSettings: Locked to Portrait [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_portrait_label"/>
+    <string name="quick_settings_rotation_locked_portrait_label">"Усправно"</string>
+    <!-- QuickSettings: Locked to Landscape [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rotation_locked_landscape_label"/>
+    <string name="quick_settings_rotation_locked_landscape_label">"Положено"</string>
+    <!-- QuickSettings: IME [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_ime_label"/>
+    <string name="quick_settings_ime_label">"Метод уноса"</string>
+    <!-- QuickSettings: Location [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_location_label"/>
+    <string name="quick_settings_location_label">"Локација"</string>
+    <!-- QuickSettings: Location (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_location_off_label"/>
+    <string name="quick_settings_location_off_label">"Локација је искључена"</string>
+    <!-- QuickSettings: Media device [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_media_device_label"/>
+    <string name="quick_settings_media_device_label">"Медијски уређај"</string>
+    <!-- QuickSettings: RSSI [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rssi_label"/>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <!-- QuickSettings: RSSI (No network) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_rssi_emergency_only"/>
+    <string name="quick_settings_rssi_emergency_only">"Само хитни позиви"</string>
+    <!-- QuickSettings: Settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_settings_label"/>
+    <string name="quick_settings_settings_label">"Подешавања"</string>
+    <!-- QuickSettings: Time [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_time_label"/>
+    <string name="quick_settings_time_label">"Време"</string>
+    <!-- QuickSettings: User [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_label"/>
+    <string name="quick_settings_user_label">"Ја"</string>
+    <!-- QuickSettings: Title of the user detail panel [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_title"/>
+    <string name="quick_settings_user_title">"Корисник"</string>
+    <!-- QuickSettings: Label on the item for adding a new user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_user_new_user"/>
+    <string name="quick_settings_user_new_user">"Ниви корисник"</string>
+    <!-- QuickSettings: Wifi [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_label"/>
+    <string name="quick_settings_wifi_label">"Wi-Fi"</string>
+    <!-- QuickSettings: Wifi (Not connected) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_not_connected"/>
+    <string name="quick_settings_wifi_not_connected">"Веза није успостављена"</string>
+    <!-- QuickSettings: Wifi (No network) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_no_network"/>
+    <string name="quick_settings_wifi_no_network">"Нема мреже"</string>
+    <!-- QuickSettings: Wifi (Off) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_off_label"/>
+    <string name="quick_settings_wifi_off_label">"Wi-Fi је искључен"</string>
+    <!-- QuickSettings: Wifi (On) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_on_label"/>
+    <string name="quick_settings_wifi_on_label">"Wi-Fi је укључен"</string>
+    <!-- QuickSettings: Wifi detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_wifi_detail_empty_text"/>
+    <string name="quick_settings_wifi_detail_empty_text">"Није доступна ниједна Wi-Fi мрежа"</string>
+    <!-- QuickSettings: Cast title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_title"/>
+    <string name="quick_settings_cast_title">"Пребацивање"</string>
+    <!-- QuickSettings: Cast detail panel, status text when casting [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_casting"/>
+    <string name="quick_settings_casting">"Пребацивање"</string>
+    <!-- QuickSettings: Cast detail panel, default device name [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_device_default_name"/>
+    <string name="quick_settings_cast_device_default_name">"Неименовани уређај"</string>
+     <!-- QuickSettings: Cast detail panel, default device description [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_device_default_description"/>
+    <string name="quick_settings_cast_device_default_description">"Спремно за пребацивање"</string>
+    <!-- QuickSettings: Cast detail panel, text when there are no items [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cast_detail_empty_text"/>
+    <string name="quick_settings_cast_detail_empty_text">"Није доступан ниједан уређај"</string>
+    <!-- QuickSettings: Brightness dialog title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_dialog_title"/>
+    <string name="quick_settings_brightness_dialog_title">"Осветљеност"</string>
+    <!-- QuickSettings: Brightness dialog auto brightness button [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_brightness_dialog_auto_brightness_label"/>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">"АУТОМАТСКА"</string>
+    <!-- QuickSettings: Label for the toggle that controls whether display inversion is enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_inversion_label"/>
+    <string name="quick_settings_inversion_label">"Обрни боје"</string>
+    <!-- QuickSettings: Label for the toggle that controls whether display color correction is enabled. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_color_space_label"/>
+    <string name="quick_settings_color_space_label">"Режим корекције боје"</string>
+    <!-- QuickSettings: Control panel: Label for button that navigates to settings. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_more_settings"/>
+    <string name="quick_settings_more_settings">"Још подешавања"</string>
+    <!-- QuickSettings: Control panel: Label for button that dismisses control panel. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_done"/>
+    <string name="quick_settings_done">"Готово"</string>
+    <!-- QuickSettings: Control panel: Label for connected device. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_connected"/>
+    <string name="quick_settings_connected">"Повезан"</string>
+    <!-- QuickSettings: Control panel: Label for connecting device. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_connecting"/>
+    <string name="quick_settings_connecting">"Повезује се..."</string>
+    <!-- QuickSettings: Tethering. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_tethering_label"/>
+    <string name="quick_settings_tethering_label">"Повезивање"</string>
+    <!-- QuickSettings: Hotspot. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_hotspot_label"/>
+    <string name="quick_settings_hotspot_label">"Хотспот"</string>
+    <!-- QuickSettings: Notifications [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_notifications_label"/>
+    <string name="quick_settings_notifications_label">"Обавештења"</string>
+    <!-- QuickSettings: Flashlight [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_flashlight_label"/>
+    <string name="quick_settings_flashlight_label">"Лампа"</string>
+    <!-- QuickSettings: Cellular detail panel title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_title"/>
+    <string name="quick_settings_cellular_detail_title">"Подаци за мобилне уређаје"</string>
+    <!-- QuickSettings: Cellular detail panel, data usage title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_usage"/>
+    <string name="quick_settings_cellular_detail_data_usage">"Потрошња података"</string>
+    <!-- QuickSettings: Cellular detail panel, remaining data title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_remaining_data"/>
+    <string name="quick_settings_cellular_detail_remaining_data">"Преостала количина података"</string>
+    <!-- QuickSettings: Cellular detail panel, over limit title [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_over_limit"/>
+    <string name="quick_settings_cellular_detail_over_limit">"Преко ограничења"</string>
+    <!-- QuickSettings: Cellular detail panel, data used format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_used"/>
+    <string name="quick_settings_cellular_detail_data_used">"Искористили сте <xliff:g id="DATA_USED">%s</xliff:g>"</string>
+    <!-- QuickSettings: Cellular detail panel, data limit format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_limit"/>
+    <string name="quick_settings_cellular_detail_data_limit">"Ограничење од <xliff:g id="DATA_LIMIT">%s</xliff:g>"</string>
+    <!-- QuickSettings: Cellular detail panel, data warning format string [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_cellular_detail_data_warning"/>
+    <string name="quick_settings_cellular_detail_data_warning">"Упозорење за <xliff:g id="DATA_LIMIT">%s</xliff:g>"</string>
+    <!-- QuickSettings: Work mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_work_mode_label"/>
+    <string name="quick_settings_work_mode_label">"Режим рада"</string>
+    <!-- QuickSettings: Label for the toggle to activate Night display (renamed "Night Light" with title caps). [CHAR LIMIT=20] -->
+    <add-resource type="string" name="quick_settings_night_display_label"/>
+    <string name="quick_settings_night_display_label">"Ноћно светло"</string>
+    <!-- QuickSettings: Summary for the toggle to deactivate Night display when it's on (renamed "Night Light" with title caps). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_night_display_summary_on"/>
+    <string name="quick_settings_night_display_summary_on">"Ноћно светло је укључено, додирните да бисте га искључили"</string>
+    <!-- QuickSettings: Label for the toggle to activate Night display when it's off (renamed "Night Light" with title caps). [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_settings_night_display_summary_off"/>
+    <string name="quick_settings_night_display_summary_off">"Ноћно светло је искључено, додирните да бисте га укључили"</string>
+
+    <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_empty_message"/>
+    <string name="recents_empty_message">"Нема недавних ставки"</string>
+    <!-- Recents: The empty recents string after dismissing all tasks. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_empty_message_dismissed_all"/>
+    <string name="recents_empty_message_dismissed_all">"Обрисали сте све"</string>
+    <!-- Recents: The info panel app info button string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_app_info_button_label"/>
+    <string name="recents_app_info_button_label">"Информације о апликацији"</string>
+    <!-- Recents: The screen pinning button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_lock_to_app_button_label"/>
+    <string name="recents_lock_to_app_button_label">"качење екрана"</string>
+    <!-- Recents: Temporary string for the button in the recents search bar. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_search_bar_label"/>
+    <string name="recents_search_bar_label">"претражи"</string>
+    <!-- Recents: Launch error string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_launch_error_message"/>
+    <string name="recents_launch_error_message">"Покретање апликације <xliff:g id="APP">%s</xliff:g> није успело."</string>
+    <!-- Recents: Launch disabled string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_launch_disabled_message"/>
+    <string name="recents_launch_disabled_message">"Апликација <xliff:g id="APP">%s</xliff:g> је онемогућена у безбедном режиму."</string>
+    <!-- Recents: Stack action button string. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_stack_action_button_label"/>
+    <string name="recents_stack_action_button_label">"Обриши све"</string>
+    <!-- Recents: Incompatible task message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_incompatible_app_message"/>
+    <string name="recents_incompatible_app_message">"Апликација не подржава подељени екран"</string>
+    <!-- Recents: Hint text that shows on the drop targets to start multiwindow. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_drag_hint_message"/>
+    <string name="recents_drag_hint_message">"Превуците овде да бисте користили раздељени екран"</string>
+
+    <!-- Recents: MultiStack add stack split horizontal radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_horizontal"/>
+    <string name="recents_multistack_add_stack_dialog_split_horizontal">"Подели хоризонтално"</string>
+    <!-- Recents: MultiStack add stack split vertical radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_vertical"/>
+    <string name="recents_multistack_add_stack_dialog_split_vertical">"Подели вертикално"</string>
+    <!-- Recents: MultiStack add stack split custom radio button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recents_multistack_add_stack_dialog_split_custom"/>
+    <string name="recents_multistack_add_stack_dialog_split_custom">"Прилагођено дељење"</string>
+
+    <!-- Fully qualified activity class names to be blacklisted in Recents, add package names into overlay as needed -->
+    <add-resource type="array" name="recents_blacklist_array"/>
+    <string-array name="recents_blacklist_array">
+    </string-array>
+
+    <!-- Expanded Status Bar Header: Battery Charged [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charged"/>
+    <string name="expanded_header_battery_charged">"Напуњена је"</string>
+
+    <!-- Expanded Status Bar Header: Charging, no known time [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charging"/>
+    <string name="expanded_header_battery_charging">"Пуњење"</string>
+
+    <!-- Expanded Status Bar Header: Charging, showing time left until charged [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_charging_with_time"/>
+    <string name="expanded_header_battery_charging_with_time">"<xliff:g id="CHARGING_TIME">%s</xliff:g> док се не напуни"</string>
+
+    <!-- Expanded Status Bar Header: Not charging [CHAR LIMIT=40] -->
+    <add-resource type="string" name="expanded_header_battery_not_charging"/>
+    <string name="expanded_header_battery_not_charging">"Не пуни се"</string>
+
+    <!-- Glyph to be overlaid atop the battery when the level is extremely low. Do not translate. -->
+    <add-resource type="string" name="battery_meter_very_low_overlay_symbol"/>
+    <string name="battery_meter_very_low_overlay_symbol">!</string>
+
+    <!-- Shows up when there is a user SSL CA Cert installed on the
+         device.  Indicates to the user that SSL traffic can be intercepted.
+         If the text fits on one line (~14 chars), it should start with a
+         linebreak to position it correctly.  [CHAR LIMIT=45] -->
+    <add-resource type="string" name="ssl_ca_cert_warning"/>
+    <string name="ssl_ca_cert_warning">"Мрежа се можда\nнадгледа"</string>
+
+    <!-- Description of the unlock target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_target_search"/>
+    <string name="description_target_search">"Претрага"</string>
+    <!-- Description of the up direction in which one can to slide the handle in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_direction_up"/>
+    <string name="description_direction_up">"Превуците нагоре за <xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>."</string>
+    <!-- Description of the left direction in which one can to slide the handle in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_direction_left"/>
+    <string name="description_direction_left">"Превуците улево за <xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>."</string>
+
+    <!-- Zen mode: Priority only introduction message on first use -->
+    <add-resource type="string" name="zen_priority_introduction"/>
+    <string name="zen_priority_introduction">"Неће вас узнемиравати звукови и вибрације, осим за аларме, подсетнике, догађаје и позиваоце које изаберете."</string>
+
+    <!-- Zen mode: Priority only customization button label -->
+    <add-resource type="string" name="zen_priority_customize_button"/>
+    <string name="zen_priority_customize_button">"Прилагоди"</string>
+
+    <!-- Zen mode: Total silence introduction message on first use (voice capable devices) -->
+    <add-resource type="string" name="zen_silence_introduction_voice"/>
+    <string name="zen_silence_introduction_voice">"Ово блокира СВЕ звукове и вибрације укључујући аларме, музику, видео снимке и игре. И даље ћете моћи да упућујете позиве."</string>
+
+    <!-- Zen mode: Total silence introduction message on first use (non-voice capable devices) -->
+    <add-resource type="string" name="zen_silence_introduction"/>
+    <string name="zen_silence_introduction">"Ово блокира СВЕ звукове и вибрације укључујући аларме, музику, видео снимке и игре."</string>
+
+    <!-- Text for overflow card on Keyguard when there is not enough space for all notifications on Keyguard. [CHAR LIMIT=1] -->
+    <add-resource type="string" name="keyguard_more_overflow_text"/>
+    <string name="keyguard_more_overflow_text">+<xliff:g id="number_of_notifications" example="5">%d</xliff:g></string>
+
+    <!-- An explanation for the visual speed bump in the notifications, which will appear when you click on it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="speed_bump_explanation"/>
+    <string name="speed_bump_explanation">"Мање хитна обавештења су у наставку"</string>
+
+    <!-- Shows to explain the double tap interaction with notifications: After tapping a notification on Keyguard, this will explain users to tap again to launch a notification. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="notification_tap_again"/>
+    <string name="notification_tap_again">"Додирните поново да бисте отворили"</string>
+
+    <!-- Shows when people have pressed the unlock icon to explain how to unlock. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="keyguard_unlock"/>
+    <string name="keyguard_unlock">"Превуците нагоре да бисте откључали"</string>
+
+    <!-- Shows when people have clicked on the phone icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="phone_hint"/>
+    <string name="phone_hint">"Превуците од иконе за телефон"</string>
+
+    <!-- Shows when people have clicked on the voice assist icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="voice_hint"/>
+    <string name="voice_hint">"Превуците од иконе за гласовну помоћ"</string>
+
+    <!-- Shows when people have clicked on the camera icon [CHAR LIMIT=60] -->
+    <add-resource type="string" name="camera_hint"/>
+    <string name="camera_hint">"Превуците од иконе за камеру"</string>
+
+    <!-- Accessibility content description for Interruption level: None. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="interruption_level_none_with_warning"/>
+    <string name="interruption_level_none_with_warning">"Потпуна тишина. И читачи екрана ће бити искључени."</string>
+
+    <!-- Interruption level: None. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_none"/>
+    <string name="interruption_level_none">"Потпуна тишина"</string>
+
+    <!-- Interruption level: Priority. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_priority"/>
+    <string name="interruption_level_priority">"Само приоритетни прекиди"</string>
+
+    <!-- Interruption level: Alarms only. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_alarms"/>
+    <string name="interruption_level_alarms">"Само аларми"</string>
+
+    <!-- Interruption level: None.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_none_twoline"/>
+    <string name="interruption_level_none_twoline">"Потпуна\nтишина"</string>
+
+    <!-- Interruption level: Priority.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_priority_twoline"/>
+    <string name="interruption_level_priority_twoline">"Само\nприорит. прекиди"</string>
+
+    <!-- Interruption level: Alarms only.  Optimized for narrow two-line display. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="interruption_level_alarms_twoline"/>
+    <string name="interruption_level_alarms_twoline">"Само\nаларми"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time"/>
+    <string name="keyguard_indication_charging_time">"Пуњење (пун је за <xliff:g id="CHARGING_TIME_LEFT">%s</xliff:g>)"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging rapidly. Should match keyguard_plugged_in_charging_fast [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time_fast"/>
+    <string name="keyguard_indication_charging_time_fast">"Брзо се пуни (напуниће се за <xliff:g id="CHARGING_TIME_LEFT">%s</xliff:g>)"</string>
+
+    <!-- Indication on the keyguard that is shown when the device is charging slowly. Should match keyguard_plugged_in_charging_slowly [CHAR LIMIT=40]-->
+    <add-resource type="string" name="keyguard_indication_charging_time_slowly"/>
+    <string name="keyguard_indication_charging_time_slowly">"Споро се пуни (напуниће се за <xliff:g id="CHARGING_TIME_LEFT">%s</xliff:g>)"</string>
+
+    <!-- Related to user switcher -->
+
+    <!-- Accessibility label for the button that opens the user switcher. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_switcher"/>
+    <string name="accessibility_multi_user_switch_switcher">"Замени корисника"</string>
+
+    <!-- Accessibility label for the button that opens the user switcher and announces the current user. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_switcher_with_current"/>
+    <string name="accessibility_multi_user_switch_switcher_with_current">"Промените корисника, актуелни корисник је <xliff:g id="CURRENT_USER_NAME">%s</xliff:g>"</string>
+
+    <!-- Accessibility label for the user icon on the lock screen. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_inactive"/>
+    <string name="accessibility_multi_user_switch_inactive">"Актуелни корисник <xliff:g id="CURRENT_USER_NAME">%s</xliff:g>"</string>
+
+    <!-- Accessibility label for the button that opens the quick contact of the user. -->
+    <add-resource type="string" name="accessibility_multi_user_switch_quick_contact"/>
+    <string name="accessibility_multi_user_switch_quick_contact">"Прикажи профил"</string>
+
+    <!-- Label for the adding a new user in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="user_add_user"/>
+    <string name="user_add_user">"Додај корисника"</string>
+
+    <!-- Name for a freshly added user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_new_user_name"/>
+    <string name="user_new_user_name">"Ниви корисник"</string>
+
+    <!-- Name for the guest user [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_nickname"/>
+    <string name="guest_nickname">"Гост"</string>
+
+    <!-- Label for adding a new guest in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_new_guest"/>
+    <string name="guest_new_guest">"Додај госта"</string>
+
+    <!-- Label for exiting and removing the  guest session in the user switcher [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_exit_guest"/>
+    <string name="guest_exit_guest">"Уклони госта"</string>
+
+    <!-- Title of the confirmation dialog when exiting guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_title"/>
+    <string name="guest_exit_guest_dialog_title">"Желите ли да уклоните госта?"</string>
+
+    <!-- Message of the confirmation dialog when exiting guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_message"/>
+    <string name="guest_exit_guest_dialog_message">"Све апликације и подаци у овој сесији ће бити избрисани."</string>
+
+    <!-- Label for button in confirmation dialog when exiting guest session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_exit_guest_dialog_remove"/>
+    <string name="guest_exit_guest_dialog_remove">"Уклони"</string>
+
+    <!-- Title of the notification when resuming an existing guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_wipe_session_title"/>
+    <string name="guest_wipe_session_title">"Добро дошли назад, госте!"</string>
+
+    <!-- Message of the notification when resuming an existing guest session [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="guest_wipe_session_message"/>
+    <string name="guest_wipe_session_message">"Желите ли да наставите сесију?"</string>
+
+    <!-- Notification when resuming an existing guest session: Action that starts a new session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_wipe_session_wipe"/>
+    <string name="guest_wipe_session_wipe">"Почни из почетка"</string>
+
+    <!-- Notification when resuming an existing guest session: Action that continues with the current session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="guest_wipe_session_dontwipe"/>
+    <string name="guest_wipe_session_dontwipe">"Да, настави"</string>
+
+    <!-- Title of the notification shown to a new guest user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="guest_notification_title"/>
+    <string name="guest_notification_title">"Гост"</string>
+
+    <!-- Text of the notification shown to a new guest user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="guest_notification_text"/>
+    <string name="guest_notification_text">"Да бисте избрисали апликације и податке, уклоните госта"</string>
+
+    <!-- Remove action in the notification shown to a new guest user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="guest_notification_remove_action"/>
+    <string name="guest_notification_remove_action">"УКЛОНИ ГОСТА"</string>
+
+    <!-- Title of the notification shown to logout the current user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="user_logout_notification_title"/>
+    <string name="user_logout_notification_title">"Одјављивање корисника"</string>
+
+    <!-- Text of the notification shown to logout the current user [CHAR LIMIT=60] -->
+    <add-resource type="string" name="user_logout_notification_text"/>
+    <string name="user_logout_notification_text">"Одјавите актуелног корисника"</string>
+
+    <!-- Logout action in the notification shown to logout the current user [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_logout_notification_action"/>
+    <string name="user_logout_notification_action">"ОДЈАВИ КОРИСНИКА"</string>
+
+    <!-- Title for add user confirmation dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="user_add_user_title"/>
+    <string name="user_add_user_title" msgid="2108112641783146007">"Додајете новог корисника?"</string>
+
+    <!-- Message for add user confirmation dialog - short version. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="user_add_user_message_short"/>
+    <string name="user_add_user_message_short" msgid="1511354412249044381">"Када додате новог корисника, та особа треба да подеси сопствени простор.\n\nСваки корисник може да ажурира апликације за све остале кориснике."</string>
+
+    <!-- Title of the confirmation dialog for deleting a user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="user_remove_user_title"/>
+    <string name="user_remove_user_title">"Желите ли да уклоните корисника?"</string>
+
+    <!-- Message of the confirmation dialog for deleting a user [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="user_remove_user_message"/>
+    <string name="user_remove_user_message">"Све апликације и подаци овог корисника ће бити избрисани."</string>
+
+    <!-- Label for button in confirmation dialog when exiting guest session [CHAR LIMIT=35] -->
+    <add-resource type="string" name="user_remove_user_remove"/>
+    <string name="user_remove_user_remove">"Уклони"</string>
+
+    <!-- Battery saver notification title. [CHAR LIMIT=60]-->
+    <add-resource type="string" name="battery_saver_notification_title"/>
+    <string name="battery_saver_notification_title">"Штедња батерије је укључена"</string>
+
+    <!-- Battery saver notification text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="battery_saver_notification_text"/>
+    <string name="battery_saver_notification_text">"Смањује перформансе и позадинске податке"</string>
+
+    <!-- Battery saver notification action text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="battery_saver_notification_action_text"/>
+    <string name="battery_saver_notification_action_text">"Искључи штедњу батерије"</string>
+
+    <!-- Media projection permission dialog warning text. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="media_projection_dialog_text"/>
+    <string name="media_projection_dialog_text">"<xliff:g id="APP_SEEKING_PERMISSION">%s</xliff:g> ће почети да снима све што се приказује на екрану."</string>
+
+    <!-- Media projection permission dialog permanent grant check box. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="media_projection_remember_text"/>
+    <string name="media_projection_remember_text">"Не приказуј поново"</string>
+
+    <!-- The text to clear all notifications. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="clear_all_notifications_text"/>
+    <string name="clear_all_notifications_text">"Обриши све"</string>
+
+    <!-- Media projection permission dialog action text. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="media_projection_action_text"/>
+    <string name="media_projection_action_text">"Започни одмах"</string>
+
+    <!-- Text which is shown in the notification shade when there are no notifications. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="empty_shade_text"/>
+    <string name="empty_shade_text">"Нема обавештења"</string>
+
+    <!-- Footer device owned text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="device_owned_footer"/>
+    <string name="device_owned_footer">"Уређај се можда надгледа"</string>
+
+    <!-- Footer profile owned text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="profile_owned_footer"/>
+    <string name="profile_owned_footer">"Профил се можда надгледа"</string>
+
+    <!-- Footer vpn present text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="vpn_footer"/>
+    <string name="vpn_footer">"Мрежа се можда надгледа"</string>
+
+    <!-- Footer vpn present text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="branded_vpn_footer"/>
+    <string name="branded_vpn_footer">"Мрежа се можда надгледа"</string>
+
+    <!-- Monitoring dialog title for device owned devices [CHAR LIMIT=35] -->
+    <add-resource type="string" name="monitoring_title_device_owned"/>
+    <string name="monitoring_title_device_owned">"Надгледање уређаја"</string>
+
+    <!-- Monitoring dialog title for profile owned devices [CHAR LIMIT=35] -->
+    <add-resource type="string" name="monitoring_title_profile_owned"/>
+    <string name="monitoring_title_profile_owned">"Надгледање профила"</string>
+
+    <!-- Monitoring dialog title for normal devices  [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_title"/>
+    <string name="monitoring_title">"Надгледање мреже"</string>
+
+    <!-- Monitoring dialog subtitle for the section describing VPN [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_subtitle_vpn"/>
+    <string name="monitoring_subtitle_vpn">VPN</string>
+
+    <!-- Monitoring dialog subtitle for the section describing network logging [CHAR LIMIT=35]-->
+    <add-resource type="string" name="monitoring_subtitle_network_logging"/>
+    <string name="monitoring_subtitle_network_logging">"Мрежна евиденција"</string>
+
+    <!-- Monitoring dialog disable vpn button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="disable_vpn"/>
+    <string name="disable_vpn">"Онемогући VPN"</string>
+
+    <!-- Monitoring dialog disconnect vpn button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="disconnect_vpn"/>
+    <string name="disconnect_vpn">"Прекини везу са VPN-ом"</string>
+
+    <!-- Monitoring dialog device owner body text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_device_owned"/>
+    <string name="monitoring_description_device_owned">"Уређајем управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>.\n\nАдминистратор може да надгледа подешавања, корпоративни приступ, апликације, податке повезане са уређајем и информације о локацији уређаја, као и да управља њима. Више информација потражите од администратора."</string>
+
+    <!-- Monitoring dialog: Part of text body explaining that a VPN is connected and what it can do, for devices managed by a Device Owner app [CHAR LIMIT=130] -->
+    <add-resource type="string" name="monitoring_description_do_body_vpn"/>
+    <string name="monitoring_description_do_body_vpn">"Повезани сте са апликацијом <xliff:g id="vpn_app">%1$s</xliff:g>, која може да надгледа активности на мрежи, укључујући е-поруке, апликације и веб-сајтове."</string>
+
+    <!-- Monitoring dialog: Space that separates the VPN body text and the "Open VPN Settings" link that follows it. [CHAR LIMIT=5] -->
+    <add-resource type="string" name="monitoring_description_vpn_settings_separator"/>
+    <string name="monitoring_description_vpn_settings_separator"> </string>
+
+    <!-- Monitoring dialog: Link to open the VPN settings page [CHAR LIMIT=60] -->
+    <add-resource type="string" name="monitoring_description_vpn_settings"/>
+    <string name="monitoring_description_vpn_settings">"Отвори подешавања за VPN"</string>
+
+    <!-- Monitoring dialog: Network logging text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_network_logging"/>
+    <string name="monitoring_description_network_logging">"Ваш администратор је укључио мрежно евидентирање, које надгледа саобраћај на уређају.\n\nЗа више информација се обратите администратору."</string>
+
+
+    <!-- Monitoring dialog VPN text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn"/>
+    <string name="monitoring_description_vpn">"Дали сте дозволу апликацији да подешава VPN везу.\n\nТа апликација може да надгледа активности на уређају и мрежи, укључујући имејлове, апликације и веб-сајтове."</string>
+
+    <!-- Monitoring dialog VPN with device owner text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_device_owned"/>
+    <string name="monitoring_description_vpn_device_owned">"Уређајем управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>.\n\nАдминистратор може да надгледа подешавања, корпоративни приступ, апликације, податке повезане са уређајем и информације о локацији уређаја, као и да управља њима.\n\nПовезани сте на VPN, који може да надгледа активности на мрежи, укључујући имејлове, апликације и безбедне веб-сајтове.\n\nВише информација потражите од администратора."</string>
+
+    <!-- Monitoring dialog VPN with profile owner text [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_profile_owned"/>
+    <string name="monitoring_description_vpn_profile_owned">"Профилом за Work управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>.\n\nАдминистратор може да надгледа активности на мрежи, укључујући имејлове, апликације и веб-сајтове.\n\nВише информација потражите од администратора.\n\nПовезани сте и на VPN, који може да надгледа активности на личној мрежи."</string>
+
+    <!-- Name for a generic legacy VPN connection [CHAR LIMIT=20] -->
+    <add-resource type="string" name="legacy_vpn_name"/>
+    <string name="legacy_vpn_name">VPN</string>
+
+    <!-- Monitoring dialog text for single app (no profile or device owner) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app"/>
+    <string name="monitoring_description_app">"Повезани сте са апликацијом <xliff:g id="APPLICATION">%1$s</xliff:g>, која може да надгледа активности на мрежи, укључујући имејлове, апликације и веб-сајтове."</string>
+
+    <!-- Monitoring dialog text for single app (inside personal profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_personal"/>
+    <string name="monitoring_description_app_personal">"Повезани сте са апликацијом <xliff:g id="APPLICATION">%1$s</xliff:g>, која може да надгледа активности на личној мрежи, укључујући имејлове, апликације и веб-сајтове."</string>
+
+    <!-- Monitoring dialog text for single app (inside personal profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="branded_monitoring_description_app_personal"/>
+    <string name="branded_monitoring_description_app_personal">"Повезани сте са апликацијом <xliff:g id="APPLICATION">%1$s</xliff:g>, која може да надгледа активности на личној мрежи, укључујући имејлове, апликације и веб-сајтове."</string>
+
+    <!-- Monitoring dialog text for single app (inside work profile) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_work"/>
+    <string name="monitoring_description_app_work">"Профилом за Work управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>. Повезан је са апликацијом <xliff:g id="APPLICATION">%2$s</xliff:g>, која може да надгледа активности на пословној мрежи, укључујући имејлове, апликације и веб-сајтове.\n\nВише информација потражите од администратора."</string>
+
+    <!-- Monitoring dialog text for multiple apps (in personal and work profiles) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_app_personal_work"/>
+    <string name="monitoring_description_app_personal_work">"Профилом за Work управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>. Повезан је са апликацијом <xliff:g id="APPLICATION_WORK">%2$s</xliff:g>, која може да надгледа активности на пословној мрежи, укључујући имејлове, апликације и веб-сајтове.\n\nПовезани сте и са апликацијом <xliff:g id="APPLICATION_PERSONAL">%3$s</xliff:g>, која може да надгледа активности на личној мрежи."</string>
+
+    <!-- Monitoring dialog text for single app (with device owner) [CHAR LIMIT=400] -->
+    <add-resource type="string" name="monitoring_description_vpn_app_device_owned"/>
+    <string name="monitoring_description_vpn_app_device_owned">"Уређајем управља <xliff:g id="ORGANIZATION">%1$s</xliff:g>.\n\nАдминистратор може да надгледа подешавања, корпоративни приступ, апликације, податке повезане са уређајем и информације о локацији уређаја, као и да управља њима.\n\nПовезани сте са апликацијом <xliff:g id="APPLICATION">%2$s</xliff:g>, која може да надгледа активности на мрежи, укључујући имејлове, апликације и веб-сајтове.\n\nВише информација потражите од администратора."</string>
+
+    <!-- Indication on the keyguard that appears when the user disables trust agents until the next time they unlock manually. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keyguard_indication_trust_disabled"/>
+    <string name="keyguard_indication_trust_disabled">"Уређај ће остати закључан док га не откључате ручно"</string>
+
+    <!-- Title of notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="hidden_notifications_title"/>
+    <string name="hidden_notifications_title">"Брже добијајте обавештења"</string>
+
+    <!-- Body of notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="hidden_notifications_text"/>
+    <string name="hidden_notifications_text">"Прегледајте их пре откључавања"</string>
+
+    <!-- Cancel action for notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hidden_notifications_cancel"/>
+    <string name="hidden_notifications_cancel">"Не, хвала"</string>
+
+    <!-- continue action for notification educating the user about enabling notifications on the lockscreen. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hidden_notifications_setup"/>
+    <string name="hidden_notifications_setup">"Подеси"</string>
+
+    <!-- Accessibility string for current zen mode and selected exit condition. A template that simply concatenates existing mode string and the current condition description. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="zen_mode_and_condition"/>
+    <string name="zen_mode_and_condition">"<xliff:g id="ZEN_MODE">%1$s</xliff:g>. <xliff:g id="EXIT_CONDITION">%2$s</xliff:g>"</string>
+
+    <!-- Button label for ending zen mode in the volume dialog -->
+    <add-resource type="string" name="volume_zen_end_now"/>
+    <string name="volume_zen_end_now">"Прекини одмах"</string>
+
+    <!-- Content description for accessibility (not shown on the screen): volume dialog expand button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_volume_expand"/>
+    <string name="accessibility_volume_expand">"Прошири"</string>
+
+    <!-- Content description for accessibility (not shown on the screen): volume dialog collapse button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_volume_collapse"/>
+    <string name="accessibility_volume_collapse">"Скупи"</string>
+
+    <!-- Screen pinning dialog title. -->
+    <add-resource type="string" name="screen_pinning_title"/>
+    <string name="screen_pinning_title">"Екран је закачен"</string>
+    <!-- Screen pinning dialog description. -->
+    <add-resource type="string" name="screen_pinning_description"/>
+    <string name="screen_pinning_description">"На овај начин ово остаје приказано док га не откачите. Да бисте га откачили, додирните и задржите Назад и Преглед."</string>
+    <!-- Screen pinning dialog description. -->
+    <add-resource type="string" name="screen_pinning_description_accessible"/>
+    <string name="screen_pinning_description_accessible">"На овај начин ово остаје приказано док га не откачите. Да бисте га откачили, додирните и задржите Преглед."</string>
+    <!-- Screen pinning positive response. -->
+    <add-resource type="string" name="screen_pinning_positive"/>
+    <string name="screen_pinning_positive">"Важи"</string>
+    <!-- Screen pinning negative response. -->
+    <add-resource type="string" name="screen_pinning_negative"/>
+    <string name="screen_pinning_negative">"Не, хвала"</string>
+
+    <!-- Hide quick settings tile confirmation title -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_title"/>
+    <string name="quick_settings_reset_confirmation_title">"Желите ли да сакријете <xliff:g id="TILE_LABEL">%1$s</xliff:g>?"</string>
+
+    <!-- Hide quick settings tile confirmation message -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_message"/>
+    <string name="quick_settings_reset_confirmation_message">"Ово ће се поново појавити када га следећи пут будете укључили у подешавањима."</string>
+
+    <!-- Hide quick settings tile confirmation button -->
+    <add-resource type="string" name="quick_settings_reset_confirmation_button"/>
+    <string name="quick_settings_reset_confirmation_button">"Сакриј"</string>
+
+    <!-- VolumeUI activation dialog: warning message -->
+    <add-resource type="string" name="volumeui_prompt_message"/>
+    <string name="volumeui_prompt_message">"<xliff:g id="APP_NAME">%1$s</xliff:g> жели да буде дијалог за јачину звука."</string>
+
+    <!-- VolumeUI activation dialog: allow button label -->
+    <add-resource type="string" name="volumeui_prompt_allow"/>
+    <string name="volumeui_prompt_allow">"Дозволи"</string>
+
+    <!-- VolumeUI activation dialog: deny button label -->
+    <add-resource type="string" name="volumeui_prompt_deny"/>
+    <string name="volumeui_prompt_deny">"Одбиј"</string>
+
+    <!-- VolumeUI restoration notification: title -->
+    <add-resource type="string" name="volumeui_notification_title"/>
+    <string name="volumeui_notification_title">"<xliff:g id="APP_NAME">%1$s</xliff:g> је дијалог за јачину звука"</string>
+
+    <!-- VolumeUI restoration notification: text -->
+    <add-resource type="string" name="volumeui_notification_text"/>
+    <string name="volumeui_notification_text">"Додирните да бисте вратили оригинал."</string>
+
+    <!-- Toast shown when user unlocks screen and managed profile activity is in the foreground -->
+    <add-resource type="string" name="managed_profile_foreground_toast"/>
+    <string name="managed_profile_foreground_toast">"Користите профил за Work"</string>
+
+    <add-resource type="array" name="volume_stream_titles"/>
+    <string-array name="volume_stream_titles">
+        <item>"Позови"</item> <!-- STREAM_VOICE_CALL -->
+        <item>"Систем"</item> <!-- STREAM_SYSTEM -->
+        <item>"Прстен"</item> <!-- STREAM_RING -->
+        <item>"Медијуми"</item> <!-- STREAM_MUSIC -->
+        <item>"Аларм"</item> <!-- STREAM_ALARM -->
+        <item></item> <!-- STREAM_NOTIFICATION -->
+        <item>"Bluetooth"</item> <!-- STREAM_BLUETOOTH_SCO -->
+        <item></item> <!-- STREAM_SYSTEM_ENFORCED -->
+        <item></item> <!-- STREAM_DTMF -->
+        <item></item> <!-- STREAM_TTS -->
+    </string-array>
+
+    <add-resource type="string" name="volume_stream_content_description_unmute"/>
+    <string name="volume_stream_content_description_unmute">"%1$s. Додирните да бисте укључили звук."</string>
+    <add-resource type="string" name="volume_stream_content_description_vibrate"/>
+    <string name="volume_stream_content_description_vibrate">"%1$s. Додирните да бисте подесили на вибрацију. Звук услуга приступачности ће можда бити искључен."</string>
+    <add-resource type="string" name="volume_stream_content_description_mute"/>
+    <string name="volume_stream_content_description_mute">"%1$s. Додирните да бисте искључили звук. Звук услуга приступачности ће можда бити искључен."</string>
+
+    <add-resource type="string" name="volume_dialog_accessibility_shown_message"/>
+    <string name="volume_dialog_accessibility_shown_message">"Контроле за јачину звука (%s) су приказане. Превуците нагоре да бисте их одбацили."</string>
+    <add-resource type="string" name="volume_dialog_accessibility_dismissed_message"/>
+    <string name="volume_dialog_accessibility_dismissed_message">"Контроле за јачину звука су сакривене"</string>
+
+    <!-- Name of special SystemUI debug settings -->
+    <add-resource type="string" name="system_ui_tuner"/>
+    <string name="system_ui_tuner">"Тјунер за кориснички интерфејс система"</string>
+
+    <!-- Preference to show/hide embedded battery percentage [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_battery_percentage"/>
+    <string name="show_battery_percentage">"Приказуј уграђени проценат батерије"</string>
+
+    <!-- Summary for battery percentage preference [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="show_battery_percentage_summary"/>
+    <string name="show_battery_percentage_summary">"Приказивање нивоа напуњености батерије у процентима унутар иконе на статусној траци када се батерија не пуни"</string>
+
+    <!-- Name of quick settings -->
+    <add-resource type="string" name="quick_settings"/>
+    <string name="quick_settings">"Брза подешавања"</string>
+
+    <!-- Name of status bar -->
+    <add-resource type="string" name="status_bar"/>
+    <string name="status_bar">"Статусна трака"</string>
+
+    <!-- Name of overview -->
+    <add-resource type="string" name="overview"/>
+    <string name="overview">"Преглед"</string>
+
+    <!-- Name of demo mode (mode with preset icons for screenshots) -->
+    <add-resource type="string" name="demo_mode"/>
+    <string name="demo_mode">"Режим демонстрације"</string>
+
+    <!-- Enable demo mode -->
+    <add-resource type="string" name="enable_demo_mode"/>
+    <string name="enable_demo_mode">"Омогући режим демонстрације"</string>
+
+    <!-- Show demo mode icons -->
+    <add-resource type="string" name="show_demo_mode"/>
+    <string name="show_demo_mode">"Прикажи режим демонстрације"</string>
+
+    <!-- Name of the ethernet status bar icon. -->
+    <add-resource type="string" name="status_bar_ethernet"/>
+    <string name="status_bar_ethernet">"Етернет"</string>
+
+    <!-- Name of the alarm status bar icon. -->
+    <add-resource type="string" name="status_bar_alarm"/>
+    <string name="status_bar_alarm">"Аларм"</string>
+
+    <!-- Name of the work status bar icon. -->
+    <add-resource type="string" name="status_bar_work"/>
+    <string name="status_bar_work">"Профил за Work"</string>
+
+    <!-- Name of the airplane status bar icon. -->
+    <add-resource type="string" name="status_bar_airplane"/>
+    <string name="status_bar_airplane">"Режим рада у авиону"</string>
+
+    <!-- Description for adding  a quick settings tile -->
+    <add-resource type="string" name="add_tile"/>
+    <string name="add_tile">"Додај плочицу"</string>
+
+    <!-- Name of a quick settings tile controlled by broadcast -->
+    <add-resource type="string" name="broadcast_tile"/>
+    <string name="broadcast_tile">"Плочица за емитовање"</string>
+
+    <!-- For preview release. DO NOT TRANSLATE -->
+    <add-resource type="string" name="regrettable_lack_of_easter_egg"/>
+    <string name="regrettable_lack_of_easter_egg">
+        ¯\\_(ツ)_/¯
+    </string>
+
+    <!-- Warning text when an alarm might be silenced by Do Not Disturb [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="zen_alarm_warning_indef"/>
+    <string name="zen_alarm_warning_indef">"Нећете чути следећи аларм у <xliff:g id="WHEN">%1$s</xliff:g> ако не искључите ово пре тога"</string>
+
+    <!-- Warning text when an alarm might be silenced by Do Not Disturb due to a time-based condition [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="zen_alarm_warning"/>
+    <string name="zen_alarm_warning">"Нећете чути следећи аларм у <xliff:g id="WHEN">%1$s</xliff:g>"</string>
+
+    <!-- Alarm template for near alarms [CHAR LIMIT=25] -->
+    <add-resource type="string" name="alarm_template"/>
+    <string name="alarm_template">"у <xliff:g id="WHEN">%1$s</xliff:g>"</string>
+
+    <!-- Alarm template for far alarms [CHAR LIMIT=25] -->
+    <add-resource type="string" name="alarm_template_far"/>
+    <string name="alarm_template_far">"у <xliff:g id="WHEN">%1$s</xliff:g>"</string>
+
+    <!-- Accessibility label for Quick Settings detail screens [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_detail"/>
+    <string name="accessibility_quick_settings_detail">"Брза подешавања, <xliff:g id="TITLE">%s</xliff:g>."</string>
+
+    <!-- Accessibility label for hotspot icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_hotspot"/>
+    <string name="accessibility_status_bar_hotspot">"Хотспот"</string>
+
+    <!-- Accessibility label for managed profile icon (not shown on screen) [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_managed_profile"/>
+    <string name="accessibility_managed_profile">"Профил за Work"</string>
+
+    <!-- Title of warning when entering System UI tuner for first time [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_warning_title"/>
+    <string name="tuner_warning_title">"Забава за неке, али не за све"</string>
+
+    <!-- Warning for users entering the System UI tuner for the first time [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="tuner_warning"/>
+    <string name="tuner_warning">"Тјунер за кориснички интерфејс система вам пружа додатне начине за подешавање и прилагођавање Android корисничког интерфејса. Ове експерименталне функције могу да се промене, откажу или нестану у будућим издањима. Будите опрезни."</string>
+
+    <!-- Warning for users entering the System UI tuner [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="tuner_persistent_warning"/>
+    <string name="tuner_persistent_warning">"Ове експерименталне функције могу да се промене, откажу или нестану у будућим издањима. Будите опрезни."</string>
+
+    <!-- Generic "got it" acceptance of dialog or cling [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="got_it"/>
+    <string name="got_it">"Важи"</string>
+
+    <!-- Toast describing tuner has been enabled [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_toast"/>
+    <string name="tuner_toast">"Честитамо! Тјунер за кориснички интерфејс система је додат у Подешавања"</string>
+
+    <!-- Option to remove the tuner from settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="remove_from_settings"/>
+    <string name="remove_from_settings">"Уклони из Подешавања"</string>
+
+    <!-- Dialog asking if the tuner should really be removed from settings [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="remove_from_settings_prompt"/>
+    <string name="remove_from_settings_prompt">"Желите ли да уклоните Тјунер за кориснички интерфејс система из Подешавања и да престанете да користите све његове функције?"</string>
+
+    <!-- Displayed when user launches an app that was uninstalled  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="activity_not_found"/>
+    <string name="activity_not_found">"Апликација није инсталирана на уређају"</string>
+
+    <!-- Name of setting to show clock seconds [CHAR LIMIT=40] -->
+    <add-resource type="string" name="clock_seconds"/>
+    <string name="clock_seconds">"Приказуј секунде на сату"</string>
+    <!-- Description of setting to show clock seconds [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="clock_seconds_desc"/>
+    <string name="clock_seconds_desc">"Секунде на сату се приказују на статусној траци. То може да утиче на трајање батерије."</string>
+
+    <!-- Button that leads to page to rearrange quick settings tiles [CHAR LIMIT=60] -->
+    <add-resource type="string" name="qs_rearrange"/>
+    <string name="qs_rearrange">"Преуреди Брза подешавања"</string>
+    <!-- Option to show brightness bar in quick settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="show_brightness"/>
+    <string name="show_brightness">"Прикажи осветљеност у Брзим подешавањима"</string>
+
+    <!-- Category in the System UI Tuner settings, where new/experimental
+         settings are -->
+    <add-resource type="string" name="experimental"/>
+    <string name="experimental">"Експериментално"</string>
+
+    <!-- Dialog title asking if Bluetooth should be enabled [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="enable_bluetooth_title"/>
+    <string name="enable_bluetooth_title">"Желите ли да укључите Bluetooth?"</string>
+
+    <!-- Dialog message explaining why Bluetooth should be enabled when a packaged keyboard is
+         conncted to the device [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="enable_bluetooth_message"/>
+    <string name="enable_bluetooth_message">"Да бисте повезали тастатуру са таблетом, прво морате да укључите Bluetooth."</string>
+
+    <!-- Bluetooth enablement ok text [CHAR LIMIT=40] -->
+    <add-resource type="string" name="enable_bluetooth_confirmation_ok"/>
+    <string name="enable_bluetooth_confirmation_ok">"Укључи"</string>
+
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="show_silently"/>
+    <string name="show_silently">"Приказуј обавештења без звука"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="block"/>
+    <string name="block">"Блокирај сва обавештења"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="do_not_silence"/>
+    <string name="do_not_silence">"Не искључуј звук"</string>
+    <!-- [CHAR LIMIT=100] Notification importance option -->
+    <add-resource type="string" name="do_not_silence_block"/>
+    <string name="do_not_silence_block">"Не искључују звук нити блокирај"</string>
+
+    <!-- [CHAR LIMIT=NONE] Importance Tuner setting title -->
+    <add-resource type="string" name="tuner_full_importance_settings"/>
+    <string name="tuner_full_importance_settings">"Напредне контроле за обавештења"</string>
+    <add-resource type="string" name="tuner_full_importance_settings_on"/>
+    <string name="tuner_full_importance_settings_on">"Укључено"</string>
+    <add-resource type="string" name="tuner_full_importance_settings_off"/>
+    <string name="tuner_full_importance_settings_off">"Искључено"</string>
+    <add-resource type="string" name="power_notification_controls_description"/>
+    <string name="power_notification_controls_description">"Помоћу напредних контрола за обавештења можете да подесите ниво важности од 0. до 5. за обавештења апликације. \n\n"<b>"5. ниво"</b>" \n– Приказују се у врху листе обавештења \n- Дозволи прекид режима целог екрана \n– Увек завируј \n\n"<b>"4. ниво"</b>" \n– Спречи прекид режима целог екрана \n– Увек завируј \n\n"<b>"3. ниво"</b>" \n– Спречи прекид режима целог екрана \n– Никада не завируј \n\n"<b>"2. ниво"</b>" \n– Спречи прекид режима целог екрана \n– Никада не завируј \n– Никада не производи звук или вибрацију \n\n"<b>"1. ниво"</b>" \n– Спречи прекид режима целог екрана \n– Никада не завируј \n– Никада не производи звук или вибрацију \n– Сакриј на закључаном екрану и статусној траци \n– Приказују се у дну листе обавештења \n\n"<b>"0. ниво"</b>" \n– Блокирај сва обавештења из апликације"</string>
+
+    <!-- Notification importance title, user unspecified status-->
+    <add-resource type="string" name="user_unspecified_importance"/>
+    <string name="user_unspecified_importance">"Важност: Аутоматски"</string>
+    <!-- Notification importance title, blocked status-->
+    <add-resource type="string" name="blocked_importance"/>
+    <string name="blocked_importance">"Важност: 0. ниво"</string>
+    <!-- Notification importance title, min status-->
+    <add-resource type="string" name="min_importance"/>
+    <string name="min_importance">"Важност: 1. ниво"</string>
+    <!-- Notification importance title, low status-->
+    <add-resource type="string" name="low_importance"/>
+    <string name="low_importance">"Важност: 2. ниво"</string>
+    <!-- Notification importance title, normal status-->
+    <add-resource type="string" name="default_importance"/>
+    <string name="default_importance">"Важност: 3. ниво"</string>
+    <!-- Notification importance title, high status-->
+    <add-resource type="string" name="high_importance"/>
+    <string name="high_importance">"Важност: 4. ниво"</string>
+    <!-- Notification importance title, max status-->
+    <add-resource type="string" name="max_importance"/>
+    <string name="max_importance">"Важност: 5. ниво"</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: blocked importance level description -->
+    <add-resource type="string" name="notification_importance_user_unspecified"/>
+    <string name="notification_importance_user_unspecified">"Апликација одређује важност сваког обавештења."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: blocked importance level description -->
+    <add-resource type="string" name="notification_importance_blocked"/>
+    <string name="notification_importance_blocked">"Никада не приказуј обавештења из ове апликације"</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: min importance level description -->
+    <add-resource type="string" name="notification_importance_min"/>
+    <string name="notification_importance_min">"Без прекида режима целог екрана, завиривања, звука или вибрације. Сакриј на закључаном екрану и статусној траци."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: low importance level description -->
+    <add-resource type="string" name="notification_importance_low"/>
+    <string name="notification_importance_low">"Без прекида режима целог екрана, завиривања, звука или вибрације."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: normal importance level description -->
+    <add-resource type="string" name="notification_importance_default"/>
+    <string name="notification_importance_default">"Без прекида режима целог екрана или завиривања."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: high importance level description -->
+    <add-resource type="string" name="notification_importance_high"/>
+    <string name="notification_importance_high">"Увек завируј. Без прекида режима целог екрана."</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: max importance level description -->
+    <add-resource type="string" name="notification_importance_max"/>
+    <string name="notification_importance_max">"Увек завируј и дозволи прекид режима целог екрана."</string>
+
+    <!-- Notification: Control panel: Label for button that launches notification settings. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_more_settings"/>
+    <string name="notification_more_settings">"Још подешавања"</string>
+    <!-- Notification: Control panel: Label for button that dismisses control panel. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_done"/>
+    <string name="notification_done">"Готово"</string>
+
+    <!-- Notification: Gear: Content description for the gear. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="notification_gear_accessibility"/>
+    <string name="notification_gear_accessibility">"Контроле обавештења за апликацију <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Title of the battery settings detail panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="battery_panel_title"/>
+    <string name="battery_panel_title">"Потрошња батерије"</string>
+
+    <!-- Summary of battery saver not available [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_charging_summary"/>
+    <string name="battery_detail_charging_summary">"Уштеда батерије није доступна током пуњења"</string>
+
+    <!-- Title of switch for battery saver [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_switch_title"/>
+    <string name="battery_detail_switch_title">"Уштеда батерије"</string>
+
+    <!-- Summary of switch for battery saver [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="battery_detail_switch_summary"/>
+    <string name="battery_detail_switch_summary">"Смањује перформансе и позадинске податке"</string>
+
+    <!-- Name used for certain Keyboard keys on gamepads, e.g. "Button L1". -->
+    <add-resource type="string" name="keyboard_key_button_template"/>
+    <string name="keyboard_key_button_template">"Дугме <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Name used to refer to the "Home" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_home"/>
+    <string name="keyboard_key_home">"Тастер Почетна"</string>
+    <!-- Name used to refer to the "Back" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_back"/>
+    <string name="keyboard_key_back">"Тастер Назад"</string>
+    <!-- Name used to refer to the "Up" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_up"/>
+    <string name="keyboard_key_dpad_up">"Тастер са стрелицом нагоре"</string>
+    <!-- Name used to refer to the "Down" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_down"/>
+    <string name="keyboard_key_dpad_down">"Тастер са стрелицом надоле"</string>
+    <!-- Name used to refer to the "Left" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_left"/>
+    <string name="keyboard_key_dpad_left">"Тастер са стрелицом налево"</string>
+    <!-- Name used to refer to the "Right" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_right"/>
+    <string name="keyboard_key_dpad_right">"Тастер са стрелицом надесно"</string>
+    <!-- Name used to refer to the "Center" arrow key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_dpad_center"/>
+    <string name="keyboard_key_dpad_center">"Тастер са централном стрелицом"</string>
+    <!-- Name used to refer to the "Tab" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_tab"/>
+    <string name="keyboard_key_tab">"Табулатор"</string>
+    <!-- Name used to refer to the "Space" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_space"/>
+    <string name="keyboard_key_space">"Тастер за размак"</string>
+    <!-- Name used to refer to the "Enter" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_enter"/>
+    <string name="keyboard_key_enter">"Enter"</string>
+    <!-- Name used to refer to the "Backspace" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_backspace"/>
+    <string name="keyboard_key_backspace">"Тастер за брисање уназад"</string>
+    <!-- Name used to refer to the "Play/Pause" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_play_pause"/>
+    <string name="keyboard_key_media_play_pause">"Тастер за репродукцију/паузирање"</string>
+    <!-- Name used to refer to the "Stop" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_stop"/>
+    <string name="keyboard_key_media_stop">"Тастер за заустављање"</string>
+    <!-- Name used to refer to the "Next" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_next"/>
+    <string name="keyboard_key_media_next">"Тастер Следећа"</string>
+    <!-- Name used to refer to the "Previous" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_previous"/>
+    <string name="keyboard_key_media_previous">"Тастер Претходна"</string>
+    <!-- Name used to refer to the "Rewind" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_rewind"/>
+    <string name="keyboard_key_media_rewind">"Тастер за премотавање уназад"</string>
+    <!-- Name used to refer to the "Fast Forward" media key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_media_fast_forward"/>
+    <string name="keyboard_key_media_fast_forward">"Тастер за премотавање унапред"</string>
+    <!-- Name used to refer to the "Page Up" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_page_up"/>
+    <string name="keyboard_key_page_up">"Тастер за страницу нагоре"</string>
+    <!-- Name used to refer to the "Page Down" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_page_down"/>
+    <string name="keyboard_key_page_down">"Тастер за страницу надоле"</string>
+    <!-- Name used to refer to the "Delete" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_forward_del"/>
+    <string name="keyboard_key_forward_del">"Тастер за брисање"</string>
+    <!-- Name used to refer to the "Home" move key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_move_home"/>
+    <string name="keyboard_key_move_home">"Тастер Почетна"</string>
+    <!-- Name used to refer to the "End" move key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_move_end"/>
+    <string name="keyboard_key_move_end">"Тастер за крај"</string>
+    <!-- Name used to refer to the "Insert" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_insert"/>
+    <string name="keyboard_key_insert">"Тастер за уметање"</string>
+    <!-- Name used to refer to the "Num Lock" key on the keyboard. -->
+    <add-resource type="string" name="keyboard_key_num_lock"/>
+    <string name="keyboard_key_num_lock">"Num Lock"</string>
+    <!-- Name used to refer to keys on the numeric pad of the keyboard, e.g. "Numpad 9". -->
+    <add-resource type="string" name="keyboard_key_numpad_template"/>
+    <string name="keyboard_key_numpad_template">"Тастер <xliff:g id="NAME">%1$s</xliff:g> на нумеричкој тастатури"</string>
+
+    <!-- User visible title for the system-wide keyboard shortcuts list. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system"/>
+    <string name="keyboard_shortcut_group_system">"Систем"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the home screen. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_home"/>
+    <string name="keyboard_shortcut_group_system_home">"Почетни"</string>
+    <!-- User visible title for the the keyboard shortcut that takes the user to the recents screen. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_recents"/>
+    <string name="keyboard_shortcut_group_system_recents">"Недавни садржај"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the back action. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_back"/>
+    <string name="keyboard_shortcut_group_system_back">"Назад"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the notification shade. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_notifications"/>
+    <string name="keyboard_shortcut_group_system_notifications">"Обавештења"</string>
+    <!-- User visible title for the the keyboard shortcut that triggers the keyboard shortcuts helper. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_shortcuts_helper"/>
+    <string name="keyboard_shortcut_group_system_shortcuts_helper">"Тастерске пречице"</string>
+    <!-- User visible title for the the keyboard shortcut that switches input methods. -->
+    <add-resource type="string" name="keyboard_shortcut_group_system_switch_input"/>
+    <string name="keyboard_shortcut_group_system_switch_input">"Промени метод уноса"</string>
+
+    <!-- User visible title for the system-wide applications keyboard shortcuts list. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications"/>
+    <string name="keyboard_shortcut_group_applications">"Апликације"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the assist app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_assist"/>
+    <string name="keyboard_shortcut_group_applications_assist">"Апликација за помоћ"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the browser app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_browser"/>
+    <string name="keyboard_shortcut_group_applications_browser">"Прегледач"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the contacts app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_contacts"/>
+    <string name="keyboard_shortcut_group_applications_contacts">"Контакти"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the email app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_email"/>
+    <string name="keyboard_shortcut_group_applications_email">"Имејл"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the instant messaging app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_im"/>
+    <string name="keyboard_shortcut_group_applications_im">"Размена тренутних порука"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the music app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_music"/>
+    <string name="keyboard_shortcut_group_applications_music">"Музика"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the YouTube app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_youtube"/>
+    <string name="keyboard_shortcut_group_applications_youtube">"YouTube"</string>
+    <!-- User visible title for the keyboard shortcut that takes the user to the calendar app. -->
+    <add-resource type="string" name="keyboard_shortcut_group_applications_calendar"/>
+    <string name="keyboard_shortcut_group_applications_calendar">"Календар"</string>
+
+    <!-- SysUI Tuner: Option to show full do not disturb panel in volume [CHAR LIMIT=60] -->
+    <add-resource type="string" name="tuner_full_zen_title"/>
+    <string name="tuner_full_zen_title">"Прикажи са контролама јачине звука"</string>
+
+    <!-- SysUI Tuner: Label for screen about do not disturb settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_and_do_not_disturb"/>
+    <string name="volume_and_do_not_disturb">"Не узнемиравај"</string>
+
+    <!-- SysUI Tuner: Switch to control whether volume buttons enter/exit do
+         not disturb [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_dnd_silent"/>
+    <string name="volume_dnd_silent">"Пречица за дугмад за јачину звука"</string>
+
+    <!-- SysUI Tuner: Switch to control volume up behavior [CHAR LIMIT=60] -->
+    <add-resource type="string" name="volume_up_silent"/>
+    <string name="volume_up_silent">"Изађи из режима Не узнемиравај када је звук појачан"</string>
+
+    <!-- Name of the battery icon in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="battery"/>
+    <string name="battery">"Батерија"</string>
+
+    <!-- Name of the clock in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="clock"/>
+    <string name="clock">"Сат"</string>
+
+    <!-- Name of the headset in status bar [CHAR LIMIT=30] -->
+    <add-resource type="string" name="headset"/>
+    <string name="headset">"Наглавне слушалице"</string>
+
+    <!-- Accessibility description of headphones icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_headphones"/>
+    <string name="accessibility_status_bar_headphones">"Слушалице су повезане"</string>
+
+    <!-- Accessibility description of headset icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_status_bar_headset"/>
+    <string name="accessibility_status_bar_headset">"Наглавне слушалице су повезане"</string>
+
+    <!-- Label for quick settings tile for data saver [CHAR LIMIT=30] -->
+    <add-resource type="string" name="data_saver"/>
+    <string name="data_saver">"Уштеда података"</string>
+
+    <!-- Accessibility description for data saver being on [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_saver_on"/>
+    <string name="accessibility_data_saver_on">"Уштеда података је укључена"</string>
+
+    <!-- Accessibility description for data saver being off [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_data_saver_off"/>
+    <string name="accessibility_data_saver_off">"Уштеда података је искључена"</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <add-resource type="string" name="switch_bar_on"/>
+    <string name="switch_bar_on">"Укључено"</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <add-resource type="string" name="switch_bar_off"/>
+    <string name="switch_bar_off">"Искључено"</string>
+
+    <!-- SysUI Tuner: Button that leads to the navigation bar customization screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="nav_bar"/>
+    <string name="nav_bar">"Трака за навигацију"</string>
+
+    <!-- SysUI Tuner: Group of buttons that show on the start of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="start"/>
+    <string name="start">"Покрени"</string>
+    <!-- SysUI Tuner: Group of buttons that show on the center of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="center"/>
+    <string name="center">"Центар"</string>
+    <!-- SysUI Tuner: Group of buttons that show on the end of the screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="end"/>
+    <string name="end">"Дно"</string>
+    <!-- SysUI Tuner: Name of space used in custom navigation bar layouts [CHAR LIMIT=30] -->
+    <add-resource type="string" name="space"/>
+    <string name="space">"Ознака за размак"</string>
+    <!-- SysUI Tuner: Name of Combination Menu / Keyboard Switcher button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_ime"/>
+    <string name="menu_ime">"Мени/Тастатура пребацивач"</string>
+    <!-- SysUI Tuner: Title for dialog to add a button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="select_button"/>
+    <string name="select_button">"Изаберите дугме за додавање"</string>
+    <!-- SysUI Tuner: Button to add a button [CHAR LIMIT=30] -->
+    <add-resource type="string" name="add_button"/>
+    <string name="add_button">"Додај дугме"</string>
+    <!-- SysUI Tuner: Save the current settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"Сачувај"</string>
+    <!-- SysUI Tuner: Reset to default settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reset"/>
+    <string name="reset">"Ресетуј"</string>
+
+    <!-- SysUI Tuner: Title of no home warning dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="no_home_title"/>
+    <string name="no_home_title">"Нисмо пронашли дугме Почетна"</string>
+    <!-- SysUI Tuner: Message of no home warning dialog [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_home_message"/>
+    <string name="no_home_message">"Дугме Почетна је неопходно за навигацију на овом уређају. Додајте дугме Почетна пре него што сачувате измене."</string>
+
+    <!-- SysUI Tuner: Adjust button width dialog title [CHAR LIMIT=60] -->
+    <add-resource type="string" name="adjust_button_width"/>
+    <string name="adjust_button_width">"Прилагоди ширину дугмета"</string>
+
+    <!-- SysUI Tuner: Nav bar button that holds the clipboard [CHAR LIMIT=30] -->
+    <add-resource type="string" name="clipboard"/>
+    <string name="clipboard">"Привремена меморија"</string>
+
+    <!-- SysUI Tuner: Description of nav bar button that holds the clipboard [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="clipboard_description"/>
+    <string name="clipboard_description">"Привремена меморија омогућава да се ставке превлаче директно у привремену меморију. Постојеће ставке могу да се превлаче и директно из привремене меморије."</string>
+
+    <!-- SysUI Tuner: Accessibility description for custom nav key [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_key"/>
+    <string name="accessibility_key">"Прилагођено дугме за навигацију"</string>
+
+    <!-- SysUI Tuner: Nav bar button that emulates a keycode [CHAR LIMIT=30] -->
+    <add-resource type="string" name="keycode"/>
+    <string name="keycode">"Кôд тастера"</string>
+
+    <!-- SysUI Tuner: Description of nav bar button that emulates a keycode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="keycode_description"/>
+    <string name="keycode_description">"Дугмад за кодове тастера омогућава да се на траку за навигацију додају тастери на тастатури. Када притиснете дугме, симулира се изабрани тастер на тастатури. Прво морате да изаберете тастер за дугме, па слику коју ће се приказивати на дугмету."</string>
+
+    <!-- SysUI Tuner: Title of dialog to select which key to emulate [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_keycode"/>
+    <string name="select_keycode">"Изаберите дугме за тастатуру"</string>
+
+    <!-- SysUI Tuner: Label for preview area in navigation bar tuner [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="preview"/>
+    <string name="preview">"Преглед"</string>
+
+    <!-- Label for area where tiles can be dragged out of [CHAR LIMIT=60] -->
+    <add-resource type="string" name="drag_to_add_tiles"/>
+    <string name="drag_to_add_tiles">"Превуците да бисте додали плочице"</string>
+
+    <!-- Label for area where tiles can be dragged in to [CHAR LIMIT=60] -->
+    <add-resource type="string" name="drag_to_remove_tiles"/>
+    <string name="drag_to_remove_tiles">"Превуците овде да бисте уклонили"</string>
+
+    <!-- Button to edit the tile ordering of quick settings [CHAR LIMIT=60] -->
+    <add-resource type="string" name="qs_edit"/>
+    <string name="qs_edit">"Измени"</string>
+
+    <!-- SysUI Tuner: Options for how clock is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tuner_time"/>
+    <string name="tuner_time">"Време"</string>
+
+    <!-- SysUI Tuner: Options for how clock is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="array" name="clock_options"/>
+    <string-array name="clock_options">
+        <item>"Прикажи сате, минуте и секунде"</item>
+        <item>"Прикажи сате и минуте (подразумевано)"</item>
+        <item>"Не приказуј ову икону"</item>
+    </string-array>
+
+    <!-- SysUI Tuner: Options for how battery is displayed [CHAR LIMIT=NONE] -->
+    <add-resource type="array" name="battery_options"/>
+    <string-array name="battery_options">
+        <item>"Увек приказуј проценат"</item>
+        <item>"Прикажи проценат током пуњења (подразумевано)"</item>
+        <item>"Не приказуј ову икону"</item>
+    </string-array>
+
+    <!-- SysUI Tuner: Other section -->
+    <add-resource type="string" name="other"/>
+    <string name="other">"Друго"</string>
+
+    <!-- Accessibility label for the divider that separates the windows in split-screen mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_divider"/>
+    <string name="accessibility_divider">"Разделник подељеног екрана"</string>
+
+    <!-- Accessibility action for moving docked stack divider to make the left screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_full"/>
+    <string name="accessibility_action_divider_left_full">"Режим целог екрана за леви екран"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 70% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_70"/>
+    <string name="accessibility_action_divider_left_70">"Леви екран 70%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 50% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_50"/>
+    <string name="accessibility_action_divider_left_50">"Леви екран 50%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the left screen 30% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_left_30"/>
+    <string name="accessibility_action_divider_left_30">"Леви екран 30%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the right screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_right_full"/>
+    <string name="accessibility_action_divider_right_full">"Режим целог екрана за доњи екран"</string>
+
+    <!-- Accessibility action for moving docked stack divider to make the top screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_full"/>
+    <string name="accessibility_action_divider_top_full">"Режим целог екрана за горњи екран"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 70% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_70"/>
+    <string name="accessibility_action_divider_top_70">"Горњи екран 70%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 50% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_50"/>
+    <string name="accessibility_action_divider_top_50">"Горњи екран 50%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the top screen 30% [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_top_30"/>
+    <string name="accessibility_action_divider_top_30">"Горњи екран 30%"</string>
+    <!-- Accessibility action for moving docked stack divider to make the bottom screen full screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_action_divider_bottom_full"/>
+    <string name="accessibility_action_divider_bottom_full">"Режим целог екрана за доњи екран"</string>
+
+    <!-- Accessibility description of a QS tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_label"/>
+    <string name="accessibility_qs_edit_tile_label">"<xliff:g id="POSITION">%1$d</xliff:g>. позиција, <xliff:g id="TILE_NAME">%2$s</xliff:g>. Двапут додирните да бисте изменили."</string>
+
+    <!-- Accessibility description of a QS tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_add_tile_label"/>
+    <string name="accessibility_qs_edit_add_tile_label">"<xliff:g id="TILE_NAME">%1$s</xliff:g>. Двапут додирните да бисте додали."</string>
+
+    <!-- Accessibility description of a place to drop a tile while editing positions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_position_label"/>
+    <string name="accessibility_qs_edit_position_label">"<xliff:g id="POSITION">%1$d</xliff:g>. позиција. Двапут додирните да бисте изабрали."</string>
+
+    <!-- Accessibility description of option to move QS tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_move_tile"/>
+    <string name="accessibility_qs_edit_move_tile">"Премести плочицу <xliff:g id="TILE_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Accessibility description of option to remove QS tile [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_remove_tile"/>
+    <string name="accessibility_qs_edit_remove_tile">"Уклони плочицу <xliff:g id="TILE_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Accessibility action when QS tile is added [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_added"/>
+    <string name="accessibility_qs_edit_tile_added">"Плочица <xliff:g id="TILE_NAME">%1$s</xliff:g> је додата на <xliff:g id="POSITION">%2$d</xliff:g>. позицију"</string>
+
+    <!-- Accessibility action when QS tile is removed [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_removed"/>
+    <string name="accessibility_qs_edit_tile_removed">"Плочица <xliff:g id="TILE_NAME">%1$s</xliff:g> је уклоњена"</string>
+
+    <!-- Accessibility action when QS tile is moved [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_qs_edit_tile_moved"/>
+    <string name="accessibility_qs_edit_tile_moved">"Плочица <xliff:g id="TILE_NAME">%1$s</xliff:g> је премештена на <xliff:g id="POSITION">%2$d</xliff:g>. позицију"</string>
+
+    <!-- Accessibility label for window when QS editing is happening [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_quick_settings_edit"/>
+    <string name="accessibility_desc_quick_settings_edit">"Уређивач за Брза подешавања."</string>
+
+    <!-- Accessibility label for the notification icons in the collapsed status bar. Not shown on screen [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_desc_notification_icon"/>
+    <string name="accessibility_desc_notification_icon">"Обавештења за <xliff:g id="ID_1">%1$s</xliff:g>: <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+
+    <!-- Multi-Window strings -->
+    <!-- Text that gets shown on top of current activity to inform the user that the system force-resized the current activity and that things might crash/not work properly [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dock_forced_resizable"/>
+    <string name="dock_forced_resizable">"Апликација можда неће функционисати са подељеним екраном."</string>
+    <!-- Warning message when we try to dock a non-resizeble tasks and launch it in fullscreen instead. -->
+    <add-resource type="string" name="dock_non_resizeble_failed_to_dock_text"/>
+    <string name="dock_non_resizeble_failed_to_dock_text">"Апликација не подржава подељени екран."</string>
+
+    <!-- accessibility label for button to open settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_settings"/>
+    <string name="accessibility_quick_settings_settings">"Отвори Подешавања."</string>
+
+    <!-- accessibility label for button to expand quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_expand"/>
+    <string name="accessibility_quick_settings_expand">"Отвори Брза подешавања."</string>
+
+    <!-- accessibility label for button to collapse quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_collapse"/>
+    <string name="accessibility_quick_settings_collapse">"Затвори Брза подешавања."</string>
+
+    <!-- accessibility label for alarm icon [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_alarm_set"/>
+    <string name="accessibility_quick_settings_alarm_set">"Аларм је подешен."</string>
+
+    <!-- accessibility label for no internet [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_no_internet"/>
+    <string name="accessibility_quick_settings_no_internet">"Нема интернета."</string>
+
+    <!-- accessibility label for quick settings items that open a details page [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_open_details"/>
+    <string name="accessibility_quick_settings_open_details">"Отвори детаље."</string>
+
+    <!-- accessibility label for quick settings items that open a details page [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_open_settings"/>
+    <string name="accessibility_quick_settings_open_settings">"Отвори подешавања за <xliff:g id="ID_1">%s</xliff:g>."</string>
+
+    <!-- accessibility label for button to edit quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_edit"/>
+    <string name="accessibility_quick_settings_edit">"Измени редослед подешавања."</string>
+
+    <!-- accessibility label for paging indicator in quick settings [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="accessibility_quick_settings_page"/>
+    <string name="accessibility_quick_settings_page">"<xliff:g id="ID_1">%1$d</xliff:g>. страна од <xliff:g id="ID_2">%2$d</xliff:g>"</string>
+
+    <add-resource type="string" name="sim1"/>
+    <string name="sim1">"SIM 1"</string>
+    <add-resource type="string" name="sim2"/>
+    <string name="sim2">"SIM 2"</string>
+    <!-- Battery level for expanded quick settings [CHAR LIMIT=2] -->
+    <add-resource type="string" name="battery_level_template"/>
+    <string name="battery_level_template"><xliff:g id="level" example="45">%d</xliff:g>%%</string>
+
+    <!-- Label that replaces other notification controls when the notification is from the system
+         and cannot be silenced (see @string/show_silently) or blocked (see @string/block) -->
+    <add-resource type="string" name="cant_silence_or_block"/>
+    <string name="cant_silence_or_block">"Звук обавештења не може да се искључи нити она могу да се блокирају"</string>
+
+    <!-- Title for notification (and dialog) that user's phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="high_temp_title"/>
+    <string name="high_temp_title">"Телефон постаје топлији"</string>
+    <!-- Message body for notification that user's phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="high_temp_notif_message"/>
+    <string name="high_temp_notif_message">"Неке функције су ограничене док се телефон не охлади"</string>
+    <!-- Text body for dialog alerting user that their phone has reached a certain temperature and may start to slow down in order to cool down. [CHAR LIMIT=300] -->
+    <add-resource type="string" name="high_temp_dialog_message"/>
+    <string name="high_temp_dialog_message">"Телефон ће аутоматски покушати да се охлади. И даље можете да користите телефон, али можда ће бити спорији.\n\nКада се телефон охлади, радиће нормално."</string></resources>

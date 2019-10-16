@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <add-resource type="string" name="onesong"/>
+    <string name="onesong">"1 টা গান"</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <add-resource type="plurals" name="Nsongs"/>
+    <plurals name="Nsongs">
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> টা গান"</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <add-resource type="plurals" name="Nsongscomp"/>
+    <plurals name="Nsongscomp">
+        <item quantity="other">"<xliff:g id="total_count">%1$d</xliff:g>ৰ <xliff:g id="count_for_artist">%2$d</xliff:g> গান"</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <add-resource type="plurals" name="Nalbums"/>
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">"1 টা এলবাম"</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> টা এলবাম"</item>
+    </plurals>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <add-resource type="string" name="goto_start"/>
+    <string name="goto_start">"লাইব্ৰেৰী"</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <add-resource type="string" name="party_shuffle"/>
+    <string name="party_shuffle">"পাৰ্টি শ্ব্যাফল"</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <add-resource type="string" name="party_shuffle_off"/>
+    <string name="party_shuffle_off">"পাৰ্টি শ্ব্যাফল অফ"</string>
+    <!-- Menu item that clear all playlists mode -->
+    <add-resource type="string" name="clear_all_playlists"/>
+    <string name="clear_all_playlists">"সকলো প্লেলিষ্ট পৰিষ্কাৰ কৰক"</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <add-resource type="string" name="delete_item"/>
+    <string name="delete_item">"বিলোপ কৰক"</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <add-resource type="string" name="play_all"/>
+    <string name="play_all">"সকলো বজাওক"</string>
+    <!-- Menu item to play song in music -->
+    <add-resource type="string" name="open_in_music"/>
+    <string name="open_in_music">"সংগীতত খোলক"</string>
+    <!-- Menu item to share audio or video -->
+    <add-resource type="string" name="share"/>
+    <string name="share">"ভাগ-বতৰা কৰক"</string>
+     <!-- Menu item to details audio or video -->
+    <add-resource type="string" name="details"/>
+    <string name="details">"বিতং তথ্য"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <add-resource type="string" name="delete_artist_desc"/>
+    <string name="delete_artist_desc">"<xliff:g id="artist">%s</xliff:g> অনুযায়ী সকলো গান স্থায়ীভাৱে বিলোপ কৰিবনে?"</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <add-resource type="string" name="delete_album_desc"/>
+    <string name="delete_album_desc">"সমগ্ৰ এলবাম \"<xliff:g id="album">%s</xliff:g>\" স্থায়ীভাৱে বিলোপ কৰিবনে?"</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <add-resource type="string" name="delete_song_desc"/>
+    <string name="delete_song_desc">"\"<xliff:g id="song">%s</xliff:g>\" স্থায়ীভাৱে বিলোপ কৰিবনে?"</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <add-resource type="string" name="delete_confirm_button_text"/>
+    <string name="delete_confirm_button_text">"ঠিক"</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <add-resource type="plurals" name="NNNtracksdeleted"/>
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">"1 টা গান বিলোপ কৰা হৈছিল৷"</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">"<xliff:g id="songs_to_delete">%d</xliff:g> টা গান বিলোপ কৰা হৈছিল৷"</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning"/>
+    <string name="scanning">"SD কাৰ্ড স্কেন কৰি আছে..."</string>
+    <!-- shown in dialog while the media scanner is starting up -->
+    <add-resource type="string" name="scanning_nosdcard"/>
+    <string name="scanning_nosdcard">"USB ষ্ট’ৰেজ স্কেন কৰি আছে..."</string>
+
+    <add-resource type="array" name="title_array_folder"/>
+    <string-array name="title_array_folder">
+        <item>"শিল্পীসকল"</item>
+        <item>"এলবামসমূহ"</item>
+        <item>"গানসমূহ"</item>
+        <item>"ফ’ল্ডাৰসমূহ"</item>
+        <item>"প্লেলিষ্টসমূহ"</item>
+    </string-array>
+    <add-resource type="array" name="title_array_songs"/>
+    <string-array name="title_array_songs">
+        <item>"শিল্পীসকল"</item>
+        <item>"এলবামসমূহ"</item>
+        <item>"গানসমূহ"</item>
+        <item>"প্লেলিষ্টসমূহ"</item>
+    </string-array>
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <add-resource type="string" name="nowplaying_title"/>
+    <string name="nowplaying_title">"এতিয়া বজা"</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <add-resource type="string" name="partyshuffle_title"/>
+    <string name="partyshuffle_title">"পাৰ্টি শ্ব্যাফল"</string>
+    <!-- Artist screen title -->
+    <add-resource type="string" name="artists_title"/>
+    <string name="artists_title">"শিল্পীসকল"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="albums_menu"/>
+    <string name="albums_menu">"এলবামসমূহ"</string>
+    <!-- Albums screen title -->
+    <add-resource type="string" name="albums_title"/>
+    <string name="albums_title">"এলবামসমূহ"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="tracks_menu"/>
+    <string name="tracks_menu">"গানসমূহ"</string>
+    <!-- Songs screen title -->
+    <add-resource type="string" name="tracks_title"/>
+    <string name="tracks_title">"গানসমূহ"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="folder_menu"/>
+    <string name="folder_menu">"ফ’ল্ডাৰসমূহ"</string>
+    <!-- Folder screen title -->
+    <add-resource type="string" name="folders_title"/>
+    <string name="folders_title">"ফ’ল্ডাৰসমূহ"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="playlists_menu"/>
+    <string name="playlists_menu">"প্লেলিষ্টসমূহ"</string>
+    <!-- Playlists screen title -->
+    <add-resource type="string" name="playlists_title"/>
+    <string name="playlists_title">"প্লেলিষ্টসমূহ"</string>
+    <!-- Videos screen title -->
+    <add-resource type="string" name="videos_title"/>
+    <string name="videos_title">"ভিডিঅ’সমূহ"</string>
+    <!-- All media screen title -->
+    <add-resource type="string" name="all_title"/>
+    <string name="all_title">"সকলো মিডিয়া"</string>
+    <!-- Category label on Library screen -->
+    <add-resource type="string" name="browse_menu"/>
+    <string name="browse_menu">"শিল্পীসকল"</string>
+    <!-- Library screen, menu item -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"সন্ধান"</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <add-resource type="string" name="no_tracks_title"/>
+    <string name="no_tracks_title">"কোনো গান নাই"</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <add-resource type="string" name="no_videos_title"/>
+    <string name="no_videos_title">"কোনো ভিডিঅ’ নাই"</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <add-resource type="string" name="no_playlists_title"/>
+    <string name="no_playlists_title">"কোনো প্লেলিষ্ট নাই"</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <add-resource type="string" name="delete_playlist_menu"/>
+    <string name="delete_playlist_menu">"বিলোপ কৰক"</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <add-resource type="string" name="edit_playlist_menu"/>
+    <string name="edit_playlist_menu">"সম্পাদনা কৰক"</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <add-resource type="string" name="rename_playlist_menu"/>
+    <string name="rename_playlist_menu">"পুনঃনাম দিয়ক"</string>
+    <!-- Dialog box message shown when clearing all playlists-->
+    <add-resource type="string" name="clear_all_playlists_message"/>
+    <string name="clear_all_playlists_message">"আপুনি সকলো প্লেলিষ্ট পৰিষ্কাৰ কৰিবলৈ বিচাৰেনে?"</string>
+    <!-- Dialog box message shown when deleting a playlist-->
+    <add-resource type="string" name="delete_playlist_message"/>
+    <string name="delete_playlist_message">"আপুনি \"<xliff:g id="name">%s</xliff:g>\" বিলোপ কৰিবলৈ বিচাৰেনে?"</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="delete_playlist_button_ok"/>
+    <string name="delete_playlist_button_ok">"ঠিক"</string>
+    <add-resource type="string" name="delete_playlist_button_cancel"/>
+    <string name="delete_playlist_button_cancel">"বাতিল কৰক"</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <add-resource type="string" name="playlist_deleted_message"/>
+    <string name="playlist_deleted_message">"প্লেলিষ্ট বিলোপ কৰা হৈছে৷"</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <add-resource type="string" name="playlist_renamed_message"/>
+    <string name="playlist_renamed_message">"প্লেলিষ্ট পুনঃনামকৰণ কৰা হৈছে৷"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <add-resource type="string" name="recentlyadded"/>
+    <string name="recentlyadded">"শেহতীয়াকৈ যোগ হৈছে"</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <add-resource type="string" name="recentlyadded_title"/>
+    <string name="recentlyadded_title">"শেহতীয়াকৈ যোগ হৈছে"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <add-resource type="string" name="podcasts_listitem"/>
+    <string name="podcasts_listitem">"পোডকাষ্টসমূহ"</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <add-resource type="string" name="podcasts_title"/>
+    <string name="podcasts_title">"পোডকাষ্টসমূহ"</string>
+    <!-- all recordings will show up in the media database in a playlist with thiis name -->
+    <add-resource type="string" name="audio_db_playlist_name"/>
+    <string name="audio_db_playlist_name">"মোৰ ৰেকৰ্ডিং"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title"/>
+    <string name="sdcard_missing_title">"SD কাৰ্ড নাই"</string>
+    <!-- Title of screen when no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_title_nosdcard"/>
+    <string name="sdcard_missing_title_nosdcard">"কোনো USB ষ্ট’ৰেজ নাই"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message"/>
+    <string name="sdcard_missing_message">"আপোনাৰ ফোনত কোনো SD কাৰ্ড সুমুৱাই থোৱা নাই৷"</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <add-resource type="string" name="sdcard_missing_message_nosdcard"/>
+    <string name="sdcard_missing_message_nosdcard">"আপোনাৰ ফোনৰ USB ষ্ট’ৰেজ নাই৷"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title"/>
+    <string name="sdcard_busy_title">"SD কাৰ্ড অনুপলব্ধ"</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <add-resource type="string" name="sdcard_busy_title_nosdcard"/>
+    <string name="sdcard_busy_title_nosdcard">"USB ষ্ট’ৰেজ অনুপলব্ধ"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message"/>
+    <string name="sdcard_busy_message">"আপোনাৰ SD কাৰ্ড ব্যস্ত হৈ আছে৷"</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <add-resource type="string" name="sdcard_busy_message_nosdcard"/>
+    <string name="sdcard_busy_message_nosdcard">"আপোনাৰ USB ষ্ট’ৰেজ ব্যস্ত হৈ আছে৷"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title"/>
+    <string name="sdcard_error_title">"SD কাৰ্ড ত্ৰুটি"</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_title_nosdcard"/>
+    <string name="sdcard_error_title_nosdcard">"USB ষ্ট’ৰেজ ত্ৰুটি"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message"/>
+    <string name="sdcard_error_message">"আপোনাৰ SD কাৰ্ডত এটা ত্ৰুটি সংঘটিত হৈছিল৷"</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <add-resource type="string" name="sdcard_error_message_nosdcard"/>
+    <string name="sdcard_error_message_nosdcard">"আপোনাৰ USB ষ্ট’ৰেজত এটা ত্ৰুটি সংঘটিত হৈছিল৷"</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_artist_name"/>
+    <string name="unknown_artist_name">"অজ্ঞাত শিল্পী"</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <add-resource type="string" name="unknown_album_name"/>
+    <string name="unknown_album_name">"অজ্ঞাত এলবাম"</string>
+    <!-- Default name of folder that doesn't have a path in the metadata -->
+    <add-resource type="string" name="unknown_folder_name"/>
+    <string name="unknown_folder_name">"অজ্ঞাত পথ"</string>
+    <!-- Default name of folder that doesn't have a count in the metadata -->
+    <add-resource type="string" name="unknown_folder_count"/>
+    <string name="unknown_folder_count">"অজ্ঞাত গণনা"</string>
+    <!-- Toast after turning shuffle on -->
+    <add-resource type="string" name="shuffle_on_notif"/>
+    <string name="shuffle_on_notif">"সানমিহলি অন হৈছে৷"</string>
+    <!-- Toast after turning shuffle off -->
+    <add-resource type="string" name="shuffle_off_notif"/>
+    <string name="shuffle_off_notif">"সানমিহলি অফ হৈছে৷"</string>
+    <!-- Toast after turning repeat off -->
+    <add-resource type="string" name="repeat_off_notif"/>
+    <string name="repeat_off_notif">"পুনৰাৱৰ্তী অফ হৈছে৷"</string>
+    <!-- Toast after turning single repeat on -->
+    <add-resource type="string" name="repeat_current_notif"/>
+    <string name="repeat_current_notif">"বৰ্তমান গান পুনৰাৱৰ্তী কৰি আছে৷"</string>
+    <!-- Toast after turning repeat all on -->
+    <add-resource type="string" name="repeat_all_notif"/>
+    <string name="repeat_all_notif">"সকলো গান পুনৰাৱৰ্তী কৰি আছে৷"</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu"/>
+    <string name="ringtone_menu">"ফোন ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short"/>
+    <string name="ringtone_menu_short">"ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set"/>
+    <string name="ringtone_set">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" ফোনৰ ৰিংট’ন ৰূপে ছেট কৰক৷"</string>
+    <!-- Toast after setting a song as phone ringtone fail-->
+    <add-resource type="string" name="ringtone_set_fail"/>
+    <string name="ringtone_set_fail">"ফোনৰ ৰিংট’ন ৰূপে ছেট কৰাত ব্যৰ্থ৷"</string>
+    <!-- Individual song context menu item -->
+    <add-resource type="string" name="ringtone_menu_1"/>
+    <string name="ringtone_menu_1">"শ্লট 1 ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <add-resource type="string" name="ringtone_menu_2"/>
+    <string name="ringtone_menu_2">"শ্লট 2 ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_1"/>
+    <string name="ringtone_menu_sim_name_1">"শ্লট 1 \"<xliff:g id="NAME">%s</xliff:g>\" ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <add-resource type="string" name="ringtone_menu_sim_name_2"/>
+    <string name="ringtone_menu_sim_name_2">"শ্লট 2 \"<xliff:g id="NAME">%s</xliff:g>\" ৰিংট’ন ৰূপে ব্যৱহাৰ কৰক"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="ringtone_menu_short_1"/>
+    <string name="ringtone_menu_short_1">"ৰিংট’ন 1 ৰূপে ব্যৱহাৰ কৰক"</string>
+    <add-resource type="string" name="ringtone_menu_short_2"/>
+    <string name="ringtone_menu_short_2">"ৰিংট’ন 2 ৰূপে ব্যৱহাৰ কৰক"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_1"/>
+    <string name="ringtone_set_1">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" শ্লট 1 ৰিংটন ৰূপে ছেট কৰক৷"</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <add-resource type="string" name="ringtone_set_2"/>
+    <string name="ringtone_set_2">"\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" শ্লট 2 ৰিংটন ৰূপে ছেট কৰক৷"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="play_selection"/>
+    <string name="play_selection">"প্লে কৰক"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="add_to_playlist"/>
+    <string name="add_to_playlist">"প্লেলিষ্টত যোগ কৰক"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="queue"/>
+    <string name="queue">"বৰ্তমান প্লেলিষ্ট"</string>
+    <!-- Context menu item -->
+    <add-resource type="string" name="new_playlist"/>
+    <string name="new_playlist">"নতুন"</string>
+    <!-- Template for newly created playlist name -->
+    <add-resource type="string" name="new_playlist_name_template"/>
+    <string name="new_playlist_name_template">"নতুন প্লেলিষ্ট <xliff:g id="number">%d</xliff:g>"</string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <add-resource type="plurals" name="NNNtrackstoplaylist"/>
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">"1 টা গান প্লেলিষ্টত যোগ কৰা হৈছে৷"</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">"<xliff:g id="number" example="27">%d</xliff:g> টা গান প্লেলিষ্টত যোগ কৰা হৈছে৷"</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <add-resource type="string" name="emptyplaylist"/>
+    <string name="emptyplaylist">"বাছনি কৰা প্লেলিষ্ট খালী হৈ আছে৷"</string>
+    <!-- Button name when saving a playlist -->
+    <add-resource type="string" name="create_playlist_create_text"/>
+    <string name="create_playlist_create_text">"সংৰক্ষণ কৰক"</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <add-resource type="string" name="create_playlist_overwrite_text"/>
+    <string name="create_playlist_overwrite_text">"অধিলেখন কৰক"</string>
+    <!-- Dialog box title -->
+    <add-resource type="string" name="service_start_error_title"/>
+    <string name="service_start_error_title">"প্লেবেক সমস্যা"</string>
+    <!-- Dialog box message -->
+    <add-resource type="string" name="service_start_error_msg"/>
+    <string name="service_start_error_msg">"গানটো বজাব নোৱাৰি৷"</string>
+    <!-- Dialog box button -->
+    <add-resource type="string" name="service_start_error_button"/>
+    <string name="service_start_error_button">"ঠিক"</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <add-resource type="array" name="weeklist"/>
+    <string-array name="weeklist">
+        <item>"1 সপ্তাহ  "</item>
+        <item>"2 সপ্তাহ"</item>
+        <item>"3 সপ্তাহ"</item>
+        <item>"4 সপ্তাহ"</item>
+        <item>"5 সপ্তাহ"</item>
+        <item>"6 সপ্তাহ"</item>
+        <item>"7 সপ্তাহ"</item>
+        <item>"8 সপ্তাহ"</item>
+        <item>"9 সপ্তাহ"</item>
+        <item>"10 সপ্তাহ"</item>
+        <item>"11 সপ্তাহ"</item>
+        <item>"12 সপ্তাহ"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <add-resource type="string" name="weekpicker_set"/>
+    <string name="weekpicker_set">"সম্পন্ন"</string>
+    <!-- Title of time span picker -->
+    <add-resource type="string" name="weekpicker_title"/>
+    <string name="weekpicker_title">"সময় ছেট কৰক"</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <add-resource type="color" name="dragndrop_background"/>
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <add-resource type="color" name="expanding_child_background"/>
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <add-resource type="string" name="save_as_playlist"/>
+    <string name="save_as_playlist">"প্লেলিষ্ট ৰূপে সংৰক্ষণ কৰক"</string>
+    <!-- menu item to clear the current playlist -->
+    <add-resource type="string" name="clear_playlist"/>
+    <string name="clear_playlist">"প্লেলিষ্ট পৰিষ্কাৰ কৰক"</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicbrowserlabel"/>
+    <string name="musicbrowserlabel">"সংগীত"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="musicshortcutlabel"/>
+    <string name="musicshortcutlabel">"সংগীত প্লেলিষ্ট"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediaplaybacklabel"/>
+    <string name="mediaplaybacklabel">"সংগীত"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="videobrowserlabel"/>
+    <string name="videobrowserlabel">"ভিডিঅ’সমূহ"</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <add-resource type="string" name="mediapickerlabel"/>
+    <string name="mediapickerlabel">"সংগীত"</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <add-resource type="string" name="playback_failed"/>
+    <string name="playback_failed">"প্লেয়াৰটোৱে এনে ধৰণৰ অডিঅ’ ফাইল সমৰ্থন নকৰে৷"</string>
+    <!-- Shown as a transient message whenever a file fails to open -->
+    <add-resource type="string" name="open_failed"/>
+    <string name="open_failed">"দুঃখিত, ফাইল খুলিব নোৱাৰে৷"</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"বাতিল কৰক"</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <add-resource type="string" name="remove_from_playlist"/>
+    <string name="remove_from_playlist">"প্লেলিষ্টৰ পৰা আঁতৰাই পেলাওক"</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <add-resource type="string" name="streamloadingtext"/>
+    <string name="streamloadingtext">"<xliff:g id="host">%s</xliff:g> লৈ সংযোগ কৰি আছে\u2026"</string>
+
+    <!-- title of contextual music search menu -->
+    <add-resource type="string" name="mediasearch"/>
+    <string name="mediasearch">"ইয়াক ব্যৱহাৰ কৰি <xliff:g id="term" example="Beethoven">%s</xliff:g>ৰ বাবে সন্ধান কৰক:"</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <add-resource type="string" name="working_artists"/>
+    <string name="working_artists">"শিল্পীসকল\u2026"</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <add-resource type="string" name="working_albums"/>
+    <string name="working_albums">"এলবামসমূহ\u2026"</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <add-resource type="string" name="working_songs"/>
+    <string name="working_songs">"গানসমূহ\u2026"</string>
+    <!-- Shown in the title bar while the list of folders is being retrieved in the background -->
+    <add-resource type="string" name="working_folders"/>
+    <string name="working_folders">"ফ’ল্ডাৰসমূহ\u2026"</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <add-resource type="string" name="working_playlists"/>
+    <string name="working_playlists">"প্লেলিষ্টসমূহ\u2026"</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"লোড হৈ আছে..."</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <add-resource type="string" name="sort_by_track"/>
+    <string name="sort_by_track">"ট্ৰেকসমূহ"</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <add-resource type="string" name="sort_by_album"/>
+    <string name="sort_by_album">"এলবামসমূহ"</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <add-resource type="string" name="sort_by_artist"/>
+    <string name="sort_by_artist">"শিল্পীসকল"</string>
+    <!--  Title of the music picker activity. -->
+    <add-resource type="string" name="music_picker_title"/>
+    <string name="music_picker_title">"সংগীতৰ ট্ৰেক পচন্দ কৰক"</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <add-resource type="string" name="search_settings_description"/>
+    <string name="search_settings_description">"শিল্পী, এলবাম আৰু ট্ৰেকসমূহ"</string>
+
+    <!-- Shown in the search box as a hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"সংগীত সন্ধান কৰক"</string>
+    <add-resource type="string" name="search_hint_video"/>
+    <string name="search_hint_video">"ভিডিঅ’ সন্ধান কৰক"</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <add-resource type="string" name="fast_scroll_alphabet"/>
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <add-resource type="string" name="widget_initial_text"/>
+    <string name="widget_initial_text">"সঙ্গীত পচন্দ কৰিবলৈ স্পৰ্শ কৰক৷"</string>
+
+    <!-- Menu text for the item controlling the audio effects panel [CHAR LIMIT=15] -->
+    <add-resource type="string" name="effectspanel"/>
+    <string name="effectspanel">"ইকুৱেলাইজাৰ"</string>
+
+    <add-resource type="string" name="duplicate_playlist_name_alert"/>
+    <string name="duplicate_playlist_name_alert">"ইয়াত ইতিমধ্যে \"<xliff:g id="name">%s</xliff:g>\" নামৰ এখন প্লেলিষ্ট আছে৷ অনুগ্ৰহ কৰি এটা পৃথক নাম বাছনি কৰক৷"</string>
+    <add-resource type="string" name="same_playlist_name_alert"/>
+    <string name="same_playlist_name_alert">"প্লেলিষ্ট \"<xliff:g id="name">%s</xliff:g>\" নাম পৰিৱৰ্তন হোৱা নাই। অনুগ্ৰহ কৰি এটা পৃথক নাম বাছনি কৰক। "</string>
+    <add-resource type="string" name="button_ok"/>
+    <string name="button_ok">"ঠিক"</string>
+    <add-resource type="string" name="list_empty"/>
+    <string name="list_empty">"প্লেলিষ্টত কোনো সংগীত নাই৷"</string>
+
+    <!-- Shown when video is played after disable Gallery app from Settings -->
+    <add-resource type="string" name="enable_gallery_app"/>
+    <string name="enable_gallery_app">"ভিডিঅ’ বজাব নোৱাৰি, অনুগ্ৰহ কৰি প্ৰথমে ছেটিংছৰ পৰা গেলাৰী এপ্প্‌ সক্ষম কৰক৷"</string>
+    <add-resource type="string" name="close_music"/>
+    <string name="close_music">"সমাপ্ত"</string>
+    <add-resource type="string" name="delete_video_item_message"/>
+    <string name="delete_video_item_message">"আপুনি \"<xliff:g id="name">%s</xliff:g>\" বিলোপ কৰিবলৈ বিচাৰেনে?"</string>
+    <add-resource type="string" name="video_deleted_message"/>
+    <string name="video_deleted_message">"ভিডিঅ’ ফাইল বিলোপ হ’ল৷"</string>
+
+    <!-- Menu item that takes the user link to net to see more music -->
+    <add-resource type="string" name="more_music"/>
+    <string name="more_music">"অধিক সংগীত"</string>
+    <!-- Menu item that takes the user link to net to see more video -->
+    <add-resource type="string" name="more_video"/>
+    <string name="more_video">"অধিক ভিডিঅ’"</string>
+    <!--gesture control playback status-->
+    <add-resource type="string" name="music_gesture_play"/>
+    <string name="music_gesture_play">"অডিঅ’ বজাওক/বিৰাম দিয়ক"</string>
+    <add-resource type="string" name="music_gesture_prev"/>
+    <string name="music_gesture_prev">"পূৰ্ববৰ্তী ট্ৰেক বজাওক"</string>
+    <add-resource type="string" name="music_gesture_next"/>
+    <string name="music_gesture_next">"পৰৱৰ্তী ট্ৰেক বজাওক"</string>
+
+    <!-- DRM Related Strings -->
+    <add-resource type="string" name="no_permission_for_drm"/>
+    <string name="no_permission_for_drm">"দুঃখিত, Drm ফাইল ভাগ-বতৰা কৰিব নোৱাৰি"</string>
+    <add-resource type="string" name="drm_license_info"/>
+    <string name="drm_license_info">"Drm লাইচেন্স তথ্য"</string>
+    <add-resource type="string" name="drm_ringtone_error"/>
+    <string name="drm_ringtone_error">"ৰিংট’ন ৰূপে CD/SD ফাইলসমূহ ছেট কৰিব নোৱাৰে"</string>
+    <add-resource type="string" name="drm_right_expired"/>
+    <string name="drm_right_expired">"DRM অধিকাৰৰ ম্যাদ উকলিল"</string>
+
+    <add-resource type="string" name="action_consumes_rights"/>
+    <string name="action_consumes_rights">"এই মিডিয়া বজাৰ বাবে অধিকাৰ খৰ্ব হ’ব৷"</string>
+    <add-resource type="string" name="rights_expired"/>
+    <string name="rights_expired">"গানটোৰ বাবে অধিকাৰৰ ম্যাদ উকলিল৷"</string>
+    <add-resource type="string" name="ring_tone_size_exceed"/>
+    <string name="ring_tone_size_exceed">"Drm ৰিংট’নৰ আকাৰ 300kb তকৈ বেছি হ’ব নোৱাৰে৷"</string>
+    <add-resource type="string" name="cant_set_ringtone_with_count_perm"/>
+    <string name="cant_set_ringtone_with_count_perm">"ৰিংট’নত গণনাৰ অনুমতিৰ সৈতে DRM ফাইল ছেট কৰিব নোৱাৰে৷"</string>
+
+    <add-resource type="string" name="navigation_drawer_title"/>
+    <string name="navigation_drawer_title">"সংগীত"</string>
+    <add-resource type="string" name="action_settings"/>
+    <string name="action_settings">"ছেটিংছ"</string>
+    <add-resource type="string" name="equalizer_button_text"/>
+    <string name="equalizer_button_text">"Snapdragon Audio+"</string>
+    <add-resource type="string" name="exit_button_text"/>
+    <string name="exit_button_text">"প্ৰস্থান কৰক"</string>
+    <add-resource type="string" name="action_settings1"/>
+    <string name="action_settings1">"ছেটিংছ1"</string>
+    <add-resource type="string" name="action_settings2"/>
+    <string name="action_settings2">"ছেটিংছ2"</string>
+    <add-resource type="string" name="action_one"/>
+    <string name="action_one">"এটা"</string>
+    <add-resource type="string" name="action_two"/>
+    <string name="action_two">"দুটা"</string>
+    <add-resource type="string" name="action_three"/>
+    <string name="action_three">"তিনিটা"</string>
+    <add-resource type="string" name="shuffle_all"/>
+    <string name="shuffle_all">"সকলো সানমিহলি কৰক"</string>
+
+    <add-resource type="string" name="no_music_found"/>
+    <string name="no_music_found">"কোনো সংগীত পোৱা নাই"</string>
+
+    <!--  Adding new string here for file delete error message -->
+    <add-resource type="string" name="song_deleted_error_message"/>
+    <string name="song_deleted_error_message">"আপুনি অনুৰোধ কৰা ট্ৰেকটো পোৱা নগ’ল"</string>
+    <add-resource type="string" name="song_title"/>
+    <string name="song_title">"SongName:"</string>
+    <add-resource type="string" name="album_title"/>
+    <string name="album_title">"AlbumName:"</string>
+    <add-resource type="string" name="artist_title"/>
+    <string name="artist_title">"ArtistName:"</string>
+    <add-resource type="string" name="duration_title"/>
+    <string name="duration_title">"ম্যাদ:"</string>
+    <add-resource type="string" name="path_title"/>
+    <string name="path_title">"পথ:"</string>
+    <add-resource type="string" name="size_title"/>
+    <string name="size_title">"আকাৰ:"</string>
+    <add-resource type="string" name="duration_unit"/>
+    <string name="duration_unit">" নিম্"</string>
+
+    <!-- Human readable sizes -->
+    <add-resource type="string" name="size_bytes"/>
+    <string name="size_bytes">"B"</string>
+    <add-resource type="string" name="size_kilobytes"/>
+    <string name="size_kilobytes">"kB"</string>
+    <add-resource type="string" name="size_megabytes"/>
+    <string name="size_megabytes">"MB"</string>
+    <add-resource type="string" name="size_gigabytes"/>
+    <string name="size_gigabytes">"GB"</string>
+
+    <add-resource type="string" name="favorite"/>
+    <string name="favorite">"প্ৰিয়"</string>
+    <add-resource type="string" name="no_favorite"/>
+    <string name="no_favorite">"কোনো প্ৰিয় নাই"</string>
+    <add-resource type="string" name="favorite_playlist"/>
+    <string name="favorite_playlist">"মোৰ প্ৰিয়"</string>
+    <add-resource type="string" name="can_not_create_my_favorite"/>
+    <string name="can_not_create_my_favorite">"মোৰ প্ৰিয় প্লেলিষ্ট সৃষ্টি বা অধিলেখন কৰিব নোৱাৰে"</string>
+
+    <!-- add by filemanager -->
+    <add-resource type="string" name="add_by_filemanager"/>
+    <string name="add_by_filemanager">"ফাইল মেনেজাৰৰ পৰা যোগ কৰক"</string>
+    <add-resource type="string" name="add_file_failed"/>
+    <string name="add_file_failed">"সজ্জাটো সমৰ্থিত নহয় বা মিডিয়া লাইব্ৰেৰীত নথকাৰ কাৰণে এই ফাইলটো যোগ কৰাত অক্ষম"</string>
+
+    <!-- permission request -->
+    <add-resource type="string" name="dialog_title_help"/>
+    <string name="dialog_title_help">"সহায়"</string>
+    <add-resource type="string" name="dialog_content"/>
+    <string name="dialog_content">"এই এপ্লিকেশ্বনটোৱে প্ৰয়োজনীয় অনুমতি নোহোৱাকৈ কাম কৰিব নোৱাৰে৷ অনুগ্ৰহ কৰি ছেটিংছত অনুমতি মঞ্জুৰ কৰক৷"</string>
+    <add-resource type="string" name="dialog_button_quit"/>
+    <string name="dialog_button_quit">"ত্যাগ কৰক"</string>
+    <add-resource type="string" name="dialog_button_settings"/>
+    <string name="dialog_button_settings">"ছেটিংছ"</string>
+
+    <add-resource type="string" name="audio_preview_fail_security"/>
+    <string name="audio_preview_fail_security">"নিৰাপত্তা সমস্যাৰ বাবে ফাইলটো খোলাত ব্যৰ্থ হ’ল৷"</string>
+    <add-resource type="string" name="audio_preview_fail_io"/>
+    <string name="audio_preview_fail_io">"ফাইলটো খুলিব নোৱাৰে"</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_state"/>
+    <string name="audio_preview_fail_illegal_state">"অবৈধ স্থিতি, ফাইল খোলাত ব্যৰ্থ হ’ল৷"</string>
+    <add-resource type="string" name="audio_preview_fail_illegal_argument"/>
+    <string name="audio_preview_fail_illegal_argument">"অবৈধ যুক্তি, ফাইল খোলাত ব্যৰ্থ হ’ল৷"</string></resources>

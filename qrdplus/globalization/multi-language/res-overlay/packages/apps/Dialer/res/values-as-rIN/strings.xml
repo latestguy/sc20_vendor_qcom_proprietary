@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Application name used in Settings/Apps. Default label for activities
+         that don't specify a label. -->
+    <add-resource type="string" name="applicationLabel"/>
+    <string name="applicationLabel">"ফোন"</string>
+
+    <!-- Title for the activity that dials the phone.  This is the name
+         used in the Launcher icon. -->
+    <add-resource type="string" name="launcherActivityLabel"/>
+    <string name="launcherActivityLabel">"ফোন"</string>
+
+
+    <!-- Title for the activity that dials the phone, when launched directly into the dialpad -->
+    <add-resource type="string" name="launcherDialpadActivityLabel"/>
+    <string name="launcherDialpadActivityLabel">"ফোনৰ ডায়েলপেড"</string>
+    <!-- The description text for the dialer tab.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+    This is especially valuable for views without textual representation like ImageView.
+
+    [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialerIconLabel"/>
+    <string name="dialerIconLabel">"ফোন"</string>
+
+    <!-- The description text for the call log tab.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+    This is especially valuable for views without textual representation like ImageView.
+
+    [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="callHistoryIconLabel"/>
+    <string name="callHistoryIconLabel">"কলৰ ইতিবৃত্ত"</string>
+
+    <!-- Text for a menu item to report a call as having been incorrectly identified. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_report_number"/>
+    <string name="action_report_number">"ভুল নম্বৰ ৰিপ’ৰ্ট কৰক"</string>
+
+    <!-- Option displayed in context menu to copy long pressed phone number. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_copy_number_text"/>
+    <string name="action_copy_number_text">"নম্বৰ প্ৰতিলিপি কৰক"</string>
+
+    <!-- Option displayed in context menu to copy long pressed voicemail transcription. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="copy_transcript_text"/>
+    <string name="copy_transcript_text">"ট্ৰান্সক্ৰিপশ্বন প্ৰতিলিপি কৰক"</string>
+
+    <!-- Label for action to block a number. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_block_number"/>
+    <string name="action_block_number">"নম্বৰ অৱৰোধ কৰক"</string>
+
+    <!-- Text for snackbar to undo blocking a number. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="snackbar_number_blocked"/>
+    <string name="snackbar_number_blocked">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> অৱৰোধ কৰা হৈছে"</string>
+
+    <!-- Label for action to unblock a number [CHAR LIMIT=48]-->
+    <add-resource type="string" name="action_unblock_number"/>
+    <string name="action_unblock_number">"নম্বৰ অৱৰোধ মুক্ত কৰক"</string>
+
+    <!-- Text for snackbar to undo unblocking a number. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="snackbar_number_unblocked"/>
+    <string name="snackbar_number_unblocked">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> অৱৰোধ মুক্ত হৈছে"</string>
+
+    <!-- Text for undo button in snackbar for blocking/unblocking number. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="block_number_undo"/>
+    <string name="block_number_undo">"পূৰ্বৰ দৰে কৰক"</string>
+
+    <!-- Menu item in call details used to remove a call or voicemail from the call log. -->
+    <add-resource type="string" name="call_details_delete"/>
+    <string name="call_details_delete">"বিলোপ কৰক"</string>
+
+    <!-- Label for action to edit a number before calling it. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_edit_number_before_call"/>
+    <string name="action_edit_number_before_call">"কলৰ আগতে নম্বৰ সম্পাদনা কৰক"</string>
+
+    <!-- Menu item used to remove all calls from the call log -->
+    <add-resource type="string" name="call_log_delete_all"/>
+    <string name="call_log_delete_all">"কল ইতিবৃত্ত পৰিষ্কাৰ কৰক"</string>
+
+    <!-- Menu item used to delete a voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_trash_voicemail"/>
+    <string name="call_log_trash_voicemail">"ভইচমেইল বিলোপ কৰক"</string>
+
+    <!-- Menu item used to archive a voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_archive_voicemail"/>
+    <string name="call_log_archive_voicemail">"ভইচমেইল অভিলেখাগাৰ কৰক"</string>
+
+    <!-- Menu item used to send a voicemail through other applications [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_share_voicemail"/>
+    <string name="call_log_share_voicemail">"ভইচমেইল বিনিময় কৰক"</string>
+
+    <!-- Text for snackbar to undo a voicemail delete. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="snackbar_voicemail_deleted"/>
+    <string name="snackbar_voicemail_deleted">"ভইচমেইল বিলোপ হৈছে"</string>
+
+    <!-- Text for snackbar to undo a voicemail archive. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="snackbar_voicemail_archived"/>
+    <string name="snackbar_voicemail_archived">"ভইচমেইল আৰ্কাইভ কৰিছে"</string>
+
+    <!-- Text for undo button in snackbar for voicemail deletion. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="snackbar_voicemail_deleted_undo"/>
+    <string name="snackbar_voicemail_deleted_undo">"পূৰ্বৰ দৰে কৰক"</string>
+
+    <!-- Text for going to archive button in snackbar for voicemail archive. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="snackbar_voicemail_archived_goto"/>
+    <string name="snackbar_voicemail_archived_goto">"আৰ্কাইভলৈ যাওক"</string>
+
+    <!-- Title of the confirmation dialog for clearing the call log. [CHAR LIMIT=37]  -->
+    <add-resource type="string" name="clearCallLogConfirmation_title"/>
+    <string name="clearCallLogConfirmation_title">"কল ইতিবৃত্ত পৰিষ্কাৰ কৰিবনে?"</string>
+
+    <!-- Confirmation dialog for clearing the call log. [CHAR LIMIT=NONE]  -->
+    <add-resource type="string" name="clearCallLogConfirmation"/>
+    <string name="clearCallLogConfirmation">"ই আপোনাৰ ইতিবৃত্তৰ পৰা সকলো কল বিলোপ কৰিব"</string>
+
+    <!-- Title of the "Clearing call log" progress-dialog [CHAR LIMIT=35] -->
+    <add-resource type="string" name="clearCallLogProgress_title"/>
+    <string name="clearCallLogProgress_title">"কল ইতিবৃত্ত পৰিষ্কাৰ কৰি আছে\u2026"</string>
+
+    <!-- Title used for the activity for placing a call. This name appears
+         in activity disambig dialogs -->
+    <add-resource type="string" name="userCallActivityLabel"/>
+    <string name="userCallActivityLabel" product="default">"ফোন"</string>
+
+    <!-- Notification strings -->
+    <!-- Missed call notification label, used when there's exactly one missed call -->
+    <add-resource type="string" name="notification_missedCallTitle"/>
+    <string name="notification_missedCallTitle">"মিচড কল"</string>
+    <!-- Missed call notification label, used when there's exactly one missed call from work contact -->
+    <add-resource type="string" name="notification_missedWorkCallTitle"/>
+    <string name="notification_missedWorkCallTitle">"কাৰ্য্য কল মিচ কৰিছে"</string>
+    <!-- Missed call notification label, used when there are two or more missed calls -->
+    <add-resource type="string" name="notification_missedCallsTitle"/>
+    <string name="notification_missedCallsTitle">"মিচড কলবোৰ"</string>
+    <!-- Missed call notification message used when there are multiple missed calls -->
+    <add-resource type="string" name="notification_missedCallsMsg"/>
+    <string name="notification_missedCallsMsg">"<xliff:g id="num_missed_calls">%s</xliff:g> টা মিচড কল"</string>
+    <!-- Message for "call back" Action, which is displayed in the missed call notificaiton.
+         The user will be able to call back to the person or the phone number.
+         [CHAR LIMIT=18] -->
+    <add-resource type="string" name="notification_missedCall_call_back"/>
+    <string name="notification_missedCall_call_back">"কল বেক"</string>
+    <!-- Message for "reply via sms" action, which is displayed in the missed call notification.
+         The user will be able to send text messages using the phone number.
+         [CHAR LIMIT=18] -->
+    <add-resource type="string" name="notification_missedCall_message"/>
+    <string name="notification_missedCall_message">"বাৰ্তা"</string>
+        <!-- DO NOT TRANSLATE. Hardcoded number used for restricted incoming phone numbers. -->
+    <add-resource type="string" name="handle_restricted"/>
+    <string name="handle_restricted">RESTRICTED</string>
+
+    <!-- Title of the notification of new voicemails. [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="notification_voicemail_title"/>
+    <plurals name="notification_voicemail_title">
+        <item quantity="one">"ভইচমেইল"</item>
+        <item quantity="other">"<xliff:g id="count">%1$d</xliff:g>ভইচমেইল  "</item>
+    </plurals>
+
+    <!-- Used in the notification of a new voicemail for the action to play the voicemail. -->
+    <add-resource type="string" name="notification_action_voicemail_play"/>
+    <string name="notification_action_voicemail_play">"প্লে কৰক"</string>
+
+    <!-- Used to build a list of names or phone numbers, to indicate the callers who left
+         voicemails.
+         The first argument may be one or more callers, the most recent ones.
+         The second argument is an additional callers.
+         This string is used to build a list of callers.
+
+         [CHAR LIMIT=10]
+     -->
+    <add-resource type="string" name="notification_voicemail_callers_list"/>
+    <string name="notification_voicemail_callers_list">"<xliff:g id="newer_callers">%1$s</xliff:g>,  <xliff:g id="older_caller">%2$s</xliff:g>"</string>
+
+    <!-- Text used in the ticker to notify the user of the latest voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_new_voicemail_ticker"/>
+    <string name="notification_new_voicemail_ticker">"<xliff:g id="caller">%1$s</xliff:g>-ৰ পৰা নতুন ভইচমেইল"</string>
+
+    <!-- Message to show when there is an error playing back the voicemail. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_playback_error"/>
+    <string name="voicemail_playback_error">"ভইচমেইল বজাব পৰা নগ’ল"</string>
+
+    <!-- Message to display whilst we are waiting for the content to be fetched. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_fetching_content"/>
+    <string name="voicemail_fetching_content">"ভইচমেইল লোড হৈ আছে..."</string>
+
+    <!-- Message to display whilst we are waiting for the content to be archived. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_archiving_content"/>
+    <string name="voicemail_archiving_content">"ভইচমেইল অভিলেখাগাৰ কৰি আছে..."</string>
+
+    <!-- Message to display if we fail to get content within a suitable time period. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_fetching_timout"/>
+    <string name="voicemail_fetching_timout">"ভইচমেইল ল’ড কৰিব নোৱৰিলে"</string>
+
+    <!-- The header to show that call log is only showing voicemail calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_voicemail_header"/>
+    <string name="call_log_voicemail_header">"কেৱল ভইচমেইলৰ সৈতে ফোন কল"</string>
+
+    <!-- The header to show that call log is only showing incoming calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_incoming_header"/>
+    <string name="call_log_incoming_header">"কেৱল ইনকামিং ফোন কল"</string>
+
+    <!-- The header to show that call log is only showing outgoing calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_outgoing_header"/>
+    <string name="call_log_outgoing_header">"কেৱল আউটগ’য়িং কল"</string>
+
+    <!-- The header to show that call log is only showing missed calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_missed_header"/>
+    <string name="call_log_missed_header">"কেৱল মিচ কল"</string>
+
+    <!-- Title for promo card for visual voicemail. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="visual_voicemail_title"/>
+    <string name="visual_voicemail_title">"দৃশ্যমান ভইচমেইল"</string>
+
+    <!-- Promo card text for visual voicemail. -->
+    <add-resource type="string" name="visual_voicemail_text"/>
+    <string name="visual_voicemail_text">"এটা নম্বৰলৈ কল নকৰাকৈ আপোনাৰ ভইচমেইল চাওক বা শুনক৷ ডাটা মাছুল প্ৰয়োগ হ’ব পাৰে৷  "</string>
+
+    <!-- Text for "Settings" link for visual voicemail promo card. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="visual_voicemail_settings"/>
+    <string name="visual_voicemail_settings">"ছেটিংছ"</string>
+
+    <!--  Voicemail status message shown at the top of call log to notify the user that no new
+    voicemails are currently available. This can happen when both notification as well as data
+    connection to the voicemail server is lost. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_voicemail_not_available"/>
+    <string name="voicemail_status_voicemail_not_available">"ভইচমেইল আপডেট উপলব্ধ হোৱা নাই"</string>
+    <!--  Voicemail status message shown at the top of call log to notify the user that there is no
+      data connection to the voicemail server, but there are new voicemails waiting on the server.
+      [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_messages_waiting"/>
+    <string name="voicemail_status_messages_waiting">"নতুন ভইচমেইল অপেক্ষাত আছে৷ এতিয়া ল’ড কৰিব নোৱাৰি৷"</string>
+    <!--  Voicemail status message shown at the top of call log to invite the user to configure
+    visual voicemail. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_configure_voicemail"/>
+    <string name="voicemail_status_configure_voicemail">"আপোনাৰ ভইচমেইল ছেট আপ কৰক"</string>
+    <!--  Voicemail status message shown at the top of call details screen to notify the user that
+    the audio of this voicemail is not available. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_audio_not_available"/>
+    <string name="voicemail_status_audio_not_available">"অডিঅ’ উপলব্ধ নাই"</string>
+
+    <!--  User action prompt shown next to a voicemail status message to let the user configure
+    visual voicemail. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="voicemail_status_action_configure"/>
+    <string name="voicemail_status_action_configure">"ছেট আপ কৰক"</string>
+    <!--  User action prompt shown next to a voicemail status message to let the user call voicemail
+    server directly to listen to the voicemails. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="voicemail_status_action_call_server"/>
+    <string name="voicemail_status_action_call_server">"ভইচমেইল কল কৰক"</string>
+
+    <!-- The counter for calls in a group and the date of the latest call as shown in the call log [CHAR LIMIT=15] -->
+    <add-resource type="string" name="call_log_item_count_and_date"/>
+    <string name="call_log_item_count_and_date">"(<xliff:g id="count">%1$d</xliff:g>)  <xliff:g id="date">%2$s</xliff:g>"</string>
+
+    <!-- Title for the sms disambiguation dialog -->
+    <add-resource type="string" name="sms_disambig_title"/>
+    <string name="sms_disambig_title">"নম্বৰ পচন্দ কৰক"</string>
+
+    <!-- Title for the call disambiguation dialog -->
+    <add-resource type="string" name="call_disambig_title"/>
+    <string name="call_disambig_title">"নম্বৰ পচন্দ কৰক"</string>
+
+    <!-- Message next to disamgiguation dialog check box -->
+    <add-resource type="string" name="make_primary"/>
+    <string name="make_primary">"এই পচন্দ মনত ৰাখক"</string>
+
+    <!-- String describing the Search ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_search_button"/>
+    <string name="description_search_button">"সন্ধান"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"ডায়েল কৰক"</string>
+
+    <!-- String describing the digits text box containing the number to dial.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_digits_edittext"/>
+    <string name="description_digits_edittext">"ডায়েল কৰিবলৈ নম্বৰ"</string>
+
+    <!-- String describing the button in the voicemail playback to start/stop playback.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_start_stop"/>
+    <string name="description_playback_start_stop">"প্লেবেক চলাওক বা ৰখক"</string>
+
+    <!-- String describing the button in the voicemail playback to switch on/off speakerphone.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_speakerphone"/>
+    <string name="description_playback_speakerphone">"স্পীকাৰফোনৰ চুইচ অন বা অফ কৰক"</string>
+
+    <!-- String describing the seekbar in the voicemail playback to seek playback position.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_seek"/>
+    <string name="description_playback_seek">"প্লেবেক অৱস্থান বিচাৰক"</string>
+
+    <!-- String describing the button in the voicemail playback to decrease playback rate.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_rate_decrease"/>
+    <string name="description_rate_decrease">"প্লেবেকৰ হাৰ হ্ৰাস কৰক"</string>
+
+    <!-- String describing the button in the voicemail playback to increase playback rate.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_rate_increase"/>
+    <string name="description_rate_increase">"প্লেবেকৰ হাৰ বৃদ্ধি কৰক"</string>
+
+    <!-- Content description for the fake action menu button that brings up the call history
+         activity -->
+    <add-resource type="string" name="action_menu_call_history_description"/>
+    <string name="action_menu_call_history_description">"কলৰ ইতিবৃত্ত"</string>
+
+    <!-- Content description for the fake action menu overflow button.
+         This should be same as the description for the real action menu
+         overflow button available in ActionBar.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="action_menu_overflow_description"/>
+    <string name="action_menu_overflow_description" msgid="2295659037509008453">"অধিক বিকল্প"</string>
+
+    <!-- Content description for the button that displays the dialpad
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="action_menu_dialpad_button"/>
+    <string name="action_menu_dialpad_button">"ডায়েল পেড"</string>
+
+    <!-- Menu item used to show only outgoing in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_outgoing_only"/>
+    <string name="menu_show_outgoing_only">"কেৱল আউটগ’য়িং কল প্ৰদৰ্শন কৰক"</string>
+
+    <!-- Menu item used to show only incoming in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_incoming_only"/>
+    <string name="menu_show_incoming_only">"কেৱল ইনকামিং ফোন কল প্ৰদৰ্শন কৰক"</string>
+
+    <!-- Menu item used to show only missed in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_missed_only"/>
+    <string name="menu_show_missed_only">"কেৱল মিচ কল প্ৰদৰ্শন কৰক"</string>
+
+    <!-- Menu item used to show only voicemails in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_voicemails_only"/>
+    <string name="menu_show_voicemails_only">"কেৱল ভইচমেইল প্ৰদৰ্শন কৰক"</string>
+
+    <!-- Menu item used to show all calls in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_all_calls"/>
+    <string name="menu_show_all_calls">"সকলো কল প্ৰদৰ্শন কৰক"</string>
+
+    <!-- Menu items for dialpad options as part of Pause and Wait ftr [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_add_to_4g_conference_call"/>
+    <string name="menu_add_to_4g_conference_call">"4G কনফাৰেন্স কললৈ যোগ কৰক"</string>
+    <add-resource type="string" name="menu_4g_conference_call"/>
+    <string name="menu_4g_conference_call">"4G কনফাৰেন্স কল"</string>
+    <add-resource type="string" name="add_2sec_pause"/>
+    <string name="add_2sec_pause">"2-ছেকেণ্ড বিৰতি যোগ কৰক"</string>
+    <add-resource type="string" name="add_wait"/>
+    <string name="add_wait">"অপেক্ষা যোগ কৰক"</string>
+
+    <!-- Label for the dialer app setting page [CHAR LIMIT=30]-->
+    <add-resource type="string" name="dialer_settings_label"/>
+    <string name="dialer_settings_label">"ছেটিংছ"</string>
+
+    <!-- Menu item to create a new contact [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_newContact"/>
+    <string name="menu_newContact">"নতুন সম্পৰ্ক"</string>
+
+    <!-- Menu item to display all contacts [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_allContacts"/>
+    <string name="menu_allContacts">"সকলো সম্পৰ্ক"</string>
+
+    <!-- Title bar for call detail screen -->
+    <add-resource type="string" name="callDetailTitle"/>
+    <string name="callDetailTitle">"কলৰ বিতং তথ্য"</string>
+
+    <!-- Toast for call detail screen when couldn't read the requested details -->
+    <add-resource type="string" name="toast_call_detail_error"/>
+    <string name="toast_call_detail_error">"বিতং তথ্য উপলব্ধ নাই"</string>
+
+    <!-- Item label: jump to the in-call DTMF dialpad.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_useDtmfDialpad"/>
+    <string name="dialer_useDtmfDialpad">"ট’ন কীপেড স্পৰ্শ ব্যৱহাৰ কৰক"</string>
+
+    <!-- Item label: jump to the in-call UI.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_returnToInCallScreen"/>
+    <string name="dialer_returnToInCallScreen">"চলি থকা কললৈ উভতি যাওক"</string>
+
+    <!-- Item label: use the Dialer's dialpad to add another call.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_addAnotherCall"/>
+    <string name="dialer_addAnotherCall">"কল যোগ কৰক"</string>
+
+    <!-- Title for incoming call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_incoming"/>
+    <string name="type_incoming">"ইনকামিং কল"</string>
+
+    <!-- Title for outgoing call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_outgoing"/>
+    <string name="type_outgoing">"আউটগ’য়িং কল"</string>
+
+    <!-- Title for missed call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_missed"/>
+    <string name="type_missed">"মিচড কল"</string>
+
+    <!-- Title for incoming video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_video"/>
+    <string name="type_incoming_video">"ইনকামিং ভিডিঅ’ কল"</string>
+
+    <!-- Title for outgoing video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_video"/>
+    <string name="type_outgoing_video">"আউটগ’য়িং ভিডিঅ\' ফোন কল"</string>
+
+    <!-- Title for missed video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_video"/>
+    <string name="type_missed_video">"মিচ হোৱা ভিডিঅ’ ফোন কল"</string>
+
+    <!-- Title for incoming 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_volte"/>
+    <string name="type_incoming_volte">"ইনকামিং 4G ভইচ ফোন কল"</string>
+
+     <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_video_lte"/>
+    <string name="type_incoming_video_lte">"ইনকামিং 4G ভিডিঅ’ ফোন কল"</string>
+
+    <!-- Title for outgoing 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_volte"/>
+    <string name="type_outgoing_volte">"আউটগ’য়িং 4G ভইচ ফোন কল"</string>
+
+     <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_video_lte"/>
+    <string name="type_outgoing_video_lte">"আউটগ’য়িং 4G ভিডিঅ\' ফোন কল"</string>
+
+    <!-- Title for missed 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_volte"/>
+    <string name="type_missed_volte">"মিচ হোৱা 4G ভইচ ফোন কল"</string>
+
+     <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_video_lte"/>
+    <string name="type_missed_video_lte">"মিচ হোৱা 4G ভিডিঅ’ ফোন কল"</string>
+
+    <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_vowifi"/>
+    <string name="type_incoming_vowifi">"ইনকামিং ৱাইফাই ভইচ ফোন কল"</string>
+
+     <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_incoming_video_wifi"/>
+    <string name="type_incoming_video_wifi">"ইনকামিং ৱাইফাই ভিডিঅ’ ফোন কল"</string>
+
+    <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_vowifi"/>
+    <string name="type_outgoing_vowifi">"আউটগ’য়িং ৱাইফাই ভইচ ফোন কল"</string>
+
+     <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_outgoing_video_wifi"/>
+    <string name="type_outgoing_video_wifi">"আউটগ’য়িং ৱাইফাই ভিডিঅ\' ফোন কল"</string>
+
+    <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_vowifi"/>
+    <string name="type_missed_vowifi">"মিচ হোৱা ৱাইফাই ভইচ ফোন কল"</string>
+
+     <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_missed_video_wifi"/>
+    <string name="type_missed_video_wifi">"মিচ হোৱা ৱাইফাই ভিডিঅ’ ফোন কল"</string>
+
+    <!-- Title for voicemail details screen -->
+    <add-resource type="string" name="type_voicemail"/>
+    <string name="type_voicemail">"ভইচমেইল"</string>
+
+    <!-- Title for rejected call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_rejected"/>
+    <string name="type_rejected">"অগ্ৰাহ্য কৰা কল"</string>
+
+    <!-- Title for blocked call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_blocked"/>
+    <string name="type_blocked">"অৱৰোধিত কল"</string>
+
+    <!-- Description for incoming calls going to voice mail vs. not -->
+    <add-resource type="string" name="actionIncomingCall"/>
+    <string name="actionIncomingCall">"ইনকামিং ফোন কল"</string>
+
+    <!-- String describing the icon in the call log used to play a voicemail.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_call_log_play_button"/>
+    <string name="description_call_log_play_button">"ভইচমেইল বজাওক"</string>
+
+    <!-- String describing the button to view the contact for the current number.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_view_contact"/>
+    <string name="description_view_contact">"সম্পৰ্ক <xliff:g id="name">%1$s</xliff:g> দৰ্শন কৰক"</string>
+
+    <!-- String describing the button to call a number or contact.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_call"/>
+    <string name="description_call">"<xliff:g id="name">%1$s</xliff:g>-ক কল কৰক"</string>
+
+    <!-- String describing the button to access the contact details for a name or number.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_contact_details"/>
+    <string name="description_contact_details">"<xliff:g id="nameOrNumber">%1$s</xliff:g>-ৰ বাবে সম্পৰ্কৰ বিতং তথ্য"</string>
+
+    <!-- String indicating the number of calls to/from a caller in the call log.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+          This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_num_calls"/>
+    <string name="description_num_calls">"<xliff:g id="numberOfCalls">%1$s</xliff:g>-টা কল৷"</string>
+
+    <!-- String indicating a call log entry had video capabilities.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+          This is especially valuable for views without textual representation like ImageView.
+          [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_video_call"/>
+    <string name="description_video_call">"ভিডিঅ’ ফোন কল৷"</string>
+
+    <!-- String describing the button to SMS a number or contact.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+              [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_send_text_message"/>
+    <string name="description_send_text_message">"<xliff:g id="name">%1$s</xliff:g>-লৈ SMS প্ৰেৰণ কৰক"</string>
+
+    <!-- String describing the icon in the call log used to represent an unheard voicemail left to
+         the user.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+              [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_call_log_unheard_voicemail"/>
+    <string name="description_call_log_unheard_voicemail">"নুশুনা ভইচমেইল"</string>
+
+    <!-- String describing the icon used to start a voice search -->
+    <add-resource type="string" name="description_start_voice_search"/>
+    <string name="description_start_voice_search">"ভইচ সন্ধান আৰম্ভ কৰক"</string>
+
+    <!-- Menu item used to call a contact, containing the number of the contact to call -->
+    <add-resource type="string" name="menu_callNumber"/>
+    <string name="menu_callNumber">"<xliff:g id="number">%s</xliff:g>-ক কল কৰক"</string>
+
+    <!-- String used to display calls from unknown numbers in the call log -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"অজ্ঞাত"</string>
+
+    <!-- String used for displaying calls to the voicemail number in the call log -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"ভইচমেইল"</string>
+
+    <!-- String used to display calls from private numbers in the call log -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"ব্যক্তিগত নম্বৰ"</string>
+
+    <!-- String used to display calls from pay phone in the call log -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"পেফোন"</string>
+
+    <!-- A nicely formatted call duration displayed when viewing call details for duration less than 1 minute. For example "28 sec" -->
+    <add-resource type="string" name="callDetailsShortDurationFormat"/>
+    <string name="callDetailsShortDurationFormat">"<xliff:g id="seconds" example="28">%s</xliff:g> ছেকেণ্ড"</string>
+
+    <!-- A nicely formatted call duration displayed when viewing call details. For example "42 min 28 sec" -->
+    <add-resource type="string" name="callDetailsDurationFormat"/>
+    <string name="callDetailsDurationFormat">"<xliff:g id="minutes" example="42">%s</xliff:g> মিনিট <xliff:g id="seconds" example="28">%s</xliff:g> ছেকেণ্ড"</string>
+
+    <!-- The string 'Today'. This value is used in the voicemailCallLogDateTimeFormat rather than an
+         explicit date string, e.g. Jul 25, 2014, in the event that a voicemail was created on the
+         current day -->
+    <add-resource type="string" name="voicemailCallLogToday"/>
+    <string name="voicemailCallLogToday">@string/call_log_header_today</string>
+
+    <!-- A format string used for displaying the date and time for a voicemail call log. For example: Jul 25, 2014 at 2:49 PM
+         The date will be replaced by 'Today' for voicemails created on the current day. For example: Today at 2:49 PM -->
+    <add-resource type="string" name="voicemailCallLogDateTimeFormat"/>
+    <string name="voicemailCallLogDateTimeFormat">"<xliff:g id="time" example="2:49 PM">%2$s</xliff:g>-ত <xliff:g id="date" example="Jul 25, 2014">%1$s</xliff:g>"</string>
+
+    <!-- Format for duration of voicemails which are displayed when viewing voicemail logs. For example "01:22" -->
+    <add-resource type="string" name="voicemailDurationFormat"/>
+    <string name="voicemailDurationFormat"><xliff:g id="minutes" example="10">%1$02d</xliff:g>:<xliff:g id="seconds" example="20">%2$02d</xliff:g></string>
+
+    <!-- A format string used for displaying the date, time and duration for a voicemail call log. For example: Jul 25, 2014 at 2:49 PM • 00:34 -->
+    <add-resource type="string" name="voicemailCallLogDateTimeFormatWithDuration"/>
+    <string name="voicemailCallLogDateTimeFormatWithDuration">"<xliff:g id="dateAndTime" example="Jul 25, 2014 at 2:49PM">%1$s</xliff:g> \u2022 <xliff:g id="duration" example="01:22">%2$s</xliff:g>"</string>
+
+    <!-- Dialog message which is shown when the user tries to make a phone call
+         to prohibited phone numbers [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialog_phone_call_prohibited_message"/>
+    <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">"এই নম্বৰত কল কৰিব নোৱাৰি"</string>
+
+    <!-- Dialog message which is shown when the user tries to check voicemail
+         while the system isn't ready for the access. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialog_voicemail_not_ready_message"/>
+    <string name="dialog_voicemail_not_ready_message">"ভইচমেইল ছেট আপ কৰিবলৈ, মেনু &gt; ছেটিংছলৈ যাওক৷"</string>
+
+    <!-- Dialog message which is shown when the user tries to check voicemail
+         while the system is in airplane mode. The user cannot access to
+         voicemail service in Airplane mode. [CHAR LIMI=NONE] -->
+    <add-resource type="string" name="dialog_voicemail_airplane_mode_message"/>
+    <string name="dialog_voicemail_airplane_mode_message">"ভইচমেইল কৰিবলৈ, প্ৰথমে বিমান ম’ড অফ কৰক৷"</string>
+
+    <!-- Message that appears in the favorites tab of the Phone app when the contact list has not fully loaded yet (below the favorite and frequent contacts) [CHAR LIMIT=20] -->
+    <add-resource type="string" name="contact_list_loading"/>
+    <string name="contact_list_loading">"লোড হৈ আছে..."</string>
+
+    <!-- The title of a dialog that displays the IMEI of the phone -->
+    <add-resource type="string" name="imei"/>
+    <string name="imei">IMEI</string>
+
+    <!-- The title of a dialog that displays the MEID of the CDMA phone -->
+    <add-resource type="string" name="meid"/>
+    <string name="meid">MEID</string>
+
+    <!-- Dialog text displayed when loading a phone number from the SIM card for speed dial -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"SIM কাৰ্ডৰ পৰা ল’ড হৈ আছে..."</string>
+
+    <!-- Dialog title displayed when loading a phone number from the SIM card for speed dial -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"SIM কাৰ্ডৰ সম্পৰ্কসমূহ"</string>
+
+    <!-- Message displayed when there is no application available to handle the add contact menu option. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="add_contact_not_available"/>
+    <string name="add_contact_not_available">"কোনো সম্পৰ্ক এপ্প্ উপলব্ধ নাই"</string>
+
+    <!-- Message displayed when there is no application available to handle voice search. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voice_search_not_available"/>
+    <string name="voice_search_not_available">"ভইচ সন্ধান উপলব্ধ নাই"</string>
+
+    <!-- Message displayed when the Phone application has been disabled and a phone call cannot
+         be made. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="call_not_available"/>
+    <string name="call_not_available">"ফোন এপ্লিকেশ্বন অক্ষম হোৱাৰ বাবে এটা ফোন কল কৰিব নোৱাৰি৷"</string>
+
+    <!-- Message displayed when there is no application available to handle a particular action.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="activity_not_available"/>
+    <string name="activity_not_available">"সেইটোৰ বাবে এই ডিভাইচত কোনো এপ্প্ নাই"</string>
+
+    <!-- Hint displayed in dialer search box when there is no query that is currently typed.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dialer_hint_find_contact"/>
+    <string name="dialer_hint_find_contact">"সম্পৰ্ক সন্ধান কৰক"</string>
+
+    <!-- Hint displayed in add blocked number search box when there is no query typed.
+         [CHAR LIMIT=45] -->
+    <add-resource type="string" name="block_number_search_hint"/>
+    <string name="block_number_search_hint">"নম্বৰ যোগ কৰক বা সম্পৰ্ক সন্ধান কৰক"</string>
+
+    <!-- String resource for the font-family to use for the call log activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_log_activity_title_font_family"/>
+    <string name="call_log_activity_title_font_family">sans-serif-light</string>
+
+    <!-- String resource for the font-family to use for the full call history footer
+         Do not translate. -->
+    <add-resource type="string" name="view_full_call_history_font_family"/>
+    <string name="view_full_call_history_font_family">sans-serif</string>
+
+    <!-- Text displayed when the call log is empty. -->
+    <add-resource type="string" name="call_log_all_empty"/>
+    <string name="call_log_all_empty">"আপোনাৰ কলৰ ইতিবৃত্ত খালী আছে"</string>
+
+    <!-- Label of the button displayed when the call history is empty. Allows the user to make a call. -->
+    <add-resource type="string" name="call_log_all_empty_action"/>
+    <string name="call_log_all_empty_action">"এটা কল কৰক"</string>
+
+    <!-- Text displayed when the list of missed calls is empty -->
+    <add-resource type="string" name="call_log_missed_empty"/>
+    <string name="call_log_missed_empty">"আপোনাৰ কোনো মিচ কল নাই৷"</string>
+
+    <!-- Text displayed when the list of voicemails is empty -->
+    <add-resource type="string" name="call_log_voicemail_empty"/>
+    <string name="call_log_voicemail_empty">"আপোনাৰ ভইচমেইল ইনবক্স খালী আছে৷"</string>
+
+    <!-- Text displayed when the list of voicemail archives is empty -->
+    <add-resource type="string" name="voicemail_archive_empty"/>
+    <string name="voicemail_archive_empty">"আপোনাৰ ভইচমেইল আৰ্কাইভ খালী আছে৷"</string>
+
+    <!--  Menu option to show favorite contacts only -->
+    <add-resource type="string" name="show_favorites_only"/>
+    <string name="show_favorites_only">"কেৱল প্ৰিয়সমূহ প্ৰদৰ্শন কৰক"</string>
+
+    <!--  Title of activity that displays a list of all calls -->
+    <add-resource type="string" name="call_log_activity_title"/>
+    <string name="call_log_activity_title">"কলৰ ইতিবৃত্ত"</string>
+
+    <!--  Title of activity that displays a list of all archived voicemails -->
+    <add-resource type="string" name="voicemail_archive_activity_title"/>
+    <string name="voicemail_archive_activity_title">"ভইচমেইল আৰ্কাইভ"</string>
+
+    <!-- Title for the call log tab containing the list of all voicemails and calls
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_all_title"/>
+    <string name="call_log_all_title">"সকলো"</string>
+
+    <!-- Title for the call log tab containing the list of all missed calls only
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_missed_title"/>
+    <string name="call_log_missed_title">"মিচ কৰা"</string>
+
+    <!-- Title for the call log tab containing the list of all voicemail calls only
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_voicemail_title"/>
+    <string name="call_log_voicemail_title">"ভইচমেইল"</string>
+
+    <!-- Title for dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=30]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_title"/>
+    <string name="migrate_blocked_numbers_dialog_title">"নতুন, নিৰ্দিষ্ট কৰা ব্লক"</string>
+
+    <!-- Body text for dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_message"/>
+    <string name="migrate_blocked_numbers_dialog_message">"আপোনাক অধিক ভালকৈ ৰক্ষা কৰিবলৈ, ফোনে ব্লক কৰা কেনেকৈ কাম কৰে সেয়া পৰিৱৰ্তন কৰিব লাগিব৷ আপোনাৰ ব্লক কৰা নম্বৰে এতিয়া উভয় কল আৰু পাঠ বন্ধ কৰিব আৰু অন্য এপ্প্‌ছৰ সৈতে ভাগ-বতৰা কৰিব পাৰে৷"</string>
+
+    <!-- Positive confirmation button for the dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_allow_button"/>
+    <string name="migrate_blocked_numbers_dialog_allow_button">"অনুমতি দিয়ক"</string>
+
+    <!-- Do not translate -->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
+    <string name="migrate_blocked_numbers_dialog_cancel_button">@android:string/cancel</string>
+
+    <!-- Confirmation dialog title for blocking a number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_title"/>
+    <string name="block_number_confirmation_title">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> ব্লক কৰিবনে?"</string>
+
+    <!-- Confirmation dialog message for blocking a number with visual voicemail active.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_vvm"/>
+    <string name="block_number_confirmation_message_vvm">"এই নম্বটোৰ পৰা অহা কল ব্লক কৰা হ’ব আৰু ভইচমেইল স্বয়ংক্ৰিয়ভাৱে বিলোপ কৰা হ’ব৷  "</string>
+
+    <!-- Confirmation dialog message for blocking a number with no visual voicemail.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_no_vvm"/>
+    <string name="block_number_confirmation_message_no_vvm">"এই নম্বৰৰ পৰা অহা কল ব্লক কৰা হ’ব, কিন্তু কলাৰে এতিয়াও আপোনাক ভইচমেইল পঠাবলৈ সমক্ষ হ’ব পাৰে৷  "</string>
+
+    <!-- Confirmation dialog message for blocking a number with new filtering enabled.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_new_filtering"/>
+    <string name="block_number_confirmation_message_new_filtering">"আপুনি এই নম্বৰৰ পৰা আগলৈ কল বা পাঠ প্ৰাপ্ত নকৰিব৷  "</string>
+
+    <!-- Block number alert dialog button [CHAR LIMIT=32] -->
+    <add-resource type="string" name="block_number_ok"/>
+    <string name="block_number_ok">"অৱৰোধ"</string>
+
+    <!-- Confirmation dialog for unblocking a number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unblock_number_confirmation_title"/>
+    <string name="unblock_number_confirmation_title">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> আনব্লক কৰিবনে?"</string>
+
+    <!-- Unblock number alert dialog button [CHAR LIMIT=32] -->
+    <add-resource type="string" name="unblock_number_ok"/>
+    <string name="unblock_number_ok">"আনব্লক"</string>
+
+    <!-- Accessibility text for the tab showing recent and favorite contacts who can be called.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_speed_dial"/>
+    <string name="tab_speed_dial">"দ্ৰুত ডায়েল"</string>
+
+    <!-- Accessibility text for the tab showing the call history. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_history"/>
+    <string name="tab_history">"কলৰ ইতিবৃত্ত"</string>
+
+    <!-- Accessibility text for the tab showing the user's contacts. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_all_contacts"/>
+    <string name="tab_all_contacts">"সম্পৰ্কসমূহ"</string>
+
+    <!-- Accessibility text for the tab showing the user's voicemails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_voicemail"/>
+    <string name="tab_voicemail">"ভইচমেইল"</string>
+
+    <!--  Text displayed when user swipes out a favorite contact -->
+    <add-resource type="string" name="favorite_hidden"/>
+    <string name="favorite_hidden">"প্ৰিয়বোৰৰ পৰা আঁতৰোৱা হৈছে"</string>
+    <!--  Text displayed for the undo button to undo removing a favorite contact -->
+    <add-resource type="string" name="favorite_hidden_undo"/>
+    <string name="favorite_hidden_undo">"পূৰ্বৰ দৰে কৰক"</string>
+
+    <!-- Shortcut item used to call a number directly from search -->
+    <add-resource type="string" name="search_shortcut_call_number"/>
+    <string name="search_shortcut_call_number">"<xliff:g id="number">%s</xliff:g>-ক কল কৰক"</string>
+
+    <!-- Shortcut item used to add a number directly to a new contact from search.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_create_new_contact"/>
+    <string name="search_shortcut_create_new_contact">"নতুন সম্পৰ্ক সৃষ্টি কৰক"</string>
+
+    <!-- Shortcut item used to add a number to an existing contact directly from search.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_add_to_contact"/>
+    <string name="search_shortcut_add_to_contact">"এটা সম্পৰ্কলৈ যোগ কৰক"</string>
+
+    <!-- Shortcut item used to send a text message directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_send_sms_message"/>
+    <string name="search_shortcut_send_sms_message">"SMS প্ৰেৰণ কৰক"</string>
+
+    <!-- Shortcut item used to make a video call directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_make_video_call"/>
+    <string name="search_shortcut_make_video_call">"ভিডিঅ\' ফোন কল কৰক"</string>
+
+    <!-- Shortcut item used to block a number directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_block_number"/>
+    <string name="search_shortcut_block_number">"নম্বৰ অৱৰোধ কৰক"</string>
+
+    <!-- Number of missed calls shown on call card [CHAR LIMIT=40] -->
+    <add-resource type="string" name="num_missed_calls"/>
+    <string name="num_missed_calls">"<xliff:g id="number">%s</xliff:g>-টা নতুন মিচ কৰক"</string>
+
+    <!-- Shown when there are no speed dial favorites. -->
+    <add-resource type="string" name="speed_dial_empty"/>
+    <string name="speed_dial_empty">"আপোনাৰ দ্ৰুত ডায়েলত এতিয়াও একো নাই"</string>
+
+    <!-- Shown as an action when there are no speed dial favorites -->
+    <add-resource type="string" name="speed_dial_empty_add_favorite_action"/>
+    <string name="speed_dial_empty_add_favorite_action">"এটা প্ৰিয় যোগ কৰক"</string>
+
+    <!-- Shown when there are no contacts in the all contacts list. -->
+    <add-resource type="string" name="all_contacts_empty"/>
+    <string name="all_contacts_empty">"আপোনাৰ এতিয়াও কোনো সম্পৰ্ক নাই"</string>
+
+    <!-- Shown as an action when the all contacts list is empty -->
+    <add-resource type="string" name="all_contacts_empty_add_contact_action"/>
+    <string name="all_contacts_empty_add_contact_action">"এটা সম্পৰ্ক যোগ কৰক"</string>
+
+    <!-- Shows up as a tooltip to provide a hint to the user that the profile pic in a contact
+         card can be tapped to bring up a list of all numbers, or long pressed to start reordering
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="contact_tooltip"/>
+    <string name="contact_tooltip">"সকলো নম্বৰ চাবলৈ প্ৰতিচ্ছবি স্পৰ্শ কৰক বা ৰেকৰ্ডাৰত স্পৰ্শ কৰক আৰু ধৰি থাকক"</string>
+
+    <!-- Remove button that shows up when contact is long-pressed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="remove_contact"/>
+    <string name="remove_contact">"আঁতৰাওক"</string>
+
+    <!-- Button text for the "video call" displayed underneath an entry in the call log.
+         Tapping causes a video call to be placed to the caller represented by the call log entry.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_video_call"/>
+    <string name="call_log_action_video_call">"ভিডিঅ’ কল"</string>
+
+    <!-- Button text for a button displayed underneath an entry in the call log, which opens up a
+         messaging app to send a SMS to the number represented by the call log entry.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_send_message"/>
+    <string name="call_log_action_send_message">"এটা বাৰ্তা প্ৰেৰণ কৰক"</string>
+
+    <!-- Button text for the button displayed underneath an entry in the call log.
+         Tapping navigates the user to the call details screen where the user can view details for
+         the call log entry. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_details"/>
+    <string name="call_log_action_details">"কলৰ বিতং তথ্য"</string>
+
+    <!-- Button text for the button displayed underneath an entry in the call log, which when
+         tapped triggers a return call to the named user. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_call"/>
+    <string name="call_log_action_call">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ক কল কৰক"</string>
+
+    <!-- String describing an incoming missed call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_incoming_missed_call"/>
+    <string name="description_incoming_missed_call">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>-ৰ পৰা অহা মিচড কল৷"</string>
+
+    <!-- String describing an incoming answered call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_incoming_answered_call"/>
+    <string name="description_incoming_answered_call">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>-ৰ পৰা অহা উত্তৰ দিয়া কল৷"</string>
+
+    <!-- String describing an "unread" voicemail entry in the voicemails tab.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_unread_voicemail"/>
+    <string name="description_unread_voicemail">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>-ৰ পৰা অহা অপঠিত ভইচমেইল৷"</string>
+
+    <!-- String describing a "read" voicemail entry in the voicemails tab.
+     Note: AccessibilityServices use this attribute to announce what the view represents.
+     [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_read_voicemail"/>
+    <string name="description_read_voicemail">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>-ৰ পৰা অহা ভইচমেইল৷"</string>
+
+    <!-- String describing an outgoing call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_outgoing_call"/>
+    <string name="description_outgoing_call">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>, <xliff:g id="typeOrLocation" example="Mobile">^2</xliff:g>, <xliff:g id="timeOfCall" example="2 min ago">^3</xliff:g>, <xliff:g id="phoneAccount" example="on SIM 1">^4</xliff:g>-লৈ কল কৰক৷"</string>
+
+    <!-- String describing the phone account the call was made on or to. This string will be used
+         in description_incoming_missed_call, description_incoming_answered_call, and
+         description_outgoing_call.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_phone_account"/>
+    <string name="description_phone_account">"<xliff:g id="phoneAccount" example="SIM 1">^1</xliff:g>-ত"</string>
+
+    <!-- String describing the secondary line number the call was received via.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_via_number"/>
+    <string name="description_via_number">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> যোগে"</string>
+
+    <!-- TextView text item showing the secondary line number the call was received via.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="call_log_via_number"/>
+    <string name="call_log_via_number">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> যোগে"</string>
+
+    <!-- String describing the PhoneAccount and via number that a call was received on, if both are
+         visible.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_via_number_phone_account"/>
+    <string name="description_via_number_phone_account">"<xliff:g id="number" example="(555) 555-5555">%2$s</xliff:g>-ৰ যোগেদি <xliff:g id="phoneAccount" example="SIM 1">%1$s</xliff:g>-ত অহা"</string>
+
+    <!-- The order of the PhoneAccount and via number that a call was received on,
+         if both are visible.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="call_log_via_number_phone_account"/>
+    <string name="call_log_via_number_phone_account">"<xliff:g id="number" example="(555) 555-5555">%2$s</xliff:g>-ৰ যোগেদি <xliff:g id="phoneAccount" example="SIM 1">%1$s</xliff:g>"</string>
+
+    <!-- String describing the phone icon on a call log list item. When tapped, it will place a
+         call to the number represented by that call log entry. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_call_log_call_action"/>
+    <string name="description_call_log_call_action">"কল কৰক"</string>
+
+    <!-- String describing the "call" action for an entry in the call log.  The call back
+         action triggers a return call to the named user.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_call_action"/>
+    <string name="description_call_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ক কল কৰক"</string>
+
+    <!-- String describing the "video call" action for an entry in the call log.  The video call
+         action triggers a return video call to the named person/number.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_video_call_action"/>
+    <string name="description_video_call_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ক ভিডিঅ’ ফোন কল কৰক৷  "</string>
+
+    <!-- String describing the "listen" action for an entry in the call log.  The listen
+         action is shown for call log entries representing a voicemail message and this button
+         triggers playing back the voicemail.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_action"/>
+    <string name="description_voicemail_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ পৰা অহা ভইচমেইল শুনক"</string>
+
+    <!-- String describing the "play voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_play"/>
+    <string name="description_voicemail_play">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ পৰা অহা ভইচমেইল বজাওক"</string>
+
+    <!-- String describing the "pause voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_pause"/>
+    <string name="description_voicemail_pause">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ পৰা অহা ভইচমেইল বিৰাম দিয়ক"</string>
+
+
+    <!-- String describing the "delete voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_delete"/>
+    <string name="description_voicemail_delete">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ পৰা অহা ভইচমেইল বিলোপ কৰক"</string>
+
+    <!-- String describing the number of new voicemails, displayed as a number badge on a tab.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="plurals" name="description_voicemail_unread"/>
+    <plurals name="description_voicemail_unread">
+        <item quantity="one">"<xliff:g id="count">%d</xliff:g>-টা নতুন ভইচমেইল"</item>
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g>-টা নতুন ভইচমেইল"</item>
+    </plurals>
+
+    <!-- Description for the "create new contact" action for an entry in the call log. This action
+         opens a screen for creating a new contact for this name or number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_create_new_contact_action"/>
+    <string name="description_create_new_contact_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ বাবে সম্পৰ্ক সৃষ্টি কৰক"</string>
+
+    <!-- Description for the "add to existing contact" action for an entry in the call log. This
+         action opens a screen for adding this name or number to an existing contact.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_add_to_existing_contact_action"/>
+    <string name="description_add_to_existing_contact_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ক মজুত সম্পৰ্কলৈ যোগ কৰক  "</string>
+
+    <!-- String describing the "details" action for an entry in the call log.  The details action
+         displays the call details screen for an entry in the call log.  This shows the calls to
+         and from the specified number associated with the call log entry.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_details_action"/>
+    <string name="description_details_action">"<xliff:g id="nameOrNumber" example="John Smith">^1</xliff:g>-ৰ বাবে কলৰ বিতং তথ্য"</string>
+
+    <!-- Toast message which appears when a call log entry is deleted.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="toast_entry_removed"/>
+    <string name="toast_entry_removed">"কল ইতিবৃত্তৰ পৰা বিলোপ কৰা হৈছে"</string>
+
+    <!-- String used as a header in the call log above calls which occurred today.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_today"/>
+    <string name="call_log_header_today">"আজি"</string>
+
+    <!-- String used as a header in the call log above calls which occurred yesterday.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_yesterday"/>
+    <string name="call_log_header_yesterday">"যোৱাকালি"</string>
+
+    <!-- String used as a header in the call log above calls which occurred two days or more ago.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_other"/>
+    <string name="call_log_header_other">"পুৰণি"</string>
+
+    <!-- String a header on the call details screen.  Appears above the list calls to or from a
+         particular number.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_detail_list_header"/>
+    <string name="call_detail_list_header">"কল সূচী"</string>
+
+    <!-- String describing the "speaker on" button on the playback control used to listen to a
+         voicemail message.  When speaker is on, playback of the voicemail will occur through the
+         phone speaker.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_speaker_on"/>
+    <string name="voicemail_speaker_on">"স্পীকাৰ অন কৰক৷"</string>
+
+    <!-- String describing the "speaker off" button on the playback control used to listen to a
+         voicemail message.  When speaker is off, playback of the voicemail will occur through the
+         phone earpiece.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_speaker_off"/>
+    <string name="voicemail_speaker_off">"স্পীকাৰ অফ কৰক৷"</string>
+
+    <!-- String describing the "play faster" button in the playback control used to listen to a
+         voicemail message.  Speeds up playback of the voicemail message.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_faster"/>
+    <string name="voicemail_play_faster">"দ্ৰুতগতিৰে বজাওক৷"</string>
+
+    <!-- String describing the "play slower" button in the playback control used to listen to a
+         voicemail message.  Slows down playback of the voicemail message.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_slower"/>
+    <string name="voicemail_play_slower">"লাহেকৈ বজাওক৷"</string>
+
+    <!-- String describing the "play/pause" button in the playback control used to listen to a
+         voicemail message.  Starts playback or pauses ongoing playback.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_start_pause"/>
+    <string name="voicemail_play_start_pause">"প্লেবেক আৰম্ভ কৰক বা বিৰাম দিয়ক৷"</string>
+
+    <!-- Delimeter used between each item in a textual list; for example "Alpha, Beta".
+         [CHAR LIMIT=3] -->
+    <add-resource type="string" name="list_delimeter"/>
+    <string name="list_delimeter">", "</string>
+
+    <!-- Dialer settings related strings-->
+
+    <!-- Title for "Display options" category, which controls how contacts are shown.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="display_options_title"/>
+    <string name="display_options_title">"প্ৰদৰ্শন বিকল্পসমূহ"</string>
+
+    <!-- Title for the "Sounds and vibration" settings control settings related to ringtones,
+         dialpad tones, and vibration for incoming calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sounds_and_vibration_title"/>
+    <string name="sounds_and_vibration_title">"ধ্বনি আৰু কম্পন"</string>
+
+    <!-- Title for "Accessibility" category, which controls settings such as TTY mode and hearing
+         aid compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_title"/>
+    <string name="accessibility_settings_title">"প্ৰৱেশক্ষমতা"</string>
+
+    <!-- Setting option name to pick ringtone (a list dialog comes up). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="ringtone_title"/>
+    <string name="ringtone_title">"ফোনৰ ৰিংট’ন"</string>
+
+    <!-- Setting option name to enable or disable vibration when ringing the phone.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="vibrate_on_ring_title"/>
+    <string name="vibrate_on_ring_title">"আৰু কলৰ বাবেও কম্পন হয়"</string>
+
+    <!-- Setting option name to enable or disable DTMF tone sound [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dtmf_tone_enable_title"/>
+    <string name="dtmf_tone_enable_title">"ডায়েলপেড ট’নসমূহ"</string>
+    <!-- Label for setting to adjust the length of DTMF tone sounds. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="dtmf_tone_length_title"/>
+    <string name="dtmf_tone_length_title">"ডায়েলপেড ট’নৰ দৈৰ্ঘ্য"</string>
+    <!-- Options displayed for the length of DTMF tone sounds. [CHAR LIMIT=40] -->
+    <add-resource type="array" name="dtmf_tone_length_entries"/>
+    <string-array name="dtmf_tone_length_entries">
+      <item>"সাধাৰণ"</item>
+      <item>"দীঘল"</item>
+    </string-array>
+
+    <!-- Title of settings screen for managing the "Respond via SMS" feature. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="respond_via_sms_setting_title"/>
+    <string name="respond_via_sms_setting_title">"ক্ষিপ্ৰ সঁহাৰি"</string>
+
+    <!-- Label for the call settings section [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_settings_label"/>
+    <string name="call_settings_label">"কলবোৰ"</string>
+
+    <!-- Label for the blocked numbers settings section [CHAR LIMIT=30] -->
+    <add-resource type="string" name="manage_blocked_numbers_label"/>
+    <string name="manage_blocked_numbers_label">"কল ব্লক কৰা"</string>
+
+    <!-- Label for a section describing that call blocking is temporarily disabled because an
+         emergency call was made. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="blocked_numbers_disabled_emergency_header_label"/>
+    <string name="blocked_numbers_disabled_emergency_header_label">"কল ব্লক কৰা অস্থায়ীভাৱে অফ আছে  "</string>
+
+    <!-- Description that call blocking is temporarily disabled because the user called an
+         emergency number, and explains that call blocking will be re-enabled after a buffer
+         period has passed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="blocked_numbers_disabled_emergency_desc"/>
+    <string name="blocked_numbers_disabled_emergency_desc">"আপুনি অন্তিম 48 ঘণ্টাৰ ভিতৰত এই ফোনৰ পৰা জৰুৰীকালিন সেৱাৰ লগত সম্পৰ্ক কৰা কাৰণে কল ব্লক কৰা অক্ষম কৰা হৈছে৷ 48 ঘণ্টীয়া সময় অৱধিৰ ম্যাদ উকলাৰ পিছত এয়া স্বয়ংক্ৰিয়ভাৱে পুনঃসক্ষম হ’ব৷ "</string>
+
+    <!-- Label for fragment to import numbers from contacts marked as send to voicemail.
+         [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="import_send_to_voicemail_numbers_label"/>
+    <string name="import_send_to_voicemail_numbers_label">"নম্বৰ আমদানি কৰক"</string>
+
+    <!-- Text informing the user they have previously marked contacts to be sent to voicemail.
+         This will be followed by two buttons, 1) to view who is marked to be sent to voicemail
+         and 2) importing these settings to Dialer's block list. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="blocked_call_settings_import_description"/>
+    <string name="blocked_call_settings_import_description">"আপুনি কিছুমান কলাৰক অন্য এপ্প্‌ছৰ যোগেদি স্বয়ংক্ৰিয়ভাৱে ভইচমেইললৈ প্ৰেৰণ কৰিবলৈ পূৰ্বতেই চিহ্নিত কৰিছে৷  "</string>
+
+    <!-- Label for button to view numbers of contacts previous marked to be sent to voicemail.
+         [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="blocked_call_settings_view_numbers_button"/>
+    <string name="blocked_call_settings_view_numbers_button">"নম্বৰ দৰ্শন কৰক"</string>
+
+    <!-- Label for button to import settings for sending contacts to voicemail into Dialer's block
+         list. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="blocked_call_settings_import_button"/>
+    <string name="blocked_call_settings_import_button">"আমদানি কৰক"</string>
+
+    <!-- Error toast message for when send to voicemail import fails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="send_to_voicemail_import_failed"/>
+    <string name="send_to_voicemail_import_failed">"আমদানি বিফল হৈছে"</string>
+
+    <!-- Error toast message for when voicemail archive fails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_archive_failed"/>
+    <string name="voicemail_archive_failed">"ভইচমেইল আৰ্কাইভ কৰিবলৈ বিফল হৈছে৷"</string>
+
+    <!-- String describing the delete icon on a blocked number list item.
+        When tapped, it will show a dialog confirming the unblocking of the number.
+        [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_blocked_number_list_delete"/>
+    <string name="description_blocked_number_list_delete">"নম্বৰ অৱৰোধ মুক্ত কৰক"</string>
+
+    <!-- Button to bring up UI to add a number to the blocked call list. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="addBlockedNumber"/>
+    <string name="addBlockedNumber">"নম্বৰ যোগ কৰক"</string>
+
+    <!-- Footer message of number blocking screen with visual voicemail active.
+        [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_footer_message_vvm"/>
+    <string name="block_number_footer_message_vvm">"এই নম্বৰৰ পৰা অহা কল ব্লক কৰা হ’ব আৰু ভইচমেইল স্বয়ংক্ৰিয়ভাৱে বিলোপ কৰা হ’ব৷  "</string>
+
+    <!-- Footer message of number blocking screen with no visual voicemail.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_footer_message_no_vvm"/>
+    <string name="block_number_footer_message_no_vvm">"এই নম্বৰৰ পৰা অহা কল ব্লক কৰা হ’ব, কিন্তু সিহঁতে এতিয়াও আপোনাক ভইচমেইল পঠাবলৈ সমক্ষ হ’ব পাৰে৷  "</string>
+
+    <!-- Heading for the block list in the "Spam and blocked cal)ls" settings. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="block_list"/>
+    <string name="block_list">"অৱৰোধিত নম্বৰ"</string>
+
+    <!-- Error message shown when user tries to add invalid number to the block list.
+        [CHAR LIMIT=64] -->
+    <add-resource type="string" name="invalidNumber"/>
+    <string name="invalidNumber">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> অবৈধ৷"</string>
+
+    <!-- Error message shown when user tries to add a number to the block list that was already
+        blocked. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="alreadyBlocked"/>
+    <string name="alreadyBlocked">"<xliff:g id="number" example="(555) 555-5555">%1$s</xliff:g> ইতিমধ্যে ব্লক কৰা হৈছে৷"</string>
+
+    <!-- Title of notification telling the user that call blocking has been temporarily disabled.
+         [CHAR LIMIT=56] -->
+    <add-resource type="string" name="call_blocking_disabled_notification_title"/>
+    <string name="call_blocking_disabled_notification_title">"48 ঘণ্টাৰ বাবে কল অৱৰোধ কৰা অক্ষম হৈছে  "</string>
+
+    <!-- Text for notification which provides the reason that call blocking has been temporarily
+         disabled. Namely, we disable call blocking after an emergency call in case of return
+         phone calls made by emergency services. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="call_blocking_disabled_notification_text"/>
+    <string name="call_blocking_disabled_notification_text">"এটা জৰুৰীকালিন কল কৰা হৈছিল বাবে অক্ষম হৈছে৷  "</string>
+
+    <!-- Label for the phone account settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="phone_account_settings_label"/>
+    <string name="phone_account_settings_label">"কলিং একাউণ্ট"</string>
+
+    <!-- The label of the button used to turn on a single permission [CHAR LIMIT=30]-->
+    <add-resource type="string" name="permission_single_turn_on"/>
+    <string name="permission_single_turn_on">"অন কৰক"</string>
+
+    <!--  The label of the button used to turn on multiple permissions [CHAR LIMIT=30]-->
+    <add-resource type="string" name="permission_multiple_turn_on"/>
+    <string name="permission_multiple_turn_on">"অনুমতি ছেট কৰক"</string>
+
+    <!-- Shown as a prompt to turn on the contacts permission to enable speed dial [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_speeddial"/>
+    <string name="permission_no_speeddial">"দ্ৰুত ডায়েল সক্ষম কৰিবলৈ, সম্পৰ্ক অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to enable the call log [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_calllog"/>
+    <string name="permission_no_calllog">"আপোনাৰ কল লগ চাবলৈ, ফোন অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a prompt to turn on the contacts permission to show all contacts [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_contacts"/>
+    <string name="permission_no_contacts">"আপোনাৰ সম্পৰ্ক চাবলৈ, সম্পৰ্ক অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to show voicemails [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_voicemail"/>
+    <string name="permission_no_voicemail">"আপোনাৰ ভইচমেইলত প্ৰৱেশ কৰিবলৈ, ফোন অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a prompt to turn on contacts permissions to allow contact search [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_search"/>
+    <string name="permission_no_search">"আপোনাৰ সম্পৰ্ক সন্ধান কৰিবলৈ, সম্পৰ্ক অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to allow a call to be placed [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_place_call"/>
+    <string name="permission_place_call">"এটা কল কৰিবলৈ, সম্পৰ্ক অনুমতি অন কৰক৷"</string>
+
+    <!-- Shown as a message that notifies the user that the Phone app cannot write to system settings, which is why the system settings app is being launched directly instead. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="toast_cannot_write_system_settings"/>
+    <string name="toast_cannot_write_system_settings">"ছিষ্টেম ছেটিংছত লখিবলৈ ফোন এপ্প্‌ৰ অনুমতি নাই৷"</string>
+
+    <!-- Label under the name of a blocked number in the call log. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blocked_number_call_log_label"/>
+    <string name="blocked_number_call_log_label">"অৱৰোধ হৈছে"</string>
+
+    <!-- Accessibility announcement to indicate which call is active -->
+    <add-resource type="string" name="accessibility_call_is_active"/>
+    <string name="accessibility_call_is_active">"<xliff:g id="nameOrNumber">^1</xliff:g> সক্ৰিয় আছে"</string>
+
+    <!--  for speed dial -->
+    <add-resource type="string" name="speed_dial_settings"/>
+    <string name="speed_dial_settings">"দ্ৰুত ডায়েল ছেটিংছ"</string>
+
+    <add-resource type="string" name="speed_dial_not_set"/>
+    <string name="speed_dial_not_set">"(ছেট কৰা নাই)"</string>
+
+    <add-resource type="string" name="speed_dial_replace"/>
+    <string name="speed_dial_replace">"সলনি কৰক"</string>
+
+    <add-resource type="string" name="speed_dial_delete"/>
+    <string name="speed_dial_delete">"বিলোপ কৰক"</string>
+
+    <add-resource type="string" name="speed_dial_unassigned_dialog_title"/>
+    <string name="speed_dial_unassigned_dialog_title">"কী এছাইন হোৱা নাই"</string>
+
+    <add-resource type="string" name="speed_dial_unassigned_dialog_message"/>
+    <string name="speed_dial_unassigned_dialog_message">"নম্বৰ কী \'<xliff:g id="number">%s</xliff:g>\'-লৈ কোনো দ্ৰুত ডায়েল কাৰ্য নিয়োগ কৰা নাই৷ আপুনি এতিয়া এটা কাৰ্য নিয়োগ কৰিব বিচাৰে নেকি?"</string>
+
+    <add-resource type="string" name="dialog_speed_dial_airplane_mode_message"/>
+    <string name="dialog_speed_dial_airplane_mode_message">"দ্ৰুত ডায়েল ব্যৱহাৰ কৰিবলৈ, অনুগ্ৰহ কৰি প্ৰথমে এয়াৰপ্লেন মোড অফ কৰক৷"</string>
+
+    <!-- Speed Dial can not be set for the key used for Emergency number-->
+    <add-resource type="string" name="speed_dial_can_not_be_set"/>
+    <string name="speed_dial_can_not_be_set">"স্পীড ডায়েল এই কীটোৰ বাবে ছেট কৰিব নোৱাৰি"</string>
+
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"হয়"</string>
+
+    <add-resource type="string" name="no"/>
+    <string name="no">"নহয়"</string>
+
+    <add-resource type="string" name="input_number"/>
+    <string name="input_number">"নম্বৰ ইনপুট কৰক"</string>
+
+    <add-resource type="string" name="speed_dial_cancel"/>
+    <string name="speed_dial_cancel">"বাতিল কৰক"</string>
+
+    <add-resource type="string" name="speed_dial_ok"/>
+    <string name="speed_dial_ok">"ঠিক"</string>
+
+    <add-resource type="string" name="call_log_show_all_slots"/>
+    <string name="call_log_show_all_slots">"সকলো SIM"</string>
+
+    <add-resource type="string" name="call_log_all_calls_header"/>
+    <string name="call_log_all_calls_header">"সকলো কল"</string>
+
+    <!-- Text displayed when the list of incoming calls is empty -->
+    <add-resource type="string" name="recentIncoming_empty"/>
+    <string name="recentIncoming_empty">"আপোনাৰ কোনো ইনকামিং ফোন কল নাই৷"</string>
+
+    <!-- Text displayed when the list of outgoing calls is empty -->
+    <add-resource type="string" name="recentOutgoing_empty"/>
+    <string name="recentOutgoing_empty">"আপোনাৰ কোনো আউটগ’য়িং কল নাই৷"</string>
+
+    <!-- Text displayed when the call log is empty. -->
+    <add-resource type="string" name="recentCalls_empty"/>
+    <string name="recentCalls_empty">"আপোনাৰ কল লগ খালী আছে"</string>
+    <add-resource type="string" name="calllog_search_hint"/>
+    <string name="calllog_search_hint">"কল লগ সন্ধান কৰক"</string>
+    <add-resource type="string" name="no_call_log"/>
+    <string name="no_call_log">"কোনো কল লগ নাই"</string>
+    <add-resource type="string" name="clear"/>
+    <string name="clear">"পৰিষ্কাৰ"</string>
+    <add-resource type="string" name="description_clear_search"/>
+    <string name="description_clear_search">"সন্ধান পৰিষ্কাৰ কৰক"</string>
+    <add-resource type="string" name="video_call_welcome_title"/>
+    <string name="video_call_welcome_title"><b>"নতুন ভিডিঅ\' কলিং ডায়েলাৰলৈ স্বাগতম"</b></string>
+    <add-resource type="string" name="video_call_welcome_message"/>
+    <string name="video_call_welcome_message">"আমি সকলোৱে সেইফালৰ পৰিচিত মাতটো শুনিবলৈ ভাল পাওঁ, কিন্তু সন্মুখা-সন্মুখী হৈ কথা পতাটো অধিক ভাল! আপোনাৰ প্ৰকৃত-সময় (নে দেখা-দেখিৰ সময়?) ৰ সংযোগসমূহ মাজত চলি থকাটো জানিবলৈ আপুনি কি জনা উচিত সেয়া ইয়াত আছে: আপুনি 4G LTE বা এটা ৱাই-ফাই সংযোগত থকাৰ প্ৰয়োজন হ’ব৷ আপুনি কল কৰা ডিভাইচটোৰো ভিডিঅ’ কলিং যোগ্যতা থাকিবই লাগিব৷ ভিডিঅ’ কলে আপোনাৰ উচ্চ গতিৰ ডাটা ব্যৱহাৰ কৰিব৷ আপুনি এটা ভইচ কল এটা ভিডিঅ’ কললৈ উন্নীত কৰিব পাৰে৷ অধিক তথ্যৰ বাবে "<a>"https://support.t-mobile.com/docs/DOC-23574"</a>" পৰীক্ষা কৰক৷"</string>
+    <add-resource type="string" name="video_call_welcome_message_repeat"/>
+    <string name="video_call_welcome_message_repeat">"প্ৰত্যেক বাৰতে এই বাৰ্তাটো প্ৰদৰ্শন কৰক"</string>
+
+    <add-resource type="string" name="toast_change_video_call_failed"/>
+    <string name="toast_change_video_call_failed">"ভিডিঅ’ ফোন কললৈ পৰিৱৰ্তন কৰিব নোৱাৰি, অশুদ্ধ নম্বৰ সজ্জা"</string>
+    <add-resource type="string" name="toast_make_video_call_failed"/>
+    <string name="toast_make_video_call_failed">"ভিডিঅ’ কল কৰিব নোৱাৰে, অশুদ্ধ নম্বৰৰ সজ্জা"</string>
+    <!-- Add for enhance videocall ui -->
+    <add-resource type="string" name="overflowBothCallMenuItemText"/>
+    <string name="overflowBothCallMenuItemText">"ভিডিঅ’ ফোন কল, মোক দেখুৱাওক"</string>
+    <add-resource type="string" name="overflowRXCallMenuItemText"/>
+    <string name="overflowRXCallMenuItemText">"ভিডিঅ’ ফোন কল, মোক লুকুৱাওক"</string>
+    <add-resource type="string" name="overflowVOCallMenuItemText"/>
+    <string name="overflowVOCallMenuItemText">"ভইচ কল"</string>
+    <add-resource type="string" name="video_call"/>
+    <string name="video_call">"ভিডিঅ’ কলিং"</string>
+    <add-resource type="string" name="call_data_info_label"/>
+    <string name="call_data_info_label">"কল/ডাটা ব্যৱহাৰৰ সময় নির্ণায়ক"</string>
+    <add-resource type="string" name="call_data_info_description"/>
+    <string name="call_data_info_description">"ভইচ কল ব্যৱহাৰৰ সময় আৰু ডাটা ব্যৱহাৰৰ সময়"</string>
+    <add-resource type="string" name="alert_call_over_wifi"/>
+    <string name="alert_call_over_wifi">"ৱাই-ফাই-ৰ মাধ্যমেদি কলসমূহ কৰা হ’ব৷"</string>
+    <add-resource type="string" name="alert_call_no_cellular_coverage"/>
+    <string name="alert_call_no_cellular_coverage">"কোনো চেলুলাৰ নেটৱৰ্ক উপলব্ধ হোৱা নাই৷ কলসমূহ কৰিবলৈ উপলব্ধ ৱাই-ফাই-লৈ সংযোগ কৰক৷"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_call"/>
+    <string name="alert_user_connect_to_wifi_for_call">"কলসমূহ কৰিবলৈ ৱাই-ফাই-লৈ সংযোগ কৰক"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_call_text"/>
+    <string name="alert_user_connect_to_wifi_for_call_text">"উপলব্ধ নেটৱৰ্ক দৰ্শন কৰিবলৈ ইয়াত টোকৰ মাৰক"</string>
+    <add-resource type="string" name="missing_account_type"/>
+    <string name="missing_account_type">"(কোনো প্ৰকাৰ নাই)"</string>
+    <add-resource type="string" name="missing_account_name"/>
+    <string name="missing_account_name">"(নাম নাই)"</string></resources>

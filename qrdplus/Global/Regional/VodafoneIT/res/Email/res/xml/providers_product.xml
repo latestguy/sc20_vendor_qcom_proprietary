@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2016 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<providers_product>
+
+    <provider id="gmail" label="Gmail" domain="gmail.com">
+        <incoming uri="imap+ssl+://imap.gmail.com" username="$email" />
+        <outgoing uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+        <incoming-fallback uri="pop3+ssl+://pop.gmail.com" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+    </provider>
+
+    <provider id="google mail" label="Google Mail" domain="gmail.com">
+        <incoming uri="imap+ssl+://imap.gmail.com" username="$email" />
+        <outgoing uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+        <incoming-fallback uri="pop3+ssl+://pop.gmail.com" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.gmail.com" username="$email" />
+    </provider>
+
+    <provider id="vodafone.it" label="Vodafone.it" domain="vodafone.it">
+        <incoming uri="imap+ssl+://imap.vodafone.it" username="$email" />
+        <outgoing uri="smtp+ssl+://smtp.vodafone.it" username="$email" />
+	     <incoming-fallback uri="pop3+ssl+://pop.vodafone.it" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.vodafone.it" username="$email" />
+    </provider>
+
+    <provider id="Hotmail" label="Hotmail.com" domain="hotmail.com">
+        <incoming uri="pop3+ssl+://pop3.live.com" username="$email"/>
+        <outgoing uri="smtp+tls+://smtp.live.com" username="$email" />
+    </provider>
+
+
+    <provider id="Hotmail.it" label="Hotmail.it" domain="hotmail.it">
+        <incoming uri="pop3+ssl+://pop3.live.com" username="$email"/>
+        <outgoing uri="smtp+tls+://smtp.live.com" username="$email" />
+    </provider>
+
+    <provider id="Yahoo.it" label="Yahoo.it" domain="yahoo.it">
+        <incoming uri="imap+ssl+://imap.mail.yahoo.com" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.mail.yahoo.com" username="$email" />
+	<incoming-fallback uri="pop3+ssl+://pop.mail.yahoo.it" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.mail.yahoo.it" username="$email" />
+    </provider>
+
+  <!--
+            imap        143     pop3        110     smtp        587
+            imap+tls+   143     pop3+tls+   110     smtp+tls+   587
+            imap+ssl+   993     pop3+ssl+   995     smtp+ssl+   465
+    -->
+    <provider id="Yahoo.com" label="Yahoo.com" domain="yahoo.com">
+        <incoming uri="imap+ssl+://imap.mail.yahoo.com" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.mail.yahoo.com" username="$email" />
+	    <incoming-fallback uri="pop3+ssl+://pop.mail.yahoo.it" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.mail.yahoo.com" username="$email" />
+    </provider>
+
+    <provider id="Email.it" label="Email.it" domain="email.it">
+	  <incoming uri="imap://imapmail.email.it" username="$email" />
+      <outgoing uri="smtp://smtp.email.it" username="$email" />
+	  <incoming-fallback uri="pop3://popmail.email.it" username="$email"/>
+      <outgoing-fallback uri="smtp://smtp.email.it" username="$email" />
+    </provider>
+
+
+    <provider id="Virgilio.it" label="Virgilio.it" domain="virgilio.it">
+        <incoming uri="imap://in.virgilio.it" username="$email"/>
+        <outgoing uri="smtp+ssl+://out.virgilio.it" username="$email" />
+	<incoming-fallback uri="pop3://in.virgilio.it" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://out.virgilio.it" username="$email" />
+    </provider>
+
+    <provider id="Libero.it" label="Libero.it" domain="libero.it">
+        <incoming uri="imap+ssl+://imapmail.libero.it" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.libero.it" username="$email" />
+	<incoming-fallback uri="pop3://popmail.libero.it" username="$email" />
+        <outgoing-fallback uri="smtp://smtp.libero.it" username="$email" />
+    </provider>
+
+    <provider id="Tiscali.it" label="Tiscali.it" domain="tiscali.it">
+        <incoming uri="imap://imap.tiscali.it" username="$email"/>
+        <outgoing uri="smtp+ssl+://smtp.tiscali.it" username="$email" />
+	    <incoming-fallback uri="pop3://pop.tiscali.it" username="$email" />
+        <outgoing-fallback uri="smtp+ssl+://smtp.tiscali.it" username="$email" />
+    </provider>
+
+</providers_product>
+

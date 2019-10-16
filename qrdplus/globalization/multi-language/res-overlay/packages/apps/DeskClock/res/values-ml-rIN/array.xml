@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>അബിഡ്‌ജാൻ"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>അക്ര"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>ആഡിസ് അബാബ"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>അൾജിയേഴ്സ്"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>ബ്ലാന്റയര്‍"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്രസവില്ലെ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കെയ്റോ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കസബ്ലാങ്ക "</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കൊണാ‌ക്രി"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ദാകർ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ദാർ എസ് സലാം"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ജിബൂത്തി"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ഫ്രീടൗൺ"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗാബൊറോൺ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹരാരെ"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>ജോഹനാസ്‌ബർഗ്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കമ്പാല"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>ഖാർതോം"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കിഗാലി"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കിൻഷാസ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലാഗോസ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മസേറു"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മൊഗാദിഷു"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>നൈറോബി"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാവോ തോം"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>തിംബുക്തു"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ട്രിപ്പോളി"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടുണിസ്"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആങ്കൊറേജ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെൻഡോസ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അറൂബ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അസൻഷൻ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാർബഡോസ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെലിസ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബൊഗോത"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്യൂണസ് അയേഴ്സ്"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കാൻകൺ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കാരകാസ്"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കേമാൻ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>ചിക്കാഗോ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കോസ്റ്റാറിക്ക"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കുരാകാവോ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡോസൺ ക്രീക്ക്"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡെൻവർ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡെട്രോയിറ്റ്"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡൊമിനിക്ക"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>എഡ്‌മണ്ടൻ"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>എൽ സാൽവദോർ"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ഫോർട്ടാലെസ"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗ്രാൻഡ് ടർക്ക്"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗ്രെനാഡ"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>ഗ്വാട്ടിമാല സിറ്റി"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗയാന"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹലിഫാക്സ്"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹവാന"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ഇന്ത്യനാപൊലിസ്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>നോക്സ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മരെംഗോ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പീറ്റേഴ്സ്‌ബർഗ്"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടെൽ സിറ്റി"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വിവെ"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വിൻസെനെസ്"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>വിനാമാക്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കിംഗ്‌സ്റ്റൺ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂസ്ട്ര സെനോറ ഡി ലാ പാസ്"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലിമ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലോസാഞ്ചലസ്"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലൂയിസ്‌വില്ലെ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മനാഗുവ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാർട്ടിനിക്ക്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെൻഡോസ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെറ്റ്‌ലകത്‌ല"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെക്സിക്കോ സിറ്റി"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മോണ്ടെറി"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മോണ്ടിവിഡിയോ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മോൺട്രിയൽ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>നസാവു"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂയോർക്ക്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്യൂല"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>സെന്റർ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂ സലെം"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പനാമ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>ഫോണിക്സ്"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പോർട്ട് ഓഫ് സ്പെയിൻ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പോർട്ട്-ഔ-പ്രിൻസ്"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പ്യൂർട്ടോ റിക്കോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാന്റോ ഡൊമിംഗോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാവോ പോളോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് ജോൺസ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് കിറ്റ്‌സ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് ലൂസിയ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് തോമസ്"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>തിജുവാന"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടൊറന്റോ"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വാൻകൂവർ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>വിന്നിപെഗ്"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>ദക്ഷിണ ധ്രുവം<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലോംഗ്ഇയർബയെൻ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അൽമാട്ടി"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അമ്മാൻ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അനന്ദിർ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അക്‌തോ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാഗ്‌ദാദ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബഹ്റെയിൻ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബകു"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാങ്കോക്ക്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെയ്റൂട്ട്"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കൽക്കട്ട"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡമാസ്‌കസ്"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ധാക്ക"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ദുബായ്"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗാസ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹെബ്രോൺ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹോചിമിൻ"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>ഹോംഗ് കോംഗ്<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ഇസ്റ്റാംബൂൾ"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>ജക്കാർത്ത"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>ജറുസലേം"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കാബൂൾ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കറാച്ചി"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കാഠ്‌മണ്ഡു"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കോലാലമ്പൂർ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കുവൈറ്റ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മകാവു"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മനില"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മസ്കറ്റ്"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>ഫനോം പെന"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>പ്യോംഗ്‌യാംഗ്<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>ഖത്തർ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റംഗൂൺ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റിയാദ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സൈഗൺ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സോൾ"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>ഷംഗായി<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സിങ്കപ്പൂർ"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>തായ്പേയ്<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടെഹ്റാൻ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടെൽ അവീവ്"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>ടോക്കിയോ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"U<xliff:g id="separator">=</xliff:g>ഉലാൻബാതർ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെർമൂഡ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കാനറി"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കേപ് വെർദെ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റേയ്‌ക്‌ജാവിക്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സ്റ്റാൻലി"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അഡലെയ്‌ഡ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്രിസ്‌ബെയിൻ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കാൻബറ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡാർവിൻ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെൽബൺ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂ സൗത്ത് വെയിൽസ്"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പെർത്ത്"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>ക്വീൻസ്‌ലാൻഡ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സിഡ്‌നി"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വിക്‌ടോറിയ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂ‌ഫൗണ്ട്‌ലാൻഡ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാസ്കാഷിവാൻ"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>ഈസ്റ്റർ ഐലൻഡ്"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആംസറ്റർഡാം"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അൻഡോറ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ഏഥൻസ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെൽഫാസ്റ്റ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെൽഗ്രേഡ് "</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെർലിൻ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്രാറ്റിസ്ലാവ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്രസൽസ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബുചാറെസ്റ്റ്"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബുഡാപെസ്റ്റ്"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>ചിസിനോ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കോപ്പൻഹേഗൻ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡുബ്ലിൻ"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ജിബ്രാൽട്ടർ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹെൽസിങ്കി"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ഐസിൽ ഓഫ് മാൻ"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ഇസ്റ്റാംബൂൾ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കീവ്"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലിസ്ബൻ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലണ്ടൻ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലക്സംബർഗ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാഡ്രിഡ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാൾട്ട"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മിൻസ്ക്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മൊണാക്കോ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മോസ്കോ"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ഓസ്‌ലോ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പാരീസ്"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പ്രേഗ്"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റിഗ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റോം"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻ മരിനോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സരജെവോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സിംഫെറോപോൾ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സ്കോപ്‌ജെ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സോഫിയ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സ്റ്റോക്ക്‌ഹോം"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടാലിൻ"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വത്തിക്കാൻ"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വിയന്ന"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>വിൽനിയസ്"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>വാർസോ"</item>
+        <item>"Z<xliff:g id="separator">=</xliff:g>സാഗ്രെബ്"</item>
+        <item>"Z<xliff:g id="separator">=</xliff:g>സൂറിച്ച്"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആന്റനാനറിവോ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാലദ്വീപ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മൗറീഷ്യസ്"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ഓക്‌ലൻഡ്"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ഫിജി"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗുവാം"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹൊണോലുലു"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കിരിതിമതി"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>നൗമിയ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സമോവ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>താഹിതി"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആന്റിഗ്വ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ഓസ്റ്റിൻ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബോസ്റ്റൺ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കാൽ‌ഗറി"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കൊളംബസ്"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡള്ളാസ്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>നോക്സ്‌വില്ലെ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മെംഫിസ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മിയാമി"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മിന്നിയപൊലിസ്"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ഒട്ടാവ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>ഫിലാഡെൽഫിയ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പോർട്ട്‌ലൻഡ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻഡിയാഗോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻഫ്രാൻസിസ്കോ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൾട്ട് ലേക്ക് സിറ്റി"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻ ജോസ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻ സാൽവദോർ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സീറ്റിൽ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് ലൂയിസ്"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>വാഷിംഗ്‌ടൺ ഡി.സി."</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹൂസ്റ്റൺ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻ അന്റോണിയോ"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>ജാക്ക്‌സൺവില്ലെ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാൾട്ടിമോർ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>നാഷ്‌വില്ലെ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മിൽവോകീ"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ഓക്‌ലഹോമ സിറ്റി"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലാസ് വേഗാസ്"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആൽബുക്വെർക്യു"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടക്‌സൺ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാക്രാമെന്റോ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അറ്റ്‌ലാന്റ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>ക്ലെവെലാൻഡ്"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>ന്യൂ ഓർലിയൻസ്"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ടാമ്പ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പിറ്റ്‌സ്‌ബർഗ്"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>സിൻസിനാറ്റി"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മൗണ്ടെയിൻ വ്യൂ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റെനോ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്ലാക്ക് റോക്ക് സിറ്റി"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ദോഹ"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>ബെയ്‌ജിംഗ്<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മുംബൈ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ഡൽഹി"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>ഒസാകാ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ലാഹോർ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സനാ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാഴ്സിലോണ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മ്യൂണിക്ക്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മിലാൻ"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ഫ്രാങ്ക്‌ഫർട്ട്"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹനോയി"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>അങ്കാറ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബാംഗ്ലൂർ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബ്രസീലിയ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കേപ് ടൗൺ"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ഇസ്ലാമാബാദ്"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റിയോ ഡി ജനിറോ "</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>ആൻ ആർബർ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബോൾഡർ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കേംബ്രിഡ്ജ്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കിർക്‌ലാൻഡ്"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാഡിസൺ"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>ഗ്വാങ്‌ജോ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹൈദരാബാദ്"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>റെസ്റ്റൺ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ബെലോ ഹൊറിസോണ്ടെ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാന്റിയാഗോ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മൺറോവിയ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>കൊളംബോ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>ചിഹ്വാഹുവ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൽവദോർ"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>ഗുർഗാവോൺ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>മാഞ്ചസ്റ്റർ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>കീവ്"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സെന്റ് പീറ്റേഴ്സ്‌ബർഗ്"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>ക്രാകോ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>റോക്ലോ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹാംബർഗ്"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ഔലു"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>ഹൈഫ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>സാൻ ജുവാൻ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g> തെഗുസിഗാൽപ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>പരമാരിബോ"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>ക്വിറ്റോ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>ജുബിൽജാന"</item>
+    </string-array></resources>

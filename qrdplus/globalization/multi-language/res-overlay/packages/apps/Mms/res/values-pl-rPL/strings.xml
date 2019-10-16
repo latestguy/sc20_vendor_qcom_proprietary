@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the SMS/MMS app as it appears to the user in the Home screen, task switcher, etc. -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"SMS/MMS"</string>
+
+    <!-- Command name to open a Compose screen; displays in conversation list.
+         Also used as accessibility text for widget's new message button -->
+    <add-resource type="string" name="new_message"/>
+    <string name="new_message">"Nowa wiadomość"</string>
+    <!-- Context menu item on an individual message for dialing the sender's phone number -->
+    <add-resource type="string" name="menu_call_back"/>
+    <string name="menu_call_back">"Zadzwoń do: <xliff:g id="NAME">%s</xliff:g>"</string>
+    <!-- Context menu item on an individual message for emailing the sender -->
+    <add-resource type="string" name="menu_send_email"/>
+    <string name="menu_send_email">"Wyślij e-mail: <xliff:g id="NAME">%s</xliff:g>"</string>
+
+    <!-- Menu item for starting a new conversation -->
+    <add-resource type="string" name="menu_compose_new"/>
+    <string name="menu_compose_new">"Utwórz"</string>
+    <!-- Menu item for accessing application settings -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"Ustawienia"</string>
+    <!-- Menu shown in the context menu when long pressing on a message when the message contains
+         one or more phone numbers and/or email addresses and the number or email is new to
+         contacts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="menu_add_address_to_contacts"/>
+    <string name="menu_add_address_to_contacts">"Dodaj <xliff:g id="contactEmailOrNumber">%s</xliff:g> do kontaktów"</string>
+    <add-resource type="string" name="menu_copy_url"/>
+    <string name="menu_copy_url">"Skopiuj adres url <xliff:g id="extractedurl">%s</xliff:g>"</string>
+    <!-- Menu item to call the recipient of the conversation on the phone (imperative verb) -->
+    <add-resource type="string" name="menu_call"/>
+    <string name="menu_call">"Zadzwoń"</string>
+    <!-- Menu item for search -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"Szukaj"</string>
+    <!-- Menu item for mark as read -->
+    <add-resource type="string" name="menu_mark_as_read"/>
+    <string name="menu_mark_as_read">"Oznacz jako przeczytane"</string>
+    <!-- Menu item for deleting all conversations -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"Usuń wszystkie wątki"</string>
+    <!-- Context menu item on an individual conversation for deleting that conversation -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"Usuń wątek"</string>
+    <!-- Context menu item on an individual conversation for viewing that conversation -->
+    <add-resource type="string" name="menu_view"/>
+    <string name="menu_view">"Wyświetl wątek"</string>
+    <!-- Menu item for debugging - do not localize -->
+    <add-resource type="string" name="menu_debug_dump"/>
+    <string name="menu_debug_dump">"ZRZUT DEBUGOWANIA"</string>
+    <!-- Message that appears on screen while SIM card messages are retrieved -->
+    <add-resource type="string" name="refreshing"/>
+    <string name="refreshing">"Odświeżanie..."</string>
+    <add-resource type="string" name="deleting_threads"/>
+    <string name="deleting_threads">"Usuwanie wątków\u2026"</string>
+
+    <!-- Menu item to show received cell broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_cell_broadcasts"/>
+    <string name="menu_cell_broadcasts">"Transmisje komórkowe"</string>
+
+    <!-- Tag appearing on conversations in the conversation list that contain a draft message -->
+    <add-resource type="string" name="has_draft"/>
+    <string name="has_draft">"Wersja robocza"</string>
+
+    <!-- Subject to display in the conversation list if there is no subject -->
+    <add-resource type="string" name="no_subject_view"/>
+    <string name="no_subject_view">"(Brak tematu)"</string>
+
+    <!-- Address to display when message is a cell broadcast on channel 50 or 60  -->
+    <add-resource type="string" name="cell_broadcast_sender"/>
+    <string name="cell_broadcast_sender">"Kanał sieci komórkowej"</string>
+
+    <!-- Name of the local user when displaying sender of an outgoing message (personal pronoun) -->
+    <add-resource type="string" name="messagelist_sender_self"/>
+    <string name="messagelist_sender_self">"Ja"</string>
+    <!-- Context menu item on an individual message for viewing an attached slideshow -->
+    <add-resource type="string" name="view_slideshow"/>
+    <string name="view_slideshow">"Wyświetl pokaz slajdów"</string>
+    <!-- Context menu item on an individual message for viewing message details such as time and date -->
+    <add-resource type="string" name="view_message_details"/>
+    <string name="view_message_details">"Wyświetl szczegóły"</string>
+    <!-- Context menu item on an individual message for viewing a delivery report -->
+    <add-resource type="string" name="view_delivery_report"/>
+    <string name="view_delivery_report">"Pokaż raport"</string>
+    <!-- Context menu item on an individual message for deleting only that message -->
+    <add-resource type="string" name="delete_message"/>
+    <string name="delete_message">"Usuń"</string>
+    <!-- Time and date a message was sent -->
+    <add-resource type="string" name="sent_on"/>
+    <string name="sent_on">"<xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Time and date a message is due to expire -->
+    <add-resource type="string" name="expire_on"/>
+    <string name="expire_on">"wygasa: <xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Abbreviation for "kilobyte" -->
+    <add-resource type="string" name="kilobyte"/>
+    <string name="kilobyte">"KB"</string>
+
+    <!-- Dialog box title brought up when warning the user that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_msg_dialog_title"/>
+    <string name="undelivered_msg_dialog_title">"Wiadomość niedostarczona"</string>
+    <!-- Dialog box message indicating that a message could not be delivered, including the time of last attempt -->
+    <add-resource type="string" name="undelivered_msg_dialog_body"/>
+    <string name="undelivered_msg_dialog_body">"Nie można wysłać wiadomości.\nOstatnia próba: <xliff:g id="MESSAGE">%s</xliff:g>."</string>
+    <!-- Dialog box message indicating that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_sms_dialog_body"/>
+    <string name="undelivered_sms_dialog_body">"Nie udało się wysłać wiadomości."</string>
+    <!-- Menu item for deleting the entire conversation currently being viewed -->
+    <add-resource type="string" name="delete_thread"/>
+    <string name="delete_thread">"Usuń wątek"</string>
+    <!-- Context menu item on an individual message for forwarding it to another recipient -->
+    <add-resource type="string" name="menu_forward"/>
+    <string name="menu_forward">"Prześlij dalej"</string>
+    <add-resource type="string" name="menu_forward_conversation"/>
+    <string name="menu_forward_conversation">"Przekaż konwersację dalej"</string>
+    <!-- Context menu item on an failed message for resending -->
+    <add-resource type="string" name="menu_resend"/>
+    <string name="menu_resend">"Wyślij ponownie"</string>
+    <!-- Text of a button appearing for MMS messages that have not yet been downloaded, causing the message
+         to be downloaded (imperative verb) -->
+    <add-resource type="string" name="download"/>
+    <string name="download">"Pobierz"</string>
+    <!-- Message displayed in place of the "download message" button once it has been pressed,
+         indicating that the download is in progress -->
+    <add-resource type="string" name="downloading"/>
+    <string name="downloading">"Pobieranie..."</string>
+    <!-- Dispaly downloading when download Mms -->
+    <add-resource type="string" name="new_message_download"/>
+    <string name="new_message_download">"Nowa wiadomość do pobrania"</string>
+    <add-resource type="string" name="new_mms_download"/>
+    <string name="new_mms_download">"Nowa wiadomość MMS do pobrania"</string>
+    <!-- Dispaly New message to download  when income Mms  -->
+    <add-resource type="string" name="touch_to_download"/>
+    <string name="touch_to_download">"Kliknij, by pobrać"</string>
+    <!-- Inform user can Touch to download Mms   -->
+    <add-resource type="string" name="touch_to_try_again"/>
+    <string name="touch_to_try_again">"Kliknij, by spróbować ponownie"</string>
+    <!-- Dispaly Touch to try again when download failed -->
+    <add-resource type="string" name="could_not_downloading"/>
+    <string name="could_not_downloading">"Nie można pobrać..."</string>
+    <add-resource type="string" name="could_not_download"/>
+    <string name="could_not_download">"Nie można pobrać"</string>
+    <!-- Display Couldn't download...if download failed -->
+    <add-resource type="string" name="new_mms_message"/>
+    <string name="new_mms_message">"Nowa wiadomość MMS"</string>
+    <!-- Dispaly New MMS message when downloading -->
+    <add-resource type="string" name="cancel_downloading"/>
+    <string name="cancel_downloading">"Anuluj"</string>
+    <add-resource type="string" name="confirm_cancel_downloading"/>
+    <string name="confirm_cancel_downloading">"Czy chcesz anulować pobieranie wiadomości mms?"</string>
+    <!-- Formatting for subject displayed inline, prepended to MMS message text -->
+    <add-resource type="string" name="inline_subject"/>
+    <string name="inline_subject">"&lt;Temat: <xliff:g id="SUBJECT">%s</xliff:g>&gt;"</string>
+    <!-- Text to display when the actual text is inaccessible due to DRM protection -->
+    <add-resource type="string" name="drm_protected_text"/>
+    <string name="drm_protected_text">"* tekst chroniony przez DRM *"</string>
+    <!-- Error message to display when DRM rights are insufficient to access some data -->
+    <add-resource type="string" name="insufficient_drm_rights"/>
+    <string name="insufficient_drm_rights">"Wykryto niewystarczające uprawnienia DRM."</string>
+    <!-- Individual message context menu item -->
+    <add-resource type="string" name="copy_message_text"/>
+    <string name="copy_message_text">"Kopiuj tekst"</string>
+    <!-- Header for context menu on an individual message -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"Opcje wiadomości"</string>
+    <!-- Header for context menu on an individual slideshow -->
+    <add-resource type="string" name="slideshow_options"/>
+    <string name="slideshow_options">"Opcje pokazu slajdów"</string>
+
+    <!-- Button text on edit slide screen indicating the user wants to finish editing that slide -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"Gotowe"</string>
+
+    <!-- Menu item in slideshow edit screen for moving the selected slide up in the order -->
+    <add-resource type="string" name="move_up"/>
+    <string name="move_up">"Przesuń w górę"</string>
+    <!-- Menu item in slideshow edit screen for moving the selected slide down in the order -->
+    <add-resource type="string" name="move_down"/>
+    <string name="move_down">"Przesuń w dół"</string>
+    <!-- Menu item in slideshow edit screen for removing the selected slide from the slideshow -->
+    <add-resource type="string" name="remove_slide"/>
+    <string name="remove_slide">"Usuń slajd"</string>
+    <!-- Menu item in slideshow edit screen for adding a new slide to the slideshow -->
+    <add-resource type="string" name="add_slide"/>
+    <string name="add_slide">"Dodaj slajd"</string>
+    <!-- Text displayed below "Add slide" item in slideshow edit screen -->
+    <add-resource type="string" name="add_slide_hint"/>
+    <string name="add_slide_hint">"Dotknij, aby utworzyć nowy slajd."</string>
+    <!-- Menu item in slideshow edit screen for discarding the entire slideshow -->
+    <add-resource type="string" name="discard_slideshow"/>
+    <string name="discard_slideshow">"Odrzuć pokaz slajdów"</string>
+    <!-- Header of slideshow showing which slide is being displayed -->
+    <add-resource type="string" name="slide_show_part"/>
+    <string name="slide_show_part">"Część <xliff:g id="PART">%1$s</xliff:g>/<xliff:g id="TOTAL">%2$s</xliff:g>"</string>
+
+
+    <!-- Menu item in slide edit screen for removing the text from the slide being edited -->
+    <add-resource type="string" name="remove_text"/>
+    <string name="remove_text">"Usuń tekst"</string>
+    <!-- Menu item in slide edit screen for adding a picture to the slide being edited -->
+    <add-resource type="string" name="add_picture"/>
+    <string name="add_picture">"Dodaj zdjęcie"</string>
+    <!-- Menu item in slide edit screen for removing the picture from the slide being edited -->
+    <add-resource type="string" name="remove_picture"/>
+    <string name="remove_picture">"Usuń zdjęcie"</string>
+    <!-- Menu item in slide edit screen for adding music to the slide being edited -->
+    <add-resource type="string" name="add_music"/>
+    <string name="add_music">"Dodaj muzykę"</string>
+    <!-- Menu item in slide edit screen for removing the music from the slide being edited -->
+    <add-resource type="string" name="remove_music"/>
+    <string name="remove_music">"Usuń muzykę"</string>
+    <!-- Menu item in slide edit screen for adding a video to the slide being edited -->
+    <add-resource type="string" name="add_video"/>
+    <string name="add_video">"Dodaj film wideo"</string>
+    <!-- Menu item in slide edit screen for removing the video from the slide being edited -->
+    <add-resource type="string" name="remove_video"/>
+    <string name="remove_video">"Usuń film wideo"</string>
+
+    <!-- Hint displayed in message recipient text box when starting a new conversation -->
+    <add-resource type="string" name="to_hint"/>
+    <string name="to_hint">"Do"</string>
+    <!-- Hint displayed in subject edit text box when adding a subject -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"Temat"</string>
+
+    <!-- Menu item in conversation screen for attaching something to the message being composed -->
+    <add-resource type="string" name="add_attachment"/>
+    <string name="add_attachment">"Załącz"</string>
+    <!-- Menu item in conversation screen for adding a subject to the message being composed -->
+    <add-resource type="string" name="add_subject"/>
+    <string name="add_subject">"Dodaj temat"</string>
+    <!-- Menu item in conversation screen for discarding the message currently being composed -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"Odrzuć"</string>
+
+    <!-- Toast message for informing user currently will add another attachment or replace current one -->
+    <add-resource type="string" name="add_another_attachment"/>
+    <string name="add_another_attachment">"Dodaj kolejny załącznik"</string>
+    <add-resource type="string" name="replace_current_attachment"/>
+    <string name="replace_current_attachment">"Zastąp bieżący załącznik"</string>
+
+    <!-- Button next to an attachment during message composition to view the attachment (imperative verb) -->
+    <add-resource type="string" name="view"/>
+    <string name="view">"Wyświetl"</string>
+    <!-- Button next to an attachment during message composition to replace the attachment (imperative verb) -->
+    <add-resource type="string" name="replace"/>
+    <string name="replace">"Zastąp"</string>
+    <!-- Button next to an attachment during message composition to remove the attachment (imperative verb) -->
+    <add-resource type="string" name="remove"/>
+    <string name="remove">"Usuń"</string>
+
+    <!-- Button in conversation screen for sending the SMS message currently being composed (imperative verb) -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"Wyślij"</string>
+    <add-resource type="string" name="send_by_slot1"/>
+    <string name="send_by_slot1">"Wyślij przez gniazdo1"</string>
+    <add-resource type="string" name="send_by_slot2"/>
+    <string name="send_by_slot2">"Wyślij przez gniazdo2"</string>
+    <!-- Text to appear directly below the "Send" text on the SMS/MMS send button. The "MMS" text is on a second line in a smaller font. This is similar to saying "Send (mms)". -->
+    <add-resource type="string" name="mms"/>
+    <string name="mms">"Wiadomość MMS"</string>
+    <!-- Content description for the send button when sending an mms (imperative verb) -->
+    <add-resource type="string" name="send_mms"/>
+    <string name="send_mms">"Wyślij MMS-a"</string>
+
+    <!-- Menu item in conversation screen for returning to the conversation list -->
+    <add-resource type="string" name="all_threads"/>
+    <string name="all_threads">"Wszystkie wątki"</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <add-resource type="string" name="type_to_compose_text_enter_to_send"/>
+    <string name="type_to_compose_text_enter_to_send">"Wyślij wiadomość"</string>
+    <!-- Hint text in message body field when keyboard is hidden -->
+    <add-resource type="string" name="open_keyboard_to_compose_message"/>
+    <string name="open_keyboard_to_compose_message">"Otwórz klawiaturę, aby wpisać wiadomość"</string>
+    <!-- Hint text when we are not the default SMS app -->
+    <add-resource type="string" name="sending_disabled_not_default_app"/>
+    <string name="sending_disabled_not_default_app">"Wysyłanie jest wyłączone"</string>
+    <!-- Toast text when user tries to compose while we are not the default SMS app -->
+    <add-resource type="string" name="compose_disabled_toast"/>
+    <string name="compose_disabled_toast">"Nie można utworzyć. Brak domyślnej aplikacji do SMS-ów."</string>
+
+    <!-- Toast message while an image is being resized -->
+    <add-resource type="string" name="compressing"/>
+    <string name="compressing">"Obraz jest zbyt duży. Trwa kompresowanie\u2026"</string>
+
+    <!-- Error message indicating the format for the specified media type (e.g. "picture") is unsupported -->
+    <add-resource type="string" name="unsupported_media_format"/>
+    <string name="unsupported_media_format">"Nieobsługiwany format elementu typu <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Error message indicating the format is unsupported -->
+    <add-resource type="string" name="unsupported_format"/>
+    <string name="unsupported_format">"Nieobsługiwany format."</string>
+    <!-- Message prompting the user to select a different item; item string as type-appropriate (e.g. "picture") -->
+    <add-resource type="string" name="select_different_media"/>
+    <string name="select_different_media">"Wybierz inny element typu <xliff:g id="NAME">%1$s</xliff:g>."</string>
+    <!-- Message indicating that the message size limit has been reached -->
+    <add-resource type="string" name="exceed_message_size_limitation"/>
+    <string name="exceed_message_size_limitation">"Osiągnięto maksymalny rozmiar wiadomości."</string>
+    <!-- Message indicating that the message is too big and there is no space to attach a video -->
+    <add-resource type="string" name="message_too_big_for_video"/>
+    <string name="message_too_big_for_video">"Wiadomość jest zbyt duża, aby dołączyć film wideo."</string>
+    <!-- Error message indicating that the item trying to be attached could not be added -->
+    <add-resource type="string" name="failed_to_add_media"/>
+    <string name="failed_to_add_media">"Elementu <xliff:g id="NAME">%1$s</xliff:g> nie można dodać do wiadomości."</string>
+    <add-resource type="string" name="media_size_limit"/>
+    <string name="media_size_limit">"Osiągnięto limit długości wiadomości. Nie można wysłać."</string>
+    <!-- Error message indicating that the picture being attached and resized could not be resized -->
+    <add-resource type="string" name="failed_to_resize_image"/>
+    <string name="failed_to_resize_image">"Nie zmieniono rozmiaru zdjęcia."</string>
+    <!-- Error message indicating that the message size or the increase size is negative -->
+    <add-resource type="string" name="illegal_message_or_increase_size"/>
+    <string name="illegal_message_or_increase_size">"Komunikat negatywny lub zwiększenie rozmiaru."</string>
+    <!-- Error message indicating that an image being attached is still too large to send even after resize -->
+    <add-resource type="string" name="resize_image_error_information"/>
+    <string name="resize_image_error_information">"Nawet po zmianie rozmiaru zdjęcie jest za duże, aby je wysłać."</string>
+    <!-- String prepended to forwarded messages to indicate they were forwarded -->
+    <add-resource type="string" name="forward_prefix"/>
+    <string name="forward_prefix">"Prześlij dalej: "</string>
+    <!-- Dialog box title that appears when a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message"/>
+    <string name="discard_message">"Odrzuć"</string>
+    <add-resource type="string" name="discard_message_reason_all_invalid"/>
+    <string name="discard_message_reason_all_invalid">"Wiadomość zostanie odrzucona, ponieważ wszyscy wybrani odbiorcy są nieprawidłowi."</string>
+    <add-resource type="string" name="discard_message_reason_some_invalid"/>
+    <string name="discard_message_reason_some_invalid">"Wiadomość zostanie odrzucona, ponieważ na jej liście znajdują się nieprawidłowi odbiorcy."</string>
+    <!-- Dialog message text explaining that a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message_reason"/>
+    <string name="discard_message_reason">"Wiadomość zostanie odrzucona, ponieważ nie zawiera poprawnych odbiorców."</string>
+    <!-- Dialog box title indicating which recipients are invalid when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="has_invalid_recipient"/>
+    <string name="has_invalid_recipient">"Błędni odbiorcy: &lt;<xliff:g id="NAME">%1$s</xliff:g>&gt;"</string>
+    <!-- While sending a message, if it has invalid recipient, display this message. -->
+    <add-resource type="string" name="invalid_destination"/>
+    <string name="invalid_destination">"Nieprawidłowy adres docelowy"</string>
+    <!-- While sending a message, this error is expected to be generated when user does not have
+         MMS enabled on his account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_not_activated"/>
+    <string name="service_not_activated">"Usługa nie została aktywowana w sieci."</string>
+    <!-- If a message has expired and is no longer available on MMSC, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_message_not_found"/>
+    <string name="service_message_not_found">"Wiadomość wygasła lub nie jest dostępna."</string>
+    <!-- If a message can't be sent because of a MMSC network problem, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_network_problem"/>
+    <string name="service_network_problem">"Nie można wysłać z powodu problemu z siecią."</string>
+    <!-- Dialog message text when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="invalid_recipient_message"/>
+    <string name="invalid_recipient_message">"Popraw podanych odbiorców, aby umożliwić im otrzymanie wiadomości."</string>
+    <!-- Dialog box title indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message"/>
+    <string name="cannot_send_message">"Nie można wysłać wiadomości."</string>
+    <!-- Dialog message text indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message_reason"/>
+    <string name="cannot_send_message_reason">"Wiadomość nie zawiera poprawnych odbiorców."</string>
+    <!-- Error message displayed when the user attempts to forward a message with DRM-locked contents -->
+    <add-resource type="string" name="cannot_forward_drm_obj"/>
+    <string name="cannot_forward_drm_obj">"Nie można przekazać obiektu DRM umieszczonego w wiadomości."</string>
+    <add-resource type="string" name="cannot_send_attach_reason"/>
+    <string name="cannot_send_attach_reason">"Brak dostępu do załącznika, nie można wysłać wiadomości."</string>
+
+    <!-- Brief message that appears when converting a message from SMS to MMS. -->
+    <add-resource type="string" name="converting_to_picture_message"/>
+    <string name="converting_to_picture_message">"Trwa konwertowanie na wiadomość multimedialną..."</string>
+    <add-resource type="string" name="converting_to_text_message"/>
+    <string name="converting_to_text_message">"Trwa konwertowanie na wiadomość tekstową..."</string>
+    <!-- Brief message that appears when the maximum size of slides has been reached -->
+    <add-resource type="string" name="cannot_add_text_anymore"/>
+    <string name="cannot_add_text_anymore">"Nie można dodać więcej tekstu."</string>
+    <!-- Brief message that appears when the maximum number of slides has been reached -->
+    <add-resource type="string" name="cannot_add_slide_anymore"/>
+    <string name="cannot_add_slide_anymore">"Nie można dodać więcej slajdów."</string>
+    <!-- Brief message that appears when user tries to add picture to a slide which already has a video. -->
+    <add-resource type="string" name="cannot_add_picture_and_video"/>
+    <string name="cannot_add_picture_and_video">"Nie można dodać filmu i zdjęcia do jednego slajdu."</string>
+    <!-- Brief message that appears when the message cannot be saved -->
+    <add-resource type="string" name="cannot_save_message"/>
+    <string name="cannot_save_message">"Nie można zapisać wiadomości."</string>
+    <!-- Brief message that appears when a message has automatically been saved as a draft -->
+    <add-resource type="string" name="message_saved_as_draft"/>
+    <string name="message_saved_as_draft">"Wiadomość została zapisana jako wersja robocza."</string>
+    <!-- Brief message that appears when too many recipients have been added -->
+    <add-resource type="string" name="too_many_recipients"/>
+    <string name="too_many_recipients">"Wiadomość ma zbyt wielu odbiorców (<xliff:g id="CURRENTCOUNT">%1$s</xliff:g>). Limit wynosi <xliff:g id="MAXLIMIT">%2$s</xliff:g>."</string>
+    <!-- Brief message that appears when too many videos/pictures are imported -->
+    <add-resource type="string" name="too_many_attachments"/>
+    <string name="too_many_attachments">"Obowiązujący limit załączników to <xliff:g id="MAXLIMIT">%1$s</xliff:g>. Liczba pierwszych załączników, które zostaną dodane, wynosi <xliff:g id="CURRENTCOUNT">%2$s</xliff:g>."</string>
+    <!-- Alert dialog title when adding attachments is taking a while  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="adding_attachments_title"/>
+    <string name="adding_attachments_title">"Dodawanie załączników"</string>
+    <!-- Alert dialog when adding attachments is taking a while -->
+    <add-resource type="string" name="adding_attachments"/>
+    <string name="adding_attachments">"Poczekaj na dodanie elementów do pokazu slajdów."</string>
+    <!-- Alert dialog title when creating a slideshow [CHAR LIMIT=none] -->
+    <add-resource type="string" name="building_slideshow_title"/>
+    <string name="building_slideshow_title">"Tworzenie pokazu slajdów"</string>
+
+    <!-- Error message indicating that an audio attachment cannot be played -->
+    <add-resource type="string" name="cannot_play_audio"/>
+    <string name="cannot_play_audio">"Nie można odtworzyć dźwięku."</string>
+
+    <!-- Button in the slide editor screen used to preview the slide (imperative verb) -->
+    <add-resource type="string" name="preview"/>
+    <string name="preview">"Podgląd"</string>
+    <!-- Menu item in the slide editor screen used to preview the entire slideshow (imperative verb) -->
+    <add-resource type="string" name="preview_slideshow"/>
+    <string name="preview_slideshow">"Podgląd"</string>
+    <!-- Button in the slide editor screen used to replace the attached picture -->
+    <add-resource type="string" name="replace_image"/>
+    <string name="replace_image">"Zastąp zdjęcie"</string>
+    <!-- String for slide duration in seconds -->
+    <add-resource type="string" name="duration_sec"/>
+    <string name="duration_sec">"Czas trwania (<xliff:g id="DURATION">%s</xliff:g> s)"</string>
+    <!-- Dialog box title for duration selector -->
+    <add-resource type="string" name="duration_selector_title"/>
+    <string name="duration_selector_title">"Czas trwania slajdu "</string>
+    <!-- Dialog box title for slide layout selector -->
+    <add-resource type="string" name="layout_selector_title"/>
+    <string name="layout_selector_title">"Układ pokazu slajdów "</string>
+    <!-- Slide layout option for layout at the top -->
+    <add-resource type="string" name="layout_top"/>
+    <string name="layout_top">"Układ (u góry)"</string>
+    <!-- Slide layout option for layout at the bottom -->
+    <add-resource type="string" name="layout_bottom"/>
+    <string name="layout_bottom">"Układ (u dołu)"</string>
+    <!-- Hint in slide text field before text is typed -->
+    <add-resource type="string" name="type_to_compose_text_or_leave_blank"/>
+    <string name="type_to_compose_text_or_leave_blank">"Wpisz wiadomość lub pozostaw puste"</string>
+    <!-- Toast when the user enters a non-numeric value for the duration of a slide -->
+    <add-resource type="string" name="duration_not_a_number"/>
+    <string name="duration_not_a_number">"Czas trwania musi być liczbą."</string>
+    <!-- Toast when the user enters a zero value for the duration of a slide -->
+    <add-resource type="string" name="duration_zero"/>
+    <string name="duration_zero">"Czas trwania musi być dłuższy niż 0 sekund."</string>
+    <!-- Dialog box title for display the current mms size  -->
+    <add-resource type="string" name="title_send_message"/>
+    <string name="title_send_message">"Wyślij wiadomość"</string>
+    <!-- Toast when the subject is full -->
+    <add-resource type="string" name="subject_full"/>
+    <string name="subject_full">"Temat jest już pełny"</string>
+
+    <!-- In duration selection dialog box, short version of "seconds" -->
+    <add-resource type="string" name="secs"/>
+    <string name="secs">"s"</string>
+    <!-- Options for slide duration in duration selection dialog box -->
+    <add-resource type="array" name="select_dialog_items"/>
+    <string-array name="select_dialog_items">
+         <item>"1 sekunda"</item>
+         <item>"2 sekundy"</item>
+         <item>"3 sekundy"</item>
+         <item>"4 sekundy"</item>
+         <item>"5 sek."</item>
+         <item>"6 sek."</item>
+         <item>"7 sek."</item>
+         <item>"8 sek."</item>
+         <item>"9 sek."</item>
+         <item>"10 sek."</item>
+         <item>"Inny"</item>
+    </string-array>
+
+    <!-- Context menu item on a message recipient for viewing their contact info -->
+    <add-resource type="string" name="menu_view_contact"/>
+    <string name="menu_view_contact">"Pokaż kontakt"</string>
+    <!-- Context menu item on a message recipient for adding them to the user's
+         contacts (used if the recipient is not already in the address book) -->
+    <add-resource type="string" name="menu_add_to_contacts"/>
+    <string name="menu_add_to_contacts">"Dodaj do kontaktu"</string>
+
+    <!-- Sender to be used if the sender address has been hidden -->
+    <add-resource type="string" name="hidden_sender_address"/>
+    <string name="hidden_sender_address">"Ukryty adres nadawcy"</string>
+
+    <!-- Text to be used for affirmative response button in dialog boxes -->
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"OK"</string>
+    <!-- Text to be used for negative response button in dialog boxes -->
+    <add-resource type="string" name="no"/>
+    <string name="no">"Anuluj"</string>
+    <!-- Text to be used for affirmative response button in setting SMS limits dialog box -->
+    <add-resource type="string" name="set"/>
+    <string name="set">"Ustaw"</string>
+
+    <!-- Button text used for playing an attachment or slideshow (imperative verb) -->
+    <add-resource type="string" name="play"/>
+    <string name="play">"Odtwórz"</string>
+    <!-- Button text used for editing a slideshow (imperative verb) -->
+    <add-resource type="string" name="edit"/>
+    <string name="edit">"Edytuj"</string>
+    <!-- Button used for trying to send a message that has some valid recipients and some
+         invalid recipients, in spite of the warning presented to the user -->
+    <add-resource type="string" name="try_to_send"/>
+    <string name="try_to_send">"Spróbuj wysłać"</string>
+
+    <!-- Title of Settings screen -->
+    <add-resource type="string" name="preferences_title"/>
+    <string name="preferences_title">"Ustawienia"</string>
+    <!-- Settings screen menu item for restoring all settings to default -->
+    <add-resource type="string" name="restore_default"/>
+    <string name="restore_default">"Przywróć domyślne"</string>
+
+    <!-- Settings SIM1 -->
+    <add-resource type="string" name="settings_pre_sim1"/>
+    <string name="settings_pre_sim1">"SIM1"</string>
+    <!-- Settings SIM2 -->
+    <add-resource type="string" name="settings_pre_sim2"/>
+    <string name="settings_pre_sim2">"SIM2"</string>
+
+    <!-- Settings screen, section heading for notifications -->
+    <add-resource type="string" name="pref_notification_settings_title"/>
+    <string name="pref_notification_settings_title">"Powiadomienia"</string>
+    <!-- Settings screen, section heading for MMS-specific settings -->
+    <add-resource type="string" name="pref_mms_settings_title"/>
+    <string name="pref_mms_settings_title">"Ustawienia wiadomości multimedialnych (MMS)"</string>
+    <!-- Settings screen, section heading for SMS-specific settings -->
+    <add-resource type="string" name="pref_sms_settings_title"/>
+    <string name="pref_sms_settings_title">"Ustawienia wiadomości tekstowych (SMS)"</string>
+    <!-- Settings screen, section heading for storage-specific settings -->
+    <add-resource type="string" name="pref_sms_storage_title"/>
+    <string name="pref_sms_storage_title">"Pamięć"</string>
+
+    <!-- Title for SMS Disabled -->
+    <add-resource type="string" name="pref_title_sms_disabled"/>
+    <string name="pref_title_sms_disabled">"SMS-y wyłączone"</string>
+    <!-- Title for Default message app-->
+    <add-resource type="string" name="pref_title_default_app"/>
+    <string name="pref_title_default_app">"Obsługa wiadomości — aplikacja domyślna"</string>
+    <!-- Summary for SMS Disabled -->
+    <add-resource type="string" name="pref_summary_sms_disabled"/>
+    <string name="pref_summary_sms_disabled">"Kliknij, by ustawić SMS/MMS jako domyślną aplikację SMS"</string>
+    <!-- Title for SMS Enabled -->
+    <add-resource type="string" name="pref_title_sms_enabled"/>
+    <string name="pref_title_sms_enabled">"SMS-y włączone"</string>
+    <!-- Summary for SMS Enabled -->
+    <add-resource type="string" name="pref_summary_sms_enabled"/>
+    <string name="pref_summary_sms_enabled">"Kliknij, by zmienić domyślną aplikację SMS"</string>
+
+    <!-- Title for PreferenceScreen  -->
+    <add-resource type="string" name="pref_title_display"/>
+    <string name="pref_title_display">"Wyświetlacz"</string>
+    <!-- Settings item description for entering SIM card message screen -->
+    <add-resource type="string" name="pref_summary_manage_sim_messages"/>
+    <string name="pref_summary_manage_sim_messages">"Zarządzanie wiadomościami zapisanymi na karcie SIM"</string>
+    <add-resource type="string" name="pref_summary_manage_sim_messages_slot"/>
+    <string name="pref_summary_manage_sim_messages_slot">"Zarządzaj wiadomościami na karcie SIM <xliff:g id="NUMBER">%s</xliff:g>"</string>
+    <!-- Settings item description for boolean MMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_mms_delivery_reports"/>
+    <string name="pref_summary_mms_delivery_reports">"Potwierdzaj dostarczenie każdej wysłanej wiadomości"</string>
+    <!-- Settings item description for boolean MMS read report setting -->
+    <add-resource type="string" name="pref_summary_mms_read_reports"/>
+    <string name="pref_summary_mms_read_reports">"Potwierdzaj, że wysłana wiadomość została przeczytana"</string>
+    <!-- Settings item description for boolean SMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_sms_delivery_reports"/>
+    <string name="pref_summary_sms_delivery_reports">"Potwierdzaj dostarczenie każdej wysłanej wiadomości"</string>
+    <!-- Settings item description for boolean auto-delete messages setting -->
+    <add-resource type="string" name="pref_summary_auto_delete"/>
+    <string name="pref_summary_auto_delete">"Usuń stare wiadomości po osiągnięciu limitu"</string>
+    <!-- Settings item description for enable gesture setting -->
+    <add-resource type="string" name="pref_summary_enable_gesture"/>
+    <string name="pref_summary_enable_gesture">"Zezwalaj użytkownikowi na dostosowywanie rozmiaru czcionki gestem otwarcia lub zamknięcia palcami"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_summary_group_notification"/>
+    <string name="pref_summary_group_notification">"Automatycznie łącz powiadomienia w jedną grupę"</string>
+    <!-- Settings item description for integer auto-delete sms message limit -->
+    <add-resource type="string" name="pref_summary_delete_limit"/>
+    <string name="pref_summary_delete_limit">"<xliff:g id="COUNT">%1$s</xliff:g> wiadomości w wątku"</string>
+    <!-- Settings item description for boolean MMS enable group MMS setting -->
+    <add-resource type="string" name="pref_summary_mms_group_mms"/>
+    <string name="pref_summary_mms_group_mms">"Używaj MMS-ów, gdy chcę wysłać jedną wiadomość do wielu odbiorców"</string>
+    <!-- Settings item for entering SIM card message screen -->
+    <add-resource type="string" name="pref_title_manage_sim_messages"/>
+    <string name="pref_title_manage_sim_messages">"Wiadomości na karcie SIM"</string>
+    <add-resource type="string" name="pref_title_center_number"/>
+    <string name="pref_title_center_number">"Numer centrum wiadomości"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot1"/>
+    <string name="pref_title_manage_sim_messages_slot1">"Zarządzaj wiadomościami na karcie SIM1"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot2"/>
+    <string name="pref_title_manage_sim_messages_slot2">"Zarządzaj wiadomościami na karcie SIM2"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_title_group_notification"/>
+    <string name="pref_title_group_notification">"Wiadomość z powiadomieniem do grupy"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports -->
+    <add-resource type="string" name="pref_title_mms_delivery_reports"/>
+    <string name="pref_title_mms_delivery_reports">"Raporty o dostarczeniu"</string>
+    <!-- Settings item for enable gesture -->
+    <add-resource type="string" name="pref_title_enable_gesture"/>
+    <string name="pref_title_enable_gesture">"Włącz gesty"</string>
+    <!-- Settings item for advanced settings -->
+    <add-resource type="string" name="pref_title_advanced_settings"/>
+    <string name="pref_title_advanced_settings">"Ustawienia zaawansowane"</string>
+    <!-- Settings item for other settings -->
+    <add-resource type="string" name="pref_title_other_settings"/>
+    <string name="pref_title_other_settings">"Inne ustawienia"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim1-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot1"/>
+    <string name="pref_title_mms_delivery_reports_slot1">"Raporty doręczenia karty SIM1"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim2-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot2"/>
+    <string name="pref_title_mms_delivery_reports_slot2">"Raporty doręczenia karty SIM2"</string>
+    <!-- Settings item for boolean option to enable/disable MMS group messages -->
+    <add-resource type="string" name="pref_title_mms_group_mms"/>
+    <string name="pref_title_mms_group_mms">"Wiadomości grupowe"</string>
+    <!-- Settings item for manage sim card message  -->
+    <add-resource type="string" name="pref_title_sms_manage_sim"/>
+    <string name="pref_title_sms_manage_sim">"Zarządzaj wiadomościami na karcie SIM"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports -->
+    <add-resource type="string" name="pref_title_mms_read_reports"/>
+    <string name="pref_title_mms_read_reports">"Raporty przeczytania"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM1 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot1"/>
+    <string name="pref_title_mms_read_reports_slot1">"SIM1 — odczytaj raporty"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM2 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot2"/>
+    <string name="pref_title_mms_read_reports_slot2">"SIM2 — odczytaj raporty"</string>
+    <!-- Settings item for boolean option to enable/disable SMS delivery reports -->
+    <add-resource type="string" name="pref_title_sms_delivery_reports"/>
+    <string name="pref_title_sms_delivery_reports">"Raporty o dostarczeniu"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot1"/>
+    <string name="pref_title_sms_delivery_reports_slot1">"Raporty doręczenia karty SIM1"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot2"/>
+    <string name="pref_title_sms_delivery_reports_slot2">"Raporty doręczenia karty SIM2"</string>
+    <!-- Settings item for boolean option to enable/disable auto-deletion of messages -->
+    <add-resource type="string" name="pref_title_auto_delete"/>
+    <string name="pref_title_auto_delete">"Usuń stare wiadomości"</string>
+    <!-- Settings item for integer option to set SMS delete limit -->
+    <add-resource type="string" name="pref_title_sms_delete"/>
+    <string name="pref_title_sms_delete">"Limit wiadomości tekstowych"</string>
+    <!-- Settings item for integer option to set MMS delete limit -->
+    <add-resource type="string" name="pref_title_mms_delete"/>
+    <string name="pref_title_mms_delete">"Limit wiadomości MMS"</string>
+    <!-- Settings item for boolean option to display message notifications -->
+    <add-resource type="string" name="pref_title_notification_enabled"/>
+    <string name="pref_title_notification_enabled">"Powiadomienia"</string>
+    <!-- Settings item for boolean option to vibrate during message notification -->
+    <add-resource type="string" name="pref_title_notification_vibrateWhen"/>
+    <string name="pref_title_notification_vibrateWhen">"Wibracje"</string>
+    <!-- Settings item for entering ringtone selection screen -->
+    <add-resource type="string" name="pref_title_notification_ringtone"/>
+    <string name="pref_title_notification_ringtone">"Dźwięk"</string>
+    <!-- Settings item for setting the number of message to save for each conversation -->
+    <add-resource type="string" name="pref_messages_to_save"/>
+    <string name="pref_messages_to_save">"Ustaw liczbę zapisywanych wiadomości"</string>
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"Wyciszony"</string>
+
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages -->
+    <add-resource type="string" name="pref_title_mms_auto_retrieval"/>
+    <string name="pref_title_mms_auto_retrieval">"Autoodbieranie"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve option -->
+    <add-resource type="string" name="pref_summary_mms_auto_retrieval"/>
+    <string name="pref_summary_mms_auto_retrieval">"Pobieraj wiadomości automatycznie"</string>
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages while roaming -->
+    <add-resource type="string" name="pref_title_mms_retrieval_during_roaming"/>
+    <string name="pref_title_mms_retrieval_during_roaming">"W roamingu"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve while roaming option -->
+    <add-resource type="string" name="pref_summary_mms_retrieval_during_roaming"/>
+    <string name="pref_summary_mms_retrieval_during_roaming">"Pobieraj wiadomości automatycznie w roamingu"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete confirmation dialog title -->
+    <add-resource type="string" name="confirm_dialog_title"/>
+    <string name="confirm_dialog_title">"Usunąć?"</string>
+    <!-- Delete confirmation dialog title for locked messages -->
+    <add-resource type="string" name="confirm_dialog_locked_title"/>
+    <string name="confirm_dialog_locked_title">"Czy usunąć zablokowaną wiadomość?"</string>
+    <!-- This message is displayed in a confirmation dialog when the user selects one or more
+         conversations and then taps the "Delete" button. -->
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"Jeden wątek zostanie usunięty."</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"Wątki (<xliff:g id="NUMBER">%1$s</xliff:g>) zostaną usunięte."</item>
+    </plurals>
+    <add-resource type="string" name="confirm_delete_conversation"/>
+    <string name="confirm_delete_conversation">"Cały wątek zostanie usunięty."</string>
+    <!-- Delete all threads confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_all_conversations"/>
+    <string name="confirm_delete_all_conversations">"Wszystkie wątki zostaną usunięte."</string>
+    <!-- Delete message confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_message"/>
+    <string name="confirm_delete_message">"Wiadomość zostanie usunięta."</string>
+    <!-- Delete message confirmation dialog message for a locked message -->
+    <add-resource type="string" name="confirm_delete_locked_message"/>
+    <string name="confirm_delete_locked_message">"Usunąć zablokowaną wiadomość?"</string>
+    <!-- Delete all the messages on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_all_SIM_messages"/>
+    <string name="confirm_delete_all_SIM_messages">"Wszystkie wiadomości na karcie SIM zostaną usunięte."</string>
+    <!-- Delete the selected message on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_SIM_message"/>
+    <string name="confirm_delete_SIM_message">"Ta wiadomość na karcie SIM zostanie usunięta."</string>
+    <!-- Delete unlocked checkbox title -->
+    <add-resource type="string" name="delete_unlocked"/>
+    <string name="delete_unlocked">"Usuń zablokowane wiadomości"</string>
+    <!-- Delete button title -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"Usuń"</string>
+    <!-- Action bar mode title when multi-selecting conversations -->
+    <add-resource type="string" name="select_conversations"/>
+    <string name="select_conversations">"Wybierz wątki"</string>
+    <!-- Show this in the middle of the main activity when there are no conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="no_conversations"/>
+    <string name="no_conversations">"Brak wątków"</string>
+    <!-- Show this in the middle of the main activity when loading conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"Ładowanie konwersacji"</string>
+
+    <!-- When the user tries to view message details and some error occurs while
+         retrieving those details, this message will be shown. -->
+    <add-resource type="string" name="cannot_get_details"/>
+    <string name="cannot_get_details">"Nie można uzyskać szczegółów."</string>
+    <!-- Title of "Message details" dialog -->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"Szczegóły wiadomości"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_type_label"/>
+    <string name="message_type_label">"Typ: "</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="text_message"/>
+    <string name="text_message">"Wiadomość tekstowa"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_message"/>
+    <string name="multimedia_message">"Wiadomość multimedialna"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_notification"/>
+    <string name="multimedia_notification">"Powiadomienie o wiadomości multimedialnej"</string>
+    <!-- Label in "Message details" dialog showing who sent the message. -->
+    <add-resource type="string" name="from_label"/>
+    <string name="from_label">"Od: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="to_address_label"/>
+    <string name="to_address_label">"Do: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="bcc_label"/>
+    <string name="bcc_label">"Udw: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="sent_label"/>
+    <string name="sent_label">"Wysłano: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="received_label"/>
+    <string name="received_label">"Odebrano: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="saved_label"/>
+    <string name="saved_label">"Zapisano: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="subject_label"/>
+    <string name="subject_label">"Temat: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_size_label"/>
+    <string name="message_size_label">"Rozmiar wiadomości: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="mms_size_label"/>
+    <string name="mms_size_label">"rozmiar:\u0020"</string>
+    <add-resource type="string" name="priority_label"/>
+    <string name="priority_label">"Priorytet: "</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_high"/>
+    <string name="priority_high">"Wysoki"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_normal"/>
+    <string name="priority_normal">"Normalny"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_low"/>
+    <string name="priority_low">"Niski"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_class_label"/>
+    <string name="message_class_label">"Klasa wiadomości: "</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="error_code_label"/>
+    <string name="error_code_label">"Kod błędu: "</string>
+
+   <!-- Menu title for editing a message -->
+   <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"Edytuj"</string>
+   <!-- Menu title for deleting undelivered messages or messages on
+        the SIM card. -->
+   <add-resource type="string" name="menu_delete_messages"/>
+    <string name="menu_delete_messages">"Usuń wiadomości"</string>
+   <!-- Menu title for locking a message -->
+   <add-resource type="string" name="menu_lock"/>
+    <string name="menu_lock">"Zablokuj"</string>
+   <!-- Menu title for unlocking a message -->
+   <add-resource type="string" name="menu_unlock"/>
+    <string name="menu_unlock">"Odblokuj"</string>
+
+    <!-- Manage SIM Messages -->
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="tablet">"Kopiuj do pamięci tabletu"</string>
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="default">"Kopiuj do pamięci telefonu"</string>
+    <!-- Menu title to delete a selected messaged from the SIM card. -->
+    <add-resource type="string" name="sim_delete"/>
+    <string name="sim_delete">"Usuń"</string>
+    <!-- Title of screen displaying messages on SIM card -->
+    <add-resource type="string" name="sim_manage_messages_title"/>
+    <string name="sim_manage_messages_title">"Wiadom. na karcie SIM"</string>
+    <!-- Context menu item but currently commented out in 1.0. -->
+    <add-resource type="string" name="sim_view"/>
+    <string name="sim_view">"Wyświetl"</string>
+    <!-- Message that appears on the "SMS messges on SIM card" screen when there are no messages on the SIM card -->
+    <add-resource type="string" name="sim_empty"/>
+    <string name="sim_empty">"Brak wiadomości na karcie SIM"</string>
+
+    <!-- Delivery Header View -->
+    <!-- Title of "Report" window -->
+    <add-resource type="string" name="delivery_header_title"/>
+    <string name="delivery_header_title">"Raport"</string>
+
+    <!-- Delivery Report Activity -->
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_none"/>
+    <string name="status_none">"(Brak)"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_pending"/>
+    <string name="status_pending">"Oczekujący"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_read"/>
+    <string name="status_read">"Przeczytany"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_received"/>
+    <string name="status_received">"Odebrane"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_failed"/>
+    <string name="status_failed">"Nieudany"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_unread"/>
+    <string name="status_unread">"Nieprzeczytany"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_deleted_unread"/>
+    <string name="status_deleted_unread">"Skasowano bez przeczytania"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_rejected"/>
+    <string name="status_rejected">"Odrzucony"</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="recipient_label"/>
+    <string name="recipient_label">"Adresat "</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="status_label"/>
+    <string name="status_label">"Stan: "</string>
+    <!-- Label in "Report" window [CHAR LIMIT=50]-->
+    <add-resource type="string" name="delivered_label"/>
+    <string name="delivered_label">"Dostarczony: "</string>
+    <add-resource type="string" name="delivery_report"/>
+    <string name="delivery_report">"Raport doręczenia:\u0020"</string>
+    <add-resource type="string" name="read_report"/>
+    <string name="read_report">"Raport przeczytania:\u0020"</string>
+
+
+    <add-resource type="string" name="attach_subject"/>
+    <string name="attach_subject">"Temat"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_image"/>
+    <string name="attach_image">"Zdjęcia"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_take_photo"/>
+    <string name="attach_take_photo">"Zrób zdjęcie"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_video"/>
+    <string name="attach_video">"Filmy"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_video"/>
+    <string name="attach_record_video">"Nagraj film wideo"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_sound"/>
+    <string name="attach_sound">"Audio"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_sound"/>
+    <string name="attach_record_sound">"Nagraj audio"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_slideshow"/>
+    <string name="attach_slideshow">"Pokaz slajdów"</string>
+
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_bottom_text"/>
+    <string name="select_bottom_text">"Tekst na dole"</string>
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_top_text"/>
+    <string name="select_top_text">"Tekst na górze"</string>
+
+    <!-- Delivery Report Toast dialog content -->
+    <add-resource type="string" name="delivery_toast_body"/>
+    <string name="delivery_toast_body">"Wiadomość odebrana przez: %s"</string>
+
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"Liczba nieprzeczytanych wiadomości: <xliff:g id="COUNT">%s</xliff:g>."</string>
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"Nowe wiadomości"</string>
+
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple"/>
+    <string name="notification_failed_multiple">"Nie udało się wysłać <xliff:g id="COUNT">%s</xliff:g> wiadomości"</string>
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple_title"/>
+    <string name="notification_failed_multiple_title">"Wiadomości nie zostały wysłane"</string>
+
+    <!-- Sim Full Notification dialog title. -->
+    <add-resource type="string" name="sim_full_title"/>
+    <string name="sim_full_title">"Karta SIM jest pełna"</string>
+    <!-- Sim Full Notification dialog text. -->
+    <add-resource type="string" name="sim_full_body"/>
+    <string name="sim_full_body">"Usuń część wiadomości, aby zwolnić miejsce dla nowych."</string>
+
+    <!-- Device Full Notification dialog title. -->
+    <add-resource type="string" name="sms_full_title"/>
+    <string name="sms_full_title">"Pamięć wiadomości tekstowych jest pełna"</string>
+    <!-- Device Full Notification dialog text. -->
+    <add-resource type="string" name="sms_full_body"/>
+    <string name="sms_full_body">"Wiadomość przychodząca została odrzucona z powodu zapełnienia pamięci. Usuń stare wiadomości."</string>
+    <!-- Device Low Notification dialog title. -->
+    <add-resource type="string" name="memory_low_title"/>
+    <string name="memory_low_title">"Niski stan pamięci telefonu"</string>
+    <!-- Device Low Notification dialog text. -->
+    <add-resource type="string" name="memory_low_body"/>
+    <string name="memory_low_body">"Pamięć telefonu wkrótce zapełni się. Usuń niepotrzebne dane, aby zapewnić miejsce dla nowych wiadomości."</string>
+    <!-- Disk Storage Full Error Notification dialog text. -->
+    <add-resource type="string" name="disk_storage_full_error"/>
+    <string name="disk_storage_full_error">"Błąd: Pamięć jest pełna."</string>
+
+    <!-- Mobile data is turned off dialog text. -->
+    <add-resource type="string" name="mobile_data_disable"/>
+    <string name="mobile_data_disable">"Kom. trans. danych jest wyłączona. Czy wciąż chcesz wysłać wiadomość MMS? Jeżeli tak, wygeneruje to transmisję danych w sieci komórkowej."</string>
+
+    <add-resource type="string" name="inform_data_off"/>
+    <string name="inform_data_off">"Komórkowa transmisja danych jest wyłączona. Sprawdź ustawienia."</string>
+    <!-- Mms size is too large dialog text. -->
+    <add-resource type="string" name="mms_too_large"/>
+    <string name="mms_too_large">"Wiadomość jest zbyt duża. Nie można jej pobrać."</string>
+
+    <!-- Sms's Being Rejected Notification dialog title. -->
+    <add-resource type="string" name="sms_rejected_title"/>
+    <string name="sms_rejected_title">"Wiadomość tekstowa została odrzucona"</string>
+    <!-- Sms's Being Rejected Notification dialog text. -->
+    <add-resource type="string" name="sms_rejected_body"/>
+    <string name="sms_rejected_body">"Wiadomość przychodząca została odrzucona z nieznanego powodu."</string>
+
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this audio to your message. -->
+    <add-resource type="string" name="type_audio"/>
+    <string name="type_audio">"audio"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this picture to your message. -->
+    <add-resource type="string" name="type_picture"/>
+    <string name="type_picture">"zdjęcie"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this video to your message. -->
+    <add-resource type="string" name="type_video"/>
+    <string name="type_video">"film wideo"</string>
+
+    <!-- Dialog title for the Read Report dialog. -->
+    <add-resource type="string" name="confirm"/>
+    <string name="confirm">"Potwierdź"</string>
+    <!-- Dialog text for the Read Report dialog. -->
+    <add-resource type="string" name="message_send_read_report"/>
+    <string name="message_send_read_report">"Wysłany zostanie raport o odczytaniu wiadomości."</string>
+
+    <!-- This is the text of a toast message briefly displayed when a problem occurs
+         while sending. -->
+    <add-resource type="string" name="message_queued"/>
+    <string name="message_queued">"W tej chwili nie można wysłać wiadomości. Wyślemy ją, gdy usługa będzie dostępna."</string>
+
+    <!-- dialog error message when only is FDN is allowed. -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"Wiadomości możesz wysyłać wyłącznie na swoje ustalone numery."</string>
+
+    <!-- Download Manager -->
+    <!-- When an error occurs downloading a new message and a subject isn't available, substitute
+         this default subject. -->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"(Brak tematu)"</string>
+    <!-- When an error occurs downloading a new message and the sender is unknown, substitute
+         this default text. -->
+    <add-resource type="string" name="unknown_sender"/>
+    <string name="unknown_sender">"Nieznany nadawca"</string>
+    <!-- When an error occurs downloading a new message, display this message.
+         An example: Download of message Wanna get pizza from dorkman was unsuccessful. -->
+    <add-resource type="string" name="dl_failure_notification"/>
+    <string name="dl_failure_notification">"Nie można pobrać wiadomości <xliff:g id="SUBJECT">%1$s</xliff:g> od: <xliff:g id="FROM">%2$s</xliff:g>."</string>
+
+    <!-- This is the confirm rate limit alert dialog title. -->
+    <add-resource type="string" name="rate_limit_surpassed"/>
+    <string name="rate_limit_surpassed">"Potwierdź"</string>
+    <!-- This is the confirm rate limit alert dialog text. -->
+    <add-resource type="string" name="confirm_rate_limit"/>
+    <string name="confirm_rate_limit">"Wysyłanych jest wiele wiadomości multimedialnych. Czy to jest OK?"</string>
+
+    <!-- Message Failed Notification -->
+    <!-- Dialog box title when receiving a message failed. -->
+    <add-resource type="string" name="message_download_failed_title"/>
+    <string name="message_download_failed_title">"Wiadomość nie została pobrana"</string>
+    <!-- Dialog box title when sending a message failed. -->
+    <add-resource type="string" name="message_send_failed_title"/>
+    <string name="message_send_failed_title">"Wiadomość nie została wysłana"</string>
+    <!-- Dialog box message text when failure occurs sending a message. -->
+    <add-resource type="string" name="message_failed_body"/>
+    <string name="message_failed_body">"Dotknij, aby sprawdzić wiadomość i spróbować ponownie."</string>
+    <!-- Dialog box message when there's a problem retrieving messages. -->
+    <add-resource type="string" name="download_later"/>
+    <string name="download_later">"Nie można teraz pobrać. Spróbuj ponownie później."</string>
+    <add-resource type="string" name="send_failed_retry"/>
+    <string name="send_failed_retry">"Wysyłanie zakończone niepowodzeniem. Automatycznie nastąpi ponowna próba."</string>
+    <add-resource type="string" name="download_failed_retry"/>
+    <string name="download_failed_retry">"Pobieranie zakończone niepowodzeniem. Automatycznie nastąpi ponowna próba."</string>
+    <add-resource type="string" name="no_network_send_failed_retry"/>
+    <string name="no_network_send_failed_retry">"Sieć jest niedostępna. Wysyłanie zakończone niepowodzeniem. Automatycznie nastąpi ponowna próba."</string>
+    <add-resource type="string" name="no_network_download_failed_retry"/>
+    <string name="no_network_download_failed_retry">"Sieć jest niedostępna. Pobieranie zakończone niepowodzeniem. Automatycznie nastąpi ponowna próba."</string>
+    <!-- Dialog box message when there's no APN specified on the device. -->
+    <add-resource type="string" name="no_apn"/>
+    <string name="no_apn">"Na urządzeniu nie określono żadnego punktu dostępowego."</string>
+
+    <!-- Title for audio file picker -->
+    <add-resource type="string" name="select_audio"/>
+    <string name="select_audio">"Wybierz dźwięk"</string>
+    <add-resource type="string" name="system_audio_item"/>
+    <string name="system_audio_item">"Usługa audio systemu"</string>
+    <add-resource type="string" name="external_audio_item"/>
+    <string name="external_audio_item">"Zewnętrzne urządzenie audio"</string>
+    <!-- Menu title to copy an attachment to the shared storage [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copy_to_sdcard"/>
+    <string name="copy_to_sdcard">"Zapisz załącznik"</string>
+    <!-- Toast message on successful copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_success"/>
+    <string name="copy_to_sdcard_success">"Załącznik został zapisany."</string>
+    <!-- Toast message on failed copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_fail"/>
+    <string name="copy_to_sdcard_fail">"Nie można zapisać załącznika."</string>
+    <!-- Menu title to save a sound as a ringtone -->
+    <add-resource type="string" name="save_ringtone"/>
+    <string name="save_ringtone">"Zapisz jako dzwonek"</string>
+    <!-- Toast message on successful copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone"/>
+    <string name="saved_ringtone">"Dzwonek został zapisany."</string>
+    <!-- Toast message on failed copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone_fail"/>
+    <string name="saved_ringtone_fail">"Nie można zapisać dzwonka."</string>
+    <!-- Menu item -->
+    <!-- Menu item  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="menu_group_participants"/>
+    <string name="menu_group_participants">"Grupuj uczestników"</string>
+
+    <!-- This is the dialog title for the "Select link" dialog, shown when the user clicks on a
+    chat in the chat history view if there are links in the chat message. The dialog displays the
+    links if there are any -->
+    <add-resource type="string" name="select_link_title"/>
+    <string name="select_link_title">"Wybierz czynność"</string>
+
+    <!-- Name of the Nth slide, shown in the list in the slideshow editor. -->
+    <add-resource type="string" name="slide_number"/>
+    <string name="slide_number">"Slajd nr <xliff:g id="NUMBER">%s</xliff:g>"</string>
+    <!-- Duration of the slide, shown in the list in the slideshow editor -->
+    <add-resource type="plurals" name="slide_duration"/>
+    <plurals name="slide_duration">
+        <!-- Case of 1-second duration. -->
+        <item quantity="one">"<xliff:g id="NUMBER">%s</xliff:g> s"</item>
+        <!-- Case of "few" (small number of) seconds of duration. -->
+        <item quantity="few">"<xliff:g id="NUMBER">%s</xliff:g> s"</item>
+        <!-- Case of multiple-second duration. -->
+        <item quantity="other">"<xliff:g id="NUMBER">%s</xliff:g> s"</item>
+    </plurals>
+
+    <!-- Title of the delivery report activity. -->
+    <add-resource type="string" name="delivery_report_activity"/>
+    <string name="delivery_report_activity">"Raport o dostawie"</string>
+
+    <!-- Title of the activity that tells the user about storage limits. -->
+    <add-resource type="string" name="storage_limits_activity"/>
+    <string name="storage_limits_activity">"Limity pamięci"</string>
+
+    <!-- Title of the slide duration editor activity. -->
+    <add-resource type="string" name="change_duration_activity"/>
+    <string name="change_duration_activity">"Zmień czas trwania"</string>
+
+    <!-- Title of the slideshow editor activity. -->
+    <add-resource type="string" name="edit_slideshow_activity"/>
+    <string name="edit_slideshow_activity">"Edytuj pokaz slajdów"</string>
+
+    <!-- Title of the recipient list activity. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recipient_list_activity"/>
+    <string name="recipient_list_activity">"Grupowanie uczestników"</string>
+
+    <!-- Title of the slide editor activity. -->
+    <add-resource type="string" name="edit_slide_activity"/>
+    <string name="edit_slide_activity">"Edytuj slajd"</string>
+
+    <!-- Title of the slideshow activity. -->
+    <add-resource type="string" name="slideshow_activity"/>
+    <string name="slideshow_activity">"Pokaz slajdów"</string>
+
+    <!-- Title of the class-0 message activity. -->
+    <add-resource type="string" name="class_0_message_activity"/>
+    <string name="class_0_message_activity">"Wiadomość klasy 0"</string>
+
+    <!-- Application name shown when searching -->
+    <add-resource type="string" name="search_label"/>
+    <string name="search_label">"Wiadomości"</string>
+
+    <!-- Search hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"Szukaj w wiadomościach"</string>
+
+    <!-- Search activity name -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"Wiadomości"</string>
+    <!-- Search setting description -->
+    <add-resource type="string" name="search_setting_description"/>
+    <string name="search_setting_description">"Tekst w wiadomościach"</string>
+
+    <!--  Search empty results -->
+    <add-resource type="string" name="search_empty"/>
+    <string name="search_empty">"Brak wyników"</string>
+
+    <!--  Search results title -->
+    <add-resource type="plurals" name="search_results_title"/>
+    <plurals name="search_results_title">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"<xliff:g id="NUMBER">%1$s</xliff:g> wynik dla zapytania „<xliff:g id="SEARCH">%2$s</xliff:g>”"</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"Wyniki dla „<xliff:g id="SEARCH">%2$s</xliff:g>”: <xliff:g id="NUMBER">%1$s</xliff:g>"</item>
+    </plurals>
+
+    <!--- String saved in history searches. -->
+    <add-resource type="string" name="search_history"/>
+    <string name="search_history">"Wyniki dla „<xliff:g id="SEARCH">%2$s</xliff:g>”: <xliff:g id="COUNT">%1$s</xliff:g>"</string>
+
+    <!-- Button title in Messaging preferences. -->
+    <add-resource type="string" name="confirm_clear_search_title"/>
+    <string name="confirm_clear_search_title">"Wyczyść"</string>
+    <!-- Text for the preferences button. -->
+    <add-resource type="string" name="confirm_clear_search_text"/>
+    <string name="confirm_clear_search_text">"Historia wyszukiwania zostanie wyczyszczona."</string>
+    <!--- Button title in preferences to clear the search history. It's a verb action that takes place
+          immediately when clicked. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_title"/>
+    <string name="pref_mms_clear_search_history_title">"Wyczyść historię wyszukiwania"</string>
+    <!--- Button description in preferences to clear the search history. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_summary"/>
+    <string name="pref_mms_clear_search_history_summary">"Wyczyść poprzednie wyszukiwania wiadomości wyświetlane w polu wyszukiwania"</string>
+
+    <!-- Dialog text for display mode save dialog. -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"Zapisz"</string>
+
+    <!-- Dialog title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_title"/>
+    <string name="storage_limits_title">"Ogranicz liczbę wiadomości"</string>
+
+    <!-- Dialog message for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_message"/>
+    <string name="storage_limits_message">"Ograniczyć liczbę wiadomości zapisywanych w wątku?"</string>
+
+    <!-- Button title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting"/>
+    <string name="storage_limits_setting">"Ustaw limity"</string>
+
+    <!-- Button title to dismiss dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting_dismiss"/>
+    <string name="storage_limits_setting_dismiss">"Brak limitów"</string>
+
+    <!-- Toast message when a user tries to send a Mms message when there are already too many
+         outstanding unsent message. -->
+    <add-resource type="string" name="too_many_unsent_mms"/>
+    <string name="too_many_unsent_mms">"Nie można teraz wysłać wiadomości. Masz zbyt wiele niewysłanych MMS-ów."</string>
+
+    <!-- Brief small label shown to right of message when it is being sent. -->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"WYSYŁANIE..."</string>
+
+    <!-- Title of progress dialog for picker -->
+    <add-resource type="string" name="pick_too_many_recipients"/>
+    <string name="pick_too_many_recipients">"Zbyt wielu odbiorców"</string>
+
+    <!-- Message of progress dialog for picker -->
+    <add-resource type="string" name="adding_recipients"/>
+    <string name="adding_recipients">"Dodawanie odbiorców\u2026"</string>
+
+    <!-- In conversation list items, this is the separator between a contact's name
+         and the draft stamp [CHAR LIMIT=5] -->
+    <add-resource type="string" name="draft_separator"/>
+    <string name="draft_separator">,\u0020</string>
+
+    <!-- In conversation list items, this comes after the receipient's name and contains
+         the number of messages in the thread [CHAR LIMIT=5] -->
+    <add-resource type="string" name="message_count_format"/>
+    <string name="message_count_format">"\u00a0<xliff:g id="number" example="1">%1$s</xliff:g>"</string>
+
+    <!-- When showing a multi-message notification, this is the title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_count_notification"/>
+    <string name="message_count_notification">"Liczba nowych wiadomości: <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <!-- In digest notifications when we show N messages, but there are N+M outstanding messages,
+         this text is displayed at the bottom of the notification. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="message_count_notification_overflow"/>
+    <plurals name="message_count_notification_overflow">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"+<xliff:g id="NUMBER">%1$s</xliff:g> inna wiadomość"</item>
+        <!-- Case of 2 or more results. -->
+        <item quantity="other">"+<xliff:g id="NUMBER">%1$s</xliff:g> inne(ych) wiadomości"</item>
+    </plurals>
+
+    <!-- For debugging: Dialog box title indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state"/>
+    <string name="error_state">"Niezgodny stan"</string>
+    <!-- For debugging: Dialog box text indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state_text"/>
+    <string name="error_state_text">"Stan wątków i odbiorców jest niespójny. Przechwyć raport o błędzie i zgłoś go za pośrednictwem strony http://go/droidanizer"</string>
+
+    <!-- In the title of the compose message activity, when there are multiple recipients, we show
+         the number of recipients in the subtitle of the action bar. There's never a case of one. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="recipient_count"/>
+    <plurals name="recipient_count">
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"Osoby: <xliff:g id="NUMBER">%1$s</xliff:g>"</item>
+    </plurals>
+
+    <!-- Message of the dialog used to disable messaging notifications [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_notifications_dialog_message"/>
+    <string name="disable_notifications_dialog_message">"Czy zatrzymać podwójne powiadomienia SMS z domyślnej aplikacji SMS?"</string>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default conversation list. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"Wyświetl więcej wątków"</string>
+
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"Dźwięk"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_slideshow"/>
+    <string name="attachment_slideshow">"Pokaz slajdów"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"Film"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_picture"/>
+    <string name="attachment_picture">"Obraz"</string>
+
+    <!-- Separator between parts of a notification in each line of an inboxStyle notification. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="notification_separator"/>
+    <string name="notification_separator">\u0020\u0020</string>
+
+    <!-- An enumeration comma for separating multiple names in notifications. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- In message list items, this string builds the timestamp line when the message is in a group [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="message_timestamp_format"/>
+    <string name="message_timestamp_format">"<xliff:g id="string" example="Fred Flinstone">%1$s</xliff:g>\u0020-\u0020<xliff:g id="string" example="9:39AM">%2$s</xliff:g>"</string>
+
+    <add-resource type="string" name="mail_to"/>
+    <string name="mail_to">"mailto:"</string>
+    <!-- Menu item to connect the extract url in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_connect_url"/>
+    <string name="menu_connect_url">"Połącz"</string>
+    <!-- Menu item to add the extract url to boomark in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_add_to_label"/>
+    <string name="menu_add_to_label">"Zapisz zakładkę"</string>
+    <add-resource type="string" name="loadurlinfo_str"/>
+    <string name="loadurlinfo_str">"Czy chcesz wczytać adres URL?"</string>
+    <!-- Message Template -->
+    <add-resource type="string" name="pref_summary_message_template"/>
+    <string name="pref_summary_message_template">"Edytuj szablon wiadomości"</string>
+    <add-resource type="string" name="pref_title_message_template"/>
+    <string name="pref_title_message_template">"Szablon wiadomości"</string>
+    <add-resource type="string" name="title_new_message_template"/>
+    <string name="title_new_message_template">"Szablon"</string>
+    <add-resource type="string" name="summary_new_message_template"/>
+    <string name="summary_new_message_template">"Przygotuj nowy szablon wiadomości"</string>
+    <add-resource type="string" name="message_template_title"/>
+    <string name="message_template_title">"Szablon wiadomości"</string>
+    <add-resource type="string" name="dialog_editSMSTemplate_title"/>
+    <string name="dialog_editSMSTemplate_title">"Edytuj"</string>
+    <add-resource type="string" name="dialog_createSMSTemplate_title"/>
+    <string name="dialog_createSMSTemplate_title">"Nowy szablon"</string>
+    <add-resource type="string" name="message_template"/>
+    <string name="message_template">"Szablon wiadomości"</string>
+    <add-resource type="string" name="import_message_template"/>
+    <string name="import_message_template">"Import szablonu"</string>
+    <add-resource type="string" name="delete_template_message"/>
+    <string name="delete_template_message">"Usuń"</string>
+    <add-resource type="string" name="template_full"/>
+    <string name="template_full">"Osiągnięto maksymalny rozmiar tekstu szablonu."</string>
+    <add-resource type="string" name="pref_sms_signature_title"/>
+    <string name="pref_sms_signature_title">"Podpis wiadomości SMS"</string>
+    <add-resource type="string" name="pref_title_enable_signature"/>
+    <string name="pref_title_enable_signature">"Podpis wiadomości SMS"</string>
+    <add-resource type="string" name="pref_summary_enable_signature"/>
+    <string name="pref_summary_enable_signature">"Włączono podpis wiadomości SMS"</string>
+    <add-resource type="string" name="pref_summary_disable_signature"/>
+    <string name="pref_summary_disable_signature">"Wyłączono podpis wiadomości SMS"</string>
+    <add-resource type="string" name="pref_title_edit_signature"/>
+    <string name="pref_title_edit_signature">"Edytuj podpis wiadomości SMS"</string>
+    <add-resource type="string" name="signature_full_toast"/>
+    <string name="signature_full_toast">"Osiągnięto maksymalną wielkość podpisu."</string>
+
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="menu_copy_to"/>
+    <string name="menu_copy_to">"Kopiuj"</string>
+    <add-resource type="string" name="operation_to_card_memory"/>
+    <string name="operation_to_card_memory">"Zapisz na karcie SIM"</string>
+
+    <!-- SMSC -->
+    <add-resource type="string" name="pref_smsc_title"/>
+    <string name="pref_smsc_title">"Ustawienia Centrum wiadomości SMS"</string>
+    <add-resource type="string" name="pref_one_smcs"/>
+    <string name="pref_one_smcs">"Ustaw numer Centrum wiadomości SMS"</string>
+    <add-resource type="string" name="pref_more_smcs"/>
+    <string name="pref_more_smcs">"Numer centrum wiadomości"</string>
+    <add-resource type="string" name="pref_more_message_smcs"/>
+    <string name="pref_more_message_smcs">"Karta SIM <xliff:g id="slot_number">%d</xliff:g>"</string>
+    <add-resource type="string" name="set_smsc_error"/>
+    <string name="set_smsc_error">"Błąd podczas ustawiania numeru Centrum wiadomości SMS"</string>
+    <add-resource type="string" name="set_smsc_success"/>
+    <string name="set_smsc_success">"Pomyślnie ustawiono numer Centrum wiadomości SMS"</string>
+    <add-resource type="string" name="set_smsc_confirm_message"/>
+    <string name="set_smsc_confirm_message">"Zmiana numeru Centrum wiadomości SMS może spowodować niepowodzenie podczas wysyłania wiadomości SMS. Czy chcesz potwierdzić zmianę?"</string>
+
+    <add-resource type="string" name="storage_warning_title"/>
+    <string name="storage_warning_title">"Pamięć Twojego telefonu jest pełna"</string>
+    <add-resource type="string" name="storage_warning_content"/>
+    <string name="storage_warning_content">"Nie będziesz otrzymywać nowych SMS-ów/MMS-ów"</string>
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="copy_to_sim"/>
+    <string name="copy_to_sim">"Kopiuj wiadomość na kartę SIM"</string>
+    <add-resource type="string" name="copy_to_sim_success"/>
+    <string name="copy_to_sim_success">"Trwa kopiowanie wiadomości SMS na kartę SIM, w sumie: %1$d, ukończone: %2$d"</string>
+    <add-resource type="string" name="copy_to_sim_fail"/>
+    <string name="copy_to_sim_fail">"Nie można zapisać wiadomości"</string>
+    <add-resource type="string" name="copy_to_phone_success"/>
+    <string name="copy_to_phone_success">"Zapisano wiadomość"</string>
+    <add-resource type="string" name="copy_to_phone_fail"/>
+    <string name="copy_to_phone_fail">"Nie można zapisać wiadomości"</string>
+    <add-resource type="string" name="cannot_copy_to_sim_reason"/>
+    <string name="cannot_copy_to_sim_reason">"Wiadomość nie zawiera poprawnych odbiorców."</string>
+
+    <add-resource type="string" name="audio_picker_app_not_found"/>
+    <string name="audio_picker_app_not_found">"Nie można znaleźć aplikacji do wyboru dźwięku"</string>
+    <add-resource type="string" name="bookmark_save_app_not_found"/>
+    <string name="bookmark_save_app_not_found">"Nie można znaleźć aplikacji do zapisania zakładki"</string>
+    <add-resource type="string" name="contact_app_not_found"/>
+    <string name="contact_app_not_found">"Nie można znaleźć aplikacji Kontakty"</string>
+    <!-- Gray hint displayed in the search field in Contacts when empty -->
+    <add-resource type="string" name="search_bar_hint"/>
+    <string name="search_bar_hint">"Szukaj kontakty"</string>
+    <add-resource type="string" name="select_all"/>
+    <string name="select_all">"Wszystkie"</string>
+
+    <!-- Add for share contact feature -->
+    <add-resource type="string" name="type_vcard"/>
+    <string name="type_vcard">"vCard"</string>
+    <add-resource type="string" name="import_vcard"/>
+    <string name="import_vcard">"Importuj"</string>
+    <add-resource type="string" name="attach_add_contact_as_text"/>
+    <string name="attach_add_contact_as_text">"Wpr. dane kontaktu"</string>
+    <add-resource type="string" name="attach_add_contact_as_vcard"/>
+    <string name="attach_add_contact_as_vcard">"Kontakt vCard"</string>
+
+    <add-resource type="string" name="contact_info_text_as_name"/>
+    <string name="contact_info_text_as_name">"Nazwisko:"</string>
+    <add-resource type="string" name="contact_info_text_as_phone"/>
+    <string name="contact_info_text_as_phone">"Nr tel.:"</string>
+    <add-resource type="string" name="contact_info_text_as_email"/>
+    <string name="contact_info_text_as_email">"E-mail:"</string>
+
+    <!--  Strings used forh MMS push of messages in outbox -->
+    <add-resource type="string" name="label_mms_send_outbox_msg"/>
+    <string name="label_mms_send_outbox_msg">"Automatyczna wysyłka MMS-ów"</string>
+    <add-resource type="string" name="desc_mms_send_outbox_msg"/>
+    <string name="desc_mms_send_outbox_msg">"Wysyła do sieci wszystkie MMS-y ze skrzynki nadawczej"</string>
+
+    <add-resource type="string" name="pref_wap_push_title"/>
+    <string name="pref_wap_push_title">"Ustawienia wiadomości usługi Auto Push"</string>
+    <add-resource type="string" name="pref_title_wap_push_enabled"/>
+    <string name="pref_title_wap_push_enabled">"Włącz usługę WAP PUSH"</string>
+    <add-resource type="string" name="pref_summary_wap_push_enabled"/>
+    <string name="pref_summary_wap_push_enabled">"Włącz, aby otrzymywać wiadomości usługi"</string>
+
+    <!-- Banner in conversation list for making Messaging the default SMS app -->
+    <add-resource type="string" name="banner_sms_promo_title_initial"/>
+    <string name="banner_sms_promo_title_initial">"SMS nie jest Twoją aplikacją do SMS-ów"</string>
+    <add-resource type="string" name="banner_sms_promo_title_application"/>
+    <string name="banner_sms_promo_title_application">"Twoją aplikacją do SMS-ów jest <xliff:g id="APPNAME">%s</xliff:g>"</string>
+    <!-- select contact group -->
+    <add-resource type="string" name="no_contact_group"/>
+    <string name="no_contact_group">"Brak grupy"</string>
+    <add-resource type="string" name="banner_sms_promo_message"/>
+    <string name="banner_sms_promo_message">"Możesz to zmienić w Ustawieniach"</string>
+
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="sim_card"/>
+    <string name="sim_card">"Karta SIM"</string>
+
+    <!-- String used in MemoryStatusActivity.java -->
+    <add-resource type="string" name="memory_status_title"/>
+    <string name="memory_status_title">"Stan pamięci"</string>
+    <add-resource type="string" name="sms_phone_used"/>
+    <string name="sms_phone_used">"Liczba wiadomości SMS:"</string>
+    <add-resource type="string" name="sms_phone_capacity"/>
+    <string name="sms_phone_capacity">"Pojemność wiadomości SMS:"</string>
+    <add-resource type="string" name="mms_phone_used"/>
+    <string name="mms_phone_used">"Liczba wiadomości MMS:"</string>
+    <add-resource type="string" name="mms_phone_capacity"/>
+    <string name="mms_phone_capacity">"Pojemność wiadomości MMS:"</string>
+    <add-resource type="string" name="total_memory_used"/>
+    <string name="total_memory_used">"Wykorzystana pamięć ogółem:"</string>
+    <add-resource type="string" name="sub"/>
+    <string name="sub">"SUB"</string>
+
+    <!-- Settings item description for SMS Validity period -->
+    <add-resource type="string" name="pref_title_sms_validity_period"/>
+    <string name="pref_title_sms_validity_period">"Okres ważności wiadomości SMS"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot1"/>
+    <string name="pref_title_sms_validity_period_slot1">"Okres ważności SMS dla karty SIM1"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot2"/>
+    <string name="pref_title_sms_validity_period_slot2">"Okres ważności SMS dla karty SIM2"</string>
+    <add-resource type="string" name="sms_validity_period_not_set"/>
+    <string name="sms_validity_period_not_set">"Nie ustawiono"</string>
+    <add-resource type="string" name="sms_validity_period_one_hour"/>
+    <string name="sms_validity_period_one_hour">"1 godzina"</string>
+    <add-resource type="string" name="sms_validity_period_six_hours"/>
+    <string name="sms_validity_period_six_hours">"6 godzin"</string>
+    <add-resource type="string" name="sms_validity_period_twelve_hours"/>
+    <string name="sms_validity_period_twelve_hours">"12 godzin"</string>
+    <add-resource type="string" name="sms_validity_period_one_day"/>
+    <string name="sms_validity_period_one_day">"1 dzień"</string>
+    <add-resource type="string" name="sms_validity_period_maximum"/>
+    <string name="sms_validity_period_maximum">"Maks."</string>
+
+    <add-resource type="string" name="operate_success"/>
+    <string name="operate_success">"Operacja zakończona sukcesem."</string>
+    <add-resource type="string" name="operate_failure"/>
+    <string name="operate_failure">"Operacja zakończona niepowodzeniem."</string>
+    <add-resource type="string" name="menu_reply"/>
+    <string name="menu_reply">"Odpowiedz"</string>
+
+    <add-resource type="string" name="slot1"/>
+    <string name="slot1">"Gniazdo1"</string>
+    <add-resource type="string" name="slot2"/>
+    <string name="slot2">"Gniazdo2"</string>
+
+    <add-resource type="string" name="normal_show"/>
+    <string name="normal_show">"Wyświetl w trybie normalnym"</string>
+    <add-resource type="string" name="cannot_play"/>
+    <string name="cannot_play">"Nie można wyświetlić pokazu slajdów."</string>
+
+    <add-resource type="string" name="confirm_delete_selected_messages"/>
+    <string name="confirm_delete_selected_messages">"Wybrane wiadomości zostaną usunięte."</string>
+    <!-- menu item of mailboxmessagecontent -->
+    <add-resource type="string" name="menu_load_push"/>
+    <string name="menu_load_push">"Załaduj"</string>
+    <add-resource type="string" name="menu_delete_msg"/>
+    <string name="menu_delete_msg">"Usuń"</string>
+    <!-- toast for send result -->
+    <add-resource type="string" name="send_failure"/>
+    <string name="send_failure">"Wysyłanie zakończone niepowodzeniem."</string>
+    <add-resource type="string" name="send_success"/>
+    <string name="send_success">"Wysyłanie zakończone sukcesem."</string>
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="message_detail"/>
+    <string name="message_detail">"Szczegóły"</string>
+    <add-resource type="string" name="select_messages"/>
+    <string name="select_messages">"Zaznacz wiadomości"</string>
+    <add-resource type="string" name="no_message"/>
+    <string name="no_message">"Brak wiadomości"</string>
+    <add-resource type="string" name="change_to_folder_mode"/>
+    <string name="change_to_folder_mode">"Przełącz do trybu folderu"</string>
+    <add-resource type="string" name="change_to_conversation_mode"/>
+    <string name="change_to_conversation_mode">"Przełącz do trybu konwersacji"</string>
+    <!-- Spinner item of box type in mailbox-mode -->
+    <add-resource type="string" name="box_type_select"/>
+    <string name="box_type_select">"Wybierz kategorię"</string>
+    <add-resource type="string" name="type_inbox"/>
+    <string name="type_inbox">"Odebrane"</string>
+    <add-resource type="string" name="type_sent"/>
+    <string name="type_sent">"Wysłane"</string>
+    <add-resource type="string" name="type_outbox"/>
+    <string name="type_outbox">"Wychodzące"</string>
+    <add-resource type="string" name="type_draft"/>
+    <string name="type_draft">"Wersje robocze"</string>
+    <!-- Spinner item of slot type in mailbox-mode -->
+    <add-resource type="string" name="slot_type_select"/>
+    <string name="slot_type_select">"Wybierz gniazdo"</string>
+    <add-resource type="string" name="type_all"/>
+    <string name="type_all">"Wszystkie"</string>
+    <add-resource type="string" name="type_slot1"/>
+    <string name="type_slot1">"Karta1"</string>
+    <add-resource type="string" name="type_slot2"/>
+    <string name="type_slot2">"Karta2"</string>
+    <!-- String used in SearchActivityExtend.java -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"Wyszukaj wiadomość"</string>
+    <add-resource type="string" name="search_key"/>
+    <string name="search_key">"Wybierz słowo kluczowe"</string>
+    <add-resource type="string" name="search_mode"/>
+    <string name="search_mode">"Tryb wyszukiwania"</string>
+    <add-resource type="string" name="search_as_name"/>
+    <string name="search_as_name">"Nazwa"</string>
+    <add-resource type="string" name="search_as_number"/>
+    <string name="search_as_number">"Numer"</string>
+    <add-resource type="string" name="search_as_content"/>
+    <string name="search_as_content">"Zawartość"</string>
+    <add-resource type="string" name="search_as_subject"/>
+    <string name="search_as_subject">"Temat"</string>
+    <add-resource type="string" name="invalid_name_toast"/>
+    <string name="invalid_name_toast">"Wprowadź poprawną nazwę!"</string>
+
+    <add-resource type="string" name="sim_capacity_title"/>
+    <string name="sim_capacity_title">"Pojemność karty SIM"</string>
+    <add-resource type="string" name="sim_capacity_used"/>
+    <string name="sim_capacity_used">"Wykorzystano: "</string>
+    <add-resource type="string" name="sim_capacity"/>
+    <string name="sim_capacity">"Pojemność:  "</string>
+    <add-resource type="string" name="mms_recipient_Limit"/>
+    <string name="mms_recipient_Limit"></string>
+    <add-resource type="string" name="no_network_notification_when_send_message"/>
+    <string name="no_network_notification_when_send_message">"Połącz z siecią Wi-Fi w celu wysyłania wiadomości"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_message_text"/>
+    <string name="alert_user_connect_to_wifi_for_message_text">"Dotknij tutaj, aby wyświetlić dostępne sieci"</string>
+    <add-resource type="string" name="no_network_alert_when_send_message"/>
+    <string name="no_network_alert_when_send_message">"Brak dostępnych sieci komórkowych.  Połącz z dostępną siecią Wi-Fi w celu wysyłania wiadomości."</string>
+
+    <!-- Settings item description for Mms Validity period -->
+    <add-resource type="string" name="pref_title_mms_save_time"/>
+    <string name="pref_title_mms_save_time">"Okres ważności wiadomości MMS"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot1"/>
+    <string name="pref_title_mms_save_time_slot1">"Okres ważności wiadomości MMS dla karty SIM1"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot2"/>
+    <string name="pref_title_mms_save_time_slot2">"Okres ważności wiadomości MMS dla karty SIM2"</string>
+    <add-resource type="string" name="mms_one_week"/>
+    <string name="mms_one_week">"Jeden tydzień"</string>
+    <add-resource type="string" name="mms_two_days"/>
+    <string name="mms_two_days">"Dwa dni"</string>
+    <add-resource type="string" name="mms_max"/>
+    <string name="mms_max">"Maks."</string>
+    <add-resource type="string" name="save_description"/>
+    <string name="save_description">"Czas przechowywania wiadomości na serwerze"</string>
+    <add-resource type="string" name="status_expired"/>
+    <string name="status_expired">"Wiadomość MMS straciła ważność"</string>
+
+    <add-resource type="string" name="pref_sim_card_full_save_to_phone"/>
+    <string name="pref_sim_card_full_save_to_phone">"Karta SIM jest pełna. Zapisz nową wiadomość w pamięci telefonu."</string>
+
+    <!-- batch delete message in ConversationList and MailBoxMessageList -->
+    <add-resource type="string" name="selected_all"/>
+    <string name="selected_all">"Zaznacz wszystko"</string>
+    <add-resource type="string" name="deselected_all"/>
+    <string name="deselected_all">"Usuń zaznaczenie wszystkich"</string>
+    <add-resource type="string" name="selected_count"/>
+    <string name="selected_count">"Wybrano <xliff:g id="COUNT">%d</xliff:g>"</string>
+    <!--add for toast when deleting -->
+    <add-resource type="string" name="deleting_title"/>
+    <string name="deleting_title">"Usuwanie"</string>
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"Czekaj..."</string>
+    <add-resource type="string" name="done_delete"/>
+    <string name="done_delete">"GOTOWE"</string>
+    <!--add for toast when merging sms -->
+    <add-resource type="string" name="merging_sms_title"/>
+    <string name="merging_sms_title">"Łączenie wiadomości SMS"</string>
+    <add-resource type="string" name="cdma_priority_normal"/>
+    <string name="cdma_priority_normal">"Norm."</string>
+    <add-resource type="string" name="cdma_priority_interactive"/>
+    <string name="cdma_priority_interactive">"Interaktywne"</string>
+    <add-resource type="string" name="cdma_priority_urgent"/>
+    <string name="cdma_priority_urgent">"Pilne"</string>
+    <add-resource type="string" name="cdma_priority_emergency"/>
+    <string name="cdma_priority_emergency">"Alarm"</string>
+    <add-resource type="string" name="pref_title_cdma_priority"/>
+    <string name="pref_title_cdma_priority">"Priorytet wiadomości"</string>
+    <add-resource type="string" name="pref_summary_cdma_priority"/>
+    <string name="pref_summary_cdma_priority">"Priorytet wiadomości CDMA"</string>
+    <add-resource type="string" name="prefDialogTitle_cdma_priority"/>
+    <string name="prefDialogTitle_cdma_priority">"Priorytet"</string>
+    <add-resource type="string" name="download_dialog_title"/>
+    <string name="download_dialog_title">"Czy chcesz pobrać wiadomość MMS?"</string>
+    <add-resource type="string" name="menu_email"/>
+    <string name="menu_email">"Wyślij wiadomość e-mail"</string>
+
+    <!-- Settings item description for Preferred storage -->
+    <add-resource type="string" name="pref_title_sms_store"/>
+    <string name="pref_title_sms_store">"Preferowana pamięć"</string>
+    <add-resource type="string" name="pref_title_sms_store_card1"/>
+    <string name="pref_title_sms_store_card1">"Preferowana pamięć dla karty SIM1"</string>
+    <add-resource type="string" name="pref_title_sms_store_card2"/>
+    <string name="pref_title_sms_store_card2">"Preferowana pamięć dla karty SIM2"</string>
+    <add-resource type="string" name="pref_sms_store_phone"/>
+    <string name="pref_sms_store_phone">"Telefon"</string>
+    <add-resource type="string" name="pref_sms_store_card"/>
+    <string name="pref_sms_store_card">"Karta SIM"</string>
+    <add-resource type="string" name="pref_sms_store_sim1"/>
+    <string name="pref_sms_store_sim1">SIM1</string>
+    <add-resource type="string" name="pref_sms_store_sim2"/>
+    <string name="pref_sms_store_sim2">SIM2</string>
+    <add-resource type="string" name="pref_sms_store_card_unknown_fail"/>
+    <string name="pref_sms_store_card_unknown_fail">"Nie można otrzymać nowych wiadomości. Nie można odczytać karty SIM."</string>
+    <add-resource type="string" name="mms_size_indicator"/>
+    <string name="mms_size_indicator">"<xliff:g id="mms_size">%1$s</xliff:g>kB/<xliff:g id="all_size">%2$s</xliff:g>kB"</string>
+    <add-resource type="string" name="forward_size_over"/>
+    <string name="forward_size_over">"Nie można przekazać dalej. Wiadomość większa niż 300kB."</string>
+    <add-resource type="string" name="pref_title_notification_creation_mode"/>
+    <string name="pref_title_notification_creation_mode">"Tryb tworzenia"</string>
+
+    <add-resource type="string" name="pref_dialog_title_creation_mode"/>
+    <string name="pref_dialog_title_creation_mode">"Wybierz tryb tworzenia"</string>
+    <add-resource type="string" name="pref_summary_creation_mode"/>
+    <string name="pref_summary_creation_mode">"Tryb tworzenia MMS do przygotowywania wiadomości"</string>
+    <add-resource type="string" name="restricted_format"/>
+    <string name="restricted_format">"Format ograniczony"</string>
+    <add-resource type="string" name="attach_anyway"/>
+    <string name="attach_anyway">"Dołączyć mimo to?"</string>
+
+    <add-resource type="string" name="plugger"/>
+    <string name="plugger">"Zaślepka"</string>
+    <add-resource type="string" name="file_not_found"/>
+    <string name="file_not_found">"Nie znaleziono pliku"</string>
+    <add-resource type="string" name="type_attachment"/>
+    <string name="type_attachment">"załącznik"</string>
+    <add-resource type="string" name="bad_file"/>
+    <string name="bad_file">"Plik jest uszkodzony i nie można go wstawić!"</string>
+    <add-resource type="string" name="indication_send_message_successfully"/>
+    <string name="indication_send_message_successfully">"Wiadomość została wysłana."</string>
+    <add-resource type="string" name="indication_send_message_failed"/>
+    <string name="indication_send_message_failed">"Nie można wysłać wiadomości."</string>
+
+    <!-- ConfigurationClient -->
+    <add-resource type="string" name="omacp_configuration"/>
+    <string name="omacp_configuration">"Konfiguracja programu OMACP"</string>
+    <add-resource type="string" name="configuration_message_key"/>
+    <string name="configuration_message_key">"Wiadomość konfiguracyjna"</string>
+    <add-resource type="string" name="configuration_message_key_activity"/>
+    <string name="configuration_message_key_activity">"Dotknij, aby skonfigurować wiadomości programu OMACP"</string>
+    <!-- General settings -->
+    <add-resource type="string" name="pref_title_general_settings"/>
+    <string name="pref_title_general_settings">"Generalne"</string>
+    <add-resource type="string" name="pref_title_notification_settings"/>
+    <string name="pref_title_notification_settings">"Powiadomienia"</string>
+    <!-- Cell broadcast settings -->
+    <add-resource type="string" name="cell_broadcast"/>
+    <string name="cell_broadcast">"Nadawanie komórkowe"</string>
+    <add-resource type="string" name="cell_broadcast_title"/>
+    <string name="cell_broadcast_title">"Ustawienia komunikatów z sieci komórkowej"</string>
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"Ustawienia komunikatów z sieci komórkowej dla karty SIM"</string>
+    <!-- Chat wallpaper -->
+    <add-resource type="string" name="pref_chat_wallpaper"/>
+    <string name="pref_chat_wallpaper">"Tapeta czatu"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_gallery"/>
+    <string name="dialog_wallpaper_chooser_option_gallery">"Galeria"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_camera"/>
+    <string name="dialog_wallpaper_chooser_option_camera">"Zrób zdjęcie"</string>
+    <add-resource type="string" name="dialog_wallpaper_title"/>
+    <string name="dialog_wallpaper_title">"Wybierz tapetę"</string>
+    <add-resource type="string" name="intent_chooser_dialog_title"/>
+    <string name="intent_chooser_dialog_title">"Wykonaj czynność, używając"</string>
+    <add-resource type="string" name="gallery_packagename"/>
+    <string name="gallery_packagename">com.android.gallery3d</string>
+    <add-resource type="string" name="camera_packagename"/>
+    <string name="camera_packagename">com.android.camera2</string>
+    <add-resource type="string" name="pref_title_size_limit"/>
+    <string name="pref_title_size_limit">"Ograniczenie rozmiaru"</string>
+    <!-- Font settings -->
+    <add-resource type="string" name="pref_title_message_font_size"/>
+    <string name="pref_title_message_font_size">"Rozmiar czcionki wiadomości"</string>
+    <add-resource type="string" name="message_font_size_dialog_title"/>
+    <string name="message_font_size_dialog_title">"Rozmiar czcionki wiadomości"</string>
+    <add-resource type="string" name="font_follow_system_font"/>
+    <string name="font_follow_system_font">"Zgodnie z rozmiarem czcionki systemu"</string>
+    <add-resource type="string" name="font_small"/>
+    <string name="font_small">"Mały"</string>
+    <add-resource type="string" name="font_medium"/>
+    <string name="font_medium">"Średni"</string>
+    <add-resource type="string" name="font_large"/>
+    <string name="font_large">"Duży"</string>
+    <add-resource type="string" name="font_extra_large"/>
+    <string name="font_extra_large">"Bardzo duży"</string>
+    <add-resource type="string" name="plugger_priority"/>
+    <string name="plugger_priority">999</string>
+
+    <add-resource type="string" name="default_sms_validity_period"/>
+    <string name="default_sms_validity_period">-1</string>
+    <add-resource type="string" name="default_mms_validity_period"/>
+    <string name="default_mms_validity_period">0</string>
+
+    <add-resource type="string" name="menu_more"/>
+    <string name="menu_more">"Więcej"</string>
+    <add-resource type="string" name="letter_tile_letter_font_family"/>
+    <string name="letter_tile_letter_font_family">"sans-serif-light"</string>
+    <add-resource type="string" name="contact_list_send_to_text"/>
+    <string name="contact_list_send_to_text">"Wyślij pod numer <xliff:g id="DESTINATION">%s</xliff:g>"</string>
+    <!-- The label of all Notification messages -->
+    <add-resource type="string" name="notification_message_label"/>
+    <string name="notification_message_label">"Powiadomienia"</string>
+    <add-resource type="string" name="unread_notification_message_label"/>
+    <string name="unread_notification_message_label">"Powiadomienia (<xliff:g id="count">%s</xliff:g>)"</string>
+    <add-resource type="string" name="mms_attachment_type_audio"/>
+    <string name="mms_attachment_type_audio">"Dźwięk"</string>
+    <add-resource type="string" name="mms_attachment_type_video"/>
+    <string name="mms_attachment_type_video">"Wideo"</string>
+    <add-resource type="string" name="mms_attachment_type_picture"/>
+    <string name="mms_attachment_type_picture">"Obraz"</string>
+    <add-resource type="string" name="mms_attachment_type_vcard"/>
+    <string name="mms_attachment_type_vcard">"Vcard"</string>
+    <add-resource type="string" name="mms_attachment_type_slideshow"/>
+    <string name="mms_attachment_type_slideshow">"Pokaz slajdów"</string>
+    <add-resource type="string" name="group_numbers"/>
+    <string name="group_numbers">"Numery: <xliff:g id="number">%s</xliff:g>"</string>
+    <add-resource type="string" name="mms_save_title"/>
+    <string name="mms_save_title">"Zapisz"</string>
+    <add-resource type="string" name="mms_share_title"/>
+    <string name="mms_share_title">"Udostępnij"</string>
+    <add-resource type="string" name="mms_photo_attachment_saved_title"/>
+    <string name="mms_photo_attachment_saved_title">"Zdjęcie zapisane w albumie \"<xliff:g id="albumName">%s</xliff:g>\""</string>
+    <add-resource type="string" name="mms_video_attachment_saved_title"/>
+    <string name="mms_video_attachment_saved_title">"Film zapisany w albumie \"<xliff:g id="albumName">%s</xliff:g>\""</string>
+    <add-resource type="string" name="mms_attachment_saved_fail_title"/>
+    <string name="mms_attachment_saved_fail_title">"Zapisywanie nie powiodło się"</string>
+    <add-resource type="string" name="notification_mark_as_read"/>
+    <string name="notification_mark_as_read">"Oznacz jako przeczytane"</string>
+    <add-resource type="string" name="notification_download"/>
+    <string name="notification_download">"Pobierz"</string>
+    <add-resource type="string" name="notification_reply"/>
+    <string name="notification_reply">"Odpowiedz"</string>
+    <add-resource type="string" name="notification_reply_to"/>
+    <string name="notification_reply_to">"Odpowiedz do <xliff:g id="name">%s</xliff:g>"</string>
+    <add-resource type="string" name="notification_view_message_text"/>
+    <string name="notification_view_message_text">"Wyświetl wiadomość"</string>
+
+    <add-resource type="string" name="conversation_list_send_fail_text"/>
+    <string name="conversation_list_send_fail_text">"Nie wysłano. Dotknij, aby spróbować ponownie."</string>
+    <add-resource type="string" name="conversation_transaction_fail"/>
+    <string name="conversation_transaction_fail">"Niepowodzenie transakcji. Dotknij, aby spróbować ponownie"</string>
+
+    <!-- Abbreviated message to express that something occurred some number of minutes in the past (e.g., 5 minutes ago). -->
+    <add-resource type="plurals" name="num_minutes_ago"/>
+    <plurals name="num_minutes_ago">
+        <item quantity="one">"<xliff:g id="COUNT_0">%d</xliff:g> min"</item>
+        <item quantity="other">"<xliff:g id="COUNT_1">%d</xliff:g> min"</item>
+    </plurals>
+    <add-resource type="string" name="posted_now"/>
+    <string name="posted_now">"Teraz"</string>
+    <add-resource type="string" name="basic_permission_required"/>
+    <string name="basic_permission_required">"Aplikacja Wiadomości wymaga uprawnień SMS, Telefon, Kontakty i Pamięć zewnętrzna."</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"Dalej &gt;"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"Ustawienia &gt;"</string>
+    <add-resource type="string" name="exit"/>
+    <string name="exit">"Zakończ"</string>
+    <add-resource type="string" name="enable_permission_settings"/>
+    <string name="enable_permission_settings">"Musisz włączyć uprawnienia, wybierając pozycje Ustawienia &gt; Aplikacje &gt; Wiadomości &gt; Uprawnienia."</string>
+    <add-resource type="string" name="no_permission_save_attachment_to_storage"/>
+    <string name="no_permission_save_attachment_to_storage">"Brak uprawnienia do zapisywania załącznika w pamięci zewnętrznej"</string>
+    <add-resource type="string" name="grant_permission_fail"/>
+    <string name="grant_permission_fail">"Błąd pobierania uprawnień. Ponów próbę!"</string>
+    <add-resource type="string" name="you"/>
+    <string name="you">"Ty:"</string>
+    <add-resource type="string" name="email_app_not_found"/>
+    <string name="email_app_not_found">"Nie można znaleźć aplikacji e-mail"</string>
+    <add-resource type="string" name="notification_type_message"/>
+    <string name="notification_type_message">"Wpisz wiadomość"</string>
+    <add-resource type="string" name="notification_sim_info"/>
+    <string name="notification_sim_info">SIM</string>
+    <add-resource type="string" name="deleting_sim_sms"/>
+    <string name="deleting_sim_sms">"Usuwanie wiadomości SMS z karty SIM..."</string>
+    <add-resource type="string" name="send_via_invalid_sub"/>
+    <string name="send_via_invalid_sub">"Bieżąca subskrypcja nie jest aktywna. Nie można wysłać wiadomości."</string></resources>

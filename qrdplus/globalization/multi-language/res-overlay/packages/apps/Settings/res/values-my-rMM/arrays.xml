@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"အမေရိကား"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"ဥရောပ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"အာဖရိက"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"အာရှ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"သြစတေးလျ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"ပစိဖိတ်"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"အားလုံး"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"၁၅ စက္ကန့်"</item>
+        <item>"၃၀ စက္ကန့်"</item>
+        <item>"၁ မိနစ်"</item>
+        <item>"၂ မိနစ်"</item>
+        <item>"၅မိနစ်"</item>
+        <item>"၁၀ မိနစ်"</item>
+        <item>"၃၀မိနစ်"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"မည်သည့်အခါမှ"</item>
+        <item>"၁၅ စက္ကန့်"</item>
+        <item>"၃၀ စက္ကန့်"</item>
+        <item>"၁ မိနစ်"</item>
+        <item>"၂ မိနစ်"</item>
+        <item>"၅မိနစ်"</item>
+        <item>"၁၀ မိနစ်"</item>
+        <item>"၃၀မိနစ်"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"ချက်ချင်း"</item>
+        <item>"၅ စက္ကန့်"</item>
+        <item>"၁၅ စက္ကန့်"</item>
+        <item>"၃၀ စက္ကန့်"</item>
+        <item>"၁ မိနစ်"</item>
+        <item>"၂ မိနစ်"</item>
+        <item>"၅မိနစ်"</item>
+        <item>"၁၀ မိနစ်"</item>
+        <item>"၃၀မိနစ်"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"အနည္းငယ္"</item>
+        <item msgid="3579015730662088893">"မူရင်း"</item>
+        <item msgid="1678068858001018666">"ၾကီးမားေသာ"</item>
+        <item msgid="490158884605093126">"အကြီးဆုံး"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"စကင်ပြုလုပ်နေပြီ"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"ချိတ်ဆက်နေသည်"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"စစ်မှန်ကြောင်းအတည်ပြုနေသည်"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"အိုင်ပီလိပ်စာရယူနေသည်"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"ဆက်သွယ်ထားပြီး"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ဆိုင်းငံ့ထားသည်"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"အဆက်အသွယ်ဖြတ်တောက်နေသည်"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ချိတ်ဆက်မှုပြတ်တောက်သည်"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"မအောင်မြင်ပါ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ပိတ်ထားသည်"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"နှေးကွေးသောဆက်သွယ်မှုကို ယာယီရှောင်ရှားထားသည်"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"စကင်ပြုလုပ်နေပြီ"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> နှင့် ဆက်သွယ်နေပါသည်"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>နှင့်စစ်မှန်ကြောင်းအတည်ပြုနေသည်"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> မှ IPလိပ်စာရယူနေသည်"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> နှင့် ဆက်သွယ်ထားပြီး"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ဆိုင်းငံ့ထားသည်"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>မှ ဆက်သွယ်မှုဖြတ်တောက်သွားသည်"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ချိတ်ဆက်မှုပြတ်တောက်သည်"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"မအောင်မြင်ပါ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ပိတ်ထားသည်"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"နှေးကွေးသောဆက်သွယ်မှုကို ယာယီရှောင်ရှားထားသည်"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"နှိပ်ရန်ခလုတ်"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"တန်းတူစက်ပစ္စည်းမှပင်နံပါတ်"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"ဤစက်မှပင်နံပါတ်"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"ဆက်သွယ်ထားပြီး"</item>
+        <item>"ဖိတ်ခေါ်ထားပြီး"</item>
+        <item>"မအောင်မြင်ပါ"</item>
+        <item>"ချိတ်ဆက်နိုင်သော"</item>
+        <item>"စက်ကွင်းပြင်ပ"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"၂ မိနစ်"</item>
+        <item>"၅ မိနစ်"</item>
+        <item>"၁ နာရီ"</item>
+        <item>"ဘယ်တော့မှအချိန်မကုန်ဆုံးစေရ"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"ညံ့သည်"</item>
+        <item>"သင့်တင့်သည်"</item>
+        <item>"ကောင်းသည်"</item>
+        <item>"အလွန်ကောင်းသည်"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"အမြဲတမ်း"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ကြိုးဖြင့်ဆက်ထားသည့်အခါသာ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"မည်သည့်အခါမှ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"အမြဲတမ်း"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ကြိုးဖြင့်ဆက်ထားသည့်အခါသာ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"မည်သည့်အခါမှ"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"နောက်ဆုံး ရက် ၃၀"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"သုံးစွဲမှု စက်ဝန်း သတ်မှတ်ရန်..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"အသုံးပြုကြာချိန်"</item>
+        <item>"နောက်ဆုံး အကြိမ် အသုံးပြုခဲ့"</item>
+        <item>"အပ်ပလီကေးရှင်းအမည်"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"တစ်ခုမှမဟုတ်ပါ"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"တစ်ခုမှမဟုတ်ပါ"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"ပုံမှန်ဖြစ်သော"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"တစ်ခုမှမဟုတ်ပါ"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ကိုယ်တိုင်ထည့်သွင်းခြင်း"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ပရော့က်စီ အော်တို-စီစဉ်"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"ဘာမှမဟုတ်"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP သို့မဟုတ် CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"သတ်မှတ်မထားပါ"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"တစ်ခုမှမဟုတ်ပါ"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"စက်တွင်းသိုလှောင်ကိရိယာ"</item>
+        <item>"ဖယ်ရှား၍ရသောSDကဒ်"</item>
+        <item>"စနစ်အား ဆုံးဖြတ်ပါစေ"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"တည်နေရာ"</item>
+        <item>"ကိုယ်ရေးကိုယ်တာ"</item>
+        <item>"စာပို့ခြင်း"</item>
+        <item>"မီဒီယာ"</item>
+        <item>"စက်ပစ္စည်း"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"တည်နေရာအကြမ်း"</item>
+        <item>"တည်နေရာအချော"</item>
+        <item>GPS</item>
+        <item>"တုန်ခါခြင်း"</item>
+        <item>"အဆက်အသွယ်များဖတ်ရန်"</item>
+        <item>"အဆက်အသွယ်များအား ပြင်ဆင်ရန်"</item>
+        <item>"ခေါ်ဆိုထားသော မှတ်တမ်းကိုဖတ်ရန်"</item>
+        <item>"ခေါ်ဆိုထားသော မှတ်တမ်းကို ပြင်ဆင်ရန်"</item>
+        <item>"ပြက္ခဒိန်ဖတ်ရန်"</item>
+        <item>"ပြက္ခဒိန်ပြင်ဆင်ရန်"</item>
+        <item>"ဝိုင်ဖိုင် ရှာဖွေရန်"</item>
+        <item>"အကြောင်းကြားချက်"</item>
+        <item>"ဆဲလ်ဖြန့်ကြက်စူးစမ်းသည်"</item>
+        <item>"ဖုန်းခေါ်ရန်"</item>
+        <item>"စာတိုဖတ်ရန်"</item>
+        <item>"စာတိုရေးရန်"</item>
+        <item>"စာတိုလက်ခံရန်"</item>
+        <item>"အရေးပေါ်စာတိုလက်ခံရန်"</item>
+        <item>"ရုပ်သံစာလက်ခံရန်"</item>
+        <item>"WAP push လက်ခံရန်"</item>
+        <item>"စာတိုပို့ရန်"</item>
+        <item>"ကဒ်ထဲမှ စာတိုဖတ်ရန်"</item>
+        <item>"ICC စာတိုရေးရန်"</item>
+        <item>"ဆက်တင်များ ပြင်ဆင်ရန်"</item>
+        <item>"အပေါ်မှ ဆွဲရန်"</item>
+        <item>"အကြောင်းကြားချက်များအား အသုံးပြုခွင့်"</item>
+        <item>"ကင်မရာ"</item>
+        <item>"အသံဖမ်းခြင်း"</item>
+        <item>"အသံဖွင့်ခြင်း"</item>
+        <item>"နောက်ခံမှတ်တမ်း ဖတ်ရန်"</item>
+        <item>"နောက်ခံမှတ်တမ်းပြင်ဆင်ရန်"</item>
+        <item>"မီဒီယာခလုတ်များ"</item>
+        <item>"အသံပြတ်သားအောင်ချိန်ရန်"</item>
+        <item>"ပင်မအသံအတိုးအကျယ်"</item>
+        <item>"စကားသံအတိုးအကျယ်"</item>
+        <item>"ဖုန်းမြည်သံ အတိုးအကျယ်"</item>
+        <item>"မီဒီယာအသံအတိုးအကျယ်"</item>
+        <item>"နှိုးစက်သံအတိုးအကျယ်"</item>
+        <item>"အကြောင်းကြားသံအတိုးအကျယ်"</item>
+        <item>"ဘလူးတုသ်သံအတိုးအကျယ်"</item>
+        <item>"ဖွင့်လျှက်ထားရှိရန်"</item>
+        <item>"တည်နေရာအား စောင့်ကြည့်စစ်ဆေးရန်"</item>
+        <item>"စွမ်းအားမြင့် ဖန်သားပြင် တည်နေရာ"</item>
+        <item>"သုံးစွဲမှု စာရင်းအင်းများကို ရယူရန်"</item>
+        <item>"မိုက်ခရိုဖုန်း အသံတိတ်/မတိတ်ရန်"</item>
+        <item>"အမည်ကို ပြပါ"</item>
+        <item>"ပရိုဂျက် မီဒီယာ"</item>
+        <item>"VPN ကို စဖွင့်သုံးပါ"</item>
+        <item>"နောက်ခံကို ရေးပါ"</item>
+        <item>"ဖွဲ့စည်းပုံကို ကူညီပါ"</item>
+        <item>"မျက်နှာပြင်ကို ကူညီပါ"</item>
+        <item>"ဖုန်း အခြေအနေကို ဖတ်ပါ"</item>
+        <item>"အသံမေးလ်ကို ထည့်ပါ"</item>
+        <item>"ငုံခြင်းကို သုံးပါ"</item>
+        <item>"အထွက် ခေါ်ဆိုမှုများကို စီမံဆောင်ရွက်ပါ"</item>
+        <item>"လက်ဗွေ"</item>
+        <item>"ခန္ဓာကိုယ် အာရုံခံကိရိယာများ"</item>
+        <item>"ဆဲလ် ထုတ်လွှင့်မှုများကို ဖတ်ပါ"</item>
+        <item>"တည်နေရာကို အတုဖန်တီးပါ"</item>
+        <item>"သိုလှောင်ခန်းကို ဖတ်ပါ"</item>
+        <item>"သိုလှောင်ခန်းကို ရေးပါ"</item>
+        <item>"မျက်နှာပြင်ကို ဖွင့်ပါ"</item>
+        <item>"အကောင့်များကို ရယူပါ"</item>
+        <item>"နောက်ခံမှာ အလုပ်လုပ်ပါ"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"တည်နေရာ"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"တုန်ခါခြင်း"</item>
+        <item>"အဆက်အသွယ်များဖတ်ရန်"</item>
+        <item>"အဆက်အသွယ်များပြင်ဆင်ရန်"</item>
+        <item>"ခေါ်ဆိုထားသော မှတ်တမ်းကိုဖတ်ရန်"</item>
+        <item>"ခေါ်ဆိုထားသော မှတ်တမ်းကို ပြင်ဆင်ရန်"</item>
+        <item>"ပြက္ခဒိန်ဖတ်ရန်"</item>
+        <item>"ပြက္ခဒိန်ပြင်ဆင်ရန်"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"အကြောင်းကြားစာကို တင်ရန်"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"ဖုန်းခေါ်ရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ ဖတ်ရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ ရေးရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ လက်ခံရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ လက်ခံရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ လက်ခံရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ လက်ခံရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ ပို့ရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ ဖတ်ရန်"</item>
+        <item>"စာတို/ရုပ်သံစာ ရေးရန်"</item>
+        <item>"ဆက်တင်များ ပြင်ဆင်ရန်"</item>
+        <item>"အပေါ်မှ ဆွဲရန်"</item>
+        <item>"အကြောင်းကြားချက်များအား အသုံးပြုခွင့်"</item>
+        <item>"ကင်မရာ"</item>
+        <item>"အသံဖမ်းရန်"</item>
+        <item>"အသံဖွင့်ရန်"</item>
+        <item>"နောက်ခံမှတ်တမ်း ဖတ်ရန်"</item>
+        <item>"နောက်ခံမှတ်တမ်းပြင်ဆင်ရန်"</item>
+        <item>"မီဒီယာခလုတ်များ"</item>
+        <item>"အသံပြတ်သားအောင်ချိန်ရန်"</item>
+        <item>"ပင်မအသံအတိုးအကျယ်"</item>
+        <item>"စကားသံအတိုးအကျယ်"</item>
+        <item>"ဖုန်းမြည်သံ အတိုးအကျယ်"</item>
+        <item>"မီဒီယာအသံအတိုးအကျယ်"</item>
+        <item>"နှိုးစက်သံအတိုးအကျယ်"</item>
+        <item>"အကြောင်းကြားသံအတိုးအကျယ်"</item>
+        <item>"ဘလူးတုသ်သံအတိုးအကျယ်"</item>
+        <item>"ဖွင့်လျှက်ထားရှိရန်"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"တည်နေရာ"</item>
+        <item>"သုံးစွဲမှု စာရင်းအင်းများကို ရယူရန်"</item>
+        <item>"မိုက်ခရိုဖုန်း အသံတိတ်/မတိတ်ရန်"</item>
+        <item>"အမည်ကို ပြပါ"</item>
+        <item>"ပရိုဂျက် မီဒီယာ"</item>
+        <item>"VPN ကို စဖွင့်သုံးပါ"</item>
+        <item>"နောက်ခံကို ရေးပါ"</item>
+        <item>"ဖွဲ့စည်းပုံကို ကူညီပါ"</item>
+        <item>"မျက်နှာပြင်ကို ကူညီပါ"</item>
+        <item>"ဖုန်း အခြေအနေကို ဖတ်ပါ"</item>
+        <item>"အသံမေးလ် ထည့်ပါ"</item>
+        <item>"ငုံခြင်းကို သုံးပါ"</item>
+        <item>"အထွက် ခေါ်ဆိုမှုများကို စီမံဆောင်ရွက်ပါ"</item>
+        <item>"လက်ဗွေ"</item>
+        <item>"ခန္ဓာကိုယ် အာရုံခံကိရိယာများ"</item>
+        <item>"ဆဲလ် ထုတ်လွှင့်မှုများကို ဖတ်ပါ"</item>
+        <item>"တည်နေရာကို အတုဖန်တီးပါ"</item>
+        <item>"သိုလှောင်ခန်းကို ဖတ်ပါ"</item>
+        <item>"သိုလှောင်ခန်းကို ရေးပါ"</item>
+        <item>"မျက်နှာပြင်ကို ဖွင့်ပါ"</item>
+        <item>"အကောင့်များကို ရယူပါ"</item>
+        <item>"နောက်ခံမှာ အလုပ်လုပ်ပါ"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"အတို"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"အတော်အသင့်"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"အရှည်"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"မူလစာလုံး"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Casua"</item>
+        <item>"Cursiv"</item>
+        <item>"စာလုံးကြီး ဆိုဒ်သေးများ"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"အလွန်သေးရန်"</item>
+        <item>"သေးငယ်ရန်"</item>
+        <item>"ပုံမှန်"</item>
+        <item>"အကြီးစား"</item>
+        <item>"အလွန်ကြီးရန်"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"ပုံသေ"</item>
+        <item>"မရှိ"</item>
+        <item>"အနားသတ်"</item>
+        <item>"အရိပ်ချပေး"</item>
+        <item>"မြှင့်တင်ရန်"</item>
+        <item>"နှိမ့်ချရန်"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"app ပုံသေများကို သုံးရန်"</item>
+        <item>"အမည်းပေါ်အဖြူ"</item>
+        <item>"အဖြူပေါ်အမည်း"</item>
+        <item>"အမည်းပေါ်အဝါ"</item>
+        <item>"အပြာပေါ်အဝါ"</item>
+        <item>"မိမိစိတ်ကြိုက်"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"ကြိုတင် ပေးထားတဲ့ ကီးပါရှိသောL2TP/IPSec VPN"</item>
+        <item>"အသိအမှတ်ပြုလက်မှတ်ပါရှိသောL2TP/IPSec VPN"</item>
+        <item>"ကြိုတင်ပေးထားတဲ့ ကီးနှင့်Xauthစစ်မှန်ကြောင်းပါရှိသောIPSec VPN"</item>
+        <item>"အသိအမှတ်ပြုလက်မှတ်နှင့်Xauthစစ်မှန်ကြောင်းပါရှိသောIPSec VPN"</item>
+        <item>"အသိအမှတ်ပြုလက်မှတ်များနှင့် ရောနှောထားတဲ့ စစ်မှန်ကြောင်းပါရှိသောIPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"ချိတ်ဆက်မှုပြတ်တောက်သည်"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"စတင်နေသည်"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"ချိတ်ဆက်နေသည်"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"ဆက်သွယ်ထားပြီး"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"သတ်မှတ်ချိန်ကျော်လွန်သွားသည်"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"မအောင်မြင်ပါ"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"မေးပါ"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"ဘယ်တော့မှခွင့်မပြုပါ"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"အမြဲခွင့်ပြုပါ"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"ပုံမှန်"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"အတော်အသင့်"</item>
+        <!-- Memory is running low. -->
+        <item>"နှိမ့်"</item>
+        <!-- Memory is critical. -->
+        <item>"အရေးပါ"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"ပုံမှန်"</item>
+        <item>"အတော်အသင့်"</item>
+        <item>"နိမ့်"</item>
+        <item>"အရေးပါ"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"တချိန်လုံး"</item>
+        <item>"အသုံး အများဆုံး"</item>
+        <item>"အရေးကြီး (ရှေ့ပိုင်း)"</item>
+        <item>"အရေးကြီး (နောက်ခံ)"</item>
+        <item>"ဘက်အာပ်"</item>
+        <item>"အထူး ကြီးလေး"</item>
+        <item>"ဝန်ဆောင်မှု (ဖွင့်ထား)"</item>
+        <item>"ဝန်ဆောင်မှု (ပြန်ဖွင့်နေ)"</item>
+        <item>"လက်ခံယူသူ"</item>
+        <item>"ပင်မ"</item>
+        <item>"နောက်ဆုံး သုံးမှု"</item>
+        <item>"ကက်ရှ လုပ်ထား (အသုံးပြုမှု)"</item>
+        <item>"ကက်ရှ လုပ်ထား (အသုံးပြုသူ ဖောက်သည်)"</item>
+        <item>"ကက်ရှ် လုပ်ထား (ဗလာ)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"စိမ်းပြာ"</item>
+        <item>"အပြာ"</item>
+        <item>"မဲနယ်"</item>
+        <item>"ခရမ်း"</item>
+        <item>"ပန်းရောင်"</item>
+        <item>"အနီ"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"အလိုအလျောက် ချိတ်ဆက်ပါ"</item>
+        <item>"ကိုယ်တိုင် ချိတ်ဆက်ပါ"</item>
+        <item>"အမြဲတမ်း မေးပါ"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"ရက်ပေါင်း ၃၀ ထက်ကျော်နေပါပြီ"</item>
+        <item>"ရက်ပေါင်း ၆၀ ထက်ကျော်နေပါပြီ"</item>
+        <item>"ရက်ပေါင်း ၉၀ ထက်ကျော်နေပါပြီ"</item>
+    </string-array></resources>

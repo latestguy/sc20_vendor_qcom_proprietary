@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"Америка"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Европа"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Африка"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Азия"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Австралия"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Тихий океан"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Все"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 сек."</item>
+        <item>"30 сек."</item>
+        <item>"1 мин."</item>
+        <item>"2 мин."</item>
+        <item>"5 мин."</item>
+        <item>"10 мин."</item>
+        <item>"30 мин."</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Никогда"</item>
+        <item>"15 сек."</item>
+        <item>"30 сек."</item>
+        <item>"1 мин."</item>
+        <item>"2 мин."</item>
+        <item>"5 мин."</item>
+        <item>"10 мин."</item>
+        <item>"30 мин."</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Сразу"</item>
+        <item>"Через 5 сек."</item>
+        <item>"Через 15 сек."</item>
+        <item>"Через 30 сек."</item>
+        <item>"Через 1 мин."</item>
+        <item>"Через 2 мин."</item>
+        <item>"Через 5 мин."</item>
+        <item>"Через 10 мин."</item>
+        <item>"Через 30 мин."</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Мелкий"</item>
+        <item msgid="3579015730662088893">"По умолчанию"</item>
+        <item msgid="1678068858001018666">"Крупный"</item>
+        <item msgid="490158884605093126">"Максимальный"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Поиск..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Подключение..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Аутентификация..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Получение IP-адреса..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Подключено"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Приостановлено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Отключение..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Нет подключения"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Сбой"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Заблокировано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Временно избегать плохого соединения"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Поиск..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Соединение с сетью <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Аутентификация в сети <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Получение IP-адреса от <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Подключено к <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Приостановлено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Отключение от <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Нет подключения"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Сбой"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Заблокировано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Временно избегать плохого соединения"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"Push-кнопка"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"PIN-код с обнаруженного устройства"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"PIN-код этого устройства"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Подключено"</item>
+        <item>"Приглашено"</item>
+        <item>"Сбой"</item>
+        <item>"Доступно"</item>
+        <item>"Вне диапазона"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 мин."</item>
+        <item>"5 мин."</item>
+        <item>"1 ч."</item>
+        <item>"Без тайм-аута"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Слабый"</item>
+        <item>"Хороший"</item>
+        <item>"Хороший"</item>
+        <item>"Отличный"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Не выключать"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Только при питании от сети"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Всегда выключать"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Не выключать"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Только при питании от сети"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Всегда выключать"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"За последние 30 дней"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Цикл использования данных"</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Время использования"</item>
+        <item>"Последнее использование"</item>
+        <item>"Название приложения"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Нет"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Нет"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Пользовательские"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Нет"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Вручную"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Автоконфигурация прокси"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Нет"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP или CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Не указано"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Нет"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Внутренняя память устройства"</item>
+        <item>"Съемная SD-карта"</item>
+        <item>"На усмотрение системы"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Местоположение"</item>
+        <item>"Личные данные"</item>
+        <item>"SMS/MMS"</item>
+        <item>"Мультимедиа"</item>
+        <item>"Устройство"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"приблизительное местоположение"</item>
+        <item>"точное местоположение"</item>
+        <item>GPS</item>
+        <item>"вибросигнал"</item>
+        <item>"считывать данные контактов"</item>
+        <item>"изменение контактов"</item>
+        <item>"просмотр списка вызовов"</item>
+        <item>"изменение списка вызовов"</item>
+        <item>"считывать данные календаря"</item>
+        <item>"изменение календаря"</item>
+        <item>"поиск Wi-Fi"</item>
+        <item>"уведомление"</item>
+        <item>"поиск мобильных сетей"</item>
+        <item>"позвонить"</item>
+        <item>"чтение SMS"</item>
+        <item>"создание SMS"</item>
+        <item>"Получение SMS"</item>
+        <item>"получение экстренных SMS"</item>
+        <item>"получение MMS"</item>
+        <item>"получение сообщений WAP PUSH"</item>
+        <item>"отправка SMS"</item>
+        <item>"чтение SMS со смарт-карты"</item>
+        <item>"запись SMS на смарт-карту"</item>
+        <item>"изменение настроек"</item>
+        <item>"отображать поверх других элементов"</item>
+        <item>"Доступ к уведомлениям"</item>
+        <item>"камера"</item>
+        <item>"записать аудио"</item>
+        <item>"воспроизвести аудио"</item>
+        <item>"считать из буфера обмена"</item>
+        <item>"изменить буфер обмена"</item>
+        <item>"кнопки мультимедиа"</item>
+        <item>"аудиофокус"</item>
+        <item>"общая громкость"</item>
+        <item>"громкость голоса"</item>
+        <item>"громкость звонка"</item>
+        <item>"громкость мультимедиа"</item>
+        <item>"громкость будильника"</item>
+        <item>"громкость уведомлений"</item>
+        <item>"громкость Bluetooth-устройств"</item>
+        <item>"не отключать"</item>
+        <item>"Отслеживать местоположение"</item>
+        <item>"контролировать использование энергии при определении местоположения"</item>
+        <item>"посмотреть статистику использования"</item>
+        <item>"включить/отключить микрофон"</item>
+        <item>"показ оповещения"</item>
+        <item>"трансляция контента"</item>
+        <item>"активация VPN"</item>
+        <item>"сохранение обоев"</item>
+        <item>"вспомогательная структура"</item>
+        <item>"вспомогательный скриншот"</item>
+        <item>"чтение состояния телефона"</item>
+        <item>"добавление голосовой почты"</item>
+        <item>"использование SIP"</item>
+        <item>"обработка исходящих вызовов"</item>
+        <item>"отпечатки пальцев"</item>
+        <item>"нательные датчики"</item>
+        <item>"чтение сообщений системы оповещения населения"</item>
+        <item>"подмена геоданных"</item>
+        <item>"чтение из хранилища"</item>
+        <item>"запись в хранилище"</item>
+        <item>"включение экрана"</item>
+        <item>"получение данных об аккаунтах"</item>
+        <item>"запуск в фоновом режиме"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Местоположение"</item>
+        <item>"Местоположение"</item>
+        <item>"Местоположение"</item>
+        <item>"Вибросигнал"</item>
+        <item>"Считывать данные контактов"</item>
+        <item>"Изменение контактов"</item>
+        <item>"Просмотр списка вызовов"</item>
+        <item>"Изменение списка вызовов"</item>
+        <item>"Считывать данные календаря"</item>
+        <item>"Изменение календаря"</item>
+        <item>"Местоположение"</item>
+        <item>"Разместить уведомление"</item>
+        <item>"Местоположение"</item>
+        <item>"Позвонить"</item>
+        <item>"Чтение SMS/MMS"</item>
+        <item>"Запись SMS/MMS"</item>
+        <item>"Получение SMS/MMS"</item>
+        <item>"Получение SMS/MMS"</item>
+        <item>"Получение SMS/MMS"</item>
+        <item>"Получение SMS/MMS"</item>
+        <item>"Отправка SMS/MMS"</item>
+        <item>"Чтение SMS/MMS"</item>
+        <item>"Запись SMS/MMS"</item>
+        <item>"Изменение настроек"</item>
+        <item>"Отображать поверх других элементов"</item>
+        <item>"Доступ к уведомлениям"</item>
+        <item>"Камера"</item>
+        <item>"Записать аудио"</item>
+        <item>"Воспроизвести аудио"</item>
+        <item>"Считать из буфера обмена"</item>
+        <item>"Изменить буфер обмена"</item>
+        <item>"Кнопки мультимедиа"</item>
+        <item>"Аудиофокус"</item>
+        <item>"Общая громкость"</item>
+        <item>"Громкость голоса"</item>
+        <item>"Громкость звонка"</item>
+        <item>"Громкость мультимедиа"</item>
+        <item>"Громкость будильника"</item>
+        <item>"Громкость уведомлений"</item>
+        <item>"Громкость Bluetooth-устройств"</item>
+        <item>"Не отключать"</item>
+        <item>"Местоположение"</item>
+        <item>"Местоположение"</item>
+        <item>"Посмотреть статистику использования"</item>
+        <item>"Включить/отключить микрофон"</item>
+        <item>"Показ оповещения"</item>
+        <item>"Трансляция контента"</item>
+        <item>"Активация VPN"</item>
+        <item>"Сохранение обоев"</item>
+        <item>"Вспомогательная структура"</item>
+        <item>"Вспомогательный скриншот"</item>
+        <item>"Чтение состояния телефона"</item>
+        <item>"Добавление голосовой почты"</item>
+        <item>"Использование SIP"</item>
+        <item>"Обработка исходящих вызовов"</item>
+        <item>"Отпечатки пальцев"</item>
+        <item>"Нательные датчики"</item>
+        <item>"Чтение сообщений системы оповещения населения"</item>
+        <item>"Подмена геоданных"</item>
+        <item>"Чтение из хранилища"</item>
+        <item>"Запись в хранилище"</item>
+        <item>"Включение экрана"</item>
+        <item>"Получение данных об аккаунтах"</item>
+        <item>"Запуск в фоновом режиме"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Небольшая"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"Средняя"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Большая"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"По умолчанию"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Обычный"</item>
+        <item>"Курсив"</item>
+        <item>"Капитель"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Очень мелкий"</item>
+        <item>"Мелкий"</item>
+        <item>"Средний"</item>
+        <item>"Крупный"</item>
+        <item>"Очень крупный"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"По умолчанию"</item>
+        <item>"Нет"</item>
+        <item>"Контур"</item>
+        <item>"С тенью"</item>
+        <item>"Приподнятый"</item>
+        <item>"Утопленный"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"По умолчанию"</item>
+        <item>"Белый на черном"</item>
+        <item>"Черный на белом"</item>
+        <item>"Желтый на черном"</item>
+        <item>"Желтый на синем"</item>
+        <item>"Специальный"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"VPN-соединение по протоколу PPTP"</item>
+        <item>"VPN-соединение по протоколу L2TP/IPSec с общими ключами"</item>
+        <item>"VPN-подключение по протоколу L2TP/IPSec с использованием сертификатов"</item>
+        <item>"VPN-подключение IPSec с общими ключами и аутентификацией Xauth"</item>
+        <item>"VPN-подключение IPSec с использованием сертификатов и аутентификации Xauth"</item>
+        <item>"VPN-подключение IPSec с использованием сертификатов и комбинированной аутентификации"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Отключена"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Инициализация..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Подключение..."</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Подключена"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Время ожидания истекло"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Сбой"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Спрашивать"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Не разрешать"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Разрешать всегда"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Достаточно"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Пока хватает"</item>
+        <!-- Memory is running low. -->
+        <item>"Мало"</item>
+        <!-- Memory is critical. -->
+        <item>"Очень мало"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Нормальное"</item>
+        <item>"Умеренное"</item>
+        <item>"Низкое"</item>
+        <item>"Высокое"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Стабильное"</item>
+        <item>"Наиболее частое действие"</item>
+        <item>"Важное (активный режим)"</item>
+        <item>"Важное (фоновый режим)"</item>
+        <item>"Резервное копирование"</item>
+        <item>"Большой объем данных"</item>
+        <item>"Служба (работает)"</item>
+        <item>"Служба (перезапуск)"</item>
+        <item>"Получатель"</item>
+        <item>"Главная"</item>
+        <item>"Последнее действие"</item>
+        <item>"Кешировано (действие)"</item>
+        <item>"Кешировано (клиент)"</item>
+        <item>"Кешировано (пусто)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Зеленовато-голубой"</item>
+        <item>"Синий"</item>
+        <item>"Темно-синий"</item>
+        <item>"Фиолетовый"</item>
+        <item>"Розовый"</item>
+        <item>"Красный"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Автоматическое подключение"</item>
+        <item>"Ручное подключение"</item>
+        <item>"Всегда спрашивать"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"Добавленные более 30 дней назад"</item>
+        <item>"Добавленные более 60 дней назад"</item>
+        <item>"Добавленные более 90 дней назад"</item>
+    </string-array></resources>

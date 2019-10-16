@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+
+    <!-- Name of the application. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Hesap Makinesi"</string>
+
+    <!--
+      Decimal separator (e.g. "1.23" or "1,23").
+
+      This should be whatever character is appropriate for use as a decimal sign for a given locale
+      when used with Arabic numerals (i.e. 0, 1, 2, 3, ...)
+
+      [CHAR_LIMIT=1]
+      -->
+    <add-resource type="string" name="dec_point"/>
+    <string name="dec_point">"."</string>
+
+    <!-- Abbrev. name of degree mode [CHAR_LIMIT=4] -->
+    <add-resource type="string" name="mode_deg"/>
+    <string name="mode_deg">"drc"</string>
+    <!-- Abbrev. name of radian mode. [CHAR_LIMIT=4] -->
+    <add-resource type="string" name="mode_rad"/>
+    <string name="mode_rad">"rad"</string>
+    <!-- Clear button to clear the currently entered expression. [CHAR_LIMIT=4] -->
+    <add-resource type="string" name="clr"/>
+    <string name="clr">"tmz"</string>
+    <!--
+      Announced when all characters are removed from Formula, e.g. after clear. [CHAR_LIMIT=NONE]
+      -->
+    <add-resource type="string" name="cleared"/>
+    <string name="cleared">"temizlendi"</string>
+    <!-- Delete button to remove last entered token. [CHAR_LIMIT=4] -->
+    <add-resource type="string" name="del"/>
+    <string name="del">"sil"</string>
+
+    <!-- Content description for 'e' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_const_e"/>
+    <string name="desc_const_e">"Euler sayısı"</string>
+    <!-- Content description for 'π' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_const_pi"/>
+    <string name="desc_const_pi">"pi"</string>
+
+    <!-- Content description for '.' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_dec_point"/>
+    <string name="desc_dec_point">"virgül"</string>
+
+    <!-- Content description for '(' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_lparen"/>
+    <string name="desc_lparen">"sol parantez"</string>
+    <!-- Content description for ')' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_rparen"/>
+    <string name="desc_rparen">"sağ parantez"</string>
+
+    <!-- Content description for 'cos' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_cos"/>
+    <string name="desc_fun_cos">"kosinüs"</string>
+    <!-- Content description for 'ln' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_ln"/>
+    <string name="desc_fun_ln">"doğal logaritma"</string>
+    <!-- Content description for 'log' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_log"/>
+    <string name="desc_fun_log">"logaritma"</string>
+    <!-- Content description for 'sin' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_sin"/>
+    <string name="desc_fun_sin">"sinüs"</string>
+    <!-- Content description for 'tan' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_tan"/>
+    <string name="desc_fun_tan">"tanjant"</string>
+    <!-- Content description for 'arccos' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_arccos"/>
+    <string name="desc_fun_arccos">"ters kosinüs"</string>
+    <!-- Content description for 'arcsin' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_arcsin"/>
+    <string name="desc_fun_arcsin">"ters sinüs"</string>
+    <!-- Content description for 'arctan' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_arctan"/>
+    <string name="desc_fun_arctan">"ters tanjant"</string>
+
+    <!--
+      Content description for 10^ button. This button is used to raise 10 to the subsequently
+      entered power. E.g. <10^>3 would yield 1000.
+      [CHAR_LIMIT=NONE]
+      -->
+    <add-resource type="string" name="desc_fun_10pow"/>
+    <string name="desc_fun_10pow">"on üssü"</string>
+    <!-- Content description for e^ (exponential function) button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_fun_exp"/>
+    <string name="desc_fun_exp">"üstel fonksiyon"</string>
+    <!--
+      Content description for ^2 button. This button is used to square the previously entered
+      number. E.g. 3<^2> would yield 9.
+      [CHAR_LIMIT=NONE]
+      -->
+    <add-resource type="string" name="desc_op_sqr"/>
+    <string name="desc_op_sqr">"kare"</string>
+
+    <!-- Content description for '+' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_add"/>
+    <string name="desc_op_add">"artı"</string>
+    <!-- Content description for '÷' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_div"/>
+    <string name="desc_op_div">"bölü"</string>
+    <!-- Content description for '!' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_fact"/>
+    <string name="desc_op_fact">"faktöriyel"</string>
+    <!-- Content description for '×' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_mul"/>
+    <string name="desc_op_mul">"çarpı"</string>
+    <!-- Content description for '%' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_pct"/>
+    <string name="desc_op_pct">"yüzde"</string>
+    <!-- Content description for '^' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_pow"/>
+    <string name="desc_op_pow">"üssü"</string>
+    <!-- Content description for '√' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_sqrt"/>
+    <string name="desc_op_sqrt">"karekök"</string>
+    <!-- Content description for '-' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_op_sub"/>
+    <string name="desc_op_sub">"eksi"</string>
+
+    <!-- Content description for degree mode. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_mode_deg"/>
+    <string name="desc_mode_deg">"derece modu"</string>
+    <!-- Content description for radian mode. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_mode_rad"/>
+    <string name="desc_mode_rad">"radyan mode"</string>
+
+    <!-- Content description for switch to degree button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_switch_deg"/>
+    <string name="desc_switch_deg">"dereceye geç"</string>
+    <!-- Content description for switch to radian button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_switch_rad"/>
+    <string name="desc_switch_rad">"radyana geç"</string>
+
+    <!-- Content description for '=' button. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_eq"/>
+    <string name="desc_eq">"eşittir"</string>
+    <!-- Content description for "clr" button. Deletes entire formula. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_clr"/>
+    <string name="desc_clr">"temizle"</string>
+    <!--
+      Content description for "del" button. Deletes single character. Should differ
+      from desc_clr. [CHAR_LIMIT=NONE]
+      -->
+    <add-resource type="string" name="desc_del"/>
+    <string name="desc_del">"sil"</string>
+    <!-- Content description for "inv" button to show inverse functions. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_inv_off"/>
+    <string name="desc_inv_off">"ters fonksiyonları göster"</string>
+    <!-- Content description for "inv" button to hide inverse functions. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="desc_inv_on"/>
+    <string name="desc_inv_on">"ters fonksiyonları gizle"</string>
+
+    <!-- Error displayed when expression evaluates to an undefined result. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="error_nan"/>
+    <string name="error_nan">"Sayı değil"</string>
+    <!-- Error displayed when expression contains a syntax error. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="error_syntax"/>
+    <string name="error_syntax">"Hatalı ifade"</string>
+    <!-- Error displayed when evaluation is manually aborted. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="error_aborted"/>
+    <string name="error_aborted">"İptal edildi"</string>
+    <!-- Error displayed when excessive precision is required. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="error_overflow"/>
+    <string name="error_overflow">"Sonsuz?"</string>
+    <!--
+      Error displayed when division by zero is detected.
+
+      If the translation does not fit within the given limit, then a shortened version must
+      be used, e.g. "Division by 0". Exceeding the limit will result in a truncated string.
+
+      [CHAR_LIMIT=20]
+      -->
+    <add-resource type="string" name="error_zero_divide"/>
+    <string name="error_zero_divide">"0\'a bölünemez"</string>
+
+    <!-- Toast shown when text is copied to the clipboard. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="text_copied_toast"/>
+    <string name="text_copied_toast">"Metin kopyalandı"</string>
+
+    <!-- Dialog message when a computation is cancelled by the user. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="cancelled"/>
+    <string name="cancelled">"Hesaplama işlemi iptal edildi"</string>
+    <!-- Dialog message when a computation times out. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="timeout"/>
+    <string name="timeout">"Zaman aşımı oldu. Değer sonsuz veya tanımsız olabilir."</string>
+    <!--
+      Button label to allow future computations with a longer timeout.
+
+      When evaluating a result takes too long, we show a "timed out" dialog. This button allows
+      the user to increase the maximum amount of time we attempt to evaluate the expression before
+      "timing out".
+
+      [CHAR_LIMIT=40]
+      -->
+    <add-resource type="string" name="ok_remove_timeout"/>
+    <string name="ok_remove_timeout">"Daha uzun zaman aşımı süreleri kullan"</string>
+    <!-- Button label to dismiss informative text message. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="dismiss"/>
+    <string name="dismiss">"Kapat"</string>
+    <!-- Appended indicator (for "leading" display) that result is exact. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="exact"/>
+    <string name="exact">"(tam)"</string>
+    <!-- Indicator (for "leading" display) that result is inexact. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="approximate"/>
+    <string name="approximate">"(Son basamakta ±1)"</string>
+
+    <!-- Menu option to display result including leading digits. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="menu_leading"/>
+    <string name="menu_leading">"Başında basamaklar olan yanıt"</string>
+    <!-- Menu option to display result as fraction. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="menu_fraction"/>
+    <string name="menu_fraction">"Kesirli yanıt"</string>
+    <!-- Menu option to view the app's open source licenses. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="menu_licenses"/>
+    <string name="menu_licenses">"Açık kaynak lisansları"</string></resources>

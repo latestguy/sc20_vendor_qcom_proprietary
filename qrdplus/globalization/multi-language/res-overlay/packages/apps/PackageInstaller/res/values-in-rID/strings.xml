@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Pemasang paket"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"Berikutnya"</string>
+    <add-resource type="string" name="install"/>
+    <string name="install">"Pasang"</string>
+    <add-resource type="string" name="done"/>
+    <string name="done">"Selesai"</string>
+    <!-- TODO REMOVE LATER -->
+    <add-resource type="string" name="security_settings_desc"/>
+    <string name="security_settings_desc">"Izinkan apl ini untuk:"</string>
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Batal"</string>
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"Tidak diketahui"</string>
+    <add-resource type="string" name="installing"/>
+    <string name="installing">"Memasang..."</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"Apl terpasang."</string>
+    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question"/>
+    <string name="install_confirm_question">"Apakah Anda ingin memasang aplikasi ini? Aplikasi akan memiliki akses ke:"</string>
+    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_no_perms"/>
+    <string name="install_confirm_question_no_perms">"Apakah Anda ingin memasang aplikasi ini? Aplikasi tidak memerlukan akses khusus apa pun."</string>
+    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update"/>
+    <string name="install_confirm_question_update">"Apakah Anda ingin memasang pembaruan ke aplikasi yang ada? Data Anda yang ada tidak akan hilang. Aplikasi yang diperbarui akan mendapatkan akses ke:"</string>
+    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system"/>
+    <string name="install_confirm_question_update_system">"Apakah Anda ingin memasang pembaruan ke aplikasi yang tertanam? Data Anda yang ada tidak akan hilang. Aplikasi yang diperbarui akan mendapatkan akses ke:"</string>
+    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_no_perms"/>
+    <string name="install_confirm_question_update_no_perms">"Anda ingin memasang pembaruan ke aplikasi yang ada ini? Data Anda yang ada akan hilang. Tindakan ini tidak memerlukan akses khusus apa pun."</string>
+    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system_no_perms"/>
+    <string name="install_confirm_question_update_system_no_perms">"Anda ingin memasang pembaruan ke aplikasi yang ada di dalamnya? Data Anda yang ada akan hilang. Tindakan ini tidak memerlukan akses khusus apa pun."</string>
+    <add-resource type="string" name="install_failed"/>
+    <string name="install_failed">"Apl tidak terpasang."</string>
+    <!-- Reason displayed when installation fails because the package was blocked
+        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_blocked"/>
+    <string name="install_failed_blocked">"Paket diblokir sehingga tidak dapat dipasang."</string>
+    <!-- Reason displayed when installation fails because the package conflicts with
+        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_conflict"/>
+    <string name="install_failed_conflict">"Paket ini bentrok dengan paket yang sudah ada dan bernama sama."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tablet">"Aplikasi ini tidak kompatibel dengan tablet Anda."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tv">"Aplikasi ini tidak kompatibel dengan TV Anda."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="default">"Aplikasi ini tidak kompatibel dengan ponsel Anda."</string>
+    <!-- Reason displayed when installation fails because the installation package itself is invalid
+        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_invalid_apk"/>
+    <string name="install_failed_invalid_apk">"Paket tampaknya rusak."</string>
+    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tablet">"<xliff:g id="APP_NAME">%1$s</xliff:g> tidak dapat dipasang pada tablet Anda."</string>
+    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tv">"<xliff:g id="app_name">%1$s</xliff:g> tidak dapat diinstal di TV Anda."</string>
+    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="default">"<xliff:g id="APP_NAME">%1$s</xliff:g> tidak dapat dipasang pada ponsel Anda."</string>
+    <add-resource type="string" name="launch"/>
+    <string name="launch">"Buka"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tablet">"Demi keamanan, tablet Anda disetel utk mencekal pemasangan apl yg diperoleh dari sumber tak dikenal."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tv">"Untuk keamanan, TV Anda diatur untuk memblokir instalasi aplikasi dari sumber yang tidak dikenal."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="default">"Demi keamanan, ponsel Anda disetel utk mencekal pemasangan apl yg diperoleh dari sumber tak dikenal."</string>
+    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="unknown_apps_admin_dlg_text"/>
+    <string name="unknown_apps_admin_dlg_text">"Administrator Anda tidak mengizinkan instalasi aplikasi dari sumber yang tidak dikenal."</string>
+
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"OKE"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"Setelan"</string>
+    <add-resource type="string" name="manage_applications"/>
+    <string name="manage_applications">"Kelola apl"</string>
+    <add-resource type="string" name="dlg_app_replacement_title"/>
+    <string name="dlg_app_replacement_title">"Ganti apl?"</string>
+    <add-resource type="string" name="dlg_app_replacement_statement"/>
+    <string name="dlg_app_replacement_statement">"Apl yang Anda pasang akan menggantikan apl lain.\n\nSemua data pengguna Anda sebelumnya akan disimpan."</string>
+    <!-- Dialog attributes when replacing system app -->
+    <add-resource type="string" name="dlg_sys_app_replacement_statement"/>
+    <string name="dlg_sys_app_replacement_statement">"Ini adalah apl sistem.\n\nSemua data pengguna Anda sebelumnya akan disimpan."</string>
+    <add-resource type="string" name="out_of_space_dlg_title"/>
+    <string name="out_of_space_dlg_title">"Kehabisan ruang penyimpanan"</string>
+    <add-resource type="string" name="out_of_space_dlg_text"/>
+    <string name="out_of_space_dlg_text">"<xliff:g id="APP_NAME">%1$s</xliff:g> tidak dapat dipasang. Kosongkan sebagian ruang dan coba lagi."</string>
+    <!-- strings related to uninstall activity -->
+    <add-resource type="string" name="dlg_ok"/>
+    <string name="dlg_ok">"OKE"</string>
+    <add-resource type="string" name="app_not_found_dlg_title"/>
+    <string name="app_not_found_dlg_title">"Apl tidak ditemukan"</string>
+    <add-resource type="string" name="app_not_found_dlg_text"/>
+    <string name="app_not_found_dlg_text">"Apl tersebut tidak ditemukan di dalam daftar apl yang terpasang."</string>
+    <add-resource type="string" name="uninstall_application_title"/>
+    <string name="uninstall_application_title">"Copot pemasangan apl"</string>
+    <add-resource type="string" name="uninstall_update_title"/>
+    <string name="uninstall_update_title">"Copot pemasangan pembaruan"</string>
+    <add-resource type="string" name="uninstall_activity_text"/>
+    <string name="uninstall_activity_text">"<xliff:g id="ACTIVITY_NAME">%1$s</xliff:g> adalah bagian dari apl berikut:"</string>
+    <add-resource type="string" name="uninstall_application_text"/>
+    <string name="uninstall_application_text">"Apakah Anda ingin mencopot pemasangan apl ini?"</string>
+    <add-resource type="string" name="uninstall_application_text_all_users"/>
+    <string name="uninstall_application_text_all_users">"Anda ingin mencopot aplikasi ini untuk "<b>"semua"</b>" pengguna? Aplikasi dan datanya akan dihapus dari "<b>"semua"</b>" pengguna pada perangkat."</string>
+    <add-resource type="string" name="uninstall_application_text_user"/>
+    <string name="uninstall_application_text_user">"Ingin mencopot pemasangan aplikasi ini untuk pengguna <xliff:g id="USERNAME">%1$s</xliff:g>?"</string>
+    <add-resource type="string" name="uninstall_update_text"/>
+    <string name="uninstall_update_text">"Gantikan aplikasi ini dengan versi pabrik? Semua data akan dihapus."</string>
+    <add-resource type="string" name="uninstall_update_text_multiuser"/>
+    <string name="uninstall_update_text_multiuser">"Gantikan aplikasi ini dengan versi pabrik? Semua data akan dihapus. Tindakan ini memengaruhi semua pengguna perangkat ini, termasuk yang memiliki profil kerja."</string>
+    <add-resource type="string" name="uninstalling"/>
+    <string name="uninstalling">"Mencopot pemasangan..."</string>
+    <add-resource type="string" name="uninstall_done"/>
+    <string name="uninstall_done">"Pencopotan pemasangan selesai."</string>
+    <add-resource type="string" name="uninstall_failed"/>
+    <string name="uninstall_failed">"Pencopotan pemasangan tidak berhasil."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager"/>
+    <string name="uninstall_failed_device_policy_manager">"Tdk dpt mencopot pemasangan krn paket ini adlh administrator perangkat yg aktif."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator for some user [CHAR LIMIT=100] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager_of_user"/>
+    <string name="uninstall_failed_device_policy_manager_of_user">"Tidak dapat mencopot pemasangan karena paket ini adalah administrator perangkat aktif untuk pengguna <xliff:g id="USERNAME">%1$s</xliff:g>."</string>
+    <!-- String presented to the admin user when uninstalling a package for all users failed
+    because a profile owner has marked the target package as not able to be uninstalled
+    [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_all_blocked_profile_owner"/>
+    <string name="uninstall_all_blocked_profile_owner">"Aplikasi ini diperlukan untuk beberapa pengguna atau profil, dan telah dicopot pemasangannya untuk yang lainnya"</string>
+    <!-- String presented to the user when uninstalling a package failed because a profile owner
+         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_blocked_profile_owner"/>
+    <string name="uninstall_blocked_profile_owner">"Aplikasi ini diperlukan untuk profil Anda dan tidak dapat dicopot pemasangannya."</string>
+    <!-- String presented to the user when uninstalling a package failed because a device owner
+         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_blocked_device_owner"/>
+    <string name="uninstall_blocked_device_owner">"Aplikasi diwajibkan administrator perangkat &amp; pemasangannya tidak bisa dicopot."</string>
+    <!-- String on a button that leads to the "device administrator" configuration setting where a
+        user will be able to disable the device administrator in order to uninstall
+        it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_device_administrators"/>
+    <string name="manage_device_administrators">"Kelola administrator perangkat"</string>
+    <!-- String on a button that leads to the "Users" page in Settings where a
+        user will be able to remove the secondary user(s) in order to uninstall
+        the app. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_users"/>
+    <string name="manage_users">"Kelola pengguna"</string>
+    <add-resource type="string" name="uninstall_failed_msg"/>
+    <string name="uninstall_failed_msg">"<xliff:g id="APP_NAME">%1$s</xliff:g> tidak dapat dicopot pemasangannya."</string>
+
+    <!-- Dialog attributes to indicate parse errors -->
+    <add-resource type="string" name="Parse_error_dlg_text"/>
+    <string name="Parse_error_dlg_text">"Terjadi masalah saat mengurai paket."</string>
+
+    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
+    <add-resource type="string" name="newPerms"/>
+    <string name="newPerms">"Baru"</string>
+    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
+    <add-resource type="string" name="allPerms"/>
+    <string name="allPerms">"Semua"</string>
+    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
+    <add-resource type="string" name="privacyPerms"/>
+    <string name="privacyPerms">"Privasi"</string>
+    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
+    <add-resource type="string" name="devicePerms"/>
+    <string name="devicePerms">"Akses Perangkat"</string>
+
+    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_new_perms"/>
+    <string name="no_new_perms">"Pembaruan ini tidak memerlukan izin baru."</string>
+
+    <add-resource type="string" name="grant_confirm_question"/>
+    <string name="grant_confirm_question">"Ingin memberikan izin ini? Akses akan diberikan ke:"</string>
+
+    <!-- Title for the dialog button to deny a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_deny"/>
+    <string name="grant_dialog_button_deny">"Tolak"</string>
+
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+    <add-resource type="string" name="grant_dialog_button_deny_anyway"/>
+    <string name="grant_dialog_button_deny_anyway">"Tetap tolak"</string>
+
+    <!-- Template for the current permission from the total number of permissions. -->
+    <add-resource type="string" name="current_permission_template"/>
+    <string name="current_permission_template">"<xliff:g id="CURRENT_PERMISSION_INDEX">%1$s</xliff:g> dari <xliff:g id="PERMISSION_COUNT">%2$s</xliff:g>"</string>
+
+    <!-- Template for the warning message when an app requests a permission. -->
+    <add-resource type="string" name="permission_warning_template"/>
+    <string name="permission_warning_template">"Izinkan &lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt; untuk <xliff:g id="ACTION">%2$s</xliff:g>?"</string>
+
+    <!-- Permissions -->
+
+    <!-- Title for the dialog button to allow a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_allow"/>
+    <string name="grant_dialog_button_allow">"Izinkan"</string>
+
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+    <add-resource type="string" name="app_permissions_breadcrumb"/>
+    <string name="app_permissions_breadcrumb">"Aplikasi"</string>
+
+    <!-- Title for page of managing application permissions -->
+    <add-resource type="string" name="app_permissions"/>
+    <string name="app_permissions">"Izin aplikasi"</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again -->
+    <add-resource type="string" name="never_ask_again"/>
+    <string name="never_ask_again">"Jangan tanya lagi"</string>
+
+    <!-- Label when app requests no permissions -->
+    <add-resource type="string" name="no_permissions"/>
+    <string name="no_permissions">"Tidak ada izin"</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <add-resource type="string" name="additional_permissions"/>
+    <string name="additional_permissions">"Izin tambahan"</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="additional_permissions_more"/>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> lainnya"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> lainnya"</item>
+    </plurals>
+
+    <!-- Warning for turning off permissions on older apps -->
+    <add-resource type="string" name="old_sdk_deny_warning"/>
+    <string name="old_sdk_deny_warning">"Aplikasi ini dirancang untuk versi lama Android. Menolak izin dapat menyebabkan aplikasi tidak berfungsi lagi sesuai harapan."</string>
+
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="default_permission_description"/>
+    <string name="default_permission_description">"melakukan tindakan yang tidak dikenal"</string>
+
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
+   <add-resource type="string" name="app_permissions_group_summary"/>
+    <string name="app_permissions_group_summary">"<xliff:g id="COUNT_0">%1$d</xliff:g> dari <xliff:g id="COUNT_1">%2$d</xliff:g> aplikasi diizinkan"</string>
+
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
+   <add-resource type="string" name="menu_show_system"/>
+    <string name="menu_show_system">"Tampilkan sistem"</string>
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
+   <add-resource type="string" name="menu_hide_system"/>
+    <string name="menu_hide_system">"Sembunyikan sistem"</string>
+
+   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
+   <add-resource type="string" name="permission_title"/>
+    <string name="permission_title">"<xliff:g id="PERMISSION">%1$s</xliff:g> izin"</string>
+
+   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
+   <add-resource type="string" name="no_apps"/>
+    <string name="no_apps">"Tidak ada aplikasi"</string>
+
+   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+   <add-resource type="string" name="location_settings"/>
+    <string name="location_settings">"Setelan Lokasi"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
+   <add-resource type="string" name="location_warning"/>
+    <string name="location_warning">"<xliff:g id="APP_NAME">%1$s</xliff:g> adalah penyedia layanan lokasi untuk perangkat ini. Akses lokasi dapat diubah dari setelan lokasi."</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
+   <add-resource type="string" name="system_warning"/>
+    <string name="system_warning">"Jika Anda menolak izin ini, fitur dasar perangkat mungkin tidak berfungsi lagi sesuai harapan."</string>
+
+   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
+   <add-resource type="string" name="permission_summary_enforced_by_policy"/>
+    <string name="permission_summary_enforced_by_policy">"Diterapkan menurut kebijakan"</string>
+
+   <!-- Text displayed until loading is done -->
+   <add-resource type="string" name="loading"/>
+    <string name="loading">"Memuat\u2026"</string>
+
+   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+   <add-resource type="string" name="all_permissions"/>
+    <string name="all_permissions">"Semua izin"</string>
+   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
+   <add-resource type="string" name="other_permissions"/>
+    <string name="other_permissions">"Kemampuan aplikasi lainnya"</string>
+
+   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
+   <add-resource type="string" name="permission_request_title"/>
+    <string name="permission_request_title">"Permintaan izin"</string>
+
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_title"/>
+    <string name="screen_overlay_title">"Hamparan layar terdeteksi"</string>
+
+   <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_message"/>
+    <string name="screen_overlay_message">"Untuk mengubah setelan izin ini, terlebih dahulu Anda harus menonaktifkan hamparan layar dari Setelan &gt; Aplikasi"</string>
+
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="screen_overlay_button"/>
+    <string name="screen_overlay_button">"Buka setelan"</string>
+
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_title"/>
+    <string name="wear_not_allowed_dlg_title">"Android Wear"</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_text"/>
+    <string name="wear_not_allowed_dlg_text">"Tindakan Pasang/Copot Pemasangan tidak didukung di Wear."</string>
+
+    <!-- Review of runtime permissions for legacy apps -->
+
+    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+    <add-resource type="string" name="permission_review_warning_title_template_update"/>
+    <string name="permission_review_warning_title_template_update">"<xliff:g id="APP_NAME_0">%1$s</xliff:g> telah diperbarui. Izinkan <xliff:g id="APP_NAME_1">%1$s</xliff:g> untuk mengakses berikut ini?"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <add-resource type="string" name="permission_review_title_template_install"/>
+    <string name="permission_review_title_template_install">"Pilih item yang boleh diakses oleh <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <add-resource type="string" name="permission_review_title_template_update"/>
+    <string name="permission_review_title_template_update">"<xliff:g id="APP_NAME">%1$s</xliff:g> telah diperbarui. Pilih item yang boleh diakses oleh aplikasi ini."</string>
+
+    <!-- Title for the dialog button to cancel the detailed permission review. -->
+    <add-resource type="string" name="review_button_cancel"/>
+    <string name="review_button_cancel">"Batal"</string>
+
+    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+    <add-resource type="string" name="review_button_continue"/>
+    <string name="review_button_continue">"Lanjutkan"</string>
+
+    <!-- Title for the category listing the new permissions used by an app. -->
+    <add-resource type="string" name="new_permissions_category"/>
+    <string name="new_permissions_category">"Izin baru"</string>
+
+    <!-- Title for the category listing the current permissions used by an app. -->
+    <add-resource type="string" name="current_permissions_category"/>
+    <string name="current_permissions_category">"Izin saat ini"</string>
+
+    <!-- Message that the app to be installed is being staged -->
+    <add-resource type="string" name="message_staging"/>
+    <string name="message_staging">"Menyiapkan aplikasi..."</string>
+
+    <!-- Placeholder for an app name when it is unknown -->
+    <add-resource type="string" name="app_name_unknown"/>
+    <string name="app_name_unknown">"Tidak dikenal"</string></resources>

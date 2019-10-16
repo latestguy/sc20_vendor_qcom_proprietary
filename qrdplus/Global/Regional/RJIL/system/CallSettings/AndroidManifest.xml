@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        package="com.qualcomm.qti.callsettings"
+        android:sharedUserId="android.uid.phone">
+
+    <protected-broadcast android:name="android.telecom.action.TTY_PREFERRED_MODE_CHANGED" />
+    <protected-broadcast android:name="android.telecom.action.CURRENT_TTY_MODE_CHANGED" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <application
+       android:process="com.android.phone">
+       <activity android:name="QtiSubscriptionSettings"
+            android:label="@string/settings_label"
+            android:theme="@style/ModifiedSettingsLight">
+        </activity>
+
+        <activity android:name="EnhancedCallFeatureSettings"
+                android:label="@string/call_settings"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@style/CallSettingsLight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="org.codeaurora.CALL_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

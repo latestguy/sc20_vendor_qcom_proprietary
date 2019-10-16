@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Abidjan"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Accra"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Addis Ababa"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Algiers"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Blantyre"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Brazzaville"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cairo"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Casablanca"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Conakry"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dakar"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dar es Salaam"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Djibouti"</item>
+        <item>"F<xliff:g id="SEPARATOR">=</xliff:g>Freetown"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Gaborone"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Harare"</item>
+        <item>"J<xliff:g id="SEPARATOR">=</xliff:g>Johannesburg"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kampala"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Khartoum"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kigali"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kinshasa"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Lagos"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Maseru"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mogadishu"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Nairobi"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>São Tomé"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Timbuktu"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tripoli"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tunis"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Anchorage"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mendoza"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Aruba"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Asunción"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Barbados"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Belize"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bogotá"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Buenos Aires"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cancun"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Caracas"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cayman"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Chicago"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Costa Rica"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Curaçao"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dawson Creek"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Denver"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Detroit"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dominica"</item>
+        <item>"E<xliff:g id="SEPARATOR">=</xliff:g>Edmonton"</item>
+        <item>"E<xliff:g id="SEPARATOR">=</xliff:g>El Salvador"</item>
+        <item>"F<xliff:g id="SEPARATOR">=</xliff:g>Fortaleza"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Grand Turk"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Grenada"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Guatemala City"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Guyana"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Halifax"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Havana"</item>
+        <item>"I<xliff:g id="SEPARATOR">=</xliff:g>Indianapolis"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Knox"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Marengo"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Petersburg"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tell City"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vevay"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vincennes"</item>
+        <item>"W<xliff:g id="SEPARATOR">=</xliff:g>Winamac"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kingston"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Nuestra Señora de La Paz"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Lima"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Los Angeles"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Louisville"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Managua"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Martinique"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mendoza"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Metlakatla"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mexico City"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Monterrey"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Montevideo"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Montreal"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Nassau"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>New York"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Beulah"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Center"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>New Salem"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Panama"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Phoenix"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Port of Spain"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Port-au-Prince"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Puerto Rico"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Santo Domingo"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>São Paulo"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. John\'s"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. Kitts"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. Lucia"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. Thomas"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tijuana"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Toronto"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vancouver"</item>
+        <item>"W<xliff:g id="SEPARATOR">=</xliff:g>Winnipeg"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>South Pole<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Longyearbyen"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Almaty"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Amman"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Anadyr"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Aqtau"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Baghdad"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bahrain"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Baku"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bangkok"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Beirut"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Calcutta"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Damascus"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dhaka"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dubai"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Gaza"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Hebron"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Ho Chi Minh"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Hong Kong<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"I<xliff:g id="SEPARATOR">=</xliff:g>Istanbul"</item>
+        <item>"J<xliff:g id="SEPARATOR">=</xliff:g>Jakarta"</item>
+        <item>"J<xliff:g id="SEPARATOR">=</xliff:g>Jerusalem"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kabul"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Karachi"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kathmandu"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kuala Lumpur"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kuwait"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Macau"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Maynila"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Muscat"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Phnom Penh"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Pyongyang<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"Q<xliff:g id="SEPARATOR">=</xliff:g>Qatar"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Rangoon"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Riyadh"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Saigon"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Seoul"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Shanghai<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Singapore"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Taipei<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tehran"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tel Aviv"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tokyo<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"U<xliff:g id="SEPARATOR">=</xliff:g>Ulaanbaatar"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bermuda"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Canary"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cape Verde"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Reykjavik"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Stanley"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Adelaide"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Brisbane"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Canberra"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Darwin"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Melbourne"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>New South Wales"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Perth"</item>
+        <item>"Q<xliff:g id="SEPARATOR">=</xliff:g>Queensland"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Sydney"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Victoria"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Newfoundland"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Saskatchewan"</item>
+        <item>"E<xliff:g id="SEPARATOR">=</xliff:g>Easter Island"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Amsterdam"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Andorra"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Athens"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Belfast"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Belgrade"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Berlin"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bratislava"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Brussels"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bucharest"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Budapest"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Chisinau"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Copenhagen"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dublin"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Gibraltar"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Helsinki"</item>
+        <item>"I<xliff:g id="SEPARATOR">=</xliff:g>Isle of Man"</item>
+        <item>"I<xliff:g id="SEPARATOR">=</xliff:g>Istanbul"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kiev"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Lisbon"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>London"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Luxembourg"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Madrid"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Malta"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Minsk"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Monaco"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Moscow"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>Oslo"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Paris"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Prague"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Riga"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Rome"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Marino"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Sarajevo"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Simferopol"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Skopje"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Sofia"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Stockholm"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tallinn"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vatican"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vienna"</item>
+        <item>"V<xliff:g id="SEPARATOR">=</xliff:g>Vilnius"</item>
+        <item>"W<xliff:g id="SEPARATOR">=</xliff:g>Warsaw"</item>
+        <item>"Z<xliff:g id="SEPARATOR">=</xliff:g>Zagreb"</item>
+        <item>"Z<xliff:g id="SEPARATOR">=</xliff:g>Zurich"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Antananarivo"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Maldives"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mauritius"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Auckland"</item>
+        <item>"F<xliff:g id="SEPARATOR">=</xliff:g>Fiji"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Guam"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Honolulu"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kiritimati"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Noumea"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Samoa"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tahiti"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Antigua"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Austin"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Boston"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Calgary"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Columbus"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Dallas"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Knoxville"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Memphis"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Miami"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Minneapolis"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>Ottawa"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Philadelphia"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Portland"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Diego"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Francisco"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Salt Lake City"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Jose"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Salvador"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Seattle"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. Louis"</item>
+        <item>"W<xliff:g id="SEPARATOR">=</xliff:g>Washington D.C."</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Houston"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Antonio"</item>
+        <item>"J<xliff:g id="SEPARATOR">=</xliff:g>Jacksonville"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Baltimore"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>Nashville"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Milwaukee"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>Oklahoma City"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Las Vegas"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Albuquerque"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tucson"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Sacramento"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Atlanta"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cleveland"</item>
+        <item>"N<xliff:g id="SEPARATOR">=</xliff:g>New Orleans"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tampa"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Pittsburgh"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cincinnati"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mountain View"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Reno"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Black Rock City"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Doha"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Beijing<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Mumbai"</item>
+        <item>"D<xliff:g id="SEPARATOR">=</xliff:g>Delhi"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>Osaka<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Lahore"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Sana\'a"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Barcelona"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Munich"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Milan"</item>
+        <item>"F<xliff:g id="SEPARATOR">=</xliff:g>Frankfurt"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Hanoi"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Ankara"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Bangalore"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Brasília"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cape Town"</item>
+        <item>"I<xliff:g id="SEPARATOR">=</xliff:g>Islamabad"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Rio de Janeiro"</item>
+        <item>"A<xliff:g id="SEPARATOR">=</xliff:g>Ann Arbor"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Boulder"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Cambridge"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kirkland"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Madison"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Guangzhou<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Hyderabad"</item>
+        <item>"R<xliff:g id="SEPARATOR">=</xliff:g>Reston"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>Belo Horizonte"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Santiago"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Monrovia"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Colombo"</item>
+        <item>"C<xliff:g id="SEPARATOR">=</xliff:g>Chihuahua"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>Salvador"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>Gurgaon"</item>
+        <item>"M<xliff:g id="SEPARATOR">=</xliff:g>Manchester"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kyiv"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>St. Petersburg"</item>
+        <item>"K<xliff:g id="SEPARATOR">=</xliff:g>Kraków"</item>
+        <item>"W<xliff:g id="SEPARATOR">=</xliff:g>Wroclaw"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Hamburg"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>Oulu"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>Haifa"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>San Juan"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>Tegucigalpa"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>Paramaribo"</item>
+        <item>"Q<xliff:g id="SEPARATOR">=</xliff:g>Quito"</item>
+        <item>"L<xliff:g id="SEPARATOR">=</xliff:g>Ljubljana"</item>
+    </string-array></resources>

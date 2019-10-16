@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs.  This is the version of the label for
+         tablet devices, where the phone app handles mobile data but not
+         actual phone calls. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="tablet">"이동통신 데이터"</string>
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs. -->
+    <add-resource type="string" name="phoneAppLabel"/>
+    <string name="phoneAppLabel" product="default">"전화 서비스"</string>
+
+    <!-- Screen title for Emergency Dialer UI -->
+    <add-resource type="string" name="emergencyDialerIconLabel"/>
+    <string name="emergencyDialerIconLabel">"긴급 통화"</string>
+    <!-- Activity label for the in-call UI -->
+    <add-resource type="string" name="phoneIconLabel"/>
+    <string name="phoneIconLabel">"휴대전화"</string>
+    <!-- Title of FDN list screen -->
+    <add-resource type="string" name="fdnListLabel"/>
+    <string name="fdnListLabel">"FDN 목록"</string>
+
+    <!-- Call status -->
+    <!-- Incoming call screen, name of "unknown" caller -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"알 수 없음"</string>
+    <!-- Incoming call screen, string when number hidden -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"비공개 번호"</string>
+    <!-- Incoming call screen, string when called from a pay phone -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"공중전화"</string>
+    <!-- In-call screen: status label for a call that's on hold -->
+    <add-resource type="string" name="onHold"/>
+    <string name="onHold">"대기 중"</string>
+    <!-- Possible error messages with outgoing calls -->
+    <add-resource type="string" name="mmiStarted"/>
+    <string name="mmiStarted">"MMI 코드 시작됨"</string>
+    <!-- Dialog label when a USSD code starts running -->
+    <add-resource type="string" name="ussdRunning"/>
+    <string name="ussdRunning">"USSD 코드 실행 중..."</string>
+    <!-- Dialog label when an MMI code is canceled -->
+    <add-resource type="string" name="mmiCancelled"/>
+    <string name="mmiCancelled">"MMI 코드 취소됨"</string>
+    <!-- Label for "cancel" button on the MMI dialog -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"취소"</string>
+    <!-- Toast string displayed to user if the input in MMI dialog is < 1 or > 160 -->
+    <add-resource type="string" name="enter_input"/>
+    <string name="enter_input">"USSD 메시지는 <xliff:g id="MIN_LEN">%d</xliff:g>~<xliff:g id="MAX_LEN">%d</xliff:g>자 사이여야 합니다. 다시 시도하세요."</string>
+
+    <!-- Label for "Manage conference call" panel [CHAR LIMIT=40] -->
+    <add-resource type="string" name="manageConferenceLabel"/>
+    <string name="manageConferenceLabel">"다자간 통화 관리"</string>
+
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"확인"</string>
+
+    <!-- "Audio mode" popup menu: Item label to select the speakerphone [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_speaker"/>
+    <string name="audio_mode_speaker">"스피커"</string>
+    <!-- "Audio mode" popup menu: Item label to select the handset earpiece [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_earpiece"/>
+    <string name="audio_mode_earpiece">"휴대전화"</string>
+    <!-- "Audio mode" popup menu: Item label to select the wired headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_wired_headset"/>
+    <string name="audio_mode_wired_headset">"유선 헤드셋"</string>
+    <!-- "Audio mode" popup menu: Item label to select the bluetooth headset [CHAR LIMIT=25] -->
+    <add-resource type="string" name="audio_mode_bluetooth"/>
+    <string name="audio_mode_bluetooth">"블루투스"</string>
+
+    <!-- post dial -->
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "wait" character in a phone number to be dialed; this dialog asks the
+         user if it's OK to send the numbers following the "wait". -->
+    <add-resource type="string" name="wait_prompt_str"/>
+    <string name="wait_prompt_str">"다음 톤을 보내시겠습니까?\n"</string>
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "PAUSE" character in a phone number to be dialed; this dialog gives
+         informative message to the user to show the sending numbers following the "Pause". -->
+    <add-resource type="string" name="pause_prompt_str"/>
+    <string name="pause_prompt_str">"신호음 보내기\n"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog -->
+    <add-resource type="string" name="send_button"/>
+    <string name="send_button">"전송"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_yes"/>
+    <string name="pause_prompt_yes">"예"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <add-resource type="string" name="pause_prompt_no"/>
+    <string name="pause_prompt_no">"아니요"</string>
+    <!-- In-call screen: on the "wild" character dialog, this is the label
+         for a text widget that lets the user enter the digits that should
+         replace the "wild" character. -->
+    <add-resource type="string" name="wild_prompt_str"/>
+    <string name="wild_prompt_str">"와일드 문자를 다음으로 바꿈:"</string>
+
+    <!-- missing voicemail number -->
+    <!-- Title of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number"/>
+    <string name="no_vm_number">"음성사서함 번호 없음"</string>
+    <!-- Body text of the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="no_vm_number_msg"/>
+    <string name="no_vm_number_msg">"SIM 카드에 저장된 음성사서함 번호가 없습니다."</string>
+    <!-- Button label on the "Missing voicemail number" dialog -->
+    <add-resource type="string" name="add_vm_number_str"/>
+    <string name="add_vm_number_str">"번호 추가"</string>
+    <!--Toast in Call settings when asked to launch voicemail for a guest user -->
+    <add-resource type="string" name="voice_number_setting_primary_user_only"/>
+    <string name="voice_number_setting_primary_user_only">"기본 사용자만 통화 설정에 대한 음성 메일을 변경할 수 있습니다."</string>
+
+    <!-- Status message displayed on SIM PIN unlock panel -->
+    <add-resource type="string" name="puk_unlocked"/>
+    <string name="puk_unlocked">"SIM 카드의 잠금이 해제되었습니다. 휴대전화의 잠금해제 중..."</string>
+    <!-- network depersonalization -->
+    <!-- Label text for PIN entry widget on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ENTRY"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ENTRY">"SIM 네트워크 잠금해제 PIN"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_unlock_text"/>
+    <string name="sim_ndp_unlock_text">"잠금해제"</string>
+    <!-- Button label on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="sim_ndp_dismiss_text"/>
+    <string name="sim_ndp_dismiss_text">"취소"</string>
+    <!-- Status message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_IN_PROGRESS">"SIM 네트워크 잠금해제 요청 중..."</string>
+    <!-- Error message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_ERROR"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_ERROR">"SIM 네트워크 잠금해제 요청이 실패했습니다."</string>
+    <!-- Success message displayed on SIM Network Depersonalization panel -->
+    <add-resource type="string" name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS"/>
+    <string name="PERSOSUBSTATE_SIM_NETWORK_SUCCESS">"SIM 네트워크의 잠금을 해제했습니다."</string>
+
+    <!-- settings strings -->
+
+    <!-- Error message for users that aren't allowed to modify Mobile Network settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mobile_network_settings_not_available"/>
+    <string name="mobile_network_settings_not_available">"이 사용자는 이동통신망 설정을 사용할 수 없습니다."</string>
+    <!-- GSM Call settings screen, setting option name. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGSMMore"/>
+    <string name="labelGSMMore">"GSM 통화 설정"</string>
+    <!-- GSM Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelGsmMore_with_label"/>
+    <string name="labelGsmMore_with_label">"GSM 통화 설정(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <add-resource type="string" name="labelCFType"/>
+    <string name="labelCFType">"착신전환 설정"</string>
+    <add-resource type="string" name="labelCFVoice"/>
+    <string name="labelCFVoice">"음성"</string>
+    <add-resource type="string" name="labelCFVideo"/>
+    <string name="labelCFVideo">"동영상"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCDMAMore"/>
+    <string name="labelCDMAMore">"CDMA 통화 설정"</string>
+    <!-- CDMA Call settings screen, setting option name with label indicating the SIM the settings
+         are applied to. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="labelCdmaMore_with_label"/>
+    <string name="labelCdmaMore_with_label">"CDMA 통화 설정(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="apn_settings"/>
+    <string name="apn_settings">"APN"</string>
+    <!-- Label for the "Network settings" screen in the Settings UI -->
+    <add-resource type="string" name="settings_label"/>
+    <string name="settings_label">"네트워크 설정"</string>
+
+    <!-- Label for settings screen for phone accounts. -->
+    <add-resource type="string" name="phone_accounts"/>
+    <string name="phone_accounts">"전화 계정"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account -->
+    <add-resource type="string" name="phone_accounts_make_calls_with"/>
+    <string name="phone_accounts_make_calls_with">"전화 걸기 대상"</string>
+    <!-- Label for list item which opens a dialog to select the default outgoing account for SIP calls. -->
+    <add-resource type="string" name="phone_accounts_make_sip_calls_with"/>
+    <string name="phone_accounts_make_sip_calls_with">"SIP 전화 걸기 대상"</string>
+    <!-- Entry in dialog to "ask first" for accounts when making a call -->
+    <add-resource type="string" name="phone_accounts_ask_every_time"/>
+    <string name="phone_accounts_ask_every_time">"확인 후 걸기"</string>
+    <!-- Account label for when a SIM account has no service (i.e. airplane mode) -->
+    <add-resource type="string" name="phone_accounts_default_account_label"/>
+    <string name="phone_accounts_default_account_label">"사용 가능한 네트워크 없음"</string>
+
+    <!-- Label for heading of the per-account settings section in the phone accounts settings
+         screen. -->
+    <add-resource type="string" name="phone_accounts_settings_header"/>
+    <string name="phone_accounts_settings_header">"설정"</string>
+    <!-- Label for invoking phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_choose_accounts"/>
+    <string name="phone_accounts_choose_accounts">"계정 선택"</string>
+    <!-- Label for heading in the phone account selection screen -->
+    <add-resource type="string" name="phone_accounts_selection_header"/>
+    <string name="phone_accounts_selection_header">"전화 계정"</string>
+    <!-- Title for the button to add a new sip account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="phone_accounts_add_sip_account"/>
+    <string name="phone_accounts_add_sip_account">"SIP 계정 추가"</string>
+    <!-- Description label for icon to configure a phone account's settings. -->
+    <add-resource type="string" name="phone_accounts_configure_account_settings"/>
+    <string name="phone_accounts_configure_account_settings">"계정 설정 조정"</string>
+    <!-- Label for heading that takes user to the list of calling accounts where they can enable
+         and disable all accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts"/>
+    <string name="phone_accounts_all_calling_accounts">"모든 통화 계정"</string>
+    <!-- Summary for all-calling-account setting indicating that is where the user goes to enable
+         and disable phone accounts. -->
+    <add-resource type="string" name="phone_accounts_all_calling_accounts_summary"/>
+    <string name="phone_accounts_all_calling_accounts_summary">"전화를 걸 수 있는 계정 선택"</string>
+
+    <!-- Title for setting to select Wi-Fi call manager account -->
+    <add-resource type="string" name="wifi_calling"/>
+    <string name="wifi_calling">"Wi-Fi 통화"</string>
+    <!-- Built-in label for the default connection service setting. -->
+    <add-resource type="string" name="connection_service_default_label"/>
+    <string name="connection_service_default_label">"내장된 연결 서비스"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"음성사서함"</string>
+    <!-- Title of the "Voicemail" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="voicemail_settings_with_label"/>
+    <string name="voicemail_settings_with_label">"음성사서함(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call forwarding dialog box, voicemail number prefix -->
+    <add-resource type="string" name="voicemail_abbreviated"/>
+    <string name="voicemail_abbreviated">"VM:"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="networks"/>
+    <string name="networks">"네트워크 운영자"</string>
+    <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"긴급 방송"</string>
+    <!-- Call settings screen title -->
+    <add-resource type="string" name="call_settings"/>
+    <string name="call_settings">"통화 설정"</string>
+    <!-- GSM Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_gsm_call_settings"/>
+    <string name="additional_gsm_call_settings">"추가 설정"</string>
+    <!-- GSM Call settings screen, setting option name, with label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="additional_gsm_call_settings_with_label"/>
+    <string name="additional_gsm_call_settings_with_label">"추가 설정(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- GSM-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_gsm_call_settings"/>
+    <string name="sum_gsm_call_settings">"GSM 전용 통화 설정 추가"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <add-resource type="string" name="additional_cdma_call_settings"/>
+    <string name="additional_cdma_call_settings">"추가 CDMA 통화 설정"</string>
+    <!-- CDMA-only Call settings screen, setting option name-->
+    <add-resource type="string" name="sum_cdma_call_settings"/>
+    <string name="sum_cdma_call_settings">"CDMA 전용 통화 설정 추가"</string>
+    <!-- Call setting screen, nework service setting name -->
+    <add-resource type="string" name="labelNwService"/>
+    <string name="labelNwService">"네트워크 서비스 설정"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCallerId"/>
+    <string name="labelCallerId">"발신자 ID"</string>
+    <!-- Additional call settings screen, setting summary text when the setting is being loaded [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sum_loading_settings"/>
+    <string name="sum_loading_settings">"설정 로드 중..."</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is hidden -->
+    <add-resource type="string" name="sum_hide_caller_id"/>
+    <string name="sum_hide_caller_id">"발신자 표시 제한"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is shown -->
+    <add-resource type="string" name="sum_show_caller_id"/>
+    <string name="sum_show_caller_id">"발신전화의 번호 표시"</string>
+    <!-- Additional call settings screen, setting summary text for default Caller ID value -->
+    <add-resource type="string" name="sum_default_caller_id"/>
+    <string name="sum_default_caller_id">"기본 사업자 설정을 사용하여 발신전화에 내 번호 표시"</string>
+    <!-- Additional call settings screen, setting check box name -->
+    <add-resource type="string" name="labelCW"/>
+    <string name="labelCW">"통화중 대기"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is selected -->
+    <add-resource type="string" name="sum_cw_enabled"/>
+    <string name="sum_cw_enabled">"통화 중 수신전화 알림"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is clear -->
+    <add-resource type="string" name="sum_cw_disabled"/>
+    <string name="sum_cw_disabled">"통화 중 수신전화 알림"</string>
+    <!-- Call forwarding settings screen, section heading -->
+    <add-resource type="string" name="call_forwarding_settings"/>
+    <string name="call_forwarding_settings">"착신전환 설정"</string>
+    <!-- Call forwarding settings screen, section heading, with a label identifying the SIM the settings are for. -->
+    <add-resource type="string" name="call_forwarding_settings_with_label"/>
+    <string name="call_forwarding_settings_with_label">"착신전환 설정(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="labelCF"/>
+    <string name="labelCF">"착신전환"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFU"/>
+    <string name="labelCFU">"항상 착신전환"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFU"/>
+    <string name="messageCFU">"항상 이 번호 사용"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
+    <add-resource type="string" name="sum_cfu_enabled_indicator"/>
+    <string name="sum_cfu_enabled_indicator">"모든 통화 착신전환"</string>
+    <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
+    <add-resource type="string" name="sum_cfu_enabled"/>
+    <string name="sum_cfu_enabled">"모든 통화를 <xliff:g id="PHONENUMBER">{0}</xliff:g>(으)로 착신전환"</string>
+    <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
+    <add-resource type="string" name="sum_cfu_enabled_no_number"/>
+    <string name="sum_cfu_enabled_no_number">"없는 전화번호입니다."</string>
+    <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
+    <add-resource type="string" name="sum_cfu_disabled"/>
+    <string name="sum_cfu_disabled">"사용 안함"</string>
+
+    <!-- Call forwarding settings screen, setting timer info for cfut case -->
+    <add-resource type="string" name="set_time_period"/>
+    <string name="set_time_period">"기간 설정"</string>
+    <add-resource type="string" name="all_day"/>
+    <string name="all_day">"\u0020종일\u0020"</string>
+    <add-resource type="string" name="time_interval_char"/>
+    <string name="time_interval_char">: </string>
+    <add-resource type="string" name="time_start"/>
+    <string name="time_start">"\u0020시작:\u0020"</string>
+    <add-resource type="string" name="time_start_hour"/>
+    <string name="time_start_hour">"기간 시작 시간"</string>
+    <add-resource type="string" name="time_start_minute"/>
+    <string name="time_start_minute">"기간 시작 분"</string>
+    <add-resource type="string" name="time_end"/>
+    <string name="time_end">"\u0020끝:\u0020"</string>
+    <add-resource type="string" name="time_next_day"/>
+    <string name="time_next_day">"\u0020다음 날\u0020"</string>
+    <add-resource type="string" name="time_end_hour"/>
+    <string name="time_end_hour">"기간 종료 시간"</string>
+    <add-resource type="string" name="time_end_minute"/>
+    <string name="time_end_minute">"기간 종료 분"</string>
+    <add-resource type="string" name="time_formate_am"/>
+    <string name="time_formate_am">"오전"</string>
+    <add-resource type="string" name="time_formate_pm"/>
+    <string name="time_formate_pm">"오후"</string>
+    <add-resource type="string" name="cf_setting_mobile_data_alert"/>
+    <string name="cf_setting_mobile_data_alert">"모바일 데이터를 켜고 WLAN이 꺼져 있는지 확인하세요."</string>
+    <add-resource type="string" name="cf_setting_mobile_data_roaming_alert"/>
+    <string name="cf_setting_mobile_data_roaming_alert">"데이터 로밍을 켜세요."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFB"/>
+    <string name="labelCFB">"통화 중인 경우"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFB"/>
+    <string name="messageCFB">"통화 중인 경우 착신전환할 번호"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
+    <add-resource type="string" name="sum_cfb_enabled"/>
+    <string name="sum_cfb_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g>(으)로 착신전환"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
+    <add-resource type="string" name="sum_cfb_disabled"/>
+    <string name="sum_cfb_disabled">"사용 안함"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
+    <add-resource type="string" name="disable_cfb_forbidden"/>
+    <string name="disable_cfb_forbidden">"휴대전화가 사용 중일 때 착신전환 사용 중지를 이동통신사에서 지원하지 않습니다."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRy"/>
+    <string name="labelCFNRy">"전화를 받지 않은 경우"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRy"/>
+    <string name="messageCFNRy">"전화를 받지 않은 경우 착신전환할 번호"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
+    <add-resource type="string" name="sum_cfnry_enabled"/>
+    <string name="sum_cfnry_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g>(으)로 착신전환"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
+    <add-resource type="string" name="sum_cfnry_disabled"/>
+    <string name="sum_cfnry_disabled">"사용 안함"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
+    <add-resource type="string" name="disable_cfnry_forbidden"/>
+    <string name="disable_cfnry_forbidden">"휴대전화가 응답하지 않을 때 착신전환 사용 중지를 이동통신사에서 지원하지 않습니다."</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <add-resource type="string" name="labelCFNRc"/>
+    <string name="labelCFNRc">"전화를 받을 수 없는 경우"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <add-resource type="string" name="messageCFNRc"/>
+    <string name="messageCFNRc">"전화를 받을 수 없는 경우 착신전환할 번호"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
+    <add-resource type="string" name="sum_cfnrc_enabled"/>
+    <string name="sum_cfnrc_enabled">"<xliff:g id="PHONENUMBER">{0}</xliff:g>(으)로 착신전환"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
+    <add-resource type="string" name="sum_cfnrc_disabled"/>
+    <string name="sum_cfnrc_disabled">"사용 중지됨"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
+    <add-resource type="string" name="disable_cfnrc_forbidden"/>
+    <string name="disable_cfnrc_forbidden">"이동통신사에서 전화를 받을 수 없을 때 착신전환 사용 중지를 지원하지 않습니다."</string>
+
+    <!-- Title of the progress dialog displayed while updating Call settings -->
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"통화 설정"</string>
+    <!-- Toast in Call settings when asked to launch settings for a secondary user -->
+    <add-resource type="string" name="call_settings_admin_user_only"/>
+    <string name="call_settings_admin_user_only">"관리자만 통화 설정을 변경할 수 있습니다."</string>
+    <!-- Title of the "Call settings" settings screen, with a text label identifying which SIM the settings are for. -->
+    <add-resource type="string" name="call_settings_with_label"/>
+    <string name="call_settings_with_label">"설정(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Title of the alert dialog displayed if an error occurs while updating Call settings -->
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"통화 설정 오류"</string>
+    <!-- Toast in Call settings dialog while settings are being read -->
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"설정을 읽는 중..."</string>
+    <!-- Toast in Call settings dialog while settings are being saved -->
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"설정 업데이트 중..."</string>
+    <!-- Toast in Call settings dialog while settings are being reverted -->
+    <add-resource type="string" name="reverting_settings"/>
+    <string name="reverting_settings">"원래 설정으로 되돌리는 중..."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="response_error"/>
+    <string name="response_error">"네트워크에서 예기치 않은 응답이 전송되었습니다."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="exception_error"/>
+    <string name="exception_error">"네트워크 또는 SIM 카드 오류입니다."</string>
+    <!-- Status message displayed in the "Call settings error" dialog when
+         current SS request is modified to a different request by STK CC -->
+    <add-resource type="string" name="stk_cc_ss_to_dial_error"/>
+    <string name="stk_cc_ss_to_dial_error">"SS 요청이 DIAL 요청으로 수정되었습니다."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ussd_error"/>
+    <string name="stk_cc_ss_to_ussd_error">"SS 요청이 USSD 요청으로 수정되었습니다."</string>
+    <add-resource type="string" name="stk_cc_ss_to_ss_error"/>
+    <string name="stk_cc_ss_to_ss_error">"SS 요청이 새로운 SS 요청으로 수정되었습니다."</string>
+
+    <!-- Status message displayed in the "Call settings error" dialog when operation fails due to FDN
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"휴대전화 앱의 발신 제한 번호 설정을 사용하기 때문에 일부 통화 관련 기능이 작동되지 않습니다."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <add-resource type="string" name="radio_off_error"/>
+    <string name="radio_off_error">"이러한 설정을 보려면 무선을 사용해야 합니다."</string>
+    <!-- Button label used to dismiss the "Call settings error" dialog -->
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"확인"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"사용"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"사용 중지"</string>
+    <!-- Button label which indicates the user wants to update a stored
+         phone number; used in several settings-related dialogs -->
+    <add-resource type="string" name="change_num"/>
+    <string name="change_num">"업데이트"</string>
+    <!-- Phone settings: Caller ID preference values -->
+    <add-resource type="array" name="clir_display_values"/>
+    <string-array name="clir_display_values">
+        <!-- Phone settings "Caller ID" preference option: use the default value -->
+        <item>"네트워크 기본값"</item>
+        <!-- Phone settings "Caller ID" preference option: hide outgoing Caller ID info -->
+        <item>"발신자 표시 제한"</item>
+        <!-- Phone settings "Caller ID" preference option: show outgoing Caller ID info -->
+        <item>"발신자 표시"</item>
+    </string-array>
+
+    <!-- voicemail setting strings -->
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_changed"/>
+    <string name="vm_changed">"음성사서함 번호가 변경되었습니다."</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="vm_change_failed"/>
+    <string name="vm_change_failed">"음성사서함 번호를 변경하지 못했습니다.\n문제가 계속되면 이동통신사에 문의하세요."</string>
+    <!-- Call settings screen, displayed when vm provider supplied forwarding number change fails-->
+    <add-resource type="string" name="fw_change_failed"/>
+    <string name="fw_change_failed">"착신전환할 번호를 변경하지 못했습니다.\n문제가 계속되면 이동통신사에 문의하세요."</string>
+    <!-- Call settings screen, displayed when forwarding number read fails-->
+    <add-resource type="string" name="fw_get_in_vm_failed"/>
+    <string name="fw_get_in_vm_failed">"현재 착신전환 번호 설정을 검색하고 저장하지 못했습니다.\n그래도 새로운 통신사로 전환하시겠습니까?"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <add-resource type="string" name="no_change"/>
+    <string name="no_change">"변경사항이 없습니다."</string>
+    <!-- Call settings screen, "Voicemail" provider setting summary text when no provider is selected -->
+    <add-resource type="string" name="sum_voicemail_choose_provider"/>
+    <string name="sum_voicemail_choose_provider">"음성사서함 서비스 선택"</string>
+    <!-- Call settings screen, "Voicemail" screen, default option - Your Carrier -->
+    <add-resource type="string" name="voicemail_default"/>
+    <string name="voicemail_default">"이동통신사"</string>
+
+    <!-- Hint for the old PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_old_pin"/>
+    <string name="vm_change_pin_old_pin">"이전 PIN"</string>
+    <!-- Hint for the new PIN field in the change vociemail PIN dialog -->
+    <add-resource type="string" name="vm_change_pin_new_pin"/>
+    <string name="vm_change_pin_new_pin">"새 PIN"</string>
+
+    <!-- Message on the dialog when PIN changing is in progress -->
+    <add-resource type="string" name="vm_change_pin_progress_message"/>
+    <string name="vm_change_pin_progress_message">"잠시 기다려 주세요."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too short -->
+    <add-resource type="string" name="vm_change_pin_error_too_short"/>
+    <string name="vm_change_pin_error_too_short">"새 PIN이 너무 짧습니다."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too long -->
+    <add-resource type="string" name="vm_change_pin_error_too_long"/>
+    <string name="vm_change_pin_error_too_long">"새 PIN이 너무 깁니다."</string>
+    <!-- Error message for the voicemail PIN change if the PIN is too weak -->
+    <add-resource type="string" name="vm_change_pin_error_too_weak"/>
+    <string name="vm_change_pin_error_too_weak">"새 PIN의 안정성이 낮습니다. 안전한 비밀번호에는 연속되는 숫자 또는 반복되는 숫자를 사용하지 말아야 합니다."</string>
+    <!-- Error message for the voicemail PIN change if the old PIN entered doesn't match  -->
+    <add-resource type="string" name="vm_change_pin_error_mismatch"/>
+    <string name="vm_change_pin_error_mismatch">"이전 PIN이 일치하지 않습니다."</string>
+    <!-- Error message for the voicemail PIN change if the new PIN contains invalid character -->
+    <add-resource type="string" name="vm_change_pin_error_invalid"/>
+    <string name="vm_change_pin_error_invalid">"새 PIN에 잘못된 문자가 있습니다."</string>
+    <!-- Error message for the voicemail PIN change if operation has failed -->
+    <add-resource type="string" name="vm_change_pin_error_system_error"/>
+    <string name="vm_change_pin_error_system_error">"PIN을 변경할 수 없습니다."</string>
+    <!-- Message to replace the transcription if a visual voicemail message is not supported-->
+    <add-resource type="string" name="vvm_unsupported_message_format"/>
+    <string name="vvm_unsupported_message_format">"지원되지 않는 메시지 유형입니다. 들으려면 <xliff:g id="NUMBER">%s</xliff:g>번으로 전화하세요."</string>
+
+    <!-- networks setting strings -->
+    <!-- Mobile network settings screen title -->
+    <add-resource type="string" name="mobile_networks"/>
+    <string name="mobile_networks">"이동통신망 설정"</string>
+    <!-- Available networks screen title/heading -->
+    <add-resource type="string" name="label_available"/>
+    <string name="label_available">"사용 가능한 네트워크"</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <add-resource type="string" name="load_networks_progress"/>
+    <string name="load_networks_progress">"검색 중..."</string>
+    <!-- Available networks screen, text when no networks are found -->
+    <add-resource type="string" name="empty_networks_list"/>
+    <string name="empty_networks_list">"네트워크를 찾을 수 없습니다."</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="search_networks"/>
+    <string name="search_networks">"네트워크 검색"</string>
+    <!-- Available networks screen, toast when an error is encountered when searching for networks -->
+    <add-resource type="string" name="network_query_error"/>
+    <string name="network_query_error">"네트워크를 검색하는 동안 오류가 발생했습니다."</string>
+    <!-- Available networks screen, toast when registering on a specific network -->
+    <add-resource type="string" name="register_on_network"/>
+    <string name="register_on_network">"<xliff:g id="NETWORK">%s</xliff:g>에 등록 중..."</string>
+    <!-- Available networks screen, toast when SIM card isn't allowed on a network -->
+    <add-resource type="string" name="not_allowed"/>
+    <string name="not_allowed">"SIM 카드에서 이 네트워크에 연결할 수 없습니다."</string>
+    <!-- Available networks screen, toast when unable to connect to a network temporarily -->
+    <add-resource type="string" name="connect_later"/>
+    <string name="connect_later">"현재 네트워크에 연결할 수 없습니다. 나중에 다시 시도해 주세요."</string>
+    <!-- Available networks screen, toast when registered on a specific network -->
+    <add-resource type="string" name="registration_done"/>
+    <string name="registration_done">"네트워크에 등록되었습니다."</string>
+    <!-- Mobile network settings screen setting option summary text -->
+    <add-resource type="string" name="sum_carrier_select"/>
+    <string name="sum_carrier_select">"네트워크 운영자 선택"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_search_networks"/>
+    <string name="sum_search_networks">"사용 가능한 모든 네트워크 검색"</string>
+    <!-- Available networks screen, setting option name -->
+    <add-resource type="string" name="select_automatically"/>
+    <string name="select_automatically">"자동으로 선택"</string>
+    <!-- Available networks screen, setting summary text -->
+    <add-resource type="string" name="sum_select_automatically"/>
+    <string name="sum_select_automatically">"기본 설정 네트워크를 자동으로 선택"</string>
+    <add-resource type="string" name="register_automatically"/>
+    <string name="register_automatically">"자동 등록..."</string>
+    <add-resource type="string" name="preferred_network_mode_title"/>
+    <string name="preferred_network_mode_title">"기본 네트워크 유형"</string>
+    <add-resource type="string" name="preferred_network_mode_summary"/>
+    <string name="preferred_network_mode_summary">"네트워크 작동 모드 변경"</string>
+    <add-resource type="string" name="preferred_network_mode_dialogtitle"/>
+    <string name="preferred_network_mode_dialogtitle">"기본 네트워크 유형"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA preferred[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_perf_summary"/>
+    <string name="preferred_network_mode_wcdma_perf_summary">"기본 네트워크 모드: WCDMA 선호"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_only_summary"/>
+    <string name="preferred_network_mode_gsm_only_summary">"기본 네트워크 모드: GSM 전용"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_wcdma_only_summary"/>
+    <string name="preferred_network_mode_wcdma_only_summary">"기본 네트워크 모드: WCDMA 전용"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM / UMTS [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_gsm_wcdma_summary">"기본 네트워크 모드: GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_summary"/>
+    <string name="preferred_network_mode_cdma_summary">"기본 설정된 네트워크 모드: CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA / EvDo [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_summary">"기본 설정된 네트워크 모드: CDMA / EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_only_summary"/>
+    <string name="preferred_network_mode_cdma_only_summary">"기본 네트워크 모드: CDMA 전용"</string>
+    <!-- Mobile network settings, summary for preferred network mode EvDo only [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_evdo_only_summary"/>
+    <string name="preferred_network_mode_evdo_only_summary">"기본 네트워크 모드: EvDo 전용"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">"기본 네트워크 모드: CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_summary"/>
+    <string name="preferred_network_mode_lte_summary">"기본 네트워크 모드: LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM/WCDMA/LTE [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary">"기본 네트워크 모드: GSM/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA+LTE/EVDO[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_cdma_evdo_summary"/>
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">"기본 네트워크 모드: CDMA+LTE/EVDO"</string>
+    <!-- Mobile network settings, summary for preferred network mode Global[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_global_summary"/>
+    <string name="preferred_network_mode_global_summary">"기본 네트워크 모드: 글로벌"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_wcdma_summary">"기본 네트워크 모드: LTE/WCDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / GSM / UMTS [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_gsm_umts_summary"/>
+    <string name="preferred_network_mode_lte_gsm_umts_summary">"기본 네트워크 모드: LTE/GSM/UMTS"</string>
+     <!-- Mobile network settings, summary for preferred network mode LTE / CDMA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_lte_cdma_summary"/>
+    <string name="preferred_network_mode_lte_cdma_summary">"기본 네트워크 모드: LTE/CDMA"</string>
+     <!-- Mobile network settings, summary for preferred network mode TDSCDMTA [CHAR LIMIT=100] -->
+     <add-resource type="string" name="preferred_network_mode_tdscdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_summary">"기본 네트워크 모드: TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_wcdma_summary">"기본 네트워크 모드: TDSCDMA / WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_summary">"기본 네트워크 모드: LTE / TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_summary">"기본 네트워크 모드: TDSCDMA / GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / GSM / TDSCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_summary">"기본 네트워크 모드: LTE/GSM/TDSCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_gsm_wcdma_summary">"기본 네트워크 모드: TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_wcdma_summary">"기본 네트워크 모드: LTE/TDSCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_gsm_wcdma_summary">"기본 네트워크 모드: LTE/TDSCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_tdscdma_cdma_evdo_gsm_wcdma_summary">"기본 네트워크 모드: TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / TDSCDMA / CDMA / EvDo / GSM / WCDMA[CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary"/>
+    <string name="preferred_network_mode_lte_tdscdma_cdma_evdo_gsm_wcdma_summary">"기본 네트워크 모드: LTE/TDSCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- In-call screen: call failure reason (call denied because call barring
+            is ON on MT side ) -->
+    <add-resource type="string" name="callFailed_incoming_cb_enabled"/>
+    <string name="callFailed_incoming_cb_enabled">"상대방이 모든 수신 전화를 제한했습니다."</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <add-resource type="string" name="callUnanswered_forwarded"/>
+    <string name="callUnanswered_forwarded">"전화를 받지 않아 착신전환됨"</string>
+
+    <add-resource type="array" name="preferred_network_mode_choices"/>
+    <string-array name="preferred_network_mode_choices">
+        <item>"LTE/TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"TDSCDMA/CDMA/EVDO/GSM/WCDMA "</item>
+        <item>"LTE/TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA/GSM/WCDMA"</item>
+        <item>"LTE/TDSCDMA/GSM"</item>
+        <item>"TDSCDMA/GSM"</item>
+        <item>"LTE/TDSCDMA"</item>
+        <item>"TDSCDMA/WCDMA"</item>
+        <item>"TDSCDMA만"</item>
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>"전체"</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>"EvDo만"</item>
+        <item>CDMA w/o EvDo</item>
+        <item>"CDMA/EvDo 자동"</item>
+        <item>"GSM/WCDMA 자동"</item>
+        <item>"WCDMA만"</item>
+        <item>"GSM만"</item>
+        <item>"GSM/WCDMA 우선"</item>
+    </string-array>
+    <!-- Cellular network 4G title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title"/>
+    <string name="enhanced_4g_lte_mode_title">"향상된 4G LTE 모드"</string>
+    <!-- Carrier variant of Enhaced 4G LTE Mode title.  [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_title_variant"/>
+    <string name="enhanced_4g_lte_mode_title_variant">"고급 통화"</string>
+    <!-- Cellular network 4G summary [CHAR LIMIT=80] -->
+    <add-resource type="string" name="enhanced_4g_lte_mode_summary"/>
+    <string name="enhanced_4g_lte_mode_summary">"LTE 서비스를 사용하여 음성 및 기타 통신을 개선할 수 있습니다(권장)."</string>
+
+    <!-- Mobile network settings screen, data enabling checkbox name -->
+    <add-resource type="string" name="data_enabled"/>
+    <string name="data_enabled">"데이터 사용"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) [CHAR LIMITS=40] -->
+    <add-resource type="string" name="data_enable_summary"/>
+    <string name="data_enable_summary">"데이터 사용 허용"</string>
+    <!-- Mobile network settings screen, title for alert dialog -->
+    <add-resource type="string" name="dialog_alert_title"/>
+    <string name="dialog_alert_title">"주의"</string>
+    <!-- Mobile network settings screen, setting check box name -->
+    <add-resource type="string" name="roaming"/>
+    <string name="roaming">"데이터 로밍"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is selected -->
+    <add-resource type="string" name="roaming_enable"/>
+    <string name="roaming_enable">"로밍 시 데이터 서비스에 연결"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is clear -->
+    <add-resource type="string" name="roaming_disable"/>
+    <string name="roaming_disable">"로밍 시 데이터 서비스에 연결"</string>
+    <!-- Mobile network settings UI: notification message shown when you
+         lose data connectivity because you're roaming and you have the
+         "data roaming" feature turned off. -->
+    <add-resource type="string" name="roaming_reenable_message"/>
+    <string name="roaming_reenable_message">"데이터 로밍을 사용 중지한 상태에서 홈 네트워크를 벗어났으므로 데이터 연결이 끊어졌습니다."</string>
+    <!-- Mobile network settings screen, dialog message when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_warning"/>
+    <string name="roaming_warning">"많은 요금이 부과될 수 있습니다."</string>
+    <!-- Mobile network settings screen, dialog message title when user selects the Data roaming check box -->
+    <add-resource type="string" name="roaming_alert_title"/>
+    <string name="roaming_alert_title">"데이터 로밍을 허용하시겠습니까?"</string>
+    <add-resource type="string" name=" hide_error_from_network_text"/>
+    <string name=" hide_error_from_network_text">"요청을 처리할 수 없음"</string>
+
+    <add-resource type="string" name="gsm_umts_options"/>
+    <string name="gsm_umts_options">"GSM/UMTS 옵션"</string>
+    <add-resource type="string" name="call_forward_option"/>
+    <string name="call_forward_option">"착신전환 옵션"</string>
+    <add-resource type="string" name="cdma_options"/>
+    <string name="cdma_options">"CDMA 옵션"</string>
+
+    <!-- Screen option on the mobile network settings to go into data usage settings -->
+    <add-resource type="string" name="throttle_data_usage"/>
+    <string name="throttle_data_usage">"데이터 사용"</string>
+    <!-- Data usage settings screen option for checking the current usage -->
+    <add-resource type="string" name="throttle_current_usage"/>
+    <string name="throttle_current_usage">"현재 데이터 사용량"</string>
+    <!-- Data usage settings screen option for time frame-->
+    <add-resource type="string" name="throttle_time_frame"/>
+    <string name="throttle_time_frame">"데이터 사용 기간"</string>
+    <!-- Data usage settings screen option for throttling rate-->
+    <add-resource type="string" name="throttle_rate"/>
+    <string name="throttle_rate">"데이터 속도 정책"</string>
+    <!-- Data usage settings screen option for accessing the carrier website-->
+    <add-resource type="string" name="throttle_help"/>
+    <string name="throttle_help">"자세히 알아보기"</string>
+
+    <add-resource type="string" name="throttle_status_subtext"/>
+    <string name="throttle_status_subtext">"최대 기간 <xliff:g id="USED_2">%3$s</xliff:g> 중 <xliff:g id="USED_0">%1$s</xliff:g>(<xliff:g id="USED_1">%2$d</xliff:g>٪)\n다음 기간은 <xliff:g id="USED_3">%4$d</xliff:g>일 후에 시작(<xliff:g id="USED_4">%5$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_data_usage_subtext"/>
+    <string name="throttle_data_usage_subtext">"최대 기간 <xliff:g id="USED_2">%3$s</xliff:g> 중 <xliff:g id="USED_0">%1$s</xliff:g>(<xliff:g id="USED_1">%2$d</xliff:g>٪)"</string>
+
+    <add-resource type="string" name="throttle_data_rate_reduced_subtext"/>
+    <string name="throttle_data_rate_reduced_subtext">"최대치 <xliff:g id="USED_0">%1$s</xliff:g> 초과\n데이터 속도가 <xliff:g id="USED_1">%2$d</xliff:g>Kb/s로 감소"</string>
+
+    <add-resource type="string" name="throttle_time_frame_subtext"/>
+    <string name="throttle_time_frame_subtext">"주기의 <xliff:g id="USED_0">%1$d</xliff:g>٪ 경과\n다음 기간은 <xliff:g id="USED_1">%2$d</xliff:g>일 후에 시작(<xliff:g id="USED_2">%3$s</xliff:g>)"</string>
+
+    <add-resource type="string" name="throttle_rate_subtext"/>
+    <string name="throttle_rate_subtext">"데이터 사용량 제한을 초과하면 데이터 속도는 <xliff:g id="USED">%1$d</xliff:g>Kb/s로 줄어듭니다."</string>
+
+    <add-resource type="string" name="throttle_help_subtext"/>
+    <string name="throttle_help_subtext">"이동통신사의 이동통신망 데이터 사용 정책에 대한 자세한 정보"</string>
+
+    <add-resource type="string" name="cell_broadcast_sms"/>
+    <string name="cell_broadcast_sms">"셀 브로드캐스트 SMS"</string>
+
+    <add-resource type="string" name="enable_disable_cell_bc_sms"/>
+    <string name="enable_disable_cell_bc_sms">"셀 브로드캐스트 SMS"</string>
+    <add-resource type="string" name="cell_bc_sms_enable"/>
+    <string name="cell_bc_sms_enable">"셀 브로드캐스트 SMS 사용"</string>
+    <add-resource type="string" name="cell_bc_sms_disable"/>
+    <string name="cell_bc_sms_disable">"셀 브로드캐스트 SMS 사용 중지"</string>
+
+    <add-resource type="string" name="cb_sms_settings"/>
+    <string name="cb_sms_settings">"셀 브로드캐스트 SMS 설정"</string>
+
+    <add-resource type="string" name="enable_disable_emergency_broadcast"/>
+    <string name="enable_disable_emergency_broadcast">"긴급 방송"</string>
+    <add-resource type="string" name="emergency_broadcast_enable"/>
+    <string name="emergency_broadcast_enable">"긴급 방송 사용"</string>
+    <add-resource type="string" name="emergency_broadcast_disable"/>
+    <string name="emergency_broadcast_disable">"긴급 방송 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_administrative"/>
+    <string name="enable_disable_administrative">"관리 기능"</string>
+    <add-resource type="string" name="administrative_enable"/>
+    <string name="administrative_enable">"관리 기능 사용"</string>
+    <add-resource type="string" name="administrative_disable"/>
+    <string name="administrative_disable">"관리 기능 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_maintenance"/>
+    <string name="enable_disable_maintenance">"유지보수"</string>
+    <add-resource type="string" name="maintenance_enable"/>
+    <string name="maintenance_enable">"유지보수 사용"</string>
+    <add-resource type="string" name="maintenance_disable"/>
+    <string name="maintenance_disable">"유지보수 사용 중지"</string>
+
+    <add-resource type="string" name="general_news_settings"/>
+    <string name="general_news_settings">"일반 뉴스"</string>
+    <add-resource type="string" name="bf_news_settings"/>
+    <string name="bf_news_settings">"경제 뉴스"</string>
+    <add-resource type="string" name="sports_news_settings"/>
+    <string name="sports_news_settings">"스포츠 뉴스"</string>
+    <add-resource type="string" name="entertainment_news_settings"/>
+    <string name="entertainment_news_settings">"연예 뉴스"</string>
+
+    <add-resource type="string" name="enable_disable_local"/>
+    <string name="enable_disable_local">"지역"</string>
+    <add-resource type="string" name="local_enable"/>
+    <string name="local_enable">"지역 뉴스 사용"</string>
+    <add-resource type="string" name="local_disable"/>
+    <string name="local_disable">"지역 뉴스 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_regional"/>
+    <string name="enable_disable_regional">"지역 정보"</string>
+    <add-resource type="string" name="regional_enable"/>
+    <string name="regional_enable">"지역 뉴스 사용"</string>
+    <add-resource type="string" name="regional_disable"/>
+    <string name="regional_disable">"지역 뉴스 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_national"/>
+    <string name="enable_disable_national">"국내 정보"</string>
+    <add-resource type="string" name="national_enable"/>
+    <string name="national_enable">"국내 뉴스 사용"</string>
+    <add-resource type="string" name="national_disable"/>
+    <string name="national_disable">"국내 뉴스 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_international"/>
+    <string name="enable_disable_international">"국제 뉴스"</string>
+    <add-resource type="string" name="international_enable"/>
+    <string name="international_enable">"국제 뉴스 사용"</string>
+    <add-resource type="string" name="international_disable"/>
+    <string name="international_disable">"국제 뉴스 사용 중지"</string>
+
+    <add-resource type="string" name="list_language_title"/>
+    <string name="list_language_title">"언어"</string>
+    <add-resource type="string" name="list_language_summary"/>
+    <string name="list_language_summary">"새 언어 선택"</string>
+    <add-resource type="array" name="list_language_entries"/>
+    <string-array name="list_language_entries">
+        <item>"영어"</item>
+        <item>"프랑스어"</item>
+        <item>"스페인어"</item>
+        <item>"일본어"</item>
+        <item>"한국어"</item>
+        <item>"중국어"</item>
+        <item>"히브리어"</item>
+    </string-array>
+    <add-resource type="array" name="list_language_values"/>
+    <string-array name="list_language_values">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+    </string-array>
+    <add-resource type="string" name="list_language_dtitle"/>
+    <string name="list_language_dtitle">"언어"</string>
+
+    <add-resource type="string" name="enable_disable_local_weather"/>
+    <string name="enable_disable_local_weather">"지역 날씨 정보"</string>
+    <add-resource type="string" name="local_weather_enable"/>
+    <string name="local_weather_enable">"지역 날씨 정보 사용"</string>
+    <add-resource type="string" name="local_weather_disable"/>
+    <string name="local_weather_disable">"지역 날씨 정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_atr"/>
+    <string name="enable_disable_atr">"지역 교통정보"</string>
+    <add-resource type="string" name="atr_enable"/>
+    <string name="atr_enable">"지역 교통정보 사용"</string>
+    <add-resource type="string" name="atr_disable"/>
+    <string name="atr_disable">"지역 교통정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_lafs"/>
+    <string name="enable_disable_lafs">"현지 항공기 일정"</string>
+    <add-resource type="string" name="lafs_enable"/>
+    <string name="lafs_enable">"현지 항공기 일정 사용"</string>
+    <add-resource type="string" name="lafs_disable"/>
+    <string name="lafs_disable">"현지 항공기 일정 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_restaurants"/>
+    <string name="enable_disable_restaurants">"식당 정보"</string>
+    <add-resource type="string" name="restaurants_enable"/>
+    <string name="restaurants_enable">"식당 정보 사용"</string>
+    <add-resource type="string" name="restaurants_disable"/>
+    <string name="restaurants_disable">"식당 정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_lodgings"/>
+    <string name="enable_disable_lodgings">"숙박 정보"</string>
+    <add-resource type="string" name="lodgings_enable"/>
+    <string name="lodgings_enable">"숙박 정보 사용"</string>
+    <add-resource type="string" name="lodgings_disable"/>
+    <string name="lodgings_disable">"숙박 정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_retail_directory"/>
+    <string name="enable_disable_retail_directory">"소매점 디렉토리"</string>
+    <add-resource type="string" name="retail_directory_enable"/>
+    <string name="retail_directory_enable">"소매점 디렉토리 사용"</string>
+    <add-resource type="string" name="retail_directory_disable"/>
+    <string name="retail_directory_disable">"소매점 디렉토리 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_advertisements"/>
+    <string name="enable_disable_advertisements">"광고"</string>
+    <add-resource type="string" name="advertisements_enable"/>
+    <string name="advertisements_enable">"광고 사용"</string>
+    <add-resource type="string" name="advertisements_disable"/>
+    <string name="advertisements_disable">"광고 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_stock_quotes"/>
+    <string name="enable_disable_stock_quotes">"주가지수"</string>
+    <add-resource type="string" name="stock_quotes_enable"/>
+    <string name="stock_quotes_enable">"주가지수 사용"</string>
+    <add-resource type="string" name="stock_quotes_disable"/>
+    <string name="stock_quotes_disable">"주가지수 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_eo"/>
+    <string name="enable_disable_eo">"채용 정보"</string>
+    <add-resource type="string" name="eo_enable"/>
+    <string name="eo_enable">"채용 정보 사용"</string>
+    <add-resource type="string" name="eo_disable"/>
+    <string name="eo_disable">"채용 정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_mhh"/>
+    <string name="enable_disable_mhh">"의료, 건강 및 병원 정보"</string>
+    <add-resource type="string" name="mhh_enable"/>
+    <string name="mhh_enable">"의료, 건강 및 병원 정보 사용"</string>
+    <add-resource type="string" name="mhh_disable"/>
+    <string name="mhh_disable">"의료, 건강 및 병원 정보 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_technology_news"/>
+    <string name="enable_disable_technology_news">"기술 뉴스"</string>
+    <add-resource type="string" name="technology_news_enable"/>
+    <string name="technology_news_enable">"기술 뉴스 사용"</string>
+    <add-resource type="string" name="technology_news_disable"/>
+    <string name="technology_news_disable">"기술 뉴스 사용 중지"</string>
+
+    <add-resource type="string" name="enable_disable_multi_category"/>
+    <string name="enable_disable_multi_category">"다중 카테고리"</string>
+    <add-resource type="string" name="multi_category_enable"/>
+    <string name="multi_category_enable">"다중 카테고리 사용"</string>
+    <add-resource type="string" name="multi_category_disable"/>
+    <string name="multi_category_disable">"다중 카테고리 사용 중지"</string>
+
+    <add-resource type="string" name="network_lte"/>
+    <string name="network_lte">"LTE(권장)"</string>
+    <add-resource type="string" name="network_4G"/>
+    <string name="network_4G">"4G(권장)"</string>
+    <add-resource type="string" name="network_global"/>
+    <string name="network_global">"전체"</string>
+
+    <!-- CDMA System select strings -->
+    <!-- Mobile network settings screen, setting option name -->
+    <add-resource type="string" name="cdma_system_select_title"/>
+    <string name="cdma_system_select_title">"시스템 선택"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <add-resource type="string" name="cdma_system_select_summary"/>
+    <string name="cdma_system_select_summary">"CDMA 로밍 모드 변경"</string>
+    <!-- System select settings screen title -->
+    <add-resource type="string" name="cdma_system_select_dialogtitle"/>
+    <string name="cdma_system_select_dialogtitle">"시스템 선택"</string>
+    <add-resource type="array" name="cdma_system_select_choices"/>
+    <string-array name="cdma_system_select_choices">
+        <!-- System select dialog screen, setting option name -->
+        <item>"집 전용"</item>
+        <!-- Remove the following option "Affiliated Networks" from the option list -->
+        <!-- <item>Affiliated Networks</item> -->
+        <!-- System select dialog screen, setting option name -->
+        <item>"자동"</item>
+    </string-array>
+
+    <add-resource type="string" name="cdma_subscription_title"/>
+    <string name="cdma_subscription_title">"CDMA 가입"</string>
+    <add-resource type="string" name="cdma_subscription_summary"/>
+    <string name="cdma_subscription_summary">"RUIM/SIM과 NV 간 변경"</string>
+    <add-resource type="string" name="cdma_subscription_dialogtitle"/>
+    <string name="cdma_subscription_dialogtitle">"가입"</string>
+    <add-resource type="array" name="cdma_subscription_choices"/>
+    <string-array name="cdma_subscription_choices">
+        <item>"RUIM/SIM"</item>
+        <item>NV</item>
+    </string-array>
+    <add-resource type="array" name="cdma_subscription_values"/>
+    <string-array name="cdma_subscription_values">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+    <!-- Preference title with which users can activate CDMA network [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_activate_device"/>
+    <string name="cdma_activate_device">"기기 활성화"</string>
+    <!-- Preference title for launching an account manager page for prepaid LTE [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cdma_lte_data_service"/>
+    <string name="cdma_lte_data_service">"데이터 서비스 설정"</string>
+
+    <!-- A menu item in "Mobile network settings" that allows the user to update the phone
+         with mobile operator specific settings. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="carrier_settings_title"/>
+    <string name="carrier_settings_title">"이동통신사 설정"</string>
+
+    <!-- FDN settings strings -->
+    <!-- Label for "Fixed Dialing Number" settings in call settings. -->
+    <add-resource type="string" name="fdn"/>
+    <string name="fdn">"발신 허용 번호"</string>
+    <!-- Title for "Fixed Dialing Number" settings, with a label to identify the SIM the settings
+        apply to. -->
+    <add-resource type="string" name="fdn_with_label"/>
+    <string name="fdn_with_label">"발신 허용 번호(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+
+    <!-- Call settings screen, button label that takes you to the Fixed Dialing Number management screen -->
+    <add-resource type="string" name="manage_fdn_list"/>
+    <string name="manage_fdn_list">"FDN 목록"</string>
+    <!-- Title for settings screen to manage Fixed Dialing Number contacts, with a label to identify
+         the SIM the settings apply to. -->
+    <add-resource type="string" name="fdn_list_with_label"/>
+    <string name="fdn_list_with_label">"FDN 목록(<xliff:g id="SUBSCRIPTIONLABEL">%s</xliff:g>)"</string>
+    <!-- Call settings screen, preference item label -->
+    <add-resource type="string" name="fdn_activation"/>
+    <string name="fdn_activation">"FDN 활성화"</string>
+    <!-- Call settings setting option name when FDN is enabled -->
+    <add-resource type="string" name="fdn_enabled"/>
+    <string name="fdn_enabled">"발신 허용 번호 사용"</string>
+    <!-- Call settings setting option name  when FDN is disabled-->
+    <add-resource type="string" name="fdn_disabled"/>
+    <string name="fdn_disabled">"발신 허용 번호 사용 중지됨"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="enable_fdn"/>
+    <string name="enable_fdn">"FDN 사용"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="disable_fdn"/>
+    <string name="disable_fdn">"FDN 사용 중지"</string>
+    <!-- Call settings screen, setting option name -->
+    <add-resource type="string" name="change_pin2"/>
+    <string name="change_pin2">"PIN2 변경"</string>
+    <!-- Call settings screen, setting option name when FDN is enabled -->
+    <add-resource type="string" name="enable_fdn_ok"/>
+    <string name="enable_fdn_ok">"FDN 사용 중지"</string>
+    <!-- Call settings screen, setting option name when FDN is disabled -->
+    <add-resource type="string" name="disable_fdn_ok"/>
+    <string name="disable_fdn_ok">"FDN 사용"</string>
+    <!-- Call settings screen, setting summary text -->
+    <add-resource type="string" name="sum_fdn"/>
+    <string name="sum_fdn">"발신 허용 번호 관리"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_change_pin"/>
+    <string name="sum_fdn_change_pin">"FDN 액세스를 위해 PIN 변경"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <add-resource type="string" name="sum_fdn_manage_list"/>
+    <string name="sum_fdn_manage_list">"전화번호 목록 관리"</string>
+    <!-- Voice privacy on CDMA is an added layer of voice encryption. Theoretically, it would be harder to break in to a phone call with this feature enabled. -->
+    <add-resource type="string" name="voice_privacy"/>
+    <string name="voice_privacy">"음성 개인정보 보호"</string>
+    <add-resource type="string" name="voice_privacy_summary"/>
+    <string name="voice_privacy_summary">"향상된 개인정보 보호 모드 사용"</string>
+    <add-resource type="string" name="tty_mode_option_title"/>
+    <string name="tty_mode_option_title">"TTY 모드"</string>
+    <add-resource type="string" name="tty_mode_option_summary"/>
+    <string name="tty_mode_option_summary">"TTY 모드 설정"</string>
+    <add-resource type="string" name="auto_retry_mode_title"/>
+    <string name="auto_retry_mode_title">"자동으로 다시 시도"</string>
+    <add-resource type="string" name="auto_retry_mode_summary"/>
+    <string name="auto_retry_mode_summary">"자동 다시 시도 모드 사용"</string>
+    <!-- TTY Mode change is NOT allowed during a video call -->
+    <add-resource type="string" name="tty_mode_not_allowed_video_call"/>
+    <string name="tty_mode_not_allowed_video_call">"화상 통화 중에는 TTY 모드 변경이 허용되지 않습니다."</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_add"/>
+    <string name="menu_add">"연락처 추가"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"연락처 수정"</string>
+    <!-- FDN list screen: menu item label -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"연락처 삭제"</string>
+
+    <!-- FDN related strings -->
+    <!-- Label for PIN2 entry screen -->
+    <add-resource type="string" name="get_pin2"/>
+    <string name="get_pin2">"PIN2 유형"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "name" text field -->
+    <add-resource type="string" name="name"/>
+    <string name="name">"이름"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "number" text field -->
+    <add-resource type="string" name="number"/>
+    <string name="number">"번호"</string>
+    <!-- "Edit FDN Contact" screen: Button label for "save" action -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"저장"</string>
+    <!-- Title of "Edit FDN Contact" screen for a new contact -->
+    <add-resource type="string" name="add_fdn_contact"/>
+    <string name="add_fdn_contact">"발신 허용 번호 추가"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="adding_fdn_contact"/>
+    <string name="adding_fdn_contact">"발신 허용 번호를 추가하는 중..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_added"/>
+    <string name="fdn_contact_added">"발신 허용 번호가 추가되었습니다."</string>
+    <!-- Title of "Edit FDN Contact" screen when editing an already-existing contact -->
+    <add-resource type="string" name="edit_fdn_contact"/>
+    <string name="edit_fdn_contact">"발신 허용 번호 편집"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="updating_fdn_contact"/>
+    <string name="updating_fdn_contact">"발신 허용 번호 업데이트 중..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_updated"/>
+    <string name="fdn_contact_updated">"발신 허용 번호가 업데이트되었습니다."</string>
+    <!-- Title of "Delete FDN Contact" screen -->
+    <add-resource type="string" name="delete_fdn_contact"/>
+    <string name="delete_fdn_contact">"발신 허용 번호 삭제"</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="deleting_fdn_contact"/>
+    <string name="deleting_fdn_contact">"발신 허용 번호를 삭제하는 중..."</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_contact_deleted"/>
+    <string name="fdn_contact_deleted">"발신 허용 번호가 삭제되었습니다."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_invalid"/>
+    <string name="pin2_invalid">"잘못된 PIN을 입력하여 FDN 업데이트 안됨"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_invalid_number"/>
+    <string name="fdn_invalid_number">"숫자가 20자리를 초과할 수 없으므로 FDN을 업데이트하지 못했습니다."</string>
+    <!-- FDN settings: error message displayed in a popup (toast), when the entered
+         FDN number was inappropriate, OR, PIN2 the user entered was incorrect.
+         Because of API restriction, there's no way to determine which is the exact
+         cause of the failure.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_or_fdn_invalid"/>
+    <string name="pin2_or_fdn_invalid">"FDN이 업데이트되지 않았습니다. PIN2가 잘못되었거나 전화번호가 거부되었습니다."</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="fdn_failed"/>
+    <string name="fdn_failed">"FDN 작업이 실패했습니다."</string>
+
+    <!-- ADN related strings -->
+    <!-- Placeholder text displayed while loading the list of SIM contacts -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"SIM 카드에서 읽는 중..."</string>
+    <!-- Call settings, string that appears on FDN contact list when there are no contacts on the SIM. -->
+    <add-resource type="string" name="simContacts_empty"/>
+    <string name="simContacts_empty">"SIM 카드에 연락처가 없습니다."</string>
+    <!-- Call settings: title of the dialog that lets you select contacts from the SIM. -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"가져올 주소록 선택"</string>
+    <!-- Appears when user tries to import contacts in SIM during airplane mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="simContacts_airplaneMode"/>
+    <string name="simContacts_airplaneMode">"SIM 카드에서 연락처를 가져오려면 비행기 모드를 사용 중지하세요."</string>
+
+    <!-- SIM PIN strings -->
+    <!-- Title of "Enable/disable SIM PIN" screen -->
+    <add-resource type="string" name="enable_pin"/>
+    <string name="enable_pin">"SIM PIN 사용/사용 중지"</string>
+    <!-- Title of "Change SIM PIN" screen -->
+    <add-resource type="string" name="change_pin"/>
+    <string name="change_pin">"SIM PIN 변경"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin_text"/>
+    <string name="enter_pin_text">"SIM PIN:"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPinLabel"/>
+    <string name="oldPinLabel">"이전 PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPinLabel"/>
+    <string name="newPinLabel">"새 PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPinLabel"/>
+    <string name="confirmPinLabel">"새 PIN 확인"</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="badPin"/>
+    <string name="badPin">"입력한 이전 PIN이 올바르지 않습니다. 다시 시도해 주세요."</string>
+    <!-- SIM PIN screen: error message -->
+    <add-resource type="string" name="mismatchPin"/>
+    <string name="mismatchPin">"입력한 PIN이 일치하지 않습니다. 다시 시도해 주세요."</string>
+    <!-- SIM PIN screen: error message when PIN is too short or too long -->
+    <add-resource type="string" name="invalidPin"/>
+    <string name="invalidPin">"4~ 8자리 숫자로 된 PIN을 입력하세요."</string>
+    <!-- Title of "Disable SIM PIN" screen -->
+    <add-resource type="string" name="disable_sim_pin"/>
+    <string name="disable_sim_pin">"SIM PIN 삭제"</string>
+    <!-- Title of "Enable SIM PIN" screen -->
+    <add-resource type="string" name="enable_sim_pin"/>
+    <string name="enable_sim_pin">"SIM PIN 설정"</string>
+    <!-- SIM PIN screen: progress message displayed while enabling -->
+    <add-resource type="string" name="enable_in_progress"/>
+    <string name="enable_in_progress">"PIN 설정 중\u2026"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="enable_pin_ok"/>
+    <string name="enable_pin_ok">"PIN 설정됨"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="disable_pin_ok"/>
+    <string name="disable_pin_ok">"PIN이 삭제되었습니다."</string>
+    <!-- SIM PIN screen: error message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_failed"/>
+    <string name="pin_failed">"잘못된 PIN입니다."</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin_changed"/>
+    <string name="pin_changed">"PIN이 업데이트되었습니다."</string>
+    <!-- SIM PIN screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk_requested"/>
+    <string name="puk_requested">"비밀번호가 잘못되어 PIN이 차단되었으며 PUK를 요청했습니다."</string>
+
+    <!-- SIM PIN2 strings -->
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="enter_pin2_text"/>
+    <string name="enter_pin2_text">"PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="oldPin2Label"/>
+    <string name="oldPin2Label">"이전 PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="newPin2Label"/>
+    <string name="newPin2Label">"새 PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <add-resource type="string" name="confirmPin2Label"/>
+    <string name="confirmPin2Label">"새 PIN2 확인"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPuk2"/>
+    <string name="badPuk2">"PUK2가 잘못되었습니다. 다시 시도하세요."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="badPin2"/>
+    <string name="badPin2">"이전 PIN2가 잘못되었습니다. 다시 시도하세요."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="mismatchPin2"/>
+    <string name="mismatchPin2">"PIN2가 일치하지 않습니다. 다시 시도하세요."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPin2"/>
+    <string name="invalidPin2">"PIN2(4~8자리)를 입력합니다."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="invalidPuk2"/>
+    <string name="invalidPuk2">"PUK2(8자리)를 입력합니다."</string>
+    <!-- SIM PIN2 screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_changed"/>
+    <string name="pin2_changed">"PIN2가 업데이트되었습니다."</string>
+    <!-- SIM PIN2 screen: label for PUK2 entry widget -->
+    <add-resource type="string" name="label_puk2_code"/>
+    <string name="label_puk2_code">"PUK2 코드를 입력합니다."</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="fdn_enable_puk2_requested"/>
+    <string name="fdn_enable_puk2_requested">"잘못된 비밀번호입니다. 이제 PIN2가 차단되었습니다. 다시 시도하려면 PIN2를 변경하세요."</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <add-resource type="string" name="puk2_requested"/>
+    <string name="puk2_requested">"비밀번호가 잘못되어 SIM이 잠겼습니다. PUK2를 입력하세요."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="puk2_blocked"/>
+    <string name="puk2_blocked">"PUK2가 완전히 차단되었습니다."</string>
+    <!-- SIM PIN2 screen: error message -->
+    <add-resource type="string" name="pin2_attempts"/>
+    <string name="pin2_attempts">"\n<xliff:g id="NUMBER">%d</xliff:g>번의 기회가 남았습니다."</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <add-resource type="string" name="pin2_unblocked"/>
+    <string name="pin2_unblocked">"PIN2 차단이 해제되었습니다."</string>
+    <!-- SIM PIN screen: error message shown in dialog when there is a network or sim error.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="pin2_error_exception"/>
+    <string name="pin2_error_exception">"네트워크 또는 SIM 카드 오류"</string>
+
+    <!-- SIM PIN screen: button label -->
+    <add-resource type="string" name="doneButton"/>
+    <string name="doneButton">"완료"</string>
+
+    <!-- Call settings screen, Set voicemail dialog title -->
+    <add-resource type="string" name="voicemail_settings_number_label"/>
+    <string name="voicemail_settings_number_label">"음성사서함 번호"</string>
+
+    <!-- Card titles -->
+    <!-- In-call screen: status label for a call in the "dialing" state -->
+    <add-resource type="string" name="card_title_dialing"/>
+    <string name="card_title_dialing">"전화 거는 중"</string>
+    <!-- In-call screen: status label for a re-dialing call -->
+    <add-resource type="string" name="card_title_redialing"/>
+    <string name="card_title_redialing">"재다이얼 중"</string>
+    <!-- In-call screen: status label for a conference call -->
+    <add-resource type="string" name="card_title_conf_call"/>
+    <string name="card_title_conf_call">"다자간 통화"</string>
+    <!-- In-call screen: status label for an incoming call -->
+    <add-resource type="string" name="card_title_incoming_call"/>
+    <string name="card_title_incoming_call">"수신전화"</string>
+    <!-- In-call screen: status label displayed briefly after a call ends -->
+    <add-resource type="string" name="card_title_call_ended"/>
+    <string name="card_title_call_ended">"통화 종료됨"</string>
+    <!-- In-call screen: status label for call that's on hold -->
+    <add-resource type="string" name="card_title_on_hold"/>
+    <string name="card_title_on_hold">"대기 중"</string>
+    <!-- In-call screen: status label for a call that's in the process of hanging up -->
+    <add-resource type="string" name="card_title_hanging_up"/>
+    <string name="card_title_hanging_up">"전화 끊는 중"</string>
+    <!-- In-call screen: status label for a call that's in CDMA flash mode -->
+    <add-resource type="string" name="card_title_in_call"/>
+    <string name="card_title_in_call">"통화 상태"</string>
+    <!-- In-call screen: status label for Unconditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_unconditionalCF"/>
+    <string name="card_title_unconditionalCF">"무조건 착신전환이 설정되었습니다."</string>
+    <!-- In-call screen: status label for Conditional Call Forwarding enabled  -->
+    <add-resource type="string" name="card_title_conditionalCF"/>
+    <string name="card_title_conditionalCF">"조건부 착신전환이 설정되었습니다."</string>
+    <!-- In-call screen: status label for a forwarded MO call  -->
+    <add-resource type="string" name="card_title_MOcall_forwarding"/>
+    <string name="card_title_MOcall_forwarding">"착신전환된 발신 전화"</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <add-resource type="string" name="card_title_calliswaiting"/>
+    <string name="card_title_calliswaiting">"통화 대기 중"</string>
+    <!-- In-call screen: status label for MO call, when the caller & callee both
+            belng to a CUG group -->
+    <add-resource type="string" name="card_title_cugcall"/>
+    <string name="card_title_cugcall">"CUG 통화"</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <add-resource type="string" name="card_title_outgoing_barred"/>
+    <string name="card_title_outgoing_barred">"발신 전화 제한됨"</string>
+    <!-- In-call screen: status label for MO calls, when incoming calls are barred
+            at remote party -->
+    <add-resource type="string" name="card_title_incoming_barred"/>
+    <string name="card_title_incoming_barred">"수신 전화 제한됨"</string>
+    <!-- In-call screen: status label for MO calls when CLIR Suppression is rejected -->
+    <add-resource type="string" name="card_title_clir_suppression_rejected"/>
+    <string name="card_title_clir_suppression_rejected">"CLIR 억제 거부됨"</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <add-resource type="string" name="card_title_call_deflected"/>
+    <string name="card_title_call_deflected">"전화가 착신전환됨"</string>
+    <!-- In-call screen: status label for incoming call being forwarded to other remote party  -->
+    <add-resource type="string" name="card_title_MTcall_forwarding"/>
+    <string name="card_title_MTcall_forwarding">"수신 전화가 착신전환됨"</string>
+    <!-- In-call screen: status label for incoming call forwarded from other remote party -->
+    <add-resource type="string" name="card_title_forwarded_MTcall"/>
+    <string name="card_title_forwarded_MTcall">"착신전환된 수신 전화"</string>
+    <!-- In-call screen: status label for incoming call which is answered & then put on hold  -->
+    <add-resource type="string" name="card_title_callonhold"/>
+    <string name="card_title_callonhold">"통화 대기 중"</string>
+    <!-- In-call screen: status label for incoming call put on hold & then retreived back -->
+    <add-resource type="string" name="card_title_callretrieved"/>
+    <string name="card_title_callretrieved">"통화 다시 시작됨"</string>
+    <!-- In-call screen: status label for incoming call which is part of MultiParty Call -->
+    <add-resource type="string" name="card_title_multipartycall"/>
+    <string name="card_title_multipartycall">"다자간 통화"</string>
+    <!-- In-call screen: status label for incoming call which is answered,
+            put on hold & then released -->
+    <add-resource type="string" name="card_title_callonhold_released"/>
+    <string name="card_title_callonhold_released">"통화 끊어짐"</string>
+    <!-- In-call screen: status label for incoming call forward check received -->
+    <add-resource type="string" name="card_title_forwardcheckreceived"/>
+    <string name="card_title_forwardcheckreceived">"착신전환 확인됨"</string>
+    <!-- In-call screen: status label for incoming call connecting through ECT -->
+    <add-resource type="string" name="card_title_callconnectingect"/>
+    <string name="card_title_callconnectingect">"ECT에 연결 중인 통화"</string>
+    <!-- In-call screen: status label for incoming call connected through ECT -->
+    <add-resource type="string" name="card_title_callconnectedect"/>
+    <string name="card_title_callconnectedect">"ECT에 연결된 통화"</string>
+    <!-- In-call screen: status label for incoming call is a deflected call -->
+    <add-resource type="string" name="card_title_deflectedcall"/>
+    <string name="card_title_deflectedcall">"착신전환된 통화"</string>
+
+    <!-- Notification strings -->
+    <!-- Label for the "Voicemail" notification item, when expanded. -->
+    <add-resource type="string" name="notification_voicemail_title"/>
+    <string name="notification_voicemail_title">"새 음성사서함"</string>
+    <!-- Label for the expanded "Voicemail" notification item,
+         including a count of messages. -->
+    <add-resource type="string" name="notification_voicemail_title_count"/>
+    <string name="notification_voicemail_title_count">"새 음성사서함(<xliff:g id="COUNT">%d</xliff:g>개)"</string>
+    <!-- Message displayed in the "Voicemail" notification item, allowing the user
+         to dial the indicated number. -->
+    <add-resource type="string" name="notification_voicemail_text_format"/>
+    <string name="notification_voicemail_text_format">"<xliff:g id="VOICEMAIL_NUMBER">%s</xliff:g>(으)로 전화걸기"</string>
+    <!-- Message displayed in the "Voicemail" notification item,
+         indicating that there's no voicemail number available -->
+    <add-resource type="string" name="notification_voicemail_no_vm_number"/>
+    <string name="notification_voicemail_no_vm_number">"알 수 없는 음성사서함 번호"</string>
+    <!-- Label for the "No service" notification item, when expanded. -->
+    <add-resource type="string" name="notification_network_selection_title"/>
+    <string name="notification_network_selection_title">"서비스 불가"</string>
+    <!-- Label for the expanded "No service" notification item, including the
+         operator name set by user -->
+    <add-resource type="string" name="notification_network_selection_text"/>
+    <string name="notification_network_selection_text">"선택한 네트워크(<xliff:g id="OPERATOR_NAME">%s</xliff:g>)를 사용할 수 없음"</string>
+
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="watch">"전화를 걸려면 비행기 모드 또는 배터리 절약 모드를 끄십시오."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off"/>
+    <string name="incall_error_power_off" product="default">"전화를 걸려면 비행기 모드를 끄십시오."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when in airplane mode, WFC is enabled, not wifi-only, and not connected to wireless networks. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_power_off_wfc"/>
+    <string name="incall_error_power_off_wfc">"전화를 걸려면 비행기 모드를 사용 중지하거나 무선 네트워크에 연결하세요."</string>
+    <!-- In-call screen: call failure message displayed when the user attempts to make a non-emergency call while the phone is in emergency callback mode. -->
+    <add-resource type="string" name="incall_error_ecm_emergency_only"/>
+    <string name="incall_error_ecm_emergency_only">"일반 전화를 걸려면 긴급 콜백 모드를 해제하세요."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog.
+         This string is currently unused (see comments in InCallScreen.java.) -->
+    <add-resource type="string" name="incall_error_emergency_only"/>
+    <string name="incall_error_emergency_only">"네트워크에서 등록되지 않았습니다."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service"/>
+    <string name="incall_error_out_of_service">"사용 가능한 이동통신망이 없습니다."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_out_of_service_wfc"/>
+    <string name="incall_error_out_of_service_wfc">"모바일 네트워크를 사용할 수 없습니다. 전화를 걸려면 무선 네트워크에 연결하세요."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_no_phone_number_supplied"/>
+    <string name="incall_error_no_phone_number_supplied">"전화를 걸려면 올바른 번호를 입력하세요."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_call_failed"/>
+    <string name="incall_error_call_failed">"전화 연결 실패"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_cannot_add_call"/>
+    <string name="incall_error_cannot_add_call">"현재 통화를 추가할 수 없습니다."</string>
+    <!-- In-call screen: status message displayed in a dialog when starting an MMI -->
+    <add-resource type="string" name="incall_status_dialed_mmi"/>
+    <string name="incall_status_dialed_mmi">"MMI 시퀀스 시작 중..."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_unknown"/>
+    <string name="incall_error_supp_service_unknown">"지원되지 않는 서비스입니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_switch"/>
+    <string name="incall_error_supp_service_switch">"통화를 전환할 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_separate"/>
+    <string name="incall_error_supp_service_separate">"통화를 분리할 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_transfer"/>
+    <string name="incall_error_supp_service_transfer">"통화를 전환할 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_conference"/>
+    <string name="incall_error_supp_service_conference">"다자간 통화를 할 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_reject"/>
+    <string name="incall_error_supp_service_reject">"통화를 거절할 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hangup"/>
+    <string name="incall_error_supp_service_hangup">"통화를 끊을 수 없습니다."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <add-resource type="string" name="incall_error_supp_service_hold"/>
+    <string name="incall_error_supp_service_hold">"통화를 보류할 수 없습니다."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when WFC is enabled, is wifi-only, and not connected to a wireless network. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_wfc_only_no_wireless_network"/>
+    <string name="incall_error_wfc_only_no_wireless_network">"전화를 걸려면 무선 네트워크에 연결하세요."</string>
+    <!-- In-call screen: call failure message displayed in an error dialog when the user is connected to a wireless network, but wifi calling is turned off. [CHAR_LIMIT=NONE] -->
+    <add-resource type="string" name="incall_error_promote_wfc"/>
+    <string name="incall_error_promote_wfc">"전화를 걸려면 Wi-Fi 통화를 사용 설정하세요."</string>
+
+    <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_title"/>
+    <string name="emergency_enable_radio_dialog_title">"긴급 전화"</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_message"/>
+    <string name="emergency_enable_radio_dialog_message">"무선을 켜는 중..."</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <add-resource type="string" name="emergency_enable_radio_dialog_retry"/>
+    <string name="emergency_enable_radio_dialog_retry">"서비스를 사용할 수 없습니다. 다시 시도 중..."</string>
+    <!-- Toast message shown when user tries to turn on airplane mode while in an emergency call -->
+    <add-resource type="string" name="radio_off_during_emergency_call"/>
+    <string name="radio_off_during_emergency_call">"긴급 통화 중에는 비행기 모드를 사용할 수 없습니다."</string>
+
+    <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_error"/>
+    <string name="dial_emergency_error">"전화를 걸 수 없습니다. <xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g>은(는) 긴급 번호가 아닙니다."</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <add-resource type="string" name="dial_emergency_empty_error"/>
+    <string name="dial_emergency_empty_error">"전화를 걸 수 없습니다. 긴급 번호를 사용하세요."</string>
+
+    <!-- Displayed in the text entry box in the dialer when in landscape mode to guide the user
+         to dial using the physical keyboard -->
+    <add-resource type="string" name="dialerKeyboardHintText"/>
+    <string name="dialerKeyboardHintText">"키보드를 사용하여 전화걸기"</string>
+
+    <!-- Text for the onscreen "Hold" button -->
+    <add-resource type="string" name="onscreenHoldText"/>
+    <string name="onscreenHoldText">"대기"</string>
+    <!-- Text for the onscreen "End call" button -->
+    <add-resource type="string" name="onscreenEndCallText"/>
+    <string name="onscreenEndCallText">"종료"</string>
+    <!-- Text for the onscreen "Show Dialpad" button -->
+    <add-resource type="string" name="onscreenShowDialpadText"/>
+    <string name="onscreenShowDialpadText">"다이얼패드"</string>
+    <!-- Text for the onscreen "Mute" button -->
+    <add-resource type="string" name="onscreenMuteText"/>
+    <string name="onscreenMuteText">"음소거"</string>
+    <!-- Text for the onscreen "Add call" button -->
+    <add-resource type="string" name="onscreenAddCallText"/>
+    <string name="onscreenAddCallText">"통화 추가"</string>
+    <!-- Text for the onscreen "Merge calls" button -->
+    <add-resource type="string" name="onscreenMergeCallsText"/>
+    <string name="onscreenMergeCallsText">"통화 병합"</string>
+    <!-- Text for the onscreen "Swap calls" button -->
+    <add-resource type="string" name="onscreenSwapCallsText"/>
+    <string name="onscreenSwapCallsText">"전환"</string>
+    <!-- Text for the onscreen "Manage calls" button -->
+    <add-resource type="string" name="onscreenManageCallsText"/>
+    <string name="onscreenManageCallsText">"통화 관리"</string>
+    <!-- Text for the onscreen "Manage conference" button [CHAR LIMIT=20] -->
+    <add-resource type="string" name="onscreenManageConferenceText"/>
+    <string name="onscreenManageConferenceText">"다자간 통화 관리"</string>
+    <!-- Text for the onscreen "Audio" button that lets you switch
+         between speaker / bluetooth / earpiece [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenAudioText"/>
+    <string name="onscreenAudioText">"오디오"</string>
+    <!-- Text for the onscreen "Video call" button used to change a voice call
+         to a video call. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="onscreenVideoCallText"/>
+    <string name="onscreenVideoCallText">"화상 통화"</string>
+
+    <!-- Menu item label in SIM Contacts: Import a single contact entry from the SIM card -->
+    <add-resource type="string" name="importSimEntry"/>
+    <string name="importSimEntry">"가져오기"</string>
+    <!-- Menu item label in SIM Contacts: Import all contact entries from the SIM card -->
+    <add-resource type="string" name="importAllSimEntries"/>
+    <string name="importAllSimEntries">"모두 가져오기"</string>
+    <!-- SIM Contacts: status message displayed while importing card -->
+    <add-resource type="string" name="importingSimContacts"/>
+    <string name="importingSimContacts">"SIM 연락처 가져오는 중"</string>
+    <!-- Import a single contact entry from contacts to the SIM card -->
+    <add-resource type="string" name="importToFDNfromContacts"/>
+    <string name="importToFDNfromContacts">"연락처에서 가져오기"</string>
+
+    <!-- Message shown when a single contact is imported from SIM card -->
+    <add-resource type="string" name="singleContactImportedMsg"/>
+    <string name="singleContactImportedMsg">"연락처를 가져왔습니다."</string>
+    <!-- Message shown when a single contact could not be imported from SIM card -->
+    <add-resource type="string" name="failedToImportSingleContactMsg"/>
+    <string name="failedToImportSingleContactMsg">"연락처를 가져오지 못했습니다."</string>
+
+    <!-- Hearing aid settings -->
+    <add-resource type="string" name="hac_mode_title"/>
+    <string name="hac_mode_title">"보청기"</string>
+    <add-resource type="string" name="hac_mode_summary"/>
+    <string name="hac_mode_summary">"보청기 호환 사용"</string>
+
+    <!-- Service option entries.  -->
+    <add-resource type="array" name="tty_mode_entries"/>
+    <string-array name="tty_mode_entries">
+        <item>"TTY 사용 안함"</item>
+        <item>"TTY 전체"</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+
+    <!-- Dtmf tones settings -->
+    <!-- Title for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_title"/>
+    <string name="dtmf_tones_title">"DTMF 신호음"</string>
+    <!-- Summary for the DTMF Tones options displayed in Call Settings -->
+    <add-resource type="string" name="dtmf_tones_summary"/>
+    <string name="dtmf_tones_summary">"DTMF 신호음 길이 설정"</string>
+    <!-- Options displayed as part of DTMF Tones in Call Settings -->
+    <add-resource type="array" name="dtmf_tone_entries"/>
+    <string-array name="dtmf_tone_entries">
+      <item>"보통"</item>
+      <item>"길게"</item>
+    </string-array>
+
+    <!-- Title for the dialog used to display CDMA DisplayInfo -->
+    <add-resource type="string" name="network_info_message"/>
+    <string name="network_info_message">"네트워크 메시지"</string>
+    <!-- Title for the dialog used to display a network error message to the user -->
+    <add-resource type="string" name="network_error_message"/>
+    <string name="network_error_message">"오류 메시지"</string>
+
+    <!-- OTA-specific strings -->
+    <!-- Title shown on OTA screen -->
+    <add-resource type="string" name="ota_title_activate"/>
+    <string name="ota_title_activate">"전화 활성화"</string>
+    <!-- Message displayed on the OTA activation screen. -->
+    <add-resource type="string" name="ota_touch_activate"/>
+    <string name="ota_touch_activate">"전화 서비스를 활성화하려면 특수 통화를 해야 합니다. \n\n\'활성화\'를 누른 다음 지시사항을 듣고 전화를 활성화하세요."</string>
+    <!-- Title shown during Hands Free Activation -->
+    <add-resource type="string" name="ota_hfa_activation_title"/>
+    <string name="ota_hfa_activation_title">"활성화 중..."</string>
+    <!-- Message shown during the hands free activation screen of the setup wizard. -->
+    <add-resource type="string" name="ota_hfa_activation_dialog_message"/>
+    <string name="ota_hfa_activation_dialog_message">"휴대전화에서 모바일 데이터 서비스를 활성화하고 있습니다.\n\n최대 5분 정도 소요될 수 있습니다."</string>
+    <!-- Title of skip activation dialog -->
+    <add-resource type="string" name="ota_skip_activation_dialog_title"/>
+    <string name="ota_skip_activation_dialog_title">"활성화를 건너뛰시겠습니까?"</string>
+    <!-- Message displayed in skip activation dialog  -->
+    <add-resource type="string" name="ota_skip_activation_dialog_message"/>
+    <string name="ota_skip_activation_dialog_message">"활성화를 건너뛰면 Wi-Fi 네트워크에는 연결할 수 있지만 전화를 걸거나 모바일 데이터 네트워크에 연결할 수 없습니다. 휴대전화를 활성화할 때까지 휴대전화를 켤 때마다 활성화하라는 메시지가 표시됩니다."</string>
+    <!-- Label shown on dialog button that allows the user to skip activation -->
+    <add-resource type="string" name="ota_skip_activation_dialog_skip_label"/>
+    <string name="ota_skip_activation_dialog_skip_label">"건너뛰기"</string>
+
+    <!-- Button label within the OTA activation screen -->
+    <add-resource type="string" name="ota_activate"/>
+    <string name="ota_activate">"활성화"</string>
+    <!-- Title text shown when phone activation is successful -->
+    <add-resource type="string" name="ota_title_activate_success"/>
+    <string name="ota_title_activate_success">"전화가 활성화되었습니다."</string>
+    <!-- Title text shown on screen where activation fails -->
+    <add-resource type="string" name="ota_title_problem_with_activation"/>
+    <string name="ota_title_problem_with_activation">"활성화 문제"</string>
+    <!-- Message displayed on the OTA "listening" screen. This message
+         needs to be kept at 2 lines or less to be sure that there's
+         enough room for the dialpad. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="ota_listen"/>
+    <string name="ota_listen">"활성화가 완료되었다는 메시지를 들을 때까지 음성 안내를 따르세요."</string>
+
+    <!-- Button label within the OTA listen screen -->
+    <add-resource type="string" name="ota_speaker"/>
+    <string name="ota_speaker">"스피커"</string>
+    <!-- String to be displayed on OTA listen screen once user has selected the
+         correct option to begin provisioning -->
+    <add-resource type="string" name="ota_progress"/>
+    <string name="ota_progress">"휴대전화를 프로그래밍하는 중\u2026"</string>
+    <!-- String to display within the OTA Fail Notice dialog -->
+    <add-resource type="string" name="ota_failure"/>
+    <string name="ota_failure">"휴대전화를 프로그래밍할 수 없습니다."</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon successful provisioning -->
+    <add-resource type="string" name="ota_successful"/>
+    <string name="ota_successful">"전화가 이제 활성화되었습니다. 서비스가 시작하는 데 최대 15분이 걸릴 수 있습니다."</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon unsuccessful provisioning -->
+    <add-resource type="string" name="ota_unsuccessful"/>
+    <string name="ota_unsuccessful">"전화가 활성화되지 않았습니다. \n신호가 잘 잡히는 지역(창 근처나 바깥)을 찾아야 할 수도 있습니다. \n\n다시 시도하거나 고객지원팀에 전화해서 다른 옵션에 대해 문의하세요."</string>
+    <!-- String to display within the OTA SPC Fail Notice dialog -->
+    <add-resource type="string" name="ota_spc_failure"/>
+    <string name="ota_spc_failure">"너무 많은 SPC 실패"</string>
+    <!-- Button label in OTA listen screen that cancels activation and goes to the previous screen -->
+    <add-resource type="string" name="ota_call_end"/>
+    <string name="ota_call_end">"뒤로"</string>
+    <!-- Button label shown on OTA error screen to allow the user to try again -->
+    <add-resource type="string" name="ota_try_again"/>
+    <string name="ota_try_again">"다시 시도"</string>
+    <!-- Button label shown on OTA screens that have a next screen -->
+    <add-resource type="string" name="ota_next"/>
+    <string name="ota_next">"다음"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
+    <add-resource type="string" name="ecm_exit_dialog"/>
+    <string name="ecm_exit_dialog">EcmExitDialog</string>
+    <!-- ECM: Status bar notification message -->
+    <add-resource type="string" name="phone_entered_ecm_text"/>
+    <string name="phone_entered_ecm_text">"긴급 콜백 모드 시작"</string>
+    <!-- ECM: Notification title -->
+    <add-resource type="string" name="phone_in_ecm_notification_title"/>
+    <string name="phone_in_ecm_notification_title">"긴급 콜백 모드"</string>
+    <!-- ECM: Notification body -->
+    <add-resource type="string" name="phone_in_ecm_call_notification_text"/>
+    <string name="phone_in_ecm_call_notification_text">"데이터 연결이 끊김"</string>
+    <add-resource type="plurals" name="phone_in_ecm_notification_time"/>
+    <plurals name="phone_in_ecm_notification_time">
+        <!-- number of minutes is one -->
+        <item quantity="one">"<xliff:g id="COUNT_0">%s</xliff:g>분 동안 데이터 연결 없음"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"<xliff:g id="COUNT_1">%s</xliff:g>분 동안 데이터 연결 없음"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from the notifications screen -->
+    <add-resource type="plurals" name="alert_dialog_exit_ecm"/>
+    <plurals name="alert_dialog_exit_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"휴대전화가 <xliff:g id="COUNT_0">%s</xliff:g>분 동안 긴급 콜백 모드로 전환됩니다. 긴급 콜백 모드에서는 데이터 연결을 이용하는 앱을 사용할 수 없습니다. 지금 종료하시겠습니까?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"휴대전화가 <xliff:g id="COUNT_1">%s</xliff:g>분 동안 긴급 콜백 모드로 전환됩니다. 긴급 콜백 모드에서는 데이터 연결을 이용하는 애플리케이션을 사용할 수 없습니다. 지금 종료하시겠습니까?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from any other app -->
+    <add-resource type="plurals" name="alert_dialog_not_avaialble_in_ecm"/>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"긴급 콜백 모드에서는 선택한 작업을 수행할 수 없습니다. 휴대전화가 <xliff:g id="COUNT_0">%s</xliff:g>분 동안 긴급 콜백 모드로 전환됩니다. 지금 종료하시겠습니까?"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"긴급 콜백 모드에서는 선택한 작업을 수행할 수 없습니다. 휴대전화가 <xliff:g id="COUNT_1">%s</xliff:g>분 동안 긴급 콜백 모드로 전환됩니다. 지금 종료하시겠습니까?"</item>
+    </plurals>
+    <!-- ECM: Dialog box message while in emergency call -->
+    <add-resource type="string" name="alert_dialog_in_ecm_call"/>
+    <string name="alert_dialog_in_ecm_call">"긴급 통화 중에는 선택한 작업을 사용할 수 없습니다."</string>
+    <!-- ECM: Progress text -->
+    <add-resource type="string" name="progress_dialog_exiting_ecm"/>
+    <string name="progress_dialog_exiting_ecm">"긴급 콜백 모드 종료하는 중"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_yes"/>
+    <string name="alert_dialog_yes">"예"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_no"/>
+    <string name="alert_dialog_no">"아니요"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <add-resource type="string" name="alert_dialog_dismiss"/>
+    <string name="alert_dialog_dismiss">"해제"</string>
+
+    <!-- Preference for Voicemail service provider under "Voicemail" settings.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_provider"/>
+    <string name="voicemail_provider">"서비스"</string>
+
+    <!-- Preference for Voicemail setting of each provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_settings"/>
+    <string name="voicemail_settings">"설정"</string>
+
+    <!-- String to display in voicemail number summary when no voicemail num is set -->
+    <add-resource type="string" name="voicemail_number_not_set"/>
+    <string name="voicemail_number_not_set">"&lt;설정 안됨&gt;"</string>
+
+    <!-- Title displayed above settings coming after voicemail in the call features screen -->
+    <add-resource type="string" name="other_settings"/>
+    <string name="other_settings">"기타 통화 설정"</string>
+
+    <!-- Title displayed in the overlay when a call is placed using a 3rd party provider.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="calling_via_template"/>
+    <string name="calling_via_template">"<xliff:g id="PROVIDER_NAME">%s</xliff:g>을(를) 통해 걸려온 전화"</string>
+
+    <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="contactPhoto"/>
+    <string name="contactPhoto">"연락처 사진"</string>
+    <!-- Use this to describe the separate conference call button; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="goPrivate"/>
+    <string name="goPrivate">"비공개로 실행"</string>
+    <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
+    <add-resource type="string" name="selectContact"/>
+    <string name="selectContact">"연락처 선택"</string>
+
+    <!-- Dialog title to notify user that Voice calling is not supported
+         on this device. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="not_voice_capable"/>
+    <string name="not_voice_capable">"음성통화 지원되지 않음"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"전화걸기"</string>
+
+    <!-- Title for the vibration settings for voicemail notifications [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_notification_vibrate_when_title"/>
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">"진동"</string>
+    <!-- Dialog title for the vibration settings for voice mail notifications [CHAR LIMIT=40]-->
+    <add-resource type="string" name="voicemail_notification_vibarte_when_dialog_title"/>
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">"진동"</string>
+
+    <!-- Visual voicemail on/off title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_visual_voicemail_switch_title"/>
+    <string name="voicemail_visual_voicemail_switch_title">"시각적 음성사서함"</string>
+
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_set_pin_dialog_title"/>
+    <string name="voicemail_set_pin_dialog_title">"PIN 설정"</string>
+    <!-- Voicemail change PIN dialog title [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_change_pin_dialog_title"/>
+    <string name="voicemail_change_pin_dialog_title">"PIN 변경"</string>
+
+    <!-- Voicemail ringtone title. The user clicks on this preference to select
+         which sound to play when a voicemail notification is received.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="voicemail_notification_ringtone_title"/>
+    <string name="voicemail_notification_ringtone_title">"알림음"</string>
+
+    <!-- Title for the category "ringtone", which is shown above ringtone and vibration
+         related settings.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preference_category_ringtone"/>
+    <string name="preference_category_ringtone">"벨소리 및 진동"</string>
+
+    <!-- String resource for the font-family to use for the call setting activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_settings_title_font_family"/>
+    <string name="call_settings_title_font_family">sans-serif-light</string>
+
+    <!-- Label for PSTN connection service. -->
+    <add-resource type="string" name="pstn_connection_service_label"/>
+    <string name="pstn_connection_service_label">"내장된 SIM 카드"</string>
+
+    <!-- Label for enabling video calling. -->
+    <add-resource type="string" name="enable_video_calling_title"/>
+    <string name="enable_video_calling_title">"화상 통화 사용"</string>
+
+    <!-- Message for dialog shown when the user tries to turn on video calling but enhanced 4G LTE
+         is disabled. They have to turn on Enhanced 4G LTE capability in network settings first. -->
+    <add-resource type="string" name="enable_video_calling_dialog_msg"/>
+    <string name="enable_video_calling_dialog_msg">"화상 통화를 사용하려면 네트워크 설정에서 향상된 4G LTE 모드를 사용 설정해야 합니다."</string>
+
+    <!-- Label for action button in dialog which opens mobile network settings, for video calling
+         setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_settings"/>
+    <string name="enable_video_calling_dialog_settings">"네트워크 설정"</string>
+
+    <!-- Label for close button in dialog, for video calling setting. -->
+    <add-resource type="string" name="enable_video_calling_dialog_close"/>
+    <string name="enable_video_calling_dialog_close">"닫기"</string>
+
+    <!-- Strings used in Settings->Sim cards for each installed Sim. -->
+    <add-resource type="string" name="sim_label_emergency_calls"/>
+    <string name="sim_label_emergency_calls">"긴급 전화"</string>
+    <add-resource type="string" name="sim_description_emergency_calls"/>
+    <string name="sim_description_emergency_calls">"긴급 전화 전용"</string>
+    <add-resource type="string" name="sim_description_default"/>
+    <string name="sim_description_default">"SIM 카드, 슬롯: <xliff:g id="SLOT_ID">%s</xliff:g>"</string>
+
+    <!-- Title for activity to control accessibility settings such as TTY mode and hearing aid
+         compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_activity_title"/>
+    <string name="accessibility_settings_activity_title">"접근성"</string>
+
+    <!-- Status hint label for an incoming call over a wifi network which has not been accepted yet.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_incoming_wifi_call"/>
+    <string name="status_hint_label_incoming_wifi_call">"Wi-Fi 수신 전화:"</string>
+    <!-- Status hint label for a call being made over a wifi network. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="status_hint_label_wifi_call"/>
+    <string name="status_hint_label_wifi_call">"Wi-Fi 통화"</string>
+
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_ringtone_key"/>
+    <string name="voicemail_notification_ringtone_key">voicemail_notification_ringtone_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="voicemail_notification_vibrate_key"/>
+    <string name="voicemail_notification_vibrate_key">voicemail_notification_vibrate_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a visual voicemail preference. -->
+    <add-resource type="string" name="voicemail_visual_voicemail_key"/>
+    <string name="voicemail_visual_voicemail_key">voicemail_visual_voicemail_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail change pin preference. -->
+    <add-resource type="string" name="voicemail_change_pin_key"/>
+    <string name="voicemail_change_pin_key">voicemail_change_pin_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for tty mode preference. -->
+    <add-resource type="string" name="tty_mode_key"/>
+    <string name="tty_mode_key">button_tty_mode_key</string>
+    <!-- DO NOT TRANSLATE. Internal key for a voicemail notification preference. -->
+    <add-resource type="string" name="wifi_calling_settings_key"/>
+    <string name="wifi_calling_settings_key">button_wifi_calling_settings_key</string>
+
+    <!-- Hint appearing below a selected action on the emergency dialer telling user to tap again to execute the action [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="emergency_action_launch_hint"/>
+    <string name="emergency_action_launch_hint">"다시 탭하여 열기"</string>
+
+    <!-- Strings for IMAP -->
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+       data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"메시지를 디코딩하는 중에 오류가 발생했습니다."</string>
+
+    <!-- Call failure reason: SIM card and roaming capabilities have already been activated. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="callFailed_cdma_activation"/>
+    <string name="callFailed_cdma_activation">"SIM 카드로 서비스가 활성화되었으며 휴대전화 로밍 기능이 업데이트되었습니다."</string>
+
+    <!-- Call failure reason: Cannot add a call because there are already too many active calls. -->
+    <add-resource type="string" name="callFailed_cdma_call_limit"/>
+    <string name="callFailed_cdma_call_limit">"활성화된 통화가 너무 많습니다. 새로운 전화를 걸기 전에 기존의 통화를 끝내거나 합치세요."</string>
+     <!-- Summary for the Smart Divert Feature displayed in Call Settings -->
+     <add-resource type="string" name="smart_divert_summary"/>
+    <string name="smart_divert_summary">"CFNRc 설정"</string>
+     <add-resource type="string" name="no_mobile_data"/>
+    <string name="no_mobile_data">"모바일 데이터를 사용할 수 없습니다."</string>
+
+    <!-- The title for the change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_title"/>
+    <string name="change_pin_title">"음성사서함 PIN 변경"</string>
+    <!-- The label for the continue button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_continue_label"/>
+    <string name="change_pin_continue_label">"계속"</string>
+    <!-- The label for the cancel button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_cancel_label"/>
+    <string name="change_pin_cancel_label">"취소"</string>
+    <!-- The label for the ok button in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_ok_label"/>
+    <string name="change_pin_ok_label">"확인"</string>
+    <!-- The title for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_header"/>
+    <string name="change_pin_enter_old_pin_header">"이전 PIN 확인"</string>
+    <!-- The hint for the enter old pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_old_pin_hint"/>
+    <string name="change_pin_enter_old_pin_hint">"계속하려면 음성사서함 PIN을 입력하세요."</string>
+    <!-- The title for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_header"/>
+    <string name="change_pin_enter_new_pin_header">"새 PIN 설정"</string>
+    <!-- The hint for the enter new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_enter_new_pin_hint"/>
+    <string name="change_pin_enter_new_pin_hint">"PIN은 <xliff:g id="MIN">%1$d</xliff:g>~<xliff:g id="MAX">%2$d</xliff:g>자 사이여야 합니다."</string>
+    <!-- The title for the confirm new pin step in change voicemail PIN activity -->
+    <add-resource type="string" name="change_pin_confirm_pin_header"/>
+    <string name="change_pin_confirm_pin_header">"PIN 확인"</string>
+    <!-- The error message for th confirm new pin step in change voicemail PIN activity, if the pin doen't match the one previously entered -->
+    <add-resource type="string" name="change_pin_confirm_pins_dont_match"/>
+    <string name="change_pin_confirm_pins_dont_match">"PIN이 일치하지 않음"</string>
+    <!-- The toast to show after the voicemail PIN has been successfully changed -->
+    <add-resource type="string" name="change_pin_succeeded"/>
+    <string name="change_pin_succeeded">"음성사서함 PIN이 업데이트되었습니다."</string>
+    <!-- The error message to show if the server reported an error while attempting to change the voicemail PIN -->
+    <add-resource type="string" name="change_pin_system_error"/>
+    <string name="change_pin_system_error">"PIN을 설정할 수 없습니다."</string></resources>

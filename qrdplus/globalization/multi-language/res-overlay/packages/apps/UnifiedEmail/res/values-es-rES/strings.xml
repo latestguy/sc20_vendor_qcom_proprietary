@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 Google Inc.
+ * Licensed to The Android Open Source Project.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Compose -->
+    <!-- Shown in Compose; the sender of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from"/>
+    <string name="from">"De"</string>
+    <!-- Shown in Compose; the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to"/>
+    <string name="to">"Para"</string>
+    <!-- Shown in Compose; the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc"/>
+    <string name="cc">"Cc"</string>
+    <!-- Shown in Compose; the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc"/>
+    <string name="bcc">"Cco"</string>
+    <!-- Shown in Compose; the subject of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"Asunto"</string>
+    <!-- Shown in Compose; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="body_hint"/>
+    <string name="body_hint">"Escribe tu correo"</string>
+    <!--  Compose screen button. Add an attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_file_attachment"/>
+    <string name="add_file_attachment">"Adjuntar archivo"</string>
+    <!--  Compose screen button. Add a photo attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_photo_attachment"/>
+    <string name="add_photo_attachment">"Adjuntar imagen"</string>
+    <!-- Button name: save this message as draft [CHAR LIMIT=25]-->
+    <add-resource type="string" name="save_draft"/>
+    <string name="save_draft">"Guardar borrador"</string>
+    <!--  Button name: discard this message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"Descartar"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="compose"/>
+    <string name="compose">"Redactar"</string>
+    <!-- The action bar title for the default compose mode [CHAR LIMIT=10] -->
+    <add-resource type="string" name="compose_title"/>
+    <string name="compose_title">"Redactar"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="array" name="compose_modes"/>
+    <string-array name="compose_modes">
+        <!-- Reply -->
+        <item>"Responder"</item>
+        <!-- Reply all -->
+        <item>"Responder a todos"</item>
+        <!-- Forward -->
+        <item>"Reenviar"</item>
+    </string-array>
+    <!-- Compose screen, displayed at the top of a message being replied to. Please preserve the HTML entities (surrounded by & and ;).  The two %s strings will be replaced by 1) the date 2) the person who wrote the email being responded to. [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="reply_attribution"/>
+    <string name="reply_attribution">"El <xliff:g id="DATE">%s</xliff:g>, <xliff:g id="PERSON">%s</xliff:g> escribió:"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000] -->
+    <add-resource type="string" name="forward_attribution"/>
+    <string name="forward_attribution">"---------- Mensaje reenviado ----------&lt;br&gt;De: <xliff:g id="FROM">%1$s</xliff:g>&lt;br&gt;Fecha: <xliff:g id="DATE">%2$s</xliff:g>&lt;br&gt;Asunto: <xliff:g id="SUBJECT">%3$s</xliff:g>&lt;br&gt;Para: <xliff:g id="TO">%4$s</xliff:g>&lt;br&gt;"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="forward_attribution_no_headers"/>
+    <string name="forward_attribution_no_headers">"---------- Mensaje reenviado ----------"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded if there are any email addresses in the CC list. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="cc_attribution"/>
+    <string name="cc_attribution">"Cc: <xliff:g id="CC">%1$s</xliff:g> &lt;br&gt;"</string>
+    <!-- Dialog text: select the type of an attachment while composing [CHAR LIMIT=100]-->
+    <add-resource type="string" name="select_attachment_type"/>
+    <string name="select_attachment_type">"Selecciona el tipo de archivo adjunto."</string>
+    <!-- Toast, attachment too large for single file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_single"/>
+    <string name="too_large_to_attach_single">"No puedes adjuntar archivos superiores a <xliff:g id="MAXSIZE">%1$s</xliff:g>."</string>
+    <!-- Toast, attachment too large for multiple files [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_multiple"/>
+    <string name="too_large_to_attach_multiple">"Uno o varios archivos no se han adjuntado (límite de <xliff:g id="MAXSIZE">%1$s</xliff:g>)."</string>
+    <!-- Toast, attachment too large when existing attachments exist [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_additional"/>
+    <string name="too_large_to_attach_additional">"No se ha adjuntado el archivo. Se ha alcanzado el límite de <xliff:g id="MAXSIZE">%1$s</xliff:g>."</string>
+    <!-- Toast, problem attaching file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="generic_attachment_problem"/>
+    <string name="generic_attachment_problem">"No se ha podido adjuntar el archivo."</string>
+    <!-- Toast, cannot attach the provided file because the calling context doesn't have the permission [CHAR LIMIT=100] -->
+    <add-resource type="string" name="attachment_permission_denied"/>
+    <string name="attachment_permission_denied">"Se ha denegado el permiso para el archivo adjunto."</string>
+    <!-- Displayed for one second after trying to send with no recipients in To field [CHAR LIMIT=200]-->
+    <add-resource type="string" name="recipient_needed"/>
+    <string name="recipient_needed">"Añade al menos un destinatario."</string>
+    <!-- Messages for send confirmation dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="confirm_send_message_with_no_subject"/>
+    <string name="confirm_send_message_with_no_subject">"El asunto del mensaje está vacío."</string>
+    <add-resource type="string" name="confirm_send_message_with_no_body"/>
+    <string name="confirm_send_message_with_no_body">"El cuerpo del mensaje está vacío."</string>
+    <add-resource type="string" name="confirm_send_message"/>
+    <string name="confirm_send_message">"¿Quieres enviar este mensaje?"</string>
+    <!-- Displayed for one second after discarding draft message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_discarded"/>
+    <string name="message_discarded">"Mensaje descartado"</string>
+    <!-- Formatting string for the user's signaure. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="signature"/>
+    <string name="signature">"\n\n<xliff:g id="SIGNATURE">%s</xliff:g>"</string>
+    <!--  Shown in the from dropdown in front of custom from addresses. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="custom_from_account_label"/>
+    <string name="custom_from_account_label">"Enviar como:"</string>
+
+    <!-- Menu item: send this message -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"Enviar"</string>
+    <!-- Menu item: mark this conversation as read -->
+    <add-resource type="string" name="mark_read"/>
+    <string name="mark_read">"Marcar como leída"</string>
+    <!-- Menu item: mark this conversation as unread -->
+    <add-resource type="string" name="mark_unread"/>
+    <string name="mark_unread">"Marcar como no leída"</string>
+    <!-- Menu item: toggle read/unread for menus that contain both read and unread options -->
+    <add-resource type="string" name="toggle_read_unread"/>
+    <string name="toggle_read_unread">"Alternar entre leídos y no leídos"</string>
+    <!--  Menu item: mute this conversation -->
+    <add-resource type="string" name="mute"/>
+    <string name="mute">"Silenciar"</string>
+    <!-- Menu item: add a star to this conversation -->
+    <add-resource type="string" name="add_star"/>
+    <string name="add_star">"Destacar"</string>
+    <!-- Menu item: remove the star from this conversation -->
+    <add-resource type="string" name="remove_star"/>
+    <string name="remove_star">"No destacar"</string>
+    <!-- Remove the folder from this conversation [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="remove_folder"/>
+    <string name="remove_folder">"Eliminar de <xliff:g id="FOLDERNAME">%1$s</xliff:g>"</string>
+    <!-- Menu item: archive this conversation -->
+    <add-resource type="string" name="archive"/>
+    <string name="archive">"Archivar"</string>
+    <!-- Menu item: report this conversation as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_spam"/>
+    <string name="report_spam">"Marcar como spam"</string>
+    <!-- Menu item: report this conversation not as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="mark_not_spam"/>
+    <string name="mark_not_spam">"Informar de que no es spam"</string>
+    <!-- Menu item: report this conversation as phishing [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_phishing"/>
+    <string name="report_phishing">"Denunciar suplantación identidad"</string>
+    <!-- Menu item: delete this conversation -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"Eliminar"</string>
+    <!-- Menu item: discard the drafts in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_drafts"/>
+    <string name="discard_drafts">"Descartar borradores"</string>
+    <!-- Menu item: discard the failed messages in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_failed"/>
+    <string name="discard_failed">"No se ha podido descartar"</string>
+    <!-- Menu item: refresh the inbox -->
+    <add-resource type="string" name="refresh"/>
+    <string name="refresh">"Actualizar"</string>
+    <!-- Menu item: reply to this message -->
+    <add-resource type="string" name="reply"/>
+    <string name="reply">"Responder"</string>
+    <!-- Menu item: reply to all recipients in this message [CHAR LIMIT=18] -->
+    <add-resource type="string" name="reply_all"/>
+    <string name="reply_all">"Responder a todos"</string>
+    <!-- Menu item: resume a draft message [CHAR LIMIT=12] -->
+    <add-resource type="string" name="resume_draft"/>
+    <string name="resume_draft">"Editar"</string>
+    <!-- Menu item: forward this message -->
+    <add-resource type="string" name="forward"/>
+    <string name="forward">"Reenviar"</string>
+    <!-- Menu item: compose a new email -->
+    <add-resource type="string" name="menu_compose"/>
+    <string name="menu_compose">"Redactar"</string>
+    <!-- Menu item: change the folders for this conversation. -->
+    <add-resource type="string" name="menu_change_folders"/>
+    <string name="menu_change_folders">"Cambiar carpetas"</string>
+    <!-- Menu item: moves to folders for selected conversation(s). [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to"/>
+    <string name="menu_move_to">"Mover a"</string>
+    <!-- Menu item: moves current or selected conversation(s) to Inbox. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to_inbox"/>
+    <string name="menu_move_to_inbox">"Mover a bandeja de entrada"</string>
+    <!-- Menu item: manages the folders for this account. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_manage_folders"/>
+    <string name="menu_manage_folders">"Ajustes de carpeta"</string>
+    <!-- Menu item text to show the original version of an email conversation, before message manipulation [CHAR LIMIT=25] -->
+    <add-resource type="string" name="menu_show_original"/>
+    <string name="menu_show_original">"Volver al tamaño original"</string>
+    <!-- Menu item: launch the Settings activity -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"Ajustes"</string>
+    <!-- Menu item: search through the Gmail inbox -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"Buscar"</string>
+    <!-- Menu item: toggle drawer -->
+    <add-resource type="string" name="menu_toggle_drawer"/>
+    <string name="menu_toggle_drawer">"Alternar panel"</string>
+    <!-- Title of the drawer, indicating what it is used for, which is navigation of the app -->
+    <add-resource type="string" name="drawer_title"/>
+    <string name="drawer_title">"Navegación"</string>
+
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_important"/>
+    <string name="mark_important">"Marcar como importante"</string>
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as not important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_not_important"/>
+    <string name="mark_not_important">"Marcar como no importante"</string>
+
+    <!-- Compose screen, menu item: add Cc/Bcc fields -->
+    <add-resource type="string" name="add_cc_label"/>
+    <string name="add_cc_label">"Añadir Cc/Cco"</string>
+    <!-- Compose screen, menu item: add Bcc field [CHAR_LIMIT=20]-->
+    <add-resource type="string" name="add_bcc_label"/>
+    <string name="add_bcc_label">"Añadir Cco"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="quoted_text"/>
+    <string name="quoted_text">"Incluir texto citado"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message; folder for the quoted text area. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="quoted_text_label"/>
+    <string name="quoted_text_label">"Citar texto"</string>
+    <!--  Button for including inline responses. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="respond_inline"/>
+    <string name="respond_inline">"Responder entre líneas"</string>
+
+    <!-- Attachments -->
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5]-->
+    <add-resource type="string" name="bytes"/>
+    <string name="bytes">"<xliff:g id="COUNT">%s</xliff:g> B"</string>
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5] -->
+    <add-resource type="string" name="kilobytes"/>
+    <string name="kilobytes">"<xliff:g id="COUNT">%s</xliff:g> KB"</string>
+    <!-- Size unit, displayed in a button next to an attachment  [CHAR LIMIT=5]-->
+    <add-resource type="string" name="megabytes"/>
+    <string name="megabytes">"<xliff:g id="COUNT">%s</xliff:g> MB"</string>
+    <!-- Attachment description for image files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_image"/>
+    <string name="attachment_image">"Imagen"</string>
+    <!-- Attachment description for video files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"Vídeo"</string>
+    <!-- Attachment description for audio files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"Audio"</string>
+    <!-- Attachment description for text files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_text"/>
+    <string name="attachment_text">"SMS"</string>
+    <!-- Attachment description for .doc files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_msword"/>
+    <string name="attachment_application_msword">"Documento"</string>
+    <!-- Attachment description for .ppt files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_powerpoint"/>
+    <string name="attachment_application_vnd_ms_powerpoint">"Presentación"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_excel"/>
+    <string name="attachment_application_vnd_ms_excel">"Hoja de cálculo"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_pdf"/>
+    <string name="attachment_application_pdf">PDF</string>
+    <!-- Attachment description for unknown files [CHAR LIMIT=30]-->
+    <add-resource type="string" name="attachment_unknown"/>
+    <string name="attachment_unknown">"Archivo <xliff:g id="ATTACHMENTEXTENSION">%s</xliff:g>"</string>
+    <!-- Read email screen, button name. Preview an attachment by Gview. [CHAR LIMIT=18] -->
+    <add-resource type="string" name="preview_attachment"/>
+    <string name="preview_attachment">"Vista previa"</string>
+    <!-- Read email screen, button name. Save an attachment to sd card. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="save_attachment"/>
+    <string name="save_attachment">"Guardar"</string>
+    <!-- Read email screen, button name. Redownload an attachment [CHAR LIMIT=20]-->
+    <add-resource type="string" name="download_again"/>
+    <string name="download_again">"Volver a descargar"</string>
+    <!-- Remove this attachment [CHAR LIMIT=50] -->
+    <add-resource type="string" name="remove_attachment_desc"/>
+    <string name="remove_attachment_desc">"Eliminar el archivo adjunto <xliff:g id="ATTACHMENTNAME">%s</xliff:g>"</string>
+    <!-- Dialog box title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="more_info_attachment"/>
+    <string name="more_info_attachment">"Información"</string>
+    <!-- Dialog box message, displayed when we could not view an attachment. [CHAR LIMIT=200]-->
+    <add-resource type="string" name="no_application_found"/>
+    <string name="no_application_found">"Ninguna aplicación puede abrir este archivo adjunto."</string>
+    <!-- Dialog box title. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="fetching_attachment"/>
+    <string name="fetching_attachment">"Extrayendo archivo adjunto..."</string>
+    <!-- Dialog box message. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"Espera, por favor..."</string>
+    <!-- Displayed in the conversation view, next to a file's size and type. Status of a saved attachment. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="saved"/>
+    <string name="saved">"Guardado, <xliff:g id="SIZE">%s</xliff:g>"</string>
+    <!-- Displayed in the conversation view. Status of a failed attachment. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="download_failed"/>
+    <string name="download_failed">"Error, toca para reintentar"</string>
+    <!-- Photo view screen, button name. Save all attachments to sd card. [CHAR LIMIT=17] -->
+    <add-resource type="string" name="menu_photo_save_all"/>
+    <string name="menu_photo_save_all">"Guardar todo"</string>
+    <!-- Photo view screen, button name. Share attachment. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="menu_photo_share"/>
+    <string name="menu_photo_share">"Compartir"</string>
+    <!-- Photo view screen, button name. Share all attachments. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_share_all"/>
+    <string name="menu_photo_share_all">"Compartir todo"</string>
+    <!-- Photo view screen, button name. Print photo. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_print"/>
+    <string name="menu_photo_print">"Imprimir"</string>
+    <!-- Displayed in the action bar as a subtitle. Save in progress. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="saving"/>
+    <string name="saving">"Guardando..."</string>
+
+    <!-- Webview Context Menu Strings -->
+    <!-- Title of dialog for choosing which activity to share a link with. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="choosertitle_sharevia"/>
+    <string name="choosertitle_sharevia">"Compartir a través de"</string>
+    <!-- Menu item to open a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_openlink"/>
+    <string name="contextmenu_openlink">"Abrir en el navegador"</string>
+    <!-- Menu item to copy the selection  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copy"/>
+    <string name="contextmenu_copy">"Copiar"</string>
+    <!-- Menu item to copy a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copylink"/>
+    <string name="contextmenu_copylink">"Copiar URL de enlace"</string>
+    <!-- Menu item to view an image  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_view_image"/>
+    <string name="contextmenu_view_image">"Ver imagen"</string>
+    <!-- Menu item to dial a number  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_dial_dot"/>
+    <string name="contextmenu_dial_dot">"Marcar..."</string>
+    <!-- Menu item to send an SMS  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sms_dot"/>
+    <string name="contextmenu_sms_dot">"SMS..."</string>
+    <!-- Menu item to add a contact  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_add_contact"/>
+    <string name="contextmenu_add_contact">"Añadir contacto"</string>
+    <!-- Menu item to send an email [CHAR LIMIT=50] -->
+    <add-resource type="string" name="contextmenu_send_mail"/>
+    <string name="contextmenu_send_mail">"Enviar correo"</string>
+    <!-- Menu item to show a map  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_map"/>
+    <string name="contextmenu_map">"Mapa"</string>
+    <!-- Menu item to share link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sharelink"/>
+    <string name="contextmenu_sharelink">"Compartir enlace"</string>
+
+    <!-- Browse list item strings -->
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description"/>
+    <string name="content_description">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> sobre <xliff:g id="SUBJECT">%3$s</xliff:g>, <xliff:g id="SNIPPET">%4$s</xliff:g> el <xliff:g id="DATE">%5$s</xliff:g>, <xliff:g id="READSTATE">%6$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today"/>
+    <string name="content_description_today">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> sobre <xliff:g id="SUBJECT">%3$s</xliff:g>, <xliff:g id="SNIPPET">%4$s</xliff:g> a las <xliff:g id="TIME">%5$s</xliff:g>, <xliff:g id="READSTATE">%6$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description_with_folders"/>
+    <string name="content_description_with_folders">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> sobre <xliff:g id="SUBJECT">%3$s</xliff:g>, <xliff:g id="SNIPPET">%4$s</xliff:g> el <xliff:g id="DATE">%5$s</xliff:g>, <xliff:g id="READSTATE">%6$s</xliff:g>, etiquetas: <xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today_with_folders"/>
+    <string name="content_description_today_with_folders">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g> sobre <xliff:g id="SUBJECT">%3$s</xliff:g>, <xliff:g id="SNIPPET">%4$s</xliff:g> a las <xliff:g id="TIME">%5$s</xliff:g>, <xliff:g id="READSTATE">%6$s</xliff:g>, etiquetas: <xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="read_string"/>
+    <string name="read_string">"conversación leída"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was not read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unread_string"/>
+    <string name="unread_string">"conversación no leída"</string>
+    <!-- Formatting string. If the subject contains the tag of a mailing-list (text surrounded with
+    return the subject with that tag ellipsized, e.g. "[android-gmail-team] Hello" -> "[andr...] Hello" [CHAR LIMIT=100] -->
+    <add-resource type="string" name="filtered_tag"/>
+    <string name="filtered_tag">" [<xliff:g id="tag">%1$s</xliff:g>]<xliff:g id="subject">%2$s</xliff:g>"</string>
+    <!-- Displayed in conversation list item in the form of "badge subject" [CHAR LIMIT=7] -->
+    <add-resource type="string" name="badge_and_subject"/>
+    <string name="badge_and_subject">"<xliff:g id="ID_1">%1$s</xliff:g> <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+    <!-- Displayed in browse list item when the list item is a draft message instead of showing the subject [CHAR LIMIT=100] -->
+    <add-resource type="plurals" name="draft"/>
+    <plurals name="draft">
+        <!-- Title of the screen when there is exactly one draft -->
+        <item quantity="one">"Borrador"</item>
+        <!-- Title of the screen when there are more than one draft -->
+        <item quantity="other">"Borradores"</item>
+    </plurals>
+    <!-- Message displayed in a browse list item for one second when message is being sent [CHAR LIMIT=20]-->
+    <add-resource type="string" name="sending"/>
+    <string name="sending">"Enviando..."</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to sent and is being retried [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_retrying"/>
+    <string name="message_retrying">"Reintentando..."</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to send [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_failed"/>
+    <string name="message_failed">"Error"</string>
+    <!-- Message displayed in a browse list item for one second after a send failed [CHAR LIMIT=26]-->
+    <add-resource type="string" name="send_failed"/>
+    <string name="send_failed">"No se ha enviado el mensaje."</string>
+    <!-- String used to represent "me" when used as an object pronoun. This string is used when
+         showing the list of recipients of a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_object_pronoun"/>
+    <string name="me_object_pronoun">"mí"</string>
+    <!-- String used to represent "me"/"I" when used as an subject pronoun. This string is use when
+         showing the list of senders for a conversation list item. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_subject_pronoun"/>
+    <string name="me_subject_pronoun">"mí"</string>
+
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Dialog message to confirm deletion of one conversation -->
+        <item quantity="one">"¿Eliminar esta conversación?"</item>
+        <!-- Dialog message to confirm deletion of several conversations -->
+        <item quantity="other">"¿Eliminar estas <xliff:g id="COUNT">%1$d</xliff:g> conversaciones?"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_archive_conversation"/>
+    <plurals name="confirm_archive_conversation">
+        <!-- Dialog message to confirm archival of one conversation -->
+        <item quantity="one">"¿Archivar esta conversación?"</item>
+        <!-- Dialog message to confirm archival of several conversations -->
+        <item quantity="other">"¿Archivar estas <xliff:g id="COUNT">%1$d</xliff:g> conversaciones?"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_discard_drafts_conversation"/>
+    <plurals name="confirm_discard_drafts_conversation">
+        <!-- Dialog message to confirm discarding a single draft message [CHAR LIMIT=50] -->
+        <item quantity="one">"¿Quieres descartar este mensaje?"</item>
+        <!-- Dialog message to confirm discarding many draft messages [CHAR LIMIT=50] -->
+        <item quantity="other">"¿Quieres descartar estos <xliff:g id="COUNT">%1$d</xliff:g> mensajes?"</item>
+    </plurals>
+
+    <!-- Dialog text: confirm discard -->
+    <add-resource type="string" name="confirm_discard_text"/>
+    <string name="confirm_discard_text">"¿Quieres descartar este mensaje?"</string>
+
+    <!-- Conversation list shared between the Activity and Widget -->
+    <!-- Displayed in the middle of the screen when conversations are being loaded [CHAR LIMIT 100]-->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"Cargando\u2026"</string>
+    <!-- Displayed in the middle of the screen when an inbox is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_inbox"/>
+    <string name="empty_inbox">"¡Ya has terminado! Disfruta del día."</string>
+    <!-- Displayed in the middle of the screen when a search returns no results [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_search"/>
+    <string name="empty_search">"¡Vaya! No hemos encontrado nada para \"<xliff:g id="SEARCH_QUERY">%1$s</xliff:g>\"."</string>
+    <!-- Displayed in the middle of the screen when the spam folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_spam_folder"/>
+    <string name="empty_spam_folder">"Enhorabuena, no tienes spam."</string>
+    <!-- Displayed in the middle of the screen when the trash folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_trash_folder"/>
+    <string name="empty_trash_folder">"La papelera está vacía. Gracias por reciclar."</string>
+    <!-- Displayed in the middle of the screen when a folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_folder"/>
+    <string name="empty_folder">"No hay correo en esta carpeta."</string>
+    <!-- Displayed in the middle of the screen when a folder is loading [CHAR LIMIT 100]-->
+    <add-resource type="string" name="getting_messages"/>
+    <string name="getting_messages">"Obteniendo tus mensajes"</string>
+
+    <!-- Undo bar strings -->
+    <!-- Menu item: undo latest action [CHAR LIMIT=12]-->
+    <add-resource type="string" name="undo"/>
+    <string name="undo">"Deshacer"</string>
+
+    <add-resource type="plurals" name="conversation_unstarred"/>
+    <plurals name="conversation_unstarred">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> conversación sin destacar"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> conversaciones sin destacar"</item>
+    </plurals>
+
+    <!-- The following are shown as a toast after the operation has completed -->
+    <add-resource type="plurals" name="conversation_muted"/>
+    <plurals name="conversation_muted">
+        <!-- Displayed while muting one conversation -->
+        <item quantity="one">"Se ha silenciado <xliff:g id="COUNT">%1$d</xliff:g> conversación"</item>
+        <!-- Displayed while muting several conversations -->
+        <item quantity="other">"Se han silenciado <xliff:g id="COUNT">%1$d</xliff:g> conversaciones"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_spammed"/>
+    <plurals name="conversation_spammed">
+        <!-- Displayed while reporting one conversation as spam -->
+        <item quantity="one">"Se ha informado de &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversación como spam"</item>
+        <!-- Displayed while reporting several conversations as spam -->
+        <item quantity="other">"Se ha informado de &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversaciones como spam"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_spam"/>
+    <plurals name="conversation_not_spam">
+        <!-- Displayed while reporting one conversation as not spam -->
+        <item quantity="one">"Se ha informado de que &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversación no es spam"</item>
+        <!-- Displayed while reporting several conversations as not spam -->
+        <item quantity="other">"Se ha informado de que &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversaciones no son spam"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_important"/>
+    <plurals name="conversation_not_important">
+        <!-- Displayed while reporting one conversation as not important in the important folder -->
+        <item quantity="one">"Se ha marcado <xliff:g id="COUNT">%1$d</xliff:g> conversación como no importante"</item>
+        <!-- Displayed while reporting several conversations as not important in the important folder -->
+        <item quantity="other">"Se han marcado <xliff:g id="COUNT">%1$d</xliff:g> conversaciones como no importantes"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_phished"/>
+    <plurals name="conversation_phished">
+        <!-- Displayed while reporting one conversation as phishing -->
+        <item quantity="one">"Se ha denunciado &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversación por suplantación de identidad"</item>
+        <!-- Displayed while reporting several conversations as phishing -->
+        <item quantity="other">"Se han denunciado &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; conversaciones por suplantación de identidad"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_archived"/>
+    <plurals name="conversation_archived">
+        <!-- Displayed while archiving one conversation -->
+        <item quantity="one">"Se ha archivado <xliff:g id="COUNT">%1$d</xliff:g> conversación"</item>
+        <!-- Displayed while archiving multiple conversations -->
+        <item quantity="other">"Se han archivado <xliff:g id="COUNT">%1$d</xliff:g> conversaciones"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_deleted"/>
+    <plurals name="conversation_deleted">
+        <!-- Displayed while deleting one conversation -->
+        <item quantity="one">"Se ha eliminado <xliff:g id="COUNT">%1$d</xliff:g> conversación"</item>
+        <!-- Displayed while deleting multiple conversations -->
+        <item quantity="other">"Se han eliminado <xliff:g id="COUNT">%1$d</xliff:g> conversaciones"</item>
+    </plurals>
+    <!-- Displayed when swiping away a single conversation to delete it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="deleted"/>
+    <string name="deleted">"Eliminada"</string>
+    <!-- Displayed when swiping away a single conversation to archive it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="archived"/>
+    <string name="archived">"Archivada"</string>
+    <!-- Displayed when swiping away a single conversation to remove the currently displayed folder [CHAR LIMIT=80] -->
+    <add-resource type="string" name="folder_removed"/>
+    <string name="folder_removed">"Eliminado de <xliff:g id="FOLDERNAME">%1$s</xliff:g>"</string>
+
+    <add-resource type="plurals" name="conversation_folder_changed"/>
+    <plurals name="conversation_folder_changed">
+        <!-- Displayed while adding and removing folders to a single conversation. [CHAR LIMIT=100] -->
+        <item quantity="one">"Se ha cambiado la carpeta"</item>
+        <!-- Displayed while adding and removing folders to multiple conversations. [CHAR LIMIT=100] -->
+        <item quantity="other">"Se han cambiado las carpetas"</item>
+    </plurals>
+
+    <!-- Displayed after moving a conversation to a different folder. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="conversation_folder_moved"/>
+    <string name="conversation_folder_moved">"Movida a <xliff:g id="FOLDERNAME">%1$s</xliff:g>"</string>
+
+    <!-- Search Results: Text for header that is shown above search results [CHAR LIMIT=30] -->
+    <add-resource type="string" name="search_results_header"/>
+    <string name="search_results_header">"Resultados"</string>
+    <!-- Toast shown when the user taps the search hard key when viewing an account that does not support search [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_unsupported"/>
+    <string name="search_unsupported">"Esta cuenta no admite la función de búsqueda."</string>
+    <!-- Accessibility description for the search suggestion item [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_suggestion_desc"/>
+    <string name="search_suggestion_desc">"Sugerencia: <xliff:g id="SUGGESTION">%s</xliff:g>"</string>
+
+    <!-- Conversation view -->
+    <!--  Text anchor for control to add / change labels on a conversation when
+          viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_label"/>
+    <string name="add_label">"Añadir carpeta"</string>
+
+    <!-- New Message notification text that appears over conversation view on incoming messages. [CHAR LIMIT=40] -->
+    <add-resource type="plurals" name="new_incoming_messages"/>
+    <plurals name="new_incoming_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> mensaje nuevo"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> mensajes nuevos"</item>
+    </plurals>
+
+    <!-- Conversation message header strings -->
+    <!--  Text for showing the date and expanding recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="date_and_view_details"/>
+    <string name="date_and_view_details">"<xliff:g id="DATE">%1$s</xliff:g> &lt;a href=\'http://www.example.com\'&gt;Detalles&lt;/a&gt;"</string>
+    <!--  Text for collapsing recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="hide_details"/>
+    <string name="hide_details">"Ocultar detalles"</string>
+    <!-- Shown to display the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_message_header"/>
+    <string name="to_message_header">"para <xliff:g id="RECIPIENTS">%1$s</xliff:g>"</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_header_for_recipient_summary"/>
+    <string name="bcc_header_for_recipient_summary">"Cco: "</string>
+    <!--  Icon name for showing sender contact information. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string"/>
+    <string name="contact_info_string">"Mostrar información de contacto de <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!--  Icon name for showing sender contact information when we cannot get sender info. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string_default"/>
+    <string name="contact_info_string_default">"Mostrar información de contacto"</string>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target. Tapping on this touch target
+         expands these messages. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="show_messages_read"/>
+    <plurals name="show_messages_read">
+        <item quantity="other">"Expandir <xliff:g id="COUNT">%1$d</xliff:g> mensajes anteriores"</item>
+    </plurals>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target to announce that the messages
+         have been expanded. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="super_collapsed_block_accessibility_announcement"/>
+    <plurals name="super_collapsed_block_accessibility_announcement">
+        <item quantity="other">"Se han expandido <xliff:g id="COUNT">%1$d</xliff:g> mensajes anteriores"</item>
+    </plurals>
+    <!-- Shown to display the from address of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from_heading"/>
+    <string name="from_heading">"De:"</string>
+    <!-- Shown to display the reply to address of the message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="replyto_heading"/>
+    <string name="replyto_heading">"Responder a:"</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading"/>
+    <string name="to_heading">"Para: "</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading_no_space"/>
+    <string name="to_heading_no_space">"Para:"</string>
+    <!-- Shown to display the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc_heading"/>
+    <string name="cc_heading">"Cc:"</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_heading"/>
+    <string name="bcc_heading">"Cco:"</string>
+    <!-- Shown to display the date of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="date_heading"/>
+    <string name="date_heading">"Fecha:"</string>
+    <!-- Displayed above an HTML message to show the images in that message [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_images"/>
+    <string name="show_images">"Mostrar imágenes"</string>
+    <!-- Displayed above an HTML message to always show images in messages from that sender [CHAR LIMIT=40] -->
+    <add-resource type="string" name="always_show_images"/>
+    <string name="always_show_images">"Mostrar siempre imágenes de este remitente"</string>
+    <!-- Shown in a toast to acknowledge always showing images for a sender [CHAR LIMIT=100] -->
+    <add-resource type="string" name="always_show_images_toast"/>
+    <string name="always_show_images_toast">"Las imágenes de este remitente se mostrarán automáticamente."</string>
+    <!-- Display format of an email recipient, displayed in expanded message details [CHAR LIMIT=10] -->
+    <add-resource type="string" name="address_display_format"/>
+    <string name="address_display_format">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g>"</string>
+    <!-- Display format of an email sender if the message has a via domain set, displayed in expanded message details [CHAR LIMIT=15] -->
+    <add-resource type="string" name="address_display_format_with_via_domain"/>
+    <string name="address_display_format_with_via_domain">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g> via <xliff:g id="via_domain">%3$s</xliff:g>"</string>
+    <!-- Displayed for one second after user saves message as draft [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_saved"/>
+    <string name="message_saved">"Mensaje guardado como borrador"</string>
+    <!-- Displayed for one second while message is being sent [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"Enviando mensaje..."</string>
+    <!-- Displayed for one second after trying to send with invalid recipients [CHAR LIMIT=50]-->
+    <add-resource type="string" name="invalid_recipient"/>
+    <string name="invalid_recipient">"La dirección <xliff:g id="WRONGEMAIL">%s</xliff:g> no es válida."</string>
+    <!-- Shown in HTML to allow the user to see quoted text; should match Gmail web UI. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_elided"/>
+    <string name="show_elided">"Mostrar texto citado"</string>
+    <!-- Shown in HTML to allow the user to hide quoted text; should match Gmail web UI. 25BC is Unicode for a downward-pointing triangle. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_elided"/>
+    <string name="hide_elided">"▼ Ocultar texto citado"</string>
+    <!-- Shown as a heading in message view when a message contains a calendar invite [CHAR LIMIT=30]-->
+    <add-resource type="string" name="message_invite_title"/>
+    <string name="message_invite_title">"Invitación de calendario"</string>
+    <!-- Shown as a button label in message view to launch calendar to see this invite [CHAR LIMIT=40]-->
+    <add-resource type="string" name="message_invite_calendar_view"/>
+    <string name="message_invite_calendar_view">"Ver en calendario"</string>
+    <!-- Shown as a text label in message view describing the choices of whether to attend an invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_label_attending"/>
+    <string name="message_invite_label_attending">"¿Asistirás?"</string>
+    <!-- Shown as a button label in message view to accept a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_accept"/>
+    <string name="message_invite_accept">"Sí"</string>
+    <!-- Shown as a button label in message view to give a tentative response to a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_tentative"/>
+    <string name="message_invite_tentative">"Quizás"</string>
+    <!-- Shown as a button label in message view to decline a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_decline"/>
+    <string name="message_invite_decline">"No"</string>
+
+    <!-- An enumeration comma for separating items in lists. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=20]-->
+    <add-resource type="string" name="send_anyway"/>
+    <string name="send_anyway">"Enviar igualmente"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"Aceptar"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"Listo"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Cancelar"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="clear"/>
+    <string name="clear">"Borrar"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="next"/>
+    <string name="next">"Siguiente"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="previous"/>
+    <string name="previous">"Anterior"</string>
+
+    <!-- Sync status errors. Please do not change the order [CHAR LIMIT=100] -->
+    <add-resource type="array" name="sync_status"/>
+    <string-array name="sync_status">
+        <item>"Sin errores"</item>
+        <item>"Sin conexión"</item>
+        <item>"Error al iniciar sesión"</item>
+        <item>"Error de seguridad"</item>
+        <item>"No se ha podido sincronizar"</item>
+        <item>"Error interno"</item>
+        <item>"Error del servidor"</item>
+    </string-array>
+
+    <!-- Widget strings -->
+    <!-- Displayed when user adds a new widget. Tapping on the widget in this
+          mode will bring user to the account selection screen [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure"/>
+    <string name="tap_to_configure">"Tocar para configurar"</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder [CHAR LIMIT=60] -->
+    <add-resource type="string" name="non_synced_folder_description"/>
+    <string name="non_synced_folder_description">"Para ver conversaciones, sincroniza esta carpeta."</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder.  This is the text of the
+         button that will allow the user to configure sync for the folder [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure_folder_sync"/>
+    <string name="tap_to_configure_folder_sync">"Sincronizar carpeta"</string>
+
+    <!-- Displayed in widget when unread count > 99. [CHAR LIMIT=4] -->
+    <add-resource type="string" name="widget_large_unread_count"/>
+    <string name="widget_large_unread_count">%d+</string>
+
+    <!-- Displayed when there are >99 unseen messages, see:unseen_count [CHAR LIMIT=3] -->
+    <add-resource type="string" name="large_unseen_count"/>
+    <string name="large_unseen_count">"+<xliff:g id="COUNT">%d</xliff:g>"</string>
+
+    <!-- Displayed when there are unseen messages [CHAR LIMIT=3] [BACKUP_MESSAGE_ID: 3377106103106345367] -->
+    <add-resource type="string" name="unseen_count"/>
+    <string name="unseen_count">"<xliff:g id="COUNT">%d</xliff:g> nuevos"</string>
+
+    <add-resource type="plurals" name="actionbar_unread_messages"/>
+    <plurals name="actionbar_unread_messages">
+        <!-- String for the actionbar subtitle when messages are unread [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> no leídos"</item>
+    </plurals>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default Inbox. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"Ver más conversaciones"</string>
+
+    <!-- Displayed while we load a conversation. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="loading_conversation"/>
+    <string name="loading_conversation">"Cargando..."</string>
+
+    <!-- Name of the Mailboxes activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_mailbox_selection"/>
+    <string name="activity_mailbox_selection">"Seleccionar cuenta"</string>
+
+    <!-- Name of the Folders activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_folder_selection"/>
+    <string name="activity_folder_selection">"Seleccionar carpeta"</string>
+
+    <!-- Name of the Folder shortcut widget. Should use "Email" to refer to the app. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="folder_shortcut_widget_label"/>
+    <string name="folder_shortcut_widget_label">"Carpeta de correo"</string>
+
+    <!-- Folder selection dialog -->
+    <!-- Title for change folders dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="change_folders_selection_dialog_title"/>
+    <string name="change_folders_selection_dialog_title">"Cambiar carpetas"</string>
+    <!-- Title for move to dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="move_to_selection_dialog_title"/>
+    <string name="move_to_selection_dialog_title">"Mover a"</string>
+    <!-- Shown in light gray in the Search box when no text has been entered [CHAR LIMIT=20]-->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"Buscar"</string>
+    <add-resource type="string" name="search_input_limit_number"/>
+    <string name="search_input_limit_number">"Límite de número de entrada de palabras de búsqueda de 40"</string>
+    <!-- Search Results: Text for status of the search when the results are completely loaded [CHAR LIMIT=10] -->
+    <add-resource type="string" name="search_results_loaded"/>
+    <string name="search_results_loaded"><xliff:g id="searchCount">%1$d</xliff:g></string>
+    <!-- Voice search is not supported on this device [CHAR LIMIT=100] -->
+    <add-resource type="string" name="voice_search_not_supported"/>
+    <string name="voice_search_not_supported">"Este dispositivo no es compatible con la búsqueda por voz."</string>
+    <!-- Description of the back button [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_back_desc"/>
+    <string name="search_back_desc">"Cerrar la búsqueda"</string>
+    <!-- Description of the voice icon [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_voice_desc"/>
+    <string name="search_voice_desc">"Iniciar búsqueda por voz"</string>
+    <!-- Description of the clear icon (clears the current input text in the search bar) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_clear_desc"/>
+    <string name="search_clear_desc">"Borrar el texto de la búsqueda"</string>
+
+    <!-- Shown in conversation list footer when application cannot make a connection [CHAR LIMIT=20]-->
+    <add-resource type="string" name="network_error"/>
+    <string name="network_error">"Sin conexión"</string>
+    <!-- Button at bottom of conversation list screen if last attempt to load conversations failed [CHAR LIMIT=20]-->
+    <add-resource type="string" name="retry"/>
+    <string name="retry">"Reintentar"</string>
+    <!-- Button at bottom of conversation list screen if the folder for which contents are being shown supports loading more on demand [CHAR LIMIT=20]-->
+    <add-resource type="string" name="load_more"/>
+    <string name="load_more">"Cargar más"</string>
+
+    <!-- Text for dummy attachments to load the actual attachment. This is not an ideal string, but it's too late to add a new string and get it translated -->
+    <add-resource type="string" name="load_attachment"/>
+    <string name="load_attachment">@string/load_more</string>
+
+    <!-- Shortcut strings -->
+    <!-- Title for shortcut naming dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="shortcut_name_title"/>
+    <string name="shortcut_name_title">"Asignar nombre a acceso directo de carpeta"</string>
+
+    <!-- Wait fragment strings -->
+    <!-- Displayed in title bar during the initial sync  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="wait_for_sync_title"/>
+    <string name="wait_for_sync_title">"Esperando para sincronizar..."</string>
+    <!-- Title for the screen displayed during the initial sync [CHAR LIMIT=100]  -->
+    <add-resource type="string" name="not_synced_title"/>
+    <string name="not_synced_title">"Cuenta no sincronizada"</string>
+    <!-- Displayed in the middle of the screen during the initial sync [CHAR LIMIT=300]-->
+    <add-resource type="string" name="wait_for_manual_sync_body"/>
+    <string name="wait_for_manual_sync_body">"Esta cuenta no está configurada para sincronizarse de forma automática.\nToca "<b>"Sincronizar ahora"</b>" para sincronizar el correo una vez o selecciona "<b>"Cambiar ajustes de sincronización"</b>" para configurar la sincronización automática del correo en esta cuenta."</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will sync users mail for the selected account. [CHAR LIMIT=12]  -->
+    <add-resource type="string" name="manual_sync"/>
+    <string name="manual_sync">"Sincronizar ahora"</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will open sync setting screen for accounts. [CHAR LIMIT=30]  -->
+    <add-resource type="string" name="change_sync_settings"/>
+    <string name="change_sync_settings">"Cambiar ajustes de sincronización"</string>
+
+    <!-- Displayed when we could not load a photo in the photo viewer. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="photo_load_failed"/>
+    <string name="photo_load_failed">"Error al cargar la imagen"</string>
+
+    <!--  The move message / change labels action can't be taken because the selected messages
+        come from different accounts -->
+    <add-resource type="string" name="cant_move_or_change_labels"/>
+    <string name="cant_move_or_change_labels">"No se puede mover porque la selección contiene varias cuentas."</string>
+
+    <!-- Format string used when displaying a summary in a message summary in list notification that was triggered by several new conversations.
+         Extra space between sender and subject is intentional.  [CHAR LIMIT=120] -->
+    <add-resource type="string" name="multiple_new_message_notification_item"/>
+    <string name="multiple_new_message_notification_item"><b>"<xliff:g id="SENDER">%1$s</xliff:g>"</b>"   <xliff:g id="SUBJECT">%2$s</xliff:g>"</string>
+
+    <!-- Format string used when displaying the big text of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_big_text"/>
+    <string name="single_new_message_notification_big_text">"<xliff:g id="SUBJECT">%1$s</xliff:g>\n<xliff:g id="SNIPPET">%2$s</xliff:g>"</string>
+
+    <!-- Displayed in a message subheading. Ignore the current spam warning. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="ignore_spam_warning"/>
+    <string name="ignore_spam_warning">"Ignorar. Confío en el mensaje."</string>
+
+    <!-- Displayed in the message heading. Shown if the message was sent via another domain. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="via_domain"/>
+    <string name="via_domain">"vía <xliff:g id="VIADOMAIN">%1$s</xliff:g>"</string>
+
+    <!-- Button text for the button to click to have the user sign in again or adjust their credentials. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="signin"/>
+    <string name="signin">"Iniciar sesión"</string>
+    <!-- Button text for the button to click for more information. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="info"/>
+    <string name="info">"Información"</string>
+    <!-- Button text for the button to click to report feedback. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="report"/>
+    <string name="report">"Informar"</string>
+    <!-- Button text for the button to click to show newly received messages in the active thread. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="show"/>
+    <string name="show">"Mostrar"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sync_error"/>
+    <string name="sync_error">"Error al sincronizar"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="sync_error_message"/>
+    <string name="sync_error_message">"No hay suficiente espacio en el dispositivo para sincronizar tu correo"</string>
+    <!-- Button text for the button to click to go to the manage storage settings screen. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="storage"/>
+    <string name="storage">"Almacenamiento"</string>
+
+    <!-- Token used as a divider between senders -->
+    <add-resource type="string" name="senders_split_token"/>
+    <string name="senders_split_token">,\u00A0</string>
+    <add-resource type="string" name="draft_count_format"/>
+    <string name="draft_count_format">"\u00A0(<xliff:g id="count">%1$s</xliff:g>)"</string>
+
+    <!-- String used in the FolderListFragment to mark the start of user-defined folders -->
+    <add-resource type="string" name="all_folders_heading"/>
+    <string name="all_folders_heading">"Todas las carpetas"</string>
+    <!-- String used in the FolderListFragment to mark the start of recent folders -->
+    <add-resource type="string" name="recent_folders_heading"/>
+    <string name="recent_folders_heading">"Carpetas recientes"</string>
+
+    <!-- Dialog title when showing message header details in a popup window. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"Detalles del mensaje"</string>
+
+    <!-- General preference: Label of the setting for the direction to move to
+         when deleting the current message.
+         Options contain "newer message","older message", etc. [CHAR LIMIT=32] -->
+    <add-resource type="string" name="preference_advance_to_title"/>
+    <string name="preference_advance_to_title">"Avance automático"</string>
+
+    <!-- The auto-advance modes -->
+    <add-resource type="array" name="prefEntries_autoAdvance"/>
+    <string-array name="prefEntries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"Más reciente"</item>
+        <!-- Older conversation -->
+        <item>"Más antigua"</item>
+        <!-- Conversation list -->
+        <item>"Lista de conversaciones"</item>
+    </string-array>
+
+    <!-- Description for each auto-advance option to display after the user has picked one -->
+    <!-- The entries here must correspond to the entries in prefEntries_autoAdvance [CHAR LIMIT=60] -->
+    <add-resource type="array" name="prefSummaries_autoAdvance"/>
+    <string-array name="prefSummaries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"Mostrar conversación más reciente después de eliminar"</item>
+        <!-- Older conversation -->
+        <item>"Mostrar conversación más antigua después de eliminar"</item>
+        <!-- Conversation list -->
+        <item>"Mostrar lista de conversaciones después de eliminar"</item>
+    </string-array>
+
+    <!-- Dialog title for the auto-advance list -->
+    <add-resource type="string" name="prefDialogTitle_autoAdvance"/>
+    <string name="prefDialogTitle_autoAdvance">"Ir a"</string>
+
+    <!-- Settings screen, title of "Restore default for "Show pictures"" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_title"/>
+    <string name="clear_display_images_whitelist_title">"Borrar aprobaciones de imágenes"</string>
+
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear picture approvals" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_title"/>
+    <string name="clear_display_images_whitelist_dialog_title">"¿Borrar aprobaciones de imágenes?"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when tapping
+    "Clear picture approvals" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_message"/>
+    <string name="clear_display_images_whitelist_dialog_message">"Ya no se mostrarán imágenes de remitentes que se hayan permitido anteriormente."</string>
+
+    <!-- Message shown in toast when the user taps "Restore default for "Show pictures"" in Gmail general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="sender_whitelist_cleared"/>
+    <string name="sender_whitelist_cleared">"Las imágenes de los mensajes no se mostrarán automáticamente."</string>
+
+    <!-- Settings screen, name of the setting that lets the user choose their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_title"/>
+    <string name="preferences_signature_title">"Firma"</string>
+    <!-- Settings screen, title of the dialog that lets the user configure their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_dialog_title"/>
+    <string name="preferences_signature_dialog_title">"Firma"</string>
+    <!-- Settings screen, setting summary text when no signature set [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferences_signature_summary_not_set"/>
+    <string name="preferences_signature_summary_not_set">"Sin configurar"</string>
+
+    <!-- Notification action for replying to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply"/>
+    <string name="notification_action_reply">"Responder"</string>
+    <!-- Notification action for replying-all to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply_all"/>
+    <string name="notification_action_reply_all">"Responder a todos"</string>
+    <!-- Notification action for archiving a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_archive"/>
+    <string name="notification_action_archive">"Archivar"</string>
+    <!-- Notification action for removing a label from a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_remove_label"/>
+    <string name="notification_action_remove_label">"Eliminar etiqueta"</string>
+    <!-- Notification action for deleting a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_delete"/>
+    <string name="notification_action_delete">"Eliminar"</string>
+
+    <!-- Notification undo text after archiving a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_archive"/>
+    <string name="notification_action_undo_archive">"Archivado"</string>
+    <!-- Notification undo text after removing a label from a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_remove_label"/>
+    <string name="notification_action_undo_remove_label">"Etiqueta eliminada"</string>
+    <!-- Notification undo text after deleting a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_delete"/>
+    <string name="notification_action_undo_delete">"Eliminado"</string>
+
+    <!-- Regex that specifies veiled addresses. These are all empty because this is disabled currently. -->
+    <add-resource type="string" name="veiled_address"/>
+    <string name="veiled_address"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text"/>
+    <string name="veiled_alternate_text"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text_unknown_person"/>
+    <string name="veiled_alternate_text_unknown_person"></string>
+    <!-- Summary string to be shown instead of a veiled recipient. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_summary_unknown_person"/>
+    <string name="veiled_summary_unknown_person"></string>
+
+    <!-- Notification ticker text for per-label notification [CHAR LIMIT=30]-->
+    <add-resource type="string" name="label_notification_ticker"/>
+    <string name="label_notification_ticker">"<xliff:g id="label">%s</xliff:g>: <xliff:g id="notification">%s</xliff:g>"</string>
+
+    <!-- Notification message to the user upon new messages for a conversation. [CHAR LIMIT=120] -->
+    <add-resource type="plurals" name="new_messages"/>
+    <plurals name="new_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> mensaje nuevo"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> mensajes nuevos"</item>
+    </plurals>
+
+    <!-- Format string used when displaying the title of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_title"/>
+    <string name="single_new_message_notification_title"><xliff:g id="sender">%1$s</xliff:g>: <xliff:g id="subject">%2$s</xliff:g></string>
+
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"Silencio"</string>
+
+    <!-- Settings screen, preference name for archive vs. delete [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preference_removal_action_title"/>
+    <string name="preference_removal_action_title">"Acción predeterminada"</string>
+    <!-- Options to select from for whether to have archive or delete as the remove action [CHAR LIMIT=50] -->
+    <add-resource type="array" name="prefEntries_removal_action"/>
+    <string-array name="prefEntries_removal_action">
+        <item>"Archivar"</item>
+        <item>"Eliminar"</item>
+    </string-array>
+    <!-- Description of currently selected option of whether to use archive or delete as remove action [CHAR LIMIT=200] -->
+    <add-resource type="array" name="prefSummaries_removal_action_summary"/>
+    <string-array name="prefSummaries_removal_action_summary">
+        <item>"Archivar"</item>
+        <item>"Eliminar"</item>
+    </string-array>
+    <!-- Dialog title for the choosing whether to use archive or delete as remove action [CHAR LIMIT=150] -->
+    <add-resource type="string" name="prefDialogTitle_removal_action"/>
+    <string name="prefDialogTitle_removal_action">"Acción predeterminada"</string>
+
+    <!--  Settings screen, Reply to all default setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_default_reply_all_title"/>
+    <string name="preferences_default_reply_all_title">"Responder a todos"</string>
+    <!--  Settings screen, Reply to all default setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_default_reply_all_summary_impl"/>
+    <string name="preferences_default_reply_all_summary_impl">"Usar como opción predeterminada para responder mensajes"</string>
+
+    <!-- Preference name for swipe actions preference [CHAR LIMIT=100]-->
+    <add-resource type="string" name="preference_swipe_title"/>
+    <string name="preference_swipe_title">"Acciones al deslizar el dedo"</string>
+    <!-- Preference description swiping in conversation list option [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_swipe_description"/>
+    <string name="preference_swipe_description">"En la lista de conversaciones"</string>
+
+    <!-- Preference name for whether to display sender images in conversation list [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_sender_image_title"/>
+    <string name="preference_sender_image_title">"Imagen del remitente"</string>
+    <!-- Preference description for whether to display sender image option [CHAR LIMIT=200] -->
+    <add-resource type="string" name="preference_sender_image_description"/>
+    <string name="preference_sender_image_description">"Mostrar junto al nombre en la lista de conversaciones"</string>
+
+    <!-- Conversation list screen overflow menu in trash folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_trash"/>
+    <string name="empty_trash">"Vaciar papelera"</string>
+
+    <!-- Conversation list screen overflow menu in spam folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_spam"/>
+    <string name="empty_spam">"Vaciar carpeta de spam"</string>
+
+    <!-- Dialog title for empty trash confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_trash_dialog_title"/>
+    <string name="empty_trash_dialog_title">"¿Vaciar papelera?"</string>
+
+    <!-- Dialog title for empty spam confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_spam_dialog_title"/>
+    <string name="empty_spam_dialog_title">"¿Vaciar carpeta de spam?"</string>
+
+    <!-- Dialog message for empty folder confirmation dialog [CHAR LIMIT=300] -->
+    <add-resource type="plurals" name="empty_folder_dialog_message"/>
+    <plurals name="empty_folder_dialog_message">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> mensaje se eliminará de forma permanente."</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> mensajes se eliminarán de forma permanente."</item>
+    </plurals>
+
+    <!-- Strings used for accessibility for the items that toggles the drawer action  -->
+    <add-resource type="string" name="drawer_open"/>
+    <string name="drawer_open">"Abrir control de navegación"</string>
+    <add-resource type="string" name="drawer_close"/>
+    <string name="drawer_close">"Cerrar control de navegación"</string>
+
+    <add-resource type="string" name="conversation_photo_welcome_text"/>
+    <string name="conversation_photo_welcome_text">"Toca la imagen de un remitente para seleccionar esa conversación."</string>
+
+    <add-resource type="string" name="long_press_to_select_tip"/>
+    <string name="long_press_to_select_tip">"Mantén pulsada una conversación para seleccionarla y, a continuación, toca otras conversaciones para seleccionarlas."</string>
+
+    <!-- Content description for the folder icon for nested folders. -->
+    <add-resource type="string" name="folder_icon_desc"/>
+    <string name="folder_icon_desc">"Icono de carpeta"</string>
+
+    <!--  Button, "Add account" in the preference screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="add_account"/>
+    <string name="add_account">"Añadir cuenta"</string>
+
+    <!-- Content description for the "X" image icon for dismissing a tip. This is used for spoken description of the icon when touch explore is enabled. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="dismiss_tip_hover_text"/>
+    <string name="dismiss_tip_hover_text">"Ignorar sugerencia"</string>
+
+    <!-- Tip for letting user know that their device auto-sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="auto_sync_off"/>
+    <string name="auto_sync_off">"La sincronización automática está desactivada. Toca para activarla."</string>
+
+    <!-- Tip for letting user know that their account level sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. Then prompts the user to enable sync in Gmail's
+        account settings. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="account_sync_off"/>
+    <string name="account_sync_off">"La sincronización de la cuenta está desactivada. Actívala en &lt;a href=\'http://www.example.com\'&gt;Ajustes de la cuenta.&lt;/a&gt;"</string>
+
+    <!-- Hint text that there are X number of unsent messages users
+    Outbox. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unsent_messages_in_outbox"/>
+    <string name="unsent_messages_in_outbox">"<xliff:g id="NUMBER">%1$s</xliff:g> sin enviar en <xliff:g id="OUTBOX">%2$s</xliff:g>"</string>
+
+    <!-- Title of dialog to turn auto-sync on [CHAR LIMIT=100] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_title">"¿Quieres activar la sincronización automática?"</string>
+
+    <!-- Text of dialog to turn auto-sync on [CHAR LIMIT=500] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_body">"Los cambios que realices en todas las aplicaciones y cuentas, no solo en Gmail, se sincronizarán en la Web, otros de tus dispositivos y tu <xliff:g id="PHONE_OR_TABLET">%1$s</xliff:g>."</string>
+
+    <!-- Phone (vs. tablet) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="phone"/>
+    <string name="phone">"teléfono"</string>
+
+    <!-- Tablet (vs. phone) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="tablet"/>
+    <string name="tablet">"tablet"</string>
+
+    <!-- Confirm button text for dialog to turn auto-sync on [CHAR
+         LIMIT=30] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_confirm_btn"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"Activar"</string>
+
+    <!-- Button in conversation list to show more folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_n_more_folders"/>
+    <string name="show_n_more_folders">"Mostrar <xliff:g id="NUMBER">%1$s</xliff:g> carpetas"</string>
+    <!-- Button in conversation list to hide folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_folders"/>
+    <string name="hide_folders">"Ocultar carpetas"</string>
+
+    <!-- Menu item text to that when clicked will allow a user to print an email message. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print"/>
+    <string name="print">"Imprimir"</string>
+    <!-- Menu item text to that when clicked will allow a user to print an email conversation. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_all"/>
+    <string name="print_all">"Imprimir todo"</string>
+    <!-- Number of messages in a conversation [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_messages"/>
+    <plurals name="num_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> mensaje"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> mensajes"</item>
+    </plurals>
+    <!-- Shown to display the date of the message [CHAR LIMIT=50] -->
+    <add-resource type="string" name="date_message_received_print"/>
+    <string name="date_message_received_print">"<xliff:g id="DAY_AND_DATE">%1$s</xliff:g> a las <xliff:g id="TIME">%2$s</xliff:g>"</string>
+    <!-- Shown to display the to recipient(s) of the message if the message is a draft [CHAR LIMIT=20] -->
+    <add-resource type="string" name="draft_to_heading"/>
+    <string name="draft_to_heading">"Borrador para:"</string>
+
+    <!-- Shown to display in the message header if the message is a draft and there are no "to" addresses in the draft [CHAR LIMIT=10] -->
+    <add-resource type="string" name="draft_heading"/>
+    <string name="draft_heading">"Borrador"</string>
+    <!-- Shown to inform the user that the quoted text for this message has been hidden. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="quoted_text_hidden_print"/>
+    <string name="quoted_text_hidden_print">"El texto citado está oculto"</string>
+    <!-- Number of attachments in a message [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_attachments"/>
+    <plurals name="num_attachments">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> adjunto"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> adjuntos"</item>
+    </plurals>
+    <!-- Title to display when an email has no subject. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"(sin asunto)"</string>
+
+    <!-- Action bar title for the screen to set a vacation responder (out-of-office) message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="vacation_responder"/>
+    <string name="vacation_responder">"Respuesta automática"</string>
+    <!-- Account preference: Title of the setting to set a vacation responder (out-of-office) message. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="preferences_vacation_responder_title"/>
+    <string name="preferences_vacation_responder_title">"Respuesta automática"</string>
+    <!-- Shown in vacation responder; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="vacation_responder_body_hint_text"/>
+    <string name="vacation_responder_body_hint_text">"Mensaje"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's contacts [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_contacts_text"/>
+    <string name="send_to_contacts_text">"Enviar solo a mis contactos"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's corporate domain [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_domain_text"/>
+    <string name="send_to_domain_text">"Enviar solo a <xliff:g id="DOMAIN">%1$s</xliff:g>"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the start date of the vacation responder. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_start_date_title"/>
+    <string name="pick_start_date_title">"Inicio"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_end_date_title"/>
+    <string name="pick_end_date_title">"Fin (opcional)"</string>
+    <!-- Shown to display that an end date in the vacation responder has not been set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="date_not_set"/>
+    <string name="date_not_set">"Sin configurar"</string>
+    <!-- Title text for the dialog that appears when the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=35]-->
+    <add-resource type="string" name="set_end_date_dialog_title"/>
+    <string name="set_end_date_dialog_title">"Fecha de finalización (opcional)"</string>
+    <!-- Shown as an option in a dialog to set a custom end date for a vacation responder message.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="custom_date"/>
+    <string name="custom_date">"Personalizar"</string>
+    <!-- Shown as an option in a dialog to set no end date for a vacation responder message. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="date_none"/>
+    <string name="date_none">"Ninguna"</string>
+    <!-- Asks the user whether they wish to discard changes. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="discard_changes"/>
+    <string name="discard_changes">"¿Quieres descartar los cambios?"</string>
+    <!-- Toast, vacation responder changes were saved. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_saved"/>
+    <string name="vacation_responder_changes_saved">"Cambios de respuesta automática guardados"</string>
+    <!-- Toast, vacation responder changes were discarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_discarded"/>
+    <string name="vacation_responder_changes_discarded">"Cambios de respuesta automática descartados"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is off. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_off"/>
+    <string name="vacation_responder_off">"No"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on but does not have an end date set (only a start date). [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on"/>
+    <string name="vacation_responder_on">"Sí (a partir de <xliff:g id="DATE">%1$s</xliff:g>)"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on and has both a start and end date set. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on_with_end_date"/>
+    <string name="vacation_responder_on_with_end_date">"Sí (del <xliff:g id="START_DATE">%1$s</xliff:g> al <xliff:g id="END_DATE">%2$s</xliff:g>)"</string>
+    <!-- Informs the user that both the subject and body of the vacation responder are empty
+         when they try to enable the responder. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_empty_subject_and_body_warning"/>
+    <string name="vacation_responder_empty_subject_and_body_warning">"Añadir un asunto o mensaje"</string>
+
+    <!-- Displayed below a message that has been truncated to show the full message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="view_entire_message"/>
+    <string name="view_entire_message">"Ver todo el mensaje"</string>
+
+    <!-- Toast text for error loading an eml file -->
+    <add-resource type="string" name="eml_loader_error_toast"/>
+    <string name="eml_loader_error_toast">"No se puede abrir el archivo"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_info"/>
+    <string name="help_and_info">"Ayuda"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_feedback"/>
+    <string name="help_and_feedback">"Ayuda y sugerencias"</string>
+
+    <!-- Solicit feedback string in about screen [CHAR LIMIT=50]-->
+    <add-resource type="string" name="feedback"/>
+    <string name="feedback">"Enviar sugerencias"</string>
+
+    <!-- Copyright text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="copyright"/>
+    <string name="copyright">"©<xliff:g id="YEAR">%1$d</xliff:g> Google Inc."</string>
+
+    <!-- Version text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="version"/>
+    <string name="version">"<xliff:g id="APP_NAME">%1$s</xliff:g> versión <xliff:g id="VERSION">%2$s</xliff:g>"</string>
+
+    <!-- Menu item: view a webpage about this application [CHAR LIMIT=50]; this MUST be overlayed -->
+    <add-resource type="string" name="view_app_page"/>
+    <string name="view_app_page"></string>
+
+    <!-- Menu item: print... [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_dialog"/>
+    <string name="print_dialog">"Imprimir..."</string>
+
+    <!-- Menu item: copyright information [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copyright_information"/>
+    <string name="copyright_information">"Información de copyright"</string>
+
+    <!-- Menu item: privacy policy [CHAR LIMIT=25] -->
+    <add-resource type="string" name="privacy_policy"/>
+    <string name="privacy_policy">"Política de privacidad"</string>
+
+    <!-- Menu item: open source licenses [CHAR LIMIT=25] -->
+    <add-resource type="string" name="open_source_licenses"/>
+    <string name="open_source_licenses">"Licencias software libre"</string>
+
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_yes"/>
+    <string name="reply_choice_yes">"Sí"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_no"/>
+    <string name="reply_choice_no">"No"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_ok"/>
+    <string name="reply_choice_ok">"Vale"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_hehe"/>
+    <string name="reply_choice_hehe">"Je, je"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_thanks"/>
+    <string name="reply_choice_thanks">"Gracias"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_i_agree"/>
+    <string name="reply_choice_i_agree">"Estoy de acuerdo"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_nice"/>
+    <string name="reply_choice_nice">"Genial"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_on_my_way"/>
+    <string name="reply_on_my_way">"Voy de camino"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_later"/>
+    <string name="reply_choice_later">"Vale, te llamo luego"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_smiling_face"/>
+    <string name="reply_choice_smiling_face">:)</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_frowning_face"/>
+    <string name="reply_choice_frowning_face">:(</string>
+
+    <add-resource type="array" name="reply_choices"/>
+    <array name="reply_choices">
+        <item>@string/reply_choice_yes</item>
+        <item>@string/reply_choice_no</item>
+        <item>@string/reply_choice_ok</item>
+        <item>@string/reply_choice_hehe</item>
+        <item>@string/reply_choice_thanks</item>
+        <item>@string/reply_choice_i_agree</item>
+        <item>@string/reply_choice_nice</item>
+        <item>@string/reply_on_my_way</item>
+        <item>@string/reply_choice_later</item>
+        <item>@string/reply_choice_smiling_face</item>
+        <item>@string/reply_choice_frowning_face</item>
+    </array>
+
+    <!-- Settings screen, heading for grouping action confirmation related  settings together [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_header_action_confirmations"/>
+    <string name="preference_header_action_confirmations">"Confirmaciones de acciones"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_delete_title"/>
+    <string name="preference_confirm_before_delete_title">"Confirmar antes de eliminar"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_archive_title"/>
+    <string name="preference_confirm_before_archive_title">"Confirmar antes de archivar"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_send_title"/>
+    <string name="preference_confirm_before_send_title">"Confirmar antes de enviar"</string>
+
+    <!--  Settings screen, Conversation mode setting titile  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_conversation_mode_title"/>
+    <string name="preferences_conversation_mode_title">"Ajuste mensajes automático"</string>
+    <!--  Settings screen, Conversation mode setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_conversation_mode_summary"/>
+    <string name="preferences_conversation_mode_summary">"Adaptar mensajes al tamaño de la pantalla"</string>
+
+    <!--  Settings screen, disable snap headers setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_disable_snap_headers_title"/>
+    <string name="preferences_disable_snap_headers_title">"Acciones de mensajes"</string>
+
+    <!-- The snap header summaries -->
+    <add-resource type="array" name="prefSummaries_snapHeader"/>
+    <string-array name="prefSummaries_snapHeader">
+        <item>"Mostrar siempre acciones de mensajes en la parte superior de la pantalla"</item>
+        <item>"Mostrar solo acciones de mensajes en la parte superior de la pantalla en modo vertical"</item>
+        <item>"No mostrar acciones de mensajes fuera del encabezado del mensaje"</item>
+    </string-array>
+
+    <!-- The snap header modes -->
+    <add-resource type="array" name="prefEntries_snapHeader"/>
+    <string-array name="prefEntries_snapHeader">
+        <item>"Mostrar siempre"</item>
+        <item>"Mostrar solo en modo vertical"</item>
+        <item>"No mostrar"</item>
+    </string-array>
+
+    <!-- Settings screen, title of "Clear search history" menu item -->
+    <add-resource type="string" name="clear_history_title"/>
+    <string name="clear_history_title">"Borrar historial de búsqueda"</string>
+    <!-- Message shown in toast when the user taps "clear search history" in general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="search_history_cleared"/>
+    <string name="search_history_cleared">"Se ha borrado el historial de búsqueda."</string>
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_history_dialog_title"/>
+    <string name="clear_history_dialog_title">"¿Borrar historial de búsqueda?"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_history_dialog_message"/>
+    <string name="clear_history_dialog_message">"Se eliminarán todas las búsquedas que hayas hecho."</string>
+
+    <!-- Settings screen, preference item to launch into Settings [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_accounts_menu_item"/>
+    <string name="manage_accounts_menu_item">"Administrar cuentas"</string>
+
+    <!-- Settings screen, main title of the screen, big font [CHAR LIMIT=50]-->
+    <add-resource type="string" name="general_preferences_title"/>
+    <string name="general_preferences_title">"Ajustes generales"</string>
+
+    <!-- Settings screen title -->
+    <!-- Name of the Settings activity -->
+    <add-resource type="string" name="activity_preferences"/>
+    <string name="activity_preferences">"Ajustes"</string>
+
+    <!-- Content description for the action menu overflow button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="overflow_description"/>
+    <string name="overflow_description">"Más opciones"</string>
+
+    <!--Email search function filter text  -->
+    <add-resource type="string" name="mail_search_factor_all"/>
+    <string name="mail_search_factor_all">"TODO"</string>
+    <add-resource type="string" name="mail_search_factor_subject"/>
+    <string name="mail_search_factor_subject">"ASUNTO"</string>
+    <add-resource type="string" name="mail_search_factor_sender"/>
+    <string name="mail_search_factor_sender">"EMISOR"</string>
+    <add-resource type="string" name="mail_search_factor_receiver"/>
+    <string name="mail_search_factor_receiver">"RECEPTOR"</string>
+    <add-resource type="string" name="mail_search_factor_result"/>
+    <string name="mail_search_factor_result">"RESULTADOS"</string>
+
+
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_forward_title"/>
+    <string name="preference_confirm_before_forward_title">"Confirmar antes de reenviar"</string>
+    <!-- Confirm forward dialog message -->
+    <add-resource type="string" name="confirm_forward_message"/>
+    <string name="confirm_forward_message">"Si este mensaje tiene archivos adjuntos sin cargar, ¿qué quieres hacer?"</string>
+    <add-resource type="string" name="confirm_forward_normal"/>
+    <string name="confirm_forward_normal">"Enviar después de cargar"</string>
+    <add-resource type="string" name="confirm_forward_drop_unloaded"/>
+    <string name="confirm_forward_drop_unloaded">"Quitar los que no se han cargado"</string>
+    <!-- Forward dialog message -->
+    <add-resource type="string" name="forward_dialog_message"/>
+    <string name="forward_dialog_message">"¿Quieres reenviar este mensaje?"</string>
+    <!-- Text when there is a security hold on an account that needs to be accepted. The email address param takes the for "abc@xyz.com" -->
+    <add-resource type="string" name="security_hold_required_text"/>
+    <string name="security_hold_required_text">"<xliff:g id="EMAIL_ADDRESS">%1$s</xliff:g> tiene pendiente una actualización de seguridad"</string>
+
+    <!-- Text to go to the dialog to accept the security hold -->
+    <add-resource type="string" name="update_security_text"/>
+    <string name="update_security_text">"actualizar ahora"</string>
+    <!-- Shown when user submits a form. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="forms_are_disabled"/>
+    <string name="forms_are_disabled">"Formularios inhabilitados en Gmail"</string>
+    <add-resource type="string" name="download_first"/>
+    <string name="download_first">"Descargar primero"</string>
+    <add-resource type="string" name="save_to"/>
+    <string name="save_to">"Guardar archivo en:"</string></resources>

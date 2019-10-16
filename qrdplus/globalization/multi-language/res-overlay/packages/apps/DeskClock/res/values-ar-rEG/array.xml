@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أبيدجان"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أكرا"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أديس أبابا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الجزائر"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلانتيري"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برازافيل"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>القاهرة"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الدار البيضاء"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوناكري"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>داكار"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دار السلام"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جيبوتي"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فريتاون"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غابورون"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هراري"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جوهانسبرغ"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كامبالا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الخرطوم"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيغالي"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كينشاسا"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاغوس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماسيرو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مقديشو"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيروبي"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساو تومي"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تمبكتو"</item>
+        <item>"ط<xliff:g id="SEPARATOR">=</xliff:g>طرابلس"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تونس"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أنكوريج"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مندوزا"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أروبا"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أسونسيون"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>باربادوس"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بليز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوغوتا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوينس آيرس"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كانكون"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كاراكاس"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جزر كايمان"</item>
+        <item>"ش<xliff:g id="SEPARATOR">=</xliff:g>شيكاغو"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوستا ريكا"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوراساو"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>داوسون كريك"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دنفر"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>ديترويت"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الدومينيكا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>ادمنتون"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>السلفادور"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فورتاليزا"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غراند ترك"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غرينادا"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>مدينة غواتيمالا"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غيانا"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هاليفاكس"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هافانا"</item>
+        <item>"إ<xliff:g id="SEPARATOR">=</xliff:g>إنديانابوليس"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوكس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مارينغو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بطرسبورغ"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تل سيتي"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيفاي"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فينسينس"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>ويناماك"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كينغستون"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوسترا سينورا دي لاباز"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>ليما"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لوس أنجلوس"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لويفيل"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماناغوا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مارتينيك"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مندوزا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ميتلاكاتلا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مكسيكو سيتي"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونتيري"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونتيفيديو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونتريال"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>ناساو"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيويورك"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بيولا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سنتر"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيو سالم"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بنما"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فينيكس"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بورت أوف سبين"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بورت أو برنس"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بورتوريكو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانتو دومينغو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساو باولو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت جونز"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت كيتس"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت لوسيا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت توماس"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تيخوانا"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تورونتو"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فانكوفر"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وينيبيغ"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>القطب الجنوبي<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لونغياربين"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>ألماتي"</item>
+        <item>"ع<xliff:g id="SEPARATOR">=</xliff:g>عمّان"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أنادير"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أكاتو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بغداد"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>البحرين"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>باكو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بانكوك"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بيروت"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كلكتا"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دمشق"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دكا"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دبي"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غزة"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الخليل"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هو تشي منه"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>هونغ كونغ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"إ<xliff:g id="SEPARATOR">=</xliff:g>إسطنبول"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جاكرتا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>القدس"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كابول"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كراتشي"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كاتماندو"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوالا لمبور"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الكويت"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماكاو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مانيلا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مسقط"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بنوم بنه"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>بيونغ يانغ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ق<xliff:g id="SEPARATOR">=</xliff:g>قطر"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>رانغون"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الرياض"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سايغون"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سيول"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>شنغهاي<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سنغافورة"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>تايبيه<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ط<xliff:g id="SEPARATOR">=</xliff:g>طهران"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تل أبيب"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>طوكيو<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أولان باتور"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برمودا"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الكناري"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الرأس الأخضر"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ريكيافيك"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ستانلي"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أديليد"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بريسبان"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كانبرا"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>داروين"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ملبورن"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيو ساوث ويلز"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بيرث"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوينزلاند"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سيدني"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيكتوريا"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيوفاوندلاند"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساسكاتشوان"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جزيرة الفصح"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أمستردام"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أندورا"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أثينا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلفاست"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلغراد"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برلين"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>براتيسلافا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بروكسل"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوخارست"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بودابست"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيشيناو"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كوبنهاغن"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دبلن"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جبل طارق"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هلسنكي"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جزيرة مان"</item>
+        <item>"إ<xliff:g id="SEPARATOR">=</xliff:g>إسطنبول"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كييف"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لشبونة"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لندن"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لوكسمبورغ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مدريد"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مالطا"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مينسك"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>موناكو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>موسكو"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أوسلو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>باريس"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>براغ"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ريغا"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>روما"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان مارينو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سراييفو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سيمفيروبول"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سكوبيه"</item>
+        <item>"ص<xliff:g id="SEPARATOR">=</xliff:g>صوفيا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ستوكهولم"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تالين"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الفاتيكان"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيينا"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيلنيوس"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>وارسو"</item>
+        <item>"ز<xliff:g id="SEPARATOR">=</xliff:g>زغرب"</item>
+        <item>"ز<xliff:g id="SEPARATOR">=</xliff:g>زيورخ"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أنتاناناريفو"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جزر المالديف"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>موريشيوس"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أوكلاند"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيجي"</item>
+        <item>"غ<xliff:g id="SEPARATOR">=</xliff:g>غوام"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هونولولو"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيريتيماس"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوميا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساموا"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تاهيتي"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أنتيغوا"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أوستن"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بوسطن"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كالغاري"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كولومبوس"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دالاس"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نوكسفيل"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ممفيس"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ميامي"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مينيابوليس"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أوتاوا"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فيلادلفيا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بورتلاند"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان دييغو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان فرانسيسكو"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سولت ليك سيتي"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان خوسيه"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان سلفادور"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سياتل"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت لويس"</item>
+        <item>"و<xliff:g id="SEPARATOR">=</xliff:g>واشنطن العاصمة"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هيوستن"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان أنطونيو"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جاكسونفيل"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بالتيمور"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>ناشفيل"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ميلووكي"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أوكلاهوما سيتي"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاس فيغاس"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>البوكيرك"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>توسون"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>ساكرامنتو"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أتلانتا"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كليفلاند"</item>
+        <item>"ن<xliff:g id="SEPARATOR">=</xliff:g>نيو أورليانز"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تامبا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بيتسبرغ"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سينسيناتي"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماونتن فيو"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>رينو"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بلاك روك سيتي"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>الدوحة"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>بكين<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مومباي"</item>
+        <item>"د<xliff:g id="SEPARATOR">=</xliff:g>دلهي"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>أوساكا<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>لاهور"</item>
+        <item>"ص<xliff:g id="SEPARATOR">=</xliff:g>صنعاء"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برشلونة"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ميونخ"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ميلان"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فرانكفورت"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هانوي"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أنقرة"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بنغالور"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>برازيليا"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيب تاون"</item>
+        <item>"ا<xliff:g id="SEPARATOR">=</xliff:g>اسلام آباد"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ريو دي جانيرو"</item>
+        <item>"آ<xliff:g id="SEPARATOR">=</xliff:g>آن أربور"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بولدر"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كامبريدج"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيركلاند"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>ماديسون"</item>
+        <item>"<xliff:g id="SEPARATOR">=</xliff:g>كوانغتشو<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ح<xliff:g id="SEPARATOR">=</xliff:g>حيدر آباد"</item>
+        <item>"ر<xliff:g id="SEPARATOR">=</xliff:g>ريستون"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>بيلو هوريزونتي"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانتياغو"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مونروفيا"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كولمبو"</item>
+        <item>"ش<xliff:g id="SEPARATOR">=</xliff:g>شيواوا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سلفادور"</item>
+        <item>"ج<xliff:g id="SEPARATOR">=</xliff:g>جورجاون"</item>
+        <item>"م<xliff:g id="SEPARATOR">=</xliff:g>مانشستر"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كييف"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سانت بطرسبورغ"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كراكوف"</item>
+        <item>"ف<xliff:g id="SEPARATOR">=</xliff:g>فروتسواف"</item>
+        <item>"ه<xliff:g id="SEPARATOR">=</xliff:g>هامبورغ"</item>
+        <item>"أ<xliff:g id="SEPARATOR">=</xliff:g>أولو"</item>
+        <item>"ح<xliff:g id="SEPARATOR">=</xliff:g>حيفا"</item>
+        <item>"س<xliff:g id="SEPARATOR">=</xliff:g>سان خوان"</item>
+        <item>"ت<xliff:g id="SEPARATOR">=</xliff:g>تيغوسيغالبا"</item>
+        <item>"ب<xliff:g id="SEPARATOR">=</xliff:g>باراماريبو"</item>
+        <item>"ك<xliff:g id="SEPARATOR">=</xliff:g>كيتو"</item>
+        <item>"ل<xliff:g id="SEPARATOR">=</xliff:g>ليوبليانا"</item>
+    </string-array></resources>

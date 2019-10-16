@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The name of the Cell Broadcast Receiver app. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"सेल ब्रॉडकास्ट"</string>
+
+    <!-- Label for settings screen. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="sms_cb_settings"/>
+    <string name="sms_cb_settings">"सेल प्रसारण सेटिंग्‍ज"</string>
+
+    <!-- Error message for users that aren't allowed to modify Cell broadcast settings [CHAR LIMIT=none] -->
+    <add-resource type="string" name="cell_broadcast_settings_not_available"/>
+    <string name="cell_broadcast_settings_not_available">"या वापरकर्त्‍यासाठी सेल प्रसारण सेटिंग्‍ज उपलब्‍ध नाहीत"</string>
+
+    <!-- Text for dismiss button in broadcast message view dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_dismiss"/>
+    <string name="button_dismiss">"ठीक आहे"</string>
+
+    <!-- Text for list view when empty (no broadcasts). [CHAR LIMIT=200] -->
+    <add-resource type="string" name="no_cell_broadcasts"/>
+    <string name="no_cell_broadcasts">"आपल्या क्षेत्रात कोणत्याही सक्रिय सूचना नाहीत. आपण सेटिंग्ज मेनू पर्याय वापरुन सूचना सेटिंग्ज बदलू शकता."</string>
+
+    <!-- Menu item for accessing application settings. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"सेटिंग्ज"</string>
+    <!-- Menu item for deleting all broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"प्रसारणे हटवा"</string>
+
+    <!-- Header for context menu on an individual broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"संदेश पर्याय"</string>
+    <!-- Context menu item for viewing broadcast details such as time and date. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_view_details"/>
+    <string name="menu_view_details">"तपशील पहा"</string>
+    <!-- Context menu item to delete a previously received broadcast. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"प्रसारण हटवा"</string>
+
+    <!-- Title of "View details" dialog -->
+    <add-resource type="string" name="view_details_title"/>
+    <string name="view_details_title">"सूचना तपशील"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete broadcast confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_broadcast"/>
+    <string name="confirm_delete_broadcast">"हे प्रसारण हटवायचे?"</string>
+    <!-- Delete all broadcasts confirmation dialog message. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="confirm_delete_all_broadcasts"/>
+    <string name="confirm_delete_all_broadcasts">"सर्व प्राप्त केलेले प्रसारण संदेश हटवायचे?"</string>
+    <!-- Delete button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_delete"/>
+    <string name="button_delete">"हटवा"</string>
+    <!-- Cancel button text for delete broadcast dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_cancel"/>
+    <string name="button_cancel">"रद्द करा"</string>
+
+    <!-- ETWS dialog title for Earthquake Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_warning"/>
+    <string name="etws_earthquake_warning">"भूकंप चेतावणी"</string>
+    <!-- ETWS dialog title for Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_tsunami_warning"/>
+    <string name="etws_tsunami_warning">"त्सुनामी चेतावणी"</string>
+    <!-- ETWS dialog title for Earthquake and Tsunami Warning. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_earthquake_and_tsunami_warning"/>
+    <string name="etws_earthquake_and_tsunami_warning">"भूकंप आणि त्सुनामी चेतावणी"</string>
+    <!-- ETWS dialog title for test message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_test_message"/>
+    <string name="etws_test_message">"ETWS चाचणी संदेश"</string>
+    <!-- ETWS dialog title for other emergency type. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="etws_other_emergency_type"/>
+    <string name="etws_other_emergency_type">"आणीबाणी चेतावणी"</string>
+    <!-- CMAS dialog title for presidential level alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_presidential_level_alert"/>
+    <string name="cmas_presidential_level_alert">"राष्ट्रपतींच्या सूचना"</string>
+    <!-- CMAS dialog title for extreme alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_extreme_alert"/>
+    <string name="cmas_extreme_alert">"आणीबाणी सूचना: टोकाची"</string>
+    <!-- CMAS dialog title for severe alert. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_severe_alert"/>
+    <string name="cmas_severe_alert">"आणीबाणी सूचना: गंभीर"</string>
+    <!-- CMAS dialog title for child abduction emergency (Amber Alert). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_amber_alert"/>
+    <string name="cmas_amber_alert">"बाल अपहरण (अँबर सूचना)"</string>
+    <!-- CMAS dialog title for required monthly test. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_required_monthly_test"/>
+    <string name="cmas_required_monthly_test">"आणीबाणी सूचना मासिक चाचणी"</string>
+    <!-- CMAS dialog title for CMAS Exercise. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_exercise_alert"/>
+    <string name="cmas_exercise_alert">"आणीबाणी सूचना (सराव)"</string>
+    <!-- CMAS dialog title for operator defined use. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_operator_defined_alert"/>
+    <string name="cmas_operator_defined_alert">"आणीबाणी सूचना (ऑपरेटर)"</string>
+    <!-- Dialog title for all other message identifiers in the PWS range. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pws_other_message_identifiers"/>
+    <string name="pws_other_message_identifiers">"आणीबाणी सूचना"</string>
+    <!-- Dialog title for all non-emergency cell broadcasts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cb_other_message_identifiers"/>
+    <string name="cb_other_message_identifiers">"सेल प्रसारण"</string>
+
+    <!-- Preference category title for emergency alert settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="emergency_alert_settings_title"/>
+    <string name="emergency_alert_settings_title">"आणीबाणी सूचना सेटिंग्ज"</string>
+    <!-- Preference title for enable emergency alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_emergency_alerts_title"/>
+    <string name="enable_emergency_alerts_title">"अधिसूचना चालू करा"</string>
+    <!-- Preference summary for enable notifications checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_emergency_alerts_summary"/>
+    <string name="enable_emergency_alerts_summary">"आणीबाणी सूचना प्रसारणे प्रदर्शित करा"</string>
+    <!-- Preference title for alert reminder interval list. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="alert_reminder_interval_title"/>
+    <string name="alert_reminder_interval_title">"सूचना स्मरणपत्र"</string>
+    <!-- Do not translate. Empty summary for alert reminder (set by CellBroadcastSettings). -->
+    <add-resource type="string" name="alert_reminder_interval_summary"/>
+    <string name="alert_reminder_interval_summary"></string>
+    <!-- Preference title for enable text-to-speech checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_speech_title"/>
+    <string name="enable_alert_speech_title">"सूचना संदेश बोला"</string>
+    <!-- Preference summary for enable text-to-speech checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_alert_speech_summary"/>
+    <string name="enable_alert_speech_summary">"आणीबाणी सूचना संदेश बोलण्यासाठी टेक्स्ट-टू-स्पीच वापरा"</string>
+
+    <!-- Preference category title for ETWS settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_etws_settings_title"/>
+    <string name="category_etws_settings_title">"ETWS सेटिंग्ज"</string>
+    <!-- Preference title for enable ETWS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_etws_test_alerts_title"/>
+    <string name="enable_etws_test_alerts_title">"ETWS चाचणी प्रसारणे दर्शवा"</string>
+    <!-- Preference summary for enable ETWS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_etws_test_alerts_summary"/>
+    <string name="enable_etws_test_alerts_summary">"भूकंप त्सुनामी चेतावणी सिस्टमसाठी चाचणी प्रसारणे प्रदर्शित करा"</string>
+
+    <!-- Preference title for presidential Alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_title"/>
+    <string name="enable_cmas_presidential_alerts_title">"प्रेसिडेन्शियल सूचना दर्शवा"</string>
+    <!-- Preference summary for presidential Alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_presidential_alerts_summary"/>
+    <string name="enable_cmas_presidential_alerts_summary">"प्रेसिडेन्शियल सूचना नेहमी प्रदर्शित करा"</string>
+    <!-- Preference title for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_title"/>
+    <string name="enable_cmas_extreme_threat_alerts_title">"अत्याधिक धोके दर्शवा"</string>
+    <!-- Preference summary for enable CMAS extreme threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_extreme_threat_alerts_summary"/>
+    <string name="enable_cmas_extreme_threat_alerts_summary">"जीवन आणि मालमत्तेस असलेल्या अत्याधिक धोक्यांसाठी सूचना प्रदर्शित करा"</string>
+    <!-- Preference title for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_title"/>
+    <string name="enable_cmas_severe_threat_alerts_title">"गंभीर धोके दर्शवा"</string>
+    <!-- Preference summary for enable CMAS severe threat alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_severe_threat_alerts_summary"/>
+    <string name="enable_cmas_severe_threat_alerts_summary">"जीवन आणि मालमत्तेस असलेल्या गंभीर धोक्यांसाठी सूचना प्रदर्शित करा"</string>
+    <!-- Preference title for enable CMAS amber alerts checkbox. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_title"/>
+    <string name="enable_cmas_amber_alerts_title">"अँबर सूचना दर्शवा"</string>
+    <!-- Preference summary for enable CMAS amber alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_amber_alerts_summary"/>
+    <string name="enable_cmas_amber_alerts_summary">"बाल अपहरण आणीबाणी बुलेटिन (अँबर सूचना) प्रदर्शित करा"</string>
+
+    <!-- Preference title for enable CMAS test alerts checkbox. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_title"/>
+    <string name="enable_cmas_test_alerts_title">"CMAS चाचणी प्रसारणे दर्शवा"</string>
+    <!-- Preference summary for enable CMAS test alerts checkbox. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_cmas_test_alerts_summary"/>
+    <string name="enable_cmas_test_alerts_summary">"व्यावसायिक मोबाईल सूचना सिस्टमसाठी चाचणी प्रसारणे प्रदर्शित करा"</string>
+
+    <!-- Preference title for CMAS vibration on/off. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_alert_vibrate_title"/>
+    <string name="enable_alert_vibrate_title">"कंपन होणे"</string>
+    <!-- Preference summary for CMAS vibration on/off. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="enable_alert_vibrate_summary"/>
+    <string name="enable_alert_vibrate_summary">"सूचनेवर कंपन"</string>
+    <add-resource type="string" name="enable_alert_tone_title"/>
+    <string name="enable_alert_tone_title">"अलर्ट टोन"</string>
+    <add-resource type="string" name="enable_alert_tone_summary"/>
+    <string name="enable_alert_tone_summary">"अलर्ट टोन चालू"</string>
+
+    <!-- Preference category title for Brazil settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_brazil_settings_title"/>
+    <string name="category_brazil_settings_title">"ब्राझीलसाठी सेटिंग्ज"</string>
+    <!-- Preference category title for India settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_india_settings_title"/>
+    <string name="category_india_settings_title">"भारतासाठी सेटिंग्ज"</string>
+    <!-- Preference title for enable channel 50 alerts (Brazil only). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_50_alerts_title"/>
+    <string name="enable_channel_50_alerts_title">"चॅनेल 50 ची प्रसारणे दर्शवा"</string>
+    <!-- Preference summary for enable channel 50 alerts (Brazil only). [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_50_alerts_summary"/>
+    <string name="enable_channel_50_alerts_summary">"क्षेत्र अद्यतन माहितीसाठी ब्राझीलमध्ये चॅनेल 50 वापरलेले आहे"</string>
+    <!-- Preference title for enable channel 60 alerts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="enable_channel_60_alerts_title"/>
+    <string name="enable_channel_60_alerts_title">"चॅनेल 60 ब्रॉडकास्ट दर्शवा"</string>
+    <!-- Preference summary for enable channel 60 alerts. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="enable_channel_60_alerts_summary"/>
+    <string name="enable_channel_60_alerts_summary">"भारतामध्ये चॅनेल 60 ऑपरेटर विशिष्ट माहितीसाठी वापरला जातो"</string>
+
+    <!-- Preference category title for developer settings. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="category_dev_settings_title"/>
+    <string name="category_dev_settings_title">"विकासक पर्याय"</string>
+
+    <!-- CMAS alert category heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_category_heading"/>
+    <string name="cmas_category_heading">"सूचना श्रेणी:"</string>
+    <!-- CMAS category for geophysical alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_geo"/>
+    <string name="cmas_category_geo">"भूभौतिक"</string>
+    <!-- CMAS category for meteorological alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_met"/>
+    <string name="cmas_category_met">"हवामानविषयक"</string>
+    <!-- CMAS category for general emergency and public safety alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_safety"/>
+    <string name="cmas_category_safety">"सुरक्षितता"</string>
+    <!-- CMAS category for security alerts (law enforcement, military, etc.). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_security"/>
+    <string name="cmas_category_security">"सुरक्षितता"</string>
+    <!-- CMAS category for rescue and recovery alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_rescue"/>
+    <string name="cmas_category_rescue">"बचाव"</string>
+    <!-- CMAS category for fire suppression and rescue alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_fire"/>
+    <string name="cmas_category_fire">"आग"</string>
+    <!-- CMAS category for medical and public health alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_health"/>
+    <string name="cmas_category_health">"आरोग्य"</string>
+    <!-- CMAS category for pollution and other environmental alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_env"/>
+    <string name="cmas_category_env">"पर्यावरण"</string>
+    <!-- CMAS category for transportation alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_transport"/>
+    <string name="cmas_category_transport">"परिवहन"</string>
+    <!-- CMAS category for utility, telecommunication, and other infrastructure alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_infra"/>
+    <string name="cmas_category_infra">"आधारभूत संरचना"</string>
+    <!-- CMAS category for chemical, biological, radiological, nuclear alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_cbrne"/>
+    <string name="cmas_category_cbrne">"रासायनिक/जैविक/आण्विक/विस्फोटक"</string>
+    <!-- CMAS category for other alerts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_category_other"/>
+    <string name="cmas_category_other">"इतर"</string>
+
+    <!-- CMAS response type heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_response_heading"/>
+    <string name="cmas_response_heading">"प्रतिसाद प्रकार:"</string>
+    <!-- CMAS response type: take shelter in place. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_shelter"/>
+    <string name="cmas_response_shelter">"निवारा"</string>
+    <!-- CMAS response type: evacuate (relocate). [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_evacuate"/>
+    <string name="cmas_response_evacuate">"रिक्त करा"</string>
+    <!-- CMAS response type: make preparations. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_prepare"/>
+    <string name="cmas_response_prepare">"तयार करा"</string>
+    <!-- CMAS response type: execute a pre-planned activity. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_execute"/>
+    <string name="cmas_response_execute">"कार्यान्वित करा"</string>
+    <!-- CMAS response type: monitor information sources. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_monitor"/>
+    <string name="cmas_response_monitor">"परीक्षण करा"</string>
+    <!-- CMAS response type: avoid hazard. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_avoid"/>
+    <string name="cmas_response_avoid">"टाळणे"</string>
+    <!-- CMAS response type: evaluate the information in this message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_assess"/>
+    <string name="cmas_response_assess">"मुल्यांकन करणे"</string>
+    <!-- CMAS response type: no action recommended. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="cmas_response_none"/>
+    <string name="cmas_response_none">"नाही"</string>
+
+    <!-- CMAS severity heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_heading"/>
+    <string name="cmas_severity_heading">"गंभीरता:"</string>
+    <!-- CMAS severity type: extreme. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_extreme"/>
+    <string name="cmas_severity_extreme">"टोकाचे"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_severity_severe"/>
+    <string name="cmas_severity_severe">"गंभीर"</string>
+
+    <!-- CMAS urgency heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_heading"/>
+    <string name="cmas_urgency_heading">"तातडी:"</string>
+    <!-- CMAS urgency type: take responsive action immediately. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_immediate"/>
+    <string name="cmas_urgency_immediate">"तात्काळ"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_urgency_expected"/>
+    <string name="cmas_urgency_expected">"अपेक्षित"</string>
+
+    <!-- CMAS certainty heading (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_heading"/>
+    <string name="cmas_certainty_heading">"निश्चितता:"</string>
+    <!-- CMAS certainty type: observed. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_observed"/>
+    <string name="cmas_certainty_observed">"निरीक्षणागत"</string>
+    <!-- CMAS severity type: severe. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="cmas_certainty_likely"/>
+    <string name="cmas_certainty_likely">"संभवनीय"</string>
+
+    <!-- Message delivery time (including colon). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="delivery_time_heading"/>
+    <string name="delivery_time_heading">"प्राप्त झाले:"</string>
+
+    <!-- Non-emergency broadcast notification description for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"<xliff:g id="COUNT">%s</xliff:g> न वाचलेल्या सूचना."</string>
+    <!-- Non-emergency broadcast notification title for multiple unread alerts. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"नवीन सूचना"</string>
+
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="show_cmas_opt_out_summary"/>
+    <string name="show_cmas_opt_out_summary">"प्रथम CMAS सूचना प्रदर्शित केल्यानंतर एक निवड रद्द करा संवाद दर्शवा (राष्ट्रपतींच्या सूचनांव्यतिरिक्त)."</string>
+    <!-- Show CMAS opt-out dialog on first non-Presidential alert. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_cmas_opt_out_title"/>
+    <string name="show_cmas_opt_out_title">"निवड रद्द करा संवाद दर्शवा"</string>
+
+    <!-- CMAS opt-out dialog message. [CHAR LIMIT=160] -->
+    <add-resource type="string" name="cmas_opt_out_dialog_text"/>
+    <string name="cmas_opt_out_dialog_text">"आपण सध्या आणीबाणी सूचना प्राप्त करत आहात. आपण आणीबाणी सूचना प्राप्त करणे सुरु ठेऊ इच्छिता का?"</string>
+    <!-- Text for positive button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_yes"/>
+    <string name="cmas_opt_out_button_yes">"होय"</string>
+    <!-- Text for negative button in CMAS opt-out dialog. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cmas_opt_out_button_no"/>
+    <string name="cmas_opt_out_button_no">"नाही"</string>
+
+    <!-- Entries in the ListPreference for alert reminder intervals. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="alert_reminder_interval_entries"/>
+    <string-array name="alert_reminder_interval_entries">
+      <item>"एकदा"</item>
+      <item>"दर 2 मिनिटांनी"</item>
+      <item>"दर 5 मिनिटांनी"</item>
+      <item>"दर 15 मिनिटांनी"</item>
+      <item>"बंद"</item>
+    </string-array>
+
+    <!-- Do not translate. Values that are retrieved from the ListPreference.
+         These must match the alert_reminder_interval_entries list above. -->
+    <add-resource type="array" name="alert_reminder_interval_values"/>
+    <string-array name="alert_reminder_interval_values">
+      <item>1</item>
+      <item>2</item>
+      <item>5</item>
+      <item>15</item>
+      <item>0</item>
+    </string-array>
+
+    <!-- set cellbroadcast enable or disable, default value is true-->
+    <add-resource type="bool" name="def_custome_cell_broadcast_layout"/>
+    <bool name="def_custome_cell_broadcast_layout">false</bool>
+    <add-resource type="string" name="add_channel"/>
+    <string name="add_channel">"चॅनेल जोडा"</string>
+    <add-resource type="string" name="channel_list"/>
+    <string name="channel_list">"चॅनेल सूची"</string>
+    <add-resource type="string" name="receive_broad_cast"/>
+    <string name="receive_broad_cast">"सेल ब्रॉडकास्ट SMS प्राप्त करा"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_name"/>
+    <string name="cb_channel_dialog_channel_name">"चॅनेलचे नाव (0-10 वर्ण)"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_number"/>
+    <string name="cb_channel_dialog_channel_number">"चॅनेल नंबर (0-65534)"</string>
+    <add-resource type="string" name="cb_channel_dialog_channel_state"/>
+    <string name="cb_channel_dialog_channel_state">"चॅनेल सक्षम करा"</string>
+    <add-resource type="string" name="cb_error_channel_num"/>
+    <string name="cb_error_channel_num">"कृपया चॅनेल नंबर इनपुट करा(0-65534)."</string>
+    <add-resource type="string" name="cb_error_channel_name"/>
+    <string name="cb_error_channel_name">"चॅनेलच्या नावाची लांबी योग्‍य नाही(1-10 वर्ण)."</string>
+    <add-resource type="string" name="cb_menu_tile"/>
+    <string name="cb_menu_tile">"चॅनेल ऑपरेशन"</string>
+    <add-resource type="string" name="cb_menu_add_channel"/>
+    <string name="cb_menu_add_channel">"चॅनेल जोडा"</string>
+    <add-resource type="string" name="cb_menu_channel_list"/>
+    <string name="cb_menu_channel_list">"चॅनेल सूची"</string>
+    <add-resource type="string" name="enable"/>
+    <string name="enable">"सक्षम करा"</string>
+    <add-resource type="string" name="disable"/>
+    <string name="disable">"अक्षम"</string>
+    <add-resource type="string" name="cb_error_channel_id_exist"/>
+    <string name="cb_error_channel_id_exist">"चॅनेल id अस्तित्वात आहे."</string>
+    <add-resource type="string" name="cb_channel_dialog_edit_channel"/>
+    <string name="cb_channel_dialog_edit_channel">"चॅनेल संपादित करा"</string>
+    <add-resource type="string" name="cb_default_new_channel_name"/>
+    <string name="cb_default_new_channel_name">"नवीन चॅनेल"</string>
+    <add-resource type="string" name="cb_menu_edit"/>
+    <string name="cb_menu_edit">"संपादित करा"</string>
+    <add-resource type="string" name="cb_menu_delete"/>
+    <string name="cb_menu_delete">"ब्रॉडकास्ट हटवा"</string>
+    <add-resource type="string" name="cell_broadcast_setting"/>
+    <string name="cell_broadcast_setting">"सेल ब्रॉडकास्ट सेटिंग्‍स"</string>
+    <add-resource type="string" name="error_updating_title"/>
+    <string name="error_updating_title">"कॉल सेटिंग्ज त्रुटी"</string>
+    <add-resource type="string" name="reading_settings"/>
+    <string name="reading_settings">"सेटिंग्‍स वाचत आहे"</string>
+    <add-resource type="string" name="updating_settings"/>
+    <string name="updating_settings">"सेटिंग्‍स अपडेट करत आहे"</string>
+    <add-resource type="string" name="error_finish_dialog_title"/>
+    <string name="error_finish_dialog_title">"नेटवर्क किंवा SIM कार्ड त्रुटी."</string>
+    <add-resource type="string" name="close_dialog"/>
+    <string name="close_dialog">"ठीक"</string>
+    <add-resource type="string" name="updating_title"/>
+    <string name="updating_title">"कॉल सेटिंग्ज"</string>
+    <add-resource type="string" name="done_text"/>
+    <string name="done_text">"पूर्ण झाले"</string>
+
+    <!-- CellBroadcast channel 50 enabled or not,default value is true -->
+    <add-resource type="bool" name="def_channel_50_enabled"/>
+    <bool name="def_channel_50_enabled">true</bool>
+    <!-- Customize 50 into filter list -->
+    <add-resource type="string" name="cb_channel_50_name"/>
+    <string name="cb_channel_50_name">"चॅनेल 50"</string></resources>

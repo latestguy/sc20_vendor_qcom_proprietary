@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2013 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"命令介面"</string>
+
+    <!-- Title of notification indicating a bugreport is being generated. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_in_progress_title"/>
+    <string name="bugreport_in_progress_title">"正在產生錯誤報告 <xliff:g id="ID">#%d</xliff:g>"</string>
+    <!-- Title of notification indicating a bugreport has been successfully captured. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_finished_title"/>
+    <string name="bugreport_finished_title">"已擷取錯誤報告 <xliff:g id="ID">#%d</xliff:g>"</string>
+    <!-- Title of notification indicating a bugreport is being updated before it can be shared. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_updating_title"/>
+    <string name="bugreport_updating_title">"正在新增錯誤報告詳細資訊"</string>
+    <!-- Content notification indicating a bugreport is being updated before it can be shared, asking the user to wait [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_updating_wait"/>
+    <string name="bugreport_updating_wait">"請稍候\u2026"</string>
+
+    <!-- Text of notification indicating that bugreport will appear on the phone. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_text"/>
+    <string name="bugreport_finished_text" product="watch">"錯誤報告即將在手機上顯示"</string>
+    <!-- Text of notification indicating that tapping will share the captured bugreport. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_text"/>
+    <string name="bugreport_finished_text" product="default">"輕按即可分享錯誤報告"</string>
+    <!-- Text of notification indicating that swipe left will share the captured bugreport, but giving user the option to wait for the screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_pending_screenshot_text"/>
+    <string name="bugreport_finished_pending_screenshot_text" product="watch">"輕按以分享錯誤報告 (不包含螢幕擷圖)，或等待螢幕畫面擷取完成"</string>
+    <!-- Text of notification indicating that tapping will share the captured bugreport, but giving user the option to wait for the screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_pending_screenshot_text"/>
+    <string name="bugreport_finished_pending_screenshot_text" product="default">"輕按以分享錯誤報告 (不包含螢幕擷圖)，或等待螢幕畫面擷取完成"</string>
+
+    <!-- Body of dialog informing user about contents of a bugreport. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="bugreport_confirm"/>
+    <string name="bugreport_confirm">"錯誤報告包含來自系統各個記錄檔案的資料，並可能涉及敏感資料 (例如應用程式使用情況和位置資料)。您只應與信任的人和應用程式分享錯誤報告。"</string>
+    <!-- Checkbox that indicates this dialog should not be shown again when the next bugreport is taken. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_confirm_dont_repeat"/>
+    <string name="bugreport_confirm_dont_repeat">"不要再顯示"</string>
+
+    <!-- Title for documents backend that offers bugreports. -->
+    <add-resource type="string" name="bugreport_storage_title"/>
+    <string name="bugreport_storage_title">"錯誤報告"</string>
+
+    <!-- Toast message sent when the bugreport file could be read. -->
+    <add-resource type="string" name="bugreport_unreadable_text"/>
+    <string name="bugreport_unreadable_text">"無法讀取錯誤報告檔案"</string>
+    <!-- Toast message sent when the bugreport details could not be added to the zip file. -->
+    <add-resource type="string" name="bugreport_add_details_to_zip_failed"/>
+    <string name="bugreport_add_details_to_zip_failed">"無法將錯誤報告詳細資料加入 ZIP 檔案"</string>
+
+    <!-- Title for bug reports received from dumpstate without a name. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="bugreport_unnamed"/>
+    <string name="bugreport_unnamed">"未命名"</string>
+
+    <!-- Title of the notification action that opens the dialog for the user-defined bug report details. -->
+    <add-resource type="string" name="bugreport_info_action"/>
+    <string name="bugreport_info_action">"詳細資訊"</string>
+
+    <!-- Title of the notification action that takes aditional screenshots. -->
+    <add-resource type="string" name="bugreport_screenshot_action"/>
+    <string name="bugreport_screenshot_action">"螢幕擷取畫面"</string>
+
+    <!-- Toast message sent when the a screenshot for the bug report was taken successfully. -->
+    <add-resource type="string" name="bugreport_screenshot_taken"/>
+    <string name="bugreport_screenshot_taken">"成功拍攝螢幕擷取畫面。"</string>
+    <!-- Toast message sent when the a screenshot for the bug report was not taken due to an error. -->
+    <add-resource type="string" name="bugreport_screenshot_failed"/>
+    <string name="bugreport_screenshot_failed">"無法擷取螢幕畫面。"</string>
+
+    <!--  Title of the dialog asking for user-defined bug report details like name, title, and description. -->
+    <add-resource type="string" name="bugreport_info_dialog_title"/>
+    <string name="bugreport_info_dialog_title">"錯誤報告 <xliff:g id="ID">#%d</xliff:g> 的詳情"</string>
+
+    <!-- Text of the label identifying the bug report name, which when set will define a suffix in the
+         bug report file names. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="bugreport_info_name"/>
+    <string name="bugreport_info_name">"檔案名稱"</string>
+    <!-- Text of the label identifying the bug report title, which when set will define the
+         Subject of the email message. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="bugreport_info_title"/>
+    <string name="bugreport_info_title">"錯誤標題"</string>
+    <!-- Text of the label identifying the bug report description, which when set will describe
+         what the bug report is about. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="bugreport_info_description"/>
+    <string name="bugreport_info_description">"錯誤摘要"</string>
+
+    <!-- Label of button that save bugreport details.  -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"儲存"</string></resources>

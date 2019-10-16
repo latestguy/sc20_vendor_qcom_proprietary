@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the SMS/MMS app as it appears to the user in the Home screen, task switcher, etc. -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"বার্তা প্রেরণ"</string>
+
+    <!-- Command name to open a Compose screen; displays in conversation list.
+         Also used as accessibility text for widget's new message button -->
+    <add-resource type="string" name="new_message"/>
+    <string name="new_message">"নতুন বার্তা"</string>
+    <!-- Context menu item on an individual message for dialing the sender's phone number -->
+    <add-resource type="string" name="menu_call_back"/>
+    <string name="menu_call_back">"<xliff:g id="name">%s</xliff:g> কে কল করুন"</string>
+    <!-- Context menu item on an individual message for emailing the sender -->
+    <add-resource type="string" name="menu_send_email"/>
+    <string name="menu_send_email">"এখানে ইমেইল পাঠান <xliff:g id="name">%s</xliff:g>"</string>
+
+    <!-- Menu item for starting a new conversation -->
+    <add-resource type="string" name="menu_compose_new"/>
+    <string name="menu_compose_new">"রচনা করুন"</string>
+    <!-- Menu item for accessing application settings -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"সেটিংস"</string>
+    <!-- Menu shown in the context menu when long pressing on a message when the message contains
+         one or more phone numbers and/or email addresses and the number or email is new to
+         contacts. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="menu_add_address_to_contacts"/>
+    <string name="menu_add_address_to_contacts">"ব্যক্তিতে <xliff:g id="contactEmailOrNumber">%s</xliff:g> যোগ করুন"</string>
+    <add-resource type="string" name="menu_copy_url"/>
+    <string name="menu_copy_url">"url কপি করুন <xliff:g id="extractedurl">%s</xliff:g>"</string>
+    <!-- Menu item to call the recipient of the conversation on the phone (imperative verb) -->
+    <add-resource type="string" name="menu_call"/>
+    <string name="menu_call">"কল"</string>
+    <!-- Menu item for search -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"অনুসন্ধান"</string>
+    <!-- Menu item for mark as read -->
+    <add-resource type="string" name="menu_mark_as_read"/>
+    <string name="menu_mark_as_read">"পঠিতরূপে চিহ্নিত করুন"</string>
+    <!-- Menu item for deleting all conversations -->
+    <add-resource type="string" name="menu_delete_all"/>
+    <string name="menu_delete_all">"সব থ্রেডগুলি মুছুন"</string>
+    <!-- Context menu item on an individual conversation for deleting that conversation -->
+    <add-resource type="string" name="menu_delete"/>
+    <string name="menu_delete">"থ্রেড মুছুন"</string>
+    <!-- Context menu item on an individual conversation for viewing that conversation -->
+    <add-resource type="string" name="menu_view"/>
+    <string name="menu_view">"থ্রেড দর্শন করুন"</string>
+    <!-- Menu item for debugging - do not localize -->
+    <add-resource type="string" name="menu_debug_dump"/>
+    <string name="menu_debug_dump">"ডিবাগ ডাম্প"</string>
+    <!-- Message that appears on screen while SIM card messages are retrieved -->
+    <add-resource type="string" name="refreshing"/>
+    <string name="refreshing">"রিফ্রেশ করছি\u2026"</string>
+    <add-resource type="string" name="deleting_threads"/>
+    <string name="deleting_threads">"থ্রেডগুলি মোছা হচ্ছে\u2026"</string>
+
+    <!-- Menu item to show received cell broadcasts. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_cell_broadcasts"/>
+    <string name="menu_cell_broadcasts">"সেল সম্প্রচার"</string>
+
+    <!-- Tag appearing on conversations in the conversation list that contain a draft message -->
+    <add-resource type="string" name="has_draft"/>
+    <string name="has_draft">"খসড়া"</string>
+
+    <!-- Subject to display in the conversation list if there is no subject -->
+    <add-resource type="string" name="no_subject_view"/>
+    <string name="no_subject_view">"(কোনও বিষয় নয়)"</string>
+
+    <!-- Address to display when message is a cell broadcast on channel 50 or 60  -->
+    <add-resource type="string" name="cell_broadcast_sender"/>
+    <string name="cell_broadcast_sender">"সেল সম্প্রচার চ্যানেল"</string>
+
+    <!-- Name of the local user when displaying sender of an outgoing message (personal pronoun) -->
+    <add-resource type="string" name="messagelist_sender_self"/>
+    <string name="messagelist_sender_self">"আমাকে"</string>
+    <!-- Context menu item on an individual message for viewing an attached slideshow -->
+    <add-resource type="string" name="view_slideshow"/>
+    <string name="view_slideshow">"স্লাইডশো দর্শন"</string>
+    <!-- Context menu item on an individual message for viewing message details such as time and date -->
+    <add-resource type="string" name="view_message_details"/>
+    <string name="view_message_details">"বিবরণ দর্শন"</string>
+    <!-- Context menu item on an individual message for viewing a delivery report -->
+    <add-resource type="string" name="view_delivery_report"/>
+    <string name="view_delivery_report">"রিপোর্ট দর্শন"</string>
+    <!-- Context menu item on an individual message for deleting only that message -->
+    <add-resource type="string" name="delete_message"/>
+    <string name="delete_message">"মুছুন"</string>
+    <!-- Time and date a message was sent -->
+    <add-resource type="string" name="sent_on"/>
+    <string name="sent_on">"<xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Time and date a message is due to expire -->
+    <add-resource type="string" name="expire_on"/>
+    <string name="expire_on">"মেয়াদ সমাপ্তি: <xliff:g id="date">%s</xliff:g>"</string>
+    <!-- Abbreviation for "kilobyte" -->
+    <add-resource type="string" name="kilobyte"/>
+    <string name="kilobyte">"KB"</string>
+
+    <!-- Dialog box title brought up when warning the user that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_msg_dialog_title"/>
+    <string name="undelivered_msg_dialog_title">"বিতরণহীন বার্তা"</string>
+    <!-- Dialog box message indicating that a message could not be delivered, including the time of last attempt -->
+    <add-resource type="string" name="undelivered_msg_dialog_body"/>
+    <string name="undelivered_msg_dialog_body">"এই বার্তাটি পাঠাতে পারলাম না।\nপ্রচেষ্টা করা হয়েছে: <xliff:g id="message">%s</xliff:g>."</string>
+    <!-- Dialog box message indicating that a message could not be delivered -->
+    <add-resource type="string" name="undelivered_sms_dialog_body"/>
+    <string name="undelivered_sms_dialog_body">"এই বার্তাটি পাঠাতে পারলাম না।"</string>
+    <!-- Menu item for deleting the entire conversation currently being viewed -->
+    <add-resource type="string" name="delete_thread"/>
+    <string name="delete_thread">"থ্রেড মুছুন"</string>
+    <!-- Context menu item on an individual message for forwarding it to another recipient -->
+    <add-resource type="string" name="menu_forward"/>
+    <string name="menu_forward">"অগ্রবর্তী"</string>
+    <add-resource type="string" name="menu_forward_conversation"/>
+    <string name="menu_forward_conversation">"কথোপকথন অগ্রবর্তী করুন"</string>
+    <!-- Context menu item on an failed message for resending -->
+    <add-resource type="string" name="menu_resend"/>
+    <string name="menu_resend">"পুনঃপ্রেরণ"</string>
+    <!-- Text of a button appearing for MMS messages that have not yet been downloaded, causing the message
+         to be downloaded (imperative verb) -->
+    <add-resource type="string" name="download"/>
+    <string name="download">"ডাউনলোড"</string>
+    <!-- Message displayed in place of the "download message" button once it has been pressed,
+         indicating that the download is in progress -->
+    <add-resource type="string" name="downloading"/>
+    <string name="downloading">"ডাউনলোড হচ্ছে..."</string>
+    <!-- Dispaly downloading when download Mms -->
+    <add-resource type="string" name="new_message_download"/>
+    <string name="new_message_download">"ডাউনলোড করার জন্য নতুন বার্তা"</string>
+    <add-resource type="string" name="new_mms_download"/>
+    <string name="new_mms_download">"ডাউনলোড করার নতুন MMS বার্তা"</string>
+    <!-- Dispaly New message to download  when income Mms  -->
+    <add-resource type="string" name="touch_to_download"/>
+    <string name="touch_to_download">"ডাউনলোড করতে স্পর্শ করুন"</string>
+    <!-- Inform user can Touch to download Mms   -->
+    <add-resource type="string" name="touch_to_try_again"/>
+    <string name="touch_to_try_again">"আবার চেষ্টা করতে স্পর্শ করুন"</string>
+    <!-- Dispaly Touch to try again when download failed -->
+    <add-resource type="string" name="could_not_downloading"/>
+    <string name="could_not_downloading">"ডাউনলোড করা যায়নি..."</string>
+    <add-resource type="string" name="could_not_download"/>
+    <string name="could_not_download">"ডাউনলোড করা যায়নি"</string>
+    <!-- Display Couldn't download...if download failed -->
+    <add-resource type="string" name="new_mms_message"/>
+    <string name="new_mms_message">"নতুন MMS বার্তা"</string>
+    <!-- Dispaly New MMS message when downloading -->
+    <add-resource type="string" name="cancel_downloading"/>
+    <string name="cancel_downloading">"বাতিল"</string>
+    <add-resource type="string" name="confirm_cancel_downloading"/>
+    <string name="confirm_cancel_downloading">"আপনি কি mms ডাউনলোড করা বাতিল করতে চান?"</string>
+    <!-- Formatting for subject displayed inline, prepended to MMS message text -->
+    <add-resource type="string" name="inline_subject"/>
+    <string name="inline_subject">"&lt;বিষয়: <xliff:g id="subject">%s</xliff:g>&gt;"</string>
+    <!-- Text to display when the actual text is inaccessible due to DRM protection -->
+    <add-resource type="string" name="drm_protected_text"/>
+    <string name="drm_protected_text">"* DRM সুরক্ষিত টেক্সট *"</string>
+    <!-- Error message to display when DRM rights are insufficient to access some data -->
+    <add-resource type="string" name="insufficient_drm_rights"/>
+    <string name="insufficient_drm_rights">"অপর্যাপ্ত DRM অধিকার সনাক্ত করা হয়েছে।"</string>
+    <!-- Individual message context menu item -->
+    <add-resource type="string" name="copy_message_text"/>
+    <string name="copy_message_text">"টেক্সট কপি করুন"</string>
+    <!-- Header for context menu on an individual message -->
+    <add-resource type="string" name="message_options"/>
+    <string name="message_options">"বার্তা বিকল্পগুলি"</string>
+    <!-- Header for context menu on an individual slideshow -->
+    <add-resource type="string" name="slideshow_options"/>
+    <string name="slideshow_options">"স্লাইডশো-এর বিকল্পগুলি"</string>
+
+    <!-- Button text on edit slide screen indicating the user wants to finish editing that slide -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"হয়ে গেছে"</string>
+
+    <!-- Menu item in slideshow edit screen for moving the selected slide up in the order -->
+    <add-resource type="string" name="move_up"/>
+    <string name="move_up">"উপরে অপসারণ করুন"</string>
+    <!-- Menu item in slideshow edit screen for moving the selected slide down in the order -->
+    <add-resource type="string" name="move_down"/>
+    <string name="move_down">"নিচে অপসারণ করুন"</string>
+    <!-- Menu item in slideshow edit screen for removing the selected slide from the slideshow -->
+    <add-resource type="string" name="remove_slide"/>
+    <string name="remove_slide">"স্লাইড অপসারণ করুন"</string>
+    <!-- Menu item in slideshow edit screen for adding a new slide to the slideshow -->
+    <add-resource type="string" name="add_slide"/>
+    <string name="add_slide">"স্লাইড যোগ করুন"</string>
+    <!-- Text displayed below "Add slide" item in slideshow edit screen -->
+    <add-resource type="string" name="add_slide_hint"/>
+    <string name="add_slide_hint">"নতুন স্লাইড সৃষ্টি করতে স্পর্শ করুন।"</string>
+    <!-- Menu item in slideshow edit screen for discarding the entire slideshow -->
+    <add-resource type="string" name="discard_slideshow"/>
+    <string name="discard_slideshow">"স্লাইডশো পরিত্যাগ করুন"</string>
+    <!-- Header of slideshow showing which slide is being displayed -->
+    <add-resource type="string" name="slide_show_part"/>
+    <string name="slide_show_part">"অংশ <xliff:g id="part">%1$s</xliff:g>/<xliff:g id="total">%2$s</xliff:g>"</string>
+
+
+    <!-- Menu item in slide edit screen for removing the text from the slide being edited -->
+    <add-resource type="string" name="remove_text"/>
+    <string name="remove_text">"টেক্সট অপসারণ করুন"</string>
+    <!-- Menu item in slide edit screen for adding a picture to the slide being edited -->
+    <add-resource type="string" name="add_picture"/>
+    <string name="add_picture">"চিত্র যোগ করুন"</string>
+    <!-- Menu item in slide edit screen for removing the picture from the slide being edited -->
+    <add-resource type="string" name="remove_picture"/>
+    <string name="remove_picture">"চিত্র অপসারণ করুন"</string>
+    <!-- Menu item in slide edit screen for adding music to the slide being edited -->
+    <add-resource type="string" name="add_music"/>
+    <string name="add_music">"সঙ্গীত যোগ করুন"</string>
+    <!-- Menu item in slide edit screen for removing the music from the slide being edited -->
+    <add-resource type="string" name="remove_music"/>
+    <string name="remove_music">"সঙ্গীত অপসারণ করুন"</string>
+    <!-- Menu item in slide edit screen for adding a video to the slide being edited -->
+    <add-resource type="string" name="add_video"/>
+    <string name="add_video">"ভিডিও যোগ করুন"</string>
+    <!-- Menu item in slide edit screen for removing the video from the slide being edited -->
+    <add-resource type="string" name="remove_video"/>
+    <string name="remove_video">"ভিডিও অপসারণ করুন"</string>
+
+    <!-- Hint displayed in message recipient text box when starting a new conversation -->
+    <add-resource type="string" name="to_hint"/>
+    <string name="to_hint">"প্রতি"</string>
+    <!-- Hint displayed in subject edit text box when adding a subject -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"বিষয়বস্তু"</string>
+
+    <!-- Menu item in conversation screen for attaching something to the message being composed -->
+    <add-resource type="string" name="add_attachment"/>
+    <string name="add_attachment">"সংযুক্ত করুন"</string>
+    <!-- Menu item in conversation screen for adding a subject to the message being composed -->
+    <add-resource type="string" name="add_subject"/>
+    <string name="add_subject">"বিষয় যোগ করুন"</string>
+    <!-- Menu item in conversation screen for discarding the message currently being composed -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"বাতিল"</string>
+
+    <!-- Toast message for informing user currently will add another attachment or replace current one -->
+    <add-resource type="string" name="add_another_attachment"/>
+    <string name="add_another_attachment">"আর একটি সংযুক্তি যোগ করুন"</string>
+    <add-resource type="string" name="replace_current_attachment"/>
+    <string name="replace_current_attachment">"বর্তমান সংযুক্তি প্রতিস্থাপন করুন"</string>
+
+    <!-- Button next to an attachment during message composition to view the attachment (imperative verb) -->
+    <add-resource type="string" name="view"/>
+    <string name="view">"দেখুন"</string>
+    <!-- Button next to an attachment during message composition to replace the attachment (imperative verb) -->
+    <add-resource type="string" name="replace"/>
+    <string name="replace">"প্রতিস্থাপন করুন"</string>
+    <!-- Button next to an attachment during message composition to remove the attachment (imperative verb) -->
+    <add-resource type="string" name="remove"/>
+    <string name="remove">"সরান"</string>
+
+    <!-- Button in conversation screen for sending the SMS message currently being composed (imperative verb) -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"পাঠান"</string>
+    <add-resource type="string" name="send_by_slot1"/>
+    <string name="send_by_slot1">"স্লট1 অনুসারে পাঠান"</string>
+    <add-resource type="string" name="send_by_slot2"/>
+    <string name="send_by_slot2">"স্লট2 অনুসারে পাঠান"</string>
+    <!-- Text to appear directly below the "Send" text on the SMS/MMS send button. The "MMS" text is on a second line in a smaller font. This is similar to saying "Send (mms)". -->
+    <add-resource type="string" name="mms"/>
+    <string name="mms">"MMS"</string>
+    <!-- Content description for the send button when sending an mms (imperative verb) -->
+    <add-resource type="string" name="send_mms"/>
+    <string name="send_mms">"MMS পাঠান"</string>
+
+    <!-- Menu item in conversation screen for returning to the conversation list -->
+    <add-resource type="string" name="all_threads"/>
+    <string name="all_threads">"সব থ্রেডসমূহ"</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <add-resource type="string" name="type_to_compose_text_enter_to_send"/>
+    <string name="type_to_compose_text_enter_to_send">"বার্তা পাঠান"</string>
+    <!-- Hint text in message body field when keyboard is hidden -->
+    <add-resource type="string" name="open_keyboard_to_compose_message"/>
+    <string name="open_keyboard_to_compose_message">"বার্তা টাইপ করতে কীবোর্ড খুলুন"</string>
+    <!-- Hint text when we are not the default SMS app -->
+    <add-resource type="string" name="sending_disabled_not_default_app"/>
+    <string name="sending_disabled_not_default_app">"প্রেরণ অক্ষম করা হয়েছে"</string>
+    <!-- Toast text when user tries to compose while we are not the default SMS app -->
+    <add-resource type="string" name="compose_disabled_toast"/>
+    <string name="compose_disabled_toast">"লেখা যাবে না। কোনও ডিফল্ট SMS অ্যাপ নয়।"</string>
+
+    <!-- Toast message while an image is being resized -->
+    <add-resource type="string" name="compressing"/>
+    <string name="compressing">"চিত্র বেশি বড়। সংক্ষিপ্ত করছি\u2026"</string>
+
+    <!-- Error message indicating the format for the specified media type (e.g. "picture") is unsupported -->
+    <add-resource type="string" name="unsupported_media_format"/>
+    <string name="unsupported_media_format">"অসমর্থিত <xliff:g id="name">%1$s</xliff:g> ফর্ম্যাট।"</string>
+    <!-- Error message indicating the format is unsupported -->
+    <add-resource type="string" name="unsupported_format"/>
+    <string name="unsupported_format">"অসমর্থিত ফর্ম্যাট৷"</string>
+    <!-- Message prompting the user to select a different item; item string as type-appropriate (e.g. "picture") -->
+    <add-resource type="string" name="select_different_media"/>
+    <string name="select_different_media">"একটি অন্য <xliff:g id="name">%1$s</xliff:g> বাছুন।"</string>
+    <!-- Message indicating that the message size limit has been reached -->
+    <add-resource type="string" name="exceed_message_size_limitation"/>
+    <string name="exceed_message_size_limitation">"বার্তার মাপের সীমায় পৌঁছেছে।"</string>
+    <!-- Message indicating that the message is too big and there is no space to attach a video -->
+    <add-resource type="string" name="message_too_big_for_video"/>
+    <string name="message_too_big_for_video">"কোনও ভিডিও সংযুক্ত করার জন্য বার্তাটি বেশি বড়।"</string>
+    <!-- Error message indicating that the item trying to be attached could not be added -->
+    <add-resource type="string" name="failed_to_add_media"/>
+    <string name="failed_to_add_media">"আপনি এই <xliff:g id="name">%1$s</xliff:g> আপনার বার্তায় যোগ করতে পারবেন না।"</string>
+    <add-resource type="string" name="media_size_limit"/>
+    <string name="media_size_limit">"বার্তার আকারের সীমায় পৌঁছে গেছে, বার্তা পাঠানো যাচ্ছে না।"</string>
+    <!-- Error message indicating that the picture being attached and resized could not be resized -->
+    <add-resource type="string" name="failed_to_resize_image"/>
+    <string name="failed_to_resize_image">"চিত্রটি পুনরায় আকার দেওয়া হয় নি।"</string>
+    <!-- Error message indicating that the message size or the increase size is negative -->
+    <add-resource type="string" name="illegal_message_or_increase_size"/>
+    <string name="illegal_message_or_increase_size">"নেতিবাচক বার্তা অথবা আকার বড় করুন।"</string>
+    <!-- Error message indicating that an image being attached is still too large to send even after resize -->
+    <add-resource type="string" name="resize_image_error_information"/>
+    <string name="resize_image_error_information">"এই চিত্রটি পুনরায় আকার দেওয়ার পরেও পাঠানোর জন্য বেশি বড়।"</string>
+    <!-- String prepended to forwarded messages to indicate they were forwarded -->
+    <add-resource type="string" name="forward_prefix"/>
+    <string name="forward_prefix">"অগ্রচালনা:\u0020"</string>
+    <!-- Dialog box title that appears when a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message"/>
+    <string name="discard_message">"বাতিল"</string>
+    <add-resource type="string" name="discard_message_reason_all_invalid"/>
+    <string name="discard_message_reason_all_invalid">"আপনার বার্তা বাতিল করা হবে কারণ সব প্রাপকরা অবৈধ।"</string>
+    <add-resource type="string" name="discard_message_reason_some_invalid"/>
+    <string name="discard_message_reason_some_invalid">"আপনার বার্তা বাতিল করা হবে কারণ এতে কিছু অবৈধ প্রাপক আছে।"</string>
+    <!-- Dialog message text explaining that a draft message will not be saved due to invalid recipients -->
+    <add-resource type="string" name="discard_message_reason"/>
+    <string name="discard_message_reason">"আপনার বার্তা পরিত্যাগ করা হবে কারণ তার কোন বৈধ প্রাপক নেই।"</string>
+    <!-- Dialog box title indicating which recipients are invalid when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="has_invalid_recipient"/>
+    <string name="has_invalid_recipient">"অবৈধ প্রাপক(গণ): &lt;<xliff:g id="name">%1$s</xliff:g>&gt;"</string>
+    <!-- While sending a message, if it has invalid recipient, display this message. -->
+    <add-resource type="string" name="invalid_destination"/>
+    <string name="invalid_destination">"অবৈধ গন্তব্য ঠিকানা।"</string>
+    <!-- While sending a message, this error is expected to be generated when user does not have
+         MMS enabled on his account. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_not_activated"/>
+    <string name="service_not_activated">"নেটওয়ার্কে পরিষেবা সক্রিয় করা হয় নি।"</string>
+    <!-- If a message has expired and is no longer available on MMSC, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_message_not_found"/>
+    <string name="service_message_not_found">"বার্তার মেয়াদ শেষ বা উপলব্ধ নয়।"</string>
+    <!-- If a message can't be sent because of a MMSC network problem, show this toast. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="service_network_problem"/>
+    <string name="service_network_problem">"নেটওয়ার্ক সমস্যার জন্য প্রেরণ করতে পারি নি।"</string>
+    <!-- Dialog message text when the user tries to send a message with invalid recipients -->
+    <add-resource type="string" name="invalid_recipient_message"/>
+    <string name="invalid_recipient_message">"প্রাপক(গণ)কে সংশোধন করুন বা তারা বার্তা পাবেন না।"</string>
+    <!-- Dialog box title indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message"/>
+    <string name="cannot_send_message">"বার্তা পাঠাতে পারছি না"</string>
+    <!-- Dialog message text indicating the message cannot be sent because there are no valid recipients -->
+    <add-resource type="string" name="cannot_send_message_reason"/>
+    <string name="cannot_send_message_reason">"আপনার বার্তার কোন বৈধ প্রাপক নেই।"</string>
+    <!-- Error message displayed when the user attempts to forward a message with DRM-locked contents -->
+    <add-resource type="string" name="cannot_forward_drm_obj"/>
+    <string name="cannot_forward_drm_obj">"বার্তায় অন্তর্ভুক্ত DRM বস্তু অগ্রচালনা করা যাবে না।"</string>
+    <add-resource type="string" name="cannot_send_attach_reason"/>
+    <string name="cannot_send_attach_reason">"সংযুক্তি অ্যাক্সেস করা যাবে না，বার্তা পাঠানো যাবে না।"</string>
+
+    <!-- Brief message that appears when converting a message from SMS to MMS. -->
+    <add-resource type="string" name="converting_to_picture_message"/>
+    <string name="converting_to_picture_message">"মাল্টিমিডিয়া বার্তাতে রূপান্তর করছি\u2026"</string>
+    <add-resource type="string" name="converting_to_text_message"/>
+    <string name="converting_to_text_message">"পাঠ্য বার্তাতে রূপান্তর হচ্ছে\u2026"</string>
+    <!-- Brief message that appears when the maximum size of slides has been reached -->
+    <add-resource type="string" name="cannot_add_text_anymore"/>
+    <string name="cannot_add_text_anymore">"অধিকতর পাঠ্য যোগ করতে পারা যায় না।"</string>
+    <!-- Brief message that appears when the maximum number of slides has been reached -->
+    <add-resource type="string" name="cannot_add_slide_anymore"/>
+    <string name="cannot_add_slide_anymore">"আর স্লাইড যোগ করতে পারছি না।"</string>
+    <!-- Brief message that appears when user tries to add picture to a slide which already has a video. -->
+    <add-resource type="string" name="cannot_add_picture_and_video"/>
+    <string name="cannot_add_picture_and_video">"একটি স্লাইডে ভিডিও আর চিত্র যোগ করতে পারছি না।"</string>
+    <!-- Brief message that appears when the message cannot be saved -->
+    <add-resource type="string" name="cannot_save_message"/>
+    <string name="cannot_save_message">"বার্তা সংরক্ষণ করতে পারছি না।"</string>
+    <!-- Brief message that appears when a message has automatically been saved as a draft -->
+    <add-resource type="string" name="message_saved_as_draft"/>
+    <string name="message_saved_as_draft">"বার্তা খসড়া হিসেবে সংরক্ষণ করা হয়েছে।"</string>
+    <!-- Brief message that appears when too many recipients have been added -->
+    <add-resource type="string" name="too_many_recipients"/>
+    <string name="too_many_recipients">"বার্তাটির খুব বেশি প্রাপক আছে (<xliff:g id="currentCount">%1$s</xliff:g>). প্রাপকদের একটি <xliff:g id="maxLimit">%2$s</xliff:g> সীমা আছে।"</string>
+    <!-- Brief message that appears when too many videos/pictures are imported -->
+    <add-resource type="string" name="too_many_attachments"/>
+    <string name="too_many_attachments">"সংযুক্তিগুলির একটি <xliff:g id="maxLimit">%1$s</xliff:g> সীমা আছে। শুধু প্রথমটি<xliff:g id="currentCount">%2$s</xliff:g> যোগ করা হবে।"</string>
+    <!-- Alert dialog title when adding attachments is taking a while  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="adding_attachments_title"/>
+    <string name="adding_attachments_title">"সংযুক্তিগুলি যোগ করছি"</string>
+    <!-- Alert dialog when adding attachments is taking a while -->
+    <add-resource type="string" name="adding_attachments"/>
+    <string name="adding_attachments">"স্লাইডশোতে আইটেমগুলি যোগ করার সময় অপেক্ষা করুন।"</string>
+    <!-- Alert dialog title when creating a slideshow [CHAR LIMIT=none] -->
+    <add-resource type="string" name="building_slideshow_title"/>
+    <string name="building_slideshow_title">"স্লাইডশো তৈরি করা"</string>
+
+    <!-- Error message indicating that an audio attachment cannot be played -->
+    <add-resource type="string" name="cannot_play_audio"/>
+    <string name="cannot_play_audio">"অডিও চালাতে পারছি না।"</string>
+
+    <!-- Button in the slide editor screen used to preview the slide (imperative verb) -->
+    <add-resource type="string" name="preview"/>
+    <string name="preview">"প্রাকদর্শন"</string>
+    <!-- Menu item in the slide editor screen used to preview the entire slideshow (imperative verb) -->
+    <add-resource type="string" name="preview_slideshow"/>
+    <string name="preview_slideshow">"প্রাকদর্শন"</string>
+    <!-- Button in the slide editor screen used to replace the attached picture -->
+    <add-resource type="string" name="replace_image"/>
+    <string name="replace_image">"চিত্র যোগ করুন"</string>
+    <!-- String for slide duration in seconds -->
+    <add-resource type="string" name="duration_sec"/>
+    <string name="duration_sec">"সময়কাল (<xliff:g id="duration">%s</xliff:g> সেকেন্ড)"</string>
+    <!-- Dialog box title for duration selector -->
+    <add-resource type="string" name="duration_selector_title"/>
+    <string name="duration_selector_title">"স্লাইডের জন্য সময়কাল"</string>
+    <!-- Dialog box title for slide layout selector -->
+    <add-resource type="string" name="layout_selector_title"/>
+    <string name="layout_selector_title">"স্লাইডশো লেআউট "</string>
+    <!-- Slide layout option for layout at the top -->
+    <add-resource type="string" name="layout_top"/>
+    <string name="layout_top">"লেআউট(উপর)"</string>
+    <!-- Slide layout option for layout at the bottom -->
+    <add-resource type="string" name="layout_bottom"/>
+    <string name="layout_bottom">"লেআউট (নিচ)"</string>
+    <!-- Hint in slide text field before text is typed -->
+    <add-resource type="string" name="type_to_compose_text_or_leave_blank"/>
+    <string name="type_to_compose_text_or_leave_blank">"বার্তা টাইপ করুন, বা খালি রাখুন"</string>
+    <!-- Toast when the user enters a non-numeric value for the duration of a slide -->
+    <add-resource type="string" name="duration_not_a_number"/>
+    <string name="duration_not_a_number">"সময়কাল একটি সংখ্যা হতে হবে।"</string>
+    <!-- Toast when the user enters a zero value for the duration of a slide -->
+    <add-resource type="string" name="duration_zero"/>
+    <string name="duration_zero">"সময়কাল অবশ্যই শূন্য সেকেন্ডের বেশি হতে হবে।"</string>
+    <!-- Dialog box title for display the current mms size  -->
+    <add-resource type="string" name="title_send_message"/>
+    <string name="title_send_message">"বার্তা পাঠান"</string>
+    <!-- Toast when the subject is full -->
+    <add-resource type="string" name="subject_full"/>
+    <string name="subject_full">"বিষয়টি পূর্ণ"</string>
+
+    <!-- In duration selection dialog box, short version of "seconds" -->
+    <add-resource type="string" name="secs"/>
+    <string name="secs">"সেকেন্ড"</string>
+    <!-- Options for slide duration in duration selection dialog box -->
+    <add-resource type="array" name="select_dialog_items"/>
+    <string-array name="select_dialog_items">
+         <item>"1 সেকেন্ড"</item>
+         <item>"2 সেকেন্ড"</item>
+         <item>"3 সেকেন্ড"</item>
+         <item>"4 সেকেন্ড"</item>
+         <item>"5 সেকেন্ড"</item>
+         <item>"6 সেকেন্ড"</item>
+         <item>"7 সেকেন্ড"</item>
+         <item>"8 সেকেন্ড"</item>
+         <item>"9 সেকেন্ড"</item>
+         <item>"10 সেকেন্ড"</item>
+         <item>"অন্যান্য"</item>
+    </string-array>
+
+    <!-- Context menu item on a message recipient for viewing their contact info -->
+    <add-resource type="string" name="menu_view_contact"/>
+    <string name="menu_view_contact">"যোগাযোগ দেখুন"</string>
+    <!-- Context menu item on a message recipient for adding them to the user's
+         contacts (used if the recipient is not already in the address book) -->
+    <add-resource type="string" name="menu_add_to_contacts"/>
+    <string name="menu_add_to_contacts">"পরিচিতিতে যোগ করুন"</string>
+
+    <!-- Sender to be used if the sender address has been hidden -->
+    <add-resource type="string" name="hidden_sender_address"/>
+    <string name="hidden_sender_address">"লুকানো প্রেরকের ঠিকানা"</string>
+
+    <!-- Text to be used for affirmative response button in dialog boxes -->
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"ঠিক আছে"</string>
+    <!-- Text to be used for negative response button in dialog boxes -->
+    <add-resource type="string" name="no"/>
+    <string name="no">"বাতিল"</string>
+    <!-- Text to be used for affirmative response button in setting SMS limits dialog box -->
+    <add-resource type="string" name="set"/>
+    <string name="set">"সেট করুন"</string>
+
+    <!-- Button text used for playing an attachment or slideshow (imperative verb) -->
+    <add-resource type="string" name="play"/>
+    <string name="play">"বাজান"</string>
+    <!-- Button text used for editing a slideshow (imperative verb) -->
+    <add-resource type="string" name="edit"/>
+    <string name="edit">"সম্পাদনা"</string>
+    <!-- Button used for trying to send a message that has some valid recipients and some
+         invalid recipients, in spite of the warning presented to the user -->
+    <add-resource type="string" name="try_to_send"/>
+    <string name="try_to_send">"প্রেরণের চেষ্টা করুন"</string>
+
+    <!-- Title of Settings screen -->
+    <add-resource type="string" name="preferences_title"/>
+    <string name="preferences_title">"সেটিংস"</string>
+    <!-- Settings screen menu item for restoring all settings to default -->
+    <add-resource type="string" name="restore_default"/>
+    <string name="restore_default">"ডিফল্ট সেটিংগুলি পুনঃস্থাপন করুন"</string>
+
+    <!-- Settings SIM1 -->
+    <add-resource type="string" name="settings_pre_sim1"/>
+    <string name="settings_pre_sim1">"SIM1"</string>
+    <!-- Settings SIM2 -->
+    <add-resource type="string" name="settings_pre_sim2"/>
+    <string name="settings_pre_sim2">"SIM2"</string>
+
+    <!-- Settings screen, section heading for notifications -->
+    <add-resource type="string" name="pref_notification_settings_title"/>
+    <string name="pref_notification_settings_title">"বিজ্ঞপ্তি"</string>
+    <!-- Settings screen, section heading for MMS-specific settings -->
+    <add-resource type="string" name="pref_mms_settings_title"/>
+    <string name="pref_mms_settings_title">"মাল্টিমিডিয়া (MMS) বার্তার সেটিংস"</string>
+    <!-- Settings screen, section heading for SMS-specific settings -->
+    <add-resource type="string" name="pref_sms_settings_title"/>
+    <string name="pref_sms_settings_title">"টেক্সট (SMS) বার্তার সেটিংস"</string>
+    <!-- Settings screen, section heading for storage-specific settings -->
+    <add-resource type="string" name="pref_sms_storage_title"/>
+    <string name="pref_sms_storage_title">"সঞ্চয়স্থান"</string>
+
+    <!-- Title for SMS Disabled -->
+    <add-resource type="string" name="pref_title_sms_disabled"/>
+    <string name="pref_title_sms_disabled">"SMS অক্ষম করা হয়েছে"</string>
+    <!-- Title for Default message app-->
+    <add-resource type="string" name="pref_title_default_app"/>
+    <string name="pref_title_default_app">"ডিফল্ট বার্তা অ্যাপ"</string>
+    <!-- Summary for SMS Disabled -->
+    <add-resource type="string" name="pref_summary_sms_disabled"/>
+    <string name="pref_summary_sms_disabled">"মেসেজিংকে আপনার ডিফল্ট SMS অ্যাপ করতে স্পর্শ করুন"</string>
+    <!-- Title for SMS Enabled -->
+    <add-resource type="string" name="pref_title_sms_enabled"/>
+    <string name="pref_title_sms_enabled">"SMS সক্ষম করা হয়েছে"</string>
+    <!-- Summary for SMS Enabled -->
+    <add-resource type="string" name="pref_summary_sms_enabled"/>
+    <string name="pref_summary_sms_enabled">"আপনার ডিফল্ট SMS অ্যাপ পরিবর্তন করতে স্পর্শ করুন"</string>
+
+    <!-- Title for PreferenceScreen  -->
+    <add-resource type="string" name="pref_title_display"/>
+    <string name="pref_title_display">"প্রদর্শন"</string>
+    <!-- Settings item description for entering SIM card message screen -->
+    <add-resource type="string" name="pref_summary_manage_sim_messages"/>
+    <string name="pref_summary_manage_sim_messages">"আপনার SIM কার্ডে সংরক্ষিত বার্তাগুলি পরিচালনা করুন"</string>
+    <add-resource type="string" name="pref_summary_manage_sim_messages_slot"/>
+    <string name="pref_summary_manage_sim_messages_slot">"আপনার SIM কার্ডে সঞ্চিত <xliff:g id="NUMBER">%s</xliff:g>টি বার্তা পরিচালনা করুন"</string>
+    <!-- Settings item description for boolean MMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_mms_delivery_reports"/>
+    <string name="pref_summary_mms_delivery_reports">"আপনার পাঠানো প্রত্যেক বার্তার জন্য একটি বিতরণ রিপোর্টের অনুরোধ করুন"</string>
+    <!-- Settings item description for boolean MMS read report setting -->
+    <add-resource type="string" name="pref_summary_mms_read_reports"/>
+    <string name="pref_summary_mms_read_reports">"আপনার পাঠানো প্রত্যেক বার্তার জন্য একটি পঠন রিপোর্টের অনুরোধ করুন"</string>
+    <!-- Settings item description for boolean SMS delivery report setting -->
+    <add-resource type="string" name="pref_summary_sms_delivery_reports"/>
+    <string name="pref_summary_sms_delivery_reports">"আপনার পাঠানো প্রত্যেক বার্তার জন্য একটি বিতরণ রিপোর্টের অনুরোধ করুন"</string>
+    <!-- Settings item description for boolean auto-delete messages setting -->
+    <add-resource type="string" name="pref_summary_auto_delete"/>
+    <string name="pref_summary_auto_delete">"সীমায় পৌঁছেছে তাই পুরানো বার্তাগুলি মুছুন"</string>
+    <!-- Settings item description for enable gesture setting -->
+    <add-resource type="string" name="pref_summary_enable_gesture"/>
+    <string name="pref_summary_enable_gesture">"খোলা অথবা বন্ধতে পিঞ্চ করার মাধ্যমে ব্যবহারকারীকে ফন্টের আকার নিয়ন্ত্রণের অনুমতি দেয়"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_summary_group_notification"/>
+    <string name="pref_summary_group_notification">"বিজ্ঞপ্তিকে একটি গ্রুপে স্বয়ংক্রিয়ভাবে একত্রিত করে"</string>
+    <!-- Settings item description for integer auto-delete sms message limit -->
+    <add-resource type="string" name="pref_summary_delete_limit"/>
+    <string name="pref_summary_delete_limit">"<xliff:g id="count">%1$s</xliff:g> বার্তা প্রতি বার্তালাপে"</string>
+    <!-- Settings item description for boolean MMS enable group MMS setting -->
+    <add-resource type="string" name="pref_summary_mms_group_mms"/>
+    <string name="pref_summary_mms_group_mms">"যখন বহু গ্রহীতা রয়েছে তখন একটি একক বার্তা প্রেরণ করতে MMS ব্যবহার করুন"</string>
+    <!-- Settings item for entering SIM card message screen -->
+    <add-resource type="string" name="pref_title_manage_sim_messages"/>
+    <string name="pref_title_manage_sim_messages">"SIM কার্ড বার্তাগুলি পরিচালনা করুন"</string>
+    <add-resource type="string" name="pref_title_center_number"/>
+    <string name="pref_title_center_number">"বার্তা সেন্টারের নম্বর"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot1"/>
+    <string name="pref_title_manage_sim_messages_slot1">"চিম1 কার্ডের বার্তাগুলি পরিচালনা করুন"</string>
+    <add-resource type="string" name="pref_title_manage_sim_messages_slot2"/>
+    <string name="pref_title_manage_sim_messages_slot2">"চিম2 কার্ডের বার্তাগুলি পরিচালনা করুন"</string>
+    <!-- Settings item description for group notification setting -->
+    <add-resource type="string" name="pref_title_group_notification"/>
+    <string name="pref_title_group_notification">"বিজ্ঞপ্তি বার্তাকে গ্রুপ করে"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports -->
+    <add-resource type="string" name="pref_title_mms_delivery_reports"/>
+    <string name="pref_title_mms_delivery_reports">"বিতরণ রিপোর্ট"</string>
+    <!-- Settings item for enable gesture -->
+    <add-resource type="string" name="pref_title_enable_gesture"/>
+    <string name="pref_title_enable_gesture">"ইঙ্গিত সক্ষম করুন"</string>
+    <!-- Settings item for advanced settings -->
+    <add-resource type="string" name="pref_title_advanced_settings"/>
+    <string name="pref_title_advanced_settings">"উন্নত সেটিংস"</string>
+    <!-- Settings item for other settings -->
+    <add-resource type="string" name="pref_title_other_settings"/>
+    <string name="pref_title_other_settings">"অন্যান্য সেটিংস"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim1-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot1"/>
+    <string name="pref_title_mms_delivery_reports_slot1">"চিম1 এর জন্য বিতরণের প্রতিবেদনসমূহ"</string>
+    <!-- Settings item for boolean option to enable/disable MMS delivery reports for sim2-->
+    <add-resource type="string" name="pref_title_mms_delivery_reports_slot2"/>
+    <string name="pref_title_mms_delivery_reports_slot2">"চিম2 এর জন্য বিতরণের প্রতিবেদনসমূহ"</string>
+    <!-- Settings item for boolean option to enable/disable MMS group messages -->
+    <add-resource type="string" name="pref_title_mms_group_mms"/>
+    <string name="pref_title_mms_group_mms">"গ্রুপ বার্তা প্রেরণ করা"</string>
+    <!-- Settings item for manage sim card message  -->
+    <add-resource type="string" name="pref_title_sms_manage_sim"/>
+    <string name="pref_title_sms_manage_sim">"SIM কার্ড বার্তা পরিচালনা করুন"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports -->
+    <add-resource type="string" name="pref_title_mms_read_reports"/>
+    <string name="pref_title_mms_read_reports">"পঠন রিপোর্ট"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM1 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot1"/>
+    <string name="pref_title_mms_read_reports_slot1">"SIM1-এর জন্য পঠন রিপোর্ট"</string>
+    <!-- Settings item for boolean option to enable/disable MMS read reports for SIM2 -->
+    <add-resource type="string" name="pref_title_mms_read_reports_slot2"/>
+    <string name="pref_title_mms_read_reports_slot2">"SIM2-এর জন্য পঠন রিপোর্ট"</string>
+    <!-- Settings item for boolean option to enable/disable SMS delivery reports -->
+    <add-resource type="string" name="pref_title_sms_delivery_reports"/>
+    <string name="pref_title_sms_delivery_reports">"বিতরণ রিপোর্ট"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot1"/>
+    <string name="pref_title_sms_delivery_reports_slot1">"চিম1 এর জন্য বিতরণের প্রতিবেদনসমূহ"</string>
+    <add-resource type="string" name="pref_title_sms_delivery_reports_slot2"/>
+    <string name="pref_title_sms_delivery_reports_slot2">"চিম2 এর জন্য বিতরণের প্রতিবেদনসমূহ"</string>
+    <!-- Settings item for boolean option to enable/disable auto-deletion of messages -->
+    <add-resource type="string" name="pref_title_auto_delete"/>
+    <string name="pref_title_auto_delete">"পুরানো বার্তাগুলি মুছুন"</string>
+    <!-- Settings item for integer option to set SMS delete limit -->
+    <add-resource type="string" name="pref_title_sms_delete"/>
+    <string name="pref_title_sms_delete">"টেক্সট বার্তার সীমা"</string>
+    <!-- Settings item for integer option to set MMS delete limit -->
+    <add-resource type="string" name="pref_title_mms_delete"/>
+    <string name="pref_title_mms_delete">"মাল্টিমিডিয়া বার্তার সীমা"</string>
+    <!-- Settings item for boolean option to display message notifications -->
+    <add-resource type="string" name="pref_title_notification_enabled"/>
+    <string name="pref_title_notification_enabled">"বিজ্ঞপ্তি"</string>
+    <!-- Settings item for boolean option to vibrate during message notification -->
+    <add-resource type="string" name="pref_title_notification_vibrateWhen"/>
+    <string name="pref_title_notification_vibrateWhen">"ভাইব্রেট"</string>
+    <!-- Settings item for entering ringtone selection screen -->
+    <add-resource type="string" name="pref_title_notification_ringtone"/>
+    <string name="pref_title_notification_ringtone">"ধ্বনি"</string>
+    <!-- Settings item for setting the number of message to save for each conversation -->
+    <add-resource type="string" name="pref_messages_to_save"/>
+    <string name="pref_messages_to_save">"সংরক্ষণ করার বার্তা সংখ্যা সেট করুন"</string>
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"নীরব"</string>
+
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages -->
+    <add-resource type="string" name="pref_title_mms_auto_retrieval"/>
+    <string name="pref_title_mms_auto_retrieval">"স্বয়ং-পুনরুদ্ধার"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve option -->
+    <add-resource type="string" name="pref_summary_mms_auto_retrieval"/>
+    <string name="pref_summary_mms_auto_retrieval">"স্বয়ংক্রিয়ভাবে বার্তা পুনরুদ্ধার করুন"</string>
+    <!-- Settings item for boolean option to auto-retrieve incoming MMS messages while roaming -->
+    <add-resource type="string" name="pref_title_mms_retrieval_during_roaming"/>
+    <string name="pref_title_mms_retrieval_during_roaming">"রোমিং স্বয়ং-পুনরুদ্ধার"</string>
+    <!-- Settings item description for boolean MMS auto-retrieve while roaming option -->
+    <add-resource type="string" name="pref_summary_mms_retrieval_during_roaming"/>
+    <string name="pref_summary_mms_retrieval_during_roaming">"রোমিং-এ থাকার সময় স্বয়ংক্রিয়ভাবে বার্তা পুনরুদ্ধার করুন"</string>
+
+    <!-- Confirm Delete -->
+    <!-- Delete confirmation dialog title -->
+    <add-resource type="string" name="confirm_dialog_title"/>
+    <string name="confirm_dialog_title">"মুছে ফেলবেন?"</string>
+    <!-- Delete confirmation dialog title for locked messages -->
+    <add-resource type="string" name="confirm_dialog_locked_title"/>
+    <string name="confirm_dialog_locked_title">"লক করা বার্তাগুলি বিলোপ করব?"</string>
+    <!-- This message is displayed in a confirmation dialog when the user selects one or more
+         conversations and then taps the "Delete" button. -->
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"একটি কথোপকথন মোছা হবে।"</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"<xliff:g id="number" example="15">%1$s</xliff:g>টি কথোপকথম মোছা হবে।"</item>
+    </plurals>
+    <add-resource type="string" name="confirm_delete_conversation"/>
+    <string name="confirm_delete_conversation">"সম্পূর্ণ থ্রেড বিলোপ করা হবে।"</string>
+    <!-- Delete all threads confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_all_conversations"/>
+    <string name="confirm_delete_all_conversations">"সব থ্রেডগুলি বিলোপ করা হবে।"</string>
+    <!-- Delete message confirmation dialog message -->
+    <add-resource type="string" name="confirm_delete_message"/>
+    <string name="confirm_delete_message">"বার্তাটি বিলোপ করা হবে।"</string>
+    <!-- Delete message confirmation dialog message for a locked message -->
+    <add-resource type="string" name="confirm_delete_locked_message"/>
+    <string name="confirm_delete_locked_message">"লক করা বার্তাগুলি বিলোপ করব?"</string>
+    <!-- Delete all the messages on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_all_SIM_messages"/>
+    <string name="confirm_delete_all_SIM_messages">"SIM কার্ডে সব বার্তাগুলি বিলোপ করা হবে।"</string>
+    <!-- Delete the selected message on the SIM dialog message -->
+    <add-resource type="string" name="confirm_delete_SIM_message"/>
+    <string name="confirm_delete_SIM_message">"SIM কার্ডে এই বার্তাটি বিলোপ করা হবে।"</string>
+    <!-- Delete unlocked checkbox title -->
+    <add-resource type="string" name="delete_unlocked"/>
+    <string name="delete_unlocked">"লক করা বার্তাগুলি মুছুন"</string>
+    <!-- Delete button title -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"মুছুন"</string>
+    <!-- Action bar mode title when multi-selecting conversations -->
+    <add-resource type="string" name="select_conversations"/>
+    <string name="select_conversations">"বার্তালাপগুলি বাছুন"</string>
+    <!-- Show this in the middle of the main activity when there are no conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="no_conversations"/>
+    <string name="no_conversations">"বার্তালাপগুলি নেই।"</string>
+    <!-- Show this in the middle of the main activity when loading conversations [CHAR LIMIT=none] -->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"কথাবার্তা লোড করা হচ্ছে।"</string>
+
+    <!-- When the user tries to view message details and some error occurs while
+         retrieving those details, this message will be shown. -->
+    <add-resource type="string" name="cannot_get_details"/>
+    <string name="cannot_get_details">"বিবরণ পাচ্ছি না।"</string>
+    <!-- Title of "Message details" dialog -->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"বার্তার বিশদ বিবরণ"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_type_label"/>
+    <string name="message_type_label">"প্রকার:\u0020"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="text_message"/>
+    <string name="text_message">"টেক্সট বার্তা"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_message"/>
+    <string name="multimedia_message">"মাল্টিমিডিয়া বার্তা"</string>
+    <!-- "Type" value in "Message details" dialog -->
+    <add-resource type="string" name="multimedia_notification"/>
+    <string name="multimedia_notification">"মাল্টিমিডিয়া বার্তা বিজ্ঞপ্তি"</string>
+    <!-- Label in "Message details" dialog showing who sent the message. -->
+    <add-resource type="string" name="from_label"/>
+    <string name="from_label">"থেকে:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="to_address_label"/>
+    <string name="to_address_label">"প্রতি:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="bcc_label"/>
+    <string name="bcc_label">"Bcc:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="sent_label"/>
+    <string name="sent_label">"প্রেরিত:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="received_label"/>
+    <string name="received_label">"প্রাপ্ত করা হয়েছে:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="saved_label"/>
+    <string name="saved_label">"সংরক্ষিত:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="subject_label"/>
+    <string name="subject_label">"বিষয়:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_size_label"/>
+    <string name="message_size_label">"বার্তার মাপ:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="mms_size_label"/>
+    <string name="mms_size_label">"আকার:\u0020"</string>
+    <add-resource type="string" name="priority_label"/>
+    <string name="priority_label">"অগ্রাধিকার:\u0020"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_high"/>
+    <string name="priority_high">"উচ্চ"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_normal"/>
+    <string name="priority_normal">"স্বাভাবিক"</string>
+    <!-- "Priority" value in "Message details" dialog -->
+    <add-resource type="string" name="priority_low"/>
+    <string name="priority_low">"নীচু"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="message_class_label"/>
+    <string name="message_class_label">"বার্তা শ্রেণী:\u0020"</string>
+    <!-- Label in "Message details" dialog -->
+    <add-resource type="string" name="error_code_label"/>
+    <string name="error_code_label">"ত্রুটি কোড:\u0020"</string>
+
+   <!-- Menu title for editing a message -->
+   <add-resource type="string" name="menu_edit"/>
+    <string name="menu_edit">"সম্পাদনা"</string>
+   <!-- Menu title for deleting undelivered messages or messages on
+        the SIM card. -->
+   <add-resource type="string" name="menu_delete_messages"/>
+    <string name="menu_delete_messages">"বার্তাগুলি মুছুন"</string>
+   <!-- Menu title for locking a message -->
+   <add-resource type="string" name="menu_lock"/>
+    <string name="menu_lock">"লক"</string>
+   <!-- Menu title for unlocking a message -->
+   <add-resource type="string" name="menu_unlock"/>
+    <string name="menu_unlock">"আনলক"</string>
+
+    <!-- Manage SIM Messages -->
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="tablet">"ট্যাবলেট স্মৃতিতে কপি করুন"</string>
+    <!-- Menu title to copy a selected message from the SIM card to the phone. -->
+    <add-resource type="string" name="sim_copy_to_phone_memory"/>
+    <string name="sim_copy_to_phone_memory" product="default">"ফোন স্মৃতিতে কপি করুন"</string>
+    <!-- Menu title to delete a selected messaged from the SIM card. -->
+    <add-resource type="string" name="sim_delete"/>
+    <string name="sim_delete">"মুছুন"</string>
+    <!-- Title of screen displaying messages on SIM card -->
+    <add-resource type="string" name="sim_manage_messages_title"/>
+    <string name="sim_manage_messages_title">"SIM কার্ডে পাঠ্য বার্তাগুলি"</string>
+    <!-- Context menu item but currently commented out in 1.0. -->
+    <add-resource type="string" name="sim_view"/>
+    <string name="sim_view">"দেখুন"</string>
+    <!-- Message that appears on the "SMS messges on SIM card" screen when there are no messages on the SIM card -->
+    <add-resource type="string" name="sim_empty"/>
+    <string name="sim_empty">"SIM কার্ডে বার্তা নেই।"</string>
+
+    <!-- Delivery Header View -->
+    <!-- Title of "Report" window -->
+    <add-resource type="string" name="delivery_header_title"/>
+    <string name="delivery_header_title">"জানান"</string>
+
+    <!-- Delivery Report Activity -->
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_none"/>
+    <string name="status_none">"(নেই)"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_pending"/>
+    <string name="status_pending">"বকেয়া"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_read"/>
+    <string name="status_read">"পঠন"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_received"/>
+    <string name="status_received">"প্রাপ্ত"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_failed"/>
+    <string name="status_failed">"অসফল"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_unread"/>
+    <string name="status_unread">"অপঠিত"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_deleted_unread"/>
+    <string name="status_deleted_unread">"না পড়েই মোছা হয়েছে"</string>
+    <!-- Status in "Report" window -->
+    <add-resource type="string" name="status_rejected"/>
+    <string name="status_rejected">"নাকচ করা হয়েছে"</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="recipient_label"/>
+    <string name="recipient_label">"প্রাপক:"</string>
+    <!-- Label in "Report" window -->
+    <add-resource type="string" name="status_label"/>
+    <string name="status_label">"স্থিতি:"</string>
+    <!-- Label in "Report" window [CHAR LIMIT=50]-->
+    <add-resource type="string" name="delivered_label"/>
+    <string name="delivered_label">"প্রেরিত:\u0020"</string>
+    <add-resource type="string" name="delivery_report"/>
+    <string name="delivery_report">"বিতরণের রিপোর্ট:\u0020"</string>
+    <add-resource type="string" name="read_report"/>
+    <string name="read_report">"পড়ার রিপোর্ট:\u0020"</string>
+
+
+    <add-resource type="string" name="attach_subject"/>
+    <string name="attach_subject">"বিষয়"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_image"/>
+    <string name="attach_image">"চিত্রসমূহ"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_take_photo"/>
+    <string name="attach_take_photo">"ছবি তুলুন"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_video"/>
+    <string name="attach_video">"ভিডিওগুলি"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_video"/>
+    <string name="attach_record_video">"ভিডিও ক্যাপচার করুন"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_sound"/>
+    <string name="attach_sound">"অডিও"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_record_sound"/>
+    <string name="attach_record_sound">"অডিও রেকর্ড করা"</string>
+    <!-- Attachment Type Selector Adapter. This string is an option in the "Attach" dialog, "Add music" dialog -->
+    <add-resource type="string" name="attach_slideshow"/>
+    <string name="attach_slideshow">"স্লাইডশো"</string>
+
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_bottom_text"/>
+    <string name="select_bottom_text">"নিচে টেক্সট"</string>
+    <!-- Layout Selector Adapter. Slideshow layout dialog option for aligning an icon. -->
+    <add-resource type="string" name="select_top_text"/>
+    <string name="select_top_text">"উপরে টেক্সট"</string>
+
+    <!-- Delivery Report Toast dialog content -->
+    <add-resource type="string" name="delivery_toast_body"/>
+    <string name="delivery_toast_body">"বার্তা গ্রহণ করেছেন %s."</string>
+
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple"/>
+    <string name="notification_multiple">"<xliff:g id="count">%s</xliff:g> অপঠিত বার্তাগুলি।"</string>
+    <!-- Delivery Report Notification dialog title. -->
+    <add-resource type="string" name="notification_multiple_title"/>
+    <string name="notification_multiple_title">"নতুন বার্তাগুলি"</string>
+
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple"/>
+    <string name="notification_failed_multiple">"<xliff:g id="count">%s</xliff:g> বার্তাগুলি পাঠানো যায় নি"</string>
+    <!-- Failed to send/download Notification dialog title. -->
+    <add-resource type="string" name="notification_failed_multiple_title"/>
+    <string name="notification_failed_multiple_title">"বার্তাগুলি পাঠানো হয় নি"</string>
+
+    <!-- Sim Full Notification dialog title. -->
+    <add-resource type="string" name="sim_full_title"/>
+    <string name="sim_full_title">"SIM কার্ড পূর্ণ"</string>
+    <!-- Sim Full Notification dialog text. -->
+    <add-resource type="string" name="sim_full_body"/>
+    <string name="sim_full_body">"আরোর জন্য জায়গা করতে কিছু বার্তা মুছুন।"</string>
+
+    <!-- Device Full Notification dialog title. -->
+    <add-resource type="string" name="sms_full_title"/>
+    <string name="sms_full_title">"পাঠ্য বার্তা মেমরি পূর্ণ"</string>
+    <!-- Device Full Notification dialog text. -->
+    <add-resource type="string" name="sms_full_body"/>
+    <string name="sms_full_body">"ফোন মেমোরি পূর্ণ, নতুন বার্তাগুলি প্রেরণ এবং গ্রহণ করতে পারে না, অনুগ্রহ করে কিছু পুরানো বার্তা মুছুন।"</string>
+    <!-- Device Low Notification dialog title. -->
+    <add-resource type="string" name="memory_low_title"/>
+    <string name="memory_low_title">"ফোন মেমোরি স্বল্প"</string>
+    <!-- Device Low Notification dialog text. -->
+    <add-resource type="string" name="memory_low_body"/>
+    <string name="memory_low_body">"ফোনের মেমোরি পূর্ণ হতে চলেছে, অনুগ্রহ করে নতুন বার্তা ভালভাবে পেতে কিছু পুরানো ডেটা মুছুন।"</string>
+    <!-- Disk Storage Full Error Notification dialog text. -->
+    <add-resource type="string" name="disk_storage_full_error"/>
+    <string name="disk_storage_full_error">"ত্রুটি: সঞ্চয়স্থান পূর্ণ।"</string>
+
+    <!-- Mobile data is turned off dialog text. -->
+    <add-resource type="string" name="mobile_data_disable"/>
+    <string name="mobile_data_disable">"মোবাইল ডেটা বন্ধ আছে, আপনি কি তবুও MMS পাঠাতে চান? যদি হ্যাঁ হয় তবে এটি মোবাইল ডেটা ট্র্যাফিক জেনারেট করবে।"</string>
+
+    <add-resource type="string" name="inform_data_off"/>
+    <string name="inform_data_off">"সেলুলার ডেটা বন্ধ করা হয়েছে, আপনার সেটিংস পরীক্ষা করুন। "</string>
+    <!-- Mms size is too large dialog text. -->
+    <add-resource type="string" name="mms_too_large"/>
+    <string name="mms_too_large">"বার্তাটি ডাউনলোড করার পক্ষে অত্যন্ত বড়৷"</string>
+
+    <!-- Sms's Being Rejected Notification dialog title. -->
+    <add-resource type="string" name="sms_rejected_title"/>
+    <string name="sms_rejected_title">"টেক্সট বার্তা নাকচ করা হয়েছে"</string>
+    <!-- Sms's Being Rejected Notification dialog text. -->
+    <add-resource type="string" name="sms_rejected_body"/>
+    <string name="sms_rejected_body">"একটি অজানা কারণে আগত বার্তা নাকচ করা হয়েছে।"</string>
+
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this audio to your message. -->
+    <add-resource type="string" name="type_audio"/>
+    <string name="type_audio">"অডিও"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this picture to your message. -->
+    <add-resource type="string" name="type_picture"/>
+    <string name="type_picture">"চিত্র"</string>
+    <!-- Multimedia type used in building other messages.
+         For instance: Sorry, you cannot add this video to your message. -->
+    <add-resource type="string" name="type_video"/>
+    <string name="type_video">"ভিডিও"</string>
+
+    <!-- Dialog title for the Read Report dialog. -->
+    <add-resource type="string" name="confirm"/>
+    <string name="confirm">"নিশ্চিত করুন"</string>
+    <!-- Dialog text for the Read Report dialog. -->
+    <add-resource type="string" name="message_send_read_report"/>
+    <string name="message_send_read_report">"একটি পঠন রিপোর্ট প্রেরণ করা হবে।"</string>
+
+    <!-- This is the text of a toast message briefly displayed when a problem occurs
+         while sending. -->
+    <add-resource type="string" name="message_queued"/>
+    <string name="message_queued">"বর্তমানে আপনার বার্তা পাঠাতে পারছি না। যখন পরিষেবা প্রাপ্ত হবে তখন এটি পাঠানো হবে।"</string>
+
+    <!-- dialog error message when only is FDN is allowed. -->
+    <add-resource type="string" name="fdn_check_failure"/>
+    <string name="fdn_check_failure">"আপনি শুধু আপনার স্থায়ী ডায়ালিং নম্বরগুলিতে বার্তা পাঠাতে পারবেন।"</string>
+
+    <!-- Download Manager -->
+    <!-- When an error occurs downloading a new message and a subject isn't available, substitute
+         this default subject. -->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"(কোনও বিষয় নয়)"</string>
+    <!-- When an error occurs downloading a new message and the sender is unknown, substitute
+         this default text. -->
+    <add-resource type="string" name="unknown_sender"/>
+    <string name="unknown_sender">"অজানা প্রেরক"</string>
+    <!-- When an error occurs downloading a new message, display this message.
+         An example: Download of message Wanna get pizza from dorkman was unsuccessful. -->
+    <add-resource type="string" name="dl_failure_notification"/>
+    <string name="dl_failure_notification">"বার্তা ডাউনলোড করতে পারলাম না<xliff:g id="subject">%1$s</xliff:g> <xliff:g id="from">%2$s</xliff:g> থেকে।"</string>
+
+    <!-- This is the confirm rate limit alert dialog title. -->
+    <add-resource type="string" name="rate_limit_surpassed"/>
+    <string name="rate_limit_surpassed">"নিশ্চিত করুন"</string>
+    <!-- This is the confirm rate limit alert dialog text. -->
+    <add-resource type="string" name="confirm_rate_limit"/>
+    <string name="confirm_rate_limit">"বেশি সংখ্যায় মাল্টিমিডিয়া বার্তা পাঠানো হচ্ছে। এটা কি ঠিক?"</string>
+
+    <!-- Message Failed Notification -->
+    <!-- Dialog box title when receiving a message failed. -->
+    <add-resource type="string" name="message_download_failed_title"/>
+    <string name="message_download_failed_title">"বার্তা ডাউনলোড করা হয় নি"</string>
+    <!-- Dialog box title when sending a message failed. -->
+    <add-resource type="string" name="message_send_failed_title"/>
+    <string name="message_send_failed_title">"বার্তা পাঠানো হয় নি"</string>
+    <!-- Dialog box message text when failure occurs sending a message. -->
+    <add-resource type="string" name="message_failed_body"/>
+    <string name="message_failed_body">"বার্তাটি পর্যালোচনা করতে এবং আবার চেষ্টা করতে স্পর্শ করুন।"</string>
+    <!-- Dialog box message when there's a problem retrieving messages. -->
+    <add-resource type="string" name="download_later"/>
+    <string name="download_later">"এখন ডাউনলোড করতে পারছি না। পরে আবার চেষ্টা করুন।"</string>
+    <add-resource type="string" name="send_failed_retry"/>
+    <string name="send_failed_retry">"পাঠানো ব্যর্থ হয়েছে, স্বতঃ পুনঃচেষ্টা করা হবে।"</string>
+    <add-resource type="string" name="download_failed_retry"/>
+    <string name="download_failed_retry">"ডাউনলোড ব্যর্থ হয়েছে, স্বতঃ পুনঃচেষ্টা করা হবে।"</string>
+    <add-resource type="string" name="no_network_send_failed_retry"/>
+    <string name="no_network_send_failed_retry">"নেটওয়ার্ক উপলভ্য নেই, পাঠানো ব্যর্থ হয়েছে স্বতঃ পুনঃচেষ্টা করা হবে"</string>
+    <add-resource type="string" name="no_network_download_failed_retry"/>
+    <string name="no_network_download_failed_retry">"নেটওয়ার্ক উপলভ্য নেই, ডাউনলোড ব্যর্থ হয়েছে স্বতঃ পুনঃচেষ্টা করা হবে"</string>
+    <!-- Dialog box message when there's no APN specified on the device. -->
+    <add-resource type="string" name="no_apn"/>
+    <string name="no_apn">"ডিভাইসটিতে কোনও APN নির্দিষ্ট করা নেই।"</string>
+
+    <!-- Title for audio file picker -->
+    <add-resource type="string" name="select_audio"/>
+    <string name="select_audio">"অডিও বাছুন"</string>
+    <add-resource type="string" name="system_audio_item"/>
+    <string name="system_audio_item">"সিস্টেম অডিও"</string>
+    <add-resource type="string" name="external_audio_item"/>
+    <string name="external_audio_item">"বাহ্যিক অডিও"</string>
+    <!-- Menu title to copy an attachment to the shared storage [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copy_to_sdcard"/>
+    <string name="copy_to_sdcard">"সংযুক্তি সংরক্ষণ করুন"</string>
+    <!-- Toast message on successful copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_success"/>
+    <string name="copy_to_sdcard_success">"সংযুক্তি সংরক্ষণ করা হয়েছে।"</string>
+    <!-- Toast message on failed copy to shared storage [CHAR LIMIT=30] -->
+    <add-resource type="string" name="copy_to_sdcard_fail"/>
+    <string name="copy_to_sdcard_fail">"সংযুক্তি সংরক্ষণ করতে পারি নি।"</string>
+    <!-- Menu title to save a sound as a ringtone -->
+    <add-resource type="string" name="save_ringtone"/>
+    <string name="save_ringtone">"রিংটোন হিসাবে সংরক্ষণ করুন"</string>
+    <!-- Toast message on successful copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone"/>
+    <string name="saved_ringtone">"রিংটোন সংরক্ষণ করা হয়েছে।"</string>
+    <!-- Toast message on failed copying ringtone to drm provider -->
+    <add-resource type="string" name="saved_ringtone_fail"/>
+    <string name="saved_ringtone_fail">"রিংটোন সংরক্ষণ করতে পারি নি।"</string>
+    <!-- Menu item -->
+    <!-- Menu item  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="menu_group_participants"/>
+    <string name="menu_group_participants">"গ্রুপ অংশগ্রহণকারী"</string>
+
+    <!-- This is the dialog title for the "Select link" dialog, shown when the user clicks on a
+    chat in the chat history view if there are links in the chat message. The dialog displays the
+    links if there are any -->
+    <add-resource type="string" name="select_link_title"/>
+    <string name="select_link_title">"ক্রিয়া বাছুন"</string>
+
+    <!-- Name of the Nth slide, shown in the list in the slideshow editor. -->
+    <add-resource type="string" name="slide_number"/>
+    <string name="slide_number">"স্লাইড <xliff:g id="number" example="5">%s</xliff:g>"</string>
+    <!-- Duration of the slide, shown in the list in the slideshow editor -->
+    <add-resource type="plurals" name="slide_duration"/>
+    <plurals name="slide_duration">
+        <!-- Case of 1-second duration. -->
+        <item quantity="one">"<xliff:g id="number" example="1">%s</xliff:g> সেকেন্ড"</item>
+        <!-- Case of "few" (small number of) seconds of duration. -->
+        <item quantity="few">"<xliff:g id="number" example="2">%s</xliff:g> সেকেন্ড"</item>
+        <!-- Case of multiple-second duration. -->
+        <item quantity="other">"<xliff:g id="number" example="15">%s</xliff:g> সেকেন্ড"</item>
+    </plurals>
+
+    <!-- Title of the delivery report activity. -->
+    <add-resource type="string" name="delivery_report_activity"/>
+    <string name="delivery_report_activity">"প্রদানের প্রতিবেদন"</string>
+
+    <!-- Title of the activity that tells the user about storage limits. -->
+    <add-resource type="string" name="storage_limits_activity"/>
+    <string name="storage_limits_activity">"সঞ্চয়স্থান সীমাগুলি"</string>
+
+    <!-- Title of the slide duration editor activity. -->
+    <add-resource type="string" name="change_duration_activity"/>
+    <string name="change_duration_activity">"সময়কাল পরিবর্তন করুন"</string>
+
+    <!-- Title of the slideshow editor activity. -->
+    <add-resource type="string" name="edit_slideshow_activity"/>
+    <string name="edit_slideshow_activity">"স্লাইডশো সম্পাদনা করুন"</string>
+
+    <!-- Title of the recipient list activity. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="recipient_list_activity"/>
+    <string name="recipient_list_activity">"গ্রুপ অংশগ্রহণকারী"</string>
+
+    <!-- Title of the slide editor activity. -->
+    <add-resource type="string" name="edit_slide_activity"/>
+    <string name="edit_slide_activity">"স্লাইড সম্পাদনা করুন"</string>
+
+    <!-- Title of the slideshow activity. -->
+    <add-resource type="string" name="slideshow_activity"/>
+    <string name="slideshow_activity">"স্লাইডশো"</string>
+
+    <!-- Title of the class-0 message activity. -->
+    <add-resource type="string" name="class_0_message_activity"/>
+    <string name="class_0_message_activity">"শ্রেণী 0 বার্তা"</string>
+
+    <!-- Application name shown when searching -->
+    <add-resource type="string" name="search_label"/>
+    <string name="search_label">"বার্তা প্রেরণ"</string>
+
+    <!-- Search hint -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"বার্তা পাঠানো সন্ধান করুন"</string>
+
+    <!-- Search activity name -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"বার্তা প্রেরণ"</string>
+    <!-- Search setting description -->
+    <add-resource type="string" name="search_setting_description"/>
+    <string name="search_setting_description">"আপনার বার্তাগুলিতে পাঠ্য"</string>
+
+    <!--  Search empty results -->
+    <add-resource type="string" name="search_empty"/>
+    <string name="search_empty">"কোন মিল নেই।"</string>
+
+    <!--  Search results title -->
+    <add-resource type="plurals" name="search_results_title"/>
+    <plurals name="search_results_title">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"<xliff:g id="number" example="1">%1$s</xliff:g> ফলাফল<xliff:g id="search" example="???">%2$s</xliff:g> এর জন্য "</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"<xliff:g id="number" example="15">%1$s</xliff:g> ফলাফল <xliff:g id="search" example="???">%2$s</xliff:g> এর জন্য "</item>
+    </plurals>
+
+    <!--- String saved in history searches. -->
+    <add-resource type="string" name="search_history"/>
+    <string name="search_history">"<xliff:g id="count">%1$s</xliff:g> ফলাফল এর জন্য \"<xliff:g id="search">%2$s</xliff:g>\""</string>
+
+    <!-- Button title in Messaging preferences. -->
+    <add-resource type="string" name="confirm_clear_search_title"/>
+    <string name="confirm_clear_search_title">"পরিষ্কার করুন"</string>
+    <!-- Text for the preferences button. -->
+    <add-resource type="string" name="confirm_clear_search_text"/>
+    <string name="confirm_clear_search_text">"সন্ধানের ইতিহাস অবলোপ করা হবে।"</string>
+    <!--- Button title in preferences to clear the search history. It's a verb action that takes place
+          immediately when clicked. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_title"/>
+    <string name="pref_mms_clear_search_history_title">"সন্ধান ইতিহাস পরিষ্কার করুন"</string>
+    <!--- Button description in preferences to clear the search history. -->
+    <add-resource type="string" name="pref_mms_clear_search_history_summary"/>
+    <string name="pref_mms_clear_search_history_summary">"আগের বার্তা পাঠানোর সন্ধানগুলি সন্ধান বাক্সে প্রদর্শন থেকে পরিষ্কার করুন"</string>
+
+    <!-- Dialog text for display mode save dialog. -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"সংরক্ষণ করুন"</string>
+
+    <!-- Dialog title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_title"/>
+    <string name="storage_limits_title">"বার্তাগুলির সীমা"</string>
+
+    <!-- Dialog message for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_message"/>
+    <string name="storage_limits_message">"প্রতি বার্তালাপে সংরক্ষণ করা বার্তাগুলির সীমা রাখুন?"</string>
+
+    <!-- Button title for dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting"/>
+    <string name="storage_limits_setting">"সীমা সেট করুন"</string>
+
+    <!-- Button title to dismiss dialog that informs user about new storage settings. -->
+    <add-resource type="string" name="storage_limits_setting_dismiss"/>
+    <string name="storage_limits_setting_dismiss">"কোন সীমা নেই"</string>
+
+    <!-- Toast message when a user tries to send a Mms message when there are already too many
+         outstanding unsent message. -->
+    <add-resource type="string" name="too_many_unsent_mms"/>
+    <string name="too_many_unsent_mms">"এখন বার্তা প্রেরণ করতে পারছি না। খুব বেশি না প্রেরণ করা মাল্টিমিডিয়া বার্তা।"</string>
+
+    <!-- Brief small label shown to right of message when it is being sent. -->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"পাঠানো হচ্ছে..."</string>
+
+    <!-- Title of progress dialog for picker -->
+    <add-resource type="string" name="pick_too_many_recipients"/>
+    <string name="pick_too_many_recipients">"খুব বেশি প্রাপকগণ"</string>
+
+    <!-- Message of progress dialog for picker -->
+    <add-resource type="string" name="adding_recipients"/>
+    <string name="adding_recipients">"প্রাপকদের যোগ করছি\u2026"</string>
+
+    <!-- In conversation list items, this is the separator between a contact's name
+         and the draft stamp [CHAR LIMIT=5] -->
+    <add-resource type="string" name="draft_separator"/>
+    <string name="draft_separator">,\u0020</string>
+
+    <!-- In conversation list items, this comes after the receipient's name and contains
+         the number of messages in the thread [CHAR LIMIT=5] -->
+    <add-resource type="string" name="message_count_format"/>
+    <string name="message_count_format">"\u00a0<xliff:g id="number" example="1">%1$s</xliff:g>"</string>
+
+    <!-- When showing a multi-message notification, this is the title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_count_notification"/>
+    <string name="message_count_notification">"<xliff:g id="number" example="3">%1$s</xliff:g> নতুন বার্তাসমূহ"</string>
+    <!-- In digest notifications when we show N messages, but there are N+M outstanding messages,
+         this text is displayed at the bottom of the notification. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="message_count_notification_overflow"/>
+    <plurals name="message_count_notification_overflow">
+        <!-- Case of 1 result. -->
+        <item quantity="one">"+<xliff:g id="number" example="1">%1$s</xliff:g>টি অন্যান্য বার্তা"</item>
+        <!-- Case of 2 or more results. -->
+        <item quantity="other">"+<xliff:g id="number" example="15">%1$s</xliff:g>টি অন্যান্য বার্তা"</item>
+    </plurals>
+
+    <!-- For debugging: Dialog box title indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state"/>
+    <string name="error_state">"অসঙ্গত স্থিতি"</string>
+    <!-- For debugging: Dialog box text indicating there's a situation where data has unexpectedly
+         changed -->
+    <add-resource type="string" name="error_state_text"/>
+    <string name="error_state_text">"থ্রেড ও প্রাপকদের স্থিতি অসঙ্গত। অনুগ্রহ করে একটি ত্রুটি প্রতিবেদন পরিগ্রহণ করুন এবং http://go/droidanizer-এর মাধ্যমে তা প্রতিবেদন করুন "</string>
+
+    <!-- In the title of the compose message activity, when there are multiple recipients, we show
+         the number of recipients in the subtitle of the action bar. There's never a case of one. [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="recipient_count"/>
+    <plurals name="recipient_count">
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">"<xliff:g id="number" example="15">%1$s</xliff:g> জন"</item>
+    </plurals>
+
+    <!-- Message of the dialog used to disable messaging notifications [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_notifications_dialog_message"/>
+    <string name="disable_notifications_dialog_message">"অমনোনীত বার্তা পাঠানো অ্যাপ থেকে নকল টেক্সট বার্তা বিজ্ঞপ্তি পাঠানো থামাব?"</string>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default conversation list. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"আরও কথাবার্তা দেখুন"</string>
+
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"অডিও"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_slideshow"/>
+    <string name="attachment_slideshow">"স্লাইডশো"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"ভিডিও"</string>
+    <!-- Attachment type shown in notification. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="attachment_picture"/>
+    <string name="attachment_picture">"চিত্র"</string>
+
+    <!-- Separator between parts of a notification in each line of an inboxStyle notification. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="notification_separator"/>
+    <string name="notification_separator">\u0020\u0020</string>
+
+    <!-- An enumeration comma for separating multiple names in notifications. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- In message list items, this string builds the timestamp line when the message is in a group [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="message_timestamp_format"/>
+    <string name="message_timestamp_format">"<xliff:g id="string" example="Fred Flinstone">%1$s</xliff:g>\u0020-\u0020<xliff:g id="string" example="9:39AM">%2$s</xliff:g>"</string>
+
+    <add-resource type="string" name="mail_to"/>
+    <string name="mail_to">"এতে মেল করুন:"</string>
+    <!-- Menu item to connect the extract url in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_connect_url"/>
+    <string name="menu_connect_url">"সংযোগ করুন"</string>
+    <!-- Menu item to add the extract url to boomark in WwwContextMenuActivity  -->
+    <add-resource type="string" name="menu_add_to_label"/>
+    <string name="menu_add_to_label">"বুকমার্কে সংরক্ষণ করুন"</string>
+    <add-resource type="string" name="loadurlinfo_str"/>
+    <string name="loadurlinfo_str">"URL-টি লোড করবেন?"</string>
+    <!-- Message Template -->
+    <add-resource type="string" name="pref_summary_message_template"/>
+    <string name="pref_summary_message_template">"বার্তা টেমপ্লেট সম্পাদনা করুন"</string>
+    <add-resource type="string" name="pref_title_message_template"/>
+    <string name="pref_title_message_template">"বার্তা টেমপ্লেট"</string>
+    <add-resource type="string" name="title_new_message_template"/>
+    <string name="title_new_message_template">"টেমপ্লেট"</string>
+    <add-resource type="string" name="summary_new_message_template"/>
+    <string name="summary_new_message_template">"নতুন বার্তা টেমপ্লেট রচনা করুন"</string>
+    <add-resource type="string" name="message_template_title"/>
+    <string name="message_template_title">"বার্তা টেমপ্লেট"</string>
+    <add-resource type="string" name="dialog_editSMSTemplate_title"/>
+    <string name="dialog_editSMSTemplate_title">"সম্পাদনা"</string>
+    <add-resource type="string" name="dialog_createSMSTemplate_title"/>
+    <string name="dialog_createSMSTemplate_title">"নতুন টেমপ্লেট"</string>
+    <add-resource type="string" name="message_template"/>
+    <string name="message_template">"বার্তা টেমপ্লেট"</string>
+    <add-resource type="string" name="import_message_template"/>
+    <string name="import_message_template">"টেমপ্লেট আমদানি করুন"</string>
+    <add-resource type="string" name="delete_template_message"/>
+    <string name="delete_template_message">"মুছুন"</string>
+    <add-resource type="string" name="template_full"/>
+    <string name="template_full">"টেমপ্লেট পাঠ্য সংখ্যার সীমাতে পৌঁছেছে।"</string>
+    <add-resource type="string" name="pref_sms_signature_title"/>
+    <string name="pref_sms_signature_title">"SMS স্বাক্ষর"</string>
+    <add-resource type="string" name="pref_title_enable_signature"/>
+    <string name="pref_title_enable_signature">"SMS স্বাক্ষর"</string>
+    <add-resource type="string" name="pref_summary_enable_signature"/>
+    <string name="pref_summary_enable_signature">"SMS স্বাক্ষর সক্ষম করা হয়েছে"</string>
+    <add-resource type="string" name="pref_summary_disable_signature"/>
+    <string name="pref_summary_disable_signature">"SMS স্বাক্ষর অক্ষম করা হয়েছে"</string>
+    <add-resource type="string" name="pref_title_edit_signature"/>
+    <string name="pref_title_edit_signature">"SMS স্বাক্ষর সম্পাদনা করুন"</string>
+    <add-resource type="string" name="signature_full_toast"/>
+    <string name="signature_full_toast">"স্বাক্ষরটি সর্বাধিক দৈর্ঘ্যে পৌঁছেছে।"</string>
+
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="menu_copy_to"/>
+    <string name="menu_copy_to">"অনুলিপি"</string>
+    <add-resource type="string" name="operation_to_card_memory"/>
+    <string name="operation_to_card_memory">"SIM কার্ডে সংরক্ষণ করুন"</string>
+
+    <!-- SMSC -->
+    <add-resource type="string" name="pref_smsc_title"/>
+    <string name="pref_smsc_title">"SMSC সেটিং"</string>
+    <add-resource type="string" name="pref_one_smcs"/>
+    <string name="pref_one_smcs">"smsc নম্বর সেট করুন"</string>
+    <add-resource type="string" name="pref_more_smcs"/>
+    <string name="pref_more_smcs">"বার্তা সেন্টারের নম্বর"</string>
+    <add-resource type="string" name="pref_more_message_smcs"/>
+    <string name="pref_more_message_smcs">"SIM<xliff:g id="slot_number">%d</xliff:g>"</string>
+    <add-resource type="string" name="set_smsc_error"/>
+    <string name="set_smsc_error">"smsc নম্বর সেট করতে ত্রুটি"</string>
+    <add-resource type="string" name="set_smsc_success"/>
+    <string name="set_smsc_success">"smsc নম্বর সেট করা সফল"</string>
+    <add-resource type="string" name="set_smsc_confirm_message"/>
+    <string name="set_smsc_confirm_message">"smsc পরিবর্তন করলে তাতে SMS পাঠানো নাও সম্ভব হতে পারে, পরিবর্তনটি করতে চান?"</string>
+
+    <add-resource type="string" name="storage_warning_title"/>
+    <string name="storage_warning_title">"আপনার ফোনের সঞ্চয়স্থান পূর্ণ"</string>
+    <add-resource type="string" name="storage_warning_content"/>
+    <string name="storage_warning_content">"আপনি নতুন SMS/MMS বার্তা পাবেন না"</string>
+    <!-- Copy message to sim -->
+    <add-resource type="string" name="copy_to_sim"/>
+    <string name="copy_to_sim">"SIM কার্ডে বার্তা অনুলিপি করুন"</string>
+    <add-resource type="string" name="copy_to_sim_success"/>
+    <string name="copy_to_sim_success">"SMSটি SIM কার্ডে অনুলিপি করুন, যোগফল: %1$d, সাফল্য: %2$d"</string>
+    <add-resource type="string" name="copy_to_sim_fail"/>
+    <string name="copy_to_sim_fail">"বার্তা সংরক্ষণ করতে সক্ষম নয়"</string>
+    <add-resource type="string" name="copy_to_phone_success"/>
+    <string name="copy_to_phone_success">"বার্তা সংরক্ষণ করা হয়েছে"</string>
+    <add-resource type="string" name="copy_to_phone_fail"/>
+    <string name="copy_to_phone_fail">"বার্তা সংরক্ষণ করতে সক্ষম নয়"</string>
+    <add-resource type="string" name="cannot_copy_to_sim_reason"/>
+    <string name="cannot_copy_to_sim_reason">"আপনার বার্তার কোন বৈধ প্রাপক নেই।"</string>
+
+    <add-resource type="string" name="audio_picker_app_not_found"/>
+    <string name="audio_picker_app_not_found">"অডিও বেছে নেওয়ার উপযুক্ত অ্যাপ খুঁজে পাওয়া গেল না"</string>
+    <add-resource type="string" name="bookmark_save_app_not_found"/>
+    <string name="bookmark_save_app_not_found">"বুকমার্ক সংরক্ষণ করার অ্যাপ খুঁজে পাওয়া যায়নি"</string>
+    <add-resource type="string" name="contact_app_not_found"/>
+    <string name="contact_app_not_found">"সম্পর্কের আবেদন খুঁজে পাইনি"</string>
+    <!-- Gray hint displayed in the search field in Contacts when empty -->
+    <add-resource type="string" name="search_bar_hint"/>
+    <string name="search_bar_hint">"পরিচিতি সন্ধান করুন"</string>
+    <add-resource type="string" name="select_all"/>
+    <string name="select_all">"সমস্ত"</string>
+
+    <!-- Add for share contact feature -->
+    <add-resource type="string" name="type_vcard"/>
+    <string name="type_vcard">"vCard"</string>
+    <add-resource type="string" name="import_vcard"/>
+    <string name="import_vcard">"আমদানি"</string>
+    <add-resource type="string" name="attach_add_contact_as_text"/>
+    <string name="attach_add_contact_as_text">"পরিচিতি তথ্য অন্তর্ভুক্তি"</string>
+    <add-resource type="string" name="attach_add_contact_as_vcard"/>
+    <string name="attach_add_contact_as_vcard">"পরিচিতি vCard"</string>
+
+    <add-resource type="string" name="contact_info_text_as_name"/>
+    <string name="contact_info_text_as_name">"নাম:"</string>
+    <add-resource type="string" name="contact_info_text_as_phone"/>
+    <string name="contact_info_text_as_phone">"টেলিফোন:"</string>
+    <add-resource type="string" name="contact_info_text_as_email"/>
+    <string name="contact_info_text_as_email">"ইমেল:"</string>
+
+    <!--  Strings used forh MMS push of messages in outbox -->
+    <add-resource type="string" name="label_mms_send_outbox_msg"/>
+    <string name="label_mms_send_outbox_msg">"MMS ওয়েকআপ"</string>
+    <add-resource type="string" name="desc_mms_send_outbox_msg"/>
+    <string name="desc_mms_send_outbox_msg">"আউটবক্স থেকে নেটওয়ার্কে সমস্ত MMS পাঠায়"</string>
+
+    <add-resource type="string" name="pref_wap_push_title"/>
+    <string name="pref_wap_push_title">"স্বয়ং পুশ পরিষেবা বার্তা সেটিং"</string>
+    <add-resource type="string" name="pref_title_wap_push_enabled"/>
+    <string name="pref_title_wap_push_enabled">"WAP পুশ পরিষেবা সক্ষম করুন"</string>
+    <add-resource type="string" name="pref_summary_wap_push_enabled"/>
+    <string name="pref_summary_wap_push_enabled">"পরিষেবা বার্তা পেতে সক্ষম করুন"</string>
+
+    <!-- Banner in conversation list for making Messaging the default SMS app -->
+    <add-resource type="string" name="banner_sms_promo_title_initial"/>
+    <string name="banner_sms_promo_title_initial">"মেসেজিং আপনার SMS অ্যাপ নয়"</string>
+    <add-resource type="string" name="banner_sms_promo_title_application"/>
+    <string name="banner_sms_promo_title_application">"<xliff:g id="appName">%s</xliff:g> আপনার SMS অ্যাপ"</string>
+    <!-- select contact group -->
+    <add-resource type="string" name="no_contact_group"/>
+    <string name="no_contact_group">"কোনও গোষ্ঠী নেই"</string>
+    <add-resource type="string" name="banner_sms_promo_message"/>
+    <string name="banner_sms_promo_message">"আপনি এটি সেটিংসে পরিবর্তন করতে পারেন"</string>
+
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="sim_card"/>
+    <string name="sim_card">"SIM কার্ড"</string>
+
+    <!-- String used in MemoryStatusActivity.java -->
+    <add-resource type="string" name="memory_status_title"/>
+    <string name="memory_status_title">"মেমোরি স্থিতি"</string>
+    <add-resource type="string" name="sms_phone_used"/>
+    <string name="sms_phone_used">"Sms ব্যবহৃত:"</string>
+    <add-resource type="string" name="sms_phone_capacity"/>
+    <string name="sms_phone_capacity">"Sms ধারণক্ষমতা:"</string>
+    <add-resource type="string" name="mms_phone_used"/>
+    <string name="mms_phone_used">"Mms ব্যবহৃত:"</string>
+    <add-resource type="string" name="mms_phone_capacity"/>
+    <string name="mms_phone_capacity">"Mms ধারণক্ষমতা:"</string>
+    <add-resource type="string" name="total_memory_used"/>
+    <string name="total_memory_used">"মোট ব্যবহৃত মেমরি:"</string>
+    <add-resource type="string" name="sub"/>
+    <string name="sub">"উপ"</string>
+
+    <!-- Settings item description for SMS Validity period -->
+    <add-resource type="string" name="pref_title_sms_validity_period"/>
+    <string name="pref_title_sms_validity_period">"SMS বৈধতা সময়কাল"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot1"/>
+    <string name="pref_title_sms_validity_period_slot1">"চিম1-এর জন্য SMS বৈধতার সময়কাল"</string>
+    <add-resource type="string" name="pref_title_sms_validity_period_slot2"/>
+    <string name="pref_title_sms_validity_period_slot2">"চিম2-এর জন্য SMS বৈধতার সময়কাল"</string>
+    <add-resource type="string" name="sms_validity_period_not_set"/>
+    <string name="sms_validity_period_not_set">"সেট করা নেই"</string>
+    <add-resource type="string" name="sms_validity_period_one_hour"/>
+    <string name="sms_validity_period_one_hour">"1 ঘন্টা"</string>
+    <add-resource type="string" name="sms_validity_period_six_hours"/>
+    <string name="sms_validity_period_six_hours">"6 ঘন্টা"</string>
+    <add-resource type="string" name="sms_validity_period_twelve_hours"/>
+    <string name="sms_validity_period_twelve_hours">"12 ঘন্টা"</string>
+    <add-resource type="string" name="sms_validity_period_one_day"/>
+    <string name="sms_validity_period_one_day">"1 দিন"</string>
+    <add-resource type="string" name="sms_validity_period_maximum"/>
+    <string name="sms_validity_period_maximum">"সর্বাধিক"</string>
+
+    <add-resource type="string" name="operate_success"/>
+    <string name="operate_success">"সফলভাবে পরিচালিত হয়েছে!"</string>
+    <add-resource type="string" name="operate_failure"/>
+    <string name="operate_failure">"সফলভাবে পরিচালিত হয়নি!"</string>
+    <add-resource type="string" name="menu_reply"/>
+    <string name="menu_reply">"উত্তর দিন"</string>
+
+    <add-resource type="string" name="slot1"/>
+    <string name="slot1">"স্লট1"</string>
+    <add-resource type="string" name="slot2"/>
+    <string name="slot2">"স্লট2"</string>
+
+    <add-resource type="string" name="normal_show"/>
+    <string name="normal_show">"স্বাভাবিক মোডটি দেখুন"</string>
+    <add-resource type="string" name="cannot_play"/>
+    <string name="cannot_play">"স্লাইড শোটি উপস্থাপন করতে পারে না৷"</string>
+
+    <add-resource type="string" name="confirm_delete_selected_messages"/>
+    <string name="confirm_delete_selected_messages">"নির্বাচিত বার্তাগুলি মুছে যাবে৷"</string>
+    <!-- menu item of mailboxmessagecontent -->
+    <add-resource type="string" name="menu_load_push"/>
+    <string name="menu_load_push">"লোড করুন"</string>
+    <add-resource type="string" name="menu_delete_msg"/>
+    <string name="menu_delete_msg">"মুছুন"</string>
+    <!-- toast for send result -->
+    <add-resource type="string" name="send_failure"/>
+    <string name="send_failure">"প্রেরণ ব্যর্থ হয়েছে!"</string>
+    <add-resource type="string" name="send_success"/>
+    <string name="send_success">"সফলভাবে পাঠানো হয়েছে!"</string>
+    <!-- title of mailboxmessagecontent -->
+    <add-resource type="string" name="message_detail"/>
+    <string name="message_detail">"বিশদ বিবরণ"</string>
+    <add-resource type="string" name="select_messages"/>
+    <string name="select_messages">"বার্তাগুলি নির্বাচন করুন"</string>
+    <add-resource type="string" name="no_message"/>
+    <string name="no_message">"কোনও বার্তা নেই"</string>
+    <add-resource type="string" name="change_to_folder_mode"/>
+    <string name="change_to_folder_mode">"ফোল্ডার মোডে পরিবর্তন করুন"</string>
+    <add-resource type="string" name="change_to_conversation_mode"/>
+    <string name="change_to_conversation_mode">"কথোপকথন মোডে পরিবর্তন করুন"</string>
+    <!-- Spinner item of box type in mailbox-mode -->
+    <add-resource type="string" name="box_type_select"/>
+    <string name="box_type_select">"বাক্স প্রকার নির্বাচন করুন"</string>
+    <add-resource type="string" name="type_inbox"/>
+    <string name="type_inbox">"ইনবক্স"</string>
+    <add-resource type="string" name="type_sent"/>
+    <string name="type_sent">"প্রেরিত"</string>
+    <add-resource type="string" name="type_outbox"/>
+    <string name="type_outbox">"আউটবক্স"</string>
+    <add-resource type="string" name="type_draft"/>
+    <string name="type_draft">"খসড়াসমূহ"</string>
+    <!-- Spinner item of slot type in mailbox-mode -->
+    <add-resource type="string" name="slot_type_select"/>
+    <string name="slot_type_select">"স্লট নির্বাচন করুন"</string>
+    <add-resource type="string" name="type_all"/>
+    <string name="type_all">"সব"</string>
+    <add-resource type="string" name="type_slot1"/>
+    <string name="type_slot1">"কার্ড1"</string>
+    <add-resource type="string" name="type_slot2"/>
+    <string name="type_slot2">"কার্ড2"</string>
+    <!-- String used in SearchActivityExtend.java -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"বার্তা অনুসন্ধান"</string>
+    <add-resource type="string" name="search_key"/>
+    <string name="search_key">"কীওয়ার্ড অনুসন্ধান করুন"</string>
+    <add-resource type="string" name="search_mode"/>
+    <string name="search_mode">"অনুসন্ধান মোড"</string>
+    <add-resource type="string" name="search_as_name"/>
+    <string name="search_as_name">"নাম"</string>
+    <add-resource type="string" name="search_as_number"/>
+    <string name="search_as_number">"নম্বর"</string>
+    <add-resource type="string" name="search_as_content"/>
+    <string name="search_as_content">"সামগ্রী"</string>
+    <add-resource type="string" name="search_as_subject"/>
+    <string name="search_as_subject">"বিষয়বস্তু"</string>
+    <add-resource type="string" name="invalid_name_toast"/>
+    <string name="invalid_name_toast">"অনুগ্রহ করে বৈধ নাম ইনপুট করুন!"</string>
+
+    <add-resource type="string" name="sim_capacity_title"/>
+    <string name="sim_capacity_title">"SIM-এর ধারণক্ষমতা"</string>
+    <add-resource type="string" name="sim_capacity_used"/>
+    <string name="sim_capacity_used">"ব্যবহৃত:  "</string>
+    <add-resource type="string" name="sim_capacity"/>
+    <string name="sim_capacity">"ধারণক্ষমতা:  "</string>
+    <add-resource type="string" name="mms_recipient_Limit"/>
+    <string name="mms_recipient_Limit"></string>
+    <add-resource type="string" name="no_network_notification_when_send_message"/>
+    <string name="no_network_notification_when_send_message">"বার্তা প্রেরণের জন্য Wi-Fi-এ সংযোগ স্থাপন করুন"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_message_text"/>
+    <string name="alert_user_connect_to_wifi_for_message_text">"উপলভ্য নেটওয়ার্কগুলি দেখতে এখানে ট্যাপ করুন"</string>
+    <add-resource type="string" name="no_network_alert_when_send_message"/>
+    <string name="no_network_alert_when_send_message">"কোনো সেলুলার নেটওয়ার্ক উপলভ্য নয়।  বার্তা প্রেরণ করতে উপলভ্য Wi-Fi-এ সংযোগ স্থাপন করুন।"</string>
+
+    <!-- Settings item description for Mms Validity period -->
+    <add-resource type="string" name="pref_title_mms_save_time"/>
+    <string name="pref_title_mms_save_time">"MMS বৈধতা সময়কাল"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot1"/>
+    <string name="pref_title_mms_save_time_slot1">"সিম1-এর জন্য MMS বৈধতার সময়কাল"</string>
+    <add-resource type="string" name="pref_title_mms_save_time_slot2"/>
+    <string name="pref_title_mms_save_time_slot2">"সিম2-এর জন্য MMS বৈধতার সময়কাল"</string>
+    <add-resource type="string" name="mms_one_week"/>
+    <string name="mms_one_week">"এক সপ্তাহ"</string>
+    <add-resource type="string" name="mms_two_days"/>
+    <string name="mms_two_days">"দুই দিন"</string>
+    <add-resource type="string" name="mms_max"/>
+    <string name="mms_max">"সর্বাধিক"</string>
+    <add-resource type="string" name="save_description"/>
+    <string name="save_description">"সার্ভারে সঞ্চিত বার্তার সময়"</string>
+    <add-resource type="string" name="status_expired"/>
+    <string name="status_expired">"Mms মেয়াদ উত্তীর্ণ"</string>
+
+    <add-resource type="string" name="pref_sim_card_full_save_to_phone"/>
+    <string name="pref_sim_card_full_save_to_phone">"SIM কার্ড পূর্ণ, নতুন বার্তা ফোনে সংরক্ষণ করুন।"</string>
+
+    <!-- batch delete message in ConversationList and MailBoxMessageList -->
+    <add-resource type="string" name="selected_all"/>
+    <string name="selected_all">"সমস্ত নির্বাচন করুন"</string>
+    <add-resource type="string" name="deselected_all"/>
+    <string name="deselected_all">"সব নির্বাচনমুক্ত করুন"</string>
+    <add-resource type="string" name="selected_count"/>
+    <string name="selected_count">"<xliff:g id="COUNT">%d</xliff:g> নির্বাচিত"</string>
+    <!--add for toast when deleting -->
+    <add-resource type="string" name="deleting_title"/>
+    <string name="deleting_title">"মোছা হচ্ছে"</string>
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"দয়া করে অপেক্ষা করুন..."</string>
+    <add-resource type="string" name="done_delete"/>
+    <string name="done_delete">"হয়ে গেছে"</string>
+    <!--add for toast when merging sms -->
+    <add-resource type="string" name="merging_sms_title"/>
+    <string name="merging_sms_title">"sms মার্জ করা হচ্ছে"</string>
+    <add-resource type="string" name="cdma_priority_normal"/>
+    <string name="cdma_priority_normal">"স্বাভাবিক"</string>
+    <add-resource type="string" name="cdma_priority_interactive"/>
+    <string name="cdma_priority_interactive">"পারস্পরিক"</string>
+    <add-resource type="string" name="cdma_priority_urgent"/>
+    <string name="cdma_priority_urgent">"জরুরি"</string>
+    <add-resource type="string" name="cdma_priority_emergency"/>
+    <string name="cdma_priority_emergency">"জরুরী"</string>
+    <add-resource type="string" name="pref_title_cdma_priority"/>
+    <string name="pref_title_cdma_priority">"বার্তার গুরুত্বপূর্ণতা"</string>
+    <add-resource type="string" name="pref_summary_cdma_priority"/>
+    <string name="pref_summary_cdma_priority">"CDMA বার্তার গুরুত্বপূর্ণতা"</string>
+    <add-resource type="string" name="prefDialogTitle_cdma_priority"/>
+    <string name="prefDialogTitle_cdma_priority">"অগ্রাধিকার"</string>
+    <add-resource type="string" name="download_dialog_title"/>
+    <string name="download_dialog_title">"এই MMS-এর ডাউনলোড নিশ্চিত করবেন?"</string>
+    <add-resource type="string" name="menu_email"/>
+    <string name="menu_email">"ইমেল পাঠান"</string>
+
+    <!-- Settings item description for Preferred storage -->
+    <add-resource type="string" name="pref_title_sms_store"/>
+    <string name="pref_title_sms_store">"পছন্দসই সঞ্চয়স্থান"</string>
+    <add-resource type="string" name="pref_title_sms_store_card1"/>
+    <string name="pref_title_sms_store_card1">"চিম1 এর জন্য পছন্দসই সঞ্চয়স্থান"</string>
+    <add-resource type="string" name="pref_title_sms_store_card2"/>
+    <string name="pref_title_sms_store_card2">"চিম2 এর জন্য পছন্দসই সঞ্চয়স্থান"</string>
+    <add-resource type="string" name="pref_sms_store_phone"/>
+    <string name="pref_sms_store_phone">"ফোন"</string>
+    <add-resource type="string" name="pref_sms_store_card"/>
+    <string name="pref_sms_store_card">"SIM কার্ড"</string>
+    <add-resource type="string" name="pref_sms_store_sim1"/>
+    <string name="pref_sms_store_sim1">SIM1</string>
+    <add-resource type="string" name="pref_sms_store_sim2"/>
+    <string name="pref_sms_store_sim2">SIM2</string>
+    <add-resource type="string" name="pref_sms_store_card_unknown_fail"/>
+    <string name="pref_sms_store_card_unknown_fail">"নতুন বার্তাগুলি পেতে ব্যর্থ হয়েছে, SIM কার্ডটি সঠিকভাবে পড়া যাবে না"</string>
+    <add-resource type="string" name="mms_size_indicator"/>
+    <string name="mms_size_indicator">"<xliff:g id="mms_size">%1$s</xliff:g>K/<xliff:g id="all_size">%2$s</xliff:g>K"</string>
+    <add-resource type="string" name="forward_size_over"/>
+    <string name="forward_size_over">"অগ্রবর্তী করা নিষিদ্ধ, নতুন বার্তার আকার 300K-এর বেশি।"</string>
+    <add-resource type="string" name="pref_title_notification_creation_mode"/>
+    <string name="pref_title_notification_creation_mode">"প্রস্তুতি মোড"</string>
+
+    <add-resource type="string" name="pref_dialog_title_creation_mode"/>
+    <string name="pref_dialog_title_creation_mode">"প্রস্তুতি মোড নির্বাচন করুন"</string>
+    <add-resource type="string" name="pref_summary_creation_mode"/>
+    <string name="pref_summary_creation_mode">"বার্তা তৈরি করার MMS প্রস্তুতি মোড"</string>
+    <add-resource type="string" name="restricted_format"/>
+    <string name="restricted_format">"সীমাবদ্ধ ফর্ম্যাট"</string>
+    <add-resource type="string" name="attach_anyway"/>
+    <string name="attach_anyway">"তথাপি সংযুক্ত করবেন?"</string>
+
+    <add-resource type="string" name="plugger"/>
+    <string name="plugger">"প্লাগার"</string>
+    <add-resource type="string" name="file_not_found"/>
+    <string name="file_not_found">"ফাইল খুঁজে পাওয়া যায়নি"</string>
+    <add-resource type="string" name="type_attachment"/>
+    <string name="type_attachment">"সংযুক্তি"</string>
+    <add-resource type="string" name="bad_file"/>
+    <string name="bad_file">"ফাইলটি ক্ষতিগ্রস্ত হয়েছে এবং সন্নিবেশ করা যাবে না!"</string>
+    <add-resource type="string" name="indication_send_message_successfully"/>
+    <string name="indication_send_message_successfully">"বার্তা পাঠানো হয়েছে।"</string>
+    <add-resource type="string" name="indication_send_message_failed"/>
+    <string name="indication_send_message_failed">"বার্তা পাঠানো যায়নি।"</string>
+
+    <!-- ConfigurationClient -->
+    <add-resource type="string" name="omacp_configuration"/>
+    <string name="omacp_configuration">"OMACP কনফিগারেশন"</string>
+    <add-resource type="string" name="configuration_message_key"/>
+    <string name="configuration_message_key">"কনফিগারেশন বার্তা"</string>
+    <add-resource type="string" name="configuration_message_key_activity"/>
+    <string name="configuration_message_key_activity">"আপনার OMACP বার্তাগুলি কনফিগার করতে স্পর্শ করুন"</string>
+    <!-- General settings -->
+    <add-resource type="string" name="pref_title_general_settings"/>
+    <string name="pref_title_general_settings">"সাধারণ"</string>
+    <add-resource type="string" name="pref_title_notification_settings"/>
+    <string name="pref_title_notification_settings">"বিজ্ঞপ্তি"</string>
+    <!-- Cell broadcast settings -->
+    <add-resource type="string" name="cell_broadcast"/>
+    <string name="cell_broadcast">"সেল সম্প্রচার"</string>
+    <add-resource type="string" name="cell_broadcast_title"/>
+    <string name="cell_broadcast_title">"সেল সম্প্রচার সেটিংস"</string>
+    <add-resource type="string" name="cell_broadcast_settings"/>
+    <string name="cell_broadcast_settings">"SIM কার্ড সেল সম্প্রচার সেটিংস"</string>
+    <!-- Chat wallpaper -->
+    <add-resource type="string" name="pref_chat_wallpaper"/>
+    <string name="pref_chat_wallpaper">"চ্যাট ওয়ালপেপার"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_gallery"/>
+    <string name="dialog_wallpaper_chooser_option_gallery">"গ্যালারি"</string>
+    <add-resource type="string" name="dialog_wallpaper_chooser_option_camera"/>
+    <string name="dialog_wallpaper_chooser_option_camera">"একটি ছবি তুলুন"</string>
+    <add-resource type="string" name="dialog_wallpaper_title"/>
+    <string name="dialog_wallpaper_title">"ওয়ালপেপার চয়ন করুন"</string>
+    <add-resource type="string" name="intent_chooser_dialog_title"/>
+    <string name="intent_chooser_dialog_title">"ব্যবহারের মাধ্যমে কাজ সম্পূর্ণ করুন"</string>
+    <add-resource type="string" name="gallery_packagename"/>
+    <string name="gallery_packagename">com.android.gallery3d</string>
+    <add-resource type="string" name="camera_packagename"/>
+    <string name="camera_packagename">com.android.camera2</string>
+    <add-resource type="string" name="pref_title_size_limit"/>
+    <string name="pref_title_size_limit">"আকার সীমা"</string>
+    <!-- Font settings -->
+    <add-resource type="string" name="pref_title_message_font_size"/>
+    <string name="pref_title_message_font_size">"বার্তার ফন্টের আকার"</string>
+    <add-resource type="string" name="message_font_size_dialog_title"/>
+    <string name="message_font_size_dialog_title">"বার্তার ফন্টের আকার"</string>
+    <add-resource type="string" name="font_follow_system_font"/>
+    <string name="font_follow_system_font">"সিস্টেম ফন্টের আকার মেনে চলুন"</string>
+    <add-resource type="string" name="font_small"/>
+    <string name="font_small">"ছোট"</string>
+    <add-resource type="string" name="font_medium"/>
+    <string name="font_medium">"মাঝারি"</string>
+    <add-resource type="string" name="font_large"/>
+    <string name="font_large">"বড়"</string>
+    <add-resource type="string" name="font_extra_large"/>
+    <string name="font_extra_large">"অতিরিক্ত বড়"</string>
+    <add-resource type="string" name="plugger_priority"/>
+    <string name="plugger_priority">999</string>
+
+    <add-resource type="string" name="default_sms_validity_period"/>
+    <string name="default_sms_validity_period">-1</string>
+    <add-resource type="string" name="default_mms_validity_period"/>
+    <string name="default_mms_validity_period">0</string>
+
+    <add-resource type="string" name="menu_more"/>
+    <string name="menu_more">"আরও"</string>
+    <add-resource type="string" name="letter_tile_letter_font_family"/>
+    <string name="letter_tile_letter_font_family">"sans-serif-light"</string>
+    <add-resource type="string" name="contact_list_send_to_text"/>
+    <string name="contact_list_send_to_text">"<xliff:g id="destination">%s</xliff:g>-এ পাঠান"</string>
+    <!-- The label of all Notification messages -->
+    <add-resource type="string" name="notification_message_label"/>
+    <string name="notification_message_label">"বিজ্ঞপ্তি"</string>
+    <add-resource type="string" name="unread_notification_message_label"/>
+    <string name="unread_notification_message_label">"বিজ্ঞপ্তি (<xliff:g id="count">%s</xliff:g>)"</string>
+    <add-resource type="string" name="mms_attachment_type_audio"/>
+    <string name="mms_attachment_type_audio">"অডিও"</string>
+    <add-resource type="string" name="mms_attachment_type_video"/>
+    <string name="mms_attachment_type_video">"ভিডিও"</string>
+    <add-resource type="string" name="mms_attachment_type_picture"/>
+    <string name="mms_attachment_type_picture">"চিত্র"</string>
+    <add-resource type="string" name="mms_attachment_type_vcard"/>
+    <string name="mms_attachment_type_vcard">"Vcard"</string>
+    <add-resource type="string" name="mms_attachment_type_slideshow"/>
+    <string name="mms_attachment_type_slideshow">"স্লাইডশো"</string>
+    <add-resource type="string" name="group_numbers"/>
+    <string name="group_numbers">"<xliff:g id="number">%s</xliff:g> নম্বর"</string>
+    <add-resource type="string" name="mms_save_title"/>
+    <string name="mms_save_title">"সংরক্ষণ করুন"</string>
+    <add-resource type="string" name="mms_share_title"/>
+    <string name="mms_share_title">"শেয়ার করুন"</string>
+    <add-resource type="string" name="mms_photo_attachment_saved_title"/>
+    <string name="mms_photo_attachment_saved_title">"ছবি \"<xliff:g id="albumName">%s</xliff:g>\" অ্যালবামে সংরক্ষণ করা হয়েছে"</string>
+    <add-resource type="string" name="mms_video_attachment_saved_title"/>
+    <string name="mms_video_attachment_saved_title">"ভিডিও \"<xliff:g id="albumName">%s</xliff:g>\" অ্যালবামে সংরক্ষণ করা হয়েছে"</string>
+    <add-resource type="string" name="mms_attachment_saved_fail_title"/>
+    <string name="mms_attachment_saved_fail_title">"সংরক্ষণ করা ব্যর্থ হয়েছে"</string>
+    <add-resource type="string" name="notification_mark_as_read"/>
+    <string name="notification_mark_as_read">"পঠিতরূপে চিহ্নিত করুন"</string>
+    <add-resource type="string" name="notification_download"/>
+    <string name="notification_download">"ডাউনলোড"</string>
+    <add-resource type="string" name="notification_reply"/>
+    <string name="notification_reply">"প্রত্যুত্তর"</string>
+    <add-resource type="string" name="notification_reply_to"/>
+    <string name="notification_reply_to">"<xliff:g id="name">%s</xliff:g>-কে প্রত্যুত্তর"</string>
+    <add-resource type="string" name="notification_view_message_text"/>
+    <string name="notification_view_message_text">"বার্তা দেখুন"</string>
+
+    <add-resource type="string" name="conversation_list_send_fail_text"/>
+    <string name="conversation_list_send_fail_text">"প্রেরণ করা হয়নি, আবার চেষ্টা করতে স্পর্শ করুন"</string>
+    <add-resource type="string" name="conversation_transaction_fail"/>
+    <string name="conversation_transaction_fail">"ট্রানজ্যাকশন ব্যর্থ, আবার চেষ্টা করতে স্পর্শ করুন"</string>
+
+    <!-- Abbreviated message to express that something occurred some number of minutes in the past (e.g., 5 minutes ago). -->
+    <add-resource type="plurals" name="num_minutes_ago"/>
+    <plurals name="num_minutes_ago">
+        <item quantity="one">"<xliff:g id="count">%d</xliff:g> মিনিট"</item>
+        <item quantity="other">"<xliff:g id="count">%d</xliff:g> মিনিট"</item>
+    </plurals>
+    <add-resource type="string" name="posted_now"/>
+    <string name="posted_now">"এখন"</string>
+    <add-resource type="string" name="basic_permission_required"/>
+    <string name="basic_permission_required">"বার্তা প্রেরণের জন্য SMS, ফোন, পরিচিতি এবং বাহ্যিক সঞ্চয়স্থানের অনুমতিগুলি আবশ্যক।"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"পরবর্তী &gt;"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"সেটিংস &gt;"</string>
+    <add-resource type="string" name="exit"/>
+    <string name="exit">"প্রস্থান"</string>
+    <add-resource type="string" name="enable_permission_settings"/>
+    <string name="enable_permission_settings">"আপনাকে সেটিংস &gt; অ্যাপ &gt; বার্তা প্রেরণ &gt; অনুমতি-তে গিয়ে অনুমতিগুলি সক্ষম করতে হবে।"</string>
+    <add-resource type="string" name="no_permission_save_attachment_to_storage"/>
+    <string name="no_permission_save_attachment_to_storage">"বাহ্যিক সঞ্চয়স্থানে সংযুক্তি সংরক্ষণ করার কোনো অনুমতি নেই"</string>
+    <add-resource type="string" name="grant_permission_fail"/>
+    <string name="grant_permission_fail">"অনুমতি প্রাপ্ত করা ব্যর্থ হয়েছে, অনুগ্রহ করে আবার চেষ্টা করুন!"</string>
+    <add-resource type="string" name="you"/>
+    <string name="you">"আপনি:"</string>
+    <add-resource type="string" name="email_app_not_found"/>
+    <string name="email_app_not_found">"ইমেল অ্যাপ্লিকেশন খুঁজে পাওয়া যায়নি"</string>
+    <add-resource type="string" name="notification_type_message"/>
+    <string name="notification_type_message">"বার্তা টাইপ করুন"</string>
+    <add-resource type="string" name="notification_sim_info"/>
+    <string name="notification_sim_info">SIM</string>
+    <add-resource type="string" name="deleting_sim_sms"/>
+    <string name="deleting_sim_sms">"SIM SMS মুছে ফেলা হচ্ছে\u2026"</string>
+    <add-resource type="string" name="send_via_invalid_sub"/>
+    <string name="send_via_invalid_sub">"বর্তমান সাবস্ক্রিপশনটি সক্রিয় নয়, বার্তা প্রেরণ করা যাবে না।"</string></resources>

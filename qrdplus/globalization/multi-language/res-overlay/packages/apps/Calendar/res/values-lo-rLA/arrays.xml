@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Choices for the "Reminder method" spinner.
+         These must be kept in sync with the reminder_methods_values array.
+         [CHAR LIMIT=10]
+    -->
+    <add-resource type="array" name="reminder_methods_labels"/>
+    <string-array name="reminder_methods_labels">
+        <item>"ການແຈ້ງເຕືອນ"</item>
+        <item>"ອີເມວ"</item>
+        <item>"SMS"</item>
+        <item>"ໂມງປຸກ"</item>
+    </string-array>
+
+    <!-- Choices for the "Reminder minutes" spinner.
+         These must be kept in sync with the reminder_minutes_values array.
+         For consistency, the format should match what
+         EventViewUtils.constructReminderLabel() generates.  (TODO: eliminate
+         this and just generate the list from reminder_minutes_values?)
+         [CHAR LIMIT=15]
+    -->
+    <add-resource type="array" name="reminder_minutes_labels"/>
+    <string-array name="reminder_minutes_labels">
+        <item>"0 ນາທີ"</item>
+        <item>"1 ນາທີ"</item>
+        <item>"5 ນາທີ"</item>
+        <item>"10 ນາທີ"</item>
+        <item>"15 ນາທີ"</item>
+        <item>"20 ນາທີ"</item>
+        <item>"25 ນາທີ"</item>
+        <item>"30 ນາທີ"</item>
+        <item>"45 ນາທີ"</item>
+        <item>"1 ຊົ່ວໂມງ"</item>
+        <item>"2 ຊົ່ວໂມງ"</item>
+        <item>"3 ຊົ່ວໂມງ"</item>
+        <item>"12 ຊົ່ວໂມງ"</item>
+        <item>"24 ຊົ່ວໂມງ"</item>
+        <item>"2 ມື້"</item>
+        <item>"1 ອາທິດ"</item>
+    </string-array>
+
+  <!-- Choices for the "Reminder minutes" spinner in the settings.
+         These must be kept in sync with the preferences_default_reminder_values array.
+         [CHAR LIMIT=12]
+    -->
+       <add-resource type="array" name="preferences_default_reminder_labels"/>
+    <string-array name="preferences_default_reminder_labels">
+        <item>"ບໍ່ໃຊ້"</item>
+        <item>"0 ນາທີ"</item>
+        <item>"1 ນາທີ"</item>
+        <item>"5 ນາທີ"</item>
+        <item>"10 ນາທີ"</item>
+        <item>"15 ນາທີ"</item>
+        <item>"20 ນາທີ"</item>
+        <item>"25 ນາທີ"</item>
+        <item>"30 ນາທີ"</item>
+        <item>"45 ນາທີ"</item>
+        <item>"1 ຊົ່ວໂມງ"</item>
+        <item>"2 ຊົ່ວໂມງ"</item>
+        <item>"3 ຊົ່ວໂມງ"</item>
+        <item>"12 ຊົ່ວໂມງ"</item>
+        <item>"24 ຊົ່ວໂມງ"</item>
+        <item>"2 ມື້"</item>
+        <item>"1 ອາທິດ"</item>
+    </string-array>
+
+    <add-resource type="array" name="preferences_week_start_day_labels"/>
+    <string-array name="preferences_week_start_day_labels">
+        <item>"ຕາມທ້ອງຖິ່ນ"</item>
+        <item>"ວັນເສົາ"</item>
+        <item>"ວັນອາທິດ"</item>
+        <item>"ວັນຈັນ"</item>
+    </string-array>
+
+
+
+    <add-resource type="array" name="availability"/>
+    <string-array name="availability">
+        <item>"ບໍ່ຫວ່າງ"</item>
+        <item>"ຫວ່າງ"</item>
+        <item>"ບໍ່ແນ່ໃຈ"</item>
+    </string-array>
+
+    <add-resource type="array" name="visibility"/>
+    <string-array name="visibility">
+        <item>"ຄ່າເລີ່ມຕົ້ນ"</item>
+        <item>"ສ່ວນໂຕ"</item>
+        <item>"ສາທາລະນະ"</item>
+    </string-array>
+
+    <add-resource type="array" name="ordinal_labels"/>
+    <string-array name="ordinal_labels">
+        <item>"ທີນຶ່ງ"</item>
+        <item>"ທີສອງ"</item>
+        <item>"ທ"</item>
+        <item>"ທີສີ່"</item>
+        <item>"ສຸດທ້າຍ"</item>
+    </string-array>
+
+    <!-- Invitation responses -->
+    <add-resource type="array" name="response_labels1"/>
+    <string-array name="response_labels1">
+        <item>"ບໍ່ມີການຕອບກັບ"</item>
+        <item>"ຕົກລົງ"</item>
+        <item>"ອາດຈະໄປ"</item>
+        <item>"ບໍ່"</item>
+    </string-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is a list of choices displayed when the user deletes an event.
+         It only is shown when deleting a recurring event.
+    -->
+
+    <add-resource type="array" name="delete_repeating_labels"/>
+    <string-array name="delete_repeating_labels">
+        <item>"ສະເພາະນັດໝາຍນີ້"</item>
+        <item>"ນັດໝາຍນີ້ ແລະໃນອະນາຄົດ"</item>
+        <item>"ກິດຈະກໍາທັງຫມົດ"</item>
+    </string-array>
+
+    <!-- DO NOT TRANSLATE These values need to correspond to the indices
+         defined in DeleteEventHelper.java-->
+    <add-resource type="array" name="delete_repeating_values"/>
+    <integer-array name="delete_repeating_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is the same array as above (the "delete_repeating_labels" array,
+         except that the first element "Only this event" is removed.  This
+         array exists to work-around a bug in the CalendarProvider and sync
+         code where you can't delete one instance of a repeating event that
+         was created on the phone until that event has been synced to the server.
+     -->
+
+    <add-resource type="array" name="delete_repeating_labels_no_selected"/>
+    <string-array name="delete_repeating_labels_no_selected">
+        <item>"ນັດໝາຍນີ້ &amp; ໃນອະນາຄົດ"</item>
+        <item>"ກິດຈະກໍາທັງຫມົດ"</item>
+    </string-array>
+
+    <!-- The corresponding array indices are defined in EventInfoActivity.java -->
+
+    <!-- The list of choices displayed in a dialog box when the user wants to
+    respond to an invitation that repeats. -->
+    <add-resource type="array" name="change_response_labels"/>
+    <string-array name="change_response_labels">
+        <!-- The choice for responding to only one instance of a repeating event -->
+        <item>"ສະເພາະນັດໝາຍນີ້"</item>
+        <!-- The choice for responding to all instances of a repeating event -->
+        <item>"ທຸກນັດໝາຍແບບດຽວກັນນີ້"</item>
+    </string-array>
+
+    <!-- Strings for buttons in drop down menu -->
+    <add-resource type="array" name="buttons_list"/>
+    <string-array name="buttons_list">
+        <item>"ມື້"</item>
+        <item>"ອາທິດ"</item>
+        <item>"ເດືອນ"</item>
+        <item>"ຕາຕາລາງການນັດໝາຍ"</item>
+    </string-array>
+
+    <!-- Experimental options for skipping reminders. [CHAR LIMIT = 37] -->
+    <add-resource type="array" name="preferences_skip_reminders_labels"/>
+    <string-array name="preferences_skip_reminders_labels">
+        <!-- Default choice -->
+        <item>"ສະເພາະກໍລະນີປະຕິເສດ"</item>
+        <!-- Second option, for skipping reminders to events not yet responded to. -->
+        <item>"ຫາກປະຕິເສດ ຫຼື ບໍ່ໃຫ້ຄຳຕອບ"</item>
+    </string-array>
+
+    <!-- Recurrence picker: How events are to be repeated.  [CHAR LIMIT = 20] -->
+    <add-resource type="array" name="recurrence_freq"/>
+    <string-array name="recurrence_freq">
+        <item>"ຊ້ຳທຸກໆມື້"</item>
+        <item>"ຊ້ຳທຸກໆອາທິດ"</item>
+        <item>"ຊ້ຳທຸກໆເດືອນ"</item>
+        <item>"ຊ້ຳທຸກໆປີ"</item>
+    </string-array>
+
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+         on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+         the last Sunday. These are set up like this to resolve any gender-matching issues
+         that were present in some languages.
+     -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sun"/>
+    <string-array name="repeat_by_nth_sun">
+        <item>"ໃນທຸກໆວັນອາທິດທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນອາທິດທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນອາທິດທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນອາທິດທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນອາທິດສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_mon"/>
+    <string-array name="repeat_by_nth_mon">
+        <item>"ໃນທຸກໆວັນຈັນທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນຈັນທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນຈັນທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນຈັນທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນຈັນສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_tues"/>
+    <string-array name="repeat_by_nth_tues">
+        <item>"ໃນທຸກໆວັນອັງຄານທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນອັງຄານທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນອັງຄານທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນອັງຄານທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນອັງຄານສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_wed"/>
+    <string-array name="repeat_by_nth_wed">
+        <item>"ໃນທຸກໆວັນພຸດທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນພຸດທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນພຸດທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນພຸດທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນພຸດທີສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_thurs"/>
+    <string-array name="repeat_by_nth_thurs">
+        <item>"ໃນທຸກໆວັນພະຫັດທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນພະຫັດທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນພະຫັດທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນພະຫັດທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນພະຫັດທີສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_fri"/>
+    <string-array name="repeat_by_nth_fri">
+        <item>"ໃນທຸກໆວັນສຸກທໍາອິດ"</item>
+        <item>"ໃນທຸກໆວັນສຸກທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນສຸກທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນສຸກທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນສຸກສຸດທ້າຍ"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sat"/>
+    <string-array name="repeat_by_nth_sat">
+        <item>"ໃນທຸກໆວັນເສົາທຳອິດ"</item>
+        <item>"ໃນທຸກໆວັນເສົາທີສອງ"</item>
+        <item>"ໃນທຸກໆວັນເສົາທີສາມ"</item>
+        <item>"ໃນທຸກໆວັນເສົາທີສີ່"</item>
+        <item>"ໃນທຸກໆວັນເສົາສຸດທ້າຍ"</item>
+    </string-array></resources>

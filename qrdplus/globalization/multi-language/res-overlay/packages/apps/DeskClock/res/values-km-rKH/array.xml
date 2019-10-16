@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាប៊ីហ្សង់"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាក្រា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាឌីអាបេបា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាល់ហ្សេ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្លាន់ទីរ៉េ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្រាសាវីល"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គែរ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាសាប្លាំងកា"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កុណាគីរី"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាកា"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាអេសសាឡឹម"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្ស៊ីបូទី"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វ្រីថោន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គាបូរ៉ូន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហារ៉ារ៉េ"</item>
+        <item>"ច<xliff:g id="SEPARATOR">=</xliff:g>ចូហានីសប៊ឺហ្គ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាំប៉ាឡា"</item>
+        <item>"ខ<xliff:g id="SEPARATOR">=</xliff:g>ខាទុំ"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គីហ្គាលី"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គីនស្ហាសា"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡាហ្គូស"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាសេរុយ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ូហ្គាឌីស្យូ"</item>
+        <item>"ណ<xliff:g id="SEPARATOR">=</xliff:g>ណៃរ៉ូប៊ី"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សៅតូមេ"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីមបុកទុ"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទ្រីប៉ូលី"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទុយនីស"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាន់ចូរេ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មិនដូសា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អារុបា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាសាំងសុន"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បារបាដូស"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បេលីស"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បូកូតា"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៊ុយណូស៊ែ"</item>
+        <item>"ខ<xliff:g id="SEPARATOR">=</xliff:g>ខានឃូន"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>ការ៉ាកាស"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កៃម៉ែន"</item>
+        <item>"ជ<xliff:g id="SEPARATOR">=</xliff:g>ជីកាហ្គោ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កូស្តារីកា"</item>
+        <item>"ខ<xliff:g id="SEPARATOR">=</xliff:g>ខ្យួរ៉ាសៅ"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដសុនគ្រីក"</item>
+        <item>"ឌ<xliff:g id="SEPARATOR">=</xliff:g>ឌីនវើ"</item>
+        <item>"ឌ<xliff:g id="SEPARATOR">=</xliff:g>ឌិត្រុត"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដូមីនីកា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អិដម៉ុនតុន"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អែលសាល់វ៉ាឌ័រ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វតាល់លេសា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គ្រេនទួក"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គ្រើណាដ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គាតេម៉ាឡា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គុយ៉ាណា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហាលីហ្វាក់"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហាវ៉ាណា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ីនដ្យាណាប៉ូលី"</item>
+        <item>"ណ<xliff:g id="SEPARATOR">=</xliff:g>ណុក"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ារិនហ្គោ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉េទ័រសប៊ើក"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីក្រុងថែល"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វិវ៉ាយ"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វីនសេនីស"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វីណាម៉ាក"</item>
+        <item>"ឃ<xliff:g id="SEPARATOR">=</xliff:g>ឃីងស្តូន"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូវស្ត្រាសេណូរ៉ាឌឹឡាប៉ាស"</item>
+        <item>"ល<xliff:g id="SEPARATOR">=</xliff:g>លីម៉ា"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡូសអាន់ជឺឡេស"</item>
+        <item>"ល<xliff:g id="SEPARATOR">=</xliff:g>ល្វីសវីល"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាណាវ៉ា"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាទីនីក"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មិនដូសា"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មេថ្លាកាថ្លា"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីក្រុងម៉ិកស៊ិក"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ុងតេរី"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ុងតេវីដេអូ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ុងត្រេអាល់"</item>
+        <item>"ណ<xliff:g id="SEPARATOR">=</xliff:g>ណែសឹ"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូវយ៉ក"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បូឡា"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សិនធ័រ"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូវសាឡិម"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉ាណាម៉ា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វូនីក"</item>
+        <item>"ព<xliff:g id="SEPARATOR">=</xliff:g>ព័រអេស្ប៉ាញ"</item>
+        <item>"ព<xliff:g id="SEPARATOR">=</xliff:g>ព័រអូប្រាំង"</item>
+        <item>"ព<xliff:g id="SEPARATOR">=</xliff:g>ព័រតូរីកូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់តូដូមីងកូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សៅប៉ូឡូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងចន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងឃីត"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងលូស្យា"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងថូម៉ាស"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីយ្យូអាណា"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តូរ៉ន់តូ"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វ៉ានខូវើ"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វីនីផេក"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉ូលខាងត្បូង<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡុងយាប្យេន"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាល់ម៉ាទី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាម៉ាន"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាណាឌី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាក់ទូ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បាកដាដ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បារ៉ែន"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បាគូ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បាងកក"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បេរូត"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កុលកាតា"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាម៉ាស"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាក្កា"</item>
+        <item>"ឌ<xliff:g id="SEPARATOR">=</xliff:g>ឌូបៃ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាហ្សា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហេប្រន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហូជីមីញ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហុងកុង<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ីស្តង់ប៊ុល"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្សាការតា"</item>
+        <item>"យ<xliff:g id="SEPARATOR">=</xliff:g>យេរូសាឡឹម"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាប៊ុល"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>ការ៉ាជី"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កដ្ឋមណ្ឌូ"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គូឡាឡាំពួ"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គុយវ៉ែត"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាកាវ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ានីល"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាស្កាត"</item>
+        <item>"ភ<xliff:g id="SEPARATOR">=</xliff:g>ភ្នំពេញ"</item>
+        <item>"ព<xliff:g id="SEPARATOR">=</xliff:g>ព្យុងយ៉ាង<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាតា"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រ៉ង់ហ្គូន"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីយ៉ាដ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សៃហ្គន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សេអ៊ូល"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សៀងហៃ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សិង្ហបុរី"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តៃប៉ិ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តេហេរ៉ង់"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តែលអាវី"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តូក្យូ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ូឡង់បាទ័រ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៊ឺមុយដា"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាណារី"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាប់វែរ"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីក្យាវីក"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស្តេនលី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាឌីឡៃ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្រ៊ីសបេន"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កង់បេរ៉ា"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាវីន"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ែលប៊ើន"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូសៅវែល"</item>
+        <item>"ភ<xliff:g id="SEPARATOR">=</xliff:g>ភើធ"</item>
+        <item>"ឃ<xliff:g id="SEPARATOR">=</xliff:g>ឃ្វីនលែន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស៊ីដនី"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វិចតូរីយ៉ា"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូហ្វោនលែន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាសកាត់ឆេវ៉ាន"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កោះអ៊ីស្ទឺ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាំស្ទែដាំ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អង់ដូរ៉ា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាតែន"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បែលហ្វាស"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បែលក្រាដ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បែរឡាំង"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្រាទីស្លាវ៉ា"</item>
+        <item>"ព<xliff:g id="SEPARATOR">=</xliff:g>ព្រុចសែល"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៊ុយការ៉េស"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៊ុយដាប៉ែស"</item>
+        <item>"ជ<xliff:g id="SEPARATOR">=</xliff:g>ជីស៊ីណូ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កូប៉ិនហាក"</item>
+        <item>"ឌ<xliff:g id="SEPARATOR">=</xliff:g>ឌុយប្លាំង"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គីប្រាលតា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហែលស៊ិនគី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អែលអុហ្វមែន"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ីស្តង់ប៊ុល"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កៀវ"</item>
+        <item>"ល<xliff:g id="SEPARATOR">=</xliff:g>លីសបោន"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡុងដ៍"</item>
+        <item>"ល<xliff:g id="SEPARATOR">=</xliff:g>លុចសំបួរ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាឌ្រីដ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាល់តា"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មីនស្កិ៍"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ូណាកូ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មូស្គូ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អូស្លូ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉ារីស"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្រាក"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីហ្គា"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រ៉ូម"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សង់ម៉ារីណូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សារ៉ាយ៉េវ៉ូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស៊ីមហ្វើរ៉ុប៉ូល"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស្កុបជេ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សូហ៊្វីយ៉ា"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស្តុកខុល"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តាលិន"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វ៉ាទីកង់"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វីយែន"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វីលនីញូស"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វ៉ាសូវី"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាគ្រែប"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្ស៊ូរីច"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អង់តាណាណារីវ៉ូ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាល់ឌីវ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ូរីស"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អក់ឡែន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វីជី"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គាំ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហូណូលូលូ"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គីរីទីម៉ាទី"</item>
+        <item>"ន<xliff:g id="SEPARATOR">=</xliff:g>នូមា"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាម៉ៅ"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តាហិទី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អង់ទីហ្គា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អូស្ទីន"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បូស្តុន"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កាល់ការី"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កូឡុំប៊ូស"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដាឡាស"</item>
+        <item>"ណ<xliff:g id="SEPARATOR">=</xliff:g>ណុក្សវីល"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មិមហ្វីស"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ៃអាមី"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មីនៀប៉ូលី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អូតាវ៉ា"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វីឡាដេហ្វីយ៉ា"</item>
+        <item>"ផ<xliff:g id="SEPARATOR">=</xliff:g>ផតឡែន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់ឌីអេហ្គូ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់ហ្វ្រាន់ស៊ីស្កូ"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីក្រុងសលឡេក"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់ហ្សូស៊េ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់សាល់វ៉ាឌ័រ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស៊ីថល"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងល្វី"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វ៉ាស៊ីនតោន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហូស្តុន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់អង់តូនីញ៉ូ"</item>
+        <item>"ជ<xliff:g id="SEPARATOR">=</xliff:g>ជែកសុនវីល"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បាលទីម័រ"</item>
+        <item>"ណ<xliff:g id="SEPARATOR">=</xliff:g>ណាសវីល"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មីលវូគី"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីក្រុងអូក្លាហូម៉ា"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡាសវេហ្កា"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាល់ប៊ូគើក"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទូសុន"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាក្រាមិនតូ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាត្លង់តា"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>ក្លេវិលែន"</item>
+        <item>"ញ<xliff:g id="SEPARATOR">=</xliff:g>ញូវអូលីន"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តាមប៉ា"</item>
+        <item>"ភ<xliff:g id="SEPARATOR">=</xliff:g>ភីធស្បឺគ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>ស៊ីនស៊ីណាទី"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ោនធីនវីយូ"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីណូ"</item>
+        <item>"ទ<xliff:g id="SEPARATOR">=</xliff:g>ទីក្រុងប្លេករ៉ុក"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដូហា"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉េកាំង<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ុមបៃ"</item>
+        <item>"ដ<xliff:g id="SEPARATOR">=</xliff:g>ដេលី"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អូសាកា<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ឡ<xliff:g id="SEPARATOR">=</xliff:g>ឡាហ័រ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាណាអា"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បាសេឡូណា"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មុយនិច"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មីលែន"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វ្រង់ហ្វើត"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហាណូយ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អង់ការា"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បេងហ្គាឡូ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប្រាស៊ីលីយ៉ា"</item>
+        <item>"ខ<xliff:g id="SEPARATOR">=</xliff:g>ខេបថោន"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ីស្លាម៉ាបាដ"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីអូឌឹជិនីរ៉ូ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អាន់អាប័រ"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បូលឌ័រ"</item>
+        <item>"ខ<xliff:g id="SEPARATOR">=</xliff:g>ខេមប្រីដ"</item>
+        <item>"ឃ<xliff:g id="SEPARATOR">=</xliff:g>ឃើកឡែន"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ាឌីសុន"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>ក្វាងចូវ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ីឌើរ៉ាបាដ"</item>
+        <item>"រ<xliff:g id="SEPARATOR">=</xliff:g>រីស្តូន"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>បេឡូរីហ្សូនធ៍"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាន់ឌីអេហ្គូ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>ម៉ុនរ៉ូវីយ៉ា"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កូឡុំបូ"</item>
+        <item>"ជ<xliff:g id="SEPARATOR">=</xliff:g>ជីហួហួ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាវ៉ាឌ័រ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្គូហ្គោណ"</item>
+        <item>"ម<xliff:g id="SEPARATOR">=</xliff:g>មេនឆេស្ទ័រ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>កៀវ"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងភីធឺបឺរ"</item>
+        <item>"ក<xliff:g id="SEPARATOR">=</xliff:g>ក្រាគូវ"</item>
+        <item>"វ<xliff:g id="SEPARATOR">=</xliff:g>វ៉រ៉ូល័រ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហាមបឺរ"</item>
+        <item>"អ<xliff:g id="SEPARATOR">=</xliff:g>អ៊ូឡូ"</item>
+        <item>"ហ<xliff:g id="SEPARATOR">=</xliff:g>ហ្វៃហ្វា"</item>
+        <item>"ស<xliff:g id="SEPARATOR">=</xliff:g>សាំងហ្សង់"</item>
+        <item>"ត<xliff:g id="SEPARATOR">=</xliff:g>តេហ្គូស៊ីហ្កាល់ប៉ា"</item>
+        <item>"ប<xliff:g id="SEPARATOR">=</xliff:g>ប៉ារ៉ាម៉ារីបូ"</item>
+        <item>"គ<xliff:g id="SEPARATOR">=</xliff:g>គីតូ"</item>
+        <item>"ជ<xliff:g id="SEPARATOR">=</xliff:g>ជូបហ្សាណា"</item>
+    </string-array></resources>

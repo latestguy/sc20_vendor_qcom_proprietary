@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"Америка"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Европа"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Африка"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Азија"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Аустралија"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Пацифик"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Све"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 секунди"</item>
+        <item>"30 секунди"</item>
+        <item>"1 минут"</item>
+        <item>"2 минута"</item>
+        <item>"5 минута"</item>
+        <item>"10 минута"</item>
+        <item>"30 минута"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Никад"</item>
+        <item>"15 секунди"</item>
+        <item>"30 секунди"</item>
+        <item>"1 минут"</item>
+        <item>"2 минута"</item>
+        <item>"5 минута"</item>
+        <item>"10 минута"</item>
+        <item>"30 минута"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Одмах"</item>
+        <item>"5 секунди"</item>
+        <item>"15 секунди"</item>
+        <item>"30 секунди"</item>
+        <item>"1 минут"</item>
+        <item>"2 минута"</item>
+        <item>"5 минута"</item>
+        <item>"10 минута"</item>
+        <item>"30 минута"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Мала"</item>
+        <item msgid="3579015730662088893">"Подразумевана"</item>
+        <item msgid="1678068858001018666">"Велика"</item>
+        <item msgid="490158884605093126">"Највећа"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Скенирање..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Повезивање\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Потврђује се аутентичност..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Преузимање IP адресе..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Повезано"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Обустављено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Прекидање везе..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Веза је прекинута"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Неуспешно"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Блокирано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Привремено избегавање лоше везе"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Скенирање..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Повезивање са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Проверавање идентитета мреже <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Добијање IP адресе од мреже <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Повезано са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Обустављено"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Прекидање везе са мрежом <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Веза је прекинута"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Неуспешно"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Блокирано"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Привремено избегавање лоше везе"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"Притискање дугмета"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"PIN са равноправног уређаја"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"PIN са овог уређаја"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Повезано"</item>
+        <item>"Позван"</item>
+        <item>"Неуспешно"</item>
+        <item>"Доступно"</item>
+        <item>"Изван опсега"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 минута"</item>
+        <item>"5 минута"</item>
+        <item>"1 сат"</item>
+        <item>"Без чекања"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Слаба"</item>
+        <item>"Задовољавајућа"</item>
+        <item>"Добро"</item>
+        <item>"Одлично"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Увек"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Само када је укључен"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Никад"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Увек"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Само када је укључен"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Никада"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"Последњих 30 дана"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Подеси циклус потрошње..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Време коришћења"</item>
+        <item>"Последњи пут коришћено"</item>
+        <item>"Назив апликације"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Ниједно"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Ништа"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Статички"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Нема"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Ручно"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Аутом. конфиг. проксија"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Ништа"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP или CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Није наведено"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Ниједно"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Унутрашње складиште уређаја"</item>
+        <item>"Уклоњива SD картица"</item>
+        <item>"Нека систем одлучи"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Локација"</item>
+        <item>"Лично"</item>
+        <item>"Размена порука"</item>
+        <item>"Медији"</item>
+        <item>"Уређај"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"оквирна локација"</item>
+        <item>"прецизна локација"</item>
+        <item>GPS</item>
+        <item>"вибрација"</item>
+        <item>"читање контаката"</item>
+        <item>"мењање контаката"</item>
+        <item>"читање евиденције позива"</item>
+        <item>"мењање евиденције позива"</item>
+        <item>"читање календара"</item>
+        <item>"мењање календара"</item>
+        <item>"Wi-Fi скенирање"</item>
+        <item>"обавештење"</item>
+        <item>"скенирање телефона"</item>
+        <item>"позивање телефона"</item>
+        <item>"читање SMS порука"</item>
+        <item>"писање SMS порука"</item>
+        <item>"пријем SMS порука"</item>
+        <item>"пријем хитних SMS порука"</item>
+        <item>"пријем MMS порука"</item>
+        <item>"пријем push порука преко WAP-а"</item>
+        <item>"слање SMS порука"</item>
+        <item>"читање ICC SMS порука"</item>
+        <item>"писање ICC SMS порука"</item>
+        <item>"мењање подешавања"</item>
+        <item>"повлачење на врх"</item>
+        <item>"приступ обавештењима"</item>
+        <item>"камера"</item>
+        <item>"снимање аудио записа"</item>
+        <item>"пуштање аудио записа"</item>
+        <item>"читање меморије"</item>
+        <item>"мењање меморије"</item>
+        <item>"дугмад за медије"</item>
+        <item>"аудио фокус"</item>
+        <item>"главна јачина звука"</item>
+        <item>"јачина звука гласа"</item>
+        <item>"јачина звука звона"</item>
+        <item>"јачина звука медија"</item>
+        <item>"јачина звука аларма"</item>
+        <item>"јачина звука обавештења"</item>
+        <item>"јачина звука Bluetooth-а"</item>
+        <item>"задржавање ван стања спавања"</item>
+        <item>"праћење локације"</item>
+        <item>"надгледање локације са високим напоном"</item>
+        <item>"преузми статистику о коришћењу"</item>
+        <item>"искључи/укључи звук микрофона"</item>
+        <item>"приказивање искачућих порука"</item>
+        <item>"медији за пројекат"</item>
+        <item>"активирање VPN-а"</item>
+        <item>"упис на позадину"</item>
+        <item>"структура помоћи"</item>
+        <item>"снимак екрана помоћи"</item>
+        <item>"читање стања телефона"</item>
+        <item>"додавање говорне поште"</item>
+        <item>"коришћење SIP-а"</item>
+        <item>"обрада одлазног позива"</item>
+        <item>"отисак прста"</item>
+        <item>"сензори за тело"</item>
+        <item>"читање порука за мобилне уређаје на локалитету"</item>
+        <item>"лажна локација"</item>
+        <item>"читање меморијског простора"</item>
+        <item>"упис података у меморијски простор"</item>
+        <item>"укључивање екрана"</item>
+        <item>"приступ налозима"</item>
+        <item>"рад у позадини"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Локација"</item>
+        <item>"Локација"</item>
+        <item>"Локација"</item>
+        <item>"Вибрација"</item>
+        <item>"Читање контаката"</item>
+        <item>"Мењање контаката"</item>
+        <item>"Читање евиденције позива"</item>
+        <item>"Мењање евиденције позива"</item>
+        <item>"Читање календара"</item>
+        <item>"Мењање календара"</item>
+        <item>"Локација"</item>
+        <item>"Постављање обавештења"</item>
+        <item>"Локација"</item>
+        <item>"Позивање телефона"</item>
+        <item>"Читање SMS/MMS порука"</item>
+        <item>"Писање SMS/MMS порука"</item>
+        <item>"Пријем SMS/MMS порука"</item>
+        <item>"Пријем SMS/MMS порука"</item>
+        <item>"Пријем SMS/MMS порука"</item>
+        <item>"Пријем SMS/MMS порука"</item>
+        <item>"Слање SMS/MMS порука"</item>
+        <item>"Читање SMS/MMS порука"</item>
+        <item>"Писање SMS/MMS порука"</item>
+        <item>"Мењање подешавања"</item>
+        <item>"Повлачење на врх"</item>
+        <item>"Приступ обавештењима"</item>
+        <item>"Камера"</item>
+        <item>"Снимање аудио записа"</item>
+        <item>"Пуштање аудио записа"</item>
+        <item>"Читање меморије"</item>
+        <item>"Мењање меморије"</item>
+        <item>"Дугмад за медије"</item>
+        <item>"Аудио фокус"</item>
+        <item>"Главна јачина звука"</item>
+        <item>"Јачина звука гласа"</item>
+        <item>"Јачина звука звона"</item>
+        <item>"Јачина звука медија"</item>
+        <item>"Јачина звука аларма"</item>
+        <item>"Јачина звука обавештења"</item>
+        <item>"Јачина звука Bluetooth-а"</item>
+        <item>"Задржи ван стања спавања"</item>
+        <item>"Локација"</item>
+        <item>"Локација"</item>
+        <item>"Преузми статистику о коришћењу"</item>
+        <item>"Искључи/укључи звук микрофона"</item>
+        <item>"Приказивање искачућих пoрука"</item>
+        <item>"Медији за пројекат"</item>
+        <item>"Активирање VPN-а"</item>
+        <item>"Упис на позадину"</item>
+        <item>"Структура помоћи"</item>
+        <item>"Снимак екрана помоћи"</item>
+        <item>"Читање стања телефона"</item>
+        <item>"Додавање говорне поште"</item>
+        <item>"Коришћење SIP-а"</item>
+        <item>"Обрада одлазног позива"</item>
+        <item>"Отисак прста"</item>
+        <item>"Сензори за тело"</item>
+        <item>"Читање порука за мобилне уређаје на локалитету"</item>
+        <item>"Лажна локација"</item>
+        <item>"Читање меморијског простора"</item>
+        <item>"Упис података у меморијски простор"</item>
+        <item>"Укључивање екрана"</item>
+        <item>"Приступ налозима"</item>
+        <item>"Рад у позадини"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Кратко"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"Средње"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Дугачко"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"Подразумевано"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Опуштено"</item>
+        <item>"Курзив"</item>
+        <item>"Мала почетна слова"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Веома мала"</item>
+        <item>"Мала"</item>
+        <item>"Нормална"</item>
+        <item>"Велика"</item>
+        <item>"Веома велика"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"Подразумевана"</item>
+        <item>"Ниједна"</item>
+        <item>"Контура"</item>
+        <item>"Падајућа сенка"</item>
+        <item>"Испупчена"</item>
+        <item>"Удубљена"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"Користи подраз. за ап."</item>
+        <item>"Бело на црно"</item>
+        <item>"Црно на бело"</item>
+        <item>"Жуто на црно"</item>
+        <item>"Жуто на плаво"</item>
+        <item>"Прилагођена"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN са унапред дељеним кључевима"</item>
+        <item>"L2TP/IPSec VPN са сертификатима"</item>
+        <item>"IPSec VPN са унапред дељеним кључевима и Xauth потврдом аутентичности"</item>
+        <item>"IPSec VPN са сертификатима и Xauth потврдом аутентичности"</item>
+        <item>"IPSec VPN са сертификатима и хибридном потврдом аутентичности"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Веза је прекинута"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Покретање..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Повезивање\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Повезано"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Време чекања"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Неуспешно"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Питај"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Никада не дозволи"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Увек дозволи"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Нормално"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Умерено"</item>
+        <!-- Memory is running low. -->
+        <item>"Ниско"</item>
+        <!-- Memory is critical. -->
+        <item>"Критично"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Нормална"</item>
+        <item>"Умерена"</item>
+        <item>"Ниска"</item>
+        <item>"Критична"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Непрекидна"</item>
+        <item>"Највећа активност"</item>
+        <item>"Важна (први план)"</item>
+        <item>"Важна (други план)"</item>
+        <item>"Резервна копија"</item>
+        <item>"Тешка"</item>
+        <item>"Услуга (активна)"</item>
+        <item>"Услуга (поново се покреће)"</item>
+        <item>"Пријемник"</item>
+        <item>"Почетна"</item>
+        <item>"Последња активност"</item>
+        <item>"Кеширана (активност)"</item>
+        <item>"Кеширана (клијент активности)"</item>
+        <item>"Кеширана (празно)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Тиркизна"</item>
+        <item>"Плава"</item>
+        <item>"Индиго"</item>
+        <item>"Љубичаста"</item>
+        <item>"Розе"</item>
+        <item>"Црвена"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Аутоматски повежи"</item>
+        <item>"Ручно повежи"</item>
+        <item>"Увек питај"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"Старије од 30 дана"</item>
+        <item>"Старије од 60 дана"</item>
+        <item>"Старије од 90 дана"</item>
+    </string-array></resources>

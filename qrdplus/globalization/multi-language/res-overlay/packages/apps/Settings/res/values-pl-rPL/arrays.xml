@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"Ameryka"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Europa"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Afryka"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Azja"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Australia"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Pacyfik"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Wszystkie"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 sek."</item>
+        <item>"30 sek."</item>
+        <item>"1 min"</item>
+        <item>"2 min"</item>
+        <item>"5 min"</item>
+        <item>"10 min"</item>
+        <item>"30 min"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Nigdy"</item>
+        <item>"15 s"</item>
+        <item>"30 s"</item>
+        <item>"1 min"</item>
+        <item>"2 min"</item>
+        <item>"5 min"</item>
+        <item>"10 min"</item>
+        <item>"30 min"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Natychmiast"</item>
+        <item>"5 sek."</item>
+        <item>"15 sek."</item>
+        <item>"30 sek."</item>
+        <item>"1 min"</item>
+        <item>"2 min"</item>
+        <item>"5 min"</item>
+        <item>"10 min"</item>
+        <item>"30 min"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Mały"</item>
+        <item msgid="3579015730662088893">"Domyślny"</item>
+        <item msgid="1678068858001018666">"Duży"</item>
+        <item msgid="490158884605093126">"Największy"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Trwa skanowanie..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Trwa łączenie..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Trwa uwierzytelnianie..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Uzyskiwanie adresu IP..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Połączono"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Zawieszona"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Trwa rozłączanie..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Rozłączona"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Niepowodzenie"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Zablokowana"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Tymczasowo, by uniknąć połączenia o niskiej jakości"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Trwa skanowanie..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Trwa łączenie z siecią <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Trwa uwierzytelnianie w sieci <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Uzyskiwanie adresu IP z sieci <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Połączono z siecią <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Zawieszona"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Trwa rozłączanie z siecią <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Rozłączona"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Niepowodzenie"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Zablokowana"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Tymczasowo, by uniknąć połączenia o niskiej jakości"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"Naciśnij przycisk"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"Kod PIN z drugiego urządzenia"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"Kod PIN z tego urządzenia"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Połączono"</item>
+        <item>"Zaproszono"</item>
+        <item>"Niepowodzenie"</item>
+        <item>"Dostępna"</item>
+        <item>"Poza zasięgiem"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 min"</item>
+        <item>"5 min"</item>
+        <item>"1 godz."</item>
+        <item>"Brak limitu czasu"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Słaba"</item>
+        <item>"Dostateczna"</item>
+        <item>"Dobra"</item>
+        <item>"Doskonała"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Zawsze"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Tylko, gdy podłączony"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Nigdy"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Zawsze"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Tylko, gdy podłączony"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Nigdy"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"Ostatnie 30 dni"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Ustaw cykl danych..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Czas użycia"</item>
+        <item>"Ostatnie użycie"</item>
+        <item>"Nazwa aplikacji"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Brak"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Brak"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Statyczny"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Brak"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Własne"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Autokonfiguracja proxy"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Brak"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP lub CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Nie określono"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Brak"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Wewnętrzna pamięć urządzenia"</item>
+        <item>"Wymienna karta SD"</item>
+        <item>"Zastosuj ustawienie systemowe"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Lokalizacja"</item>
+        <item>"Osobiste"</item>
+        <item>"Wiadomości"</item>
+        <item>"Multimedia"</item>
+        <item>"Urządzenie"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"przybliżona lokalizacja"</item>
+        <item>"dokładna lokalizacja"</item>
+        <item>GPS</item>
+        <item>"wibracje"</item>
+        <item>"odczytywanie kontaktów"</item>
+        <item>"modyfikowanie kontaktów"</item>
+        <item>"odczytywanie rejestru połączeń"</item>
+        <item>"modyfikowanie rejestru połączeń"</item>
+        <item>"odczytywanie kalendarza"</item>
+        <item>"modyfikowanie kalendarza"</item>
+        <item>"skanowanie wi-fi"</item>
+        <item>"powiadomienie"</item>
+        <item>"skanowanie bts"</item>
+        <item>"połączenia telefoniczne"</item>
+        <item>"odczytywanie SMS-ów"</item>
+        <item>"zapisywanie SMS-ów"</item>
+        <item>"odbieranie SMS-ów"</item>
+        <item>"odbieranie SMS-ów alarmowych"</item>
+        <item>"odbieranie MMS-ów"</item>
+        <item>"odbieranie wiadomości WAP push"</item>
+        <item>"wysyłanie SMS-ów"</item>
+        <item>"odczytywanie SMS-ów ICC"</item>
+        <item>"zapisywanie SMS-ów ICC"</item>
+        <item>"modyfikowanie ustawień"</item>
+        <item>"rysuj na górze"</item>
+        <item>"dostęp do powiadomień"</item>
+        <item>"kamera"</item>
+        <item>"nagraj dźwięk"</item>
+        <item>"odtwórz dźwięk"</item>
+        <item>"czytaj schowek"</item>
+        <item>"modyfikuj schowek"</item>
+        <item>"przyciski multimediów"</item>
+        <item>"aktywność audio"</item>
+        <item>"głośność główna"</item>
+        <item>"głośność mowy"</item>
+        <item>"głośność dzwonka"</item>
+        <item>"głośność multimediów"</item>
+        <item>"głośność alarmu"</item>
+        <item>"głośność powiadomień"</item>
+        <item>"głośność Bluetooth"</item>
+        <item>"utrzymanie aktywności"</item>
+        <item>"monitorowanie lokalizacji"</item>
+        <item>"monitor wysoki zasilanie lokalizacja"</item>
+        <item>"pobierz statystyki użycia"</item>
+        <item>"wycisz mikrofon/wyłącz wyciszenie"</item>
+        <item>"wyświetlanie powiadomienia"</item>
+        <item>"wyświetlanie multimediów"</item>
+        <item>"aktywacja połączenia VPN"</item>
+        <item>"zapis tapety"</item>
+        <item>"wsparcie struktury"</item>
+        <item>"wsparcie robienia zrzutów ekranu"</item>
+        <item>"czytanie stanu telefonu"</item>
+        <item>"dodawanie poczty głosowej"</item>
+        <item>"zastosowanie SIP"</item>
+        <item>"przetwarzanie połączeń wychodzących"</item>
+        <item>"odcisk palca"</item>
+        <item>"czujniki na ciele"</item>
+        <item>"odczyt komunikatów z sieci komórkowej"</item>
+        <item>"pozorowanie lokalizacji"</item>
+        <item>"odczyt pamięci"</item>
+        <item>"zapis w pamięci"</item>
+        <item>"włączanie ekranu"</item>
+        <item>"pobieranie listy kont"</item>
+        <item>"uruchamianie w tle"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Lokalizacja"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Wibracje"</item>
+        <item>"Odczytywanie kontaktów"</item>
+        <item>"Modyfikowanie kontaktów"</item>
+        <item>"Odczytywanie rejestru połączeń"</item>
+        <item>"Modyfikowanie rejestru połączeń"</item>
+        <item>"Odczytywanie kalendarza"</item>
+        <item>"Modyfikowanie kalendarza"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Publikowanie powiadomień"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Połączenia telefoniczne"</item>
+        <item>"Czytanie SMS-ów/MMS-ów"</item>
+        <item>"Pisanie SMS-ów/MMS-ów"</item>
+        <item>"Odbieranie SMS-ów/MMS-ów"</item>
+        <item>"Odbieranie SMS-ów/MMS-ów"</item>
+        <item>"Odbieranie SMS-ów/MMS-ów"</item>
+        <item>"Odbieranie SMS-ów/MMS-ów"</item>
+        <item>"Wysyłanie SMS-ów/MMS-ów"</item>
+        <item>"Czytanie SMS-ów/MMS-ów"</item>
+        <item>"Pisanie SMS-ów/MMS-ów"</item>
+        <item>"Modyfikowanie ustawień"</item>
+        <item>"Rysuj na górze"</item>
+        <item>"Dostęp do powiadomień"</item>
+        <item>"Kamera"</item>
+        <item>"Nagraj dźwięk"</item>
+        <item>"Odtwórz dźwięk"</item>
+        <item>"Czytaj schowek"</item>
+        <item>"Modyfikuj schowek"</item>
+        <item>"Przyciski multimediów"</item>
+        <item>"Aktywność audio"</item>
+        <item>"Głośność główna"</item>
+        <item>"Głośność mowy"</item>
+        <item>"Głośność dzwonka"</item>
+        <item>"Głośność multimediów"</item>
+        <item>"Głośność alarmu"</item>
+        <item>"Głośność powiadomień"</item>
+        <item>"Głośność Bluetooth"</item>
+        <item>"Utrzymanie aktywności"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Lokalizacja"</item>
+        <item>"Pobierz statystyki użycia"</item>
+        <item>"Wycisz mikrofon/wyłącz wyciszenie"</item>
+        <item>"Wyświetlanie komunikatu"</item>
+        <item>"Wyświetlanie multimediów"</item>
+        <item>"Aktywacja połączenia VPN"</item>
+        <item>"Zapis tapety"</item>
+        <item>"Wsparcie struktury"</item>
+        <item>"Wsparcie robienia zrzutów ekranu"</item>
+        <item>"Czytanie stanu telefonu"</item>
+        <item>"Dodawanie poczty głosowej"</item>
+        <item>"Zastosowanie SIP"</item>
+        <item>"Przetwarzanie połączeń wychodzących"</item>
+        <item>"Odcisk palca"</item>
+        <item>"Czujniki na ciele"</item>
+        <item>"Odczyt komunikatów z sieci komórkowej"</item>
+        <item>"Pozorowanie lokalizacji"</item>
+        <item>"Odczyt pamięci"</item>
+        <item>"Zapis w pamięci"</item>
+        <item>"Włączanie ekranu"</item>
+        <item>"Pobieranie listy kont"</item>
+        <item>"Działanie w tle"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Krótkie"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"Średnie"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Długie"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"Domyślna"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Zwykły"</item>
+        <item>"Kursywa"</item>
+        <item>"Kapitaliki"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Bardzo mały"</item>
+        <item>"Mały"</item>
+        <item>"Normalny"</item>
+        <item>"Duży"</item>
+        <item>"Bardzo duży"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"Domyślne"</item>
+        <item>"Brak"</item>
+        <item>"Obrys"</item>
+        <item>"Z cieniem"</item>
+        <item>"Uniesione"</item>
+        <item>"Obniżone"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"Użyj ustawień domyślnych aplikacji"</item>
+        <item>"Biały na czarnym"</item>
+        <item>"Czarny na białym"</item>
+        <item>"Żółty na czarnym"</item>
+        <item>"Żółty na niebieskim"</item>
+        <item>"Niestandardowy"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"Sieć VPN wykorzystująca protokół PPTP"</item>
+        <item>"Sieć VPN wykorzystująca protokół L2TP/IPSec z kluczami wspólnymi"</item>
+        <item>"Sieć VPN wykorzystująca protokół L2TP/IPSec z certyfikatami"</item>
+        <item>"Sieć VPN wykorzystująca protokół IPSec z kluczami wspólnymi i uwierzytelnianiem Xauth"</item>
+        <item>"Sieć VPN wykorzystująca protokół IPSec z certyfikatami i uwierzytelnianiem Xauth"</item>
+        <item>"Sieć VPN wykorzystująca protokół IPSec z certyfikatami i uwierzytelnianiem hybrydowym"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Rozłączono"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Inicjowanie\u2026"</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Łączenie\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Połączono"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Przekroczono czas oczekiwania"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Niepowodzenie"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Zapytaj"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Nigdy nie zezwalaj"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Zawsze zezwalaj"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Normalny"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Średni"</item>
+        <!-- Memory is running low. -->
+        <item>"Niski"</item>
+        <!-- Memory is critical. -->
+        <item>"Krytyczny"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Normalny"</item>
+        <item>"Umiarkowany"</item>
+        <item>"Niski"</item>
+        <item>"Krytyczny"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Niezmienny"</item>
+        <item>"Najczęstsza aktywność"</item>
+        <item>"Ważny (pierwszy plan)"</item>
+        <item>"Ważny (w tle)"</item>
+        <item>"Kopia zapasowa"</item>
+        <item>"Duże obciążenie"</item>
+        <item>"Usługa (uruchomiona)"</item>
+        <item>"Usługa (ponowne uruchamianie)"</item>
+        <item>"Odbiornik"</item>
+        <item>"Ekran główny"</item>
+        <item>"Ostatnia aktywność"</item>
+        <item>"Pamięć podręczna (aktywność)"</item>
+        <item>"Pamięć podręczna (klient aktywności)"</item>
+        <item>"Pamięć podręczna (pusta)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Morski"</item>
+        <item>"Niebieski"</item>
+        <item>"Indygo"</item>
+        <item>"Fioletowy"</item>
+        <item>"Różowy"</item>
+        <item>"Czerwony"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Połącz automatycznie"</item>
+        <item>"Połącz ręcznie"</item>
+        <item>"Zawsze pytaj"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"Starsze niż 30 dni"</item>
+        <item>"Starsze niż 60 dni"</item>
+        <item>"Starsze niż 90 dni"</item>
+    </string-array></resources>

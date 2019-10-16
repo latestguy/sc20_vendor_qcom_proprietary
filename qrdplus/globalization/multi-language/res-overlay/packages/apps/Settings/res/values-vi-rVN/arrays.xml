@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"Châu Mỹ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"Châu Âu"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"Châu Phi"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"Châu Á"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"Úc"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"Thái Bình Dương"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"Tất cả"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 giây"</item>
+        <item>"30 giây"</item>
+        <item>"1 phút"</item>
+        <item>"2 phút"</item>
+        <item>"5 phút"</item>
+        <item>"10 phút"</item>
+        <item>"30 phút"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"Không bao giờ"</item>
+        <item>"15 giây"</item>
+        <item>"30 giây"</item>
+        <item>"1 phút"</item>
+        <item>"2 phút"</item>
+        <item>"5 phút"</item>
+        <item>"10 phút"</item>
+        <item>"30 phút"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"Ngay lập tức"</item>
+        <item>"5 giây"</item>
+        <item>"15 giây"</item>
+        <item>"30 giây"</item>
+        <item>"1 phút"</item>
+        <item>"2 phút"</item>
+        <item>"5 phút"</item>
+        <item>"10 phút"</item>
+        <item>"30 phút"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"Nhỏ"</item>
+        <item msgid="3579015730662088893">"Mặc định"</item>
+        <item msgid="1678068858001018666">"Lớn"</item>
+        <item msgid="490158884605093126">"Lớn nhất"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Đang quét\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Đang kết nối\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Đang xác thực\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Đang lấy địa chỉ IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Đã kết nối"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Bị tạm ngưng"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Đang ngắt kết nối\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Đã ngắt kết nối"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Không thành công"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Bị chặn"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Tạm thời tránh kết nối kém"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Đang quét\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Đang kết nối tới <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Đang xác thực với <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Đang lấy địa chỉ IP từ <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Đã kết nối tới <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Bị tạm ngưng"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Đăng ngắt kết nối khỏi <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Đã ngắt kết nối"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Không thành công"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Bị chặn"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Tạm thời tránh kết nối kém"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"Nút bấm"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"Mã PIN từ thiết bị ngang hàng"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"Mã PIN từ th.bị này"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"Đã kết nối"</item>
+        <item>"Đã mời"</item>
+        <item>"Không thành công"</item>
+        <item>"Có sẵn"</item>
+        <item>"Ngoài vùng phủ sóng"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 phút"</item>
+        <item>"5 phút"</item>
+        <item>"1 giờ"</item>
+        <item>"Không bao giờ hết thời gian chờ"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"Kém"</item>
+        <item>"Tốt"</item>
+        <item>"Tốt"</item>
+        <item>"Tuyệt vời"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Luôn luôn"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Chỉ khi cắm vào nguồn điện"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"Không bao giờ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"Luôn luôn"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"Chỉ khi cắm vào nguồn điện"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"Không bao giờ"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"30 ngày qua"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"Đặt chu kỳ sử dụng..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Thời gian sử dụng"</item>
+        <item>"Sử dụng lần cuối"</item>
+        <item>"Tên ứng dụng"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"Không có"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"Không"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"Tĩnh"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Không chọn"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Thủ công"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"Tự động định cấu hình proxy"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"Không"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP hoặc CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"Chưa được chỉ định"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"Không có"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"Bộ nhớ trong của thiết bị"</item>
+        <item>"Thẻ SD tháo lắp được"</item>
+        <item>"Cho phép hệ thống quyết định"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"Vị trí"</item>
+        <item>"Cá nhân"</item>
+        <item>"Nhắn tin"</item>
+        <item>"Truyền thông"</item>
+        <item>"Thiết bị"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"vị trí tổng thể"</item>
+        <item>"vị trí chính xác"</item>
+        <item>GPS</item>
+        <item>"rung"</item>
+        <item>"đọc danh sách liên hệ"</item>
+        <item>"sửa đổi danh sách liên hệ"</item>
+        <item>"đọc nhật ký cuộc gọi"</item>
+        <item>"sửa đổi nhật ký cuộc gọi"</item>
+        <item>"đọc lịch"</item>
+        <item>"sửa đổi lịch"</item>
+        <item>"quét wi-fi"</item>
+        <item>"thông báo"</item>
+        <item>"quét điện thoại di động"</item>
+        <item>"gọi điện thoại"</item>
+        <item>"đọc SMS"</item>
+        <item>"soạn SMS"</item>
+        <item>"nhận SMS"</item>
+        <item>"nhận SMS khẩn cấp"</item>
+        <item>"nhận MMS"</item>
+        <item>"nhận WAP push"</item>
+        <item>"gửi SMS"</item>
+        <item>"đọc ICC SMS"</item>
+        <item>"soạn ICC SMS"</item>
+        <item>"sửa đổi cài đặt"</item>
+        <item>"vẽ lên trên"</item>
+        <item>"truy cập thông báo"</item>
+        <item>"máy ảnh"</item>
+        <item>"ghi âm"</item>
+        <item>"phát âm thanh"</item>
+        <item>"đọc khay nhớ tạm"</item>
+        <item>"sửa đổi khay nhớ tạm"</item>
+        <item>"các nút phương tiện truyền thông"</item>
+        <item>"tập trung âm thanh"</item>
+        <item>"âm lượng chính"</item>
+        <item>"âm lượng thoại"</item>
+        <item>"âm lượng chuông"</item>
+        <item>"âm lượng phương tiện truyền thông"</item>
+        <item>"âm lượng báo thức"</item>
+        <item>"âm lượng thông báo"</item>
+        <item>"âm lượng bluetooth"</item>
+        <item>"không khóa màn hình"</item>
+        <item>"giám sát vị trí"</item>
+        <item>"theo dõi vị trí dùng điện năng cao"</item>
+        <item>"tải thống kế sử dụng"</item>
+        <item>"tắt/bật micrô"</item>
+        <item>"hiển thị thông báo nhanh"</item>
+        <item>"chiếu phương tiện"</item>
+        <item>"kích hoạt VPN"</item>
+        <item>"hình nền ghi"</item>
+        <item>"cấu trúc hỗ trợ"</item>
+        <item>"ảnh chụp màn hình hỗ trợ"</item>
+        <item>"đọc trạng thái điện thoại"</item>
+        <item>"thêm thư thoại"</item>
+        <item>"sử dụng SIP"</item>
+        <item>"xử lý cuộc gọi đi"</item>
+        <item>"vân tay"</item>
+        <item>"cảm biến cơ thể"</item>
+        <item>"đọc truyền phát trên di động"</item>
+        <item>"vị trí mô phỏng"</item>
+        <item>"bộ nhớ đọc"</item>
+        <item>"bộ nhớ ghi"</item>
+        <item>"bật màn hình"</item>
+        <item>"nhận tài khoản"</item>
+        <item>"chạy trong nền"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"Vị trí"</item>
+        <item>"Vị trí"</item>
+        <item>"Vị trí"</item>
+        <item>"Rung"</item>
+        <item>"Đọc danh sách liên hệ"</item>
+        <item>"Sửa đổi danh sách liên hệ"</item>
+        <item>"Đọc nhật ký cuộc gọi"</item>
+        <item>"Sửa đổi nhật ký cuộc gọi"</item>
+        <item>"Đọc lịch"</item>
+        <item>"Sửa đổi lịch"</item>
+        <item>"Vị trí"</item>
+        <item>"Đăng thông báo"</item>
+        <item>"Vị trí"</item>
+        <item>"Gọi điện thoại"</item>
+        <item>"Đọc SMS/MMS"</item>
+        <item>"Viết SMS/MMS"</item>
+        <item>"Nhận SMS/MMS"</item>
+        <item>"Nhận SMS/MMS"</item>
+        <item>"Nhận SMS/MMS"</item>
+        <item>"Nhận SMS/MMS"</item>
+        <item>"Gửi SMS/MMS"</item>
+        <item>"Đọc SMS/MMS"</item>
+        <item>"Viết SMS/MMS"</item>
+        <item>"Sửa đổi cài đặt"</item>
+        <item>"Vẽ lên trên"</item>
+        <item>"Truy cập thông báo"</item>
+        <item>"Máy ảnh"</item>
+        <item>"Ghi âm"</item>
+        <item>"Phát âm thanh"</item>
+        <item>"Đọc khay nhớ tạm"</item>
+        <item>"Sửa đổi khay nhớ tạm"</item>
+        <item>"Các nút phương tiện"</item>
+        <item>"Tập trung âm thanh"</item>
+        <item>"Âm lượng chính"</item>
+        <item>"Âm lượng thoại"</item>
+        <item>"Âm lượng chuông"</item>
+        <item>"Âm lượng phương tiện"</item>
+        <item>"Âm lượng báo thức"</item>
+        <item>"Âm lượng thông báo"</item>
+        <item>"Âm lượng bluetooth"</item>
+        <item>"Không khóa màn hình"</item>
+        <item>"Vị trí"</item>
+        <item>"Vị trí"</item>
+        <item>"Tải thống kê sử dụng"</item>
+        <item>"Tắt/bật micrô"</item>
+        <item>"Hiển thị thông báo nhanh"</item>
+        <item>"Chiếu phương tiện"</item>
+        <item>"Kích hoạt VPN"</item>
+        <item>"Hình nền ghi"</item>
+        <item>"Cấu trúc hỗ trợ"</item>
+        <item>"Ảnh chụp màn hình hỗ trợ"</item>
+        <item>"Đọc trạng thái điện thoại"</item>
+        <item>"Thêm thư thoại"</item>
+        <item>"Sử dụng SIP"</item>
+        <item>"Xử lý cuộc gọi đi"</item>
+        <item>"Vân tay"</item>
+        <item>"Cảm biến cơ thể"</item>
+        <item>"Đọc truyền phát trên di động"</item>
+        <item>"Vị trí mô phỏng"</item>
+        <item>"Bộ nhớ đọc"</item>
+        <item>"Bộ nhớ ghi"</item>
+        <item>"Bật màn hình"</item>
+        <item>"Nhận tài khoản"</item>
+        <item>"Chạy trong nền"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"Ngắn"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"T.bình"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"Dài"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"Mặc định"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"Thông thường"</item>
+        <item>"Chữ thảo"</item>
+        <item>"Chữ viết hoa nhỏ"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"Rất nhỏ"</item>
+        <item>"Nhỏ"</item>
+        <item>"Bình thường"</item>
+        <item>"Lớn"</item>
+        <item>"Rất lớn"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"Mặc định"</item>
+        <item>"Không có"</item>
+        <item>"Viền ngoài"</item>
+        <item>"Bóng đổ"</item>
+        <item>"Tăng"</item>
+        <item>"Giảm"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"Sử dụng mặc định của ứng dụng"</item>
+        <item>"Chữ trắng trên nền đen"</item>
+        <item>"Chữ đen trên nền trắng"</item>
+        <item>"Chữ vàng trên nền đen"</item>
+        <item>"Chữ vàng trên nền xanh lam"</item>
+        <item>"Tùy chỉnh"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"L2TP/IPSec VPN có khóa chia sẻ trước"</item>
+        <item>"L2TP/IPSec VPN có chứng chỉ"</item>
+        <item>"IPSec VPN có khóa được chia sẻ trước và xác thực Xauth"</item>
+        <item>"IPSec VPN có chứng chỉ và xác thực Xauth"</item>
+        <item>"IPSec VPN có chứng chỉ và xác thực kết hợp"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"Đã ngắt kết nối"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"Đang chạy..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"Đang kết nối\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"Đã kết nối"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"Thời gian chờ"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"Không thành công"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"Hỏi"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"Không bao giờ cho phép"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"Luôn cho phép"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"Bình thường"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"Trung bình"</item>
+        <!-- Memory is running low. -->
+        <item>"Thấp"</item>
+        <!-- Memory is critical. -->
+        <item>"Cực thấp"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"Bình thường"</item>
+        <item>"Trung bình"</item>
+        <item>"Thấp"</item>
+        <item>"Quan trọng"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"Liên tục"</item>
+        <item>"Hoạt động hàng đầu"</item>
+        <item>"Quan trọng (nền trước)"</item>
+        <item>"Quan trọng (nền sau)"</item>
+        <item>"Sao lưu"</item>
+        <item>"Hạng nặng"</item>
+        <item>"Dịch vụ (đang chạy)"</item>
+        <item>"Dịch vụ (đang khởi động lại)"</item>
+        <item>"Người nhận"</item>
+        <item>"Màn hình chính"</item>
+        <item>"Hoạt động sau cùng"</item>
+        <item>"Được lưu trong bộ nhớ cache (hoạt động)"</item>
+        <item>"Được lưu trong bộ nhớ cache (máy khách hoạt động)"</item>
+        <item>"Được lưu trong bộ nhớ cache (trống)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Xanh két"</item>
+        <item>"Lam"</item>
+        <item>"Chàm"</item>
+        <item>"Tía"</item>
+        <item>"Hồng"</item>
+        <item>"Đỏ"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"Kết nối tự động"</item>
+        <item>"Kết nối thủ công"</item>
+        <item>"Luôn hỏi"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"Hơn 30 ngày"</item>
+        <item>"Hơn 60 ngày"</item>
+        <item>"Hơn 90 ngày"</item>
+    </string-array></resources>

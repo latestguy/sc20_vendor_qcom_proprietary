@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Memindai..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Menyambung\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Mengautentikasi\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Mendapatkan alamat IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Terhubung"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Ditangguhkan"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Memutus sambungan..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Sambungan terputus"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Gagal"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Dicekal"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Menghindari sambungan buruk untuk sementara"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Memindai..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Menyambung ke <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Mengautentikasi dengan <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Mendapatkan alamat IP dari <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Tersambung ke <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Ditangguhkan"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Diputus dari <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Sambungan terputus"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Gagal"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Dicekal"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Menghindari sambungan buruk untuk sementara"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"Jangan periksa"</item>
+        <item>"Periksa hanya konten DRM"</item>
+        <item>"Selalu periksa"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"Jangan gunakan pemeriksaan HDCP"</item>
+        <item>"Gunakan pemeriksaan HDCP untuk konten DRM saja"</item>
+        <item>"Selalu gunakan pemeriksaan HDCP"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"Nonaktif"</item>
+        <item>"64 K"</item>
+        <item>"256 K"</item>
+        <item>"1 M"</item>
+        <item>"4 M"</item>
+        <item>"16 M"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"Nonaktif"</item>
+        <item>"64 K"</item>
+        <item>"256 K"</item>
+        <item>"1 M"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"Nonaktif"</item>
+        <item>"64 K/penyangga log"</item>
+        <item>"256 K/penyangga log"</item>
+        <item>"1 M/penyangga log"</item>
+        <item>"4 M/penyangga log"</item>
+        <item>"16 M/penyangga log"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"Nonaktif"</item>
+        <item>"Semua"</item>
+        <item>"Selain radio"</item>
+        <item>"khusus kernel"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"Nonaktif"</item>
+        <item>"Semua penyangga log"</item>
+        <item>"Semua kecuali penyangga log radio"</item>
+        <item>"khusus penyangga log kernel"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"Animasi mati"</item>
+        <item>"Skala animasi 0,5x"</item>
+        <item>"Skala animasi 1x"</item>
+        <item>"Skala animasi 1,5x"</item>
+        <item>"Skala animasi 2x"</item>
+        <item>"Skala animasi 5x"</item>
+        <item>"Skala animasi 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"Animasi mati"</item>
+        <item>"Skala animasi 0,5x"</item>
+        <item>"Skala animasi 1x"</item>
+        <item>"Skala animasi 1,5x"</item>
+        <item>"Skala animasi 2x"</item>
+        <item>"Skala animasi 5x"</item>
+        <item>"Skala animasi 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"Animasi mati"</item>
+        <item>"Skala animasi 0,5x"</item>
+        <item>"Skala animasi 1x"</item>
+        <item>"Skala animasi 1,5x"</item>
+        <item>"Skala animasi 2x"</item>
+        <item>"Skala animasi 5x"</item>
+        <item>"Skala animasi 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"Tidak ada"</item>
+        <item>"480p"</item>
+        <item>"480p (aman)"</item>
+        <item>720p</item>
+        <item>"720p (aman)"</item>
+        <item>"1080p"</item>
+        <item>"1080p (aman)"</item>
+        <item>4K</item>
+        <item>"4K (aman)"</item>
+        <item>"4K (ditingkatkan)"</item>
+        <item>"4K (ditingkatkan, aman)"</item>
+        <item>"720p, 1080p (layar ganda)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"Tidak ada"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace (Grafis)"</item>
+        <item>"Telepon tumpukan di glGetError"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"Nonaktif"</item>
+        <item>"Gambar wilayah non-kotak biru"</item>
+        <item>"Sorot perintah gambar teruji hijau"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"Nonaktif"</item>
+        <item>"Di layar dalam bentuk batang"</item>
+        <item>"Di adb shell dumpsys gfxinfo"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"Nonaktif"</item>
+        <item>"Tampilkan area overdraw"</item>
+        <item>"Tampilkan area untuk Buta Warna"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"Batas standar"</item>
+        <item>"Tanpa proses latar belakang"</item>
+        <item>"Maksimal 1 proses"</item>
+        <item>"Maksimal 2 proses"</item>
+        <item>"Maksimal 3 proses"</item>
+        <item>"Maksimal 4 proses"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"Mengisi daya"</item>
+        <item>"MTP (Protokol Transfer Media)"</item>
+        <item>"PTP (Protokol Transfer Gambar)"</item>
+        <item>"RNDIS (Ethernet USB)"</item>
+        <item>"Sumber Audio"</item>
+        <item>MIDI</item>
+    </string-array></resources>

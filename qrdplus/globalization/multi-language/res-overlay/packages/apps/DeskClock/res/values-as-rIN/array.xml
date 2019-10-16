@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"A<xliff:g id="separator">=</xliff:g>আবিজান"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>একৰা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এডিছ আবাবা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>অলজিয়াৰ্ছ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্লেনটায়াৰ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্ৰেজাভিল"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কাইৰো"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কাছাব্লেংকা"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কোনাক্ৰী"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডাকাৰ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডাৰ এছ ছালাম"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>জিবুটি"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ফ্ৰিটাউন"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গেবোৰ্ণ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হাৰাৰে"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>জোহান্সবাৰ্গ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কামপালা"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>খাৰটৌম"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিগালি"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিনছা"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লেগোছ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাছেৰু"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মোগাডিছু"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নাইৰোবি"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাও টোম"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টিমবুকটু"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>ট্ৰিপোলি"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টুনিছ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এংকোৰেজ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেণ্ডোজা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আৰুবা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আছুনচিয়ন"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাৰ্বাডোচ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেলিজ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বগোটা"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বুয়েনোছ এয়াৰ্ছ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেনকুন"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কাৰাকাছ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেইমেন"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>চিকাগো"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কোষ্টা ৰিকা"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কাৰাকাও"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডছন ক্ৰেক"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডেনভাৰ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডেট্ৰোইট"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ড’মিনিকা"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>এডমোনটন"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>এল ছেলভেড’ৰ"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ফোৰটালেজা"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গ্ৰেণ্ড টাৰ্ক"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গ্ৰেনাডা"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গুৱাটেমালা চিটি"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গুৱানা"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হালিফেক্স"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হাভানা"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ইণ্ডিয়ানাপোলিছ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>নক্স"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেৰেঙ্গো"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পিটাৰবাৰ্গ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টেল চিটি"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভেভে"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভিনচিনেছ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>উইনামেক"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিংষ্টন"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নুয়েষ্ট্ৰা ছেনোৰা ডি লা পেজ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লিমা"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লছ এঞ্জেলছ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লুইছভিলে"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মানাগুৱা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাৰ্টিনিক"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেণ্ডোজা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেটলাকাটলা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেক্সিকো চিটি"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মণ্টেৰেৰী"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মণ্টেভিডিঅ’"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মণ্টৰিয়েল"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নাছাউ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নিউ ইয়ৰ্ক"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেউলাহ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেন্দ্রস্থ কৰক"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নিউ ছালেম"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পানামা"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>ফোনিক্স"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>প’ৰ্ট অৱ স্পেইন"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>প’ৰ্ট-আউ-প্ৰিন্স"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পুয়েৰ্টো ৰিকো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্টো ডোমিনগো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাও পাউলো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট জনছ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট কিটছ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট লুচিয়া"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট থমাছ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টিজুৱানা"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টৰণ্টো"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভেনকুভেৰ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>উইনিপেগ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাউথ পোল<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লংয়েৰবিয়ান"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আলমাটি"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আমান"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আনাডিৰ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আকুটাউ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাগদাদ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাহৰেইন"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাকু"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেংকক"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেইৰুট"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কলকতা"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডামাকাছ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ঢাকা"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডুবাই"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গাজা"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হেব্ৰোন"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হো চি মিন"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হং কং<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ইস্তানবুল"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>জাকাৰ্টা"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>জেৰুচালেম"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কাবুল"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কৰাচী"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কাঠমাণ্ডু"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কুৱালা লুম্পাৰ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কুৱেট"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাকাউ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেনিলা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাছকেট"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>নোম পেন"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পিয়োংয়াং<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>কাটাৰ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰেঙোন"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰিয়াধ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেইগোন"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছিউল"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাংঘাই<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছিংগাপুৰ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টাইপেই<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>তেহৰান"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টেল এভিভ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টকিঅ’<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"U<xliff:g id="separator">=</xliff:g>উলাবাটাৰ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাৰ্মুডা"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেনাৰী"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেপে ভাৰ্ডে"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰিয়েকজাভিক"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ষ্টেনলি"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এডেলেইড"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্ৰিছবেন"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেনবেৰা"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডাৰউইন"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেলব’ৰ্ণ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নিউ ছাউথ ৱেলছ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পাৰ্থ"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>কুইঞ্চলেণ্ড"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>চিডনী"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভিক্টোৰিয়া"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নিউফাউণ্ডলেণ্ড"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাছকেটছেৱান"</item>
+        <item>"E<xliff:g id="separator">=</xliff:g>ইষ্টাৰ আইলেণ্ড"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আমষ্টেৰডাম"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আন্দোৰা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এথেন্স"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেলফাষ্ট"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেলগ্ৰেড"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাৰ্লিন"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্ৰেটিছলাভা"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্ৰুছেল্চ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাচাৰেষ্ট"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বুডাপেষ্ট"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>চিছিনাউ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কোপেনহাগেন"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডাবলিন"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>জিৱাল্টৰ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হেলছিংকি"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ইচেল অফ মেন"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ইস্তানবুল"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কেইভ"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লিছবন"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লণ্ডন"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লাক্সেমবাৰ্গ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাদ্ৰিদ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাল্টা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মিনস্ক"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মোনাকো"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মোছকাউ"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ওছলো"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পেৰিছ"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>প্ৰাগ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰিগা"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰোম"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>চান মাৰিনো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাৰাজেভো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছিমফেৰোপোল"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>স্কোপজে"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছোফিয়া"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ষ্টকহোম"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টেলিন"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভেটিকান"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভিয়েনা"</item>
+        <item>"V<xliff:g id="separator">=</xliff:g>ভিলনিয়াছ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>ৱাৰছাও"</item>
+        <item>"Z<xliff:g id="separator">=</xliff:g>জাগ্ৰেব"</item>
+        <item>"Z<xliff:g id="separator">=</xliff:g>জুৰিচ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এণ্টানানাৰিভো"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মালডিভছ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মৰিছাছ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>অকলেণ্ড"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ফিজি"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গুৱাম"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হোনোলুলু"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিৰিটিমাটি"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নৌমেয়া"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>চামোৱা"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>তাহিটি"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>এণ্টিগুৱা"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>অষ্টিন"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বষ্টন"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেলগ্ৰে"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কলম্বাছ"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডালাছ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>নক্সভিল"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেফিছ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মিয়ামি"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মিনেয়াপোলিছ"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ওটাৱা"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>ফিলাডেলফিয়া"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>প’ৰ্টলেণ্ড"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান ডিয়েগো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান ফ্ৰেন্সিছকো"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছল্ট লেক চিটি"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান জোছ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান ছেলভেডৰ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছিয়েটল"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট লুইছ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>ৱাছিংটন ডি.চি."</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হষ্টন"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান এণ্টনিঅ’"</item>
+        <item>"J<xliff:g id="separator">=</xliff:g>জেকছোনভিলে"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাল্টিমোৰ"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নাছভিলে"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মিলৱাউকি"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ওকলাহোমা চিটি"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লছ ভেগাছ"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>অলবুকাৰ্ক"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টুকছন"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছাক্ৰামেণ্টো"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আটলাণ্টা"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>ক্লেভেলেণ্ড"</item>
+        <item>"N<xliff:g id="separator">=</xliff:g>নিউ অৰ্লিয়েনছ"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টাম্পা"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পিটছবাৰ্গ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>চিনচিনাটি"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মাউণ্টেইন ভিউ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰিনো"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্লেক ৰক চিটি"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>ডোহা"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেইজিং<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মুম্বাই"</item>
+        <item>"D<xliff:g id="separator">=</xliff:g>দিল্লী"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ওছাকা<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>লাহোৰ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছানাআ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাৰ্চিলোনা"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মুনিচ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মিলান"</item>
+        <item>"F<xliff:g id="separator">=</xliff:g>ফ্ৰেংকফ্ৰুট"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হানোই"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আংকাৰা"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বাঙ্গালোৰ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>ব্ৰাছিলিয়া"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেপ টাউন"</item>
+        <item>"I<xliff:g id="separator">=</xliff:g>ইছলামাবাদ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰিঅ’ ডি জেনেৰিঅ’"</item>
+        <item>"A<xliff:g id="separator">=</xliff:g>আন আৰ্বোৰ"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বৌল্ডাৰ"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কেমব্ৰিজ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিৰ্কলেণ্ড"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মেডিছন"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গুৱাংজু<xliff:g id="phonetic">:</xliff:g>"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হায়দৰাবাদ"</item>
+        <item>"R<xliff:g id="separator">=</xliff:g>ৰেষ্টন"</item>
+        <item>"B<xliff:g id="separator">=</xliff:g>বেলো হোৰিজোণ্টি"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্টিয়েগো"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মোনৰোভিয়া"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>কলম্বো"</item>
+        <item>"C<xliff:g id="separator">=</xliff:g>চিহুৱাহুৱা"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেলভেডৰ"</item>
+        <item>"G<xliff:g id="separator">=</xliff:g>গুৰগাঁৱ"</item>
+        <item>"M<xliff:g id="separator">=</xliff:g>মানচেষ্টাৰ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>কিভ"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছেণ্ট. পিটাৰ্ছবাৰ্গ"</item>
+        <item>"K<xliff:g id="separator">=</xliff:g>ক্ৰাকৌ"</item>
+        <item>"W<xliff:g id="separator">=</xliff:g>ৰোকলাউ"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হাম্বাৰ্গ"</item>
+        <item>"O<xliff:g id="separator">=</xliff:g>ঔলু"</item>
+        <item>"H<xliff:g id="separator">=</xliff:g>হাইফা"</item>
+        <item>"S<xliff:g id="separator">=</xliff:g>ছান জুৱান"</item>
+        <item>"T<xliff:g id="separator">=</xliff:g>টেগুচিগালপা"</item>
+        <item>"P<xliff:g id="separator">=</xliff:g>পাৰামেৰিবো"</item>
+        <item>"Q<xliff:g id="separator">=</xliff:g>কুইটো"</item>
+        <item>"L<xliff:g id="separator">=</xliff:g>এলজাবজানা"</item>
+    </string-array></resources>

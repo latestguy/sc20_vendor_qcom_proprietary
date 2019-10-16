@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Names of packages and authorities that are common to all apps
+    and read from resources -->
+
+    <!-- Permissions label for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_label"/>
+    <string name="permission_read_attachment_label">"इमेल अनुलग्नकहरु पढ्नुहोस्"</string>
+    <!-- Permissions description for reading attachments -->
+    <add-resource type="string" name="permission_read_attachment_desc"/>
+    <string name="permission_read_attachment_desc">"तपाईँको इमेल अनुलग्नकहरू पढ्न अनुप्रयोगलाई अनुमति दिन्छ।"</string>
+    <!-- Permissions label for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_label"/>
+    <string name="permission_access_provider_label">"इमेल प्रदाता डेटा पहुँच गर्नुहोस्"</string>
+    <!-- Permissions description for accessing the main provider -->
+    <add-resource type="string" name="permission_access_provider_desc"/>
+    <string name="permission_access_provider_desc">"अनुप्रयोगलाई तपाईँको इमेल डेटाबेस, साथै प्राप्त सन्देशहरू, पठाइएका सन्देशहरू, प्रयोगकर्तानामहरू, र पासवर्डहरू अनुमति दिन्छ।"</string>
+
+    <!-- Name of application on Home screen -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"इमेल"</string>
+
+    <!-- Actions will be used as buttons and in menu items -->
+
+
+    <!--  Menu item used to create a new quick response [CHAR_LIMIT=16] -->
+    <add-resource type="string" name="create_action"/>
+    <string name="create_action">"नयाँ सिर्जना गर्नुहोस्"</string>
+
+    <!-- Message informing user when a list that would contain quick responses
+            is empty [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="quick_responses_empty_view"/>
+    <string name="quick_responses_empty_view">"कुनै द्रूत प्रतिक्रिया छैन।"</string>
+    <!-- Menu item -->
+    <add-resource type="string" name="account_settings_action"/>
+    <string name="account_settings_action">"खाता सेटिङ्हरू"</string>
+    <!-- The next set of strings are used in local display and may be localized. -->
+    <!-- In the UI, the inbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_inbox"/>
+    <string name="mailbox_name_display_inbox">"इनबक्स"</string>
+    <!-- In the UI, the outbox will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_outbox"/>
+    <string name="mailbox_name_display_outbox">"आउटबक्स"</string>
+    <!-- In the UI, the drafts will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_drafts"/>
+    <string name="mailbox_name_display_drafts">"ड्राफ्ट"</string>
+    <!-- In the UI, the trash will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_trash"/>
+    <string name="mailbox_name_display_trash">"रद्दीटोकरी"</string>
+    <!-- In the UI, the sent will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_sent"/>
+    <string name="mailbox_name_display_sent">"पठाइयो"</string>
+    <!-- In the UI, the junk will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_junk"/>
+    <string name="mailbox_name_display_junk">"रद्दी"</string>
+    <!-- In the UI, the starred will be displayed with this name -->
+    <add-resource type="string" name="mailbox_name_display_starred"/>
+    <string name="mailbox_name_display_starred">"ताराङ्कित"</string>
+    <!-- In the UI, the unread will be displayed with this name [CHAR LIMIT=15] -->
+    <add-resource type="string" name="mailbox_name_display_unread"/>
+    <string name="mailbox_name_display_unread">"पढ्न बाँकी"</string>
+
+    <!-- Title of debug screen -->
+    <add-resource type="string" name="debug_title"/>
+    <string name="debug_title">"डिबग"</string>
+
+
+    <!-- Label shown in the account selector to select "Combined view", which contains
+         Combined Inbox, Combined Outbox, etc. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mailbox_list_account_selector_combined_view"/>
+    <string name="mailbox_list_account_selector_combined_view">"संयुक्त दृश्य"</string>
+
+    <!-- Header for forwarded original messages -->
+    <add-resource type="string" name="message_compose_fwd_header_fmt"/>
+    <string name="message_compose_fwd_header_fmt">"\n\n-------- मूल सन्देश --------\nविषय: <xliff:g id="SUBJECT">%1$s</xliff:g>\nप्रेषक: <xliff:g id="SENDER">%2$s</xliff:g>\nप्रापक: <xliff:g id="TO">%3$s</xliff:g>\nCC: <xliff:g id="CC_0">%4$s</xliff:g>\n\n"</string>
+    <!-- Title for dialog containing list of quick responses that user may insert
+            into message body. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_list_title"/>
+    <string name="message_compose_insert_quick_response_list_title">"द्रुत जवाफ सम्मिलित गर्नुहोस्"</string>
+    <!-- Menu item for inserting quick responses into email compose activity. [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="message_compose_insert_quick_response_menu_title"/>
+    <string name="message_compose_insert_quick_response_menu_title">"द्रुत जवाफ सम्मिलित गर्नुहोस्"</string>
+    <!-- Toast upon using "send" when one or more attachments will need to be background loaded
+      [CHAR LIMIT=none]-->
+    <add-resource type="string" name="message_view_attachment_background_load"/>
+    <string name="message_view_attachment_background_load">"एक वा अधिक अनुलग्नकहरू तपाईंको अग्रेषित सन्देशमा पठाउनु अघि डाउनलोड गरिनेछ।"</string>
+
+    <!-- String used in place of a message that could not be properly decoded (e.g. bad base64
+         data was received.) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="message_decode_error"/>
+    <string name="message_decode_error">"सन्देश डिकोड गर्दा एउटा समस्या थियो।"</string>
+
+    <!-- Notification ticker when a forwarded attachment couldn't be sent [CHAR LIMIT=none] -->
+    <add-resource type="string" name="forward_download_failed_ticker"/>
+    <string name="forward_download_failed_ticker">"एक वा अधिक अनुलग्नक अग्रेषित गर्न सकिएन"</string>
+    <!-- Notification title when a forwarded attachment couldn't be sent [CHAR LIMIT=30]-->
+    <add-resource type="string" name="forward_download_failed_title"/>
+    <string name="forward_download_failed_title">"अनुलग्नक अग्रेषित गरिएन"</string>
+
+    <!-- Notification ticker when email account authentication fails [CHAR LIMIT=none] -->
+    <add-resource type="string" name="login_failed_ticker"/>
+    <string name="login_failed_ticker">"<xliff:g id="ACCOUNT_NAME">%s</xliff:g> साइनइन असफल भयो।"</string>
+    <!-- Notification title when email account authentication fails [CHAR LIMIT=30]-->
+    <add-resource type="string" name="login_failed_title"/>
+    <string name="login_failed_title">"साइन इन गर्न सकेन"</string>
+
+    <!-- Title of screen when setting up new email account [CHAR LIMIT=45] -->
+    <add-resource type="string" name="account_setup_basics_title"/>
+    <string name="account_setup_basics_title">"खाता सेटअप"</string>
+    <!-- Title of screen when trying to get oauth authentication -->
+    <add-resource type="string" name="oauth_authentication_title"/>
+    <string name="oauth_authentication_title">"प्रमाणिकरण अनुरोध गर्दै"</string>
+    <!-- Title of screen to choose with authentication to use -->
+    <add-resource type="string" name="sign_in_title"/>
+    <string name="sign_in_title">"साइन इन गर्नुहोस्"</string>
+
+    <!-- Warning if there is a problem authenticating with oauth -->
+    <add-resource type="string" name="oauth_error_description"/>
+    <string name="oauth_error_description">"प्रमाणीकरण गर्न असमर्थ"</string>
+    <!-- Warning label displayed when the email address or password are incorrect -->
+    <add-resource type="string" name="password_warning_label"/>
+    <string name="password_warning_label">"इमेल ठेगाना वा पासवर्ड गलत छन्"</string>
+    <!-- Label displayed to confirm what email address we are trying to validate -->
+    <add-resource type="string" name="email_confirmation_label"/>
+    <string name="email_confirmation_label">"इमेल ठेगाना :"</string>
+    <!-- Headline of screen when setting up new email account (large text over divider)
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_basics_headline"/>
+    <string name="account_setup_basics_headline">"इमेल खाता"</string>
+    <!-- On "Set up email" screen, enthusiastic welcome message. -->
+    <add-resource type="string" name="accounts_welcome"/>
+    <string name="accounts_welcome">"तपाईँ केवल केही चरणहरूमा आफ्नो खाता सेट अप गर्न सक्नुहुन्छ।"</string>
+    <!-- On "Set up email" screen, hint for account email address text field -->
+    <add-resource type="string" name="account_setup_basics_email_label"/>
+    <string name="account_setup_basics_email_label">"इमेल ठेगाना"</string>
+
+    <!-- Label between OAuth and password authentication, indicating the user must do one or the other [CHAR LIMIT=40] -->
+    <add-resource type="string" name="or_label"/>
+    <string name="or_label">"अथवा"</string>
+    <!-- Label for signing in with Google using OAuth -->
+    <add-resource type="string" name="sign_in_with_google"/>
+    <string name="sign_in_with_google">"Google का साथ साइन इन गर्नुहोस्"</string>
+    <!-- On "Set up email" screen, hint for account email password text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_basics_password_label"/>
+    <string name="account_setup_basics_password_label">"पासवर्ड"</string>
+    <!-- hint for account email password text field -->
+    <add-resource type="string" name="password_hint"/>
+    <string name="password_hint">"पासवर्ड"</string>
+    <!--  On the "Setup up email" screen, label indicating what service we are signed in with [CHAR LIMIT=40] -->
+    <add-resource type="string" name="signed_in_with_service_label"/>
+    <string name="signed_in_with_service_label">"%s सँग साइन इन गरिएको"</string>
+    <!-- Label for the authentication section, should be uppercase where applicable [CHAR LIMIT=20] -->
+    <add-resource type="string" name="authentication_label"/>
+    <string name="authentication_label">"प्रमाणीकरण"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_authentication_label"/>
+    <string name="add_authentication_label">"प्रमाणीकरण जोड्नुहोस्"</string>
+    <!-- Label for the add authentication icon [CHAR LIMIT=40] -->
+    <add-resource type="string" name="clear_authentication_label"/>
+    <string name="clear_authentication_label">"प्रमाणीकरण हटाउनुहोस्"</string>
+    <!-- Button name on "Set up email" screen, with action underlined using html [CHAR LIMIT=20] -->
+    <add-resource type="string" name="account_setup_basics_manual_setup_action"/>
+    <string name="account_setup_basics_manual_setup_action">"म्यानुअल सेटअप"</string>
+    <!-- Toast when we can't build a URI from the given email & password -->
+    <!-- Note, the error message in the toast is purposefully vague, because I *don't* know
+        exactly what's wrong. -->
+    <add-resource type="string" name="account_setup_username_password_toast"/>
+    <string name="account_setup_username_password_toast">"एउटा मान्य इमेल ठेगाना र पासवर्ड टाइप गर्नुहोस्।"</string>
+    <!-- Title of dialog shown when a duplicate account is created -->
+    <add-resource type="string" name="account_duplicate_dlg_title"/>
+    <string name="account_duplicate_dlg_title">"खाता नक्कली"</string>
+    <!-- Message of dialog shown when a duplicate account is created.  The display name of
+         the duplicate account is displayed. -->
+    <add-resource type="string" name="account_duplicate_dlg_message_fmt"/>
+    <string name="account_duplicate_dlg_message_fmt">"तपाईँको \" <xliff:g id="DUPLICATE">%s</xliff:g> \" खाताको लागि तपाईँले पहिल्यैबाट यस  प्रयोगकर्तानाम प्रयोग गरिरहनुभएको छ।"</string>
+
+    <!-- On check-settings screen, this is the initially-displayed message. -->
+    <add-resource type="string" name="account_setup_check_settings_retr_info_msg"/>
+    <string name="account_setup_check_settings_retr_info_msg">"खाताको जानकारी प्राप्त भइरहेछ..."</string>
+    <!-- Appears on screen while system is checking incoming server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_incoming_msg"/>
+    <string name="account_setup_check_settings_check_incoming_msg">"सर्भर सेटिङलाई प्रमाणित गरिँदै ..."</string>
+    <!-- Appears on screen while system is checking outgoing server settings -->
+    <add-resource type="string" name="account_setup_check_settings_check_outgoing_msg"/>
+    <string name="account_setup_check_settings_check_outgoing_msg">"एसएमटीपी सेटिङ्स मान्य गरिँदै..."</string>
+        <!-- Appears on screen while system is creating the account -->
+    <add-resource type="string" name="account_setup_creating_account_msg"/>
+    <string name="account_setup_creating_account_msg">"खाता सिर्जना गरिँदै..."</string>
+
+    <!-- Headline text that appears on "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_headline"/>
+    <string name="account_setup_ab_headline">"खाता प्रकार पुष्टि गर्नुहोस्"</string>
+    <!-- Explanatory text that appears on the "Confirm account type" screen [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_ab_instructions_format"/>
+    <string name="account_setup_ab_instructions_format">"तपाईँले संकेत गरेको <xliff:g id="EMAIL">%1$s</xliff:g>ले <xliff:g id="USERPROTOCOL">%2$s</xliff:g> प्रयोग गर्छ, तर खाताले <xliff:g id="PROVIDERPROTOCOL">%3$s</xliff:g> प्रयोग गर्न सक्तछ"</string>
+
+    <!-- Text that appears on "Set up email" screen after successfully setting up an account
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_names_headline"/>
+    <string name="account_setup_names_headline">"तपाईँको खाता सेट अप भयो र इमेल यसको मार्गमा छ!"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_account_name_label"/>
+    <string name="account_setup_names_account_name_label">"यस खातालाई एउटा नाम दिनुहोस् (वैकल्पिक)"</string>
+    <!-- On "Set up email" screen, label of text field -->
+    <add-resource type="string" name="account_setup_names_user_name_label"/>
+    <string name="account_setup_names_user_name_label">"तपाइँको नाम (बहिर्गमन सन्देशहरूमा प्रदर्शित)"</string>
+
+    <!-- Headline for the the account type selector (IMAP or POP3 or EAS) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_account_type_headline"/>
+    <string name="account_setup_account_type_headline">"खाता प्रकार"</string>
+    <!-- "Add new email account" screen, text that appears on screen -->
+    <add-resource type="string" name="account_setup_account_type_instructions"/>
+    <string name="account_setup_account_type_instructions">"यस खाता कुन प्रकारको हो?"</string>
+
+    <!-- "Incoming server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_incoming_headline"/>
+    <string name="account_setup_incoming_headline">"आवक सर्भर सेटिङ्स"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_username_label"/>
+    <string name="account_setup_incoming_username_label">"प्रयोगकर्ता नाम"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_password_label"/>
+    <string name="account_setup_incoming_password_label">"पासवर्ड"</string>
+    <!-- "Incoming server settings" screen, label for text field -->
+    <add-resource type="string" name="account_setup_password_subheading"/>
+    <string name="account_setup_password_subheading">"पासवर्ड"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_server_label"/>
+    <string name="account_setup_incoming_server_label">"सर्भर"</string>
+    <!-- "Incoming server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_port_label"/>
+    <string name="account_setup_incoming_port_label">"पोर्ट:"</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_incoming_security_label"/>
+    <string name="account_setup_incoming_security_label">"सुरक्षा प्रकार"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an unencrypted session -->
+    <add-resource type="string" name="account_setup_incoming_security_none_label"/>
+    <string name="account_setup_incoming_security_none_label">"कुनै पनि होइन"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_ssl_trust_certificates_label">"एसएसएल / टीएलएस (सबै सर्टिफिकेटहरू स्वीकार गर्नुहोस्)"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session on the selected port, including SSL certificate
+        checks -->
+    <add-resource type="string" name="account_setup_incoming_security_ssl_label"/>
+    <string name="account_setup_incoming_security_ssl_label">SSL/TLS</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session using the selected
+        port, accepting all SSL certificates -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_trust_certificates_label"/>
+    <string name="account_setup_incoming_security_tls_trust_certificates_label">"STARTTLS (सबै प्रमाणपत्रहरु स्वीकार गर्नुहोस्)"</string>
+    <!-- "Incoming server settings" screen, option for "Security type" pop-up menu indicating
+        the desire for an encrypted session overlaid on a plain text session on the selected
+        port, including SSL certificate checks -->
+    <add-resource type="string" name="account_setup_incoming_security_tls_label"/>
+    <string name="account_setup_incoming_security_tls_label">STARTTLS</string>
+    <!-- "Incoming server settings" screen, label for pop-up menu -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_label"/>
+    <string name="account_setup_incoming_delete_policy_label">"सर्भरबाट इमेल मेटाउनुहोस्"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_never_label"/>
+    <string name="account_setup_incoming_delete_policy_never_label">"कहिल्यै पनि होईन"</string>
+    <!-- "Incoming server settings" screen, options in pop-up menu for Delete email from server: -->
+    <add-resource type="string" name="account_setup_incoming_delete_policy_delete_label"/>
+    <string name="account_setup_incoming_delete_policy_delete_label">"जब म इनबक्सबाट मेटाउँछु"</string>
+    <!-- "Incoming server settings" screen, label for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_label"/>
+    <string name="account_setup_incoming_imap_path_prefix_label">"IMAP पथ उपसर्ग"</string>
+    <!-- "Incoming server settings" screen, hint for setting IMAP path prefix: -->
+    <add-resource type="string" name="account_setup_incoming_imap_path_prefix_hint"/>
+    <string name="account_setup_incoming_imap_path_prefix_hint">"वैकल्पिक"</string>
+
+    <!-- "Outgoing server settings" screen, headline (text over divider) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_outgoing_headline"/>
+    <string name="account_setup_outgoing_headline">"बाहिर जाने सर्भर सेटिङ्स"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_smtp_server_label"/>
+    <string name="account_setup_outgoing_smtp_server_label">"SMTP सर्भर:"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_port_label"/>
+    <string name="account_setup_outgoing_port_label">"पोर्ट:"</string>
+    <!-- On "Outgoing server settings" screen, label for pop-up menu, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_security_label"/>
+    <string name="account_setup_outgoing_security_label">"सुरक्षा प्रकार"</string>
+    <!-- On "Outgoing server settings" screen, label for check box, should be uppercase where applicable -->
+    <add-resource type="string" name="account_setup_outgoing_require_login_label"/>
+    <string name="account_setup_outgoing_require_login_label">"साइन इन आवश्यकता"</string>
+    <!-- On "Outgoing server settings" screen, label for text field, should be uppercase where applicable-->
+    <add-resource type="string" name="account_setup_outgoing_username_label"/>
+    <string name="account_setup_outgoing_username_label">"प्रयोगकर्ता नाम"</string>
+
+    <!-- On "Exchange" setup screen, a heading title for the current client certificate, should be uppercase where applicable [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_certificate_title"/>
+    <string name="account_setup_exchange_certificate_title">"क्लाइन्ट सर्टिफिकेट"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_select_certificate"/>
+    <string name="account_setup_exchange_select_certificate">"चयन गर्नुहोस्"</string>
+    <!-- On "Exchange" setup screen, a button label to include a client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_use_certificate"/>
+    <string name="account_setup_exchange_use_certificate">"क्लाइन्ट प्रमाणपत्र प्रयोग गर्नुहोस्"</string>
+    <!-- On "Exchange" setup screen, a button label to remove the currently used client certificate [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_setup_exchange_remove_certificate"/>
+    <string name="account_setup_exchange_remove_certificate">"हटाउनुहोस्"</string>
+    <!-- On "Exchange" setup screen, placeholder text to indicate no client
+         certificate is used [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_setup_exchange_no_certificate"/>
+    <string name="account_setup_exchange_no_certificate">"कुनै पनि होइन"</string>
+    <!-- On "Exchange" setup screen, the exchange device-id label, should be uppercase where applicable [CHAR LIMIT=30] -->
+    <add-resource type="string" name="account_setup_exchange_device_id_label"/>
+    <string name="account_setup_exchange_device_id_label">"मोबाइल उपकरण ID"</string>
+
+    <!-- In Account setup options screen, Activity headline [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_headline"/>
+    <string name="account_setup_options_headline">"खाता विकल्पहरू"</string>
+    <!-- In Account setup options screen, label for email check frequency selector -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_label"/>
+    <string name="account_setup_options_mail_check_frequency_label">"फ्रिक्वेन्सी सिङ्क गर्नुहोस्:"</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_never"/>
+    <string name="account_setup_options_mail_check_frequency_never">"कहिल्यै पनि होईन"</string>
+    <!-- In Account setup options & Account Settings screens, label for email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_push"/>
+    <string name="account_setup_options_mail_check_frequency_push">"स्वचालित (पुश)"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_5min"/>
+    <string name="account_setup_options_mail_check_frequency_5min">"हरेक ५ मिनेट"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_10min"/>
+    <string name="account_setup_options_mail_check_frequency_10min">"हरेक १० मिनेट"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_15min"/>
+    <string name="account_setup_options_mail_check_frequency_15min">"हरेक १५ मिनेट"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_30min"/>
+    <string name="account_setup_options_mail_check_frequency_30min">"हरेक ३० मिनेट"</string>
+    <!-- In Account setup options & Account Settings screens, email check frequency option -->
+    <add-resource type="string" name="account_setup_options_mail_check_frequency_1hour"/>
+    <string name="account_setup_options_mail_check_frequency_1hour">"हरेक घण्टा"</string>
+    <!-- In Account setup options & Account Settings screens, check box for new-mail notification -->
+    <add-resource type="string" name="account_setup_options_notify_label"/>
+    <string name="account_setup_options_notify_label">"इमेल आउँदा मलाई सूचित गर्नुहोस्"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_contacts_label"/>
+    <string name="account_setup_options_sync_contacts_label">"यस खाताबाट सम्पर्क सिङ्क गर्नुहोस्"</string>
+    <!-- In Account setup options screen, optional check box to also sync contacts -->
+    <add-resource type="string" name="account_setup_options_sync_calendar_label"/>
+    <string name="account_setup_options_sync_calendar_label">"यस खाताबाट पात्रो सिङ्क गर्नुहोस्"</string>
+    <!-- In Account setup options screen, check box to sync email -->
+    <add-resource type="string" name="account_setup_options_sync_email_label"/>
+    <string name="account_setup_options_sync_email_label">"यस खाताबाट इमेल सिङ्क गर्नुहोस्"</string>
+    <!-- In Account setup options screen, check box to auto-download attachments  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_options_background_attachments_label"/>
+    <string name="account_setup_options_background_attachments_label">"Wi-Fi सँग जब जोडिएको हुन्छ एट्याच्मेन्टहरू स्वत: डाउनलोड हुन्छ"</string>
+    <!-- Dialog title when "setup" could not finish -->
+    <add-resource type="string" name="account_setup_failed_dlg_title"/>
+    <string name="account_setup_failed_dlg_title">"समाप्त गर्न सकिएन"</string>
+    <!-- In Account setup options screen, label for email lookback selector -->
+    <add-resource type="string" name="account_setup_options_mail_window_label"/>
+    <string name="account_setup_options_mail_window_label">"निम्नबाट इमेल सिङ्क गर्नुहोस्:"</string>
+    <!-- In account setup options & account settings screens (exchange), sync window length; this
+        implies loading a 'reasonable' number of messages [CHAR LIMIT=25] -->
+    <add-resource type="string" name="account_setup_options_mail_window_auto"/>
+    <string name="account_setup_options_mail_window_auto">"स्वचालित"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1day"/>
+    <string name="account_setup_options_mail_window_1day">"अन्तिम दिन"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_3days"/>
+    <string name="account_setup_options_mail_window_3days">"अन्तिम तीन दिन"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1week"/>
+    <string name="account_setup_options_mail_window_1week">"अन्तिम हप्ता"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_2weeks"/>
+    <string name="account_setup_options_mail_window_2weeks">"अन्तिम दुई हप्ता"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_1month"/>
+    <string name="account_setup_options_mail_window_1month">"गत महिना"</string>
+    <!-- A sync window length setting (i.e. load messages this far back) [CHAR LIMIT=25]  -->
+    <add-resource type="string" name="account_setup_options_mail_window_all"/>
+    <string name="account_setup_options_mail_window_all">"सबै"</string>
+    <!-- Per-mailbox sync window setting.  This means "use the account's sync window setting" [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_options_mail_window_default"/>
+    <string name="account_setup_options_mail_window_default">"पूर्वनिर्धारित खाता प्रयोग गर्नुहोस्"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Username or password incorrect -->
+    <add-resource type="string" name="account_setup_failed_dlg_auth_message"/>
+    <string name="account_setup_failed_dlg_auth_message">"प्रयोगकर्ता नाम वा पासवर्ड गलत छ।"</string>
+
+    <!-- Account setup autodiscover auth failure dialog title. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=40] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_title"/>
+    <string name="account_setup_autodiscover_dlg_authfail_title">"खाता सेटअपमा समस्या"</string>
+    <!-- Account setup autodiscover auth failure dialog message. This is shown when autodiscover hits
+        an "access denied" server error, which could imply incorrect username/password or that no
+        autodiscover service has been configured for the domain [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_autodiscover_dlg_authfail_message"/>
+    <string name="account_setup_autodiscover_dlg_authfail_message">"प्रयोगकर्ता नाम, पासवर्ड, र खाता सेटिङहरू ठिक छन् भनेर सुनिश्चित गर्नुहोस्।"</string>
+
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message"/>
+    <string name="account_setup_failed_dlg_certificate_message">"सुरक्षित सर्भर जडान गर्न सक्दैन।"</string>
+    <!-- An error message presented to the user when the server's identity
+         cannot be established or trusted [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_dlg_certificate_message_fmt"/>
+    <string name="account_setup_failed_dlg_certificate_message_fmt">"सुरक्षित सर्भर जडान गर्न सक्दैन। \n (<xliff:g id="ERROR">%s</xliff:g>)"</string>
+    <!-- An error message presented to the user when the server requires a
+         client certificate to connect [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_required"/>
+    <string name="account_setup_failed_certificate_required">"एउटा ग्राहक सर्टिफिकेट आवश्यक छ। के तपाईँ एउटा ग्राहक प्रमाणपत्रसँग सर्भर जडान गर्न चाहनुहुन्छ?"</string>
+    <!-- An error message presented to the user when the certificate they
+         specified for connecting to a server is inaccessible [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="account_setup_failed_certificate_inaccessible"/>
+    <string name="account_setup_failed_certificate_inaccessible">"सर्टिफिकेट अवैध वा अनुपलब्ध छ।"</string>
+
+    <!-- Dialog text for ambiguous setup failure; server error/bad credentials [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_check_credentials_message"/>
+    <string name="account_setup_failed_check_credentials_message">"सर्भरले एक त्रुटिको साथ जवाफ दियो। तपाइँको प्रयोगकर्ता नाम र पासवर्ड परीक्षण गर्नुहोस्, अनि पुनः प्रयास गर्नुहोस्।"</string>
+
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message"/>
+    <string name="account_setup_failed_dlg_server_message">"सर्भर जडान गर्न सक्दैन।"</string>
+    <!-- "Setup could not finish" dialog text; e.g., Cannot connect to server\n(Connection timed out) -->
+    <add-resource type="string" name="account_setup_failed_dlg_server_message_fmt"/>
+    <string name="account_setup_failed_dlg_server_message_fmt">"सर्भरसँग जोडिन सकेन।\n(<xliff:g id="ERROR">%s</xliff:g>)"</string>
+
+    <!-- Additional diagnostic text when TLS was required but the server doesn't support it -->
+    <add-resource type="string" name="account_setup_failed_tls_required"/>
+    <string name="account_setup_failed_tls_required">"टीएलएस आवश्यक तर सर्भर द्वारा समर्थित छैन।"</string>
+    <!-- Additional diagnostic text when server does not support any of our authentication methods -->
+    <add-resource type="string" name="account_setup_failed_auth_required"/>
+    <string name="account_setup_failed_auth_required">"प्रमाणीकरण तरीकाहरु सर्भर द्वारा समर्थित छैन।"</string>
+    <!-- Additional diagnostic text when server connection failed due to security error -->
+    <add-resource type="string" name="account_setup_failed_security"/>
+    <string name="account_setup_failed_security">"सुरक्षा त्रुटिको कारण सर्भरमा कनेक्शन खोल्न सकिएन।"</string>
+    <!-- Additional diagnostic text when server connection failed due to io error (connection) -->
+    <add-resource type="string" name="account_setup_failed_ioerror"/>
+    <string name="account_setup_failed_ioerror">"सर्भरसँग जडान खुल्न सकेन।"</string>
+    <!-- Additional diagnostic text when server connection failed due to our inability to support a
+         required EAS protocol version [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_protocol_unsupported"/>
+    <string name="account_setup_failed_protocol_unsupported">"तपाईँले गलत सर्भर ठेगाना टाइप गर्नुभयो वा सर्भरलाई एउटा प्रोटोकल संस्करणक आवश्यकता छ जुन इमेलले समर्थन गर्दैन।"</string>
+    <!-- Additional diagnostic text when server access was denied; the user should contact the
+         administrator of the server for more information [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_access_denied"/>
+    <string name="account_setup_failed_access_denied">"तपाईँलाई यस सर्भरसँग सिङ्क गर्ने अनुमति छैन। थप जानकारीको लागि आफ्नो सर्भरको व्यवस्थापकसँग सम्पर्क गर्नुहोला।"</string>
+
+    <!-- Dialog title when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing -->
+    <add-resource type="string" name="account_setup_security_required_title"/>
+    <string name="account_setup_security_required_title">"टाढा सुरक्षा प्रशासन"</string>
+    <!-- Additional diagnostic text when validation requires security provisioning (e.g. support
+         for device lock PIN, or remote wipe.) and we ask the user permission before continuing.
+         [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_security_policies_required_fmt"/>
+    <string name="account_setup_security_policies_required_fmt">"सर्भर <xliff:g id="SERVER">%s</xliff:g> तपाइँले यस भन्दा टाढा तपाइँको Android उपकरणको सुरक्षा सुविधाहरुलाई नियन्त्रण गर्नको लागि अनुमतिको आवश्यकता पर्छ। तपाइँ यस  खाता सेटअपलाई पुरा गर्न चाहानुहुन्छ?"</string>
+    <!-- Additional diagnostic text when validation failed due to required provisioning not
+         being supported [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_setup_failed_security_policies_unsupported"/>
+    <string name="account_setup_failed_security_policies_unsupported">"यस सर्भर सहित तपाइँको Android उपकरणलाई समर्थन नगर्ने सुरक्षा सुविधाहरुको आवश्यकता छ: <xliff:g id="ERROR">%s</xliff:g> लगायत"</string>
+    <!-- Warning given to users when they request disabling device administration (i.e. that their
+         administered accounts will be deleted) [CHAR LIMIT=none] -->
+    <add-resource type="string" name="disable_admin_warning"/>
+    <string name="disable_admin_warning">"चेतावनी: तपाईँको उपकरण इमेल अनुप्रयोगको अधिकार प्रबन्धकमा असक्षम गरिँदा तपाईँको उपकरणले यसलाई आवश्यक पर्ने सबै इमेल खाताहरू, साथै तिनीहरूको इमेल, सम्पर्कहरू, क्यालेन्डर कार्यक्रमहरू, र अन्य डेटा मेटाउने छ।"</string>
+
+    <!-- Dialog shown when the account requires some amount of device security provisioning,
+         just before jumping into system settings such as Device Policy grant, PIN/password,
+         or encryption setup.  [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="account_security_dialog_title"/>
+    <string name="account_security_dialog_title">"सुरक्षा अद्यावधिक"</string>
+    <!-- Additional diagnostic text when the account requires some amount of device security
+         provisioning, just before jumping into system settings such as Device Policy grant,
+         PIN/password, or encryption setup.  [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_dialog_content_fmt"/>
+    <string name="account_security_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g> तपाइँले तपाइँको त्यस सुरक्षा सेटिङ अद्यावधिक गर्न आवश्यकता छ।"</string>
+
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_unsupported_ticker_fmt"/>
+    <string name="security_unsupported_ticker_fmt">"खाता \"<xliff:g id="ACCOUNT">%s</xliff:g>\" सुरक्षा आवश्यकताहरूको कारण सिंक गर्न सकिँदैन।"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_needed_ticker_fmt"/>
+    <string name="security_needed_ticker_fmt">"खाता \"<xliff:g id="ACCOUNT">%s</xliff:g>\" लाई सुरक्षा सेटिङस अपडेट आवश्यकता छ।"</string>
+    <!-- Notification ticker when device security required (note: unused in Holo XL) -->
+    <add-resource type="string" name="security_changed_ticker_fmt"/>
+    <string name="security_changed_ticker_fmt">"खाता \"<xliff:g id="ACCOUNT">%s</xliff:g>\"यस को सुरक्षा सेटिङ परिवर्तन भयो, कुनै प्रयोगकर्ता कारवाही आवश्यकता छैन।"</string>
+    <!-- Notification content title when device security required [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_update_title"/>
+    <string name="security_notification_content_update_title">"सुरक्षा अपडेट आवश्यकता"</string>
+    <!-- Notification content title when device security policies have changed [CHAR_LIMIT=36] -->
+    <add-resource type="string" name="security_notification_content_change_title"/>
+    <string name="security_notification_content_change_title">"सुरक्षा नीतिहरू परिवर्तित भयो"</string>
+    <!-- Notification content title when device security policies cannot be met [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="security_notification_content_unsupported_title"/>
+    <string name="security_notification_content_unsupported_title">"सुरक्षा नीतिहरु पूरा हुन सकेन"</string>
+    <!-- Title of the activity that dispatches changes to device security.  Not normally seen. -->
+    <add-resource type="string" name="account_security_title"/>
+    <string name="account_security_title">"उपकरण सुरक्षा"</string>
+    <!-- Additional diagnostic text when the email app asserts control of the phone.
+        [CHAR LIMIT=none] -->
+    <add-resource type="string" name="account_security_policy_explanation_fmt"/>
+    <string name="account_security_policy_explanation_fmt">"सर्भर <xliff:g id="SERVER">%s</xliff:g> तपाईँ यसलाई आफ्नो Android उपकरणको केही दूर सुरक्षा सुविधाहरूको नियन्त्रण गर्नको लागि अनुमतिको आवश्यकता छ।"</string>
+
+    <!-- "Setup could not finish" dialog action button -->
+    <add-resource type="string" name="account_setup_failed_dlg_edit_details_action"/>
+    <string name="account_setup_failed_dlg_edit_details_action">"विवरण सम्पादन गर्ने"</string>
+
+    <!-- Notification ticker when device password is getting ready to expire [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expire_warning_ticker_fmt"/>
+    <string name="password_expire_warning_ticker_fmt">"\"<xliff:g id="ACCOUNT">%s</xliff:g>\" लाई तपाईँले आफ्नो लक स्क्रिन वा पासवर्ड परिवर्तन गर्न आवश्यक छ।"</string>
+    <!-- Notification content title when device password is getting ready to expire
+            [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="password_expire_warning_content_title"/>
+    <string name="password_expire_warning_content_title">"लक स्क्रिन पासवर्डको म्याद सकिँदैछ"</string>
+
+    <!-- Notification ticker when device password has expired [CHAR_LIMIT=80] -->
+    <add-resource type="string" name="password_expired_ticker"/>
+    <string name="password_expired_ticker">"तपाईँको लक स्क्रिन PIN वा पासवर्ड समाप्त भएको छ।"</string>
+    <!-- Notification content title when device password has expired [CHAR_LIMIT=28] -->
+    <add-resource type="string" name="password_expired_content_title"/>
+    <string name="password_expired_content_title">"लक स्क्रिन पासवर्डको समयावधि सकियो"</string>
+
+    <!-- Dialog title if device pin/password is going to expire soon. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expire_warning_dialog_title"/>
+    <string name="password_expire_warning_dialog_title">"लक स्क्रिन पासवर्डको म्याद सकिँदैछ"</string>
+    <!-- Dialog content device pin/password is going to expire soon. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expire_warning_dialog_content_fmt"/>
+    <string name="password_expire_warning_dialog_content_fmt">"तपाईँले आफ्नो लक स्क्रिन पीन वा पासवर्ड चाँडै नै परिवर्तन गर्नु पर्दछ, अथवा <xliff:g id="ACCOUNT">%s</xliff:g>को लागि डेटा मेटिने छन्। के तपाईँ अहिले परिवर्तन गर्नुहुन्छ?"</string>
+
+    <!-- Dialog title if device pin/password has already expired. [CHAR_LIMIT=40] -->
+    <add-resource type="string" name="password_expired_dialog_title"/>
+    <string name="password_expired_dialog_title">"लक स्क्रिन पासवर्डको समयावधि सकियो"</string>
+    <!-- Dialog content device pin/password has already expired. [CHAR_LIMIT=none] -->
+    <add-resource type="string" name="password_expired_dialog_content_fmt"/>
+    <string name="password_expired_dialog_content_fmt">"<xliff:g id="ACCOUNT">%s</xliff:g>को लागि डेटा तपाईँको उपकरणबाट मेटाइयो। तपाईँ यसलाई आफ्नो स्क्रिन PIN वा पासवर्ड परिवर्तन गरेर पुनर्वस्थामा लैजान सक्नुहुने छ। के तपाईँ यसलाई अहिले परिवर्तन गर्न चाहनुहुन्छ?"</string>
+
+    <!-- On AccountSettingsXL, dialog text if you try to exit in/out/eas fragment (server settings)
+         without checking/saving [CHAR LIMIT=none]-->
+    <add-resource type="string" name="account_settings_exit_server_settings"/>
+    <string name="account_settings_exit_server_settings">"सुरक्षित नभएका परिवर्तनहरूलाई छाड्ने हो?"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <!-- Title of account preference for downloading attachments in background [CHAR LIMIT=32] -->
+    <add-resource type="string" name="account_settings_background_attachments_label"/>
+    <string name="account_settings_background_attachments_label">"संलग्नकहरू डाउनलोड गर्नुहोस्"</string>
+    <!-- Summary of account preference for downloading attachments in background [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_background_attachments_summary"/>
+    <string name="account_settings_background_attachments_summary">"वाइ-फाइको माध्यमबाट हालका सन्देशहरूमा संलग्नकहरू स्वतः डाउनलोड गर्नुहोस्"</string>
+    <add-resource type="string" name="account_settings_notify_label"/>
+    <string name="account_settings_notify_label">"इमेल सूचनाहरू"</string>
+    <!-- On Settings screen, summary line when called via AccountManager for Exchange accounts
+        [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_summary"/>
+    <string name="account_settings_summary">"सिंक फ्रिक्वेन्सी, अधिसूचनाहरू, आदि।"</string>
+    <!-- On Settings screen, setting summary text -->
+    <add-resource type="string" name="account_settings_notify_summary"/>
+    <string name="account_settings_notify_summary">"इमेल आएको बेलामा सूचनाहरू पठाउनुहोस्"</string>
+    <!-- On Settings screen, setting option name and title of dialog box that opens -->
+    <add-resource type="string" name="account_settings_mail_check_frequency_label"/>
+    <string name="account_settings_mail_check_frequency_label">"सिङ्क बाराम्बारता"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_incoming_label"/>
+    <string name="account_settings_incoming_label">"आगमन सेटिङ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_incoming_summary"/>
+    <string name="account_settings_incoming_summary">"प्रयोगकर्ता नाम, पासवर्ड, र अन्य आगमन सर्भर सेटिङ"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_outgoing_label"/>
+    <string name="account_settings_outgoing_label">"बाहिर जाने सेटिङ्स"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_outgoing_summary"/>
+    <string name="account_settings_outgoing_summary">"प्रयोगकर्ता नाम, पासवर्ड, र अन्य बहिर्गमन सर्भर सेटिङहरु"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_enforced_label"/>
+    <string name="account_settings_enforced_label">"नीतिहरू लागू गरियो"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_enforced_summary"/>
+    <string name="account_settings_enforced_summary">"कुनै पनि होइन"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_unsupported_label"/>
+    <string name="account_settings_unsupported_label">"असमर्थित नीतिहरू"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_unsupported_summary"/>
+    <string name="account_settings_unsupported_summary">"कुनै पनि होइन"</string>
+    <!-- On Settings screen, label for button that attempts to sync the account -->
+    <add-resource type="string" name="account_settings_retry_label"/>
+    <string name="account_settings_retry_label">"सिङ्क प्रयास गर्नुहोस्"</string>
+    <!-- On Settings screen, summmary for button that attempts to sync an account [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_retry_summary"/>
+    <string name="account_settings_retry_summary">"यस  खातालाई सिङ्क गर्न को लागि यहाँ छुनुहोस्"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_description_label"/>
+    <string name="account_settings_description_label">"खाता नाम"</string>
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_name_label"/>
+    <string name="account_settings_name_label">"तपाईँको नाम"</string>
+    <!-- On Settings screen, setting option name. Allows user to modify saved quick responses
+        for insertion in message body. [CHAR_LIMIT=24]-->
+    <add-resource type="string" name="account_settings_edit_quick_responses_label"/>
+    <string name="account_settings_edit_quick_responses_label">"चाँडो जवाफ"</string>
+    <!-- On Settings screen, setting option summary [CHAR LIMIT=64] -->
+    <add-resource type="string" name="account_settings_edit_quick_responses_summary"/>
+    <string name="account_settings_edit_quick_responses_summary">"इमेल रचना गर्दा तपाईँले प्रायः सम्मिलित गर्ने पाठ सम्पादन गर्नुहोस्"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_notifications"/>
+    <string name="account_settings_notifications">"सूचना सेटिङहरू"</string>
+    <!-- On Settings screen, section heading for data usage [CHAR LIMIT=70] -->
+    <add-resource type="string" name="account_settings_data_usage"/>
+    <string name="account_settings_data_usage">"डेटा उपयोग"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_policies"/>
+    <string name="account_settings_policies">"सुरक्षा नीतिहरू"</string>
+
+    <add-resource type="string" name="system_folders_title"/>
+    <string name="system_folders_title">"प्रणाली फोल्डर"</string>
+    <add-resource type="string" name="system_folders_trash_title"/>
+    <string name="system_folders_trash_title">"रद्दीको फोल्डर"</string>
+    <add-resource type="string" name="system_folders_trash_summary"/>
+    <string name="system_folders_trash_summary">"तपाईँको सर्भरको रद्दी फोल्डर छान्नुहोस्"</string>
+    <add-resource type="string" name="system_folders_trash_dlg"/>
+    <string name="system_folders_trash_dlg">"तपाईँको सर्भरको रद्दी फोल्डर छान्नुहोस्"</string>
+    <add-resource type="string" name="system_folders_sent_title"/>
+    <string name="system_folders_sent_title">"पठाइएको वस्तु फोल्डर"</string>
+    <add-resource type="string" name="system_folders_sent_summary"/>
+    <string name="system_folders_sent_summary">"तपाईँको सर्भरको पठाइएको वस्तु फोल्डर छान्नुहोस्"</string>
+    <add-resource type="string" name="system_folders_sent_dlg"/>
+    <string name="system_folders_sent_dlg">"तपाईँको सर्भरको पठाइएको वस्तु फोल्डर छान्नुहोस्"</string>
+
+    <!-- On settings screen, dialog heading informing user to create or edit a quick response -->
+    <add-resource type="string" name="edit_quick_response_dialog"/>
+    <string name="edit_quick_response_dialog">"चाँडो जवाफ"</string>
+    <!-- On settings screen, edit quick response dialog's "save" button -->
+    <add-resource type="string" name="save_action"/>
+    <string name="save_action">"सुरक्षित गर्नुहोस्"</string>
+
+    <!-- On settings screen, sync contacts check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_contacts_enable"/>
+    <string name="account_settings_sync_contacts_enable">"सम्पर्क सिङ्क गर्नुहोस्"</string>
+    <!-- On settings screen, sync contacts summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_contacts_summary"/>
+    <string name="account_settings_sync_contacts_summary">"यस खाताको लागि सम्पर्कहरू सिंक गर्नुहोस्"</string>
+    <!-- On settings screen, sync calendar check box label [CHAR LIMIT=20]-->
+        <add-resource type="string" name="account_settings_sync_calendar_enable"/>
+    <string name="account_settings_sync_calendar_enable">"पात्रो सिङ्क गर्नुहोस्"</string>
+    <!-- On settings screen, sync calendar summary text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="account_settings_sync_calendar_summary"/>
+    <string name="account_settings_sync_calendar_summary">"यस खाताको लागि क्यालेन्डर कार्यक्रम सिंक गर्नुहोस्"</string>
+    <!-- On settings screen, sync email check box label [CHAR LIMIT=20]-->
+    <add-resource type="string" name="account_settings_sync_email_enable"/>
+    <string name="account_settings_sync_email_enable">"सिङ्क इमेल"</string>
+    <!-- On settings screen, sync email summary text [CHAR LIMIT=35] -->
+    <add-resource type="string" name="account_settings_sync_email_summary"/>
+    <string name="account_settings_sync_email_summary">"यस खाताको लागि इमेल सिङ्क गर्नुहोस्"</string>
+
+    <!-- On Settings screen, vibrate pop-up menu label -->
+    <add-resource type="string" name="label_notification_vibrate_title"/>
+    <string name="label_notification_vibrate_title">"भाइब्रेट"</string>
+
+    <!-- On Settings screen, setting option name -->
+    <add-resource type="string" name="account_settings_ringtone"/>
+    <string name="account_settings_ringtone">"रिङटोन छनौट गर्नुहोस्"</string>
+    <!-- On Settings screen, section heading -->
+    <add-resource type="string" name="account_settings_servers"/>
+    <string name="account_settings_servers">"सर्भर सेटिङ्स"</string>
+
+    <!-- Mailbox settings activity title [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title"/>
+    <string name="mailbox_settings_activity_title">"सिङ्क विकल्पहरू"</string>
+    <!-- Mailbox settings activity title, with the target folder name [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_activity_title_with_mailbox"/>
+    <string name="mailbox_settings_activity_title_with_mailbox">"सिङ्क विकल्पहरु (<xliff:g id="MAILBOXX_NAME">%s</xliff:g>)"</string>
+    <!-- On mailbox settings screen: Whether to sync this mailbox when the account syncs. -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_label"/>
+    <string name="mailbox_settings_sync_enabled_label">"यस फोल्डरलाई सिङ्क गर्नुहोस्"</string>
+    <!-- On mailbox settings screen: Explanatory text for what it means to "sync this folder". -->
+    <add-resource type="string" name="mailbox_settings_sync_enabled_summary"/>
+    <string name="mailbox_settings_sync_enabled_summary">"जडान हुँदा सन्देशहरू डाउनलोड हुने छन्"</string>
+    <!-- On mailbox settings screen: Mailbox sync window (the number of days to synchronize email for) setting label [CHAR LIMIT=none] -->
+    <add-resource type="string" name="mailbox_settings_mailbox_sync_window_label"/>
+    <string name="mailbox_settings_mailbox_sync_window_label">"सिङ्क गर्नुपर्ने मेलका दिनहरू"</string>
+
+    <!-- Message that appears when adding a T-Online account -->
+    <add-resource type="string" name="provider_note_t_online"/>
+    <string name="provider_note_t_online">"यो इमेल खाता सेट अप गर्नु अघि, टि-अनलाइन वेबसाइटको भ्रमण गर्नुहोस् र POP3 इमेल पहुँचको लागि एउटा पासवर्डको सिर्जना गर्नुहोस्।"</string>
+    <!-- Long name of Microsoft Exchange account type; used by AccountManager -->
+    <add-resource type="string" name="exchange_name_alternate"/>
+    <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
+
+    <!-- Message that appears if the AccountManager cannot create the system Account -->
+    <add-resource type="string" name="system_account_create_failed"/>
+    <string name="system_account_create_failed">"खाता सिर्जना गर्न सकिँदैन। पुन:प्रयास गर्नुहोस्।"</string>
+
+    <!-- Strings that support the DeviceAdmin / DevicePolicyManager API -->
+    <!-- Name of the DeviceAdmin (seen in settings & in user confirmation screen) -->
+    <add-resource type="string" name="device_admin_label"/>
+    <string name="device_admin_label">"इमेल"</string>
+    <!-- Long-form description of the DeviceAdmin (2nd line in settings & in user conf. screen) -->
+    <add-resource type="string" name="device_admin_description"/>
+    <string name="device_admin_description">"सर्भर-निर्दिष्ट सुरक्षा नीतिहरुलाई सक्षम बनाउँछ"</string>
+
+    <!-- A policy disallowing the user of the device's camera [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_dont_allow_camera"/>
+    <string name="policy_dont_allow_camera">"उपकरणको क्यामेराको प्रयोग अस्वीकार गर्नुहोस्"</string>
+    <!-- A policy requiring a device lock screen password [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_require_password"/>
+    <string name="policy_require_password">"उपकरण पासवर्डको आवश्यकता छ"</string>
+    <!-- A policy disallowing the reuse of recent passwords [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_history"/>
+    <string name="policy_password_history">"हालका पासवर्डहरूको पुन: उपयोग प्रतिबन्धित गर्नुहोस्"</string>
+    <!-- A policy that forces a password to expire after a set period of time [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_password_expiration"/>
+    <string name="policy_password_expiration">"समयावधिमा पासवर्डहरू आवश्यकता"</string>
+    <!-- A policy requiring a maximum amount of time the device can sit idle before the lock screen
+        is activated [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_screen_timeout"/>
+    <string name="policy_screen_timeout">"यसको स्क्रिन लक गर्नको लागि एउटा निष्क्रिय उपकरणको आवश्यकता"</string>
+    <!-- A policy limiting the number of old calendar events synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_calendar_age"/>
+    <string name="policy_calendar_age">"सिङ्क भएका पात्रो घटनाहरुको संख्या सीमित गर्नुहोस्"</string>
+    <!-- A policy limiting the number of emails synced [CHAR LIMIT=50] -->
+    <add-resource type="string" name="policy_email_age"/>
+    <string name="policy_email_age">"सि‌ङ्क भएका इमेलहरूको संख्या सीमित गर्नुहोस्"</string>
+
+    <!-- The four strings below represent "quick responses" which the user can insert into a
+        message being composed with just a couple of taps.  These four responses MUST be defined,
+        but need not include a string (i.e. they are optional).  Further, the responses can be
+        customized as necessary by the translator, in case one or more of these is inappropriate in
+        a particular locale or if there are better options available. -->
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_1"/>
+    <string name="quick_1">"धन्यवाद!"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_2"/>
+    <string name="quick_2">"मलाई राम्रो लाग्दछ!"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_3"/>
+    <string name="quick_3">"म यसलाई पछि पढ्ने छु र तपाइँकोमा फर्किनेछु।"</string>
+    <!-- A "quick response", i.e. a quick reply to a received mail [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="quick_4"/>
+    <string name="quick_4">"यस बारेमा छलफल गर्न एउटा बैठक सेट अप गरौं।"</string>
+
+    <!-- This is shown when a user responds to a meeting invitation [CHAR LIMIT=none]-->
+    <add-resource type="string" name="confirm_response"/>
+    <string name="confirm_response">"प्रतिक्रिया पठाउँदै..."</string>
+
+    <!-- Used by AccountManager -->
+    <!-- Account type name as used by AccountManager UI (IMAP is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="imap_name"/>
+    <string name="imap_name">"व्यक्तिगत (IMAP)"</string>
+    <!-- Account type name as used by AccountManager UI (POP3 is not translatable) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pop3_name"/>
+    <string name="pop3_name">"व्यक्तिगत (POP3)"</string>
+
+    <!-- Displayed when the user must pick his server's trash folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="trash_folder_selection_title"/>
+    <string name="trash_folder_selection_title">"<xliff:g id="ACCOUNT">%s</xliff:g> को लागि सर्भर रद्दी फोल्डर चयन गर्नुहोस्"</string>
+    <!-- Displayed when the user must pick his server's sent items folder from a list [CHAR LIMIT 30]-->
+    <add-resource type="string" name="sent_folder_selection_title"/>
+    <string name="sent_folder_selection_title">"<xliff:g id="ACCOUNT">%s</xliff:g>को लागि सर्भर पठाइएका वस्तुहरू चयन गर्नुहोस्"</string>
+    <add-resource type="string" name="account_waiting_for_folders_msg"/>
+    <string name="account_waiting_for_folders_msg">"फोल्डर सूची लोड गरिँदै..."</string>
+
+    <!-- This message indicates no quick responses exist to choose from -->
+    <add-resource type="string" name="no_quick_responses"/>
+    <string name="no_quick_responses">"कुनै पनि उपलब्ध छैनन्"</string>
+
+    <!-- Gmail name for redirecting during account setup -->
+    <add-resource type="string" name="gmail_name"/>
+    <string name="gmail_name">Gmail</string>
+
+    <!-- Name for preference entry which leads to the per-folder sync settings activity -->
+    <add-resource type="string" name="folder_sync_settings_pref_title"/>
+    <string name="folder_sync_settings_pref_title">"फोल्डर सिङ्क सेटिङहरू"</string>
+
+    <!-- In Account setup options & Account Settings screens, Email sync size option. -->
+    <add-resource type="string" name="account_settings_sync_size_enable"/>
+    <string name="account_settings_sync_size_enable">"प्रत्येक पत्रमा समक्रमणको साइज कन्फिगर गर्नुहोस्"</string>
+    <add-resource type="string" name="account_settings_sync_size_enable_summary"/>
+    <string name="account_settings_sync_size_enable_summary">"डेटा बचत गर्न तपाईंले खाताको प्रत्येक पत्रमा समक्रमणको साइज कन्फिगर गर्नुपर्छ"</string>
+    <add-resource type="string" name="account_settings_sync_size_label"/>
+    <string name="account_settings_sync_size_label">"समक्रमणको साइज छान्नुहोस्"</string>
+    <add-resource type="string" name="account_settings_sync_size_category_label"/>
+    <string name="account_settings_sync_size_category_label">"समक्रमणको साइज सेटिङहरू"</string>
+
+    <add-resource type="string" name="account_setup_options_mail_sync_size_all"/>
+    <string name="account_setup_options_mail_sync_size_all">"कुल"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_20k"/>
+    <string name="account_setup_options_mail_sync_size_20k">"20KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_100k"/>
+    <string name="account_setup_options_mail_sync_size_100k">"100KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_200k"/>
+    <string name="account_setup_options_mail_sync_size_200k">"200KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_500k"/>
+    <string name="account_setup_options_mail_sync_size_500k">"500KB"</string>
+    <add-resource type="string" name="account_setup_options_mail_sync_size_1M"/>
+    <string name="account_setup_options_mail_sync_size_1M">"1MB"</string>
+
+    <!--Delete email account -->
+    <add-resource type="string" name="remove_email_account"/>
+    <string name="remove_email_account">"खाता हटाउनुहोस्"</string>
+    <add-resource type="string" name="remove_email_account_continue"/>
+    <string name="remove_email_account_continue">"जारी राख्नुहोस्"</string>
+    <add-resource type="string" name="remove_email_account_message"/>
+    <string name="remove_email_account_message">"तपाईं सेटिङहरू एप्लिकेसनमा जान लाग्नुभएको छ जहाँ तपाईंले खाताहरू हटाउन सक्नुहुन्छ"</string>
+    <add-resource type="string" name="default_domain"/>
+    <string name="default_domain"></string>
+    <!-- Customize Email account's signature -->
+    <add-resource type="string" name="default_email_signature"/>
+    <string name="default_email_signature"></string>
+    <add-resource type="string" name="default_email_signature_with_brand"/>
+    <string name="default_email_signature_with_brand"></string>
+    <add-resource type="string" name="missing_required_permission"/>
+    <string name="missing_required_permission">"तपाईंले आवश्यक अनुमतिहरू असक्षम पार्नुभएको छ।"</string></resources>

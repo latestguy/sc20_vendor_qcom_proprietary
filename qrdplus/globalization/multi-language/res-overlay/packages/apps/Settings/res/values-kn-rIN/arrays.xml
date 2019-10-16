@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"ಅಮೆರಿಕಾ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"ಯೂರೋಪ್"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"ಆಫ್ರಿಕಾ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"ಏಷ್ಯಾ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"ಆಸ್ಟ್ರೇಲಿಯ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"ಪೆಸಿಫಿಕ್"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"ಎಲ್ಲಾ"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"30 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"1 ನಿಮಿಷ"</item>
+        <item>"2 ನಿಮಿಷಗಳು"</item>
+        <item>"5 ನಿಮಿಷಗಳು"</item>
+        <item>"10 ನಿಮಿಷಗಳು"</item>
+        <item>"30 ನಿಮಿಷಗಳು"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"ಎಂದಿಗೂ ಇಲ್ಲ"</item>
+        <item>"15 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"30 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"1 ನಿಮಿಷ"</item>
+        <item>"2 ನಿಮಿಷಗಳು"</item>
+        <item>"5 ನಿಮಿಷಗಳು"</item>
+        <item>"10 ನಿಮಿಷಗಳು"</item>
+        <item>"30 ನಿಮಿಷಗಳು"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"ತಕ್ಷಣವೇ"</item>
+        <item>"5 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"15 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"30 ಸೆಕೆಂಡುಗಳು"</item>
+        <item>"1 ನಿಮಿಷ"</item>
+        <item>"2 ನಿಮಿಷಗಳು"</item>
+        <item>"5 ನಿಮಿಷಗಳು"</item>
+        <item>"10 ನಿಮಿಷಗಳು"</item>
+        <item>"30 ನಿಮಿಷಗಳು"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"ಸಣ್ಣ"</item>
+        <item msgid="3579015730662088893">"ಡಿಫಾಲ್ಟ್"</item>
+        <item msgid="1678068858001018666">"ದೊಡ್ಡದು"</item>
+        <item msgid="490158884605093126">"ದೊಡ್ಡ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"ಸಂಪರ್ಕಪಡಿಸಲಾಗುತ್ತಿದೆ..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"ಪ್ರಮಾಣೀಕರಿಸಲಾಗುತ್ತಿದೆ..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP ವಿಳಾಸವನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"ಸಂಪರ್ಕಗೊಂಡಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ತಡೆಹಿಡಿಯಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ಯಶಸ್ವಿಯಾಗಲಿಲ್ಲ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ಕಳಪೆ ಸಂಪರ್ಕವನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ತಡೆಗಟ್ಟಲಾಗುತ್ತಿದೆ"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ಸ್ಕ್ಯಾನ್ ಮಾಡಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ಗೆ ಸಂಪರ್ಕಪಡಿಸಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ಜೊತೆ ಪ್ರಮಾಣೀಕರಿಸಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ನಿಂದ IP ವಿಳಾಸವನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ಗೆ ಸಂಪರ್ಕಪಡಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ತಡೆಹಿಡಿಯಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ನಿಂದ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತಿದೆ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ಯಶಸ್ವಿಯಾಗಲಿಲ್ಲ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ಕಳಪೆ ಸಂಪರ್ಕವನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ತಡೆಗಟ್ಟಲಾಗುತ್ತಿದೆ"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"ಒತ್ತುವ ಬಟನ್"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"ಪೀರ್ ಸಾಧನದಿಂದ ಪಿನ್‌"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"ಈ ಸಾಧನದಿಂದ ಪಿನ್‌"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"ಸಂಪರ್ಕಗೊಂಡಿದೆ"</item>
+        <item>"ಆಹ್ವಾನಿಸಲಾಗಿದೆ"</item>
+        <item>"ವಿಫಲವಾಗಿದೆ"</item>
+        <item>"ಲಭ್ಯವಿದೆ"</item>
+        <item>"ವ್ಯಾಪ್ತಿಯ ಹೊರಗಿದೆ"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 ನಿಮಿಷಗಳು"</item>
+        <item>"5 ನಿಮಿಷಗಳು"</item>
+        <item>"1 ಗಂಟೆ"</item>
+        <item>"ಎಂದಿಗೂ ಅವಧಿ ಮೀರದಿರಲಿ"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"ಕಳಪೆ"</item>
+        <item>"ಯುಕ್ತ"</item>
+        <item>"ಉತ್ತಮ"</item>
+        <item>"ಉತ್ಕೃಷ್ಟ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ಯಾವಾಗಲೂ"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ಕೇವಲ ಪ್ಲಗ್ ಇನ್ ಮಾಡಿದಾಗ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"ಎಂದಿಗೂ ಬೇಡ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ಯಾವಾಗಲೂ"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ಕೇವಲ ಪ್ಲಗ್ ಇನ್ ಮಾಡಿದಾಗ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"ಎಂದಿಗೂ ಇಲ್ಲ"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"ಕಳೆದ 30 ದಿನಗಳು"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"ಬಳಕೆಯ ಆವರ್ತನೆಯನ್ನು ಹೊಂದಿಸಿ..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"ಬಳಕೆ ಸಮಯ"</item>
+        <item>"ಕಳೆದ ಬಾರಿಯ ಬಳಕೆ"</item>
+        <item>"ಅಪ್ಲಿಕೇಶನ್ ಹೆಸರು"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"ಯಾವುದೂ ಇಲ್ಲ"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"ಯಾವುದೂ ಇಲ್ಲ"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"ಸ್ಥಿರ"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ಯಾವುದೂ ಇಲ್ಲ"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ಹಸ್ತಚಾಲಿತ"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ಪ್ರಾಕ್ಸಿ ಸ್ವಯಂ-ಕಾನ್ಫಿಗ್"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"ಯಾವುದೂ ಇಲ್ಲ"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP ಅಥವಾ CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"ನಿರ್ದಿಷ್ಟಪಡಿಸಲಾಗದ್ದು"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"ಯಾವುದೂ ಇಲ್ಲ"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"ಆಂತರಿಕ ಸಾಧನ ಸಂಗ್ರಹಣೆ"</item>
+        <item>"ತೆಗೆದುಹಾಕಬಹುದಾದ SD ಕಾರ್ಡ್"</item>
+        <item>"ಸಿಸ್ಟಂ ನಿರ್ಧರಿಸಲಿ"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ವೈಯಕ್ತಿಕ"</item>
+        <item>"ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆ"</item>
+        <item>"ಮಾಧ್ಯಮ"</item>
+        <item>"ಸಾಧನ"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"ಒರಟು ಸ್ಥಾನ"</item>
+        <item>"ಉತ್ಕೃಷ್ಟ ಸ್ಥಾನ"</item>
+        <item>GPS</item>
+        <item>"ಕಂಪನ"</item>
+        <item>"ಓದುವ ಸಂಪರ್ಕಗಳು"</item>
+        <item>"ಸಂಪರ್ಕಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಕರೆಯ ಲಾಗ್‌ ಓದಿ"</item>
+        <item>"ಕರೆಯ ಲಾಗ್‌ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಕ್ಯಾಲೆಂಡರ್‌ ಓದಿ"</item>
+        <item>"ಕ್ಯಾಲೆಂಡರ್‌ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"wi-fi ಸ್ಕ್ಯಾನ್‌"</item>
+        <item>"ಅಧಿಸೂಚನೆ"</item>
+        <item>"ಸೆಲ್ ಸ್ಕ್ಯಾನ್"</item>
+        <item>"ಫೋನ್‌‌ಗೆ ಕರೆಮಾಡಿ"</item>
+        <item>"SMS ಓದಿ"</item>
+        <item>"SMS ಬರೆಯಿರಿ"</item>
+        <item>"SMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"ತುರ್ತು SMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"MMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"WAP ಪುಶ್‌ ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"SMS ಕಳುಹಿಸು"</item>
+        <item>"ICC SMS ಓದಿ"</item>
+        <item>"ICC SMS ಬರೆಯಿರಿ"</item>
+        <item>"ಸೆಟ್ಟಿಂಗ್‌‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಮೇಲಕ್ಕೆ ಎಳೆಯಿರಿ"</item>
+        <item>"ಅಧಿಸೂಚನೆಗಳನ್ನು ಪ್ರವೇಶಿಸಿ"</item>
+        <item>"ಕ್ಯಾಮರಾ"</item>
+        <item>"ಆಡಿಯೋ ರೆಕಾರ್ಡ್‌ ಮಾಡಿ"</item>
+        <item>"ಆಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ"</item>
+        <item>"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ ಓದಿ"</item>
+        <item>"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಮಾಧ್ಯಮ ಬಟನ್‌ಗಳು"</item>
+        <item>"ಆಡಿಯೋ ಫೋಕಸ್"</item>
+        <item>"ಮಾಸ್ಟರ್‌ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಧ್ವನಿ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ರಿಂಗ್‌ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಮಾಧ್ಯಮ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಎಚ್ಚರಿಕೆ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಅಧಿಸೂಚನೆ ವಾಲ್ಯೂಮ್"</item>
+        <item>"bluetooth ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಎಚ್ಚರವಹಿಸಿ"</item>
+        <item>"ಪರಿವೀಕ್ಷಣೆ ಸ್ಥಾನ"</item>
+        <item>"ಪರಿವೀಕ್ಷಣೆಯ ಹೆಚ್ಚಿನ ಸಾಮರ್ಥ್ಯದ ಸ್ಥಾನ"</item>
+        <item>"ಬಳಕೆ ಅಂಕಿಅಂಶಗಳನ್ನು ಪಡೆಯಿರಿ"</item>
+        <item>"ಮೈಕ್ರೋಫೋನ್ ಮ್ಯೂಟ್/ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ"</item>
+        <item>"ಟೋಸ್ಟ್ ತೋರಿಸಿ"</item>
+        <item>"ಪ್ರಾಜೆಕ್ಟ್ ಮೀಡಿಯಾ"</item>
+        <item>"VPN ಸಕ್ರಿಯಗೊಳಿಸಿ"</item>
+        <item>"ವಾಲ್‌ಪೇಪರ್‌ ರೈಟ್ ಮಾಡಿ"</item>
+        <item>"ವಿನ್ಯಾಸಕ್ಕೆ ಸಹಾಯ"</item>
+        <item>"ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌‌ಗೆ ಸಹಾಯ"</item>
+        <item>"ಫೋನ್ ಸ್ಥಿತಿಯನ್ನು ರೀಡ್‌ ಮಾಡಿ"</item>
+        <item>"ಧ್ವನಿಮೇಲ್ ಸೇರಿಸಿ"</item>
+        <item>"sip ಬಳಸಿ"</item>
+        <item>"ಹೊರಹೋಗುವ ಕರೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿ"</item>
+        <item>"ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್"</item>
+        <item>"ದೇಹ ಸೆನ್ಸರ್‌ಗಳು"</item>
+        <item>"ಸೆಲ್ ಪ್ರಸಾರಗಳನ್ನು ರೀಡ್ ಮಾಡಿ"</item>
+        <item>"ಸ್ಥಳ ನಕಲಿಸು"</item>
+        <item>"ಸಂಗ್ರಹಣೆಯನ್ನು ರೀಡ್ ಮಾಡಿ"</item>
+        <item>"ಸಂಗ್ರಹಣೆಯನ್ನು ರೈಟ್ ಮಾಡಿ"</item>
+        <item>"ಸ್ಕ್ರೀನ್ ಆನ್ ಮಾಡಿ"</item>
+        <item>"ಖಾತೆಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"</item>
+        <item>"ಹಿನ್ನೆಲೆಯಲ್ಲಿ ರನ್ ಮಾಡಿ"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ವೈಬ್ರೇಟ್‌"</item>
+        <item>"ಓದುವ ಸಂಪರ್ಕಗಳು"</item>
+        <item>"ಸಂಪರ್ಕಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಕರೆಯ ಲಾಗ್‌ ಓದಿ"</item>
+        <item>"ಕರೆಯ ಲಾಗ್‌ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಕ್ಯಾಲೆಂಡರ್ ಓದಿ"</item>
+        <item>"ಕ್ಯಾಲೆಂಡರ್ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಪೋಸ್ಟ್‌ ಅಧಿಸೂಚನೆ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಫೋನ್‌ ಕರೆ"</item>
+        <item>"SMS/MMS ಓದಿ"</item>
+        <item>"SMS/MMS ಬರೆಯಿರಿ"</item>
+        <item>"SMS/MMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"SMS/MMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"SMS/MMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"SMS/MMS ಸ್ವೀಕರಿಸಿ"</item>
+        <item>"SMS/MMS ಕಳುಹಿಸಿ"</item>
+        <item>"SMS/MMS ಓದಿ"</item>
+        <item>"SMS/MMS ಬರೆಯಿರಿ"</item>
+        <item>"ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಮೇಲಕ್ಕೆ ಎಳೆಯಿರಿ"</item>
+        <item>"ಅಧಿಸೂಚನೆಗಳನ್ನು ಪ್ರವೇಶಿಸಿ"</item>
+        <item>"ಕ್ಯಾಮರಾ"</item>
+        <item>"ಆಡಿಯೋ ರೆಕಾರ್ಡ್‌ ಮಾಡಿ"</item>
+        <item>"ಆಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ"</item>
+        <item>"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ ಓದಿ"</item>
+        <item>"ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಮಾರ್ಪಡಿಸಿ"</item>
+        <item>"ಮಾಧ್ಯಮ ಬಟನ್‌ಗಳು"</item>
+        <item>"ಆಡಿಯೊ ಫೋಕಸ್"</item>
+        <item>"ಮಾಸ್ಟರ್ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಧ್ವನಿ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ರಿಂಗ್ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಮಾಧ್ಯಮ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಎಚ್ಚರಿಕೆ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಅಧಿಸೂಚನೆ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಬ್ಲೂಟೂತ್‌‌ ವಾಲ್ಯೂಮ್"</item>
+        <item>"ಎಚ್ಚರದಿಂದಿರಿಸಿ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಸ್ಥಾನ"</item>
+        <item>"ಬಳಕೆ ಅಂಕಿಅಂಶಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"</item>
+        <item>"ಮೈಕ್ರೋಫೋನ್ ಮ್ಯೂಟ್/ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ"</item>
+        <item>"ಟೋಸ್ಟ್ ತೋರಿಸಿ"</item>
+        <item>"ಪ್ರಾಜೆಕ್ಟ್ ಮೀಡಿಯಾ"</item>
+        <item>"VPN ಸಕ್ರಿಯಗೊಳಿಸಿ"</item>
+        <item>"ವಾಲ್‌ಪೇಪರ್‌ ರೈಟ್‌ ಮಾಡಿ"</item>
+        <item>"ವಿನ್ಯಾಸಕ್ಕೆ ಸಹಾಯ"</item>
+        <item>"ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ಗೆ ಸಹಾಯ"</item>
+        <item>"ಫೋನ್ ಸ್ಥಿತಿಯನ್ನು ರೀಡ್‌ ಮಾಡಿ"</item>
+        <item>"ಧ್ವನಿಮೇಲ್ ಸೇರಿಸಿ"</item>
+        <item>"sip ಬಳಸಿ"</item>
+        <item>"ಹೊರಹೋಗುವ ಕರೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಿ"</item>
+        <item>"ಬೆರಳಚ್ಚು"</item>
+        <item>"ದೇಹ ಸೆನ್ಸರ್‌ಗಳು"</item>
+        <item>"ಸೆಲ್ ಪ್ರಸಾರಗಳನ್ನು ರೀಡ್ ಮಾಡಿ"</item>
+        <item>"ಸ್ಥಳ ನಕಲಿಸು"</item>
+        <item>"ಸಂಗ್ರಹಣೆಯನ್ನು ರೀಡ್ ಮಾಡಿ"</item>
+        <item>"ಸಂಗ್ರಹಣೆಯನ್ನು ರೈಟ್ ಮಾಡಿ"</item>
+        <item>"ಸ್ಕ್ರೀನ್ ಆನ್ ಮಾಡಿ"</item>
+        <item>"ಖಾತೆಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"</item>
+        <item>"ಹಿನ್ನೆಲೆಯಲ್ಲಿ ರನ್ ಮಾಡಿ"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"ಚಿಕ್ಕದು"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"ಮಧ್ಯಮ"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"ದೊಡ್ಡದು"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"ಡೀಫಾಲ್ಟ್"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"ಪ್ರಾಸಂಗಿಕ"</item>
+        <item>"ಹಸ್ತಾಕ್ಷರಲಿಪಿ"</item>
+        <item>"ಸ್ಮಾಲ್‌ ಕ್ಯಾಪಿಟಲ್ಸ್‌‌"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"ತುಂಬಾ ಸಣ್ಣ"</item>
+        <item>"ಸಣ್ಣ"</item>
+        <item>"ಸಾಮಾನ್ಯ"</item>
+        <item>"ದೊಡ್ಡದು"</item>
+        <item>"ತುಂಬಾ ದೊಡ್ಡದು"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"ಡೀಫಾಲ್ಟ್"</item>
+        <item>"ಯಾವುದೂ ಅಲ್ಲ"</item>
+        <item>"ಔಟ್‌ಲೈನ್"</item>
+        <item>"ಡ್ರಾಪ್ ನೆರಳು"</item>
+        <item>"ಹೆಚ್ಚಿಸಲಾಗಿದೆ"</item>
+        <item>"ಕುಗ್ಗಿಸಲಾಗಿದೆ"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"ಆಪ್ ಡೀಫಾಲ್ಟ್ ಬಳಸಿ"</item>
+        <item>"ಕಪ್ಪು ಬಣ್ಣದಲ್ಲಿ ಬಿಳಿ"</item>
+        <item>"ಬಿಳಿ ಬಣ್ಣದಲ್ಲಿ ಕಪ್ಪು"</item>
+        <item>"ಕಪ್ಪು ಬಣ್ಣದಲ್ಲಿ ಹಳದಿ"</item>
+        <item>"ನೀಲಿ ಬಣ್ಣದಲ್ಲಿ ಹಳದಿ"</item>
+        <item>"ಕಸ್ಟಮ್"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"ಪೂರ್ವ-ಹಂಚಿಕೆಯಾದ ಕೀಗಳನ್ನು ಹೊಂದಿರುವ L2TP/IPSec VPN"</item>
+        <item>"ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಹೊಂದಿರುವ L2TP/IPSec VPN"</item>
+        <item>"ಪೂರ್ವ-ಹಂಚಿಕೆಯಾದ ಕೀಗಳು ಮತ್ತು Xauth ಪ್ರಮಾಣೀಕರಣವನ್ನು ಹೊಂದಿರುವ IPSec VPN"</item>
+        <item>"ಪ್ರಮಾಣಪತ್ರಗಳು ಮತ್ತು Xauth ಪ್ರಮಾಣೀಕರಣವನ್ನು ಹೊಂದಿರುವ IPSec VPN"</item>
+        <item>"ಪ್ರಮಾಣಪತ್ರಗಳು ಮತ್ತು ಹೈಬ್ರಿಡ್ ಪ್ರಮಾಣೀಕರಣವನ್ನು ಹೊಂದಿರುವ IPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗಿದೆ"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"ಆರಂಭಿಸಲಾಗುತ್ತಿದೆ..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"ಸಂಪರ್ಕಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"ಸಂಪರ್ಕಗೊಂಡಿದೆ"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"ಅವಧಿ ಮೀರಿದೆ"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"ಯಶಸ್ವಿಯಾಗಲಿಲ್ಲ"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"ಕೇಳಿ"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"ಎಂದಿಗೂ ಅನುಮತಿಸಬೇಡಿ"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"ಯಾವಾಗಲೂ ಅನುಮತಿಸಿ"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"ಸಾಮಾನ್ಯ"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"ಮಧ್ಯಮ"</item>
+        <!-- Memory is running low. -->
+        <item>"ಕಡಿಮೆ"</item>
+        <!-- Memory is critical. -->
+        <item>"ಗಂಭೀರ"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"ಸಾಮಾನ್ಯ"</item>
+        <item>"ಮಧ್ಯಮ"</item>
+        <item>"ಕಡಿಮೆ"</item>
+        <item>"ಗಂಭೀರ"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"ನಿರಂತರ"</item>
+        <item>"ಉನ್ನತ ಚಟುವಟಿಕೆ"</item>
+        <item>"ಪ್ರಮುಖ (ಮುನ್ನೆಲೆ)"</item>
+        <item>"ಪ್ರಮುಖ (ಹಿನ್ನೆಲೆ)"</item>
+        <item>"ಬ್ಯಾಕಪ್"</item>
+        <item>"ಭಾರಿ ತೂಕ"</item>
+        <item>"ಸೇವೆ (ಚಾಲನೆಯಲ್ಲಿದೆ)"</item>
+        <item>"ಸೇವೆ (ಮರುಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ)"</item>
+        <item>"ಸ್ವೀಕರಿಸುವವರು"</item>
+        <item>"ಹೋಮ್"</item>
+        <item>"ಕೊನೆಯ ಚಟುವಟಿಕೆ"</item>
+        <item>"ಕ್ಯಾಶ್ ಮಾಡಲಾಗಿದೆ (ಚಟುವಟಿಕೆ)"</item>
+        <item>"ಕ್ಯಾಶ್ ಮಾಡಲಾದ (ಚಟುವಟಿಕೆ ಕ್ಲೈಂಟ್)"</item>
+        <item>"ಕ್ಯಾಶ್ ಮಾಡಲಾಗಿದೆ (ಖಾಲಿ)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"ಕಡುಹಸಿರು"</item>
+        <item>"ನೀಲಿ"</item>
+        <item>"ನೀಲಿ"</item>
+        <item>"ನೇರಳೆ"</item>
+        <item>"ನಸುಗೆಂಪು"</item>
+        <item>"ಕೆಂಪು"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಪರ್ಕಿಸಿ"</item>
+        <item>"ಹಸ್ತಚಾಲಿತವಾಗಿ ಸಂಪರ್ಕಿಸಿ"</item>
+        <item>"ಯಾವಾಗಲೂ ಕೇಳಿ"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"30 ದಿನಗಳಿಗಿಂತಲೂ ಹಳೆಯದು"</item>
+        <item>"60 ದಿನಗಳಿಗಿಂತಲೂ ಹಳೆಯದು"</item>
+        <item>"90 ದಿನಗಳಿಗಿಂತಲೂ ಹಳೆಯದು"</item>
+    </string-array></resources>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Choices for the "Reminder method" spinner.
+         These must be kept in sync with the reminder_methods_values array.
+         [CHAR LIMIT=10]
+    -->
+    <add-resource type="array" name="reminder_methods_labels"/>
+    <string-array name="reminder_methods_labels">
+        <item>"Upozornenie"</item>
+        <item>"E-mail"</item>
+        <item>"SMS"</item>
+        <item>"Budík"</item>
+    </string-array>
+
+    <!-- Choices for the "Reminder minutes" spinner.
+         These must be kept in sync with the reminder_minutes_values array.
+         For consistency, the format should match what
+         EventViewUtils.constructReminderLabel() generates.  (TODO: eliminate
+         this and just generate the list from reminder_minutes_values?)
+         [CHAR LIMIT=15]
+    -->
+    <add-resource type="array" name="reminder_minutes_labels"/>
+    <string-array name="reminder_minutes_labels">
+        <item>"0 minút"</item>
+        <item>"1 minúta"</item>
+        <item>"5 minút"</item>
+        <item>"10 minút"</item>
+        <item>"15 minút"</item>
+        <item>"20 minút"</item>
+        <item>"25 minút"</item>
+        <item>"30 minút"</item>
+        <item>"45 minút"</item>
+        <item>"1 hodina"</item>
+        <item>"2 hodiny"</item>
+        <item>"3 hodiny"</item>
+        <item>"12 hodín"</item>
+        <item>"24 hodín"</item>
+        <item>"2 dni"</item>
+        <item>"1 týždeň"</item>
+    </string-array>
+
+  <!-- Choices for the "Reminder minutes" spinner in the settings.
+         These must be kept in sync with the preferences_default_reminder_values array.
+         [CHAR LIMIT=12]
+    -->
+       <add-resource type="array" name="preferences_default_reminder_labels"/>
+    <string-array name="preferences_default_reminder_labels">
+        <item>"Žiadne"</item>
+        <item>"0 minút"</item>
+        <item>"1 minúta"</item>
+        <item>"5 minút"</item>
+        <item>"10 minút"</item>
+        <item>"15 minút"</item>
+        <item>"20 minút"</item>
+        <item>"25 minút"</item>
+        <item>"30 minút"</item>
+        <item>"45 minút"</item>
+        <item>"1 hodina"</item>
+        <item>"2 hodiny"</item>
+        <item>"3 hodiny"</item>
+        <item>"12 hodín"</item>
+        <item>"24 hodín"</item>
+        <item>"2 dni"</item>
+        <item>"1 týždeň"</item>
+    </string-array>
+
+    <add-resource type="array" name="preferences_week_start_day_labels"/>
+    <string-array name="preferences_week_start_day_labels">
+        <item>"Predvolená hodnota miestneho nastavenia"</item>
+        <item>"Sobota"</item>
+        <item>"Nedeľa"</item>
+        <item>"Pondelok"</item>
+    </string-array>
+
+
+
+    <add-resource type="array" name="availability"/>
+    <string-array name="availability">
+        <item>"Nemám čas"</item>
+        <item>"K dispozícii"</item>
+        <item>"Predbežný"</item>
+    </string-array>
+
+    <add-resource type="array" name="visibility"/>
+    <string-array name="visibility">
+        <item>"Predvolené"</item>
+        <item>"Súkromné"</item>
+        <item>"Verejné"</item>
+    </string-array>
+
+    <add-resource type="array" name="ordinal_labels"/>
+    <string-array name="ordinal_labels">
+        <item>"prvý"</item>
+        <item>"sekunda"</item>
+        <item>"tretí"</item>
+        <item>"štvrtý"</item>
+        <item>"posledné"</item>
+    </string-array>
+
+    <!-- Invitation responses -->
+    <add-resource type="array" name="response_labels1"/>
+    <string-array name="response_labels1">
+        <item>"Bez odpovede"</item>
+        <item>"Áno"</item>
+        <item>"Možno"</item>
+        <item>"Nie"</item>
+    </string-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is a list of choices displayed when the user deletes an event.
+         It only is shown when deleting a recurring event.
+    -->
+
+    <add-resource type="array" name="delete_repeating_labels"/>
+    <string-array name="delete_repeating_labels">
+        <item>"Iba túto udalosť"</item>
+        <item>"Túto a budúce udalosti"</item>
+        <item>"Všetky udalosti"</item>
+    </string-array>
+
+    <!-- DO NOT TRANSLATE These values need to correspond to the indices
+         defined in DeleteEventHelper.java-->
+    <add-resource type="array" name="delete_repeating_values"/>
+    <integer-array name="delete_repeating_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- The corresponding indices are defined in DeleteEventHelper.java -->
+    <!-- This is the same array as above (the "delete_repeating_labels" array,
+         except that the first element "Only this event" is removed.  This
+         array exists to work-around a bug in the CalendarProvider and sync
+         code where you can't delete one instance of a repeating event that
+         was created on the phone until that event has been synced to the server.
+     -->
+
+    <add-resource type="array" name="delete_repeating_labels_no_selected"/>
+    <string-array name="delete_repeating_labels_no_selected">
+        <item>"Túto a budúce udalosti"</item>
+        <item>"Všetky udalosti"</item>
+    </string-array>
+
+    <!-- The corresponding array indices are defined in EventInfoActivity.java -->
+
+    <!-- The list of choices displayed in a dialog box when the user wants to
+    respond to an invitation that repeats. -->
+    <add-resource type="array" name="change_response_labels"/>
+    <string-array name="change_response_labels">
+        <!-- The choice for responding to only one instance of a repeating event -->
+        <item>"Iba túto udalosť"</item>
+        <!-- The choice for responding to all instances of a repeating event -->
+        <item>"Všetky udalosti v rade"</item>
+    </string-array>
+
+    <!-- Strings for buttons in drop down menu -->
+    <add-resource type="array" name="buttons_list"/>
+    <string-array name="buttons_list">
+        <item>"Deň"</item>
+        <item>"Týždeň"</item>
+        <item>"Mesiac"</item>
+        <item>"Agenda"</item>
+    </string-array>
+
+    <!-- Experimental options for skipping reminders. [CHAR LIMIT = 37] -->
+    <add-resource type="array" name="preferences_skip_reminders_labels"/>
+    <string-array name="preferences_skip_reminders_labels">
+        <!-- Default choice -->
+        <item>"Iba ak sú odmietnuté"</item>
+        <!-- Second option, for skipping reminders to events not yet responded to. -->
+        <item>"Ak sú odmietnuté alebo bez odpovede"</item>
+    </string-array>
+
+    <!-- Recurrence picker: How events are to be repeated.  [CHAR LIMIT = 20] -->
+    <add-resource type="array" name="recurrence_freq"/>
+    <string-array name="recurrence_freq">
+        <item>"OPAKOVAŤ DENNE"</item>
+        <item>"OPAKOVAŤ TÝŽDENNE"</item>
+        <item>"OPAKOVAŤ MESAČNE"</item>
+        <item>"OPAKOVAŤ ROČNE"</item>
+    </string-array>
+
+    <!-- The following sets of strings describe a monthly recurring event, which will repeat
+         on the Nth WEEKDAY of every month. For example, the 3rd Monday of every month, or
+         the last Sunday. These are set up like this to resolve any gender-matching issues
+         that were present in some languages.
+     -->
+    <!-- Repeat a monthly event on the same nth day of every Sunday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sun"/>
+    <string-array name="repeat_by_nth_sun">
+        <item>"každú prvú nedeľu"</item>
+        <item>"každú druhú nedeľu"</item>
+        <item>"každú tretiu nedeľu"</item>
+        <item>"každú štvrtú nedeľu"</item>
+        <item>"každú poslednú nedeľu"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Monday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_mon"/>
+    <string-array name="repeat_by_nth_mon">
+        <item>"každý prvý pondelok"</item>
+        <item>"každý druhý pondelok"</item>
+        <item>"každý tretí pondelok"</item>
+        <item>"každý štvrtý pondelok"</item>
+        <item>"každý posledný pondelok"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Tuesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_tues"/>
+    <string-array name="repeat_by_nth_tues">
+        <item>"každý prvý utorok"</item>
+        <item>"každý druhý utorok"</item>
+        <item>"každý tretí utorok"</item>
+        <item>"každý štvrtý utorok"</item>
+        <item>"každý posledný utorok"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Wednesday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_wed"/>
+    <string-array name="repeat_by_nth_wed">
+        <item>"každú prvú stredu"</item>
+        <item>"každú druhú stredu"</item>
+        <item>"každú tretiu stredu"</item>
+        <item>"každú štvrtú stredu"</item>
+        <item>"každú poslednú stredu"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Thursday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_thurs"/>
+    <string-array name="repeat_by_nth_thurs">
+        <item>"každý prvý štvrtok"</item>
+        <item>"každý druhý štvrtok"</item>
+        <item>"každý tretí štvrtok"</item>
+        <item>"každý štvrtý štvrtok"</item>
+        <item>"každý posledný štvrtok"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Friday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_fri"/>
+    <string-array name="repeat_by_nth_fri">
+        <item>"každý prvý piatok"</item>
+        <item>"každý druhý piatok"</item>
+        <item>"každý tretí piatok"</item>
+        <item>"každý štvrtý piatok"</item>
+        <item>"každý posledný piatok"</item>
+    </string-array>
+    <!-- Repeat a monthly event on the same nth day of every Saturday. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="repeat_by_nth_sat"/>
+    <string-array name="repeat_by_nth_sat">
+        <item>"každú prvú sobotu"</item>
+        <item>"každú druhú sobotu"</item>
+        <item>"každú tretiu sobotu"</item>
+        <item>"každú štvrtú sobotu"</item>
+        <item>"každú poslednú sobotu"</item>
+    </string-array></resources>

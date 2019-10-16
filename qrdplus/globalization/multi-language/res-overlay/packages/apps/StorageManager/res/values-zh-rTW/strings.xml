@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2016 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"儲存空間管理員"</string>
+
+    <!-- Button label for generic cancel action [CHAR LIMIT=20] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"取消"</string>
+    <!-- Storage setting. Menu option for using the deletion helper. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="storage_menu_free"/>
+    <string name="storage_menu_free">"釋出空間"</string>
+    <!-- Activity title for deletion helper. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="deletion_helper_title"/>
+    <string name="deletion_helper_title">"選擇要移除的項目"</string>
+    <!-- Summary of how much storage an app is using and the number of days since last use. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary"/>
+    <string name="deletion_helper_app_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 <xliff:g id="DAYS">%2$d</xliff:g> 天前"</string>
+    <!-- Summary of how much storage an app is using when it has not been used in the last year. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary_never_used"/>
+    <string name="deletion_helper_app_summary_never_used">"<xliff:g id="used" example="1.2GB">%1$s</xliff:g> \u2022 在去年未使用"</string>
+    <!-- Summary of how much storage an app is using when its last use is unknown. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_app_summary_unknown_used"/>
+    <string name="deletion_helper_app_summary_unknown_used">"<xliff:g id="USED">%1$s</xliff:g> \u2022 上次使用時間不明"</string>
+    <!-- Button which clears out storage in the deletion helper. [CHAR LIMIT=60]-->
+    <add-resource type="string" name="deletion_helper_free_button"/>
+    <string name="deletion_helper_free_button">"釋出 <xliff:g id="FREEABLE">%1$s</xliff:g>"</string>
+
+    <!-- Preference group title for the photos and videos deletion service. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_photos_title"/>
+    <string name="deletion_helper_photos_title">"相片和影片 (<xliff:g id="NUM_ITEMS">%1$d</xliff:g> 個)"</string>
+
+    <!-- Summary of how much backed up storage that photos and videos service can clear from the local device. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_photos_summary"/>
+    <string name="deletion_helper_photos_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 已超過 <xliff:g id="DAYS">%2$d</xliff:g> 天"</string>
+
+    <!-- Preference title for the downloads deletion service. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_downloads_title"/>
+    <string name="deletion_helper_downloads_title">"下載內容 (<xliff:g id="NUMITEMS">%1$d</xliff:g> 項)"</string>
+
+    <!-- Summary of how much stale data can be cleared from the local download folder. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_category_summary"/>
+    <string name="deletion_helper_downloads_category_summary"><xliff:g id="used" example="1.2GB">%1$s</xliff:g></string>
+
+    <!-- Summary of how much stale data can be cleared from a downloads file. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_file_summary"/>
+    <string name="deletion_helper_downloads_file_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 <xliff:g id="DAYS">%2$s</xliff:g>"</string>
+
+    <!-- Summary for when when there is nothing in the downloads folder to clear. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_downloads_summary_empty"/>
+    <string name="deletion_helper_downloads_summary_empty"><xliff:g id="used" example="1.2GB">%1$s</xliff:g></string>
+
+    <!-- Message to warn the user before clearing space in the deletion helper. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_message"/>
+    <string name="deletion_helper_clear_dialog_message">"系統將從你的裝置中移除 <xliff:g id="CLEARABLE_BYTES">%1$s</xliff:g> 的資料"</string>
+
+    <!-- Button label for the dialog prompt for clearing data in deletion helper. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_remove"/>
+    <string name="deletion_helper_clear_dialog_remove">"移除"</string>
+
+    <!-- Title for the dialog to up sell the storage manager. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_upsell_title"/>
+    <string name="deletion_helper_upsell_title">"要讓系統自動管理儲存空間嗎？"</string>
+    <!-- Summary for the dialog to up sell the storage manager. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_upsell_summary"/>
+    <string name="deletion_helper_upsell_summary">"已釋出 <xliff:g id="USED">%1$s</xliff:g>。要允許儲存空間管理員將已備份的內容從裝置中移除，自動釋出儲存空間嗎？"</string>
+    <!-- Button to delay turning on the storage manager on the storage manager upsell. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="deletion_helper_upsell_cancel"/>
+    <string name="deletion_helper_upsell_cancel">"不用了，謝謝"</string>
+    <!-- Button to activate the storage manager on the storage manager upsell. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="deletion_helper_upsell_activate"/>
+    <string name="deletion_helper_upsell_activate">"開啟"</string>
+
+    <!-- Title for the apps category in the deletion helper, showing how many apps to delete. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="deletion_helper_apps_group_title"/>
+    <string name="deletion_helper_apps_group_title">"應用程式 (<xliff:g id="NUM_ITEMS">%1$d</xliff:g> 個)"</string>
+
+    <!-- Summary for the apps category in the deletion helper, showing how many space to clear. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="deletion_helper_apps_group_summary"/>
+    <string name="deletion_helper_apps_group_summary">"<xliff:g id="USED">%1$s</xliff:g> \u2022 <xliff:g id="DAYS">%2$d</xliff:g> 天前使用過"</string>
+
+    <!-- Category title for the automatic settings in the storage manager settings. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_automatic_title"/>
+    <string name="deletion_helper_automatic_title">"自動"</string>
+
+    <!-- Category title for the manual settings in the storage manager settings. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="deletion_helper_manual_title"/>
+    <string name="deletion_helper_manual_title">"手動"</string>
+
+    <!-- Preference menu title for accessing the deletion helper from the storage manager settings. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="deletion_helper_preference_title"/>
+    <string name="deletion_helper_preference_title">"立即釋出空間"</string>
+
+    <!-- Automatic storage management service label. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_service_label"/>
+    <string name="automatic_storage_manager_service_label">"自動儲存空間管理服務"</string>
+
+    <!-- Notification title for the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_notification_title"/>
+    <string name="automatic_storage_manager_notification_title">"手機儲存空間不足"</string>
+    <!-- Notification body for the low storage notification. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="automatic_storage_manager_notification_summary"/>
+    <string name="automatic_storage_manager_notification_summary">"允許儲存空間管理員在您的手機儲存空間即將再次耗盡時，自動移除舊的相片和影片以釋出空間。"</string>
+    <!-- Action to dismiss the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_cancel_button"/>
+    <string name="automatic_storage_manager_cancel_button">"不用了，謝謝"</string>
+    <!-- Action to turn on ASM in the low storage notification. [CHAR LIMIT=40]-->
+    <add-resource type="string" name="automatic_storage_manager_activate_button"/>
+    <string name="automatic_storage_manager_activate_button">"開啟"</string>
+
+    <add-resource type="string" name="deletion_helper_photos_loading_title"/>
+    <string name="deletion_helper_photos_loading_title">"相片和影片"</string>
+    <add-resource type="string" name="deletion_helper_photos_loading_summary"/>
+    <string name="deletion_helper_photos_loading_summary">"正在尋找項目\u2026"</string>
+
+    <!-- Message to warn the user before clearing space in the deletion helper for the first time. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="deletion_helper_clear_dialog_message_first_time"/>
+    <string name="deletion_helper_clear_dialog_message_first_time">"系統將從你的裝置中移除 <xliff:g id="CLEARABLE_BYTES">%1$s</xliff:g> 的資料"</string>
+
+    <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="automatic_storage_manager_activation_warning"/>
+    <string name="automatic_storage_manager_activation_warning">"你的儲存空間目前是由儲存空間管理員管理"</string></resources>

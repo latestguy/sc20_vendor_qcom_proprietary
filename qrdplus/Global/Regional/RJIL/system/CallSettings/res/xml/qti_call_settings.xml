@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    android:title="@string/call_settings">
+
+    <PreferenceScreen
+        android:key="key_wifi_call_settings"
+        android:title="@string/wifi_calling">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.Settings$WifiCallingSettingsActivity"/>
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="sim_settings_key"
+        android:title="SIM Settings">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.qualcomm.qti.callsettings"
+            android:targetClass="com.qualcomm.qti.callsettings.QtiSubscriptionSettings"/>
+    </PreferenceScreen>
+
+    <com.qualcomm.qti.callsettings.QtiTtyModeListPref
+        android:key="key_tty_mode_settings"
+        android:title="@string/tty_mode_option_title"
+        android:summary="@string/tty_mode_option_summary"
+        android:entries="@array/tty_mode_entries"
+        android:entryValues="@array/tty_mode_values"/>
+
+    <CheckBoxPreference
+        android:key="key_display_duration_settings"
+        android:title="@string/display_duration_title"
+        android:summaryOn="@string/duration_enable_summary"
+        android:summaryOff="@string/duration_disable_summary"
+        android:order="1100" />
+
+    <PreferenceScreen
+        android:key="button_speed_dial"
+        android:title="Speed dial settings"
+        android:order="1500">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.dialer"
+             android:targetClass="com.android.dialer.SpeedDialListActivity" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="key_smart_forward_settings"
+        android:title="@string/smart_forward_title"
+        android:summary="@string/smart_forward_summary"
+        android:order="1500">
+       <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.qti.xdivert"
+             android:targetClass="com.qti.xdivert.XDivertSetting" />
+   </PreferenceScreen>
+
+   <PreferenceScreen
+        android:key="key_ims_settings"
+        android:title="@string/ims_title"
+        android:order="1500">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.qualcomm.qti.ims"
+            android:targetClass="com.qualcomm.qti.ims.ImsSettings"/>
+   </PreferenceScreen>
+
+   <CheckBoxPreference
+        android:key="key_proximity_settings"
+        android:title="@string/proximity_title"
+        android:summary="@string/proximity_on_summary"
+        android:order="1500" />
+
+   <CheckBoxPreference
+        android:key="key_vibration_settings"
+        android:title="@string/vibration_title"
+        android:defaultValue="true"
+        android:summary="@string/vibration_summary"
+        android:order="1500" />
+
+</PreferenceScreen>

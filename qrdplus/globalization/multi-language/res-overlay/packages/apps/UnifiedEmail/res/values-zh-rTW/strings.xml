@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2011 Google Inc.
+ * Licensed to The Android Open Source Project.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Compose -->
+    <!-- Shown in Compose; the sender of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from"/>
+    <string name="from">"寄件者"</string>
+    <!-- Shown in Compose; the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to"/>
+    <string name="to">"收件者"</string>
+    <!-- Shown in Compose; the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc"/>
+    <string name="cc">"副本"</string>
+    <!-- Shown in Compose; the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc"/>
+    <string name="bcc">"密件副本"</string>
+    <!-- Shown in Compose; the subject of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="subject_hint"/>
+    <string name="subject_hint">"主旨"</string>
+    <!-- Shown in Compose; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="body_hint"/>
+    <string name="body_hint">"撰寫電子郵件"</string>
+    <!--  Compose screen button. Add an attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_file_attachment"/>
+    <string name="add_file_attachment">"附加檔案"</string>
+    <!--  Compose screen button. Add a photo attachment to this message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="add_photo_attachment"/>
+    <string name="add_photo_attachment">"附加圖片"</string>
+    <!-- Button name: save this message as draft [CHAR LIMIT=25]-->
+    <add-resource type="string" name="save_draft"/>
+    <string name="save_draft">"儲存草稿"</string>
+    <!--  Button name: discard this message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"捨棄"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="compose"/>
+    <string name="compose">"撰寫"</string>
+    <!-- The action bar title for the default compose mode [CHAR LIMIT=10] -->
+    <add-resource type="string" name="compose_title"/>
+    <string name="compose_title">"撰寫"</string>
+    <!-- The possible ways to reply to a message [CHAR LIMIT=15] -->
+    <add-resource type="array" name="compose_modes"/>
+    <string-array name="compose_modes">
+        <!-- Reply -->
+        <item>"回覆"</item>
+        <!-- Reply all -->
+        <item>"全部回覆"</item>
+        <!-- Forward -->
+        <item>"轉寄"</item>
+    </string-array>
+    <!-- Compose screen, displayed at the top of a message being replied to. Please preserve the HTML entities (surrounded by & and ;).  The two %s strings will be replaced by 1) the date 2) the person who wrote the email being responded to. [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="reply_attribution"/>
+    <string name="reply_attribution">"<xliff:g id="PERSON">%s</xliff:g> 於 <xliff:g id="DATE">%s</xliff:g> 寫道："</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000] -->
+    <add-resource type="string" name="forward_attribution"/>
+    <string name="forward_attribution">"---------- 轉寄的郵件 ----------&lt;br&gt;寄件者：<xliff:g id="FROM">%1$s</xliff:g>&lt;br&gt;日期：<xliff:g id="DATE">%2$s</xliff:g>&lt;br&gt;主旨：<xliff:g id="SUBJECT">%3$s</xliff:g>&lt;br&gt;收件者：<xliff:g id="TO">%4$s</xliff:g>&lt;br&gt;"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="forward_attribution_no_headers"/>
+    <string name="forward_attribution_no_headers">"---------- 轉寄郵件 ----------"</string>
+    <!-- Compose screen, displayed at the top of a message being forwarded if there are any email addresses in the CC list. Please preserve the HTML entities (surrounded by & and ;). [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="cc_attribution"/>
+    <string name="cc_attribution">"副本：<xliff:g id="CC">%1$s</xliff:g>&lt;br&gt;"</string>
+    <!-- Dialog text: select the type of an attachment while composing [CHAR LIMIT=100]-->
+    <add-resource type="string" name="select_attachment_type"/>
+    <string name="select_attachment_type">"選擇附件類型"</string>
+    <!-- Toast, attachment too large for single file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_single"/>
+    <string name="too_large_to_attach_single">"無法附加大小超過 <xliff:g id="MAXSIZE">%1$s</xliff:g> 的檔案。"</string>
+    <!-- Toast, attachment too large for multiple files [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_multiple"/>
+    <string name="too_large_to_attach_multiple">"無法附加一或多個檔案 (大小上限：<xliff:g id="MAXSIZE">%1$s</xliff:g>)。"</string>
+    <!-- Toast, attachment too large when existing attachments exist [CHAR LIMIT=100] -->
+    <add-resource type="string" name="too_large_to_attach_additional"/>
+    <string name="too_large_to_attach_additional">"無法附加檔案。檔案大小已達上限 <xliff:g id="MAXSIZE">%1$s</xliff:g>。"</string>
+    <!-- Toast, problem attaching file [CHAR LIMIT=100] -->
+    <add-resource type="string" name="generic_attachment_problem"/>
+    <string name="generic_attachment_problem">"無法附加檔案。"</string>
+    <!-- Toast, cannot attach the provided file because the calling context doesn't have the permission [CHAR LIMIT=100] -->
+    <add-resource type="string" name="attachment_permission_denied"/>
+    <string name="attachment_permission_denied">"權限遭拒，無法加入附件。"</string>
+    <!-- Displayed for one second after trying to send with no recipients in To field [CHAR LIMIT=200]-->
+    <add-resource type="string" name="recipient_needed"/>
+    <string name="recipient_needed">"請至少新增一位收件者。"</string>
+    <!-- Messages for send confirmation dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="confirm_send_message_with_no_subject"/>
+    <string name="confirm_send_message_with_no_subject">"這封郵件沒有主旨。"</string>
+    <add-resource type="string" name="confirm_send_message_with_no_body"/>
+    <string name="confirm_send_message_with_no_body">"這封郵件沒有內文。"</string>
+    <add-resource type="string" name="confirm_send_message"/>
+    <string name="confirm_send_message">"傳送這封郵件？"</string>
+    <!-- Displayed for one second after discarding draft message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_discarded"/>
+    <string name="message_discarded">"已捨棄郵件。"</string>
+    <!-- Formatting string for the user's signaure. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="signature"/>
+    <string name="signature">"\n\n<xliff:g id="SIGNATURE">%s</xliff:g>"</string>
+    <!--  Shown in the from dropdown in front of custom from addresses. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="custom_from_account_label"/>
+    <string name="custom_from_account_label">"選擇寄件地址："</string>
+
+    <!-- Menu item: send this message -->
+    <add-resource type="string" name="send"/>
+    <string name="send">"傳送"</string>
+    <!-- Menu item: mark this conversation as read -->
+    <add-resource type="string" name="mark_read"/>
+    <string name="mark_read">"標示為已讀取"</string>
+    <!-- Menu item: mark this conversation as unread -->
+    <add-resource type="string" name="mark_unread"/>
+    <string name="mark_unread">"標示為未讀取"</string>
+    <!-- Menu item: toggle read/unread for menus that contain both read and unread options -->
+    <add-resource type="string" name="toggle_read_unread"/>
+    <string name="toggle_read_unread">"切換已讀取/未讀取選項"</string>
+    <!--  Menu item: mute this conversation -->
+    <add-resource type="string" name="mute"/>
+    <string name="mute">"略過"</string>
+    <!-- Menu item: add a star to this conversation -->
+    <add-resource type="string" name="add_star"/>
+    <string name="add_star">"加上星號"</string>
+    <!-- Menu item: remove the star from this conversation -->
+    <add-resource type="string" name="remove_star"/>
+    <string name="remove_star">"移除星號"</string>
+    <!-- Remove the folder from this conversation [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="remove_folder"/>
+    <string name="remove_folder">"從「<xliff:g id="FOLDERNAME">%1$s</xliff:g>」中移除"</string>
+    <!-- Menu item: archive this conversation -->
+    <add-resource type="string" name="archive"/>
+    <string name="archive">"封存"</string>
+    <!-- Menu item: report this conversation as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_spam"/>
+    <string name="report_spam">"回報為垃圾郵件"</string>
+    <!-- Menu item: report this conversation not as spam [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="mark_not_spam"/>
+    <string name="mark_not_spam">"回報非垃圾郵件"</string>
+    <!-- Menu item: report this conversation as phishing [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="report_phishing"/>
+    <string name="report_phishing">"回報為詐騙郵件"</string>
+    <!-- Menu item: delete this conversation -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"刪除"</string>
+    <!-- Menu item: discard the drafts in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_drafts"/>
+    <string name="discard_drafts">"捨棄草稿"</string>
+    <!-- Menu item: discard the failed messages in this conversation [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="discard_failed"/>
+    <string name="discard_failed">"無法捨棄"</string>
+    <!-- Menu item: refresh the inbox -->
+    <add-resource type="string" name="refresh"/>
+    <string name="refresh">"重新整理"</string>
+    <!-- Menu item: reply to this message -->
+    <add-resource type="string" name="reply"/>
+    <string name="reply">"回覆"</string>
+    <!-- Menu item: reply to all recipients in this message [CHAR LIMIT=18] -->
+    <add-resource type="string" name="reply_all"/>
+    <string name="reply_all">"全部回覆"</string>
+    <!-- Menu item: resume a draft message [CHAR LIMIT=12] -->
+    <add-resource type="string" name="resume_draft"/>
+    <string name="resume_draft">"編輯"</string>
+    <!-- Menu item: forward this message -->
+    <add-resource type="string" name="forward"/>
+    <string name="forward">"轉寄"</string>
+    <!-- Menu item: compose a new email -->
+    <add-resource type="string" name="menu_compose"/>
+    <string name="menu_compose">"撰寫"</string>
+    <!-- Menu item: change the folders for this conversation. -->
+    <add-resource type="string" name="menu_change_folders"/>
+    <string name="menu_change_folders">"變更資料夾"</string>
+    <!-- Menu item: moves to folders for selected conversation(s). [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to"/>
+    <string name="menu_move_to">"移至"</string>
+    <!-- Menu item: moves current or selected conversation(s) to Inbox. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_move_to_inbox"/>
+    <string name="menu_move_to_inbox">"移至收件匣"</string>
+    <!-- Menu item: manages the folders for this account. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="menu_manage_folders"/>
+    <string name="menu_manage_folders">"資料夾設定"</string>
+    <!-- Menu item text to show the original version of an email conversation, before message manipulation [CHAR LIMIT=25] -->
+    <add-resource type="string" name="menu_show_original"/>
+    <string name="menu_show_original">"不要自動調整郵件顯示比例"</string>
+    <!-- Menu item: launch the Settings activity -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"設定"</string>
+    <!-- Menu item: search through the Gmail inbox -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"搜尋"</string>
+    <!-- Menu item: toggle drawer -->
+    <add-resource type="string" name="menu_toggle_drawer"/>
+    <string name="menu_toggle_drawer">"切換導覽匣"</string>
+    <!-- Title of the drawer, indicating what it is used for, which is navigation of the app -->
+    <add-resource type="string" name="drawer_title"/>
+    <string name="drawer_title">"導覽"</string>
+
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_important"/>
+    <string name="mark_important">"標示為重要"</string>
+    <!--  Menu item: shown in conversation menu. Tap this to move to mark conversation as not important [CHAR LIMIT=30] -->
+    <add-resource type="string" name="mark_not_important"/>
+    <string name="mark_not_important">"標示為不重要"</string>
+
+    <!-- Compose screen, menu item: add Cc/Bcc fields -->
+    <add-resource type="string" name="add_cc_label"/>
+    <string name="add_cc_label">"新增副本/密件副本"</string>
+    <!-- Compose screen, menu item: add Bcc field [CHAR_LIMIT=20]-->
+    <add-resource type="string" name="add_bcc_label"/>
+    <string name="add_bcc_label">"新增密件副本"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message [CHAR LIMIT=50]-->
+    <add-resource type="string" name="quoted_text"/>
+    <string name="quoted_text">"包含引用文字"</string>
+    <!-- Compose screen, Prefix to quoted text in forwarded/replied message; folder for the quoted text area. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="quoted_text_label"/>
+    <string name="quoted_text_label">"引用文字"</string>
+    <!--  Button for including inline responses. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="respond_inline"/>
+    <string name="respond_inline">"在內文中回覆"</string>
+
+    <!-- Attachments -->
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5]-->
+    <add-resource type="string" name="bytes"/>
+    <string name="bytes">"<xliff:g id="COUNT">%s</xliff:g> B"</string>
+    <!-- Size unit, displayed in a button next to an attachment [CHAR LIMIT=5] -->
+    <add-resource type="string" name="kilobytes"/>
+    <string name="kilobytes">"<xliff:g id="COUNT">%s</xliff:g> KB"</string>
+    <!-- Size unit, displayed in a button next to an attachment  [CHAR LIMIT=5]-->
+    <add-resource type="string" name="megabytes"/>
+    <string name="megabytes">"<xliff:g id="COUNT">%s</xliff:g> MB"</string>
+    <!-- Attachment description for image files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_image"/>
+    <string name="attachment_image">"圖片"</string>
+    <!-- Attachment description for video files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_video"/>
+    <string name="attachment_video">"視訊"</string>
+    <!-- Attachment description for audio files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_audio"/>
+    <string name="attachment_audio">"音訊"</string>
+    <!-- Attachment description for text files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_text"/>
+    <string name="attachment_text">"文字"</string>
+    <!-- Attachment description for .doc files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_msword"/>
+    <string name="attachment_application_msword">"文件"</string>
+    <!-- Attachment description for .ppt files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_powerpoint"/>
+    <string name="attachment_application_vnd_ms_powerpoint">"簡報"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_vnd_ms_excel"/>
+    <string name="attachment_application_vnd_ms_excel">"試算表"</string>
+    <!-- Attachment description for .pdf files [CHAR LIMIT=30] -->
+    <add-resource type="string" name="attachment_application_pdf"/>
+    <string name="attachment_application_pdf">PDF</string>
+    <!-- Attachment description for unknown files [CHAR LIMIT=30]-->
+    <add-resource type="string" name="attachment_unknown"/>
+    <string name="attachment_unknown">"<xliff:g id="ATTACHMENTEXTENSION">%s</xliff:g> 檔案"</string>
+    <!-- Read email screen, button name. Preview an attachment by Gview. [CHAR LIMIT=18] -->
+    <add-resource type="string" name="preview_attachment"/>
+    <string name="preview_attachment">"預覽"</string>
+    <!-- Read email screen, button name. Save an attachment to sd card. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="save_attachment"/>
+    <string name="save_attachment">"儲存"</string>
+    <!-- Read email screen, button name. Redownload an attachment [CHAR LIMIT=20]-->
+    <add-resource type="string" name="download_again"/>
+    <string name="download_again">"重新下載"</string>
+    <!-- Remove this attachment [CHAR LIMIT=50] -->
+    <add-resource type="string" name="remove_attachment_desc"/>
+    <string name="remove_attachment_desc">"移除附件「<xliff:g id="ATTACHMENTNAME">%s</xliff:g>」"</string>
+    <!-- Dialog box title [CHAR LIMIT=30] -->
+    <add-resource type="string" name="more_info_attachment"/>
+    <string name="more_info_attachment">"資訊"</string>
+    <!-- Dialog box message, displayed when we could not view an attachment. [CHAR LIMIT=200]-->
+    <add-resource type="string" name="no_application_found"/>
+    <string name="no_application_found">"沒有應用程式可開啟這個附件供您檢視。"</string>
+    <!-- Dialog box title. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="fetching_attachment"/>
+    <string name="fetching_attachment">"擷取附件"</string>
+    <!-- Dialog box message. [CHAR LIMIT=80] -->
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"請稍候\u2026"</string>
+    <!-- Displayed in the conversation view, next to a file's size and type. Status of a saved attachment. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="saved"/>
+    <string name="saved">"已儲存 (<xliff:g id="SIZE">%s</xliff:g>)"</string>
+    <!-- Displayed in the conversation view. Status of a failed attachment. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="download_failed"/>
+    <string name="download_failed">"無法下載，請輕觸重試。"</string>
+    <!-- Photo view screen, button name. Save all attachments to sd card. [CHAR LIMIT=17] -->
+    <add-resource type="string" name="menu_photo_save_all"/>
+    <string name="menu_photo_save_all">"全部儲存"</string>
+    <!-- Photo view screen, button name. Share attachment. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="menu_photo_share"/>
+    <string name="menu_photo_share">"分享"</string>
+    <!-- Photo view screen, button name. Share all attachments. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_share_all"/>
+    <string name="menu_photo_share_all">"全部分享"</string>
+    <!-- Photo view screen, button name. Print photo. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_photo_print"/>
+    <string name="menu_photo_print">"列印"</string>
+    <!-- Displayed in the action bar as a subtitle. Save in progress. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="saving"/>
+    <string name="saving">"儲存中\u2026"</string>
+
+    <!-- Webview Context Menu Strings -->
+    <!-- Title of dialog for choosing which activity to share a link with. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="choosertitle_sharevia"/>
+    <string name="choosertitle_sharevia">"分享方式"</string>
+    <!-- Menu item to open a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_openlink"/>
+    <string name="contextmenu_openlink">"在瀏覽器中開啟"</string>
+    <!-- Menu item to copy the selection  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copy"/>
+    <string name="contextmenu_copy">"複製"</string>
+    <!-- Menu item to copy a link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_copylink"/>
+    <string name="contextmenu_copylink">"複製連結網址"</string>
+    <!-- Menu item to view an image  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_view_image"/>
+    <string name="contextmenu_view_image">"檢視圖片"</string>
+    <!-- Menu item to dial a number  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_dial_dot"/>
+    <string name="contextmenu_dial_dot">"撥號\u2026"</string>
+    <!-- Menu item to send an SMS  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sms_dot"/>
+    <string name="contextmenu_sms_dot">"傳送簡訊\u2026"</string>
+    <!-- Menu item to add a contact  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_add_contact"/>
+    <string name="contextmenu_add_contact">"新增聯絡人"</string>
+    <!-- Menu item to send an email [CHAR LIMIT=50] -->
+    <add-resource type="string" name="contextmenu_send_mail"/>
+    <string name="contextmenu_send_mail">"傳送電子郵件"</string>
+    <!-- Menu item to show a map  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_map"/>
+    <string name="contextmenu_map">"地圖"</string>
+    <!-- Menu item to share link  [CHAR LIMIT=50]-->
+    <add-resource type="string" name="contextmenu_sharelink"/>
+    <string name="contextmenu_sharelink">"分享連結"</string>
+
+    <!-- Browse list item strings -->
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description"/>
+    <string name="content_description">"<xliff:g id="TOHEADER">%1$s</xliff:g>：<xliff:g id="PARTICIPANT">%2$s</xliff:g>、主旨：<xliff:g id="SUBJECT">%3$s</xliff:g>、摘要：<xliff:g id="SNIPPET">%4$s</xliff:g>、日期：<xliff:g id="DATE">%5$s</xliff:g>、閱讀狀態：<xliff:g id="READSTATE">%6$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today"/>
+    <string name="content_description_today">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g>：主題為<xliff:g id="SUBJECT">%3$s</xliff:g>；<xliff:g id="SNIPPET">%4$s</xliff:g>；<xliff:g id="TIME">%5$s</xliff:g>；<xliff:g id="READSTATE">%6$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="content_description_with_folders"/>
+    <string name="content_description_with_folders">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g>，主旨：<xliff:g id="SUBJECT">%3$s</xliff:g>，<xliff:g id="SNIPPET">%4$s</xliff:g>，日期：<xliff:g id="DATE">%5$s</xliff:g>，<xliff:g id="READSTATE">%6$s</xliff:g>，標籤：<xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- Formatting string for the content description field of a conversation list item when device is in accessibility mode and the message was received today. [CHAR LIMI=250] -->
+    <add-resource type="string" name="content_description_today_with_folders"/>
+    <string name="content_description_today_with_folders">"<xliff:g id="TOHEADER">%1$s</xliff:g><xliff:g id="PARTICIPANT">%2$s</xliff:g>，主旨：<xliff:g id="SUBJECT">%3$s</xliff:g>，<xliff:g id="SNIPPET">%4$s</xliff:g>，時間：<xliff:g id="TIME">%5$s</xliff:g>，<xliff:g id="READSTATE">%6$s</xliff:g>，標籤：<xliff:g id="FOLDERS">%7$s</xliff:g>"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="read_string"/>
+    <string name="read_string">"已閱讀的會話群組"</string>
+    <!-- String used in content description field of a conversation list item when device is in accessibility mode and the conversation was not read [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unread_string"/>
+    <string name="unread_string">"未閱讀的會話群組"</string>
+    <!-- Formatting string. If the subject contains the tag of a mailing-list (text surrounded with
+    return the subject with that tag ellipsized, e.g. "[android-gmail-team] Hello" -> "[andr...] Hello" [CHAR LIMIT=100] -->
+    <add-resource type="string" name="filtered_tag"/>
+    <string name="filtered_tag">" [<xliff:g id="tag">%1$s</xliff:g>]<xliff:g id="subject">%2$s</xliff:g>"</string>
+    <!-- Displayed in conversation list item in the form of "badge subject" [CHAR LIMIT=7] -->
+    <add-resource type="string" name="badge_and_subject"/>
+    <string name="badge_and_subject">"<xliff:g id="ID_1">%1$s</xliff:g> <xliff:g id="ID_2">%2$s</xliff:g>"</string>
+    <!-- Displayed in browse list item when the list item is a draft message instead of showing the subject [CHAR LIMIT=100] -->
+    <add-resource type="plurals" name="draft"/>
+    <plurals name="draft">
+        <!-- Title of the screen when there is exactly one draft -->
+        <item quantity="one">"草稿"</item>
+        <!-- Title of the screen when there are more than one draft -->
+        <item quantity="other">"草稿"</item>
+    </plurals>
+    <!-- Message displayed in a browse list item for one second when message is being sent [CHAR LIMIT=20]-->
+    <add-resource type="string" name="sending"/>
+    <string name="sending">"傳送中\u2026"</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to sent and is being retried [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_retrying"/>
+    <string name="message_retrying">"重試中\u2026"</string>
+    <!-- Message displayed in the outgoing message list item when the message failed to send [CHAR LIMIT=20] -->
+    <add-resource type="string" name="message_failed"/>
+    <string name="message_failed">"失敗"</string>
+    <!-- Message displayed in a browse list item for one second after a send failed [CHAR LIMIT=26]-->
+    <add-resource type="string" name="send_failed"/>
+    <string name="send_failed">"郵件未傳送。"</string>
+    <!-- String used to represent "me" when used as an object pronoun. This string is used when
+         showing the list of recipients of a message [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_object_pronoun"/>
+    <string name="me_object_pronoun">"我"</string>
+    <!-- String used to represent "me"/"I" when used as an subject pronoun. This string is use when
+         showing the list of senders for a conversation list item. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="me_subject_pronoun"/>
+    <string name="me_subject_pronoun">"我"</string>
+
+    <add-resource type="plurals" name="confirm_delete_conversation"/>
+    <plurals name="confirm_delete_conversation">
+        <!-- Dialog message to confirm deletion of one conversation -->
+        <item quantity="one">"刪除這個會話群組？"</item>
+        <!-- Dialog message to confirm deletion of several conversations -->
+        <item quantity="other">"刪除這 <xliff:g id="COUNT">%1$d</xliff:g> 個會話群組？"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_archive_conversation"/>
+    <plurals name="confirm_archive_conversation">
+        <!-- Dialog message to confirm archival of one conversation -->
+        <item quantity="one">"封存這個會話群組？"</item>
+        <!-- Dialog message to confirm archival of several conversations -->
+        <item quantity="other">"封存這 <xliff:g id="COUNT">%1$d</xliff:g> 個會話群組？"</item>
+    </plurals>
+    <add-resource type="plurals" name="confirm_discard_drafts_conversation"/>
+    <plurals name="confirm_discard_drafts_conversation">
+        <!-- Dialog message to confirm discarding a single draft message [CHAR LIMIT=50] -->
+        <item quantity="one">"要捨棄這封郵件嗎？"</item>
+        <!-- Dialog message to confirm discarding many draft messages [CHAR LIMIT=50] -->
+        <item quantity="other">"要捨棄這 <xliff:g id="COUNT">%1$d</xliff:g> 封郵件嗎？"</item>
+    </plurals>
+
+    <!-- Dialog text: confirm discard -->
+    <add-resource type="string" name="confirm_discard_text"/>
+    <string name="confirm_discard_text">"要捨棄這封郵件嗎？"</string>
+
+    <!-- Conversation list shared between the Activity and Widget -->
+    <!-- Displayed in the middle of the screen when conversations are being loaded [CHAR LIMIT 100]-->
+    <add-resource type="string" name="loading_conversations"/>
+    <string name="loading_conversations">"載入中..."</string>
+    <!-- Displayed in the middle of the screen when an inbox is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_inbox"/>
+    <string name="empty_inbox">"已無未讀信件！祝您有個美好的一天。"</string>
+    <!-- Displayed in the middle of the screen when a search returns no results [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_search"/>
+    <string name="empty_search">"糟糕！找不到任何與「<xliff:g id="SEARCH_QUERY">%1$s</xliff:g>」相符的結果。"</string>
+    <!-- Displayed in the middle of the screen when the spam folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_spam_folder"/>
+    <string name="empty_spam_folder">"太好了，這裡沒有垃圾郵件！"</string>
+    <!-- Displayed in the middle of the screen when the trash folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_trash_folder"/>
+    <string name="empty_trash_folder">"垃圾桶清空了。感謝清理！"</string>
+    <!-- Displayed in the middle of the screen when a folder is empty [CHAR LIMIT 100]-->
+    <add-resource type="string" name="empty_folder"/>
+    <string name="empty_folder">"這裡沒有任何郵件。"</string>
+    <!-- Displayed in the middle of the screen when a folder is loading [CHAR LIMIT 100]-->
+    <add-resource type="string" name="getting_messages"/>
+    <string name="getting_messages">"正在擷取您的郵件"</string>
+
+    <!-- Undo bar strings -->
+    <!-- Menu item: undo latest action [CHAR LIMIT=12]-->
+    <add-resource type="string" name="undo"/>
+    <string name="undo">"復原"</string>
+
+    <add-resource type="plurals" name="conversation_unstarred"/>
+    <plurals name="conversation_unstarred">
+        <item quantity="one">"正在將 <xliff:g id="COUNT">%1$d</xliff:g> 個會話群組的星號移除"</item>
+        <item quantity="other">"正在將 <xliff:g id="COUNT">%1$d</xliff:g> 個會話群組的星號移除"</item>
+    </plurals>
+
+    <!-- The following are shown as a toast after the operation has completed -->
+    <add-resource type="plurals" name="conversation_muted"/>
+    <plurals name="conversation_muted">
+        <!-- Displayed while muting one conversation -->
+        <item quantity="one">"已略過 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+        <!-- Displayed while muting several conversations -->
+        <item quantity="other">"已略過 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_spammed"/>
+    <plurals name="conversation_spammed">
+        <!-- Displayed while reporting one conversation as spam -->
+        <item quantity="one">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為垃圾郵件"</item>
+        <!-- Displayed while reporting several conversations as spam -->
+        <item quantity="other">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為垃圾郵件"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_spam"/>
+    <plurals name="conversation_not_spam">
+        <!-- Displayed while reporting one conversation as not spam -->
+        <item quantity="one">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為非垃圾郵件"</item>
+        <!-- Displayed while reporting several conversations as not spam -->
+        <item quantity="other">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為非垃圾郵件"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_not_important"/>
+    <plurals name="conversation_not_important">
+        <!-- Displayed while reporting one conversation as not important in the important folder -->
+        <item quantity="one">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組標示為不重要"</item>
+        <!-- Displayed while reporting several conversations as not important in the important folder -->
+        <item quantity="other">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組標示為不重要"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_phished"/>
+    <plurals name="conversation_phished">
+        <!-- Displayed while reporting one conversation as phishing -->
+        <item quantity="one">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為詐騙郵件"</item>
+        <!-- Displayed while reporting several conversations as phishing -->
+        <item quantity="other">"已將 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組回報為詐騙郵件"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_archived"/>
+    <plurals name="conversation_archived">
+        <!-- Displayed while archiving one conversation -->
+        <item quantity="one">"已封存 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+        <!-- Displayed while archiving multiple conversations -->
+        <item quantity="other">"已封存 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+    </plurals>
+
+    <add-resource type="plurals" name="conversation_deleted"/>
+    <plurals name="conversation_deleted">
+        <!-- Displayed while deleting one conversation -->
+        <item quantity="one">"已刪除 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+        <!-- Displayed while deleting multiple conversations -->
+        <item quantity="other">"已刪除 &lt;b&gt;<xliff:g id="COUNT">%1$d</xliff:g>&lt;/b&gt; 個會話群組"</item>
+    </plurals>
+    <!-- Displayed when swiping away a single conversation to delete it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="deleted"/>
+    <string name="deleted">"已刪除"</string>
+    <!-- Displayed when swiping away a single conversation to archive it [CHAR LIMIT=80] -->
+    <add-resource type="string" name="archived"/>
+    <string name="archived">"已封存"</string>
+    <!-- Displayed when swiping away a single conversation to remove the currently displayed folder [CHAR LIMIT=80] -->
+    <add-resource type="string" name="folder_removed"/>
+    <string name="folder_removed">"已從「<xliff:g id="FOLDERNAME">%1$s</xliff:g>」中移除"</string>
+
+    <add-resource type="plurals" name="conversation_folder_changed"/>
+    <plurals name="conversation_folder_changed">
+        <!-- Displayed while adding and removing folders to a single conversation. [CHAR LIMIT=100] -->
+        <item quantity="one">"已變更資料夾"</item>
+        <!-- Displayed while adding and removing folders to multiple conversations. [CHAR LIMIT=100] -->
+        <item quantity="other">"已變更資料夾"</item>
+    </plurals>
+
+    <!-- Displayed after moving a conversation to a different folder. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="conversation_folder_moved"/>
+    <string name="conversation_folder_moved">"已移至「<xliff:g id="FOLDERNAME">%1$s</xliff:g>」"</string>
+
+    <!-- Search Results: Text for header that is shown above search results [CHAR LIMIT=30] -->
+    <add-resource type="string" name="search_results_header"/>
+    <string name="search_results_header">"搜尋結果"</string>
+    <!-- Toast shown when the user taps the search hard key when viewing an account that does not support search [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_unsupported"/>
+    <string name="search_unsupported">"這個帳戶不支援搜尋功能。"</string>
+    <!-- Accessibility description for the search suggestion item [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_suggestion_desc"/>
+    <string name="search_suggestion_desc">"建議：<xliff:g id="SUGGESTION">%s</xliff:g>"</string>
+
+    <!-- Conversation view -->
+    <!--  Text anchor for control to add / change labels on a conversation when
+          viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="add_label"/>
+    <string name="add_label">"新增資料夾"</string>
+
+    <!-- New Message notification text that appears over conversation view on incoming messages. [CHAR LIMIT=40] -->
+    <add-resource type="plurals" name="new_incoming_messages"/>
+    <plurals name="new_incoming_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> 封新郵件"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 封新郵件"</item>
+    </plurals>
+
+    <!-- Conversation message header strings -->
+    <!--  Text for showing the date and expanding recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="date_and_view_details"/>
+    <string name="date_and_view_details">"<xliff:g id="DATE">%1$s</xliff:g> &lt;a href=\'http://www.example.com\'&gt;查看詳細資料&lt;/a&gt;"</string>
+    <!--  Text for collapsing recipient details in a message when viewing it. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="hide_details"/>
+    <string name="hide_details">"隱藏詳細資料"</string>
+    <!-- Shown to display the recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_message_header"/>
+    <string name="to_message_header">"寄給<xliff:g id="RECIPIENTS">%1$s</xliff:g>"</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_header_for_recipient_summary"/>
+    <string name="bcc_header_for_recipient_summary">"密件副本： "</string>
+    <!--  Icon name for showing sender contact information. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string"/>
+    <string name="contact_info_string">"顯示 <xliff:g id="NAME">%1$s</xliff:g> 的聯絡人資訊"</string>
+    <!--  Icon name for showing sender contact information when we cannot get sender info. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="contact_info_string_default"/>
+    <string name="contact_info_string_default">"顯示聯絡人資訊"</string>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target. Tapping on this touch target
+         expands these messages. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="show_messages_read"/>
+    <plurals name="show_messages_read">
+        <item quantity="other">"展開 <xliff:g id="COUNT">%1$d</xliff:g> 封舊郵件"</item>
+    </plurals>
+    <!-- Used for accessibility purposes when a conversation has several previously read
+         messages that are collapsed into a single touch target to announce that the messages
+         have been expanded. [CHAR LIMIT=UNLIMITED] -->
+    <add-resource type="plurals" name="super_collapsed_block_accessibility_announcement"/>
+    <plurals name="super_collapsed_block_accessibility_announcement">
+        <item quantity="other">"已展開 <xliff:g id="COUNT">%1$d</xliff:g> 封舊郵件"</item>
+    </plurals>
+    <!-- Shown to display the from address of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="from_heading"/>
+    <string name="from_heading">"寄件者："</string>
+    <!-- Shown to display the reply to address of the message [CHAR LIMIT=20] -->
+    <add-resource type="string" name="replyto_heading"/>
+    <string name="replyto_heading">"回覆："</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading"/>
+    <string name="to_heading">"收件者： "</string>
+    <!-- Shown to display the to recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="to_heading_no_space"/>
+    <string name="to_heading_no_space">"收件者："</string>
+    <!-- Shown to display the cc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cc_heading"/>
+    <string name="cc_heading">"副本："</string>
+    <!-- Shown to display the bcc recipient(s) of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bcc_heading"/>
+    <string name="bcc_heading">"密件副本："</string>
+    <!-- Shown to display the date of the message [CHAR LIMIT=10] -->
+    <add-resource type="string" name="date_heading"/>
+    <string name="date_heading">"日期："</string>
+    <!-- Displayed above an HTML message to show the images in that message [CHAR LIMIT=40] -->
+    <add-resource type="string" name="show_images"/>
+    <string name="show_images">"顯示圖片"</string>
+    <!-- Displayed above an HTML message to always show images in messages from that sender [CHAR LIMIT=40] -->
+    <add-resource type="string" name="always_show_images"/>
+    <string name="always_show_images">"一律顯示這位寄件者所傳送的圖片"</string>
+    <!-- Shown in a toast to acknowledge always showing images for a sender [CHAR LIMIT=100] -->
+    <add-resource type="string" name="always_show_images_toast"/>
+    <string name="always_show_images_toast">"系統會自動顯示這位寄件者所傳送的圖片。"</string>
+    <!-- Display format of an email recipient, displayed in expanded message details [CHAR LIMIT=10] -->
+    <add-resource type="string" name="address_display_format"/>
+    <string name="address_display_format">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g>"</string>
+    <!-- Display format of an email sender if the message has a via domain set, displayed in expanded message details [CHAR LIMIT=15] -->
+    <add-resource type="string" name="address_display_format_with_via_domain"/>
+    <string name="address_display_format_with_via_domain">"<xliff:g id="name">%1$s</xliff:g> <xliff:g id="email">%2$s</xliff:g> via <xliff:g id="via_domain">%3$s</xliff:g>"</string>
+    <!-- Displayed for one second after user saves message as draft [CHAR LIMIT=50]-->
+    <add-resource type="string" name="message_saved"/>
+    <string name="message_saved">"已儲存郵件草稿。"</string>
+    <!-- Displayed for one second while message is being sent [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sending_message"/>
+    <string name="sending_message">"正在傳送郵件\u2026"</string>
+    <!-- Displayed for one second after trying to send with invalid recipients [CHAR LIMIT=50]-->
+    <add-resource type="string" name="invalid_recipient"/>
+    <string name="invalid_recipient">"地址 <xliff:g id="WRONGEMAIL">%s</xliff:g> 無效。"</string>
+    <!-- Shown in HTML to allow the user to see quoted text; should match Gmail web UI. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_elided"/>
+    <string name="show_elided">"顯示引用文字"</string>
+    <!-- Shown in HTML to allow the user to hide quoted text; should match Gmail web UI. 25BC is Unicode for a downward-pointing triangle. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_elided"/>
+    <string name="hide_elided">"▼ 隱藏引用文字"</string>
+    <!-- Shown as a heading in message view when a message contains a calendar invite [CHAR LIMIT=30]-->
+    <add-resource type="string" name="message_invite_title"/>
+    <string name="message_invite_title">"日曆邀請"</string>
+    <!-- Shown as a button label in message view to launch calendar to see this invite [CHAR LIMIT=40]-->
+    <add-resource type="string" name="message_invite_calendar_view"/>
+    <string name="message_invite_calendar_view">"查看日曆"</string>
+    <!-- Shown as a text label in message view describing the choices of whether to attend an invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_label_attending"/>
+    <string name="message_invite_label_attending">"是否參加？"</string>
+    <!-- Shown as a button label in message view to accept a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_accept"/>
+    <string name="message_invite_accept">"是"</string>
+    <!-- Shown as a button label in message view to give a tentative response to a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_tentative"/>
+    <string name="message_invite_tentative">"或許"</string>
+    <!-- Shown as a button label in message view to decline a calendar invite [CHAR LIMIT=20]-->
+    <add-resource type="string" name="message_invite_decline"/>
+    <string name="message_invite_decline">"否"</string>
+
+    <!-- An enumeration comma for separating items in lists. [CHAR LIMIT=2] -->
+    <add-resource type="string" name="enumeration_comma"/>
+    <string name="enumeration_comma">,\u0020</string>
+
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=20]-->
+    <add-resource type="string" name="send_anyway"/>
+    <string name="send_anyway">"直接傳送"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"確定"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="done"/>
+    <string name="done">"完成"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"取消"</string>
+    <!-- Button name, displayed in dialogs [CHAR LIMIT=10] -->
+    <add-resource type="string" name="clear"/>
+    <string name="clear">"清除"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="next"/>
+    <string name="next">"下一步"</string>
+    <!-- Button name, used as part of a multi-step process [CHAR LIMIT=10] -->
+    <add-resource type="string" name="previous"/>
+    <string name="previous">"上一步"</string>
+
+    <!-- Sync status errors. Please do not change the order [CHAR LIMIT=100] -->
+    <add-resource type="array" name="sync_status"/>
+    <string-array name="sync_status">
+        <item>"成功"</item>
+        <item>"沒有網路連線"</item>
+        <item>"無法登入"</item>
+        <item>"安全性錯誤"</item>
+        <item>"無法同步處理"</item>
+        <item>"發生內部錯誤"</item>
+        <item>"伺服器錯誤"</item>
+    </string-array>
+
+    <!-- Widget strings -->
+    <!-- Displayed when user adds a new widget. Tapping on the widget in this
+          mode will bring user to the account selection screen [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure"/>
+    <string name="tap_to_configure">"輕觸即可設定"</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder [CHAR LIMIT=60] -->
+    <add-resource type="string" name="non_synced_folder_description"/>
+    <string name="non_synced_folder_description">"如要查看會話群組，請同步處理這個資料夾。"</string>
+
+    <!-- Displayed within a widget that was setup for a non-synced folder.  This is the text of the
+         button that will allow the user to configure sync for the folder [CHAR LIMIT=35] -->
+    <add-resource type="string" name="tap_to_configure_folder_sync"/>
+    <string name="tap_to_configure_folder_sync">"同步處理資料夾"</string>
+
+    <!-- Displayed in widget when unread count > 99. [CHAR LIMIT=4] -->
+    <add-resource type="string" name="widget_large_unread_count"/>
+    <string name="widget_large_unread_count">%d+</string>
+
+    <!-- Displayed when there are >99 unseen messages, see:unseen_count [CHAR LIMIT=3] -->
+    <add-resource type="string" name="large_unseen_count"/>
+    <string name="large_unseen_count">"<xliff:g id="COUNT">%d</xliff:g>+ 封新郵件"</string>
+
+    <!-- Displayed when there are unseen messages [CHAR LIMIT=3] [BACKUP_MESSAGE_ID: 3377106103106345367] -->
+    <add-resource type="string" name="unseen_count"/>
+    <string name="unseen_count">"<xliff:g id="COUNT">%d</xliff:g> 封新郵件"</string>
+
+    <add-resource type="plurals" name="actionbar_unread_messages"/>
+    <plurals name="actionbar_unread_messages">
+        <!-- String for the actionbar subtitle when messages are unread [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 封未讀郵件"</item>
+    </plurals>
+
+    <!-- Displayed at the end of the conversation list in the widget. Tapping on this will open the default Inbox. [CHAR LIMIT=35] -->
+    <add-resource type="string" name="view_more_conversations"/>
+    <string name="view_more_conversations">"查看更多會話群組"</string>
+
+    <!-- Displayed while we load a conversation. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="loading_conversation"/>
+    <string name="loading_conversation">"載入中\u2026"</string>
+
+    <!-- Name of the Mailboxes activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_mailbox_selection"/>
+    <string name="activity_mailbox_selection">"選擇帳戶"</string>
+
+    <!-- Name of the Folders activity [CHAR LIMIT=30] -->
+    <add-resource type="string" name="activity_folder_selection"/>
+    <string name="activity_folder_selection">"選擇資料夾"</string>
+
+    <!-- Name of the Folder shortcut widget. Should use "Email" to refer to the app. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="folder_shortcut_widget_label"/>
+    <string name="folder_shortcut_widget_label">"電子郵件資料夾"</string>
+
+    <!-- Folder selection dialog -->
+    <!-- Title for change folders dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="change_folders_selection_dialog_title"/>
+    <string name="change_folders_selection_dialog_title">"變更資料夾"</string>
+    <!-- Title for move to dialog [CHAR LIMIT=30] -->
+    <add-resource type="string" name="move_to_selection_dialog_title"/>
+    <string name="move_to_selection_dialog_title">"移至"</string>
+    <!-- Shown in light gray in the Search box when no text has been entered [CHAR LIMIT=20]-->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"搜尋"</string>
+    <add-resource type="string" name="search_input_limit_number"/>
+    <string name="search_input_limit_number">"搜尋字詞輸入數目限制為 40"</string>
+    <!-- Search Results: Text for status of the search when the results are completely loaded [CHAR LIMIT=10] -->
+    <add-resource type="string" name="search_results_loaded"/>
+    <string name="search_results_loaded"><xliff:g id="searchCount">%1$d</xliff:g></string>
+    <!-- Voice search is not supported on this device [CHAR LIMIT=100] -->
+    <add-resource type="string" name="voice_search_not_supported"/>
+    <string name="voice_search_not_supported">"這個裝置不支援語音搜尋。"</string>
+    <!-- Description of the back button [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_back_desc"/>
+    <string name="search_back_desc">"關閉搜尋"</string>
+    <!-- Description of the voice icon [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_voice_desc"/>
+    <string name="search_voice_desc">"開始進行語音搜尋"</string>
+    <!-- Description of the clear icon (clears the current input text in the search bar) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="search_clear_desc"/>
+    <string name="search_clear_desc">"清除搜尋文字"</string>
+
+    <!-- Shown in conversation list footer when application cannot make a connection [CHAR LIMIT=20]-->
+    <add-resource type="string" name="network_error"/>
+    <string name="network_error">"沒有網路連線"</string>
+    <!-- Button at bottom of conversation list screen if last attempt to load conversations failed [CHAR LIMIT=20]-->
+    <add-resource type="string" name="retry"/>
+    <string name="retry">"重試"</string>
+    <!-- Button at bottom of conversation list screen if the folder for which contents are being shown supports loading more on demand [CHAR LIMIT=20]-->
+    <add-resource type="string" name="load_more"/>
+    <string name="load_more">"載入更多"</string>
+
+    <!-- Text for dummy attachments to load the actual attachment. This is not an ideal string, but it's too late to add a new string and get it translated -->
+    <add-resource type="string" name="load_attachment"/>
+    <string name="load_attachment">@string/load_more</string>
+
+    <!-- Shortcut strings -->
+    <!-- Title for shortcut naming dialog [CHAR LIMIT=100]-->
+    <add-resource type="string" name="shortcut_name_title"/>
+    <string name="shortcut_name_title">"名稱資料夾捷徑"</string>
+
+    <!-- Wait fragment strings -->
+    <!-- Displayed in title bar during the initial sync  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="wait_for_sync_title"/>
+    <string name="wait_for_sync_title">"正在等待同步處理"</string>
+    <!-- Title for the screen displayed during the initial sync [CHAR LIMIT=100]  -->
+    <add-resource type="string" name="not_synced_title"/>
+    <string name="not_synced_title">"帳戶尚未同步處理"</string>
+    <!-- Displayed in the middle of the screen during the initial sync [CHAR LIMIT=300]-->
+    <add-resource type="string" name="wait_for_manual_sync_body"/>
+    <string name="wait_for_manual_sync_body">"這個帳戶尚未設成自動同步處理。\n請輕觸 [立即同步處理]"<b/>"，將您的郵件同步處理一次，或者輕觸 [變更同步處理設定]"<b/>"，將帳戶設定成自動同步處理郵件。"</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will sync users mail for the selected account. [CHAR LIMIT=12]  -->
+    <add-resource type="string" name="manual_sync"/>
+    <string name="manual_sync">"立即同步處理"</string>
+    <!-- Displayed at the bottom of the screen during the initial sync. If pressed will open sync setting screen for accounts. [CHAR LIMIT=30]  -->
+    <add-resource type="string" name="change_sync_settings"/>
+    <string name="change_sync_settings">"變更同步處理設定"</string>
+
+    <!-- Displayed when we could not load a photo in the photo viewer. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="photo_load_failed"/>
+    <string name="photo_load_failed">"無法載入圖片"</string>
+
+    <!--  The move message / change labels action can't be taken because the selected messages
+        come from different accounts -->
+    <add-resource type="string" name="cant_move_or_change_labels"/>
+    <string name="cant_move_or_change_labels">"您已選取多個帳戶，因此無法移動。"</string>
+
+    <!-- Format string used when displaying a summary in a message summary in list notification that was triggered by several new conversations.
+         Extra space between sender and subject is intentional.  [CHAR LIMIT=120] -->
+    <add-resource type="string" name="multiple_new_message_notification_item"/>
+    <string name="multiple_new_message_notification_item"><b>"<xliff:g id="SENDER">%1$s</xliff:g>"</b>" - <xliff:g id="SUBJECT">%2$s</xliff:g>"</string>
+
+    <!-- Format string used when displaying the big text of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_big_text"/>
+    <string name="single_new_message_notification_big_text">"<xliff:g id="SUBJECT">%1$s</xliff:g>\n<xliff:g id="SNIPPET">%2$s</xliff:g>"</string>
+
+    <!-- Displayed in a message subheading. Ignore the current spam warning. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="ignore_spam_warning"/>
+    <string name="ignore_spam_warning">"略過，我信任這封郵件"</string>
+
+    <!-- Displayed in the message heading. Shown if the message was sent via another domain. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="via_domain"/>
+    <string name="via_domain">"來源網域：<xliff:g id="VIADOMAIN">%1$s</xliff:g>"</string>
+
+    <!-- Button text for the button to click to have the user sign in again or adjust their credentials. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="signin"/>
+    <string name="signin">"登入"</string>
+    <!-- Button text for the button to click for more information. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="info"/>
+    <string name="info">"資訊"</string>
+    <!-- Button text for the button to click to report feedback. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="report"/>
+    <string name="report">"回報"</string>
+    <!-- Button text for the button to click to show newly received messages in the active thread. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="show"/>
+    <string name="show">"顯示"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="sync_error"/>
+    <string name="sync_error">"無法同步處理。"</string>
+    <!-- Dialog title when a sync error occurs. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="sync_error_message"/>
+    <string name="sync_error_message">"裝置的儲存空間不足，無法進行同步處理。"</string>
+    <!-- Button text for the button to click to go to the manage storage settings screen. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="storage"/>
+    <string name="storage">"儲存空間"</string>
+
+    <!-- Token used as a divider between senders -->
+    <add-resource type="string" name="senders_split_token"/>
+    <string name="senders_split_token">,\u00A0</string>
+    <add-resource type="string" name="draft_count_format"/>
+    <string name="draft_count_format">"\u00A0(<xliff:g id="count">%1$s</xliff:g>)"</string>
+
+    <!-- String used in the FolderListFragment to mark the start of user-defined folders -->
+    <add-resource type="string" name="all_folders_heading"/>
+    <string name="all_folders_heading">"所有資料夾"</string>
+    <!-- String used in the FolderListFragment to mark the start of recent folders -->
+    <add-resource type="string" name="recent_folders_heading"/>
+    <string name="recent_folders_heading">"最近使用的資料夾"</string>
+
+    <!-- Dialog title when showing message header details in a popup window. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="message_details_title"/>
+    <string name="message_details_title">"郵件詳細資料"</string>
+
+    <!-- General preference: Label of the setting for the direction to move to
+         when deleting the current message.
+         Options contain "newer message","older message", etc. [CHAR LIMIT=32] -->
+    <add-resource type="string" name="preference_advance_to_title"/>
+    <string name="preference_advance_to_title">"自動推進"</string>
+
+    <!-- The auto-advance modes -->
+    <add-resource type="array" name="prefEntries_autoAdvance"/>
+    <string-array name="prefEntries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"較新"</item>
+        <!-- Older conversation -->
+        <item>"較舊"</item>
+        <!-- Conversation list -->
+        <item>"會話群組清單"</item>
+    </string-array>
+
+    <!-- Description for each auto-advance option to display after the user has picked one -->
+    <!-- The entries here must correspond to the entries in prefEntries_autoAdvance [CHAR LIMIT=60] -->
+    <add-resource type="array" name="prefSummaries_autoAdvance"/>
+    <string-array name="prefSummaries_autoAdvance">
+        <!-- Newer conversation -->
+        <item>"在刪除動作完成後顯示較新的會話群組"</item>
+        <!-- Older conversation -->
+        <item>"在刪除動作完成後顯示較舊的會話群組"</item>
+        <!-- Conversation list -->
+        <item>"在刪除動作完成後顯示會話群組清單"</item>
+    </string-array>
+
+    <!-- Dialog title for the auto-advance list -->
+    <add-resource type="string" name="prefDialogTitle_autoAdvance"/>
+    <string name="prefDialogTitle_autoAdvance">"推進至"</string>
+
+    <!-- Settings screen, title of "Restore default for "Show pictures"" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_title"/>
+    <string name="clear_display_images_whitelist_title">"清除圖片顯示許可"</string>
+
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear picture approvals" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_title"/>
+    <string name="clear_display_images_whitelist_dialog_title">"要清除圖片顯示許可？"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when tapping
+    "Clear picture approvals" [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_display_images_whitelist_dialog_message"/>
+    <string name="clear_display_images_whitelist_dialog_message">"對於您之前允許顯示其郵件內置圖片的寄件者，停止顯示其郵件內的圖片。"</string>
+
+    <!-- Message shown in toast when the user taps "Restore default for "Show pictures"" in Gmail general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="sender_whitelist_cleared"/>
+    <string name="sender_whitelist_cleared">"系統不會自動顯示圖片。"</string>
+
+    <!-- Settings screen, name of the setting that lets the user choose their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_title"/>
+    <string name="preferences_signature_title">"簽名檔"</string>
+    <!-- Settings screen, title of the dialog that lets the user configure their signature [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preferences_signature_dialog_title"/>
+    <string name="preferences_signature_dialog_title">"簽名檔"</string>
+    <!-- Settings screen, setting summary text when no signature set [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preferences_signature_summary_not_set"/>
+    <string name="preferences_signature_summary_not_set">"未設定"</string>
+
+    <!-- Notification action for replying to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply"/>
+    <string name="notification_action_reply">"回覆"</string>
+    <!-- Notification action for replying-all to a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_reply_all"/>
+    <string name="notification_action_reply_all">"全部回覆"</string>
+    <!-- Notification action for archiving a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_archive"/>
+    <string name="notification_action_archive">"封存"</string>
+    <!-- Notification action for removing a label from a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_remove_label"/>
+    <string name="notification_action_remove_label">"移除標籤"</string>
+    <!-- Notification action for deleting a message. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="notification_action_delete"/>
+    <string name="notification_action_delete">"刪除"</string>
+
+    <!-- Notification undo text after archiving a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_archive"/>
+    <string name="notification_action_undo_archive">"已封存"</string>
+    <!-- Notification undo text after removing a label from a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_remove_label"/>
+    <string name="notification_action_undo_remove_label">"已移除標籤"</string>
+    <!-- Notification undo text after deleting a message. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_action_undo_delete"/>
+    <string name="notification_action_undo_delete">"已刪除"</string>
+
+    <!-- Regex that specifies veiled addresses. These are all empty because this is disabled currently. -->
+    <add-resource type="string" name="veiled_address"/>
+    <string name="veiled_address"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text"/>
+    <string name="veiled_alternate_text"></string>
+    <!-- String to be shown instead of a veiled addresses. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_alternate_text_unknown_person"/>
+    <string name="veiled_alternate_text_unknown_person"></string>
+    <!-- Summary string to be shown instead of a veiled recipient. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="veiled_summary_unknown_person"/>
+    <string name="veiled_summary_unknown_person"></string>
+
+    <!-- Notification ticker text for per-label notification [CHAR LIMIT=30]-->
+    <add-resource type="string" name="label_notification_ticker"/>
+    <string name="label_notification_ticker">"<xliff:g id="label">%s</xliff:g>: <xliff:g id="notification">%s</xliff:g>"</string>
+
+    <!-- Notification message to the user upon new messages for a conversation. [CHAR LIMIT=120] -->
+    <add-resource type="plurals" name="new_messages"/>
+    <plurals name="new_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> 封新郵件"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 封新郵件"</item>
+    </plurals>
+
+    <!-- Format string used when displaying the title of a notification that was triggered by a single new conversation. [CHAR LIMIT=120] -->
+    <add-resource type="string" name="single_new_message_notification_title"/>
+    <string name="single_new_message_notification_title"><xliff:g id="sender">%1$s</xliff:g>: <xliff:g id="subject">%2$s</xliff:g></string>
+
+    <!-- Settings screen, what to display for Ringtone when the user chooses "silent" [CHAR LIMIT=100]-->
+    <add-resource type="string" name="silent_ringtone"/>
+    <string name="silent_ringtone">"靜音"</string>
+
+    <!-- Settings screen, preference name for archive vs. delete [CHAR LIMIT=50] -->
+    <add-resource type="string" name="preference_removal_action_title"/>
+    <string name="preference_removal_action_title">"預設動作"</string>
+    <!-- Options to select from for whether to have archive or delete as the remove action [CHAR LIMIT=50] -->
+    <add-resource type="array" name="prefEntries_removal_action"/>
+    <string-array name="prefEntries_removal_action">
+        <item>"封存"</item>
+        <item>"刪除"</item>
+    </string-array>
+    <!-- Description of currently selected option of whether to use archive or delete as remove action [CHAR LIMIT=200] -->
+    <add-resource type="array" name="prefSummaries_removal_action_summary"/>
+    <string-array name="prefSummaries_removal_action_summary">
+        <item>"封存"</item>
+        <item>"刪除"</item>
+    </string-array>
+    <!-- Dialog title for the choosing whether to use archive or delete as remove action [CHAR LIMIT=150] -->
+    <add-resource type="string" name="prefDialogTitle_removal_action"/>
+    <string name="prefDialogTitle_removal_action">"預設動作"</string>
+
+    <!--  Settings screen, Reply to all default setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_default_reply_all_title"/>
+    <string name="preferences_default_reply_all_title">"全部回覆"</string>
+    <!--  Settings screen, Reply to all default setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_default_reply_all_summary_impl"/>
+    <string name="preferences_default_reply_all_summary_impl">"設為預設回信方式"</string>
+
+    <!-- Preference name for swipe actions preference [CHAR LIMIT=100]-->
+    <add-resource type="string" name="preference_swipe_title"/>
+    <string name="preference_swipe_title">"滑動動作"</string>
+    <!-- Preference description swiping in conversation list option [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_swipe_description"/>
+    <string name="preference_swipe_description">"在會話群組清單中"</string>
+
+    <!-- Preference name for whether to display sender images in conversation list [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_sender_image_title"/>
+    <string name="preference_sender_image_title">"寄件者圖片"</string>
+    <!-- Preference description for whether to display sender image option [CHAR LIMIT=200] -->
+    <add-resource type="string" name="preference_sender_image_description"/>
+    <string name="preference_sender_image_description">"在會話群組清單中的名稱旁邊顯示"</string>
+
+    <!-- Conversation list screen overflow menu in trash folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_trash"/>
+    <string name="empty_trash">"清空垃圾筒"</string>
+
+    <!-- Conversation list screen overflow menu in spam folder [CHAR LIMIT=50]  -->
+    <add-resource type="string" name="empty_spam"/>
+    <string name="empty_spam">"清空垃圾郵件"</string>
+
+    <!-- Dialog title for empty trash confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_trash_dialog_title"/>
+    <string name="empty_trash_dialog_title">"清空垃圾筒？"</string>
+
+    <!-- Dialog title for empty spam confirmation dialog [CHAR LIMIT=100] -->
+    <add-resource type="string" name="empty_spam_dialog_title"/>
+    <string name="empty_spam_dialog_title">"清空垃圾郵件？"</string>
+
+    <!-- Dialog message for empty folder confirmation dialog [CHAR LIMIT=300] -->
+    <add-resource type="plurals" name="empty_folder_dialog_message"/>
+    <plurals name="empty_folder_dialog_message">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> 封郵件將遭到永久刪除。"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 封郵件將遭到永久刪除。"</item>
+    </plurals>
+
+    <!-- Strings used for accessibility for the items that toggles the drawer action  -->
+    <add-resource type="string" name="drawer_open"/>
+    <string name="drawer_open">"開啟導覽匣"</string>
+    <add-resource type="string" name="drawer_close"/>
+    <string name="drawer_close">"關閉導覽匣"</string>
+
+    <add-resource type="string" name="conversation_photo_welcome_text"/>
+    <string name="conversation_photo_welcome_text">"輕觸寄件者圖片即可選取該會話群組。"</string>
+
+    <add-resource type="string" name="long_press_to_select_tip"/>
+    <string name="long_press_to_select_tip">"輕觸並按住即可選取其中一個會話群組，接著可再輕觸選取其他會話群組。"</string>
+
+    <!-- Content description for the folder icon for nested folders. -->
+    <add-resource type="string" name="folder_icon_desc"/>
+    <string name="folder_icon_desc">"資料夾圖示"</string>
+
+    <!--  Button, "Add account" in the preference screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="add_account"/>
+    <string name="add_account">"新增帳戶"</string>
+
+    <!-- Content description for the "X" image icon for dismissing a tip. This is used for spoken description of the icon when touch explore is enabled. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="dismiss_tip_hover_text"/>
+    <string name="dismiss_tip_hover_text">"關閉提示"</string>
+
+    <!-- Tip for letting user know that their device auto-sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="auto_sync_off"/>
+    <string name="auto_sync_off">"自動同步功能已關閉，輕觸即可開啟。"</string>
+
+    <!-- Tip for letting user know that their account level sync setting
+        is turned off, in case they are wondering why they are not
+        receiving any new mail. Then prompts the user to enable sync in Gmail's
+        account settings. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="account_sync_off"/>
+    <string name="account_sync_off">"帳戶同步處理設定已關閉，您可以前往&lt;a href=\'http://www.example.com\'&gt;帳戶設定&lt;/a&gt;開啟。"</string>
+
+    <!-- Hint text that there are X number of unsent messages users
+    Outbox. [CHAR LIMIT=250] -->
+    <add-resource type="string" name="unsent_messages_in_outbox"/>
+    <string name="unsent_messages_in_outbox">"<xliff:g id="OUTBOX">%2$s</xliff:g>內有 <xliff:g id="NUMBER">%1$s</xliff:g> 封未傳送的郵件"</string>
+
+    <!-- Title of dialog to turn auto-sync on [CHAR LIMIT=100] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_title"/>
+    <string name="turn_auto_sync_on_dialog_title">"開啟自動同步功能？"</string>
+
+    <!-- Text of dialog to turn auto-sync on [CHAR LIMIT=500] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_body"/>
+    <string name="turn_auto_sync_on_dialog_body">"您對所有應用程式和帳戶 (不限於 Gmail) 所做的變更一律會在網路、您的其他裝置和您的<xliff:g id="PHONE_OR_TABLET">%1$s</xliff:g>之間保持同步。"</string>
+
+    <!-- Phone (vs. tablet) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="phone"/>
+    <string name="phone">"手機"</string>
+
+    <!-- Tablet (vs. phone) for describing this device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="tablet"/>
+    <string name="tablet">"平板電腦"</string>
+
+    <!-- Confirm button text for dialog to turn auto-sync on [CHAR
+         LIMIT=30] -->
+    <add-resource type="string" name="turn_auto_sync_on_dialog_confirm_btn"/>
+    <string name="turn_auto_sync_on_dialog_confirm_btn">"開啟"</string>
+
+    <!-- Button in conversation list to show more folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="show_n_more_folders"/>
+    <string name="show_n_more_folders">"顯示 <xliff:g id="NUMBER">%1$s</xliff:g> 個資料夾"</string>
+    <!-- Button in conversation list to hide folders [CHAR LIMIT=50] -->
+    <add-resource type="string" name="hide_folders"/>
+    <string name="hide_folders">"隱藏資料夾"</string>
+
+    <!-- Menu item text to that when clicked will allow a user to print an email message. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print"/>
+    <string name="print">"列印"</string>
+    <!-- Menu item text to that when clicked will allow a user to print an email conversation. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_all"/>
+    <string name="print_all">"全部列印"</string>
+    <!-- Number of messages in a conversation [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_messages"/>
+    <plurals name="num_messages">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> 封郵件"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 封郵件"</item>
+    </plurals>
+    <!-- Shown to display the date of the message [CHAR LIMIT=50] -->
+    <add-resource type="string" name="date_message_received_print"/>
+    <string name="date_message_received_print">"<xliff:g id="DAY_AND_DATE">%1$s</xliff:g> (<xliff:g id="TIME">%2$s</xliff:g>)"</string>
+    <!-- Shown to display the to recipient(s) of the message if the message is a draft [CHAR LIMIT=20] -->
+    <add-resource type="string" name="draft_to_heading"/>
+    <string name="draft_to_heading">"草稿收件者："</string>
+
+    <!-- Shown to display in the message header if the message is a draft and there are no "to" addresses in the draft [CHAR LIMIT=10] -->
+    <add-resource type="string" name="draft_heading"/>
+    <string name="draft_heading">"草稿"</string>
+    <!-- Shown to inform the user that the quoted text for this message has been hidden. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="quoted_text_hidden_print"/>
+    <string name="quoted_text_hidden_print">"隱藏引用文字"</string>
+    <!-- Number of attachments in a message [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="num_attachments"/>
+    <plurals name="num_attachments">
+        <item quantity="one">"<xliff:g id="COUNT">%1$d</xliff:g> 個附件"</item>
+        <item quantity="other">"<xliff:g id="COUNT">%1$d</xliff:g> 個附件"</item>
+    </plurals>
+    <!-- Title to display when an email has no subject. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="no_subject"/>
+    <string name="no_subject">"(沒有主旨)"</string>
+
+    <!-- Action bar title for the screen to set a vacation responder (out-of-office) message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="vacation_responder"/>
+    <string name="vacation_responder">"休假回覆"</string>
+    <!-- Account preference: Title of the setting to set a vacation responder (out-of-office) message. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="preferences_vacation_responder_title"/>
+    <string name="preferences_vacation_responder_title">"休假回覆"</string>
+    <!-- Shown in vacation responder; the body of the message [CHAR LIMIT=100] -->
+    <add-resource type="string" name="vacation_responder_body_hint_text"/>
+    <string name="vacation_responder_body_hint_text">"訊息"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's contacts [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_contacts_text"/>
+    <string name="send_to_contacts_text">"僅傳送給我的聯絡人"</string>
+    <!-- Shown in vacation responder; accompanies a checkbox that, if checked, causes vacation responses to be sent to people in the user's corporate domain [CHAR LIMIT=75] -->
+    <add-resource type="string" name="send_to_domain_text"/>
+    <string name="send_to_domain_text">"僅傳送給 <xliff:g id="DOMAIN">%1$s</xliff:g> 中的使用者"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the start date of the vacation responder. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_start_date_title"/>
+    <string name="pick_start_date_title">"開始日期"</string>
+    <!-- Title text for the button to be pressed if the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="pick_end_date_title"/>
+    <string name="pick_end_date_title">"結束日期 (選擇性)"</string>
+    <!-- Shown to display that an end date in the vacation responder has not been set. [CHAR LIMIT=25]-->
+    <add-resource type="string" name="date_not_set"/>
+    <string name="date_not_set">"未設定"</string>
+    <!-- Title text for the dialog that appears when the user wishes to change the end date of the vacation responder.
+            This text should include a note that this field is optional to set. [CHAR LIMIT=35]-->
+    <add-resource type="string" name="set_end_date_dialog_title"/>
+    <string name="set_end_date_dialog_title">"結束日期 (選擇性)"</string>
+    <!-- Shown as an option in a dialog to set a custom end date for a vacation responder message.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="custom_date"/>
+    <string name="custom_date">"自訂"</string>
+    <!-- Shown as an option in a dialog to set no end date for a vacation responder message. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="date_none"/>
+    <string name="date_none">"無"</string>
+    <!-- Asks the user whether they wish to discard changes. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="discard_changes"/>
+    <string name="discard_changes">"捨棄變更？"</string>
+    <!-- Toast, vacation responder changes were saved. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_saved"/>
+    <string name="vacation_responder_changes_saved">"已儲存休假回覆變更"</string>
+    <!-- Toast, vacation responder changes were discarded. [CHAR LIMIT=100]-->
+    <add-resource type="string" name="vacation_responder_changes_discarded"/>
+    <string name="vacation_responder_changes_discarded">"已捨棄休假回覆變更"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is off. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_off"/>
+    <string name="vacation_responder_off">"關閉"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on but does not have an end date set (only a start date). [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on"/>
+    <string name="vacation_responder_on">"開啟 (從 <xliff:g id="DATE">%1$s</xliff:g>開始)"</string>
+    <!-- Account preference: Subtitle of the setting to set a vacation responder (out-of-office) message
+            when the vacation responder is on and has both a start and end date set. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_on_with_end_date"/>
+    <string name="vacation_responder_on_with_end_date">"開啟 (從 <xliff:g id="START_DATE">%1$s</xliff:g> - <xliff:g id="END_DATE">%2$s</xliff:g>)"</string>
+    <!-- Informs the user that both the subject and body of the vacation responder are empty
+         when they try to enable the responder. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="vacation_responder_empty_subject_and_body_warning"/>
+    <string name="vacation_responder_empty_subject_and_body_warning">"新增主旨或郵件內文"</string>
+
+    <!-- Displayed below a message that has been truncated to show the full message. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="view_entire_message"/>
+    <string name="view_entire_message">"檢視整封郵件"</string>
+
+    <!-- Toast text for error loading an eml file -->
+    <add-resource type="string" name="eml_loader_error_toast"/>
+    <string name="eml_loader_error_toast">"無法開啟這個檔案"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_info"/>
+    <string name="help_and_info">"說明"</string>
+
+    <!-- Menu item that displays the help page. [CHAR LIMIT=50]-->
+    <add-resource type="string" name="help_and_feedback"/>
+    <string name="help_and_feedback">"說明與意見回饋"</string>
+
+    <!-- Solicit feedback string in about screen [CHAR LIMIT=50]-->
+    <add-resource type="string" name="feedback"/>
+    <string name="feedback">"提供意見"</string>
+
+    <!-- Copyright text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="copyright"/>
+    <string name="copyright">"©<xliff:g id="YEAR">%1$d</xliff:g> Google Inc."</string>
+
+    <!-- Version text [CHAR LIMIT=50] -->
+    <add-resource type="string" name="version"/>
+    <string name="version">"<xliff:g id="APP_NAME">%1$s</xliff:g>版本 <xliff:g id="VERSION">%2$s</xliff:g>"</string>
+
+    <!-- Menu item: view a webpage about this application [CHAR LIMIT=50]; this MUST be overlayed -->
+    <add-resource type="string" name="view_app_page"/>
+    <string name="view_app_page"></string>
+
+    <!-- Menu item: print... [CHAR LIMIT=25] -->
+    <add-resource type="string" name="print_dialog"/>
+    <string name="print_dialog">"列印\u2026"</string>
+
+    <!-- Menu item: copyright information [CHAR LIMIT=25] -->
+    <add-resource type="string" name="copyright_information"/>
+    <string name="copyright_information">"版權資訊"</string>
+
+    <!-- Menu item: privacy policy [CHAR LIMIT=25] -->
+    <add-resource type="string" name="privacy_policy"/>
+    <string name="privacy_policy">"隱私權政策"</string>
+
+    <!-- Menu item: open source licenses [CHAR LIMIT=25] -->
+    <add-resource type="string" name="open_source_licenses"/>
+    <string name="open_source_licenses">"開放原始碼授權"</string>
+
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_yes"/>
+    <string name="reply_choice_yes">"是"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_no"/>
+    <string name="reply_choice_no">"否"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_ok"/>
+    <string name="reply_choice_ok">"確定"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_hehe"/>
+    <string name="reply_choice_hehe">"呵呵"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_thanks"/>
+    <string name="reply_choice_thanks">"謝謝"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_i_agree"/>
+    <string name="reply_choice_i_agree">"我同意"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_nice"/>
+    <string name="reply_choice_nice">"很好"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_on_my_way"/>
+    <string name="reply_on_my_way">"我正在路上"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_later"/>
+    <string name="reply_choice_later">"好，我稍後再回覆您"</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_smiling_face"/>
+    <string name="reply_choice_smiling_face">:)</string>
+    <!-- One of the default canned responses used when replying to an email on a wearable device [CHAR LIMIT=30] -->
+    <add-resource type="string" name="reply_choice_frowning_face"/>
+    <string name="reply_choice_frowning_face">:(</string>
+
+    <add-resource type="array" name="reply_choices"/>
+    <array name="reply_choices">
+        <item>@string/reply_choice_yes</item>
+        <item>@string/reply_choice_no</item>
+        <item>@string/reply_choice_ok</item>
+        <item>@string/reply_choice_hehe</item>
+        <item>@string/reply_choice_thanks</item>
+        <item>@string/reply_choice_i_agree</item>
+        <item>@string/reply_choice_nice</item>
+        <item>@string/reply_on_my_way</item>
+        <item>@string/reply_choice_later</item>
+        <item>@string/reply_choice_smiling_face</item>
+        <item>@string/reply_choice_frowning_face</item>
+    </array>
+
+    <!-- Settings screen, heading for grouping action confirmation related  settings together [CHAR LIMIT=100] -->
+    <add-resource type="string" name="preference_header_action_confirmations"/>
+    <string name="preference_header_action_confirmations">"動作確認"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_delete_title"/>
+    <string name="preference_confirm_before_delete_title">"刪除前需確認"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_archive_title"/>
+    <string name="preference_confirm_before_archive_title">"封存前需確認"</string>
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_send_title"/>
+    <string name="preference_confirm_before_send_title">"傳送前需確認"</string>
+
+    <!--  Settings screen, Conversation mode setting titile  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_conversation_mode_title"/>
+    <string name="preferences_conversation_mode_title">"自動調整郵件顯示比例"</string>
+    <!--  Settings screen, Conversation mode setting summary [CHAR LIMIT=70] -->
+    <add-resource type="string" name="preferences_conversation_mode_summary"/>
+    <string name="preferences_conversation_mode_summary">"縮小郵件以符合螢幕尺寸"</string>
+
+    <!--  Settings screen, disable snap headers setting title  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="preferences_disable_snap_headers_title"/>
+    <string name="preferences_disable_snap_headers_title">"郵件動作"</string>
+
+    <!-- The snap header summaries -->
+    <add-resource type="array" name="prefSummaries_snapHeader"/>
+    <string-array name="prefSummaries_snapHeader">
+        <item>"一律在螢幕頂端顯示郵件動作"</item>
+        <item>"旋轉成垂直模式時，才在螢幕頂端顯示郵件動作"</item>
+        <item>"不要在郵件標頭以外的地方顯示郵件動作"</item>
+    </string-array>
+
+    <!-- The snap header modes -->
+    <add-resource type="array" name="prefEntries_snapHeader"/>
+    <string-array name="prefEntries_snapHeader">
+        <item>"一律顯示"</item>
+        <item>"僅於垂直模式中顯示"</item>
+        <item>"不顯示"</item>
+    </string-array>
+
+    <!-- Settings screen, title of "Clear search history" menu item -->
+    <add-resource type="string" name="clear_history_title"/>
+    <string name="clear_history_title">"清除搜尋紀錄"</string>
+    <!-- Message shown in toast when the user taps "clear search history" in general preferences. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="search_history_cleared"/>
+    <string name="search_history_cleared">"已清除搜尋紀錄。"</string>
+    <!-- Settings screen, title of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=200]-->
+    <add-resource type="string" name="clear_history_dialog_title"/>
+    <string name="clear_history_dialog_title">"清除搜尋紀錄？"</string>
+    <!-- Settings screen, message of dialog shown to confirm action when user taps
+    "Clear search history" in preferences [CHAR LIMIT=1000]-->
+    <add-resource type="string" name="clear_history_dialog_message"/>
+    <string name="clear_history_dialog_message">"您的所有搜尋紀錄都會遭到移除。"</string>
+
+    <!-- Settings screen, preference item to launch into Settings [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_accounts_menu_item"/>
+    <string name="manage_accounts_menu_item">"管理帳戶"</string>
+
+    <!-- Settings screen, main title of the screen, big font [CHAR LIMIT=50]-->
+    <add-resource type="string" name="general_preferences_title"/>
+    <string name="general_preferences_title">"一般設定"</string>
+
+    <!-- Settings screen title -->
+    <!-- Name of the Settings activity -->
+    <add-resource type="string" name="activity_preferences"/>
+    <string name="activity_preferences">"設定"</string>
+
+    <!-- Content description for the action menu overflow button. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="overflow_description"/>
+    <string name="overflow_description">"更多選項"</string>
+
+    <!--Email search function filter text  -->
+    <add-resource type="string" name="mail_search_factor_all"/>
+    <string name="mail_search_factor_all">"全部"</string>
+    <add-resource type="string" name="mail_search_factor_subject"/>
+    <string name="mail_search_factor_subject">"主旨"</string>
+    <add-resource type="string" name="mail_search_factor_sender"/>
+    <string name="mail_search_factor_sender">"寄件者"</string>
+    <add-resource type="string" name="mail_search_factor_receiver"/>
+    <string name="mail_search_factor_receiver">"接收者"</string>
+    <add-resource type="string" name="mail_search_factor_result"/>
+    <string name="mail_search_factor_result">"結果"</string>
+
+
+    <!--  Settings screen, confirm on action option title [CHAR LIMIT=150] -->
+    <add-resource type="string" name="preference_confirm_before_forward_title"/>
+    <string name="preference_confirm_before_forward_title">"轉寄前須確認"</string>
+    <!-- Confirm forward dialog message -->
+    <add-resource type="string" name="confirm_forward_message"/>
+    <string name="confirm_forward_message">"若該訊息含有未下載的附件，如何轉寄該訊息？"</string>
+    <add-resource type="string" name="confirm_forward_normal"/>
+    <string name="confirm_forward_normal">"下載完成后發送"</string>
+    <add-resource type="string" name="confirm_forward_drop_unloaded"/>
+    <string name="confirm_forward_drop_unloaded">"捨弃未完成的"</string>
+    <!-- Forward dialog message -->
+    <add-resource type="string" name="forward_dialog_message"/>
+    <string name="forward_dialog_message">"您是否希望轉寄該郵件？"</string>
+    <!-- Text when there is a security hold on an account that needs to be accepted. The email address param takes the for "abc@xyz.com" -->
+    <add-resource type="string" name="security_hold_required_text"/>
+    <string name="security_hold_required_text">"<xliff:g id="EMAIL_ADDRESS">%1$s</xliff:g> 需要進行安全性更新"</string>
+
+    <!-- Text to go to the dialog to accept the security hold -->
+    <add-resource type="string" name="update_security_text"/>
+    <string name="update_security_text">"立即更新"</string>
+    <!-- Shown when user submits a form. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="forms_are_disabled"/>
+    <string name="forms_are_disabled">"Gmail 已停用表單"</string>
+    <add-resource type="string" name="download_first"/>
+    <string name="download_first">"請先下載"</string>
+    <add-resource type="string" name="save_to"/>
+    <string name="save_to">"將檔案儲存至:"</string></resources>

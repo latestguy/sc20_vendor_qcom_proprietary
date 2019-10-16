@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"โปรแกรมติดตั้งแพ็กเกจ"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"ถัดไป"</string>
+    <add-resource type="string" name="install"/>
+    <string name="install">"ติดตั้ง"</string>
+    <add-resource type="string" name="done"/>
+    <string name="done">"เสร็จสิ้น"</string>
+    <!-- TODO REMOVE LATER -->
+    <add-resource type="string" name="security_settings_desc"/>
+    <string name="security_settings_desc">"อนุญาตให้แอปพลิเคชันนี้:"</string>
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"ยกเลิก"</string>
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"ไม่ทราบ"</string>
+    <add-resource type="string" name="installing"/>
+    <string name="installing">"กำลังติดตั้ง..."</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"ติดตั้งแอปพลิเคชันแล้ว"</string>
+    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question"/>
+    <string name="install_confirm_question">"คุณต้องการติดตั้งแอปพลิเคชันนี้หรือไม่ แอปพลิเคชันจะเข้าถึง:"</string>
+    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_no_perms"/>
+    <string name="install_confirm_question_no_perms">"คุณต้องการจะติดตั้งแอปพลิเคชันนี้หรือไม่ แอปพลิเคชันไม่ต้องมีการเข้าถึงพิเศษใดๆ"</string>
+    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update"/>
+    <string name="install_confirm_question_update">"คุณต้องการติดตั้งการอัปเดตของแอปพลิเคชันที่มีอยู่นี้หรือไม่ ข้อมูลที่มีอยู่ของคุณจะไม่สูญหายไป แอปพลิเคชันที่อัปเดตแล้วจะเข้าถึง:"</string>
+    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system"/>
+    <string name="install_confirm_question_update_system">"คุณต้องการจะติดตั้งการอัปเดตของแอปพลิเคชันในระบบนี้หรือไม่ ข้อมูลที่มีอยู่ของคุณจะไม่สูญหาย แอปพลิเคชันที่อัปเดตแล้วจะเข้าถึง:"</string>
+    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_no_perms"/>
+    <string name="install_confirm_question_update_no_perms">"คุณต้องการติดตั้งการอัปเดตไปยังแอปพลิเคชันที่มีอยู่นี้หรือไม่ ข้อมูลที่มีอยู่ของคุณจะไม่สูญหาย การอัปเดตนี้ไม่จำเป็นต้องใช้การเข้าถึงใดๆ เป็นพิเศษ"</string>
+    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system_no_perms"/>
+    <string name="install_confirm_question_update_system_no_perms">"คุณต้องการติดตั้งการอัปเดตไปยังแอปพลิเคชันในตัวนี้หรือไม่ ข้อมูลที่มีอยู่ของคุณจะไม่สูญหาย การอัปเดตนี้ไม่จำเป็นต้องใช้การเข้าถึงใดๆ เป็นพิเศษ"</string>
+    <add-resource type="string" name="install_failed"/>
+    <string name="install_failed">"ไม่ได้ติดตั้งแอปพลิเคชัน"</string>
+    <!-- Reason displayed when installation fails because the package was blocked
+        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_blocked"/>
+    <string name="install_failed_blocked">"มีการบล็อกแพ็กเกจไม่ให้ติดตั้ง"</string>
+    <!-- Reason displayed when installation fails because the package conflicts with
+        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_conflict"/>
+    <string name="install_failed_conflict">"แพ็กเกจขัดแย้งกับแพ็กเกจที่มีอยู่โดยมีชื่อเดียวกัน"</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tablet">"แอปนี้ไม่สามารถใช้งานกับแท็บเล็ตของคุณ"</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tv">"แอปนี้ไม่สามารถใช้งานกับทีวีของคุณ"</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="default">"แอปนี้ไม่สามารถใช้งานกับโทรศัพท์ของคุณ"</string>
+    <!-- Reason displayed when installation fails because the installation package itself is invalid
+        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_invalid_apk"/>
+    <string name="install_failed_invalid_apk">"แพ็กเกจเกิดความเสียหาย"</string>
+    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tablet">"ไม่สามารถติดตั้ง <xliff:g id="APP_NAME">%1$s</xliff:g> บนแท็บเล็ตของคุณ"</string>
+    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tv">"<xliff:g id="app_name">%1$s</xliff:g> ไม่สามารถติดตั้งบนทีวีของคุณได้"</string>
+    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="default">"ไม่สามารถติดตั้ง <xliff:g id="APP_NAME">%1$s</xliff:g> บนโทรศัพท์ของคุณ"</string>
+    <add-resource type="string" name="launch"/>
+    <string name="launch">"เปิด"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tablet">"เพื่อความปลอดภัย แท็บเล็ตของคุณถูกตั้งค่าให้บล็อกการติดตั้งแอปพลิเคชันที่ได้มาจากแหล่งที่ไม่รู้จัก"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tv">"เพื่อความปลอดภัย ทีวีของคุณจะถูกตั้งค่าให้ห้ามการติดตั้งแอปพลิชันพลิเคชันที่ไม่ได้รับมาจาก Google Play"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="default">"เพื่อความปลอดภัย โทรศัพท์ของคุณถูกตั้งค่าให้บล็อกการติดตั้งแอปพลิเคชันที่ได้มาจากแหล่งที่ไม่รู้จัก"</string>
+    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="unknown_apps_admin_dlg_text"/>
+    <string name="unknown_apps_admin_dlg_text">"ผู้ดูแลระบบของคุณไม่อนุญาตการติดตั้งแอปพลิเคชันที่ได้รับจากแหล่งที่ไม่รู้จัก"</string>
+
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"ตกลง"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"การตั้งค่า"</string>
+    <add-resource type="string" name="manage_applications"/>
+    <string name="manage_applications">"จัดการแอปพลิเคชัน"</string>
+    <add-resource type="string" name="dlg_app_replacement_title"/>
+    <string name="dlg_app_replacement_title">"แทนที่แอปพลิเคชันหรือไม่"</string>
+    <add-resource type="string" name="dlg_app_replacement_statement"/>
+    <string name="dlg_app_replacement_statement">"แอปพลิเคชันที่คุณกำลังติดตั้งจะไปแทนที่แอปพลิเคชันอื่น\n\nข้อมูลผู้ใช้ทั้งหมดของคุณก่อนหน้านี้จะได้รับการบันทึกไว้"</string>
+    <!-- Dialog attributes when replacing system app -->
+    <add-resource type="string" name="dlg_sys_app_replacement_statement"/>
+    <string name="dlg_sys_app_replacement_statement">"นี่เป็นแอปพลิเคชันระบบ\n\nข้อมูลผู้ใช้ทั้งหมดของคุณก่อนหน้านี้จะได้รับการบันทึกไว้"</string>
+    <add-resource type="string" name="out_of_space_dlg_title"/>
+    <string name="out_of_space_dlg_title">"ไม่มีพื้นที่"</string>
+    <add-resource type="string" name="out_of_space_dlg_text"/>
+    <string name="out_of_space_dlg_text">"ติดตั้ง <xliff:g id="APP_NAME">%1$s</xliff:g> ไม่ได้ เพิ่มพื้นที่ว่างแล้วลองอีกครั้ง"</string>
+    <!-- strings related to uninstall activity -->
+    <add-resource type="string" name="dlg_ok"/>
+    <string name="dlg_ok">"ตกลง"</string>
+    <add-resource type="string" name="app_not_found_dlg_title"/>
+    <string name="app_not_found_dlg_title">"ไม่พบแอปพลิเคชัน"</string>
+    <add-resource type="string" name="app_not_found_dlg_text"/>
+    <string name="app_not_found_dlg_text">"ไม่พบแอปพลิเคชันนี้ในรายการแอปพลิเคชันที่ติดตั้งไว้"</string>
+    <add-resource type="string" name="uninstall_application_title"/>
+    <string name="uninstall_application_title">"ถอนการติดตั้งแอปพลิเคชัน"</string>
+    <add-resource type="string" name="uninstall_update_title"/>
+    <string name="uninstall_update_title">"ถอนการติดตั้งการอัปเดต"</string>
+    <add-resource type="string" name="uninstall_activity_text"/>
+    <string name="uninstall_activity_text">"<xliff:g id="ACTIVITY_NAME">%1$s</xliff:g> เป็นส่วนหนึ่งของแอปพลิเคชันต่อไปนี้:"</string>
+    <add-resource type="string" name="uninstall_application_text"/>
+    <string name="uninstall_application_text">"คุณต้องการถอนการติดตั้งแอปพลิเคชันนี้หรือไม่"</string>
+    <add-resource type="string" name="uninstall_application_text_all_users"/>
+    <string name="uninstall_application_text_all_users">"คุณต้องการถอนการติดตั้งแอปพลิเคชันนี้สำหรับผู้ใช้"<b>"ทั้งหมด"</b>"หรือไม่ แอปพลิเคชันนี้และข้อมูลในแอปพลิเคชันจะถูกลบจากผู้ใช้"<b>"ทั้งหมด"</b>"ในอุปกรณ์"</string>
+    <add-resource type="string" name="uninstall_application_text_user"/>
+    <string name="uninstall_application_text_user">"คุณต้องการถอนการติดตั้งแอปนี้สำหรับผู้ใช้ <xliff:g id="USERNAME">%1$s</xliff:g> ไหม"</string>
+    <add-resource type="string" name="uninstall_update_text"/>
+    <string name="uninstall_update_text">"แทนที่แอปนี้ด้วยเวอร์ชันเริ่มต้นไหม ระบบจะนำข้อมูลทั้งหมดออก"</string>
+    <add-resource type="string" name="uninstall_update_text_multiuser"/>
+    <string name="uninstall_update_text_multiuser">"แทนที่แอปนี้ด้วยเวอร์ชันเริ่มต้นไหม ระบบจะนำข้อมูลทั้งหมดออก วิธีนี้ส่งผลต่อผู้ใช้ทุกคนที่ใช้อุปกรณ์เครื่องนี้ รวมทั้งผู้ที่มีโปรไฟล์งาน"</string>
+    <add-resource type="string" name="uninstalling"/>
+    <string name="uninstalling">"กำลังถอนการติดตั้ง..."</string>
+    <add-resource type="string" name="uninstall_done"/>
+    <string name="uninstall_done">"ถอนการติดตั้งเสร็จแล้ว"</string>
+    <add-resource type="string" name="uninstall_failed"/>
+    <string name="uninstall_failed">"ถอนการติดตั้งไม่สำเร็จ"</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager"/>
+    <string name="uninstall_failed_device_policy_manager">"ไม่สามารถถอนการติดตั้งเนื่องจากแพ็กเกจนี้เป็นโปรแกรมควบคุมอุปกรณ์ที่ใช้งานอยู่"</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator for some user [CHAR LIMIT=100] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager_of_user"/>
+    <string name="uninstall_failed_device_policy_manager_of_user">"ไม่สามารถถอนการติดตั้ง เนื่องจากปัจจุบันแพ็กเกจนี้ดูแลระบบอุปกรณ์สำหรับผู้ใช้ <xliff:g id="USERNAME">%1$s</xliff:g>"</string>
+    <!-- String presented to the admin user when uninstalling a package for all users failed
+    because a profile owner has marked the target package as not able to be uninstalled
+    [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_all_blocked_profile_owner"/>
+    <string name="uninstall_all_blocked_profile_owner">"แอปนี้จำเป็นสำหรับผู้ใช้หรือโปรไฟล์บางส่วน และถอนการติดตั้งไปแล้วสำหรับส่วนอื่น"</string>
+    <!-- String presented to the user when uninstalling a package failed because a profile owner
+         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_blocked_profile_owner"/>
+    <string name="uninstall_blocked_profile_owner">"แอปนี้จำเป็นสำหรับโปรไฟล์ของคุณและไม่สามารถถอนการติดตั้งได้"</string>
+    <!-- String presented to the user when uninstalling a package failed because a device owner
+         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_blocked_device_owner"/>
+    <string name="uninstall_blocked_device_owner">"ผู้ดูแลระบบอุปกรณ์กำหนดให้ใช้แอปนี้ และไม่สามารถถอนการติดตั้งได้"</string>
+    <!-- String on a button that leads to the "device administrator" configuration setting where a
+        user will be able to disable the device administrator in order to uninstall
+        it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_device_administrators"/>
+    <string name="manage_device_administrators">"จัดการโปรแกรมควบคุมอุปกรณ์"</string>
+    <!-- String on a button that leads to the "Users" page in Settings where a
+        user will be able to remove the secondary user(s) in order to uninstall
+        the app. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_users"/>
+    <string name="manage_users">"จัดการผู้ใช้"</string>
+    <add-resource type="string" name="uninstall_failed_msg"/>
+    <string name="uninstall_failed_msg">"ไม่สามารถถอดการติดตั้ง <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Dialog attributes to indicate parse errors -->
+    <add-resource type="string" name="Parse_error_dlg_text"/>
+    <string name="Parse_error_dlg_text">"พบปัญหาในการแยกวิเคราะห์แพ็กเกจ"</string>
+
+    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
+    <add-resource type="string" name="newPerms"/>
+    <string name="newPerms">"ใหม่"</string>
+    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
+    <add-resource type="string" name="allPerms"/>
+    <string name="allPerms">"ทั้งหมด"</string>
+    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
+    <add-resource type="string" name="privacyPerms"/>
+    <string name="privacyPerms">"ข้อมูลส่วนบุคคล"</string>
+    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
+    <add-resource type="string" name="devicePerms"/>
+    <string name="devicePerms">"การเข้าถึงอุปกรณ์"</string>
+
+    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_new_perms"/>
+    <string name="no_new_perms">"การอัปเดตนี้ไม่จำเป็นต้องมีการอนุญาตใหม่"</string>
+
+    <add-resource type="string" name="grant_confirm_question"/>
+    <string name="grant_confirm_question">"คุณต้องการให้อนุญาตรายการต่อไปนี้หรือไม่ ระบบจะให้สิทธิ์การเข้าถึงแก่"</string>
+
+    <!-- Title for the dialog button to deny a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_deny"/>
+    <string name="grant_dialog_button_deny">"ปฏิเสธ"</string>
+
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+    <add-resource type="string" name="grant_dialog_button_deny_anyway"/>
+    <string name="grant_dialog_button_deny_anyway">"ปฏิเสธอยู่ต่อไป"</string>
+
+    <!-- Template for the current permission from the total number of permissions. -->
+    <add-resource type="string" name="current_permission_template"/>
+    <string name="current_permission_template">"<xliff:g id="CURRENT_PERMISSION_INDEX">%1$s</xliff:g> จาก <xliff:g id="PERMISSION_COUNT">%2$s</xliff:g> รายการ"</string>
+
+    <!-- Template for the warning message when an app requests a permission. -->
+    <add-resource type="string" name="permission_warning_template"/>
+    <string name="permission_warning_template">"อนุญาตให้ &lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt; <xliff:g id="ACTION">%2$s</xliff:g>ไหม"</string>
+
+    <!-- Permissions -->
+
+    <!-- Title for the dialog button to allow a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_allow"/>
+    <string name="grant_dialog_button_allow">"อนุญาต"</string>
+
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+    <add-resource type="string" name="app_permissions_breadcrumb"/>
+    <string name="app_permissions_breadcrumb">"แอป"</string>
+
+    <!-- Title for page of managing application permissions -->
+    <add-resource type="string" name="app_permissions"/>
+    <string name="app_permissions">"สิทธิ์ของแอป"</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again -->
+    <add-resource type="string" name="never_ask_again"/>
+    <string name="never_ask_again">"ไม่ต้องถามอีก"</string>
+
+    <!-- Label when app requests no permissions -->
+    <add-resource type="string" name="no_permissions"/>
+    <string name="no_permissions">"ไม่มีสิทธิ์"</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <add-resource type="string" name="additional_permissions"/>
+    <string name="additional_permissions">"สิทธิ์เพิ่มเติม"</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="additional_permissions_more"/>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">"อีก <xliff:g id="COUNT">%1$d</xliff:g> รายการ"</item>
+        <item quantity="other">"อีก <xliff:g id="COUNT">%1$d</xliff:g> รายการ"</item>
+    </plurals>
+
+    <!-- Warning for turning off permissions on older apps -->
+    <add-resource type="string" name="old_sdk_deny_warning"/>
+    <string name="old_sdk_deny_warning">"แอปนี้ออกแบบมาเพื่อ Android เวอร์ชันเก่า การปฏิเสธสิทธิ์อาจทำให้แอปไม่ทำงานตามที่ต้องการอีกต่อไป"</string>
+
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="default_permission_description"/>
+    <string name="default_permission_description">"ดำเนินการทำงานที่ไม่รู้จัก"</string>
+
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
+   <add-resource type="string" name="app_permissions_group_summary"/>
+    <string name="app_permissions_group_summary">"อนุญาตแล้ว <xliff:g id="COUNT_0">%1$d</xliff:g> จาก <xliff:g id="COUNT_1">%2$d</xliff:g> แอป"</string>
+
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
+   <add-resource type="string" name="menu_show_system"/>
+    <string name="menu_show_system">"แสดงระบบ"</string>
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
+   <add-resource type="string" name="menu_hide_system"/>
+    <string name="menu_hide_system">"ซ่อนระบบ"</string>
+
+   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
+   <add-resource type="string" name="permission_title"/>
+    <string name="permission_title">"สิทธิ์ในการใช้<xliff:g id="PERMISSION">%1$s</xliff:g>"</string>
+
+   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
+   <add-resource type="string" name="no_apps"/>
+    <string name="no_apps">"ไม่มีแอป"</string>
+
+   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+   <add-resource type="string" name="location_settings"/>
+    <string name="location_settings">"การตั้งค่าตำแหน่ง"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
+   <add-resource type="string" name="location_warning"/>
+    <string name="location_warning">"<xliff:g id="APP_NAME">%1$s</xliff:g> เป็นผู้ให้บริการตำแหน่งสำหรับอุปกรณ์นี้ คุณสามารถแก้ไขสิทธิ์เข้าถึงตำแหน่งได้จากการตั้งค่าตำแหน่ง"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
+   <add-resource type="string" name="system_warning"/>
+    <string name="system_warning">"หากคุณปฏิเสธสิทธิ์นี้ คุณลักษณะพื้นฐานของอุปกรณ์อาจไม่ทำงานตามที่ควรจะเป็นอีกต่อไป"</string>
+
+   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
+   <add-resource type="string" name="permission_summary_enforced_by_policy"/>
+    <string name="permission_summary_enforced_by_policy">"บังคับใช้โดยนโยบาย"</string>
+
+   <!-- Text displayed until loading is done -->
+   <add-resource type="string" name="loading"/>
+    <string name="loading">"กำลังโหลด\u2026"</string>
+
+   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+   <add-resource type="string" name="all_permissions"/>
+    <string name="all_permissions">"สิทธิ์ทั้งหมด"</string>
+   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
+   <add-resource type="string" name="other_permissions"/>
+    <string name="other_permissions">"ความสามารถอื่นๆ ของแอป"</string>
+
+   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
+   <add-resource type="string" name="permission_request_title"/>
+    <string name="permission_request_title">"คำขอสิทธิ์"</string>
+
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_title"/>
+    <string name="screen_overlay_title">"ตรวจพบการวางซ้อนหน้าจอ"</string>
+
+   <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_message"/>
+    <string name="screen_overlay_message">"ในการเปลี่ยนแปลงการตั้งค่าสิทธิ์นี้ ก่อนอื่น คุณต้องปิดการวางซ้อนหน้าจอที่การตั้งค่า &gt; แอป"</string>
+
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="screen_overlay_button"/>
+    <string name="screen_overlay_button">"เปิดการตั้งค่า"</string>
+
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_title"/>
+    <string name="wear_not_allowed_dlg_title">"Android Wear"</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_text"/>
+    <string name="wear_not_allowed_dlg_text">"ไม่สามารถติดตั้ง/ถอนการติดตั้งบน Wear"</string>
+
+    <!-- Review of runtime permissions for legacy apps -->
+
+    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+    <add-resource type="string" name="permission_review_warning_title_template_update"/>
+    <string name="permission_review_warning_title_template_update">"อัปเดต <xliff:g id="APP_NAME_0">%1$s</xliff:g> แล้ว อนุญาตให้ <xliff:g id="APP_NAME_1">%1$s</xliff:g> เข้าถึงข้อมูลต่อไปนี้ใช่ไหม"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <add-resource type="string" name="permission_review_title_template_install"/>
+    <string name="permission_review_title_template_install">"โปรดเลือกข้อมูลที่อนุญาตให้ <xliff:g id="APP_NAME">%1$s</xliff:g> เข้าถึง"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <add-resource type="string" name="permission_review_title_template_update"/>
+    <string name="permission_review_title_template_update">"อัปเดต <xliff:g id="APP_NAME">%1$s</xliff:g> แล้ว โปรดเลือกข้อมูลที่อนุญาตให้แอปนี้เข้าถึง"</string>
+
+    <!-- Title for the dialog button to cancel the detailed permission review. -->
+    <add-resource type="string" name="review_button_cancel"/>
+    <string name="review_button_cancel">"ยกเลิก"</string>
+
+    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+    <add-resource type="string" name="review_button_continue"/>
+    <string name="review_button_continue">"ต่อไป"</string>
+
+    <!-- Title for the category listing the new permissions used by an app. -->
+    <add-resource type="string" name="new_permissions_category"/>
+    <string name="new_permissions_category">"สิทธิ์ใหม่"</string>
+
+    <!-- Title for the category listing the current permissions used by an app. -->
+    <add-resource type="string" name="current_permissions_category"/>
+    <string name="current_permissions_category">"สิทธิ์ปัจจุบัน"</string>
+
+    <!-- Message that the app to be installed is being staged -->
+    <add-resource type="string" name="message_staging"/>
+    <string name="message_staging">"กำลังปรับสภาพแวดล้อมของแอป\u2026"</string>
+
+    <!-- Placeholder for an app name when it is unknown -->
+    <add-resource type="string" name="app_name_unknown"/>
+    <string name="app_name_unknown">"ไม่ทราบ"</string></resources>

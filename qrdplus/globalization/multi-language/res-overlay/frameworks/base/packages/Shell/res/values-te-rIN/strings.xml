@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2013 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"షెల్"</string>
+
+    <!-- Title of notification indicating a bugreport is being generated. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_in_progress_title"/>
+    <string name="bugreport_in_progress_title">"బగ్ నివేదిక <xliff:g id="ID">#%d</xliff:g> ఉత్పాదించబడుతోంది"</string>
+    <!-- Title of notification indicating a bugreport has been successfully captured. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_finished_title"/>
+    <string name="bugreport_finished_title">"బగ్ నివేదిక <xliff:g id="ID">#%d</xliff:g> సంగ్రహించబడింది"</string>
+    <!-- Title of notification indicating a bugreport is being updated before it can be shared. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_updating_title"/>
+    <string name="bugreport_updating_title">"బగ్ నివేదికకు వివరాలను జోడిస్తోంది"</string>
+    <!-- Content notification indicating a bugreport is being updated before it can be shared, asking the user to wait [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_updating_wait"/>
+    <string name="bugreport_updating_wait">"దయచేసి వేచి ఉండండి..."</string>
+
+    <!-- Text of notification indicating that bugreport will appear on the phone. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_text"/>
+    <string name="bugreport_finished_text" product="watch">"బగ్ నివేదిక త్వరలో ఫోన్‌లో కనిపిస్తుంది"</string>
+    <!-- Text of notification indicating that tapping will share the captured bugreport. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_text"/>
+    <string name="bugreport_finished_text" product="default">"మీ బగ్ నివేదికను భాగస్వామ్యం చేయడానికి నొక్కండి"</string>
+    <!-- Text of notification indicating that swipe left will share the captured bugreport, but giving user the option to wait for the screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_pending_screenshot_text"/>
+    <string name="bugreport_finished_pending_screenshot_text" product="watch">"స్క్రీన్‌షాట్ లేకుండా మీ బగ్ నివే. భాగ. చేయడానికి నొక్కండి లేదా స్క్రీన్‌షాట్ ముగిసేదాకా వేచి ఉండండి"</string>
+    <!-- Text of notification indicating that tapping will share the captured bugreport, but giving user the option to wait for the screenshot. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="bugreport_finished_pending_screenshot_text"/>
+    <string name="bugreport_finished_pending_screenshot_text" product="default">"స్క్రీన్‌షాట్ లేకుండా మీ బగ్ నివే. భాగ. చేయడానికి నొక్కండి లేదా స్క్రీన్‌షాట్ ముగిసేదాకా వేచి ఉండండి"</string>
+
+    <!-- Body of dialog informing user about contents of a bugreport. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="bugreport_confirm"/>
+    <string name="bugreport_confirm">"బగ్ నివేదికల్లో మీరు గోప్యమైనదిగా పరిగణించే (అనువర్తన వినియోగం మరియు స్థాన డేటా వంటి) డేటాతో సహా సిస్టమ్‌కు సంబంధించిన విభిన్న లాగ్ ఫైల్‌ల డేటా ఉంటుంది. బగ్ నివేదికలను మీరు విశ్వసించే అనువర్తనాలు మరియు వ్యక్తులతో మాత్రమే భాగస్వామ్యం చేయండి."</string>
+    <!-- Checkbox that indicates this dialog should not be shown again when the next bugreport is taken. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="bugreport_confirm_dont_repeat"/>
+    <string name="bugreport_confirm_dont_repeat">"మళ్లీ చూపవద్దు"</string>
+
+    <!-- Title for documents backend that offers bugreports. -->
+    <add-resource type="string" name="bugreport_storage_title"/>
+    <string name="bugreport_storage_title">"బగ్ నివేదికలు"</string>
+
+    <!-- Toast message sent when the bugreport file could be read. -->
+    <add-resource type="string" name="bugreport_unreadable_text"/>
+    <string name="bugreport_unreadable_text">"బగ్ నివేదిక ఫైల్‌ను చదవడం సాధ్యపడలేదు"</string>
+    <!-- Toast message sent when the bugreport details could not be added to the zip file. -->
+    <add-resource type="string" name="bugreport_add_details_to_zip_failed"/>
+    <string name="bugreport_add_details_to_zip_failed">"బగ్ నివేదిక వివరాలను జిప్ ఫైల్‌కు జోడించడం సాధ్యపడలేదు"</string>
+
+    <!-- Title for bug reports received from dumpstate without a name. [CHAR LIMIT=30]-->
+    <add-resource type="string" name="bugreport_unnamed"/>
+    <string name="bugreport_unnamed">"పేరు లేనివి"</string>
+
+    <!-- Title of the notification action that opens the dialog for the user-defined bug report details. -->
+    <add-resource type="string" name="bugreport_info_action"/>
+    <string name="bugreport_info_action">"వివరాలు"</string>
+
+    <!-- Title of the notification action that takes aditional screenshots. -->
+    <add-resource type="string" name="bugreport_screenshot_action"/>
+    <string name="bugreport_screenshot_action">"స్క్రీన్‌షాట్"</string>
+
+    <!-- Toast message sent when the a screenshot for the bug report was taken successfully. -->
+    <add-resource type="string" name="bugreport_screenshot_taken"/>
+    <string name="bugreport_screenshot_taken">"స్క్రీన్‌షాట్ విజయవంతంగా తీయబడింది."</string>
+    <!-- Toast message sent when the a screenshot for the bug report was not taken due to an error. -->
+    <add-resource type="string" name="bugreport_screenshot_failed"/>
+    <string name="bugreport_screenshot_failed">"స్క్రీన్‌షాట్‌ను తీయడం సాధ్యపడలేదు."</string>
+
+    <!--  Title of the dialog asking for user-defined bug report details like name, title, and description. -->
+    <add-resource type="string" name="bugreport_info_dialog_title"/>
+    <string name="bugreport_info_dialog_title">"బగ్ నివేదిక <xliff:g id="ID">#%d</xliff:g> వివరాలు"</string>
+
+    <!-- Text of the label identifying the bug report name, which when set will define a suffix in the
+         bug report file names. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="bugreport_info_name"/>
+    <string name="bugreport_info_name">"ఫైల్ పేరు"</string>
+    <!-- Text of the label identifying the bug report title, which when set will define the
+         Subject of the email message. [CHAR LIMIT=60] -->
+    <add-resource type="string" name="bugreport_info_title"/>
+    <string name="bugreport_info_title">"బగ్ శీర్షిక"</string>
+    <!-- Text of the label identifying the bug report description, which when set will describe
+         what the bug report is about. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="bugreport_info_description"/>
+    <string name="bugreport_info_description">"బగ్ సారాంశం"</string>
+
+    <!-- Label of button that save bugreport details.  -->
+    <add-resource type="string" name="save"/>
+    <string name="save">"సేవ్ చేయి"</string></resources>

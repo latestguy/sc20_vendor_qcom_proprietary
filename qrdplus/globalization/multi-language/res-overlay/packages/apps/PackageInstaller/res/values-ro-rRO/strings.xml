@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Program de instalare a pachetelor"</string>
+    <add-resource type="string" name="next"/>
+    <string name="next">"Înainte"</string>
+    <add-resource type="string" name="install"/>
+    <string name="install">"Instalaţi"</string>
+    <add-resource type="string" name="done"/>
+    <string name="done">"Terminat"</string>
+    <!-- TODO REMOVE LATER -->
+    <add-resource type="string" name="security_settings_desc"/>
+    <string name="security_settings_desc">"Permiteţi acestei aplicaţii să:"</string>
+    <add-resource type="string" name="cancel"/>
+    <string name="cancel">"Anulaţi"</string>
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"Necunoscut"</string>
+    <add-resource type="string" name="installing"/>
+    <string name="installing">"În curs de instalare..."</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"Aplicaţie instalată."</string>
+    <!-- Message for installing a new app that requires some permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question"/>
+    <string name="install_confirm_question">"Doriţi să instalaţi această aplicaţie? Aceasta va avea acces la:"</string>
+    <!-- Message for installing a new app that does not require permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_no_perms"/>
+    <string name="install_confirm_question_no_perms">"Doriţi să instalaţi această aplicaţie? Aplicaţia nu solicită un acces special."</string>
+    <!-- Message for updating an existing app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update"/>
+    <string name="install_confirm_question_update">"Doriţi să instalaţi o actualizare pentru această aplicaţie existentă? Datele existente nu vor fi pierdute. Aplicaţia actualizată va avea acces la:"</string>
+    <!-- Message for updating an existing system app [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system"/>
+    <string name="install_confirm_question_update_system">"Doriţi să instalaţi o actualizare pentru această aplicaţie încorporată? Datele existente nu vor fi pierdute. Aplicaţia actualizată va avea acces la:"</string>
+    <!-- Message for updating an existing app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_no_perms"/>
+    <string name="install_confirm_question_update_no_perms">"Doriţi să instalaţi o actualizare pentru această aplicaţie existentă? Datele existente nu vor fi pierdute. Actualizarea nu are nevoie de acces special."</string>
+    <!-- Message for updating an existing system app, no permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="install_confirm_question_update_system_no_perms"/>
+    <string name="install_confirm_question_update_system_no_perms">"Doriţi să instalaţi o actualizare pentru această aplicaţie încorporată? Datele existente nu vor fi pierdute. Actualizarea nu are nevoie de acces special."</string>
+    <add-resource type="string" name="install_failed"/>
+    <string name="install_failed">"Aplicaţia nu este instalată."</string>
+    <!-- Reason displayed when installation fails because the package was blocked
+        from being installed (e.g., device policy, verification, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_blocked"/>
+    <string name="install_failed_blocked">"Instalarea pachetului a fost blocată."</string>
+    <!-- Reason displayed when installation fails because the package conflicts with
+        an existing application (e.g., incompatible certificates) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_conflict"/>
+    <string name="install_failed_conflict">"Pachetul este în conflict cu un pachet existent cu același nume."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current tablet (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tablet">"Această aplicație nu este compatibilă cu tableta dvs."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current TV (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="tv">"Această aplicație nu este compatibilă cu televizorul dvs."</string>
+    <!-- Reason displayed when installation fails because the package is incompatible with
+       the current phone (e.g., missing native code for the current ABI, newer SDK, ...) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_incompatible"/>
+    <string name="install_failed_incompatible" product="default">"Această aplicație nu este compatibilă cu telefonul dvs."</string>
+    <!-- Reason displayed when installation fails because the installation package itself is invalid
+        in some way (e.g., corrupt) [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_invalid_apk"/>
+    <string name="install_failed_invalid_apk">"Pachetul pare a fi deteriorat."</string>
+    <!-- Message presented when an application could not be installed on the tablet for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tablet">"<xliff:g id="APP_NAME">%1$s</xliff:g> nu a putut fi instalată pe tableta dvs."</string>
+    <!-- Message presented when an application could not be installed on the TV for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="tv">"Aplicația <xliff:g id="APP_NAME">%1$s</xliff:g> nu a putut fi instalată pe televizor."</string>
+    <!-- Message presented when an application could not be installed on the phone for some reason. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="install_failed_msg"/>
+    <string name="install_failed_msg" product="default">"<xliff:g id="APP_NAME">%1$s</xliff:g> nu a putut fi instalată pe telefonul dvs."</string>
+    <add-resource type="string" name="launch"/>
+    <string name="launch">"Deschideţi"</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tablet">"Pentru securitate, tableta blochează instalarea aplicaţiilor obţinute din surse necunoscute."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="tv">"Pentru securitate, televizorul este setat să blocheze instalarea aplicațiilor din surse necunoscute."</string>
+    <!-- Message presented in a dialog box when a package is requested to be installed, but the "Allow unknown applications" checkbox is not enabled. [CHAR LIMIT=100] -->
+    <add-resource type="string" name="unknown_apps_dlg_text"/>
+    <string name="unknown_apps_dlg_text" product="default">"Pentru securitate, telefonul blochează instalarea aplicaţiilor obţinute din surse necunoscute."</string>
+    <!-- Message presented in a dialog box when the device administrator restricts the installation of apps from unknown sources. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="unknown_apps_admin_dlg_text"/>
+    <string name="unknown_apps_admin_dlg_text">"Administratorul nu permite instalarea aplicațiilor obținute din surse necunoscute."</string>
+
+    <add-resource type="string" name="ok"/>
+    <string name="ok">"OK"</string>
+    <add-resource type="string" name="settings"/>
+    <string name="settings">"Setări"</string>
+    <add-resource type="string" name="manage_applications"/>
+    <string name="manage_applications">"Gestionaţi aplicaţii"</string>
+    <add-resource type="string" name="dlg_app_replacement_title"/>
+    <string name="dlg_app_replacement_title">"Înlocuiţi aplicaţia?"</string>
+    <add-resource type="string" name="dlg_app_replacement_statement"/>
+    <string name="dlg_app_replacement_statement">"Aplicaţia pe care o instalaţi va înlocui o altă aplicaţie.\n \nToate datele dvs. anterioare de utilizator vor fi salvate."</string>
+    <!-- Dialog attributes when replacing system app -->
+    <add-resource type="string" name="dlg_sys_app_replacement_statement"/>
+    <string name="dlg_sys_app_replacement_statement">"Aceasta este o aplicaţie de sistem.\n \nToate datele dvs. anterioare de utilizator vor fi salvate."</string>
+    <add-resource type="string" name="out_of_space_dlg_title"/>
+    <string name="out_of_space_dlg_title">"Spaţiu de stocare insuficient"</string>
+    <add-resource type="string" name="out_of_space_dlg_text"/>
+    <string name="out_of_space_dlg_text">"<xliff:g id="APP_NAME">%1$s</xliff:g> nu a putut fi instalată. Eliberaţi spaţiu şi încercaţi din nou."</string>
+    <!-- strings related to uninstall activity -->
+    <add-resource type="string" name="dlg_ok"/>
+    <string name="dlg_ok">"OK"</string>
+    <add-resource type="string" name="app_not_found_dlg_title"/>
+    <string name="app_not_found_dlg_title">"Aplicaţia nu a fost găsită"</string>
+    <add-resource type="string" name="app_not_found_dlg_text"/>
+    <string name="app_not_found_dlg_text">"Aplicaţia nu a fost găsită în lista de aplicaţii instalate."</string>
+    <add-resource type="string" name="uninstall_application_title"/>
+    <string name="uninstall_application_title">"Dezinstalaţi aplicaţia"</string>
+    <add-resource type="string" name="uninstall_update_title"/>
+    <string name="uninstall_update_title">"Dezinstalaţi actualizarea"</string>
+    <add-resource type="string" name="uninstall_activity_text"/>
+    <string name="uninstall_activity_text">" <xliff:g id="ACTIVITY_NAME">%1$s</xliff:g> face parte din următoarea aplicaţie:"</string>
+    <add-resource type="string" name="uninstall_application_text"/>
+    <string name="uninstall_application_text">"Doriţi să dezinstalaţi această aplicaţie?"</string>
+    <add-resource type="string" name="uninstall_application_text_all_users"/>
+    <string name="uninstall_application_text_all_users">"Doriţi să dezinstalaţi această aplicaţie pentru "<b>"toţi"</b>" utilizatorii? Aplicaţia şi datele acesteia vor fi eliminate de la "<b>"toţi"</b>" utilizatorii de pe acest dispozitiv."</string>
+    <add-resource type="string" name="uninstall_application_text_user"/>
+    <string name="uninstall_application_text_user">"Dezinstalați această aplicație pentru utilizatorul <xliff:g id="USERNAME">%1$s</xliff:g>?"</string>
+    <add-resource type="string" name="uninstall_update_text"/>
+    <string name="uninstall_update_text">"Înlocuiți această aplicație cu versiunea din fabrică? Toate datele vor fi eliminate."</string>
+    <add-resource type="string" name="uninstall_update_text_multiuser"/>
+    <string name="uninstall_update_text_multiuser">"Înlocuiți această aplicație cu versiunea din fabrică? Toate datele vor fi eliminate. Această acțiune va afecta toți utilizatorii dispozitivului, inclusiv pe cei cu profiluri de serviciu."</string>
+    <add-resource type="string" name="uninstalling"/>
+    <string name="uninstalling">"În curs de dezinstalare..."</string>
+    <add-resource type="string" name="uninstall_done"/>
+    <string name="uninstall_done">"Dezinstalare finalizată."</string>
+    <add-resource type="string" name="uninstall_failed"/>
+    <string name="uninstall_failed">"Dezinstalare nefinalizată."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager"/>
+    <string name="uninstall_failed_device_policy_manager">"Nu se poate dezinstala, acest pachet este un administrator de dispozitive activ."</string>
+    <!-- String presented to the user when uninstalling a package failed because the target package
+        is a current device administrator for some user [CHAR LIMIT=100] -->
+    <add-resource type="string" name="uninstall_failed_device_policy_manager_of_user"/>
+    <string name="uninstall_failed_device_policy_manager_of_user">"Nu se poate dezinstala, pachetul este administrator de dispozitive activ pt. <xliff:g id="USERNAME">%1$s</xliff:g>."</string>
+    <!-- String presented to the admin user when uninstalling a package for all users failed
+    because a profile owner has marked the target package as not able to be uninstalled
+    [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_all_blocked_profile_owner"/>
+    <string name="uninstall_all_blocked_profile_owner">"Aplicația este necesară unor utilizatori sau profiluri și a fost dezinstalată pentru alții"</string>
+    <!-- String presented to the user when uninstalling a package failed because a profile owner
+         has marked the target package as not able to be uninstalled [CHAR LIMIT=120] -->
+    <add-resource type="string" name="uninstall_blocked_profile_owner"/>
+    <string name="uninstall_blocked_profile_owner">"Aplicația este necesară pentru profilul dvs. și nu poate fi dezinstalată."</string>
+    <!-- String presented to the user when uninstalling a package failed because a device owner
+         has marked the the target package as not able to be uninstalled [CHAR LIMIT=80] -->
+    <add-resource type="string" name="uninstall_blocked_device_owner"/>
+    <string name="uninstall_blocked_device_owner">"Aplicație necesară administratorului dispozitivului. Nu poate fi dezinstalată."</string>
+    <!-- String on a button that leads to the "device administrator" configuration setting where a
+        user will be able to disable the device administrator in order to uninstall
+        it. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_device_administrators"/>
+    <string name="manage_device_administrators">"Gestionaţi administratori de dispozitive"</string>
+    <!-- String on a button that leads to the "Users" page in Settings where a
+        user will be able to remove the secondary user(s) in order to uninstall
+        the app. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="manage_users"/>
+    <string name="manage_users">"Gestionați utilizatorii"</string>
+    <add-resource type="string" name="uninstall_failed_msg"/>
+    <string name="uninstall_failed_msg">"<xliff:g id="APP_NAME">%1$s</xliff:g> nu a putut fi dezinstalată."</string>
+
+    <!-- Dialog attributes to indicate parse errors -->
+    <add-resource type="string" name="Parse_error_dlg_text"/>
+    <string name="Parse_error_dlg_text">"A apărut o problemă la analizarea pachetului."</string>
+
+    <!-- Tab label for new permissions being added to an existing app [CHAR LIMIT=20] -->
+    <add-resource type="string" name="newPerms"/>
+    <string name="newPerms">"Noi"</string>
+    <!-- Tab label for all permissions of an app being installed [CHAR LIMIT=20] -->
+    <add-resource type="string" name="allPerms"/>
+    <string name="allPerms">"Toate"</string>
+    <!-- Tab label for permissions related to user privacy [CHAR LIMIT=20] -->
+    <add-resource type="string" name="privacyPerms"/>
+    <string name="privacyPerms">"Confidenţialitate"</string>
+    <!-- Tab label for permissions related to device behavior [CHAR LIMIT=20] -->
+    <add-resource type="string" name="devicePerms"/>
+    <string name="devicePerms">"Acces la dispozitiv"</string>
+
+    <!-- Body text for new tab when there are no new permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_new_perms"/>
+    <string name="no_new_perms">"Această actualizare nu necesită permisiuni noi."</string>
+
+    <add-resource type="string" name="grant_confirm_question"/>
+    <string name="grant_confirm_question">"Doriți să acordați următoarele permisiuni? Utilizatorul va avea acces la:"</string>
+
+    <!-- Title for the dialog button to deny a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_deny"/>
+    <string name="grant_dialog_button_deny">"Refuzați"</string>
+
+    <!-- Title for the dialog button to deny a permission grant despite a warning of implications. -->
+    <add-resource type="string" name="grant_dialog_button_deny_anyway"/>
+    <string name="grant_dialog_button_deny_anyway">"Nu permiteți oricum"</string>
+
+    <!-- Template for the current permission from the total number of permissions. -->
+    <add-resource type="string" name="current_permission_template"/>
+    <string name="current_permission_template">"<xliff:g id="CURRENT_PERMISSION_INDEX">%1$s</xliff:g> din <xliff:g id="PERMISSION_COUNT">%2$s</xliff:g>"</string>
+
+    <!-- Template for the warning message when an app requests a permission. -->
+    <add-resource type="string" name="permission_warning_template"/>
+    <string name="permission_warning_template">"Permiteți &lt;b&gt;<xliff:g id="APP_NAME">%1$s</xliff:g>&lt;/b&gt; să <xliff:g id="ACTION">%2$s</xliff:g>?"</string>
+
+    <!-- Permissions -->
+
+    <!-- Title for the dialog button to allow a permission grant. -->
+    <add-resource type="string" name="grant_dialog_button_allow"/>
+    <string name="grant_dialog_button_allow">"Permiteți"</string>
+
+    <!-- Breadcrumb for page of managing application permissions [CHAR LIMIT=50] -->
+    <add-resource type="string" name="app_permissions_breadcrumb"/>
+    <string name="app_permissions_breadcrumb">"Aplicații"</string>
+
+    <!-- Title for page of managing application permissions -->
+    <add-resource type="string" name="app_permissions"/>
+    <string name="app_permissions">"Permisiuni pentru aplicație"</string>
+    <!-- Checkbox that allows user to not be questioned about this permission
+         request again -->
+    <add-resource type="string" name="never_ask_again"/>
+    <string name="never_ask_again">"Nu mai întreba"</string>
+
+    <!-- Label when app requests no permissions -->
+    <add-resource type="string" name="no_permissions"/>
+    <string name="no_permissions">"Fără permisiuni"</string>
+
+    <!-- Label for button that leads to more permissions [CHAR LIMIT=40] -->
+    <add-resource type="string" name="additional_permissions"/>
+    <string name="additional_permissions">"Permisiuni suplimentare"</string>
+
+    <!-- Description of how many more permissions to view on next page [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="additional_permissions_more"/>
+    <plurals name="additional_permissions_more">
+        <item quantity="one">"Încă <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+        <item quantity="other">"Încă <xliff:g id="COUNT">%1$d</xliff:g>"</item>
+    </plurals>
+
+    <!-- Warning for turning off permissions on older apps -->
+    <add-resource type="string" name="old_sdk_deny_warning"/>
+    <string name="old_sdk_deny_warning">"Această aplicație a fost creată pentru o versiune Android mai veche. Dacă nu acordați permisiunea, este posibil ca aceasta să nu mai funcționeze corespunzător."</string>
+
+    <!-- The default description of a permission, i.e. what it does.  [CHAR LIMIT=40] -->
+    <add-resource type="string" name="default_permission_description"/>
+    <string name="default_permission_description">"efectuează o acțiune necunoscută"</string>
+
+    <!-- Summary of number of apps currently granted a single permission [CHAR LIMIT=45] -->
+   <add-resource type="string" name="app_permissions_group_summary"/>
+    <string name="app_permissions_group_summary">"<xliff:g id="COUNT_0">%1$d</xliff:g> din <xliff:g id="COUNT_1">%2$d</xliff:g> (de) aplicații au această permisiune"</string>
+
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are shown -->
+   <add-resource type="string" name="menu_show_system"/>
+    <string name="menu_show_system">"Afișați aplicațiile de sistem"</string>
+   <!-- [CHAR LIMIT=NONE] Menu for manage permissions to control whether system apps are hidden -->
+   <add-resource type="string" name="menu_hide_system"/>
+    <string name="menu_hide_system">"Ascundeți aplicațiile de sistem"</string>
+
+   <!-- [CHAR LIMIT=30] Title for page managing what apps have a permission granted -->
+   <add-resource type="string" name="permission_title"/>
+    <string name="permission_title">"Permisiuni pentru <xliff:g id="PERMISSION">%1$s</xliff:g>"</string>
+
+   <!-- [CHAR LIMIT=NONE] Label when no apps requesting this permission -->
+   <add-resource type="string" name="no_apps"/>
+    <string name="no_apps">"Nicio aplicație"</string>
+
+   <!-- [CHAR LIMIT=30] Title of button that leads to location settings -->
+   <add-resource type="string" name="location_settings"/>
+    <string name="location_settings">"Setări privind locația"</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning about how this app cannot have location permission disabled -->
+   <add-resource type="string" name="location_warning"/>
+    <string name="location_warning">"<xliff:g id="APP_NAME">%1$s</xliff:g> este un furnizor de servicii de localizare pentru acest dispozitiv. Accesul la locație poate fi modificat din setările privind locația."</string>
+
+   <!-- [CHAR LIMIT=NONE] Warning message when turning off permission for system apps -->
+   <add-resource type="string" name="system_warning"/>
+    <string name="system_warning">"Dacă refuzați această permisiune, este posibil ca funcțiile de bază ale dispozitivului să nu mai funcționeze corespunzător."</string>
+
+   <!-- [CHAR LIMIT=NONE] Summary of a permission switch when it's enforced by policy -->
+   <add-resource type="string" name="permission_summary_enforced_by_policy"/>
+    <string name="permission_summary_enforced_by_policy">"Aplicată conform politicii"</string>
+
+   <!-- Text displayed until loading is done -->
+   <add-resource type="string" name="loading"/>
+    <string name="loading">"Se încarcă..."</string>
+
+   <!-- [CHAR LIMIT=45] Title of all permissions settings -->
+   <add-resource type="string" name="all_permissions"/>
+    <string name="all_permissions">"Toate permisiunile"</string>
+   <!-- [CHAR LIMIT=45] Group of permissions granted to app automatically when installed. -->
+   <add-resource type="string" name="other_permissions"/>
+    <string name="other_permissions">"Alte funcții ale aplicației"</string>
+
+   <!-- Title of the permission dialog for accessibility purposes- spoken to the user. [CHAR LIMIT=none] -->
+   <add-resource type="string" name="permission_request_title"/>
+    <string name="permission_request_title">"Solicitare de permisiune"</string>
+
+    <!-- Title for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_title"/>
+    <string name="screen_overlay_title">"S-a detectat suprapunerea pe ecran"</string>
+
+   <!-- Message for the dialog that warns the user they need to turn off screen overlays
+        before permissions can be changed. The "Settings > Apps" conveys to the user to
+        go to Settings and click on apps, this may need updates in RTL languages. [CHAR LIMIT=NONE] -->
+   <add-resource type="string" name="screen_overlay_message"/>
+    <string name="screen_overlay_message">"Ca să schimbați această setare pentru permisiuni, mai întâi trebuie să dezactivați suprapunerea pe ecran din Setări &gt; Aplicații"</string>
+
+    <!-- Button for the dialog that warns the user they need to turn off screen overlays
+         before permissions can be changed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="screen_overlay_button"/>
+    <string name="screen_overlay_button">"Deschideți setările"</string>
+
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_title"/>
+    <string name="wear_not_allowed_dlg_title">"Android Wear"</string>
+    <!-- Title of dialog telling users that Install/Uninstall action is not supported on Android Wear. -->
+    <add-resource type="string" name="wear_not_allowed_dlg_text"/>
+    <string name="wear_not_allowed_dlg_text">"Acțiunile Instalați/Dezinstalați nu sunt acceptate pe Wear."</string>
+
+    <!-- Review of runtime permissions for legacy apps -->
+
+    <!-- Template for the warning title when an updated app's requested permissions are reviewed. -->
+    <add-resource type="string" name="permission_review_warning_title_template_update"/>
+    <string name="permission_review_warning_title_template_update">"Aplicația <xliff:g id="APP_NAME_0">%1$s</xliff:g> a fost actualizată. Permiteți aplicației <xliff:g id="APP_NAME_1">%1$s</xliff:g> să acceseze următoarele?"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on install. -->
+    <add-resource type="string" name="permission_review_title_template_install"/>
+    <string name="permission_review_title_template_install">"Alegeți ce va putea accesa <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
+
+    <!-- Template for the screen title when app permissions are reviewed on update. -->
+    <add-resource type="string" name="permission_review_title_template_update"/>
+    <string name="permission_review_title_template_update">"Aplicația <xliff:g id="APP_NAME">%1$s</xliff:g> a fost actualizată. Alegeți ce va putea accesa această aplicație."</string>
+
+    <!-- Title for the dialog button to cancel the detailed permission review. -->
+    <add-resource type="string" name="review_button_cancel"/>
+    <string name="review_button_cancel">"Anulați"</string>
+
+    <!-- Title for the dialog button to continue accepting the detailed permission review. -->
+    <add-resource type="string" name="review_button_continue"/>
+    <string name="review_button_continue">"Continuați"</string>
+
+    <!-- Title for the category listing the new permissions used by an app. -->
+    <add-resource type="string" name="new_permissions_category"/>
+    <string name="new_permissions_category">"Permisiuni noi"</string>
+
+    <!-- Title for the category listing the current permissions used by an app. -->
+    <add-resource type="string" name="current_permissions_category"/>
+    <string name="current_permissions_category">"Permisiuni actuale"</string>
+
+    <!-- Message that the app to be installed is being staged -->
+    <add-resource type="string" name="message_staging"/>
+    <string name="message_staging">"Se pregătește aplicația\u2026"</string>
+
+    <!-- Placeholder for an app name when it is unknown -->
+    <add-resource type="string" name="app_name_unknown"/>
+    <string name="app_name_unknown">"Necunoscut"</string></resources>

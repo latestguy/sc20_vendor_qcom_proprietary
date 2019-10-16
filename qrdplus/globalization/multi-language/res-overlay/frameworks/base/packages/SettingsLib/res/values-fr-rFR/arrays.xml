@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Recherche\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"Connexion\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"Authentification..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"Récupération de l\'adresse IP\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"Connecté"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Interrompu"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"Déconnexion\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Déconnecté"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Échec"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Bloqué"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Mauvaise connexion évitée momentanément"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"Recherche\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"Connexion à <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"Authentification avec <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"Récupération de l\'adresse IP à partir de <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"Connecté à <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"Interrompu"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"Déconnexion de <xliff:g id="NETWORK_NAME">%1$s</xliff:g>\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"Déconnecté"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"Échec"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"Bloqué"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"Mauvaise connexion évitée momentanément"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"Ne jamais vérifier"</item>
+        <item>"Vérifier le contenu GDN uniquement"</item>
+        <item>"Toujours vérifier"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"Ne jamais utiliser la vérification HDCP"</item>
+        <item>"Utiliser la vérification HDCP uniquement pour le contenu GDN"</item>
+        <item>"Toujours utiliser la vérification HDCP"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"Désactivé"</item>
+        <item>"64 Ko"</item>
+        <item>"256 Ko"</item>
+        <item>"1 Mo"</item>
+        <item>"4 Mo"</item>
+        <item>"16 Mo"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"Désactivé"</item>
+        <item>"64 Ko"</item>
+        <item>"256 Ko"</item>
+        <item>"1 Mo"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"Désactivé"</item>
+        <item>"64 Ko par tampon journal"</item>
+        <item>"256 Ko par tampon journal"</item>
+        <item>"1 Mo par tampon journal"</item>
+        <item>"4 Mo par tampon journal"</item>
+        <item>"16 Mo par tampon journal"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"Désactivé"</item>
+        <item>"Tous"</item>
+        <item>"Tous sauf radio"</item>
+        <item>"Noyau uniquement"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"Désactivé"</item>
+        <item>"Toutes les mémoires tampon journal"</item>
+        <item>"Toutes sauf les mémoires tampon journal radio"</item>
+        <item>"Tampon journal du noyau uniquement"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"Animation désactivée"</item>
+        <item>"Échelle d\'animation 0,5x"</item>
+        <item>"Échelle d\'animation 1x"</item>
+        <item>"Échelle d\'animation 1,5x"</item>
+        <item>"Échelle d\'animation 2x"</item>
+        <item>"Échelle d\'animation 5x"</item>
+        <item>"Échelle d\'animation 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"Animation désactivée"</item>
+        <item>"Échelle d\'animation 0,5x"</item>
+        <item>"Échelle d\'animation 1x"</item>
+        <item>"Échelle d\'animation 1,5x"</item>
+        <item>"Échelle d\'animation 2x"</item>
+        <item>"Échelle d\'animation 5x"</item>
+        <item>"Échelle d\'animation 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"Animation désactivée"</item>
+        <item>"Échelle d\'animation 0,5x"</item>
+        <item>"Échelle d\'animation 1x"</item>
+        <item>"Échelle d\'animation 1,5x"</item>
+        <item>"Échelle d\'animation 2x"</item>
+        <item>"Échelle d\'animation 5x"</item>
+        <item>"Échelle d\'animation 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"Aucun"</item>
+        <item>"480p"</item>
+        <item>"480p (sécurisé)"</item>
+        <item>720p</item>
+        <item>"720p (sécurisé)"</item>
+        <item>"1080p"</item>
+        <item>"1080p (sécurisé)"</item>
+        <item>4K</item>
+        <item>"4K (sécurisé)"</item>
+        <item>"4K (adapté à la haute résolution)"</item>
+        <item>"4K (adapté haute résolution, sécu.)"</item>
+        <item>"720p, 1080p (double écran)"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"Aucun"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace (graphismes)"</item>
+        <item>"Appeler une pile sur glGetError"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"Désactivé"</item>
+        <item>"Dessiner zone de découpage non rectangulaire en bleu"</item>
+        <item>"Surligner en vert les commandes de dessin testées"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"Désactivé"</item>
+        <item>"À l\'écran sous forme de barres"</item>
+        <item>"Dans adb shell dumpsys gfxinfo"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"Désactivé"</item>
+        <item>"Afficher les zones de conflit"</item>
+        <item>"Afficher couleurs de zones adaptées à deutéranomalie"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"Limite standard"</item>
+        <item>"Aucun processus en arrière-plan"</item>
+        <item>"Un processus maximum"</item>
+        <item>"Deux processus maximum"</item>
+        <item>"Trois processus maximum"</item>
+        <item>"Quatre processus maximum"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"En charge"</item>
+        <item>"MTP (Media Transfer Protocol)"</item>
+        <item>"PTP (Picture Transfer Protocol)"</item>
+        <item>"RNDIS (Ethernet USB)"</item>
+        <item>"Source audio"</item>
+        <item>MIDI</item>
+    </string-array></resources>

@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Application name used in Settings/Apps. Default label for activities
+         that don't specify a label. -->
+    <add-resource type="string" name="applicationLabel"/>
+    <string name="applicationLabel">"전화"</string>
+
+    <!-- Title for the activity that dials the phone.  This is the name
+         used in the Launcher icon. -->
+    <add-resource type="string" name="launcherActivityLabel"/>
+    <string name="launcherActivityLabel">"전화"</string>
+
+
+    <!-- Title for the activity that dials the phone, when launched directly into the dialpad -->
+    <add-resource type="string" name="launcherDialpadActivityLabel"/>
+    <string name="launcherDialpadActivityLabel">"전화 다이얼패드"</string>
+    <!-- The description text for the dialer tab.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+    This is especially valuable for views without textual representation like ImageView.
+
+    [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialerIconLabel"/>
+    <string name="dialerIconLabel">"휴대전화"</string>
+
+    <!-- The description text for the call log tab.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+    This is especially valuable for views without textual representation like ImageView.
+
+    [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="callHistoryIconLabel"/>
+    <string name="callHistoryIconLabel">"통화 기록"</string>
+
+    <!-- Text for a menu item to report a call as having been incorrectly identified. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_report_number"/>
+    <string name="action_report_number">"잘못된 번호 신고하기"</string>
+
+    <!-- Option displayed in context menu to copy long pressed phone number. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_copy_number_text"/>
+    <string name="action_copy_number_text">"전화번호 복사"</string>
+
+    <!-- Option displayed in context menu to copy long pressed voicemail transcription. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="copy_transcript_text"/>
+    <string name="copy_transcript_text">"텍스트 변환 복사"</string>
+
+    <!-- Label for action to block a number. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_block_number"/>
+    <string name="action_block_number">"번호 차단"</string>
+
+    <!-- Text for snackbar to undo blocking a number. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="snackbar_number_blocked"/>
+    <string name="snackbar_number_blocked">"<xliff:g id="NUMBER">%1$s</xliff:g> 차단됨"</string>
+
+    <!-- Label for action to unblock a number [CHAR LIMIT=48]-->
+    <add-resource type="string" name="action_unblock_number"/>
+    <string name="action_unblock_number">"번호 차단 해제"</string>
+
+    <!-- Text for snackbar to undo unblocking a number. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="snackbar_number_unblocked"/>
+    <string name="snackbar_number_unblocked">"<xliff:g id="NUMBER">%1$s</xliff:g> 차단 해제됨"</string>
+
+    <!-- Text for undo button in snackbar for blocking/unblocking number. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="block_number_undo"/>
+    <string name="block_number_undo">"실행취소"</string>
+
+    <!-- Menu item in call details used to remove a call or voicemail from the call log. -->
+    <add-resource type="string" name="call_details_delete"/>
+    <string name="call_details_delete">"삭제"</string>
+
+    <!-- Label for action to edit a number before calling it. [CHAR LIMIT=48] -->
+    <add-resource type="string" name="action_edit_number_before_call"/>
+    <string name="action_edit_number_before_call">"통화하기 전에 번호 수정"</string>
+
+    <!-- Menu item used to remove all calls from the call log -->
+    <add-resource type="string" name="call_log_delete_all"/>
+    <string name="call_log_delete_all">"통화 기록 삭제"</string>
+
+    <!-- Menu item used to delete a voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_trash_voicemail"/>
+    <string name="call_log_trash_voicemail">"음성사서함 삭제"</string>
+
+    <!-- Menu item used to archive a voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_archive_voicemail"/>
+    <string name="call_log_archive_voicemail">"음성사서함 보관처리"</string>
+
+    <!-- Menu item used to send a voicemail through other applications [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_share_voicemail"/>
+    <string name="call_log_share_voicemail">"음성사서함 공유"</string>
+
+    <!-- Text for snackbar to undo a voicemail delete. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="snackbar_voicemail_deleted"/>
+    <string name="snackbar_voicemail_deleted">"음성사서함 삭제됨"</string>
+
+    <!-- Text for snackbar to undo a voicemail archive. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="snackbar_voicemail_archived"/>
+    <string name="snackbar_voicemail_archived">"음성사서함 보관처리됨"</string>
+
+    <!-- Text for undo button in snackbar for voicemail deletion. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="snackbar_voicemail_deleted_undo"/>
+    <string name="snackbar_voicemail_deleted_undo">"실행취소"</string>
+
+    <!-- Text for going to archive button in snackbar for voicemail archive. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="snackbar_voicemail_archived_goto"/>
+    <string name="snackbar_voicemail_archived_goto">"보관함으로 이동"</string>
+
+    <!-- Title of the confirmation dialog for clearing the call log. [CHAR LIMIT=37]  -->
+    <add-resource type="string" name="clearCallLogConfirmation_title"/>
+    <string name="clearCallLogConfirmation_title">"통화 기록을 삭제하시겠습니까?"</string>
+
+    <!-- Confirmation dialog for clearing the call log. [CHAR LIMIT=NONE]  -->
+    <add-resource type="string" name="clearCallLogConfirmation"/>
+    <string name="clearCallLogConfirmation">"모든 통화가 기록에서 삭제됩니다."</string>
+
+    <!-- Title of the "Clearing call log" progress-dialog [CHAR LIMIT=35] -->
+    <add-resource type="string" name="clearCallLogProgress_title"/>
+    <string name="clearCallLogProgress_title">"통화 기록을 삭제하는 중\u2026"</string>
+
+    <!-- Title used for the activity for placing a call. This name appears
+         in activity disambig dialogs -->
+    <add-resource type="string" name="userCallActivityLabel"/>
+    <string name="userCallActivityLabel" product="default">"전화"</string>
+
+    <!-- Notification strings -->
+    <!-- Missed call notification label, used when there's exactly one missed call -->
+    <add-resource type="string" name="notification_missedCallTitle"/>
+    <string name="notification_missedCallTitle">"부재중 전화"</string>
+    <!-- Missed call notification label, used when there's exactly one missed call from work contact -->
+    <add-resource type="string" name="notification_missedWorkCallTitle"/>
+    <string name="notification_missedWorkCallTitle">"부재중 업무 통화"</string>
+    <!-- Missed call notification label, used when there are two or more missed calls -->
+    <add-resource type="string" name="notification_missedCallsTitle"/>
+    <string name="notification_missedCallsTitle">"부재중 통화"</string>
+    <!-- Missed call notification message used when there are multiple missed calls -->
+    <add-resource type="string" name="notification_missedCallsMsg"/>
+    <string name="notification_missedCallsMsg">"부재중 통화 <xliff:g id="NUM_MISSED_CALLS">%s</xliff:g>통"</string>
+    <!-- Message for "call back" Action, which is displayed in the missed call notificaiton.
+         The user will be able to call back to the person or the phone number.
+         [CHAR LIMIT=18] -->
+    <add-resource type="string" name="notification_missedCall_call_back"/>
+    <string name="notification_missedCall_call_back">"통화하기"</string>
+    <!-- Message for "reply via sms" action, which is displayed in the missed call notification.
+         The user will be able to send text messages using the phone number.
+         [CHAR LIMIT=18] -->
+    <add-resource type="string" name="notification_missedCall_message"/>
+    <string name="notification_missedCall_message">"문자 메시지"</string>
+        <!-- DO NOT TRANSLATE. Hardcoded number used for restricted incoming phone numbers. -->
+    <add-resource type="string" name="handle_restricted"/>
+    <string name="handle_restricted">RESTRICTED</string>
+
+    <!-- Title of the notification of new voicemails. [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="notification_voicemail_title"/>
+    <plurals name="notification_voicemail_title">
+        <item quantity="one">"음성메일"</item>
+        <item quantity="other">"음성메일 <xliff:g id="COUNT">%1$d</xliff:g>개"</item>
+    </plurals>
+
+    <!-- Used in the notification of a new voicemail for the action to play the voicemail. -->
+    <add-resource type="string" name="notification_action_voicemail_play"/>
+    <string name="notification_action_voicemail_play">"재생"</string>
+
+    <!-- Used to build a list of names or phone numbers, to indicate the callers who left
+         voicemails.
+         The first argument may be one or more callers, the most recent ones.
+         The second argument is an additional callers.
+         This string is used to build a list of callers.
+
+         [CHAR LIMIT=10]
+     -->
+    <add-resource type="string" name="notification_voicemail_callers_list"/>
+    <string name="notification_voicemail_callers_list">"<xliff:g id="NEWER_CALLERS">%1$s</xliff:g>, <xliff:g id="OLDER_CALLER">%2$s</xliff:g>"</string>
+
+    <!-- Text used in the ticker to notify the user of the latest voicemail. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="notification_new_voicemail_ticker"/>
+    <string name="notification_new_voicemail_ticker">"<xliff:g id="CALLER">%1$s</xliff:g>님이 보낸 새 음성사서함"</string>
+
+    <!-- Message to show when there is an error playing back the voicemail. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_playback_error"/>
+    <string name="voicemail_playback_error">"음성사서함을 재생할 수 없습니다."</string>
+
+    <!-- Message to display whilst we are waiting for the content to be fetched. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_fetching_content"/>
+    <string name="voicemail_fetching_content">"음성사서함 로드 중\u2026"</string>
+
+    <!-- Message to display whilst we are waiting for the content to be archived. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_archiving_content"/>
+    <string name="voicemail_archiving_content">"음성사서함 보관처리 중\u2026"</string>
+
+    <!-- Message to display if we fail to get content within a suitable time period. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_fetching_timout"/>
+    <string name="voicemail_fetching_timout">"음성사서함을 로드할 수 없습니다."</string>
+
+    <!-- The header to show that call log is only showing voicemail calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_voicemail_header"/>
+    <string name="call_log_voicemail_header">"음성사서함 메시지만"</string>
+
+    <!-- The header to show that call log is only showing incoming calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_incoming_header"/>
+    <string name="call_log_incoming_header">"수신 전화만"</string>
+
+    <!-- The header to show that call log is only showing outgoing calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_outgoing_header"/>
+    <string name="call_log_outgoing_header">"발신 전화만"</string>
+
+    <!-- The header to show that call log is only showing missed calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="call_log_missed_header"/>
+    <string name="call_log_missed_header">"부재중 전화만"</string>
+
+    <!-- Title for promo card for visual voicemail. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="visual_voicemail_title"/>
+    <string name="visual_voicemail_title">"시각적 음성사서함"</string>
+
+    <!-- Promo card text for visual voicemail. -->
+    <add-resource type="string" name="visual_voicemail_text"/>
+    <string name="visual_voicemail_text">"전화를 걸지 않고도 음성사서함을 확인하고 들을 수 있습니다. 데이터 요금이 부과될 수 있습니다."</string>
+
+    <!-- Text for "Settings" link for visual voicemail promo card. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="visual_voicemail_settings"/>
+    <string name="visual_voicemail_settings">"설정"</string>
+
+    <!--  Voicemail status message shown at the top of call log to notify the user that no new
+    voicemails are currently available. This can happen when both notification as well as data
+    connection to the voicemail server is lost. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_voicemail_not_available"/>
+    <string name="voicemail_status_voicemail_not_available">"음성사서함 업데이트를 사용할 수 없습니다."</string>
+    <!--  Voicemail status message shown at the top of call log to notify the user that there is no
+      data connection to the voicemail server, but there are new voicemails waiting on the server.
+      [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_messages_waiting"/>
+    <string name="voicemail_status_messages_waiting">"새로운 음성사서함이 대기 중이지만 현재 로드할 수 없습니다."</string>
+    <!--  Voicemail status message shown at the top of call log to invite the user to configure
+    visual voicemail. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_configure_voicemail"/>
+    <string name="voicemail_status_configure_voicemail">"음성사서함 설정"</string>
+    <!--  Voicemail status message shown at the top of call details screen to notify the user that
+    the audio of this voicemail is not available. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="voicemail_status_audio_not_available"/>
+    <string name="voicemail_status_audio_not_available">"오디오가 지원되지 않습니다."</string>
+
+    <!--  User action prompt shown next to a voicemail status message to let the user configure
+    visual voicemail. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="voicemail_status_action_configure"/>
+    <string name="voicemail_status_action_configure">"설정"</string>
+    <!--  User action prompt shown next to a voicemail status message to let the user call voicemail
+    server directly to listen to the voicemails. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="voicemail_status_action_call_server"/>
+    <string name="voicemail_status_action_call_server">"음성사서함 연결"</string>
+
+    <!-- The counter for calls in a group and the date of the latest call as shown in the call log [CHAR LIMIT=15] -->
+    <add-resource type="string" name="call_log_item_count_and_date"/>
+    <string name="call_log_item_count_and_date">"<xliff:g id="DATE">%2$s</xliff:g>에 통화 <xliff:g id="COUNT">%1$d</xliff:g>통"</string>
+
+    <!-- Title for the sms disambiguation dialog -->
+    <add-resource type="string" name="sms_disambig_title"/>
+    <string name="sms_disambig_title">"번호 선택"</string>
+
+    <!-- Title for the call disambiguation dialog -->
+    <add-resource type="string" name="call_disambig_title"/>
+    <string name="call_disambig_title">"번호 선택"</string>
+
+    <!-- Message next to disamgiguation dialog check box -->
+    <add-resource type="string" name="make_primary"/>
+    <string name="make_primary">"이 선택사항 저장"</string>
+
+    <!-- String describing the Search ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_search_button"/>
+    <string name="description_search_button">"검색"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <add-resource type="string" name="description_dial_button"/>
+    <string name="description_dial_button">"전화걸기"</string>
+
+    <!-- String describing the digits text box containing the number to dial.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_digits_edittext"/>
+    <string name="description_digits_edittext">"전화를 걸 번호"</string>
+
+    <!-- String describing the button in the voicemail playback to start/stop playback.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_start_stop"/>
+    <string name="description_playback_start_stop">"재생 실행 또는 중지"</string>
+
+    <!-- String describing the button in the voicemail playback to switch on/off speakerphone.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_speakerphone"/>
+    <string name="description_playback_speakerphone">"스피커폰 켜고 끄기"</string>
+
+    <!-- String describing the seekbar in the voicemail playback to seek playback position.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_playback_seek"/>
+    <string name="description_playback_seek">"재생 위치 찾기"</string>
+
+    <!-- String describing the button in the voicemail playback to decrease playback rate.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_rate_decrease"/>
+    <string name="description_rate_decrease">"재생 속도 낮추기"</string>
+
+    <!-- String describing the button in the voicemail playback to increase playback rate.
+
+         Used by AccessibilityService to announce the purpose of the view.
+    -->
+    <add-resource type="string" name="description_rate_increase"/>
+    <string name="description_rate_increase">"재생 속도 높이기"</string>
+
+    <!-- Content description for the fake action menu button that brings up the call history
+         activity -->
+    <add-resource type="string" name="action_menu_call_history_description"/>
+    <string name="action_menu_call_history_description">"통화 기록"</string>
+
+    <!-- Content description for the fake action menu overflow button.
+         This should be same as the description for the real action menu
+         overflow button available in ActionBar.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="action_menu_overflow_description"/>
+    <string name="action_menu_overflow_description" msgid="2295659037509008453">"옵션 더보기"</string>
+
+    <!-- Content description for the button that displays the dialpad
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="action_menu_dialpad_button"/>
+    <string name="action_menu_dialpad_button">"다이얼패드"</string>
+
+    <!-- Menu item used to show only outgoing in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_outgoing_only"/>
+    <string name="menu_show_outgoing_only">"발신 전화만 표시"</string>
+
+    <!-- Menu item used to show only incoming in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_incoming_only"/>
+    <string name="menu_show_incoming_only">"수신 전화만 표시"</string>
+
+    <!-- Menu item used to show only missed in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_missed_only"/>
+    <string name="menu_show_missed_only">"부재중 전화만 표시"</string>
+
+    <!-- Menu item used to show only voicemails in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_voicemails_only"/>
+    <string name="menu_show_voicemails_only">"음성사서함만 표시"</string>
+
+    <!-- Menu item used to show all calls in the call log. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_show_all_calls"/>
+    <string name="menu_show_all_calls">"모든 통화 표시"</string>
+
+    <!-- Menu items for dialpad options as part of Pause and Wait ftr [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_add_to_4g_conference_call"/>
+    <string name="menu_add_to_4g_conference_call">"4G 다자간 통화에 추가"</string>
+    <add-resource type="string" name="menu_4g_conference_call"/>
+    <string name="menu_4g_conference_call">"4G 다자간 통화"</string>
+    <add-resource type="string" name="add_2sec_pause"/>
+    <string name="add_2sec_pause">"2초 간 일시 정지 추가"</string>
+    <add-resource type="string" name="add_wait"/>
+    <string name="add_wait">"대기 시간 추가"</string>
+
+    <!-- Label for the dialer app setting page [CHAR LIMIT=30]-->
+    <add-resource type="string" name="dialer_settings_label"/>
+    <string name="dialer_settings_label">"설정"</string>
+
+    <!-- Menu item to create a new contact [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_newContact"/>
+    <string name="menu_newContact">"새 연락처"</string>
+
+    <!-- Menu item to display all contacts [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_allContacts"/>
+    <string name="menu_allContacts">"전체 연락처"</string>
+
+    <!-- Title bar for call detail screen -->
+    <add-resource type="string" name="callDetailTitle"/>
+    <string name="callDetailTitle">"통화 세부정보"</string>
+
+    <!-- Toast for call detail screen when couldn't read the requested details -->
+    <add-resource type="string" name="toast_call_detail_error"/>
+    <string name="toast_call_detail_error">"세부정보를 사용할 수 없습니다."</string>
+
+    <!-- Item label: jump to the in-call DTMF dialpad.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_useDtmfDialpad"/>
+    <string name="dialer_useDtmfDialpad">"터치톤 키패드 사용"</string>
+
+    <!-- Item label: jump to the in-call UI.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_returnToInCallScreen"/>
+    <string name="dialer_returnToInCallScreen">"진행 중인 통화로 돌아가기"</string>
+
+    <!-- Item label: use the Dialer's dialpad to add another call.
+         (Part of a list of options shown in the dialer when another call
+         is already in progress.) -->
+    <add-resource type="string" name="dialer_addAnotherCall"/>
+    <string name="dialer_addAnotherCall">"통화 추가"</string>
+
+    <!-- Title for incoming call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_incoming"/>
+    <string name="type_incoming">"수신전화"</string>
+
+    <!-- Title for outgoing call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_outgoing"/>
+    <string name="type_outgoing">"발신전화"</string>
+
+    <!-- Title for missed call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_missed"/>
+    <string name="type_missed">"부재중 전화"</string>
+
+    <!-- Title for incoming video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_video"/>
+    <string name="type_incoming_video">"수신 화상 통화"</string>
+
+    <!-- Title for outgoing video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_video"/>
+    <string name="type_outgoing_video">"발신 화상 통화"</string>
+
+    <!-- Title for missed video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_video"/>
+    <string name="type_missed_video">"부재중 화상 통화"</string>
+
+    <!-- Title for incoming 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_volte"/>
+    <string name="type_incoming_volte">"수신 4G 음성 통화"</string>
+
+     <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_video_lte"/>
+    <string name="type_incoming_video_lte">"수신 4G 화상 통화"</string>
+
+    <!-- Title for outgoing 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_volte"/>
+    <string name="type_outgoing_volte">"발신 4G 음성 통화"</string>
+
+     <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_video_lte"/>
+    <string name="type_outgoing_video_lte">"발신 4G 화상 통화"</string>
+
+    <!-- Title for missed 4G voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_volte"/>
+    <string name="type_missed_volte">"부재중 4G 음성 통화"</string>
+
+     <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_video_lte"/>
+    <string name="type_missed_video_lte">"부재중 4G 화상 통화"</string>
+
+    <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_incoming_vowifi"/>
+    <string name="type_incoming_vowifi">"수신 WiFi 음성 통화"</string>
+
+     <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_incoming_video_wifi"/>
+    <string name="type_incoming_video_wifi">"수신 WiFi 화상 통화"</string>
+
+    <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_outgoing_vowifi"/>
+    <string name="type_outgoing_vowifi">"발신 WiFi 음성 통화"</string>
+
+     <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_outgoing_video_wifi"/>
+    <string name="type_outgoing_video_wifi">"발신 WiFi 화상 통화"</string>
+
+    <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
+    <add-resource type="string" name="type_missed_vowifi"/>
+    <string name="type_missed_vowifi">"부재중 WiFi 음성 통화"</string>
+
+     <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->
+     <add-resource type="string" name="type_missed_video_wifi"/>
+    <string name="type_missed_video_wifi">"부재중 WiFi 화상 통화"</string>
+
+    <!-- Title for voicemail details screen -->
+    <add-resource type="string" name="type_voicemail"/>
+    <string name="type_voicemail">"음성사서함"</string>
+
+    <!-- Title for rejected call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_rejected"/>
+    <string name="type_rejected">"거부된 통화"</string>
+
+    <!-- Title for blocked call type. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="type_blocked"/>
+    <string name="type_blocked">"차단된 통화"</string>
+
+    <!-- Description for incoming calls going to voice mail vs. not -->
+    <add-resource type="string" name="actionIncomingCall"/>
+    <string name="actionIncomingCall">"수신전화"</string>
+
+    <!-- String describing the icon in the call log used to play a voicemail.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_call_log_play_button"/>
+    <string name="description_call_log_play_button">"음성사서함 재생"</string>
+
+    <!-- String describing the button to view the contact for the current number.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_view_contact"/>
+    <string name="description_view_contact">"<xliff:g id="NAME">%1$s</xliff:g>님의 연락처 보기"</string>
+
+    <!-- String describing the button to call a number or contact.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_call"/>
+    <string name="description_call">"전화하기:<xliff:g id="NAME">%1$s</xliff:g>"</string>
+
+    <!-- String describing the button to access the contact details for a name or number.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_contact_details"/>
+    <string name="description_contact_details">"<xliff:g id="NAMEORNUMBER">%1$s</xliff:g>의 연락처 세부정보"</string>
+
+    <!-- String indicating the number of calls to/from a caller in the call log.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+          This is especially valuable for views without textual representation like ImageView.
+    -->
+    <add-resource type="string" name="description_num_calls"/>
+    <string name="description_num_calls">"통화 횟수: <xliff:g id="NUMBEROFCALLS">%1$s</xliff:g>번"</string>
+
+    <!-- String indicating a call log entry had video capabilities.
+
+    Note: AccessibilityServices use this attribute to announce what the view represents.
+          This is especially valuable for views without textual representation like ImageView.
+          [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_video_call"/>
+    <string name="description_video_call">"화상 통화"</string>
+
+    <!-- String describing the button to SMS a number or contact.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+              [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_send_text_message"/>
+    <string name="description_send_text_message">"<xliff:g id="NAME">%1$s</xliff:g>님에게 SMS 보내기"</string>
+
+    <!-- String describing the icon in the call log used to represent an unheard voicemail left to
+         the user.
+
+        Note: AccessibilityServices use this attribute to announce what the view represents.
+              This is especially valuable for views without textual representation like ImageView.
+              [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="description_call_log_unheard_voicemail"/>
+    <string name="description_call_log_unheard_voicemail">"듣지 않은 음성사서함"</string>
+
+    <!-- String describing the icon used to start a voice search -->
+    <add-resource type="string" name="description_start_voice_search"/>
+    <string name="description_start_voice_search">"음성 검색 시작"</string>
+
+    <!-- Menu item used to call a contact, containing the number of the contact to call -->
+    <add-resource type="string" name="menu_callNumber"/>
+    <string name="menu_callNumber">"<xliff:g id="NUMBER">%s</xliff:g>에 전화"</string>
+
+    <!-- String used to display calls from unknown numbers in the call log -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"알 수 없음"</string>
+
+    <!-- String used for displaying calls to the voicemail number in the call log -->
+    <add-resource type="string" name="voicemail"/>
+    <string name="voicemail">"음성사서함"</string>
+
+    <!-- String used to display calls from private numbers in the call log -->
+    <add-resource type="string" name="private_num"/>
+    <string name="private_num">"비공개 번호"</string>
+
+    <!-- String used to display calls from pay phone in the call log -->
+    <add-resource type="string" name="payphone"/>
+    <string name="payphone">"공중전화"</string>
+
+    <!-- A nicely formatted call duration displayed when viewing call details for duration less than 1 minute. For example "28 sec" -->
+    <add-resource type="string" name="callDetailsShortDurationFormat"/>
+    <string name="callDetailsShortDurationFormat">"<xliff:g id="SECONDS">%s</xliff:g>초"</string>
+
+    <!-- A nicely formatted call duration displayed when viewing call details. For example "42 min 28 sec" -->
+    <add-resource type="string" name="callDetailsDurationFormat"/>
+    <string name="callDetailsDurationFormat">"<xliff:g id="MINUTES">%s</xliff:g>분 <xliff:g id="SECONDS">%s</xliff:g>초"</string>
+
+    <!-- The string 'Today'. This value is used in the voicemailCallLogDateTimeFormat rather than an
+         explicit date string, e.g. Jul 25, 2014, in the event that a voicemail was created on the
+         current day -->
+    <add-resource type="string" name="voicemailCallLogToday"/>
+    <string name="voicemailCallLogToday">@string/call_log_header_today</string>
+
+    <!-- A format string used for displaying the date and time for a voicemail call log. For example: Jul 25, 2014 at 2:49 PM
+         The date will be replaced by 'Today' for voicemails created on the current day. For example: Today at 2:49 PM -->
+    <add-resource type="string" name="voicemailCallLogDateTimeFormat"/>
+    <string name="voicemailCallLogDateTimeFormat">"<xliff:g id="DATE">%1$s</xliff:g> <xliff:g id="TIME">%2$s</xliff:g>"</string>
+
+    <!-- Format for duration of voicemails which are displayed when viewing voicemail logs. For example "01:22" -->
+    <add-resource type="string" name="voicemailDurationFormat"/>
+    <string name="voicemailDurationFormat"><xliff:g id="minutes" example="10">%1$02d</xliff:g>:<xliff:g id="seconds" example="20">%2$02d</xliff:g></string>
+
+    <!-- A format string used for displaying the date, time and duration for a voicemail call log. For example: Jul 25, 2014 at 2:49 PM • 00:34 -->
+    <add-resource type="string" name="voicemailCallLogDateTimeFormatWithDuration"/>
+    <string name="voicemailCallLogDateTimeFormatWithDuration">"<xliff:g id="DATEANDTIME">%1$s</xliff:g> \u2022 <xliff:g id="DURATION">%2$s</xliff:g>"</string>
+
+    <!-- Dialog message which is shown when the user tries to make a phone call
+         to prohibited phone numbers [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialog_phone_call_prohibited_message"/>
+    <string name="dialog_phone_call_prohibited_message" msgid="4313552620858880999">"이 번호로 전화를 걸 수 없습니다."</string>
+
+    <!-- Dialog message which is shown when the user tries to check voicemail
+         while the system isn't ready for the access. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="dialog_voicemail_not_ready_message"/>
+    <string name="dialog_voicemail_not_ready_message">"음성사서함을 설정하려면 메뉴 &gt; 설정으로 이동하세요."</string>
+
+    <!-- Dialog message which is shown when the user tries to check voicemail
+         while the system is in airplane mode. The user cannot access to
+         voicemail service in Airplane mode. [CHAR LIMI=NONE] -->
+    <add-resource type="string" name="dialog_voicemail_airplane_mode_message"/>
+    <string name="dialog_voicemail_airplane_mode_message">"음성사서함에 메시지를 남기려면 먼저 비행기 모드를 해제하세요."</string>
+
+    <!-- Message that appears in the favorites tab of the Phone app when the contact list has not fully loaded yet (below the favorite and frequent contacts) [CHAR LIMIT=20] -->
+    <add-resource type="string" name="contact_list_loading"/>
+    <string name="contact_list_loading">"로드 중\u2026"</string>
+
+    <!-- The title of a dialog that displays the IMEI of the phone -->
+    <add-resource type="string" name="imei"/>
+    <string name="imei">IMEI</string>
+
+    <!-- The title of a dialog that displays the MEID of the CDMA phone -->
+    <add-resource type="string" name="meid"/>
+    <string name="meid">MEID</string>
+
+    <!-- Dialog text displayed when loading a phone number from the SIM card for speed dial -->
+    <add-resource type="string" name="simContacts_emptyLoading"/>
+    <string name="simContacts_emptyLoading">"SIM 카드에서 로딩 중..."</string>
+
+    <!-- Dialog title displayed when loading a phone number from the SIM card for speed dial -->
+    <add-resource type="string" name="simContacts_title"/>
+    <string name="simContacts_title">"SIM 카드 연락처"</string>
+
+    <!-- Message displayed when there is no application available to handle the add contact menu option. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="add_contact_not_available"/>
+    <string name="add_contact_not_available">"사용할 수 있는 연락처 앱이 없습니다."</string>
+
+    <!-- Message displayed when there is no application available to handle voice search. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voice_search_not_available"/>
+    <string name="voice_search_not_available">"음성검색이 지원되지 않습니다."</string>
+
+    <!-- Message displayed when the Phone application has been disabled and a phone call cannot
+         be made. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="call_not_available"/>
+    <string name="call_not_available">"전화 애플리케이션을 사용 중지했으므로 전화를 걸 수 없습니다."</string>
+
+    <!-- Message displayed when there is no application available to handle a particular action.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="activity_not_available"/>
+    <string name="activity_not_available">"이 기기에 작업을 처리할 수 있는 앱이 없습니다."</string>
+
+    <!-- Hint displayed in dialer search box when there is no query that is currently typed.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dialer_hint_find_contact"/>
+    <string name="dialer_hint_find_contact">"연락처 검색"</string>
+
+    <!-- Hint displayed in add blocked number search box when there is no query typed.
+         [CHAR LIMIT=45] -->
+    <add-resource type="string" name="block_number_search_hint"/>
+    <string name="block_number_search_hint">"번호 추가 또는 연락처 검색"</string>
+
+    <!-- String resource for the font-family to use for the call log activity's title
+         Do not translate. -->
+    <add-resource type="string" name="call_log_activity_title_font_family"/>
+    <string name="call_log_activity_title_font_family">sans-serif-light</string>
+
+    <!-- String resource for the font-family to use for the full call history footer
+         Do not translate. -->
+    <add-resource type="string" name="view_full_call_history_font_family"/>
+    <string name="view_full_call_history_font_family">sans-serif</string>
+
+    <!-- Text displayed when the call log is empty. -->
+    <add-resource type="string" name="call_log_all_empty"/>
+    <string name="call_log_all_empty">"통화 기록이 비어있습니다."</string>
+
+    <!-- Label of the button displayed when the call history is empty. Allows the user to make a call. -->
+    <add-resource type="string" name="call_log_all_empty_action"/>
+    <string name="call_log_all_empty_action">"전화 걸기"</string>
+
+    <!-- Text displayed when the list of missed calls is empty -->
+    <add-resource type="string" name="call_log_missed_empty"/>
+    <string name="call_log_missed_empty">"부재중 전화가 없습니다."</string>
+
+    <!-- Text displayed when the list of voicemails is empty -->
+    <add-resource type="string" name="call_log_voicemail_empty"/>
+    <string name="call_log_voicemail_empty">"음성사서함 받은편지함이 비어 있습니다."</string>
+
+    <!-- Text displayed when the list of voicemail archives is empty -->
+    <add-resource type="string" name="voicemail_archive_empty"/>
+    <string name="voicemail_archive_empty">"음성사서함 보관함이 비어있습니다."</string>
+
+    <!--  Menu option to show favorite contacts only -->
+    <add-resource type="string" name="show_favorites_only"/>
+    <string name="show_favorites_only">"즐겨찾는 연락처만 표시"</string>
+
+    <!--  Title of activity that displays a list of all calls -->
+    <add-resource type="string" name="call_log_activity_title"/>
+    <string name="call_log_activity_title">"통화 기록"</string>
+
+    <!--  Title of activity that displays a list of all archived voicemails -->
+    <add-resource type="string" name="voicemail_archive_activity_title"/>
+    <string name="voicemail_archive_activity_title">"음성사서함 보관함"</string>
+
+    <!-- Title for the call log tab containing the list of all voicemails and calls
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_all_title"/>
+    <string name="call_log_all_title">"전체"</string>
+
+    <!-- Title for the call log tab containing the list of all missed calls only
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_missed_title"/>
+    <string name="call_log_missed_title">"부재중 전화"</string>
+
+    <!-- Title for the call log tab containing the list of all voicemail calls only
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_voicemail_title"/>
+    <string name="call_log_voicemail_title">"음성사서함"</string>
+
+    <!-- Title for dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=30]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_title"/>
+    <string name="migrate_blocked_numbers_dialog_title">"새로운 간편 차단 기능"</string>
+
+    <!-- Body text for dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_message"/>
+    <string name="migrate_blocked_numbers_dialog_message">"사용자를 보호하기 위하여 전화에서 차단 작동 방식을 변경해야 합니다. 차단된 번호에서 발송되는 통화 및 문자 메시지는 수신되지 않으며 다른 앱과 차단 사실이 공유될 수 있습니다."</string>
+
+    <!-- Positive confirmation button for the dialog which opens when the user needs to migrate to the framework blocking implementation [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_allow_button"/>
+    <string name="migrate_blocked_numbers_dialog_allow_button">"허용"</string>
+
+    <!-- Do not translate -->
+    <add-resource type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
+    <string name="migrate_blocked_numbers_dialog_cancel_button">@android:string/cancel</string>
+
+    <!-- Confirmation dialog title for blocking a number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_title"/>
+    <string name="block_number_confirmation_title">"<xliff:g id="NUMBER">%1$s</xliff:g>번을 차단할까요?"</string>
+
+    <!-- Confirmation dialog message for blocking a number with visual voicemail active.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_vvm"/>
+    <string name="block_number_confirmation_message_vvm">"이 번호에서 걸려오는 전화가 차단되며 음성사서함이 자동으로 삭제됩니다."</string>
+
+    <!-- Confirmation dialog message for blocking a number with no visual voicemail.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_no_vvm"/>
+    <string name="block_number_confirmation_message_no_vvm">"이 번호에서 걸려오는 전화가 차단되지만, 발신자가 음성사서함에 메시지를 남길 수는 있습니다."</string>
+
+    <!-- Confirmation dialog message for blocking a number with new filtering enabled.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_confirmation_message_new_filtering"/>
+    <string name="block_number_confirmation_message_new_filtering">"이 번호로부터 수신되는 전화와 문자를 더 이상 받지 않습니다."</string>
+
+    <!-- Block number alert dialog button [CHAR LIMIT=32] -->
+    <add-resource type="string" name="block_number_ok"/>
+    <string name="block_number_ok">"차단"</string>
+
+    <!-- Confirmation dialog for unblocking a number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unblock_number_confirmation_title"/>
+    <string name="unblock_number_confirmation_title">"<xliff:g id="NUMBER">%1$s</xliff:g>번을 차단 해제할까요?"</string>
+
+    <!-- Unblock number alert dialog button [CHAR LIMIT=32] -->
+    <add-resource type="string" name="unblock_number_ok"/>
+    <string name="unblock_number_ok">"차단 해제"</string>
+
+    <!-- Accessibility text for the tab showing recent and favorite contacts who can be called.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_speed_dial"/>
+    <string name="tab_speed_dial">"단축번호"</string>
+
+    <!-- Accessibility text for the tab showing the call history. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_history"/>
+    <string name="tab_history">"통화 기록"</string>
+
+    <!-- Accessibility text for the tab showing the user's contacts. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_all_contacts"/>
+    <string name="tab_all_contacts">"연락처"</string>
+
+    <!-- Accessibility text for the tab showing the user's voicemails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="tab_voicemail"/>
+    <string name="tab_voicemail">"음성사서함"</string>
+
+    <!--  Text displayed when user swipes out a favorite contact -->
+    <add-resource type="string" name="favorite_hidden"/>
+    <string name="favorite_hidden">"즐겨찾기에서 삭제됨"</string>
+    <!--  Text displayed for the undo button to undo removing a favorite contact -->
+    <add-resource type="string" name="favorite_hidden_undo"/>
+    <string name="favorite_hidden_undo">"실행취소"</string>
+
+    <!-- Shortcut item used to call a number directly from search -->
+    <add-resource type="string" name="search_shortcut_call_number"/>
+    <string name="search_shortcut_call_number">"<xliff:g id="NUMBER">%s</xliff:g>에 전화"</string>
+
+    <!-- Shortcut item used to add a number directly to a new contact from search.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_create_new_contact"/>
+    <string name="search_shortcut_create_new_contact">"새 연락처 만들기"</string>
+
+    <!-- Shortcut item used to add a number to an existing contact directly from search.
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_add_to_contact"/>
+    <string name="search_shortcut_add_to_contact">"연락처에 추가"</string>
+
+    <!-- Shortcut item used to send a text message directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_send_sms_message"/>
+    <string name="search_shortcut_send_sms_message">"SMS 보내기"</string>
+
+    <!-- Shortcut item used to make a video call directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_make_video_call"/>
+    <string name="search_shortcut_make_video_call">"화상 통화하기"</string>
+
+    <!-- Shortcut item used to block a number directly from search. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="search_shortcut_block_number"/>
+    <string name="search_shortcut_block_number">"번호 차단"</string>
+
+    <!-- Number of missed calls shown on call card [CHAR LIMIT=40] -->
+    <add-resource type="string" name="num_missed_calls"/>
+    <string name="num_missed_calls">"새로운 부재중 전화 <xliff:g id="NUMBER">%s</xliff:g>건"</string>
+
+    <!-- Shown when there are no speed dial favorites. -->
+    <add-resource type="string" name="speed_dial_empty"/>
+    <string name="speed_dial_empty">"아직 단축 다이얼이 설정된 연락처가 없습니다."</string>
+
+    <!-- Shown as an action when there are no speed dial favorites -->
+    <add-resource type="string" name="speed_dial_empty_add_favorite_action"/>
+    <string name="speed_dial_empty_add_favorite_action">"단축 다이얼 추가"</string>
+
+    <!-- Shown when there are no contacts in the all contacts list. -->
+    <add-resource type="string" name="all_contacts_empty"/>
+    <string name="all_contacts_empty">"아직 연락처가 없습니다."</string>
+
+    <!-- Shown as an action when the all contacts list is empty -->
+    <add-resource type="string" name="all_contacts_empty_add_contact_action"/>
+    <string name="all_contacts_empty_add_contact_action">"연락처 추가"</string>
+
+    <!-- Shows up as a tooltip to provide a hint to the user that the profile pic in a contact
+         card can be tapped to bring up a list of all numbers, or long pressed to start reordering
+         [CHAR LIMIT=NONE]
+    -->
+    <add-resource type="string" name="contact_tooltip"/>
+    <string name="contact_tooltip">"이미지를 터치하여 모든 번호를 확인하거나 길게 터치하여 재정렬합니다."</string>
+
+    <!-- Remove button that shows up when contact is long-pressed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="remove_contact"/>
+    <string name="remove_contact">"삭제"</string>
+
+    <!-- Button text for the "video call" displayed underneath an entry in the call log.
+         Tapping causes a video call to be placed to the caller represented by the call log entry.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_video_call"/>
+    <string name="call_log_action_video_call">"화상 통화"</string>
+
+    <!-- Button text for a button displayed underneath an entry in the call log, which opens up a
+         messaging app to send a SMS to the number represented by the call log entry.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_send_message"/>
+    <string name="call_log_action_send_message">"메시지 보내기"</string>
+
+    <!-- Button text for the button displayed underneath an entry in the call log.
+         Tapping navigates the user to the call details screen where the user can view details for
+         the call log entry. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_details"/>
+    <string name="call_log_action_details">"통화 세부정보"</string>
+
+    <!-- Button text for the button displayed underneath an entry in the call log, which when
+         tapped triggers a return call to the named user. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_log_action_call"/>
+    <string name="call_log_action_call">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에 전화 걸기"</string>
+
+    <!-- String describing an incoming missed call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_incoming_missed_call"/>
+    <string name="description_incoming_missed_call">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>의 부재중 전화(<xliff:g id="TYPEORLOCATION">^2</xliff:g>, <xliff:g id="TIMEOFCALL">^3</xliff:g>, <xliff:g id="PHONEACCOUNT">^4</xliff:g>)"</string>
+
+    <!-- String describing an incoming answered call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_incoming_answered_call"/>
+    <string name="description_incoming_answered_call">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에게 걸려온 수신 전화(<xliff:g id="TYPEORLOCATION">^2</xliff:g>, <xliff:g id="TIMEOFCALL">^3</xliff:g>, <xliff:g id="PHONEACCOUNT">^4</xliff:g>)"</string>
+
+    <!-- String describing an "unread" voicemail entry in the voicemails tab.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_unread_voicemail"/>
+    <string name="description_unread_voicemail">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>, <xliff:g id="TYPEORLOCATION">^2</xliff:g>, <xliff:g id="TIMEOFCALL">^3</xliff:g>, <xliff:g id="PHONEACCOUNT">^4</xliff:g>에서 보낸 읽지 않은 음성사서함"</string>
+
+    <!-- String describing a "read" voicemail entry in the voicemails tab.
+     Note: AccessibilityServices use this attribute to announce what the view represents.
+     [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_read_voicemail"/>
+    <string name="description_read_voicemail">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>, <xliff:g id="TYPEORLOCATION">^2</xliff:g>, <xliff:g id="TIMEOFCALL">^3</xliff:g>, <xliff:g id="PHONEACCOUNT">^4</xliff:g>에서 보낸 음성사서함"</string>
+
+    <!-- String describing an outgoing call entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_outgoing_call"/>
+    <string name="description_outgoing_call">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에게 건 전화(<xliff:g id="TYPEORLOCATION">^2</xliff:g>, <xliff:g id="TIMEOFCALL">^3</xliff:g>, <xliff:g id="PHONEACCOUNT">^4</xliff:g>)"</string>
+
+    <!-- String describing the phone account the call was made on or to. This string will be used
+         in description_incoming_missed_call, description_incoming_answered_call, and
+         description_outgoing_call.
+         Note: AccessibilityServices uses this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_phone_account"/>
+    <string name="description_phone_account">"<xliff:g id="PHONEACCOUNT">^1</xliff:g> 계정"</string>
+
+    <!-- String describing the secondary line number the call was received via.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_via_number"/>
+    <string name="description_via_number">"<xliff:g id="NUMBER">%1$s</xliff:g>번으로 수신"</string>
+
+    <!-- TextView text item showing the secondary line number the call was received via.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="call_log_via_number"/>
+    <string name="call_log_via_number">"<xliff:g id="NUMBER">%1$s</xliff:g>번으로 수신"</string>
+
+    <!-- String describing the PhoneAccount and via number that a call was received on, if both are
+         visible.
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_via_number_phone_account"/>
+    <string name="description_via_number_phone_account">"<xliff:g id="PHONEACCOUNT">%1$s</xliff:g>에서 <xliff:g id="NUMBER">%2$s</xliff:g>번으로 수신"</string>
+
+    <!-- The order of the PhoneAccount and via number that a call was received on,
+         if both are visible.
+         [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="call_log_via_number_phone_account"/>
+    <string name="call_log_via_number_phone_account">"<xliff:g id="PHONEACCOUNT">%1$s</xliff:g> <xliff:g id="NUMBER">%2$s</xliff:g>번으로 수신"</string>
+
+    <!-- String describing the phone icon on a call log list item. When tapped, it will place a
+         call to the number represented by that call log entry. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_call_log_call_action"/>
+    <string name="description_call_log_call_action">"통화"</string>
+
+    <!-- String describing the "call" action for an entry in the call log.  The call back
+         action triggers a return call to the named user.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_call_action"/>
+    <string name="description_call_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에 전화 걸기"</string>
+
+    <!-- String describing the "video call" action for an entry in the call log.  The video call
+         action triggers a return video call to the named person/number.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_video_call_action"/>
+    <string name="description_video_call_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에 화상 통화 걸기"</string>
+
+    <!-- String describing the "listen" action for an entry in the call log.  The listen
+         action is shown for call log entries representing a voicemail message and this button
+         triggers playing back the voicemail.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_action"/>
+    <string name="description_voicemail_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g> 음성사서함 듣기"</string>
+
+    <!-- String describing the "play voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_play"/>
+    <string name="description_voicemail_play">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에서 발신한 음성사서함 재생"</string>
+
+    <!-- String describing the "pause voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_pause"/>
+    <string name="description_voicemail_pause">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에서 발신한 음성사서함 일시중지"</string>
+
+
+    <!-- String describing the "delete voicemail" action for an entry in the call log.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_voicemail_delete"/>
+    <string name="description_voicemail_delete">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>에서 발신한 음성사서함 삭제"</string>
+
+    <!-- String describing the number of new voicemails, displayed as a number badge on a tab.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="plurals" name="description_voicemail_unread"/>
+    <plurals name="description_voicemail_unread">
+        <item quantity="one">"새 음성사서함 <xliff:g id="COUNT_0">%d</xliff:g>개"</item>
+        <item quantity="other">"새 음성사서함 <xliff:g id="COUNT_1">%d</xliff:g>개"</item>
+    </plurals>
+
+    <!-- Description for the "create new contact" action for an entry in the call log. This action
+         opens a screen for creating a new contact for this name or number. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_create_new_contact_action"/>
+    <string name="description_create_new_contact_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g> 연락처 만들기"</string>
+
+    <!-- Description for the "add to existing contact" action for an entry in the call log. This
+         action opens a screen for adding this name or number to an existing contact.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_add_to_existing_contact_action"/>
+    <string name="description_add_to_existing_contact_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>님을 기존 연락처에 추가합니다."</string>
+
+    <!-- String describing the "details" action for an entry in the call log.  The details action
+         displays the call details screen for an entry in the call log.  This shows the calls to
+         and from the specified number associated with the call log entry.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="description_details_action"/>
+    <string name="description_details_action">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>의 통화 세부정보"</string>
+
+    <!-- Toast message which appears when a call log entry is deleted.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="toast_entry_removed"/>
+    <string name="toast_entry_removed">"통화 기록에서 삭제했습니다."</string>
+
+    <!-- String used as a header in the call log above calls which occurred today.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_today"/>
+    <string name="call_log_header_today">"오늘"</string>
+
+    <!-- String used as a header in the call log above calls which occurred yesterday.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_yesterday"/>
+    <string name="call_log_header_yesterday">"어제"</string>
+
+    <!-- String used as a header in the call log above calls which occurred two days or more ago.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_log_header_other"/>
+    <string name="call_log_header_other">"이전"</string>
+
+    <!-- String a header on the call details screen.  Appears above the list calls to or from a
+         particular number.
+         [CHAR LIMIT=65] -->
+    <add-resource type="string" name="call_detail_list_header"/>
+    <string name="call_detail_list_header">"통화 목록"</string>
+
+    <!-- String describing the "speaker on" button on the playback control used to listen to a
+         voicemail message.  When speaker is on, playback of the voicemail will occur through the
+         phone speaker.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_speaker_on"/>
+    <string name="voicemail_speaker_on">"스피커를 켭니다."</string>
+
+    <!-- String describing the "speaker off" button on the playback control used to listen to a
+         voicemail message.  When speaker is off, playback of the voicemail will occur through the
+         phone earpiece.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_speaker_off"/>
+    <string name="voicemail_speaker_off">"스피커를 끕니다."</string>
+
+    <!-- String describing the "play faster" button in the playback control used to listen to a
+         voicemail message.  Speeds up playback of the voicemail message.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_faster"/>
+    <string name="voicemail_play_faster">"더 빠르게 재생합니다."</string>
+
+    <!-- String describing the "play slower" button in the playback control used to listen to a
+         voicemail message.  Slows down playback of the voicemail message.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_slower"/>
+    <string name="voicemail_play_slower">"더 느리게 재생합니다."</string>
+
+    <!-- String describing the "play/pause" button in the playback control used to listen to a
+         voicemail message.  Starts playback or pauses ongoing playback.
+         Note: AccessibilityServices uses this attribute to announce the purpose of the button.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="voicemail_play_start_pause"/>
+    <string name="voicemail_play_start_pause">"재생을 시작하거나 일시중지합니다."</string>
+
+    <!-- Delimeter used between each item in a textual list; for example "Alpha, Beta".
+         [CHAR LIMIT=3] -->
+    <add-resource type="string" name="list_delimeter"/>
+    <string name="list_delimeter">", "</string>
+
+    <!-- Dialer settings related strings-->
+
+    <!-- Title for "Display options" category, which controls how contacts are shown.
+         [CHAR LIMIT=40] -->
+    <add-resource type="string" name="display_options_title"/>
+    <string name="display_options_title">"표시 옵션"</string>
+
+    <!-- Title for the "Sounds and vibration" settings control settings related to ringtones,
+         dialpad tones, and vibration for incoming calls. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="sounds_and_vibration_title"/>
+    <string name="sounds_and_vibration_title">"소리 및 진동"</string>
+
+    <!-- Title for "Accessibility" category, which controls settings such as TTY mode and hearing
+         aid compatability. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="accessibility_settings_title"/>
+    <string name="accessibility_settings_title">"접근성"</string>
+
+    <!-- Setting option name to pick ringtone (a list dialog comes up). [CHAR LIMIT=30] -->
+    <add-resource type="string" name="ringtone_title"/>
+    <string name="ringtone_title">"전화 벨소리"</string>
+
+    <!-- Setting option name to enable or disable vibration when ringing the phone.
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="vibrate_on_ring_title"/>
+    <string name="vibrate_on_ring_title">"전화 올 때 벨소리와 함께 진동"</string>
+
+    <!-- Setting option name to enable or disable DTMF tone sound [CHAR LIMIT=30] -->
+    <add-resource type="string" name="dtmf_tone_enable_title"/>
+    <string name="dtmf_tone_enable_title">"다이얼패드 신호음"</string>
+    <!-- Label for setting to adjust the length of DTMF tone sounds. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="dtmf_tone_length_title"/>
+    <string name="dtmf_tone_length_title">"다이얼패드 신호음 길이"</string>
+    <!-- Options displayed for the length of DTMF tone sounds. [CHAR LIMIT=40] -->
+    <add-resource type="array" name="dtmf_tone_length_entries"/>
+    <string-array name="dtmf_tone_length_entries">
+      <item>"보통"</item>
+      <item>"길게"</item>
+    </string-array>
+
+    <!-- Title of settings screen for managing the "Respond via SMS" feature. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="respond_via_sms_setting_title"/>
+    <string name="respond_via_sms_setting_title">"빠른 응답"</string>
+
+    <!-- Label for the call settings section [CHAR LIMIT=30] -->
+    <add-resource type="string" name="call_settings_label"/>
+    <string name="call_settings_label">"통화"</string>
+
+    <!-- Label for the blocked numbers settings section [CHAR LIMIT=30] -->
+    <add-resource type="string" name="manage_blocked_numbers_label"/>
+    <string name="manage_blocked_numbers_label">"통화 차단"</string>
+
+    <!-- Label for a section describing that call blocking is temporarily disabled because an
+         emergency call was made. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="blocked_numbers_disabled_emergency_header_label"/>
+    <string name="blocked_numbers_disabled_emergency_header_label">"통화 차단 기능이 일시적으로 중지됨"</string>
+
+    <!-- Description that call blocking is temporarily disabled because the user called an
+         emergency number, and explains that call blocking will be re-enabled after a buffer
+         period has passed. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="blocked_numbers_disabled_emergency_desc"/>
+    <string name="blocked_numbers_disabled_emergency_desc">"지난 48시간 이내에 이 휴대전화를 사용해 응급 서비스에 연락했으므로 통화 차단 기능이 중지되었습니다. 48시간이 지나면 통화 차단 기능이 자동으로 다시 사용 설정됩니다."</string>
+
+    <!-- Label for fragment to import numbers from contacts marked as send to voicemail.
+         [CHAR_LIMIT=30] -->
+    <add-resource type="string" name="import_send_to_voicemail_numbers_label"/>
+    <string name="import_send_to_voicemail_numbers_label">"번호 가져오기"</string>
+
+    <!-- Text informing the user they have previously marked contacts to be sent to voicemail.
+         This will be followed by two buttons, 1) to view who is marked to be sent to voicemail
+         and 2) importing these settings to Dialer's block list. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="blocked_call_settings_import_description"/>
+    <string name="blocked_call_settings_import_description">"이전에 다른 앱을 통해 일부 발신자를 자동으로 음성사서함으로 보내도록 표시했습니다."</string>
+
+    <!-- Label for button to view numbers of contacts previous marked to be sent to voicemail.
+         [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="blocked_call_settings_view_numbers_button"/>
+    <string name="blocked_call_settings_view_numbers_button">"개수 보기"</string>
+
+    <!-- Label for button to import settings for sending contacts to voicemail into Dialer's block
+         list. [CHAR_LIMIT=20] -->
+    <add-resource type="string" name="blocked_call_settings_import_button"/>
+    <string name="blocked_call_settings_import_button">"가져오기"</string>
+
+    <!-- Error toast message for when send to voicemail import fails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="send_to_voicemail_import_failed"/>
+    <string name="send_to_voicemail_import_failed">"가져오지 못했습니다."</string>
+
+    <!-- Error toast message for when voicemail archive fails. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="voicemail_archive_failed"/>
+    <string name="voicemail_archive_failed">"음성사서함을 보관처리하지 못했습니다."</string>
+
+    <!-- String describing the delete icon on a blocked number list item.
+        When tapped, it will show a dialog confirming the unblocking of the number.
+        [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="description_blocked_number_list_delete"/>
+    <string name="description_blocked_number_list_delete">"번호 차단 해제"</string>
+
+    <!-- Button to bring up UI to add a number to the blocked call list. [CHAR LIMIT=40] -->
+    <add-resource type="string" name="addBlockedNumber"/>
+    <string name="addBlockedNumber">"번호 추가"</string>
+
+    <!-- Footer message of number blocking screen with visual voicemail active.
+        [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_footer_message_vvm"/>
+    <string name="block_number_footer_message_vvm">"이러한 번호에서 걸려오는 전화가 차단되며 음성사서함이 자동으로 삭제됩니다."</string>
+
+    <!-- Footer message of number blocking screen with no visual voicemail.
+         [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="block_number_footer_message_no_vvm"/>
+    <string name="block_number_footer_message_no_vvm">"이러한 번호에서 걸려오는 전화가 차단되지만, 발신자가 음성사서함에 메시지를 남길 수는 있습니다."</string>
+
+    <!-- Heading for the block list in the "Spam and blocked cal)ls" settings. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="block_list"/>
+    <string name="block_list">"차단된 번호"</string>
+
+    <!-- Error message shown when user tries to add invalid number to the block list.
+        [CHAR LIMIT=64] -->
+    <add-resource type="string" name="invalidNumber"/>
+    <string name="invalidNumber">"<xliff:g id="NUMBER">%1$s</xliff:g>번은 잘못된 번호입니다."</string>
+
+    <!-- Error message shown when user tries to add a number to the block list that was already
+        blocked. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="alreadyBlocked"/>
+    <string name="alreadyBlocked">"<xliff:g id="NUMBER">%1$s</xliff:g>번은 이미 차단되었습니다."</string>
+
+    <!-- Title of notification telling the user that call blocking has been temporarily disabled.
+         [CHAR LIMIT=56] -->
+    <add-resource type="string" name="call_blocking_disabled_notification_title"/>
+    <string name="call_blocking_disabled_notification_title">"통화 차단이 48시간 동안 중지됨"</string>
+
+    <!-- Text for notification which provides the reason that call blocking has been temporarily
+         disabled. Namely, we disable call blocking after an emergency call in case of return
+         phone calls made by emergency services. [CHAR LIMIT=64] -->
+    <add-resource type="string" name="call_blocking_disabled_notification_text"/>
+    <string name="call_blocking_disabled_notification_text">"긴급 통화를 사용했기 때문에 중지되었습니다."</string>
+
+    <!-- Label for the phone account settings [CHAR LIMIT=30] -->
+    <add-resource type="string" name="phone_account_settings_label"/>
+    <string name="phone_account_settings_label">"통화 계정"</string>
+
+    <!-- The label of the button used to turn on a single permission [CHAR LIMIT=30]-->
+    <add-resource type="string" name="permission_single_turn_on"/>
+    <string name="permission_single_turn_on">"사용"</string>
+
+    <!--  The label of the button used to turn on multiple permissions [CHAR LIMIT=30]-->
+    <add-resource type="string" name="permission_multiple_turn_on"/>
+    <string name="permission_multiple_turn_on">"권한 설정"</string>
+
+    <!-- Shown as a prompt to turn on the contacts permission to enable speed dial [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_speeddial"/>
+    <string name="permission_no_speeddial">"단축번호를 사용하려면 주소록 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to enable the call log [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_calllog"/>
+    <string name="permission_no_calllog">"통화 기록을 보려면 전화 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a prompt to turn on the contacts permission to show all contacts [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_contacts"/>
+    <string name="permission_no_contacts">"주소록을 보려면 주소록 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to show voicemails [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_voicemail"/>
+    <string name="permission_no_voicemail">"음성사서함에 액세스하려면 전화 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a prompt to turn on contacts permissions to allow contact search [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_no_search"/>
+    <string name="permission_no_search">"연락처를 검색하려면 연락처 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a prompt to turn on the phone permission to allow a call to be placed [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="permission_place_call"/>
+    <string name="permission_place_call">"전화를 걸려면 전화 권한을 사용하도록 설정하세요."</string>
+
+    <!-- Shown as a message that notifies the user that the Phone app cannot write to system settings, which is why the system settings app is being launched directly instead. [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="toast_cannot_write_system_settings"/>
+    <string name="toast_cannot_write_system_settings">"전화 앱은 시스템 설정에 쓸 수 있는 권한이 없습니다."</string>
+
+    <!-- Label under the name of a blocked number in the call log. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blocked_number_call_log_label"/>
+    <string name="blocked_number_call_log_label">"차단됨"</string>
+
+    <!-- Accessibility announcement to indicate which call is active -->
+    <add-resource type="string" name="accessibility_call_is_active"/>
+    <string name="accessibility_call_is_active">"<xliff:g id="NAMEORNUMBER">^1</xliff:g>이(가) 활성화되었습니다."</string>
+
+    <!--  for speed dial -->
+    <add-resource type="string" name="speed_dial_settings"/>
+    <string name="speed_dial_settings">"단축번호 설정"</string>
+
+    <add-resource type="string" name="speed_dial_not_set"/>
+    <string name="speed_dial_not_set">"(설정 안 됨)"</string>
+
+    <add-resource type="string" name="speed_dial_replace"/>
+    <string name="speed_dial_replace">"바꾸기"</string>
+
+    <add-resource type="string" name="speed_dial_delete"/>
+    <string name="speed_dial_delete">"삭제"</string>
+
+    <add-resource type="string" name="speed_dial_unassigned_dialog_title"/>
+    <string name="speed_dial_unassigned_dialog_title">"키 지정되지 않음"</string>
+
+    <add-resource type="string" name="speed_dial_unassigned_dialog_message"/>
+    <string name="speed_dial_unassigned_dialog_message">"숫자 키 \'<xliff:g id="number">%s</xliff:g>\'에 지정된 단축번호 작업이 없습니다. 지금 작업을 지정하시겠습니까?"</string>
+
+    <add-resource type="string" name="dialog_speed_dial_airplane_mode_message"/>
+    <string name="dialog_speed_dial_airplane_mode_message">"단축번호를 사용하려면 먼저 비행기 모드를 끄세요."</string>
+
+    <!-- Speed Dial can not be set for the key used for Emergency number-->
+    <add-resource type="string" name="speed_dial_can_not_be_set"/>
+    <string name="speed_dial_can_not_be_set">"이 키에는 단축 다이얼을 설정할 수 없습니다."</string>
+
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"예"</string>
+
+    <add-resource type="string" name="no"/>
+    <string name="no">"아니요"</string>
+
+    <add-resource type="string" name="input_number"/>
+    <string name="input_number">"번호 입력"</string>
+
+    <add-resource type="string" name="speed_dial_cancel"/>
+    <string name="speed_dial_cancel">"취소"</string>
+
+    <add-resource type="string" name="speed_dial_ok"/>
+    <string name="speed_dial_ok">"확인"</string>
+
+    <add-resource type="string" name="call_log_show_all_slots"/>
+    <string name="call_log_show_all_slots">"모든 SIM"</string>
+
+    <add-resource type="string" name="call_log_all_calls_header"/>
+    <string name="call_log_all_calls_header">"모든 통화"</string>
+
+    <!-- Text displayed when the list of incoming calls is empty -->
+    <add-resource type="string" name="recentIncoming_empty"/>
+    <string name="recentIncoming_empty">"수신 전화가 없습니다."</string>
+
+    <!-- Text displayed when the list of outgoing calls is empty -->
+    <add-resource type="string" name="recentOutgoing_empty"/>
+    <string name="recentOutgoing_empty">"발신 전화가 없습니다."</string>
+
+    <!-- Text displayed when the call log is empty. -->
+    <add-resource type="string" name="recentCalls_empty"/>
+    <string name="recentCalls_empty">"통화 기록이 비어있습니다."</string>
+    <add-resource type="string" name="calllog_search_hint"/>
+    <string name="calllog_search_hint">"통화 기록 검색"</string>
+    <add-resource type="string" name="no_call_log"/>
+    <string name="no_call_log">"통화 기록 없음"</string>
+    <add-resource type="string" name="clear"/>
+    <string name="clear">"삭제"</string>
+    <add-resource type="string" name="description_clear_search"/>
+    <string name="description_clear_search">"검색창 지우기"</string>
+    <add-resource type="string" name="video_call_welcome_title"/>
+    <string name="video_call_welcome_title"><b>"새 화상 통화 다이얼러에 오신 것을 환영합니다."</b></string>
+    <add-resource type="string" name="video_call_welcome_message"/>
+    <string name="video_call_welcome_message">"상대방의 친근한 음성을 듣는 것도 좋지만 마주 보며 대화한다면 더할 나위 없을 것입니다! 실시간(또는 페이스타임) 연결을 실행하기 위해 알아둘 점을 안내해 드리겠습니다. 4G LTE 또는 Wi-Fi 연결이 설정되어 있어야 합니다. 또한 화상 통화 호환 기기로 전화를 걸어야 합니다. 화상 통화에는 고속 데이터가 사용됩니다. 음성 통화를 화상 통화로 업그레이드할 수도 있습니다. 자세한 내용은 "<a>"https://support.t-mobile.com/docs/DOC-23574"</a>"를 확인하세요."</string>
+    <add-resource type="string" name="video_call_welcome_message_repeat"/>
+    <string name="video_call_welcome_message_repeat">"항상 이 메시지 표시"</string>
+
+    <add-resource type="string" name="toast_change_video_call_failed"/>
+    <string name="toast_change_video_call_failed">"화상 통화로 변경할 수 없습니다. 잘못된 번호 형식입니다."</string>
+    <add-resource type="string" name="toast_make_video_call_failed"/>
+    <string name="toast_make_video_call_failed">"화상 통화를 걸 수 없습니다. 잘못된 번호 형식입니다."</string>
+    <!-- Add for enhance videocall ui -->
+    <add-resource type="string" name="overflowBothCallMenuItemText"/>
+    <string name="overflowBothCallMenuItemText">"화상 통화, 표시"</string>
+    <add-resource type="string" name="overflowRXCallMenuItemText"/>
+    <string name="overflowRXCallMenuItemText">"화상 통화, 숨기기"</string>
+    <add-resource type="string" name="overflowVOCallMenuItemText"/>
+    <string name="overflowVOCallMenuItemText">"음성 통화"</string>
+    <add-resource type="string" name="video_call"/>
+    <string name="video_call">"화상 통화"</string>
+    <add-resource type="string" name="call_data_info_label"/>
+    <string name="call_data_info_label">"통화/데이터 사용량 타이머"</string>
+    <add-resource type="string" name="call_data_info_description"/>
+    <string name="call_data_info_description">"음성 통화 사용 시간 및 데이터 사용 시간"</string>
+    <add-resource type="string" name="alert_call_over_wifi"/>
+    <string name="alert_call_over_wifi">"Wi-Fi를 통해 전화를 겁니다."</string>
+    <add-resource type="string" name="alert_call_no_cellular_coverage"/>
+    <string name="alert_call_no_cellular_coverage">"사용할 수 있는 셀룰러 네트워크가 없습니다. 전화를 걸기 위해 사용 가능한 Wi-Fi에 연결합니다."</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_call"/>
+    <string name="alert_user_connect_to_wifi_for_call">"전화를 걸기 위해 Wi-Fi에 연결합니다"</string>
+    <add-resource type="string" name="alert_user_connect_to_wifi_for_call_text"/>
+    <string name="alert_user_connect_to_wifi_for_call_text">"사용 가능한 네트워크를 보려면 여기를 탭하기"</string>
+    <add-resource type="string" name="missing_account_type"/>
+    <string name="missing_account_type">"(유형 없음)"</string>
+    <add-resource type="string" name="missing_account_name"/>
+    <string name="missing_account_name">"(이름 없음)"</string></resources>

@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"미국"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"유럽"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"아프리카"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"아시아"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"호주"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"태평양"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"전체"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15초"</item>
+        <item>"30초"</item>
+        <item>"1분"</item>
+        <item>"2분"</item>
+        <item>"5분"</item>
+        <item>"10분"</item>
+        <item>"30분"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"사용 안함"</item>
+        <item>"15초"</item>
+        <item>"30초"</item>
+        <item>"1분"</item>
+        <item>"2분"</item>
+        <item>"5분"</item>
+        <item>"10분"</item>
+        <item>"30분"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"즉시"</item>
+        <item>"5초"</item>
+        <item>"15초"</item>
+        <item>"30초"</item>
+        <item>"1분"</item>
+        <item>"2분"</item>
+        <item>"5분"</item>
+        <item>"10분"</item>
+        <item>"30분"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"작게"</item>
+        <item msgid="3579015730662088893">"기본"</item>
+        <item msgid="1678068858001018666">"크게"</item>
+        <item msgid="490158884605093126">"가장 크게"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"검색 중..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"연결 중\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"인증하는 중..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP 주소를 가져오는 중..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"연결됨"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"일시 정지됨"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"연결을 끊는 중\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"연결 끊김"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"실패"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"차단됨"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"연결 불량 일시적으로 방지"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"검색 중..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>에 연결 중..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>에서 인증하는 중..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>에서 IP 주소를 가져오는 중..."</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>에 연결됨"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"일시 정지됨"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>에서 연결을 끊는 중..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"연결 끊김"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"실패"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"차단됨"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"연결 상태 불량 일시적으로 방지"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"누름 버튼"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"피어 기기 PIN"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"이 기기의 PIN"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"연결됨"</item>
+        <item>"초대됨"</item>
+        <item>"실패"</item>
+        <item>"사용 가능"</item>
+        <item>"범위를 벗어났습니다."</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2분"</item>
+        <item>"5분"</item>
+        <item>"1시간"</item>
+        <item>"제한 시간 없음"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"나쁨"</item>
+        <item>"양호함"</item>
+        <item>"좋음"</item>
+        <item>"우수함"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"항상"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"충전 중인 경우에만"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"안함"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"항상"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"충전 중인 경우에만"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"안함"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"최근 30일"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"사용 주기 설정..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"사용 시간"</item>
+        <item>"최근 사용"</item>
+        <item>"앱 이름"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"없음"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"없음"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"고정"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"없음"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"수동"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"프록시 자동 구성"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"없음"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP 또는 CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"지정되지 않음"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"없음"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"내부 기기 저장용량"</item>
+        <item>"이동식 SD 카드"</item>
+        <item>"시스템에서 결정"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"위치"</item>
+        <item>"개인"</item>
+        <item>"메시지"</item>
+        <item>"미디어"</item>
+        <item>"기기"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"대략적 위치"</item>
+        <item>"세부 위치"</item>
+        <item>GPS</item>
+        <item>"진동"</item>
+        <item>"연락처 읽기"</item>
+        <item>"연락처 수정"</item>
+        <item>"통화 기록 읽기"</item>
+        <item>"통화 기록 수정"</item>
+        <item>"캘린더 읽기"</item>
+        <item>"캘린더 수정"</item>
+        <item>"Wi-Fi 검색"</item>
+        <item>"알림"</item>
+        <item>"셀 검색"</item>
+        <item>"전화 걸기"</item>
+        <item>"SMS 읽기"</item>
+        <item>"SMS 작성하기"</item>
+        <item>"SMS 수신"</item>
+        <item>"긴급 SMS 수신"</item>
+        <item>"MMS 수신"</item>
+        <item>"WAP PUSH 수신"</item>
+        <item>"SMS 보내기"</item>
+        <item>"ICC SMS 읽기"</item>
+        <item>"ICC SMS 작성하기"</item>
+        <item>"설정 수정"</item>
+        <item>"위에 그림"</item>
+        <item>"액세스 알림"</item>
+        <item>"카메라"</item>
+        <item>"오디오 녹음"</item>
+        <item>"오디오 재생"</item>
+        <item>"클립보드 읽기"</item>
+        <item>"클립보드 수정"</item>
+        <item>"미디어 버튼"</item>
+        <item>"오디오 포커스"</item>
+        <item>"마스터 볼륨"</item>
+        <item>"음성 볼륨"</item>
+        <item>"벨소리 볼륨"</item>
+        <item>"미디어 볼륨"</item>
+        <item>"알람 볼륨"</item>
+        <item>"알림 볼륨"</item>
+        <item>"블루투스 볼륨"</item>
+        <item>"켜진 상태로 유지"</item>
+        <item>"위치 모니터링"</item>
+        <item>"고전력 위치 모니터링"</item>
+        <item>"사용 통계 가져오기"</item>
+        <item>"마이크 음소거/음소거 해제"</item>
+        <item>"토스트 표시"</item>
+        <item>"프로젝트 미디어"</item>
+        <item>"VPN 활성화"</item>
+        <item>"배경화면 작성"</item>
+        <item>"구조 지원"</item>
+        <item>"스크린샷 지원"</item>
+        <item>"휴대전화 상태 읽기"</item>
+        <item>"음성사서함 추가"</item>
+        <item>"SIP 사용"</item>
+        <item>"발신 전화 처리"</item>
+        <item>"지문"</item>
+        <item>"신체 센서"</item>
+        <item>"셀 브로드캐스트 읽기"</item>
+        <item>"가상 위치"</item>
+        <item>"저장용량 읽기"</item>
+        <item>"저장용량 작성"</item>
+        <item>"화면 켜기"</item>
+        <item>"계정 가져오기"</item>
+        <item>"백그라운드에서 실행"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"위치"</item>
+        <item>"위치"</item>
+        <item>"위치"</item>
+        <item>"진동"</item>
+        <item>"연락처 읽기"</item>
+        <item>"연락처 수정"</item>
+        <item>"통화 기록 읽기"</item>
+        <item>"통화 기록 수정"</item>
+        <item>"캘린더 읽기"</item>
+        <item>"캘린더 수정"</item>
+        <item>"위치"</item>
+        <item>"소식 알림"</item>
+        <item>"위치"</item>
+        <item>"전화 걸기"</item>
+        <item>"SMS/MMS 읽기"</item>
+        <item>"SMS/MMS 쓰기"</item>
+        <item>"SMS/MMS 수신"</item>
+        <item>"SMS/MMS 수신"</item>
+        <item>"SMS/MMS 수신"</item>
+        <item>"SMS/MMS 수신"</item>
+        <item>"SMS/MMS 전송"</item>
+        <item>"SMS/MMS 읽기"</item>
+        <item>"SMS/MMS 쓰기"</item>
+        <item>"설정 수정"</item>
+        <item>"위에 그림"</item>
+        <item>"액세스 알림"</item>
+        <item>"카메라"</item>
+        <item>"오디오 녹음"</item>
+        <item>"오디오 재생"</item>
+        <item>"클립보드 읽기"</item>
+        <item>"클립보드 수정"</item>
+        <item>"미디어 버튼"</item>
+        <item>"오디오 포커스"</item>
+        <item>"마스터 볼륨"</item>
+        <item>"음성 볼륨"</item>
+        <item>"벨소리 볼륨"</item>
+        <item>"미디어 볼륨"</item>
+        <item>"알람 볼륨"</item>
+        <item>"알림 볼륨"</item>
+        <item>"블루투스 볼륨"</item>
+        <item>"켜진 상태로 유지"</item>
+        <item>"위치"</item>
+        <item>"위치"</item>
+        <item>"사용 통계 가져오기"</item>
+        <item>"마이크 음소거/음소거 해제"</item>
+        <item>"토스트 표시"</item>
+        <item>"프로젝트 미디어"</item>
+        <item>"VPN 활성화"</item>
+        <item>"배경화면 작성"</item>
+        <item>"구조 지원"</item>
+        <item>"스크린샷 지원"</item>
+        <item>"휴대전화 상태 읽기"</item>
+        <item>"음성사서함 추가"</item>
+        <item>"SIP 사용"</item>
+        <item>"발신 전화 처리"</item>
+        <item>"지문"</item>
+        <item>"신체 센서"</item>
+        <item>"셀 브로드캐스트 읽기"</item>
+        <item>"가상 위치"</item>
+        <item>"저장용량 읽기"</item>
+        <item>"저장용량 작성"</item>
+        <item>"화면 켜기"</item>
+        <item>"계정 가져오기"</item>
+        <item>"백그라운드에서 실행"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"짧게"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"보통"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"길게"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"기본값"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"캐주얼"</item>
+        <item>"필기체"</item>
+        <item>"작은 대문자"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"아주 작게"</item>
+        <item>"작게"</item>
+        <item>"보통"</item>
+        <item>"크게"</item>
+        <item>"아주 크게"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"기본값"</item>
+        <item>"사용 안함"</item>
+        <item>"윤곽선"</item>
+        <item>"그림자"</item>
+        <item>"높임"</item>
+        <item>"낮춤"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"앱 기본값 사용"</item>
+        <item>"검은색 바탕에 흰색"</item>
+        <item>"흰색 바탕에 검은색"</item>
+        <item>"검은색 바탕에 노란색"</item>
+        <item>"파란색 바탕에 노란색"</item>
+        <item>"맞춤설정"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"사전 공유 키를 사용하는 L2TP/IPSec VPN"</item>
+        <item>"인증서가 있는 L2TP/IPSec VPN"</item>
+        <item>"사전 공유 키 및 Xauth 인증을 가진 IPSec VPN"</item>
+        <item>"인증서 및 Xauth 인증을 가진 IPSec VPN"</item>
+        <item>"인증서 및 하이브리드 인증을 가진 IPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"연결 끊김"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"초기화 중..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"연결 중..."</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"연결됨"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"시간초과됨"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"실패"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"질문"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"허용 안함"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"항상 허용"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"보통"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"일반"</item>
+        <!-- Memory is running low. -->
+        <item>"낮음"</item>
+        <!-- Memory is critical. -->
+        <item>"높음"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"보통"</item>
+        <item>"중간"</item>
+        <item>"낮음"</item>
+        <item>"중요"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"영구"</item>
+        <item>"메모리 사용이 가장 많은 활동"</item>
+        <item>"중요(포그라운드)"</item>
+        <item>"중요(백그라운드)"</item>
+        <item>"백업"</item>
+        <item>"무거운 활동"</item>
+        <item>"서비스(운영 중)"</item>
+        <item>"서비스(다시 시작 중)"</item>
+        <item>"수신기"</item>
+        <item>"홈"</item>
+        <item>"마지막 활동"</item>
+        <item>"캐시됨(활동)"</item>
+        <item>"캐시됨(활동 클라이언트)"</item>
+        <item>"캐시됨(비어 있음)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"청록색"</item>
+        <item>"파란색"</item>
+        <item>"남색"</item>
+        <item>"보라색"</item>
+        <item>"분홍색"</item>
+        <item>"빨간색"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"자동 연결"</item>
+        <item>"수동 연결"</item>
+        <item>"항상 묻기"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"30일 이전"</item>
+        <item>"60일 이전"</item>
+        <item>"90일 이전"</item>
+    </string-array></resources>

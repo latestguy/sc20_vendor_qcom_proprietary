@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2009 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Programme d\'installation du certificat"</string>
+
+    <!-- Title of the file picker screen -->
+    <add-resource type="string" name="pick_file_title"/>
+    <string name="pick_file_title">"Sélectionnez un certificat"</string>
+
+    <!-- Title of dialog to enter password for pkcs12 -->
+    <add-resource type="string" name="pkcs12_password_dialog_title"/>
+    <string name="pkcs12_password_dialog_title">"Extraire le certificat"</string>
+    <!-- message in progress bar when waiting for extracting certs from a pkcs12 package -->
+    <add-resource type="string" name="extracting_pkcs12"/>
+    <string name="extracting_pkcs12">"Extraction en cours\u2026"</string>
+    <!-- Title of dialog to enter password for pkcs12 file -->
+    <add-resource type="string" name="pkcs12_file_password_dialog_title"/>
+    <string name="pkcs12_file_password_dialog_title">"Extraire de %s"</string>
+    <!-- Title of dialog to name a credential -->
+    <add-resource type="string" name="name_credential_dialog_title"/>
+    <string name="name_credential_dialog_title">"Attribuer un nom au certificat"</string>
+    <!-- Description for the credential name input box -->
+    <add-resource type="string" name="credential_name"/>
+    <string name="credential_name">"Nom du certificat :"</string>
+    <!-- Title of the credential info -->
+    <!-- Description for the credential password input box -->
+    <add-resource type="string" name="credential_password"/>
+    <string name="credential_password">"Saisir le mot de passe pour extraire les certificats"</string>
+    <add-resource type="string" name="credential_info"/>
+    <string name="credential_info">"Le package contient :"</string>
+    <add-resource type="string" name="p12_description"/>
+    <string name="p12_description">"Certificats dans le keystore PKCS12"</string>
+
+    <!-- Item found in the PKCS12 keystore being investigated [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="one_userkey"/>
+    <string name="one_userkey">"une clé utilisateur"</string>
+    <!-- Item found in the PKCS12 keystore being investigated [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="one_usercrt"/>
+    <string name="one_usercrt">"un certificat utilisateur"</string>
+    <!-- Item found in the PKCS12 keystore being investigated [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="one_cacrt"/>
+    <string name="one_cacrt">"un certificat de l\'autorité de certification"</string>
+    <!-- Item found in the PKCS12 keystore being investigated [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="n_cacrts"/>
+    <string name="n_cacrts">"%d certificats de l\'autorité de certification"</string>
+
+    <add-resource type="string" name="password_error"/>
+    <string name="password_error">"Veuillez saisir le mot de passe approprié."</string>
+    <add-resource type="string" name="password_empty_error"/>
+    <string name="password_empty_error">"Veuillez saisir le mot de passe."</string>
+    <add-resource type="string" name="name_empty_error"/>
+    <string name="name_empty_error">"Veuillez saisir un nom."</string>
+    <add-resource type="string" name="name_char_error"/>
+    <string name="name_char_error">"Veuillez saisir un nom ne contenant que des lettres et des chiffres."</string>
+    <add-resource type="string" name="unable_to_save_cert"/>
+    <string name="unable_to_save_cert">"Impossible d\'enregistrer le certificat. Le stockage des identifiants n\'est pas activé, ou il n\'est pas initialisé correctement."</string>
+    <add-resource type="string" name="cert_not_saved"/>
+    <string name="cert_not_saved">"Le certificat n\'est pas installé."</string>
+    <add-resource type="string" name="no_cert_to_saved"/>
+    <string name="no_cert_to_saved">"Aucun certificat à installer."</string>
+    <add-resource type="string" name="invalid_cert"/>
+    <string name="invalid_cert">"Le certificat est incorrect."</string>
+
+    <!-- toast message -->
+    <add-resource type="string" name="cert_is_added"/>
+    <string name="cert_is_added">"<xliff:g id="CREDENTIAL">%s</xliff:g> est installé."</string>
+    <!-- toast message -->
+    <add-resource type="string" name="cert_too_large_error"/>
+    <string name="cert_too_large_error">"Impossible de procéder à l\'installation, car le certificat est trop volumineux."</string>
+    <!-- toast message -->
+    <add-resource type="string" name="cert_missing_error"/>
+    <string name="cert_missing_error">"Impossible de procéder à l\'installation, car le fichier de certificat est introuvable."</string>
+    <!-- toast message -->
+    <add-resource type="string" name="cert_read_error"/>
+    <string name="cert_read_error">"Impossible de procéder à l\'installation, car le fichier de certificat ne peut être lu."</string>
+
+    <!-- Shown when the certificate file can't be found.  [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_cert_file_found"/>
+    <string name="no_cert_file_found" product="nosdcard">"Fichier de certificat introuvable dans la mémoire de stockage USB"</string>
+    <add-resource type="string" name="no_cert_file_found"/>
+    <string name="no_cert_file_found" product="default">"Fichier de certificat introuvable sur la carte SD"</string>
+    <!-- Shown when USB storage can't be found to look for a certificate.  [CHAR LIMIT=30] -->
+    <add-resource type="string" name="sdcard_not_present"/>
+    <string name="sdcard_not_present" product="nosdcard">"Mémoire USB indisponible"</string>
+    <add-resource type="string" name="sdcard_not_present"/>
+    <string name="sdcard_not_present" product="default">"Carte SD manquante."</string>
+
+    <!-- Message displayed when a user other than the owner on a multi-user system tries to
+         install a certificate into the certificate store. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="only_primary_user_allowed"/>
+    <string name="only_primary_user_allowed">"Seul le propriétaire de cet appareil peut installer des certificats."</string>
+
+    <!-- Label for spinner that shows the possible usage for a credential. Shown when user is
+         installing a credential [CHAR LIMIT=40] -->
+    <add-resource type="string" name="credential_usage_label"/>
+    <string name="credential_usage_label">"Utilisation du certificat :"</string>
+
+    <!-- Usage type for a credential that the user is installing. The label will restrict the
+         type of use for that credential. [CHAR LIMIT=40] -->
+    <add-resource type="array" name="credential_usage"/>
+    <string-array name="credential_usage">
+        <item>"VPN et applications"</item>
+        <item>"Wi-Fi"</item>
+    </string-array>
+
+    <add-resource type="string" name="wifi_title"/>
+    <string name="wifi_title">"Profil du Wi-Fi"</string>
+    <add-resource type="string" name="wifi_detail_title"/>
+    <string name="wifi_detail_title">"Détails relatifs à %s"</string>
+    <add-resource type="string" name="wifi_detail_label"/>
+    <string name="wifi_detail_label">"Détails"</string>
+    <add-resource type="string" name="wifi_install_label"/>
+    <string name="wifi_install_label">"Installer"</string>
+    <!-- Toast message to be displayed when installing Hotspot 2.0 credentials [CHAR LIMIT=40] -->
+    <add-resource type="string" name="wifi_installing_label"/>
+    <string name="wifi_installing_label">"Installation\u2026"</string>
+    <add-resource type="string" name="wifi_cancel_label"/>
+    <string name="wifi_cancel_label">"Annuler"</string>
+    <add-resource type="string" name="wifi_dismiss_label"/>
+    <string name="wifi_dismiss_label">"Ignorer"</string>
+    <add-resource type="string" name="wifi_no_config"/>
+    <string name="wifi_no_config">"Aucune"</string>
+    <add-resource type="string" name="wifi_config_text"/>
+    <string name="wifi_config_text">"Nom : %1$s\nNom de domaine complètement qualifié (FQDN) : %2$s\nConsortiums en itinérance : %3$s\nDomaine : %4$s\nMéthode d\'authentification : EAP-%5$s\n"</string>
+    <add-resource type="string" name="wifi_ttls_config_text"/>
+    <string name="wifi_ttls_config_text">"Nom de l\'utilisateur : %s\n"</string>
+    <add-resource type="string" name="wifi_tls_config_text"/>
+    <string name="wifi_tls_config_text">"Certificat client :\n%1$s\nClé : %2$s\n"</string>
+    <add-resource type="string" name="wifi_sim_config_text"/>
+    <string name="wifi_sim_config_text">SIM: %s\n</string>
+    <add-resource type="string" name="wifi_trust_config_text"/>
+    <string name="wifi_trust_config_text">"Certificat de confiance :\n%s\n"</string>
+
+    <add-resource type="string" name="install_done_title"/>
+    <string name="install_done_title">"Identifiants installés"</string>
+    <add-resource type="string" name="install_done"/>
+    <string name="install_done">"Les identifiants de \"<xliff:g id="NAME">%1$s</xliff:g>\" ont été ajoutés aux réseaux Wi-Fi enregistrés."</string>
+    <add-resource type="string" name="done_label"/>
+    <string name="done_label">"OK"</string>
+    <add-resource type="string" name="wifi_installer_detail"/>
+    <string name="wifi_installer_detail">"Installez les identifiants Wi-Fi pour vous connecter aux réseaux disponibles via <xliff:g id="NAME">%1$s</xliff:g>."</string>
+    <add-resource type="string" name="wifi_installer_download_error"/>
+    <string name="wifi_installer_download_error">"Le fichier téléchargé présente des problèmes et ne peut pas être installé. Veuillez vous assurer que la source de téléchargement du fichier est correcte."</string>
+    <add-resource type="string" name="wifi_installer_fail"/>
+    <string name="wifi_installer_fail">"Impossible d\'installer les identifiants Wi-Fi. Veuillez télécharger le fichier à nouveau."</string>
+    <add-resource type="string" name="wifi_installer_fail_no_wifi_title"/>
+    <string name="wifi_installer_fail_no_wifi_title">"Installation annulée"</string>
+    <add-resource type="string" name="wifi_installer_fail_title"/>
+    <string name="wifi_installer_fail_title">"Installation impossible"</string>
+    <add-resource type="string" name="wifi_installer_fail_no_wifi"/>
+    <string name="wifi_installer_fail_no_wifi">"Activez le Wi-Fi et réessayez."</string></resources>

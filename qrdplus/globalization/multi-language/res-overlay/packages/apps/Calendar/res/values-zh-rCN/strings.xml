@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2006 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- This is the label underneath the icon for Calendar -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"日历"</string>
+    <!-- on permission of read_calendar -->
+    <add-resource type="string" name="on_permission_read_calendar"/>
+    <string name="on_permission_read_calendar">"您已停用某项必需权限."</string>
+    <!-- Shared Labels. These labels are shared among the activities. -->
+
+    <!-- This is the label for the title or name of an event -->
+    <add-resource type="string" name="what_label"/>
+    <string name="what_label">"内容"</string>
+    <!-- This is the label for the location of an event -->
+    <add-resource type="string" name="where_label"/>
+    <string name="where_label">"地点"</string>
+    <!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+    <add-resource type="string" name="when_label"/>
+    <string name="when_label">"时间"</string>
+    <!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+    <add-resource type="string" name="timezone_label"/>
+    <string name="timezone_label">"时区"</string>
+    <!-- This is the label for the Guests/Attendees of an event -->
+    <add-resource type="string" name="attendees_label"/>
+    <string name="attendees_label">"邀请对象"</string>
+    <!-- Text to show when an event starts on the current day -->
+    <add-resource type="string" name="today"/>
+    <string name="today">"今天"</string>
+    <!-- Text to show when an event starts on the next day -->
+    <add-resource type="string" name="tomorrow"/>
+    <string name="tomorrow">"明天"</string>
+    <!-- Text for an event starting on the current day with a start and end time.
+         For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="today_at_time_fmt"/>
+    <string name="today_at_time_fmt">"今天 <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <!-- Text for an event starting on the next day with a start and end time.
+         For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tomorrow_at_time_fmt"/>
+    <string name="tomorrow_at_time_fmt">"明天 <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <!-- Format string for a date and time description.  For ex:
+         "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="date_time_fmt"/>
+    <string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>，<xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+
+    <!-- Some events repeat daily, weekly, monthly, or yearly.  This is the label
+         for all the choices about how often an event repeats (including the choice
+         of not repeating). -->
+    <add-resource type="string" name="repeats_label"/>
+    <string name="repeats_label">"重复"</string>
+    <!-- Title of event when no explicit title is specified by the user -->
+    <add-resource type="string" name="no_title_label"/>
+    <string name="no_title_label">"（无标题）"</string>
+    <!-- No google map in phone -->
+    <add-resource type="string" name="no_map"/>
+    <string name="no_map">"手机里没有找到地图"</string>
+    <!-- Reminder format strings -->
+    <add-resource type="plurals" name="Nminutes"/>
+    <plurals name="Nminutes">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">"1 分钟"</item>
+        <!-- This is the label for 2 or more minutes. The actual number of
+             minutes is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 分钟"</item>
+    </plurals>
+    <!-- We use the abbreviation "mins" instead of "minutes" to keep the string short.
+         This is the number of minutes displayed for a calendar reminder.  For example,
+         a reminder of 10 minutes would be displayed as '10 mins'.  The translation
+         should use the shortest acceptable abbreviation to save space. -->
+    <add-resource type="plurals" name="Nmins"/>
+    <plurals name="Nmins">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">"1 分钟"</item>
+        <!-- This is the label for 2 or more minutes. The actual number of
+             minutes is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 分钟"</item>
+    </plurals>
+    <!-- This is the number of hours displayed for a calendar reminder.  For example,
+         a reminder of 1 hour would be displayed as '1 hour'.  The translation
+         should use the shortest acceptable abbreviation of 'hour' to save space. -->
+    <add-resource type="plurals" name="Nhours"/>
+    <plurals name="Nhours">
+        <!-- This is the label for a 1-hour reminder. -->
+        <item quantity="one">"1 小时"</item>
+        <!-- This is the label for a reminder of 2 or more hours. The actual number of
+             hours is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 小时"</item>
+    </plurals>
+    <!-- This is the number of days displayed for a calendar reminder.  For example,
+         a reminder of 2 days would be displayed as '2 days'.  The translation
+         should use the shortest acceptable abbreviation of 'day' to save space. -->
+    <add-resource type="plurals" name="Ndays"/>
+    <plurals name="Ndays">
+        <!-- This is the label for a reminder of 1 day. -->
+        <item quantity="one">"1 天"</item>
+        <!-- This is the label for a reminder of 2 or more days. The actual number of
+             days is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 天"</item>
+    </plurals>
+    <!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1" -->
+    <add-resource type="plurals" name="weekN"/>
+    <plurals name="weekN">
+        <!-- Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+        <item quantity="other">"第<xliff:g id="COUNT">%d</xliff:g>周"</item>
+    </plurals>
+
+    <!-- Menu items: -->
+
+    <!-- This is a label on a context menu item. Pressing this menu item to initiate
+        syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+    <add-resource type="string" name="calendar_refresh"/>
+    <string name="calendar_refresh">"刷新"</string>
+    <!-- This is a label on a context menu item. Pressing this menu item displays the
+         Agenda view. -->
+
+    <!-- This is a label on a context menu item. Pressing this menu item displays the
+         Day view. -->
+    <add-resource type="string" name="show_day_view"/>
+    <string name="show_day_view">"显示日期"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Agenda view. -->
+    <add-resource type="string" name="agenda_view"/>
+    <string name="agenda_view">"日程"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Day view. -->
+    <add-resource type="string" name="day_view"/>
+    <string name="day_view">"日"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Week view. -->
+    <add-resource type="string" name="week_view"/>
+    <string name="week_view">"周"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Month view. -->
+    <add-resource type="string" name="month_view"/>
+    <string name="month_view">"月"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         details of an event. -->
+    <add-resource type="string" name="event_view"/>
+    <string name="event_view">"查看活动"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to create a new event. -->
+    <add-resource type="string" name="event_create"/>
+    <string name="event_create">"新建活动"</string>
+    <!-- This is a label on a menu item in a popup window. Pressing this menu
+         item allows the user to edit or change an existing event. -->
+    <add-resource type="string" name="event_edit"/>
+    <string name="event_edit">"编辑活动"</string>
+    <!-- This is a label on a menu item in a popup window. Pressing this menu
+         item allows the user to delete an existing event. -->
+    <add-resource type="string" name="event_delete"/>
+    <string name="event_delete">"删除活动"</string>
+    <!-- This is a label on a menu item. Pressing this menu
+         item takes the user to the current day (today) in whatever view
+         (Day view, Week view, Agenda view, Month view) they are currently in. -->
+    <add-resource type="string" name="goto_today"/>
+    <string name="goto_today">"今天"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to see the list of calendars that he is viewing and to then add
+         or remove selected calendars. -->
+
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to view and edit his Settings (or Preferences) -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"设置"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to select the calendars to display [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_select_visible_calendars"/>
+    <string name="menu_select_visible_calendars">"显示的日历"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to select the calendars to display [CHAR LIMIT=20] -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"搜索"</string>
+    <!-- This is a label on a menu item. Pressing this menu item hides
+         the navigation controls on the right side. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hide_controls"/>
+    <string name="hide_controls">"隐藏控件"</string>
+    <!-- This is a label on a menu item. Pressing this menu item shows the
+         navigation controls on the right side. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="show_controls"/>
+    <string name="show_controls">"显示控件"</string>
+
+    <!-- Month view -->
+
+
+    <!-- Select Visible Calendars activity -->
+
+    <!-- Title of "My calendars" screen -->
+    <add-resource type="string" name="select_visible_calendars_title"/>
+    <string name="select_visible_calendars_title">"显示的日历"</string>
+    <!-- Synced and visible status message -->
+
+    <!-- Synced but not visible status message -->
+
+    <!-- not Synced or visible status message -->
+
+    <!-- Synced status message displayed when the given calendar is stored/synced on the device
+        [CHAR LIMIT=60] -->
+    <add-resource type="string" name="synced"/>
+    <string name="synced">"已同步"</string>
+    <!-- Not synced status message displayed when the given calendar is not stored/synced on the
+        device [CHAR LIMIT=60] -->
+    <add-resource type="string" name="not_synced"/>
+    <string name="not_synced">"未同步"</string>
+    <!-- Message displayed to user when an account with Calendars is not being auto-synced
+        [CHAR LIMIT=120]-->
+    <add-resource type="string" name="acct_not_synced"/>
+    <string name="acct_not_synced">"此帐户未同步，因此您的日历可能不是最新的。"</string>
+    <!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+    <add-resource type="string" name="accounts"/>
+    <string name="accounts">"帐户和同步"</string>
+
+    <!-- Select Synced Calendars activity -->
+    <!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_synced_calendars_title"/>
+    <string name="select_synced_calendars_title">"同步的日历"</string>
+    <!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_synced_calendars_button"/>
+    <string name="select_synced_calendars_button">"同步的日历"</string>
+
+    <!-- Event edit activity -->
+
+    <!-- The title of the screen where the user edits an event [CHAR LIMIT=17] -->
+
+    <!-- Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+    <add-resource type="string" name="hint_what"/>
+    <string name="hint_what">"活动名称"</string>
+    <!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+    <add-resource type="string" name="hint_where"/>
+    <string name="hint_where">"地点"</string>
+    <!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+    <add-resource type="string" name="hint_description"/>
+    <string name="hint_description">"说明"</string>
+    <!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+    <add-resource type="string" name="hint_attendees"/>
+    <string name="hint_attendees">"邀请对象"</string>
+    <!-- Toast message displayed when a new event is created -->
+    <add-resource type="string" name="creating_event"/>
+    <string name="creating_event">"活动已创建。"</string>
+    <!-- Toast message displayed when an existing event is saved after being modified -->
+    <add-resource type="string" name="saving_event"/>
+    <string name="saving_event">"活动已保存。"</string>
+    <!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+    <add-resource type="string" name="empty_event"/>
+    <string name="empty_event">"无法创建空白活动。"</string>
+    <!-- Toast message displayed when a new event with guests is created -->
+    <add-resource type="string" name="creating_event_with_guest"/>
+    <string name="creating_event_with_guest">"即将发送邀请。"</string>
+    <!-- Toast message displayed when an existing event with guests is saved after being modified -->
+    <add-resource type="string" name="saving_event_with_guest"/>
+    <string name="saving_event_with_guest">"即将发送更新。"</string>
+
+    <!-- Toast message displayed responding to an event from an email as accepted
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_accepted"/>
+    <string name="rsvp_accepted">"已回复“会参加”。"</string>
+    <!-- Toast message displayed responding to an event from an email as tentative
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_tentative"/>
+    <string name="rsvp_tentative">"已回复“不确定”。"</string>
+    <!-- Toast message displayed responding to an event from an email as declined
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_declined"/>
+    <string name="rsvp_declined">"已回复“不参加”。"</string>
+
+
+    <!-- Title of message displayed to indicate available calendars are being loaded when creating
+         a new event -->
+
+    <!-- Body of message displayed to indicate available calendars are being loaded when creating
+         a new event -->
+
+
+    <!-- Create event dialog -->
+
+    <!-- Create event dialog save button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="create_event_dialog_save"/>
+    <string name="create_event_dialog_save">"保存"</string>
+
+    <!-- The alert toast is not actually being displayed for some reason. -->
+
+    <!-- the title of the alert/notification activity -->
+    <add-resource type="string" name="alert_title"/>
+    <string name="alert_title">"日历通知"</string>
+    <!-- Notification window messages: -->
+
+
+    <!-- Event info/edit screen labels:-->
+
+    <!-- This is the title of the screen used to view the details of an event -->
+    <add-resource type="string" name="event_info_title"/>
+    <string name="event_info_title">"查看活动"</string>
+    <!-- This is the title of the screen used to view the details of an invitation
+         to a meeting or event -->
+    <add-resource type="string" name="event_info_title_invite"/>
+    <string name="event_info_title_invite">"会议邀请"</string>
+
+    <!-- EditEventActivity specific strings: -->
+
+    <!-- Events have a start date/time and an end date/time. The display shows
+         the start and end times like 'From start date To end date'. This is the
+         label before the 'end date'. -->
+    <add-resource type="string" name="edit_event_to_label"/>
+    <string name="edit_event_to_label">"结束时间"</string>
+    <!-- Events have a start date/time and an end date/time. The display shows
+         the start and end times like 'From start date To end date'. This is the
+         label before the 'start date'. -->
+    <add-resource type="string" name="edit_event_from_label"/>
+    <string name="edit_event_from_label">"开始时间"</string>
+    <!-- Check box label that specifies if this is an all-day event -->
+    <add-resource type="string" name="edit_event_all_day_label"/>
+    <string name="edit_event_all_day_label">"全天"</string>
+    <!-- Label for choosing one of the calendars -->
+    <add-resource type="string" name="edit_event_calendar_label"/>
+    <string name="edit_event_calendar_label">"日历"</string>
+    <!-- Menu item to show all choices [CHAR LIMIT=22]-->
+    <add-resource type="string" name="edit_event_show_all"/>
+    <string name="edit_event_show_all">"显示全部选择"</string>
+    <!-- Label for the event description -->
+    <add-resource type="string" name="description_label"/>
+    <string name="description_label">"说明"</string>
+    <!-- Label for the 'Presence' of an event, which can be either 'busy' (the default)
+         or 'available'  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="presence_label"/>
+    <string name="presence_label">"将我的状态显示为"</string>
+    <!-- Label for the 'Privacy' of an event, which can be either 'private'
+         or 'public' [CHAR LIMIT=15] -->
+    <add-resource type="string" name="privacy_label"/>
+    <string name="privacy_label">"活动性质"</string>
+    <!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+    <add-resource type="string" name="reminders_label"/>
+    <string name="reminders_label">"添加提醒"</string>
+    <!-- Title of alert shown if the user tries to create an event and has no calendars -->
+    <add-resource type="string" name="no_syncable_calendars"/>
+    <string name="no_syncable_calendars">"无日历"</string>
+    <!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_calendars_found"/>
+    <string name="no_calendars_found">"您必须向设备中至少添加一个日历帐户并显示一个日历，然后才能添加活动。您可以触摸“添加帐户”以添加帐户（如果您​​刚刚添加过帐户，请等待该帐户完成同步，然后重试）。您也可以触摸“取消”，并确保至少显示了一个日历。"</string>
+    <!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="create_an_account_desc"/>
+    <string name="create_an_account_desc">"拥有 Google 帐户可增强“日历”的功能。\n\n\u2022 通过任意网络浏览器访问“日历”\n\u2022 安全地备份您的活动"</string>
+    <!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="add_account"/>
+    <string name="add_account">"添加帐户"</string>
+
+    <!-- View Event -->
+
+    <!-- Label for which calendar an event is part of -->
+    <add-resource type="string" name="view_event_calendar_label"/>
+    <string name="view_event_calendar_label">"日历："</string>
+    <!-- Label for the event organizer -->
+    <add-resource type="string" name="view_event_organizer_label"/>
+    <string name="view_event_organizer_label">"组织者："</string>
+    <!-- Label for the local timezone -->
+
+    <!-- Label for showing event color picker -->
+    <add-resource type="string" name="choose_event_color_label"/>
+    <string name="choose_event_color_label">"选择活动颜色"</string>
+    <!-- Title for event color picker dialog -->
+    <add-resource type="string" name="event_color_picker_dialog_title"/>
+    <string name="event_color_picker_dialog_title">"活动颜色"</string>
+    <!-- Label for button which sets event color to default calendar color -->
+    <add-resource type="string" name="event_color_set_to_default"/>
+    <string name="event_color_set_to_default">"设为默认日历颜色"</string>
+
+    <!-- Title for calendar color picker dialog -->
+    <add-resource type="string" name="calendar_color_picker_dialog_title"/>
+    <string name="calendar_color_picker_dialog_title">"日历颜色"</string>
+    <!-- Description for calendar color squares, which bring up the color picker. -->
+    <add-resource type="string" name="calendar_square_color_picker_description"/>
+    <string name="calendar_square_color_picker_description">"颜色选择器"</string>
+
+    <!-- Label for whether the user is attending this event. This is shown when
+         a user is invited to a meeting or event.  The possible answers are
+         'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+    <add-resource type="string" name="view_event_response_label"/>
+    <string name="view_event_response_label">"参加吗？"</string>
+    <!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_yes"/>
+    <string name="response_yes">"参加"</string>
+    <!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_maybe"/>
+    <string name="response_maybe">"待定"</string>
+    <!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_no"/>
+    <string name="response_no">"不参加"</string>
+    <!-- Label for emailing attendees -->
+    <add-resource type="string" name="email_guests_label"/>
+    <string name="email_guests_label">"向参加者发邮件"</string>
+    <!-- Label for emailing the organizer (when there are no attendees) -->
+    <add-resource type="string" name="email_organizer_label"/>
+    <string name="email_organizer_label">"给组织者发送电子邮件"</string>
+    <!-- This is shown in the popup picker when emailing attendees -->
+    <add-resource type="string" name="email_picker_label"/>
+    <string name="email_picker_label">"发送邮件时使用"</string>
+    <!-- Toast message displayed when the event id was not found LIMIT=30] -->
+    <add-resource type="string" name="event_not_found"/>
+    <string name="event_not_found">"找不到活动。"</string>
+
+    <!-- Notification label for getting a map of the location. -->
+    <add-resource type="string" name="map_label"/>
+    <string name="map_label">"地图"</string>
+    <!-- Notification label for calling a phone number in the location. -->
+    <add-resource type="string" name="call_label"/>
+    <string name="call_label">"电话"</string>
+
+    <!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+    <add-resource type="string" name="quick_response_settings"/>
+    <string name="quick_response_settings">"快速回复"</string>
+    <!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+    <add-resource type="string" name="quick_response_settings_summary"/>
+    <string name="quick_response_settings_summary">"修改向活动参加者发邮件时所用的默认回复"</string>
+    <!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+    <add-resource type="string" name="quick_response_settings_title"/>
+    <string name="quick_response_settings_title">"修改快速回复"</string>
+    <!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+    <add-resource type="string" name="quick_response_settings_edit_title"/>
+    <string name="quick_response_settings_edit_title">"快速回复"</string>
+
+    <!-- Title of the dialog prompting the user choose a response when emailing guests  [CHAR LIMIT=none]-->
+    <add-resource type="string" name="quick_response_dialog_title"/>
+    <string name="quick_response_dialog_title">"选择快速回复"</string>
+    <!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+    <add-resource type="string" name="quick_response_email_failed"/>
+    <string name="quick_response_email_failed">"找不到电子邮件应用"</string>
+    <!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+    <add-resource type="array" name="quick_response_defaults"/>
+    <string-array name="quick_response_defaults">
+        <item>"我会迟到几分钟。"</item>
+        <item>"我大概再过 10 分钟就可以到了。"</item>
+        <item>"先开始，不用等我。"</item>
+        <item>"抱歉，我赶不上了，我们另约时间吧。"</item>
+        </string-array>
+    <!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+    <add-resource type="string" name="quick_response_custom_msg"/>
+    <string name="quick_response_custom_msg">"自行撰写回复\u2026"</string>
+
+    <!-- Event Info strings-->
+    <!-- Time Zone Label [CHAR LIMIT=12]-->
+
+    <!-- Repetition Label [CHAR LIMIT=12]-->
+
+    <!-- Organizer Label [CHAR LIMIT=12]-->
+    <add-resource type="string" name="event_info_organizer"/>
+    <string name="event_info_organizer">"组织者："</string>
+    <!-- Reminders label [CHAR LIMIT=15]-->
+    <add-resource type="string" name="event_info_reminders_label"/>
+    <string name="event_info_reminders_label">"提醒"</string>
+
+    <!-- Agenda View strings -->
+
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_today"/>
+    <string name="agenda_today">"今天，<xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_yesterday"/>
+    <string name="agenda_yesterday">"昨天，<xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_tomorrow"/>
+    <string name="agenda_tomorrow">"明天，<xliff:g id="date">%1$s</xliff:g>"</string>
+    <!-- This is shown while the calendar events are being loading to the screen. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"正在加载..."</string>
+    <!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+    <add-resource type="string" name="show_older_events"/>
+    <string name="show_older_events">"触摸可查看<xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g>之前的活动"</string>
+    <!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+    <add-resource type="string" name="show_newer_events"/>
+    <string name="show_newer_events">"触摸可查看<xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g>之后的活动"</string>
+
+    <!-- Search activity strings -->
+
+    <!-- Title of the search screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"搜索我的日历"</string>
+
+    <!-- Button labels: -->
+
+    <!-- This is the title of a popup window that is displayed when the user
+         edits a repeating event. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="edit_event_label"/>
+    <string name="edit_event_label">"详细信息"</string>
+    <!-- This is a menu button for switching into edit mode when viewing an event.
+        [CHAR LIMIT=10] -->
+    <add-resource type="string" name="edit_label"/>
+    <string name="edit_label">"编辑"</string>
+    <!-- The button label for deleting an event -->
+    <add-resource type="string" name="delete_label"/>
+    <string name="delete_label">"删除"</string>
+    <!-- A menu item for deleting an event -->
+
+    <!-- The button label for saving an event -->
+    <add-resource type="string" name="save_label"/>
+    <string name="save_label">"完成"</string>
+    <!-- The button label for discarding changes to an event -->
+    <add-resource type="string" name="discard_label"/>
+    <string name="discard_label">"取消"</string>
+
+    <!-- Button labels on expanded notification reminders: -->
+
+    <!-- The button label for making the reminder alarms go away temporarily.
+         The reminder alarms will fire off again in 5 minutes. -->
+    <add-resource type="string" name="snooze_all_label"/>
+    <string name="snooze_all_label">"全部延迟"</string>
+    <!-- The button label for dismissing all the current reminder alarms. This
+         causes them to disappear from the notification screen. -->
+    <add-resource type="string" name="dismiss_all_label"/>
+    <string name="dismiss_all_label">"全部关闭"</string>
+    <!-- The button label for making the reminder alarms go away temporarily
+         and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+    <add-resource type="string" name="snooze_label"/>
+    <string name="snooze_label">"稍后再提醒"</string>
+
+    <!-- Repetition dialog options: -->
+
+    <!-- A label in a multiple-choice list for the specifying that an event does
+         not repeat -->
+    <add-resource type="string" name="does_not_repeat"/>
+    <string name="does_not_repeat">"一次性活动"</string>
+    <!-- Part of a description of an repeating event. This part states the date when a repeating
+         event ends. The part before the semi-colon describes how it repeats.
+         e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+    <add-resource type="string" name="endByDate"/>
+    <string name="endByDate">"；直到<xliff:g id="DATE">%s</xliff:g>"</string>
+    <!-- Part of a description of an repeating event. This part how many times the event repeats.
+         The part before the semi-colon describes how it repeats.
+         e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+    <add-resource type="plurals" name="endByCount"/>
+    <plurals name="endByCount">
+        <item quantity="one">"；1次"</item>
+        <item quantity="other">"；共重复<xliff:g id="NUMBER">%d</xliff:g>次"</item>
+    </plurals>
+    <!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+    <add-resource type="plurals" name="daily"/>
+    <plurals name="daily">
+        <item quantity="one">"每天"</item>
+        <item quantity="other">"每<xliff:g id="NUMBER">%d</xliff:g>天"</item>
+    </plurals>
+    <!-- A label in a multiple-choice list for the specifying that an event
+         repeats every weekday (Monday through Friday) -->
+    <add-resource type="string" name="every_weekday"/>
+    <string name="every_weekday">"每个工作日（周一至周五）"</string>
+    <!-- A description for an event that repeats weekly on some day of the week. For example,
+         'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday.  [CHAR LIMIT=25]-->
+    <add-resource type="plurals" name="weekly"/>
+    <plurals name="weekly">
+        <item quantity="one">"每周的<xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+        <item quantity="other">"每<xliff:g id="NUMBER">%1$d</xliff:g>周的<xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+    </plurals>
+
+    <!-- The common portion of a string describing how often an event repeats,
+         example: 'Monthly (on day 2)' -->
+    <add-resource type="string" name="monthly"/>
+    <string name="monthly">"每月"</string>
+    <!-- Calendar spinner item, to select that an event recurs every year. -->
+    <add-resource type="string" name="yearly_plain"/>
+    <string name="yearly_plain">"每年"</string>
+    <!-- Example: "Monthly (on day 15)" -->
+    <add-resource type="string" name="monthly_on_day"/>
+    <string name="monthly_on_day">"每月（<xliff:g id="DAY_OF_MONTH">%s</xliff:g> 日）"</string>
+    <!-- Example: "Yearly (on April 15)" -->
+    <add-resource type="string" name="yearly"/>
+    <string name="yearly">"每年（<xliff:g id="DATES">%s</xliff:g>）"</string>
+    <!-- This is a label for telling the user that this event repeats in
+         custom (non-standard) way from the usual repeat rates (such as daily,
+         weekly, etc.) and that the user cannot change this on the phone
+         (but only on the web). -->
+    <add-resource type="string" name="custom"/>
+    <string name="custom" product="tablet">"自定义（无法在平板电脑上自定义）"</string>
+    <!-- This is a label for telling the user that this event repeats in
+         custom (non-standard) way from the usual repeat rates (such as daily,
+         weekly, etc.) and that the user cannot change this on the phone
+         (but only on the web). -->
+    <add-resource type="string" name="custom"/>
+    <string name="custom" product="default">"自定义（无法在手机上自定义）"</string>
+
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change just this one instance
+         of this repeating event. -->
+    <add-resource type="string" name="modify_event"/>
+    <string name="modify_event">"仅更改此活动"</string>
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change all occurrences of
+         this repeating event. -->
+    <add-resource type="string" name="modify_all"/>
+    <string name="modify_all">"更改所有重复的活动"</string>
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change this instance and all
+         future occurrences of this repeating event. -->
+    <add-resource type="string" name="modify_all_following"/>
+    <string name="modify_all_following">"更改此活动和所有将来的活动"</string>
+
+    <!-- Dialogs -->
+
+    <!-- This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="new_event_dialog_label"/>
+    <string name="new_event_dialog_label">"新建活动"</string>
+    <!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="new_event_dialog_option"/>
+    <string name="new_event_dialog_option">"新建活动"</string>
+    <!-- Confirmation dialog message -->
+
+    <!-- This is a confirmation message in a popup dialog that appears when the
+         user has asked to delete an event. The user still has a chance to cancel
+         this operation. -->
+    <add-resource type="string" name="delete_this_event_title"/>
+    <string name="delete_this_event_title">"要删除此活动吗？"</string>
+    <!-- This is a confirmation message in a popup dialog that appears when the
+         user has asked to delete an event that is recurring. The user still has a chance to cancel
+         this operation. -->
+    <add-resource type="string" name="delete_recurring_event_title"/>
+    <string name="delete_recurring_event_title">"要删除<xliff:g id="EVENTTITLE">%s</xliff:g>吗？"</string>
+    <!-- This is the title of a popup dialog that asks for confirmation before
+         changing the response to an invitation. -->
+    <add-resource type="string" name="change_response_title"/>
+    <string name="change_response_title">"更改答复"</string>
+
+    <!-- This the title of a menu for General Preferences.
+         Pressing the menu item lets user to view and edit his general settings
+         (or preferences) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_general_preferences"/>
+    <string name="menu_general_preferences">"常规设置"</string>
+
+    <!-- This the title of a menu for "About Calendar" Preferences.
+         Pressing the menu item lets user to view the current settings
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_about_preferences"/>
+    <string name="menu_about_preferences">"关于日历"</string>
+
+    <!-- This is the title of the screen for setting user preferences. -->
+    <add-resource type="string" name="preferences_title"/>
+    <string name="preferences_title">"设置"</string>
+    <!-- This is the title of a section in the Settings screen for settings
+         related to viewing calendar events -->
+    <add-resource type="string" name="preferences_general_title"/>
+    <string name="preferences_general_title">"日历视图设置"</string>
+    <!-- This is the title of a section in the Settings screen for settings
+         related to reminders for calendar events -->
+    <add-resource type="string" name="preferences_reminder_title"/>
+    <string name="preferences_reminder_title">"通知和提醒"</string>
+    <!-- Settings check box label to hide events that the user has declined to attend -->
+    <add-resource type="string" name="preferences_hide_declined_title"/>
+    <string name="preferences_hide_declined_title">"隐藏您不参加的活动"</string>
+    <!-- Settings week start label to start week on specific day-->
+    <add-resource type="string" name="preferences_week_start_day_title"/>
+    <string name="preferences_week_start_day_title">"一周起始日"</string>
+    <!-- Title of popup for week start day setting-->
+    <add-resource type="string" name="preferences_week_start_day_dialog"/>
+    <string name="preferences_week_start_day_dialog">"一周起始日"</string>
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="preferences_week_start_day_default"/>
+    <string name="preferences_week_start_day_default">-1</string>
+    <!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+    <add-resource type="string" name="preferences_clear_search_history_title"/>
+    <string name="preferences_clear_search_history_title">"清除搜索记录"</string>
+    <!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+    <add-resource type="string" name="preferences_clear_search_history_summary"/>
+    <string name="preferences_clear_search_history_summary">"删除您之前进行的所有搜索的记录"</string>
+    <!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+    <add-resource type="string" name="search_history_cleared"/>
+    <string name="search_history_cleared">"搜索记录已清除。"</string>
+    <!-- Settings check box label to enable or disable notifications -->
+    <add-resource type="string" name="preferences_alerts_title"/>
+    <string name="preferences_alerts_title">"通知"</string>
+    <!-- Settings dialog label that specifies when the phone should vibrate -->
+    <add-resource type="string" name="preferences_alerts_vibrateWhen_title"/>
+    <string name="preferences_alerts_vibrateWhen_title">"振动"</string>
+    <!-- Title of ringtone selector dialog -->
+    <add-resource type="string" name="preferences_alerts_ringtone_title"/>
+    <string name="preferences_alerts_ringtone_title">"提示音"</string>
+    <!-- Title of check box label to enable or disable pop-up notifications -->
+    <add-resource type="string" name="preferences_alerts_popup_title"/>
+    <string name="preferences_alerts_popup_title">"弹出式通知"</string>
+    <!-- List item label for setting the default number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_title"/>
+    <string name="preferences_default_reminder_title">"默认提醒时间"</string>
+    <!-- Title of dialog for setting the default number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_dialog"/>
+    <string name="preferences_default_reminder_dialog">"默认提醒时间"</string>
+    <!-- Default value for the number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_default"/>
+    <string name="preferences_default_reminder_default">10</string>
+    <!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+    <add-resource type="string" name="preferences_use_home_tz_title"/>
+    <string name="preferences_use_home_tz_title">"使用原住地时区"</string>
+    <!-- Settings description of what setting Calendar to use a fixed 'home' time
+        zone does [CHAR LIMIT = 60]-->
+    <add-resource type="string" name="preferences_use_home_tz_descrip"/>
+    <string name="preferences_use_home_tz_descrip">"外出时以原住地时区显示日历和活动时间"</string>
+    <!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+    <add-resource type="string" name="preferences_home_tz_title"/>
+    <string name="preferences_home_tz_title">"原住地时区"</string>
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="preferences_home_tz_default"/>
+    <string name="preferences_home_tz_default">America/Los_Angeles</string>
+
+    <!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+    <add-resource type="string" name="preferences_show_week_num_title"/>
+    <string name="preferences_show_week_num_title">"显示周数"</string>
+
+    <!-- This is the title of a section in the Settings screen for "About" this application -->
+    <add-resource type="string" name="preferences_about_title"/>
+    <string name="preferences_about_title">"关于"</string>
+    <!-- Build version of the application -->
+    <add-resource type="string" name="preferences_build_version"/>
+    <string name="preferences_build_version">"版本号"</string>
+
+    <!-- Widget -->
+
+    <!-- Title for calendar gadget when displayed in list of all other gadgets -->
+    <add-resource type="string" name="gadget_title"/>
+    <string name="gadget_title">"日历"</string>
+
+    <!-- Shown in month view next to event icon when additional events exist for that day, but no
+        room remaining -->
+    <add-resource type="plurals" name="month_more_events"/>
+    <plurals name="month_more_events">
+        <!-- additional events message for 1 event, the quotes force a literal interpretation of the
+            string [CHAR LIMIT = 10] -->
+        <item quantity="one">"+1"</item>
+        <!-- additional events message for multiple events [CHAR LIMIT = 10] -->
+        <item quantity="other">+<xliff:g id="number">%d</xliff:g></item>
+    </plurals>
+
+    <!-- Caption to show on gadget when there are no upcoming calendar events -->
+    <add-resource type="string" name="gadget_no_events"/>
+    <string name="gadget_no_events">"没有任何日历活动"</string>
+
+    <!-- Text to show on gadget when an event is currently in progress -->
+
+
+    <!-- Text to show on gadget when an all-day event is in progress -->
+
+
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="tardis"/>
+    <string name="tardis">TARDIS</string>
+
+    <!-- Experimental settings [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_experimental_category"/>
+    <string name="preferences_experimental_category">"实验性"</string>
+
+    <!-- Reminders settings [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_reminders_category"/>
+    <string name="preferences_reminders_category">"提醒"</string>
+    <!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+    <add-resource type="string" name="preferences_reminders_responded_label"/>
+    <string name="preferences_reminders_responded_label">"免去提醒"</string>
+    <!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+    <add-resource type="string" name="preferences_reminders_responded_dialog"/>
+    <string name="preferences_reminders_responded_dialog">"免去提醒"</string>
+    <!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_label"/>
+    <string name="preferences_reminders_quiet_hours_label">"勿扰时段"</string>
+    <!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_description"/>
+    <string name="preferences_reminders_quiet_hours_description">"在指定的时段内不发出活动提醒。"</string>
+    <!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_start"/>
+    <string name="preferences_reminders_quiet_hours_start">"勿扰时段开始时间"</string>
+    <!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_end"/>
+    <string name="preferences_reminders_quiet_hours_end">"勿扰时段结束时间"</string>
+
+    <!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_debug_category"/>
+    <string name="preferences_debug_category">"调试"</string>
+
+    <!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+    <add-resource type="string" name="copy_db"/>
+    <string name="copy_db">"发送数据库"</string>
+
+    <!-- Displayed in email address autocomplete list when searching for contacts
+         in corporate directories. Example:  "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+    <add-resource type="string" name="directory_searching_fmt"/>
+    <string name="directory_searching_fmt">"正在搜索 <xliff:g id="DOMAIN">%s</xliff:g>\u2026"</string>
+
+    <!-- Accessibility Events -->
+    <!-- Strings that describes actions for buttons without text -->
+    <!-- Create a new calendar event [CHAR LIMIT = NONE]-->
+
+    <!-- Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_remove_attendee"/>
+    <string name="accessibility_remove_attendee">"删除参加者"</string>
+    <!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_start_date"/>
+    <string name="accessibility_pick_start_date">"开始日期"</string>
+    <!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_start_time"/>
+    <string name="accessibility_pick_start_time">"开始时间"</string>
+    <!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_end_date"/>
+    <string name="accessibility_pick_end_date">"结束日期"</string>
+    <!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_end_time"/>
+    <string name="accessibility_pick_end_time">"结束时间"</string>
+    <!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_time_zone"/>
+    <string name="accessibility_pick_time_zone">"时区"</string>
+    <!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_recurrence"/>
+    <string name="accessibility_pick_recurrence">"重复活动"</string>
+    <!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_add_reminder"/>
+    <string name="accessibility_add_reminder">"添加提醒"</string>
+    <!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_remove_reminder"/>
+    <string name="accessibility_remove_reminder">"删除提醒"</string>
+    <!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_add_attendee"/>
+    <string name="accessibility_add_attendee">"添加参加者"</string>
+    <!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_sync_cal"/>
+    <string name="accessibility_sync_cal">"同步日历"</string>
+    <!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_all_day"/>
+    <string name="accessibility_all_day">"全天活动"</string>
+    <!-- Refresh the data in the calendar [CHAR LIMIT = NONE]-->
+
+    <!-- Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_repeats"/>
+    <string name="accessibility_repeats">"重复"</string>
+    <!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_time"/>
+    <string name="accessibility_reminder_time">"提醒时间"</string>
+    <!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_type"/>
+    <string name="accessibility_reminder_type">"提醒类型"</string>
+    <!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_showmeas"/>
+    <string name="accessibility_reminder_showmeas">"将我的状态显示为"</string>
+    <!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_privacy"/>
+    <string name="accessibility_reminder_privacy">"隐私设置"</string>
+    <!-- Calendar notification [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_cal_notification"/>
+    <string name="acessibility_cal_notification">"日历通知"</string>
+    <!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_snooze_notification"/>
+    <string name="acessibility_snooze_notification">"暂停通知"</string>
+    <!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_email_notification"/>
+    <string name="accessibility_email_notification">"向参加者发邮件"</string>
+
+    <!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="day_view_new_event_hint"/>
+    <string name="day_view_new_event_hint">"+ 新建活动"</string>
+
+    <!--
+      Source: A value for announcing the current event index (example: "Event 2 of 6").
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <add-resource type="string" name="template_announce_item_index"/>
+    <string name="template_announce_item_index">"第 <xliff:g id="ITEM_INDEX">%1$s</xliff:g> 个活动，共 <xliff:g id="ITEM_COUNT">%2$s</xliff:g> 个。"</string>
+
+        <!-- number of events in the notification bar -->
+    <add-resource type="plurals" name="Nevents"/>
+    <plurals name="Nevents">
+        <!-- This is the label for a 1 event. -->
+        <item quantity="one">"1 项活动"</item>
+        <!-- This is the label for 2 or more events. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g> 项活动"</item>
+    </plurals>
+
+    <!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30] -->
+    <add-resource type="plurals" name="N_remaining_events"/>
+    <plurals name="N_remaining_events">
+        <!-- This is the label for 1 event. -->
+        <item quantity="one">"还有 1 项活动"</item>
+        <!-- This is the label for 2 or more events. -->
+        <item quantity="other">"+另<xliff:g id="COUNT">%d</xliff:g>项活动"</item>
+    </plurals>
+
+    <!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_selected_marker_description"/>
+    <string name="acessibility_selected_marker_description">"所选活动"</string>
+
+    <!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+    <add-resource type="string" name="do_not_check"/>
+    <string name="do_not_check">"请勿选中 -&gt;"</string>
+
+    <add-resource type="string" name="qingming"/>
+    <string name="qingming">"清明"</string>
+
+    <!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_dialog_title"/>
+    <string name="recurrence_dialog_title">"重复"</string>
+    <!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_dialog_title_never"/>
+    <string name="recurrence_dialog_title_never">"不重复"</string>
+
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 days) -->
+    <add-resource type="plurals" name="recurrence_interval_daily"/>
+    <plurals name="recurrence_interval_daily">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"每<xliff:g id="COUNT">%d</xliff:g>天"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"每<xliff:g id="COUNT">%d</xliff:g>天"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks) -->
+    <add-resource type="plurals" name="recurrence_interval_weekly"/>
+    <plurals name="recurrence_interval_weekly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"每<xliff:g id="COUNT">%d</xliff:g>周"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"每<xliff:g id="COUNT">%d</xliff:g>周"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 months) -->
+    <add-resource type="plurals" name="recurrence_interval_monthly"/>
+    <plurals name="recurrence_interval_monthly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"每<xliff:g id="COUNT">%d</xliff:g>个月"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"每<xliff:g id="COUNT">%d</xliff:g>个月"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 years) -->
+    <add-resource type="plurals" name="recurrence_interval_yearly"/>
+    <plurals name="recurrence_interval_yearly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"每<xliff:g id="COUNT">%d</xliff:g>年"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"每<xliff:g id="COUNT">%d</xliff:g>年"</item>
+    </plurals>
+
+    <!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_month_pattern_by_day"/>
+    <string name="recurrence_month_pattern_by_day">"在每个月的同一天"</string>
+
+    <!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_end_continously"/>
+    <string name="recurrence_end_continously">"无限重复"</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+    <add-resource type="string" name="recurrence_end_date_label"/>
+    <string name="recurrence_end_date_label">"直到某个日期"</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_end_date"/>
+    <string name="recurrence_end_date">"直到<xliff:g id="DATE">%s</xliff:g>"</string>
+    <!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+    <add-resource type="string" name="recurrence_end_count_label"/>
+    <string name="recurrence_end_count_label">"限定次数"</string>
+
+    <!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+    <add-resource type="plurals" name="recurrence_end_count"/>
+    <plurals name="recurrence_end_count">
+        <item quantity="one">"重复<xliff:g id="EVENT_COUNT">%d</xliff:g>次"</item>
+        <item quantity="other">"重复<xliff:g id="EVENT_COUNT">%d</xliff:g>次"</item>
+    </plurals>
+
+    <!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_recurrence_choose_end_date_description"/>
+    <string name="acessibility_recurrence_choose_end_date_description">"更改结束日期"</string>
+
+    <!-- Do Not Translate.  Sender identity for global notification synchronization. -->
+    <add-resource type="string" name="notification_sender_id"/>
+    <string name="notification_sender_id"></string>
+
+    <!-- Delete Events related -->
+    <add-resource type="string" name="events_delete"/>
+    <string name="events_delete">"删除事件"</string>
+    <add-resource type="string" name="action_select_all"/>
+    <string name="action_select_all">"全选"</string>
+    <add-resource type="string" name="action_select_none"/>
+    <string name="action_select_none">"取消全选"</string>
+    <add-resource type="string" name="action_delete"/>
+    <string name="action_delete">"完成"</string>
+    <add-resource type="string" name="all_events"/>
+    <string name="all_events">"所有事件"</string>
+    <add-resource type="string" name="no_events"/>
+    <string name="no_events">"没有可用的事件"</string>
+    <add-resource type="string" name="evt_del_dlg_title"/>
+    <string name="evt_del_dlg_title">"删除事件?"</string>
+    <add-resource type="string" name="evt_del_dlg_msg_selected"/>
+    <string name="evt_del_dlg_msg_selected">"将删除选中的事件"</string>
+    <add-resource type="string" name="evt_del_dlg_msg_all"/>
+    <string name="evt_del_dlg_msg_all">"所有事件都将被删除"</string>
+    <add-resource type="string" name="no_events_selected"/>
+    <string name="no_events_selected">"没有选择事件"</string>
+
+  <add-resource type="plurals" name="events_selected"/>
+    <plurals name="events_selected">
+    <item quantity="zero">"没有选择事件"</item>
+    <item quantity="one">"已选择 %1$d 个活动"</item>
+    <item quantity="other">"已选择 %1$d 个事件"</item>
+ </plurals></resources>

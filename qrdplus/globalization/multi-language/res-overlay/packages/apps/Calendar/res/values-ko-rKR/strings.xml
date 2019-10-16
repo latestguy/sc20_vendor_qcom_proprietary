@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2006 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- This is the label underneath the icon for Calendar -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"캘린더"</string>
+    <!-- on permission of read_calendar -->
+    <add-resource type="string" name="on_permission_read_calendar"/>
+    <string name="on_permission_read_calendar">"필수 권한을 사용 중지했습니다."</string>
+    <!-- Shared Labels. These labels are shared among the activities. -->
+
+    <!-- This is the label for the title or name of an event -->
+    <add-resource type="string" name="what_label"/>
+    <string name="what_label">"내용"</string>
+    <!-- This is the label for the location of an event -->
+    <add-resource type="string" name="where_label"/>
+    <string name="where_label">"장소"</string>
+    <!-- This is the label for the time of an event [CHAR LIMIT=30] -->
+    <add-resource type="string" name="when_label"/>
+    <string name="when_label">"일시"</string>
+    <!-- This is the label for the timezone of an event [CHAR LIMIT=30] -->
+    <add-resource type="string" name="timezone_label"/>
+    <string name="timezone_label">"시간대"</string>
+    <!-- This is the label for the Guests/Attendees of an event -->
+    <add-resource type="string" name="attendees_label"/>
+    <string name="attendees_label">"참석자"</string>
+    <!-- Text to show when an event starts on the current day -->
+    <add-resource type="string" name="today"/>
+    <string name="today">"오늘"</string>
+    <!-- Text to show when an event starts on the next day -->
+    <add-resource type="string" name="tomorrow"/>
+    <string name="tomorrow">"내일"</string>
+    <!-- Text for an event starting on the current day with a start and end time.
+         For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="today_at_time_fmt"/>
+    <string name="today_at_time_fmt">"오늘 <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <!-- Text for an event starting on the next day with a start and end time.
+         For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="tomorrow_at_time_fmt"/>
+    <string name="tomorrow_at_time_fmt">"내일 <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+    <!-- Format string for a date and time description.  For ex:
+         "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="date_time_fmt"/>
+    <string name="date_time_fmt">"<xliff:g id="DATE">%s</xliff:g>, <xliff:g id="TIME_INTERVAL">%s</xliff:g>"</string>
+
+    <!-- Some events repeat daily, weekly, monthly, or yearly.  This is the label
+         for all the choices about how often an event repeats (including the choice
+         of not repeating). -->
+    <add-resource type="string" name="repeats_label"/>
+    <string name="repeats_label">"반복"</string>
+    <!-- Title of event when no explicit title is specified by the user -->
+    <add-resource type="string" name="no_title_label"/>
+    <string name="no_title_label">"(제목 없음)"</string>
+    <!-- No google map in phone -->
+    <add-resource type="string" name="no_map"/>
+    <string name="no_map">"휴대전화에서 지도를 찾을 수 없습니다."</string>
+    <!-- Reminder format strings -->
+    <add-resource type="plurals" name="Nminutes"/>
+    <plurals name="Nminutes">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">"1분"</item>
+        <!-- This is the label for 2 or more minutes. The actual number of
+             minutes is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>분"</item>
+    </plurals>
+    <!-- We use the abbreviation "mins" instead of "minutes" to keep the string short.
+         This is the number of minutes displayed for a calendar reminder.  For example,
+         a reminder of 10 minutes would be displayed as '10 mins'.  The translation
+         should use the shortest acceptable abbreviation to save space. -->
+    <add-resource type="plurals" name="Nmins"/>
+    <plurals name="Nmins">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">"1분"</item>
+        <!-- This is the label for 2 or more minutes. The actual number of
+             minutes is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>분"</item>
+    </plurals>
+    <!-- This is the number of hours displayed for a calendar reminder.  For example,
+         a reminder of 1 hour would be displayed as '1 hour'.  The translation
+         should use the shortest acceptable abbreviation of 'hour' to save space. -->
+    <add-resource type="plurals" name="Nhours"/>
+    <plurals name="Nhours">
+        <!-- This is the label for a 1-hour reminder. -->
+        <item quantity="one">"1시간"</item>
+        <!-- This is the label for a reminder of 2 or more hours. The actual number of
+             hours is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>시간"</item>
+    </plurals>
+    <!-- This is the number of days displayed for a calendar reminder.  For example,
+         a reminder of 2 days would be displayed as '2 days'.  The translation
+         should use the shortest acceptable abbreviation of 'day' to save space. -->
+    <add-resource type="plurals" name="Ndays"/>
+    <plurals name="Ndays">
+        <!-- This is the label for a reminder of 1 day. -->
+        <item quantity="one">"1일"</item>
+        <!-- This is the label for a reminder of 2 or more days. The actual number of
+             days is a parameter. -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>일"</item>
+    </plurals>
+    <!-- This is for displaying the week of the year near the date. Eg. "January, 2011 Week 1" -->
+    <add-resource type="plurals" name="weekN"/>
+    <plurals name="weekN">
+        <!-- Label for displaying week of the year for all week values [CHAR LIMIT=16] -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>번째 주"</item>
+    </plurals>
+
+    <!-- Menu items: -->
+
+    <!-- This is a label on a context menu item. Pressing this menu item to initiate
+        syncing of your Calendar data with the server. [CHAR LIMIT=11] -->
+    <add-resource type="string" name="calendar_refresh"/>
+    <string name="calendar_refresh">"새로고침"</string>
+    <!-- This is a label on a context menu item. Pressing this menu item displays the
+         Agenda view. -->
+
+    <!-- This is a label on a context menu item. Pressing this menu item displays the
+         Day view. -->
+    <add-resource type="string" name="show_day_view"/>
+    <string name="show_day_view">"요일 표시"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Agenda view. -->
+    <add-resource type="string" name="agenda_view"/>
+    <string name="agenda_view">"일정목록"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Day view. -->
+    <add-resource type="string" name="day_view"/>
+    <string name="day_view">"일"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Week view. -->
+    <add-resource type="string" name="week_view"/>
+    <string name="week_view">"주"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         Month view. -->
+    <add-resource type="string" name="month_view"/>
+    <string name="month_view">"월"</string>
+    <!-- This is a label on a menu item. Pressing this menu item displays the
+         details of an event. -->
+    <add-resource type="string" name="event_view"/>
+    <string name="event_view">"일정 보기"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to create a new event. -->
+    <add-resource type="string" name="event_create"/>
+    <string name="event_create">"새 일정"</string>
+    <!-- This is a label on a menu item in a popup window. Pressing this menu
+         item allows the user to edit or change an existing event. -->
+    <add-resource type="string" name="event_edit"/>
+    <string name="event_edit">"일정 수정"</string>
+    <!-- This is a label on a menu item in a popup window. Pressing this menu
+         item allows the user to delete an existing event. -->
+    <add-resource type="string" name="event_delete"/>
+    <string name="event_delete">"일정 삭제"</string>
+    <!-- This is a label on a menu item. Pressing this menu
+         item takes the user to the current day (today) in whatever view
+         (Day view, Week view, Agenda view, Month view) they are currently in. -->
+    <add-resource type="string" name="goto_today"/>
+    <string name="goto_today">"오늘"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to see the list of calendars that he is viewing and to then add
+         or remove selected calendars. -->
+
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to view and edit his Settings (or Preferences) -->
+    <add-resource type="string" name="menu_preferences"/>
+    <string name="menu_preferences">"설정"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to select the calendars to display [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_select_visible_calendars"/>
+    <string name="menu_select_visible_calendars">"표시할 캘린더"</string>
+    <!-- This is a label on a menu item. Pressing this menu item allows the
+         user to select the calendars to display [CHAR LIMIT=20] -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"검색"</string>
+    <!-- This is a label on a menu item. Pressing this menu item hides
+         the navigation controls on the right side. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="hide_controls"/>
+    <string name="hide_controls">"컨트롤 숨기기"</string>
+    <!-- This is a label on a menu item. Pressing this menu item shows the
+         navigation controls on the right side. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="show_controls"/>
+    <string name="show_controls">"컨트롤 표시"</string>
+
+    <!-- Month view -->
+
+
+    <!-- Select Visible Calendars activity -->
+
+    <!-- Title of "My calendars" screen -->
+    <add-resource type="string" name="select_visible_calendars_title"/>
+    <string name="select_visible_calendars_title">"표시할 캘린더"</string>
+    <!-- Synced and visible status message -->
+
+    <!-- Synced but not visible status message -->
+
+    <!-- not Synced or visible status message -->
+
+    <!-- Synced status message displayed when the given calendar is stored/synced on the device
+        [CHAR LIMIT=60] -->
+    <add-resource type="string" name="synced"/>
+    <string name="synced">"동기화됨"</string>
+    <!-- Not synced status message displayed when the given calendar is not stored/synced on the
+        device [CHAR LIMIT=60] -->
+    <add-resource type="string" name="not_synced"/>
+    <string name="not_synced">"동기화 안됨"</string>
+    <!-- Message displayed to user when an account with Calendars is not being auto-synced
+        [CHAR LIMIT=120]-->
+    <add-resource type="string" name="acct_not_synced"/>
+    <string name="acct_not_synced">"계정이 동기화되지 않아 캘린더의 상태가 최신이 아닐 수 있습니다."</string>
+    <!-- Label on button that takes user to the Accounts and Sync settings page [CHAR LIMIT=60] -->
+    <add-resource type="string" name="accounts"/>
+    <string name="accounts">"계정 및 동기화"</string>
+
+    <!-- Select Synced Calendars activity -->
+    <!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_synced_calendars_title"/>
+    <string name="select_synced_calendars_title">"동기화할 캘린더"</string>
+    <!-- Select the set of calendars to sync [CHAR LIMIT=60] -->
+    <add-resource type="string" name="select_synced_calendars_button"/>
+    <string name="select_synced_calendars_button">"동기화할 캘린더"</string>
+
+    <!-- Event edit activity -->
+
+    <!-- The title of the screen where the user edits an event [CHAR LIMIT=17] -->
+
+    <!-- Default value of What field (as a hint to the user) [CHAR LIMIT=15] -->
+    <add-resource type="string" name="hint_what"/>
+    <string name="hint_what">"일정 이름"</string>
+    <!-- Default value of Where field (as a hint to the user)[CHAR LIMIT=15] -->
+    <add-resource type="string" name="hint_where"/>
+    <string name="hint_where">"장소"</string>
+    <!-- Default value of Description field (as a hint to the user) [CHAR LIMIT=15]-->
+    <add-resource type="string" name="hint_description"/>
+    <string name="hint_description">"일정 설명"</string>
+    <!-- Default value of Attendees/Guests field (as a hint to the user) [CHAR LIMIT=10] -->
+    <add-resource type="string" name="hint_attendees"/>
+    <string name="hint_attendees">"참석자 추가"</string>
+    <!-- Toast message displayed when a new event is created -->
+    <add-resource type="string" name="creating_event"/>
+    <string name="creating_event">"일정을 만들었습니다."</string>
+    <!-- Toast message displayed when an existing event is saved after being modified -->
+    <add-resource type="string" name="saving_event"/>
+    <string name="saving_event">"일정을 저장했습니다."</string>
+    <!-- Toast message displayed when a new event was not saved because it was empty [CHAR LIMIT=30] -->
+    <add-resource type="string" name="empty_event"/>
+    <string name="empty_event">"빈 일정은 만들 수 없습니다."</string>
+    <!-- Toast message displayed when a new event with guests is created -->
+    <add-resource type="string" name="creating_event_with_guest"/>
+    <string name="creating_event_with_guest">"초대장이 전송됩니다."</string>
+    <!-- Toast message displayed when an existing event with guests is saved after being modified -->
+    <add-resource type="string" name="saving_event_with_guest"/>
+    <string name="saving_event_with_guest">"업데이트가 전송됩니다."</string>
+
+    <!-- Toast message displayed responding to an event from an email as accepted
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_accepted"/>
+    <string name="rsvp_accepted">"참석으로 응답함"</string>
+    <!-- Toast message displayed responding to an event from an email as tentative
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_tentative"/>
+    <string name="rsvp_tentative">"미정으로 응답함"</string>
+    <!-- Toast message displayed responding to an event from an email as declined
+     [CHAR LIMIT=50] -->
+    <add-resource type="string" name="rsvp_declined"/>
+    <string name="rsvp_declined">"참석 안함으로 응답함"</string>
+
+
+    <!-- Title of message displayed to indicate available calendars are being loaded when creating
+         a new event -->
+
+    <!-- Body of message displayed to indicate available calendars are being loaded when creating
+         a new event -->
+
+
+    <!-- Create event dialog -->
+
+    <!-- Create event dialog save button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="create_event_dialog_save"/>
+    <string name="create_event_dialog_save">"저장"</string>
+
+    <!-- The alert toast is not actually being displayed for some reason. -->
+
+    <!-- the title of the alert/notification activity -->
+    <add-resource type="string" name="alert_title"/>
+    <string name="alert_title">"캘린더 알림"</string>
+    <!-- Notification window messages: -->
+
+
+    <!-- Event info/edit screen labels:-->
+
+    <!-- This is the title of the screen used to view the details of an event -->
+    <add-resource type="string" name="event_info_title"/>
+    <string name="event_info_title">"일정 보기"</string>
+    <!-- This is the title of the screen used to view the details of an invitation
+         to a meeting or event -->
+    <add-resource type="string" name="event_info_title_invite"/>
+    <string name="event_info_title_invite">"회의 초대"</string>
+
+    <!-- EditEventActivity specific strings: -->
+
+    <!-- Events have a start date/time and an end date/time. The display shows
+         the start and end times like 'From start date To end date'. This is the
+         label before the 'end date'. -->
+    <add-resource type="string" name="edit_event_to_label"/>
+    <string name="edit_event_to_label">"종료:"</string>
+    <!-- Events have a start date/time and an end date/time. The display shows
+         the start and end times like 'From start date To end date'. This is the
+         label before the 'start date'. -->
+    <add-resource type="string" name="edit_event_from_label"/>
+    <string name="edit_event_from_label">"시작:"</string>
+    <!-- Check box label that specifies if this is an all-day event -->
+    <add-resource type="string" name="edit_event_all_day_label"/>
+    <string name="edit_event_all_day_label">"종일"</string>
+    <!-- Label for choosing one of the calendars -->
+    <add-resource type="string" name="edit_event_calendar_label"/>
+    <string name="edit_event_calendar_label">"캘린더"</string>
+    <!-- Menu item to show all choices [CHAR LIMIT=22]-->
+    <add-resource type="string" name="edit_event_show_all"/>
+    <string name="edit_event_show_all">"모두 표시"</string>
+    <!-- Label for the event description -->
+    <add-resource type="string" name="description_label"/>
+    <string name="description_label">"일정 설명"</string>
+    <!-- Label for the 'Presence' of an event, which can be either 'busy' (the default)
+         or 'available'  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="presence_label"/>
+    <string name="presence_label">"내 상태"</string>
+    <!-- Label for the 'Privacy' of an event, which can be either 'private'
+         or 'public' [CHAR LIMIT=15] -->
+    <add-resource type="string" name="privacy_label"/>
+    <string name="privacy_label">"공개 설정"</string>
+    <!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+    <add-resource type="string" name="reminders_label"/>
+    <string name="reminders_label">"알림 추가"</string>
+    <!-- Title of alert shown if the user tries to create an event and has no calendars -->
+    <add-resource type="string" name="no_syncable_calendars"/>
+    <string name="no_syncable_calendars">"캘린더 없음"</string>
+    <!-- Body of alert shown if the user tries to create an event and has no calendars. Users can start adding an account here. [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="no_calendars_found"/>
+    <string name="no_calendars_found">"일정을 추가하기 전에 기기에 하나 이상의 캘린더 계정을 추가하고 캘린더를 표시해야 합니다. 계정 추가를 터치하여 계정을 추가합니다(계정을 추가한 다음 동기화가 완료될 때까지 기다렸다가 다시 시도합니다). 또는 취소를 터치하고 적어도 하나의 캘린더가 표시되도록 합니다."</string>
+    <!-- Body of dialog prompting the user to create an account.[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="create_an_account_desc"/>
+    <string name="create_an_account_desc">"캘린더는 Google 계정에서 사용할 때 더 효과적입니다.\n\n\u2022 어떤 웹 브라우저에서든 액세스하세요.\n\u2022 일정을 안전하게 백업하세요."</string>
+    <!-- Title of a button shown when there is no account available and the system prompt a user to add one. [CHAR LIMIT=none] -->
+    <add-resource type="string" name="add_account"/>
+    <string name="add_account">"계정 추가"</string>
+
+    <!-- View Event -->
+
+    <!-- Label for which calendar an event is part of -->
+    <add-resource type="string" name="view_event_calendar_label"/>
+    <string name="view_event_calendar_label">"캘린더:"</string>
+    <!-- Label for the event organizer -->
+    <add-resource type="string" name="view_event_organizer_label"/>
+    <string name="view_event_organizer_label">"주최자:"</string>
+    <!-- Label for the local timezone -->
+
+    <!-- Label for showing event color picker -->
+    <add-resource type="string" name="choose_event_color_label"/>
+    <string name="choose_event_color_label">"일정 색상 선택"</string>
+    <!-- Title for event color picker dialog -->
+    <add-resource type="string" name="event_color_picker_dialog_title"/>
+    <string name="event_color_picker_dialog_title">"일정 색상"</string>
+    <!-- Label for button which sets event color to default calendar color -->
+    <add-resource type="string" name="event_color_set_to_default"/>
+    <string name="event_color_set_to_default">"기본 캘린더 색상으로 설정"</string>
+
+    <!-- Title for calendar color picker dialog -->
+    <add-resource type="string" name="calendar_color_picker_dialog_title"/>
+    <string name="calendar_color_picker_dialog_title">"캘린더 색상"</string>
+    <!-- Description for calendar color squares, which bring up the color picker. -->
+    <add-resource type="string" name="calendar_square_color_picker_description"/>
+    <string name="calendar_square_color_picker_description">"색상 선택기"</string>
+
+    <!-- Label for whether the user is attending this event. This is shown when
+         a user is invited to a meeting or event.  The possible answers are
+         'yes', 'no', and 'maybe' (and, initially, 'no response'). -->
+    <add-resource type="string" name="view_event_response_label"/>
+    <string name="view_event_response_label">"참석하시겠습니까?"</string>
+    <!-- Response for whether attending an event - accepted [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_yes"/>
+    <string name="response_yes">"예"</string>
+    <!-- Response for whether attending an event - tentative [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_maybe"/>
+    <string name="response_maybe">"미정"</string>
+    <!-- Response for whether attending an event - declined [CHAR LIMIT=10]-->
+    <add-resource type="string" name="response_no"/>
+    <string name="response_no">"아니요"</string>
+    <!-- Label for emailing attendees -->
+    <add-resource type="string" name="email_guests_label"/>
+    <string name="email_guests_label">"참석자에게 이메일 보내기"</string>
+    <!-- Label for emailing the organizer (when there are no attendees) -->
+    <add-resource type="string" name="email_organizer_label"/>
+    <string name="email_organizer_label">"이메일 관리도구"</string>
+    <!-- This is shown in the popup picker when emailing attendees -->
+    <add-resource type="string" name="email_picker_label"/>
+    <string name="email_picker_label">"이메일:"</string>
+    <!-- Toast message displayed when the event id was not found LIMIT=30] -->
+    <add-resource type="string" name="event_not_found"/>
+    <string name="event_not_found">"일정을 찾을 수 없습니다."</string>
+
+    <!-- Notification label for getting a map of the location. -->
+    <add-resource type="string" name="map_label"/>
+    <string name="map_label">"지도"</string>
+    <!-- Notification label for calling a phone number in the location. -->
+    <add-resource type="string" name="call_label"/>
+    <string name="call_label">"통화"</string>
+
+    <!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+    <add-resource type="string" name="quick_response_settings"/>
+    <string name="quick_response_settings">"빠른 응답"</string>
+    <!-- Summary of the quick response item in Settings [CHAR LIMIT=80]-->
+    <add-resource type="string" name="quick_response_settings_summary"/>
+    <string name="quick_response_settings_summary">"참석자에게 보내는 빠른 응답 메시지 수정"</string>
+    <!-- Title of the quick response screen in Settings->Quick Response [CHAR LIMIT=27]-->
+    <add-resource type="string" name="quick_response_settings_title"/>
+    <string name="quick_response_settings_title">"빠른 응답 수정"</string>
+    <!-- Title of the quick response item in Settings [CHAR LIMIT=18]-->
+    <add-resource type="string" name="quick_response_settings_edit_title"/>
+    <string name="quick_response_settings_edit_title">"빠른 응답"</string>
+
+    <!-- Title of the dialog prompting the user choose a response when emailing guests  [CHAR LIMIT=none]-->
+    <add-resource type="string" name="quick_response_dialog_title"/>
+    <string name="quick_response_dialog_title">"빠른 응답 선택"</string>
+    <!-- Error to user when an email program can't be found[CHAR LIMIT=none]-->
+    <add-resource type="string" name="quick_response_email_failed"/>
+    <string name="quick_response_email_failed">"이메일 프로그램 찾기 실패"</string>
+    <!-- The is shown in the email subject as the prefix appended to the event title [CHAR LIMIT=none]-->
+    <add-resource type="array" name="quick_response_defaults"/>
+    <string-array name="quick_response_defaults">
+        <item>"조금 늦어요."</item>
+        <item>"약 10분 후에 도착합니다."</item>
+        <item>"저 없이 시작하세요."</item>
+        <item>"죄송합니다. 일정을 변경해야 합니다."</item>
+        </string-array>
+    <!-- Option to create a custom response instead of using defaults [CHAR LIMIT=none] -->
+    <add-resource type="string" name="quick_response_custom_msg"/>
+    <string name="quick_response_custom_msg">"직접 메시지 쓰기\u2026"</string>
+
+    <!-- Event Info strings-->
+    <!-- Time Zone Label [CHAR LIMIT=12]-->
+
+    <!-- Repetition Label [CHAR LIMIT=12]-->
+
+    <!-- Organizer Label [CHAR LIMIT=12]-->
+    <add-resource type="string" name="event_info_organizer"/>
+    <string name="event_info_organizer">"주최자:"</string>
+    <!-- Reminders label [CHAR LIMIT=15]-->
+    <add-resource type="string" name="event_info_reminders_label"/>
+    <string name="event_info_reminders_label">"알림"</string>
+
+    <!-- Agenda View strings -->
+
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_today"/>
+    <string name="agenda_today">"오늘, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_yesterday"/>
+    <string name="agenda_yesterday">"어제, <xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <add-resource type="string" name="agenda_tomorrow"/>
+    <string name="agenda_tomorrow">"내일, <xliff:g id="date">%1$s</xliff:g>"</string>
+    <!-- This is shown while the calendar events are being loading to the screen. -->
+    <add-resource type="string" name="loading"/>
+    <string name="loading">"로드 중..."</string>
+    <!-- This is shown at the top of the agenda view showing the beginning of the searched range. If the user taps on this string and Calendar will find events older than what is visible and display them to the user -->
+    <add-resource type="string" name="show_older_events"/>
+    <string name="show_older_events">"<xliff:g id="OLDEST_SEARCH_RANGE">%1$s</xliff:g> 이전 일정을 보려면 터치하세요."</string>
+    <!-- This is shown at the bottom of the agenda view showing the end of the searched range. If the user taps on this string and Calendar will find events later/newer than what is visible and display them to the user -->
+    <add-resource type="string" name="show_newer_events"/>
+    <string name="show_newer_events">"<xliff:g id="NEWEST_SEARCH_RANGE">%1$s</xliff:g> 이후 일정을 보려면 터치하세요."</string>
+
+    <!-- Search activity strings -->
+
+    <!-- Title of the search screen [CHAR LIMIT=30] -->
+    <add-resource type="string" name="search_title"/>
+    <string name="search_title">"내 캘린더 검색"</string>
+
+    <!-- Button labels: -->
+
+    <!-- This is the title of a popup window that is displayed when the user
+         edits a repeating event. [CHAR LIMIT=20]-->
+    <add-resource type="string" name="edit_event_label"/>
+    <string name="edit_event_label">"세부정보"</string>
+    <!-- This is a menu button for switching into edit mode when viewing an event.
+        [CHAR LIMIT=10] -->
+    <add-resource type="string" name="edit_label"/>
+    <string name="edit_label">"수정"</string>
+    <!-- The button label for deleting an event -->
+    <add-resource type="string" name="delete_label"/>
+    <string name="delete_label">"삭제"</string>
+    <!-- A menu item for deleting an event -->
+
+    <!-- The button label for saving an event -->
+    <add-resource type="string" name="save_label"/>
+    <string name="save_label">"완료"</string>
+    <!-- The button label for discarding changes to an event -->
+    <add-resource type="string" name="discard_label"/>
+    <string name="discard_label">"취소"</string>
+
+    <!-- Button labels on expanded notification reminders: -->
+
+    <!-- The button label for making the reminder alarms go away temporarily.
+         The reminder alarms will fire off again in 5 minutes. -->
+    <add-resource type="string" name="snooze_all_label"/>
+    <string name="snooze_all_label">"모두 일시 중지"</string>
+    <!-- The button label for dismissing all the current reminder alarms. This
+         causes them to disappear from the notification screen. -->
+    <add-resource type="string" name="dismiss_all_label"/>
+    <string name="dismiss_all_label">"모두 해제"</string>
+    <!-- The button label for making the reminder alarms go away temporarily
+         and re-fire in 5 minutes. [CHAR LIMIT=12]-->
+    <add-resource type="string" name="snooze_label"/>
+    <string name="snooze_label">"알림 일시중지"</string>
+
+    <!-- Repetition dialog options: -->
+
+    <!-- A label in a multiple-choice list for the specifying that an event does
+         not repeat -->
+    <add-resource type="string" name="does_not_repeat"/>
+    <string name="does_not_repeat">"없음"</string>
+    <!-- Part of a description of an repeating event. This part states the date when a repeating
+         event ends. The part before the semi-colon describes how it repeats.
+         e.g. Every 2 weeks; until 1/1/2030 [CHAR LIMIT=21] -->
+    <add-resource type="string" name="endByDate"/>
+    <string name="endByDate">", <xliff:g id="DATE">%s</xliff:g>까지"</string>
+    <!-- Part of a description of an repeating event. This part how many times the event repeats.
+         The part before the semi-colon describes how it repeats.
+         e.g. Every 2 weeks; for 15 times [CHAR LIMIT=15] -->
+    <add-resource type="plurals" name="endByCount"/>
+    <plurals name="endByCount">
+        <item quantity="one">", 일회성"</item>
+        <item quantity="other">", <xliff:g id="NUMBER">%d</xliff:g>회"</item>
+    </plurals>
+    <!-- A description for an event that repeats daily. For example, Every 2 days [CHAR LIMIT=15]-->
+    <add-resource type="plurals" name="daily"/>
+    <plurals name="daily">
+        <item quantity="one">"매일"</item>
+        <item quantity="other">"<xliff:g id="NUMBER">%d</xliff:g>일에 한 번"</item>
+    </plurals>
+    <!-- A label in a multiple-choice list for the specifying that an event
+         repeats every weekday (Monday through Friday) -->
+    <add-resource type="string" name="every_weekday"/>
+    <string name="every_weekday">"주중 매일(월-금)"</string>
+    <!-- A description for an event that repeats weekly on some day of the week. For example,
+         'Weekly on Tuesday' or Every 2 weeks on Monday, Tuesday.  [CHAR LIMIT=25]-->
+    <add-resource type="plurals" name="weekly"/>
+    <plurals name="weekly">
+        <item quantity="one">"매주 <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+        <item quantity="other">"<xliff:g id="NUMBER">%1$d</xliff:g>주에 한 번 <xliff:g id="DAYS_OF_WEEK">%2$s</xliff:g>"</item>
+    </plurals>
+
+    <!-- The common portion of a string describing how often an event repeats,
+         example: 'Monthly (on day 2)' -->
+    <add-resource type="string" name="monthly"/>
+    <string name="monthly">"매월"</string>
+    <!-- Calendar spinner item, to select that an event recurs every year. -->
+    <add-resource type="string" name="yearly_plain"/>
+    <string name="yearly_plain">"매년"</string>
+    <!-- Example: "Monthly (on day 15)" -->
+    <add-resource type="string" name="monthly_on_day"/>
+    <string name="monthly_on_day">"매월(<xliff:g id="DAY_OF_MONTH">%s</xliff:g>일)"</string>
+    <!-- Example: "Yearly (on April 15)" -->
+    <add-resource type="string" name="yearly"/>
+    <string name="yearly">"매년(<xliff:g id="DATES">%s</xliff:g>)"</string>
+    <!-- This is a label for telling the user that this event repeats in
+         custom (non-standard) way from the usual repeat rates (such as daily,
+         weekly, etc.) and that the user cannot change this on the phone
+         (but only on the web). -->
+    <add-resource type="string" name="custom"/>
+    <string name="custom" product="tablet">"사용자 설정(태블릿에서는 할 수 없음)"</string>
+    <!-- This is a label for telling the user that this event repeats in
+         custom (non-standard) way from the usual repeat rates (such as daily,
+         weekly, etc.) and that the user cannot change this on the phone
+         (but only on the web). -->
+    <add-resource type="string" name="custom"/>
+    <string name="custom" product="default">"사용자 설정(휴대전화에서는 할 수 없음)"</string>
+
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change just this one instance
+         of this repeating event. -->
+    <add-resource type="string" name="modify_event"/>
+    <string name="modify_event">"이번 일정만 변경합니다."</string>
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change all occurrences of
+         this repeating event. -->
+    <add-resource type="string" name="modify_all"/>
+    <string name="modify_all">"모든 반복일정을 변경합니다."</string>
+    <!-- This is a choice in a list that the user sees when he tries to modify
+         a repeating event.  This choice says to change this instance and all
+         future occurrences of this repeating event. -->
+    <add-resource type="string" name="modify_all_following"/>
+    <string name="modify_all_following">"이번 및 모든 향후 일정을 변경합니다."</string>
+
+    <!-- Dialogs -->
+
+    <!-- This is a label on the dialog for creating a new event. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="new_event_dialog_label"/>
+    <string name="new_event_dialog_label">"새 일정"</string>
+    <!-- This is the button to create a new event in a dialog window. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="new_event_dialog_option"/>
+    <string name="new_event_dialog_option">"새 일정"</string>
+    <!-- Confirmation dialog message -->
+
+    <!-- This is a confirmation message in a popup dialog that appears when the
+         user has asked to delete an event. The user still has a chance to cancel
+         this operation. -->
+    <add-resource type="string" name="delete_this_event_title"/>
+    <string name="delete_this_event_title">"이번 일정을 삭제하시겠습니까?"</string>
+    <!-- This is a confirmation message in a popup dialog that appears when the
+         user has asked to delete an event that is recurring. The user still has a chance to cancel
+         this operation. -->
+    <add-resource type="string" name="delete_recurring_event_title"/>
+    <string name="delete_recurring_event_title">"<xliff:g id="EVENTTITLE">%s</xliff:g>을(를) 삭제하시겠습니까?"</string>
+    <!-- This is the title of a popup dialog that asks for confirmation before
+         changing the response to an invitation. -->
+    <add-resource type="string" name="change_response_title"/>
+    <string name="change_response_title">"회신 변경"</string>
+
+    <!-- This the title of a menu for General Preferences.
+         Pressing the menu item lets user to view and edit his general settings
+         (or preferences) [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_general_preferences"/>
+    <string name="menu_general_preferences">"일반 설정"</string>
+
+    <!-- This the title of a menu for "About Calendar" Preferences.
+         Pressing the menu item lets user to view the current settings
+         [CHAR LIMIT=30] -->
+    <add-resource type="string" name="menu_about_preferences"/>
+    <string name="menu_about_preferences">"캘린더 정보"</string>
+
+    <!-- This is the title of the screen for setting user preferences. -->
+    <add-resource type="string" name="preferences_title"/>
+    <string name="preferences_title">"설정"</string>
+    <!-- This is the title of a section in the Settings screen for settings
+         related to viewing calendar events -->
+    <add-resource type="string" name="preferences_general_title"/>
+    <string name="preferences_general_title">"캘린더 보기 설정"</string>
+    <!-- This is the title of a section in the Settings screen for settings
+         related to reminders for calendar events -->
+    <add-resource type="string" name="preferences_reminder_title"/>
+    <string name="preferences_reminder_title">"알림"</string>
+    <!-- Settings check box label to hide events that the user has declined to attend -->
+    <add-resource type="string" name="preferences_hide_declined_title"/>
+    <string name="preferences_hide_declined_title">"거부한 일정 숨기기"</string>
+    <!-- Settings week start label to start week on specific day-->
+    <add-resource type="string" name="preferences_week_start_day_title"/>
+    <string name="preferences_week_start_day_title">"한 주의 시작"</string>
+    <!-- Title of popup for week start day setting-->
+    <add-resource type="string" name="preferences_week_start_day_dialog"/>
+    <string name="preferences_week_start_day_dialog">"한 주의 시작"</string>
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="preferences_week_start_day_default"/>
+    <string name="preferences_week_start_day_default">-1</string>
+    <!-- Title of the settings item to clear the recent search history [CHAR LIMIT=40] -->
+    <add-resource type="string" name="preferences_clear_search_history_title"/>
+    <string name="preferences_clear_search_history_title">"검색기록 지우기"</string>
+    <!-- Summary of the settings item to clear the recent search history [CHAR LIMIT=70]-->
+    <add-resource type="string" name="preferences_clear_search_history_summary"/>
+    <string name="preferences_clear_search_history_summary">"모든 검색기록 삭제"</string>
+    <!-- Message to show in a toast when the history is cleared [CHAR LIMIT=40] -->
+    <add-resource type="string" name="search_history_cleared"/>
+    <string name="search_history_cleared">"검색기록이 삭제되었습니다."</string>
+    <!-- Settings check box label to enable or disable notifications -->
+    <add-resource type="string" name="preferences_alerts_title"/>
+    <string name="preferences_alerts_title">"알림"</string>
+    <!-- Settings dialog label that specifies when the phone should vibrate -->
+    <add-resource type="string" name="preferences_alerts_vibrateWhen_title"/>
+    <string name="preferences_alerts_vibrateWhen_title">"진동"</string>
+    <!-- Title of ringtone selector dialog -->
+    <add-resource type="string" name="preferences_alerts_ringtone_title"/>
+    <string name="preferences_alerts_ringtone_title">"소리"</string>
+    <!-- Title of check box label to enable or disable pop-up notifications -->
+    <add-resource type="string" name="preferences_alerts_popup_title"/>
+    <string name="preferences_alerts_popup_title">"팝업 알림"</string>
+    <!-- List item label for setting the default number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_title"/>
+    <string name="preferences_default_reminder_title">"기본 알림 시간"</string>
+    <!-- Title of dialog for setting the default number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_dialog"/>
+    <string name="preferences_default_reminder_dialog">"기본 알림 시간"</string>
+    <!-- Default value for the number of reminder minutes -->
+    <add-resource type="string" name="preferences_default_reminder_default"/>
+    <string name="preferences_default_reminder_default">10</string>
+    <!-- Settings check box label to keep Calendar in a fixed 'home' time zone [CHAR LIMIT = 18] -->
+    <add-resource type="string" name="preferences_use_home_tz_title"/>
+    <string name="preferences_use_home_tz_title">"기본 시간대 사용"</string>
+    <!-- Settings description of what setting Calendar to use a fixed 'home' time
+        zone does [CHAR LIMIT = 60]-->
+    <add-resource type="string" name="preferences_use_home_tz_descrip"/>
+    <string name="preferences_use_home_tz_descrip">"여행하는 동안 캘린더와 일정 시간을 기본 시간대로 표시합니다."</string>
+    <!-- Settings title for selecting a 'home' time zone to display Calendar in [CHAR LIMIT = 18] -->
+    <add-resource type="string" name="preferences_home_tz_title"/>
+    <string name="preferences_home_tz_title">"기본 시간대"</string>
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="preferences_home_tz_default"/>
+    <string name="preferences_home_tz_default">America/Los_Angeles</string>
+
+    <!-- Title of the settings item to show week number in week view [CHAR LIMIT=40] -->
+    <add-resource type="string" name="preferences_show_week_num_title"/>
+    <string name="preferences_show_week_num_title">"몇째 주인지 표시"</string>
+
+    <!-- This is the title of a section in the Settings screen for "About" this application -->
+    <add-resource type="string" name="preferences_about_title"/>
+    <string name="preferences_about_title">"정보"</string>
+    <!-- Build version of the application -->
+    <add-resource type="string" name="preferences_build_version"/>
+    <string name="preferences_build_version">"빌드 버전"</string>
+
+    <!-- Widget -->
+
+    <!-- Title for calendar gadget when displayed in list of all other gadgets -->
+    <add-resource type="string" name="gadget_title"/>
+    <string name="gadget_title">"캘린더"</string>
+
+    <!-- Shown in month view next to event icon when additional events exist for that day, but no
+        room remaining -->
+    <add-resource type="plurals" name="month_more_events"/>
+    <plurals name="month_more_events">
+        <!-- additional events message for 1 event, the quotes force a literal interpretation of the
+            string [CHAR LIMIT = 10] -->
+        <item quantity="one">"+1"</item>
+        <!-- additional events message for multiple events [CHAR LIMIT = 10] -->
+        <item quantity="other">+<xliff:g id="number">%d</xliff:g></item>
+    </plurals>
+
+    <!-- Caption to show on gadget when there are no upcoming calendar events -->
+    <add-resource type="string" name="gadget_no_events"/>
+    <string name="gadget_no_events">"캘린더 일정 없음"</string>
+
+    <!-- Text to show on gadget when an event is currently in progress -->
+
+
+    <!-- Text to show on gadget when an all-day event is in progress -->
+
+
+    <!-- DO NOT TRANSLATE -->
+    <add-resource type="string" name="tardis"/>
+    <string name="tardis">TARDIS</string>
+
+    <!-- Experimental settings [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_experimental_category"/>
+    <string name="preferences_experimental_category">"베타"</string>
+
+    <!-- Reminders settings [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_reminders_category"/>
+    <string name="preferences_reminders_category">"알림"</string>
+    <!-- Preference label for when to skip reminders [CHAR LIMIT = 25] -->
+    <add-resource type="string" name="preferences_reminders_responded_label"/>
+    <string name="preferences_reminders_responded_label">"알림 건너뛰기"</string>
+    <!-- Dialog title for when to skip reminders [CHAR LIMIT = 25] -->
+    <add-resource type="string" name="preferences_reminders_responded_dialog"/>
+    <string name="preferences_reminders_responded_dialog">"알림 건너뛰기"</string>
+    <!-- Preference label for quiet hours [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_label"/>
+    <string name="preferences_reminders_quiet_hours_label">"무음 모드 시간"</string>
+    <!-- Preference description for quiet hours [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_description"/>
+    <string name="preferences_reminders_quiet_hours_description">"지정한 시간에는 일정 알림을 무음으로 설정합니다."</string>
+    <!-- Preference label for quiet hours start time [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_start"/>
+    <string name="preferences_reminders_quiet_hours_start">"무음 모드 시작 시간"</string>
+    <!-- Preference label for quiet hours end time [CHAR LIMIT = 25]-->
+    <add-resource type="string" name="preferences_reminders_quiet_hours_end"/>
+    <string name="preferences_reminders_quiet_hours_end">"무음 모드 종료 시간"</string>
+
+    <!-- Preferences used for debugging purposes [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="preferences_debug_category"/>
+    <string name="preferences_debug_category">"디버깅"</string>
+
+    <!-- Send a copy of the database to developers for debugging [CHAR LIMIT="NONE"] -->
+    <add-resource type="string" name="copy_db"/>
+    <string name="copy_db">"데이터베이스 보내기"</string>
+
+    <!-- Displayed in email address autocomplete list when searching for contacts
+         in corporate directories. Example:  "Searching bigcompany.com..." [CHAR LIMIT=64] -->
+    <add-resource type="string" name="directory_searching_fmt"/>
+    <string name="directory_searching_fmt">"<xliff:g id="DOMAIN">%s</xliff:g> 검색 중..."</string>
+
+    <!-- Accessibility Events -->
+    <!-- Strings that describes actions for buttons without text -->
+    <!-- Create a new calendar event [CHAR LIMIT = NONE]-->
+
+    <!-- Remove a name of an attendee from a calendar event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_remove_attendee"/>
+    <string name="accessibility_remove_attendee">"참석자 삭제"</string>
+    <!-- Pick a starting date for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_start_date"/>
+    <string name="accessibility_pick_start_date">"시작일"</string>
+    <!-- Pick a starting time for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_start_time"/>
+    <string name="accessibility_pick_start_time">"시작 시간"</string>
+    <!-- Pick the ending date for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_end_date"/>
+    <string name="accessibility_pick_end_date">"종료일"</string>
+    <!-- Pick the ending time for a new event[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_end_time"/>
+    <string name="accessibility_pick_end_time">"종료 시간"</string>
+    <!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_time_zone"/>
+    <string name="accessibility_pick_time_zone">"표준시간대"</string>
+    <!-- Select a time zone for a new event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_pick_recurrence"/>
+    <string name="accessibility_pick_recurrence">"일정 반복"</string>
+    <!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_add_reminder"/>
+    <string name="accessibility_add_reminder">"알림 추가"</string>
+    <!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_remove_reminder"/>
+    <string name="accessibility_remove_reminder">"알림 삭제"</string>
+    <!-- Add a new attendee to an event [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_add_attendee"/>
+    <string name="accessibility_add_attendee">"참석자 추가"</string>
+    <!-- Choose if to sync/unsync this calendar with its server [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_sync_cal"/>
+    <string name="accessibility_sync_cal">"캘린더 동기화"</string>
+    <!-- Mark this event as an "all day event" [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_all_day"/>
+    <string name="accessibility_all_day">"종일 일정"</string>
+    <!-- Refresh the data in the calendar [CHAR LIMIT = NONE]-->
+
+    <!-- Choose the type of repetition for the event (daily, weekly, etc.[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_repeats"/>
+    <string name="accessibility_repeats">"반복"</string>
+    <!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_time"/>
+    <string name="accessibility_reminder_time">"알림 시간"</string>
+    <!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_type"/>
+    <string name="accessibility_reminder_type">"알림 유형"</string>
+    <!-- Select the way you are visible for the event (busy/free) [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_showmeas"/>
+    <string name="accessibility_reminder_showmeas">"내 상태"</string>
+    <!-- Set the event as private/public/default [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_reminder_privacy"/>
+    <string name="accessibility_reminder_privacy">"공개 설정"</string>
+    <!-- Calendar notification [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_cal_notification"/>
+    <string name="acessibility_cal_notification">"캘린더 알림"</string>
+    <!-- Calendar notification snooze button [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_snooze_notification"/>
+    <string name="acessibility_snooze_notification">"알림 일시중지"</string>
+    <!-- Calendar notification email button [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="accessibility_email_notification"/>
+    <string name="accessibility_email_notification">"참석자에게 이메일 보내기"</string>
+
+    <!-- A "new event" hint for the user when selecting a specific hour in the day view [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="day_view_new_event_hint"/>
+    <string name="day_view_new_event_hint">"+ 새 일정"</string>
+
+    <!--
+      Source: A value for announcing the current event index (example: "Event 2 of 6").
+      Description: This is spoken to the user. [CHAR LIMIT="NONE"]
+    -->
+    <add-resource type="string" name="template_announce_item_index"/>
+    <string name="template_announce_item_index">"일정 <xliff:g id="ITEM_INDEX">%1$s</xliff:g>/<xliff:g id="ITEM_COUNT">%2$s</xliff:g>"</string>
+
+        <!-- number of events in the notification bar -->
+    <add-resource type="plurals" name="Nevents"/>
+    <plurals name="Nevents">
+        <!-- This is the label for a 1 event. -->
+        <item quantity="one">"일정 1개"</item>
+        <!-- This is the label for 2 or more events. -->
+        <item quantity="other">"일정 <xliff:g id="COUNT">%d</xliff:g>개"</item>
+    </plurals>
+
+    <!-- number of remaining events for an alert digest in the notification bar [CHAR LIMIT = 30] -->
+    <add-resource type="plurals" name="N_remaining_events"/>
+    <plurals name="N_remaining_events">
+        <!-- This is the label for 1 event. -->
+        <item quantity="one">"남은 일정 1개"</item>
+        <!-- This is the label for 2 or more events. -->
+        <item quantity="other">"남은 일정 <xliff:g id="COUNT">%d</xliff:g>개"</item>
+    </plurals>
+
+    <!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_selected_marker_description"/>
+    <string name="acessibility_selected_marker_description">"선택한 일정"</string>
+
+    <!-- Tell user not to check a checkbox [CHAR LIMIT=30] -->
+    <add-resource type="string" name="do_not_check"/>
+    <string name="do_not_check">"선택안함 -&gt;"</string>
+
+    <add-resource type="string" name="qingming"/>
+    <string name="qingming">"청명"</string>
+
+    <!-- Dialog title for recurrence picker for configuring a repeating event[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_dialog_title"/>
+    <string name="recurrence_dialog_title">"반복"</string>
+    <!-- Dialog title for recurrence picker when one-time event is selected [CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_dialog_title_never"/>
+    <string name="recurrence_dialog_title_never">"없음"</string>
+
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 days) -->
+    <add-resource type="plurals" name="recurrence_interval_daily"/>
+    <plurals name="recurrence_interval_daily">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"<xliff:g id="COUNT">%d</xliff:g>일에 한 번"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>일에 한 번"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 weeks) -->
+    <add-resource type="plurals" name="recurrence_interval_weekly"/>
+    <plurals name="recurrence_interval_weekly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"<xliff:g id="COUNT">%d</xliff:g>주에 한 번"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>주에 한 번"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 months) -->
+    <add-resource type="plurals" name="recurrence_interval_monthly"/>
+    <plurals name="recurrence_interval_monthly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"<xliff:g id="COUNT">%d</xliff:g>개월에 한 번"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>개월에 한 번"</item>
+    </plurals>
+    <!-- Strings to describe how frequently to repeat an event (e.g. every 5 years) -->
+    <add-resource type="plurals" name="recurrence_interval_yearly"/>
+    <plurals name="recurrence_interval_yearly">
+        <!-- Singular form [CHAR LIMIT=30] -->
+        <item quantity="one">"<xliff:g id="COUNT">%d</xliff:g>년에 한 번"</item>
+        <!-- Plural form [CHAR LIMIT=30] -->
+        <item quantity="other">"<xliff:g id="COUNT">%d</xliff:g>년에 한 번"</item>
+    </plurals>
+
+    <!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_month_pattern_by_day"/>
+    <string name="recurrence_month_pattern_by_day">"매월 같은 날"</string>
+
+    <!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_end_continously"/>
+    <string name="recurrence_end_continously">"계속"</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=25] -->
+    <add-resource type="string" name="recurrence_end_date_label"/>
+    <string name="recurrence_end_date_label">"특정일까지"</string>
+    <!-- Specifies that a repeating event to repeat until a certain date[CHAR LIMIT=20] -->
+    <add-resource type="string" name="recurrence_end_date"/>
+    <string name="recurrence_end_date">"종료일: <xliff:g id="DATE">%s</xliff:g>"</string>
+    <!-- Specifies that a repeating event to repeat for a number of times. A repeating event can repeat forever, repeat in a certain frequency until a certain date, or repeat for a number of times. e.g. repeat 10 times and stop. This string is for the last case [CHAR LIMIT=25] -->
+    <add-resource type="string" name="recurrence_end_count_label"/>
+    <string name="recurrence_end_count_label">"지정된 횟수만"</string>
+
+    <!-- Specifies that a repeating event should repeat for a certain number of iterations. [CHAR LIMIT=20]-->
+    <add-resource type="plurals" name="recurrence_end_count"/>
+    <plurals name="recurrence_end_count">
+        <item quantity="one">"반복 횟수 <xliff:g id="EVENT_COUNT">%d</xliff:g>번"</item>
+        <item quantity="other">"반복 횟수 <xliff:g id="EVENT_COUNT">%d</xliff:g>번"</item>
+    </plurals>
+
+    <!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE]-->
+    <add-resource type="string" name="acessibility_recurrence_choose_end_date_description"/>
+    <string name="acessibility_recurrence_choose_end_date_description">"종료일 변경"</string>
+
+    <!-- Do Not Translate.  Sender identity for global notification synchronization. -->
+    <add-resource type="string" name="notification_sender_id"/>
+    <string name="notification_sender_id"></string>
+
+    <!-- Delete Events related -->
+    <add-resource type="string" name="events_delete"/>
+    <string name="events_delete">"일정 삭제"</string>
+    <add-resource type="string" name="action_select_all"/>
+    <string name="action_select_all">"모두 선택"</string>
+    <add-resource type="string" name="action_select_none"/>
+    <string name="action_select_none">"모두 선택 취소"</string>
+    <add-resource type="string" name="action_delete"/>
+    <string name="action_delete">"완료"</string>
+    <add-resource type="string" name="all_events"/>
+    <string name="all_events">"모든 일정"</string>
+    <add-resource type="string" name="no_events"/>
+    <string name="no_events">"사용 가능한 일정이 없습니다."</string>
+    <add-resource type="string" name="evt_del_dlg_title"/>
+    <string name="evt_del_dlg_title">"일정을 삭제하시겠습니까?"</string>
+    <add-resource type="string" name="evt_del_dlg_msg_selected"/>
+    <string name="evt_del_dlg_msg_selected">"선택한 일정이 삭제됩니다."</string>
+    <add-resource type="string" name="evt_del_dlg_msg_all"/>
+    <string name="evt_del_dlg_msg_all">"모든 일정이 삭제됩니다."</string>
+    <add-resource type="string" name="no_events_selected"/>
+    <string name="no_events_selected">"일정이 선택되지 않았습니다."</string>
+
+  <add-resource type="plurals" name="events_selected"/>
+    <plurals name="events_selected">
+    <item quantity="zero">"일정이 선택되지 않았습니다."</item>
+    <item quantity="one">"%1$d개 일정 선택됨"</item>
+    <item quantity="other">"%1$d개 일정 선택됨"</item>
+ </plurals></resources>

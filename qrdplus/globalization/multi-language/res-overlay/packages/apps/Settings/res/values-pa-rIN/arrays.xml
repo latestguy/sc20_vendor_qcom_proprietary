@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Choices for timezone picker first level.
+         These values will be used as search terms for TimeZone displayName
+         strings. -->
+    <!-- The time zone picker screen has two levels.  The first level allows the user to choose a region. -->
+    <add-resource type="array" name="timezone_filters"/>
+    <string-array name="timezone_filters">
+    <!-- The next level of the time zoner picker should show time zones from the Americas. -->
+        <item>"ਅਮਰੀਕਾ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Europe. -->
+        <item>"ਯੁਰੋਪ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Africa. -->
+        <item>"ਅਫਰੀਕਾ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Asia. -->
+        <item>"ਏਸ਼ੀਆ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Australia. -->
+        <item>"ਆਸਟਰੇਲੀਆ"</item>
+    <!-- The next level of the time zoner picker should show time zones from Pacific. -->
+        <item>"ਪ੍ਰਸ਼ਾਂਤ"</item>
+    <!-- The next level of the time zoner picker should show time zones from ALL regions. -->
+        <item>"ਸਭ"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
+    <add-resource type="array" name="screen_timeout_entries"/>
+    <string-array name="screen_timeout_entries">
+        <item>"15 ਸਕਿੰਟ"</item>
+        <item>"30 ਸਕਿੰਟ"</item>
+        <item>"1 ਮਿੰਟ"</item>
+        <item>"2 ਮਿੰਟ"</item>
+        <item>"5 ਮਿੰਟ"</item>
+        <item>"10 ਮਿੰਟ"</item>
+        <item>"30 ਮਿੰਟ"</item>
+    </string-array>
+
+    <!-- Display settings.  The delay in inactivity before the dream is shown. These are shown in a list dialog. -->
+    <add-resource type="array" name="dream_timeout_entries"/>
+    <string-array name="dream_timeout_entries">
+        <item>"ਕਦੇ ਵੀ ਨਹੀਂ"</item>
+        <item>"15 ਸਕਿੰਟ"</item>
+        <item>"30 ਸਕਿੰਟ"</item>
+        <item>"1 ਮਿੰਟ"</item>
+        <item>"2 ਮਿੰਟ"</item>
+        <item>"5 ਮਿੰਟ"</item>
+        <item>"10 ਮਿੰਟ"</item>
+        <item>"30 ਮਿੰਟ"</item>
+    </string-array>
+
+    <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
+    <add-resource type="array" name="lock_after_timeout_entries"/>
+    <string-array name="lock_after_timeout_entries">
+        <item>"ਤੁਰੰਤ"</item>
+        <item>"5 ਸਕਿੰਟ"</item>
+        <item>"15 ਸਕਿੰਟ"</item>
+        <item>"30 ਸਕਿੰਟ"</item>
+        <item>"1 ਮਿੰਟ"</item>
+        <item>"2 ਮਿੰਟ"</item>
+        <item>"5 ਮਿੰਟ"</item>
+        <item>"10 ਮਿੰਟ"</item>
+        <item>"30 ਮਿੰਟ"</item>
+    </string-array>
+
+    <add-resource type="array" name="entries_font_size"/>
+    <string-array name="entries_font_size">
+        <item msgid="6490061470416867723">"ਛੋਟੇ"</item>
+        <item msgid="3579015730662088893">"ਪੂਰਵ-ਨਿਰਧਾਰਤ"</item>
+        <item msgid="1678068858001018666">"ਵੱਡਾ"</item>
+        <item msgid="490158884605093126">"ਸਭ ਤੋਂ ਵੱਡਾ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ਸਕੈਨ ਕਰ ਰਿਹਾ ਹੈ..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"ਕਨੈਕਟ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"ਪ੍ਰਮਾਣਿਤ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"IP ਪਤਾ ਪ੍ਰਾਪਤ ਕਰ ਰਿਹਾ ਹੈ..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"ਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ਮੁਅੱਤਲ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"ਡਿਸਕਨੈਕਟ ਕਰ ਰਿਹਾ ਹੈ..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ਡਿਸਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ਅਸਫਲ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ਬਲੌਕ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ਅਸਥਾਈ ਤੌਰ ਤੇ ਖ਼ਰਾਬ ਕਨੈਕਸ਼ਨ ਤੋਂ ਬਚਣ ਲਈ"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"ਸਕੈਨ ਕਰ ਰਿਹਾ ਹੈ..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ਨਾਲ ਕਨੈਕਟ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ਨਾਲ ਪ੍ਰਮਾਣਿਤ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ਤੋਂ IP ਪਤਾ ਪ੍ਰਾਪਤ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"ਮੁਅੱਤਲ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"<xliff:g id="NETWORK_NAME">%1$s</xliff:g> ਤੋਂ ਡਿਸਕਨੈਕਟ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"ਡਿਸਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"ਅਸਫਲ"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"ਬਲੌਕ ਕੀਤਾ"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"ਅਸਥਾਈ ਤੌਰ ਤੇ ਖ਼ਰਾਬ ਕਨੈਕਸ਼ਨ ਤੋਂ ਬਚਣ ਲਈ"</item>
+    </string-array>
+
+   <!-- Wi-Fi WPS setup for p2p connections.  -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_p2p_wps_setup"/>
+    <string-array name="wifi_p2p_wps_setup">
+        <!-- Push button based configuration involves pushing a button on two connecting devices [CHAR LIMIT=30]-->
+        <item>"ਪੁਸ਼ ਬਟਨ"</item>
+        <!-- This involves entering a pin obtained from a peer device [CHAR LIMIT=30] -->
+        <item>"ਪੀਅਰ ਡਿਵਾਈਸ ਦਾ PIN"</item>
+        <!-- This involves generating a pin from this device [CHAR LIMIT=20] -->
+        <item>"ਇਸ ਡਿਵਾਈਸ ਤੋਂ PIN"</item>
+    </string-array>
+
+    <!-- Match this with the order of WifiP2pDevice.Status -->
+    <!-- Wi-Fi p2p settings device status message -->
+    <add-resource type="array" name="wifi_p2p_status"/>
+    <string-array name="wifi_p2p_status">
+        <item>"ਕਨੈਕਟ ਕੀਤਾ"</item>
+        <item>"ਸੱਦੇ ਗਏ"</item>
+        <item>"ਅਸਫਲ"</item>
+        <item>"ਉਪਲਬਧ"</item>
+        <item>"ਰੇਂਜ-ਤੋਂ-ਬਾਹਰ"</item>
+   </string-array>
+
+
+    <!-- Bluetooth Settings -->
+
+    <!-- Discoverable mode timeout options -->
+    <add-resource type="array" name="bluetooth_visibility_timeout_entries"/>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>"2 ਮਿੰਟ"</item>
+        <item>"5 ਮਿੰਟ"</item>
+        <item>"1 ਘੰਟਾ"</item>
+        <item>"ਕਦੇ ਵੀ ਸਮਾਂ ਸਮਾਪਤ ਨਹੀਂ"</item>
+    </string-array>
+
+    <!-- Match this with drawable.wifi_signal. -->
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <add-resource type="array" name="wifi_signal"/>
+    <string-array name="wifi_signal">
+        <item>"ਖ਼ਰਾਬ"</item>
+        <item>"ਉਚਿਤ"</item>
+        <item>"ਵਧੀਆ"</item>
+        <item>"ਸ਼ਾਨਦਾਰ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. -->
+    <add-resource type="array" name="wifi_sleep_policy_entries"/>
+    <string-array name="wifi_sleep_policy_entries">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ਹਮੇਸ਼ਾਂ"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ਕੇਵਲ ਉਦੋਂ ਜਦੋਂ ਪਲਗ ਇਨ ਕੀਤਾ ਹੋਵੇ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off.  [CHAR LIMIT=40] -->
+        <item>"ਕਦੇ ਵੀ ਨਹੀਂ"</item>
+    </string-array>
+
+    <!-- Wi-Fi settings. Presented as a list dialog to the user to choose the Wi-Fi sleep policy. Used when
+         the device is Wi-Fi-only. [CHAR LIMIT=30] -->
+    <add-resource type="array" name="wifi_sleep_policy_entries_wifi_only"/>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <!-- Always keep Wi-Fi on when screen turns off. -->
+        <item>"ਹਮੇਸ਼ਾਂ"</item>
+        <!-- Keep Wi-Fi on when screen turns off and plugged in.  When on battery, go to sleep when screen turns off. -->
+        <item>"ਕੇਵਲ ਉਦੋਂ ਜਦੋਂ ਪਲਗ ਇਨ ਕੀਤਾ ਹੋਵੇ"</item>
+        <!-- Do not keep Wi-Fi on when screen turns off, for Wi-Fi-only devices, no other data connection -->
+        <item>"ਕਦੇ ਵੀ ਨਹੀਂ"</item>
+    </string-array>
+
+    <!-- Data Usage settings. Range of data usage. -->
+    <add-resource type="array" name="data_usage_data_range"/>
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>"ਪਿਛਲੇ 30 ਦਿਨ"</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>"ਵਰਤੋਂ ਸਾਈਕਲ ਸੈਟ ਕਰੋ..."</item>
+    </string-array>
+
+    <!-- Display options for UsageStats class -->
+    <add-resource type="array" name="usage_stats_display_order_types"/>
+    <string-array name="usage_stats_display_order_types">
+        <item>"ਵਰਤੋਂ ਸਮਾਂ"</item>
+        <item>"ਆਖ਼ਰੀ ਵਾਰ ਵਰਤਿਆ"</item>
+        <item>"ਐਪ ਦਾ ਨਾਮ"</item>
+    </string-array>
+
+    <!-- Phase 2 options for PEAP -->
+    <add-resource type="array" name="wifi_peap_phase2_entries"/>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Phase 2 options for rest of EAP methods -->
+    <add-resource type="array" name="wifi_phase2_entries"/>
+    <string-array name="wifi_phase2_entries">
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+
+    <!-- Wi-Fi IP settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_ip_settings"/>
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>"ਸਥਿਰ"</item>
+    </string-array>
+
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <add-resource type="array" name="wifi_proxy_settings"/>
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ਮੈਨੁਅਲ"</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>"ਪ੍ਰੌਕਸੀ ਆਟੋ-ਕੌਂਫਿਗਰ"</item>
+    </string-array>
+
+    <!-- Authentication Types used in APN editor -->
+    <add-resource type="array" name="apn_auth_entries"/>
+    <string-array name="apn_auth_entries">
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>"PAP ਜਾਂ CHAP"</item>
+    </string-array>
+
+    <!-- Bearer Info used in APN editor -->
+    <add-resource type="array" name="bearer_entries"/>
+    <string-array name="bearer_entries">
+        <item>"ਅਨਿਸ਼ਚਿਤ"</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+
+    <!-- MVNO Info used in APN editor -->
+    <add-resource type="array" name="mvno_type_entries"/>
+    <string-array name="mvno_type_entries">
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <!-- Do not translate. -->
+        <item>SPN</item>
+        <!-- Do not translate. -->
+        <item>IMSI</item>
+        <!-- Do not translate. -->
+        <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
+    </string-array>
+
+    <!-- Apps on SD installation location options in ApplicationSettings -->
+    <add-resource type="array" name="app_install_location_entries"/>
+    <string-array name="app_install_location_entries">
+        <item>"ਅੰਦਰੂਨੀ ਡਿਵਾਈਸ ਸਟੋਰੇਜ"</item>
+        <item>"ਹਟਾਉਣਯੋਗ SD ਕਾਰਡ"</item>
+        <item>"ਸਿਸਟਮ ਨੂੰ ਨਿਰਧਾਰਿਤ ਕਰਨ ਦਿਓ"</item>
+    </string-array>
+
+    <!-- Names of categories of app ops tabs -->
+    <add-resource type="array" name="app_ops_categories"/>
+    <string-array name="app_ops_categories">
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਨਿੱਜੀ"</item>
+        <item>"ਮੈਸੇਂਜ਼ਿੰਗ"</item>
+        <item>"ਮੀਡੀਆ"</item>
+        <item>"ਡਿਵਾਈਸ:"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_summaries"/>
+    <string-array name="app_ops_summaries">
+        <item>"ਕੋਰਸ ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਸਹੀ ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>GPS</item>
+        <item>"ਵਾਈਬ੍ਰੇਟ"</item>
+        <item>"ਸੰਪਰਕ ਪੜ੍ਹੋ"</item>
+        <item>"ਸੰਪਰਕ ਸੰਸ਼ੋਧਿਤ ਕਰੋ"</item>
+        <item>"ਕਾਲ ਲੌਗ ਪੜ੍ਹੋ"</item>
+        <item>"ਕਾਲ ਲੌਗ ਸੰਸ਼ੋਧਿਤ ਕਰੋ"</item>
+        <item>"ਕੈਲੰਡਰ ਪੜ੍ਹੋ"</item>
+        <item>"ਕੈਲੰਡਰ ਸੰਸ਼ੋਧਿਤ ਕਰੋੇ"</item>
+        <item>"wi-fi ਸਕੈਨ"</item>
+        <item>"ਸੂਚਨਾ"</item>
+        <item>"ਸੈਲ ਸਕੈਨ"</item>
+        <item>"ਫੋਨ ਤੇ ਕਾਲ ਕਰੋ"</item>
+        <item>"SMS ਪੜ੍ਹੋ"</item>
+        <item>"SMS ਲਿਖੋ"</item>
+        <item>"SMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"ਐਮਰਜੈਂਸੀ SMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"MMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"WAP ਪੁਸ਼ ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"SMS ਭੇਜੋ"</item>
+        <item>"ICC SMS ਪੜ੍ਹੋ"</item>
+        <item>"ICC SMS ਲਿਖੋ"</item>
+        <item>"ਸੈਟਿੰਗਾਂ ਬਦਲੋ"</item>
+        <item>"ਟੌਪ ਤੇ ਡ੍ਰਾ ਕਰੋ"</item>
+        <item>"ਪਹੁੰਚ ਸੂਚਨਾਵਾਂ"</item>
+        <item>"ਕੈਮਰਾ"</item>
+        <item>"ਔਡੀਓ ਰਿਕਾਰਡ ਕਰੋ"</item>
+        <item>"ਔਡੀਓ ਪਲੇ ਕਰੋ"</item>
+        <item>"ਕਲਿਪਬੋਰਡ ਪੜ੍ਹੋ"</item>
+        <item>"ਕਲਿਪਬੋਰਡ ਬਦਲੋ"</item>
+        <item>"ਮੀਡੀਆ ਬਟਨ"</item>
+        <item>"ਔਡੀਓ ਫੋਕਸ"</item>
+        <item>"ਮਾਸਟਰ ਵੌਲਯੂਮ"</item>
+        <item>"ਅਵਾਜ਼ ਵੋਲਯੂਮ"</item>
+        <item>"ਰਿੰਗ ਵੌਲਯੂਮ"</item>
+        <item>"ਮੀਡੀਆ ਵੌਲਯੂਮ"</item>
+        <item>"ਅਲਾਰਮ ਵੌਲਯੂਮ"</item>
+        <item>"ਸੂਚਨਾ ਵੌਲਯੂਮ"</item>
+        <item>"bluetooth ਵੌਲਯੂਮ"</item>
+        <item>"ਸਕਿਰਿਆ ਰੱਖੋ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ ਦਾ ਨਿਰੀਖਣ ਕਰੋ"</item>
+        <item>"ਉੱਚ ਪਾਵਰ ਨਿਰਧਾਰਿਤ ਸਥਾਨ ਦਾ ਨਿਰੀਖਣ ਕਰੋ"</item>
+        <item>"ਵਰਤੋਂ ਸਟੈਟਸ ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"ਮਾਈਕ੍ਰੋਫੋਨ ਨੂੰ ਮਿਊਟ/ਅਨਮਿਊਟ ਕਰੋ"</item>
+        <item>"ਟੋਸਟ ਵਿਖਾਓ"</item>
+        <item>"ਪ੍ਰੋਜੈਕਟ ਮੀਡੀਆ"</item>
+        <item>"VPN ਨੂੰ ਸਰਗਰਮ ਕਰੋ"</item>
+        <item>"ਵਾਲਪੇਪਰ ਲਿਖੋ"</item>
+        <item>"ਸਹਾਇਕ ਬਣਤਰ"</item>
+        <item>"ਸਹਾਇਕ ਸਕਰੀਨਸ਼ਾਟ"</item>
+        <item>"ਫੋਨ ਸਥਿਤੀ ਪੜ੍ਹੋ"</item>
+        <item>"ਵੌਇਸਮੇਲ ਸ਼ਾਮਲ ਕਰੋ"</item>
+        <item>"SIP ਵਰਤੋ"</item>
+        <item>"ਆਊਟਗੋਇੰਗ ਕਾਲ \'ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰੋ"</item>
+        <item>"ਫਿੰਗਰਪ੍ਰਿੰਟ"</item>
+        <item>"ਸਰੀਰ ਸੰਵੇਦਕ"</item>
+        <item>"ਸੈਲ ਪ੍ਰਸਾਰਨਾਂ ਨੂੰ ਪੜ੍ਹੋ"</item>
+        <item>"ਬਣਾਉਟੀ ਟਿਕਾਣਾ"</item>
+        <item>"ਸਟੋਰੇਜ਼ ਪੜ੍ਹੋ"</item>
+        <item>"ਸਟੋਰੇਜ਼ ਲਿਖੋ"</item>
+        <item>"ਸਕਰੀਨ ਚਾਲੂ ਕਰੋ"</item>
+        <item>"ਖਾਤੇ ਲਓ"</item>
+        <item>"ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਚਲਾਓ"</item>
+    </string-array>
+
+    <!-- User display names for app ops codes -->
+    <add-resource type="array" name="app_ops_labels"/>
+    <string-array name="app_ops_labels">
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਵਾਈਬ੍ਰੇਟ"</item>
+        <item>"ਸੰਪਰਕ ਪੜ੍ਹੋ"</item>
+        <item>"ਸੰਪਰਕ ਸੰਸ਼ੋਧਿਤ ਕਰੋ"</item>
+        <item>"ਕਾਲ ਲੌਗ ਪੜ੍ਹੋ"</item>
+        <item>"ਕਾਲ ਲੌਗ ਸੰਸ਼ੋਧਿਤ ਕਰੋ"</item>
+        <item>"ਕੈਲੰਡਰ ਪੜ੍ਹੋ"</item>
+        <item>"ਕੈਲੰਡਰ ਸੰਸ਼ੋਧਿਤ ਕਰੋੇ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਸੂਚਨਾ ਪੋਸਟ ਕਰੋ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਫੋਨ ਤੇ ਕਾਲ ਕਰੋ"</item>
+        <item>"SMS/MMS ਪੜ੍ਹੋ"</item>
+        <item>"SMS/MMS ਲਿਖੋ"</item>
+        <item>"SMS/MMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"SMS/MMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"SMS/MMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"SMS/MMS ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"SMS/MMS ਭੇਜੋ"</item>
+        <item>"SMS/MMS ਪੜ੍ਹੋ"</item>
+        <item>"SMS/MMS ਲਿਖੋ"</item>
+        <item>"ਸੈਟਿੰਗਾਂ ਬਦਲੋ"</item>
+        <item>"ਟੌਪ ਤੇ ਡ੍ਰਾ ਕਰੋ"</item>
+        <item>"ਪਹੁੰਚ ਸੂਚਨਾਵਾਂ"</item>
+        <item>"ਕੈਮਰਾ"</item>
+        <item>"ਔਡੀਓ ਰਿਕਾਰਡ ਕਰੋ"</item>
+        <item>"ਔਡੀਓ ਪਲੇ ਕਰੋ"</item>
+        <item>"ਕਲਿਪਬੋਰਡ ਪੜ੍ਹੋ"</item>
+        <item>"ਕਲਿਪਬੋਰਡ ਬਦਲੋ"</item>
+        <item>"ਮੀਡੀਆ ਬਟਨ"</item>
+        <item>"ਔਡੀਓ ਫੋਕਸ"</item>
+        <item>"ਮਾਸਟਰ ਵੌਲਯੂਮ"</item>
+        <item>"ਵੌਇਸ ਵੌਲਯੂਮ"</item>
+        <item>"ਰਿੰਗ ਵੌਲਯੂਮ"</item>
+        <item>"ਮੀਡੀਆ ਵੌਲਯੂਮ"</item>
+        <item>"ਅਲਾਰਮ ਵੌਲਯੂਮ"</item>
+        <item>"ਸੂਚਨਾ ਵੌਲਯੂਮ"</item>
+        <item>"Bluetooth ਵੌਲਯੂਮ"</item>
+        <item>"ਸਕਿਰਿਆ ਰੱਖੋ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
+        <item>"ਵਰਤੋਂ ਸਟੈਟਸ ਪ੍ਰਾਪਤ ਕਰੋ"</item>
+        <item>"ਮਾਈਕ੍ਰੋਫੋਨ ਨੂੰ ਮਿਊਟ/ਅਨਮਿਊਟ ਕਰੋ"</item>
+        <item>"ਟੋਸਟ ਵਿਖਾਓ"</item>
+        <item>"ਪ੍ਰੋਜੈਕਟ ਮੀਡੀਆ"</item>
+        <item>"VPN ਨੂੰ ਸਰਗਰਮ ਕਰੋ"</item>
+        <item>"ਵਾਲਪੇਪਰ ਲਿਖੋ"</item>
+        <item>"ਸਹਾਇਕ ਬਣਤਰ"</item>
+        <item>"ਸਹਾਇਕ ਸਕਰੀਨਸ਼ਾਟ"</item>
+        <item>"ਫੋਨ ਸਥਿਤੀ ਪੜ੍ਹੋ"</item>
+        <item>"ਵੌਇਸਮੇਲ ਸ਼ਾਮਲ ਕਰੋ"</item>
+        <item>"SIP ਵਰਤੋ"</item>
+        <item>"ਆਊਟਗੋਇੰਗ ਕਾਲ \'ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰੋ"</item>
+        <item>"ਫਿੰਗਰਪ੍ਰਿੰਟ"</item>
+        <item>"ਸਰੀਰ ਸੰਵੇਦਕ"</item>
+        <item>"ਸੈਲ ਪ੍ਰਸਾਰਨਾਂ ਨੂੰ ਪੜ੍ਹੋ"</item>
+        <item>"ਬਣਾਉਟੀ ਟਿਕਾਣਾ"</item>
+        <item>"ਸਟੋਰੇਜ਼ ਪੜ੍ਹੋ"</item>
+        <item>"ਸਟੋਰੇਜ਼ ਲਿਖੋ"</item>
+        <item>"ਸਕਰੀਨ ਚਾਲੂ ਕਰੋ"</item>
+        <item>"ਖਾਤੇ ਲਓ"</item>
+        <item>"ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਚਲਾਓ"</item>
+    </string-array>
+
+    <!-- Titles for the list of long press timeout options. -->
+    <add-resource type="array" name="long_press_timeout_selector_titles"/>
+    <string-array name="long_press_timeout_selector_titles">
+        <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+        <item>"ਛੋਟਾ"</item>
+        <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+        <item>"ਮੱਧਮ"</item>
+        <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+        <item>"ਲੰਮਾ"</item>
+    </string-array>
+
+    <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_typeface_selector_titles"/>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>"ਡਿਫੌਲਟ"</item>
+        <item>"Sans-serif"</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>"ਅਨਿਯਮਤ"</item>
+        <item>"ਪ੍ਰਵਾਹੀ ਲਿਖਤ"</item>
+        <item>"ਛੋਟੇ ਕੈਪੀਟਲਸ"</item>
+    </string-array>
+
+    <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_font_size_selector_titles"/>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>"ਬਹੁਤ ਛੋਟਾ"</item>
+        <item>"ਛੋਟੇ"</item>
+        <item>"ਸਧਾਰਨ"</item>
+        <item>"ਵੱਡੇ"</item>
+        <item>"ਬਹੁਤ ਵੱਡਾ"</item>
+    </string-array>
+
+    <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_edge_type_selector_titles"/>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>"ਡਿਫੌਲਟ"</item>
+        <item>"ਕੋਈ ਨਹੀਂ"</item>
+        <item>"ਰੂਪਰੇਖਾ"</item>
+        <item>"ਡ੍ਰੌਪ ਸ਼ੈਡੋ"</item>
+        <item>"ਵਧਾਏ ਗਏ"</item>
+        <item>"ਨਿਰਾਸ਼"</item>
+    </string-array>
+
+    <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="captioning_preset_selector_titles"/>
+    <string-array name="captioning_preset_selector_titles">
+        <item>"ਐਪ ਡਿਫੌਲਟਸ ਵਰਤੋ"</item>
+        <item>"ਕਾਲੇ \'ਤੇ ਸਫ਼ੈਦ"</item>
+        <item>"ਸਫ਼ੈਦ \'ਤੇ ਕਾਲਾ"</item>
+        <item>"ਕਾਲੇ \'ਤੇ ਪੀਲਾ"</item>
+        <item>"ਨੀਲੇ \'ਤੇ ਪੀਲਾ"</item>
+        <item>"ਕਸਟਮ"</item>
+    </string-array>
+
+    <!-- Match this with the constants in VpnProfile. -->
+    <!-- Longer descriptions for each VPN type. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_types_long"/>
+    <string-array name="vpn_types_long">
+        <item>"PPTP VPN"</item>
+        <item>"ਪ੍ਰੀ-ਸ਼ੇਅਰ ਕੀਤੀਆਂ ਕੁੰਜੀਆਂ ਨਾਲ L2TP/IPSec VPN"</item>
+        <item>"ਸਰਟੀਫਿਕੇਟਾਂ ਨਾਲ L2TP/IPSec VPN"</item>
+        <item>"ਪ੍ਰੀ-ਸ਼ੇਅਰਡ ਕੁੰਜੀਆਂ ਅਤੇ Xauth ਪ੍ਰਮਾਣੀਕਰਨ ਨਾਲ IPSec VPN"</item>
+        <item>"ਸਰਟੀਫਿਕੇਟਾਂ ਨਾਲ IPSec VPN ਅਤੇ Xauth ਪ੍ਰਮਾਣੀਕਰਨ"</item>
+        <item>"ਸਰਟੀਫਿਕੇਟਾਂ ਅਤੇ ਹਾਈਬ੍ਰਿਡ ਪ੍ਰਮਾਣੀਕਰਨ ਨਾਲ IPSec VPN"</item>
+    </string-array>
+
+    <!-- Match this with the constants in LegacyVpnInfo. -->
+    <!-- Status for a VPN network. [CHAR LIMIT=100] -->
+    <add-resource type="array" name="vpn_states"/>
+    <string-array name="vpn_states">
+        <!-- Status message when VPN is disconnected. -->
+        <item>"ਡਿਸਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message when VPN is initializing. -->
+        <item>"ਅਰੰਭ ਕਰ ਰਿਹਾ ਹੈ..."</item>
+        <!-- Status message when VPN is connecting. -->
+        <item>"ਕਨੈਕਟ ਕਰ ਰਿਹਾ ਹੈ\u2026"</item>
+        <!-- Status message when VPN is connected. -->
+        <item>"ਕਨੈਕਟ ਕੀਤਾ"</item>
+        <!-- Status message when VPN is timeout. -->
+        <item>"ਸਮਾਂ ਸਮਾਪਤ"</item>
+        <!-- Status message when VPN is failed. -->
+        <item>"ਅਸਫਲ"</item>
+    </string-array>
+
+    <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
+    <add-resource type="array" name="security_settings_premium_sms_values"/>
+    <string-array name="security_settings_premium_sms_values">
+        <!-- Ask user before sending to premium SMS short code. -->
+        <item>"ਪੁੱਛੋ"</item>
+        <!-- Never allow app to send to premium SMS short code. -->
+        <item>"ਕਦੇ ਵੀ ਆਗਿਆ ਨਾ ਦਿਓ"</item>
+        <!-- Always allow app to send to premium SMS short code. -->
+        <item>"ਹਮੇਸ਼ਾਂ ਆਗਿਆ ਦਿਓ"</item>
+    </string-array>
+
+    <!-- [CHAR LIMIT=40] Labels for memory states -->
+    <add-resource type="array" name="ram_states"/>
+    <string-array name="ram_states">
+        <!-- Normal desired memory state. -->
+        <item>"ਸਧਾਰਨ"</item>
+        <!-- Moderate memory state, not as good as normal. -->
+        <item>"ਮੱਧ"</item>
+        <!-- Memory is running low. -->
+        <item>"ਘੱਟ"</item>
+        <!-- Memory is critical. -->
+        <item>"ਸਮਾਲੋਚਨਾਤਮਿਕ"</item>
+        <!-- Unknown memory state -->
+        <item>"\?"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for memory states -->
+    <add-resource type="array" name="proc_stats_memory_states"/>
+    <string-array name="proc_stats_memory_states">
+        <item>"ਸਧਾਰਨ"</item>
+        <item>"ਮੱਧ"</item>
+        <item>"ਘੱਟ"</item>
+        <item>"ਸਮਾਲੋਚਨਾਤਮਿਕ"</item>
+    </string-array>
+
+    <!-- Process stats memory use details: labels for process -->
+    <add-resource type="array" name="proc_stats_process_states"/>
+    <string-array name="proc_stats_process_states">
+        <item>"ਸਥਿਰ"</item>
+        <item>"ਟੌਪ ਗਤੀਵਿਧੀ"</item>
+        <item>"ਮਹੱਤਵਪੂਰਣ (ਫੋਰਗ੍ਰਾਉਂਡ)"</item>
+        <item>"ਮਹੱਤਵਪੂਰਣ (ਪਿਛੋਕੜ)"</item>
+        <item>"ਬੈਕਅਪ ਕਰੋ"</item>
+        <item>"ਹੈਵੀ ਵੇਟ"</item>
+        <item>"ਸੇਵਾ (ਚੱਲ ਰਹੀ ਹੈ)"</item>
+        <item>"ਸੇਵਾ (ਰੀਸਟਾਰਟ ਕਰ ਰਿਹਾ ਹੈ)"</item>
+        <item>"ਰਿਸੀਵਰ"</item>
+        <item>"ਹੋਮ"</item>
+        <item>"ਪਿਛਲੀ ਗਤੀਵਿਧੀ"</item>
+        <item>"ਕੈਚ ਕੀਤੀ (ਗਤੀਵਿਧੀ)"</item>
+        <item>"ਕੈਚ ਕੀਤੀ (ਗਤੀਵਿਧੀ ਕਲਾਈਂਟ)"</item>
+        <item>"ਕੈਚ ਕੀਤੀ (ਖਾਲੀ)"</item>
+    </string-array>
+
+    <!-- Array of titles for sim color for multi-sim -->
+    <add-resource type="array" name="color_picker"/>
+    <string-array name="color_picker">
+        <item>"Teal"</item>
+        <item>"ਨੀਲਾ"</item>
+        <item>"Indigo"</item>
+        <item>"ਜਾਮਨੀ"</item>
+        <item>"ਗੁਲਾਬੀ"</item>
+        <item>"ਲਾਲ"</item>
+    </string-array>
+
+    <!-- Wifi extension requirement -->
+    <add-resource type="array" name="cellcular2wifi_entries"/>
+    <string-array name="cellcular2wifi_entries">
+        <item>"ਆਟੋਮੈਟਿਕਲੀ ਕਨੈਕਟ"</item>
+        <item>"ਮੈਨੂਅਲੀ ਕਨੈਕਟ"</item>
+        <item>"ਹਮੇਸ਼ਾ ਪੁੱਛੋ"</item>
+    </string-array>
+
+    <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
+    <add-resource type="array" name="automatic_storage_management_days"/>
+    <string-array name="automatic_storage_management_days">
+        <item>"30 ਦਿਨਾਂ ਤੋਂ ਜ਼ਿਆਦਾ ਪੁਰਾਣੀ"</item>
+        <item>"60 ਦਿਨਾਂ ਤੋਂ ਜ਼ਿਆਦਾ ਪੁਰਾਣੀ"</item>
+        <item>"90 ਦਿਨਾਂ ਤੋਂ ਜ਼ਿਆਦਾ ਪੁਰਾਣੀ"</item>
+    </string-array></resources>

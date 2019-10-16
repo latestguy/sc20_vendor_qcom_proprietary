@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!--  Title for the image editor activity [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="title_activity_filter_show"/>
+    <string name="title_activity_filter_show">"ফটো সম্পাদক"</string>
+
+    <!--  String shown when we cannot load the image when starting the activity [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cannot_load_image"/>
+    <string name="cannot_load_image">"প্ৰতিচ্ছবিখন ল’ড কৰিব পৰা নাই!"</string>
+    <!--  String shown when cannot load the original image. We will edit selected image [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cannot_edit_original"/>
+    <string name="cannot_edit_original">"মূলক সম্পাদনা কৰিব নোৱাৰে"</string>
+    <!--  String displayed when showing the original image [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="original_picture_text"/>
+    <string name="original_picture_text">@string/original</string>
+    <!--  String displayed when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="setting_wallpaper"/>
+    <string name="setting_wallpaper">"ৱালপেপাৰ ছেটিং কৰি আছে"</string>
+
+    <!--  generic strings -->
+
+
+    <!--  Text for to display on a download failure [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="download_failure"/>
+    <string name="download_failure">"ফটো ডাউনলোড কৰিব পৰা নগ’ল৷ নেটৱৰ্ক অনুপলব্ধ৷"</string>
+    <!--  Text to label an image as "original" [CHAR LIMIT=20] -->
+    <add-resource type="string" name="original"/>
+    <string name="original">"মূল"</string>
+    <!--  Text for filters that apply a border to a picture [CHAR LIMIT=20] -->
+    <add-resource type="string" name="borders"/>
+    <string name="borders" msgid="4461692156695893616">"ফ্ৰেম"</string>
+    <!-- Text for the custom border filter [CHAR LIMIT=20] -->
+    <add-resource type="string" name="custom_border"/>
+    <string name="custom_border">"অনুকূল"</string>
+
+    <!--  actionbar menu -->
+
+    <!--  Text for the undo menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="filtershow_undo"/>
+    <string name="filtershow_undo">"পূৰ্বৰ দৰে কৰক"</string>
+    <!--  Text for redo menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="filtershow_redo"/>
+    <string name="filtershow_redo">"পুনৰাই কৰক"</string>
+    <!--  Text for the image menu item showing the filters that have been applied [CHAR LIMIT=30] -->
+    <add-resource type="string" name="show_imagestate_panel"/>
+    <string name="show_imagestate_panel">"প্ৰযোজ্য প্ৰভাৱসমূহ প্ৰদৰ্শন কৰক"</string>
+    <!--  Text for the image state panel menu item [CHAR LIMIT=30] -->
+    <add-resource type="string" name="hide_imagestate_panel"/>
+    <string name="hide_imagestate_panel">"প্ৰযোজ্য প্ৰভাৱসমূহ লুকুৱাওক"</string>
+    <!--  Text for the menu item to export a flattened photo[CHAR LIMIT=30] -->
+    <add-resource type="string" name="export_image"/>
+    <string name="export_image">"ৰপ্তানী কৰক"</string>
+    <!-- Text for the print menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="print_image"/>
+    <string name="print_image">"প্ৰিণ্ট"</string>
+
+    <!-- Export Dialog-->
+
+    <!--  Text for the dialog title to export a flattened photo[CHAR LIMIT=25] -->
+    <add-resource type="string" name="export_flattened"/>
+    <string name="export_flattened">"ফ্লেটেণ্ড প্ৰতিচ্ছবি ৰপ্তানী কৰক"</string>
+    <!--  Text for selecting export image quality [CHAR LIMIT=100] -->
+    <add-resource type="string" name="select_output_settings"/>
+    <string name="select_output_settings">"ৰপ্তানী কৰা প্ৰতিচ্ছবিখন এটা প্ৰতিলিপি হ’ব, ইতিবৃত্ত নোহোৱাকৈ৷"</string>
+    <!--  Text for quality value tag [CHAR LIMIT=30] -->
+    <add-resource type="string" name="quality"/>
+    <string name="quality">"গুণমান"</string>
+    <!--  Text for size value tag [CHAR LIMIT=30] -->
+    <add-resource type="string" name="size"/>
+    <string name="size">"আকাৰ"</string>
+    <!--  Text for size x [CHAR LIMIT=1] -->
+    <add-resource type="string" name="x"/>
+    <string name="x">x</string>
+
+    <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"ছেটিংছ"</string>
+
+    <!--  Exit Dialog -->
+
+    <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unsaved"/>
+    <string name="unsaved">"আপুনি এই প্ৰতিচ্ছবিখনত কৰা পৰিৱৰ্তন নাকচ কৰিবনে?"</string>
+    <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_before_exit"/>
+    <string name="save_before_exit">"পৰিৱৰ্তন নাকচ কৰিবনে?"</string>
+    <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_and_exit"/>
+    <string name="save_and_exit">"সংৰক্ষণ কৰক আৰু প্ৰস্থান কৰক"</string>
+    <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"নাকচ কৰক"</string>
+    <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_and_processing"/>
+    <string name="save_and_processing">"পূৰ্ণ ৰিজলিউশ্বন প্ৰতিচ্ছবিৰ প্ৰক্ৰিয়া চলাই আছে..."</string>
+    <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="exit"/>
+    <string name="exit">"প্ৰস্থান কৰক"</string>
+
+    <!--  History Panel -->
+
+    <!--  Text for the history panel title [CHAR LIMIT=50] -->
+    <add-resource type="string" name="history"/>
+    <string name="history">"ইতিবৃত্ত"</string>
+    <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
+    <add-resource type="string" name="reset"/>
+    <string name="reset">"মূললৈ ঘূৰি যাওক"</string>
+    <!--  Text for the original image[CHAR LIMIT=20]-->
+    <add-resource type="string" name="history_original"/>
+    <string name="history_original">@string/original</string>
+
+    <!--  Image state panel -->
+
+    <!--  Text for the image state panel title [CHAR LIMIT=50] -->
+    <add-resource type="string" name="imageState"/>
+    <string name="imageState">"প্ৰযোজ্য প্ৰভাৱসমূহ"</string>
+
+    <!--  Additional filters buttons  -->
+
+    <!--  Label for the compare original image filter button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="compare_original"/>
+    <string name="compare_original">"তুলনা কৰক"</string>
+    <!--  Label for the apply effect button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="apply_effect"/>
+    <string name="apply_effect">"প্ৰয়োগ কৰক"</string>
+    <!--  Label for the reset effect button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="reset_effect"/>
+    <string name="reset_effect">"ৰিছেট"</string>
+    <!--  Label for aspect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect"/>
+    <string name="aspect">"দৃষ্টিভঙ্গি"</string>
+    <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect1to1_effect"/>
+    <string name="aspect1to1_effect">"1:1"</string>
+    <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect4to3_effect"/>
+    <string name="aspect4to3_effect">"4:3"</string>
+    <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect3to4_effect"/>
+    <string name="aspect3to4_effect">"3:4"</string>
+    <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect4to6_effect"/>
+    <string name="aspect4to6_effect">"4:6"</string>
+    <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect5to7_effect"/>
+    <string name="aspect5to7_effect">"5:7"</string>
+    <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect7to5_effect"/>
+    <string name="aspect7to5_effect">"7:5"</string>
+    <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect9to16_effect"/>
+    <string name="aspect9to16_effect">"16:9"</string>
+    <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspectNone_effect"/>
+    <string name="aspectNone_effect">"মুক্ত"</string>
+    <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspectOriginal_effect"/>
+    <string name="aspectOriginal_effect">@string/original</string>
+    <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
+    <add-resource type="string" name="Fixed"/>
+    <string name="Fixed">"নিৰ্ধাৰিত"</string>
+    <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
+    <add-resource type="string" name="tinyplanet"/>
+    <string name="tinyplanet">"সৰু গ্ৰহ"</string>
+
+    <!--  Filters buttons -->
+
+    <!--  True Effect button -->
+    <add-resource type="string" name="trueScanner"/>
+    <string name="trueScanner">"ট্ৰু স্কেনাৰ"</string>
+    <!--  HazeBuster button -->
+    <add-resource type="string" name="hazeBuster"/>
+    <string name="hazeBuster">"হেজ বাষ্টাৰ"</string>
+    <!--  SeeStraight button -->
+    <add-resource type="string" name="seeStraight"/>
+    <string name="seeStraight">"পোনে-পোনে চাওক"</string>
+    <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="exposure"/>
+    <string name="exposure" msgid="1229093066434614811">"এক্সপ’জাৰ"</string>
+    <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="sharpness"/>
+    <string name="sharpness">"তীক্ষ্ণ"</string>
+    <!--  Label for the image contrast (color difference) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="contrast"/>
+    <string name="contrast">"কনট্ৰাষ্ট"</string>
+    <!--  Label for the image vibrance (strengthens colors) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="vibrance"/>
+    <string name="vibrance">"ভাইব্ৰেঞ্চ"</string>
+    <!--  Label for the image saturation (brightens colors) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="saturation"/>
+    <string name="saturation">"ছেটুৰেশ্বন"</string>
+    <!--  Label for the image BW filter (makes black & white) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bwfilter"/>
+    <string name="bwfilter">"BW ফিল্টাৰ"</string>
+    <!--  Label for the image Autocolor filter (makes off-white colors whiter) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="wbalance"/>
+    <string name="wbalance">"স্বয়ংক্ৰিয় ৰং"</string>
+    <!--  Label for the image Hue filter (color, shade, tinge, tone) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="hue"/>
+    <string name="hue">"ৰং"</string>
+    <!--  Label for the image shadow recovery (lightens/darkens shadows) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="shadow_recovery"/>
+    <string name="shadow_recovery">"ছাঁয়া"</string>
+    <!--  Label for the image highlights recovery (lightens/darkens bright regions) filter button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="highlight_recovery"/>
+    <string name="highlight_recovery">"হাইলাইট"</string>
+    <!--  Label for the image curves filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="curvesRGB"/>
+    <string name="curvesRGB">"কাৰ্ভছ"</string>
+    <!--  Label for the image vignette filter (darkens photo around edges) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="vignette"/>
+    <string name="vignette">"ভিগনেট"</string>
+    <!--  Label for the image vignette main parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_main"/>
+    <string name="vignette_main">"ভিগনেট"</string>
+    <!--  Label for the image vignette exposure parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_exposure"/>
+    <string name="vignette_exposure">"এক্সপ’জাৰ"</string>
+    <!--  Label for the image vignette saturation parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_saturation"/>
+    <string name="vignette_saturation">"ছেটুৰেশ্বন"</string>
+    <!--  Label for the image vignette contrast fparameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_contrast"/>
+    <string name="vignette_contrast">"কনট্ৰাষ্ট"</string>
+    <!--  Label for the rate of change in brightness as it goes to the edge [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_falloff"/>
+    <string name="vignette_falloff">"ফলঅফ"</string>
+
+    <!--  Label for the image effect that removes redeye. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="redeye"/>
+    <string name="redeye">"ৰঙা চকু"</string>
+    <!--  Label for the that allows drawing on Image [CHAR LIMIT=10] -->
+    <add-resource type="string" name="imageDraw"/>
+    <string name="imageDraw">"আঁকক"</string>
+    <!--  Label for the image straighten effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="straighten"/>
+    <string name="straighten" msgid="5217801513491493491">"পোন"</string>
+    <!--  Label for the image crop effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="crop"/>
+    <string name="crop" msgid="5584000454518174632">"কাট-কুট"</string>
+    <!--  Label for the image rotate effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="rotate"/>
+    <string name="rotate" msgid="460017689320955494">"ঘূৰাওক"</string>
+    <!--  Label for the image flip effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="mirror"/>
+    <string name="mirror">"মিৰ’ৰ"</string>
+    <!-- Name for the photo effect that inverts photo to negative images. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="negative"/>
+    <string name="negative">"ঋণাত্মক"</string>
+    <!--  Label for having no filters applied to the image [CHAR LIMIT=10] -->
+    <add-resource type="string" name="none"/>
+    <string name="none" msgid="3601545724573307541">"কোনটো নহয়"</string>
+    <!--  Label for the image edges effect (highlights edges in image) [CHAR LIMIT=10] -->
+    <add-resource type="string" name="edge"/>
+    <string name="edge">"কাষ"</string>
+    <!--  Label for an image effect that replicates the "pop art" style of segmenting
+          images into solid colors, as popularized by Andy Warhol [CHAR LIMIT=15] -->
+    <add-resource type="string" name="kmeans"/>
+    <string name="kmeans">"পষ্টাৰাইজ"</string>
+    <!--  Label for the image downsampling effect (makes image smaller) [CHAR LIMIT=15] -->
+    <add-resource type="string" name="downsample"/>
+    <string name="downsample">"ডাউনছেম্পল"</string>
+    <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="grad"/>
+    <string name="grad">"গ্ৰেজুৱেটেড"</string>
+    <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="focus"/>
+    <string name="focus">"ফ’কাছ"</string>
+    <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="fusion"/>
+    <string name="fusion">"ফুজিঅন"</string>
+    <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="sketch"/>
+    <string name="sketch">"স্কেটচ্"</string>
+    <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="halo"/>
+    <string name="halo">"Halo"</string>
+    <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="zoom"/>
+    <string name="zoom">"ঝুম কৰক"</string>
+    <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="motion"/>
+    <string name="motion">"ম’শ্বন"</string>
+    <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="bw"/>
+    <string name="bw">"ক\'লা/বগা"</string>
+    <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blackboard"/>
+    <string name="blackboard">"ব্লেকব’ৰ্ড"</string>
+    <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="whiteboard"/>
+    <string name="whiteboard">"হোৱাইটব’ৰ্ড"</string>
+    <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="posterize"/>
+    <string name="posterize">"পষ্টাৰাইজ"</string>
+    <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="dc_negative"/>
+    <string name="dc_negative">"ঋণাত্মক"</string>
+    <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blur"/>
+    <string name="blur">"অস্পষ্ট"</string>
+    <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="motion_blur"/>
+    <string name="motion_blur">"গতি অস্পষ্ট"</string>
+    <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_brightness"/>
+    <string name="editor_grad_brightness">"উজ্জ্বলতা"</string>
+    <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_contrast"/>
+    <string name="editor_grad_contrast">"কনট্ৰাষ্ট"</string>
+    <!--  Label for the saturation effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_saturation"/>
+    <string name="editor_grad_saturation">"ছেটুৰেশ্বন"</string>
+    <!--  Label for the Main or Master control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_main"/>
+    <string name="editor_chan_sat_main">"মূল"</string>
+    <!--  Label for the red control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_red"/>
+    <string name="editor_chan_sat_red">"ৰঙা"</string>
+    <!--  Label for the yellow control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_yellow"/>
+    <string name="editor_chan_sat_yellow">"হালধীয়া"</string>
+    <!--  Label for the green control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_green"/>
+    <string name="editor_chan_sat_green">"সেউজীয়া"</string>
+    <!--  Label for the cyan control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_cyan"/>
+    <string name="editor_chan_sat_cyan">"চিয়ান"</string>
+    <!--  Label for the blue control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_blue"/>
+    <string name="editor_chan_sat_blue">"নীলা"</string>
+    <!--  Label for the Magenta control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_magenta"/>
+    <string name="editor_chan_sat_magenta">"মেজেণ্টা"</string>
+    <!--  Label for the image graduated filter effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_style"/>
+    <string name="editor_grad_style">"শৈলী"</string>
+    <!-- new virtual graduated neutral density filter  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_new"/>
+    <string name="editor_grad_new">"নতুন"</string>
+
+
+    <!--  Labels for the curves tool -->
+
+    <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
+    <add-resource type="string" name="curves_channel_rgb"/>
+    <string name="curves_channel_rgb">RGB</string>
+    <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_red"/>
+    <string name="curves_channel_red">"ৰঙা"</string>
+    <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_green"/>
+    <string name="curves_channel_green">"সেউজীয়া"</string>
+    <!--  Label for the curves tool, Blue color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_blue"/>
+    <string name="curves_channel_blue">"নীলা"</string>
+
+    <!--  Label for the The style to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style"/>
+    <string name="draw_style">"শৈলী"</string>
+    <!--  Label for the size to draw in in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_size"/>
+    <string name="draw_size">"আকাৰ"</string>
+    <!--  Label for the Hue to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_hue"/>
+    <string name="draw_hue">"ৰং"</string>
+    <!--  Label for the color to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_saturation"/>
+    <string name="draw_saturation">"ছেটুৰেশ্বন"</string>
+    <!--  Label for the Brightness to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_value"/>
+    <string name="draw_value">"উজ্জ্বলতা"</string>
+    <!--  Label for the color to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_color"/>
+    <string name="draw_color">"ৰং"</string>
+    <!--  Label for the line style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_line"/>
+    <string name="draw_style_line">"ৰেখা"</string>
+    <!--  Label for the Marker brush style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_brush_spatter"/>
+    <string name="draw_style_brush_spatter">"মাৰ্কাৰ"</string>
+    <!--  Label for the Spatter brush style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_brush_marker"/>
+    <string name="draw_style_brush_marker">"স্পেটাৰ"</string>
+    <!--  Label for the removing drawing from screen [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_clear"/>
+    <string name="draw_clear">"পৰিষ্কাৰ"</string>
+
+
+    <!--  Label for the with of the border[CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_size"/>
+    <string name="color_border_size">"ডাঠ"</string>
+    <!--  Label for the border corner size (or rounding) [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_corner_size"/>
+    <string name="color_border_corner_size">"কোণৰ আকাৰ"</string>
+    <!--  Label for selecting the border color [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_color"/>
+    <string name="color_border_color">"ৰং"</string>
+     <!--  Label for the removing borders [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_clear"/>
+    <string name="color_border_clear">"পৰিষ্কাৰ"</string>
+
+    <!--  Label for the select the color [CHAR LIMIT=35] -->
+    <add-resource type="string" name="color_pick_select"/>
+    <string name="color_pick_select">"অনুকূল ৰং পচন্দ কৰক"</string>
+    <!--  The title for the color pick dialog [CHAR LIMIT=20] -->
+    <add-resource type="string" name="color_pick_title"/>
+    <string name="color_pick_title">"ৰং বাছনি কৰক"</string>
+    <!--  The title for draw size [CHAR LIMIT=50] -->
+    <add-resource type="string" name="draw_size_title"/>
+    <string name="draw_size_title">"আকাৰ বাছনি কৰক"</string>
+    <!--  The accept the draw size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="draw_size_accept"/>
+    <string name="draw_size_accept">"অ’কে"</string>
+
+    <!--  Name used to indicate the original image in the state panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="state_panel_original"/>
+    <string name="state_panel_original">"মূল"</string>
+
+    <!--  Name used to indicate the final image in the state panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="state_panel_result"/>
+    <string name="state_panel_result">"ফলাফল"</string>
+
+    <!-- Label for the notification [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_notification_label"/>
+    <string name="filtershow_notification_label">"প্ৰতিচ্ছবি সংৰক্ষণ কৰি আছে"</string>
+    <!-- Label for the notification message [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_notification_message"/>
+    <string name="filtershow_notification_message">"প্ৰক্ৰিয়া চলাই আছে..."</string>
+
+    <!-- Label for the save preset menu [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_save_preset"/>
+    <string name="filtershow_save_preset">"বৰ্তমান প্ৰিছেট সংৰক্ষণ কৰক"</string>
+    <!-- Label for the manage preset menu [CHAR LIMIT=42] -->
+    <add-resource type="string" name="filtershow_manage_preset"/>
+    <string name="filtershow_manage_preset">"ব্যৱহাৰকৰ্তা প্ৰিছেট পৰিচালনা কৰক"</string>
+    <!-- Label for newly created user preset [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_new_preset"/>
+    <string name="filtershow_new_preset">"নতুন প্ৰিছেট"</string>
+    <!-- Label for preset name [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_preset_name"/>
+    <string name="filtershow_preset_name">"প্ৰিছেট নাম"</string>
+
+    <!-- Label for showing the image information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_show_info_panel"/>
+    <string name="filtershow_show_info_panel">"তথ্য"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_name"/>
+    <string name="filtershow_show_info_panel_name">"প্ৰতিচ্ছবিৰ নাম"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_size"/>
+    <string name="filtershow_show_info_panel_size">"প্ৰতিচ্ছবিৰ আকাৰ"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_histogram"/>
+    <string name="filtershow_show_info_panel_histogram">"হিষ্ট’গ্ৰাম"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_exif"/>
+    <string name="filtershow_show_info_panel_exif">"EXIF ডাটা"</string>
+
+    <!-- Label for the add button in the category panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_add_button_looks"/>
+    <string name="filtershow_add_button_looks">"প্ৰিছেট কৰক"</string>
+    <!-- Label for the add button in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_add_button_versions"/>
+    <string name="filtershow_add_button_versions">"সংস্কৰণ"</string>
+    <!-- Label for the Original version in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_version_original"/>
+    <string name="filtershow_version_original">"মূল"</string>
+    <!-- Label for the Current version in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_version_current"/>
+    <string name="filtershow_version_current">"বৰ্তমান"</string>
+
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_model"/>
+    <string name="filtershow_exif_model">"মডেল"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_aperture"/>
+    <string name="filtershow_exif_aperture">"এপাৰেচাৰ"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_focal_length"/>
+    <string name="filtershow_exif_focal_length">"ফোকেল দৈৰ্ঘ"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_iso"/>
+    <string name="filtershow_exif_iso">ISO</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_subject_distance"/>
+    <string name="filtershow_exif_subject_distance">"বিষয়বস্তুৰ দূৰত্ব"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_date"/>
+    <string name="filtershow_exif_date">"লোৱা তাৰিখ"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_f_stop"/>
+    <string name="filtershow_exif_f_stop">"F ষ্ট’প"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_exposure_time"/>
+    <string name="filtershow_exif_exposure_time">"এক্সপ’জাৰ টাইম"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_copyright"/>
+    <string name="filtershow_exif_copyright">"কপিৰাইট"</string>
+
+    <add-resource type="string" name="fusion_pick_point"/>
+    <string name="fusion_pick_point">"ছেগমেণ্ট বাছক"</string>
+    <add-resource type="string" name="fusion_pick_underlay"/>
+    <string name="fusion_pick_underlay">"আণ্ডাৰলে বাছক"</string>
+    <add-resource type="string" name="dual_camera_effects"/>
+    <string name="dual_camera_effects">"ডুৱেল কেমেৰা প্ৰভাৱ"</string>
+    <add-resource type="string" name="dual_camera_effects_intro"/>
+    <string name="dual_camera_effects_intro">"আপোনাক ম’শ্বন আৰু স্কেটচৰ দৰে, পৃষ্ঠভূমি প্ৰভাৱ প্ৰয়োগ কৰিবলৈ অনুমতি দিয়ে৷ আপুনি আকৰ্ষণীয় প্ৰভাৱৰ বাবে দুয়োখন ফটোকে একেলগে মাৰ্জ কৰিবও পাৰে৷ এই সুবিধাটোৱে তেতিয়াহে ভালকৈ কাম কৰে যেতিয়া আপুনি আপোনাৰ কেমেৰা আৰু আপোনাৰ চিত্ৰৰ মুখ্য বিষয়বস্তুৰ পৰা কম ব্যৱধানত থাকে৷"</string>
+    <add-resource type="string" name="dualcam_no_segment_toast"/>
+    <string name="dualcam_no_segment_toast">"এই পইণ্টটোত কোনো ছেগমেণ্ট পোৱা নাই"</string>
+    <add-resource type="string" name="dualcam_filter_not_supported"/>
+    <string name="dualcam_filter_not_supported">"এই প্ৰতিচ্ছবিখনৰ বাবে ডুৱেল কেমেৰা ফিল্টাৰবোৰ সমৰ্থিত নহয়"</string>
+    <add-resource type="string" name="trueportrait_intro"/>
+    <string name="trueportrait_intro">"ব্যক্তিবিশেষৰ ফটো বৰ্দ্ধন কৰিবলৈ আপোনাক অনুমতি দিয়ে৷ আপুনি \"অস্পষ্ট\" আৰু \"আঁচ পৰাৰ দৰে\", পৃষ্ঠভূমিলৈ ইফেক্টবোৰ প্ৰয়োগ কৰিব পাৰে৷ আপুনি আপোনাৰ প’ৰ্ট্ৰেইট ফটোবোৰৰ বাবে আকৰ্ষণীয় পৃষ্ঠভূমি সৃষ্টি কৰিবলৈ দুখন ফটো একেলগ কৰিবও পাৰে৷"</string>
+    <add-resource type="string" name="trueportrait_no_face"/>
+    <string name="trueportrait_no_face">"এই ফটোখনলৈ ট্ৰু প’ৰ্ট্ৰেইট ইফেক্ট প্ৰয়োগ কৰিব নোৱাৰি৷ মুখ চিনাক্ত কৰা নাই৷"</string>
+    <add-resource type="string" name="trueportrait_edit_intro"/>
+    <string name="trueportrait_edit_intro">"টাচ্চ্-আপ টুলৰ সৈতে, আপুনি অগ্ৰভূমি আৰু পৃষ্ঠভূমি সম্পাদনা কৰিব পাৰিব৷ আপুনি অগ্ৰভূমি বা পৃষ্ঠভূমিৰ এৰি অহা ক্ষেত্ৰসমূহৰ যিকোনো ঠাইতে পেইণ্ট কৰিবলৈ আপোনাৰ আঙুলি ব্যৱহাৰ কৰিব পাৰে৷"</string>
+    <add-resource type="string" name="trueportrait_edit_foreground_toast"/>
+    <string name="trueportrait_edit_foreground_toast">"অগ্ৰভূমিৰ এৰি অহা যিকোনো ক্ষেত্ৰত পেইণ্ট কৰিবলৈ আপোনাৰ আঙুলি ব্যৱহাৰ কৰক৷"</string>
+    <add-resource type="string" name="trueportrait_edit_background_toast"/>
+    <string name="trueportrait_edit_background_toast">"পৃষ্ঠভূমিৰ এৰি অহা যিকোনো ক্ষেত্ৰত পেইণ্ট কৰিবলৈ আপোনাৰ আঙুলি ব্যৱহাৰ কৰক৷"</string>
+    <add-resource type="string" name="trueportrait_edit_help"/>
+    <string name="trueportrait_edit_help">"ঝুম কৰিবলৈ, পিঞ্চ খুলিবলৈ বা বন্ধ কৰিবলৈ দুটা আঙুলি ব্যৱহাৰ কৰক৷ আপুনি প্ৰতিচ্ছবিখন পুনৰ স্থানলৈ আনিবলৈ দুটা আঙুলিৰে টানিবও পাৰে৷ ই যিকোনো সমস্যা ক্ষেত্ৰ ঠিক কৰিবলৈ ইয়াক সহজ কৰি তুলিব পাৰে৷"</string>
+    <add-resource type="string" name="trueportrait_fusion_intro"/>
+    <string name="trueportrait_fusion_intro">"আপোনাৰ গেলাৰীত থকা যিকোনো ফটোত আপোনাৰ অগ্ৰভূমিৰ ব্যক্তিয়ে প্ৰতিলিপি আৰু লেপন কৰিব পাৰিব৷ আপুনি নতুন আৰু আকৰ্ষণীয় প’ৰ্ট্ৰেইট সৃষ্টি কৰিবলৈ বিভিন্ন পৃষ্ঠভূমি ফটো ব্যৱহাৰ কৰি চেষ্টা কৰিব পাৰে৷"</string>
+    <add-resource type="string" name="dualcam_fusion_intro"/>
+    <string name="dualcam_fusion_intro">"আপোনাৰ গেলাৰীত থকা যিকোনো ফটোত আপোনাৰ অগ্ৰভূমিক প্ৰতিলিপি আৰু লেপন কৰিব পাৰি৷ \n\nআপুনি নতুন আৰু আকৰ্ষণীয় প’ৰ্ট্ৰেইট সৃষ্টি কৰিবলৈ বিভিন্ন পৃষ্ঠভূমি ফটো ব্যৱহাৰ কৰি চেষ্টা কৰিব পাৰে৷"</string>
+    <add-resource type="string" name="do_not_show_again"/>
+    <string name="do_not_show_again">"পুনৰ নেদেখুৱাব"</string>
+    <add-resource type="string" name="trueportrait_touch_up"/>
+    <string name="trueportrait_touch_up">"ওপৰত স্পৰ্শ কৰক"</string>
+    <add-resource type="string" name="fusion_pick_background"/>
+    <string name="fusion_pick_background">"পৃষ্ঠভূমি ফটো বাছনি কৰক"</string>
+
+    <add-resource type="string" name="color"/>
+    <string name="color">"ৰং"</string>
+    <add-resource type="string" name="frames"/>
+    <string name="frames">"ফ্ৰেমবোৰ"</string>
+    <add-resource type="string" name="beautify"/>
+    <string name="beautify">"সৌন্দৰ্য প্ৰদান"</string>
+    <add-resource type="string" name="dualcam"/>
+    <string name="dualcam">"ডুৱেল কেমেৰা"</string>
+    <add-resource type="string" name="trueportrait"/>
+    <string name="trueportrait">"ট্ৰু প’ৰ্ট্ৰেইট"</string>
+    <add-resource type="string" name="foreground"/>
+    <string name="foreground">"অগ্ৰভূমি"</string>
+    <add-resource type="string" name="background"/>
+    <string name="background">"পৃষ্ঠভূমি"</string>
+    <add-resource type="string" name="brush_size"/>
+    <string name="brush_size">"ব্ৰাচৰ আকাৰ"</string></resources>

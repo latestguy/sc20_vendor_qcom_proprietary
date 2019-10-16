@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2015 pci-suntektech Technologies, Inc.  All Rights Reserved.
+     pci-suntektech Technologies Proprietary and Confidential.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/backup_many_message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="156dp"
+        android:src="@drawable/rcs_backup_message" />
+
+    <TextView
+        android:id="@+id/backup_many_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="230dp"
+        android:textColor="#00acc1"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/backup_many_message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backup_many_message_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/backup_message_progress"
+        android:textColor="#00acc1"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/cancel_backup_many_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/backup_many_message_icon"
+        android:layout_below="@+id/backup_many_message_status"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/rcs_message_cancel_backup_restore"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/backup_many_message_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_alignRight="@+id/backup_many_message_status"
+        android:layout_below="@+id/backup_many_message_status"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/cancel_backup_many_message"
+        android:background="@drawable/rcs_backup_restore_progressbar_bg"
+        android:max="100"
+        android:progress="80"
+        android:progressDrawable="@drawable/rcs_backup_restore_progressbar_drawable"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/last_backup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backup_many_message_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/last_backup_time"
+        android:textColor="#939393"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/last_backup_time"
+        android:layout_marginTop="5dp"
+        android:background="#939393" />
+
+    <ListView
+        android:id="@+id/many_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split_line"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

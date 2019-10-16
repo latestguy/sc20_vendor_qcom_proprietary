@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2015 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Configured default voice mail number-->
+
+    <string-array translatable="false" name="config_default_vm_number" >
+        <item>"5500"</item>
+    </string-array>
+
+   <string-array translatable="false" name="config_gpsParameters">
+        <item>SUPL_HOST=supl.vodafone.com</item>
+        <item>SUPL_PORT=7275</item>
+        <item>NTP_SERVER=north-america.pool.ntp.org</item>
+        <item>SUPL_VER=0x20000</item>
+       <item>SUPL_MODE=1</item>
+   </string-array>
+
+    <!-- display for radio tech -->
+    <bool name="config_display_rat">false</bool>
+
+  <!-- National Language Identifier codes for the following two config items.
+          0  - reserved
+          1  - Turkish
+          2  - Spanish(single shift table only)
+          3  - Portuguese
+          4  - Bengali
+          5  - Gujarati
+          6  - Hindi
+          7  - Kannada
+          8  - Malayalam
+          9  - Oriya
+         10  - Punjabi
+         11  - Tamil
+         12  - Telugu
+         13  - Urdu
+         14+ - reserved -->
+
+    <!--Example 1: devices sold in Turkey must include table 1
+        Example 2: devices sold in India should include tables 4 through 13
+        to enable use of the new Release 9 tables for Indic languages. -->
+   <integer-array name="config_sms_enabled_single_shift_tables">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </integer-array>
+
+    <!-- National language locking shift tables to enable for SMS encoding.
+         Decoding is always enabled. Array elements are codes from the table above.
+         Example 1: devices sold in Turkey must include table 1.
+         Example 2: devices sold in India should include tables 4 through 13
+         to enable use of the new Release 9 tables for Indic languages. -->
+    <integer-array name="config_sms_enabled_locking_shift_tables">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </integer-array>
+
+</resources>

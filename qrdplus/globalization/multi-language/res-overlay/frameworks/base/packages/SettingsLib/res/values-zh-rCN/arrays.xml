@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Wi-Fi settings -->
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+    <add-resource type="array" name="wifi_status"/>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"正在扫描..."</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>"正在连接..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>"正在进行身份验证..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>"正在获取IP地址..."</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>"已连接"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暂停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>"正在断开连接..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已断开连接"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失败"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已停用"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"暂时关闭（网络状况不佳）"</item>
+    </string-array>
+
+    <!-- Match this with the order of NetworkInfo.DetailedState. -->
+    <!-- Wi-Fi settings. The status messages when the network is known. -->
+    <add-resource type="array" name="wifi_status_with_ssid"/>
+    <string-array name="wifi_status_with_ssid">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>"正在扫描..."</item>
+        <!-- Status message of Wi-Fi when it is connecting to a network. -->
+        <item>"正在连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <!-- Status message of Wi-Fi when it is authenticating with a network. -->
+        <item>"正在通过 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 进行身份验证..."</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address from a network. -->
+        <item>"正在从<xliff:g id="NETWORK_NAME">%1$s</xliff:g>获取IP地址..."</item>
+        <!-- Status message of Wi-Fi when it is connected to a network. -->
+        <item>"已连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>"已暂停"</item>
+        <!-- Status message of Wi-Fi when it is disconnecting from a network. -->
+        <item>"正在断开与 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的连接..."</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>"已断开连接"</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>"失败"</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>"已停用"</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>"暂时关闭（网络状况不佳）"</item>
+    </string-array>
+
+    <!-- Titles for HDCP checking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="hdcp_checking_titles"/>
+    <string-array name="hdcp_checking_titles">
+        <item>"永不检查"</item>
+        <item>"仅检查 DRM 内容"</item>
+        <item>"总是检查"</item>
+    </string-array>
+
+    <!-- Summaries for HDCP checking preference. [CHAR LIMIT=100]-->
+    <add-resource type="array" name="hdcp_checking_summaries"/>
+    <string-array name="hdcp_checking_summaries">
+        <item>"一律不使用 HDCP 检查"</item>
+        <item>"仅使用 HDCP 检查 DRM 内容"</item>
+        <item>"始终使用 HDCP 检查"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_titles"/>
+    <string-array name="select_logd_size_titles">
+        <item>"关闭"</item>
+        <item>"64K"</item>
+        <item>"256K"</item>
+        <item>"1M"</item>
+        <item>"4M"</item>
+        <item>"16M"</item>
+    </string-array>
+
+    <!-- Titles for logd limit size lowram selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logd_size_lowram_titles"/>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>"关闭"</item>
+        <item>"64K"</item>
+        <item>"256K"</item>
+        <item>"1M"</item>
+    </string-array>
+
+    <!-- Summaries for logd limit size selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logd_size_summaries"/>
+    <string-array name="select_logd_size_summaries">
+        <item>"关闭"</item>
+        <item>"每个日志缓冲区 64K"</item>
+        <item>"每个日志缓冲区 256K"</item>
+        <item>"每个日志缓冲区 1M"</item>
+        <item>"每个日志缓冲区 4M"</item>
+        <item>"每个日志缓冲区 16M"</item>
+    </string-array>
+
+    <!-- Titles for logpersist state selection preference. [CHAR LIMIT=14] -->
+    <add-resource type="array" name="select_logpersist_titles"/>
+    <string-array name="select_logpersist_titles">
+        <item>"关闭"</item>
+        <item>"全部"</item>
+        <item>"所有非无线电"</item>
+        <item>"仅限内核"</item>
+    </string-array>
+
+    <!-- Summaries for logpersist state selection preference. [CHAR LIMIT=50]-->
+    <add-resource type="array" name="select_logpersist_summaries"/>
+    <string-array name="select_logpersist_summaries">
+        <item>"关闭"</item>
+        <item>"所有日志缓冲区"</item>
+        <item>"所有非无线电日志缓冲区"</item>
+        <item>"仅限内核日志缓冲区"</item>
+    </string-array>
+
+    <!-- Titles for window animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="window_animation_scale_entries"/>
+    <string-array name="window_animation_scale_entries">
+        <item>"关闭动画"</item>
+        <item>"动画缩放 0.5x"</item>
+        <item>"动画缩放 1x"</item>
+        <item>"动画缩放 1.5x"</item>
+        <item>"动画缩放 2x"</item>
+        <item>"动画缩放 5x"</item>
+        <item>"动画缩放 10x"</item>
+    </string-array>
+
+    <!-- Titles for transition animation scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="transition_animation_scale_entries"/>
+    <string-array name="transition_animation_scale_entries">
+        <item>"关闭动画"</item>
+        <item>"动画缩放 0.5x"</item>
+        <item>"动画缩放 1x"</item>
+        <item>"动画缩放 1.5x"</item>
+        <item>"动画缩放 2x"</item>
+        <item>"动画缩放 5x"</item>
+        <item>"动画缩放 10x"</item>
+    </string-array>
+
+    <!-- Titles for animator duration scale preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="animator_duration_scale_entries"/>
+    <string-array name="animator_duration_scale_entries">
+        <item>"关闭动画"</item>
+        <item>"动画缩放 0.5x"</item>
+        <item>"动画缩放 1x"</item>
+        <item>"动画缩放 1.5x"</item>
+        <item>"动画缩放 2x"</item>
+        <item>"动画缩放 5x"</item>
+        <item>"动画缩放 10x"</item>
+    </string-array>
+
+    <!-- Titles for overlay display devices preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="overlay_display_devices_entries"/>
+    <string-array name="overlay_display_devices_entries">
+        <item>"无"</item>
+        <item>"480p"</item>
+        <item>"480p（安全）"</item>
+        <item>720p</item>
+        <item>"720p（安全）"</item>
+        <item>"1080p"</item>
+        <item>"1080p（安全）"</item>
+        <item>4K</item>
+        <item>"4K（安全）"</item>
+        <item>"4K（画质提升）"</item>
+        <item>"4K（画质提升、安全）"</item>
+        <item>"720p，1080p（双屏）"</item>
+    </string-array>
+
+    <!-- Titles for OpenGL traces preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="enable_opengl_traces_entries"/>
+    <string-array name="enable_opengl_traces_entries">
+        <item>"无"</item>
+        <item>"Logcat"</item>
+        <item>"Systrace（图形）"</item>
+        <item>"glGetError 上的调用堆栈"</item>
+    </string-array>
+
+    <!-- Titles for non-rectangular clipping preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="show_non_rect_clip_entries"/>
+    <string-array name="show_non_rect_clip_entries">
+        <item>"关闭"</item>
+        <item>"以蓝色填充非矩形剪裁区域"</item>
+        <item>"以绿色突出显示测试绘制命令"</item>
+    </string-array>
+
+    <!-- Titles for frame time tracking preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="track_frame_time_entries"/>
+    <string-array name="track_frame_time_entries">
+        <item>"关闭"</item>
+        <item>"在屏幕上显示为条形图"</item>
+        <item>"在 adb shell dumpsys gfxinfo 中"</item>
+    </string-array>
+
+    <!-- Titles for debug overdraw preference. [CHAR LIMIT=50] -->
+    <add-resource type="array" name="debug_hw_overdraw_entries"/>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>"关闭"</item>
+        <item>"显示过度绘制区域"</item>
+        <item>"显示适合绿色弱视患者查看的区域"</item>
+    </string-array>
+
+    <!-- Titles for app process limit preference. [CHAR LIMIT=35] -->
+    <add-resource type="array" name="app_process_limit_entries"/>
+    <string-array name="app_process_limit_entries">
+        <item>"标准限制"</item>
+        <item>"不允许后台进程"</item>
+        <item>"不得超过1个进程"</item>
+        <item>"不得超过2个进程"</item>
+        <item>"不得超过3个进程"</item>
+        <item>"不得超过4个进程"</item>
+    </string-array>
+
+    <!-- USB configuration names for Developer Settings.
+         This can be overridden by devices with additional USB configurations. -->
+    <add-resource type="array" name="usb_configuration_titles"/>
+    <string-array name="usb_configuration_titles">
+        <item>"充电"</item>
+        <item>"MTP（媒体传输协议）"</item>
+        <item>"PTP（图片传输协议）"</item>
+        <item>"RNDIS（USB 以太网）"</item>
+        <item>"音频源"</item>
+        <item>MIDI</item>
+    </string-array></resources>

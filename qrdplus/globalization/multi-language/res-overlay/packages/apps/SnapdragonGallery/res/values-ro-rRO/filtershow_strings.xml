@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!--  Title for the image editor activity [CHAR LIMIT=NONE]-->
+    <add-resource type="string" name="title_activity_filter_show"/>
+    <string name="title_activity_filter_show">"Editor foto"</string>
+
+    <!--  String shown when we cannot load the image when starting the activity [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cannot_load_image"/>
+    <string name="cannot_load_image">"Nu se poate încărca imaginea!"</string>
+    <!--  String shown when cannot load the original image. We will edit selected image [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cannot_edit_original"/>
+    <string name="cannot_edit_original">"Nu se poate modifica originalul"</string>
+    <!--  String displayed when showing the original image [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="original_picture_text"/>
+    <string name="original_picture_text">@string/original</string>
+    <!--  String displayed when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="setting_wallpaper"/>
+    <string name="setting_wallpaper">"Se setează imaginea de fundal"</string>
+
+    <!--  generic strings -->
+
+
+    <!--  Text for to display on a download failure [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="download_failure"/>
+    <string name="download_failure">"Nu s-au putut descărca fotografiile. Rețea indisponibilă."</string>
+    <!--  Text to label an image as "original" [CHAR LIMIT=20] -->
+    <add-resource type="string" name="original"/>
+    <string name="original">"Originală"</string>
+    <!--  Text for filters that apply a border to a picture [CHAR LIMIT=20] -->
+    <add-resource type="string" name="borders"/>
+    <string name="borders" msgid="4461692156695893616">"Chenar"</string>
+    <!-- Text for the custom border filter [CHAR LIMIT=20] -->
+    <add-resource type="string" name="custom_border"/>
+    <string name="custom_border">"Personalizat"</string>
+
+    <!--  actionbar menu -->
+
+    <!--  Text for the undo menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="filtershow_undo"/>
+    <string name="filtershow_undo">"Anulați"</string>
+    <!--  Text for redo menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="filtershow_redo"/>
+    <string name="filtershow_redo">"Repetaţi"</string>
+    <!--  Text for the image menu item showing the filters that have been applied [CHAR LIMIT=30] -->
+    <add-resource type="string" name="show_imagestate_panel"/>
+    <string name="show_imagestate_panel">"Afișați efectele aplicate"</string>
+    <!--  Text for the image state panel menu item [CHAR LIMIT=30] -->
+    <add-resource type="string" name="hide_imagestate_panel"/>
+    <string name="hide_imagestate_panel">"Ascundeți efectele aplicate"</string>
+    <!--  Text for the menu item to export a flattened photo[CHAR LIMIT=30] -->
+    <add-resource type="string" name="export_image"/>
+    <string name="export_image">"Exportați"</string>
+    <!-- Text for the print menu item [CHAR LIMIT=20] -->
+    <add-resource type="string" name="print_image"/>
+    <string name="print_image">"Printați"</string>
+
+    <!-- Export Dialog-->
+
+    <!--  Text for the dialog title to export a flattened photo[CHAR LIMIT=25] -->
+    <add-resource type="string" name="export_flattened"/>
+    <string name="export_flattened">"Exportați imaginea aplatizată"</string>
+    <!--  Text for selecting export image quality [CHAR LIMIT=100] -->
+    <add-resource type="string" name="select_output_settings"/>
+    <string name="select_output_settings">"Imaginea exportată va fi o copie, fără istoric."</string>
+    <!--  Text for quality value tag [CHAR LIMIT=30] -->
+    <add-resource type="string" name="quality"/>
+    <string name="quality">"Calitate"</string>
+    <!--  Text for size value tag [CHAR LIMIT=30] -->
+    <add-resource type="string" name="size"/>
+    <string name="size">"Dimensiune"</string>
+    <!--  Text for size x [CHAR LIMIT=1] -->
+    <add-resource type="string" name="x"/>
+    <string name="x">x</string>
+
+    <!--  Name for the overflow menu item for settings [CHAR LIMIT=20] -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"Setări"</string>
+
+    <!--  Exit Dialog -->
+
+    <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="unsaved"/>
+    <string name="unsaved">"Ați adus modificări imaginii pe care nu le-ați salvat."</string>
+    <!--  String displayed when exiting with unsaved changes [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_before_exit"/>
+    <string name="save_before_exit">"Doriți să salvați înainte de a ieși?"</string>
+    <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_and_exit"/>
+    <string name="save_and_exit">"Salvați și ieșiți"</string>
+    <!--  String displayed when discard editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="discard"/>
+    <string name="discard">"Renunțați"</string>
+    <!--  String displayed when saving and exiting editor [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="save_and_processing"/>
+    <string name="save_and_processing">"Se procesează imaginea la rezoluție maximă..."</string>
+    <!--  String displayed when exiting editor[CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="exit"/>
+    <string name="exit">"Ieșiți"</string>
+
+    <!--  History Panel -->
+
+    <!--  Text for the history panel title [CHAR LIMIT=50] -->
+    <add-resource type="string" name="history"/>
+    <string name="history">"Istoric"</string>
+    <!--  Text for the history panel reset button [CHAR LIMIT=20]-->
+    <add-resource type="string" name="reset"/>
+    <string name="reset">"Resetaţi"</string>
+    <!--  Text for the original image[CHAR LIMIT=20]-->
+    <add-resource type="string" name="history_original"/>
+    <string name="history_original">@string/original</string>
+
+    <!--  Image state panel -->
+
+    <!--  Text for the image state panel title [CHAR LIMIT=50] -->
+    <add-resource type="string" name="imageState"/>
+    <string name="imageState">"Efecte aplicate"</string>
+
+    <!--  Additional filters buttons  -->
+
+    <!--  Label for the compare original image filter button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="compare_original"/>
+    <string name="compare_original">"Comparați"</string>
+    <!--  Label for the apply effect button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="apply_effect"/>
+    <string name="apply_effect">"Aplicaţi"</string>
+    <!--  Label for the reset effect button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="reset_effect"/>
+    <string name="reset_effect">"Resetaţi"</string>
+    <!--  Label for aspect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect"/>
+    <string name="aspect">"Aspect"</string>
+    <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect1to1_effect"/>
+    <string name="aspect1to1_effect">"1:1"</string>
+    <!--  Label for the aspect 4:3 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect4to3_effect"/>
+    <string name="aspect4to3_effect">"4:3"</string>
+    <!--  Label for the aspect 3:4 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect3to4_effect"/>
+    <string name="aspect3to4_effect">"3:4"</string>
+    <!--  Label for the aspect 4:7 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect4to6_effect"/>
+    <string name="aspect4to6_effect">"4:6"</string>
+    <!--  Label for the aspect 5:7 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect5to7_effect"/>
+    <string name="aspect5to7_effect">"5:7"</string>
+    <!--  Label for the aspect 7:5 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect7to5_effect"/>
+    <string name="aspect7to5_effect">"7:5"</string>
+    <!--  Label for the aspect 1:1 effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspect9to16_effect"/>
+    <string name="aspect9to16_effect">"16:9"</string>
+    <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspectNone_effect"/>
+    <string name="aspectNone_effect">"Niciunul"</string>
+    <!--  Label for the aspect None effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="aspectOriginal_effect"/>
+    <string name="aspectOriginal_effect">@string/original</string>
+    <!-- Label for when the aspect ratio is fixed to a value [CHAR LIMIT=15] -->
+    <add-resource type="string" name="Fixed"/>
+    <string name="Fixed">"Fix"</string>
+    <!--  Label for the tuny planet effect [CHAR LIMIT=10] -->
+    <add-resource type="string" name="tinyplanet"/>
+    <string name="tinyplanet">"Planetă mică"</string>
+
+    <!--  Filters buttons -->
+
+    <!--  True Effect button -->
+    <add-resource type="string" name="trueScanner"/>
+    <string name="trueScanner">"Scaner adevăr"</string>
+    <!--  HazeBuster button -->
+    <add-resource type="string" name="hazeBuster"/>
+    <string name="hazeBuster">"Anticeață"</string>
+    <!--  SeeStraight button -->
+    <add-resource type="string" name="seeStraight"/>
+    <string name="seeStraight">"Vizualizare verticală"</string>
+    <!--  Label for the image exposure (brightness) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="exposure"/>
+    <string name="exposure" msgid="1229093066434614811">"Expunere"</string>
+    <!--  Label for the image sharpness (clarity, distinctness) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="sharpness"/>
+    <string name="sharpness">"Claritate"</string>
+    <!--  Label for the image contrast (color difference) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="contrast"/>
+    <string name="contrast">"Contrast"</string>
+    <!--  Label for the image vibrance (strengthens colors) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="vibrance"/>
+    <string name="vibrance">"Vibranță"</string>
+    <!--  Label for the image saturation (brightens colors) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="saturation"/>
+    <string name="saturation">"Saturație"</string>
+    <!--  Label for the image BW filter (makes black & white) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="bwfilter"/>
+    <string name="bwfilter">"Filtru A/N"</string>
+    <!--  Label for the image Autocolor filter (makes off-white colors whiter) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="wbalance"/>
+    <string name="wbalance">"Culoare auto."</string>
+    <!--  Label for the image Hue filter (color, shade, tinge, tone) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="hue"/>
+    <string name="hue">"Tonalitate"</string>
+    <!--  Label for the image shadow recovery (lightens/darkens shadows) filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="shadow_recovery"/>
+    <string name="shadow_recovery">"Umbre"</string>
+    <!--  Label for the image highlights recovery (lightens/darkens bright regions) filter button [CHAR LIMIT=15] -->
+    <add-resource type="string" name="highlight_recovery"/>
+    <string name="highlight_recovery">"Puncte luminoz."</string>
+    <!--  Label for the image curves filter button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="curvesRGB"/>
+    <string name="curvesRGB">"Curbe"</string>
+    <!--  Label for the image vignette filter (darkens photo around edges) button [CHAR LIMIT=10] -->
+    <add-resource type="string" name="vignette"/>
+    <string name="vignette">"Vignetare"</string>
+    <!--  Label for the image vignette main parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_main"/>
+    <string name="vignette_main">"Vignetare"</string>
+    <!--  Label for the image vignette exposure parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_exposure"/>
+    <string name="vignette_exposure">"Expunere"</string>
+    <!--  Label for the image vignette saturation parameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_saturation"/>
+    <string name="vignette_saturation">"Saturație"</string>
+    <!--  Label for the image vignette contrast fparameter ui [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_contrast"/>
+    <string name="vignette_contrast">"Contrast"</string>
+    <!--  Label for the rate of change in brightness as it goes to the edge [CHAR LIMIT=15] -->
+    <add-resource type="string" name="vignette_falloff"/>
+    <string name="vignette_falloff">"Atenuare"</string>
+
+    <!--  Label for the image effect that removes redeye. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="redeye"/>
+    <string name="redeye">"Ochi roșii"</string>
+    <!--  Label for the that allows drawing on Image [CHAR LIMIT=10] -->
+    <add-resource type="string" name="imageDraw"/>
+    <string name="imageDraw">"Desenați"</string>
+    <!--  Label for the image straighten effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="straighten"/>
+    <string name="straighten" msgid="5217801513491493491">"Îndreptare"</string>
+    <!--  Label for the image crop effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="crop"/>
+    <string name="crop" msgid="5584000454518174632">"Decupare"</string>
+    <!--  Label for the image rotate effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="rotate"/>
+    <string name="rotate" msgid="460017689320955494">"Rotire"</string>
+    <!--  Label for the image flip effect [CHAR LIMIT=15] -->
+    <add-resource type="string" name="mirror"/>
+    <string name="mirror">"Oglindă"</string>
+    <!-- Name for the photo effect that inverts photo to negative images. [CHAR LIMIT=10] -->
+    <add-resource type="string" name="negative"/>
+    <string name="negative">"Negativ"</string>
+    <!--  Label for having no filters applied to the image [CHAR LIMIT=10] -->
+    <add-resource type="string" name="none"/>
+    <string name="none" msgid="3601545724573307541">"Niciunul"</string>
+    <!--  Label for the image edges effect (highlights edges in image) [CHAR LIMIT=10] -->
+    <add-resource type="string" name="edge"/>
+    <string name="edge">"Margini"</string>
+    <!--  Label for an image effect that replicates the "pop art" style of segmenting
+          images into solid colors, as popularized by Andy Warhol [CHAR LIMIT=15] -->
+    <add-resource type="string" name="kmeans"/>
+    <string name="kmeans">"Posterizare"</string>
+    <!--  Label for the image downsampling effect (makes image smaller) [CHAR LIMIT=15] -->
+    <add-resource type="string" name="downsample"/>
+    <string name="downsample">"Mostră"</string>
+    <!--  Label for the "neutral density graduated filter" filter effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="grad"/>
+    <string name="grad">"Gradual"</string>
+    <!--  Label for the "refocus" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="focus"/>
+    <string name="focus">"Focalizare"</string>
+    <!--  Label for the "fusion" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="fusion"/>
+    <string name="fusion">"Fuziune"</string>
+    <!--  Label for the "sketch" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="sketch"/>
+    <string name="sketch">"Schiță"</string>
+    <!--  Label for the "halo" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="halo"/>
+    <string name="halo">"Aură"</string>
+    <!--  Label for the "zoom" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="zoom"/>
+    <string name="zoom">"Zoom"</string>
+    <!--  Label for the "motion" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="motion"/>
+    <string name="motion">"Mișcare"</string>
+    <!--  Label for the "bw" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="bw"/>
+    <string name="bw">"Alb-negru"</string>
+    <!--  Label for the "blackboard" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blackboard"/>
+    <string name="blackboard">"Tablă neagră"</string>
+    <!--  Label for the "whiteboard" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="whiteboard"/>
+    <string name="whiteboard">"Tablă albă"</string>
+    <!--  Label for the "posterize" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="posterize"/>
+    <string name="posterize">"Posterizare"</string>
+    <!--  Label for the "negative" dual camera effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="dc_negative"/>
+    <string name="dc_negative">"Negativ"</string>
+    <!--  Label for the "blur" true portrait effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="blur"/>
+    <string name="blur">"Estompare"</string>
+    <!--  Label for the "motion blur" true portrait effect  [CHAR LIMIT=15] -->
+    <add-resource type="string" name="motion_blur"/>
+    <string name="motion_blur">"Estomp. mişcată"</string>
+    <!--  Label for the Brightness effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_brightness"/>
+    <string name="editor_grad_brightness">"Luminozitate"</string>
+    <!--  Label for the Contrast filter effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_contrast"/>
+    <string name="editor_grad_contrast">"Contrast"</string>
+    <!--  Label for the saturation effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_saturation"/>
+    <string name="editor_grad_saturation">"Saturație"</string>
+    <!--  Label for the Main or Master control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_main"/>
+    <string name="editor_chan_sat_main">"Principal"</string>
+    <!--  Label for the red control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_red"/>
+    <string name="editor_chan_sat_red">"Roșu"</string>
+    <!--  Label for the yellow control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_yellow"/>
+    <string name="editor_chan_sat_yellow">"Galben"</string>
+    <!--  Label for the green control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_green"/>
+    <string name="editor_chan_sat_green">"Verde"</string>
+    <!--  Label for the cyan control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_cyan"/>
+    <string name="editor_chan_sat_cyan">"Cyan"</string>
+    <!--  Label for the blue control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_blue"/>
+    <string name="editor_chan_sat_blue">"Albastru"</string>
+    <!--  Label for the Magenta control for per channel saturation effect [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_chan_sat_magenta"/>
+    <string name="editor_chan_sat_magenta">"Magenta"</string>
+    <!--  Label for the image graduated filter effect  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_style"/>
+    <string name="editor_grad_style">"Stil"</string>
+    <!-- new virtual graduated neutral density filter  [CHAR LIMIT=20] -->
+    <add-resource type="string" name="editor_grad_new"/>
+    <string name="editor_grad_new">"nou"</string>
+
+
+    <!--  Labels for the curves tool -->
+
+    <!--  Label for the curves tool, all channels (RGB) [CHAR LIMIT=3] -->
+    <add-resource type="string" name="curves_channel_rgb"/>
+    <string name="curves_channel_rgb">RGB</string>
+    <!--  Label for the curves tool, Red color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_red"/>
+    <string name="curves_channel_red">"Roșu"</string>
+    <!--  Label for the curves tool, Green color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_green"/>
+    <string name="curves_channel_green">"Verde"</string>
+    <!--  Label for the curves tool, Blue color channel [CHAR LIMIT=14] -->
+    <add-resource type="string" name="curves_channel_blue"/>
+    <string name="curves_channel_blue">"Albastru"</string>
+
+    <!--  Label for the The style to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style"/>
+    <string name="draw_style">"Stil"</string>
+    <!--  Label for the size to draw in in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_size"/>
+    <string name="draw_size">"Dimensiune"</string>
+    <!--  Label for the Hue to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_hue"/>
+    <string name="draw_hue">"Culoare"</string>
+    <!--  Label for the color to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_saturation"/>
+    <string name="draw_saturation">"Saturație"</string>
+    <!--  Label for the Brightness to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_value"/>
+    <string name="draw_value">"Luminozitate"</string>
+    <!--  Label for the color to draw in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_color"/>
+    <string name="draw_color">"Culoare"</string>
+    <!--  Label for the line style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_line"/>
+    <string name="draw_style_line">"Linii"</string>
+    <!--  Label for the Marker brush style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_brush_spatter"/>
+    <string name="draw_style_brush_spatter">"Marker"</string>
+    <!--  Label for the Spatter brush style of drawing in [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_style_brush_marker"/>
+    <string name="draw_style_brush_marker">"Stropire"</string>
+    <!--  Label for the removing drawing from screen [CHAR LIMIT=14] -->
+    <add-resource type="string" name="draw_clear"/>
+    <string name="draw_clear">"Ștergeți"</string>
+
+
+    <!--  Label for the with of the border[CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_size"/>
+    <string name="color_border_size">"Grosimea"</string>
+    <!--  Label for the border corner size (or rounding) [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_corner_size"/>
+    <string name="color_border_corner_size">"Dimens. unghi"</string>
+    <!--  Label for selecting the border color [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_color"/>
+    <string name="color_border_color">"Culoare"</string>
+     <!--  Label for the removing borders [CHAR LIMIT=14] -->
+    <add-resource type="string" name="color_border_clear"/>
+    <string name="color_border_clear">"Ștergeți"</string>
+
+    <!--  Label for the select the color [CHAR LIMIT=35] -->
+    <add-resource type="string" name="color_pick_select"/>
+    <string name="color_pick_select">"Alegeți culoarea personalizată"</string>
+    <!--  The title for the color pick dialog [CHAR LIMIT=20] -->
+    <add-resource type="string" name="color_pick_title"/>
+    <string name="color_pick_title">"Selectați culoarea"</string>
+    <!--  The title for draw size [CHAR LIMIT=50] -->
+    <add-resource type="string" name="draw_size_title"/>
+    <string name="draw_size_title">"Selectați dimensiunea"</string>
+    <!--  The accept the draw size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="draw_size_accept"/>
+    <string name="draw_size_accept">"OK"</string>
+
+    <!--  Name used to indicate the original image in the state panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="state_panel_original"/>
+    <string name="state_panel_original">"Original"</string>
+
+    <!--  Name used to indicate the final image in the state panel [CHAR LIMIT=20] -->
+    <add-resource type="string" name="state_panel_result"/>
+    <string name="state_panel_result">"Rezultat"</string>
+
+    <!-- Label for the notification [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_notification_label"/>
+    <string name="filtershow_notification_label">"Se salvează imaginea"</string>
+    <!-- Label for the notification message [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_notification_message"/>
+    <string name="filtershow_notification_message">"Se procesează..."</string>
+
+    <!-- Label for the save preset menu [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_save_preset"/>
+    <string name="filtershow_save_preset">"Salvați presetarea curentă"</string>
+    <!-- Label for the manage preset menu [CHAR LIMIT=42] -->
+    <add-resource type="string" name="filtershow_manage_preset"/>
+    <string name="filtershow_manage_preset">"Gestionați presetările"</string>
+    <!-- Label for newly created user preset [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_new_preset"/>
+    <string name="filtershow_new_preset">"Presetare nouă"</string>
+    <!-- Label for preset name [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_preset_name"/>
+    <string name="filtershow_preset_name">"Nume prestabilit"</string>
+
+    <!-- Label for showing the image information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_show_info_panel"/>
+    <string name="filtershow_show_info_panel">"Informații"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_name"/>
+    <string name="filtershow_show_info_panel_name">"Numele imaginii"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_size"/>
+    <string name="filtershow_show_info_panel_size">"Dimensiunea imaginii"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_histogram"/>
+    <string name="filtershow_show_info_panel_histogram">"Histogramă"</string>
+    <!-- Label for the information panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_show_info_panel_exif"/>
+    <string name="filtershow_show_info_panel_exif">"Date EXIF"</string>
+
+    <!-- Label for the add button in the category panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_add_button_looks"/>
+    <string name="filtershow_add_button_looks">"Presetare"</string>
+    <!-- Label for the add button in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_add_button_versions"/>
+    <string name="filtershow_add_button_versions">"Versiune"</string>
+    <!-- Label for the Original version in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_version_original"/>
+    <string name="filtershow_version_original">"Original"</string>
+    <!-- Label for the Current version in the versions panel [CHAR LIMIT=30] -->
+    <add-resource type="string" name="filtershow_version_current"/>
+    <string name="filtershow_version_current">"Actual"</string>
+
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_model"/>
+    <string name="filtershow_exif_model">"Model"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_aperture"/>
+    <string name="filtershow_exif_aperture">"Apertură"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_focal_length"/>
+    <string name="filtershow_exif_focal_length">"Distanța focală"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_iso"/>
+    <string name="filtershow_exif_iso">ISO</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_subject_distance"/>
+    <string name="filtershow_exif_subject_distance">"Distanța subiectului"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_date"/>
+    <string name="filtershow_exif_date">"Data realizării"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_f_stop"/>
+    <string name="filtershow_exif_f_stop">"F Stop"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_exposure_time"/>
+    <string name="filtershow_exif_exposure_time">"Timp de expunere"</string>
+    <!-- Label for exif tags in the information panel [CHAR LIMIT=50] -->
+    <add-resource type="string" name="filtershow_exif_copyright"/>
+    <string name="filtershow_exif_copyright">"Drepturi de autor"</string>
+
+    <add-resource type="string" name="fusion_pick_point"/>
+    <string name="fusion_pick_point">"Alegeți segmentul"</string>
+    <add-resource type="string" name="fusion_pick_underlay"/>
+    <string name="fusion_pick_underlay">"Alegeți substratul"</string>
+    <add-resource type="string" name="dual_camera_effects"/>
+    <string name="dual_camera_effects">"Efecte cameră dublă"</string>
+    <add-resource type="string" name="dual_camera_effects_intro"/>
+    <string name="dual_camera_effects_intro">"Vă permite să aplicați efecte de fundal, cum ar fi Mișcarea sau Schițarea.De asemenea, puteți să fuzionați două fotografii pentru efecte interesante.Această funcție funcționează cel mai bine când distanța dintre cameră și subiectul principal al fotografiei este mică."</string>
+    <add-resource type="string" name="dualcam_no_segment_toast"/>
+    <string name="dualcam_no_segment_toast">"Nu a fost găsit niciun segment la acest punct"</string>
+    <add-resource type="string" name="dualcam_filter_not_supported"/>
+    <string name="dualcam_filter_not_supported">"Filtre cameră duble neacceptate pentru imagine"</string>
+    <add-resource type="string" name="trueportrait_intro"/>
+    <string name="trueportrait_intro">"Vă permite să îmbunătăţiţi fotografiile cu oameni. Puteţi aplica efecte pe fundal, cum ar fi \"estomparea\" şi \"schiţarea\". De asemenea, puteţi fuziona două fotografii pentru a crea fundaluri interesante pentru fotografiile portret."</string>
+    <add-resource type="string" name="trueportrait_no_face"/>
+    <string name="trueportrait_no_face">"Efectele Portret real nu pot fi aplicate pe această fotografie. Faţa nu a fost detectată."</string>
+    <add-resource type="string" name="trueportrait_edit_intro"/>
+    <string name="trueportrait_edit_intro">"Cu instrumentul Retuşare, puteţi edita prim-planul şi fundalul. Puteţi utiliza degetul pentru a picta în orice zonă pe care aţi omis-o din prim-plan sau fundal."</string>
+    <add-resource type="string" name="trueportrait_edit_foreground_toast"/>
+    <string name="trueportrait_edit_foreground_toast">"Utilizaţi degetul pentru a picta în orice zonă pe care aţi omis-o din prim-plan."</string>
+    <add-resource type="string" name="trueportrait_edit_background_toast"/>
+    <string name="trueportrait_edit_background_toast">"Utilizaţi degetul pentru a picta în orice zonă pe care aţi omis-o din fundal."</string>
+    <add-resource type="string" name="trueportrait_edit_help"/>
+    <string name="trueportrait_edit_help">"Pentru a face zoom, apropiaţi sau depărtaţi două degete. De asemenea, puteţi trage cu două degete pentru a repoziţiona imaginea. Astfel, poate fi mai uşor să rezolvaţi orice zonă cu probleme."</string>
+    <add-resource type="string" name="trueportrait_fusion_intro"/>
+    <string name="trueportrait_fusion_intro">"Persoana din prim-plan poate fi copiată şi inserată pe orice fotografie din Galerie. Puteţi încerca să utilizaţi diferite fotografii de fundal pentru a crea portrete noi şi interesante."</string>
+    <add-resource type="string" name="dualcam_fusion_intro"/>
+    <string name="dualcam_fusion_intro">"Prim-planul poate fi copiat și inserat pe orice fotografie din Galerie.\n\nPuteți încerca să folosiți diferite fotografii de fundal pentru a crea portrete noi și interesante."</string>
+    <add-resource type="string" name="do_not_show_again"/>
+    <string name="do_not_show_again">"Nu afişa din nou"</string>
+    <add-resource type="string" name="trueportrait_touch_up"/>
+    <string name="trueportrait_touch_up">"Retuşare"</string>
+    <add-resource type="string" name="fusion_pick_background"/>
+    <string name="fusion_pick_background">"Selectaţi fotografia de fundal"</string>
+
+    <add-resource type="string" name="color"/>
+    <string name="color">"Color"</string>
+    <add-resource type="string" name="frames"/>
+    <string name="frames">"Cadre"</string>
+    <add-resource type="string" name="beautify"/>
+    <string name="beautify">"Înfrumusețare"</string>
+    <add-resource type="string" name="dualcam"/>
+    <string name="dualcam">"Cameră dublă"</string>
+    <add-resource type="string" name="trueportrait"/>
+    <string name="trueportrait">"Portret real"</string>
+    <add-resource type="string" name="foreground"/>
+    <string name="foreground">"Prim-plan"</string>
+    <add-resource type="string" name="background"/>
+    <string name="background">"Fundal"</string>
+    <add-resource type="string" name="brush_size"/>
+    <string name="brush_size">"Dimensiune pensulă"</string></resources>

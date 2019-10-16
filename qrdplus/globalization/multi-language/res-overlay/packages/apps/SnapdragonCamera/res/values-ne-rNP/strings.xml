@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the Android Camera application. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"क्यामेरा"</string>
+    <add-resource type="string" name="snapcam_app_name"/>
+    <string name="snapcam_app_name">"स्न्यापड्रयागन क्यामेरा"</string>
+    <!-- The label for the Video Camera activity. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="video_camera_label"/>
+    <string name="video_camera_label">"क्यामकोर्डर"</string>
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <add-resource type="string" name="details_ms"/>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <add-resource type="string" name="details_hms"/>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+
+    <!-- Displayed in the title of the dialog for things to do with a picture
+             that is to be "set as" (e.g. set as contact photo or set as wallpaper) -->
+    <add-resource type="string" name="set_image"/>
+    <string name="set_image">"को रूपमा तस्बिरलाई मिलाउनुहोस्"</string>
+
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+    <add-resource type="string" name="delete"/>
+    <string name="delete">"मेट्नुहोस्"</string>
+    <!-- String Delete the selected media item(s) [CHAR LIMIT=50] -->
+    <add-resource type="plurals" name="delete_selection"/>
+    <plurals name="delete_selection">
+        <item quantity="one">"चयन गरिएका आइटमलाई हटाउने हो?"</item>
+        <item quantity="other">"छानिएका आइटमहरू हटाउने हो?"</item>
+    </plurals>
+    <add-resource type="string" name="share"/>
+    <string name="share">"साझेदारी गर्नुहोस्"</string>
+    <add-resource type="string" name="share_panorama"/>
+    <string name="share_panorama">"दृश्य साझेदारी गर्नुहोस्"</string>
+    <add-resource type="string" name="share_as_photo"/>
+    <string name="share_as_photo">"तस्बिरको रूपमा साझेदारी गर्नुहोस्"</string>
+
+    <!-- The label shown after an image is deleted [CHAR LIMIT=16] -->
+    <add-resource type="string" name="deleted"/>
+    <string name="deleted">"मेटियो"</string>
+
+    <!-- The label on the button which when clicked will undo a deletion of image [CHAR LIMIT=16]-->
+    <add-resource type="string" name="undo"/>
+    <string name="undo">"अनडु गर्नुहोस्"</string>
+
+    <add-resource type="string" name="details"/>
+    <string name="details">"विवरणहरू"</string>
+    <add-resource type="string" name="close"/>
+    <string name="close">"बन्द गर्नुहोस्"</string>
+
+    <!-- String indicating how many media item(s) is(are) selected
+            eg. 1 selected [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="number_of_items_selected"/>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">"%1$d चयन गरियो"</item>
+        <item quantity="one">"%1$d चयन गरियो"</item>
+        <item quantity="other">"%1$d चयन गरियो"</item>
+    </plurals>
+
+    <!-- String indicating how many media album(s) is(are) selected
+            eg. 1 selected [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="number_of_albums_selected"/>
+    <plurals name="number_of_albums_selected">
+        <item quantity="zero">"%1$d चयन गरियो"</item>
+        <item quantity="one">"%1$d चयन गरियो"</item>
+        <item quantity="other">"%1$d चयन गरियो"</item>
+    </plurals>
+
+    <!-- String indicating how many media group(s) is(are) selected
+            eg. 1 selected [CHAR LIMIT=30] -->
+    <add-resource type="plurals" name="number_of_groups_selected"/>
+    <plurals name="number_of_groups_selected">
+        <item quantity="zero">"%1$d चयन गरियो"</item>
+        <item quantity="one">"%1$d चयन गरियो"</item>
+        <item quantity="other">"%1$d चयन गरियो"</item>
+    </plurals>
+
+    <!-- String indicating timestamp of photo or video -->
+    <add-resource type="string" name="show_on_map"/>
+    <string name="show_on_map">"नक्सामा देखाउनुहोस्"</string>
+    <add-resource type="string" name="rotate_left"/>
+    <string name="rotate_left">"बायाँ घुमाउनुहोस्"</string>
+    <add-resource type="string" name="rotate_right"/>
+    <string name="rotate_right">"दायाँ घुमाउनुहोस्"</string>
+
+    <!-- String used as a menu label. The user can choose to edit the image
+         [CHAR_LIMIT=20]-->
+    <add-resource type="string" name="edit"/>
+    <string name="edit">"सम्पादन गर्नुहोस्"</string>
+
+    <!-- The title of the menu item to let user crop the image. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="crop_action"/>
+    <string name="crop_action">"क्रप गर्नुहोस्"</string>
+    <!-- The title of the menu item to let user trim the video. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="trim_action"/>
+    <string name="trim_action">"छाँट्नुहोस्"</string>
+    <!-- The title of the menu item to let user set the image as background etc. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="set_as"/>
+    <string name="set_as">"को रूपमा सेट गर्नुहोस्"</string>
+
+    <!-- String indicating an error when playing the video. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="video_err"/>
+    <string name="video_err">"भिडियो चलाउन सकेन।"</string>
+
+    <!-- Toast message shown when the cropped image has been saved in the
+         %s folder (string: folder_download) [CHAR LIMIT=50]-->
+    <add-resource type="string" name="crop_saved"/>
+    <string name="crop_saved">"काटिएको तस्बिरहरूलाई <xliff:g id="FOLDER_NAME">%s</xliff:g>मा सुरक्षित गरिएको छ।"</string>
+
+    <!-- Text indicating the title of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="title"/>
+    <string name="title">"शीर्षक"</string>
+    <!-- Text indicating the description of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="description"/>
+    <string name="description">"वर्णन"</string>
+    <!-- Text indicating the creation time of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="time"/>
+    <string name="time">"समय"</string>
+    <!-- Text indicating the location of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="location"/>
+    <string name="location">"स्थान"</string>
+    <!-- Text indicating the path of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="path"/>
+    <string name="path">"बाटो"</string>
+    <!-- Text indicating the width of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="width"/>
+    <string name="width">"चौडाइ"</string>
+    <!-- Text indicating the height of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="height"/>
+    <string name="height">"उचाइ"</string>
+    <!-- Text indicating the orientation of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="orientation"/>
+    <string name="orientation">"अभिविन्यास"</string>
+    <!-- Text indicating the duration of a video item in details window [CHAR LIMIT=18] -->
+    <add-resource type="string" name="duration"/>
+    <string name="duration">"अवधि"</string>
+    <!-- Text indicating the mime type of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="mimetype"/>
+    <string name="mimetype">"MIME प्रकार"</string>
+    <!-- Text indicating the file size of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="file_size"/>
+    <string name="file_size">"फाइल आकार:"</string>
+    <!-- Text indicating the maker of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="maker"/>
+    <string name="maker">"निर्माता"</string>
+    <!-- Text indicating the model of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="model"/>
+    <string name="model">"मोडेल"</string>
+    <!-- Text indicating flash info of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="flash"/>
+    <string name="flash">"फ्ल्यास"</string>
+    <!-- Text indicating aperture of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="aperture"/>
+    <string name="aperture">"प्वाल"</string>
+    <!-- Text indicating the focal length of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="focal_length"/>
+    <string name="focal_length">"फोकल लम्बाइ:"</string>
+    <!-- Text indicating the white balance of a media item in details window [CHAR LIMIT=18] -->
+    <add-resource type="string" name="white_balance"/>
+    <string name="white_balance">"श्वेत सन्तुलन"</string>
+    <!-- Text indicating the exposure time of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="exposure_time"/>
+    <string name="exposure_time">"एक्सपोजर समय"</string>
+    <!-- Text indicating the ISO speed rating of a media item in details window [CHAR LIMIT=14] -->
+    <add-resource type="string" name="iso"/>
+    <string name="iso">ISO</string>
+    <!-- String indicating the time units in seconds. [CHAR LIMIT=8] -->
+    <!-- String indicating the length units in milli-meters. [CHAR LIMIT=8] -->
+    <add-resource type="string" name="unit_mm"/>
+    <string name="unit_mm">"मिलिमिटर"</string>
+    <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="manual"/>
+    <string name="manual">"म्यानुएल"</string>
+    <!-- String indicating how camera shooting feature is used. [CHAR LIMIT=12 -->
+    <add-resource type="string" name="auto"/>
+    <string name="auto">"स्वतः"</string>
+    <!-- String indicating camera flash is fired. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="flash_on"/>
+    <string name="flash_on">"फ्ल्यास चलाइयो"</string>
+    <!-- String indicating camera flash is not used. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="flash_off"/>
+    <string name="flash_off">"फ्ल्यास छैन"</string>
+
+    <!-- String indicating image width or height is unknown. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="unknown"/>
+    <string name="unknown">"अज्ञात"</string>
+
+    <!-- Toast message shown after we try to make a local album available offline
+         [CHAR LIMIT=150] -->
+    <add-resource type="string" name="try_to_set_local_album_available_offline"/>
+    <string name="try_to_set_local_album_available_offline">"यो वस्तु स्थानिय रूपमा भन्डारण गरिएको छ र अफलाइन उपलब्ध छ।"</string>
+
+
+    <!-- The content of a dialog showing trimming in progress. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="please_wait"/>
+    <string name="please_wait">"कृपया प्रतीक्षा गर्नुहोस् ..."</string>
+
+    <!-- Text to show with progress bar while stitching a photo sphere. 'Photo sphere' is a product name. [CHAR LIMIT=35]-->
+    <add-resource type="string" name="rendering_photo_sphere"/>
+    <string name="rendering_photo_sphere">"photo sphere प्रतिपादन"</string>
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="camera_error_title"/>
+    <string name="camera_error_title">"क्यामेरा त्रुटि"</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <add-resource type="string" name="cannot_connect_camera"/>
+    <string name="cannot_connect_camera">"क्यामेरासँग जडान गर्न सक्दैन"</string>
+
+    <!-- message for the dialog showing the camera is disabled because of security policies. Camera cannot be used. -->
+    <add-resource type="string" name="camera_disabled"/>
+    <string name="camera_disabled">"सुरक्षा नीतिहरूका कारण क्यामरा निष्क्रिय गरिएको छ।"</string>
+
+    <!-- message for the dialog showing that the app does not have sufficient permissions [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="error_permissions"/>
+    <string name="error_permissions">"एप्लिकेसनमा चल्नको लागि आवश्यक पर्ने सूक्ष्म अनुमतिहरू छैनन्। कृपया आफ्ना अनुमति सेटिङहरू जाँच गर्नुहोस्।"</string>
+
+    <!-- Dialog "Dismiss" button. Closes the dialog [CHAR LIMIT=12]-->
+    <add-resource type="string" name="dialog_dismiss"/>
+    <string name="dialog_dismiss">"खारेज गर्नुहोस्"</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <add-resource type="string" name="wait"/>
+    <string name="wait">"कृपया प्रतीक्षा गर्नुहोस्..."</string>
+
+    <!-- alert to the user that an SD card must be installed before using the camera -->
+    <add-resource type="string" name="no_storage"/>
+    <string name="no_storage" product="default">"क्यामेराको उपयोग गर्नु अघि एउटा SD कार्ड भित्र राख्नुहोस्।"</string>
+
+    <!-- alert to the user that the SD card is being disk-checked -->
+    <add-resource type="string" name="preparing_sd"/>
+    <string name="preparing_sd" product="default">"SD कार्ड तयार गरिँदै..."</string>
+
+    <!-- alert to the user that the camera fails to read or write the SD card. -->
+    <add-resource type="string" name="access_sd_fail"/>
+    <string name="access_sd_fail" product="default">"SD कार्ड प्रयोग गर्न सकेन।"</string>
+
+    <!-- A label that overlays on top of the preview frame to indicate the camcorder is in time lapse mode [CHAR LIMIT=35] -->
+    <add-resource type="string" name="time_lapse_title"/>
+    <string name="time_lapse_title">"समय ल्याप्स रेकर्डिङ"</string>
+
+    <!-- Screen display message during image capture to indicate that the capture is in progress, like during HDR+. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="capturing"/>
+    <string name="capturing">"क्याप्चर गरिँदै"</string>
+
+    <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_id_title"/>
+    <string name="pref_camera_id_title">"क्यामेरा चयन गर्नुहोस्"</string>
+
+    <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_back"/>
+    <string name="pref_camera_id_entry_back">"पछाडि जानुहोस्"</string>
+    <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="pref_camera_id_entry_front"/>
+    <string name="pref_camera_id_entry_front">"अगाडि"</string>
+
+    <!-- Settings screen, setting title text -->
+    <add-resource type="string" name="pref_camera_recordlocation_title"/>
+    <string name="pref_camera_recordlocation_title">"स्थान भण्डारण गर्नुहोस्"</string>
+
+    <!--  Label for record location preference [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_location_label"/>
+    <string name="pref_camera_location_label">"स्थान:"</string>
+
+    <!-- Title for countdown timer on camera settings screen [CHAR LIMIT=30]-->
+    <add-resource type="string" name="pref_camera_timer_title"/>
+    <string name="pref_camera_timer_title">"उल्टा गन्ने घडी"</string>
+    <!-- Entry for countdown timer setting. e.g. 1 second, 10 seconds, etc. [CHAR LIMIT=30]-->
+    <add-resource type="plurals" name="pref_camera_timer_entry"/>
+    <plurals name="pref_camera_timer_entry">
+        <item quantity="one">"१ सेकेन्ड"</item>
+        <item quantity="other">"%d सेकेण्ड"</item>
+    </plurals>
+    <add-resource type="string" name="pref_camera_timer_sound_default"/>
+    <string name="pref_camera_timer_sound_default">@string/setting_on_value</string>
+    <!-- Text followed by a checkbox to turn on/off sound effects during the countdown. [CHAR LIMIT = 24]-->
+    <add-resource type="string" name="pref_camera_timer_sound_title"/>
+    <string name="pref_camera_timer_sound_title">"उल्टा गर्ने क्रममा बिप"</string>
+
+    <!-- Entry of camera save path -->
+    <add-resource type="string" name="pref_camera_savepath_title"/>
+    <string name="pref_camera_savepath_title">"भण्डारण"</string>
+    <add-resource type="string" name="pref_camera_savepath_default"/>
+    <string name="pref_camera_savepath_default">0</string>
+    <add-resource type="string" name="pref_camera_savepath_entry_0"/>
+    <string name="pref_camera_savepath_entry_0">"फोन"</string>
+    <add-resource type="string" name="pref_camera_savepath_entry_1"/>
+    <string name="pref_camera_savepath_entry_1">"SD कार्ड"</string>
+
+    <!-- Entry of a on/off setting. The setting is turned off. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_off"/>
+    <string name="setting_off">"बन्द"</string>
+    <!-- Entry of a on/off setting. The setting is turned on. [CHAR LIMIT=15] -->
+    <add-resource type="string" name="setting_on"/>
+    <string name="setting_on">"खुला"</string>
+
+    <!-- The Video quality settings in preference [CHAR LIMIT=21] -->
+    <add-resource type="string" name="pref_video_quality_title"/>
+    <string name="pref_video_quality_title">"भिडियो गुणस्तर"</string>
+
+    <!-- Describes the preference dialog for choosing interval between frame capture for
+    time lapse recording. Appears at top of the dialog. [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_title"/>
+    <string name="pref_video_time_lapse_frame_interval_title">"समय गल्ती"</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <add-resource type="string" name="pref_camera_settings_category"/>
+    <string name="pref_camera_settings_category">"क्यामरा सेटिङहरू"</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <add-resource type="string" name="pref_camcorder_settings_category"/>
+    <string name="pref_camcorder_settings_category">"क्यामकोडर सेटिङहरू"</string>
+
+    <!-- Settings screen, Picture size title -->
+    <add-resource type="string" name="pref_camera_picturesize_title"/>
+    <string name="pref_camera_picturesize_title">"चित्र आकार"</string>
+    <!-- Settings screen, dialog choice for 24 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_24mp"/>
+    <string name="pref_camera_picturesize_entry_24mp">"24M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 20 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_21mp"/>
+    <string name="pref_camera_picturesize_entry_21mp">"21M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 16 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_16mp"/>
+    <string name="pref_camera_picturesize_entry_16mp">"16M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 16 megapixels wide picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_16mp_wide"/>
+    <string name="pref_camera_picturesize_entry_16mp_wide">"16M पिक्सेल (16:9)"</string>
+    <!-- Settings screen, dialog choice for 13 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_13mp"/>
+    <string name="pref_camera_picturesize_entry_13mp">"13M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 12 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_12mp"/>
+    <string name="pref_camera_picturesize_entry_12mp">"12M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 8 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_8mp"/>
+    <string name="pref_camera_picturesize_entry_8mp">"8M पिक्सल"</string>
+    <!-- Settings screen, dialog choice for square picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_square"/>
+    <string name="pref_camera_picturesize_entry_square">"वर्ग (1:1)"</string>
+    <!-- Settings screen, dialog choice for 5 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_5mp"/>
+    <string name="pref_camera_picturesize_entry_5mp">"5M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 4 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_4mp_wide"/>
+    <string name="pref_camera_picturesize_entry_4mp_wide">"4M पिक्सेल (16:9)"</string>
+    <!-- Settings screen, dialog choice for 3 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_3mp"/>
+    <string name="pref_camera_picturesize_entry_3mp">"3M पिक्सल"</string>
+    <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_2mp"/>
+    <string name="pref_camera_picturesize_entry_2mp">"२ मेगा पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 2 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_2mp_wide"/>
+    <string name="pref_camera_picturesize_entry_2mp_wide">"2M पिक्सेल (16:9)"</string>
+    <!-- Settings screen, dialog choice for 1.5 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1_5mp"/>
+    <string name="pref_camera_picturesize_entry_1_5mp">"1.5M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 1.3 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1_3mp"/>
+    <string name="pref_camera_picturesize_entry_1_3mp">"1.3M पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for 1 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_1mp"/>
+    <string name="pref_camera_picturesize_entry_1mp">"१ मेगा पिक्सेल"</string>
+    <!-- Settings screen, dialog choice for VGA picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_vga"/>
+    <string name="pref_camera_picturesize_entry_vga">VGA</string>
+    <!-- Settings screen, dialog choice for QVGA picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_qvga"/>
+    <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
+
+    <!-- Settings screen, Focus mode title -->
+    <add-resource type="string" name="pref_camera_focusmode_title"/>
+    <string name="pref_camera_focusmode_title">"फोकस मोड"</string>
+
+    <!-- Settings screen, Focus mode dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_focusmode_entry_auto"/>
+    <string name="pref_camera_focusmode_entry_auto">"स्वतः"</string>
+    <!-- A setting that lets the camera focus into infinity. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_focusmode_entry_infinity"/>
+    <string name="pref_camera_focusmode_entry_infinity">"अनन्तता"</string>
+    <!-- A setting that lets the camera operate in macro focus mode for nearby objects. [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_focusmode_entry_macro"/>
+    <string name="pref_camera_focusmode_entry_macro">"बृहद्"</string>
+
+    <!-- Menu, focus mode labels [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_focusmode_label_auto"/>
+    <string name="pref_camera_focusmode_label_auto">"स्वतः"</string>
+    <add-resource type="string" name="pref_camera_focusmode_label_infinity"/>
+    <string name="pref_camera_focusmode_label_infinity">"अनन्तता"</string>
+    <add-resource type="string" name="pref_camera_focusmode_label_macro"/>
+    <string name="pref_camera_focusmode_label_macro">"बृहद्"</string>
+
+    <!-- Settings screen, Flash mode title -->
+    <add-resource type="string" name="pref_camera_flashmode_title"/>
+    <string name="pref_camera_flashmode_title">"फ्ल्यास मोड"</string>
+
+    <!-- Settings screen, Flash mode 'auto'. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pref_camera_flashmode_entry_auto"/>
+    <string name="pref_camera_flashmode_entry_auto">"स्वतः"</string>
+    <!-- Settings screen, Flash mode 'alway on'. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pref_camera_flashmode_entry_on"/>
+    <string name="pref_camera_flashmode_entry_on">"खुला"</string>
+    <!-- Settings screen, Flash mode 'always off'. [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pref_camera_flashmode_entry_off"/>
+    <string name="pref_camera_flashmode_entry_off">"बन्द"</string>
+
+    <!-- Menu, flash mode labels [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_flashmode_label_auto"/>
+    <string name="pref_camera_flashmode_label_auto">"फ्ल्यास अटो"</string>
+    <add-resource type="string" name="pref_camera_flashmode_label_on"/>
+    <string name="pref_camera_flashmode_label_on">"फ्ल्यास खुला"</string>
+    <add-resource type="string" name="pref_camera_flashmode_label_off"/>
+    <string name="pref_camera_flashmode_label_off">"फ्ल्यास बन्द"</string>
+
+    <!-- Settings screen, white balance title -->
+    <add-resource type="string" name="pref_camera_whitebalance_title"/>
+    <string name="pref_camera_whitebalance_title">"श्वेत सन्तुलन"</string>
+    <!-- Menu, white balance label -->
+    <add-resource type="string" name="pref_camera_whitebalance_label"/>
+    <string name="pref_camera_whitebalance_label">"स्वेत सन्तुलन"</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <add-resource type="string" name="pref_camera_whitebalance_entry_auto"/>
+    <string name="pref_camera_whitebalance_entry_auto">"स्वतः"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_incandescent"/>
+    <string name="pref_camera_whitebalance_entry_incandescent">"चम्कन"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_daylight"/>
+    <string name="pref_camera_whitebalance_entry_daylight">"दिनको प्रकाश"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_fluorescent"/>
+    <string name="pref_camera_whitebalance_entry_fluorescent">"फ्लोरेसेन्ट"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_entry_cloudy"/>
+    <string name="pref_camera_whitebalance_entry_cloudy">"बादलु"</string>
+
+    <!-- Menu, White balance labels [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_whitebalance_label_auto"/>
+    <string name="pref_camera_whitebalance_label_auto">"स्वतः"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_label_incandescent"/>
+    <string name="pref_camera_whitebalance_label_incandescent">"चम्कने"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_label_daylight"/>
+    <string name="pref_camera_whitebalance_label_daylight">"दिनको प्रकाश"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_label_fluorescent"/>
+    <string name="pref_camera_whitebalance_label_fluorescent">"फ्लोरेसेन्ट"</string>
+    <add-resource type="string" name="pref_camera_whitebalance_label_cloudy"/>
+    <string name="pref_camera_whitebalance_label_cloudy">"बादलु"</string>
+
+    <!-- Settings screen, Select Scene mode -->
+    <add-resource type="string" name="pref_camera_scenemode_title"/>
+    <string name="pref_camera_scenemode_title">"दृश्य मोड"</string>
+
+    <!-- Settings menu, scene mode choices [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_auto"/>
+    <string name="pref_camera_scenemode_entry_auto">"स्वतः"</string>
+    <!-- Scene mode that uses HDR plus (better HDR) [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_hdr_plus"/>
+    <string name="pref_camera_scenemode_entry_hdr_plus">HDR+</string>
+    <!-- Scene mode that uses HDR (high dynamic range) [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_hdr"/>
+    <string name="pref_camera_scenemode_entry_hdr">HDR</string>
+    <!-- Scene mode to turn on HDR (better high dynamic range) [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_turn_hdr_plus_on"/>
+    <string name="pref_camera_scenemode_entry_turn_hdr_plus_on">"HDR+ खुल्ला छ"</string>
+    <!-- Scene mode to turn off HDR (better high dynamic range) [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_turn_hdr_plus_off"/>
+    <string name="pref_camera_scenemode_entry_turn_hdr_plus_off">"HDR+ निष्क्रिय"</string>
+    <!-- Scene mode to turn on HDR (high dynamic range) [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_turn_hdr_on"/>
+    <string name="pref_camera_scenemode_entry_turn_hdr_on">"HDR खुल्ला छ"</string>
+    <!-- Scene mode to turn off HDR (high dynamic range) [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_turn_hdr_off"/>
+    <string name="pref_camera_scenemode_entry_turn_hdr_off">"HDR निष्क्रिय"</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_action"/>
+    <string name="pref_camera_scenemode_entry_action">"कार्य"</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_night"/>
+    <string name="pref_camera_scenemode_entry_night">"रात"</string>
+    <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_sunset"/>
+    <string name="pref_camera_scenemode_entry_sunset">"सूर्यास्त"</string>
+    <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_party"/>
+    <string name="pref_camera_scenemode_entry_party">"भोज"</string>
+    <!-- Scene mode for refocus feature [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pref_camera_scenemode_entry_refocus"/>
+    <string name="pref_camera_scenemode_entry_refocus">"UbiFocus"</string>
+    <add-resource type="string" name="pref_camera_scenemode_entry_optizoom"/>
+    <string name="pref_camera_scenemode_entry_optizoom">"OptiZoom"</string>
+
+    <!-- Settings menu, scene mode labels [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_label_auto"/>
+    <string name="pref_camera_scenemode_label_auto">"कुनै पनि होइन"</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_label_action"/>
+    <string name="pref_camera_scenemode_label_action">"कार्य"</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_label_night"/>
+    <string name="pref_camera_scenemode_label_night">"रात"</string>
+    <!-- Scene mode optimized for taking images in the sunset. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_label_sunset"/>
+    <string name="pref_camera_scenemode_label_sunset">"सूर्यास्त"</string>
+    <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_scenemode_label_party"/>
+    <string name="pref_camera_scenemode_label_party">"भोज"</string>
+
+    <!-- Settings menu countdown timer off [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_countdown_label_off"/>
+    <string name="pref_camera_countdown_label_off">"घडी बन्द"</string>
+    <!-- Settings menu countdown timer 1 second [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_countdown_label_one"/>
+    <string name="pref_camera_countdown_label_one">"१ सेकेन्ड"</string>
+    <!-- Settings menu countdown timer 3 seconds [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_countdown_label_three"/>
+    <string name="pref_camera_countdown_label_three">"३ सेकेन्ड"</string>
+    <!-- Settings menu countdown timer 10 seconds [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_countdown_label_ten"/>
+    <string name="pref_camera_countdown_label_ten">"१० सेकेन्ड"</string>
+    <!-- Settings menu countdown timer 15 seconds [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_countdown_label_fifteen"/>
+    <string name="pref_camera_countdown_label_fifteen">"१५ सेकेन्ड"</string>
+
+    <!-- Toast after trying to select a setting that is not allowed to change in scene mode [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="not_selectable_in_scene_mode"/>
+    <string name="not_selectable_in_scene_mode">"दृश्य मोडमा चयनयोग्य हुँदैन।"</string>
+
+    <!-- Toast after enable HDR function to inform Continuous Shot has disabled -->
+    <add-resource type="string" name="HDR_disable_continuous_shot"/>
+    <string name="HDR_disable_continuous_shot">"HDR लाई सक्षम गर्ने कार्यले अविच्छिन्न शटलाई असक्षम पार्नेछ।"</string>
+
+
+    <!-- Toast after enable Advanced Capture function to inform Continuous Shot has disabled -->
+    <add-resource type="string" name="advanced_capture_disable_continuous_shot"/>
+    <string name="advanced_capture_disable_continuous_shot">"उन्नत क्याप्चर लाई सक्षम गर्ने कार्यले अविच्छिन्न शटलाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after enable 2k4k video quality to inform IS has disabled -->
+    <add-resource type="string" name="video_quality_4k_disable_IS"/>
+    <string name="video_quality_4k_disable_IS">"4k भिडियोको गुणस्तरलाई सक्षम गर्ने कार्यले छविको स्थायिकरणलाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after 2k4k video is enabled to inform SeeMore has been disabled -->
+    <add-resource type="string" name="video_quality_4k_disable_SeeMore"/>
+    <string name="video_quality_4k_disable_SeeMore">"4k भिडियोको अवधिमा थप हेर्नुहोस् लाई सक्षम पार्न सकिँदैन।"</string>
+
+    <!-- Toast after High Quality Noise Reduction has been enabled to show CDS is disabled -->
+    <add-resource type="string" name="disable_CDS_during_HighQualityNoiseReduction"/>
+    <string name="disable_CDS_during_HighQualityNoiseReduction">"उच्च गुणस्तरको हल्ला घटाउने कार्यले CDS लाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after High Quality Noise Reduction has been enabled to show TNR is disabled -->
+    <add-resource type="string" name="disable_TNR_during_HighQualityNoiseReduction"/>
+    <string name="disable_TNR_during_HighQualityNoiseReduction">"उच्च गुणस्तरको हल्ला घटाउने कार्यले TNR लाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after SeeMore has been enabled to show CDS is disabled -->
+    <add-resource type="string" name="disable_CDS_during_SeeMore"/>
+    <string name="disable_CDS_during_SeeMore">"थप हे्र्नुहोस् ले CDS लाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after SeeMore has been enabled to show TNR is disabled -->
+    <add-resource type="string" name="disable_TNR_during_SeeMore"/>
+    <string name="disable_TNR_during_SeeMore">"थप हे्र्नुहोस् ले TNR लाई असक्षम पार्नेछ।"</string>
+
+    <!-- Toast after SeeMore has been enabled to show NR is disabled -->
+    <add-resource type="string" name="disable_NR_during_SeeMore"/>
+    <string name="disable_NR_during_SeeMore">"थप हेर्नुहोस् ले हल्ला घटाउने कार्यलाई असक्षम पार्नेछ।"</string>
+
+    <!-- Exposure settings in preference -->
+    <add-resource type="string" name="pref_exposure_title"/>
+    <string name="pref_exposure_title">"एक्सपोजर"</string>
+    <!--  menu label exposure compensation [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_exposure_label"/>
+    <string name="pref_exposure_label">"खुल्ला"</string>
+
+    <!-- Default HDR entry value -->
+    <add-resource type="string" name="pref_camera_hdr_default"/>
+    <string name="pref_camera_hdr_default">@string/setting_off_value</string>
+
+    <!-- Default HDR+ entry value -->
+    <add-resource type="string" name="pref_camera_hdr_plus_default"/>
+    <string name="pref_camera_hdr_plus_default">@string/setting_off_value</string>
+
+    <!-- HDR label ON [CHAR LIMIT=60] -->
+    <add-resource type="string" name="pref_camera_hdr_label"/>
+    <string name="pref_camera_hdr_label">HDR</string>
+
+    <!-- switch camera label back [CHAR LIMIT=60] -->
+    <add-resource type="string" name="pref_camera_id_label_back"/>
+    <string name="pref_camera_id_label_back">"अगाडिको क्यामेरा"</string>
+    <!-- switch camera label front [CHAR LIMIT=60] -->
+    <add-resource type="string" name="pref_camera_id_label_front"/>
+    <string name="pref_camera_id_label_front">"पछाडिको क्यामेरा"</string>
+
+    <!-- Dialog "OK" button. Dismisses dialog. -->
+    <add-resource type="string" name="dialog_ok"/>
+    <string name="dialog_ok">"ठीक छ"</string>
+
+    <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="spaceIsLow_content"/>
+    <string name="spaceIsLow_content" product="default">"तपाईँको SD कार्डको स्पेस सकिँदै छ। गुणस्तर सेटिङ परिवर्तन गर्नुहोस् अथवा केही तस्बिरहरू वा अन्य फाइलहरू मेट्नुहोस्।"</string>
+
+    <!-- The message shown when video record reaches size limit. -->
+    <add-resource type="string" name="video_reach_size_limit"/>
+    <string name="video_reach_size_limit">"आकार सीमा पुग्यो।"</string>
+
+    <!-- The text shown when the panorama panning speed is to fast [CHAR LIMIT=16] -->
+    <add-resource type="string" name="pano_too_fast_prompt"/>
+    <string name="pano_too_fast_prompt">"अति छिटो"</string>
+
+    <!-- The text shown in the progress dialog when panorama preview is generating in the background [CHAR LIMIT=30] -->
+    <add-resource type="string" name="pano_dialog_prepare_preview"/>
+    <string name="pano_dialog_prepare_preview">"दृश्य तयार गरिँदै"</string>
+
+    <!-- The text shown in the dialog when panorama saving failed [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_panorama_failed"/>
+    <string name="pano_dialog_panorama_failed">"दृश्य सुरक्षित गर्न सकेन।"</string>
+
+    <!-- The text shown on the dialog title in the dialogs for Panorama [CHAR LIMIT=12] -->
+    <add-resource type="string" name="pano_dialog_title"/>
+    <string name="pano_dialog_title">"परिदृश्य"</string>
+
+    <!-- The text shown on the top-left corner of the screen to indicate the capturing is on going [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_capture_indication"/>
+    <string name="pano_capture_indication">"दृश्य खिच्दै"</string>
+
+    <!-- The text shown in the progress dialog when waiting for previous panorama finishing [CHAR LIMIT=40] -->
+    <add-resource type="string" name="pano_dialog_waiting_previous"/>
+    <string name="pano_dialog_waiting_previous">"अघिल्लो दृश्यको प्रतिक्षा गर्दै।"</string>
+
+    <!-- The text shown on the bottom-left corner of the screen to indicate that the saving is in process [CHAR LIMIT=13] -->
+    <add-resource type="string" name="pano_review_saving_indication_str"/>
+    <string name="pano_review_saving_indication_str">"सुरक्षि गर्दै...."</string>
+
+    <!-- The text shown on the screen to indicate that the panorama is rendering [CHAR LIMIT=27] -->
+    <add-resource type="string" name="pano_review_rendering"/>
+    <string name="pano_review_rendering">"दृश्य प्रतिपादन"</string>
+
+    <!-- Toast telling users tapping on the viewfinder will trigger autofocus [CHAR LIMIT=28] -->
+    <add-resource type="string" name="tap_to_focus"/>
+    <string name="tap_to_focus">"फोकस गर्न छुनुहोस्।"</string>
+
+    <!-- Title of video effect setting popup window -->
+    <add-resource type="string" name="pref_video_effect_title"/>
+    <string name="pref_video_effect_title">"प्रभावहरू"</string>
+
+    <!-- Effect setting item that clear the effect. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_none"/>
+    <string name="effect_none">"कुनै पनि होइन"</string>
+    <!-- Effect setting item that squeezes the face. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_squeeze"/>
+    <string name="effect_goofy_face_squeeze">"निचोर्नुहोस्"</string>
+    <!-- Effect setting item that makes eyes big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_eyes"/>
+    <string name="effect_goofy_face_big_eyes">"ठूला आँखा"</string>
+    <!-- Effect setting item that makes mouth big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_mouth"/>
+    <string name="effect_goofy_face_big_mouth">"ठूलो मुख"</string>
+    <!-- Effect setting item that makes mouth small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_mouth"/>
+    <string name="effect_goofy_face_small_mouth">"सानो मुख"</string>
+    <!-- Effect setting item that makes nose big. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_big_nose"/>
+    <string name="effect_goofy_face_big_nose">"ठूलो नाक"</string>
+    <!-- Effect setting item that makes eyes small. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_goofy_face_small_eyes"/>
+    <string name="effect_goofy_face_small_eyes">"साना आँखाहरू"</string>
+    <!-- Effect setting item that replaces background with Android in Space. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_space"/>
+    <string name="effect_backdropper_space">"अन्तरिक्षमा"</string>
+    <!-- Effect setting item that replaces background with a sunset. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_sunset"/>
+    <string name="effect_backdropper_sunset">"सूर्यास्त"</string>
+    <!-- Effect setting item that replaces background with video from gallery. [CHAR LIMIT=14] -->
+    <add-resource type="string" name="effect_backdropper_gallery"/>
+    <string name="effect_backdropper_gallery">"तपाईँको भिडियो"</string>
+
+    <!-- Toast telling users tapping on the viewfinder will take a picture [CHAR LIMIT=54] -->
+    <add-resource type="string" name="video_snapshot_hint"/>
+    <string name="video_snapshot_hint">"खिचिरहेको बेला तस्बिर लिनको लागि छुनुहोस्।"</string>
+
+    <!-- Announcement telling users video recording has just started [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_started"/>
+    <string name="video_recording_started">"भिडियो खिच्न सुरु भएको छ।"</string>
+    <!-- Announcement telling users video recording has just stopped [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="video_recording_stopped"/>
+    <string name="video_recording_stopped">"भिडियो खिच्न रोकिएको छ।"</string>
+
+    <!-- A button in effect setting popup to clear the effect. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="clear_effects"/>
+    <string name="clear_effects">"स्पष्ट प्रभावहरू"</string>
+
+    <!-- Title of category for silly face effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_silly_faces"/>
+    <string name="effect_silly_faces">"मूर्ख अनुहारहरू"</string>
+
+    <!-- Title of category for background replacement effects. [CHAR LIMIT=26] -->
+    <add-resource type="string" name="effect_background"/>
+    <string name="effect_background">"पृष्ठभूमि"</string>
+
+    <!-- The shutter button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_shutter_button"/>
+    <string name="accessibility_shutter_button">"सटर"</string>
+    <!-- The menu button. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_menu_button"/>
+    <string name="accessibility_menu_button">"मेनु बटन"</string>
+    <!-- The mode picker to switch between camera, video and panorama. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_mode_picker"/>
+    <string name="accessibility_mode_picker">"क्यामेरा, भिडियो वा दृश्य चयनकर्ता"</string>
+    <!-- The check box in camera settings, such as store location. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_check_box"/>
+    <string name="accessibility_check_box">"%1$s जाँच बाकस"</string>
+    <!-- The button to switch to Camera mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_camera"/>
+    <string name="accessibility_switch_to_camera">"फोटामा स्विच गर्नुहोस्"</string>
+    <!-- The button to switch to Video mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_video"/>
+    <string name="accessibility_switch_to_video">"भिडियोमा स्विच गर्नुहोस्"</string>
+    <!-- The button to switch to Panorama mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_panorama"/>
+    <string name="accessibility_switch_to_panorama">"दृश्यमा स्विच गर्नुहोस्"</string>
+    <!-- The button to switch to the Photo Sphere mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_photo_sphere"/>
+    <string name="accessibility_switch_to_photo_sphere">"Photo Sphere मा स्विच गर्नुहोस्"</string>
+    <!-- The button to switch to the high quality mode. [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_switch_to_gcam"/>
+    <string name="accessibility_switch_to_gcam">"उच्च गुणस्तरमा स्विच गर्नुहोस्"</string>
+    <!-- The button in review mode indicating that the photo taking, video recording, and panorama saving session should be canceled [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_cancel"/>
+    <string name="accessibility_review_cancel">"समीक्षा रद्द गर्नुहोस्"</string>
+    <!-- The button in review mode indicating that the taken photo/video is OK to be attached/uploaded [CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_ok"/>
+    <string name="accessibility_review_ok">"समीक्षा गरियो"</string>
+    <!-- button in review mode indicate the user want to retake another photo/video for attachment [
+CHAR LIMIT = NONE] -->
+    <add-resource type="string" name="accessibility_review_retake"/>
+    <string name="accessibility_review_retake">"समीक्षा पुनः लिनुहोस्"</string>
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_on"/>
+    <string name="capital_on">"खुला"</string>
+    <!-- Default text for a button that can be toggled on and off. -->
+    <add-resource type="string" name="capital_off"/>
+    <string name="capital_off">"बन्द"</string>
+
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_off"/>
+    <string name="pref_video_time_lapse_frame_interval_off">"बन्द"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_500"/>
+    <string name="pref_video_time_lapse_frame_interval_500">"०.५ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1000"/>
+    <string name="pref_video_time_lapse_frame_interval_1000">"१ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1500"/>
+    <string name="pref_video_time_lapse_frame_interval_1500">"१.५ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2000"/>
+    <string name="pref_video_time_lapse_frame_interval_2000">"२ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_2500"/>
+    <string name="pref_video_time_lapse_frame_interval_2500">"२.५ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3000"/>
+    <string name="pref_video_time_lapse_frame_interval_3000">"३ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_4000"/>
+    <string name="pref_video_time_lapse_frame_interval_4000">"४ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5000"/>
+    <string name="pref_video_time_lapse_frame_interval_5000">"५ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_6000"/>
+    <string name="pref_video_time_lapse_frame_interval_6000">"६ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10000"/>
+    <string name="pref_video_time_lapse_frame_interval_10000">"१० सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_12000"/>
+    <string name="pref_video_time_lapse_frame_interval_12000">"१२ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_15000"/>
+    <string name="pref_video_time_lapse_frame_interval_15000">"१५ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_24000"/>
+    <string name="pref_video_time_lapse_frame_interval_24000">"२ सेकेन्ड"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_30000"/>
+    <string name="pref_video_time_lapse_frame_interval_30000">"०.५ मिनट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_60000"/>
+    <string name="pref_video_time_lapse_frame_interval_60000">"१ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_90000"/>
+    <string name="pref_video_time_lapse_frame_interval_90000">"१.५ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_120000"/>
+    <string name="pref_video_time_lapse_frame_interval_120000">"२ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_150000"/>
+    <string name="pref_video_time_lapse_frame_interval_150000">"२.५ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_180000"/>
+    <string name="pref_video_time_lapse_frame_interval_180000">"३ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_240000"/>
+    <string name="pref_video_time_lapse_frame_interval_240000">"४ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_300000"/>
+    <string name="pref_video_time_lapse_frame_interval_300000">"५ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_360000"/>
+    <string name="pref_video_time_lapse_frame_interval_360000">"६ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_600000"/>
+    <string name="pref_video_time_lapse_frame_interval_600000">"१० मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_720000"/>
+    <string name="pref_video_time_lapse_frame_interval_720000">"१२ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_900000"/>
+    <string name="pref_video_time_lapse_frame_interval_900000">"१५ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1440000"/>
+    <string name="pref_video_time_lapse_frame_interval_1440000">"२४ मिनेट"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_1800000"/>
+    <string name="pref_video_time_lapse_frame_interval_1800000">"०.५ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_3600000"/>
+    <string name="pref_video_time_lapse_frame_interval_3600000">"१ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_5400000"/>
+    <string name="pref_video_time_lapse_frame_interval_5400000">"१.५ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_7200000"/>
+    <string name="pref_video_time_lapse_frame_interval_7200000">"२ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_9000000"/>
+    <string name="pref_video_time_lapse_frame_interval_9000000">"२.५ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_10800000"/>
+    <string name="pref_video_time_lapse_frame_interval_10800000">"३ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_14400000"/>
+    <string name="pref_video_time_lapse_frame_interval_14400000">"४ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_18000000"/>
+    <string name="pref_video_time_lapse_frame_interval_18000000">"५ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_21600000"/>
+    <string name="pref_video_time_lapse_frame_interval_21600000">"६ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_36000000"/>
+    <string name="pref_video_time_lapse_frame_interval_36000000">"१० घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_43200000"/>
+    <string name="pref_video_time_lapse_frame_interval_43200000">"१२ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_54000000"/>
+    <string name="pref_video_time_lapse_frame_interval_54000000">"१५ घन्टा"</string>
+    <!-- Text to indicate time lapse recording frame interval [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="pref_video_time_lapse_frame_interval_86400000"/>
+    <string name="pref_video_time_lapse_frame_interval_86400000">"२४ घन्टा"</string>
+
+    <!-- Seconds: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_seconds"/>
+    <string name="time_lapse_seconds">"सेकोन्ड"</string>
+    <!-- Minutes: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_minutes"/>
+    <string name="time_lapse_minutes">"मिनेट"</string>
+    <!-- Hours: a unit of time for time lapse intervals. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_hours"/>
+    <string name="time_lapse_hours">"घन्टा"</string>
+
+    <!-- The button to confirm time-lapse setting changes. [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="time_lapse_interval_set"/>
+    <string name="time_lapse_interval_set">"भयो"</string>
+    <!-- Title in time interval picker for setting time interval. [CHAR LIMIT = 30]-->
+    <add-resource type="string" name="set_time_interval"/>
+    <string name="set_time_interval">"समय मध्यान्तर सेट गर्नुहोस्"</string>
+    <!-- Help text that is shown when the time lapse feature is turned off. [CHAR LIMIT = 180]-->
+    <add-resource type="string" name="set_time_interval_help"/>
+    <string name="set_time_interval_help">"समय ल्याप्स सुविधा बन्द छ। समय मध्यान्तर मिलाउन यसलाई खोल्नुहोस्।"</string>
+    <!-- Title in timer setting for setting the duration for the countdown timer. [CHAR LIMIT = 50]-->
+    <add-resource type="string" name="set_duration"/>
+    <string name="set_duration">"सेकेन्डमा अवधि निर्धारित गर्नुहोस्"</string>
+    <!-- On-screen hint during timer countdown for taking a photo. [CHAR LIMIT = 60]-->
+    <add-resource type="string" name="count_down_title_text"/>
+    <string name="count_down_title_text">"एउटा तस्बिर लिनका लागि उल्टो गन्दै"</string>
+
+    <!-- Title for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 50] -->
+    <add-resource type="string" name="remember_location_title"/>
+    <string name="remember_location_title">"फोटा स्थानहरू याद गर्नुहोस?"</string>
+    <!-- Message for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = None] -->
+    <add-resource type="string" name="remember_location_prompt"/>
+    <string name="remember_location_prompt">"जहाँ लिइएको स्थानका साथ आफ्ना फोटा र भिडियोहरू ट्याग गर्नुहोस्। \n \n तपाईँले सुरक्षित गरेका तस्बिरहरूका साथै अरू अनुप्रयोगहरूले यी जानकारीहरू उपयोग गर्न सक्छन्।"</string>
+    <!-- Negative answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_no"/>
+    <string name="remember_location_no">"धन्यवाद पर्दैन"</string>
+    <!-- Positive answer for first run dialog asking if the user wants to remember photo locations [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="remember_location_yes"/>
+    <string name="remember_location_yes">"हो"</string>
+
+    <!-- Camera menu labels -->
+    <!-- more options label [CHAR LIMIT=50] -->
+    <add-resource type="string" name="camera_menu_more_label"/>
+    <string name="camera_menu_more_label">"अरू विकल्पहरू"</string>
+    <!-- settings label [CHAR LIMIT=50] -->
+    <add-resource type="string" name="camera_menu_settings_label"/>
+    <string name="camera_menu_settings_label">"सेटिङ्हरू"</string>
+
+    <!--  Tiny Planet -->
+    <!-- Button to press for creating a tiny planet image. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="create_tiny_planet"/>
+    <string name="create_tiny_planet">"सानो ग्रह सिर्जना गर्नुहोस्"</string>
+    <!-- Message shown while a tiny planet image is being saved. [CHAR LIMIT = 30] -->
+    <add-resource type="string" name="saving_tiny_planet"/>
+    <string name="saving_tiny_planet">"सानो ग्रह सुरक्षित गर्दै ..."</string>
+    <!-- Label above a slider that let's the user set the zoom of a tiny planet image. [CHAR LIMIT = 15] -->
+    <add-resource type="string" name="tiny_planet_zoom"/>
+    <string name="tiny_planet_zoom">"जूम"</string>
+    <!-- Label above a slider that let's the user set the rotation of a tiny planet image. [CHAR LIMIT = 15] -->
+    <add-resource type="string" name="tiny_planet_rotate"/>
+    <string name="tiny_planet_rotate">"घुमाउनुहोस्"</string>
+
+    <!-- Crop -->
+    <!-- Label for the save button in the crop activity action bar [CHAR LIMIT=20] -->
+    <add-resource type="string" name="crop_save"/>
+    <string name="crop_save">"सुरक्षित गर्नुहोस्"</string>
+    <!--  String shown when we cannot load the image when starting the activity [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="cannot_load_image"/>
+    <string name="cannot_load_image">"तस्बिर लोड गर्न सकेन!"</string>
+    <!-- Label for album filmstrip button -->
+    <add-resource type="string" name="switch_photo_filmstrip"/>
+    <string name="switch_photo_filmstrip">"फिल्मस्ट्राइप दृश्य"</string>
+
+    <!--  String shown when setting the homepage wallpaper in the background [CHAR LIMIT=NONE] -->
+    <add-resource type="string" name="setting_wallpaper"/>
+    <string name="setting_wallpaper">"सेटिङ वालपेपर"</string>
+
+
+    <!-- Menu, Video rotation labels [CHAR LIMIT=50] -->
+    <add-resource type="string" name="pref_camera_video_rotation_label_0"/>
+    <string name="pref_camera_video_rotation_label_0">0</string>
+    <add-resource type="string" name="pref_camera_video_rotation_label_90"/>
+    <string name="pref_camera_video_rotation_label_90">90</string>
+    <add-resource type="string" name="pref_camera_video_rotation_label_180"/>
+    <string name="pref_camera_video_rotation_label_180">180</string>
+    <add-resource type="string" name="pref_camera_video_rotation_label_270"/>
+    <string name="pref_camera_video_rotation_label_270">270</string>
+
+    <add-resource type="string" name="remaining_photos_format"/>
+    <string name="remaining_photos_format">"%d बाँकी"</string>
+    <add-resource type="string" name="initial_recording_seconds"/>
+    <string name="initial_recording_seconds">"00:00"</string>
+    <add-resource type="string" name="makeup_video_size_limit"/>
+    <string name="makeup_video_size_limit">"भिडियो रेकर्डिङमा VGA साइज अन्तर्गत मात्र कार्यहरू गर्नुहोस्।"</string>
+    <!-- Settings screen, dialog choice for 20 megapixels picture size [CHAR LIMIT=20] -->
+    <add-resource type="string" name="pref_camera_picturesize_entry_20mp"/>
+    <string name="pref_camera_picturesize_entry_20mp">"20M पिक्सेल"</string>
+
+    <add-resource type="string" name="refocus_toast"/>
+    <string name="refocus_toast">"अन्तिम फोटो पुन-फोकस गर्न, यँहा ट्याप गर्नुहोस्"</string></resources>

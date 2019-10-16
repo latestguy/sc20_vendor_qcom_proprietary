@@ -1,0 +1,182 @@
+/*
+ * UIM Remote Client Interface definition
+ *
+ * Copyright (c) 2014 Qualcomm Technologies, Inc.  All Rights Reserved.
+ * Qualcomm Technologies Proprietary and Confidential.
+ *
+ * This proto file describes the interface between RIL and UIM Remote Client
+ * service for accessing the remote UIM card
+ */
+
+package com.qualcomm.uimremoteclient;
+
+/* Each Remote UIM message stream shall be prepended with a MessageTag */
+/* Message Tag */
+message MessageTag {
+          required MessageType type    = 1;
+          required MessageId   id      = 2;
+          optional Error       error   = 3;
+          optional fixed32     token   = 4;
+          optional bytes       payload = 5;
+}
+
+enum MessageType {
+        UIM_REMOTE_MSG_UNKNOWN = 0;
+        UIM_REMOTE_MSG_REQUEST = 1;
+        UIM_REMOTE_MSG_RESPONSE = 2;
+        UIM_REMOTE_MSG_INDICATION = 3;
+}
+
+enum MessageId {
+        UNKNOWN_REQ = 0;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_REQUEST, MsgId: UIM_REMOTE_EVENT, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: message UimRemoteEventReq
+        // For MessageType: UIM_REMOTE_MSG_RESPONSE, MsgId: UIM_REMOTE_EVENT, Error: Valid error code,
+        //              Payload: message UimRemoteEventResp
+        //
+        UIM_REMOTE_EVENT = 1;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_REQUEST, MsgId: UIM_REMOTE_APDU, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: message UimRemoteApduReq
+        // For MessageType: UIM_REMOTE_MSG_RESPONSE, MsgId: UIM_REMOTE_APDU, Error: Valid error code,
+        //              Payload: message UimRemoteApduResp
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_APDU, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: message UimRemoteApduInd
+        //
+        UIM_REMOTE_APDU = 2;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_CONNECT, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: Null
+        //
+        UIM_REMOTE_CONNECT = 3;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_DISCONNECT, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: Null
+        //
+        UIM_REMOTE_DISCONNECT = 4;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_POWER_UP, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: message UimRemotePowerUpInd
+        //
+        UIM_REMOTE_POWER_UP = 5;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_POWER_DOWN, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: message UimRemotePowerDownInd
+        //
+        UIM_REMOTE_POWER_DOWN = 6;
+
+        //
+        // For MessageType: UIM_REMOTE_MSG_INDICATION, MsgId: UIM_REMOTE_RESET, Error: UIM_REMOTE_ERR_UNUSED,
+        //              Payload: Null
+        //
+        UIM_REMOTE_RESET = 7;
+     }
+
+    enum Error {
+            UIM_REMOTE_ERR_SUCCESS = 0;
+            UIM_REMOTE_ERR_GENERIC_FAILURE = 1;
+            UIM_REMOTE_ERR_NOT_SUPPORTED = 2;
+            UIM_REMOTE_ERR_INVALID_PARAMETER = 3;
+    }
+
+message UimRemoteEventReq {
+     enum Event {
+        UIM_REMOTE_STATUS_CONN_UNAVAILABLE = 0;
+        UIM_REMOTE_STATUS_CONN_AVAILABLE = 1;
+        UIM_REMOTE_STATUS_CARD_INSERTED = 2;
+        UIM_REMOTE_STATUS_CARD_REMOVED = 3;
+        UIM_REMOTE_STATUS_CARD_ERROR = 4;
+        UIM_REMOTE_STATUS_CARD_RESET = 5;
+        UIM_REMOTE_STATUS_CARD_WAKEUP = 6;
+    }
+    enum ErrorCause {
+        UIM_REMOTE_CARD_ERROR_UNKNOWN = 0;
+        UIM_REMOTE_CARD_ERROR_NO_LINK_EST = 1;
+        UIM_REMOTE_CARD_ERROR_CMD_TIMEOUT = 2;
+        UIM_REMOTE_CARD_ERROR_POWER_DOWN = 3;
+        UIM_REMOTE_CARD_ERROR_POWER_DOWN_TELECOM = 4;
+    }
+    enum Transport {
+        UIM_REMOTE_TRANSPORT_OTHER = 0;
+        UIM_REMOTE_TRANSPORT_BLUETOOTH = 1;
+        UIM_REMOTE_TRANSPORT_IP = 2;
+    }
+    enum Usage {
+        UIM_REMOTE_USAGE_REDUCED = 0;
+        UIM_REMOTE_USAGE_NORMAL = 1;
+    }
+    required Event event = 1;
+    /* Present for status = UIM_REMOTE_STATUS_CARD_INSERTED */
+    optional bytes atr = 2;
+    /* Present if remote UIM supports wake-up feature */
+    optional bool wakeup_support = 3;
+    /* Present for status = UIM_REMOTE_STATUS_CARD_ERROR */
+    optional ErrorCause error_code = 4;
+    optional Transport transport = 5;
+    optional Usage usage = 6;
+    optional uint32 apdu_timeout = 7;
+    optional uint32 disable_all_polling = 8;
+    optional uint32 poll_timer = 9;
+}
+
+message UimRemoteEventResp {
+     enum Status {
+        UIM_REMOTE_SUCCESS = 0;
+        UIM_REMOTE_FAILURE = 1;
+    }
+    required Status response = 1;
+}
+
+message UimRemoteApduReq {
+    enum ApduStatus {
+        UIM_REMOTE_SUCCESS = 0;
+        UIM_REMOTE_FAILURE = 1;
+    }
+    required ApduStatus status = 1;
+    /* APDU response data from card */
+    optional bytes apduResponse = 2;
+}
+
+message UimRemoteApduResp {
+    enum Status {
+        UIM_REMOTE_SUCCESS = 0;
+        UIM_REMOTE_FAILURE = 1;
+    }
+    required Status status = 1;
+}
+
+message UimRemoteApduInd {
+    /* APDU command data to card */
+    required bytes apduCommand = 1;
+}
+
+message UimRemotePowerUpInd {
+    enum VoltageClass {
+        UIM_REMOTE_VOLTAGE_CLASS_C_LOW = 0;
+        UIM_REMOTE_VOLTAGE_CLASS_C = 1;
+        UIM_REMOTE_VOLTAGE_CLASS_C_HIGH = 2;
+        UIM_REMOTE_VOLTAGE_CLASS_B_LOW = 3;
+        UIM_REMOTE_VOLTAGE_CLASS_B = 4;
+        UIM_REMOTE_VOLTAGE_CLASS_B_HIGH = 5;
+    }
+    /* Response timeout in msecs */
+    optional int32 timeout = 1;
+    /* Voltage class */
+    optional VoltageClass voltageclass = 2;
+}
+
+message UimRemotePowerDownInd {
+    enum PowerDownMode {
+        UIM_REMOTE_PDOWN_TELECOM_INTERFACE = 0;
+        UIM_REMOTE_PDOWN_CARD = 1;
+    }
+    /* Power down mode */
+    optional PowerDownMode mode = 1;
+}

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2015 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--
+    The city names are presented to the user in an alphabetically-sorted list with section headers.
+    The section header is the "index" of all the cities in the section. By default, the section
+    header is the first character of the city name.
+
+    Format of providing a city name:
+    <item>[index]<xliff:g id="separator">=</xliff:g>[city name]<xliff:g id="phonetic">:</xliff:g>[phonetic name]</item>
+
+    Index and phonetic name are optional.
+
+    In some languages, cities are listed under an incorrect index or sorted incorrectly within an
+    index.
+
+    Should a city be listed under an incorrect index, the correct index can be manually specified
+    by adding an index to the translation string before the "=" placeholder.
+
+        Ex. <item>A<xliff:g id="separator">=</xliff:g>Abidjan</item>
+        Now Abidjan will be classified under the "A" index.
+
+    Note that the separator "=" should NOT be localized. The index can be multi-character; it will
+    consist of all specified characters before the "=" separator.
+
+    If a city is sorted incorrectly, provide a phonetic name for the city by adding
+    <xliff:g id="phonetic">:</xliff:g>[PHONETIC_NAME]. The city now will be sorted based on phonetic
+    name. The phonetic should use the alphabet that makes the most sense for the locale. For
+    example, Japanese city can use Katakana to provide phonetic name.
+
+    Providing index and/or phonetic name will change the sort order of the cities list.
+    -->
+
+    <add-resource type="array" name="cities_names"/>
+    <string-array name="cities_names">
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ບິດ​ຈານ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອັກ​ຄ​ຣາ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອດ​ດິດ ອາ​ບາ​ບ່າ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອ​ລ​ເຈີ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບະ​ລັນ​ໄທ​ຣ໌"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບ​ຣາ​ຊາ​ວິ​ລ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄຄ​ໂຣ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ຊາບ​ຣັງ​ກາ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຄ​ນາກ​ຣີ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດັກ​ກາ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດາ​ເອ​ສ​ຊາ​ລຳ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດິ​ຈິ​ບູ​ຕິ"</item>
+        <item>"ຟ<xliff:g id="SEPARATOR">=</xliff:g>ຟ​ຣີ​ທາວ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາ​ໂບ​ໂຣເນ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮາ​ແຣ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຈ​ຮານ​ເນັ​ສ​ເບີກ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກ​ຳ​ປາ​ລາ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ຕູມ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄິ​ກາ​ລິ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກິນ​ຊາ​ຊ່າ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລາກອ​ສ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ເຊ​ຣຸ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂມ​ກາ​ດິ​ສ​ຊູ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄນ​ໂຣ​ບີ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາວ​ໂຕ​ເມະ"</item>
+        <item>"ຕ<xliff:g id="SEPARATOR">=</xliff:g>ຕິມ​ບຸກ​ຕູ"</item>
+        <item>"ທ<xliff:g id="SEPARATOR">=</xliff:g>ທ​ຣິ​ໂປ​ລິ"</item>
+        <item>"ຕ<xliff:g id="SEPARATOR">=</xliff:g>ຕູ​ນິ​ສ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອນ​ຊໍ​ເຣ​ຈ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມັນ​ໂດ​ຊ່າ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ຣູ​ບາ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ຊຸນ​ຊຽນ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາ​ບາ​ດໍ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບ​ລິ​ສ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂບ​ໂກ​ຕ່າ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບູ​ໂນ​ສ ໄອ​ເຣັ​ສ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກັງກຸນ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ຣາ​ຄາ​ສ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຄ​ແມນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊິ​ກາ​ໂຄ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄອ​ສ​ຕາ​ຣິ​ກາ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄູ​ຣາ​ກາວ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດາວ​ຊັນ​ຄ​ຣິກ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເດັນ​ເວີ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເດ​ຕ​ຣອຍ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂດ​ມິ​ນິ​ກາ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເອັດ​ມອນ​ຕັນ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອ​ລ​ຊາ​ລ​ວາ​ດໍ"</item>
+        <item>"ຟ<xliff:g id="SEPARATOR">=</xliff:g>ຟໍ​ຕາ​ເຣ​ຊາ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແກ​ຣນ​ເຕີກ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກ​ຣີ​ນາ​ດາ"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>ເມືອງ​ກົວ​ເຕ​ມາ​ລາ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາຍອານາ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮາ​ລິ​ເຟັກ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮາ​ວາ​ນາ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອິນ​ດຽນ​ນາ​ໂປ​ລິ​ສ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນັອກ​ຊ໌"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ເຣັນ​ໂກ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປີ​ເຕີ​ສ​ເບີກ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເທ​ລ​ຊິ​ຕີ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເວວາຍ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວິນ​ເຊັນ​ເນັ​ສ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວິນ​ນາ​ແມັກ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄິງ​ສະ​ໂຕນ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນິ​ສ​ະ​ຕ​ຣາ ເຊ​ໂນ​ຣາ ເດີ ລາ ປາ​ສ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລິ​ມາ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລອ​ສ​ແອງ​ເຈ​ລິ​ສ"</item>
+        <item>"ຫ<xliff:g id="SEPARATOR">=</xliff:g>ຫຼຸຍ​ສ໌​ວິ​ລ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ນາ​ກົວ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ຕິ​ນິກ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມັນ​ໂດ​ຊ່າ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມັດ​ລາ​ກັດ​ລາ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມັກ​ຊິ​ໂກ​ຊິ​ຕີ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມອນ​ເຕີ​ເຣ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມອນ​ເຕວິ​ດີ​ໂອ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມອນ​ຣຽວ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນາ​ສ​ໂຊ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນິວຢອກ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບິວ​ລາ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊັນ​ເຕີ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນິວ​ຊາ​ເລັມ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປາ​ນາ​ມາ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຟ​ນິກ"</item>
+        <item>"ຜ<xliff:g id="SEPARATOR">=</xliff:g>ຜອດ​ອອບ​ສະ​ເປນ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປໍໂຕປຣິນຊ໌"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເປີ​ໂຕ​ຣິ​ໂກ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ໂຕ​ໂດ​ມິ​ນີ​ໂກ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊົາ​ເປົາ​ໂລ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ຈອນ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ຄິດ​ສ໌"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ລູ​ເຊຍ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ໂທ​ມັ​ສ"</item>
+        <item>"ທ<xliff:g id="SEPARATOR">=</xliff:g>ທິ​ຈວນ​ນາ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຕ​ຣອນ​ໂຕ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແວນ​ຄູ​ເວີ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວິນ​ນິ​ເປັກ"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>ເຊົາ​ໂປ​ເລ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລອງ​ເຢຍ​ບີນ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ລ​ມາ​ຕີ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອຳ​ມັນ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ນາ​ເດີ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອັກ​ເຕົາ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແບັກ​ແດດ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາ​ເຣນ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາ​ກຸ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາງກອກ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບ​ຣຸດ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ລ​ຄູ​ຕາ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດາ​ມາ​ສ​ຄັສ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດັກ​ກາ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດູ​ໄບ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາ​ຊ່າ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮີບ​ຣອນ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຮ່​ຈິ​ມິນ"</item>
+        <item>"H<xliff:g id="SEPARATOR">=</xliff:g>ຮ່ອງກົງ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອິ​ສ​ຕານ​ບູນ"</item>
+        <item>"ຈ<xliff:g id="SEPARATOR">=</xliff:g>ຈາ​ກາຕ້າ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຢ​ຣູ​ຊາ​ເລັມ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາ​ບູນ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາ​ຣາ​ຈີ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກັດ​ມານດູ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກົວ​ລາ​ລຳ​ເປີ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກູ​ເວດ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ເກົາ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມະ​ນີ​ລາ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມຸ​ສ​ກັດ"</item>
+        <item>"ພ<xliff:g id="SEPARATOR">=</xliff:g>ພະ​ນົມ​ເປັນ"</item>
+        <item>"P<xliff:g id="SEPARATOR">=</xliff:g>ພຽງ​ຢາງ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາ​ຕ້າ"</item>
+        <item>"ຢ<xliff:g id="SEPARATOR">=</xliff:g>ຢ້າງ​ກຸ້ງ"</item>
+        <item>"ຣ<xliff:g id="SEPARATOR">=</xliff:g>ຣິ​ຢາດ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄຊ​ງ່ອນ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຊລ"</item>
+        <item>"S<xliff:g id="SEPARATOR">=</xliff:g>ຊຽງ​ໄຮ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ສ<xliff:g id="SEPARATOR">=</xliff:g>ສິງ​ກະ​ໂປ"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>ໄທ​ເປ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຕ​ຮາ​ຣານ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເທວ​ອາ​ວິບ"</item>
+        <item>"T<xliff:g id="SEPARATOR">=</xliff:g>ໂຕ​ກຽວ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອູລານ​ບາ​ຕໍ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບີ​ມິວ​ດາ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ນາ​ຣີ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກາບູເວດີ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຣກ​ຈາ​ວິກ"</item>
+        <item>"ສ<xliff:g id="SEPARATOR">=</xliff:g>ສະ​ແຕນ​ເລ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ເດ​ໄລ​ເດ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບ​ຣິ​ສ​ເບນ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແຄນ​ເບີ​ຣາ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດາ​ວິນ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມວ​ເບິ້ນ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນິວ​ຊາວ​ເວວ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເພີດ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄວີນ​ສ​ແລນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊິດ​ນີ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວິກ​ຕໍ​ເຣຍ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນີວ​ຟາວ​ແລນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາດ​ສະ​ກາ​ເຊວານ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເກາະ​ອີ​ສ​ເຕີ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອຳ​ສະ​ເຕີ​ດາມ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອັນ​ດໍ​ຣາ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເອ​ເທັນ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບ​ລ​ຟາ​ສ​ທ໌"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບ​ລ​ເກ​ຣດ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບີ​ລິນ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບ​ຣາ​ສ​ຕິ​ສ​ລາ​ວາ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບ​ຣັ​ດ​ເຊ​ວ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບູ​ຊາ​ເຣັ​ສ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບູ​ດາ​ເປັ​ສ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄີຊີເນົາ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຄ​ເປັນ​ເຮ​ເກັນ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດັບ​ລິນ"</item>
+        <item>"ຢ<xliff:g id="SEPARATOR">=</xliff:g>ຢິບບ​ຣານ​ຕາ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຮວ​ຊິນ​ກິ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄອ​ໂຊ​ອອບ​ແມນ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອິ​ສ​ຕານ​ບູນ"</item>
+        <item>"ຂ<xliff:g id="SEPARATOR">=</xliff:g>ຂຽບ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລິດ​ສບອນ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລອນດອນ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລຸກ​ຊຳ​ບວກ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາດ​ຣິດ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມອ​ລ​ຕ້າ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມິ້ນ​ສ​ກ໌"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂມ​ນາ​ໂຄ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມົດ​ສະ​ກູ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອອ​ສ​ໂລ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປາ​ຣີ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປ​ຣາກ"</item>
+        <item>"ຣ<xliff:g id="SEPARATOR">=</xliff:g>ຣິ​ກາ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຣມ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ມາ​ຣິ​ໂນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາ​ຣາ​ເຢຍ​ໂວ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊິມ​ເຟີ​ໂຣ​ໂພ​ລ"</item>
+        <item>"ສ<xliff:g id="SEPARATOR">=</xliff:g>ສະ​ກັອບ​ເຈ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຊ​ເຟຍ"</item>
+        <item>"ສ<xliff:g id="SEPARATOR">=</xliff:g>ສະ​ຕັອກ​ໂຮມ"</item>
+        <item>"ຕ<xliff:g id="SEPARATOR">=</xliff:g>ຕາ​ລ​ລິນ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວາ​ຕິ​ກັນ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວຽນ​ນາ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວິ​ລ​ນຽດ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວໍ​ຊໍ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາ​ເກ​ຣັບ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊູ​ຣິ​ດ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອັນ​ຕານ​ນາ​ຣິ​ໂວ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ລ​ດິບ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂມ​ຣິ​ຕຽ​ສ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂອກ​ແລນ"</item>
+        <item>"ຟ<xliff:g id="SEPARATOR">=</xliff:g>ຟິ​ຈິ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກວາມ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຮ​ໂນ​ລູ​ລູ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກິ​ຣິ​ຕິ​ມາ​ຕິ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນູ​ມີ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາ​ມົວ"</item>
+        <item>"ຕ<xliff:g id="SEPARATOR">=</xliff:g>ຕາ​ຮິ​ຕິ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອນ​ຕິກວາ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອອ​ສ​ຕິນ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບອ​ສ​ຕັນ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄາ​ລ​ກາ​ຣີ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຄ​ລົມ​ບັ​ສ"</item>
+        <item>"ດ<xliff:g id="SEPARATOR">=</xliff:g>ດາ​ລ​ລັ​ສ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນັອກ​ວິ​ລ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມັມ​ພິ​ສ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄມ​ອະ​ມີ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມິນ​ນາ​ໂປ​ລິ​ສ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອອດ​ຕາ​ວາ"</item>
+        <item>"ຟ<xliff:g id="SEPARATOR">=</xliff:g>ຟິ​ລາ​ເດລ​ເຟຍ"</item>
+        <item>"ພ<xliff:g id="SEPARATOR">=</xliff:g>ພອດ​ແລນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ດິ​ເອ​ໂກ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ ຟ​ຣານ​ຊິ​ສ​ໂກ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊອ​ລ​ທ໌​ເລກ​ຊິ​ຕີ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ໂຈເຊ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ຊາ​ວາ​ດໍ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊີ​ອາ​ເຕິ​ລ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ຫຼຸຍ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວໍ​ຊິງ​ຕັນ​ດີ​ຊີ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮຸດ​ສະ​ຕັນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ແອັນ​ໂຕ​ນິ​ໂອ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແຈັກ​ສັນ​ວິ​ລ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາ​ລ​ຕິ​ມໍ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນາ​ສວິ​ລ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມິວ​ໂວ​ກີ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂອ​ກະ​ລາ​ໂຮ​ມາ​ຊິ​ຕີ"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລາ​ສ​ເວ​ກັ​ສ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອາ​ລ​ບູ​ເຄີ​ເຄະ"</item>
+        <item>"ທ<xliff:g id="SEPARATOR">=</xliff:g>ທັກ​ສັນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາ​ຄ​ຣາ​ເມັນ​ໂຕ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອັດ​ລັນ​ຕາ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄລີບ​ແລນ"</item>
+        <item>"ນ<xliff:g id="SEPARATOR">=</xliff:g>ນິວ​ໂອ​ລີນ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແທມ​ປ່າ"</item>
+        <item>"ພ<xliff:g id="SEPARATOR">=</xliff:g>ພິ​ສະ​ເບີກ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊິນ​ຊິນ​ນາ​ຕິ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເມົາ​ເທ້ນ​ວິວ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຣ​ໂນ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແບ​ລັກ​ຣັອກ​ຊິ​ຕີ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂດ​ຮາ"</item>
+        <item>"B<xliff:g id="SEPARATOR">=</xliff:g>ປັກ​ກິ່ງ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມູມໄບ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເດ​ລິ"</item>
+        <item>"O<xliff:g id="SEPARATOR">=</xliff:g>ໂອ​ຊາ​ກະ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ລ<xliff:g id="SEPARATOR">=</xliff:g>ລາ​ຮໍ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊາ​ນາ​ອາ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບາ​ເຊ​ໂລ​ນາ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມິວ​ນິກ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມິ​ລານ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແຟ​ຣງ​ເຟີດ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮ່າ​ໂນ້ຍ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອັນ​ຄາ​ຣາ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບັງ​ກາ​ລໍ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບ​ຣາ​ຊິ​ເລຍ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຄບ​ທາວ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອິ​ສ​ລາ​ມາ​ບັດ"</item>
+        <item>"ຣ<xliff:g id="SEPARATOR">=</xliff:g>ຣິ​ໂອ​ເດີ​ຈາ​ເນ​ໂຣ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອນ​ອາ​ບໍ"</item>
+        <item>"ບ<xliff:g id="SEPARATOR">=</xliff:g>ບູ​ນ​ເດີ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແຄມບ​ຣິດ​ຈ໌"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເກີກ​ແລນ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມາ​ດິ​ສັນ"</item>
+        <item>"G<xliff:g id="SEPARATOR">=</xliff:g>ກວາງ​ໂຈ<xliff:g id="PHONETIC">:</xliff:g>"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄຮ​ເດີ​ຣາ​ບັດ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຣັ​ສ​ຕອນ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເບ​ໂຣ​ຮໍ​ຣິ​ຊອນ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ຕິ​ເອ​ໂກ"</item>
+        <item>"ມ<xliff:g id="SEPARATOR">=</xliff:g>ມອນ​ໂຣ​ເວຍ"</item>
+        <item>"ໂ<xliff:g id="SEPARATOR">=</xliff:g>ໂຄ​ລົມ​ໂບ"</item>
+        <item>"ຈ<xliff:g id="SEPARATOR">=</xliff:g>ຈິ​ຮົວ​ຮົວ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ວາ​ດໍ"</item>
+        <item>"ຄ<xliff:g id="SEPARATOR">=</xliff:g>ຄຸເຄົານ໌"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແມນ​ເຊັ​ດສະ​ເຕີ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກຽບ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຊ້ນ​ປີ​ເຕີ​ສະ​ເບີກ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກ​ຣາ​ໂກ"</item>
+        <item>"ວ<xliff:g id="SEPARATOR">=</xliff:g>ວະ​ໂລ​ຄ​ລໍ"</item>
+        <item>"ຮ<xliff:g id="SEPARATOR">=</xliff:g>ຮຳ​ບູກ"</item>
+        <item>"ອ<xliff:g id="SEPARATOR">=</xliff:g>ອູ​ລູ"</item>
+        <item>"ໄ<xliff:g id="SEPARATOR">=</xliff:g>ໄຮ​ຟາ"</item>
+        <item>"ຊ<xliff:g id="SEPARATOR">=</xliff:g>ຊານ​ຈວນ"</item>
+        <item>"ເ<xliff:g id="SEPARATOR">=</xliff:g>ເຕ​ກູ​ຊິ​ກາ​ລ​ປາ"</item>
+        <item>"ປ<xliff:g id="SEPARATOR">=</xliff:g>ປາ​ຣາ​ມາ​ຣິ​ໂບ"</item>
+        <item>"ກ<xliff:g id="SEPARATOR">=</xliff:g>ກີ​ໂຕ"</item>
+        <item>"ແ<xliff:g id="SEPARATOR">=</xliff:g>ແອ​ລ​ຈຸບ​ຈານ​ນາ"</item>
+    </string-array></resources>

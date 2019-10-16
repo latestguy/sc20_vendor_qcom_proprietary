@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2012-2014 The CyanogenMod Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the app -->
+    <add-resource type="string" name="app_name"/>
+    <string name="app_name">"Upravitelj datotek"</string>
+    <!-- The description of the app -->
+    <add-resource type="string" name="app_description"/>
+    <string name="app_description">"Upravitelj datotek CyanogenMod"</string>
+    <!-- on permission of filemanager requesting -->
+    <add-resource type="string" name="on_permission_read_filemanager"/>
+    <string name="on_permission_read_filemanager">"Onemogočili ste zahtevano dovoljenje."</string>
+
+    <!-- Human readable sizes -->
+    <add-resource type="string" name="size_bytes"/>
+    <string name="size_bytes">" B"</string>
+    <add-resource type="string" name="size_kilobytes"/>
+    <string name="size_kilobytes">" kB"</string>
+    <add-resource type="string" name="size_megabytes"/>
+    <string name="size_megabytes">" MB"</string>
+    <add-resource type="string" name="size_gigabytes"/>
+    <string name="size_gigabytes">" GB"</string>
+
+    <!-- Date/time format order (%1$s: date; %2$s: time) -->
+    <add-resource type="string" name="datetime_format_order"/>
+    <string name="datetime_format_order">%1$s %2$s</string>
+
+    <!-- Devices types -->
+    <add-resource type="string" name="device_blockdevice"/>
+    <string name="device_blockdevice">"Bločna naprava"</string>
+    <add-resource type="string" name="device_characterdevice"/>
+    <string name="device_characterdevice">"Znakovna naprava"</string>
+    <add-resource type="string" name="device_namedpipe"/>
+    <string name="device_namedpipe">"Imenovana cev"</string>
+    <add-resource type="string" name="device_domainsocket"/>
+    <string name="device_domainsocket">"Vtičnica domene"</string>
+
+    <!-- Mount Point States -->
+    <add-resource type="string" name="mount_point_readonly"/>
+    <string name="mount_point_readonly">"RO"</string>
+    <add-resource type="string" name="mount_point_readwrite"/>
+    <string name="mount_point_readwrite">"RW"</string>
+    <add-resource type="string" name="yes"/>
+    <string name="yes">"Da"</string>
+    <add-resource type="string" name="no"/>
+    <string name="no">"Ne"</string>
+    <add-resource type="string" name="all"/>
+    <string name="all">"Vse"</string>
+    <add-resource type="string" name="overwrite"/>
+    <string name="overwrite">"Prepiši"</string>
+    <add-resource type="string" name="select"/>
+    <string name="select">"Izberi"</string>
+
+    <!-- The root directory name -->
+    <add-resource type="string" name="root_directory_name"/>
+    <string name="root_directory_name"><![CDATA[<Root folder>]]></string>
+    <!-- The search result name -->
+    <add-resource type="string" name="search_result_name"/>
+    <string name="search_result_name">"Iskanje: <xliff:g id="terms">%1$s</xliff:g>"</string>
+
+    <!-- Loading waiting message -->
+    <add-resource type="string" name="loading_message"/>
+    <string name="loading_message">"Nalaganje \u2026"</string>
+    <!-- Cancelled message -->
+    <add-resource type="string" name="cancelled_message"/>
+    <string name="cancelled_message">"Preklicano."</string>
+    <!-- Error message -->
+    <add-resource type="string" name="error_message"/>
+    <string name="error_message">"Napaka."</string>
+    <!-- Copy text content description -->
+    <add-resource type="string" name="copy_text_cd"/>
+    <string name="copy_text_cd">"Tapnite za kopiranje besedila v odložišče"</string>
+    <!-- Copy text content message -->
+    <add-resource type="string" name="copy_text_msg"/>
+    <string name="copy_text_msg">"Besedilo je kopirano v odložišče"</string>
+
+    <!-- Warning dialog title -->
+    <add-resource type="string" name="warning_title"/>
+    <string name="warning_title">"Opozorilo"</string>
+    <!-- Error dialog title -->
+    <add-resource type="string" name="error_title"/>
+    <string name="error_title">"Zaznana napaka"</string>
+    <!-- Confirm operation dialog title -->
+    <add-resource type="string" name="confirm_operation"/>
+    <string name="confirm_operation">"Potrdi postopek"</string>
+    <!-- Confirm overwrite dialog title -->
+    <add-resource type="string" name="confirm_overwrite"/>
+    <string name="confirm_overwrite">"Potrdi prepisovanje"</string>
+    <!-- Confirm deletion dialog title -->
+    <add-resource type="string" name="confirm_deletion"/>
+    <string name="confirm_deletion">"Potrdi brisanje"</string>
+
+    <!--  A console couldn't be created - Ask the user to change the access mode - Dialog Title -->
+    <add-resource type="string" name="msgs_change_to_prompt_access_mode_title"/>
+    <string name="msgs_change_to_prompt_access_mode_title">"Potrdi spremembo"</string>
+    <!--  A console couldn't be created - Ask the user to change the access mode - Dialog Message -->
+    <add-resource type="string" name="msgs_change_to_prompt_access_mode_msg"/>
+    <string name="msgs_change_to_prompt_access_mode_msg">"Izvajanje v načinu korenskega dostopa ni mogoče. Spremeni v varen način.\n\nUporabi spremembo?"</string>
+
+    <!-- A console couldn't be created - Without privileges, the app won't work -->
+    <add-resource type="string" name="msgs_cant_create_console"/>
+    <string name="msgs_cant_create_console">"Ni mogoče pridobiti zahtevanih pravic za delovanje."</string>
+    <!-- The message shown when an allocation of a privileged console fails, and a non
+         privileged is allocated -->
+    <add-resource type="string" name="msgs_privileged_console_alloc_failed"/>
+    <string name="msgs_privileged_console_alloc_failed">"Izvajanje v načinu korenskega dostopa ni mogoče. Spremeni v varen način."</string>
+    <!-- The selected setting was not applied or stored -->
+    <add-resource type="string" name="msgs_settings_save_failure"/>
+    <string name="msgs_settings_save_failure">"Nastavitve ni mogoče uporabiti ali shraniti."</string>
+    <!-- The initial directory has an invalid or inaccessible reference -->
+    <add-resource type="string" name="msgs_settings_invalid_initial_directory"/>
+    <string name="msgs_settings_invalid_initial_directory">"Začetna mapa \'<xliff:g id="initial_dir">%1$s</xliff:g>\' je neveljavna. Spremeni v korensko mapo."</string>
+    <!-- Root is not available message -->
+    <add-resource type="string" name="root_not_available_msg"/>
+    <string name="root_not_available_msg">"Korenska mapa ni na voljo v tej napravi. Postopka ni mogoče izvesti."</string>
+
+    <!-- Success -->
+    <add-resource type="string" name="msgs_success"/>
+    <string name="msgs_success">"Postopek je uspešno zaključen."</string>
+    <!-- Unknown error -->
+    <add-resource type="string" name="msgs_unknown"/>
+    <string name="msgs_unknown">"Zaznana je napaka. Postopek ni uspel."</string>
+    <!-- When an operation requires elevated privileged (normally caused for the use of a
+         non-privileged console) -->
+    <add-resource type="string" name="msgs_insufficient_permissions"/>
+    <string name="msgs_insufficient_permissions">"Ta postopek zahteva skrbniške pravice. Poskusite izbrati način korenskega dostopa."</string>
+    <!-- When an operation fails because the device has run out of storage. -->
+    <add-resource type="string" name="msgs_no_disk_space"/>
+    <string name="msgs_no_disk_space">"Postopek ni uspel, ker v napravi ni prostora."</string>
+    <!-- The file or directory was not found -->
+    <add-resource type="string" name="msgs_file_not_found"/>
+    <string name="msgs_file_not_found">"Datoteke ali mape ni bilo mogoče najti."</string>
+    <!-- The command reference couldn't be created (not found or invalid definition)
+         (normally caused by a development error) -->
+    <add-resource type="string" name="msgs_command_not_found"/>
+    <string name="msgs_command_not_found">"Ukaza postopka ni bilo mogoče najti ali ima neveljaven opis."</string>
+    <!-- I/O exception -->
+    <add-resource type="string" name="msgs_io_failed"/>
+    <string name="msgs_io_failed">"Neuspešno branje/pisanje."</string>
+    <!-- Operation timeout detected -->
+    <add-resource type="string" name="msgs_operation_timeout"/>
+    <string name="msgs_operation_timeout">"Časovna omejitev postopka je potekla."</string>
+    <!-- The operation returns an invalid exit code -->
+    <add-resource type="string" name="msgs_operation_failure"/>
+    <string name="msgs_operation_failure">"Postopek ni uspel."</string>
+    <!-- A console couldn't be allocated -->
+    <add-resource type="string" name="msgs_console_alloc_failure"/>
+    <string name="msgs_console_alloc_failure">"Prišlo je do notranje napake."</string>
+    <!-- An operation can't be cancelled -->
+    <add-resource type="string" name="msgs_operation_can_not_be_cancelled"/>
+    <string name="msgs_operation_can_not_be_cancelled">"Postopka ni mogoče preklicati."</string>
+    <!-- The operation requieres mount the file system prior to execute the command -->
+    <add-resource type="string" name="msgs_read_only_filesystem"/>
+    <string name="msgs_read_only_filesystem">"Datotečni sistem je samo za branje. Pred izvajanjem postopka poskusite vpeti datotečni sistem za branje/pisanje."</string>
+    <!-- Illegal argument (normally caused by a development error when calling internal api) -->
+    <add-resource type="string" name="msgs_illegal_argument"/>
+    <string name="msgs_illegal_argument">"Nedovoljen argument. Poziv ni uspel."</string>
+    <!-- The operation will cause inconsistencies -->
+    <add-resource type="string" name="msgs_unresolved_inconsistencies"/>
+    <string name="msgs_unresolved_inconsistencies">"Postopek ni dovoljen, ker bi ustvaril neskladja."</string>
+    <!-- Operation not permitted in current directory -->
+    <add-resource type="string" name="msgs_operation_not_allowed_in_current_directory"/>
+    <string name="msgs_operation_not_allowed_in_current_directory">"Postopek ni dovoljen v trenutni mapi.\n\nCiljna mapa ne more biti podmapa izvorne mape ali izvorna mapa."</string>
+
+    <!-- The advice message prior to exit the app -->
+    <add-resource type="string" name="msgs_push_again_to_exit"/>
+    <string name="msgs_push_again_to_exit">"Pritisnite znova za izhod."</string>
+
+    <!-- There is no registered app that can handle the mime-type -->
+    <add-resource type="string" name="msgs_not_registered_app"/>
+    <string name="msgs_not_registered_app">"Ni registrirane aplikacije za upravljanje vrste izbrane datoteke."</string>
+
+    <!-- Overwrite files? -->
+    <add-resource type="string" name="msgs_overwrite_files"/>
+    <string name="msgs_overwrite_files">"Nekatere datoteke so že vsebovane v ciljni mapi.\n\nPrepišem?"</string>
+
+    <!-- The association of an action to the app failed -->
+    <add-resource type="string" name="msgs_action_association_failed"/>
+    <string name="msgs_action_association_failed">"Povezava dejanja z aplikacijo ni uspela."</string>
+
+    <!-- An operation requires elevated privileged. Ask the user. -->
+    <add-resource type="string" name="advise_insufficient_permissions"/>
+    <string name="advise_insufficient_permissions">"Postopek zahteva skrbniške pravice.\n\nAli želite izbrati način korenskega dostopa?"</string>
+
+    <!-- The parent directory of the current directory in navigation view -->
+    <add-resource type="string" name="parent_dir"/>
+    <string name="parent_dir">"Nadrejena mapa"</string>
+    <!-- External storage descripton -->
+    <add-resource type="string" name="external_storage"/>
+    <string name="external_storage">"Zunanji pomnilnik"</string>
+    <!-- Usb storage descripton -->
+    <add-resource type="string" name="usb_storage"/>
+    <string name="usb_storage">"Pomnilnik USB"</string>
+
+    <!-- ActionBar Buttons - FileSystem -->
+    <add-resource type="string" name="actionbar_button_filesystem_cd"/>
+    <string name="actionbar_button_filesystem_cd">"Podatki o datotečnem sistemu"</string>
+    <!-- ActionBar Buttons - Sort Mode -->
+    <add-resource type="string" name="actionbar_button_sort_mode_cd"/>
+    <string name="actionbar_button_sort_mode_cd">"Način razvrstitve"</string>
+    <!-- ActionBar Buttons - Layout Mode -->
+    <add-resource type="string" name="actionbar_button_layout_mode_cd"/>
+    <string name="actionbar_button_layout_mode_cd">"Način postavitve"</string>
+    <!-- ActionBar Buttons - Other View Options -->
+    <add-resource type="string" name="actionbar_button_other_view_options_cd"/>
+    <string name="actionbar_button_other_view_options_cd">"Druge možnosti ogleda"</string>
+    <!-- ActionBar Buttons - Done -->
+    <add-resource type="string" name="actionbar_button_selection_done_cd"/>
+    <string name="actionbar_button_selection_done_cd">"Dokončano"</string>
+    <!-- ActionBar Buttons - Actions -->
+    <add-resource type="string" name="actionbar_button_actions_cd"/>
+    <string name="actionbar_button_actions_cd">"Dejanja"</string>
+    <!-- ActionBar Buttons - Search -->
+    <add-resource type="string" name="actionbar_button_search_cd"/>
+    <string name="actionbar_button_search_cd">"Iskanje"</string>
+    <!-- ActionBar Buttons - Overflow -->
+    <add-resource type="string" name="actionbar_button_overflow_cd"/>
+    <string name="actionbar_button_overflow_cd">"Več možnosti"</string>
+    <!-- ActionBar Buttons - Storage volumes -->
+    <add-resource type="string" name="actionbar_button_storage_cd"/>
+    <string name="actionbar_button_storage_cd">"Nosilci za shranjevanje"</string>
+    <!-- ActionBar Buttons - Save -->
+    <add-resource type="string" name="actionbar_button_save_cd"/>
+    <string name="actionbar_button_save_cd">"Shrani"</string>
+    <!-- ActionBar Buttons - Print -->
+    <add-resource type="string" name="actionbar_button_print_cd"/>
+    <string name="actionbar_button_print_cd">"Natisni"</string>
+
+    <!-- Navigation View - Sort - Sort by name (ascending) -->
+    <add-resource type="string" name="sort_by_name_asc"/>
+    <string name="sort_by_name_asc">"Po imenu \u25B2"</string>
+    <!-- Navigation View - Sort - Sort by name (descending) -->
+    <add-resource type="string" name="sort_by_name_desc"/>
+    <string name="sort_by_name_desc">"Po imenu \u25BC"</string>
+    <!-- Navigation View - Sort - Sort by date (ascending) -->
+    <add-resource type="string" name="sort_by_date_asc"/>
+    <string name="sort_by_date_asc">"Po datumu \u25B2"</string>
+    <!-- Navigation View - Sort - Sort by date (descending) -->
+    <add-resource type="string" name="sort_by_date_desc"/>
+    <string name="sort_by_date_desc">"Po datumu \u25BC"</string>
+    <!-- Navigation View - Sort - Sort by size (ascending) -->
+    <add-resource type="string" name="sort_by_size_asc"/>
+    <string name="sort_by_size_asc">"Po velikosti \u25B2"</string>
+    <!-- Navigation View - Sort - Sort by size (descending) -->
+    <add-resource type="string" name="sort_by_size_desc"/>
+    <string name="sort_by_size_desc">"Po velikosti \u25BC"</string>
+    <!-- Navigation View - Sort - Sort by type (ascending) -->
+    <add-resource type="string" name="sort_by_type_asc"/>
+    <string name="sort_by_type_asc">"Po vrsti \u25B2"</string>
+    <!-- Navigation View - Sort - Sort by type (descending) -->
+    <add-resource type="string" name="sort_by_type_desc"/>
+    <string name="sort_by_type_desc">"Po vrsti \u25BC"</string>
+
+    <!-- Navigation View - Layout - Icons -->
+    <add-resource type="string" name="layout_icons"/>
+    <string name="layout_icons">"Ikone"</string>
+    <!-- Navigation View - Layout - Simple -->
+    <add-resource type="string" name="layout_simple"/>
+    <string name="layout_simple">"Preprosto"</string>
+    <!-- Navigation View - Layout - Details -->
+    <add-resource type="string" name="layout_details"/>
+    <string name="layout_details">"Podrobnosti"</string>
+
+    <!-- Navigation View - View - Show folders first -->
+    <add-resource type="string" name="cm_filemanager_show_dirs_first"/>
+    <string name="cm_filemanager_show_dirs_first">"Najprej prikaži mape"</string>
+    <!-- Navigation View - View - Show hidden files option -->
+    <add-resource type="string" name="cm_filemanager_show_hidden"/>
+    <string name="cm_filemanager_show_hidden">"Prikaži skrite datoteke"</string>
+    <!-- Navigation View - View - Show system files option -->
+    <add-resource type="string" name="cm_filemanager_show_system"/>
+    <string name="cm_filemanager_show_system">"Prikaži datoteke sistema"</string>
+    <!-- Navigation View - View - Show symlinks option -->
+    <add-resource type="string" name="cm_filemanager_show_symlinks"/>
+    <string name="cm_filemanager_show_symlinks">"Prikaži simbolne povezave"</string>
+
+    <!-- Filesystem Info (no data). Dialog title -->
+    <add-resource type="string" name="filesystem_info_warning_title"/>
+    <string name="filesystem_info_warning_title">"Ni podatkov"</string>
+    <!-- Filesystem Info (no data). Dialog message -->
+    <add-resource type="string" name="filesystem_info_warning_msg"/>
+    <string name="filesystem_info_warning_msg">"Na voljo ni podatkov o datotečnem sistemu."</string>
+    <!-- Filesystem Info - Filesystem couldn't be mounted -->
+    <add-resource type="string" name="filesystem_info_cant_be_mounted_msg"/>
+    <string name="filesystem_info_cant_be_mounted_msg">"Datotečnega sistema ni mogoče vpeti/izpeti."</string>
+    <!-- Filesystem Info - Not allowed message -->
+    <add-resource type="string" name="filesystem_info_mount_not_allowed_msg"/>
+    <string name="filesystem_info_mount_not_allowed_msg">"Postopki vpenjanja datotečnega sistema niso dovoljeni v varnem načinu. Tapnite, da izberete način korenskega dostopa."</string>
+    <!-- Filesystem Info - Mount failed -->
+    <add-resource type="string" name="filesystem_info_mount_failed_msg"/>
+    <string name="filesystem_info_mount_failed_msg">"Postopek vpenjanja datotečnega sistema ni uspel. Nekaterih datotečnih sistemov, kot so kartice SD, ni mogoče vpeti/izpeti, ker so vgrajeni kot datotečni sistemi samo za branje."</string>
+    <!-- Filesystem Info Dialog - Title -->
+    <add-resource type="string" name="filesystem_info_dialog_title"/>
+    <string name="filesystem_info_dialog_title">"Podatki o datotečnem sistemu"</string>
+    <!-- Filesystem Info Dialog - Tab - Info -->
+    <add-resource type="string" name="filesystem_info_dialog_tab_info"/>
+    <string name="filesystem_info_dialog_tab_info">"Informacije"</string>
+    <!-- Filesystem Info Dialog - Tab - Disk Usage -->
+    <add-resource type="string" name="filesystem_info_dialog_tab_disk_usage"/>
+    <string name="filesystem_info_dialog_tab_disk_usage">"Uporaba diska"</string>
+    <!-- Filesystem Info Dialog - Status Label -->
+    <add-resource type="string" name="filesystem_info_dialog_status"/>
+    <string name="filesystem_info_dialog_status">"Stanje:"</string>
+    <!-- Filesystem Info Dialog - Mount Point Label -->
+    <add-resource type="string" name="filesystem_info_dialog_mount_point"/>
+    <string name="filesystem_info_dialog_mount_point">"Točka vpetja:"</string>
+    <!-- Filesystem Info Dialog - Device Label -->
+    <add-resource type="string" name="filesystem_info_dialog_device"/>
+    <string name="filesystem_info_dialog_device">"Naprava:"</string>
+    <!-- Filesystem Info Dialog - Type Label -->
+    <add-resource type="string" name="filesystem_info_dialog_type"/>
+    <string name="filesystem_info_dialog_type">"Vrsta:"</string>
+    <!-- Filesystem Info Dialog - Options Label -->
+    <add-resource type="string" name="filesystem_info_dialog_options"/>
+    <string name="filesystem_info_dialog_options">"Možnosti:"</string>
+    <!-- Filesystem Info Dialog - Dump/Pass Label -->
+    <add-resource type="string" name="filesystem_info_dialog_dump_pass"/>
+    <string name="filesystem_info_dialog_dump_pass">"Izvozi/podaj:"</string>
+    <!-- Filesystem Info Dialog - Virtual Label -->
+    <add-resource type="string" name="filesystem_info_dialog_virtual"/>
+    <string name="filesystem_info_dialog_virtual">"Navidezno:"</string>
+    <!-- Filesystem Info Dialog - Total Disk Usage -->
+    <add-resource type="string" name="filesystem_info_dialog_total_disk_usage"/>
+    <string name="filesystem_info_dialog_total_disk_usage">"Skupno:"</string>
+    <!-- Filesystem Info Dialog - Used Disk Usage -->
+    <add-resource type="string" name="filesystem_info_dialog_used_disk_usage"/>
+    <string name="filesystem_info_dialog_used_disk_usage">"Uporabljeno:"</string>
+    <!-- Filesystem Info Dialog - Free Disk Usage -->
+    <add-resource type="string" name="filesystem_info_dialog_free_disk_usage"/>
+    <string name="filesystem_info_dialog_free_disk_usage">"Prosto:"</string>
+
+    <!-- Fso Properties - Not allowed message -->
+    <add-resource type="string" name="fso_properties_permissions_not_allowed_msg"/>
+    <string name="fso_properties_permissions_not_allowed_msg">"Postopki z uporabo dovoljenj niso dovoljeni v varnem načinu. Tapnite, da izberete način korenskega dostopa."</string>
+    <!-- Fso Properties - Failed to change owner to fso -->
+    <add-resource type="string" name="fso_properties_failed_to_change_owner_msg"/>
+    <string name="fso_properties_failed_to_change_owner_msg">"Postopek spremembe lastnika ni uspel.\n\nIz varnostnih razlogov nekateri datotečni sistemi, kot so kartice SD, ne dovolijo spreminjanja lastništva."</string>
+    <!-- Fso Properties - Failed to change group to fso -->
+    <add-resource type="string" name="fso_properties_failed_to_change_group_msg"/>
+    <string name="fso_properties_failed_to_change_group_msg">"Postopek spremembe skupine ni uspel.\n\nIz varnostnih razlogov nekateri datotečni sistemi, kot so kartice SD, ne dovolijo spreminjanja skupin."</string>
+    <!-- Fso Properties - Failed to change group to fso -->
+    <add-resource type="string" name="fso_properties_failed_to_change_permission_msg"/>
+    <string name="fso_properties_failed_to_change_permission_msg">"Postopek spremembe dovoljenj ni uspel.\n\nIz varnostnih razlogov nekateri datotečni sistemi, kot so kartice SD, ne dovolijo spreminjanja dovoljenj."</string>
+    <!-- Fso Properties Dialog - Title -->
+    <add-resource type="string" name="fso_properties_dialog_title"/>
+    <string name="fso_properties_dialog_title">"Lastnosti"</string>
+    <!-- Fso Properties Dialog - Tab - Info -->
+    <add-resource type="string" name="fso_properties_dialog_tab_info"/>
+    <string name="fso_properties_dialog_tab_info">"Informacije"</string>
+    <!-- Fso Properties Dialog - Tab - Permissions -->
+    <add-resource type="string" name="fso_properties_dialog_tab_permissions"/>
+    <string name="fso_properties_dialog_tab_permissions">"Dovoljenja"</string>
+    <!-- Fso Properties Dialog - Name Label -->
+    <add-resource type="string" name="fso_properties_dialog_name"/>
+    <string name="fso_properties_dialog_name">"Ime:"</string>
+    <!-- Fso Properties Dialog - Parent Folder Label -->
+    <add-resource type="string" name="fso_properties_dialog_parent"/>
+    <string name="fso_properties_dialog_parent">"Nadrejen:"</string>
+    <!-- Fso Properties Dialog - Type Label -->
+    <add-resource type="string" name="fso_properties_dialog_type"/>
+    <string name="fso_properties_dialog_type">"Vrsta:"</string>
+    <!-- Fso Properties Dialog - Category Label -->
+    <add-resource type="string" name="fso_properties_dialog_category"/>
+    <string name="fso_properties_dialog_category">"Kategorija:"</string>
+    <!-- Fso Properties Dialog - Link Label -->
+    <add-resource type="string" name="fso_properties_dialog_link"/>
+    <string name="fso_properties_dialog_link">"Povezava:"</string>
+    <!-- Fso Properties Dialog - Size Label -->
+    <add-resource type="string" name="fso_properties_dialog_size"/>
+    <string name="fso_properties_dialog_size">"Velikost:"</string>
+    <!-- Fso Properties Dialog - Contains Label -->
+    <add-resource type="string" name="fso_properties_dialog_contains"/>
+    <string name="fso_properties_dialog_contains">"Vsebina:"</string>
+    <!-- Fso Properties Dialog - Last Accessed Time Label -->
+    <add-resource type="string" name="fso_properties_dialog_last_accessed_date"/>
+    <string name="fso_properties_dialog_last_accessed_date">"Dostop:"</string>
+    <!-- Fso Properties Dialog - Last Modified Time Label -->
+    <add-resource type="string" name="fso_properties_dialog_last_modified_date"/>
+    <string name="fso_properties_dialog_last_modified_date">"Prilagodil:"</string>
+    <!-- Fso Properties Dialog - Last Changed Time -->
+    <add-resource type="string" name="fso_properties_dialog_last_changed_date"/>
+    <string name="fso_properties_dialog_last_changed_date">"Spremenil:"</string>
+    <!-- Fso Properties Dialog - Owner Label -->
+    <add-resource type="string" name="fso_properties_dialog_owner"/>
+    <string name="fso_properties_dialog_owner">"Lastnik:"</string>
+    <!-- Fso Properties Dialog - Group Label -->
+    <add-resource type="string" name="fso_properties_dialog_group"/>
+    <string name="fso_properties_dialog_group">"Skupina:"</string>
+    <!-- Fso Properties Dialog - Others Label -->
+    <add-resource type="string" name="fso_properties_dialog_others"/>
+    <string name="fso_properties_dialog_others">"Drugo:"</string>
+    <!-- Fso Properties Dialog - Skip media scan -->
+    <add-resource type="string" name="fso_properties_dialog_include_in_media_scan"/>
+    <string name="fso_properties_dialog_include_in_media_scan">"Preskoči pregled medija:"</string>
+    <add-resource type="string" name="fso_failed_to_allow_media_scan"/>
+    <string name="fso_failed_to_allow_media_scan">"Pregled medija ni dovoljen"</string>
+    <add-resource type="string" name="fso_failed_to_prevent_media_scan"/>
+    <string name="fso_failed_to_prevent_media_scan">"Pregled menija ni preprečen"</string>
+    <add-resource type="string" name="fso_delete_nomedia_dir_title"/>
+    <string name="fso_delete_nomedia_dir_title">"Izbriši imenik .nomedia"</string>
+    <add-resource type="string" name="fso_delete_nomedia_dir_body"/>
+    <string name="fso_delete_nomedia_dir_body">"Ta imenik vsebuje imenik .nomedia.\n\nAli ga želite izbrisati skupaj z vso vsebino?"</string>
+    <add-resource type="string" name="fso_delete_nomedia_non_empty_title"/>
+    <string name="fso_delete_nomedia_non_empty_title">"Izbriši datoteko .nomedia"</string>
+    <add-resource type="string" name="fso_delete_nomedia_non_empty_body"/>
+    <string name="fso_delete_nomedia_non_empty_body">"Ta imenik vsebuje datoteko .nomedia z vsebino.\n\nAli ga želite izbrisati?"</string>
+
+    <!-- History - History activity title -->
+    <add-resource type="string" name="history"/>
+    <string name="history">"Zgodovina"</string>
+    <!-- History - The history is empty -->
+    <add-resource type="string" name="msgs_history_empty"/>
+    <string name="msgs_history_empty">"Zgodovina je prazna."</string>
+    <!-- History - The history reference is not in the actual history list -->
+    <add-resource type="string" name="msgs_history_unknown"/>
+    <string name="msgs_history_unknown">"Neznan predmet zgodovine."</string>
+
+    <!-- Search - Search activity title -->
+    <add-resource type="string" name="search"/>
+    <string name="search">"Rezultati iskanja"</string>
+    <!-- Search - Search hint message -->
+    <add-resource type="string" name="search_hint"/>
+    <string name="search_hint">"Vnesite besedo za iskanje"</string>
+    <!-- Search - Voice search hint message -->
+    <add-resource type="string" name="search_voice_hint"/>
+    <string name="search_voice_hint">"Izgovorite besedo za iskanje"</string>
+    <!-- Search - Search error message -->
+    <add-resource type="string" name="search_error_msg"/>
+    <string name="search_error_msg">"Med iskanjem je prišlo do napake. Ni najdenih rezultatov."</string>
+    <!-- Search - Search no results message -->
+    <add-resource type="string" name="search_no_results_msg"/>
+    <string name="search_no_results_msg">"Ni najdenih rezultatov."</string>
+    <!-- Search - Number of items found in directory -->
+    <add-resource type="string" name="search_found_items_in_directory"/>
+    <string name="search_found_items_in_directory">"<xliff:g id="items">%1$s</xliff:g> v <xliff:g id="path">%2$s</xliff:g>"</string>
+    <!-- Search - Search query terms -->
+    <add-resource type="string" name="search_terms"/>
+    <string name="search_terms">"&lt;b&gt;Pogoji:&lt;/b&gt; <xliff:g id="terms">%1$s</xliff:g>"</string>
+    <!-- Search - Confirm search -->
+    <add-resource type="string" name="search_few_characters_title"/>
+    <string name="search_few_characters_title">"Potrdi iskanje"</string>
+    <!-- Search - Some terms of the search are too small. The operation could be very costly -->
+    <add-resource type="string" name="search_few_characters_msg"/>
+    <string name="search_few_characters_msg">"Nekateri iskalni izrazi imajo majhno število znakov. Postopek lahko zahteva veliko časa in sistemskih sredstev.\n\nAli želite nadaljevati?"</string>
+    <!-- Search - Searching dialog title -->
+    <add-resource type="string" name="searching"/>
+    <string name="searching">"Počakajte ..."</string>
+    <!-- Search - Searching label -->
+    <add-resource type="string" name="searching_action_label"/>
+    <string name="searching_action_label">"Iskanje v teku"</string>
+    <!-- Picker Activity - Dialog title -->
+    <add-resource type="string" name="picker_title"/>
+    <string name="picker_title">"Izberite datoteko"</string>
+    <add-resource type="string" name="directory_picker_title"/>
+    <string name="directory_picker_title">"Izberite imenik"</string>
+
+    <!-- Editor - Editor activity title -->
+    <add-resource type="string" name="editor"/>
+    <string name="editor">"Urejevalnik"</string>
+    <!-- Editor - Invalid file message -->
+    <add-resource type="string" name="editor_invalid_file_msg"/>
+    <string name="editor_invalid_file_msg">"Neveljavna datoteka."</string>
+    <!-- Editor - File not found message -->
+    <add-resource type="string" name="editor_file_not_found_msg"/>
+    <string name="editor_file_not_found_msg">"Datoteke ni bilo mogoče najti."</string>
+    <!-- Editor - File size exceed the limit -->
+    <add-resource type="string" name="editor_file_exceed_size_msg"/>
+    <string name="editor_file_exceed_size_msg">"Datoteka je prevelika za odpiranje v tej napravi."</string>
+    <!-- Editor - Editor is dirty, ask the user - Dialog title -->
+    <add-resource type="string" name="editor_dirty_ask_title"/>
+    <string name="editor_dirty_ask_title">"Potrdi izhod"</string>
+    <!-- Editor - Editor is dirty, ask the user - Dialog message -->
+    <add-resource type="string" name="editor_dirty_ask_msg"/>
+    <string name="editor_dirty_ask_msg">"Spremembe niso shranjene.\n\nIzhod brez shranjevanja?"</string>
+    <!-- Editor - Save operation success -->
+    <add-resource type="string" name="editor_successfully_saved"/>
+    <string name="editor_successfully_saved">"Datoteka je bila uspešno shranjena."</string>
+    <!-- Editor - Read-only file mode -->
+    <add-resource type="string" name="editor_read_only_mode"/>
+    <string name="editor_read_only_mode">"Datoteka je odprta v načinu samo za branje."</string>
+    <!-- Editor - Dumping message -->
+    <add-resource type="string" name="dumping_message"/>
+    <string name="dumping_message">"Ustvarjanje šestnajstiškega izpisa\u2026"</string>
+    <!-- Editor - Displaying -->
+    <add-resource type="string" name="displaying_message"/>
+    <string name="displaying_message">"Prikaz\u2026"</string>
+
+    <!-- Bookmarks - Bookmarks activity title -->
+    <add-resource type="string" name="bookmarks"/>
+    <string name="bookmarks">"Zaznamki"</string>
+    <!-- Bookmarks - Bookmark name - Home -->
+    <add-resource type="string" name="bookmarks_home"/>
+    <string name="bookmarks_home">"DOMA"</string>
+    <!-- Bookmarks - Bookmark name - Root folder -->
+    <add-resource type="string" name="bookmarks_root_folder"/>
+    <string name="bookmarks_root_folder">"Korenska mapa"</string>
+    <!-- Bookmarks - Bookmark name - System folder -->
+    <add-resource type="string" name="bookmarks_system_folder"/>
+    <string name="bookmarks_system_folder">"Sistemska mapa"</string>
+    <!-- Bookmarks - Bookmark name - Secure storage -->
+    <add-resource type="string" name="bookmarks_secure"/>
+    <string name="bookmarks_secure">"Varna shramba"</string>
+    <!-- Bookmarks - Bookmark name - Remote storage -->
+    <add-resource type="string" name="bookmarks_remote"/>
+    <string name="bookmarks_remote">"Oddaljena shramba"</string>
+    <!-- Bookmarks - Bookmark name - Button - Initial directory content description -->
+    <add-resource type="string" name="bookmarks_button_config_cd"/>
+    <string name="bookmarks_button_config_cd">"Nastavi začetno mapo."</string>
+    <!-- Bookmarks - Bookmark name - Button - Remove bookmark content description -->
+    <add-resource type="string" name="bookmarks_button_remove_bookmark_cd"/>
+    <string name="bookmarks_button_remove_bookmark_cd">"Odstrani zaznamek."</string>
+    <!-- Bookmarks - Bookmarks - Actions - Bookmark successfully added -->
+    <add-resource type="string" name="bookmarks_msgs_add_success"/>
+    <string name="bookmarks_msgs_add_success">"Zaznamek je uspešno dodan."</string>
+    <!-- Bookmarks - Bookmarks - Actions - Bookmark already exists -->
+    <add-resource type="string" name="bookmarks_msgs_add_exists"/>
+    <string name="bookmarks_msgs_add_exists">"Zaznamek že obstaja."</string>
+
+    <!-- Initial directory dialog title -->
+    <add-resource type="string" name="initial_directory_dialog_title"/>
+    <string name="initial_directory_dialog_title">"Začetna mapa"</string>
+    <!-- Initial directory label -->
+    <add-resource type="string" name="initial_directory_label"/>
+    <string name="initial_directory_label">"Izberi začetno mapo:"</string>
+    <!-- Initial directory is relative -->
+    <add-resource type="string" name="initial_directory_relative_msg"/>
+    <string name="initial_directory_relative_msg">"Relativne poti niso dovoljene."</string>
+    <!-- Initial directory error message -->
+    <add-resource type="string" name="initial_directory_error_msg"/>
+    <string name="initial_directory_error_msg">"Med shranjevanjem začetne mape je prišlo do napake."</string>
+
+    <!-- Menu - Navigation - Search -->
+    <add-resource type="string" name="menu_search"/>
+    <string name="menu_search">"Išči"</string>
+    <!-- Menu - Navigation - Settings -->
+    <add-resource type="string" name="menu_settings"/>
+    <string name="menu_settings">"Nastavitve"</string>
+    <!-- Menu - History - Clear history -->
+    <add-resource type="string" name="menu_clear_history"/>
+    <string name="menu_clear_history">"Počisti zgodovino"</string>
+    <!-- Menu - Editor - No suggestions -->
+    <add-resource type="string" name="menu_no_suggestions"/>
+    <string name="menu_no_suggestions">"Ni predlogov"</string>
+    <!-- Menu - Editor - Word wrap -->
+    <add-resource type="string" name="menu_word_wrap"/>
+    <string name="menu_word_wrap">"Prelom vrstice"</string>
+    <!-- Menu - Editor - Sintax highlight -->
+    <add-resource type="string" name="menu_syntax_highlight"/>
+    <string name="menu_syntax_highlight">"Označevanje skladnje"</string>
+
+    <!-- Regular expression for create copy action -->
+    <add-resource type="string" name="create_copy_regexp"/>
+    <string name="create_copy_regexp">"<xliff:g id="name">%1$s</xliff:g> - kopija<xliff:g id="extension">%2$s</xliff:g>"</string>
+    <!-- Regular expression for new compressed file -->
+    <add-resource type="string" name="create_new_compress_file_regexp"/>
+    <string name="create_new_compress_file_regexp">"<xliff:g id="name">%1$s</xliff:g> - nova<xliff:g id="extension">%2$s</xliff:g>"</string>
+
+    <!-- Waiting dialog - Performing operation message -->
+    <add-resource type="string" name="waiting_dialog_msg"/>
+    <string name="waiting_dialog_msg">"Izvajanje postopka\u2026"</string>
+    <!-- Waiting dialog - Copying title -->
+    <add-resource type="string" name="waiting_dialog_copying_title"/>
+    <string name="waiting_dialog_copying_title">"Kopiranje\u2026"</string>
+    <!-- Waiting dialog - Copying message -->
+    <add-resource type="string" name="waiting_dialog_copying_msg"/>
+    <string name="waiting_dialog_copying_msg">"&lt;b&gt;od&lt;/b&gt; <xliff:g id="from">%1$s</xliff:g>&lt;br/&gt;&lt;b&gt;do&lt;/b&gt; <xliff:g id="to">%2$s</xliff:g>"</string>
+    <!-- Waiting dialog - Moving title -->
+    <add-resource type="string" name="waiting_dialog_moving_title"/>
+    <string name="waiting_dialog_moving_title">"Premikanje\u2026"</string>
+    <!-- Waiting dialog - Moving message -->
+    <add-resource type="string" name="waiting_dialog_moving_msg"/>
+    <string name="waiting_dialog_moving_msg">"&lt;b&gt;od&lt;/b&gt; <xliff:g id="from">%1$s</xliff:g>&lt;br/&gt;&lt;b&gt;do&lt;/b&gt; <xliff:g id="to">%2$s</xliff:g>"</string>
+    <!-- Waiting dialog - Deleting title -->
+    <add-resource type="string" name="waiting_dialog_deleting_title"/>
+    <string name="waiting_dialog_deleting_title">"Brisanje\u2026"</string>
+    <!-- Waiting dialog - Deleting message -->
+    <add-resource type="string" name="waiting_dialog_deleting_msg"/>
+    <string name="waiting_dialog_deleting_msg">"&lt;b&gt;Datoteka&lt;/b&gt; <xliff:g id="file">%1$s</xliff:g>"</string>
+    <!-- Waiting dialog - Extracting title -->
+    <add-resource type="string" name="waiting_dialog_extracting_title"/>
+    <string name="waiting_dialog_extracting_title">"Ekstrahiranje ..."</string>
+    <!-- Waiting dialog - Extracting message -->
+    <add-resource type="string" name="waiting_dialog_extracting_msg"/>
+    <string name="waiting_dialog_extracting_msg">"&lt;b&gt;Datoteka&lt;/b&gt; <xliff:g id="file">%1$s</xliff:g>"</string>
+    <!-- Waiting dialog - Extracting title -->
+    <add-resource type="string" name="waiting_dialog_compressing_title"/>
+    <string name="waiting_dialog_compressing_title">"Stiskanje\u2026"</string>
+    <!-- Waiting dialog - Extracting message -->
+    <add-resource type="string" name="waiting_dialog_compressing_msg"/>
+    <string name="waiting_dialog_compressing_msg">"&lt;b&gt;Datoteka&lt;/b&gt; <xliff:g id="file">%1$s</xliff:g>"</string>
+    <!-- Waiting dialog - Initializing the dialog -->
+    <add-resource type="string" name="waiting_dialog_analizing_msg"/>
+    <string name="waiting_dialog_analizing_msg"><![CDATA[<b>Analiziranje\u2026</b>]]></string>
+    <!-- Extracting - Success message -->
+    <add-resource type="string" name="msgs_extracting_success"/>
+    <string name="msgs_extracting_success">"Razširjanje je uspešno zaključeno. Podatki so razširjeni v <xliff:g id="destination">%1$s</xliff:g>."</string>
+    <!-- Compressing - Success message -->
+    <add-resource type="string" name="msgs_compressing_success"/>
+    <string name="msgs_compressing_success">"Stiskanje je uspešno zaključeno. Podatki so stisnjeni v <xliff:g id="destination">%1$s</xliff:g>."</string>
+
+    <!-- Actions Dialog - Title -->
+    <add-resource type="string" name="actions_dialog_title"/>
+    <string name="actions_dialog_title">"Dejanja"</string>
+    <!-- Actions Dialog - Menu - Properties of current folder -->
+    <add-resource type="string" name="actions_menu_properties_current_folder"/>
+    <string name="actions_menu_properties_current_folder">"Lastnosti"</string>
+    <!-- Actions Dialog - Menu - Refresh -->
+    <add-resource type="string" name="actions_menu_refresh"/>
+    <string name="actions_menu_refresh">"Osveži"</string>
+    <!-- Actions Dialog - Menu - New directory -->
+    <add-resource type="string" name="actions_menu_new_directory"/>
+    <string name="actions_menu_new_directory">"Preimenuj"</string>
+    <!-- Actions Dialog - Menu - New file -->
+    <add-resource type="string" name="actions_menu_new_file"/>
+    <string name="actions_menu_new_file">"Nova datoteka"</string>
+    <!-- Actions Dialog - Menu - Select all -->
+    <add-resource type="string" name="actions_menu_select_all"/>
+    <string name="actions_menu_select_all">"Izberi vse"</string>
+    <!-- Actions Dialog - Menu - Deselect all -->
+    <add-resource type="string" name="actions_menu_deselect_all"/>
+    <string name="actions_menu_deselect_all">"Prekliči izbor"</string>
+    <!-- Actions Dialog - Menu - Select -->
+    <add-resource type="string" name="actions_menu_select"/>
+    <string name="actions_menu_select">"Izberi"</string>
+    <!-- Actions Dialog - Menu - Deselect -->
+    <add-resource type="string" name="actions_menu_deselect"/>
+    <string name="actions_menu_deselect">"Prekliči izbor"</string>
+    <!-- Actions Dialog - Menu - Copy/Paste selection -->
+    <add-resource type="string" name="actions_menu_paste_selection"/>
+    <string name="actions_menu_paste_selection">"Izbor kopiraj sem"</string>
+    <!-- Actions Dialog - Menu - Move selection -->
+    <add-resource type="string" name="actions_menu_move_selection"/>
+    <string name="actions_menu_move_selection">"Izbor prem. sem"</string>
+    <!-- Actions Dialog - Menu - Delete selection -->
+    <add-resource type="string" name="actions_menu_delete_selection"/>
+    <string name="actions_menu_delete_selection">"Izbriši izbor"</string>
+    <!-- Actions Dialog - Menu - Compress selection -->
+    <add-resource type="string" name="actions_menu_compress_selection"/>
+    <string name="actions_menu_compress_selection">"Stisni izbor"</string>
+    <!-- Actions Dialog - Menu - Create link -->
+    <add-resource type="string" name="actions_menu_create_link"/>
+    <string name="actions_menu_create_link">"Ustvari povezavo"</string>
+    <!-- Actions Dialog - Menu - Open -->
+    <add-resource type="string" name="actions_menu_open"/>
+    <string name="actions_menu_open">"Odpri"</string>
+    <!-- Actions Dialog - Menu - Open with -->
+    <add-resource type="string" name="actions_menu_open_with"/>
+    <string name="actions_menu_open_with">"Odpiranje z aplikacijo"</string>
+    <!-- Actions Dialog - Menu - Execute -->
+    <add-resource type="string" name="actions_menu_execute"/>
+    <string name="actions_menu_execute">"Izvedi"</string>
+    <!-- Actions Dialog - Menu - Send -->
+    <add-resource type="string" name="actions_menu_send"/>
+    <string name="actions_menu_send">"Pošlji"</string>
+    <!-- Actions Dialog - Menu - Send selection -->
+    <add-resource type="string" name="actions_menu_send_selection"/>
+    <string name="actions_menu_send_selection">"Pošlji izbor"</string>
+    <!-- Actions Dialog - Menu - Compress -->
+    <add-resource type="string" name="actions_menu_compress"/>
+    <string name="actions_menu_compress">"Stisni"</string>
+    <!-- Actions Dialog - Menu - Extract -->
+    <add-resource type="string" name="actions_menu_extract"/>
+    <string name="actions_menu_extract">"Razširi"</string>
+    <!-- Actions Dialog - Menu - Delete -->
+    <add-resource type="string" name="actions_menu_delete"/>
+    <string name="actions_menu_delete">"Izbriši"</string>
+    <!-- Actions Dialog - Menu - Rename -->
+    <add-resource type="string" name="actions_menu_rename"/>
+    <string name="actions_menu_rename">"Preimenuj"</string>
+    <!-- Actions Dialog - Menu - Create copy -->
+    <add-resource type="string" name="actions_menu_create_copy"/>
+    <string name="actions_menu_create_copy">"Ustvari kopijo"</string>
+    <!-- Actions Dialog - Menu - Properties -->
+    <add-resource type="string" name="actions_menu_properties"/>
+    <string name="actions_menu_properties">"Lastnosti"</string>
+    <!-- Actions Dialog - Menu - Add to bookmarks -->
+    <add-resource type="string" name="actions_menu_add_to_bookmarks"/>
+    <string name="actions_menu_add_to_bookmarks">"Dodaj med zazn."</string>
+    <!-- Actions Dialog - Menu - Add shortcut -->
+    <add-resource type="string" name="actions_menu_add_shortcut"/>
+    <string name="actions_menu_add_shortcut">"Dodaj bližnjico"</string>
+    <!-- Actions Dialog - Menu - Open parent folder -->
+    <add-resource type="string" name="actions_menu_open_parent_folder"/>
+    <string name="actions_menu_open_parent_folder">"Odpri nadrejeno"</string>
+    <!-- Actions Dialog - Menu - Compute checksum -->
+    <add-resource type="string" name="actions_menu_compute_checksum"/>
+    <string name="actions_menu_compute_checksum">"Prerač. kont. vsoto"</string>
+    <!-- Actions Dialog - Menu - Print -->
+    <add-resource type="string" name="actions_menu_print"/>
+    <string name="actions_menu_print">"Natisni"</string>
+    <!-- Actions Dialog - Menu - Set as home -->
+    <add-resource type="string" name="actions_menu_set_as_home"/>
+    <string name="actions_menu_set_as_home">"Nastavi za domače"</string>
+
+    <!-- Actions - Ask user prior to do an undone operation. Dialog message -->
+    <add-resource type="string" name="actions_ask_undone_operation_msg"/>
+    <string name="actions_ask_undone_operation_msg">"Dejanja ni mogoče razveljaviti. Ali želite nadaljevati?"</string>
+
+    <!-- Enter Name Dialog - Label -->
+    <add-resource type="string" name="input_name_dialog_label"/>
+    <string name="input_name_dialog_label">"Ime:"</string>
+    <!-- Enter Name Dialog - Message - Empty name -->
+    <add-resource type="string" name="input_name_dialog_message_empty_name"/>
+    <string name="input_name_dialog_message_empty_name">"Ime ne sme biti prazno."</string>
+    <!-- Enter Name Dialog - Message - Invalid name -->
+    <add-resource type="string" name="input_name_dialog_message_invalid_path_name"/>
+    <string name="input_name_dialog_message_invalid_path_name">"Neveljavno ime. Znaki \'<xliff:g id="invalid_characters">%1$s</xliff:g>\' niso dovoljeni."</string>
+    <!-- Enter Name Dialog - Message - Invalid name length -->
+    <add-resource type="string" name="input_name_dialog_message_invalid_name_length"/>
+    <string name="input_name_dialog_message_invalid_name_length">"Največje število znakov doseženo"</string>
+    <!-- Enter Name Dialog - Message - Invalid name -->
+    <add-resource type="string" name="input_name_dialog_message_invalid_name"/>
+    <string name="input_name_dialog_message_invalid_name">"Neveljavno ime. Imena \'.\' in \'..\' niso dovoljena."</string>
+    <!-- Enter Name Dialog - Message - Name exists -->
+    <add-resource type="string" name="input_name_dialog_message_name_exists"/>
+    <string name="input_name_dialog_message_name_exists">"Ime že obstaja."</string>
+
+    <!-- Associations Dialog - Title -->
+    <add-resource type="string" name="associations_dialog_title"/>
+    <string name="associations_dialog_title">"Povezave"</string>
+    <!-- Associations Dialog - Remember the user action -->
+    <add-resource type="string" name="associations_dialog_remember"/>
+    <string name="associations_dialog_remember">"Zapomni si izbiro"</string>
+    <!-- Associations Dialog - Open with Title -->
+    <add-resource type="string" name="associations_dialog_openwith_title"/>
+    <string name="associations_dialog_openwith_title">"Odpiranje z aplikacijo"</string>
+    <!-- Associations Dialog - Open action (button title) -->
+    <add-resource type="string" name="associations_dialog_openwith_action"/>
+    <string name="associations_dialog_openwith_action">"Odpri"</string>
+    <!-- Associations Dialog - Send with Title -->
+    <add-resource type="string" name="associations_dialog_sendwith_title"/>
+    <string name="associations_dialog_sendwith_title">"Pošlji z"</string>
+    <!-- Associations Dialog - Send action (button title) -->
+    <add-resource type="string" name="associations_dialog_sendwith_action"/>
+    <string name="associations_dialog_sendwith_action">"Pošlji"</string>
+
+    <!-- Inline Autocomplete Widget - Tab message nothing to complete -->
+    <add-resource type="string" name="inline_autocomplete_tab_nothing_to_complete_msg"/>
+    <string name="inline_autocomplete_tab_nothing_to_complete_msg">"Nič ne potrebuje dokončanja."</string>
+
+    <!-- Execution console - Title -->
+    <add-resource type="string" name="execution_console_title"/>
+    <string name="execution_console_title">"Konzola"</string>
+    <!-- Execution console - The script name label -->
+    <add-resource type="string" name="execution_console_script_name_label"/>
+    <string name="execution_console_script_name_label">"Skript:"</string>
+    <!-- Execution console - The script execution time label -->
+    <add-resource type="string" name="execution_console_script_execution_time_label"/>
+    <string name="execution_console_script_execution_time_label">"Čas:"</string>
+    <!-- Execution console - The script exit code label -->
+    <add-resource type="string" name="execution_console_script_exitcode_label"/>
+    <string name="execution_console_script_exitcode_label">"Izhodna koda:"</string>
+    <!-- Execution console - The script execution time seconds string -->
+    <add-resource type="string" name="execution_console_script_execution_time_text"/>
+    <string name="execution_console_script_execution_time_text">"<xliff:g id="seconds">%1$s</xliff:g> s."</string>
+
+    <!-- Compute checksum - Title -->
+    <add-resource type="string" name="compute_checksum_title"/>
+    <string name="compute_checksum_title">"Preračunaj kont. vsoto"</string>
+    <!-- Compute checksum - The file name label -->
+    <add-resource type="string" name="compute_checksum_filename_label"/>
+    <string name="compute_checksum_filename_label">"Datoteka:"</string>
+    <!-- Compute checksum - The computing checksum message-->
+    <add-resource type="string" name="compute_checksum_computing_checksum_msg"/>
+    <string name="compute_checksum_computing_checksum_msg">"Preračunavanje kontrolne vsote\u2026"</string>
+
+    <!-- Mime/Types - Folder -->
+    <add-resource type="string" name="mime_folder"/>
+    <string name="mime_folder">"Mapa"</string>
+    <!-- Mime/Types - Symlink -->
+    <add-resource type="string" name="mime_symlink"/>
+    <string name="mime_symlink">"Simbolna povezava"</string>
+    <!-- Mime/Types - Unknown -->
+    <add-resource type="string" name="mime_unknown"/>
+    <string name="mime_unknown">"Neznano"</string>
+
+    <!--  Filetime formats -->
+    <add-resource type="string" name="filetime_format_mode_system"/>
+    <string name="filetime_format_mode_system">"Sistemsko določeno"</string>
+    <add-resource type="string" name="filetime_format_mode_locale"/>
+    <string name="filetime_format_mode_locale">"Krajevno določeno"</string>
+    <add-resource type="string" name="filetime_format_mode_ddMMyyyy_HHmmss"/>
+    <string name="filetime_format_mode_ddMMyyyy_HHmmss">"dd/mm/llll uu:mm:ss"</string>
+    <add-resource type="string" name="filetime_format_mode_MMddyyyy_HHmmss"/>
+    <string name="filetime_format_mode_MMddyyyy_HHmmss">"mm/dd/llll uu:mm:ss"</string>
+    <add-resource type="string" name="filetime_format_mode_yyyyMMdd_HHmmss"/>
+    <string name="filetime_format_mode_yyyyMMdd_HHmmss">"llll-mm-dd uu:mm:ss"</string>
+
+    <!-- Selection -->
+    <!-- For example "2 folders and 1 file selected." -->
+    <add-resource type="string" name="selection_folders_and_files"/>
+    <string name="selection_folders_and_files">"Št. izbranih: <xliff:g id="folders">%1$s</xliff:g> in <xliff:g id="files">%2$s</xliff:g>."</string>
+
+    <!-- Category descriptions -->
+    <add-resource type="string" name="category_system"/>
+    <string name="category_system">"SISTEM"</string>
+    <add-resource type="string" name="category_app"/>
+    <string name="category_app">"APLIKACIJA"</string>
+    <add-resource type="string" name="category_binary"/>
+    <string name="category_binary">"DVOJIŠKO"</string>
+    <add-resource type="string" name="category_text"/>
+    <string name="category_text">"BESEDILO"</string>
+    <add-resource type="string" name="category_document"/>
+    <string name="category_document">"DOKUMENT"</string>
+    <add-resource type="string" name="category_ebook"/>
+    <string name="category_ebook">"E-KNJIGA"</string>
+    <add-resource type="string" name="category_mail"/>
+    <string name="category_mail">"POŠTA"</string>
+    <add-resource type="string" name="category_compress"/>
+    <string name="category_compress">"STISNI"</string>
+    <add-resource type="string" name="category_exec"/>
+    <string name="category_exec">"IZVEDLJIVO"</string>
+    <add-resource type="string" name="category_database"/>
+    <string name="category_database">"ZBIRKA PODATKOV"</string>
+    <add-resource type="string" name="category_font"/>
+    <string name="category_font">"PISAVA"</string>
+    <add-resource type="string" name="category_image"/>
+    <string name="category_image">"SLIKA"</string>
+    <add-resource type="string" name="category_audio"/>
+    <string name="category_audio">"ZVOK"</string>
+    <add-resource type="string" name="category_video"/>
+    <string name="category_video">"VIDEO"</string>
+    <add-resource type="string" name="category_security"/>
+    <string name="category_security">"VARNOST"</string>
+    <add-resource type="string" name="category_drm"/>
+    <string name="category_drm">DRM</string>
+    <add-resource type="string" name="category_all"/>
+    <string name="category_all">"VSE"</string>
+
+    <!-- Compression - Compression modes dialog title -->
+    <add-resource type="string" name="compression_mode_title"/>
+    <string name="compression_mode_title">"Način stiskanja"</string>
+
+    <!-- Shortcut. Failed to handle the shortcut -->
+    <add-resource type="string" name="shortcut_failed_msg"/>
+    <string name="shortcut_failed_msg">"Upravljanje bližnjice ni uspelo."</string>
+    <!-- Shortcut. The shortcut was created -->
+    <add-resource type="string" name="shortcut_creation_success_msg"/>
+    <string name="shortcut_creation_success_msg">"Ustvarjanje bližnjice je uspelo."</string>
+    <!-- Shortcut. The shortcut wasn't created -->
+    <add-resource type="string" name="shortcut_creation_failed_msg"/>
+    <string name="shortcut_creation_failed_msg">"Ustvarjanje bližnjice ni uspelo."</string>
+
+    <!-- Preferences title -->
+    <add-resource type="string" name="pref"/>
+    <string name="pref">"Nastavitve"</string>
+    <!-- Preferences - General title -->
+    <add-resource type="string" name="pref_general"/>
+    <string name="pref_general">"Splošne nastavitve"</string>
+    <!-- Preferences - Search title -->
+    <add-resource type="string" name="pref_search"/>
+    <string name="pref_search">"Možnosti iskanja"</string>
+    <!-- Preferences - Editor title -->
+    <add-resource type="string" name="pref_editor"/>
+    <string name="pref_editor">"Možnosti urejevalnika"</string>
+    <!-- Preferences - Themes title -->
+    <add-resource type="string" name="pref_themes"/>
+    <string name="pref_themes">"Teme"</string>
+    <!-- Preferences - About title -->
+    <add-resource type="string" name="pref_about"/>
+    <string name="pref_about">"Vizitka"</string>
+    <!-- Preferences - About summary -->
+    <add-resource type="string" name="pref_about_summary"/>
+    <string name="pref_about_summary">"Upravitelj datotek v<xliff:g id="version">%1$s</xliff:g>\nAvtorske pravice \u00A9 2012–2014 Projekt CyanogenMod"</string>
+
+    <!-- Preferences - General - Behaviour category -->
+    <add-resource type="string" name="pref_general_behaviour_category"/>
+    <string name="pref_general_behaviour_category">"Splošno"</string>
+    <!-- Preferences - General - Case sensitive sort and navigating title -->
+    <add-resource type="string" name="pref_case_sensitive_sort"/>
+    <string name="pref_case_sensitive_sort">"Razlikovanje med velikimi in malimi črkami"</string>
+    <!-- Preferences - General - Case sensitive sort and navigating summary -->
+    <add-resource type="string" name="pref_case_sensitive_sort_summary"/>
+    <string name="pref_case_sensitive_sort_summary">"Med krmarjenjem po ali med razvrščanjem rezultatov iskanja upoštevajte velike/male črke."</string>
+    <!-- Preferences - General - Filetime format mode title -->
+    <add-resource type="string" name="pref_filetime_format_mode"/>
+    <string name="pref_filetime_format_mode">"Oblika datuma/ure"</string>
+    <!-- Preferences - General -Disk usage warning level title -->
+    <add-resource type="string" name="pref_disk_usage_warning_level"/>
+    <string name="pref_disk_usage_warning_level">"Opozorilo na porabo diska"</string>
+    <!-- Preferences - General - Disk usage warning level summary -->
+    <!-- FIXME Use "percent" instead of "%" symbol, because it make crash the app on getSummary
+         of ListPreference. This should be fixed in frameworks base prior to be added here. -->
+    <add-resource type="string" name="pref_disk_usage_warning_level_summary"/>
+    <string name="pref_disk_usage_warning_level_summary" formatted="false">"Prikaži drugo barvo v gradnikih porabe diska, ko dosežejo <xliff:g id="level">%1$s</xliff:g> odstotkov prostora na disku"</string>
+    <!-- Preferences - General - Compute folder statistics title -->
+    <add-resource type="string" name="pref_compute_folder_statistics"/>
+    <string name="pref_compute_folder_statistics">"Preračunaj statistiko map"</string>
+    <!-- Preferences - General - Compute folder statistics summary on -->
+    <add-resource type="string" name="pref_compute_folder_statistics_on"/>
+    <string name="pref_compute_folder_statistics_on">"Opozorilo! Preračunavanje statistike map zahteva veliko časa in sistemskih sredstev"</string>
+    <!-- Preferences - General - Display thumbs -->
+    <add-resource type="string" name="pref_display_thumbs"/>
+    <string name="pref_display_thumbs">"Predogled"</string>
+    <!-- Preferences - General - Display thumbs summary -->
+    <add-resource type="string" name="pref_display_thumbs_summary"/>
+    <string name="pref_display_thumbs_summary">"Pokaži predogled slike za aplikacije, glasbene datoteke, slike in videe."</string>
+    <!-- Preferences - General - Use flinger detection -->
+    <add-resource type="string" name="pref_use_flinger"/>
+    <string name="pref_use_flinger">"Podrsaj"</string>
+    <!-- Preferences - General - Use flinger detection summary -->
+    <add-resource type="string" name="pref_use_flinger_summary"/>
+    <string name="pref_use_flinger_summary">"Za brisanje datotek ali map podrsajte od leve proti desni"</string>
+    <!-- Preferences - General - Advanced settings category -->
+    <add-resource type="string" name="pref_general_advanced_settings_category"/>
+    <string name="pref_general_advanced_settings_category">"Dodatno"</string>
+    <!-- Preferences - General - Access mode -->
+    <add-resource type="string" name="pref_access_mode"/>
+    <string name="pref_access_mode">"Način dostopa"</string>
+    <!-- Preferences - General - Safe mode -->
+    <add-resource type="string" name="pref_access_mode_safe"/>
+    <string name="pref_access_mode_safe">"Varni način"</string>
+    <!-- Preferences - General - Safe mode summary -->
+    <add-resource type="string" name="pref_access_mode_safe_summary"/>
+    <string name="pref_access_mode_safe_summary">"Varen način\n\nAplikacija se izvaja brez pravic in edini dostopni datotečni sistemi so nosilci za shranjevanje (kartice SD in USB)"</string>
+    <!-- Preferences - General - Prompt user mode -->
+    <add-resource type="string" name="pref_access_mode_prompt"/>
+    <string name="pref_access_mode_prompt">"Način pozivanja uporabnika"</string>
+    <!-- Preferences - General - Prompt user mode summary -->
+    <add-resource type="string" name="pref_access_mode_prompt_summary"/>
+    <string name="pref_access_mode_prompt_summary">"Način pozivanja uporabnika\n\nTa aplikacija se izvaja s polnim dostopom do datotečnega sistema, vendar prosi za dovoljenje pred izvajanjem dejanja, za katerega potrebuje dovoljenje"</string>
+    <!-- Preferences - General - Root access mode -->
+    <add-resource type="string" name="pref_access_mode_root"/>
+    <string name="pref_access_mode_root">"Način korenskega dostopa"</string>
+    <!-- Preferences - General - Root access mode summary -->
+    <add-resource type="string" name="pref_access_mode_root_summary"/>
+    <string name="pref_access_mode_root_summary">"Način korenskega dostopa\n\nOpozorilo! Ta način omogoča izvajanje postopkov, ki lahko poškodujejo vašo napravo. Varno delovanje je vaša odgovornost"</string>
+    <!-- Preferences - General - Restrict secondary users access title -->
+    <add-resource type="string" name="pref_restrict_secondary_users_access_title"/>
+    <string name="pref_restrict_secondary_users_access_title">"Omeji dostop uporabnikom"</string>
+    <!-- Preferences - General - Restrict secondary users access summary -->
+    <add-resource type="string" name="pref_restrict_secondary_users_access_summary"/>
+    <string name="pref_restrict_secondary_users_access_summary">"Omeji dostop sekundarnih uporabnikov do celotnega sistema"</string>
+    <!-- Preferences - Search - Results category -->
+    <add-resource type="string" name="pref_search_results_category"/>
+    <string name="pref_search_results_category">"Rezultati"</string>
+    <!-- Preferences - Search - Show relevance widget -->
+    <add-resource type="string" name="pref_show_relevance_widget"/>
+    <string name="pref_show_relevance_widget">"Gradnik za prikaz pomembnosti"</string>
+    <!-- Preferences - Search - Highlight search terms -->
+    <add-resource type="string" name="pref_highlight_terms"/>
+    <string name="pref_highlight_terms">"Označi iskalne izraze"</string>
+    <!-- Preferences - Search - Sort results mode -->
+    <add-resource type="string" name="pref_sort_search_results_mode"/>
+    <string name="pref_sort_search_results_mode">"Način razvrščanja rezultatov"</string>
+    <!-- Preferences - Search - Sort results mode. None -->
+    <add-resource type="string" name="pref_sort_search_results_mode_none"/>
+    <string name="pref_sort_search_results_mode_none">"Brez razvrščanja"</string>
+    <!-- Preferences - Search - Sort results mode. None -->
+    <add-resource type="string" name="pref_sort_search_results_mode_name"/>
+    <string name="pref_sort_search_results_mode_name">"Po imenu"</string>
+    <!-- Preferences - Search - Sort results mode. Relevance -->
+    <add-resource type="string" name="pref_sort_search_results_mode_relevance"/>
+    <string name="pref_sort_search_results_mode_relevance">"Po pomembnosti"</string>
+    <!-- Preferences - Search - Privacity category -->
+    <add-resource type="string" name="pref_search_privacity_category"/>
+    <string name="pref_search_privacity_category">"Zasebnost"</string>
+    <!-- Preferences - Search - Save search terms -->
+    <add-resource type="string" name="pref_save_search_terms"/>
+    <string name="pref_save_search_terms">"Shrani iskalne izraze"</string>
+    <!-- Preferences - Search - Save search terms summary on -->
+    <add-resource type="string" name="pref_save_search_terms_on"/>
+    <string name="pref_save_search_terms_on">"Iskalni izrazi bodo shranjeni in predlagani pri prihodnjih iskanjih"</string>
+    <!-- Preferences - Search - Save search terms summary off -->
+    <add-resource type="string" name="pref_save_search_terms_off"/>
+    <string name="pref_save_search_terms_off">"Iskalni izrazi ne bodo shranjeni"</string>
+    <!-- Preferences - Search - Remove saved search terms -->
+    <add-resource type="string" name="pref_remove_saved_search_terms"/>
+    <string name="pref_remove_saved_search_terms">"Odstrani shranjene iskalne izraze"</string>
+    <!-- Preferences - Search - Remove saved search terms summary -->
+    <add-resource type="string" name="pref_remove_saved_search_terms_summary"/>
+    <string name="pref_remove_saved_search_terms_summary">"Tapnite za odstranitev vseh shranjenih iskalnih izrazov"</string>
+    <!-- Preferences - Search - Suggestions were truncated -->
+    <add-resource type="string" name="pref_remove_saved_search_terms_msg"/>
+    <string name="pref_remove_saved_search_terms_msg">"Vsi iskalni izrazi so odstranjeni"</string>
+    <!-- Preferences - Storage - Secure Storage category -->
+    <add-resource type="string" name="pref_secure_storage_category"/>
+    <string name="pref_secure_storage_category">"Varna shramba"</string>
+    <!-- Preferences - Storage - Secure Storage - Delayed sync title -->
+    <add-resource type="string" name="pref_secure_storage_delayed_sync_title"/>
+    <string name="pref_secure_storage_delayed_sync_title">"Zapoznjena sinhronizacija"</string>
+    <!-- Preferences - Storage - Secure Storage - Delayed sync summary -->
+    <add-resource type="string" name="pref_secure_storage_delayed_sync_summary"/>
+    <string name="pref_secure_storage_delayed_sync_summary">"Sinhronizacija varnih datotečnih sistemov je drag postopek. To možnost izberite za hitrejše odgovore po vsakem postopku, ki opravlja sinhronizacijo, ko je datotečni sistem v stanju neuporabe, vendar na račun izgube podatkov na čakanju, ki se ne sinhronizirajo v primeru zrušitve aplikacije."</string>
+    <!-- Preferences - Storage - Secure Storage - Reset password title -->
+    <add-resource type="string" name="pref_secure_storage_reset_password_title"/>
+    <string name="pref_secure_storage_reset_password_title">"Ponastavi geslo"</string>
+    <!-- Preferences - Storage - Secure Storage - Delete storage title -->
+    <add-resource type="string" name="pref_secure_storage_delete_storage_title"/>
+    <string name="pref_secure_storage_delete_storage_title">"Počisti pomnilnik"</string>
+    <!-- Preferences - Editor - Behaviour category -->
+    <add-resource type="string" name="pref_editor_behaviour_category"/>
+    <string name="pref_editor_behaviour_category">"Obnašanje"</string>
+    <!-- Preferences - Editor - No suggestions -->
+    <add-resource type="string" name="pref_no_suggestions"/>
+    <string name="pref_no_suggestions">"Ni predlogov"</string>
+    <!-- Preferences - Editor - No suggestions summary -->
+    <add-resource type="string" name="pref_no_suggestions_desc"/>
+    <string name="pref_no_suggestions_desc">"Med urejanjem datoteke ne prikaži predlogov slovarja"</string>
+    <!-- Preferences - Editor - Word wrap -->
+    <add-resource type="string" name="pref_word_wrap"/>
+    <string name="pref_word_wrap">"Prelom vrstice"</string>
+    <!-- Preferences - Editor - Hex dump -->
+    <add-resource type="string" name="pref_hexdump"/>
+    <string name="pref_hexdump">"Dvojiške datoteke s šestnajs. zapisom za izvoz"</string>
+    <!-- Preferences - Editor - Hex dump desc -->
+    <add-resource type="string" name="pref_hexdump_desc"/>
+    <string name="pref_hexdump_desc">"Pri odpiranju dvojiške datoteke ustvarite šestnajstiški zapis datoteke in jo odprite v pregledovalniku šestnajstiških vrednosti"</string>
+    <!-- Preferences - Editor - Syntax highlight category -->
+    <add-resource type="string" name="pref_editor_syntax_highlight_category"/>
+    <string name="pref_editor_syntax_highlight_category">"Označevanje skladnje"</string>
+    <!-- Preferences - Editor - Syntax highlight -->
+    <add-resource type="string" name="pref_syntax_highlight"/>
+    <string name="pref_syntax_highlight">"Označevanje skladnje"</string>
+    <!-- Preferences - Editor - Syntax highlight summary -->
+    <add-resource type="string" name="pref_syntax_highlight_desc"/>
+    <string name="pref_syntax_highlight_desc">"Označite skladnjo datoteke, ki je prikazana v urejevalniku (samo ko je na voljo urejevalnik za označevanje skladnje za to vrsto datoteke)"</string>
+    <!-- Preferences - Editor - Syntax highlight color scheme -->
+    <add-resource type="string" name="pref_syntax_highlight_color_scheme"/>
+    <string name="pref_syntax_highlight_color_scheme">"Barvna shema"</string>
+    <!-- Preferences - Editor - Syntax highlight color scheme summary -->
+    <add-resource type="string" name="pref_syntax_highlight_color_scheme_desc"/>
+    <string name="pref_syntax_highlight_color_scheme_desc">"Izberite barvno shemo za označevanje skladnje"</string>
+    <!-- Preferences - Editor - Syntax highlight - Color Scheme -->
+    <add-resource type="string" name="pref_syntax_sh_use_theme_default"/>
+    <string name="pref_syntax_sh_use_theme_default">"Uporabi privzeto temo"</string>
+    <!-- Preferences - Editor - Syntax highlight -Color Scheme summary -->
+    <add-resource type="string" name="pref_syntax_sh_use_theme_default_desc"/>
+    <string name="pref_syntax_sh_use_theme_default_desc">"Uporabi privzeto označevanje skladnje trenutne teme"</string>
+    <!-- Preferences - Editor - Syntax highlight - Color Scheme - Items category -->
+    <add-resource type="string" name="pref_editor_sh_item_category"/>
+    <string name="pref_editor_sh_item_category">"Predmeti"</string>
+    <!-- Preferences - Themes - Themes selection category -->
+    <add-resource type="string" name="pref_themes_selection_category"/>
+    <string name="pref_themes_selection_category">"Teme"</string>
+    <!-- Preferences - Themes - Set theme button -->
+    <add-resource type="string" name="pref_themes_set_theme"/>
+    <string name="pref_themes_set_theme">"Nastavi temo"</string>
+    <!-- Preferences - Themes - Confirmation message -->
+    <add-resource type="string" name="pref_themes_confirmation"/>
+    <string name="pref_themes_confirmation">"Tema je uspešno uporabljena."</string>
+    <!-- Preferences - Themes - Theme not found message -->
+    <add-resource type="string" name="pref_themes_not_found"/>
+    <string name="pref_themes_not_found">"Tema ni bila najdena."</string>
+
+    <!-- Preferences - Debug - Capture debug traces -->
+    <add-resource type="string" name="pref_debug_traces"/>
+    <string name="pref_debug_traces">"Beleženje podatkov o iskanju napak"</string>
+
+    <!-- Themes - Default theme name -->
+    <add-resource type="string" name="theme_default_name"/>
+    <string name="theme_default_name">"Svetla tema"</string>
+    <!-- Themes - Default theme description -->
+    <add-resource type="string" name="theme_default_description"/>
+    <string name="theme_default_description">"Svetla tema za upravitelja datotek CyanogenMod."</string>
+    <!-- Themes - Default theme author -->
+    <add-resource type="string" name="themes_author"/>
+    <string name="themes_author">CyanogenMod</string>
+
+    <!-- Navigation drawer -->
+    <add-resource type="string" name="drawer_open"/>
+    <string name="drawer_open">"Odpri predal za navigacijo"</string>
+    <add-resource type="string" name="drawer_close"/>
+    <string name="drawer_close">"Zapri predal za navigacijo"</string>
+
+    <!-- ColorPickerDialog -->
+    <!-- The text of the alpha slider control -->
+    <add-resource type="string" name="color_picker_alpha_slider_text"/>
+    <string name="color_picker_alpha_slider_text">"Alfa"</string>
+    <!-- The label of the current color panel -->
+    <add-resource type="string" name="color_picker_current_text"/>
+    <string name="color_picker_current_text">"Trenutno:"</string>
+    <!-- The label of the new color panel -->
+    <add-resource type="string" name="color_picker_new_text"/>
+    <string name="color_picker_new_text">"Novo:"</string>
+    <!-- The label of the color input -->
+    <add-resource type="string" name="color_picker_color"/>
+    <string name="color_picker_color">"Barva:"</string>
+
+    <!-- Android Syntax Highlight -->
+    <add-resource type="string" name="ash_reset_color_scheme"/>
+    <string name="ash_reset_color_scheme">"Obnovi privzeto barvno shemo teme"</string>
+    <add-resource type="string" name="ash_text"/>
+    <string name="ash_text">"SMS"</string>
+    <add-resource type="string" name="ash_assignment"/>
+    <string name="ash_assignment">"Dodelitev"</string>
+    <add-resource type="string" name="ash_singleline_comment"/>
+    <string name="ash_singleline_comment">"Komentar v eni vrstici"</string>
+    <add-resource type="string" name="ash_multiline_comment"/>
+    <string name="ash_multiline_comment">"Komentar v več vrsticah"</string>
+    <add-resource type="string" name="ash_keyword"/>
+    <string name="ash_keyword">"Ključna beseda"</string>
+    <add-resource type="string" name="ash_quoted_string"/>
+    <string name="ash_quoted_string">"Niz v narekovajih"</string>
+    <add-resource type="string" name="ash_variable"/>
+    <string name="ash_variable">"Spremenljivka"</string>
+
+    <!-- Secure Storage -->
+    <!-- Secure Storage dialog title - Unlock -->
+    <add-resource type="string" name="secure_storage_unlock_title"/>
+    <string name="secure_storage_unlock_title">"Odkleni pomnilnik"</string>
+    <!-- Secure Storage dialog title - Create -->
+    <add-resource type="string" name="secure_storage_create_title"/>
+    <string name="secure_storage_create_title">"Ustvari pomnilnik"</string>
+    <!-- Secure Storage dialog title - Reset -->
+    <add-resource type="string" name="secure_storage_reset_title"/>
+    <string name="secure_storage_reset_title">"Ponastavi geslo"</string>
+    <!-- Secure Storage dialog title - Delete -->
+    <add-resource type="string" name="secure_storage_delete_title"/>
+    <string name="secure_storage_delete_title">"Počisti pomnilnik"</string>
+    <!-- Secure Storage unlock dialog message (secure storage exists) -->
+    <add-resource type="string" name="secure_storage_unlock_key_prompt_msg"/>
+    <string name="secure_storage_unlock_key_prompt_msg">"Vnesite geslo za odklepanje datotečnega sistema varne shrambe."</string>
+    <!-- Secure Storage unlock dialog message (new secure storage) -->
+    <add-resource type="string" name="secure_storage_unlock_key_new_msg"/>
+    <string name="secure_storage_unlock_key_new_msg">"Vnesite geslo za zaščito datotečnega sistema varne shrambe."</string>
+    <!-- Secure Storage unlock dialog message (reset the current password) -->
+    <add-resource type="string" name="secure_storage_unlock_key_reset_msg"/>
+    <string name="secure_storage_unlock_key_reset_msg">"Vnesite trenutno in novo geslo za ponastavitev datotečnega sistema varne shrambe."</string>
+    <!-- Secure Storage unlock dialog message (delete the secure storage) -->
+    <add-resource type="string" name="secure_storage_unlock_key_delete_msg"/>
+    <string name="secure_storage_unlock_key_delete_msg">"Vnesite trenutno geslo za izbris datotečnega sistema varne shrambe."</string>
+    <!-- Secure Storage unlock dialog old key title -->
+    <add-resource type="string" name="secure_storage_unlock_old_key_title"/>
+    <string name="secure_storage_unlock_old_key_title">"Staro geslo:"</string>
+    <!-- Secure Storage unlock dialog key title -->
+    <add-resource type="string" name="secure_storage_unlock_new_key_title"/>
+    <string name="secure_storage_unlock_new_key_title">"Novo geslo:"</string>
+    <!-- Secure Storage unlock dialog key title -->
+    <add-resource type="string" name="secure_storage_unlock_key_title"/>
+    <string name="secure_storage_unlock_key_title">"Geslo:"</string>
+    <!-- Secure Storage unlock dialog repeat key title-->
+    <add-resource type="string" name="secure_storage_unlock_repeat_title"/>
+    <string name="secure_storage_unlock_repeat_title">"Ponovi geslo:"</string>
+    <!-- Secure Storage create button -->
+    <add-resource type="string" name="secure_storage_create_button"/>
+    <string name="secure_storage_create_button">"Ustvari"</string>
+    <!-- Secure Storage unlock button -->
+    <add-resource type="string" name="secure_storage_unlock_button"/>
+    <string name="secure_storage_unlock_button">"Odkleni"</string>
+    <!-- Secure Storage reset button -->
+    <add-resource type="string" name="secure_storage_reset_button"/>
+    <string name="secure_storage_reset_button">"Ponastavi"</string>
+    <!-- Secure Storage delete button -->
+    <add-resource type="string" name="secure_storage_delete_button"/>
+    <string name="secure_storage_delete_button">"Izbriši"</string>
+    <!-- Secure Storage unlock failed toast -->
+    <add-resource type="string" name="secure_storage_unlock_failed"/>
+    <string name="secure_storage_unlock_failed">"Pomnilnika ni mogoče odkleniti"</string>
+    <!-- Secure Storage unlock validation, length -->
+    <add-resource type="string" name="secure_storage_unlock_validation_length"/>
+    <string name="secure_storage_unlock_validation_length">"Geslo mora vsebovati najmanj <xliff:g id="characters">%1$d</xliff:g> znakov."</string>
+    <!-- Secure Storage unlock validation, equal -->
+    <add-resource type="string" name="secure_storage_unlock_validation_equals"/>
+    <string name="secure_storage_unlock_validation_equals">"Gesli se ne ujemata."</string>
+    <!-- Secure storage open file warning -->
+    <add-resource type="string" name="secure_storage_open_file_warning"/>
+    <string name="secure_storage_open_file_warning">"S tem boste kopirali datoteko na začasno  nešifrirano mesto. Počiščeno bo čez 1 uro."</string>
+
+
+    <!-- Print messages -->
+    <!-- Unsupported document format -->
+    <add-resource type="string" name="print_unsupported_document"/>
+    <string name="print_unsupported_document">"Nepodprta oblika dokumenta"</string>
+    <!-- Unsupported image format -->
+    <add-resource type="string" name="print_unsupported_image"/>
+    <string name="print_unsupported_image">"Nepodprta oblika slike"</string>
+    <!-- Print header -->
+    <add-resource type="string" name="print_document_header"/>
+    <string name="print_document_header">"Dokument: <xliff:g id="document_name">%1$s</xliff:g>"</string>
+    <!-- Print footer -->
+    <add-resource type="string" name="print_document_footer"/>
+    <string name="print_document_footer">"Stran <xliff:g id="page_number">%1$s</xliff:g>"</string>
+
+    <!-- Security - Extract relative or absolute files -->
+    <add-resource type="string" name="security_warning_extract"/>
+    <string name="security_warning_extract">"Opozorilo!\n\nRazširjanje datoteke arhiva z relativno ali absolutno potjo lahko s prepisovanjem sistemskih datotek poškoduje vašo napravo.\n\nAli želite nadaljevati?"</string>
+
+    <!-- ChangeLog - Dialog title -->
+    <add-resource type="string" name="changelog_title"/>
+    <string name="changelog_title">"Dnevnik sprememb"</string>
+
+    <!-- Welcome Dialog - Title -->
+    <add-resource type="string" name="welcome_title"/>
+    <string name="welcome_title">"Dobrodošli"</string>
+    <!-- Welcome Dialog - Message -->
+    <add-resource type="string" name="welcome_msg"/>
+    <string name="welcome_msg">"Dobrodošli v upravitelju datotek CyanogenMod.\n\nTa aplikacija omogoča raziskovanje datotečnega sistema in izvajanje postopkov, ki lahko poškodujejo vašo napravo. Da se naprava ne poškoduje, se aplikacija zažene v varnem načinu, ki zahteva malo pravic.\n\nNapreden način s vsemi pravicami lahko omogočite prek Nastavitev. Sami morate zagotoviti, da postopek ne poškoduje vašega sistema.\n\nEkipa CyanogenMod"</string>
+
+    <add-resource type="string" name="easy_mode_type_icon"/>
+    <string name="easy_mode_type_icon">"Ikona za vrsto mime"</string>
+    <add-resource type="string" name="easy_mode_type_none"/>
+    <string name="easy_mode_type_none">"Vse datoteke"</string>
+    <add-resource type="string" name="easy_mode_type_images"/>
+    <string name="easy_mode_type_images">"Slike"</string>
+    <add-resource type="string" name="easy_mode_type_videos"/>
+    <string name="easy_mode_type_videos">"Videoposnetki"</string>
+    <add-resource type="string" name="easy_mode_type_music"/>
+    <string name="easy_mode_type_music">"Glasba"</string>
+    <add-resource type="string" name="easy_mode_type_documents"/>
+    <string name="easy_mode_type_documents">"Dokumenti"</string>
+
+    <add-resource type="string" name="activity_not_found_exception"/>
+    <string name="activity_not_found_exception">"Ni mogoče najti aplikacije za odpiranje te datoteke"</string>
+    <add-resource type="string" name="no_permission_for_drm"/>
+    <string name="no_permission_for_drm">"Datoteke DRM ni mogoče deliti"</string>
+    <add-resource type="string" name="actions_menu_drm_license_info"/>
+    <string name="actions_menu_drm_license_info">"Podatki o licenci DRM"</string></resources>

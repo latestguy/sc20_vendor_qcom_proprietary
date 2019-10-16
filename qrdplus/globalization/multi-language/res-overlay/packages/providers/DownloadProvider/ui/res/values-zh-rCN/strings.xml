@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ *
+ * Not a Contribution.
+ * Apache license notifications and license are retained
+ * for attribution purposes only.
+ */
+-->
+<!--
+/*
+ * Copyright (C) 2010 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- The name of the application that appears in the launcher [CHAR LIMIT=15] -->
+    <add-resource type="string" name="app_label"/>
+    <string name="app_label">"下载"</string>
+    <!-- The title that appears at the top of the activity listing downloads sorted by date [CHAR LIMIT=40] -->
+    <add-resource type="string" name="download_title_sorted_by_date"/>
+    <string name="download_title_sorted_by_date">"下载内容 - 按日期排序"</string>
+    <!-- The title that appears at the top of the activity listing downloads sorted by size [CHAR LIMIT=40] -->
+    <add-resource type="string" name="download_title_sorted_by_size"/>
+    <string name="download_title_sorted_by_size">"下载内容 - 按大小排序"</string>
+
+    <!-- Appears in lieu of the list of downloads if there are no downloads to view
+         [CHAR LIMIT=200] -->
+    <add-resource type="string" name="no_downloads"/>
+    <string name="no_downloads">"无下载内容。"</string>
+
+    <!-- Default title for an item in the download list for which no title was provided by the app.
+         [CHAR LIMIT=20] -->
+    <add-resource type="string" name="missing_title"/>
+    <string name="missing_title">"&lt;未知&gt;"</string>
+
+    <!-- Button to display sort-by-size option [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_sort_by_size"/>
+    <string name="button_sort_by_size">"按大小排序"</string>
+    <!-- Button to display sort-by-date option [CHAR LIMIT=25] -->
+    <add-resource type="string" name="button_sort_by_date"/>
+    <string name="button_sort_by_date">"按日期排序"</string>
+
+    <!-- Status messages -->
+
+    <!-- Status indicating that the download has been queued to start in the future.  Appears for an
+         individual item in the download list.  [CHAR LIMIT=11] -->
+    <add-resource type="string" name="download_queued"/>
+    <string name="download_queued">"已加入队列"</string>
+    <!-- Status indicating that the system is currently downloading the file.  Appears for an
+         individual item in the download list.  [CHAR LIMIT=11] -->
+    <add-resource type="string" name="download_running"/>
+    <string name="download_running">"正在下载"</string>
+    <!-- Status indicating that the download has completed successfully. Appears for an individual
+         item in the download list.  [CHAR LIMIT=11] -->
+    <add-resource type="string" name="download_success"/>
+    <string name="download_success">"已完成"</string>
+    <!-- Status indicating that the download has ended without completing successfully.  Appears for
+         an individual item in the download list.  [CHAR LIMIT=11] -->
+    <add-resource type="string" name="download_error"/>
+    <string name="download_error">"失败"</string>
+
+    <!-- Dialog/toast messages -->
+
+    <!-- Title of dialog that is shown when the user clicks a download for which no file is
+         available, either because the download hasn't started or because the download failed
+         [CHAR LIMIT=25] -->
+    <add-resource type="string" name="dialog_title_not_available"/>
+    <string name="dialog_title_not_available">"无法下载"</string>
+    <!-- Text for dialog when user clicks on a download that failed [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_failed_body"/>
+    <string name="dialog_failed_body">"您想要稍后重新尝试下载该文件，还是将其从队列中删除？"</string>
+    <!-- Title for dialog when user clicks on a download that has not yet begun, but will be started
+         in the future. [CHAR LIMIT=25] -->
+    <add-resource type="string" name="dialog_title_queued_body"/>
+    <string name="dialog_title_queued_body">"等待下载的文件"</string>
+    <!-- Text for dialog when user clicks on a download that has not yet begun, but will be started
+         in the future. [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_queued_body"/>
+    <string name="dialog_queued_body">"此文件正在等待下载，因此暂时无法使用。"</string>
+    <!-- Text for dialog when user clicks on a completed download but the file is missing
+         [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_file_missing_body"/>
+    <string name="dialog_file_missing_body">"找不到已下载的文件。"</string>
+    <!-- Text for dialog when user clicks on a download that failed due to insufficient space on
+         external storage [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_insufficient_space_on_external"/>
+    <string name="dialog_insufficient_space_on_external">"无法完成下载，外部存储器的空间不足。"</string>
+    <!-- Text for dialog when user clicks on a download that failed due to insufficient space on
+         the internal download cache [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_insufficient_space_on_cache"/>
+    <string name="dialog_insufficient_space_on_cache">"无法完成下载，内部下载存储器的空间不足。"</string>
+    <!-- Text for dialog when user clicks on a download that failed because it was interrupted and
+         the server doesn't support resuming downloads [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_cannot_resume"/>
+    <string name="dialog_cannot_resume">"下载中断，无法继续进行。"</string>
+    <!-- Text for dialog when user clicks on a download that failed because the requested
+         destination file already exists [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_file_already_exists"/>
+    <string name="dialog_file_already_exists">"无法下载，目标文件已存在。"</string>
+    <!-- Text for dialog when user clicks on a download that failed because it was requested to go
+         on the external media, which is not mounted [CHAR LIMIT=200] -->
+    <add-resource type="string" name="dialog_media_not_found"/>
+    <string name="dialog_media_not_found">"无法下载，未安装外部媒体。"</string>
+    <!-- Text for a toast appearing when a user clicks on a completed download, informing the user
+         that there is no application on the device that can open the file that was downloaded
+         [CHAR LIMIT=200] -->
+    <add-resource type="string" name="download_no_application_title"/>
+    <string name="download_no_application_title">"无法打开文件"</string>
+
+    <!-- Buttons -->
+
+    <!-- Text for button to remove the entry for a download that has not yet begun or that has
+         failed [CHAR LIMIT=25] -->
+    <add-resource type="string" name="remove_download"/>
+    <string name="remove_download">"删除"</string>
+    <!-- Text for button to delete a download that has completed, or to delete multiple download
+         entries [CHAR LIMIT=25] -->
+    <add-resource type="string" name="delete_download"/>
+    <string name="delete_download">"删除"</string>
+    <!-- Text for button to keep a download that has not yet begun [CHAR LIMIT=25] -->
+    <add-resource type="string" name="keep_queued_download"/>
+    <string name="keep_queued_download">"保留"</string>
+    <!-- Text for button to cancel a download that is currently in progress [CHAR LIMIT=25] -->
+    <add-resource type="string" name="cancel_running_download"/>
+    <string name="cancel_running_download">"取消"</string>
+    <!-- Text for button appearing in a dialog to restart a download, either one that failed or one
+         for which the downloaded file is now missing [CHAR LIMIT=25] -->
+    <add-resource type="string" name="retry_download"/>
+    <string name="retry_download">"重试"</string>
+    <!-- Text for button to start a download over the mobile connection now, even though it's over
+        the carrier-specified recommended maximum size for downloads over the mobile connection
+        [CHAR LIMIT=25] -->
+    <add-resource type="string" name="start_now_download"/>
+    <string name="start_now_download">"立即开始"</string>
+    <!-- Text for button appearing in the pop-up selection menu to deselect all currently selected
+    downloads in the download list [CHAR LIMIT=25] -->
+    <add-resource type="string" name="deselect_all"/>
+    <string name="deselect_all">"取消全选"</string>
+    <!-- Text for menu to select all downloads in the download list [CHAR LIMIT=25] -->
+    <add-resource type="string" name="select_all"/>
+    <string name="select_all">"全选"</string>
+    <!-- number of downloads selected [CHAR LIMIT=50] -->
+    <add-resource type="string" name="selected_count"/>
+    <string name="selected_count">"已选择 <xliff:g id="NUMBER">%1$d</xliff:g> 个，共 <xliff:g id="TOTAL">%2$d</xliff:g> 个"</string>
+    <!-- title shown when displaying list of apps to choose from when share is clicked on
+        [CHAR LIMIT = 20] -->
+    <add-resource type="string" name="download_share_dialog"/>
+    <string name="download_share_dialog">"分享方式"</string></resources>
